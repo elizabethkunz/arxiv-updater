@@ -30,19 +30,4 @@ uv run python -m digest.cli site                          # rebuild site/ only
   don't want. They count 5× as negatives.
 - Commit `state/model.joblib` after retraining so the GitHub Action uses the new model.
 
-## Setup (things only you can do)
-
-1. Create a file named `.env` in this folder (it is git-ignored; never commit it) with the lines
-   `ANTHROPIC_API_KEY=`, `SMTP_HOST=smtp.gmail.com`, `SMTP_PORT=465`, `SMTP_USER=`, `SMTP_PASS=` and fill in:
-   - `ANTHROPIC_API_KEY` from https://console.anthropic.com
-   - `SMTP_USER` / `SMTP_PASS`: your Gmail address and an
-     [app password](https://myaccount.google.com/apppasswords) (needs 2FA on).
-   - `EMAIL_RECIPIENTS=`: the mailing list, comma-separated. It lives here and in a GitHub secret,
-     never in `config.yaml`, because the repo is public.
-2. GitHub: create a **private** repo, push this folder, then under *Settings → Secrets and
-   variables → Actions* add `ANTHROPIC_API_KEY`, `SMTP_USER`, `SMTP_PASS`, `EMAIL_RECIPIENTS`.
-3. *Settings → Pages → Source: GitHub Actions*. (Pages on a private repo needs GitHub Pro; otherwise
-   keep the site local or make only a separate site repo public.)
-4. When the site is live, set `site.base_url` in `config.yaml` to its real URL.
-
 Without an API key the run still works; summaries fall back to the first two abstract sentences.
