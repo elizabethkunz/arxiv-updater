@@ -1,0 +1,8 @@
+{
+  "summary": "This paper analyzes the energy consumption of the Semiclassical Quantum Fourier Transform on superconducting cat-qubit platforms, incorporating quantum error correction and comparing with classical FFT implementations. A quantum energetic advantage is found for systems with more than 26 logical qubits at the macroscopic level, arising before computational advantage and persisting with realistic cryogenic overhead.",
+  "motivation": "Understanding whether quantum computing's algorithmic advantages translate to energy efficiency is essential as classical data centers face mounting power demands and quantum systems require substantial cryogenic and control infrastructure.",
+  "method": "The authors computed microscopic, macroscopic (Carnot-efficiency cryogenics), and billed energy costs for cat-qubit gates ($Z(\\theta)$, CNOT, measurement) with two-photon-driven dissipation stabilization ($\\gamma_X \\propto e^{-2\\alpha^2}$, $\\gamma_Z \\propto \\alpha^2$), developed an optimization procedure to minimize energy while maintaining final-qubit fidelity $F \\geq 0.9$, and compared against state-of-the-art classical supercomputers (El Capitan: $1.641 \\times 10^{-11}$ J/FLOP; KAIROS: $1.365 \\times 10^{-11}$ J/FLOP).",
+  "result": "Quantum energy consumption scales polynomially ($n^{3.06}$ macroscopic, $n^{2.81}$ microscopic optimized), while classical FFT scales exponentially, yielding energetic advantage at $n \\geq 26$ qubits; this advantage emerges before temporal advantage ($n \\gtrsim 34$–44 qubits), with stabilization energy dominating gate energy by orders of magnitude.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

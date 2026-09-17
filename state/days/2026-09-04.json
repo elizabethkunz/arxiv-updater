@@ -1,0 +1,326 @@
+{
+  "date": "2026-09-04",
+  "n_fetched": 122,
+  "papers": [
+    {
+      "id": "2609.03059",
+      "title": "Flux noise without flux tunability in superconducting qubits",
+      "authors": [
+        "Daniel Kruti",
+        "Roman-Pascal Riwar"
+      ],
+      "abstract": "Flux noise is unanimously recognised as a leading dephasing mechanism for flux-tunable superconducting qubits. However, our microscopic understanding remains incomplete, and basic effects like Faraday's law of induction have only very recently come into focus. Based on a quantum geometric description of the Faraday effect, we provide an in-depth derivation of the coupling of generic magnetic sources to thin film superconducting structures, under appropriate consideration of the device geometry. We apply the resulting framework to time-varying magnetic dipoles, describing surface or substrate spins, as well as current-carrying flux lines. We show that flux noise not only affects dephasing, but also provides a fundamental limit for the qubit quality factor - notably, even when the qubit contains no loops and is thus nominally not flux-tunable. Assuming surface spins as the origin for universal flux noise, we expect that this quality factor limit might be reached in the near term. For flux lines, we formulate a minimal safety distance to conserve the qubit performance, potentially constraining the scale-up of quantum hardware. This distance is boosted in the presence of large capacitor wings typical for transmons, due to a lensing of the electromotive field which is largely independent of Meissner screening.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-09-02",
+      "score": 0.8254449215049413,
+      "similar_to": [
+        {
+          "title": "The Flux Qubit Revisited to Enhance Coherence and Reproducibility",
+          "id": "1508.06299",
+          "similarity": 0.8936732411384583
+        },
+        {
+          "title": "Decoherence of a tunable capacitively shunted flux qubit",
+          "id": "2307.13961",
+          "similarity": 0.862796425819397
+        }
+      ],
+      "summary": {
+        "summary": "Starting from a quantum-geometric description of Faraday induction, the paper derives how magnetic sources (surface or substrate spins, and current-carrying flux lines) couple to thin-film superconducting circuits with realistic geometry. The main finding is that flux noise limits the qubit quality factor as well as dephasing, even for qubits with no loop: if surface spins cause the universal $1/f$ flux noise, the limit lies between about $10^{8}$ and $10^{10}$, not far above today's record quality factors of $10^{7}$ to $10^{8}$.",
+        "motivation": "Flux noise is a leading dephasing mechanism for flux-tunable qubits, yet its microscopic description is incomplete and induction effects have only recently been considered. Fixed-frequency qubits are usually assumed to be immune.",
+        "method": "The coupling of time-varying magnetic dipoles and of flux lines to the junction bridges and capacitor pads is derived analytically, including the limits of reciprocity arguments. The resulting relaxation rate is evaluated for surface-spin ensembles and for nearby flux-bias lines.",
+        "result": "The quality-factor limit of $10^{8}$ to $10^{10}$ may fall by at least another order of magnitude, depending on the spin-spin correlation length, because of a long-range contribution from the transmon capacitor wings. For flux lines there is a minimum safe distance to the qubit, which the capacitor wings increase by lensing the electromotive field, an effect separate from Meissner flux focusing.",
+        "source": "full text",
+        "generated_by": "Claude, written in-session from the full text (not via the script's API path)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2608.25027",
+      "title": "Real-time decoder for a MegaQuOp quantum computer using a single CPU",
+      "authors": [
+        "Min Ye",
+        "Andrii Maksymov",
+        "Nicolas Delfosse"
+      ],
+      "abstract": "As quantum computers advance toward the regime of MegaQuOp machines executing millions of gates, a decoding system capable of real-time error correction in such a device will be crucial. Recent efforts have been focused on decoding an error-corrected memory or a small number of logical operations. Here we demonstrate an end-to-end real-time decoding stack for a universal fault-tolerant trapped-ion quantum computer architecture capable of decoding real workloads with millions of logical gates over hundreds of logical qubits. The complete pipeline, including on the fly detector error model generation, decoding of all logical qubits, logical operations, and magic-state factories, runs on a single CPU. We benchmark the decoder on practically relevant quantum applications spanning up to 408 logical qubits, and up to one million $T$ gates. Assuming a trapped-ion architecture with 1 to 5 ms cycle time, the decoding delay stretches the computation by less than $0.3\\%$ at $p_{\\mathrm{CNOT}}=10^{-4}$ and less than $12\\%$ at $p_{\\mathrm{CNOT}}=5\\times 10^{-4}$ for all workloads studied. These results demonstrate real-time decoding at MegaQuOp scale on a single conventional CPU.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-03",
+      "score": 0.685174756308621,
+      "similar_to": [
+        {
+          "title": "Quantum error correction below the surface code threshold",
+          "id": "2408.13687",
+          "similarity": 0.8743501901626587
+        },
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8735378980636597
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates an end-to-end real-time decoder for a universal fault-tolerant trapped-ion quantum computer capable of processing workloads with up to 408 logical qubits and one million logical $T$ gates using only a single conventional CPU. The decoder achieves computational stretch (additional syndrome-extraction cycles due to decoding latency) below 0.3% at $p_{\text{CNOT}}=10^{-4}$ and below 12% at $p_{\text{CNOT}}=5\times10^{-4}$ across all tested benchmarks.",
+        "motivation": "Real-time decoding at MegaQuOp scale (millions of gates, hundreds of logical qubits) remains a major challenge for fault-tolerant quantum computing because syndrome data is generated faster than classical decoders can process it, risking exponential computation slowdown from decoding backlogs.",
+        "method": "The authors exploit the walking-cat architecture (WCA) to implement a dual sliding-window decoder (error decoder with 5-SEC window and outcome decoder with 2-SEC window) that reuses a static Tanner graph with dynamically updated priors for on-the-fly detector-error-model generation, avoiding expensive graph reconstruction. Beam search decoders are optimized via reformulated belief-propagation state storage (posterior log-likelihood ratios per error node instead of per Tanner-graph edge) to enable concurrent execution of 12 decoder instances on a single 2024 Apple M4 Max CPU.",
+        "result": "For MIPT (1.09 million $T$ gates, 102 logical qubits, 1 ms/SEC budget) and Heisenberg n266 (555k $T$ gates, 408 logical qubits, 5 ms/SEC budget), stretch is 0.24% and 0.02% respectively at $p_{\text{CNOT}}=10^{-4}$, rising to 11.5% and 0.7% at $p_{\text{CNOT}}=5\times10^{-4}$, with mean stretch-episode lengths of 2.8–10.9 SECs and 99.9th percentile lengths of 31–252 SECs.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.03194",
+      "title": "Experimental validation of a compact fault-tolerant architecture for trapped ions",
+      "authors": [
+        "Noah Berthusen",
+        "Ali Lavasani",
+        "Asmae Benhemou",
+        "M. S. Allman",
+        "Joan Dreiling",
+        "Brian Estey",
+        "Cameron Foltz",
+        "Trent Jacobs",
+        "Michael Mills",
+        "Annie Jihyun Park",
+        "Adam P. Reed",
+        "David Hayes",
+        "Tzvetan S. Metodi",
+        "Andrew C. Potter"
+      ],
+      "abstract": "Quantum error correction (QEC) is beginning to enable logical operations that outperform their unencoded physical counterparts, but useful fault-tolerant computation will require more than low-error quantum memory. An effective architecture must orchestrate efficient logical encoding, low-overhead logical operations, and access to the non-Clifford resources required for universal computation. Here, we introduce and experimentally validate such an architecture based on the $[[20,2,6]]$ $C_4$-Helix code, designed for the early fault-tolerant regime. Using Quantinuum Helios, a 98-qubit trapped-ion quantum processor, we experimentally demonstrate the principal components of this architecture: we perform repeated quantum error correction with an error of $4.6^{+6.2}_{-2.6}\\times10^{-5}$ per logical qubit per QEC cycle. We benchmark the complete Clifford group on the two logical qubits of a single codeblock under active error correction, obtaining an error of $2.8^{+1.0}_{-1.6}\\times 10^{-4}$ per two-qubit logical Clifford. We further demonstrate a fault-tolerant chain-map interface between $C_4$-Helix and a distance-5 surface code, preparing a heterogeneous three-logical-qubit GHZ state with a fidelity lower bound of $99.925^{+0.068}_{-0.245}\\%$. In each case, the encoded implementation outperforms its corresponding unencoded physical baseline without relying on postselection. Circuit-level simulations indicate that improvements in physical fidelity bring the same architecture into the $10^{-6}$-$10^{-8}$ logical-error regime targeted for early fault-tolerant computation. Together, these results establish $C_4$-Helix as a hardware-validated fault-tolerant architecture rather than a bare quantum memory.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-02",
+      "score": 0.6639009018255192,
+      "similar_to": [
+        {
+          "title": "Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code",
+          "id": "2112.03708",
+          "similarity": 0.9078441858291626
+        },
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.9027901291847229
+        }
+      ],
+      "summary": {
+        "summary": "The $[[20,2,6]]$ $C_4$-Helix code has been experimentally validated on Quantinuum Helios as a complete fault-tolerant architecture on a 98-qubit trapped-ion processor, with logical operations outperforming physical baselines without postselection. Repeated QEC achieves $4.6^{+6.2}_{-2.6}\\times10^{-5}$ error per logical qubit per cycle, two-qubit logical Clifford gates achieve $2.8^{+1.0}_{-1.6}\\times10^{-4}$ error, and a heterogeneous three-logical-qubit GHZ state prepared via chain-map to a distance-5 surface code reaches $99.925^{+0.068}_{-0.245}\\%$ fidelity.",
+        "motivation": "Moving beyond quantum memory to full fault-tolerant computation requires demonstrating not just low logical error rates but an integrated architecture that handles efficient encoding, low-overhead logical gates, and access to non-Clifford resources for universal computation.",
+        "method": "The authors implemented the $[[20,2,6]]$ $C_4$-Helix code on Quantinuum Helios and benchmarked its key components: repeated syndrome extraction, complete Clifford group on two logical qubits under active error correction, and a fault-tolerant interface to a surface code for multi-logical-qubit operations.",
+        "result": "All encoded implementations outperform physical baselines; circuit simulations predict reaching $10^{-6}$-$10^{-8}$ logical error rates with modest improvements in physical fidelity, establishing $C_4$-Helix as hardware-validated for early fault-tolerant computation rather than as isolated quantum memory.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2608.06636",
+      "title": "Approaching the Fundamental Limit of Single-Shot Qubit Frequency Tracking with an Adiabatic Tangentially-Modulated Pulse",
+      "authors": [
+        "Itamar Oren",
+        "Luke I. Dyer",
+        "Calum Holker",
+        "Gerardo A. Paz-Silva",
+        "Chih Hwan Yang"
+      ],
+      "abstract": "Understanding and mitigating noise in two-level quantum systems is essential for achieving high-fidelity qubit control. Conventional frequency tracking techniques, such as Ramsey interferometry, are fundamentally limited by trade-offs between sensitivity, bandwidth, and dynamic range. Here we introduce the adiabatic tangentially-modulated (ATM) pulse, a pulse derived from quantum adiabatic theory that maps qubit detuning onto a sigmoidal, near-binary response. Using numerical simulations supported by analytical modeling, we show that pulse sensitivity and detuning range can be independently engineered through simple design parameters. We derive scaling relations governing these quantities and demonstrate their agreement with simulation. A single-shot ATM measurement achieves sensitivity comparable to that obtained from multi-shot Ramsey averaging, enabling tracking of substantially higher frequency noise components with a lower closed-loop white-noise floor. In addition, this pulse exhibits strong robustness to amplitude fluctuations compared with binary response pulses derived from the Shinnar-Le Roux formalism. Together, these properties establish the ATM pulse as a promising approach for robust qubit frequency tracking.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-03",
+      "score": 0.5981958549499402,
+      "similar_to": [
+        {
+          "title": "Beating the Ramsey limit on sensing with deterministic qubit control",
+          "id": "2408.15926",
+          "similarity": 0.8227660655975342
+        },
+        {
+          "title": "Simple pulses for elimination of leakage in weakly nonlinear qubits",
+          "id": "0901.0534",
+          "similarity": 0.8134105205535889
+        }
+      ],
+      "summary": {
+        "summary": "The adiabatic tangentially-modulated (ATM) pulse is a single-shot qubit frequency tracker that produces a sigmoidal detuning response with independently tunable sensitivity and range through amplitude and frequency modulation derived from quantum adiabatic theory. A single ATM measurement achieves sensitivity $S \\approx 81$ kHz comparable to 100-shot Bayesian Ramsey averaging while maintaining robustness to $\\pm 10$ dB amplitude noise, enabling tracking of kilohertz-scale frequency noise with a white-noise floor of $P_N^{\\mathrm{floor}} \\propto G^2 f_s$ at high feedback gain.",
+        "motivation": "Frequency tracking is essential for maintaining qubit coherence and gate fidelity, but conventional Ramsey interferometry suffers from fundamental trade-offs between sensitivity, bandwidth, and dynamic range, and periodic fringe ambiguities limit tracking bandwidth below a threshold regardless of measurement count.",
+        "method": "The ATM pulse combines a tangent-shaped amplitude rise, a piecewise-linear frequency chirp from $\\omega_D^{\\mathrm{max}}$ to zero, and a tangent-shaped fall that controls the adiabatic-to-nonadiabatic crossover. Scaling relations are derived: sensitivity $S \\approx 0.9|\\Omega_\\mathrm{f}|$ where $|\\Omega_\\mathrm{f}|$ is the final fall gradient, detuning range $\\Delta_\\mathrm{range} \\approx \\omega_D^{\\mathrm{max}}$, and minimum achievable sensitivity $S_\\mathrm{min} \\approx 0.85\\tau_f$ for fall duration $\\tau_f$.",
+        "result": "With $\\tau_T = 30$ µs, $\\omega_D^{\\mathrm{max}} = 1$ MHz, and $|\\Omega_\\mathrm{f}| = 6$ kHz/$\\mu$s, ATM achieves $S = 81$ kHz over $\\Delta_\\mathrm{range} \\approx 1$ MHz with excitation plateau ripple $< 5\\%$, versus Ramsey's $S = 64$ kHz requiring 100 shots; ATM maintains this response under $\\pm 10$ dB amplitude noise while SLR binary pulses degrade severely, and feedback tracking extends detectable noise to 1 kHz versus Ramsey's 10 Hz cutoff at optimal gain $G \\sim S/2$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.04132",
+      "title": "Characterizing Large Scale Quantum Systems with Error Per Circuit Layer",
+      "authors": [
+        "Travis Hurant",
+        "Arian Vezvaee",
+        "Swarnadeep Majumder",
+        "Aniket Dalvi",
+        "Jude Alnas",
+        "Kenneth R. Brown"
+      ],
+      "abstract": "Quantum benchmarks provide compact measures of performance that are important for evaluating and comparing quantum systems. Circuit-level benchmarks are particularly valuable because they capture the accumulated effects of noise across interacting operations, but existing approaches may require structured gate sets and costly compilation, classical simulation of reference outputs, or subsystem decompositions that do not capture full-register behavior. We introduce Error Per Circuit Layer (EPCL), an overlap-based circuit-level benchmark that estimates an effective layer polarization by applying identical random circuits to two disjoint quantum registers and measuring the overlap between their output states as a function of circuit depth. EPCL avoids classical simulation of ideal output distributions and recovery to a known reference state, and is compatible with arbitrary gate sets, including non-Clifford gates. We derive the expected overlap decay under an ensemble-averaged depolarizing model and identify the assumptions under which the fitted decay parameter represents an effective layer polarization. Numerical simulations show that EPCL recovers the predicted polarization under weak local stochastic noise and remains well described by a single-exponential decay at stronger stochastic noise levels. The simulations further show that coherent errors associated with fixed entangling layers may require Pauli twirling or randomized compiling to produce the expected decay, while inter-register correlations contribute an additional covariance term to the measured overlap. Finally, experiments on IBM quantum hardware demonstrate clear EPCL decay in 8- and 16-qubit implementations. These results support EPCL as a method for measuring aggregate register performance without requiring classical simulation of ideal circuit outputs or restriction to structured gate sets.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-03",
+      "score": 0.5932739405372635,
+      "similar_to": [
+        {
+          "title": "Benchmarking quantum gates and circuits",
+          "id": "2407.09942",
+          "similarity": 0.8938901424407959
+        },
+        {
+          "title": "Erasure qubits: Overcoming the $T_1$ limit in superconducting circuits",
+          "id": "2208.05461",
+          "similarity": 0.8668442964553833
+        }
+      ],
+      "summary": {
+        "summary": "Error Per Circuit Layer (EPCL) is an overlap-based circuit-level benchmarking protocol that estimates effective layer polarization by measuring the overlap between output states of two identically evolved quantum registers, avoiding classical simulation of ideal distributions. Numerical simulations validate EPCL under depolarizing and coherent noise while identifying sensitivity to register covariance and coherent entangling-layer errors, and hardware demonstrations on IBM Berlin show clear exponential decay in 8- and 16-qubit implementations.",
+        "motivation": "Existing circuit-level benchmarks like mirror randomized benchmarking and cross-entropy benchmarking face scalability limitations: randomized benchmarking requires costly compilation for large systems, cross-entropy benchmarking requires classically simulated ideal output probabilities that become intractable at scale, and error per layered gate subsystem decomposition may miss correlated errors across multiple qubits.",
+        "method": "EPCL applies identical random circuit layers (alternating Haar-random single-qubit gates and fixed two-qubit entangling gates) to two disjoint $n$-qubit registers and directly measures the overlap $\\mathrm{Tr}(\\rho_A \\rho_B)$ between their noisy output states using either controlled-SWAP or Bell-basis measurements, fitting the depth-dependent decay to extract effective polarization $p_{\\mathrm{eff}} = (p_A p_B)^m$.",
+        "result": "EPCL recovers theoretical predictions under weak local stochastic noise ($\\varepsilon_1 = 10^{-4}$, $\\varepsilon_2 = 10^{-3}$ yield $\\hat{p}_{\\mathrm{eff}} = 0.99601$ versus first-order prediction $p_{\\mathrm{eff}}^{\\mathrm{FO}} = 0.99599$) and maintains single-exponential decay up to $\\varepsilon_2 = 10^{-1}$; hardware on IBM Berlin demonstrates clear exponential overlap decay for $N=8$ (two 4-qubit registers, $p_{\\mathrm{eff}} = 0.98190 \\pm 1.9 \\times 10^{-4}$) and $N=16$ (two 8-qubit registers, $p_{\\mathrm{eff}} = 0.8949 \\pm 3.0 \\times 10^{-3}$).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8254,
+    0.6852,
+    0.6639,
+    0.5982,
+    0.5933,
+    0.4958,
+    0.4642,
+    0.4542,
+    0.3161,
+    0.2514,
+    0.2437,
+    0.2421,
+    0.2328,
+    0.2313,
+    0.2207,
+    0.1864,
+    0.1861,
+    0.1658,
+    0.1462,
+    0.1392,
+    0.139,
+    0.134,
+    0.1336,
+    0.1318,
+    0.1316,
+    0.1261,
+    0.122,
+    0.119,
+    0.1167,
+    0.1121,
+    0.1058,
+    0.1046,
+    0.1046,
+    0.0976,
+    0.0859,
+    0.0856,
+    0.0846,
+    0.0845,
+    0.083,
+    0.0815,
+    0.0783,
+    0.0757,
+    0.0727,
+    0.0708,
+    0.0686,
+    0.0684,
+    0.0674,
+    0.067,
+    0.0666,
+    0.0649,
+    0.0601,
+    0.0479,
+    0.0473,
+    0.0465,
+    0.0456,
+    0.0454,
+    0.0441,
+    0.0434,
+    0.0418,
+    0.0403,
+    0.0378,
+    0.0375,
+    0.0347,
+    0.0347,
+    0.0347,
+    0.0341,
+    0.0337,
+    0.0318,
+    0.0298,
+    0.0298,
+    0.0284,
+    0.0284,
+    0.0277,
+    0.0267,
+    0.0257,
+    0.0251,
+    0.0246,
+    0.0243,
+    0.0243,
+    0.024,
+    0.0235,
+    0.0215,
+    0.0213,
+    0.0212,
+    0.0201,
+    0.0181,
+    0.0166,
+    0.0152,
+    0.0152,
+    0.0151,
+    0.0144,
+    0.0138,
+    0.0125,
+    0.0095,
+    0.0093,
+    0.0091,
+    0.0089,
+    0.0088,
+    0.0086,
+    0.0078,
+    0.0077,
+    0.0074,
+    0.0069,
+    0.0065,
+    0.006,
+    0.006,
+    0.0059,
+    0.0059,
+    0.0057,
+    0.0055,
+    0.0054,
+    0.0049,
+    0.0047,
+    0.0044,
+    0.0042,
+    0.0041,
+    0.0039,
+    0.0033,
+    0.0025,
+    0.0015,
+    0.0007,
+    0.0004
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "The bi-SQUIPT is a flux-to-voltage transducer employing a dual-loop proximity-based architecture with differential readout that achieves $60$ dB spurious-free dynamic range (SFDR) while maintaining femtowatt-level power dissipation and operational stability up to $600$ mK. The device linearizes the inherently nonlinear periodic response of conventional SQUIDs by exploiting flux-modulated density-of-states changes in proximitized weak links, with performance comparable to superconducting quantum arrays but without the scaling penalties.",
+  "motivation": "Conventional SQUIDs suffer from periodic, quasi-sinusoidal transfer functions that restrict dynamic range and introduce harmonic distortion, while flux-locked loop feedback adds complexity and limits scalability; there is need for intrinsically linear low-dissipation flux transducers suitable for dense integration in quantum circuits.",
+  "method": "Two SQUIDs with proximitized Al/Cu weak links tunnel-coupled to Al/Al-oxide probes were operated in a parallel differential configuration, with each independently biased ($I_{b,a} = 55.0$ pA, $I_{b,b} = 4.9$ pA) to compensate tunnel resistance mismatch ($R_a = 1.18$ M$\\ $ and $R_b = 35.71$ M$\\ $) and independently flux-biased via flux lines; transfer-function linearity was characterized by digitizing $V$-$\\m$ curves and computing SFDR from monochromatic input.",
+  "result": "Peak voltage swing of $120$ µV with maximum SFDR of $60$ dB below $150$ mK, thermal stability with SFDR of $36$ dB at $600$ mK, negligible power dissipation in the femtowatt range, and demonstrated robustness to fabrication variations through bias-current tuning.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

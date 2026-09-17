@@ -1,0 +1,8 @@
+{
+  "summary": "A 3D-integrated hybrid circuit-QED device couples a silicon MOS hole double quantum dot to a high-impedance NbN superconducting resonator using 5 µm indium bump interconnects at 10 µm pitch, achieving a cavity quality factor $Q_i \\sim 10^4$ and demonstrating both fast dispersive charge readout and strong spin-photon coupling. The platform demonstrates record charge readout sensitivity with SNR = 100 in 300 ns and spin-photon coupling strength $g_s/2\\pi = 75$ MHz, establishing the viability of 3D integration for quantum dot based hybrid cQED.",
+  "motivation": "Hybrid cQED systems require both low microwave losses and compatibility with semiconducting quantum dot materials, but conventional 2D integration of superconducting circuits with silicon MOS qubits leads to $Q_i$ of only a few hundred due to parasitic losses from complex material stacks.",
+  "method": "A flip-chip assembly bonds a sapphire chip hosting a 10 nm NbN resonator (1.8 kΩ characteristic impedance) to a 300 mm foundry-fabricated Si-MOS spin qubit chip via dense indium bump interconnects, with 5 µm × 5 µm bumps at 10 µm pitch to minimize stray capacitance, and includes on-chip fifth-order low-pass filters on the readout/control lines.",
+  "result": "The assembled device achieves $Q_i = 11\\,100$ and demonstrates charge-photon coupling $g_c/2\\pi = 350$ MHz with charge dispersive readout SNR = 100 at 300 ns integration time (approximately 10× faster than prior work) and strong spin-photon coupling $g_s/2\\pi = 75$ MHz at 250 mT magnetic field, with 99.98% interconnect yield and superconducting transitions in In bumps below 3.4 K.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

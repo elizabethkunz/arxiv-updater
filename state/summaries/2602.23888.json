@@ -1,0 +1,8 @@
+{
+  "summary": "This work characterizes aging and annealing of Al/AlO$_x$/Al Josephson junctions over 2–3 months under different storage environments and thermal conditions. Aging follows a logarithmic curve where the amplitude is set by fabrication (oxidation parameters) while aging speed is governed by storage conditions, with ambient atmosphere aging 3–5× faster than nitrogen or vacuum storage.",
+  "motivation": "Precise junction resistance control is essential for large-scale superconducting quantum processors, where wafer-scale $I_c$ variations reach 3% and chip-scale 1–2%. Understanding how storage and post-fabrication annealing affect junction resistance enables optimal frequency tuning and reduces unexpected qubit frequency shifts between measurement and cooldown.",
+  "method": "Al/AlO$_x$/Al junctions (250 nm × 250 nm, Dolan process) were fabricated on high-resistivity silicon and stored in ambient atmosphere, nitrogen glove box ($<0.01\\%$ O$_2$), or vacuum ($\\sim 10^{-7}$ mbar). Resistance was monitored via I–V curve slope over 56–85 days. Thermal annealing was performed up to 250°C in N$_2$ and ambient; voltage annealing used alternating $\\pm 0.9$ V pulses.",
+  "result": "Logarithmic aging fits give amplitude parameter $a = 0.21 ± 0.02$ (ambient) vs. $0.15 ± 0.02$ (glove box) and timescale $\\tau = 1.2 ± 0.5 \\times 10^4$ s (ambient) vs. $4.3 ± 2.2 \\times 10^4$ s (glove box). In N$_2$, resistance decreases monotonically up to 250°C; in ambient, resistance increases at 200°C and decreases at 250°C. Minimum achievable resistance equals the initial post-fabrication value, setting a lower limit on tuning range.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

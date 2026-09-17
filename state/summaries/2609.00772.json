@@ -1,0 +1,8 @@
+{
+  "summary": "On-chip flux memory stores persistent currents in superconducting loops to flux-bias circuits such as qubits, and three cell types are built and compared. Once a cell is set, the room-temperature DC sources can be switched off, and a transmon biased this way held its target frequency for 20 hours.",
+  "motivation": "Every flux-biased device normally needs its own always-on DC line, so wiring and control-source counts grow quickly with system size.",
+  "method": "Three flux-memory designs are characterized with an in-situ flux detector, then used to bias a transmon, and a two-dimensional multiplexed addressing scheme is proposed.",
+  "result": "Flux remains in place with the bench sources powered off, the transmon frequency was stable for 20 hours, and the 2D layout would address $N^2$ devices with $2N$ control lines.",
+  "source": "abstract",
+  "generated_by": "Claude, written in-session from the abstract (not via the script's API path)"
+}

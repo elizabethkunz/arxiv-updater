@@ -1,0 +1,240 @@
+{
+  "date": "2026-01-01",
+  "n_fetched": 78,
+  "papers": [
+    {
+      "id": "2512.24448",
+      "title": "Incorporating multi-qubit exchange coupling effects between transmon qubits in Maxwell-Schrödinger numerical methods",
+      "authors": [
+        "Ghazi Khan",
+        "Thomas E. Roth"
+      ],
+      "abstract": "Superconducting qubits have emerged as a leading platform for realizing quantum computers. Accurate modeling of these devices is essential for predicting performance, improving design, and optimizing control. Many modeling approaches currently rely on lumped circuit approximations or other simplified treatments that can be limited in resolving the interplay between the qubit dynamics and the electromagnetic circuitry, leading to significant experimental deviations from numerical predictions at times. To address many of these limitations, methods that self-consistently solve the Schrödinger equation for qubit dynamics with the classical Maxwell's equations have been developed and shown to accurately predict a wide range of effects related to superconducting qubit control and readout. Despite these successes, these methods have not been able to consider multi-qubit effects that give rise to qubit-qubit entanglement. Here, we address this by rigorously deriving how multi-qubit coupling effects between transmon qubits can be embedded into Maxwell-Schrödinger methods. To support this, we build on earlier first-principles derivations of Maxwell-Schrödinger methods for the specific case of two transmon qubits coupled together through a common electromagnetic system in the dispersive regime. To aid in validating aspects of the Maxwell-Schrödinger framework, we also provide a new interpretation of Maxwell-Schrödinger methods as an efficient simulation strategy to capture the class of non-Markovian open quantum system dynamics. Our results demonstrate that these effects can give rise to strong classical crosstalk that can significantly alter multi-qubit dynamics, which we demonstrate for the cross-resonance gate. These classical crosstalk effects have been noted in cross-resonance experiments, but previous quantum theory and device analysis could not explain their origin.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2025-12-30",
+      "score": 0.8291993868225805,
+      "similar_to": [
+        {
+          "title": "Suppression of crosstalk in superconducting qubits using dynamical decoupling",
+          "id": "2108.04530",
+          "similarity": 0.8801866769790649
+        },
+        {
+          "title": "Quantum crosstalk cancellation for fast entangling gates and improved multi-qubit performance",
+          "id": "2106.00675",
+          "similarity": 0.872455358505249
+        }
+      ],
+      "summary": {
+        "summary": "This paper develops Maxwell-Schrödinger numerical methods that incorporate multi-qubit exchange coupling effects for transmon qubits operating in the dispersive regime, enabling self-consistent simulation of coupled Schrödinger and classical Maxwell equations. The method reveals that qubit back-action on electromagnetic circuitry produces classical crosstalk in cross-resonance gates, explaining experimentally observed effects that prior quantum theory could not account for.",
+        "motivation": "Existing cQED modeling approaches either rely on simplified lumped-circuit approximations or become computationally prohibitive with multiple electromagnetic modes; Maxwell-Schrödinger methods efficiently capture single-qubit control and readout but have been unable to model multi-qubit entangling effects and the origin of observed classical crosstalk in two-qubit gates.",
+        "method": "Building on first-principles Schrieffer-Wolff transformations of two transmon qubits coupled via a common electromagnetic system, the authors rigorously derive how multi-qubit exchange coupling terms $J_{ij}$ (evaluated via impedance parameters) must be embedded into the time-domain Schrödinger equation coupled to classical transmission-line equations via leap-frog time-marching, and reinterpret the framework as capturing non-Markovian open quantum system dynamics under the Born approximation.",
+        "result": "Simulations of cross-resonance gates on a circuit with $C_R = 4$ fF coupling capacitances, qubit frequencies $\\bar{q}_{0,1}^{(1)}/2\\pi = 4.91$ GHz and $\\bar{q}_{0,1}^{(2)}/2\\pi = 5.11$ GHz (coupling rate $J = 1.63$ MHz), and a 6.31 GHz resonator show that qubit back-action produces voltage envelope modulations in the resonator that differ substantially from assumed simple crosstalk models, with infidelity reaching $\\sim 10$% for longer pulses; increasing $C_R$ or reducing detuning systematically increases back-action effects.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2512.24466",
+      "title": "A Boundary Condition Perspective on Circuit QED Dispersive Readout",
+      "authors": [
+        "Mustafa Bakr"
+      ],
+      "abstract": "Boundary conditions in confined geometries and measurement interactions in quantum mechanics share a common structural role: both select a preferred basis by determining which states are compatible with the imposed constraint. This paper develops this perspective for circuit QED dispersive readout through a first-principles derivation starting from the circuit Lagrangian. The transmon qubit terminating a transmission line resonator provides a frequency-dependent boundary condition whose pole structure encodes the qubit's transition frequencies; different qubit states yield different resonator frequencies. Two approximations, linear response and a pole-dominated expansion valid near resonance, reduce the boundary function to a rational form in the Sturm-Liouville eigenparameter. The extended Hilbert space of the Fulton-Walter spectral theory then provides a framework for the dressed-mode eigenvalue problem conditional on the qubit state. The dispersive shift and vacuum Rabi splitting emerge from the transcendental eigenvalue equation, with the residues determined by matching to the splitting: $δ_{ge} = 2Lg^2ω_q^2/v^4$, where $g$ is the vacuum Rabi coupling. A level repulsion theorem guarantees that no dressed mode frequency coincides with a transmon transition. For two qubits with matched dispersive shifts, odd-parity states become frequency-degenerate; true parity-only measurement requires engineered suppression of linear dispersive terms.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2025-12-30",
+      "score": 0.6599425574527449,
+      "similar_to": [
+        {
+          "title": "Measurement-Induced Transmon Ionization",
+          "id": "2402.06615",
+          "similarity": 0.8423077464103699
+        },
+        {
+          "title": "Cavity quantum electrodynamics for superconducting electrical circuits: an architecture for quantum computation",
+          "id": null,
+          "similarity": 0.8362281322479248
+        }
+      ],
+      "summary": {
+        "summary": "This paper develops a boundary-condition perspective on circuit QED dispersive readout, showing how the transmon-terminated transmission line resonator provides a frequency-dependent boundary condition whose pole structure encodes qubit transition frequencies and produces state-dependent resonator frequencies. Starting from the circuit Lagrangian and applying Sturm-Liouville theory with eigenparameter-dependent boundaries, the framework derives the dispersive shift $\\chi = g^2 \\alpha/[\\Delta(\\Delta + \\alpha)]$, proves a level repulsion theorem preventing dressed modes from coinciding with transmon transitions, and extends the analysis to matched two-qubit parity measurement where engineered suppression of linear dispersive terms enables true parity-only response.",
+        "motivation": "Understanding how measurement interactions select observables requires clarifying the structural role of constraints: just as Dirichlet boundary conditions in confined geometries select allowed modes by determining which states satisfy the imposed constraint, the measurement Hamiltonian $H_{\\text{int}} = \\hbar\\chi\\sigma_z\\hat{n}$ selects the $\\sigma_z$ basis by making its eigenstates operationally stable under environmental decoherence.",
+        "method": "From the circuit Lagrangian for a transmon-terminated transmission line, the wave equation and nonlinear boundary condition at the qubit are derived via the variational principle. Linearization and quantization of the transmon via the Kubo formula yields a state-dependent boundary function $F^{(n)}(\\lambda)$ with poles at transition frequencies $\\omega_{nm}$; the pole-dominated approximation renders this function rational in the eigenparameter $\\lambda = \\omega^2/v^2$, enabling Fulton-Walter Sturm-Liouville analysis with extended Hilbert space $\\mathcal{H}_{\\text{ext}} = L^2(0,L) \\oplus \\mathbb{C}^M$.",
+        "result": "The residues are determined by matching vacuum Rabi splitting to yield $\\delta_{nm} = 2Lg_{nm}^2\\omega_{nm}^2/v^4$; the level repulsion theorem guarantees exactly one dressed eigenvalue between consecutive poles; multimode coupling scales as $g_n \\propto \\omega_n$, producing ultraviolet-divergent Lamb shifts requiring renormalization while dispersive shifts remain finite; for matched two-qubit shifts ($\\chi_1 = \\chi_2$), odd-parity states become frequency-degenerate but true parity measurement requires cancelling the linear term $\\chi(\\sigma_1^z + \\sigma_2^z)\\hat{n}$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2512.24926",
+      "title": "High-performance quantum interconnect between bosonic modules beyond transmission loss constraints",
+      "authors": [
+        "Hongwei Huang",
+        "Jie Zhou",
+        "Weizhou Cai",
+        "Weiting Wang",
+        "Yilong Zhou",
+        "Yunlai Zhu",
+        "Ziyue Hua",
+        "Yifang Xu",
+        "Lida Sun",
+        "Juan Song",
+        "Tang Su",
+        "Ming Li",
+        "Haifeng Yu",
+        "Chang-Ling Zou",
+        "Luyan Sun"
+      ],
+      "abstract": "Distributed quantum computing architectures require high-performance quantum interconnects between quantum information processing units, while previous implementations have been fundamentally limited by transmission line losses. Here, we demonstrate a low-loss interconnect between two superconducting modules using an aluminum coaxial cable, achieving a bus mode quality factor of 1.7e6. By employing SNAIL as couplers, we realize inter-modular state transfer in 0.8 μs via a three-wave mixing process. The state transfer fidelity reaches 98.2% for quantum states encoded in the first two energy levels, achieving a Bell state fidelity of 92.5%. Furthermore, we show the capability to transfer high-dimensional states by successfully transmitting binomially encoded logical states. Systematic characterization reveals that performance constraints have shifted from transmission line losses (contributing merely 0.2% infidelity) to module-channel interface effects and local Kerr nonlinearities. Our work advances the realization of quantum interconnects approaching fundamental capacity limits, paving the way for scalable distributed quantum computing and efficient quantum communications.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2025-12-31",
+      "score": 0.5630368700229749,
+      "similar_to": [
+        {
+          "title": "A Modular Cryogenic Link for Microwave Quantum Communication Over Distances of Tens of Meters",
+          "id": "2604.15971",
+          "similarity": 0.852451503276825
+        },
+        {
+          "title": "Surpassing millisecond coherence times in on-chip superconducting quantum memories by optimizing materials, processes, and circuit design",
+          "id": "2308.15539",
+          "similarity": 0.8407155871391296
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates a high-performance quantum interconnect between two superconducting modules using a 13.5 cm aluminum coaxial cable with $Q = 1.7 \\times 10^6$ for the bus mode, enabling 98.2% single-photon state transfer fidelity and 92.5% Bell state fidelity via three-wave mixing through SNAIL couplers. By achieving such low transmission losses (0.2% infidelity contribution), the performance bottleneck has shifted to module-channel interface effects and Kerr nonlinearities, with successful transfer of high-dimensional binomially encoded logical states achieved.",
+        "motivation": "Distributed quantum computing architectures require quantum interconnects between separate modules limited by transmission line losses. Existing implementations have been constrained by bus mode quality factors around $10^5$ in systems with bosonic error correction, necessitating improved channel designs to approach fundamental quantum capacity limits.",
+        "method": "Two superconducting modules each containing a 3D cavity, transmon qubit, and SNAIL coupler are connected through a high-purity aluminum coaxial cable. Coherent state transfer is realized via pump-driven three-wave mixing with Hamiltonian $\\hat{H}_{BS}^{j} = g_j(e^{-i\\Delta_j t}\\hat{a}_j^\\dagger \\hat{b} + e^{i\\Delta_j t}\\hat{a}_j \\hat{b}^\\dagger)$, achieving complete photon swap in 0.8 μs with coupling strength $g_{BS}/2\\pi \\approx 0.5$ MHz. Quantum process tomography and Wigner tomography characterize transfer fidelities across single-photon and multi-photon binomial encodings.",
+        "result": "Single-photon state transfer achieves 98.2% process fidelity per transfer and Bell state fidelity of 92.5%; binomial logical state transfer reaches 94.8% fidelity ($F_2/F_1$). Error budget analysis shows transmission line losses contribute only 0.2% infidelity, with primary constraints from cavity decoherence (0.5%), SNAIL dephasing (0.3%), ac-Stark shifts (0.6%), and cross-Kerr interactions (0.2–0.3%). Simulations reveal kHz-level self-Kerr coefficients substantially degrade higher-photon-number states, imposing a fundamental limitation for increased capacity.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2512.24992",
+      "title": "Mathieu Control of the Effective Coupling in Superconducting Qubits",
+      "authors": [
+        "Yi-Han Yu",
+        "Xin-Yi Li",
+        "Kai Xu",
+        "Heng Fan"
+      ],
+      "abstract": "A common challenge in superconducting quantum circuits is the trade-off between strong coupling and computational subspace integrity. We present Mathieu control, which uses a non-resonant two-photon drive to create a selective nonlinear frequency shift. This shift modifies interactions while preserving qubit states, enabling continuous tuning of the ZZ coupling, including full suppression, and integrating single- and two-qubit gates with low leakage. For a qubit-coupler-qubit device, it allows independent ZZ control, facilitating a programmable Heisenberg (XXZ) Hamiltonian. Extended to a five-qubit chain, the system can be reconfigured to simulate dynamics of quantum magnetic phases. Mathieu control thus provides a framework for high-fidelity quantum logic and programmable simulation.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2025-12-31",
+      "score": 0.5545325034116653,
+      "similar_to": [
+        {
+          "title": "Simple pulses for elimination of leakage in weakly nonlinear qubits",
+          "id": "0901.0534",
+          "similarity": 0.8372169137001038
+        },
+        {
+          "title": "A tunable coupling scheme for implementing high-fidelity two-qubit gates",
+          "id": "1803.09813",
+          "similarity": 0.833806037902832
+        }
+      ],
+      "summary": {
+        "summary": "Mathieu control uses off-resonant two-photon drives on superconducting qubit circuits to engineer selective nonlinear frequency shifts that tune interactions while preserving computational subspace integrity. The scheme enables continuous ZZ coupling tuning (including zero), low-leakage gates with process fidelities $>99.94\\%$ and $1-\\mathrm{Tr}(\\chi^2) \\sim 10^{-5}$, and programmable XXZ Hamiltonians in scalable qubit-coupler chains.",
+        "motivation": "Superconducting circuits face a trade-off between strong tunable couplings and protection of the computational subspace from leakage and dressing errors that limit gate fidelity and scaling.",
+        "method": "A high-frequency two-photon flux drive $\\Delta\\omega(t)=\\epsilon\\cos(\\omega_d t)$ on the SQUID loop creates a dispersive nonlinear shift $\\propto (\\epsilon^2/\\delta)\\hat{a}^\\dagger{}^2\\hat{a}^2$ that modifies effective spin-spin interactions without real population transfer; applied to directly coupled transmons or tunable couplers in QCQ architectures, it gives independent control of $J_{zz}$ via drive amplitude while leaving $J_{xx}$ nearly unchanged.",
+        "result": "For two directly coupled transmons, $J_{zz}$ spans from $\\sim-10$ to $\\sim+10$ MHz with zero crossing at $\\epsilon_0$; in a five-qubit chain with alternating couplers, Mathieu control successfully reproduces the XXZ phase diagram with programmable anisotropy $\\Delta=J_{zz}/(2J_{xx})$ across gapless XY, gapped Ising-antiferromagnetic, and ferromagnetic phases, with relaxation dynamics matching exact simulations except for $\\sim 17\\%$ slowdown due to effective coupling renormalization from multi-coupler dressing.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8292,
+    0.6599,
+    0.563,
+    0.5545,
+    0.4271,
+    0.4218,
+    0.3754,
+    0.3624,
+    0.3435,
+    0.3404,
+    0.2768,
+    0.2467,
+    0.2262,
+    0.1568,
+    0.1444,
+    0.1356,
+    0.1345,
+    0.1298,
+    0.126,
+    0.1237,
+    0.1156,
+    0.1101,
+    0.1046,
+    0.1028,
+    0.1023,
+    0.0904,
+    0.0873,
+    0.0678,
+    0.0618,
+    0.0615,
+    0.0532,
+    0.0525,
+    0.0443,
+    0.0426,
+    0.0416,
+    0.0414,
+    0.0393,
+    0.0377,
+    0.0336,
+    0.0306,
+    0.0292,
+    0.0266,
+    0.0248,
+    0.0248,
+    0.0226,
+    0.0225,
+    0.0221,
+    0.022,
+    0.0211,
+    0.0209,
+    0.0207,
+    0.0193,
+    0.0175,
+    0.0175,
+    0.0173,
+    0.0173,
+    0.0171,
+    0.0158,
+    0.0151,
+    0.014,
+    0.0133,
+    0.0123,
+    0.011,
+    0.0092,
+    0.008,
+    0.0076,
+    0.0064,
+    0.0059,
+    0.0058,
+    0.0057,
+    0.0055,
+    0.0051,
+    0.0047,
+    0.0033,
+    0.0029,
+    0.0028,
+    0.0028,
+    0.0016
+  ]
+}

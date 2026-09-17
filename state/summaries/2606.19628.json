@@ -1,0 +1,8 @@
+{
+  "summary": "Subsystem quantum error correction enables Heisenberg-limit metrology with substantially reduced overhead compared to standard QEC approaches, requiring at most a single ancilla qubit and syndrome-free recovery procedures. The framework extends to time-dependent signals through Floquet codes, which protect periodic metrological evolution by dynamically encoding information in a logical subsystem while allowing noise to be absorbed into gauge degrees of freedom.",
+  "motivation": "Existing QEC-assisted metrology requires multiple noiseless ancillae and complex mid-circuit syndrome measurements with feedback, creating significant experimental barriers to reaching the Heisenberg limit in realistic systems.",
+  "method": "The authors derive conditions under which subsystem stabilizer codes achieve the Heisenberg limit (Theorem 1), then prove that broad noise classes admit syndrome-free protocols with zero or one noiseless ancilla (Theorem 2). They extend this to dynamical error correction using ladder codes, where time-varying signals synchronize with periodically rotating check measurements over four rounds to maintain logical coherence.",
+  "result": "For correctable Pauli noise satisfying the HNKS condition $H \\notin \\mathrm{Span}\\{\\langle E_1, \\ldots, E_r \\rangle\\}$, syndrome-free subsystem codes achieve $F_Q(\\rho_\\theta^{(N)}) \\propto N^2$ with only gauge reset applied after each query, and no ancilla is required when the noise algebra occupies fewer than $n$ qubits or when a commuting component of $H$ exists outside the noise span.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

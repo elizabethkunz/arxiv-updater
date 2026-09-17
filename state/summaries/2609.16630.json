@@ -1,0 +1,8 @@
+{
+  "summary": "This work proposes a microwave-activated CZ gate for capacitively coupled soft 0-π qubits operating via direct transitions to non-computational states, achieving simulated fidelity of approximately 99.9% at gate time ~160 ns in the idealized zero-disorder limit. The paper also develops single-qubit X gates by driving the θ mode (25 ns, 99.758% fidelity) and demonstrates that this coupling architecture supports two-qubit gates beyond CZ.",
+  "motivation": "The soft 0-π qubit promises longer coherence times than the transmon, but while single-qubit gates have been experimentally demonstrated, no two-qubit gate scheme for soft 0-π devices has been proposed, leaving a critical gap for realizing multi-qubit operations in this platform.",
+  "method": "The authors analyze capacitive coupling schemes between two 0-π circuits that produce an $n_{\\theta 1} n_{\\theta 2}$ interaction, design a CZ gate that drives transitions between logical states ($|2,0\\rangle \\leftrightarrow |5,0\\rangle$) and auxiliary states to accumulate conditional phase, and develop a phenomenological noise model (including $T_1$ and $T_\\phi$ processes) to evaluate performance under decoherence.",
+  "result": "The noiseless CZ gate achieves $F=99.893\\%$ at $t_g=91.95$ ns and maintains $F > 99.9\\%$ coherent fidelity for drive-frequency deviations of ~500 kHz and amplitude deviations of ±2%; under noise with $T=30$ μs, fidelity degrades to $99.830\\%$ at the shorter gate time, suggesting error rates of ~$10^{-3}$ are achievable with modest improvements in coherence times.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

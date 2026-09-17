@@ -1,0 +1,8 @@
+{
+  "summary": "Fixed-point number formats for real-time flux-predistortion filters are derived from a step-response error tolerance and implemented on the open-source QubiC FPGA platform. A super-sample-rate IIR structure with scattered look-ahead pipelining takes the feedback recursion out of the critical path, so an integrator, a second-order section and a 20-tap FIR run at a 500 MHz fabric clock for 1 GS/s flux lines, using 88 DSP slices and adding 162 ns of latency.",
+  "motivation": "Distortion on the flux line, dominated by the droop from the bias-tee blocking capacitor, leaves residual detuning, conditional-phase error and leakage in flux-activated two-qubit gates. Commercial systems specify the correction filter models but not their FPGA implementation, which custom and open-source systems need.",
+  "method": "Bounds on how far quantization moves the poles and zeros, over the physical parameter range of each distortion, set the coefficient formats; the smallest input change that must stay visible at the output sets the accumulator format, and the same analysis gives the conditions for stability. Scattered look-ahead places the added poles at the radii of the original ones, so the pipelined filter stays stable for any look-ahead depth and keeps the target transfer function.",
+  "result": "The cascade meets timing at 500 MHz with 88 DSP slices and 162 ns latency. It was checked in hardware by correcting the characteristic bias-tee distortion, which the authors describe as an intermediate step; full cryoscope-based calibration on a qubit is not shown.",
+  "source": "full text",
+  "generated_by": "Claude, written in-session from the full text (not via the script's API path)"
+}

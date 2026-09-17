@@ -1,0 +1,8 @@
+{
+  "summary": "This work experimentally investigates whether coherent and stochastic noise have different effects on quantum error correction using bitflip repetition codes on a transmon processor. Theory predicts a 1–2% coherent-stochastic gap in logical fidelity, but experiments on distance-3 and distance-5 codes find no observable difference, attributed to unmitigated qubit frequency drift that stochastifies injected coherent errors.",
+  "motivation": "Theoretical studies suggest coherent errors should degrade repetition and surface codes more severely than stochastic errors (lower threshold), but this prediction has not been experimentally validated, and understanding the impact of real noise on QEC performance is crucial for improving quantum processor fidelity.",
+  "method": "Coherent and stochastic $X$ rotations were injected at the start of each QEC round on a Surface-17 processor; stochastic noise was efficiently sampled using subset sampling to reconstruct logical error probability $P_L(p_{\\mathrm{inj}})$ from deterministic error injection circuits; both free-fermion and density-matrix simulations were used to model experiments.",
+  "result": "Experiments with uniform-weight MWPM decoding found no coherent-stochastic gap for $d=3$ or $d=5$ (measurement uncertainty $\\sim 2\\%$ comparable to predicted 1–2% gap), whereas simulations predict one; density-matrix simulations including circuit-level noise and qubit frequency drift show the gap diminishes and can partially explain the discrepancy.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

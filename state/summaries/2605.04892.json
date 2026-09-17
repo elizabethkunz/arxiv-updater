@@ -1,0 +1,8 @@
+{
+  "summary": "An FPGA-based LSTM neural-network decoder integrated into a superconducting quantum processor achieves real-time surface-code error correction with 550 ns closed-loop latency and 124 ns decoding latency on a distance-3 code. The system demonstrates logical error rates ($\\epsilon_L = 6.9\\%(2)$ per round) comparable to offline MWPM decoding and enables mid-circuit feedback in non-Clifford logical circuits where Pauli-frame tracking alone fails.",
+  "motivation": "Real-time classical decoding and feedback must operate within the ~1 µs QEC cycle to prevent error accumulation and enable universal fault-tolerant quantum computation, yet existing GPU/CPU systems suffer from nondeterministic latency while traditional FPGA decoders are limited in algorithmic complexity.",
+  "method": "A central feedback module on an AMD Kintex-7 FPGA (XC7K410T) implements an LSTM decoder with 32 hidden units and 6-bit quantized weights, processing syndrome data with 4-stage pipelined architecture; syndrome extraction takes 20 ns, NN decoding 124 ns, and Pauli-frame updating 4 ns, with the full closed-loop latency measured via oscilloscope calibration to be 550 ns.",
+  "result": "Real-time NN decoding achieves $\\epsilon_L = 6.9(2)\\%$ per round, matching offline MWPM performance ($\\epsilon_L = 7.2(2)\\%$), and maintains robustness under artificially injected errors; mid-circuit feedback in non-Clifford logical circuits preserves logical coherence where uncorrected data show 2–3× larger decoherence, with scaling analysis suggesting support for distance-13 codes on current high-end FPGAs.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

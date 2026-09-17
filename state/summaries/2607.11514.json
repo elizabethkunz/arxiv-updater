@@ -1,0 +1,8 @@
+{
+  "summary": "This work experimentally and theoretically investigates state dressing in a transmon-transmon-bus coupler architecture, measuring how noncomputational states admix into computational states across a tunable parameter range. Three estimation methods—full system, effective mode, and unperturbed mode—are compared, revealing that dressing varies from ~1% to 50% and critically coincides with spectral inversion and effective coupling equalization at $f_U^c \\approx 4.252$ GHz.",
+  "motivation": "Multi-qubit gate fidelity in superconducting processors is limited by parasitic dressing of computational states by noncomputational coupler modes; accurate estimation and control of this dressing is essential for optimizing gate performance.",
+  "method": "Frequency-domain spectroscopy on a three-element circuit (Xmon qubit Q, Xmon coupler C, $\\lambda/2$ bus resonator) characterized by Hamiltonian with parameters $E_C = 285$ MHz, $E_J^Q = 4.7$ GHz, $E_J^C = 4.4$ GHz, $g_{Q-C} = 7.861$ MHz, $g_{C-\\mathrm{bus}} = 14.675$ MHz, and $\\omega_\\mathrm{bus}/2\\pi = 4.238$ GHz; dressing quantified via three methods treating the bare-state composition of dressed eigenstates.",
+  "result": "Dressing $D$ increases from ~1% to 50% as coupler frequency tunes from 4.4 to 4.252 GHz; at the critical point $f_U^c = 4.252$ GHz, effective couplings equalize at $g_\\mathrm{eff}^c \\approx 5.2$ MHz and spectral ordering inverts; effective-mode and unperturbed-mode methods provide conservative upper and lower bounds on dressing, with full-system calculation being the most accurate but limited to single noncomputational states.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

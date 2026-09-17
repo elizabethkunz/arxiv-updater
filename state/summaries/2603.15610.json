@@ -1,0 +1,8 @@
+{
+  "summary": "Code-switching between two versions of the [[8,3,2]] code enables universal fault-tolerant quantum computation in the error-detecting (postselected) regime. Version 1 supports weakly fault-tolerant logical Clifford gates via two-qubit rotations, while Version 2 supports transversal logical $\\overline{\\mathrm{CCZ}}$ via $T/T^\\dagger$ gates, yielding an overcomplete universal gate set with quadratic suppression of logical errors in accepted runs.",
+  "motivation": "The Eastin-Knill theorem forbids a universal set of transversal gates within a single code; code-switching circumvents this by alternating between complementary code versions while maintaining distance-2 error detection.",
+  "method": "Two versions of the [[8,3,2]] code are derived from the [[8,3,3,2]] subsystem code by fixing gauge qubits to $|0\\rangle$ (Version 2) or $|+\\rangle$ (Version 1). Fault-tolerant switching uses gauge measurements with complementary checks and stabilizer verification; state preparation and Grover's algorithm are benchmarked via Monte Carlo simulation with depolarizing noise.",
+  "result": "Numerical simulations confirm $p_L \\sim O(p^2)$ postselected logical error scaling for state preparation, code-switching, and three-logical-qubit Grover search, demonstrating weak fault tolerance; acceptance rates decay as $O(p)$ due to postselection overhead.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "Synchronization of Bloch oscillations in a parallel array of 69 Al/AlOx/Al Josephson junctions in the coherent quantum phase slip regime yields a quantized current step at $I_1 = 426$ nA under 19.325 GHz microwave excitation, exceeding previous single-junction demonstrations. The quantization accuracy does not degrade with array scaling, though thermal noise in screening resistors limits plateau flatness to $\neq 1$ ppm, preventing metrological acceptance.",
+  "motivation": "Development of a quantum current standard requires amplitudes exceeding $\\sim10$ nA achieved in single junctions, motivating exploration of parallel arrays analogous to historical development of Josephson voltage standards.",
+  "method": "Fabricated arrays of 10–80 Al/AlOx/Al junctions (50 × 40 nm$^2$ each) with individual screening circuits comprising 0.7 μH TiN superinductors and 23 kΩ Pd resistors; measured $I$–$V$ curves and differential resistance maps at 15 mK with filtered microwave and dc lines.",
+  "result": "The 69-junction array achieves synchronized $I_1 = 2ef \\times 69 = 426$ nA at $f = 19.325$ GHz (exceeding 252 nA from QAHR/PJVS hybrid standards) with $I_C^* \\approx 20$ nA per junction and apparent critical voltage $V_C^* \\approx 8$ μV; thermal noise current $\\Delta I_T = 0.4 ± 0.1$ nA and microwave-induced heating to $\\sim160$ mK remain limiting factors for sub-ppm accuracy.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

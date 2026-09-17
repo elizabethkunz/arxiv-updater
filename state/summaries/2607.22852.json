@@ -1,0 +1,8 @@
+{
+  "summary": "This work proposes a vacuum-conditional beam-splitter (VCB) CNOT gate between dissipative cat qubits that preserves exponential bit-flip suppression via coherent unitary dynamics, avoiding the non-adiabatic errors of Zeno-based schemes. With realistic parameters ($\\chi/2\\pi = 4$ MHz, $K/2\\pi = 4$ kHz, $T_1 = 1$ ms), the gate achieves logical error rates below $10^{-6}$ per cycle in a distance-7 repetition code with 13 cat qubits.",
+  "motivation": "Cat qubits offer exponentially suppressed bit-flip errors while maintaining only polynomial phase-flip growth, making them attractive for hardware-efficient quantum error correction, but existing bias-preserving CNOT gates rely on engineered dissipation and suffer non-adiabatic phase errors.",
+  "method": "The CNOT is implemented via a controlled-SWAP$^2$ where a cross-Kerr interaction $\\chi \\hat{a}_c^\\dagger \\hat{a}_c \\hat{b}^\\dagger \\hat{b}$ between control cat and auxiliary bin mode conditionally activates a resonant beam-splitter driving the target-bin pair. The gate uses $\\chi$-echo and displacement-echo protocols with Gaussian pulse shaping and DRAG corrections to suppress coherent and dissipative errors.",
+  "result": "At $n̄ = 10$ (cat photon number), the gate achieves control and target bit-flip errors of $\\lesssim 10^{-7}$ and control phase-flip of $\\sim 10^{-3}$ (dominated by $T_1$ loss), enabling sub-$10^{-6}$ logical error rates at distance-7 with $T_{CX} = 400$ ns including displacement echo.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

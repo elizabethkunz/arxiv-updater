@@ -1,0 +1,570 @@
+{
+  "date": "2026-03-16",
+  "n_fetched": 104,
+  "papers": [
+    {
+      "id": "2603.13460",
+      "title": "Characterization of Radiation-Induced Errors in Superconducting Qubits Protected with Various Gap-Engineering Strategies",
+      "authors": [
+        "H. Douglas Pinckney",
+        "Thomas McJunkin",
+        "Alan W. Hunt",
+        "Patrick M. Harrington",
+        "Hannah P. Binney",
+        "Max Hays",
+        "Yenuel Jones-Alberty",
+        "Kate Azar",
+        "Felipe Contipelli",
+        "Renée DePencier Piñero",
+        "Jeffrey M. Gertler",
+        "Michael Gingras",
+        "Aranya Goswami",
+        "Cyrus F. Hirjibehedin",
+        "Mingyu Li",
+        "Mathis Moes",
+        "Bethany M. Niedzielski",
+        "Mallika T. Randeria",
+        "Ryan Sitler",
+        "Matthew K. Spear",
+        "Hannah Stickler",
+        "Jiatong Yang",
+        "Wouter Van De Pontseele",
+        "Mollie E. Schwartz",
+        "Jeffrey A. Grover",
+        "Kevin Schultz",
+        "Kyle Serniak",
+        "Joseph A. Formaggio",
+        "William D. Oliver"
+      ],
+      "abstract": "Impacts from high-energy particles cause correlated errors in superconducting qubits by increasing the quasiparticle density in the vicinity of the Josephson junctions (JJs). Such errors are particularly harmful as they cannot be easily remedied via conventional error correcting codes. Recent experiments reduced correlated errors by making the difference in superconducting gap energy across the JJ larger than the qubit transition energy. In this work, we assess gap engineering near the JJ ($δΔ_{\\mathrm{JJ}}$) and the capacitor/ground-plane ($δΔ_{\\mathrm{M1}}$) by exposing arrays of transmon qubits to two sources of radiation. For $α$-particles from an $^{241}$Am source, we observe $T_1$ errors correlated in space and time, supporting a hypothesis that hadronic cosmic rays are a major contributor to the $10^{-10}$ error floor observed in Ref. 1. For electrons from a pulsed linear accelerator, we observe temporally correlated $T_1$ and $T_2$ errors, this measurement is insensitive to spatial correlations. We observe that the severity of correlated $T_1$ errors is reduced for qubit arrays with a greater degree of gap engineering at the JJ. For both $T_1$ and $T_2$ errors, the recovery time is hastened by an increased $δΔ_{\\mathrm{M1}}$, which we attribute to the trapping of quasiparticles into the capacitor/ground-plane. We construct a model of quasiparticle dynamics that qualitatively agrees with our observations. This work reinforces the multifaceted influence of radiation on superconducting qubits and provides strategies for improving radiation resilience.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall",
+        "physics.ins-det"
+      ],
+      "published": "2026-03-13",
+      "score": 0.9784007579736531,
+      "similar_to": [
+        {
+          "title": "Correlated Phase Error Bursts in a Gap-Engineered Superconducting Qubit Array",
+          "id": null,
+          "similarity": 0.9354898929595947
+        },
+        {
+          "title": "Resisting high-energy impact events through gap engineering in superconducting qubit arrays",
+          "id": "2402.15644",
+          "similarity": 0.9256051182746887
+        }
+      ],
+      "summary": {
+        "summary": "Radiation-induced correlated errors in transmon qubits are characterized using $^{241}$Am α-particles (5.5 MeV) and a pulsed 10–20 MeV electron linac, showing that gap engineering at both the Josephson junction ($δΔ_\\mathrm{JJ}$) and capacitor/ground-plane interface ($δΔ_\\mathrm{M1}$) mitigates but does not eliminate radiation sensitivity. A coupled quasiparticle dynamics model qualitatively reproduces the observed $T_1$, $T_2$, and transient frequency shifts across different gap profiles and junction orientations.",
+        "motivation": "Recent QEC experiments observe a $10^{-10}$ error floor attributed to hadronic cosmic rays, and gap engineering at the JJ has reduced but not eliminated correlated errors; this work systematically characterizes radiation resilience across multiple gap profiles and energy scales to identify limiting mechanisms and design strategies.",
+        "method": "Three transmon qubit arrays with different gap profiles (No-JJ-GE, JJ-Only with $δΔ_\\mathrm{JJ}/h = 10$ GHz, and JJ&M1 with $δΔ_\\mathrm{JJ}/h = 7$ GHz and $δΔ_\\mathrm{M1}/h = 3$ GHz) were exposed to 5.5 MeV α-particles via collimated $^{241}$Am and to 14.5–1000 keV electron depositions at the CLIQUE facility, with heralded measurements of relaxation/excitation rates and Ramsey spectroscopy detecting transient frequency shifts and QP-driven state transitions.",
+        "result": "Larger $δΔ_\\mathrm{JJ}$ suppresses peak relaxation error rates (JJ-Only 3× lower than JJ&M1 at 145–435 keV), while larger $δΔ_\\mathrm{M1}$ accelerates recovery by an order of magnitude for frequency shifts by trapping QPs in the base metal; sub-MeV radiation still causes detectable errors, and qubit temperature transiently reaches 175 mK with $∼100$ µs relaxation recovery and $∼1$ ms frequency-shift recovery in JJ-engineered devices.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.12367",
+      "title": "Absence of Charge Offset Drift in a Transmon Qubit",
+      "authors": [
+        "Adria Rospars",
+        "Hector Hutin",
+        "Yannick Seis",
+        "Cristóbal Lledó",
+        "Réouven Assouly",
+        "Romain Cazali",
+        "Rémy Dassonneville",
+        "Ambroise Peugeot",
+        "Alexandre Blais",
+        "Audrey Bienfait",
+        "Benjamin Huard"
+      ],
+      "abstract": "Superconducting quantum circuits are sensitive to their electrostatic environment: uncontrolled charges accumulating on the electrodes of a Josephson junction shift the energy levels of a qubit, perturbing its operation and restricting their design. This effect is captured by a single parameter - the charge offset - whose slow, unpredictable drift has proven difficult to eliminate in practice. Here, we report a tantalum-based transmon qubit in which the charge offset remains pinned at zero over nearly three months of measurements, including two thermal cycles, with no observable compromise to the qubit lifetime. This exceptional stability disappears in later cooldowns, indicating a fragile mechanism at play. We attribute it to the inductance of a thin superconducting layer inadvertently formed in parallel with the Josephson junction during fabrication. X-ray surface spectroscopy suggests this layer arises from an incomplete wet-etch of tantalum on sapphire. Deliberately engineering such a layer offers a route to eliminating charge-offset drift in superconducting circuits more broadly.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-03-12",
+      "score": 0.9776405485857618,
+      "similar_to": [
+        {
+          "title": "Direct Dispersive Monitoring of Charge Parity in Offset-Charge-Sensitive Transmons",
+          "id": "1903.00113",
+          "similarity": 0.8752635717391968
+        },
+        {
+          "title": "Charge insensitive qubit design derived from the Cooper pair box",
+          "id": null,
+          "similarity": 0.8605467081069946
+        }
+      ],
+      "summary": {
+        "summary": "A tantalum-based transmon qubit exhibits an exceptionally stable charge offset $n_g$ pinned at zero for nearly three months across two thermal cycles with $T_1 = 21$–$24$ µs, a phenomenon attributed to an incomplete wet-etch of tantalum on sapphire creating a highly inductive ($L > 20$ µH) or resistive ($R \\gg 0.2$ GΩ) path in parallel with the Josephson junction. The charge offset stability was fragile and disappeared in later cooldowns, but deliberately engineering such a parallel layer could eliminate charge-offset drift in superconducting circuits.",
+        "motivation": "Charge-offset drift $n_g$ in transmons, driven by environmental fluctuations, limits readout speed and constrains device design; all prior measurements show $n_g$ drifting on minute-to-hour timescales.",
+        "method": "Continuous Ramsey spectroscopy on the $3$–$4$ transition ($f_{34}$, charge dispersion $\\Delta f_{34} = 2.0$ MHz) tracked $n_g$ fluctuations via splitting between even and odd quasiparticle parity states; surface analysis by EDX and XPS revealed tantalum residue in nominally etched regions.",
+        "result": "During runs 17–18, $n_g$ remained pinned at $0 \\pm 0.06$ with linewidth-limited fluctuation bound of 0.08 MHz; after thermal cycling and sample-holder reinspection in run 20, $n_g$ drifted with $1/f^2$ spectral density $S_{n_g}(0.1 \\text{ mHz}) = 0.8$ e²/Hz, slower than typical but indicating loss of the stabilizing mechanism.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.13183",
+      "title": "Quantifying surface losses in superconducting aluminum microwave resonators",
+      "authors": [
+        "Elizabeth Hedrick",
+        "Faranak Bahrami",
+        "Alexander C. Pakpour-Tabrizi",
+        "Atharv Joshi",
+        "Q. Rumman Rahman",
+        "Ambrose Yang",
+        "Ray D. Chang",
+        "Matthew P. Bland",
+        "Apoorv Jindal",
+        "Guangming Cheng",
+        "Nan Yao",
+        "Robert J. Cava",
+        "Andrew A. Houck",
+        "Nathalie P. de Leon"
+      ],
+      "abstract": "The recent realization of millisecond-scale coherence with tantalum-on-silicon transmon qubits showed that depositing the Al/AlOx/Al Josephson junction in a high purity, ultrahigh vacuum environment was critical for achieving lifetime-limited coherence, motivating careful examination of the aluminum surface two-level system (TLS) bath. Here, we measure the microwave absorption arising from surface TLSs in superconducting aluminum resonators, following methodology developed for tantalum resonators. We vary film and surface properties and correlate microwave measurements with materials characterization. We find that the lifetimes of superconducting aluminum resonators are primarily limited by surface losses associated with TLSs in the 2.7 nm-thick native AlOx. Treatment with 49% HF removes surface AlOx completely; however, rapid oxide regrowth limits improvements in surface loss and long term device stability. Using these measurements we estimate that TLSs in aluminum interfaces contribute around 27% of the relaxation rate of state-of-the-art tantalum-on-silicon qubits that incorporate aluminum-based Josephson junctions.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-03-13",
+      "score": 0.9742770727677956,
+      "similar_to": [
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.9041650295257568
+        },
+        {
+          "title": "Reducing TLS loss in tantalum CPW resonators using titanium sacrificial layers",
+          "id": "2601.16369",
+          "similarity": 0.8875710964202881
+        }
+      ],
+      "summary": {
+        "summary": "This work measures microwave absorption from surface two-level systems in superconducting aluminum resonators and correlates losses with materials characterization, finding that the native 2.7 nm AlOx layer dominates losses with a loss tangent of $(1.74 ± 0.7) × 10^{-2}$, over three times higher than tantalum oxide. HF treatment reduces oxide thickness to 1.9 nm and lowers loss by a factor of 1.8, but rapid oxide regrowth and fabrication residues limit improvements, with Al interfaces estimated to contribute 27% of relaxation in state-of-the-art Ta-on-Si qubits incorporating Al Josephson junctions.",
+        "motivation": "Recent millisecond-scale coherence demonstrations in tantalum-on-silicon transmons motivate detailed characterization of the aluminum oxide two-level system bath, since these qubits still use traditional Al/AlOx/Al Josephson junctions deposited in ultrahigh vacuum environments.",
+        "method": "Power and temperature-dependent quality factor measurements on 40 CPW resonators with varied deposition conditions (200°C, 25°C, −72°C), fabrication methods (wet-etch, dry-etch, liftoff), and post-fabrication treatments (HF acid, H₂O₂) were correlated with X-ray diffraction, transmission electron microscopy, atomic force microscopy, and X-ray photoelectron spectroscopy to isolate TLS loss contributions from different interfaces.",
+        "result": "Untreated Al resonators yield surface loss tangent $(3.19 ± 0.22) × 10^{-3}$; 49% HF treatment achieves $(1.77 ± 0.08) × 10^{-3}$ (40% reduction), approaching piranha-treated Ta performance of $(1.59 ± 0.07) × 10^{-3}$. Loss budgeting attributes 52.4% to AlOx, 27.7% to fabrication residues, and 19.8% to metal-substrate and substrate-air interfaces; the junction barrier oxide is inferred to be four orders of magnitude lower in loss tangent, suggesting rare strongly-coupled TLS occupancy in small-area junctions.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.13114",
+      "title": "Experimental realization of a $\\cos(2\\varphi)$ transmon qubit",
+      "authors": [
+        "Erwan Roverc'h",
+        "Alvise Borgognoni",
+        "Marius Villiers",
+        "Kyrylo Gerashchenko",
+        "W. Clarke Smith",
+        "Christopher Wilson",
+        "Benoit Douçot",
+        "Alexandru Petrescu",
+        "Philippe Campagne-Ibarcq",
+        "Zaki Leghtas"
+      ],
+      "abstract": "Superconducting circuits with embedded symmetries are good candidates to robustly protect quantum information from dominant error channels. The $\\cos(2\\varphi)$ qubit, consisting of an island shunted to ground through a tunneling element that selectively transmits pairs of Cooper pairs, leverages charge-parity symmetry to protect from charge-induced errors. In this experiment, we observe a doublet of states of opposite Cooper-pair parity split by $13.6~\\mathrm{MHz}$. Operating in a soft-transmon regime, this splitting is two orders of magnitude smaller than in previous implementations, pushing charge-induced losses well beyond the measured coherence times. Despite the low transition frequency, we demonstrate coherent qubit control, single-shot readout, and resolve quantum jumps. Charge protection of the qubit is evidenced by a $100-$fold suppression of the island charge matrix element compared to the unprotected plasmon transition, placing dielectric loss limits above $10~\\mathrm{ms}$. The measured $T_1 = 70~μ\\mathrm{s}$ and $T_2^\\mathrm{echo}= 2.5~μ\\mathrm{s}$ are instead limited by $1/f$ flux noise in the tunnelling element's loop. This experiment shows that pushing Cooper-pair pairing in the transmon regime sets high limits on charge-induced losses while preserving coherent control and single-shot readout of the low-frequency qubit. We identify flux noise as the dominant remaining limitation, calling for gradiometric designs or novel $4e$-tunneling elements.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-03-13",
+      "score": 0.9699047127592987,
+      "similar_to": [
+        {
+          "title": "Distinguishing parity-switching mechanisms in a superconducting qubit",
+          "id": "2204.07458",
+          "similarity": 0.8783034086227417
+        },
+        {
+          "title": "Direct Dispersive Monitoring of Charge Parity in Offset-Charge-Sensitive Transmons",
+          "id": "1903.00113",
+          "similarity": 0.87668377161026
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates a $\\cos(2\\varphi)$ transmon qubit using a KITE (Kinetic Interference co-Tunneling Element) operating in the soft transmon regime with qubit frequency $\\omega_q/2\\pi = 13.6$ MHz and $\\mathcal{E}_{J2}/\\mathcal{E}_C = 22$, achieving charge protection via Cooper-pair-parity symmetry. The measured $T_1 = 70$ µs and $T_2^\\mathrm{echo} = 2.5$ µs are limited by $1/f$ flux noise ($A_\\Phi = 5.6$ µ$\\Phi_0$/Hz) rather than dielectric loss, with a 100-fold suppression of the charge matrix element demonstrating protection at a level that places dielectric decay limits above 10 ms.",
+        "motivation": "Protected qubits with embedded symmetries reduce dominant error channels, and the $\\cos(2\\varphi)$ qubit leverages charge-parity symmetry to suppress charge noise; however, previous implementations either operated in the light Cooper-pair-box regime (broad 4 GHz charge dispersion) or only demonstrated control between plasmonic transitions away from the symmetry point.",
+        "method": "A superconducting device consisting of a 0.2 mm$^2$ niobium island shunted through a KITE element composed of two small junctions and superinductive arrays (150 junctions per arm) was fabricated on silicon and measured in a dilution refrigerator with cQED readout at 4.3 GHz. The KITE selectively transmits Cooper-pair doublets, creating a $\\cos(2\\varphi)$ potential; control and readout exploited residual asymmetry (3% relative mismatch) for coupling to the charge drive line.",
+        "result": "Single-shot readout achieved 83% fidelity in 5 µs integration (effective temperature 400 µK); coherent Rabi oscillations demonstrated control with $\\Omega_\\mathrm{Rabi} = 2\\pi \\times 1$ MHz, Ramsey decay $T_2^\\mathrm{Ramsey} = 1.4$ µs; charge protection suppressed the island charge matrix element to $1.3 \\times 10^{-2}$ (vs. $2.2$ for unprotected plasmon transition), with theory predictions from Eq. (3) placing dielectric-induced decay limits above 10 ms compared to measured $T_1$ limited by flux noise.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.13174",
+      "title": "Beta Tantalum Transmon Qubits with Quality Factors Approaching 10 Million",
+      "authors": [
+        "Atharv Joshi",
+        "Apoorv Jindal",
+        "Paal H. Prestegaard",
+        "Faranak Bahrami",
+        "Elizabeth Hedrick",
+        "Matthew P. Bland",
+        "Tunmay Gerg",
+        "Guangming Cheng",
+        "Nan Yao",
+        "Robert J. Cava",
+        "Andrew A. Houck",
+        "Nathalie P. de Leon"
+      ],
+      "abstract": "Tantalum-based transmon qubits are a promising platform for building large-scale quantum processors. So far, these qubits have been made from tantalum films grown exclusively in the alpha phase (α-Ta). The beta phase of tantalum (\\{beta}-Ta) readily nucleates at room temperature, making it attractive for scalable qubit fabrication. However, \\{beta}-Ta is widely believed to be detrimental to qubit performance because it has a lower superconducting critical temperature than α-Ta. We challenge this prevailing belief by fabricating low-loss transmon qubits from \\{beta}-Ta films on sapphire. Across 11 qubits, the mean time-averaged quality factor is (5.6 +/- 2.3) x 10^6, with the best qubit recording a time-averaged quality factor of (10.1 +/- 1.3) x 10^6. Resonator studies demonstrate that the dominant microwave loss channel is surface two-level systems, with the surface loss contribution for \\{beta}-Ta being about twice that of α-Ta. \\{beta}-Ta films exhibit significant kinetic inductance, consistent with an estimated magnetic penetration depth of (1.78 +/- 0.02) μm. This work establishes \\{beta}-Ta on sapphire as a material platform for realizing low-loss transmon qubits and other superconducting devices such as compact resonators, kinetic inductance detectors, and quasiparticle traps.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-03-13",
+      "score": 0.9662581395994336,
+      "similar_to": [
+        {
+          "title": "Beta Tantalum Transmon Qubits with Quality Factors Approaching 10 Million",
+          "id": "2603.13174",
+          "similarity": 0.9957712888717651
+        },
+        {
+          "title": "Tantalum as a base material for superconducting integrated circuits",
+          "id": "2606.13750",
+          "similarity": 0.8758963346481323
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates that $\\beta$-Ta transmon qubits on sapphire achieve quality factors approaching $10^7$, with the best qubit recording $Q = (10.1 \\pm 1.3) \\times 10^6$ and mean $Q$ across 11 qubits of $(5.6 \\pm 2.3) \\times 10^6$, challenging the assumption that the low $T_c = 0.7$ K of $\\beta$-Ta is detrimental to qubit performance. Surface two-level systems dominate losses with apparent loss tangent $\\tan\\delta = (1.6 \\pm 0.1) \\times 10^{-3}$ (twice that of $\\alpha$-Ta), while $\\beta$-Ta films exhibit large kinetic inductance with magnetic penetration depth $\\lambda = (1.78 \\pm 0.02)$ µm and sheet kinetic inductance up to $259$ pH$/\\square$, enabling compact device designs.",
+        "motivation": "$\\beta$-Ta nucleates readily at room temperature unlike $\\alpha$-Ta, making it attractive for scalable qubit fabrication, but its lower superconducting critical temperature has been considered detrimental despite sparse and inconsistent experimental evidence comparing microwave losses in the two phases.",
+        "method": "The authors fabricated transmon qubits and coplanar waveguide and lumped-element resonators from room-temperature-deposited $\\beta$-Ta films on sapphire, characterized kinetic inductance via frequency shifts and resonator gap-width dependence, and performed power-temperature sweeps of internal quality factor to decompose losses from TLSs, thermal quasiparticles, and other channels.",
+        "result": "Across 11 qubits with $f_q = 2.6$–$5.8$ GHz, mean relaxation time was $(264 \\pm 165)$ µs and mean Hahn echo coherence was $(214 \\pm 80)$ µs; surface TLS losses account for $\\sim 98\\%$ of total losses at millikelvin temperatures, enabling performance competitive with Al, Nb, and $\\alpha$-Ta qubits.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.13124",
+      "title": "On-Demand Correlated Errors in Superconducting Qubits from a Particle Accelerator",
+      "authors": [
+        "Thomas McJunkin",
+        "A. W. Hunt",
+        "Yenuel Jones-Alberty",
+        "T. M. Haard",
+        "M. K. Spear",
+        "James Shackford",
+        "Tom Gilliss",
+        "Mayra Amezcua",
+        "C. A. Watson",
+        "T. M. Sweeney",
+        "J. A. Hoffmann",
+        "Kevin Schultz"
+      ],
+      "abstract": "Ionizing radiation is a known source of correlated errors in superconducting quantum processors, inhibiting the functionality of quantum error correction surface codes. High-energy photons and charged particles deposit pair-breaking energy into these systems leading to excess quasiparticles near Josephson junctions that increase qubit decoherence. Previous investigations of this problem have relied on ambient, stochastic sources of ionizing radiation or alternative methods of quasiparticle generation. Here, we present a facility that couples an electron linear accelerator (linac) to a dilution refrigerator to study ionizing radiation in quantum systems. A single linac electron closely mimics the energy deposition characteristics of a typical cosmic-ray muon, and we demonstrate the facility's usefulness with a multi-qubit superconducting transmon chip. Characteristic radiation-induced relaxation errors are quickly and easily collected with the speed and timing information of the linac. Additionally, we present qubit excitation and detuning errors that can be difficult to detect without the on-demand source of ionizing radiation. These error signatures are shown to be dependent on the junction placement and surrounding superconducting gaps.",
+      "categories": [
+        "quant-ph",
+        "nucl-ex"
+      ],
+      "published": "2026-03-13",
+      "score": 0.9326023507458469,
+      "similar_to": [
+        {
+          "title": "Correlated Charge Noise and Relaxation Errors in Superconducting Qubits",
+          "id": "2012.06029",
+          "similarity": 0.9027562141418457
+        },
+        {
+          "title": "Resolving catastrophic error bursts from cosmic rays in large arrays of superconducting qubits",
+          "id": "2104.05219",
+          "similarity": 0.9009202122688293
+        }
+      ],
+      "summary": {
+        "summary": "This work presents CLIQUE, a facility coupling an 18.5 MeV electron linear accelerator to a dilution refrigerator to study on-demand ionizing radiation effects in superconducting qubits, and demonstrates radiation-induced relaxation, excitation, detuning, and dephasing errors in a nine-qubit transmon chip with energy deposition closely matching cosmic-ray muons. Single linac electrons enable precise timing and rapid event statistics collection, revealing junction-orientation-dependent error signatures with low-gap-island qubits showing relaxation decay times of 6–9 ms versus 300–400 μs for high-gap-island qubits.",
+        "motivation": "Ionizing radiation from cosmic-ray muons creates correlated errors across multiple qubits and threatens quantum error correction surface codes, but previous studies relied on stochastic ambient radiation sources or alternative quasiparticle generation methods that lack timing resolution or may not faithfully reproduce actual radiation effects.",
+        "method": "A pulsed 18.5 MeV electron beam from a medical linear accelerator was directed at a multi-qubit transmon chip inside a dilution refrigerator, with sub-10 μs timing synchronization to the quantum control system and a scintillation detector for fluence monitoring; qubit states were measured following preparation with varying detection delays to capture relaxation, excitation, detuning, and dephasing errors.",
+        "result": "Relaxation error amplitudes $A_{rel}$ ranged from 272–611 kHz with decay times $\\tau_{rel}$ of 6.2–9.1 ms for low-gap-island qubits versus 370–414 kHz and 283–414 μs for high-gap-island qubits; detuning errors persisted 2–3× longer than relaxation errors, and a two-level rate model with exponentially decaying $\\Gamma_{rel}$ and $\\Gamma_{exc}$ successfully captured the competing error dynamics across all qubits and detection delays from 200 ns to 12 μs.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.13175",
+      "title": "Fluxon Time-Delay Readout of a Superconducting Qubit Protected by a Spectral Gap in a Josephson Transmission Line",
+      "authors": [
+        "Shunsuke Kamimura",
+        "Aree Taguchi",
+        "Masamitsu Tanaka",
+        "Tsuyoshi Yamamoto"
+      ],
+      "abstract": "We theoretically investigate a readout scheme of the quantum state of a superconducting qubit based on time delay of a single flux quantum (SFQ), also known as a fluxon, propagating in a Josephson transmission line (JTL). We concretely study the time-delay readout based on capacitive coupling between a transmon qubit and a JTL, and we evaluate the time delay depending on the qubit state. We also reveal a feature of the absence of fluxon pinning and exponential suppression of nonadiabatic transitions caused by the propagating fluxon, which is advantageous for the time-delay readout. We extend the analysis to a multi-level transmon as well. Owing to the spectral gap in the JTL, the radiative decay of the qubit mediated by the JTL is exponentially suppressed, and thus the transmission line itself also serves as a filter protecting the qubit. The readout scheme requires neither complicated wiring to low-temperature stages nor bulky microwave components, which are bottlenecks for integration of a large-scale superconducting quantum computer.",
+      "categories": [
+        "quant-ph",
+        "nlin.PS",
+        "physics.app-ph"
+      ],
+      "published": "2026-03-13",
+      "score": 0.9310536466930033,
+      "similar_to": [
+        {
+          "title": "The high-coherence fluxonium qubit",
+          "id": "1810.11006",
+          "similarity": 0.8504892587661743
+        },
+        {
+          "title": "The Flux Qubit Revisited to Enhance Coherence and Reproducibility",
+          "id": "1508.06299",
+          "similarity": 0.8490811586380005
+        }
+      ],
+      "summary": {
+        "summary": "This work theoretically investigates a readout scheme for transmon qubits based on time delay of single flux quanta (fluxons) propagating in Josephson transmission lines (JTLs) with capacitive coupling. The approach exploits the spectral gap in the JTL to exponentially suppress radiative decay and unwanted transitions while avoiding fluxon pinning, offering integration advantages over conventional dispersive readout.",
+        "motivation": "Current superconducting qubit readout relies on bulky microwave components, complicated cryogenic wiring, and large thermal loads that limit scalability of quantum computers. A readout scheme based on SFQ dynamics within low-temperature stages could mitigate these bottlenecks for large-scale quantum processors.",
+        "method": "The authors analyze capacitive coupling between a transmon qubit and a JTL using perturbation theory of sine-Gordon solitons (fluxons) in the classical regime. They derive time delays via Schrieffer–Wolff transformation for two-level and multi-level transmons, evaluate nonadiabatic transition probabilities using Fermi's golden rule, and model the JTL as a Klein–Gordon transmission line (KGTL) to compute radiative decay rates.",
+        "result": "For typical circuit parameters ($C_c = 10$ fF, $Z_J \\approx 7$ Ω, $u_0 = 0.01$), the time delay between qubit states reaches $T_d \\sim 1$ ns with exponentially suppressed nonadiabatic transition probabilities; radiative decay is suppressed as $\\gamma(\\omega_q) \\sim 87$ mHz for $\\alpha = 10^{-5}$ due to the $\\omega_p \\sim 360$ GHz spectral gap, and fluxon pinning is absent for arbitrarily slow fluxons under capacitive coupling.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.12327",
+      "title": "A Traveling-Wave Parametric Amplifier With Integrated Diplexers",
+      "authors": [
+        "C. Denney",
+        "K. Genter",
+        "K. Cicak",
+        "J. D. Teufel",
+        "J. Aumentado",
+        "F. Lecocq",
+        "M. Malnou"
+      ],
+      "abstract": "Traveling-Wave Parametric Amplifiers (TWPAs) are ubiquitous in superconducting circuit readout, providing high gain with near-quantum-limited noise performance across a wide bandwidth. Their operation, however, relies on a strong microwave pump tone that is typically delivered using off-chip passive components, such as directional couplers or diplexers. These external elements add loss, increase system complexity, and limit scalability. Here, we present a traveling-wave parametric amplifier that incorporates on-chip input and output diplexers for pump routing. This co-fabricated architecture offers a compact and scalable solution for superconducting-circuit readout.",
+      "categories": [
+        "quant-ph",
+        "physics.app-ph",
+        "physics.ins-det"
+      ],
+      "published": "2026-03-12",
+      "score": 0.8547029006472432,
+      "similar_to": [
+        {
+          "title": "A Traveling-Wave Parametric Amplifier With Integrated Diplexers",
+          "id": "2603.12327",
+          "similarity": 1.0000001192092896
+        },
+        {
+          "title": "A near-quantum-limited Josephson traveling-wave parametric amplifier",
+          "id": null,
+          "similarity": 0.8535166382789612
+        }
+      ],
+      "summary": {
+        "summary": "This work presents a traveling-wave parametric amplifier with integrated on-chip input and output diplexers for pump delivery and routing, eliminating external microwave components. The device achieves 13 dB broadband gain across 2 GHz (6–8 GHz signal band) with average system-added noise of 2 quanta, as measured by shot-noise tunnel junction calibration.",
+        "motivation": "Conventional TWPAs require off-chip directional couplers and diplexers for pump injection and filtering, adding loss, complexity, and limiting scalability in multiplexed superconducting-circuit readout architectures.",
+        "method": "A four-wave-mixing Josephson TWPA with niobium trilayer junctions ($I_c \\approx 5$ µA) and integrated fifth-order Chebyshev diplexers (crossover at 8.5 GHz, footprint ~300 µm × 300 µm) were co-fabricated on a single chip using amorphous-silicon-dielectric capacitors ($\\tan \\delta \\approx 4 \\times 10^{-4}$). The diplexers separate signal and idler paths, with a phase-matching resonator at 8.7 GHz inserted periodically in the shunt branch.",
+        "result": "At optimized pump power (−76.8 dBm at the TWPA input, 9.06 GHz), the device delivers 13 dB gain with a minimum chain-added noise of 2 quanta between 6–8 GHz; isolating the TWPA contribution yields $N_{\\mathrm{TWPA}} = 1.17 \\pm 0.14$ quanta at 7.74 GHz.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.12312",
+      "title": "Qubit measurement and backaction in a multimode nonreciprocal system",
+      "authors": [
+        "B. T. Miller",
+        "Lindsay Orr",
+        "A. Metelmann",
+        "F. Lecocq"
+      ],
+      "abstract": "High fidelity qubit readout is a cornerstone for quantum information protocols. In traditional superconducting qubit readout, a chain of microwave amplifiers and nonreciprocal components aid in detecting the qubit's state with tolerable added noise and backaction. However, the loss, size, and magnetic field of standard nonreciprocal components have sparked a decades-long search for more efficient and scalable alternatives. One prominent approach employs networks of parametrically coupled modes to achieve nonreciprocity. While this class of devices can be directly integrated with the qubit's readout cavity, current understanding of the resulting single quantum system is substantially lacking. Here we provide a first-principles theoretical tool to understand and design networks of linear modes integrated with embedded qubits. We utilize this theory to inform and analyze the experimental implementation of a qubit readout with an integrated three-mode nonreciprocal system. In doing so, we achieve excellent agreement between the experimental and theoretical qubit measurement and dephasing rates. We then theoretically analyze the same system operated as an integrated nonreciprocal amplifier, predicting high efficiency for reasonable experimental parameters.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-03-12",
+      "score": 0.712700499698124,
+      "similar_to": [
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.8630571961402893
+        },
+        {
+          "title": "Transmon qubit readout fidelity at the threshold for quantum error correction without a quantum-limited amplifier",
+          "id": "2208.05879",
+          "similarity": 0.8592478632926941
+        }
+      ],
+      "summary": {
+        "summary": "This paper develops a general theoretical framework for understanding qubit measurement and backaction in multimode nonreciprocal readout networks, and experimentally implements a three-mode parametric device to validate the theory. The work extends phase-space methods to handle arbitrary networks of linearly coupled modes with embedded qubits, demonstrating quantitative agreement between measured and predicted measurement rates and dephasing with no free parameters.",
+        "motivation": "Ferrite circulators limit scalability of superconducting quantum processors due to their size, loss, and magnetic field requirements. Networks of parametrically coupled modes offer a promising integrated alternative, but the coupled qubit-readout system lacks quantitative theoretical understanding needed for optimization.",
+        "method": "The authors develop a Wigner function formalism for computing qubit dephasing as parasitic and measurement-induced contributions from multimode Gaussian states, decomposing dephasing into terms depending on mode variance and displacement. They implement this theory in a hybrid device with a transmon qubit, a $\\lambda/4$ coaxial cavity (mode C), and a chip with amplifier (mode A) and buffer (mode B) modes coupled via a dc SQUID, characterizing all parameters via catch-and-release protocols and performing simultaneous $T_1$ and $T_2$ echo measurements.",
+        "result": "For the three-mode interferometer at $\\phi = \\pm\\pi/2$, measurement efficiency reached $\\eta \\approx 7\\%$ (limited by downstream added noise of $\\bar{n}_{\\mathrm{rest}} \\approx 5.24$ quanta), with excellent agreement between measured and theoretical $\\Gamma_{\\mathrm{meas}}$ and $\\Gamma_d$. Theory predicts that with gain ($\\mathcal{G}_{BB} = 20$ dB) the same device parameters yield $\\eta < 97.5\\%$ in the infinite-gain limit, constrained by cooperativities and stability criteria from Eq. (37): $\\mathcal{C}_\\lambda < 1 + \\mathcal{C}_{AB}$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.12391",
+      "title": "Hybrid Analog-Digital Simulation of the Abelian Higgs model",
+      "authors": [
+        "Muhammad Asaduzzaman",
+        "Rayleigh W. Parker",
+        "Noah Goss",
+        "Ahmed I. Mohamed",
+        "Max Neiderbach",
+        "Zane Ozzello",
+        "Ravi K. Naik",
+        "Alexander F. Kemper",
+        "Irfan Siddiqi",
+        "Yannick Meurice",
+        "Machiel S. Blok"
+      ],
+      "abstract": "To investigate gauge theories with near-term quantum computers warrants exploration of nontraditional quantum simulators to find resource-efficient simulation protocols and ultimately access exotic features of different field theories, including unexplored regimes of the QCD phase diagram. In this work, using superconducting transmon qutrit processors, we formulate and implement a pulse-based, three-level, hybrid analog-digital simulation protocol of the (1+1) dimensional Abelian Higgs model (AHM) on two sites. Alongside this approach, we experimentally realize a gate-based implementation of the same model. Using the natural mapping of the three-level truncation of the transmon Hilbert space to the spin-1 truncated AHM, we observe real time dynamics of AHM field observables, which are analogous to electric field operators, with both protocols. For the analog-digital protocol, we engineer a Floquet simulation with a combination of local analog drives, driven modification of the natural interaction Hamiltonian of the two transmons, and dynamical decoupling pulses. For the digital protocol, we use a state-of-the-art qutrit processor to implement a Trotterized simulation of the model incorporating advanced error mitigation techniques. We further discuss the scalability of the two approaches, and their potential to be extended to the simulation of other model Hamiltonians. Our experiments demonstrate a viable platform for future studies of spin-1 and SU(3) based gauge theory models on current and near-term transmon qutrit processors.",
+      "categories": [
+        "quant-ph",
+        "hep-lat"
+      ],
+      "published": "2026-03-12",
+      "score": 0.6883884671358417,
+      "similar_to": [
+        {
+          "title": "Engineering quantum criticality and dynamics on an analog-digital simulator",
+          "id": "2602.18555",
+          "similarity": 0.8199383020401001
+        },
+        {
+          "title": "Component-Level Inverse Design of Transmon Qubits Using Neural Networks",
+          "id": "2607.20795",
+          "similarity": 0.8104989528656006
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates hybrid analog-digital and fully digital quantum simulations of the (1+1)D Abelian Higgs model using superconducting transmon qutrits on two lattice sites. Both protocols observe real-time dynamics of electric-field-like observables ($L_z$ and $L_z^2$) by encoding the spin-1 truncated model naturally into the three-level Hilbert space of transmons.",
+        "motivation": "Investigating gauge theories on near-term quantum computers requires resource-efficient simulation protocols; qutrit platforms offer potential advantages over qubit-based approaches for spin-1 and SU(3)-structured models, but prior experimental demonstrations of qudit-based lattice field theory are extremely limited.",
+        "method": "The analog-digital protocol engineers a Floquet Hamiltonian via alternating local analog drives, Stark-modified cross-Kerr interactions, and dynamical decoupling $\\pi_{02}$ pulses to suppress unwanted entangling terms. The digital protocol implements Trotterized evolution using native single-qutrit rotations ($R_x^{01}$, $R_x^{12}$, $R_z^{01}$, $R_z^{12}$) and controlled-sum gates, achieving a fourfold reduction in entangling operations compared to qubit decomposition.",
+        "result": "Both protocols successfully observe AHM dynamics; the analog-digital approach shows agreement with Lindblad master equation models including measured $T_1$ and $T_2$ times (transmons: $T_1^{01} \\sim 26$–30 µs, $T_1^{12} \\sim 15$–17 µs), while the digital approach with randomized compilation and purification-based error mitigation recovers dynamics beyond shallow circuit depths and demonstrates scalability to 15-site chains in simulation.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9784,
+    0.9776,
+    0.9743,
+    0.9699,
+    0.9663,
+    0.9326,
+    0.9311,
+    0.8547,
+    0.7127,
+    0.6884,
+    0.685,
+    0.5535,
+    0.4749,
+    0.3581,
+    0.3113,
+    0.2791,
+    0.2734,
+    0.2732,
+    0.2709,
+    0.2649,
+    0.2471,
+    0.2307,
+    0.222,
+    0.1739,
+    0.1602,
+    0.1511,
+    0.1474,
+    0.1445,
+    0.1123,
+    0.1093,
+    0.1031,
+    0.1019,
+    0.1018,
+    0.0947,
+    0.0915,
+    0.0878,
+    0.0871,
+    0.0784,
+    0.0723,
+    0.0626,
+    0.0606,
+    0.0567,
+    0.0564,
+    0.0556,
+    0.0551,
+    0.055,
+    0.0512,
+    0.0499,
+    0.0496,
+    0.0443,
+    0.044,
+    0.0381,
+    0.0378,
+    0.0376,
+    0.0373,
+    0.0372,
+    0.0368,
+    0.0364,
+    0.0344,
+    0.0342,
+    0.0328,
+    0.0315,
+    0.0306,
+    0.0263,
+    0.0239,
+    0.021,
+    0.0209,
+    0.0206,
+    0.0205,
+    0.0193,
+    0.019,
+    0.0188,
+    0.0183,
+    0.0177,
+    0.016,
+    0.0157,
+    0.0154,
+    0.0148,
+    0.0146,
+    0.0142,
+    0.0142,
+    0.0137,
+    0.0132,
+    0.0114,
+    0.0113,
+    0.0106,
+    0.0101,
+    0.0099,
+    0.0098,
+    0.0096,
+    0.0092,
+    0.0082,
+    0.0081,
+    0.0077,
+    0.0071,
+    0.0064,
+    0.0062,
+    0.0061,
+    0.0056,
+    0.0042,
+    0.0038,
+    0.0036,
+    0.0035,
+    0.0028
+  ]
+}

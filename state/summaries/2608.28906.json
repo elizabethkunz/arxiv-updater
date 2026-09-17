@@ -1,0 +1,8 @@
+{
+  "summary": "This paper presents design techniques and compact models for a cryogenic CMOS readout ASIC (QNDR1) that combines a single electron transistor (SET) with integrated amplification for SiMOS quantum dot spin qubits. The work includes the first Verilog-A models for double-island and asymmetric-sensing-dot SETs, a 22 nm FDSOI cryogenic PDK at 3.8 K, and simulation results demonstrating $22.5$ to $106.2$ MV/A gain with input-referred noise of $32$ pA rms and power consumption dominated by preamplifier stages consuming $10$–$16$ µW.",
+  "motivation": "Scalable readout of silicon spin qubits requires integration of sensitive charge detection with cryogenic amplification to avoid bulky RF components and room-temperature interconnects, necessitating careful co-design of SETs with cryoCMOS circuits.",
+  "method": "Verilog-A compact models were developed for SISET (using MIB model), DISET, and ASD by fitting to published device data; cryogenic noise was estimated using shot noise with Fano factor $F=1.0$ and $10\\times$ scaling of flicker noise from room temperature; QNDR1 integrates two preamplifier variants (charge-sensitive and transimpedance), correlated double sampling, and optional digitization in 22 nm FDSOI.",
+  "result": "Preamplifier Version B achieved $106.2$ MV/A gain and $13.64$ µW power with $14.55$ V/V SNR; sensing current of $192$ pA ($3\\sigma$) with $1$ µs readout time; figure of merit improved substantially versus recent dc-SET ASICs, with simulation across three temperature corners (27°C, −195°C, 3.8 K) and five process corners.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

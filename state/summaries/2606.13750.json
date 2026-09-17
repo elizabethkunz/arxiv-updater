@@ -1,0 +1,8 @@
+{
+  "summary": "This review surveys tantalum as a superconducting thin-film material for quantum circuits, covering growth mechanisms, phase selection on various substrates, fabrication techniques, and performance in resonators and qubits. Key unresolved issues include the role of $\\eta$-phase impurities, HF effects on circuit characteristics, and anomalous low-temperature behavior of $\\alpha$-tantalum.",
+  "motivation": "Tantalum has recently demonstrated breakthrough coherence performance in superconducting microwave resonators and qubits compared to conventional aluminum and niobium, motivating systematic study of its material properties and fabrication.",
+  "method": "The authors review recent work on tantalum thin-film growth, crystalline phase selection mechanisms across different substrates, superconducting circuit fabrication and performance, and first-principles theoretical modeling of the material.",
+  "result": "Tantalum exhibits distinctive cryogenic behavior not observed in aluminum or niobium circuits, but several open questions remain about $\\eta$-phase impurity effects, HF-induced degradation mechanisms, and the nature of $\\alpha$-tantalum anomalies at low temperatures.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

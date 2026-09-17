@@ -1,0 +1,8 @@
+{
+  "summary": "Starting from a quantum-geometric description of Faraday induction, the paper derives how magnetic sources (surface or substrate spins, and current-carrying flux lines) couple to thin-film superconducting circuits with realistic geometry. The main finding is that flux noise limits the qubit quality factor as well as dephasing, even for qubits with no loop: if surface spins cause the universal $1/f$ flux noise, the limit lies between about $10^{8}$ and $10^{10}$, not far above today's record quality factors of $10^{7}$ to $10^{8}$.",
+  "motivation": "Flux noise is a leading dephasing mechanism for flux-tunable qubits, yet its microscopic description is incomplete and induction effects have only recently been considered. Fixed-frequency qubits are usually assumed to be immune.",
+  "method": "The coupling of time-varying magnetic dipoles and of flux lines to the junction bridges and capacitor pads is derived analytically, including the limits of reciprocity arguments. The resulting relaxation rate is evaluated for surface-spin ensembles and for nearby flux-bias lines.",
+  "result": "The quality-factor limit of $10^{8}$ to $10^{10}$ may fall by at least another order of magnitude, depending on the spin-spin correlation length, because of a long-range contribution from the transmon capacitor wings. For flux lines there is a minimum safe distance to the qubit, which the capacitor wings increase by lensing the electromotive field, an effect separate from Meissner flux focusing.",
+  "source": "full text",
+  "generated_by": "Claude, written in-session from the full text (not via the script's API path)"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "This paper develops a framework for learning physical and logical error rates in fault-tolerant quantum circuits directly from syndrome data using the spacetime code formalism. The method achieves polynomial sample complexity for learning logical error rates even when they are exponentially suppressed by code distance, providing an exponential advantage over direct logical measurements.",
+  "motivation": "Characterizing physical noise and verifying logical circuit performance are critical for scaling fault-tolerant quantum computers, yet current benchmarking methods require pre-calibration or exponential samples when logical error rates are suppressed.",
+  "method": "The authors map fault-tolerant Clifford circuits to subsystem codes via circuit-to-code mapping, establish necessary and sufficient learnability conditions for Pauli noise from syndrome data using transformed eigenvalue bases and syndrome matrices, and provide algorithms for estimating both syndrome class error rates and individual physical errors with extra constraints.",
+  "result": "Using syndrome data from simulated and experimental fault-tolerant circuits on superconducting platforms, the method learns syndrome class error rates with near-constant sample complexity for qLDPC codes under local sparse noise, and achieves polynomial sample complexity $N = \\tilde{\\mathcal{O}}(n^2 T^2 \\eta_L^{-2} P_{C_{\\mathrm{min}}}^{-2})$ for logical error learning—exponentially better than $\\eta_L^{-2} P_{\\mathrm{fail}}^{-1}$ from direct logical measurements.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

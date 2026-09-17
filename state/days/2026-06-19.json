@@ -1,0 +1,366 @@
+{
+  "date": "2026-06-19",
+  "n_fetched": 111,
+  "papers": [
+    {
+      "id": "2606.20501",
+      "title": "Fidelity bounds for adiabatic gates and other quantum operations with time-dependent dissipation",
+      "authors": [
+        "Simon Pettersson Fors",
+        "Aniket Patel",
+        "Anton Frisk Kockum",
+        "Tahereh Abad"
+      ],
+      "abstract": "As quantum-computing platforms are susceptible to noise, the fidelity of quantum operations is limited by decoherence. Understanding this limitation is crucial for building utility-scale quantum processors. In previous works [Phys. Rev. Lett. 129, 150504 (2022); Quantum 9, 1684 (2025)], we presented analytical formulae for the average gate fidelity of multi-qubit operations under static Markovian noise processes, including operations that temporarily leave the computational subspace. However, some quantum-computing architectures dynamically modulate qubit or coupler frequencies to implement two-qubit gates, e.g., baseband flux gates; such modulation can lead to dissipation rates varying in time. In this Letter, we therefore generalize the fidelity-reduction formulae to encompass time-dependent dissipation. Applying our generalized formula, we obtain a fidelity bound for adiabatic operations and demonstrate that flux-dependent noise sensitivity, combined with qubit-coupler hybridization, significantly reduces the fidelity of adiabatic controlled-Z (CZ) gates in superconducting quantum computers. Our work thus provides essential theoretical tools for evaluating error budgets and optimizing the design of quantum operations in tunable quantum-computing architectures, and may also find applications in quantum-sensing and quantum-communication protocols that are affected by time-dependent dissipation.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-18",
+      "score": 0.6660703333703769,
+      "similar_to": [
+        {
+          "title": "Manufacturing low dissipation superconducting quantum processors",
+          "id": "1901.08042",
+          "similarity": 0.86949622631073
+        },
+        {
+          "title": "Erasure qubits: Overcoming the $T_1$ limit in superconducting circuits",
+          "id": "2208.05461",
+          "similarity": 0.8686773777008057
+        }
+      ],
+      "summary": {
+        "summary": "This Letter generalizes analytical fidelity-reduction formulae from static to time-dependent Markovian dissipation, enabling prediction of average gate fidelity for quantum operations where decoherence rates vary during execution. Application to adiabatic controlled-Z gates in superconducting circuits reveals that flux-dependent noise sensitivity and qubit-coupler hybridization significantly degrade fidelity in tunable architectures.",
+        "motivation": "Baseband flux gates in superconducting quantum computers dynamically modulate qubit or coupler frequencies, causing dissipation rates to become time-dependent, but existing analytical fidelity formulae assume static noise and thus fail for these increasingly common tunable architectures.",
+        "method": "The authors extend the Lindblad master equation framework with time-dependent dissipative rates $\\Gamma_k(t)$ and expand the average gate fidelity $\\bar{F}$ to first order in the small parameter $\\bar{\\Gamma}_k \\tau$, showing that each dissipative process contributes independently via time-dependent jump operators $\\hat{L}(t)$ evolved in the Heisenberg picture.",
+        "result": "The generalized fidelity formula $\\bar{F} = 1 + \\sum_k \\int_0^\\tau dt\\, \\Gamma_k(t)\\, \\delta F[\\hat{L}_k(t)]$ provides a rigorous bound for adiabatic operations, revealing that interplay between parameter-dependent noise channels and mode hybridization fundamentally restricts achievable fidelity in flux-tuned superconducting quantum computers.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.20317",
+      "title": "Highly crystalline superconducting TiN resonators grown on thermally reconstructed sapphire",
+      "authors": [
+        "Thomas J. Smart",
+        "Marc Neis",
+        "Janine Lorenz",
+        "Marcello P. Guardascione",
+        "Roudy Hanna",
+        "Michael Schleenvoigt",
+        "Yuan Gao",
+        "Joscha Domnick",
+        "Benjamin Bennemann",
+        "Abdur Rehman Jalil",
+        "Jin Hee Bae",
+        "Harsh Bhardwaj",
+        "F. Stefan Tautz",
+        "Felix Lüpke",
+        "Detlev Grützmacher",
+        "Rami Barends",
+        "Pavel A. Bushev",
+        "Peter Schüffelgen"
+      ],
+      "abstract": "High quality crystalline growth of a thin film on sapphire requires sufficient substrate preparation, often achieved via the use of aggressive chemical cleaning. Direct thermal reconstruction of the sapphire substrate via a CO$_2$ laser beam may allow for an alternative way to prepare the substrate for epitaxy without the use of any chemical processing. Within this work, we demonstrate that thermal annealing of sapphire into its ($\\sqrt{31}$$\\times$$\\sqrt{31}$)$R$$\\pm$9° reconstruction is a valid alternative preparation technique for sapphire substrates. TiN films grown via plasma-assisted molecular beam epitaxy upon these substrates exhibit greater crystallinity than those grown on chemically cleaned sapphire substrates. Superconducting resonators fabricated from these films exhibit similar performance, with many possessing internal quality factors at single photon levels greater than 10$^6$ for both substrate preparation methods.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-06-18",
+      "score": 0.6029148357216452,
+      "similar_to": [
+        {
+          "title": "High-Q superconducting microwave resonators using MBE titanium nitride",
+          "id": "2607.15230",
+          "similarity": 0.8836066722869873
+        },
+        {
+          "title": "Comparison of Dielectric Loss in Titanium Nitride and Aluminum Superconducting Resonators",
+          "id": "2007.07338",
+          "similarity": 0.7977394461631775
+        }
+      ],
+      "summary": {
+        "summary": "TiN (111) films grown via plasma-assisted MBE on CO$_2$-laser thermally reconstructed ($\\sqrt{31}\\times\\sqrt{31}$)$R\\pm 9°$ sapphire exhibit sharper rocking curves (FWHM $0.048°$ versus $0.098°$) and more isotropic reciprocal-space-map distributions than films on chemically cleaned sapphire, indicating reduced mosaicity and improved crystalline coherence. Superconducting coplanar waveguide resonators fabricated from both film types achieve median internal quality factors $Q_i \\approx 1.1$–$1.3\\times 10^6$ at single-photon levels ($\\langle n \\rangle \\sim 1$), with many exceeding $10^7$ at higher powers, and comparable superconducting gaps ($\\Delta_\\mathrm{BCS} \\approx 0.63$–$0.67$ meV) and transition temperatures ($T_c \\approx 5.08$–$5.11$ K).",
+        "motivation": "Aggressive chemical preparation of sapphire substrates for epitaxial growth is widely used but involves hazardous solvents; direct thermal laser reconstruction of the c-plane surface into a well-ordered ($\\sqrt{31}\\times\\sqrt{31}$)$R\\pm 9°$ reconstruction offers an in-situ, chemistry-free alternative, yet its impact on superconducting device performance remained unexplored.",
+        "method": "TiN films (106 nm) were grown at $1150°C$ via MBE on both chemically cleaned bare sapphire and on sapphire thermally reconstructed via CO$_2$ laser heating to $1700°C$ for 200 s; crystallinity was assessed by XRD rocking curves, reciprocal-space maps, and TEM cross-sections; superconducting properties were probed by four-point resistivity, STM spectroscopy ($T = 1.2$ K), and cryogenic microwave measurements (down to 20 mK) of $\\lambda/4$ CPW resonators on both substrates.",
+        "result": "Thermally reconstructed sapphire enables TiN films with superior crystalline order (sharper XRD peaks, isotropic strain distribution) while maintaining identical $T_c$, superconducting gap ($\\Delta_\\mathrm{BCS}$), and residual resistivity ratio ($\\mathrm{RRR} \\approx 2.6$); resonators on both substrates achieved median $Q_i > 10^6$ at single-photon levels without systematic differences, establishing thermal reconstruction as a viable chemistry-free substrate preparation for superconducting nitride devices.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.19628",
+      "title": "Subsystem Quantum Error Correction for Noisy Quantum Metrology",
+      "authors": [
+        "Qiushi Liu",
+        "Sisi Zhou"
+      ],
+      "abstract": "Quantum error correction has been successfully applied to enhance the precision of parameter estimation in the presence of noise. Nonetheless, existing methods require a number of noiseless, controllable ancillae and lack efficient encoding and decoding procedures. In this Letter, we demonstrate that subsystem error correction provides a new direction that can substantially simplify the metrological protocol. We derive general conditions under which subsystem stabilizer codes achieve the Heisenberg limit and show that, for broad classes of noise, this can be realized by syndrome-free protocols using at most a single ancilla qubit. Furthermore, we extend this framework to dynamical error correction and show that Floquet codes can protect time-dependent metrological signals in reaching the Heisenberg limit.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-17",
+      "score": 0.5856061595991273,
+      "similar_to": [
+        {
+          "title": "The Kerr-Cat Qubit: Stabilization, Readout, and Gates",
+          "id": "1907.12131",
+          "similarity": 0.8497940301895142
+        },
+        {
+          "title": "Quantum error correction of a qubit encoded in grid states of an oscillator",
+          "id": "1907.12487",
+          "similarity": 0.8480240106582642
+        }
+      ],
+      "summary": {
+        "summary": "Subsystem quantum error correction enables Heisenberg-limit metrology with substantially reduced overhead compared to standard QEC approaches, requiring at most a single ancilla qubit and syndrome-free recovery procedures. The framework extends to time-dependent signals through Floquet codes, which protect periodic metrological evolution by dynamically encoding information in a logical subsystem while allowing noise to be absorbed into gauge degrees of freedom.",
+        "motivation": "Existing QEC-assisted metrology requires multiple noiseless ancillae and complex mid-circuit syndrome measurements with feedback, creating significant experimental barriers to reaching the Heisenberg limit in realistic systems.",
+        "method": "The authors derive conditions under which subsystem stabilizer codes achieve the Heisenberg limit (Theorem 1), then prove that broad noise classes admit syndrome-free protocols with zero or one noiseless ancilla (Theorem 2). They extend this to dynamical error correction using ladder codes, where time-varying signals synchronize with periodically rotating check measurements over four rounds to maintain logical coherence.",
+        "result": "For correctable Pauli noise satisfying the HNKS condition $H \\notin \\mathrm{Span}\\{\\langle E_1, \\ldots, E_r \\rangle\\}$, syndrome-free subsystem codes achieve $F_Q(\\rho_\\theta^{(N)}) \\propto N^2$ with only gauge reset applied after each query, and no ancilla is required when the noise algebra occupies fewer than $n$ qubits or when a commuting component of $H$ exists outside the noise span.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.19848",
+      "title": "QMCtwin: Master-Equation Simulation of Syndrome Statistics Beyond Pauli Noise",
+      "authors": [
+        "Tong Shen",
+        "Huo Chen",
+        "Benchen Huang",
+        "Tyler Takeshita",
+        "Arian Vezvaee",
+        "Izhar Medalsy",
+        "Daniel A. Lidar"
+      ],
+      "abstract": "As quantum error correction moves toward large-scale experimental implementations, decoder performance increasingly depends on how faithfully hardware noise is translated into syndrome statistics. Standard stabilizer workflows achieve scalability by replacing device dynamics with stochastic Pauli or detector-error models, but this compression can discard coherent phase information, nonunital drift, continuous-time effects of always-on couplings, and correlations generated by simultaneous Hamiltonian and dissipative evolution. Here we present QMCtwin, a sign-problem-suppressed quantum Monte Carlo framework for master-equation simulation of QEC circuits, and apply it to a full syndrome-extraction round of a distance-$7$ rotated surface code with $97$ physical qubits. The open-system model includes realistic superconducting-device noise mechanisms such as relaxation, pure dephasing, coherent gate miscalibration, residual $ZZ$ crosstalk, and drive-qubit detuning. By directly estimating syndrome observables from the QMC-generated stochastic density matrix estimator, we compare the master-equation dynamics with their Pauli-twirled Clifford simulation counterparts. QMCtwin predicts syndrome-extraction biases and correlations between syndromes and proxies of logical-string-parity that are absent or strongly suppressed in the stochastic Pauli description. We introduce information-theoretic diagnostics that further quantify how information concerning syndromes versus string-parity proxies differs between the realistic master-equation simulation and the corresponding Pauli-twirled model. These results show that QMC-based master-equation digital twins can expose noise features hidden by conventional Pauli/Clifford noise models and provide a practical path toward more accurate decoder-facing syndrome models.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-18",
+      "score": 0.5223323998045106,
+      "similar_to": [
+        {
+          "title": "Evidence for the utility of quantum computing before fault tolerance",
+          "id": null,
+          "similarity": 0.8408044576644897
+        },
+        {
+          "title": "Erasure qubits: Overcoming the $T_1$ limit in superconducting circuits",
+          "id": "2208.05461",
+          "similarity": 0.8325759172439575
+        }
+      ],
+      "summary": {
+        "summary": "QMCtwin is a sign-problem-suppressed quantum Monte Carlo framework for master-equation simulation of QEC circuits that directly captures coherent, dissipative, and correlated noise dynamics beyond Pauli approximations. Applied to a distance-7 rotated surface code with 97 physical qubits under realistic superconducting-device noise including relaxation, dephasing, coherent miscalibration ($\\delta_g = 0.1\\%$), residual $ZZ$ crosstalk, and drive detuning, QMCtwin predicts syndrome-extraction biases and syndrome-to-string-parity correlations absent or suppressed in stochastic Pauli-twirled Clifford models.",
+        "motivation": "Standard QEC decoders rely on syndrome statistics derived from stochastic Pauli or detector-error models, but Pauli twirling discards coherent phase information, nonunital drift, continuous-time effects of always-on couplings, and correlations from simultaneous Hamiltonian and dissipative evolution—all of which can affect decoder performance at scale.",
+        "method": "QMCtwin uses real-time sign-problem-suppressed QMC to evolve the toggling-frame open-system master equation, stochastically compressing density matrices while preserving phase-sensitive and correlated dynamics. For a 97-qubit distance-7 syndrome-extraction round ($T_1 = 150$–$300$ µs, $T_\\phi = 90$–$165$ µs, $J_{ij}/2\\pi = 10$–$100$ kHz), observables are estimated directly from the QMC-generated stochastic density-matrix estimator.",
+        "result": "QMCtwin reveals $O(10^{-2})$ syndrome-extraction biases and asymmetric ancilla-stabilizer disagreement probabilities (Z-type checks show $1.24 \\times 10^{-2}$ vs. $1.65 \\times 10^{-3}$ in Pauli baseline, a factor of 7.5 difference), alongside syndrome-to-string-parity mutual information nearly four times larger than the Pauli-twirled model ($\\sim 0.11$–$0.14$ bits vs. $0.03$–$0.04$ bits).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.19482",
+      "title": "Nearest-neighbour gates are all you need: High-rate quantum low-density parity-check codes on a planar grid",
+      "authors": [
+        "Boren Gu",
+        "Tamas Noszko",
+        "Vincent Steffan",
+        "Jens Niklas Eberhardt",
+        "Joschka Roffe",
+        "Jens Eisert",
+        "Stergios Koutsioumpas"
+      ],
+      "abstract": "High-performance quantum low-density parity-check codes promise substantial reductions in the overhead of fault-tolerant quantum computation, but most constructions require long-range connectivity or qubit shuttling, both of which are difficult to realise in superconducting architectures. Here we introduce a family of quantum low-density parity-check codes that, for the first time, combines planar open-boundary layouts, finite-size advantages over surface codes, and syndrome extraction using only nearest-neighbour gates on a square grid of qubits. The key idea is to generate check-data connectivity dynamically: nearest-neighbour iSWAP walks both define the stabiliser supports and implement their measurement, avoiding the need for a long-range hardware graph. The resulting circuits achieve optimal constant-depth stabiliser measurement, independent of code size, and naturally remove leakage from the system by exchanging the role of check and data qubits at each syndrome extraction round. We find finite-size instances such as a [[323,14,15]] code, whose code-efficiency ratio is nearly an order of magnitude larger than that of rotated surface-code patches. At around 30 circuit qubits per logical qubit, the best directional tile-code layouts reduce the per-logical per-round logical error rate by up to a factor of 1000 relative to rotated surface-code memories. These results show that the advantages of quantum low-density parity-check codes can survive compilation into strictly planar nearest-neighbour circuits, bringing low-overhead fault-tolerant memories closer to near-term hardware.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-17",
+      "score": 0.5204690371938214,
+      "similar_to": [
+        {
+          "title": "Nearest-neighbour gates are all you need: High-rate quantum low-density parity-check codes on a planar grid",
+          "id": "2606.19482",
+          "similarity": 1.0
+        },
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.8736447095870972
+        }
+      ],
+      "summary": {
+        "summary": "This work introduces directional tile codes, a family of quantum low-density parity-check codes compatible with planar nearest-neighbour superconducting qubit architectures, where syndrome extraction uses only iSWAP-based walks on a 2D square grid. The codes achieve circuit-level logical error rates up to 1000× lower than rotated surface codes at comparable footprints (~30 qubits per logical qubit), combining high code efficiency with strictly local connectivity.",
+        "motivation": "High-performance qLDPC codes promise overhead reduction for fault-tolerant quantum computation but typically require long-range connectivity or qubit shuttling, which are difficult to implement in superconducting processors constrained to planar nearest-neighbour gates. The work addresses whether substantial finite-size advantages over surface codes can be retained under strict 2D locality constraints.",
+        "method": "Directional tile codes use directional words—ordered strings of lattice steps—to simultaneously define stabiliser supports and specify the measurement schedule. Nearest-neighbour iSWAP walks dynamically generate check-data interactions during syndrome extraction, where CXSWAP gates both accumulate syndrome parity and route quantum information through the lattice. Stabiliser measurement achieves optimal constant depth $w+2$ independent of code size, where $w$ is the word weight.",
+        "result": "Finite-size instances such as $[[323,14,15]]$ codes achieve code-efficiency ratios nearly an order of magnitude larger than rotated surface-code patches; circuit-level simulations at $p=0.001$ show per-logical per-round logical error rates of $p_L \\sim 10^{-7}$ versus $\\sim 10^{-5}$ for surface codes at comparable footprints, representing up to 1000× improvement with circuit-efficiency ratio $\\eta_\\mathrm{circ} \\gtrsim 5$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.20441",
+      "title": "Computing noise-canceling observables via Pauli propagation",
+      "authors": [
+        "Andrew Eddins",
+        "Caleb Johnson",
+        "Alberto Baiardi",
+        "Francesco Tacchino",
+        "Ewout van den Berg",
+        "Roy Elkabetz",
+        "Vinay Tripathi",
+        "Swarnadeep Majumder",
+        "Max Rossmannek",
+        "Liran Shirizly",
+        "Abhinav Kandala"
+      ],
+      "abstract": "The pursuit of quantum advantage is driving the co-evolution of quantum processors and classical simulation methods. Despite advances in scale and quality, the accuracy of quantum simulation is ultimately limited by error rates and sampling overheads. Similarly, while classical simulation methods such as Pauli propagation have made remarkable progress, their accuracy is ultimately limited by the exponential growth of operator paths and the truncations needed to control memory and runtime. Here we show that these complementary limitations can be mitigated by embedding Pauli propagation within a hybrid error-mitigation framework that reduces quantum sampling overhead while achieving lower truncation errors with fewer classical resources than traditional Pauli propagation alone. In this framework, a target observable is classically propagated through noise-canceling inverse channels, producing a modified observable that is measured directly on a quantum processor. We prototype two implementations and benchmark their performance numerically on canonical models that challenge traditional Pauli propagation. We also perform experiments on a quantum processor using 56 superconducting qubits, revealing the tradeoffs of their respective truncation strategies. These results illustrate how classical and quantum resources can be orchestrated to extend observable estimation beyond the limits of either approach alone, providing a foundation for quantum-centric supercomputing and future demonstrations of quantum advantage.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-18",
+      "score": 0.5052842049926999,
+      "similar_to": [
+        {
+          "title": "Evidence for the utility of quantum computing before fault tolerance",
+          "id": null,
+          "similarity": 0.8455934524536133
+        },
+        {
+          "title": "Branch-resolved Pauli-block spectroscopy of residual conditional phase in two-qubit gates",
+          "id": "2607.10249",
+          "similarity": 0.8341348171234131
+        }
+      ],
+      "summary": {
+        "summary": "This paper introduces two hybrid error-mitigation methods—Propagated Noise Absorption (PNA) and Euclid—that classically propagate observables through inverted noise channels to construct noise-canceling observables measured on noisy quantum hardware. On a 56-qubit superconducting processor, PNA achieves quadratic sampling cost reduction compared to probabilistic error cancellation while outperforming direct Pauli-propagation simulation of noiseless circuits in the non-Clifford regime.",
+        "motivation": "Standard Pauli propagation suffers exponential complexity from operator branching that requires truncation, while unbiased error mitigation via probabilistic error cancellation incurs exponentially growing sampling costs. Hybrid approaches can exploit complementary strengths of classical and quantum resources to extend beyond the limits of either alone.",
+        "method": "Target observables are classically backpropagated through noise-deconvolution maps ($\\mathcal{D} = (\\mathcal{C}_{\\mathrm{ideal}} \\mathcal{C}_{\\mathrm{noisy}}^{-1})^\\dagger$) using antinoise channels. PNA greedily truncates Pauli expansions to $K_E, K_O \\in [100, 10000]$ terms; Euclid uses Clifford Perturbation Theory with systematic expansion in sine factors (bubble and step diagrams) up to order $K \\in [2, 4, 6]$. The resulting modified observable $\\tilde{O}$ is measured on the noisy QPU.",
+        "result": "On 20-qubit numerics with $\\theta = 0.25$, PNA with $K_E = K_O = 10^4$ removes truncation bias to shot-noise level where direct Pauli propagation to $10^9$ terms shows bias $\\approx 10\\times$ larger. On 56-qubit hardware experiments at EPLG $\\approx 2 \\times 10^{-3}$, PNA sampling cost scales as the square root of shaded-lightcone PEC cost across non-Clifford angles, confirming expected quadratic speedup, with residual error dominated by noise-model inaccuracy at Clifford points ($\\theta = 0, \\pi/2$).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.6661,
+    0.6029,
+    0.5856,
+    0.5223,
+    0.5205,
+    0.5053,
+    0.4628,
+    0.3963,
+    0.3189,
+    0.2998,
+    0.2782,
+    0.2741,
+    0.2451,
+    0.231,
+    0.2223,
+    0.2032,
+    0.2017,
+    0.2004,
+    0.1931,
+    0.1853,
+    0.1713,
+    0.1602,
+    0.1466,
+    0.1375,
+    0.1261,
+    0.1245,
+    0.1203,
+    0.1016,
+    0.1013,
+    0.0928,
+    0.0913,
+    0.0905,
+    0.0802,
+    0.0766,
+    0.0743,
+    0.069,
+    0.0673,
+    0.0663,
+    0.0656,
+    0.0647,
+    0.063,
+    0.0623,
+    0.0575,
+    0.0557,
+    0.0556,
+    0.055,
+    0.051,
+    0.0477,
+    0.047,
+    0.0465,
+    0.0455,
+    0.0398,
+    0.0396,
+    0.0381,
+    0.0375,
+    0.0367,
+    0.0353,
+    0.0334,
+    0.0333,
+    0.0316,
+    0.0307,
+    0.0304,
+    0.0297,
+    0.0284,
+    0.0282,
+    0.0281,
+    0.0274,
+    0.0268,
+    0.0261,
+    0.0261,
+    0.0238,
+    0.0218,
+    0.0217,
+    0.0216,
+    0.0206,
+    0.02,
+    0.0196,
+    0.0181,
+    0.0178,
+    0.0176,
+    0.017,
+    0.0159,
+    0.0153,
+    0.0152,
+    0.0151,
+    0.0149,
+    0.0143,
+    0.0141,
+    0.014,
+    0.0126,
+    0.0121,
+    0.0119,
+    0.0111,
+    0.0108,
+    0.0105,
+    0.0092,
+    0.0087,
+    0.0084,
+    0.0081,
+    0.0081,
+    0.008,
+    0.0079,
+    0.0076,
+    0.0071,
+    0.0069,
+    0.0063,
+    0.0061,
+    0.0052,
+    0.0049,
+    0.0043,
+    0.0022
+  ]
+}

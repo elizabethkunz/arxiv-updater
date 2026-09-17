@@ -1,0 +1,8 @@
+{
+  "summary": "A biased-erasure qubit is demonstrated in a single 3D superconducting cavity using the vacuum and two-photon Fock states ($|0_L\\rangle = |0\\rangle$, $|1_L\\rangle = |2\\rangle$), achieving an erasure bias ratio exceeding 265 and converting over 99.3% of leakage errors into detected erasures with a transmon ancilla. After postselection against erasures, the qubit exhibits a strong error hierarchy with logical relaxation and dephasing rates of $(6.2~\\mathrm{ms})^{-1}$ and $(3.1~\\mathrm{ms})^{-1}$ exceeding the erasure rate by factors of 31 and 15, yielding a coherence gain of 6.0 beyond the break-even point and a residual single-qubit gate error of $2.9 \\times 10^{-3}$.",
+  "motivation": "Biased-erasure qubits promise lower thresholds and reduced overhead when concatenated into stabilizer codes exploiting their structured noise, yet prior experimental demonstrations in cavity QED platforms remained elusive.",
+  "method": "A hardware-efficient $0N$ erasure qubit is encoded in two Fock states of a single coaxial stub cavity ($T_{1,c} = 0.47$ ms) coupled to a transmon ancilla with $\\chi_{qc}/2\\pi = 1.69$ MHz for mid-circuit erasure detection via photon-number parity measurement and logical gates via quantum optimal control pulses.",
+  "result": "Logical state assignment error below 1%, false-positive and false-negative erasure detection rates of $(0.22 \\pm 0.02)\\%$ and $(0.69 \\pm 0.03)\\%$ respectively; postselected effective logical errors of $(6.2~\\mathrm{ms})^{-1}$ (relaxation) and $(3.1~\\mathrm{ms})^{-1}$ (dephasing) demonstrate a strong error hierarchy enabling fault-tolerant quantum computation via code concatenation.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

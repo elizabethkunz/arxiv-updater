@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates scalable edge-pass Purcell filters for superconducting qubits that use a single transmission edge to separate readout and qubit bands, realized as compact lumped-element high-pass (HPF) or low-pass (LPF) filters. The HPF achieves 99.46(4)% average readout fidelity in 150 ns and the LPF achieves 99.49(3)% in 130 ns, with single-qubit gate fidelities of 99.94% and 99.93% respectively, while providing effective Purcell protection that strengthens with filter order and includes an intrinsic dissipation mode for qubit reset.",
+  "motivation": "Conventional band-pass Purcell filters limit readout resonator bandwidth and have large footprints that complicate scaling superconducting quantum processors, creating a conflict between fast high-fidelity readout, qubit coherence preservation, and device scalability.",
+  "method": "High-pass and low-pass edge-pass filters were designed using Chebyshev type-I lumped-element networks (interdigital capacitors and spiral inductors) with cutoff frequencies at 6.5 GHz (HPF) and 5.0 GHz (LPF), characterized via finite-element simulation and transmission measurements, and integrated with transmon qubits on planar and flip-chip platforms with dispersive readout via Josephson parametric amplifiers.",
+  "result": "Measured $T_1$ lifetimes exceed the filter-free Purcell limit by substantial margins and increase systematically with filter order (5th to 13th order measured), confirming strong Purcell protection; the intrinsic dissipation mode enables qubit reset via resonant exchange on timescales of ~150 ns (readout mode) or ~8.5 µs (dissipation mode).",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

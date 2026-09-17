@@ -1,0 +1,8 @@
+{
+  "summary": "This work combines molecular dynamics simulations using CHGNet with NEGF-DFT transport calculations in NanoDCAL to investigate hydrogen contamination in Al/AlO$_x$/Al Josephson junctions, finding that H atom incorporation follows a beta-binomial distribution across 400 samples and acts as p-type dopant to increase tunneling transmission. For 2.56 at.% average hydrogen content, the predicted Josephson energy is $E_J/h = 10.92 \\\\ \\pm 0.26$ GHz, providing an atomistic picture of device-to-device variability.",
+  "motivation": "Hydrogen contamination in Al/AlO$_x$/Al Josephson junctions is a source of device-to-device variability and two-level-system loss that limits qubit coherence and complicates scaling toward fault-tolerant quantum computing, with experimental SIMS measurements reporting peak H concentrations from 1.1 to 4.1 at.% depending on fabrication method.",
+  "method": "MD simulations of Al surface oxidation in high-density O$_2$ and H$_2$O environments using CHGNet generate 400 statistically independent AlO$_x$ samples; quantum transport is evaluated by constructing Al/Al$_2$O$_3$/Al two-probe junctions and solving the Hamiltonian self-consistently with NEGF-DFT using GGA+$U$ ($U = 1.0$ eV on Al p orbitals) to match experimental band alignment.",
+  "result": "The H atom number distribution is well-described by beta-binomial statistics with $\\alpha = 17.69$, $\\beta = 15.36$, $M = 40$; most H atoms (91.3%) form Al-OH or Al-OH-Al surface motifs; single H atoms increase transmission at $E_F$ from $1.61 \\times 10^{-5}$ to $1.74 \\times 10^{-5}$ via $\\sim$0.8 eV Fermi-level shift consistent with p-type doping.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

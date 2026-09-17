@@ -1,0 +1,8 @@
+{
+  "summary": "This work optimizes traveling-wave parametric amplifier (TWPA) pump conditions for frequency-multiplexed readout of superconducting qubits by tuning to maximize SNR improvement at the limiting qubit's readout frequency rather than average SNR. On a five-qubit multiplexed readout chain, the limiting-qubit-optimized pump reduces total multiplexed readout time $T_\text{RO}^\text{(MPX)}$ from 1280 ns to 960 ns (25% reduction, 320 ns savings) while maintaining minimum $\triangle\text{SNR} \\\\\\\\ 6$ dB across all qubits and mean readout fidelity of 95.32%.",
+  "motivation": "Fast multiplexed qubit readout is critical for quantum error correction and system cycle time, but parametric amplifier performance exhibits frequency-dependent gain ripples sensitive to pump conditions, making conventional average-SNR optimization suboptimal when different qubits require different readout durations.",
+  "method": "The authors characterize TWPA gain and SNR improvement ($\\triangle\\text{SNR}$) across pump frequency and power settings (sampled over 1 MHz bands at each qubit's readout frequency), identify the limiting qubit requiring longest readout time to reach $\\text{SNR}=3$, and select pump parameters that maximize $\\triangle\\text{SNR}$ at that qubit's frequency while enforcing per-qubit minimum $\\triangle\\text{SNR}$ thresholds.",
+  "result": "Limiting-qubit-optimized pump ($f_p = 8.328$ GHz, $P_p = -87.5$ dBm) reduces Q4 readout time from 1280 ns to 800 ns and total multiplexed time to 960 ns versus 1280 ns with average-qubit-optimized pump ($f_p = 8.311$ GHz, $P_p = -86.9$ dBm), with no significant fidelity degradation (95.45% versus 95.32%).",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

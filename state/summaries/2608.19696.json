@@ -1,0 +1,8 @@
+{
+  "summary": "A phase-modulated concatenated continuous driving (CCD) technique suppresses low-frequency charge and hyperfine noise in hole spin qubits in silicon quantum dots. The method stabilizes Rabi oscillations, extends decay times, and maintains coherence protection during gate operations.",
+  "motivation": "Hole spins in silicon benefit from strong spin-orbit coupling for fast electrical control, but this same coupling makes them susceptible to charge noise and hyperfine interactions with residual nuclear spins, limiting coherence times.",
+  "method": "Phase modulation of microwave driving was applied using a concatenated continuous driving protocol to suppress low-frequency noise while maintaining qubit control in the CCD frame.",
+  "result": "The phase-modulated CCD technique extended Rabi oscillation decay times compared to conventional driving and demonstrated coherence protection during gate operations.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

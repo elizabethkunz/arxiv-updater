@@ -1,0 +1,8 @@
+{
+  "summary": "This work proposes fraxonium, a superconducting circuit hosting $d$ degenerate low-energy states separated from higher levels by a large gap, generalizing the fluxonium to encode qudits protected from leakage errors. The system uses fractional fluxon states (fraxons) localized in minima of a Josephson potential engineered via Fourier harmonics using multi-harmonic elements composed of Josephson junctions and inductors.",
+  "motivation": "Transmon-based qudits suffer from leakage errors because their computational levels lack separation from the rest of the spectrum, whereas qudits offer advantages for quantum error correction, magic state distillation, and algorithm efficiency compared to two-level qubits.",
+  "method": "High-harmonic Josephson potentials are engineered by superimposing $\\cos(nφ)$ terms with controlled amplitudes to create $d$ degenerate potential minima; high harmonics are realized through parallel connections of Josephson junction-inductor pairs with fractional flux insertion (kite design), and a tight-binding model describes fraxon dynamics via quantum phase slips with tunneling amplitude $t \\propto e^{-8\\bar{E}_J/\\bar{E}_C}$.",
+  "result": "For the qutrit ($d=3$) with $E_C/E_J = 0.08$ and $E_L/E_J = 0.03$, three states are well-localized around phase minima at $φ_l = πl$ with fractional flux character, separated from higher fluxon and plasmon states; non-Abelian STIRAP protocols implementing geometric single-qutrit gates are demonstrated with simultaneous fulfillment of adiabaticity ($\\bar{Ω}T \\gg 1$) and rotating-wave approximation ($Ω_i \\ll |E_u - E_i|$) conditions.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

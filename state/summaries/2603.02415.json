@@ -1,0 +1,8 @@
+{
+  "summary": "Surface acoustic waves generated using superconducting niobium nitride (NbN) interdigitated transducers on lithium niobate show a sharp transition in transmission across the superconducting critical temperature ($T_c \\approx 11.4$ K), achieving a $16\\times$ modulation of $S_{21}$ between normal and superconducting states. The device exhibits a $Q$-factor of 2220 with a free spectral range of 0.733 MHz and a single-strip reflection coefficient $|r_s| \\approx 0.0043$, an order of magnitude lower than aluminum, enabling integration into all-nitride quantum architectures.",
+  "motivation": "Aluminum and gold IDTs suffer from cryogenic limitations: aluminum forms two-level systems that degrade qubit coherence, while gold remains resistive at millikelvin temperatures, leading to parasitic losses in SAW devices.",
+  "method": "NbN IDTs and Bragg reflectors ($38$ nm thick, $19$ finger pairs with pitch $p = 6$ μm, wavelength $\\lambda = 12$ μm, designed for $\\sim 300$ MHz fundamental frequency) were fabricated on $128°$ Y-X cut lithium niobate using photolithography and reactive ion etching, with characterization via time and frequency domain network analysis.",
+  "result": "At $11.4$ K below $T_c$, the device achieves resonance frequency $f_0 = 309$ MHz with surface velocity $v_p = 3716$ m/s; transmission increases 16-fold crossing $T_c$ within $\\Delta T = 1$ K, directly tracking the resistance collapse of the NbN film with no observable triple transit signal characteristic of metallic IDTs.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

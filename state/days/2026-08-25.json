@@ -1,0 +1,312 @@
+{
+  "date": "2026-08-25",
+  "n_fetched": 145,
+  "papers": [
+    {
+      "id": "2608.21983",
+      "title": "Automating detection of Two-Level Systems in Superconducting Qubits",
+      "authors": [
+        "Rama Khalil",
+        "Cameron J. Kopas",
+        "Avinash Pathapati",
+        "Rory Cochrane",
+        "Xiqiao Wang",
+        "Hossein Taghinejad",
+        "Vito Iaia",
+        "Josh Mutus",
+        "Yaniv J. Rosen",
+        "Jared H. Cole",
+        "David P. Pappas",
+        "Alexander V. Balatsky"
+      ],
+      "abstract": "Microscopic two-level system (TLS) defects remain a primary mechanism of decoherence and operational instability in superconducting transmon qubits, necessitating scalable and automated methods for their characterization. Here, we present and benchmark two complementary analysis pipelines for extracting TLS statistics directly from time-resolved SWAP spectroscopy: one-dimensional decay-rate fitting (1D-DRF), which detects defects via localized enhancements in the qubit relaxation rate, and a deterministic, non-parametric computer-vision framework (2D-CV) that achieves two-dimensional spectral localization by exploiting the temporal persistence of coherent population suppression. We deploy both methods on SWAP spectroscopy measurements from 52 flux-tunable transmon qubits on Rigetti processors with and without moderate ($\\sim 10\\%$) post-fabrication frequency trimming via Alternating-Bias Assisted Annealing (ABAA). We show that both pipelines converge on a consistent global characterization of the defect landscape while exhibiting complementary sensitivity across distinct coupling regimes. Crucially, both methods independently reveal a count--loss decoupling under moderate annealing: while the total detectable TLS defect density remains statistically unchanged, the span-integrated dielectric loss is reduced by approximately a factor of two, demonstrating selective suppression of the most strongly dissipative defect channels. These results establish an automated, non-parametric analysis framework for high-throughput hardware diagnostics and provide a statistical baseline for post-fabrication defect engineering in large-scale superconducting quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-08-22",
+      "score": 0.9324679349201584,
+      "similar_to": [
+        {
+          "title": "Scalable and Site-Specific Frequency Tuning of Two-Level System Defects in Superconducting Qubit Arrays",
+          "id": "2503.04702",
+          "similarity": 0.8930888175964355
+        },
+        {
+          "title": "Electric field spectroscopy of material defects in transmon qubits",
+          "id": "1909.09749",
+          "similarity": 0.8870152235031128
+        }
+      ],
+      "summary": {
+        "summary": "Two complementary automated pipelines for detecting two-level system (TLS) defects in superconducting transmons via SWAP spectroscopy are presented: one-dimensional decay-rate fitting (1D-DRF) and a deterministic computer-vision framework (2D-CV) exploiting temporal persistence of coherent population suppression. Deployed across 52 flux-tunable transmons on Rigetti processors, both methods reveal that moderate ($\\sim 10\\%$) post-fabrication frequency trimming via Alternating-Bias Assisted Annealing (ABAA) selectively suppresses strongly dissipative defect channels while leaving total TLS count unchanged, reducing span-integrated loss by a factor of $\\sim 2$ ($6.9\\,\\text{kHz} \\to 3.1\\,\\text{kHz}$).",
+        "motivation": "TLS defects in dielectric interfaces and Josephson junction barriers remain a primary decoherence mechanism in superconducting transmon qubits, necessitating scalable, automated characterization across multi-qubit processors to enable hardware diagnostics and defect engineering.",
+        "method": "Two independent analysis pipelines extract TLS statistics from time-resolved SWAP spectroscopy: 1D-DRF identifies defects via localized $\\Gamma_1$ enhancements using rolling median filtering and significance thresholding; 2D-CV applies anisotropic Gaussian scale-space filtering ($\\sigma_t = 80$, $\\sigma_f = 10$ pixels) to native 2D population maps and exploits temporal persistence projection ($\\rho(f) > 0.14$) to decouple resonant loss from baseline drift, both quantified via Lorentzian fits ($\\mathcal{I}_{\\text{TLS}} = \\pi A \\gamma_f$) to extract frequency-integrated loss strength $\\propto v_\\perp^2$.",
+        "result": "Consensus detections ($n = 597$ pairs, $\\delta f = 25\\,\\text{MHz}$) show near-unity correlation ($r = 0.88$) in physical loss strengths across six orders of magnitude; mean TLS count unchanged under ABAA ($38.7 \\pm 17.7$ vs. $37.9 \\pm 11.3$ defects/qubit, $p > 0.8$), but high-dissipation tail ($\\mathcal{I}_{\\text{TLS}} > 10^{11}\\,\\text{Hz}^2$) systematically depleted, demonstrating selective suppression of strongest-coupled channels without defect elimination.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2608.21512",
+      "title": "Robust cavity metrology beyond the limits of Pound-Drever-Hall",
+      "authors": [
+        "Ibukunoluwa Adisa",
+        "Won Chan Lee",
+        "Yanqin Huang",
+        "Nathan Schine",
+        "Kevin C. Cox",
+        "Alicia J. Kollár"
+      ],
+      "abstract": "Precise measurement of the resonance frequencies of microwave and optical cavities is a foundational capability across quantum technologies. One of the highest-performance methods currently available is Pound-Drever-Hall (PDH) spectroscopy, which relies on a three-tone interrogation and eliminates sensitivity to path-length fluctuations. However, PDH is known to suffer from systematic offsets due to residual amplitude modulation and demodulation-phase errors. Here we leverage an optimal linear combination of the phases of the three interrogation tones to implement a method for robust cavity metrology which eliminates significant systematic-error sensitivities of PDH. We experimentally demonstrate robust cavity measurements in both the optical and microwave frequency regime, showing insensitivity to sideband imbalance and demodulation phase, as well as demonstrating single-shot readout of a cavity-coupled superconducting qubit.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-08-21",
+      "score": 0.692019447840408,
+      "similar_to": [
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.820303738117218
+        },
+        {
+          "title": "Realizing Rapid, High-Fidelity, Single-Shot Dispersive Readout of Superconducting Qubits",
+          "id": "1701.06933",
+          "similarity": 0.8012808561325073
+        }
+      ],
+      "summary": {
+        "summary": "This work presents robust cavity metrology observables based on the scissors phase $\\Sigma = 2\\phi_0 - (\\phi_- + \\phi_+)$ that eliminate systematic errors in Pound-Drever-Hall (PDH) spectroscopy caused by sideband amplitude imbalance and demodulation-phase errors. An experimentally efficient observable $\\mathbb{S}_Q = E_- E_+ E_0^2 \\sin\\Sigma$ is introduced that requires only addition and multiplication (no arctangent) and is demonstrated in both optical cavity locking and superconducting qubit readout.",
+        "motivation": "PDH spectroscopy is widely used for precision cavity measurements across quantum technologies, but suffers from systematic zero-crossing offsets due to residual amplitude modulation and demodulation-phase errors, which limit the performance of ultrastable lasers and scalable quantum computers.",
+        "method": "The three-tone interrogation signal is decomposed into orthogonal collective phase modes ($\\mathcal{A}$, $\\mathcal{B}$, $\\Sigma$), and heterodyne detection of all three tones is used to reconstruct the scissors phase $\\Sigma$ and the computationally efficient observable $\\mathbb{S}_Q$ directly from measured IQ quadratures, rejecting common-mode and differential-mode phase errors by construction.",
+        "result": "In optical spectroscopy with 17% sideband imbalance and varying demodulation phase, $\\mathbb{S}_Q$ maintains a stable zero-crossing while PDH shows demodulation-dependent offsets proportional to $\\beta\\Delta_{\\text{amp}}$; in microwave qubit readout under RF timing errors inducing both $\\alpha$ and $\\beta$, $\\mathbb{S}_Q$ retains 95% Gaussian resolvability compared to PDH's 50% under the same degraded conditions.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2608.23159",
+      "title": "Taming Spacetime Overhead and Design Complexity in Distributed Fault-Tolerant Superconducting Quantum Computation",
+      "authors": [
+        "Qinjing Yu",
+        "Ke Liu"
+      ],
+      "abstract": "Scaling fault-tolerant superconducting quantum computers will likely require distributed architectures built from multiple manufacturable quantum processing units. A central question is whether noisy and slow inter-chip operations impose substantial spacetime overhead or orchestration burdens compared with monolithic architectures. To answer this question, we present a hardware-grounded architectural co-design together with a comprehensive resource-estimation protocol for surface-code-based modular processors. The design confines inter-chip latency and noise to module boundaries, preventing slow, noisy links from inducing prohibitive spacetime overhead or becoming a global orchestration bottleneck. The resource-estimation protocol integrates hardware constraints and circuit-level error-correction performance into utility-scale algorithmic cost estimates, enabling a controlled assessment of different architectures. Using RSA-2048 factorization as a demanding benchmark, we estimate resources under experimentally anchored parameters and realistic superconducting hardware constraints. Compared with a large, ideal monolithic baseline, the resulting distributed architecture requires only modest additional resource overhead in both qubit count and execution time. More importantly, the overhead is nearly scale-invariant across a broad module-capacity window, decoupling chip size from global performance. This decoupling turns module capacity from a finely tuned architectural parameter into a flexible engineering degree of freedom, allowing chip sizes to be set by manufacturability and control-packaging constraints rather than architectural fine-tuning. These results establish a viable route to distributed fault-tolerant superconducting quantum computation that scales without prohibitive resource growth or heavy orchestration burden.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-08-24",
+      "score": 0.6007545290243939,
+      "similar_to": [
+        {
+          "title": "Fault-tolerant interfaces for modular quantum computing on diverse qubit platforms",
+          "id": "2510.05221",
+          "similarity": 0.8862919211387634
+        },
+        {
+          "title": "Lattice surgery with Bell measurements: Modular fault-tolerant quantum computation at low entanglement cost",
+          "id": "2510.13541",
+          "similarity": 0.8594179749488831
+        }
+      ],
+      "summary": {
+        "summary": "This paper presents a hardware-grounded distributed architecture for fault-tolerant superconducting quantum computation and a comprehensive resource-estimation protocol for surface-code-based modular processors connected via noisy inter-chip links. Using RSA-2048 factorization as a benchmark under experimentally anchored parameters ($p_b = 10^{-3}$, $p_s = 10^{-2}$, inter-chip gates up to $25 \times$ slower), the distributed architecture requires only 2.0 million physical qubits and 4.4 days compared to a monolithic baseline of 1.3 million qubits and 3.4 days, with overhead nearly scale-invariant across module capacities from thousands to hundreds of thousands qubits per chip.",
+        "motivation": "Scaling fault-tolerant superconducting quantum computers to utility scale requires multiple manufacturable quantum processing units rather than monolithic chips, but the impact of noisy and slow inter-chip operations on spacetime overhead and system complexity remains unclear.",
+        "method": "The authors developed a latency-decoupled syndrome-extraction protocol with buffer qubits that confines slow inter-chip operations to module boundaries, decoupling intra-chip and inter-chip QEC cycles, combined with a three-layer resource-estimation procedure integrating physical error models, QEC code specifications, and algorithmic workload across computation and memory zones.",
+        "result": "Under baseline error rates, the distributed architecture incurs only 60% additional physical-qubit overhead and 30% additional runtime compared to monolithic, with surface-code distance increasing modestly from $d = 27$ to $d = 31$; crucially, this overhead remains nearly independent of chip capacity across an experimentally relevant window ($10^3$–$2 \times 10^5$ qubits per chip), decoupling module size from global performance penalties.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2608.23460",
+      "title": "Satisfying Quantum Codes: Physics-Informed and Hardware-Aware Code Design with SAT Solvers",
+      "authors": [
+        "Ben DalFavero",
+        "William M. Watkins",
+        "Margarite L. LaBorde",
+        "Vincent Russo",
+        "Ethan Egger",
+        "Gregory Quiroz",
+        "Ryan LaRose"
+      ],
+      "abstract": "Although quantum error correction is widely believed to be necessary for impactful applications of quantum computers, the design of quantum error correction codes is largely done by hand, without respect to problem or hardware constraints. In this work, we present a highly general and flexible framework for the computational design of both physics-inspired and hardware-aware quantum codes. To do so, we formulate code design as a Boolean satisfiability (SAT) problem and show how to incorporate all required error correction criteria. We prove that code design is NP-complete, ruling out any efficient algorithm for designing codes in general. Nonetheless, we show that state-of-the-art SAT solvers are able to effectively find solutions for many practical problems. Notably, we are able to design physics-inspired codes with up to 100 physical qubits in minutes, and we design new hardware-aware codes for biased noise which have a lower logical error rate than state-of-the-art surface codes.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-08-24",
+      "score": 0.516972125490946,
+      "similar_to": [
+        {
+          "title": "Surface codes: Towards practical large-scale quantum computation",
+          "id": "1208.0928",
+          "similarity": 0.8673033714294434
+        },
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8664522767066956
+        }
+      ],
+      "summary": {
+        "summary": "This paper presents a SAT-based computational framework for designing quantum error correction codes that can incorporate physics-inspired symmetries and hardware-specific noise models. The authors prove code design is NP-complete, demonstrate a SAT–UNSAT phase transition in random instances, and experimentally validate the approach by discovering novel codes—including extensions of a 100-qubit Fermi-Hubbard code in minutes and surface codes outperforming the XZZX code under biased noise.",
+        "motivation": "Quantum error correction codes have traditionally been designed by hand without systematic respect to problem constraints or realistic hardware noise profiles. Computational design methods can accelerate discovery of codes tailored to specific physical platforms and noise characteristics.",
+        "method": "The authors formulate quantum code design as a Boolean satisfiability (SAT) problem by encoding stabilizer commutativity and error detectability/correctability as CNF clauses in the binary symplectic representation. The framework handles code discovery (empty initial stabilizer set), code extension (building from existing stabilizers), and incorporates arbitrary noise models via weighted soft constraints in maximum satisfiability.",
+        "result": "SAT solvers design $[[100, 50, 4]]$ codes in under 5 minutes (versus ~1 hour with prior methods), find physics-inspired codes for 100-qubit Fermi-Hubbard models in minutes to hours, and discover novel surface codes with logical error rates lower than the XZZX code across biased noise regimes $\\ eta \\in [0.1, 10]$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9325,
+    0.692,
+    0.6008,
+    0.517,
+    0.3792,
+    0.3574,
+    0.3556,
+    0.3406,
+    0.3334,
+    0.328,
+    0.3168,
+    0.2969,
+    0.2797,
+    0.2679,
+    0.2518,
+    0.2379,
+    0.2185,
+    0.2145,
+    0.2011,
+    0.1884,
+    0.1782,
+    0.1622,
+    0.157,
+    0.1551,
+    0.1386,
+    0.1347,
+    0.1331,
+    0.1244,
+    0.1227,
+    0.1192,
+    0.1145,
+    0.0987,
+    0.0979,
+    0.0944,
+    0.0935,
+    0.0933,
+    0.0932,
+    0.0845,
+    0.0837,
+    0.0806,
+    0.0799,
+    0.0777,
+    0.0776,
+    0.0769,
+    0.0766,
+    0.0743,
+    0.0734,
+    0.0685,
+    0.0667,
+    0.0658,
+    0.0647,
+    0.0612,
+    0.0596,
+    0.0553,
+    0.0547,
+    0.0533,
+    0.0519,
+    0.0515,
+    0.0505,
+    0.0498,
+    0.0489,
+    0.0466,
+    0.0461,
+    0.0459,
+    0.0457,
+    0.0437,
+    0.0434,
+    0.0431,
+    0.0423,
+    0.0421,
+    0.0416,
+    0.0411,
+    0.0385,
+    0.0384,
+    0.0383,
+    0.0336,
+    0.0323,
+    0.0305,
+    0.0303,
+    0.0302,
+    0.0299,
+    0.0298,
+    0.0294,
+    0.028,
+    0.0274,
+    0.0255,
+    0.025,
+    0.0245,
+    0.0244,
+    0.0239,
+    0.0218,
+    0.0218,
+    0.0206,
+    0.0198,
+    0.018,
+    0.018,
+    0.0179,
+    0.0178,
+    0.0173,
+    0.0167,
+    0.0166,
+    0.0162,
+    0.0162,
+    0.0161,
+    0.015,
+    0.015,
+    0.0129,
+    0.0126,
+    0.0115,
+    0.0113,
+    0.0111,
+    0.0111,
+    0.0104,
+    0.0099,
+    0.0098,
+    0.0096,
+    0.0093,
+    0.0092,
+    0.0091,
+    0.009,
+    0.0086,
+    0.0083,
+    0.0082,
+    0.008,
+    0.007,
+    0.0064,
+    0.006,
+    0.0056,
+    0.0055,
+    0.0053,
+    0.0049,
+    0.0046,
+    0.0046,
+    0.0045,
+    0.004,
+    0.0037,
+    0.0034,
+    0.0033,
+    0.0032,
+    0.0032,
+    0.003,
+    0.0029,
+    0.0029,
+    0.002,
+    0.0013
+  ]
+}

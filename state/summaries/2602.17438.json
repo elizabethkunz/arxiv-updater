@@ -1,0 +1,8 @@
+{
+  "summary": "This work presents a fault-tolerant framework for preparing arbitrary logical states in the four-legged cat code using error-detectable operations in 3D superconducting cavities coupled to ancilla qubits. Numerical simulations achieve logical infidelities of $10^{-4}$ with quadratic suppression of first-order errors in photon loss and dephasing channels.",
+  "motivation": "Efficient high-fidelity logical state preparation is essential for magic state distillation and quantum error correction, yet existing approaches struggle to balance control complexity against resource overhead while suppressing dominant incoherent errors.",
+  "method": "The protocol engineers error-detectable coherent state discrimination $\\mathcal{M}_{|\\beta\\rangle}$ through displacement, photon-number-selective ancilla flips, and reverse displacement, combined with parity measurement and existing error-detectable $Z_c(\\theta)$ and $ZZ_c(\\theta)$ rotations to realize a universal gate set $\\{\\mathcal{M}_P, Z_c(\\theta), ZZ_c(\\theta), \\mathcal{M}_X, H_c\\}$ on realistic 3D cavity-QED hardware.",
+  "result": "Two-qubit entangled state preparation achieves logical infidelity $(2.74 \\pm 1.09) \\times 10^{-4}$ at $\\alpha = 2.9$ with $>95\\%$ success probability; scaling analysis confirms $\\bar{f}_L \\propto s^{2.12 \\pm 0.09}$, demonstrating first-order error suppression and robustness across a continuous family of target states.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

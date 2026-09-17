@@ -1,0 +1,11 @@
+{% extends "base.html.j2" %}
+{% block title %}{{ day.date }} · {{ site.title }}{% endblock %}
+{% block body %}
+<header class="hero"><div class="wrap">
+  <h1>{{ day.date }}</h1>
+</div></header>
+<main class="wrap">
+{% set link_day = false %}
+{% include "_day.html.j2" %}
+</main>
+{% endblock %}

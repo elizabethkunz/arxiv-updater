@@ -1,0 +1,8 @@
+{
+  "summary": "Voltage-tunable Josephson junctions are fabricated on MBE-grown shallow Ge quantum wells (16 nm) with in-situ Al contacts on float-zone Si substrates using a deep mesa etch process that enables monolithic integration with low-loss superconducting circuits. The devices demonstrate gate-tunable supercurrents reaching 103 nA at $V_g = -17.5$ V with an $I_C R_N$ product of 8.63 µV and extracted interface transparency of 4–9%.",
+  "motivation": "Integration of voltage-tunable JJs into highly coherent quantum circuits requires wafer-scale platforms with low microwave loss and oxide-free superconductor-semiconductor interfaces to eliminate flux noise from tuning.",
+  "method": "A deep mesa etch ($\\sim$2.6 µm tall with 18° sidewall taper) was optimized to remove lossy epitaxial buffer except at the junction, allowing continuous metal deposition from the low-loss Si substrate to gate electrodes; transport characterized at 10 mK shows gate-tunable supercurrent via Hall bars indicating peak mobility of 26,800 cm$^2$/Vs and mean free path of 482 nm.",
+  "result": "Maximum critical current of 103 nA with $I_C R_N = 8.63$ µV enables transmon tuning between 4.25 and 8.7 GHz ($E_J/E_C$ from 62 to 348) for typical design values; STEM confirms abrupt Al/Ge interfaces without chemical intermixing and no residual processing damage.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

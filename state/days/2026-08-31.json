@@ -1,0 +1,284 @@
+{
+  "date": "2026-08-31",
+  "n_fetched": 99,
+  "papers": [
+    {
+      "id": "2608.27789",
+      "title": "Scaling Alternating-Bias-Assisted Annealing for Precision Transmon Frequency Targeting on Superconducting Quantum Processors",
+      "authors": [
+        "Xiqiao Wang",
+        "Mark Field",
+        "Teng Zhang",
+        "Xian Wu",
+        "Ferhat Aydinoglu",
+        "Joel Howard",
+        "Angela Q. Chen",
+        "Sara Elzeiny",
+        "Robert Smith",
+        "Timothy McSorley",
+        "Nicholas Sharac",
+        "Eyob Sete",
+        "Alysson Gold",
+        "Hilal Cansizoglu",
+        "Greg Stiehl",
+        "Josh Mutus",
+        "Kameshwar Yadavalli",
+        "Andrew Bestwick",
+        "Stefano Poletto",
+        "Raja Katta",
+        "David P. Pappas"
+      ],
+      "abstract": "Recent advances in the alternating-bias-assisted annealing (ABAA) technique have successfully mitigated intrinsic Josephson-junction (JJ) fabrication variations. This new technique enables precision qubit frequency tuning alongside simplicity. However, it is critical to enhance tuning throughput and yield while investigating the factors that drive targeting performance as the technology scales. Here, we characterize ABAA tuning performance within a 150-mm wafer process flow and extend this technique to simultaneous, multi-channel tuning, demonstrating that a wafer-scale JJ resistance tuning precision of $σ=0.50\\pm0.05\\%$ alongside a component-level yield of $\\ge 98.8\\%$ can be achieved. Furthermore, we demonstrate a strong correlation between yield, tuning speed, and junction breakdown voltage, establishing the latter as a vital process control parameter for meeting production goals. Finally, we demonstrate a successful implementation of ABAA tuning on a quad-module quantum processor (Rigetti Cepheus-1-36Q), where we achieve an empirical frequency targeting precision of $σ\\sim 30\\text{ MHz}$ in both qubit and qubit-qubit detuning frequencies, contributing to high median two-qubit gate fidelities. These results confirm the efficacy and scalability of ABAA for high-precision Hamiltonian targeting, a critical enabler for modular superconducting quantum processor technology.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-08-27",
+      "score": 0.8935718125894593,
+      "similar_to": [
+        {
+          "title": "Laser-annealing Josephson junctions for yielding scaled-up superconducting quantum processors",
+          "id": "2009.00781",
+          "similarity": 0.873287558555603
+        },
+        {
+          "title": "Scalable and Site-Specific Frequency Tuning of Two-Level System Defects in Superconducting Qubit Arrays",
+          "id": "2503.04702",
+          "similarity": 0.8486828804016113
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates scalable alternating-bias-assisted annealing (ABAA) for transmon frequency tuning on 150 mm wafers, achieving $\\sigma = 0.50 \\pm 0.05\\%$ junction resistance precision and $98.8\\%$ component-level yield through multi-channel parallel tuning. Implementation on the Rigetti Cepheus-1-36Q quantum processor achieves empirical frequency targeting precision of $\\sigma \\sim 30$ MHz in both $f_{01}^{\\mathrm{max}}$ and qubit-qubit detuning, directly enabling high two-qubit gate fidelities.",
+        "motivation": "Post-fabrication Josephson junction tuning is essential to compensate for inherent nanometer-scale variations in junction area and barrier thickness that limit as-fabricated targeting to $\\pm 3\\%$ resistance spread, yet scaling ABAA to foundry production requires demonstrating throughput, yield, and stability across wafer-scale processes.",
+        "method": "Multi-channel simultaneous ABAA tuning was implemented using high-density probe cards and source-measure units; junction breakdown voltage (BDV) was characterized as a critical process control parameter via phase diagrams correlating BDV, annealing voltage amplitude, and short probability; temporal stability was monitored over 14 weeks post-tuning in nitrogen-purged storage; Hamiltonian targeting was validated on a modular 36-qubit processor with frequency prediction based on room-temperature resistance measurements.",
+        "result": "Parallel ABAA achieves $30$-fold throughput gain at 108 channels while maintaining targeting precision; wafer-median $f_{01}^{\\mathrm{max}}$ spread improved from $294 \\pm 106$ MHz (as-fabricated) to $9 \\pm 12$ MHz (post-ABAA prediction) and measured $132 \\pm 30$ MHz after cooldown; qubit-qubit detuning targeting error reduced to $\\mu \\pm \\sigma = 1 \\pm 32$ MHz experimentally, with higher two-qubit gate fidelities observed when detunings match design specifications.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2608.28535",
+      "title": "Hardware-Efficient Error Mitigation and Shot-Efficient Sampling on IBM Quantum Hardware",
+      "authors": [
+        "Sumit Chongder"
+      ],
+      "abstract": "We experimentally study error mitigation and finite-shot sampling on superconducting quantum hardware under a constrained execution budget. The study combines calibration-aware qubit selection, circuit-depth scaling, zero-noise extrapolation, dynamical decoupling, readout-error mitigation, and repeated-shot estimation on an IBM Quantum processor. Experiments are organized across ideal simulation, noise-model simulation, and physical-device execution to separate sampling uncertainty from device-induced error. We investigate how mitigation performance changes with circuit depth, effective noise scale, qubit connectivity, and measurement budget, and quantify accuracy using expectation-value error, mean-squared error, statistical uncertainty, and mitigation gain. A fixed hardware-execution budget is used to evaluate shot allocation strategies and repeated measurements without relying on unlimited sampling. The resulting analysis provides a hardware-aware characterization of when mitigation improves expectation-value estimation and when finite-shot fluctuations offset the benefit of additional mitigation overhead. The implementation uses contemporary Qiskit and IBM Quantum Runtime workflows and is designed to provide reproducible experimental evidence for error-mitigation studies on current quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-08-28",
+      "score": 0.785223167337548,
+      "similar_to": [
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8684367537498474
+        },
+        {
+          "title": "Model-based Optimization of Superconducting Qubit Readout",
+          "id": "2308.02079",
+          "similarity": 0.8671079874038696
+        }
+      ],
+      "summary": {
+        "summary": "This paper evaluates error mitigation and finite-shot sampling on an IBM Quantum Heron processor using a fixed measurement budget, finding that standard zero-noise extrapolation (ZNE) and pilot-variance-based adaptive shot allocation do not uniformly improve mean-squared error relative to uniform allocation or raw measurement. Hardware experiments on 156-qubit ibm_marrakesh with median two-qubit error $2.99 \\times 10^{-3}$ and readout error $1.45 \\times 10^{-2}$ show that adaptive ZNE outperformed uniform allocation at only 2 of 6 tested budgets (average MSE ratio 2.16), and that coupler selection from calibration data produced errors comparable to multiple circuit layers.",
+        "motivation": "Quantum error mitigation trades bias reduction for increased variance, but nearly all prior benchmarks report accuracy improvements without accounting for the sampling cost incurred under fixed measurement budgets, making it unclear whether mitigation actually reduces mean-squared error in practice.",
+        "method": "A bias-variance-aware framework decomposing mean-squared error into bias and variance components was applied on physical hardware using Qiskit Runtime V2 primitives, comparing raw measurement, readout mitigation, uniform-allocation ZNE, adaptive shot-budgeted ZNE (ASB-ZNE) using Neyman-optimal allocation seeded by a 100-shot pilot, and dynamical decoupling ($XY_4$ sequences) across GHZ states, repeated-layer circuits ($L \\in \\{1, 2, 4, 8\\}$), and QAOA MaxCut.",
+        "result": "On ibm_marrakesh, readout mitigation provided negligible benefit; dynamical decoupling improved estimates only at shallow depth ($L=1,2$) and not where two-qubit gate error dominated; ZNE increased bias for parity observables (bias $1.70 \\times 10^{-2}$ vs. raw $5.07 \\times 10^{-3}$) while succeeding for QAOA energy; adaptive shot allocation was worse than uniform at 4 of 6 budgets ($B \\in \\{900, 3000, 12000, 21000\\}$ shots) with mean ratio 2.16; and qubit-coupler placement effects ($\\langle ZZ \\rangle$ dropping from 0.909 to 0.751 between low and high-error couplers) matched or exceeded depth-induced decay.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2608.28463",
+      "title": "Fabrication-free assessment of microwave losses in germanium-based dielectrics and superconductors",
+      "authors": [
+        "Haoran Lu",
+        "Kushagra Aggarwal",
+        "Xiangqin Wang",
+        "Pauline Drexler",
+        "Daniel Tong",
+        "Maciej W. Olszewski",
+        "Anand Ithepalli",
+        "Lingda Kong",
+        "Debdeep Jena",
+        "Peter L. McMahon",
+        "David A. Muller",
+        "Dominique Bougeard",
+        "Valla Fatemi"
+      ],
+      "abstract": "We present a flip-chip-based sensing scheme to measure effective microwave losses associated with target materials for quantum technologies, without requiring any device fabrication on the material under test. Using this approach, we quantify the microwave losses of a strain-engineered Ge/SiGe quantum well heterostructure and investigate losses arising from its Ge substrate and intermediate layers. The quality factors of the fabricated microwave resonators agree with the losses of dielectric materials independently extracted from flip-chip sensing measurements. We further study the superconductor platinum silicon germanide (PtSiGe) prepared by thermal reaction with a deposited Pt film, finding high microwave losses that limit the suitability of the films studied here as the sole superconductor for high-quality resonator applications. By coating Pt with Nb prior to the reaction, we observe a substantial reduction in microwave loss and a nearly three-fold enhancement of the transport critical temperature. The temperature dependence of the microwave loss is consistent with gap inhomogeneity in both superconducting films. These results identify constraints on material choices, provide design guidance for microwave circuits on planar Ge heterostructures, and demonstrate a fast-turnaround testing method for new materials for superconducting quantum circuits.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-08-28",
+      "score": 0.7066973102302964,
+      "similar_to": [
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.8971956968307495
+        },
+        {
+          "title": "Comparison of Dielectric Loss in Titanium Nitride and Aluminum Superconducting Resonators",
+          "id": "2007.07338",
+          "similarity": 0.853176474571228
+        }
+      ],
+      "summary": {
+        "summary": "A flip-chip sensing technique enables fabrication-free measurement of microwave losses in target materials by placing them above a sensor chip with superconducting resonators separated by SU-8 pillars, avoiding processing-induced damage that confounds traditional resonator fabrication. Applied to Ge/SiGe heterostructures and superconducting films, the method reveals that bare Ge and composition-graded SiGe virtual layers exhibit loss tangents of $(183 ± 37) × 10^{-6}$ and $(200 ± 29) × 10^{-6}$, respectively, with HF treatment reducing the as-grown Ge/SiGe QW heterostructure loss from $(658 ± 464) × 10^{-6}$ to $(108 ± 18) × 10^{-6}$.",
+        "motivation": "Microwave resonators on planar Ge heterostructures show high losses that limit superconductor-semiconductor hybrid quantum devices, but disentangling contributions from substrate, dielectrics, superconductors, and interfaces requires extensive fabrication that introduces confounding damage.",
+        "method": "A sensor chip with eight $λ/4$ CPW resonators (fabricated from Ta/Nb on Si) and 4 µm SU-8 pillars is flip-chip bonded to target materials; electromagnetic field penetration into the target allows measurement of participation ratios and loss extraction via normalized subtraction from a vacuum baseline, with sensitivity tunable by pillar height from $0.67\\%$ to $6.39\\%$ for Ge dielectrics and $0.63 × 10^{-6}$ to $14.8 × 10^{-6}$ for superconductor surface oxides.",
+        "result": "PtSiGe exhibits high microwave loss $(173 ± 130) × 10^{-6}$ that worsens with aging to $(736 ± 134) × 10^{-6}$ after two months, limiting its use as a standalone superconductor; Nb coating (Nb-PtSiGe) reduces loss to $(11.1 ± 1.9) × 10^{-6}$ with lower aging sensitivity, while raising transport critical temperature nearly three-fold from $0.54$ K to $1.5$ K, though both films show reduced RF critical temperature $(T_C^{\\mathrm{RF}} ≈ 0.31–0.32$ K) indicating gap inhomogeneity.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2608.28428",
+      "title": "Kerr nonlinearity and three-wave mixing in superconducting resonators hosting Al-InAs weak links",
+      "authors": [
+        "Vittorio Buccheri",
+        "Ivo P. C. Cools",
+        "Nermin Trnjanin",
+        "Ankit Khola",
+        "Oleg Shvetsov",
+        "Thomas Kanne",
+        "Jesper Nygård",
+        "Attila Geresdi",
+        "Simone Gasparinetti"
+      ],
+      "abstract": "Nonlinear microwave resonators are a versatile tool in quantum information processing, enabling parametric amplification, continuous variable quantum computing, and engineered mode interactions. Many of these applications especially benefit from cubic nonlinearities enabling three-wave mixing; at the same time, they are limited by quartic nonlinearities giving rise to undesired Kerr effects. A recurrent challenge is therefore to engineer resonators with a finite cubic nonlinearity while suppressing quartic terms. Here, we investigate a superconducting resonator hosting two weak links fabricated from an aluminum-capped indium arsenide nanowire. We characterize the Kerr nonlinearity as a function of magnetic flux and gate bias, showing that it can be tuned to zero with either control parameter. Furthermore, we experimentally demonstrate three-wave mixing in a semiconductor-superconductor hybrid device, establishing nonzero cubic nonlinearity. An effective model based on Andreev bound states qualitatively captures the observed trends. Our results validate semiconductor-superconductor hybrid devices as a promising platform for tunable nonlinear superconducting circuits, with applications in parametric amplification, quantum control of bosonic modes, and engineering interactions between microwave modes.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-08-28",
+      "score": 0.502404847749805,
+      "similar_to": [
+        {
+          "title": "A near-quantum-limited Josephson traveling-wave parametric amplifier",
+          "id": null,
+          "similarity": 0.8353493213653564
+        },
+        {
+          "title": "High-gain and large-bandwidth Josephson parametric amplifier influenced by Fabry-Perot interference",
+          "id": "2604.13881",
+          "similarity": 0.8341140151023865
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates tunable Kerr and cubic nonlinearities in a superconducting NbTiN resonator hosting two aluminum-capped indium arsenide nanowire weak links, with independent flux and gate control over each junction. The authors achieve zero Kerr nonlinearity ($K/2\\pi \\approx 0$ kHz) while maintaining substantial cubic nonlinearity ($|g_3| \\approx 35$–$70$ kHz), and experimentally demonstrate three-wave mixing parametric amplification with on-off gain exceeding 20 dB, reaching 25 dB in the optimized double-junction configuration.",
+        "motivation": "Engineering resonators with nonzero cubic nonlinearity while suppressing detrimental Kerr nonlinearity is a central challenge for parametric amplification and bosonic-mode quantum control. Andreev bound states in tunable semiconducting weak links offer electrostatic and magnetic control beyond conventional Josephson junctions, but their nonlinear response had not been systematically characterized experimentally.",
+        "method": "A double-junction Al-InAs nanowire weak-link device was embedded in an NbTiN resonator (bare frequency $\\omega_r^0/2\\pi = 6.759$ GHz, $Q_i^0 = 2.1 \\times 10^4$, $Q_c^0 = 2.5 \\times 10^3$). Kerr nonlinearity was extracted from power-dependent frequency shifts; cubic nonlinearity from three-wave mixing gain at $\\omega_p = 2\\omega_r$. An effective model based on Andreev bound state pairs ($U_{\\mathrm{ABS}}(\\varphi) = \\pm\\Delta\\sqrt{1-\\tau\\sin^2(\\varphi/2)}$) with gate-tunable transparency $\\tau$ and phase $\\varphi$ was used to interpret the results.",
+        "result": "Kerr nonlinearity was tuned to zero (around $\\varphi \\approx 0.8\\pi, 1.2\\pi$ for datasets I and II) with cubic nonlinearity reaching $|g_3|/2\\pi \\approx 35$–$70$ kHz. The double-junction configuration achieved a maximum on-off gain of 25 dB with a $-1$ dB compression point at $-138$ dBm and $\\approx 2$ MHz bandwidth. Two-tone spectroscopy confirmed Andreev bound state transitions, and the single-channel ABS model qualitatively captured observed $\\delta\\omega_r(\\varphi)$, $K(\\varphi)$, and $g_3(\\varphi)$ trends across multiple gate configurations.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8936,
+    0.7852,
+    0.7067,
+    0.5024,
+    0.3214,
+    0.3066,
+    0.2983,
+    0.2586,
+    0.22,
+    0.2064,
+    0.1882,
+    0.1797,
+    0.1532,
+    0.1522,
+    0.1434,
+    0.1427,
+    0.1345,
+    0.1179,
+    0.1151,
+    0.1095,
+    0.1076,
+    0.1061,
+    0.0923,
+    0.0851,
+    0.0829,
+    0.0817,
+    0.0812,
+    0.0811,
+    0.08,
+    0.0795,
+    0.0761,
+    0.0703,
+    0.0686,
+    0.0617,
+    0.0593,
+    0.0586,
+    0.0585,
+    0.0573,
+    0.0499,
+    0.0495,
+    0.0409,
+    0.0406,
+    0.0399,
+    0.0391,
+    0.0384,
+    0.0381,
+    0.0353,
+    0.0353,
+    0.0345,
+    0.0342,
+    0.0329,
+    0.0329,
+    0.032,
+    0.0312,
+    0.0306,
+    0.0305,
+    0.0298,
+    0.0297,
+    0.0296,
+    0.0293,
+    0.0256,
+    0.025,
+    0.0229,
+    0.0227,
+    0.0226,
+    0.0226,
+    0.0216,
+    0.0191,
+    0.0188,
+    0.0179,
+    0.0171,
+    0.0165,
+    0.0154,
+    0.0147,
+    0.0139,
+    0.0138,
+    0.0123,
+    0.0115,
+    0.0114,
+    0.0109,
+    0.0106,
+    0.0105,
+    0.0102,
+    0.01,
+    0.0097,
+    0.0097,
+    0.0092,
+    0.008,
+    0.0072,
+    0.0056,
+    0.0054,
+    0.0054,
+    0.0052,
+    0.005,
+    0.0048,
+    0.0041,
+    0.0024,
+    0.0023,
+    0.0014
+  ]
+}

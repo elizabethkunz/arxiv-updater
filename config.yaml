@@ -1,0 +1,139 @@
+# arXiv digest configuration (no secrets here — those go in .env)
+
+liked_csv: "Interesting papers - Sheet1.csv"
+disliked_csv: "disliked.csv"        # optional, same columns; used as hard negatives if present
+
+# arXiv categories to watch (one OAI-PMH query each; cross-lists are deduped).
+categories:
+  - quant-ph
+  - cond-mat.supr-con
+  - cond-mat.mes-hall
+  - cond-mat.quant-gas
+  - physics.atom-ph
+
+embedding_model: "BAAI/bge-base-en-v1.5"
+
+# Author features (see digest/authors.py). Text embedding has weight 1; these scale the author
+# block against it. 0 turns a part off. Retrain after changing anything here.
+authors:
+  weight: 0.3               # authors learned from the liked list
+  established_weight: 0.1   # one flag: "has an author from the list below"
+  established:
+    - "Michel Devoret"
+    - "Robert Schoelkopf"
+    - "Luigi Frunzio"
+    - "Steven Girvin"
+    - "Leonid Glazman"
+    - "Shruti Puri"
+    - "Irfan Siddiqi"
+    - "David Santiago"
+    - "Andrew Houck"
+    - "Nathalie de Leon"
+    - "David Schuster"
+    - "William Oliver"
+    - "Simon Gustavsson"
+    - "Jeffrey Grover"
+    - "Kyle Serniak"
+    - "Kevin O'Brien"
+    - "Andreas Wallraff"
+    - "Christopher Eichler"
+    - "Leonardo DiCarlo"
+    - "Gary Steele"
+    - "John Martinis"
+    - "Andrew Cleland"
+    - "Julian Kelly"
+    - "Pedram Roushan"
+    - "Rami Barends"
+    - "Daniel Sank"
+    - "Alexander Korotkov"
+    - "Ioan Pop"
+    - "Alexey Ustinov"
+    - "Jürgen Lisenfeld"
+    - "Vladimir Manucharyan"
+    - "Yasunobu Nakamura"
+    - "Jaw-Shen Tsai"
+    - "Alexandre Blais"
+    - "Aashish Clerk"
+    - "Oskar Painter"
+    - "Gerhard Kirchmair"
+    - "Robert McDermott"
+    - "Britton Plourde"
+    - "Per Delsing"
+    - "Jonas Bylander"
+    - "Zaki Leghtas"
+    - "Mazyar Mirrahimi"
+    - "Benjamin Huard"
+    - "Jay Gambetta"
+    - "Jerry Chow"
+    - "Eli Levenson-Falk"
+    - "Daniel Lidar"
+    - "Stefan Filipp"
+    - "Mikko Möttönen"
+    - "Pertti Hakonen"
+    - "Jens Koch"
+    - "Konrad Lehnert"
+    - "Raymond Simmonds"
+    - "José Aumentado"
+    - "David Pappas"
+    - "Corey Rae McRae"
+    - "Kater Murch"
+    - "Michael Hatridge"
+    - "Gianluigi Catelani"
+    - "Liang Jiang"
+    - "Amir Safavi-Naeini"
+    - "Yiwen Chu"
+    - "Shyam Shankar"
+    - "Chen Wang"
+    - "Archana Kamal"
+    - "Angela Kou"
+    - "Wolfgang Pfaff"
+    - "Valla Fatemi"
+    - "Machiel Blok"
+    - "Srivatsan Chakram"
+    - "Alp Sipahigil"
+    - "Peter Leek"
+    - "Yvonne Gao"
+    - "Jian-Wei Pan"
+    - "Xiaobo Zhu"
+    - "Haohua Wang"
+    - "Dapeng Yu"
+    - "Yu Chen"
+    - "Fei Yan"
+    - "Long Nguyen"
+    - "Benjamin Palmer"
+    - "Frederick Wellstood"
+    - "Charles Tahan"
+    - "Andrew Kerman"
+    - "Anna Grassellino"
+    - "Alexander Romanenko"
+
+# Displayed score = sigmoid(score_sharpen * logit(raw)). 1.0 = raw. Higher lifts strong papers
+# toward 100% (raw 95 -> 97.0, 90 -> 93.0, 80 -> 83.7 at 1.18); 50% never moves and the ranking
+# never changes. Above ~1.9 everything good lands on 99%. Retrain after changing.
+score_sharpen: 1.18
+
+background:
+  n_days: 4             # random past windows sampled for "not liked" background papers
+  window_days: 10
+  max_papers: 2500
+  months_back: 18
+
+email:
+  # The mailing list is NOT here (this repo is public): it is EMAIL_RECIPIENTS in .env locally
+  # and a GitHub Actions secret of the same name. Comma-separated; each address gets its own copy.
+  style: plain          # "plain" (bold titles, no other formatting) or "styled" (site look, serif)
+  max_papers: 10
+  min_score: 0.50       # never email anything below this, even on a slow day
+
+site:
+  min_score: 0.80
+  page_size: 100        # papers shown on the index before the "Load more" button
+  base_url: "https://elizabethkunz.github.io/arxiv-updater"
+  title: "arXiv updates"
+
+run:
+  lookback_days: 5      # daily run scans this window and skips already-seen IDs
+
+summarizer:
+  model: "claude-haiku-4-5"
+  max_chars: 400000     # papers longer than this fall back to the abstract (logged)

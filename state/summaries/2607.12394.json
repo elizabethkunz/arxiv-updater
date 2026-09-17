@@ -1,0 +1,8 @@
+{
+  "summary": "YBCO/BNT/YBCO Josephson junctions with a 40 nm ferroelectric BNT barrier show robust superconducting coupling and tunable transport under THz excitation at 0.5–2.5 THz. At 1.5 THz near the plasma resonance, the junctions exhibit a critical current of 468.2 µA with an enhanced superconducting gap ($\\Delta = 1.3$ meV) and stable $I_c(T)$ up to 60 K, with BNT polarization increasing from 33.4 to 46.4 µC/cm$^2$ at 30 K.",
+  "motivation": "Ferroelectric barriers in high-$T_c$ Josephson junctions offer dynamic tuning through polarization control, enabling the design of reconfigurable quantum devices beyond conventional fixed-barrier architectures.",
+  "method": "YBCO/BNT/YBCO trilayers were grown by pulsed laser deposition on SrTiO$_3$ substrates and characterized under broadband THz irradiation (0.5–2.5 THz) using scanning tunneling spectroscopy, optical conductivity, magnetic field modulation, and structural techniques (AFM, X-ray reflectivity).",
+  "result": "At 1.5 THz resonance, the junction achieves $I_c = 468.2$ µA with canonical Fraunhofer diffraction and zero-field supercurrent branch; the superconducting gap increases to 1.3 meV (24% enhancement over bare YBCO), and $I_c(T)$ remains nearly flat to 60 K, confirming intrinsic coherent Josephson tunneling mediated by the ferroelectric barrier.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

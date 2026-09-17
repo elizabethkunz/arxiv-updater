@@ -1,0 +1,417 @@
+{
+  "date": "2026-01-30",
+  "n_fetched": 102,
+  "papers": [
+    {
+      "id": "2601.21616",
+      "title": "A biased-erasure cavity qubit with hardware-efficient quantum error detection",
+      "authors": [
+        "Jiasheng Mai",
+        "Qiyu Liu",
+        "Xiaowei Deng",
+        "Yanyan Cai",
+        "Zhongchu Ni",
+        "Libo Zhang",
+        "Ling Hu",
+        "Pan Zheng",
+        "Song Liu",
+        "Yuan Xu",
+        "Dapeng Yu"
+      ],
+      "abstract": "Erasure qubits are beneficial for quantum error correction due to their relaxed threshold requirements. While dual-rail erasure qubits have been demonstrated with a strong error hierarchy in circuit quantum electrodynamics, biased-erasure qubits -- where erasures originate predominantly from one logical basis state -- offer further advantages. Here, we realize a hardware-efficient biased-erasure qubit encoded in the vacuum and two-photon Fock states of a single microwave cavity. The qubit exhibits an erasure bias ratio of over 265. By using a transmon ancilla for logical measurements and mid-circuit erasure detections, we achieve logical state assignment errors below 1% and convert over 99.3% leakage errors into detected erasures. After postselection against erasures, we achieve effective logical relaxation and dephasing rates of $(6.2~\\mathrm{ms})^{-1}$ and $(3.1~\\mathrm{ms})^{-1}$, respectively, which exceed the erasure error rate by factors of 31 and 15, establishing a strong error hierarchy within the logical subspace. These postselected error rates indicate a coherence gain of about 6.0 beyond the break-even point set by the best physical qubit encoded in the two lowest Fock states in the cavity. Moreover, randomized benchmarking with interleaved erasure detections reveals a residual logical gate error of 0.29%. This work establishes a compact and hardware-efficient platform for biased-erasure qubits, promising concatenations into outer-level stabilizer codes toward fault-tolerant quantum computation.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-29",
+      "score": 0.9156473355657531,
+      "similar_to": [
+        {
+          "title": "Bias-preserving and error-detectable entangling operations in a superconducting dual-rail system",
+          "id": "2503.10935",
+          "similarity": 0.9133641123771667
+        },
+        {
+          "title": "Fast, High-Fidelity Erasure Detection of Dual-Rail Qubits with Symmetrically Coupled Readout",
+          "id": "2604.16292",
+          "similarity": 0.8950302600860596
+        }
+      ],
+      "summary": {
+        "summary": "A biased-erasure qubit is demonstrated in a single 3D superconducting cavity using the vacuum and two-photon Fock states ($|0_L\\rangle = |0\\rangle$, $|1_L\\rangle = |2\\rangle$), achieving an erasure bias ratio exceeding 265 and converting over 99.3% of leakage errors into detected erasures with a transmon ancilla. After postselection against erasures, the qubit exhibits a strong error hierarchy with logical relaxation and dephasing rates of $(6.2~\\mathrm{ms})^{-1}$ and $(3.1~\\mathrm{ms})^{-1}$ exceeding the erasure rate by factors of 31 and 15, yielding a coherence gain of 6.0 beyond the break-even point and a residual single-qubit gate error of $2.9 \\times 10^{-3}$.",
+        "motivation": "Biased-erasure qubits promise lower thresholds and reduced overhead when concatenated into stabilizer codes exploiting their structured noise, yet prior experimental demonstrations in cavity QED platforms remained elusive.",
+        "method": "A hardware-efficient $0N$ erasure qubit is encoded in two Fock states of a single coaxial stub cavity ($T_{1,c} = 0.47$ ms) coupled to a transmon ancilla with $\\chi_{qc}/2\\pi = 1.69$ MHz for mid-circuit erasure detection via photon-number parity measurement and logical gates via quantum optimal control pulses.",
+        "result": "Logical state assignment error below 1%, false-positive and false-negative erasure detection rates of $(0.22 \\pm 0.02)\\%$ and $(0.69 \\pm 0.03)\\%$ respectively; postselected effective logical errors of $(6.2~\\mathrm{ms})^{-1}$ (relaxation) and $(3.1~\\mathrm{ms})^{-1}$ (dephasing) demonstrate a strong error hierarchy enabling fault-tolerant quantum computation via code concatenation.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.21953",
+      "title": "Fabrication effects on Niobium oxidation and surface contamination in Niobium-metal bilayers using X-ray photoelectron spectroscopy",
+      "authors": [
+        "Tathagata Banerjee",
+        "Maciej W. Olszewski",
+        "Valla Fatemi"
+      ],
+      "abstract": "Superconducting resonators and qubits are limited by dielectric losses from surface oxides. Surface oxides are mitigated through various strategies such as the addition of a metal capping layer, surface passivation, and acid processing. In this study, we demonstrate the use of X-ray photoelectron spectroscopy (XPS) as a rapid characterization tool to study the effectiveness cap layers for niobium for further device fabrication. We non-destructively evaluate 17 capping layers to characterize their ability to prevent oxygen diffusion, and the effects of standard fabrication processes -- annealing, resist stripping, and acid cleaning. We downselect for resilient capping layers and test their microwave resonator performance.",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "quant-ph"
+      ],
+      "published": "2026-01-29",
+      "score": 0.9031987192339739,
+      "similar_to": [
+        {
+          "title": "Reducing TLS loss in tantalum CPW resonators using titanium sacrificial layers",
+          "id": "2601.16369",
+          "similarity": 0.8044592142105103
+        },
+        {
+          "title": "Assessing the Sensitivity of Niobium- and Tantalum-Based Superconducting Qubits to Infrared Radiation",
+          "id": "2602.05806",
+          "similarity": 0.7919846177101135
+        }
+      ],
+      "summary": {
+        "summary": "X-ray photoelectron spectroscopy was used to screen 17 metal and nitride capping layers on 60 nm Nb films for their ability to prevent oxygen diffusion through standard fabrication steps: annealing at 200 °C, AZ 300T resist stripping, and acid cleaning (2% HF, 10:1 BOE, Nanostrip). Resonator measurements on down-selected caps (Ta, TaN, TiN, Zr) showed Ta and TaN-capped samples achieve lower medium-power loss $\\delta_{\\mathrm{MP}}$ than bare Nb control, with Ta and TaN resilient to all tested processes while most other metals suffered oxidation or etching.",
+        "motivation": "Surface oxides of superconducting Nb are a major source of loss in qubits and resonators. Understanding how capping layers protect the Nb-oxide interface during fabrication—annealing, resist stripping, and acid cleaning—is essential for integrating effective encapsulation strategies into device processing.",
+        "method": "Bilayers of 60 nm Nb with 5 nm caps (Al, Au, Hf, Mo, Pd, Pt, Ta, Ti, W, Zr, Ti-W, Zr-Y, plus NbN, HfN, TaN, TiN, ZrN) were deposited in-situ on high-resistivity Si wafers. Samples underwent annealing (200 °C, 1 h in air or vacuum), AZ 300T strip bath, or acid dips, then analyzed by XPS measuring Nb oxidation state from electrons escaping the top 5–10 nm. Resonators were fabricated from promising caps and measured at 500 mK to extract $\\delta_{\\mathrm{MP}}$ ($\\langle n \\rangle < 100$ photons) and $\\delta_{\\mathrm{HP}}$ ($\\langle n \\rangle > 10^6$ photons).",
+        "result": "Ta and TaN caps prevented Nb oxidation after annealing, strip bath, and all acid cleans. Ta-capped resonators achieved $\\delta_{\\mathrm{MP}}$ lower than control Nb; TaN similarly reduced $\\delta_{\\mathrm{MP}}$. Noble metals (Au, Pd, Pt) failed as barriers, allowing Nb oxidation after air annealing. Mo, W, and Ti-W were eroded by the AZ 300T strip; Al, Hf, Zr were damaged by all acid treatments.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.21313",
+      "title": "Dispersive Microwave Sensing for Quantum Computing with Floating Electrons",
+      "authors": [
+        "Yiran Tian"
+      ],
+      "abstract": "In this dissertation, resonator-based readout techniques were developed for floating electrons as qubits on cryogenic substrates, using two platforms: electrons on liquid helium and electrons on solid neon. In addition, a cryogenic microwave source was developed to enable low-noise measurement for qubit readout.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-01-29",
+      "score": 0.7631483436211024,
+      "similar_to": [
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.8014811873435974
+        },
+        {
+          "title": "Enhancing Dispersive Readout of Superconducting Qubits Through Dynamic Control of the Dispersive Shift: Experiment and Theory",
+          "id": "2307.07765",
+          "similarity": 0.7930340766906738
+        }
+      ],
+      "summary": {
+        "summary": "This dissertation develops resonator-based readout techniques for floating-electron qubits on cryogenic substrates (liquid helium and solid neon) and demonstrates a low-power cryogenic microwave source. Three main experimental systems are demonstrated: RF reflectometry detection of Rydberg transitions on helium achieving $0.34$ aF/Hz capacitance sensitivity, NbTiN superconducting nanowire resonators for electrons on neon with $Q_\\mathrm{int} \\approx 2.3 \\times 10^5$, and a $140$ MHz tunnel-diode oscillator consuming $1$ μW for scalable qubit readout.",
+        "motivation": "Floating electrons on cryogenic substrates offer exceptionally long predicted coherence times (spin $T_2 \\sim 100$ s on helium, $\\sim 0.1$ ms on neon) and promise scalable quantum computing with high-density qubit packing. However, practical readout and control electronics for such systems remain underdeveloped, particularly for integration with superconducting resonators and cryogenic signal sources.",
+        "method": "For helium experiments, a high-Q LC tank circuit ($Q \\sim 311$ at $121.9$ MHz) with Corbino-plate capacitor was integrated with a microfabricated Nb spiral inductor; Rydberg transitions were detected via frequency-modulated microwave irradiation combined with RF reflectometry. For neon experiments, NbTiN nanowire resonators ($4.81$ GHz, $20$ nm film on Si) were deposited with solid neon and electrons; theoretical analysis predicted spin-photon coupling and gate fidelities using integrated cobalt micromagnets. A tunnel-diode oscillator with varactor-tuned LC circuit was characterized at millikelvin temperatures for phase noise and amplitude stability.",
+        "result": "Helium readout achieved single-electron sensitivity ($60$ aF expected for nanoscale devices, $0.34$ aF/Hz demonstrated), sufficient for future qubit detection at $10$ mHz bandwidth. Neon resonators maintained $Q_\\mathrm{int}$ on order $10^5$ after neon/electron deposition; theoretical analysis predicts single/two-qubit gate fidelities approaching $99.99$%/$99.9$% with natural neon. TDO achieved $-115$ dBc/Hz phase noise at $1$ MHz offset, outperforming CMOS at $4$ K in mid-frequency range, with superior amplitude stability compared to commercial sources.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.21528",
+      "title": "High-Coherence and High-frequency Quantum Computing: The Design of a High-Frequency, High-Coherence and Scalable Quantum Computing Architecture",
+      "authors": [
+        "Masroor H. S. Bukhari"
+      ],
+      "abstract": "High-coherence, fault-tolerant and scalable quantum computing architectures with unprecedented long coherence times, faster gates, low losses and low bit-flip errors may be one of the only ways forward to achieve the true quantum advantage. In this context, high-frequency high-coherence (HCQC) qubits with new high-performance topologies could be a significant step towards efficient and high-fidelity quantum computing by facilitating compact size, higher scalability and higher than conventional operating temperatures. Although transmon type qubits are designed and manufactured routinely in the range of a few Giga-Hertz, normally from 4 to 6 GHz (and, at times, up to around 10GHz), achieving higher-frequency operation has challenges and entails special design and manufacturing considerations. This report presents the proposal and preliminary design of an 8-qubit transmon (with possible upgrade to up to 72 qubits on a chip) architecture working beyond an operation frequency of 10GHz, as well as presents a new connection topology. The current design spans a range of around 11 to 13.5 GHz (with a possible full range of 9-12GHz at the moment), with a central optimal operating frequency of 12.0 GHz, with the aim to possibly achieve a stable, compact and low-charge-noise operation, as lowest as possible as per the existing fabrication techniques. The aim is to achieve average relaxation times of up to 1.9ms with average quality factors of up to 2.75 x 10^7 after trials, while exploiting the new advances in superconducting junction manufacturing using tantalum and niobium/aluminum/aluminum oxide tri-layer structures on high-resistivity silicon substrates (carried out elsewhere by other groups and referred in this report).",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-29",
+      "score": 0.7492057269045607,
+      "similar_to": [
+        {
+          "title": "New material platform for superconducting transmon qubits with coherence times exceeding 0.3 milliseconds",
+          "id": "2003.00024",
+          "similarity": 0.8527910709381104
+        },
+        {
+          "title": "Surpassing millisecond coherence times in on-chip superconducting quantum memories by optimizing materials, processes, and circuit design",
+          "id": "2308.15539",
+          "similarity": 0.8522586226463318
+        }
+      ],
+      "summary": {
+        "summary": "This work proposes a high-frequency transmon architecture operating at $12$ GHz (spanning $11$–$13.5$ GHz) designed to achieve longer coherence times and higher scalability than conventional $4$–$6$ GHz qubits. The design targets an 8-qubit prototype with pathways to $72$ qubits, aiming for $T_1 \\approx 1.9$ ms and quality factors $Q \\approx 2.75 \\times 10^7$ using tantalum and Nb/Al/AlO$_x$ trilayer junctions on high-resistivity Si.",
+        "motivation": "Higher operating frequencies enable faster gate times and smaller device footprints while maintaining coherence, potentially improving scalability and operation at elevated temperatures relative to standard $5$ GHz transmons.",
+        "method": "A new transmon topology is designed with optimized superconducting junctions (Ta and Nb/Al/AlO$_x$ tri-layers on high-resistivity silicon) to operate stably at $12$ GHz with reduced charge noise.",
+        "result": "Preliminary design targets relaxation times of $1.9$ ms and quality factors of $2.75 \\times 10^7$, with pathways to scale from 8 to 72 qubits per chip.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.20927",
+      "title": "Entangling logical qubits without physical operations",
+      "authors": [
+        "Jin Ming Koh",
+        "Anqi Gong",
+        "Andrei C. Diaconu",
+        "Daniel Bochen Tan",
+        "Alexandra A. Geim",
+        "Michael J. Gullans",
+        "Norman Y. Yao",
+        "Mikhail D. Lukin",
+        "Shayan Majidy"
+      ],
+      "abstract": "Fault-tolerant logical entangling gates are essential for scalable quantum computing, but are limited by the error rates and overheads of physical two-qubit gates and measurements. To address this limitation, we introduce phantom codes-quantum error-correcting codes that realize entangling gates between all logical qubits in a code block purely through relabelling of physical qubits during compilation, yielding perfect fidelity with no spatial or temporal overhead. We present a systematic study of such codes. First, we identify phantom codes using complementary numerical and analytical approaches. We exhaustively enumerate all $2.71 \\times 10^{10}$ inequivalent CSS codes up to $n=14$ and identify additional instances up to $n=21$ via SAT-based methods. We then construct higher-distance phantom-code families using quantum Reed-Muller codes and the binarization of qudit codes. Across all identified codes, we characterize other supported fault-tolerant logical Clifford and non-Clifford operations. Second, through end-to-end noisy simulations with state preparation, full QEC cycles, and realistic physical error rates, we demonstrate scalable advantages of phantom codes over the surface code across multiple tasks. We observe a one-to-two order-of-magnitude reduction in logical infidelity at comparable qubit overhead for GHZ-state preparation and Trotterized many-body simulation tasks, given a modest preselection acceptance rate. Our work establishes phantom codes as a viable architectural route to fault-tolerant quantum computation with scalable benefits for workloads with dense local entangling structure, and introduces general tools for systematically exploring the broader landscape of quantum error-correcting codes.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-28",
+      "score": 0.714275051981083,
+      "similar_to": [
+        {
+          "title": "Entangling logical qubits without physical operations",
+          "id": "2601.20927",
+          "similarity": 0.9983452558517456
+        },
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.8737167716026306
+        }
+      ],
+      "summary": {
+        "summary": "Phantom codes are quantum error-correcting codes that implement logical entangling gates between all logical qubits purely through physical qubit permutations during compilation, achieving perfect fidelity with zero spatial and temporal overhead. Through exhaustive enumeration of $2.71 \times 10^{10}$ CSS codes up to $n=14$, SAT-based search, and analytic constructions using quantum Reed–Muller codes and binarized qudit codes, the work expands the phantom-code landscape from two known instances to over 100,000 codes, and demonstrates one-to-two order-of-magnitude reductions in logical infidelity for GHZ-state preparation and Trotterized many-body simulation compared to surface codes at comparable qubit overhead.",
+        "motivation": "Logical entangling gates account for substantial error budgets in fault-tolerant quantum computers, but conventional implementations require repeated measurement rounds, dense two-qubit gate layers, or ancillary codeblocks. Realizing this potential by jointly optimizing storage and computation requires identifying codes that support efficient logical gates with minimal overhead.",
+        "method": "The authors systematically identify phantom codes via exhaustive enumeration with optimized Tanner graph canonical forms, SAT-based code discovery with Boolean constraint formulations, and analytic constructions from quantum Reed–Muller codes ($\\lfloor 2^m, m-l+1, \\min(2^{m-l}, 2^l) \\rfloor$) and binarized $\\mathrm{GF}(4)$ cyclic codes. End-to-end noisy simulations with Steane-style syndrome extraction, preselection-based state preparation, and spatiotemporal sliding-window decoders benchmark the $\\lfloor 64, 4, 8 \\rfloor$ phantom code against optimized surface codes under neutral-atom-calibrated noise ($p \\sim 10^{-3}$).",
+        "result": "For GHZ-state preparation on 64 logical qubits with 24% preselection acceptance, the phantom code achieves $\\sim 56 \\times$ lower logical infidelity than comparable surface codes; for eight-body Trotterized simulation, $\\sim 94 \\times$ reduction persists as system size scales, with advantages maintained at both near-term and projected future error rates.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.21472",
+      "title": "In-situ benchmarking of fault-tolerant quantum circuits. I. Clifford circuits",
+      "authors": [
+        "Xiao Xiao",
+        "Dominik Hangleiter",
+        "Dolev Bluvstein",
+        "Mikhail D. Lukin",
+        "Michael J. Gullans"
+      ],
+      "abstract": "Benchmarking physical devices and verifying logical algorithms are important tasks for scalable fault-tolerant quantum computing. Numerous protocols exist for benchmarking devices before running actual algorithms. In this work, we show that both physical and logical errors of fault-tolerant circuits can even be characterized in-situ using syndrome data. To achieve this, we map general fault-tolerant Clifford circuits to subsystem codes using the spacetime code formalism and develop a scheme for estimating Pauli noise in Clifford circuits using syndrome data. We give necessary and sufficient conditions for the learnability of physical and logical noise from given syndrome data, and show that we can accurately predict logical fidelities from the same data. Importantly, our approach requires only a polynomial sample size, even when the logical error rate is exponentially suppressed by the code distance, and thus gives an exponential advantage against methods that use only logical data such as direct fidelity estimation. We demonstrate the practical applicability of our methods in various scenarios using synthetic data as well as the experimental data from a recent demonstration of fault-tolerant circuits by Bluvstein et al. [Nature 626, 7997 (2024)]. Our methods provide an efficient, in-situ way of characterizing a fault-tolerant quantum computer to help gate calibration, improve decoding accuracy, and verify logical circuits.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-29",
+      "score": 0.6411058205112155,
+      "similar_to": [
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.8902804851531982
+        },
+        {
+          "title": "Evidence for the utility of quantum computing before fault tolerance",
+          "id": null,
+          "similarity": 0.8816797137260437
+        }
+      ],
+      "summary": {
+        "summary": "This paper develops a framework for learning physical and logical error rates in fault-tolerant quantum circuits directly from syndrome data using the spacetime code formalism. The method achieves polynomial sample complexity for learning logical error rates even when they are exponentially suppressed by code distance, providing an exponential advantage over direct logical measurements.",
+        "motivation": "Characterizing physical noise and verifying logical circuit performance are critical for scaling fault-tolerant quantum computers, yet current benchmarking methods require pre-calibration or exponential samples when logical error rates are suppressed.",
+        "method": "The authors map fault-tolerant Clifford circuits to subsystem codes via circuit-to-code mapping, establish necessary and sufficient learnability conditions for Pauli noise from syndrome data using transformed eigenvalue bases and syndrome matrices, and provide algorithms for estimating both syndrome class error rates and individual physical errors with extra constraints.",
+        "result": "Using syndrome data from simulated and experimental fault-tolerant circuits on superconducting platforms, the method learns syndrome class error rates with near-constant sample complexity for qLDPC codes under local sparse noise, and achieves polynomial sample complexity $N = \\tilde{\\mathcal{O}}(n^2 T^2 \\eta_L^{-2} P_{C_{\\mathrm{min}}}^{-2})$ for logical error learning—exponentially better than $\\eta_L^{-2} P_{\\mathrm{fail}}^{-1}$ from direct logical measurements.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.21507",
+      "title": "Quantum Simulation with Fluxonium Qutrit Arrays",
+      "authors": [
+        "Ivan Amelio",
+        "Quentin Ficheux",
+        "Nathan Goldman"
+      ],
+      "abstract": "Fluxonium superconducting circuits were originally proposed to realize highly coherent qubits. In this work, we explore how these circuits can be used to implement and harness qutrits, by tuning their energy levels and matrix elements via an external flux bias. In particular, we investigate the distinctive features of arrays of fluxonium qutrits, and their potential for the quantum simulation of exotic quantum matter. We identify four different operational regimes, classified according to the plasmon-like versus fluxon-like nature of the qutrit excitations. Highly tunable on-site interactions are complemented by correlated single-particle hopping, pair hopping and non-local interactions, which naturally emerge and have different weights in the four regimes. Dispersive corrections and decoherence are also analyzed. We investigate the rich ground-state phase diagram of qutrit arrays and propose practical dynamical experiments to probe the different regimes. Altogether, fluxonium qutrit arrays emerge as a versatile and experimentally accessible platform to explore strongly correlated bosonic matter beyond the Bose-Hubbard paradigm, and with a potential toward simulating lattice gauge theories and non-Abelian topological states.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-29",
+      "score": 0.6198674867238514,
+      "similar_to": [
+        {
+          "title": "Scalable Fluxonium Quantum Processors via Tunable-Coupler Architecture",
+          "id": "2604.13363",
+          "similarity": 0.8721793293952942
+        },
+        {
+          "title": "Quasiparticle-induced transitions in a fluxonium qubit",
+          "id": "2607.21329",
+          "similarity": 0.8689202666282654
+        }
+      ],
+      "summary": {
+        "summary": "This work proposes using fluxonium superconducting circuits to implement qutrit quantum simulators with tunable parameters via external flux bias, identifying four distinct operational regimes characterized by plasmon-like versus fluxon-like excitations. The platform realizes an extended Bose-Hubbard model with three-body hard-core constraint, correlated single-particle and pair hopping, and non-local interactions, exhibiting rich phase diagrams including superfluid, pair-superfluid, Mott-insulator, and pair-checkerboard phases.",
+        "motivation": "Qutrit-based simulators promise advantages over qubit platforms for exploring strongly correlated bosonic matter and lattice gauge theories, but previous proposals lacked comprehensive treatment of all interaction terms and operational flexibility. Fluxonium circuits offer superior tuning capabilities compared to transmons due to their larger anharmonicity and protection from charge noise.",
+        "method": "The authors map the coupled fluxonium circuit Hamiltonian to a bosonic qutrit array Hamiltonian using rotating-wave approximation and perturbation theory, analyze four regimes (ΠΠ, ΦΦ, ΠΦ, ΦΠ) achievable with $E_C = 2π × 0.60$ GHz and $E_L = 2π × 1.50$ GHz by tuning $E_J$ and external flux $Φ$, study ground-state phases via Gutzwiller approximation and exact diagonalization, and propose dynamical experiments probing different regimes.",
+        "result": "Achievable transition frequencies range from $2π × 2.08$ GHz to $2π × 6.06$ GHz with detunings $δ > 2π × 350$ MHz, pair-hopping ratios $P/J$ spanning $0.29$ to $131$, and coherence times $T_φ ≳ 3$ μs limited primarily by flux noise; the phase diagram includes superfluid, pair-superfluid with stiffness $∝ α^2 J^2/|Δ|$, Mott-insulator, and pair-checkerboard phases, with dynamical signatures distinguishable on microsecond timescales.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.21838",
+      "title": "Error-detectable Universal Control for High-Gain Bosonic Quantum Error Correction",
+      "authors": [
+        "Weizhou Cai",
+        "Zi-Jie Chen",
+        "Ming Li",
+        "Qing-Xuan Jie",
+        "Xu-Bo Zou",
+        "Guang-Can Guo",
+        "Luyan Sun",
+        "Chang-Ling Zou"
+      ],
+      "abstract": "Protecting quantum information through quantum error correction (QEC) is a cornerstone of future fault-tolerant quantum computation. However, current QEC-protected logical qubits have only achieved coherence times about twice those of their best physical constituents. Here, we show that the primary barrier to higher QEC gains is ancilla-induced operational errors rather than intrinsic cavity coherence. To overcome this bottleneck, we introduce error-detectable universal control of bosonic modes, wherein ancilla relaxation events are detected and the corresponding trajectories discarded, thereby suppressing operational errors on logical qubits. For binomial codes, we demonstrate universal gates with fidelities exceeding $99.6\\%$ and QEC gains of $8.33\\times$ beyond break-even. Our results establish that gains beyond $10\\times$ are achievable with state-of-the-art devices, establishing a path toward fault-tolerant bosonic quantum computing.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-29",
+      "score": 0.5805059444091213,
+      "similar_to": [
+        {
+          "title": "Hardware-efficient quantum error correction via concatenated bosonic qubits",
+          "id": "2409.13025",
+          "similarity": 0.8851436376571655
+        },
+        {
+          "title": "Demonstrating Quantum Error Correction that Extends the Lifetime of Quantum Information",
+          "id": "1602.04768",
+          "similarity": 0.8768059015274048
+        }
+      ],
+      "summary": {
+        "summary": "This work introduces error-detectable (ED) universal control of bosonic modes using a higher-energy-level ancilla ($|g\\rangle$, $|e\\rangle$, $|f\\rangle$) to detect and post-select against ancilla relaxation events, suppressing operational errors that limit QEC gains in binomial codes. Numerical simulations demonstrate universal gate fidelities exceeding 99.6% and peak QEC gains of $8.33\\times$ beyond break-even, with analytical arguments establishing that gains beyond $10\\times$ are achievable with state-of-the-art transmon qubits having $T_1 \\sim 100$ µs.",
+        "motivation": "Current bosonic QEC implementations achieve coherence improvements only $\\sim 2\\times$ the physical qubit because ancilla-induced operational errors ($\\epsilon_{\\mathrm{op}}$), not intrinsic cavity loss, dominate the error budget according to $G_{\\mathrm{break}} \\sim \\alpha^2 \\alpha_W \\epsilon_{\\mathrm{op}}$.",
+        "method": "Error detection is implemented by using the intermediate $|e\\rangle$ state as a herald: two-photon drives on the ancilla create effective Hilbert-space rotations in the $\\{|g\\rangle, |f\\rangle\\}$ subspace, combined with dispersive coupling to the bosonic mode. Post-selection discards trajectories where the ancilla is measured in $|e\\rangle$, reducing operational error to $\\epsilon_{\\mathrm{op}} < 0.4\\%$ for all logical operations on binomial codes (code space $\\{|0_L\\rangle = (|0\\rangle + |4\\rangle)/\\sqrt{2}, |1_L\\rangle = |2\\rangle\\}$) with $\\sim 95\\%$ success probability.",
+        "result": "For repeated ED QEC cycles at $\\kappa = 1/(2\\,\\mathrm{ms})$ and $\\chi_e/2\\pi = 1$ MHz, $\\chi_f/2\\pi = 2$ MHz: ED-A QEC (ancilla-only post-selection) achieves $T_1 = 18.76$ ms versus $3.35$ ms for physical qubits ($5.60\\times$ gain); ED-AB QEC (ancilla plus bosonic-mode post-selection) reaches infidelity ratio $8.33\\times$ at $t = 2375$ µs. Analytic error budget shows critical ancilla lifetime $1/\\kappa_e^C \\approx 91$ µs for $1/\\kappa = 2$ ms, with saturation gain $G_{\\mathrm{break}}^{\\mathrm{sat}} \\approx 39$ limited by residual cavity loss during correction.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9156,
+    0.9032,
+    0.7631,
+    0.7492,
+    0.7143,
+    0.6411,
+    0.6199,
+    0.5805,
+    0.4414,
+    0.2695,
+    0.217,
+    0.2153,
+    0.1904,
+    0.1676,
+    0.1633,
+    0.1561,
+    0.1433,
+    0.1385,
+    0.1292,
+    0.1223,
+    0.1207,
+    0.12,
+    0.1127,
+    0.1049,
+    0.1033,
+    0.1025,
+    0.087,
+    0.0826,
+    0.0809,
+    0.077,
+    0.0769,
+    0.0714,
+    0.0702,
+    0.0676,
+    0.064,
+    0.0633,
+    0.0627,
+    0.0618,
+    0.0588,
+    0.0587,
+    0.0554,
+    0.0509,
+    0.0507,
+    0.0485,
+    0.0474,
+    0.0474,
+    0.0466,
+    0.044,
+    0.043,
+    0.0366,
+    0.0341,
+    0.0336,
+    0.0326,
+    0.0318,
+    0.0304,
+    0.0294,
+    0.0287,
+    0.0285,
+    0.0279,
+    0.0272,
+    0.0221,
+    0.0213,
+    0.0205,
+    0.0203,
+    0.0202,
+    0.0193,
+    0.0189,
+    0.0177,
+    0.0154,
+    0.0141,
+    0.014,
+    0.0137,
+    0.0134,
+    0.0122,
+    0.0116,
+    0.0104,
+    0.0102,
+    0.0102,
+    0.0101,
+    0.0097,
+    0.0094,
+    0.0091,
+    0.0085,
+    0.008,
+    0.0079,
+    0.0079,
+    0.0077,
+    0.0076,
+    0.0071,
+    0.0069,
+    0.0067,
+    0.0066,
+    0.0064,
+    0.0053,
+    0.0052,
+    0.005,
+    0.0047,
+    0.0046,
+    0.0036,
+    0.0031,
+    0.0028,
+    0.0022
+  ]
+}

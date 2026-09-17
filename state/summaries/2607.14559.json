@@ -1,0 +1,8 @@
+{
+  "summary": "Flip-chip bonding of a SiMOS double quantum dot chip to a superconducting aluminum resonator via indium bumps enables dispersive charge readout with SNR = 1 at 0.3 ms integration time. The integrated device maintains functionality over 60 mK to 760 mK and up to 10 mT in-plane magnetic field, with charge sensitivity limited by the resonator's superconducting properties.",
+  "motivation": "SiMOS qubits require scalable, compact readout techniques integrated with multiple gates, and dispersive resonator-based approaches offer a path to dense qubit arrays while keeping semiconductor and superconducting components on separate, independently optimized chips.",
+  "method": "A three-layer aluminum-gated SiMOS double quantum dot chip ($2 \\times 2$ mm$^2$) was bonded to a superconducting aluminum resonator chip ($10 \\times 6$ mm$^2$) using thermocompression flip-chip bonding with 19 electrically active and 40 floating indium bumps; dispersive readout was performed via reflectometry at $f_r = 4.482$ GHz with $Q_i = 1798$ and $Q_c = 20900$.",
+  "result": "Charge transitions were detected across strongly, intermediate, and weakly coupled interdot regimes and in isolated mode; SNR scaled as $\\sqrt{t}$ with white-noise-limited operation; 1/$f$ charge noise was measured at 134.01 μeV/$\\sqrt{\\mathrm{Hz}}$ (equivalently 18.43 μeV/$\\sqrt{\\mathrm{Hz}}$ in electrochemical potential) with exponent $\\beta \\approx 1.04$; dc transport remained functional where microwave readout degraded above 640 mK and 10 mT.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

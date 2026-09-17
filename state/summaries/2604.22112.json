@@ -1,0 +1,8 @@
+{
+  "summary": "Self-assembled organic monolayers deposited on tantalum and silicon surfaces suppress native oxide regrowth and reduce interfacial two-level-system losses in coplanar waveguide resonators. Internal quality factors reach $1.8 \\times 10^6$ at $100$ mK in the single-photon regime, a $\\sim140\\%$ improvement over untreated devices.",
+  "motivation": "Tantalum is attractive for superconducting quantum circuits but native oxide formation regenerates after etching, creating high-loss interfacial TLS that degrade coherence times.",
+  "method": "Self-assembled organic monolayers were deposited on freshly etched tantalum and silicon in CPW resonators; surface films were characterized by contact angle, XPS, FTIR and TEM, and microwave performance measured at $5$–$9$ GHz at $100$ mK.",
+  "result": "Passivated devices achieved internal quality factors $Q_i = 1.8 \\times 10^6$ in the single-photon regime, $\\sim140\\%$ above control samples with native oxide, with power and temperature dependence confirming reduced TLS-induced dissipation.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

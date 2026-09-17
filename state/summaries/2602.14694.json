@@ -1,0 +1,8 @@
+{
+  "summary": "This work experimentally demonstrates shadow Lindblad tomography (SLT) on a superconducting 5-qubit transmon processor, achieving exponential reduction in measurement overhead compared to extensible Lindblad tomography (ELT) while maintaining agreement within uncertainties. The protocol learns time-independent Lindblad parameters describing idling dynamics and two-qubit couplings in 9 hours versus an estimated 58 hours for ELT on the full processor.",
+  "motivation": "Tomographic recovery of open-system Lindblad dynamics scales exponentially with qubit count, demanding efficient characterization schemes for device calibration and performance diagnostics in superconducting processors.",
+  "method": "Both ELT and SLT extract Lindblad coefficients from short-time evolution traces of product-state preparations and Pauli measurements, but SLT leverages randomized configurations with classical-shadow post-processing to estimate all required Pauli transfer-matrix elements via reusable randomized data, while ELT uses a complete deterministic set of tomographic probes.",
+  "result": "On 1-qubit and 3-qubit subsystems, SLT reproduces ELT parameters while using exponentially fewer configurations; the relative sample fraction required by SLT decreases with system size, consistent with $k$-local structure. On the full 5-qubit processor under a 2-local model, SLT recovered all single-qubit dissipation rates (e.g., $T_1 \\sim 10$–$30$ µs) and two-qubit coupling strengths ($< 5$ kHz), with nearest-neighbor interactions dominating over next-nearest-neighbor terms by two orders of magnitude.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "This work presents the first experimental demonstration of entanglement sudden death (ESD) induced by natural dissipation, where two photonic qubits stored in leaky superconducting circuit QED resonators lose entanglement in finite time despite asymptotic individual decay. Two ancilla qubits prepare and measure the photonic qubit state while monitoring disentanglement dynamics under Markovian spontaneous emission with decay rates $\\kappa_1 \\approx 1/240$ ns$^{-1}$ and $\\kappa_2 \\approx 1/226$ ns$^{-1}$.",
+  "motivation": "ESD has been theoretically predicted and simulated using engineered dissipative channels or non-Markovian environments, but direct confirmation under natural vacuum reservoir dissipation has been missing. This experiment addresses the gap by realizing the original Yu-Eberly scenario with controllable circuit QED.",
+  "method": "An X-type mixed entangled state is prepared in readout resonators $R_1$ ($\\omega_1^r/2\\pi \\approx 6.65$ GHz) and $R_2$ ($\\omega_2^r/2\\pi \\approx 6.76$ GHz) via parametric sideband coupling to ancilla qubits $Q_1$ and $Q_2$ ($T_1 = 11.2$ and $21.6$ µs), then allowed to evolve under natural decay, and finally state-tomography is performed by reverse mapping back to the ancillas.",
+  "result": "Concurrence measurements show that for sufficiently large initial entanglement parameter $\\beta > 1/2$, entanglement completely vanishes at a finite time $t_\\mathrm{ESD}$ (measured up to 400 ns), whereas for $\\beta \\leq 1/2$ it decays monotonically; the observed ESD times and critical conditions agree with master equation predictions across the measured parameter range.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

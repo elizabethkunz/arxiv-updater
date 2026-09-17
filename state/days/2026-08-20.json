@@ -1,0 +1,182 @@
+{
+  "date": "2026-08-20",
+  "n_fetched": 89,
+  "papers": [
+    {
+      "id": "2608.18699",
+      "title": "An ultracompact dilution refrigerator for fast quantum device characterization",
+      "authors": [
+        "Clment Geffroy",
+        "Dorian Nicolas",
+        "Eric Eyraud",
+        "Shelender Kumar",
+        "Supriya Mandal",
+        "Julien Jarreau",
+        "Laura Kowalski",
+        "Laurent Del-Rey",
+        "Didier Dufeu",
+        "Nicolas Roch",
+        "Wolfgang Wernsdorfer",
+        "Quentin Ficheux",
+        "Matias Urdampilleta"
+      ],
+      "abstract": "Rapid thermal cycling is a central bottleneck in the development of superconducting quantum devices: conventional dilution refrigerators require cooldowns of a day or more and substantial cryogenic infrastructure, which throttles the fabricate-measure-redesign loop. We present an ultracompact dilution refrigerator (3 kg in mass and 100 mm in diameter) that completes a full cooldown-warm-up cycle to a base temperature of 70 mK in 1.2 hours when unloaded, and in 2.1 hours when fully equipped with the microwave wiring required for qubit measurements, while delivering 20 microW of cooling power at 100 mK. We validate the platform through a complete characterization of a two-fluxonium device: we extract the full circuit Hamiltonian by two-tone spectroscopy, measure energy-relaxation and coherence times, and benchmark single-qubit control. Although the relaxation time is limited by the base temperature of the system, we reach a single-qubit gate fidelity of up to 99%, at the coherence limit set by our operating temperature. These results demonstrate that compact, fast-cycling dilution refrigeration can support state-of-the-art quantum-device characterization without sacrificing measurement quality, offering a practical route to high-throughput quantum-hardware development.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-08-19",
+      "score": 0.7670460404420528,
+      "similar_to": [
+        {
+          "title": "Manufacturing low dissipation superconducting quantum processors",
+          "id": "1901.08042",
+          "similarity": 0.8546260595321655
+        },
+        {
+          "title": "High fidelity control of superconducting qubits with optical transmitted signal",
+          "id": "2608.19602",
+          "similarity": 0.8527511954307556
+        }
+      ],
+      "summary": {
+        "summary": "An ultracompact dilution refrigerator (3 kg, 100 mm diameter) achieves a full cooldown–warm-up cycle to 70 mK in 2.1 hours when fully wired for microwave measurements, delivering 20 µW cooling power at 100 mK. Complete characterization of a two-fluxonium device demonstrates state-of-the-art performance with single-qubit gate fidelities reaching 99%, enabling high-throughput quantum device screening without sacrificing measurement quality.",
+        "motivation": "Conventional dilution refrigerators require ~48 hours per thermal cycle and substantial infrastructure, throttling the fabricate-measure-redesign loop in superconducting qubit development. Compact, fast-cycling cryogenic platforms are needed to enable rapid iteration while maintaining the measurement fidelity required for qubit characterization.",
+        "method": "An inverted-geometry dilution refrigerator was designed with three cryogenic circuits in parallel (4He pot, 3He–4He dilution, and precooling loop) to minimize thermal mass and dead volumes. A two-fluxonium device was fully characterized via two-tone spectroscopy for Hamiltonian extraction, time-domain $T_1$ and Hahn-echo $T_2^E$ measurements, and single-qubit Clifford randomized benchmarking.",
+        "result": "For Q1: $T_1 = 1.81$ µs, $T_2^E = 0.631$ µs, and single-qubit gate fidelity $F_{1QB} = 99.03\\%$ at the coherence limit; for Q2: $T_1 = 2.35$ µs, $T_2^E = 0.718$ µs, and $F_{1QB} = 98.07\\%$. The extracted fluxonium parameters ($E_J$, $E_C$, $E_L$, and qubit–resonator coupling $g$) match expectations, demonstrating complete device characterization in nearly twentyfold faster cycle time than conventional systems.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2608.18332",
+      "title": "Generalizing Pauli Checks for Qudit-based Quantum Error Detection and Mitigation",
+      "authors": [
+        "Noble Agyeman-Bobie",
+        "Quinn Langfitt",
+        "Salahedeen Issa",
+        "Nikos Hardavellas",
+        "Kaitlin N. Smith"
+      ],
+      "abstract": "Pauli Check Sandwiching (PCS) is a quantum error detection (QED) technique that protects a quantum circuit by utilizing a pair of controlled Pauli operators, or checks, and detecting errors that anti-commute with the checks. Further, PCS can be used for quantum error mitigation (QEM) via post-selection based on the Pauli check syndrome values. Currently, PCS is leveraged in the qubit space. In this paper, we introduce a generalized approach for applying PCS-based QED and QEM to quantum information of arbitrary dimension in the Hilbert space. Each pair of these extended checks consists of a sequence of gates in the Heisenberg-Weyl operator set that extend Pauli operators into the qudit space. These qudit checks use at least one ancilla qudit to detect qudit errors that do not commute with the unitary selected for the check. We show that our proposed methods for qudit QED can detect errors of arbitrary dimensions. More specifically, we prove that an arbitrary Heisenberg-Weyl error maps deterministically to a unique ancilla readout, and further, post-selecting on the $|0 \\rangle$ readout guarantees unit fidelity in the noiseless check limit. We validate these findings numerically across dimensions $d=2$ through $d=9$, achieving error-mitigated fidelities above $97.5\\% $ under realistic depolarizing error rates.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-08-18",
+      "score": 0.6265162294224089,
+      "similar_to": [
+        {
+          "title": "Repeated Quantum Error Detection in a Surface Code",
+          "id": "1912.09410",
+          "similarity": 0.8342663049697876
+        },
+        {
+          "title": "Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code",
+          "id": "2112.03708",
+          "similarity": 0.8334536552429199
+        }
+      ],
+      "summary": {
+        "summary": "This paper generalizes Pauli Check Sandwiching (PCS) from qubits to qudits of arbitrary dimension $d$ by constructing checks from Heisenberg-Weyl operators that deterministically map errors to unique ancilla readouts. The protocol achieves unit fidelity under joint post-selection on noiseless checks and is validated numerically across $d = 2$ to $9$, demonstrating error-mitigated fidelities above $97.5\\%$ under realistic depolarizing noise.",
+        "motivation": "While qudit platforms such as trapped ions, superconducting circuits, and neutral atoms enable high-dimensional quantum information processing (up to $d = 20$ demonstrated), effective error management techniques for qudits remain underdeveloped compared to qubit-based methods.",
+        "method": "Generalized left and right Pauli checks are constructed using controlled $\\mathcal{M}_d^n$ (shift) and $\\mathcal{Z}_d^n$ (clock) operators from the Heisenberg-Weyl set, each controlled by a dedicated ancilla qudit. Propositions 1 and 2 prove that arbitrary errors $E = X^a Z^b$ deterministically collapse the ancilla to states $|a \\bmod d\\rangle$ and $|b \\bmod d\\rangle$ respectively, enabling syndrome-based detection.",
+        "result": "For the Mod-2 circuit, PCS provides fidelity improvements of $\\approx 20\\%$ at $d = 3$ to $\\approx 32\\%$ at $d = 7$ under $p = 0.3$ depolarizing error; for the two-qudit GHZ-2 circuit, fidelities remain above $97.5\\%$ across dimensions at $p = 0.025$, though post-selection overhead grows exponentially with dimension for multi-gate circuits.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.767,
+    0.6265,
+    0.3096,
+    0.2979,
+    0.2888,
+    0.2795,
+    0.2595,
+    0.2397,
+    0.2227,
+    0.1861,
+    0.1853,
+    0.1849,
+    0.1659,
+    0.1641,
+    0.1576,
+    0.1493,
+    0.1486,
+    0.1461,
+    0.1426,
+    0.1334,
+    0.1172,
+    0.1142,
+    0.1115,
+    0.1052,
+    0.0985,
+    0.0894,
+    0.0824,
+    0.0759,
+    0.0664,
+    0.0546,
+    0.0525,
+    0.0518,
+    0.0514,
+    0.0505,
+    0.0466,
+    0.0452,
+    0.043,
+    0.0424,
+    0.0416,
+    0.0412,
+    0.0397,
+    0.0386,
+    0.0382,
+    0.038,
+    0.0369,
+    0.0363,
+    0.0349,
+    0.0324,
+    0.0313,
+    0.0304,
+    0.0299,
+    0.0292,
+    0.0279,
+    0.0253,
+    0.0244,
+    0.0231,
+    0.0219,
+    0.0216,
+    0.0214,
+    0.0205,
+    0.0202,
+    0.0201,
+    0.0187,
+    0.0181,
+    0.0156,
+    0.0151,
+    0.015,
+    0.0149,
+    0.0143,
+    0.014,
+    0.014,
+    0.0135,
+    0.0127,
+    0.0124,
+    0.011,
+    0.011,
+    0.0093,
+    0.0084,
+    0.0077,
+    0.0067,
+    0.0066,
+    0.0064,
+    0.0059,
+    0.0046,
+    0.0046,
+    0.0036,
+    0.0034,
+    0.0026,
+    0.0019
+  ]
+}

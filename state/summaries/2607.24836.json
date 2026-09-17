@@ -1,0 +1,8 @@
+{
+  "summary": "This paper proposes a superconducting fluxonium circuit modified with a flux-tunable split junction and engineered superinductor to operate as a tunable $\\Lambda$-system for detecting the timelike Unruh effect. Open-system simulations predict $\\sim 10\\%$ ground-state population shift over 530 ns ($\\sim 25$ quasicycles in conformal time), achieving three orders of magnitude sensitivity enhancement over two-level Unruh–DeWitt detectors by exploiting geometric-phase accumulation.",
+  "motivation": "The timelike Unruh effect—arising from entanglement between future and past light cones—offers better experimental accessibility than the standard Unruh effect, but requires a detector whose transition frequency scales inversely with Minkowski time, which prior superconducting $\\Lambda$-systems lack due to missing frequency tunability.",
+  "method": "The circuit combines a flux-tunable split junction (replacing a fixed Josephson junction) with a superinductor ($E_L = 0.72$ GHz $> E_C = 0.55$ GHz) to form a $\\Lambda$-system with quasi-degenerate ground states $|g_1\\rangle, |g_2\\rangle$ and tunable excited state. External magnetic fluxes modulate the transition frequency between $4.4$ and $6.2$ GHz, and a Lindblad master equation governs evolution in a thermal bath induced by vacuum entanglement.",
+  "result": "The ground-state population $P_1$ undergoes $\\Delta P_1 \\approx 10\\%$ shift over 530 ns at decay rate $\\Gamma \\sim 10^{-4}\\omega$, compared to $8.7 \\times 10^{-4}$ for a two-level detector, with dark-state dephasing $\\gamma_-^\\phi \\sim 10^4$ reducing the effect by $<1\\%$.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

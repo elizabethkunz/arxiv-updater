@@ -1,0 +1,8 @@
+{
+  "summary": "An epitaxial 15.6 GHz AlN FBAR on SiC exhibits loaded $Q_\text{max}$ increasing from 363 at 294 K to 1589 at 6.5 K ($Q f \\approx 5.66$ to 24.79 THz), with acoustic performance limited by anchor loss at cryogenic temperatures and electrode resistance at room temperature. A temperature-dependent loss model incorporating Landau–Rumer and Akhiezer phonon scattering, thermoelastic damping, dielectric loss, and anchor radiation explains the measured $Q(T)$ trend and identifies the crossover near 270 K where $\\omega_0\\tau_\\text{ph} = 1$.",
+  "motivation": "High-frequency acoustic resonators above 10 GHz are needed for 6G filtering and cryogenic quantum-microwave circuits, but systematic characterization of epitaxial AlN FBARs from room temperature to mK remains scarce, leaving the dominant loss mechanisms at cryogenic temperatures unclear.",
+  "method": "Small-signal RF reflection measurements ($S_{11}$) of a suspended 15.6 GHz AlN FBAR on SiC from 294 K to 6.5 K extract loaded Bode quality factors using group delay; a physics-based model with temperature-dependent AlN properties ($C_v$, $\\kappa$, elastic constants, thermal expansion) decomposes losses from intrinsic phonon processes, thermoelastic damping, dielectric absorption, electrode resistance, and anchor radiation.",
+  "result": "Anchor loss dominates at cryogenic temperatures (predicted $Q_\\text{anchor}$ of order $10^4$), while electrode resistance limits $Q$ above $\\sim$150 K; measured $Q$ remains $\\sim10^2–10^3$ below the intrinsic Landau–Rumer limit, indicating room for improvement via better anchor isolation and lower-resistance (possibly superconducting) electrodes.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

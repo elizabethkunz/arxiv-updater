@@ -1,0 +1,8 @@
+{
+  "summary": "The authors design a control protocol for two-photon-dissipation-stabilized cat qubits using shortcut-to-adiabaticity inverse engineering within an effective two-level model of the cat subspace. They identify an optimal-robustness condition against systematic drive errors and show that dissipative confinement suppresses dephasing-induced leakage out of the cat manifold.",
+  "motivation": "Cat qubits promise hardware-efficient fault tolerance, but fast high-fidelity control that tolerates drive imperfections and avoids leakage is still needed.",
+  "method": "They derive an effective two-level description of the dissipative cat subspace, inverse-engineer the control pulses, and analyse sensitivity to systematic control errors.",
+  "result": "The protocol gives fast, high-fidelity state transfer with strongly reduced sensitivity to drive-amplitude errors, while two-photon dissipation suppresses leakage caused by pure dephasing (theory only; the abstract quotes no headline fidelity).",
+  "source": "abstract",
+  "generated_by": "Claude, written in-session for the sample day (not via the script's API path)"
+}

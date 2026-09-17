@@ -1,0 +1,27 @@
+{% extends "base.html.j2" %}
+{% block body %}
+<header class="hero"><div class="wrap">
+  <h1>Superconducting qubit research updates</h1>
+  <p class="lede">We index papers from arXiv's quant-ph, cond-mat, and atom-ph daily, including a summary, motivation, method and result.</p>
+</div></header>
+<main class="wrap">
+{% include "_side.html.j2" %}
+{% set link_day = true %}
+{% if months %}{% include "_sort.html.j2" %}{% endif %}
+{# every indexed day is here; the script in base.html.j2 shows site.page_size papers at a time #}
+<div id="feed" data-page="{{ site.page_size }}">
+{% for m in months %}
+<section class="monthblock">
+<h2 class="month" id="m-{{ m.key }}">{{ m.label }}</h2>
+{% for day in m.days %}
+{% include "_day.html.j2" %}
+{% endfor %}
+</section>
+{% else %}
+<p class="empty">No runs yet.</p>
+{% endfor %}
+</div>
+<p class="more" id="more" hidden><button type="button">Load more</button><span></span></p>
+{% if months %}{% include "_top.html.j2" %}{% endif %}
+</main>
+{% endblock %}

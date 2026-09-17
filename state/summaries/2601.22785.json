@@ -1,0 +1,8 @@
+{
+  "summary": "This work introduces virtual noise scaling (VNS) combined with layered mitigation to dramatically reduce sampling overhead in agnostic noise amplification (ANA) based quantum error mitigation, achieving orders-of-magnitude reductions compared to zero-noise extrapolation. The method is compatible with dynamic circuits and mid-circuit measurements, with a circuit-independent noise threshold at $s_{\\mathrm{min,2L}} \\approx 0.65$ determining when two-layer mitigation becomes preferable to single-layer mitigation.",
+  "motivation": "ANA-based QEM is resilient to temporal noise drift but suffers from prohibitive sampling overhead that limits practical applicability on current noisy quantum processors.",
+  "method": "The authors introduce VNS, which rescales the noise operator by a factor $g$ to center the eigenvalue distribution within the plateau of the Taylor mitigation function $G(m, s_i)$, and combine this with layered circuit decomposition. The scaling factor $g$ is determined directly from extrema or inflection points of the mitigated expectation value as a function of $g$, without prior noise characterization.",
+  "result": "For strong noise with $s_{\\mathrm{min}} = 0.4$, combining VNS with two-layer mitigation reduces runtime overhead $\\mathcal{R}$ by factors of $10^4$ to $10^5$ compared to single-layer Taylor mitigation at equal target infidelity (e.g., from $3.6 \\times 10^{11}$ to $9.4 \\times 10^5$ for $I_{\\mathrm{op}} = 9 \\times 10^{-3}$), making previously unrealistic mitigation tasks feasible.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

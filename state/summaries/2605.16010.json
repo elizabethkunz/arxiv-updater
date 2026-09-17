@@ -1,0 +1,8 @@
+{
+  "summary": "A surface ion trap integrated with a cryogenic multiplexer based on analog switches and sample-and-hold capacitances demonstrates sub-phonon heating rates and compatible performance for scaling trapped-ion processors. The multiplexed architecture reduces the wiring bottleneck by distributing 22 DAC inputs across 199 DC electrodes using time-division multiplexing with integrated 15–50 pF capacitances.",
+  "motivation": "Scaling trapped-ion quantum processors to thousands of qubits requires routing ~1 million DC control lines into ultra-high-vacuum cryostats, creating severe wiring constraints at both the cryostat feedthrough and trap-chip interfaces that co-wiring and integrated DACs cannot adequately solve.",
+  "method": "An Infineon 130 nm ASIC multiplexer was integrated with a surface ion trap on fused silica ($d = 170$ µm ion-surface distance, single aluminum layer). Charge injection was suppressed by adding 39 nF external capacitors per electrode; heating rates and voltage decay were measured via sideband thermometry and ion position tracking.",
+  "result": "Heating rates of $0.55 ± 0.21$ ph/s (closed switches) and $0.43 ± 0.17$ ph/s (open switches) at $1.71 \\times 2\\pi$ MHz, with $\\dot{n}(\\omega) \\propto \\omega^{-\\alpha}$ scaling ($\\alpha = 3.16(28)$ closed, $2.50(18)$ open). Voltage decay for 50 pF electrodes was $\\sim 0.1$ V/min; adding 39 nF reduced it to $< 2.5$ mV/min, compatible with $< 10^{-4}$ gate error when refreshed above 20 Hz. A stacked demonstrator with 194 DC electrodes and $d = 80$ µm was fabricated and thermally validated to 110 V RF drive.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

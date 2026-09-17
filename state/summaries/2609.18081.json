@@ -1,0 +1,8 @@
+{
+  "summary": "A remote adiabatic controlled-Z gate is proposed and simulated for two frequency-tunable superconducting qubits joined by a multi-mode coaxial cable, with the cable-mediated interaction removing the need for tunable couplers. For a 30 cm cable modelled with ten standing-wave modes, the optimized gate reaches an infidelity of $4.71\\times10^{-7}$ in 376.7 ns without decoherence.",
+  "motivation": "Direct entangling gates between qubits on separate modules would let nonlocal circuits run across processors, easing single-chip scaling limits and extending connectivity.",
+  "method": "Numerical simulation and pulse optimization of an adiabatic CZ between two tunable qubits coupled through the standing-wave modes of a coaxial cable, with no additional coupler elements in the circuit.",
+  "result": "Infidelity $4.71\\times10^{-7}$ at 376.7 ns for 30 cm (decoherence-free), robust to qubit-frequency fluctuations and millimetre-scale cable-length variations; 50 cm and 100 cm cables are also evaluated.",
+  "source": "abstract",
+  "generated_by": "Claude, written in-session from the abstract (not via the script's API path)"
+}

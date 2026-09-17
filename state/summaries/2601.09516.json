@@ -1,0 +1,8 @@
+{
+  "summary": "This work develops an analytic theory of reservoir engineering for superconducting cavity cooling using gate-defined double-quantum-dot spin qubits as a tunable photon birth-death process. Lindblad simulations confirm millikelvin steady-state cavity temperatures achievable through collective bright-mode coupling in two-dot configurations, subject to constraints from memory effects, saturation, and dark-state formation.",
+  "motivation": "Reaching millikelvin photon occupations in circuit-QED cavities improves qubit coherence and measurement fidelity, motivating active cooling schemes beyond passive dilution refrigeration.",
+  "method": "The authors treat a gate-tunable DQD as an engineered reservoir rather than a spectroscopic probe, deriving closed-form expressions for cavity steady state by mapping gate control of populations, coherences, linewidths, and detuning onto an effective photon birth-death process with detailed balance. Lindblad simulations validate the framework in realistic parameter regimes.",
+  "result": "Cavity refrigeration below both the bath temperature and DQD setpoint is possible, with two-dot bright-mode coupling enhancing cooling beyond single-dot limits, though dephasing and gate-voltage mismatch limit performance in experimental implementations.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

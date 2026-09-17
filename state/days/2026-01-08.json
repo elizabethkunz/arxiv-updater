@@ -1,0 +1,189 @@
+{
+  "date": "2026-01-08",
+  "n_fetched": 61,
+  "papers": [
+    {
+      "id": "2601.03922",
+      "title": "Integration and Resource Estimation of Cryoelectronics for Superconducting Fault-Tolerant Quantum Computers",
+      "authors": [
+        "Shiro Kawabata"
+      ],
+      "abstract": "Scaling superconducting quantum computers to the fault-tolerant regime calls for a commensurate scaling of the classical control and readout stack. Today's systems largely rely on room-temperature, rack-based instrumentation connected to dilution-refrigerator cryostats through many coaxial cables. Looking ahead, superconducting fault-tolerant quantum computers (FTQCs) will likely adopt a heterogeneous quantum-classical architecture that places selected electronics at cryogenic stages -- for example, cryo-CMOS at 4~K and superconducting digital logic at 4~K and/or mK stages -- to curb wiring and thermal-load overheads. This review distills key requirements, surveys representative room-temperature and cryogenic approaches, and provides a transparent first-order accounting framework for cryoelectronics. Using an RSA-2048-scale benchmark as a concrete reference point, we illustrate how scaling targets motivate constraints on multiplexing and stage-wise cryogenic power, and discuss implications for functional partitioning across room-temperature electronics, cryo-CMOS, and superconducting logic.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall",
+        "cond-mat.supr-con",
+        "physics.app-ph"
+      ],
+      "published": "2026-01-07",
+      "score": 0.7947240792114904,
+      "similar_to": [
+        {
+          "title": "Quantum Computer Controlled by Superconducting Digital Electronics at Millikelvin Temperature",
+          "id": "2503.09879",
+          "similarity": 0.8679784536361694
+        },
+        {
+          "title": "Fault-tolerant interfaces for modular quantum computing on diverse qubit platforms",
+          "id": "2510.05221",
+          "similarity": 0.8602331876754761
+        }
+      ],
+      "summary": {
+        "summary": "This review examines cryoelectronics integration for scaling superconducting fault-tolerant quantum computers (FTQCs), addressing how to move classical control and readout electronics from room-temperature racks into cryogenic stages to reduce wiring overhead and thermal load. Using an RSA-2048 benchmark ($\\sim 9 \\times 10^5$ physical qubits), the authors present a first-order power-budget framework connecting per-qubit dissipation, effective throughput $F$, and stage-wise cooling constraints across cryo-CMOS at 4 K and superconducting digital logic (SFQ/AQFP) at mK stages.",
+        "motivation": "Scaling superconducting quantum computers toward $10^5$–$10^6$ physical qubits makes the conventional room-temperature rack approach infeasible due to prohibitive wiring density, thermal load, and cable count; cryogenic electronics can substantially reduce this burden by placing selected functions deeper in the dilution refrigerator.",
+        "method": "The paper surveys representative control/readout architectures, compares cryo-CMOS (reported $\\sim 2$–$23$ mW per qubit), SFQ pulse drivers ($\\sim 1.6$ µW per qubit), and AQFP logic ($\\sim 81.8$ pW per qubit), and uses $P_{\\mathrm{fridge}}(T) = F \\cdot N_{\\mathrm{phys,fridge}} \\cdot P_{\\mathrm{phys}}(T)$ to relate per-physical-qubit dissipation to available cooling power at 4 K ($\\sim$ few W) and 10–20 mK ($\\sim 10$–$300$ µW).",
+        "result": "At 10 mK, only ultra-low-power functions like AQFP are viable; at 4 K, cryo-CMOS and SFQ are feasible depending on throughput and multiplexing constraints; practical FTQCs require heterogeneous functional partitioning across room-temperature electronics, 4 K cryo-CMOS/SFQ, and mK AQFP to simultaneously satisfy bandwidth, latency, heat load, and qubit-compatibility constraints.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.04082",
+      "title": "Surface Optimization of Superconducting Aluminum Resonators for Robust Quantum Device Fabrication",
+      "authors": [
+        "Simon J. K. Lang",
+        "Ignaz Eisele",
+        "Alwin Maiwald",
+        "Emir Music",
+        "Luis Schwarzenbach",
+        "Carla Moran-Guizan",
+        "Johannes Weber",
+        "Daniela Zahn",
+        "Thomas Mayer",
+        "Rui N. Pereira",
+        "Christoph Kutter"
+      ],
+      "abstract": "Aluminum (Al) remains the central material for superconducting qubits, and considerable effort has been devoted to optimizing its deposition and patterning for quantum devices. However, post-processing strategies focused on oxide removal of niobium (Nb) and tantalum (Ta) -based resonators using buffered oxide etch (BOE), which can not be used for Al. This challenge becomes particularly relevant for industry-scale fabrication with multi-chip bonding, where delays between sample preparation and cooldown require surface treatments that preserve low dielectric loss during extended exposure to ambient conditions. In this work, we investigate surface modification approaches for Al resonators subjected to a 24-hour delay prior to cryogenic measurement. Passivation using self-limiting oxygen and fluorine chemistries was evaluated utilizing different plasma processes. Remote oxygen plasma treatment reduced dielectric losses, in contrast to direct oxygen plasma. A fluorine-based plasma process was developed that passivated the Al surface for subsequent BOE treatment. However, the fluorine content in the surface resulted in higher loss, identifying fluorine as an unsuitable passivation material for Al resonators. Above all, selective oxide removal using HF (hydrogen fluoride) vapor and phosphoric acid yielded median dielectric losses as low as $\\tildeδ_\\mathrm{LP} = 5.7 \\times 10^{-7}$ ($Q_\\mathrm{LP} \\approx 1.7\\,\\mathrm{M}$) with $\\tildeδ_\\mathrm{TLS} = 3.6 \\times 10^{-7}$ ($Q_\\mathrm{TLS} \\approx 2.8\\,\\mathrm{M}$) in the single photon regime. Selective oxide removal provides a promising pathway for robust Al-based qubit fabrication, as it preserves low dielectric losses for a 24-hour delay before cooldown.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mtrl-sci",
+        "physics.app-ph"
+      ],
+      "published": "2026-01-07",
+      "score": 0.74377403096329,
+      "similar_to": [
+        {
+          "title": "Comparison of Dielectric Loss in Titanium Nitride and Aluminum Superconducting Resonators",
+          "id": "2007.07338",
+          "similarity": 0.8543596863746643
+        },
+        {
+          "title": "Reducing TLS loss in tantalum CPW resonators using titanium sacrificial layers",
+          "id": "2601.16369",
+          "similarity": 0.851810097694397
+        }
+      ],
+      "summary": {
+        "summary": "This work investigates surface post-processing strategies for aluminum superconducting resonators to preserve low dielectric losses during the 24-hour delays encountered in industrial multi-chip fabrication before cryogenic measurement. Selective oxide removal using HF vapor and phosphoric acid achieves the best performance, with median $\\tilde{\\delta}_\\mathrm{TLS} = 3.6 \\times 10^{-7}$ ($Q_\\mathrm{TLS} \\approx 2.8$ M) in the single-photon regime, while fluorine passivation, though effective at stabilizing Al against subsequent wet etch processes, increases loss by a factor of 2.4–2.9.",
+        "motivation": "Industrial-scale superconducting qubit fabrication with multi-chip packaging and scheduling introduces delays between device preparation and cooldown, requiring surface treatments that maintain low dielectric loss under ambient exposure—a challenge not addressed by existing post-processing strategies developed for Nb and Ta resonators.",
+        "method": "Three surface modification approaches were systematically evaluated on aluminum CPW resonators fabricated from a single 200 mm wafer: (1) oxygen plasma treatment (remote and direct), (2) fluorine passivation via CF$_4$ plasma following Ar ion milling, and (3) selective oxide removal with HF vapor and diluted phosphoric acid. Devices were characterized in a dilution refrigerator below 25 mK, with dielectric loss extracted via photon-number-dependent quality factor measurements.",
+        "result": "Sequential application of HF vapor and phosphoric acid etching reduced low-power loss by a factor of three to $\\tilde{\\delta}_\\mathrm{LP} = 5.7 \\times 10^{-7}$ ($Q_\\mathrm{LP} \\approx 1.7$ M), with TLS-related losses of $\\tilde{\\delta}_\\mathrm{TLS} = 3.6 \\times 10^{-7}$, achieving the lowest reported $\\delta_\\mathrm{TLS}$ for the surface participation ratio and projecting $T_1 \\approx 1.2$ ms for typical qubit geometries at 4 GHz.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.05286",
+      "title": "Investigation of Hardware Architecture Effects on Quantum Algorithm Performance: A Comparative Hardware Study",
+      "authors": [
+        "Askar Oralkhan",
+        "Temirlan Zhaxalykov"
+      ],
+      "abstract": "Cloud-accessible quantum processors enable direct execution of quantum algorithms on heterogeneous hardware platforms. Unlike classical systems, however, identical quantum circuits may exhibit substantially different behavior across devices due to architectural variations in qubit connectivity, gate fidelity, and coherence times. In this work, we systematically benchmark five representative quantum algorithms - Bell state preparation, GHZ state generation, Quantum Fourier Transform (QFT), Grover's Search, and the Quantum Approximate Optimization Algorithm (QAOA) - across trapped-ion, superconducting, and simulator backends using Amazon Braket. Performance metrics including fidelity, CHSH violation, success probability, circuit depth, and gate counts are evaluated. Our results demonstrate a strong dependence of algorithmic performance on hardware topology and noise characteristics. For example, 10-qubit GHZ states achieved fidelities above 0.8 on trapped-ion hardware, while superconducting platforms dropped below 0.15 due to routing overhead and accumulated two-qubit gate errors. These findings highlight the importance of hardware-aware algorithm selection and provide practical guidance for benchmarking in the NISQ era.",
+      "categories": [
+        "quant-ph",
+        "cs.AR",
+        "cs.ET"
+      ],
+      "published": "2026-01-07",
+      "score": 0.5486935466156331,
+      "similar_to": [
+        {
+          "title": "Benchmarking quantum gates and circuits",
+          "id": "2407.09942",
+          "similarity": 0.8593658208847046
+        },
+        {
+          "title": "Crosstalk In Contemporary Quantum Devices",
+          "id": "2605.26528",
+          "similarity": 0.8560618758201599
+        }
+      ],
+      "summary": {
+        "summary": "This paper presents a systematic benchmarking of five quantum algorithms (Bell states, GHZ states, QFT, Grover's search, QAOA) across trapped-ion (IonQ Aria-1, Forte-1) and superconducting (IQM Garnet, Rigetti Ankaa-3) platforms using Amazon Braket. Performance depends critically on hardware topology and noise: 10-qubit GHZ states achieved fidelities of 0.84 on IonQ but dropped to 0.09–0.12 on superconducting devices due to routing overhead and two-qubit gate errors.",
+        "motivation": "Cloud quantum processors exhibit vastly different behavior for identical circuits across heterogeneous architectures, yet systematic cross-platform comparisons of state-of-the-art hardware remain limited. Understanding how qubit connectivity, coherence times, and gate fidelity translate into algorithm-level performance is essential for NISQ-era quantum computing.",
+        "method": "Five representative quantum algorithms were implemented via Amazon Braket and PennyLane on IonQ Aria-1/Forte-1 (all-to-all trapped-ion), IQM Garnet (20-qubit nearest-neighbor superconducting), Rigetti Ankaa-3 (84-qubit tunable-coupler superconducting), and SV1 simulator, evaluating fidelity, CHSH violations, success probability, and approximation ratios with 100 shots per configuration.",
+        "result": "Trapped-ion systems dominated: IonQ Aria-1 achieved $S_\text{CHSH} \thickapprox 2.9 ± 0.14$ (vs. 2.2–2.5 on superconducting), 10-qubit GHZ fidelity of 0.84 (vs. 0.09–0.12), QFT round-trip fidelity of 1.00 at 10 qubits (vs. 0.01–0.07). Superconducting platforms showed steeper circuit-depth penalties and fidelity degradation in algorithms requiring global connectivity or deep circuits.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.7947,
+    0.7438,
+    0.5487,
+    0.4356,
+    0.3984,
+    0.3531,
+    0.3363,
+    0.324,
+    0.2573,
+    0.1987,
+    0.1861,
+    0.1823,
+    0.1565,
+    0.1398,
+    0.131,
+    0.1191,
+    0.1116,
+    0.1106,
+    0.1014,
+    0.099,
+    0.0928,
+    0.091,
+    0.0737,
+    0.0655,
+    0.0611,
+    0.0588,
+    0.0555,
+    0.0475,
+    0.0448,
+    0.0409,
+    0.036,
+    0.0339,
+    0.0317,
+    0.0236,
+    0.0235,
+    0.023,
+    0.0185,
+    0.0176,
+    0.0173,
+    0.0171,
+    0.0166,
+    0.0151,
+    0.0119,
+    0.0118,
+    0.011,
+    0.0106,
+    0.0099,
+    0.0097,
+    0.0087,
+    0.0083,
+    0.0081,
+    0.0077,
+    0.0072,
+    0.0071,
+    0.0064,
+    0.0046,
+    0.0046,
+    0.0044,
+    0.0043,
+    0.0042,
+    0.0031
+  ]
+}

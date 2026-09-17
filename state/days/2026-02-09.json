@@ -1,0 +1,194 @@
+{
+  "date": "2026-02-09",
+  "n_fetched": 68,
+  "papers": [
+    {
+      "id": "2602.06812",
+      "title": "Hybrid Coupling Topology with Dynamic ZZ Suppression for Optimizing Circuit Depth during Runtime in Superconducting Quantum Processor",
+      "authors": [
+        "Uday Sannigrahi",
+        "Amlan Chakrabarti",
+        "Swapnil Saha",
+        "Shrinjita Biswas"
+      ],
+      "abstract": "To reduce circuit depth when executing Quantum algorithms, it is necessary to maximize qubit connectivity on a near-term quantum processor. While addressing this, we also need to ensure high gate fidelity, suppression of unwanted ZZ cross-talk, a compact layout footprint, and minimal control hardware complexity to support scalability. In current superconducting quantum chips, fixed coupling is used as it is easier to scale, but it is limited by unwanted static ZZ interaction during single qubit operations, which degrades system performance. To overcome these challenges, we have introduced a first-of-its-kind hybrid tunable-coupling architecture that connects four fixed-frequency transmon qubits using a single coupler. This hybrid coupler uses off-resonant Stark drives to tune ZZ strength between qubit pairs. Experimentally backed simulation results indicate that our proposed hybrid design maximizes the qubit connectivity while reducing control overhead. This design achieves a near 20% reduction in circuit depth compared to IBM's Heavy-Hexagonal layout, showing its potential for scalability.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-06",
+      "score": 0.8766038349884959,
+      "similar_to": [
+        {
+          "title": "Suppression of static ZZ interaction in an all-transmon quantum processor",
+          "id": "2011.03976",
+          "similarity": 0.8818293213844299
+        },
+        {
+          "title": "Quantum crosstalk cancellation for fast entangling gates and improved multi-qubit performance",
+          "id": "2106.00675",
+          "similarity": 0.878446102142334
+        }
+      ],
+      "summary": {
+        "summary": "This work introduces a hybrid tunable-coupling architecture connecting four fixed-frequency transmon qubits ($\\omega_{1,2} \\approx 5.0$–$5.6$ GHz) through a single flux-tunable coupler, using off-resonant Stark drives to suppress static ZZ interactions dynamically. Simulation results show the design achieves $\\zeta_{\\mathrm{max}}/2\\pi \\approx 18$ MHz tunable ZZ strength with near-zero crossings for interaction suppression, and demonstrates approximately 20% circuit depth reduction versus IBM Heron's coupling topology on Grover's algorithm benchmarks.",
+        "motivation": "Fixed-coupling superconducting processors suffer from always-on static ZZ crosstalk during idle periods, while existing tunable-coupler topologies (transmon-coupler-transmon) limit qubit connectivity and require flux lines per pair, increasing control overhead and circuit depth through necessary SWAP operations.",
+        "method": "The authors propose a cluster unit cell where four computational qubits capacitively couple to a central flux-tunable transmon coupler, enabling selective pairwise interactions via simultaneous off-resonant Stark drives applied to computational qubits with controlled relative phase; the coupler frequency is swept over $5.5$–$6.8$ GHz to modulate ZZ strength, and designs are simulated using QuTiP with three-level Hilbert space truncation and benchmarked against IBM Qiskit's transpiler.",
+        "result": "The hybrid topology achieves peak tunable ZZ of $\\zeta_{\\mathrm{max}}/2\\pi \\approx 18$ MHz (4× improvement over frequency tuning alone), permits any-pair interactions within a cluster with pair-dependent magnitude (e.g., $\\zeta \\approx 9.5$ MHz for $Q_1–Q_2$ versus suppressed $\\zeta$ for $Q_3–Q_4$ at identical bias), and reduces circuit depth by ~20% for 2–6 qubit Grover instances compared to IBM Heron.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.06202",
+      "title": "Characterizing Quantum Error Correction Performance of Radiation-induced Errors",
+      "authors": [
+        "Paul G. Baity",
+        "Anuj K. Nayak",
+        "Lav R. Varshney",
+        "Nicholas Jeon",
+        "Byung-Jun Yoon",
+        "Peter J. Love",
+        "Adolfy Hoisie"
+      ],
+      "abstract": "Radiation impacts are a current challenge with computing on superconducting-based quantum devices because they can lead to widespread correlated errors across the device. Such errors can be problematic for quantum error correction (QEC) codes, which are generally designed to correct independent errors. To address this, we have developed a computational model to simulate the effects of radiation impacts on QEC performance. This is achieved by building from recently developed models of quasiparticle density, mapping radiation-induced qubit error rates onto a quantum error channel and simulation of a simple surface code. We also provide a performance metric to quantify the resilience of a QEC code to radiation impacts. Additionally, we sweep various parameters of chip design to test mitigation strategies for improved QEC performance. Our model approach is holistic, allowing for modular performance testing of error mitigation strategies and chip and code designs.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-02-05",
+      "score": 0.8433721670757564,
+      "similar_to": [
+        {
+          "title": "Resolving catastrophic error bursts from cosmic rays in large arrays of superconducting qubits",
+          "id": "2104.05219",
+          "similarity": 0.895443320274353
+        },
+        {
+          "title": "Resisting high-energy impact events through gap engineering in superconducting qubit arrays",
+          "id": "2402.15644",
+          "similarity": 0.8730984926223755
+        }
+      ],
+      "summary": {
+        "summary": "This paper develops a computational model integrating Geant4/G4CMP radiation transport simulations with surface code QEC simulations to characterize how radiation-induced quasiparticle poisoning affects superconducting qubit error rates. The authors introduce a performance gap metric $\\zeta_c$ to quantify QEC resilience and demonstrate that phonon downconversion via flipside Cu metallization requires increased qubit spacing (up to 4 mm from 1 mm) to fully suppress correlated errors from muon strikes on a 17-qubit [[9,1,3]] surface code.",
+        "motivation": "Radiation impacts on superconducting quantum devices generate spatially and temporally correlated quasiparticle errors across multiple qubits, violating the independent error assumption underlying standard QEC codes. Previous models used phenomenological approaches with radial symmetry; a quantitative physical model is needed to properly assess error mitigation strategies and chip designs.",
+        "method": "The authors map quasiparticle density evolution from Geant4/G4CMP simulations onto dynamical $T_1$ and $T_2$ times via equations (1)–(2), construct per-cycle noise models using generalized amplitude damping channels, and simulate the [[9,1,3]] surface code in Stim with minimum-weight perfect matching decoding. They sweep Cu thickness (0–13 µm) and qubit spacing (1–4 mm) on Si chips (10×10 to 40×40 mm$^2$) for 64-muon ensembles.",
+        "result": "Without mitigation, muon strikes cause $p_L$ to jump immediately to ~50% loss of logical control. Cu downconversion reduces $\\zeta_c$ substantially but requires qubit spacing increased to 4 mm to fully recover non-radiated performance; 500 nm Cu achieves 96% of the 13 µm film efficacy, enabling sputtering-compatible thin-film implementation. Baseline ($T_1 = 100$ µs, $T_2 = 200$ µs) logical error rates reach $\\sim 10^{-3}$ per cycle without radiation.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.06587",
+      "title": "Stability, degeneracy, and scalability of a 600-site cavity array microscope",
+      "authors": [
+        "Anna Soper",
+        "Danial Shadmany",
+        "Adam L. Shaw",
+        "Lukas Palm",
+        "David I. Schuster",
+        "Jonathan Simon"
+      ],
+      "abstract": "Optical cavities are a foundational technology for controlling light-matter interactions. While interfacing a single cavity to either an atom or ensemble has become a standard tool, the advent of single atom control in large atomic arrays has spurred interest in a new frontier of ``many-cavity QED,'' featuring many independent resonators capable of separately addressing individual quantum emitters. In this fast-evolving landscape, the cavity array microscope was recently introduced -- employing free space intra-cavity optics to engineer a two-dimensional array of tightly spaced cavity TEM$_{00}$ modes with wavelength-scale waists, ideally suited for interfacing with atom arrays. Here we realize the next-generation of this architecture, achieving hundreds of degenerate cavity modes with improved, uniform finesse, and explore the technical features of the system which will enable further scalability. In particular, we study imperfections, including optical aberrations, field of view constraints, array non-degeneracies, and losses from optical elements. We identify the sensitivity to these various vectors and exposit the control knobs and techniques necessary to align and operate the system in a stable manner. Ultimately, we lay out a pathway towards operation with tens of thousands of independent cavities while maintaining compatibility with existing atom arrays, paving the way to myriad applications including highly parallelized remote entanglement generation, fast and non-destructive mid-circuit readout, and the implementation of hybrid atom-photon Hamiltonians.",
+      "categories": [
+        "physics.atom-ph",
+        "physics.optics"
+      ],
+      "published": "2026-02-06",
+      "score": 0.6203325388417869,
+      "similar_to": [
+        {
+          "title": "Seamless high-Q microwave cavities for multimode circuit QED",
+          "id": "2010.16382",
+          "similarity": 0.858906626701355
+        },
+        {
+          "title": "Cavity quantum electrodynamics for superconducting electrical circuits: an architecture for quantum computation",
+          "id": null,
+          "similarity": 0.8180686831474304
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates a cavity array microscope (CAM) with over 600 simultaneously resonant optical cavities, achieving array-averaged finesse $F = 114(17)$ and single-atom peak cooperativity $C > 10$ with 1.15 µm mode waists spaced by 10 µm, while systematically characterizing aberrations, losses, and misalignment sensitivities that limit scalability to tens of thousands of cavities. The authors identify field curvature from aspheric lenses and optical imperfections as primary constraints, provide quantitative alignment tolerances (300 nm transverse, 10 µm longitudinal for the spherical lens), and demonstrate nanometer-scale aberration characterization via interferometric degeneracy measurements.",
+        "motivation": "Large neutral atom arrays require a parallelized cavity interface to achieve high-bandwidth quantum networking and fast non-destructive readout, but existing single-cavity or nanophotonic approaches suffer from limited bandwidth, small atom-surface separations, or incompatibility with large-scale atom arrays.",
+        "method": "The CAM uses intra-cavity optics (microlens array, demagnifying and retro-reflecting telescopes with aspheric lenses) to create a 2D array of diffraction-limited TEM$_{00}$ modes. The authors perform paraxial and ray-traced numerical simulations to understand cavity stability and field curvature effects, measure cavity transmission spectra via a spatial light modulator, characterize degeneracy with an 80 MHz offset locking beam, and decompose detuning maps into Zernike polynomials to isolate aberration contributions.",
+        "result": "With 537 cavities degenerate within the readout-optimized linewidth (5.5 MHz, finesse $F^* \\approx 26$), the system achieves 53% collection efficiency—an order of magnitude above standard atom arrays—with a 140 µm field-of-view limited by aspheric field curvature (quadratic focal shift of ~2.4 nm per cavity per µm asphere displacement); projections using wide-field-of-view microscope objectives indicate feasibility of $> 10^4$ cavities with $F > 400$ and GHz-scale entanglement bandwidth.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8766,
+    0.8434,
+    0.6203,
+    0.3902,
+    0.2676,
+    0.2317,
+    0.2257,
+    0.1798,
+    0.1516,
+    0.145,
+    0.1371,
+    0.1313,
+    0.1309,
+    0.1227,
+    0.1139,
+    0.1088,
+    0.1076,
+    0.0967,
+    0.0905,
+    0.0716,
+    0.069,
+    0.0663,
+    0.0658,
+    0.0594,
+    0.0543,
+    0.0533,
+    0.0519,
+    0.0478,
+    0.0477,
+    0.0466,
+    0.0462,
+    0.0396,
+    0.037,
+    0.0366,
+    0.0365,
+    0.0362,
+    0.0353,
+    0.0349,
+    0.0329,
+    0.0287,
+    0.0268,
+    0.0264,
+    0.0255,
+    0.0249,
+    0.0219,
+    0.0176,
+    0.0165,
+    0.015,
+    0.0126,
+    0.0125,
+    0.0118,
+    0.0111,
+    0.0099,
+    0.0094,
+    0.0088,
+    0.0088,
+    0.0086,
+    0.008,
+    0.0079,
+    0.0074,
+    0.0072,
+    0.0069,
+    0.0068,
+    0.0033,
+    0.0033,
+    0.003,
+    0.0028,
+    0.0019
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "This paper presents a scheme for single-photon detection of itinerant microwave radiation using stroboscopically repeated projective measurements of a cavity coupled to a dc-biased Josephson junction device. By cascading a photon multiplier with the detector, detection efficiencies of 88.5% with dark counts $\\sim 10^{-4} \\gamma_a$ are achieved theoretically, promising near-unity efficiency for higher multiplication factors.",
+  "motivation": "Efficient single-photon detection of itinerant microwave radiation is essential for quantum information, sensing, and communication with superconducting devices, yet remains challenging due to measurement backaction limiting cavity absorption.",
+  "method": "Two microwave cavities coupled by a dc-voltage biased Josephson junction implement near-projective measurements: the junction creates state-dependent driving of one cavity via Bessel function renormalization, detected by homodyne measurement of its output. Stroboscopic switching of the coupling at optimal rate $\\gamma_m \\approx 0.4 \\gamma_a$ balances quantum Zeno suppression against detection probability. A second identical JPD operates as a photon multiplier ($n=2$) in preamplification configuration.",
+  "result": "The detector alone achieves 69.8% efficiency with 0.116 × 10$^{-3} \\gamma_a$ dark rate. With $n=2$ preamplification, efficiency reaches 88.5% at comparable dark rate ($10^{-4} \\gamma_a$), approaching the 96% upper limit for independent two-photon detection and suggesting near-unity efficiency is attainable with higher multiplication factors.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

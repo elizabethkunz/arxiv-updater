@@ -1,0 +1,119 @@
+{
+  "date": "2026-01-02",
+  "n_fetched": 33,
+  "papers": [
+    {
+      "id": "2601.00078",
+      "title": "Double-Pumped Kerr Parametric Amplifier Beyond the Gain-Bandwidth Limit",
+      "authors": [
+        "Nicolas Zapata",
+        "Najmeh Etehadi Abari",
+        "Mitchell Field",
+        "Patrick Winkel",
+        "Simon Geisert",
+        "Soeren Ihssen",
+        "Anja Metelmann",
+        "Ioan M. Pop"
+      ],
+      "abstract": "Superconducting standing$-$wave parametric amplifiers are crucial for the readout of microwave quantum devices. Despite significant improvements in recent years, the need to operate near an instability point imposes a fundamental constraint: the instantaneous bandwidth decreases with increasing amplifier gain. Here we show that it is possible to obtain parametric amplification without instability by using two simultaneous drives that activate phase-preserving gain and frequency conversion. Realized in a granular aluminum dimer with Kerr nonlinearity, our method demonstrates a sixfold bandwidth increase at 20 dB gain, surpasses the conventional gain$-$bandwidth scaling up to 25 dB, and remains near the quantum limit.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2025-12-31",
+      "score": 0.7740246807084317,
+      "similar_to": [
+        {
+          "title": "High-gain and large-bandwidth Josephson parametric amplifier influenced by Fabry-Perot interference",
+          "id": "2604.13881",
+          "similarity": 0.8618618249893188
+        },
+        {
+          "title": "A near-quantum-limited Josephson traveling-wave parametric amplifier",
+          "id": null,
+          "similarity": 0.8400498628616333
+        }
+      ],
+      "summary": {
+        "summary": "A double-pumped granular aluminum Bose–Hubbard dimer exploits balanced four-wave mixing to achieve parametric amplification without operating near instability, enabling sixfold bandwidth improvement at 20 dB gain while surpassing the conventional gain–bandwidth tradeoff up to 25 dB. The device maintains added noise near the quantum limit and demonstrates a 41 dB phase-sensitive gain modulation, recommending grAl as a source of pure Kerr nonlinearity for multi-pump parametric amplifiers.",
+        "motivation": "Standing-wave superconducting parametric amplifiers are essential for quantum readout but face a fundamental gain–bandwidth tradeoff when operated near instability, limiting instantaneous bandwidth to tens of MHz at ∼20 dB gain needed for frequency-multiplexed qubit readout and broadband quantum optics.",
+        "method": "Two simultaneous pump tones at $\\omega_g = (\\tilde{\\omega}_a + \\tilde{\\omega}_b)/2$ (gain pump) and $\\omega_c = \\omega_g + \\tilde{\\omega}_a - \\tilde{\\omega}_b$ (conversion pump) activate two-mode squeezing, single-mode squeezing, and beam-splitter interactions in the dimer's hybridized modes; operation near the Bogoliubov point ($\\mathcal{C}_{\\mathrm{TMS}} - \\mathcal{C}_{\\mathrm{BS}} = -1$) provides dynamical stability by balancing competing nonlinear effects.",
+        "result": "At 20 dB gain, bandwidth increases from $\\sim19$ MHz (single-pump) to $\\sim115$ MHz (double-pump); near-quantum-limited added noise $n_{\\mathrm{add}} \\approx 0.5$ photon is maintained; phase-preserving operation shows cooperative rates $\\mathcal{C}_{\\mathrm{S}} \\sim 0.03$–$0.04$ with extracted Kerr coefficients $\\mathcal{K}_{L,R}/(2\\pi) \\approx 3$ kHz in the 7 × 0.2 × 0.04 μm grAl strip.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.00425",
+      "title": "Chip-scale superconducting quantum gravimeter combining a SQUID, a transmon, and a nanomechanical resonator",
+      "authors": [
+        "Salman Sajad Wani",
+        "Mughees Ahmed Khan",
+        "Abrar Ahmed Naqash",
+        "Saif Al-Kuwari"
+      ],
+      "abstract": "Precise gravitational measurements are vital for geophysics and inertial navigation, but compact gravimeters with high measurement bandwidth remain difficult to realize. We propose and analyze a chip-scale superconducting gravimeter in which a flux-tunable transmon qubit is coupled to a high quality factor ($Q_m$) nanomechanical beam. The beam is embedded in a SQUID loop placed in parallel with the qubit's flux-tunable SQUID; gravity induced beam displacement therefore modulates the qubit frequency through the SQUID flux and is mapped onto the qubit's geometric phase. A stroboscopic readout at mechanical revival times suppresses qubit mechanics dephasing, yielding a projected sensitivity of $10^2$--$10^3\\,\\mathrm{nGal}/\\sqrt{\\mathrm{Hz}}$ with sub-millisecond interrogation times. Electrical \\emph{in situ} tunability and microwave-based calibration make this architecture a practical route toward compact, high-bandwidth on-chip gravimetry.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-01",
+      "score": 0.7047003814672291,
+      "similar_to": [
+        {
+          "title": "The Flux Qubit Revisited to Enhance Coherence and Reproducibility",
+          "id": "1508.06299",
+          "similarity": 0.7994915246963501
+        },
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.7947458028793335
+        }
+      ],
+      "summary": {
+        "summary": "A chip-scale superconducting gravimeter couples a flux-tunable transmon qubit longitudinally to a nanomechanical beam via a parallel SQUID geometry, encoding gravitational acceleration as a geometric phase on the qubit. Stroboscopic readout at mechanical revival times suppresses entanglement-induced dephasing and achieves projected sensitivities of $6.5 \times 10^{-9}$ to $6.7 \times 10^{-10}$ m/s$^2$ with sub-millisecond interrogation.",
+        "motivation": "Compact gravimeters face a trade-off between sensitivity and bandwidth; hybrid quantum architectures offer a path to miniaturization while maintaining precision, but existing chip-scale optomechanical and electromechanical devices lack the calibration and long-term stability needed for deployable gravimetric sensors.",
+        "method": "The system Hamiltonian combines a transmon ($\\Omega_q/2\\pi = 6$ GHz, $E_C/h = 200$ MHz) longitudinally coupled ($g_0/2\\pi \\approx 18$–20 kHz) to a high-$Q_m$ nanomechanical beam ($\\omega_m/2\\pi = 100$ kHz, $m_\\mathrm{eff} = 530$ ng, $Q_m = 10^9$ baseline; or 20 kHz, 10 μg, $Q_m = 10^{10}$ for high-mass design), with gravity-induced beam displacement modulating the mechanical SQUID flux and thus the qubit frequency via in-plane field $B = 100$ mT and lever arm $\\ell = 50$ μm. Closed-form QFI and Cramér–Rao bounds are derived from the exact polaron-transformed evolution operator; realistic decoherence (qubit $T_1 = 0.8$ ms, $T_\\phi = 1.5$ ms; readout fidelity $F_r = 0.995$) is incorporated via Lindblad master equation.",
+        "result": "Near-term device achieves $6.5 \\times 10^{-8}$ m/s$^2$/√Hz at $t^\\star \\approx 260$ μs (52 mechanical cycles), corresponding to $6.5 \\times 10^{-9}$ m/s$^2$ absolute resolution over 600 s integration; high-mass design reaches $6.7 \\times 10^{-9}$ m/s$^2$/√Hz at $t^\\star \\approx 250$ μs (10 cycles), or $6.7 \\times 10^{-10}$ m/s$^2$ over 600 s, comparable to atom-interferometer precision with three orders of magnitude faster cycle times.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.774,
+    0.7047,
+    0.4106,
+    0.202,
+    0.1912,
+    0.1723,
+    0.1143,
+    0.0966,
+    0.0899,
+    0.0888,
+    0.0549,
+    0.0519,
+    0.0488,
+    0.0306,
+    0.0264,
+    0.0155,
+    0.0126,
+    0.012,
+    0.0114,
+    0.0112,
+    0.0107,
+    0.0092,
+    0.0092,
+    0.0084,
+    0.0082,
+    0.008,
+    0.0063,
+    0.0046,
+    0.0045,
+    0.0042,
+    0.0037,
+    0.0024,
+    0.0018
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "This work develops a closed-form method to calculate logical error rates $L$ for surface codes by recursively counting minimum-length logical paths (MLLPs) containing $d_e = (d+1)/2$ errors, avoiding expensive decoder simulations. The approach proves accurate when $pd^2 \\ll 1$ and provides rigorous bounds for the regime $pd^2 \\gtrsim 1$, and is extended to locally and globally correlated error models plus measurement errors.",
+  "motivation": "Designing practical quantum computers requires rapidly evaluating logical error rates across many combinations of physical error rate $p$ and code distance $d$, but current methods rely on computationally prohibitive Monte Carlo simulations or inaccurate extrapolation from sparse experimental data.",
+  "method": "The authors exploit topological constraints of surface codes to enumerate error configurations via dynamic programming (Algorithm 1 with memoization), computing $C_{d_e}$ exactly for unrotated codes as $d\\binom{d}{d_e}$ and for rotated codes via path-counting with geometric constraints from Theorem 2; results are combined with binomial probabilities in Equation~1 and bounded by Theorem 1 to achieve provably accurate $L$ estimates in polynomial runtime.",
+  "result": "For unrotated codes, $C_{d_e} \\approx \\frac{d_e}{\\pi}4^{d_e}$ and logical error scaling matches $L \\approx A(p/p_\\mathrm{th})^{d_e}$ with $p_\\mathrm{th} \\approx 1.22 \\times 10^{-2}$ ($R^2 = 1 - 6.3 \\times 10^{-6}$); rotated codes achieve $p_\\mathrm{th} \\approx 7.3 \\times 10^{-2}$ but require only $\\approx 75\\%$ of the qubits for equivalent fidelity.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

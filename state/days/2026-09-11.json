@@ -1,0 +1,372 @@
+{
+  "date": "2026-09-11",
+  "n_fetched": 124,
+  "papers": [
+    {
+      "id": "2609.10834",
+      "title": "Programmable CMOS DAC Operating in Cryogenic Environments for Controlling Superconducting Qubits",
+      "authors": [
+        "A. Pelteku",
+        "D. Reitz",
+        "M. Covington",
+        "A. Frederick",
+        "H. Adebayo",
+        "K. D. Hillaire",
+        "N. Mitran",
+        "Z. Steffen",
+        "R. Schwartz",
+        "Z. Stegen",
+        "J. X. Przybysz",
+        "J. Yager",
+        "C. Walter",
+        "T. Graves",
+        "D. Meyer",
+        "J. Clark",
+        "G. R. Boyd",
+        "A. Pesetski"
+      ],
+      "abstract": "This paper presents the design and test results of a CMOS current-based Digital to Analog Converter (DAC) that operates at cryogenic temperatures and that can be used to precisely control the amount of flux coupled to qubits or that can be used in the readout of superconducting circuits. The current pulse output can be controlled in terms of its amplitude, rise and fall slopes, via digital controls, and pulse width, via external triggers, while driving a superconducting circuit. The design has been implemented in a planar 90 nm CMOS process and test results closely match circuit predictions. The solution's wide degree of digital tunability affords potential application of the same device to many types of quantum circuits, beyond those discussed here. Due to the wide-ranging flexibility of digital CMOS control, we envision that this DAC design will enable the next generation of high-fidelity cryo-CMOS control architectures for superconducting qubits.",
+      "categories": [
+        "quant-ph",
+        "physics.app-ph"
+      ],
+      "published": "2026-09-09",
+      "score": 0.9468061117415468,
+      "similar_to": [
+        {
+          "title": "Superconducting Flux Memory for Cryogenic Applications",
+          "id": "2609.00772",
+          "similarity": 0.8609879016876221
+        },
+        {
+          "title": "A digitally controlled silicon quantum processing unit",
+          "id": "2604.16216",
+          "similarity": 0.8594971895217896
+        }
+      ],
+      "summary": {
+        "summary": "A current-output CMOS DAC operating at cryogenic temperatures is designed and tested for setting the flux coupled to superconducting qubits or for use in readout. Its pulse amplitude and rise and fall slopes are set digitally and its width by external triggers, and measurements of the planar 90 nm CMOS chip closely match circuit predictions.",
+        "motivation": "Cryo-CMOS control architectures need flexible, precisely programmable current sources located close to the superconducting circuit.",
+        "method": "The DAC was implemented in a planar 90 nm CMOS process and tested at cryogenic temperature while driving a superconducting circuit.",
+        "result": "Measured behaviour agrees closely with circuit simulation across the digitally tunable range. No qubit-level figures such as gate fidelity are reported in the abstract.",
+        "source": "abstract",
+        "generated_by": "Claude, written in-session from the abstract (not via the script's API path)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.11034",
+      "title": "Engineered two-photon dissipative confinement of a Kerr-cat qubit using SISIS quantum circuit refrigerator",
+      "authors": [
+        "Shumpei Masuda",
+        "Tsuyoshi Yamamoto",
+        "Shuji Nakamura",
+        "Daichi Sugiyama",
+        "Akiyoshi Tomonaga"
+      ],
+      "abstract": "Kerr-cat qubits realized in periodically driven superconducting nonlinear resonators are a promising platform for quantum information processing with biased noise. Pure dephasing in such systems induces leakage out of the qubit subspace, motivating the use of quantum circuit refrigeration (QCR) to remove excess excitations. While conventional superconductor--insulator--normal-metal--insulator--superconductor (SINIS)-based QCRs can suppress leakage via single-photon absorption, they also enhance QCR-induced phase-flip errors. Here we investigate a QCR based on a superconductor--insulator--superconductor--insulator--superconductor (SISIS) junction coupled to a Kerr parametric oscillator (KPO). We show that a SISIS-based QCR can operate in a regime where single-photon processes are suppressed while two-photon absorption dominates. As a result, the proposed SISIS-based QCR achieves strong suppression of dephasing-induced leakage while substantially reducing the increase in phase-flip errors associated with QCR operation. These results demonstrate that the proposed SISIS-based QCR provides an effective approach for mitigating leakage while limiting QCR-induced phase-flip errors in Kerr-cat qubits.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-10",
+      "score": 0.7993220864420851,
+      "similar_to": [
+        {
+          "title": "The Kerr-Cat Qubit: Stabilization, Readout, and Gates",
+          "id": "1907.12131",
+          "similarity": 0.8396888971328735
+        },
+        {
+          "title": "On-demand driven dissipation for cavity reset and cooling",
+          "id": "2310.16785",
+          "similarity": 0.8312511444091797
+        }
+      ],
+      "summary": {
+        "summary": "A quantum circuit refrigerator (QCR) made from a superconductor-insulator-superconductor-insulator-superconductor (SISIS) junction coupled to a Kerr parametric oscillator is analysed theoretically as a way to keep a Kerr-cat qubit inside its qubit subspace. It has an operating regime where single-photon absorption is suppressed and two-photon absorption dominates, so it removes leakage with a much smaller phase-flip penalty than the usual SINIS refrigerator while the bit-flip rates stay comparable.",
+        "motivation": "Pure dephasing pushes Kerr-cat qubits into higher excited states, and this leakage cannot be corrected by standard error-correction codes. A SINIS refrigerator removes it by single-photon absorption, but that also raises the phase-flip rate at high cooling power.",
+        "method": "Photon-assisted quasiparticle tunnelling rates are computed for both junction types and the oscillator dynamics are simulated, with the SINIS bias set where single-photon absorption dominates ($eV/h = 45$ GHz). The sharp superconducting density of states in SISIS acts as an energy filter that blocks single-photon processes and passes two-photon ones, which connect states of the same parity.",
+        "result": "SISIS lowers the leakage population more than SINIS, and its phase-flip rate stays below the dominant cooling rates ($2\\to0$ and $3\\to1$) over the range of cat sizes studied, whereas for SINIS it grows substantially with cat size. Too much cooling power still raises phase flips even for SISIS, so an intermediate setting is best; no experimental data are given.",
+        "source": "full text",
+        "generated_by": "Claude, written in-session from the full text (not via the script's API path)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.10691",
+      "title": "Dissipative quantum mechanics of Andreev bound states",
+      "authors": [
+        "Mikhail S. Kalenkov",
+        "Andrei D. Zaikin"
+      ],
+      "abstract": "We propose a microscopic scheme that allows to describe ac Josephson effect in superconducting junctions in terms of dissipative quantum dynamics of subgap Andreev bound states. This approach is particularly useful for highly transparent junctions at subgap bias voltages in which case a non-trivial combination of Landau-Zener tunneling between Andreev levels and their instability due to quasiparticle escape into continuum may play an important role. In the low bias regime, we evaluate the non-equilibrium current-phase relation of superconducting junctions at arbitrary transmissions and identify a sub-Ohmic phase-dependent dissipative contribution to the current controlled by quasiparticle dynamics near the superconducting gap edge.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-09-09",
+      "score": 0.7446752030069108,
+      "similar_to": [
+        {
+          "title": "Quasiparticle dynamics in epitaxial Al-InAs planar Josephson junctions",
+          "id": "2303.04784",
+          "similarity": 0.8676740527153015
+        },
+        {
+          "title": "Quasiparticle relaxation of superconducting qubits in the presence of flux",
+          "id": "1101.1341",
+          "similarity": 0.839404284954071
+        }
+      ],
+      "summary": {
+        "summary": "A microscopic scheme describes the ac Josephson effect in superconducting junctions as dissipative quantum dynamics of the subgap Andreev bound states. It is aimed at highly transparent junctions at subgap bias voltages, where Landau-Zener tunnelling between Andreev levels combines with the loss of quasiparticles into the continuum, and it yields an extra dissipative, phase-dependent term in the current-phase relation.",
+        "motivation": "In high-transparency junctions at low voltage the Andreev levels pass close to the gap edge, where they become unstable against quasiparticle escape. The adiabatic picture misses this, and a tractable dynamical description was lacking.",
+        "method": "An effective Hamiltonian for the Andreev levels is derived and then extended beyond the adiabatic approximation to include transitions between the Andreev state and the continuum near the gap edge. The non-equilibrium current-phase relation is evaluated at low bias for arbitrary transmission.",
+        "result": "Besides the known contributions, the treatment of quasiparticle dynamics near the gap edge gives an additional sub-Ohmic, phase-dependent dissipative contribution to the current-phase relation. It remains appreciable even deep in the subgap regime; the work is analytical and makes no comparison with experiment.",
+        "source": "full text",
+        "generated_by": "Claude, written in-session from the full text (not via the script's API path)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.10666",
+      "title": "Walking Floquet code circuits for zero-overhead leakage reduction",
+      "authors": [
+        "Hanna Westerheim",
+        "Kaavya Sahay",
+        "Shruti Puri"
+      ],
+      "abstract": "Leakage, occurring when a qubit undetectably exits the computational subspace, poses a significant challenge for quantum error correction by inducing correlated errors in space and time. These correlations reduce both the code threshold and the effective code distance. To address this challenge, we introduce two zero-overhead walking circuits for the honeycomb Floquet code (hFC), termed the swirling and sliding circuits, which periodically remove leakage while dynamically protecting logical qubits via a schedule of anticommuting two-body measurements. Unlike previous dynamic circuits for the hFC, ours preserves the distance to Pauli errors. We further study their performance under leakage and find that, for two leakage noise models, they may correct as many leakage errors as Pauli errors, improving on the more widely known walking surface code. Through numerical simulation, we observe that finite-error-rate performance under leakage is strongly influenced by entropic effects, producing a pronounced waterfall regime in which the logical error rate decreases much more rapidly with physical error rate than the expected distance-limited scaling. In this regime, even when asymptotic predictions suggest otherwise, the hFC can outperform the same-distance walking surface code in error rates and sub-threshold logical error scaling.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-09",
+      "score": 0.7163372013702398,
+      "similar_to": [
+        {
+          "title": "Surface codes: Towards practical large-scale quantum computation",
+          "id": "1208.0928",
+          "similarity": 0.8384286761283875
+        },
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8381142020225525
+        }
+      ],
+      "summary": {
+        "summary": "This work introduces two zero-overhead walking circuits for the honeycomb Floquet code (hFC)—the swirling and sliding variants—that periodically remove leakage via anticommuting two-body measurements while preserving code distance to Pauli errors. Numerical simulations reveal that in the experimentally relevant waterfall regime, entropic effects allow the hFC to outperform the same-distance walking surface code despite lacking asymptotic advantages for some noise models.",
+        "motivation": "Leakage from qubits exiting the computational subspace induces correlated spatiotemporal errors that reduce code thresholds and effective distance, increasingly dominating the error budget as Pauli-error fidelities improve on platforms like superconducting qubits and neutral atoms.",
+        "method": "Two circuits implementing the P6 hFC with weight-2 check measurements on a honeycomb lattice are designed: the swirling hFC uses late-SWAP leakage-reduction units (LRUs) and requires physical qubit rearrangement between rounds on reconfigurable architectures; the sliding hFC employs both early- and late-SWAP LRUs compatible with fixed square-lattice connectivity. Both achieve zero overhead by leveraging circuit identities to compile SWAPs into syndrome extraction without additional gates, qubits, or depth.",
+        "result": "Under depolarizing, tailored, skip-gate, and leakage-transport noise models, the hFC reduces qubit lifetime from 8 gates (surface code) to an average of 4 gates. Numerically, the swirling hFC exhibits steeper logical error rate scaling ($\\alpha > d/2$) and crossovers to outperform the walking surface code at lower physical error rates in the waterfall regime, despite upper-bound minimum-weight predictions suggesting no asymptotic advantage for some noise models.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.10146",
+      "title": "Post-fabrication trimming of a 1024-pixel, single-photon counting, Microwave Kinetic Inductance Detector array with a pixel pitch of 150 micron",
+      "authors": [
+        "Wilbert Ras-Vinke",
+        "Hessel Schulte",
+        "David J. Thoen",
+        "Kevin Kouwenhoven",
+        "Steven A. H. de Rooij",
+        "Tonny A. H. M. Coppens",
+        "Jochem J. A. Baselmans",
+        "Pieter J. de Visser"
+      ],
+      "abstract": "Microwave Kinetic Inductance Detectors are superconducting resonators capable of single-photon counting with energy resolving capability at visible and near-infrared wavelengths. Their zero read noise, extremely low dark counts, and compatibility with frequency-division multiplexing make them well suited for large imaging arrays. The detector yield of these arrays is often limited by the fabrication-induced frequency scatter leading to resonator collisions. We find that the tight packing of the pixels can add significant frequency scatter as well. We developed a post-fabrication correction method that is suitable for tightly packed arrays with a pixel pitch of $150\\ \\mathrm{μm}$. We demonstrate this method on a 1024-pixel array multiplexed on a single octave of readout bandwidth and show a reduction in frequency scatter from $1.1\\times 10^{-2}$ to $3.5\\times 10^{-4}$ and an increase in yield from $76\\%$ to $94\\%$.",
+      "categories": [
+        "physics.ins-det",
+        "astro-ph.IM",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-09-09",
+      "score": 0.692423836211127,
+      "similar_to": [
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.8076637983322144
+        },
+        {
+          "title": "Enhancing the sensitivity of single microwave photon detection with bandwidth tunability",
+          "id": "2501.07354",
+          "similarity": 0.8035104274749756
+        }
+      ],
+      "summary": {
+        "summary": "Microwave Kinetic Inductance Detectors (MKIDs) with a 1024-pixel array at 150 µm pixel pitch suffer from significant frequency scatter caused by both fabrication variations and tight packing, limiting detector yield for frequency-division multiplexing. Post-fabrication electron-beam trimming of interdigitated capacitor finger lengths reduces frequency scatter from $1.1 \times 10^{-2}$ to $3.5 \times 10^{-4}$ and increases yield from 76% to 94% with no degradation in quality factor or noise.",
+        "motivation": "High multiplexing factors in MKID arrays are limited by resonator frequency collisions arising from fabrication-induced variations and electromagnetic effects of dense pixel layouts. Existing post-fabrication correction methods (laser scanning, contact lithography) lack the spatial resolution needed for tightly packed visible/near-infrared MKID arrays.",
+        "method": "Electron-beam lithography was used to sequentially trim IDC finger lengths after measuring resonance frequencies via optical row-by-column scanning with a smartphone-based pixel-to-frequency mapper. New target frequencies $F_D^{trim}$ with constant spacing $\\lambda_D^{trim}$ were determined from measured frequencies $F_M$, and required trim lengths $l_C^{trim}$ were obtained by fitting the $l_C(F_M)$ relationship with a 6-degree polynomial and interpolating at $F_D^{trim}$.",
+        "result": "For device A with 1024 pixels and $\\lambda_{min} = 8.0 \\times 10^{-5}$, yield improved from 76% to 94%; frequency scatter decreased by factor 30. Device comparison (B: 150 µm vs. C: 450 µm pitch) showed spatial patterns increase $\\sigma$ by factor 4 at tight pitch, establishing the necessity of trimming for dense arrays. Lower limit of trimming method estimated at $\\sigma_\\mathrm{lim}^\\mathrm{trim} \\approx 4.9 \\times 10^{-5}$, enabling multiplexing factors near 4000 per octave.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.10655",
+      "title": "Conditional-squeezing gate in superconducting circuits",
+      "authors": [
+        "Roman Schiaffino",
+        "Fernando C. Lombardo",
+        "Juan Pablo Paz"
+      ],
+      "abstract": "We present an implementation of a conditional-squeezing gate that squeezes a SQUID-terminated resonator mode along a direction determined by the state of a dispersively coupled qubit. This gate generalizes the controlled-squeezing gate [Phys. Rev. A \\textbf{111}, 042606 (2025)], and relies on a refocusing technique to suppress unwanted effects arising from slowly varying time-dependent terms in the Hamiltonian during the state-dependent parametric resonance required for the operation. As an application, we use the gate to encode an arbitrary qubit state into superpositions of single- and two-mode squeezed states of the resonator. These non-Gaussian states enable error-detectable encoding through parity measurements. We show that refocusing substantially improves the encoding fidelity, which is ultimately limited by Kerr nonlinearities and dissipation in realistic implementations. For experimentally optimistic values of the nonlinearities and decay rates, we obtain encoding fidelities above 0.99 for arbitrary input qubit states. Our results provide a route toward extending this scheme to the generation of higher-order superpositions of squeezed states (a class of rotation-symmetric bosonic codes) using a control qudit.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-09",
+      "score": 0.6589865793372215,
+      "similar_to": [
+        {
+          "title": "The Kerr-Cat Qubit: Stabilization, Readout, and Gates",
+          "id": "1907.12131",
+          "similarity": 0.8752802610397339
+        },
+        {
+          "title": "The superconducting grid-states qubit",
+          "id": "2509.14656",
+          "similarity": 0.8456398248672485
+        }
+      ],
+      "summary": {
+        "summary": "This paper implements a conditional-squeezing gate in superconducting circuits that applies state-dependent squeezing to a SQUID-terminated resonator mode, controlled by a dispersively coupled qubit. A refocusing technique suppresses unwanted effects from slowly varying Hamiltonian terms, enabling high-fidelity encoding of arbitrary qubit states into superpositions of squeezed states with fidelities exceeding 0.99.",
+        "motivation": "Continuous-variable quantum information processing in circuit QED benefits from universal gate sets combining Gaussian operations with non-Gaussian resources; the conditional-squeezing gate extends prior controlled-squeezing proposals to state-dependent squeezing directions, enabling error-detectable bosonic codes through parity measurements.",
+        "method": "A bichromatic flux drive on the SQUID ($\\delta\\Phi(t) = \\epsilon_0\\sin(\\omega_{d,0}t - \\varphi_0) + \\epsilon_1\\sin(\\omega_{d,1}t - \\varphi_1)$ with $\\omega_{d,j} = 2\\bar{\\omega}_j$ where $\\bar{\\omega}_j = \\omega \\pm \\chi$ for qubit states $|0\\rangle, |1\\rangle$) drives state-dependent parametric resonance; a four-step refocusing protocol with $\\pi$ pulses and phase swaps at $t=\\tau$ reverses the sign of slowly oscillating terms ($\\propto e^{\\pm 4\\chi t}$), canceling spurious phases and quadrature deviations when $2\\tau = nT$ with $T = 2\\pi/4\\chi \\approx 31$ ns.",
+        "result": "For unitary evolution with $g_d = 15$ MHz, $\\chi = 8$ MHz, $\\omega_q/(2\\pi) = 4$ GHz, $\\omega/(2\\pi) = 6$ GHz, and protocol duration $2\\tau = 250$ ns (generating $r \\approx 2.08$), refocusing reduces phase error from $\\sim 1$ rad to $\\nu(2\\tau) = 1.8 \\times 10^{-8}$ rad and quadrature misalignment to $\\delta\\vartheta \\sim 10^{-6}$ rad; with optimistic Kerr nonlinearity $K = 100$ Hz, resonator decay $\\tau_r = 1$ ms, and qubit coherence times $\\tau_q = \\tau_\\phi = 1$ ms at 60 mK, encoding fidelities exceed 0.99 for arbitrary input states, with two-mode extension achieving $F > 0.997$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9468,
+    0.7993,
+    0.7447,
+    0.7163,
+    0.6924,
+    0.659,
+    0.4232,
+    0.4087,
+    0.3896,
+    0.3893,
+    0.3559,
+    0.3286,
+    0.3009,
+    0.2882,
+    0.2812,
+    0.2767,
+    0.2626,
+    0.2576,
+    0.2304,
+    0.2253,
+    0.2184,
+    0.2054,
+    0.1988,
+    0.1941,
+    0.1919,
+    0.189,
+    0.1795,
+    0.1765,
+    0.1519,
+    0.1517,
+    0.1515,
+    0.1327,
+    0.1321,
+    0.1296,
+    0.1274,
+    0.1181,
+    0.1041,
+    0.0993,
+    0.0919,
+    0.0874,
+    0.085,
+    0.0818,
+    0.0724,
+    0.0722,
+    0.0702,
+    0.0695,
+    0.0676,
+    0.0659,
+    0.0579,
+    0.0571,
+    0.0543,
+    0.0535,
+    0.0526,
+    0.0492,
+    0.0458,
+    0.0443,
+    0.0433,
+    0.0429,
+    0.0421,
+    0.0407,
+    0.0406,
+    0.0403,
+    0.039,
+    0.0379,
+    0.0355,
+    0.0343,
+    0.0333,
+    0.0321,
+    0.0314,
+    0.0295,
+    0.0291,
+    0.0287,
+    0.0284,
+    0.0279,
+    0.0276,
+    0.0274,
+    0.0274,
+    0.0252,
+    0.0234,
+    0.0233,
+    0.0217,
+    0.0215,
+    0.0206,
+    0.0199,
+    0.0189,
+    0.0185,
+    0.0185,
+    0.018,
+    0.0163,
+    0.0159,
+    0.0154,
+    0.014,
+    0.0133,
+    0.0127,
+    0.0126,
+    0.0124,
+    0.0121,
+    0.0119,
+    0.0112,
+    0.0111,
+    0.0108,
+    0.0107,
+    0.0103,
+    0.0098,
+    0.0098,
+    0.0094,
+    0.0093,
+    0.0085,
+    0.0084,
+    0.0083,
+    0.0079,
+    0.0076,
+    0.0074,
+    0.0072,
+    0.0071,
+    0.007,
+    0.0069,
+    0.0059,
+    0.0057,
+    0.005,
+    0.0046,
+    0.0046,
+    0.0038,
+    0.0013
+  ]
+}

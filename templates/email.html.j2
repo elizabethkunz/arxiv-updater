@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+</head>
+{# Site palette and hairline rows, set in a LaTeX-style serif. Mail clients (Outlook, Gmail) block web fonts, so the
+   stack names Computer Modern / Latin Modern for machines that have them installed and falls back to Georgia.
+   Styles are inline and the layout is tables because clients strip <style> and ignore grid/flex. #}
+{% set face = "'Latin Modern Roman','CMU Serif','Computer Modern Serif',Georgia,'Times New Roman',serif" %}
+{% set sans = "Helvetica,Arial,sans-serif" %}
+<body style="margin:0;padding:0;background:#fafafa;color:#111111;font-family:{{ face }};">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fafafa;">
+<tr><td align="center" style="padding:0 16px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:680px;text-align:left;">
+
+  {% if not papers %}
+  <tr><td style="padding:24px 0;border-bottom:1px solid #e6e6e6;font:400 16px/1.6 {{ face }};color:#8a8a8a;">
+    No new papers scored above the email threshold today.
+  </td></tr>
+  {% endif %}
+  {% for p in papers %}
+  <tr><td style="padding:24px 0;border-bottom:1px solid #e6e6e6;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+      <td width="84" valign="top" style="width:84px;padding-top:3px;">
+        <span style="display:inline-block;font:bold 13px/1 {{ sans }};color:#ffffff;background:{{ '#1f6f54' if p.score >= 0.8 else '#8a6d1f' }};border-radius:4px;padding:5px 7px;">{{ p.score|pct }}</span>
+      </td>
+      <td valign="top">
+        <p style="margin:0;font:bold 19px/1.3 {{ face }};">
+          <a href="{{ base_url }}/{{ p.id }}" style="color:#111111;text-decoration:none;">{% if p.score >= 0.95 %}&#11088; {% endif %}{{ p.title|detex }}</a>
+        </p>
+        <p style="margin:7px 0 0;font:400 14px/1.6 {{ face }};color:#777777;">
+          Authors: {{ p.authors|short_authors }}<br>
+          ArXiV: <a href="https://arxiv.org/abs/{{ p.id }}" style="color:#444444;">https://arxiv.org/abs/{{ p.id }}</a><br>
+          Link: <a href="{{ base_url }}/{{ p.id }}" style="color:#444444;">{{ base_url }}/{{ p.id }}</a>
+        </p>
+        <p style="margin:10px 0 0;font:400 16px/1.55 {{ face }};color:#333333;">{{ p.summary.summary|detex }}</p>
+      </td>
+    </tr></table>
+  </td></tr>
+  {% endfor %}
+
+  <tr><td style="padding:22px 0 48px;font:400 13px/1.6 {{ face }};color:#8a8a8a;">
+    {{ day.n_fetched }} new papers scanned for {{ day.date }}. Scores are the % match with the liked-papers database;
+    papers at {{ site_min }}%+ are on <a href="{{ base_url }}/" style="color:#444444;">{{ base_url }}</a>.
+  </td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>

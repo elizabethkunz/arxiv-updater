@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates tantalum damascene coplanar waveguide resonators fabricated on 300 mm wafers, where the superconductor is embedded in the silicon substrate to eliminate native oxide sidewalls. Cryogenic measurements show a modest $\\times 2$ improvement in internal quality factor for pristine Ta/Si interfaces compared to buried-oxide interfaces, though significant performance variance remains.",
+  "motivation": "Surface oxides, particularly the native $\\mathrm{Ta_2O_5}$ on sidewalls of etched superconductors, contribute to dielectric loss through two-level systems (TLS) at the device interfaces and degrade transmon coherence times via the surface participation ratio.",
+  "method": "Five device variants were fabricated using 300 mm silicon wafers with either buried-oxide (intentionally oxidized TaN after deposition with air exposure) or pristine (in-situ sputter without air exposure) Ta/Si interfaces, followed by chemical mechanical planarization. Devices were characterized in a BlueFors dilution refrigerator at 25–600 mK using forward transmission $S_{21}$ measurements; internal quality factors $Q_I$ were extracted by fitting resonator phase across temperatures and input powers from $-80$ to $-40$ dBm.",
+  "result": "The best-performing resonator (Device C at 4.49 GHz) achieved a constant $Q_C = (8.178 \\pm 0.016) \\times 10^5$ independent of temperature and power; pristine-interface devices showed statistically improved $Q_I$ at $-60$ dBm compared to buried-oxide devices, though one buried-oxide resonator (Device A at 3.29 GHz) achieved comparable performance at $-50$ dBm, suggesting loss mechanisms beyond the Ta/Si interface.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

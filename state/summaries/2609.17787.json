@@ -1,0 +1,8 @@
+{
+  "summary": "A 30 μg optical micromirror, made of a silicon membrane with a high-reflectivity dielectric stack attached to superconducting microspheres, is stably levitated in a magnetic quadrupole field at cryogenic temperature. With magnetic feedback stabilizing the transverse motion, optical interferometry of the axial displacement reaches a sensitivity of order 100 pm/$\\sqrt{\\mathrm{Hz}}$ near the 167 Hz axial trap frequency.",
+  "motivation": "Free-standing mirrors with minimal dissipation and tunable oscillation frequency would open precision sensing and quantum cavity optomechanics in the microgram mass regime.",
+  "method": "Superconducting magnetic levitation of the mirror assembly in a quadrupole trap, magnetic feedback on the transverse modes, and interferometric readout of the axial mode.",
+  "result": "Stable levitation of a 30 μg high-reflectivity mirror with displacement sensitivity of order 100 pm/$\\sqrt{\\mathrm{Hz}}$ near the 167 Hz axial trap frequency.",
+  "source": "abstract",
+  "generated_by": "Claude, written in-session from the abstract (not via the script's API path)"
+}

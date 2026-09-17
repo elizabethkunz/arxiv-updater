@@ -1,0 +1,8 @@
+{
+  "summary": "A tunable superconducting resonator (tRes) integrated magnetometer combines the fast readout of an LC circuit with SQUID-level flux sensitivity for cryogenic magnetometry at MHz sampling rates. The device demonstrates quantum non-demolition measurement characteristics and operates across three circuit topologies of increasing complexity at milli-kelvin temperatures.",
+  "motivation": "Existing superconducting magnetometers achieve high sensitivity but face trade-offs in readout speed and architectural flexibility; a tunable resonator approach could enable faster, more versatile measurement modalities while maintaining the non-invasive advantages of superconducting sensors.",
+  "method": "tRes was designed and fabricated using superconducting chip foundry processes, with flux tunability integrated to achieve SQUID-like sensitivity while retaining LC-circuit speed; two measurement modalities were demonstrated and three progressively complex circuits characterized to extract target-specific information.",
+  "result": "The tRes achieves MHz magnetic sampling rates with high sensitivity and quantum non-demolition measurement properties, making it a competitive alternative to spin-qubit and color-center magnetometry for milli-kelvin cryogenic applications.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "This paper demonstrates a superconducting soliton digital-to-analog converter (DAC) that converts digital CMOS inputs into smooth flux pulses for controlling transmon qubits, achieving 5.6 ns phase gates with 0.05% excitation probability per gate. The soliton DAC provides passive noise filtering (-80 dB attenuation at transmon frequencies), native multiplexing, and CMOS compatibility, but reveals significant non-local electromagnetic crosstalk (1.6% phase error per gate) from 30 simultaneously triggered DACs on the control chip.",
+  "motivation": "Scaling superconducting quantum processors requires solving the wiring bottleneck and control noise issues that arise from individually driving each qubit with room-temperature microwave lines.",
+  "method": "A Josephson transmission line (JTL) with 10 spoke Josephson junctions ($I_\\mathrm{crit} = 340$ μA, $\\beta = 0.5$) stores and releases flux via soliton propagation, controlled by a trapezoidal current pulse exceeding the injection threshold. The DAC load loop is mutually coupled ($M = 4.6$ pH) to transmon qubits ($I_c = 47$ nA, $C = 83$ fF, $f_{01} = 6.8$ GHz). Gate performance is characterized via Ramsey spectroscopy, interleaved randomized benchmarking, and WRSpice/Circuitizer simulations.",
+  "result": "Measured gate fidelity is $1.9 \\pm 0.4$% for $\\pi/2$ phase gates; direct qubit excitation is $0.05\\%$ per gate with relaxation rate below intrinsic $T_1 = 8 \\pm 0.3$ μs. Non-local phase errors from unshunted middle JJs dominate, but simulations predict $4 \\times 10^{-6}$ error with optimized damping and improved waveform timing, well below surface code thresholds.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

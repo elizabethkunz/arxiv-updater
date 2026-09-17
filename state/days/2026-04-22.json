@@ -1,0 +1,278 @@
+{
+  "date": "2026-04-22",
+  "n_fetched": 101,
+  "papers": [
+    {
+      "id": "2604.18714",
+      "title": "Efficient Routing of Quantum LDPC Codes on Programmable 2D Toric Architectures",
+      "authors": [
+        "Kun Liu",
+        "Takahiro Tsunoda",
+        "Sophia H. Xue",
+        "Evan McKinney",
+        "Zeyuan Zhou",
+        "Shifan Xu",
+        "Robert J. Schoelkopf",
+        "Yongshan Ding"
+      ],
+      "abstract": "Quantum low-density parity-check codes are promising candidates towards scalable fault-tolerant quantum computation. Among these, bivariate bicycle (BB) codes offer superior encoding rates and large code distance compared to surface codes. However, their requirement on long-range stabilizer measurements poses significant challenges for implementation on realistic hardware with limited connectivity, such as superconducting circuit platforms. In this work, we introduce a novel hardware-software co-design that leverages a programmable communication network architecture to address these limitations. Our approach utilizes a 2D toric network of oscillators as a flexible communication fabric linking qubits at each site. Such architecture significantly reduces the number of long-range couplers required from $O(n)$ to $O(\\sqrt{n})$. Dual-rail qubits, along with native gates including Swap-Wait-Swap gates and beamsplitter SWAPs, ensure that long-range two-qubit gates can be executed with high fidelity and low latency. To further enhance performance, our qubit layout and routing algorithm utilize symmetries of the codes and enable maximum parallelism for long-range two-qubit gates, maintaining a low syndrome extraction cycle duration and scalability over the code length. We perform circuit-level simulation with realistic noise modeling based on experimental hardware parameters, observing an logical error rate per logical qubit per cycle of 3.06\\% for $[[18, 4, 4]]$ BB code, 2.6$\\times$ less than the existing experimental result. These findings provide a practical roadmap and identify key technological advancements needed to achieve low-overhead fault-tolerant quantum computing at scale.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-20",
+      "score": 0.8019175418750952,
+      "similar_to": [
+        {
+          "title": "Multivariate Bicycle Codes",
+          "id": "2406.19151",
+          "similarity": 0.8988567590713501
+        },
+        {
+          "title": "Nearest-neighbour gates are all you need: High-rate quantum low-density parity-check codes on a planar grid",
+          "id": "2606.19482",
+          "similarity": 0.8707210421562195
+        }
+      ],
+      "summary": {
+        "summary": "This paper presents a hardware-software co-design for implementing bivariate bicycle quantum LDPC codes on superconducting platforms using a programmable 2D toric network of oscillators as a communication fabric, reducing required long-range couplers from $O(n)$ to $O(\\sqrt{n})$. Circuit-level simulations achieve a logical error rate of 3.06% per logical qubit per cycle for the $[[18,4,4]]$ code with dual-rail qubits and Swap-Wait-Swap gates, a 2.6× improvement over prior experiments.",
+        "motivation": "Bivariate bicycle codes offer superior encoding rates and code distance compared to surface codes, but their requirement for long-range stabilizer measurements poses severe implementation challenges on superconducting platforms with limited connectivity, motivating new architectures that can efficiently execute these non-local interactions.",
+        "method": "The approach uses a 2D toric oscillator network linking qubits at each site, enabling long-range CZ gates via beamsplitter SWAPs and Swap-Wait-Swap entangling gates with dual-rail qubits. A symmetry-aware layout and XY routing algorithm exploit translation and cell invariance to achieve maximum parallelism for all $n$ two-qubit gates within each syndrome-extraction pass.",
+        "result": "For the $[[18,4,4]]$ BB code, realistic noise modeling based on experimental dual-rail parameters yields $\\ell_k = 0.0306$ (logical error per qubit per cycle), 2.6× lower than the best published experimental result of $\\ell_k = 0.0891$ from Wang et al., while reducing fabrication overhead from 324 to 36 long-range couplers for the $[[144,12,12]]$ code.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.19115",
+      "title": "Wave--particle transition and quantum Zeno effect in which-way experiments with a superconducting quantum processor",
+      "authors": [
+        "Shiyu Wang",
+        "Zhiguang Yan",
+        "Clemens Gneiting",
+        "Rui Li",
+        "Franco Nori",
+        "Yasunobu Nakamura"
+      ],
+      "abstract": "Wave--particle duality demonstrates the peculiar nature of quantum mechanics. In which-way experiments, depending on the measurement scheme, a particle exhibits either wave-like or particle-like properties, as summarized by Bohr's principle of complementarity. In this work, we implement Mach-Zehnder (MZ) interferometry on a two-dimensional (2D) superconducting quantum processor. With precise control of the which-way measurement strength, we demonstrate the transition of a photon from wave-like to particle-like behavior. Furthermore, by performing quantum state tomography on two qubits located in the two paths, we demonstrate that which-way measurements break the entanglement and coherence between the two paths and cause information leakage from the quantum system to the environment. To capture this behavior quantitatively, we derive complementarity relations between the entropy and the fringe visibility. By applying a continuous which-way measurement during the evolution, we also observe the quantum Zeno effect that partially obstructs the interferometer path, giving rise to nonmonotonic behavior of purity and von Neumann entropy. Our experiments provide a detailed characterization of the full interferometer dynamics, reveal the relation between wave--particle duality and quantum information, and demonstrate the potential of superconducting quantum processors for testing quantum foundations under high precision and controllability.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-21",
+      "score": 0.6032825929887159,
+      "similar_to": [
+        {
+          "title": "Measurement-induced state transitions in a superconducting qubit: Beyond the rotating wave approximation",
+          "id": "1606.05721",
+          "similarity": 0.843735933303833
+        },
+        {
+          "title": "Entanglement assisted probe of the non-Markovian to Markovian transition in open quantum system dynamics",
+          "id": "2401.13735",
+          "similarity": 0.8421634435653687
+        }
+      ],
+      "summary": {
+        "summary": "A 16-qubit superconducting processor implements Mach–Zehnder interferometry on 4 and 12 qubits to demonstrate the wave-to-particle transition controlled by which-way measurement strength and observe the quantum Zeno effect under continuous measurement. Quantum state tomography reveals complementarity relations: $2(1-P_s)+V^2 \\leq 1$ (purity-visibility) and $S_s \\leq S_s^\\mathrm{sym}(V)$ (von Neumann entropy-visibility), connecting wave-particle duality to quantum information leakage.",
+        "motivation": "Superconducting qubits enable tunable which-way measurements via QND dispersive readout without destroying the photon, permitting systematic exploration of Bohr complementarity from weak to projective measurement regimes and investigation of information leakage during the wave-particle transition.",
+        "method": "A 4-qubit interferometer with decoupled which-way measurement and a 12-qubit interferometer with continuous measurement both map photon propagation onto qubit populations via the hard-core-boson Hamiltonian; measurement-induced dephasing rates $\\Gamma_m/2\\pi$ are calibrated from Stark shifts and state tomography, visibility $V$ extracted from interference fringes, and two-qubit concurrence, purity $P_s$, and entropy $S_s$ computed from density matrices of qubits in the two arms.",
+        "result": "Visibility decreases monotonically with $\\Gamma_m$ from near unity to zero; concurrence drops from $\\approx 0.717$ to $\\approx 0$; the 12-qubit case shows nonmonotonic purity (minimum) and entropy (maximum) due to quantum Zeno blocking of path 2 when $\\Gamma_m$ exceeds the nearest-neighbor hopping rate $J/2\\pi \\approx 3.56$ MHz, identifying optimal measurement strength for time-of-arrival protocols.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.19481",
+      "title": "Fault-Tolerant Quantum Computing with Trapped Ions: The Walking Cat Architecture",
+      "authors": [
+        "Felix Tripier",
+        "Woo Chang Chung",
+        "Jacob Young",
+        "Safwan Alam",
+        "Bryce Bjork",
+        "Aharon Brodutch",
+        "Finn Lasse Buessen",
+        "Nolan J. Coble",
+        "Thomas Dellaert",
+        "Dmitri Maslov",
+        "Martin Roetteler",
+        "Edwin Tham",
+        "Mark Webster",
+        "Min Ye",
+        "John Gamble",
+        "Andrii Maksymov",
+        "J. P. Marceaux",
+        "Nicolas Delfosse"
+      ],
+      "abstract": "We propose a fault-tolerant quantum computer architecture for trapped-ion devices, which we call the walking cat architecture. Our blueprint includes a compiler, a detailed description of all the quantum error-correction protocols, a micro-architecture, a sufficiently fast decoder, and thorough simulations. The backbone of the architecture is a cat factory, producing cat states distributed throughout the machine, which are consumed to perform logical operations. The walking cat architecture is based entirely on a modern quantum error-correction approach called low-density parity-check (LDPC) codes. We identify promising instances of the walking cat architecture, such as (1) a simple architecture based on a single LDPC code, (2) a fast architecture based on fast logical gates relying on a [[70, 6, 9]] code, equipped with Clifford-frame tracking for any 6-qubit Clifford gate, and (3) a dense architecture based on a [[102, 22, 9]]] code encoding 22 logical qubits per memory block. Our dense architecture provides a design with 110 logical qubits executing about one million T gates per day using only 2,514 physical qubits. We estimate that the quantum Hamiltonian simulation of a Heisenberg model on 100 sites can be executed within one month with 10,000 physical qubits, including all shots required to achieve chemical accuracy, suggesting that such a device could enter the regime of classically intractable physics simulations. Our design relies on hardware components that have been experimentally demonstrated on small devices. We emphasize simplicity over hypothetical performance to facilitate the practical realization of this machine. Based on this approach, we believe that a fault-tolerant quantum computer with hundreds of logical qubits capable of running millions of logical gates can be built in the near term, providing a platform to explore a broad range of applications.",
+      "categories": [
+        "quant-ph",
+        "cs.ET"
+      ],
+      "published": "2026-04-21",
+      "score": 0.5983911590657665,
+      "similar_to": [
+        {
+          "title": "Breakeven demonstration of quantum low-density parity-check codes",
+          "id": "2606.06455",
+          "similarity": 0.8860947489738464
+        },
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.8786709308624268
+        }
+      ],
+      "summary": {
+        "summary": "A fault-tolerant architecture for trapped-ion quantum computers using LDPC codes and cat-state factories for logical operations is proposed, with detailed compiler, decoder, and micro-architecture specifications. The dense variant achieves 110 logical qubits with $\\sim$1 million T gates per day using 2,514 physical qubits, and estimates 100-site Heisenberg simulation within one month on 10,000 physical qubits.",
+        "motivation": "Trapped-ion platforms require practical, near-term scalable fault-tolerance schemes that emphasize experimentally demonstrated components over hypothetical improvements.",
+        "method": "LDPC codes organized via cat-state factories distribute quantum information and logical operations; three architecture instances are analyzed, including a [[70, 6, 9]] fast-gate variant with Clifford-frame tracking and a [[102, 22, 9]] dense variant encoding 22 logical qubits per block, with full simulations including decoder performance.",
+        "result": "The dense architecture targets 110 logical qubits executing $\\sim$10$^6$ T gates/day with 2,514 ions; 100-site Heisenberg model simulation achievable in $\\sim$1 month at 10,000 physical qubits with chemical-accuracy precision.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.19855",
+      "title": "Rings Around the Ancilla: A Workload-Aware FTQC Architecture",
+      "authors": [
+        "Archisman Ghosh",
+        "Avimita Chatterjee",
+        "Swaroop Ghosh"
+      ],
+      "abstract": "Obtaining a quantum advantage in practical applications over classical machines requires a fault-tolerant model of computation. However, the resource overhead of developing a fault-tolerant quantum computer (FTQC) architecture is quite high. Current state-of-the-art architecture designs promise constant-time access to logical qubits at the expense of a high qubit overhead, or qubit-dense layouts at the expense of increased latency in the execution of a quantum workload. In this paper, we propose (a) an architecture design that balances the tradeoff of execution time of workloads with the density of logical qubits by placing the surface code patches around the ancilla region, giving almost equal access of the ancilla region to all the data qubits, (b) design a novel algorithm to leverage the $T$-gate characteristics of the user workload to suggest the optimal placement strategy in the floorplan of our architecture, (c) a workload-selective fast-$Y$ optimization knob that accelerates $Y$-basis measurements only for qubits whose $Y$-gate demand justifies the additional tile cost, and (d) explore the scope of executing multiple programs concurrently, which enhances the reconfigurability of our proposed design. Through numerical evaluation, we observe that the proposed architecture design maintains the cycles per instruction time close to optimal while using up to $\\sim21\\%$ fewer data tiles, and up to $\\sim90\\%$ efficiency under a 10-way concurrency.",
+      "categories": [
+        "quant-ph",
+        "cs.AR"
+      ],
+      "published": "2026-04-21",
+      "score": 0.5013022950213416,
+      "similar_to": [
+        {
+          "title": "Nearest-neighbour gates are all you need: High-rate quantum low-density parity-check codes on a planar grid",
+          "id": "2606.19482",
+          "similarity": 0.8316347002983093
+        },
+        {
+          "title": "Fault-tolerant interfaces for modular quantum computing on diverse qubit platforms",
+          "id": "2510.05221",
+          "similarity": 0.8312150835990906
+        }
+      ],
+      "summary": {
+        "summary": "This paper proposes a stacked-annulus architecture for fault-tolerant quantum computing that organizes data tiles in concentric rings around a central compute region, jointly optimizing execution latency and data-tile density. The design includes workload-aware qubit placement based on T-gate and Y-gate characteristics, a selective fast-Y optimization knob, and support for concurrent multi-workload execution.",
+        "motivation": "Existing FTQC surface-code architectures optimize either execution time (sacrificing data-tile density) or qubit density (sacrificing latency), and they neglect workload-specific characteristics and concurrent execution scenarios. This creates a coupling between space and time costs that prior work treats independently.",
+        "method": "The authors propose placing data patches in stacked annular rings around a central compute region and develop a directed annular movement (DAM) strategy with bounded radial and angular displacement. They introduce a workload-aware placement algorithm that scores qubits by their T-load, Y-load, and multi-qubit interaction degree, then greedily assigns highest-cost qubits to innermost rings. A selective fast-Y optimization upgrades qubits to two-tile encoding only when measurement speedup ($5t \\to 1t$) exceeds the movement penalty. Multi-workload execution uses per-workload quota allocation via computed budgets $B_0(w)$ and $B_Y(w)$.",
+        "result": "On near-term FTQC benchmarks (quantum chemistry, arithmetic circuits, QFT), the architecture maintains near-optimal cycles-per-T-instruction while using $\\sim 21\\%$ fewer data tiles than prior dense designs and $\\sim 9.3$–$43.4\\%$ fewer tiles than the fast-block design. The fast-Y knob delivers $\\sim 2.42 \\times$ measurement speedup and $\\sim 10.86\\%$ CPI$_T$ reduction. Under 10-way concurrency, the sharing policy achieves $\\sim 90\\%$ efficiency with mean slowdown $\\sim 1.1 \\times$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8019,
+    0.6033,
+    0.5984,
+    0.5013,
+    0.4727,
+    0.4461,
+    0.3848,
+    0.3712,
+    0.3048,
+    0.2529,
+    0.2472,
+    0.2091,
+    0.2083,
+    0.2082,
+    0.1899,
+    0.1519,
+    0.1489,
+    0.1488,
+    0.1371,
+    0.128,
+    0.1162,
+    0.1049,
+    0.1029,
+    0.1012,
+    0.0987,
+    0.097,
+    0.0944,
+    0.094,
+    0.0929,
+    0.0824,
+    0.081,
+    0.0802,
+    0.0775,
+    0.0771,
+    0.0746,
+    0.074,
+    0.0731,
+    0.0729,
+    0.0707,
+    0.0705,
+    0.0694,
+    0.0689,
+    0.0643,
+    0.0637,
+    0.0628,
+    0.0606,
+    0.0597,
+    0.0582,
+    0.0551,
+    0.0546,
+    0.053,
+    0.0528,
+    0.0509,
+    0.0483,
+    0.0455,
+    0.0427,
+    0.0376,
+    0.0371,
+    0.0356,
+    0.0335,
+    0.0308,
+    0.03,
+    0.0298,
+    0.0296,
+    0.0292,
+    0.0287,
+    0.0286,
+    0.0254,
+    0.0219,
+    0.0214,
+    0.0211,
+    0.0202,
+    0.0193,
+    0.0173,
+    0.0171,
+    0.0162,
+    0.0155,
+    0.0152,
+    0.0147,
+    0.0131,
+    0.0131,
+    0.0124,
+    0.0117,
+    0.0101,
+    0.01,
+    0.0098,
+    0.0087,
+    0.0077,
+    0.0076,
+    0.0073,
+    0.0071,
+    0.0052,
+    0.0041,
+    0.0041,
+    0.0039,
+    0.0037,
+    0.0021,
+    0.0018,
+    0.0018,
+    0.0009,
+    0.0008
+  ]
+}

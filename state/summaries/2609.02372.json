@@ -1,0 +1,8 @@
+{
+  "summary": "This work synthesizes high-fidelity quantum gates in superconducting linear chains by mapping periodic pulsed driving onto Floquet quasi-energy resonance conditions, achieving iSWAP gates in a three-qubit processor and demonstrating multi-excitation transport with $t_\text{gate} \thicksim 170$–430 ns in a seven-site architecture. Robustness analysis reveals sharp performance degradation under sub-percent static disorder ($\theta \thicksim 10^{-3}$) in linear topologies, suggesting closed-loop ring geometries as a mitigation strategy.",
+  "motivation": "Precise multi-qubit control remains a bottleneck in superconducting quantum processors; achieving high-fidelity entangling gates with durations much shorter than relaxation times ($T_1$, $T_//phi$) while maintaining scalability is essential for practical quantum computation.",
+  "method": "Using Floquet theory, delta-kick pulses on flux-tunable transmon buses are mapped to quasi-energy resonance conditions via Baker-Campbell-Hausdorff expansion; optimal driving parameters ($\\lambda$, $T$, pulse amplitude $A$) are identified analytically and refined via Covariance Matrix Adaptation Evolution Strategy (CMA-ES), with Gaussian pulse trains replacing idealized kicks for experimental feasibility.",
+  "result": "Three-qubit iSWAP achieves fidelity $\\mathcal{F} \\approx 1.0$; seven-site double-excitation transfers reach $\\mathcal{F} \\gtrsim 0.99$ with ultra-short durations achieving $t_\\text{gate}/T_1 \\lesssim 2\\%$, but fidelity collapses sharply for $\\eta \\gtrsim 10^{-3}$ parameter disorder due to spectral crowding in linear chains.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

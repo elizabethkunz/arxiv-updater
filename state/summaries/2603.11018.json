@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates crosstalk error mitigation for simultaneous single-qubit gates on a 49-qubit superconducting processor by combining model-based qubit frequency optimization with pulse shaping. The authors introduce an analytical model of crosstalk-induced gate error and experimentally achieve 99.96% mean fidelity for simultaneous $X_{\\pi/2}$ gates at 16 ns duration on 46 qubits, with simulations showing scalability to 1000 qubits.",
+  "motivation": "Simultaneous single-qubit operations are essential for quantum error correction and scaling superconducting processors, but microwave crosstalk from capacitive coupling between drive lines causes significant errors during parallel gates, especially in systems with closely spaced transition frequencies.",
+  "method": "The authors develop an analytical second-order perturbation theory model (Eq. 4) of crosstalk-induced error including Rabi splitting effects, use it to optimize qubit frequency configurations via error landscapes, and introduce crosstalk transition suppression (CTS) using higher-derivative DRAG pulses combined with off-resonant driving to suppress spectral energy at harmful transitions ($f_{01}^T$, $f_{12}^T$, $f_{12}^C$).",
+  "result": "With frequency optimization and CTS, mean simultaneous gate error reaches $4.7 \\times 10^{-4}$ on 46 qubits at 20 ns gate duration within a 197 MHz frequency bandwidth; on the highest-crosstalk pair ($C_{TC} = -13.9$ dB), CTS reduces crosstalk error by a factor $28 \\pm 4$ compared to conventional pulses, and simulations predict CTS reduces required bandwidth by $119 \\pm 4$ MHz for devices with 54+ qubits.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

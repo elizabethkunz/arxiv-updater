@@ -1,0 +1,8 @@
+{
+  "summary": "This work presents a traveling-wave parametric amplifier with integrated on-chip input and output diplexers for pump delivery and routing, eliminating external microwave components. The device achieves 13 dB broadband gain across 2 GHz (6–8 GHz signal band) with average system-added noise of 2 quanta, as measured by shot-noise tunnel junction calibration.",
+  "motivation": "Conventional TWPAs require off-chip directional couplers and diplexers for pump injection and filtering, adding loss, complexity, and limiting scalability in multiplexed superconducting-circuit readout architectures.",
+  "method": "A four-wave-mixing Josephson TWPA with niobium trilayer junctions ($I_c \\approx 5$ µA) and integrated fifth-order Chebyshev diplexers (crossover at 8.5 GHz, footprint ~300 µm × 300 µm) were co-fabricated on a single chip using amorphous-silicon-dielectric capacitors ($\\tan \\delta \\approx 4 \\times 10^{-4}$). The diplexers separate signal and idler paths, with a phase-matching resonator at 8.7 GHz inserted periodically in the shunt branch.",
+  "result": "At optimized pump power (−76.8 dBm at the TWPA input, 9.06 GHz), the device delivers 13 dB gain with a minimum chain-added noise of 2 quanta between 6–8 GHz; isolating the TWPA contribution yields $N_{\\mathrm{TWPA}} = 1.17 \\pm 0.14$ quanta at 7.74 GHz.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

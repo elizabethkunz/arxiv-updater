@@ -1,0 +1,8 @@
+{
+  "summary": "This paper demonstrates quantum simulation of two- and three-flavor neutrino oscillations using Fock-basis encoding of a microwave cavity mode in superconducting circuits, with control via SNAP and displacement gates applied to an ancillary transmon qubit. Pulse-level simulations show oscillation probabilities in close agreement with theoretical predictions despite gate fidelities reduced to ~0.97 (two-flavor) and ~0.925 (three-flavor) by ancilla decoherence.",
+  "motivation": "Cavity bosonic encodings offer advantages over qubit-based approaches including long coherence times (~1 ms for 3D cavities) and reduced control hardware complexity, making them attractive for quantum simulation of particle physics phenomena.",
+  "method": "Arbitrary unitary operations on the cavity Fock subspace are implemented by interleaving sequences of displacement operations $D(\\alpha)$ (Gaussian pulses on cavity drive) and SNAP gates $S(\\vec{\\theta})$ (conditional number-dependent ancilla rotations via flat-top Gaussian pulses lasting ~2.77 µs). Two-flavor oscillations use direct compilation; three-flavor oscillations use optimized sequences of building blocks $B(\\alpha, \\vec{\\theta}) = D^\\dagger(\\alpha) S(\\vec{\\theta}) D(\\alpha)$ with gradient-descent parameter optimization via JAX.",
+  "result": "Direct-compilation fidelities reached $>0.99$ for two-flavor and $\\approx 0.99$ for three-flavor protocols; pulse-level simulations with $T_1 = 100$ µs and $T_\\phi \\approx 55$ µs yielded fidelities of $\\approx 0.97$ and $\\approx 0.925$ respectively, with simulated neutrino oscillation probabilities matching theory across the full range of $L/E$ values tested.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

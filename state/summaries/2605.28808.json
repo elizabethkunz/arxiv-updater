@@ -1,0 +1,8 @@
+{
+  "summary": "This paper presents a device-agnostic in situ noise metrology protocol for cryogenic microwave quantum devices that combines Planck spectroscopy using a Variable Temperature Stage with Short-Open-Load-Reciprocal S-parameter calibration, ensuring both noise and scattering measurements refer to the same cryogenic reference planes. The protocol avoids embedding the DUT's nonlinear model into readout-chain calibration by substituting the noise source for the DUT, and is demonstrated on a Josephson Traveling Wave Parametric Amplifier under multimode nonlinear conditions.",
+  "motivation": "Absolute noise characterization at cryogenic DUT reference planes requires careful separation of readout-chain calibration from DUT dynamics, particularly for nonlinear devices like parametric amplifiers where serial noise-source placement can introduce model-dependent systematic errors through unmodeled multimode noise channels.",
+  "method": "A substitution configuration places a calibrated Variable Temperature Stage noise source at the DUT's input via cryogenic switches, decoupling the noise-calibrated readout chain from the DUT itself, while SOLR calibration extracts S-parameters at identical reference planes; the protocol is applied to an AI-TWPA-C JTWPA under pump conditions activating multimode behavior.",
+  "result": "For the JTWPA at $3.6$$-$$5.5$ GHz, the band-averaged input-referred added noise increases with pump power more rapidly than gain at higher powers, consistent with activation of higher-order wave-mixing or pump-enhanced loss channels, without requiring assumptions about the device's internal noise-transmission model in the calibration itself.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

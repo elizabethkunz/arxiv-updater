@@ -1,0 +1,451 @@
+{
+  "date": "2026-07-02",
+  "n_fetched": 111,
+  "papers": [
+    {
+      "id": "2607.00490",
+      "title": "A Versatile Analytical Model for Fast and Accurate Determination of Feedline-Coupled Resonators for Superconducting Qubit Readout",
+      "authors": [
+        "Zhen Luo",
+        "Lea Richard",
+        "Ivan Tsitsilin",
+        "Christian M. F. Schneider",
+        "Marco Dietz",
+        "Stefan Filipp",
+        "Amelie Hagelauer"
+      ],
+      "abstract": "Superconducting quantum chips commonly utilize quarter-wavelength (λ/4) transmission line resonators as readout circuits. An analytical model for the accurate determination of resonance frequencies and coupling Q-factors of feedline-coupled superconducting resonators is introduced. The model leverages four-port microwave network analysis, integrating boundary conditions and conformal mapping techniques to compute even- and odd-mode impedances in edge-coupled coplanar waveguide (CPW) structures. Its versatility allows application to both planar and 3-D heterogeneous architectures, making it a powerful tool for resonator design. To validate the model, a test chip with λ/4 resonators of varying geometries is fabricated and measured in a cryogenic environment. Comparisons with finite element method (FEM) simulations and experimental measurements confirm the model's accuracy, with resonance frequencies and coupling Q-factors aligning closely across configurations. This proposed model facilitates the design of superconducting resonators in readout circuits for more effective, scalable, and adaptable quantum computing architectures.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-01",
+      "score": 0.9613936784180782,
+      "similar_to": [
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.8590220808982849
+        },
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.84449303150177
+        }
+      ],
+      "summary": {
+        "summary": "An analytical model using conformal mapping and four-port network analysis determines resonance frequencies and coupling Q-factors for edge-coupled $\\lambda/4$ CPW resonators in flip-chip superconducting qubit readouts. The model is validated against 3D FEM simulations and cryogenic measurements of ten resonators with varying geometries, showing agreement within $\\Delta f_r/f_r < 1\\%$ and $\\Delta Q_c/Q_c < 20\\%$.",
+        "motivation": "Existing design methods for planar resonators do not account for the complexities of 3D flip-chip architectures with top ground planes, and full-wave EM simulations are computationally expensive, limiting rapid design iteration for scaled-up qubit systems.",
+        "method": "The coupling section is modeled as a four-port network using even- and odd-mode impedance analysis ($Z_{0,e}$ and $Z_{0,o}$) computed from conformal mapping of the top-grounded edge-coupled CPW structure with finite ground plane; short and open boundary conditions at the resonator ends are applied to reduce the network to a two-port system with closed-form transmission coefficient $S'_{21}$, and resonance frequency and $Q_c$ are extracted by curve-fitting.",
+        "result": "A test chip fabricated in flip-chip technology with $h_s = 10$ µm spacing yields measured resonance frequencies from 5.16 to 8.01 GHz and coupling Q-factors from $17.1 \\times 10^3$ to $197.3 \\times 10^3$ across ten resonators; the model predicts these parameters to within the stated tolerances, accounting for kinetic inductance effects ($L_k^l \\approx 12$ nH/m) and fabrication variability in chip spacing.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.00688",
+      "title": "Leakage Mobility and Passive Leakage Removal in Transmons with Tunable Couplers",
+      "authors": [
+        "Taneli Tolppanen",
+        "Gonzalo Martín-Vázquez",
+        "Sasu Tuohino",
+        "Matti Silveri"
+      ],
+      "abstract": "Qubit leakage is a noticeable source of errors for quantum computing. In quantum processors, leakage excitations traveling between qubits generate correlated errors and perturb gate implementations. Leakage mobility can also be utilized for creating dedicated leakage removal pathways and removal units. To quantitatively characterize leakage mobility and to guide better design of processor architectures, we study here leakage dynamics in transmons with tunable couplers through numerical and analytical methods. Even if the couplers are tuned to cancel the single-excitation exchange or the ZZ interaction, the leakage hopping rates still persists in the range of 0.8-10 MHz due to transmon nonlinearity. In typical operation regimes, however, transmon frequency detuning localizes leakage excitations. The next-nearest-neighbor transmons can be still be near-resonant opening leakage tunneling channels. To suppress longer-range hopping, we find that the frequency spread of the next-nearest-neighbor transmons needs to be in the range of 1-4 MHz. Utilizing leakage mobility, we propose two passive leakage removal units. One is based on a tunable coupler and a pumped transmon, and another on a junction readout scheme. Based on realistic experimental parameters, our results on selectively mobilizing or localizing leakage excitations are readily applicable in superconducting quantum devices.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-01",
+      "score": 0.7905550705128658,
+      "similar_to": [
+        {
+          "title": "Optimizing the frequency positioning of tunable couplers in a circuit QED processor to mitigate spectator effects on quantum operations",
+          "id": "2503.13225",
+          "similarity": 0.8937917947769165
+        },
+        {
+          "title": "Long-distance transmon coupler with CZ gate fidelity above 99.8%",
+          "id": "2208.09460",
+          "similarity": 0.8741310834884644
+        }
+      ],
+      "summary": {
+        "summary": "This work characterizes leakage excitation dynamics in transmon qubits coupled via tunable couplers through analytical and numerical methods, finding that leakage hopping persists at rates of 0.8–10 MHz even when couplers suppress single-excitation exchange or ZZ interactions. Two passive leakage removal units are proposed based on tunable couplers and a junction readout scheme, achieving leakage removal timescales of ~30 ns and ~125 ns respectively.",
+        "motivation": "Qubit leakage to states outside the computational subspace is a significant error source in quantum processors, and leakage mobility between qubits creates correlated errors while also offering opportunities for engineered leakage removal pathways.",
+        "method": "Schrieffer-Wolff perturbation theory and numerical time-evolution simulations characterize leakage dynamics in two and three transmon arrays with tunable couplers tuned to cancel $g_\\mathrm{eff}$ or $\\zeta$ interactions, deriving effective Hamiltonians for $|20\\rangle\\leftrightarrow|02\\rangle$, $|21\\rangle\\leftrightarrow|12\\rangle$, and next-nearest-neighbor tunneling processes.",
+        "result": "Leakage hopping rates persist at 0.8–10 MHz despite coupler tuning; next-nearest-neighbor tunneling rates reach ~0.1 MHz in ABA architectures requiring frequency spreads of 1–4 MHz to localize leakage. Passive leakage removal with a pumped auxiliary transmon or junction readout achieves $T^\\star\\approx 30$ ns and 125 ns respectively with minimal computational qubit perturbation ($T_1\\gtrsim 70$ µs for pumped scheme).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.00429",
+      "title": "Surface Platinum Alloying for Passivation of Oxide Interfaces on Superconducting Niobium Films",
+      "authors": [
+        "Ananya Chattaraj",
+        "Conan Weiland",
+        "Bruce Ravel",
+        "Kim Kisslinger",
+        "Sooyeon Hwang",
+        "Xiao Tong",
+        "Ajith Pattammattel",
+        "Andrew M. Kiss",
+        "Steven L. Hulbert",
+        "Aswin kumar Anbalagan",
+        "Andrew L. Walter",
+        "Peter V. Sushko",
+        "Mingzhao Liu"
+      ],
+      "abstract": "Dielectric loss arising from two-level systems (TLS) at surfaces and interfaces remains a primary limitation to coherence in superconducting transmon qubits. Niobium (Nb), a widely used material in superconducting quantum circuits, readily forms native oxides under ambient conditions, leading to lossy dielectric interfaces that degrade device performance. Here, a robust and scalable fabrication strategy is demonstrated for chemically stabilizing Nb surfaces and mitigating further oxidation, including protection of both surface and sidewall regions. High-purity Nb films were fabricated with bulk-like superconducting transition temperatures ($T_c = 9.30\\pm0.10$) K. We demonstrate that a thin Pt encapsulation layer, deposited after native oxide formation, can be transformed via thermal annealing into a Nb-Pt alloy at the surface. Spectroscopic and microscopic analyses confirm the formation of a chemically stable metallic alloy layer and its ability to suppress further oxide growth. Ab initio simulations elucidate the atomic-scale rearrangement and electronic structure evolution associated with Pt incorporation on native niobium oxide, providing insight into the stabilization mechanism of the alloyed surface. This approach offers a materials pathway for engineering chemically robust Nb interfaces, including sidewalls, toward higher-coherence superconducting qubit architectures.\"",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-07-01",
+      "score": 0.7470995619185421,
+      "similar_to": [
+        {
+          "title": "New material platform for superconducting transmon qubits with coherence times exceeding 0.3 milliseconds",
+          "id": "2003.00024",
+          "similarity": 0.8529386520385742
+        },
+        {
+          "title": "2D transmons with lifetimes and coherence times exceeding 1 millisecond",
+          "id": "2503.14798",
+          "similarity": 0.8503999710083008
+        }
+      ],
+      "summary": {
+        "summary": "A Pt overlayer deposited on air-oxidized Nb films undergoes thermally driven reactions that form a Pt-rich Nb–Pt alloy (primarily NbPt$_3$) at the surface while dissolving the native oxide, as confirmed by VEXPS, EXAFS, TEM, and DFT. This encapsulation strategy preserves bulk superconducting properties ($T_c = 9.30 \times 0.10$ K, RRR = 64) while protecting both planar surfaces and device sidewalls against re-oxidation, offering a scalable pathway to reduce TLS-induced decoherence in Nb transmon qubits.",
+        "motivation": "Native Nb$_2$O$_5$, NbO$_2$, and NbO oxides are major sources of two-level system losses that limit coherence in superconducting transmon qubits. Existing in situ encapsulation methods cannot prevent oxidation of lithographically exposed sidewalls, which exhibit high electric-field participation and enhanced decoherence.",
+        "method": "High-purity Nb films were grown epitaxially on c-plane sapphire at 700 °C (110 nm thick, $T_c = 9.30 \\pm 0.10$ K), exposed to air to form (2.6 ± 0.2) nm native oxide, then capped with ~10 nm Pt and annealed at 750 °C for 2 hours. Multi-technique characterization (variable-energy XPS with 11 photon energies 2–5.5 keV, Pt L$_3$-edge EXAFS at grazing incidence, HAADF-STEM, EDX, and DFT) mapped oxide reduction and alloy formation.",
+        "result": "Pt L$_3$-edge EXAFS fits to NbPt$_3$ with reduced $\\chi^2 = 2.38$ and R-factor $5.6 \\times 10^{-3}$, yielding Pt–Pt and Pt–Nb bond lengths of (2.756 ± 0.001) Å and (2.781 ± 0.003) Å. VEXPS shows Nb$^{5+}$ and Nb$^{4+}$ peaks shift 0.8 eV to lower binding energy post-annealing (indicating partial oxide reduction), while buried Alloy-1 (NbPt$_2$) and surface-dominant Alloy-2 (NbPt$_3$) form with depth-dependent fractions. DFT confirms Nb-to-Pt electron transfer creates an electric field that drives O$^{2-}$ diffusion into bulk and enables Nb–Pt intermixing with up to 0.7 eV/atom energy gain.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.00903",
+      "title": "Characterization of Hydroxyls in Surface Oxide of Superconducting Tantalum and Their Mitigation in Quantum Circuits",
+      "authors": [
+        "Ekta Bhatia",
+        "Nicholas Pieniazek",
+        "Aleksandra Biedron",
+        "Sandra Schujman",
+        "Hunter Frost",
+        "Zhihao Xiao",
+        "Jakub Nalaskowski",
+        "Kevin Musick",
+        "Thomas Murray",
+        "Satyavolu Papa Rao"
+      ],
+      "abstract": "Recently, tantalum (Ta) has gained attention in superconducting quantum circuits due to the longer coherence times achieved when replacing niobium (Nb) in capacitor pads. Previous literature shows that surface oxides that form upon ambient exposure on superconducting metals such as Ta, Al, and Nb host two-level system (TLS) defects, which are a leading source of microwave loss and decoherence. While the surface oxides of Nb and Al have been extensively studied, Ta oxides remain less well understood. Using secondary ion mass spectrometry of alpha-Ta films deposited at 300 mm wafer scale, we show for the first time that hydroxyls accumulate in the Ta suboxide region above the underlying Ta. Angle-resolved X-ray photoelectron spectroscopy shows that the surface region is dominated by Ta2O5, with sub-stoichiometric TaOx present in between the Ta2O5 and underlying Ta. The thickness of the tantalum oxide is confirmed by transmission electron microscopy. We demonstrate that [OH] incorporation can be suppressed by replacing the native oxide with an oxide formed during chemical mechanical planarization of alpha-Ta films. Our findings support the hypothesis that TLS defects are non-uniform within the oxide thickness and suggest hydroxyls as a probable molecular origin of these loss channels. Furthermore, we show the feasibility of plasma nitridization as a method to decrease hydroxyl loading on alpha-Ta surfaces. The modulation of hydroxyl content through surface engineering of alpha-Ta can enable the fabrication of more robust, high-coherence superconducting quantum circuits by addressing a potential TLS source.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-07-01",
+      "score": 0.714049477429885,
+      "similar_to": [
+        {
+          "title": "Reducing TLS loss in tantalum CPW resonators using titanium sacrificial layers",
+          "id": "2601.16369",
+          "similarity": 0.8782287240028381
+        },
+        {
+          "title": "Tantalum as a base material for superconducting integrated circuits",
+          "id": "2606.13750",
+          "similarity": 0.8646173477172852
+        }
+      ],
+      "summary": {
+        "summary": "Recently, tantalum (Ta) has gained attention in superconducting quantum circuits due to the longer coherence times achieved when replacing niobium (Nb) in capacitor pads. Previous literature shows that surface oxides that form upon ambient exposure on superconducting metals such as Ta, Al, and Nb host two-level system (TLS) defects, which are a leading source of microwave loss and decoherence.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.00735",
+      "title": "Experimental Quantification of Layered Error Suppression in Fiber-Interconnected Quantum Data Centers",
+      "authors": [
+        "Seyed Navid Elyasi",
+        "Sima Bahrani",
+        "Rui Wang",
+        "Dimitra Simeonidou",
+        "Paolo Monti",
+        "Rui Lin"
+      ],
+      "abstract": "We perform experiments to quantify error suppression in fiber-connected superconducting QPUs using combined error mitigation techniques, demonstrating over 20\\% improvement in operational fidelity across interconnected quantum processing units under realistic noise conditions.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-01",
+      "score": 0.6952084223541358,
+      "similar_to": [
+        {
+          "title": "Dynamical decoupling for superconducting qubits: a performance survey",
+          "id": "2207.03670",
+          "similarity": 0.8477022051811218
+        },
+        {
+          "title": "Developments in superconducting erasure qubits for hardware-efficient quantum error correction",
+          "id": "2601.02183",
+          "similarity": 0.842617392539978
+        }
+      ],
+      "summary": {
+        "summary": "This paper experimentally demonstrates layered error suppression in fiber-interconnected superconducting quantum processors using a quantum collisional model to emulate transduction and fiber noise on IBM's 156-qubit Heron r2 device. The combined application of entanglement purification (BBPSSW protocol), Pauli twirling, and readout mitigation recovers remote CNOT fidelity by over 20% in the high-noise regime, with Bell-state fidelity improving from ∼0.42 to ∼0.63 at 10 fiber steps.",
+        "motivation": "Distributed quantum computing via interconnected QPUs requires high-fidelity remote gates, but communication-induced noise from transduction and fiber links degrades entanglement quality and gate performance; systematic experimental quantification of error mitigation effectiveness under realistic distributed noise was lacking.",
+        "method": "Bell pairs distributed between remote communication qubits are subjected to controlled communication noise via sequential interactions with environment ancillae (collisional model with coupling strength κ emulating G.652-D fiber at α=0.0145 km⁻¹ and transduction loss). Error suppression combines entanglement purification via LOCC with probabilistic post-selection, Pauli-twirled two-qubit gates executed via cat-state protocol, and readout mitigation with inverted assignment matrices, tested on IBM ibm_kingston with 10,000 shots per circuit.",
+        "result": "Baseline remote CNOT fidelity degrades from ∼0.97 to <0.50 across 10 fiber steps; entanglement purification alone restores fidelity to ∼0.63 (>20% improvement), with purification dominant over Pauli twirling (~5% gain) at high noise; the full three-layer approach achieves success probabilities of ∼0.58–0.62 at step 10.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.00769",
+      "title": "Universal logic circuit for gate-controlled superconductor-based switches operating at liquid-helium temperatures",
+      "authors": [
+        "Martin Berke",
+        "Lőrinc Kupás",
+        "Tosson Elalaily",
+        "Máté Sütő",
+        "Szabolcs Csonka",
+        "Péter Makk"
+      ],
+      "abstract": "The observation of the gate-controlled supercurrent (GCS) effect in superconducting nanostructures initiated major research efforts toward the realisation of superconducting-based computing architectures. Here we introduce a universal logic circuit that can be a promising superconducting building block of classical hybrid supercomputers. We demonstrate a functionally complete set of logic gates by realising the AND, OR, NOT and COPY gates. The general layout and scalability of our device, combined with recent experiments demonstrating fast switching and small voltage signals, make it a functional candidate in superconducting electronics. Our device enables the realization of all classical logic gates and the half-adder combinational logic circuit using at most three nanowires, each uniquely configured with two side-gate electrodes.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-07-01",
+      "score": 0.6527240816190979,
+      "similar_to": [
+        {
+          "title": "Superconducting Flux Memory for Cryogenic Applications",
+          "id": "2609.00772",
+          "similarity": 0.8508849143981934
+        },
+        {
+          "title": "Logic gates at the surface code threshold: Superconducting qubits poised for fault-tolerant quantum computing",
+          "id": "1402.4848",
+          "similarity": 0.8400529623031616
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates a universal logic circuit based on gate-controlled supercurrent (GCS) in NbTiN nanowires that implements AND, OR, NOT, COPY, and more complex gates at 4 K using only three nanowires with two side-gate electrodes each. The device exploits voltage-controlled switching between superconducting and normal states to perform classical logic operations with output voltages reaching ~2 V, enabling direct interfacing with CMOS technology.",
+        "motivation": "Superconductor-semiconductor hybrid computing architectures could overcome CMOS power dissipation and scaling limits, but require voltage-controlled rather than magnetically-controlled superconducting switches to achieve scalability and energy efficiency.",
+        "method": "NbTiN nanowires (30 nm thick, $T_c \\approx 12$ K) on SiO$_2$/Si were patterned by electron-beam lithography and reactive DC magnetron sputtering. The GCS effect was exploited where side-gate voltages suppress the critical current ($I_c$ suppression between $V_{\\mathrm{sg,onset}} \\approx 30$ V and $V_{\\mathrm{sg,offset}} \\approx 40$ V for NW1), switching devices between zero-voltage superconducting state ($I_c \\approx 332$ µA for NW1) and dissipative normal state ($R_n \\approx 5.86$ k$\\Omega$, output voltage $\\approx 2$ V).",
+        "result": "All logic gates reproduced correct truth tables: AND and OR gates with 5 V input signals and output ~0.47–0.86 V, NOT gate with 1 k$\\Omega$ parallel resistor producing inverted output, COPY gate preserving analog voltage information up to 1.72 V, plus demonstration of half-adder and ring oscillator circuits—matching CMOS NAND functionality (4 transistors) with only 3 nanowires.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.00660",
+      "title": "Overcoming the Speed-Fidelity Trade-off in Fast CZ Gates via Cyclic Control",
+      "authors": [
+        "Ze-An Zhao",
+        "Hai-Feng Zhang",
+        "Tian-Le Wang",
+        "Xiao-Yan Yang",
+        "Peng Wang",
+        "Ren-Ze Zhao",
+        "Sheng Zhang",
+        "Zhi-Fei Li",
+        "Yuan Wu",
+        "Zi-Hao Fu",
+        "Sheng-Ri Liu",
+        "Peng Duan",
+        "Guo-Ping Guo"
+      ],
+      "abstract": "High-fidelity quantum gates are essential for scalable quantum computation. However, at short durations, short-timescale waveform distortions break the time-reflection symmetry of control pulses, preventing the precise closure of cyclic evolution. This mechanism renders conventional symmetric protocols intrinsically over-constrained. Conventional strategies typically rely on smoothing the pulse envelopes or embedding the interaction pulse within a longer qubit pulse to bypass short-timescale distortions, which inevitably leads to a persistent speed-fidelity trade-off. To overcome this limitation, we introduce a cyclic control strategy based on parameter-space expansion, which restores controllability by incorporating an additional degree of freedom. We experimentally demonstrate this approach in a superconducting controlled-Z gate, achieving robust suppression of coherent errors without increasing gate duration, reducing the average coherent error from 0.27% to 0.12% across multiple two-qubit gates, as validated by cross-entropy benchmarking. Our results establish a general route to fast, high-fidelity cyclic quantum gates beyond the conventional speed-fidelity trade-off.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-01",
+      "score": 0.5910734202874744,
+      "similar_to": [
+        {
+          "title": "Suppressing Counter-Rotating Errors for Fast Single-Qubit Gates with Fluxonium",
+          "id": "2406.08295",
+          "similarity": 0.8735859990119934
+        },
+        {
+          "title": "Efficient Z-Gates for Quantum Computing",
+          "id": "1612.00858",
+          "similarity": 0.8590035438537598
+        }
+      ],
+      "summary": {
+        "summary": "This work identifies that short-timescale waveform distortions break time-reflection symmetry in control pulses, creating an over-constrained optimization problem that limits fast CZ gate fidelity in superconducting qubits. A cyclic control strategy using parameter-space expansion with independent frequency detunings $\\Delta_1$ and $\\Delta_2$ restores controllability and achieves coherent error suppression from 0.27% to 0.12% without increasing gate duration.",
+        "motivation": "Fast two-qubit gates are limited by a persistent speed-fidelity trade-off where reducing gate duration below ~50 ns increases coherent errors due to sub-10 ns distortions that conventional symmetric pulse protocols cannot suppress.",
+        "method": "The authors demonstrate that short-timescale distortions break time-reflection symmetry ($H(t) = H(\\tau - t)$), increasing cyclic evolution constraints from 2 to 3 in the $|11\\rangle$–$|20\\rangle$ subspace. The PSE-CZ protocol adds a third control degree of freedom by splitting the detuning profile into two segments ($\\Delta_1 \\neq \\Delta_2$), enabling simultaneous satisfaction of leakage and conditional phase conditions on a 72-qubit superconducting processor.",
+        "result": "Cross-entropy benchmarking on 20 qubit pairs at 50 ns gate duration shows mean fidelity improvement of 0.163%, with coherent error reduced from 0.27% to 0.12%, and leakage to $|20\\rangle$ suppressed nearly threefold from 0.224% to 0.0756%, with consistent performance maintained across 30–50 ns durations.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.00172",
+      "title": "Superconducting Spiral Inductors for RF Reflectometry: Operation at Elevated Temperatures and Magnetic Fields",
+      "authors": [
+        "Euan Parry",
+        "Murat Cubukcu",
+        "Patrick Reuvekamp",
+        "Manoj Stanley",
+        "Jonathan D. Fletcher",
+        "Alessandro Rossi"
+      ],
+      "abstract": "Superconducting spiral inductors are emerging as key components for radio-frequency (RF) reflectometry, a widely used readout technique for semiconductor spin qubits. Future scalable quantum-computing architectures are expected to operate at elevated temperatures and magnetic fields, placing new demands on the performance and stability of superconducting circuit elements. Here, we present a systematic study of NbTiN spiral inductors under temperatures of several kelvin and magnetic fields approaching 1 T. By combining weakly coupled resonator measurements with independent two-port inductance extraction, we separate inductive and capacitive contributions to device behaviour and directly identify the origin of resonance shifts and quality factor degradation. Furthermore, we establish practical design metrics linking geometry, temperature sensitivity, and magnetic-field robustness. These results provide a general framework for benchmarking superconducting inductors and guiding the design of future RF-reflectometry circuits for practical quantum technologies.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-06-30",
+      "score": 0.5841207727877394,
+      "similar_to": [
+        {
+          "title": "Wireless millikelvin interconnects for superconducting quantum hardware",
+          "id": "2607.13834",
+          "similarity": 0.8448465466499329
+        },
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.8322210311889648
+        }
+      ],
+      "summary": {
+        "summary": "This work systematically characterizes NbTiN superconducting spiral inductors under elevated temperatures (2–8 K) and magnetic fields (up to 750 mT) relevant for spin-qubit RF reflectometry. By combining weakly coupled resonator measurements with independent two-port inductance extraction, the authors show that temperature- and field-dependent frequency shifts are primarily inductive in origin and can be reconstructed from kinetic-inductance changes alone.",
+        "motivation": "Scalable spin-qubit architectures require RF reflectometry circuits operating at temperatures above 1 K and magnetic fields of several hundred millitesla to enable on-chip cryogenic integration, but performance degradation of superconducting circuit elements under these conditions remains poorly understood.",
+        "method": "Six NbTiN spiral inductors (geometric inductances 47–176 nH, kinetic-inductance fractions $\\alpha = 5–9\\%$) were fabricated and characterized using two complementary setups: weakly coupled notch-resonator measurements extracting $f_0$ and $Q_i$, and wire-bonded two-port measurements extracting inductance $L$. Temperature and field dependencies were modeled using BCS gap theory for kinetic inductance and vortex-penetration physics.",
+        "result": "Measured $L(T)$ and $f_0(T)$ are consistent with quasiparticle-driven kinetic-inductance changes ($\\Delta L_k/L_k \\approx 20\\%$ from 2–8 K); frequency shifts remain below 1%. Quality factors degrade above a device-dependent field threshold $B_Q$ (300–391 mT for in-plane field) due to vortex losses at strip edges, with $B_Q \\propto 1/w$ scaling. At $T = 2$ K and $B = 0$, devices achieve $Q_i \\approx (3–4) \\times 10^4$, with temperature-dependent loss modeled by activated quasiparticle generation ($Q_{\\mathrm{other}} = 2.8 \\times 10^4$).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9614,
+    0.7906,
+    0.7471,
+    0.714,
+    0.6952,
+    0.6527,
+    0.5911,
+    0.5841,
+    0.4553,
+    0.4113,
+    0.3133,
+    0.3113,
+    0.2347,
+    0.2065,
+    0.1849,
+    0.1806,
+    0.1794,
+    0.1714,
+    0.1627,
+    0.1533,
+    0.1407,
+    0.1342,
+    0.1281,
+    0.1275,
+    0.1271,
+    0.1234,
+    0.0997,
+    0.0966,
+    0.0917,
+    0.0901,
+    0.0873,
+    0.0853,
+    0.0823,
+    0.0798,
+    0.0787,
+    0.0726,
+    0.0687,
+    0.0681,
+    0.0671,
+    0.0664,
+    0.0644,
+    0.0628,
+    0.0617,
+    0.0611,
+    0.0575,
+    0.052,
+    0.0505,
+    0.0479,
+    0.0479,
+    0.0472,
+    0.0469,
+    0.0462,
+    0.0432,
+    0.0402,
+    0.0386,
+    0.0356,
+    0.0349,
+    0.0346,
+    0.0341,
+    0.0321,
+    0.0318,
+    0.0311,
+    0.0306,
+    0.0278,
+    0.0272,
+    0.0254,
+    0.0251,
+    0.0226,
+    0.0225,
+    0.0222,
+    0.021,
+    0.0207,
+    0.0189,
+    0.0188,
+    0.0185,
+    0.0184,
+    0.0176,
+    0.0169,
+    0.0152,
+    0.0151,
+    0.0149,
+    0.0145,
+    0.0142,
+    0.0132,
+    0.0108,
+    0.0106,
+    0.0105,
+    0.0095,
+    0.0095,
+    0.0094,
+    0.0094,
+    0.0093,
+    0.0082,
+    0.0081,
+    0.0076,
+    0.0076,
+    0.0076,
+    0.0073,
+    0.0071,
+    0.0062,
+    0.0056,
+    0.0048,
+    0.0043,
+    0.0041,
+    0.0033,
+    0.0033,
+    0.0032,
+    0.0028,
+    0.0022,
+    0.0021,
+    0.0012
+  ]
+}

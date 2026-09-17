@@ -1,0 +1,8 @@
+{
+  "summary": "This work proposes and experimentally demonstrates an Mpemba-inspired protocol to accelerate passive qubit reset in the $T_2 > T_1$ regime by converting local single-qubit coherences into fast-decaying global two-qubit coherences via a single entangling gate. The protocol achieves up to 50% reduction in reset time compared to standard passive reset and remains robust under non-Markovian noise and imperfect control on an IQM superconducting processor.",
+  "motivation": "Passive reset bottlenecks quantum algorithm execution on timescales much longer than gates and measurements, and the problem is exacerbated in regimes with $T_2 > T_1$, where residual coherence persists after relaxation to ground state, causing unwanted correlations between shots.",
+  "method": "A controlled unitary (CNOT or $\\mathrm{C}R_y(\\pi)$) between the target qubit and an incoherent ancilla transforms local coherences $C$ into global two-qubit coherences with reduced amplitude $\\kappa = \\mathrm{Tr}[\\rho_2 V_0^\\dagger V_1]$, which decay faster and avoid the slowest Liouvillian mode $|l_2\\rangle\\rangle$.",
+  "result": "For realistic device parameters, the asymptotic speedup ratio $|\\mathrm{Re}(\\lambda_3)|/|\\mathrm{Re}(\\lambda_2)|$ yields speedups across a wide range of $T_1$, $T_2$ values; robustness is confirmed under non-Markovian dynamics, finite gate fidelity, and finite temperature; experimental implementation on IQM hardware validates the protocol's practical utility.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "An ultracompact dilution refrigerator (3 kg, 100 mm diameter) achieves a full cooldown–warm-up cycle to 70 mK in 2.1 hours when fully wired for microwave measurements, delivering 20 µW cooling power at 100 mK. Complete characterization of a two-fluxonium device demonstrates state-of-the-art performance with single-qubit gate fidelities reaching 99%, enabling high-throughput quantum device screening without sacrificing measurement quality.",
+  "motivation": "Conventional dilution refrigerators require ~48 hours per thermal cycle and substantial infrastructure, throttling the fabricate-measure-redesign loop in superconducting qubit development. Compact, fast-cycling cryogenic platforms are needed to enable rapid iteration while maintaining the measurement fidelity required for qubit characterization.",
+  "method": "An inverted-geometry dilution refrigerator was designed with three cryogenic circuits in parallel (4He pot, 3He–4He dilution, and precooling loop) to minimize thermal mass and dead volumes. A two-fluxonium device was fully characterized via two-tone spectroscopy for Hamiltonian extraction, time-domain $T_1$ and Hahn-echo $T_2^E$ measurements, and single-qubit Clifford randomized benchmarking.",
+  "result": "For Q1: $T_1 = 1.81$ µs, $T_2^E = 0.631$ µs, and single-qubit gate fidelity $F_{1QB} = 99.03\\%$ at the coherence limit; for Q2: $T_1 = 2.35$ µs, $T_2^E = 0.718$ µs, and $F_{1QB} = 98.07\\%$. The extracted fluxonium parameters ($E_J$, $E_C$, $E_L$, and qubit–resonator coupling $g$) match expectations, demonstrating complete device characterization in nearly twentyfold faster cycle time than conventional systems.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

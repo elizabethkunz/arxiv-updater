@@ -1,0 +1,8 @@
+{
+  "summary": "This work characterizes leakage excitation dynamics in transmon qubits coupled via tunable couplers through analytical and numerical methods, finding that leakage hopping persists at rates of 0.8–10 MHz even when couplers suppress single-excitation exchange or ZZ interactions. Two passive leakage removal units are proposed based on tunable couplers and a junction readout scheme, achieving leakage removal timescales of ~30 ns and ~125 ns respectively.",
+  "motivation": "Qubit leakage to states outside the computational subspace is a significant error source in quantum processors, and leakage mobility between qubits creates correlated errors while also offering opportunities for engineered leakage removal pathways.",
+  "method": "Schrieffer-Wolff perturbation theory and numerical time-evolution simulations characterize leakage dynamics in two and three transmon arrays with tunable couplers tuned to cancel $g_\\mathrm{eff}$ or $\\zeta$ interactions, deriving effective Hamiltonians for $|20\\rangle\\leftrightarrow|02\\rangle$, $|21\\rangle\\leftrightarrow|12\\rangle$, and next-nearest-neighbor tunneling processes.",
+  "result": "Leakage hopping rates persist at 0.8–10 MHz despite coupler tuning; next-nearest-neighbor tunneling rates reach ~0.1 MHz in ABA architectures requiring frequency spreads of 1–4 MHz to localize leakage. Passive leakage removal with a pumped auxiliary transmon or junction readout achieves $T^\\star\\approx 30$ ns and 125 ns respectively with minimal computational qubit perturbation ($T_1\\gtrsim 70$ µs for pumped scheme).",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

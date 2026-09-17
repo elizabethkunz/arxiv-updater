@@ -1,0 +1,8 @@
+{
+  "summary": "A hybrid superconducting qubit combines aluminum-oxide tunnel junctions with a gate-tunable InAs/Al nanowire junction in a SQUID to achieve controlled parity of Cooper pair tunneling. By tuning a single gate voltage, the device suppresses odd Josephson harmonics by up to two orders of magnitude at half-flux quantum, producing a $\\cos(2\\phi)$-dominated potential with a deep double well.",
+  "motivation": "Conventional Josephson junctions rely on single-Cooper-pair tunneling via the $\\cos(\\phi)$ term, but higher harmonics $\\cos(k\\phi)$ corresponding to $k$-pair tunneling can improve protection in superconducting qubits. Previous work required complex multi-junction or all-hybrid architectures to achieve even-harmonic dominance; a simpler, gate-tunable approach was needed.",
+  "method": "A parallel SQUID with two SIS junctions in one arm and a gate-tunable S-Sm-S nanowire junction in the other was fabricated on NbTiN. Multi-transition spectroscopy was performed at 85 gate voltages from $-7$ V to $9.8$ V, and harmonic coefficients were extracted by fitting the full circuit Hamiltonian to the reconstructed energy-phase relation.",
+  "result": "The odd harmonic coefficient $c_{\\mathrm{odd}}$ was reduced to 0.6 GHz from 30.9 GHz while the even coefficient $c_{\\mathrm{even}}$ remained at 15–20 GHz; the ratio $|c_{\\mathrm{even}}/c_{\\mathrm{odd}}|$ spans nearly two orders of magnitude. At the even-dominated point ($V_g = 7.2$ V), $|c_2/c_1| = 3.47$ and the ground and excited states exhibit opposite Cooper-pair parity with suppressed parity-violating transitions.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

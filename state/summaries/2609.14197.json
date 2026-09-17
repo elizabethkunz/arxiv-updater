@@ -1,0 +1,8 @@
+{
+  "summary": "A CZ gate is proposed for a fluxonium and a fixed-frequency transmon joined by a flux-tunable transmon coupler, driven only by the flux applied to the coupler. Simulations give a 25 ns microwave-free gate with fidelity above 99.99% and leakage below $10^{-5}$ without decoherence, about 99.9% with realistic relaxation and dephasing, and infidelity below $10^{-4}$ when spectator qubits are added.",
+  "motivation": "Mixing fluxonium and transmon qubits combines their strengths, but the strong nonlinearities and residual qubit-qubit interaction make fast entangling gates hard. Leakage and unwanted conditional phases limit both speed and fidelity.",
+  "method": "At idle the coupler sits near its maximum frequency (zero flux), where the static ZZ is smallest; the flux pulse lowers the coupler frequency so that the conditional phase builds up, then returns. The pulse is a Fourier-cosine series with only three coefficients, optimized against a cost that penalizes conditional-phase error and leakage separately instead of maximizing fidelity directly.",
+  "result": "Without decoherence the fidelity exceeds 99.99% at 25 ns and stays above that for gate times from about 25 to 60 ns. Including relaxation and dephasing (transmon $T_1 = 100$ µs, $T_\\varphi = 200$ µs; coupler $T_1 = 20$ µs, $T_\\varphi = 40$ µs; level-dependent fluxonium rates) the fidelity is about 99.9%, and spectator qubits keep the infidelity below $10^{-4}$.",
+  "source": "full text",
+  "generated_by": "Claude, written in-session from the full text (not via the script's API path)"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "This work studies dissipation mechanisms in high-overtone bulk acoustic-wave resonators (HBARs) coupled to superconducting qubits, finding that defect density in the piezoelectric AlN layer and its interface with sapphire limit coherence. The devices achieve phonon lifetimes of 396 µs and mechanical coherence times approaching 806 µs in the quantum regime, yielding a record cooperativity $C_{T_2} = 1.1 \times 10^5$ for circuit quantum acoustodynamics.",
+  "motivation": "Quantum applications of mechanical resonators require both high coherence times and strong coupling to superconducting qubits, but adding piezoelectric films introduces loss channels that degrade performance. Understanding these loss mechanisms is essential for improving cQAD systems beyond current platforms.",
+  "method": "Multi-sample spectroscopy and qubit-based measurements characterized acoustic modes across 4–9 GHz in AlN-sapphire HBARs grown by three methods (sputtering, HVPE, HiPIMS). Energy participation analysis decomposed dissipation into mechanical absorption, surface scattering, and two-level system coupling; temperature and power sweeps isolated TLS effects from other loss channels.",
+  "result": "Single-phonon quality factors exceed $10^6$ in nearly all modes with record values $Q = 1.3 \times 10^7$; lifetime-limited $T_2^* \to 2T_1$ indicates negligible dephasing. HVPE-grown AlN shows five-fold lower TLS loss tangent ($Q_{TLS}^{-1} = 1.27 \times 10^{-5}$) than sputtered AlN, but a $\tilde{10}$ nm interface defect layer with $Q_D^{-1} \to 10^{-3}$ limits HVPE devices; smoother interfaces in sputtered samples achieve $f \times Q = 1.8 \times 10^{17}$ Hz.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

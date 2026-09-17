@@ -1,0 +1,8 @@
+{
+  "summary": "A hybrid charge quantum interference device (h-CQUID) combining Josephson junctions with a high kinetic-inductance NbN loop demonstrates control of fluxon tunneling via the Aharonov-Casher effect, with the interference between two tunneling paths modulated by charge on a superconducting island. At destructive interference conditions ($Q = 2e(n + 1/2)$), the phase-slip energy $E_S$ is suppressed, with minimum $E_S/h \\approx 0.4$ GHz achieved for asymmetric junctions with $\\nu_1 = 1.48$ GHz and $\\nu_2 = 1.08$ GHz tunneling rates.",
+  "motivation": "The h-CQUID architecture addresses fabrication limitations of earlier CQUID designs that relied on 10 nm nanowires (fabrication accuracy $\\pm 2$ nm) with highly variable phase-slip energy; Josephson junctions offer $>90\\%$ parameter reproducibility and can be cleanly integrated with kinetic-inductance films.",
+  "method": "Two Josephson junctions with a superconducting aluminum island between them were embedded in a compact NbN loop ($L_k \\approx 81.3$ nH, $L_{\\square} \\sim 1.6$ nH/sq, grown by atomic layer deposition) and coupled inductively to a $\\lambda/2$ resonator at 10.676 GHz; two-tone spectroscopy and Rabi oscillations were measured at 12 mK in a dilution refrigerator.",
+  "result": "Two-tone spectroscopy shows periodic modulation with period $2e$ in the excitation energy $\\Delta E = \\sqrt{\\epsilon(\\Phi)^2 + E_S(Q)^2}$ as gate voltage varies the island charge $Q = C_g V_g$; the persistent current is $I_P \\sim 11.5$ nA with $T_1 \\approx 20$ ns, though quasiparticle poisoning in the NbN film creates parasitic charge-parity states that prevent complete suppression of tunneling.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

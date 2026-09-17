@@ -1,0 +1,252 @@
+{
+  "date": "2026-04-24",
+  "n_fetched": 97,
+  "papers": [
+    {
+      "id": "2604.21565",
+      "title": "Pulse Shaping for Superconducting Qubits",
+      "authors": [
+        "Animesh Patra",
+        "Ankur Raina"
+      ],
+      "abstract": "High-fidelity control of superconducting qubits requires carefully shaped microwave pulses to avoid several different kinds of error at once. This article is a pedagogical bridging text aimed at upper-level undergraduate and early graduate students who have completed an introductory quantum mechanics course and a first course in quantum computing or quantum information, but who have not yet encountered the physical implementation of qubit gates. We integrate physical intuition for pulse design, analytical gate-level descriptions, and practical hardware considerations into a single, derivation-driven narrative, with explicit learning objectives. We begin with simple pulse envelopes and their spectral properties, showing how finite bandwidth produces leakage outside the computational subspace. This motivates the derivative removal by adiabatic gate (DRAG) technique, which we derive explicitly using the Magnus expansion, obtaining a clear, order-by-order account of which physical error channel appears at which order and why DRAG's cancellation is necessarily incomplete. We discuss the practical hardware realities of control pulse generation, focusing on arbitrary waveform generators (AWG), local oscillators (LO), and IQ mixing. Finally, we extend the discussion to two-qubit operation via the cross-resonance gate, and interpret how driving the control qubit at the target qubit's transition frequency necessarily produces several unwanted interaction terms alongside the desired one, and how successive generations of pulse-engineering strategies have been designed to suppress them.",
+      "categories": [
+        "quant-ph",
+        "eess.SP"
+      ],
+      "published": "2026-04-23",
+      "score": 0.8721427443041982,
+      "similar_to": [
+        {
+          "title": "Simple pulses for elimination of leakage in weakly nonlinear qubits",
+          "id": "0901.0534",
+          "similarity": 0.8896707892417908
+        },
+        {
+          "title": "Efficient Z-Gates for Quantum Computing",
+          "id": "1612.00858",
+          "similarity": 0.8884565234184265
+        }
+      ],
+      "summary": {
+        "summary": "This pedagogical review integrates pulse-shaping physics, analytical derivations via the Magnus expansion, and practical hardware considerations for superconducting-qubit control. The paper reconstructs quantum gate implementation from first principles, covering single-qubit DRAG pulses, hardware signal generation (AWG, LO, IQ mixing), and multi-qubit cross-resonance gates with error-suppression sequences.",
+        "motivation": "Students transitioning from abstract quantum gates to experimental superconducting-qubit implementation lack a unified narrative connecting theoretical Hamiltonian engineering to hardware realities and the systematic error channels that emerge at each order of perturbation theory.",
+        "method": "The authors use the Magnus expansion to identify error channels order-by-order in a three-level transmon model, derive the DRAG quadrature condition $Q = -\\dot{I}(t)/\\Delta$ to cancel first-order leakage, analyze hardware imperfections (finite sampling, LO phase noise, IQ skew), and trace pulse-engineering strategies for the cross-resonance gate including echo sequences, active cancellation, and multi-derivative DRAG.",
+        "result": "The framework shows how finite pulse bandwidth produces $\\sigma_{12}^{\\pm}$ leakage at first order and residual $\\sigma_{01}^y$ rotation errors that DRAG suppresses; AC Stark $\\sigma_{01}^z$ phase errors appear at second order; for CR gates, echo sequences eliminate $Z \\otimes Z$, $Z \\otimes I$, and $I \\otimes X$ terms, while multi-derivative DRAG achieving $\\approx 0.997$ fidelity combines recursive corrections on levels $|0\\rangle$–$|1\\rangle$, $|1\\rangle$–$|2\\rangle$, and the $|0\\rangle$–$|2\\rangle$ two-photon transition.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.21230",
+      "title": "Time-optimal Qubit Reset via Environmental Spectral Structure",
+      "authors": [
+        "Hong-Bo Huang",
+        "Hui Dong"
+      ],
+      "abstract": "Fast qubit reset is essential for qubit reuse in the noisy intermediate-scale quantum computing era, yet it conflicts with the weak decoherence required for high-fidelity computation. We solve the time-optimal reset problem for a frequency-tunable qubit coupled to a structural environment under realistic spectral and control constraints. The optimal strategy consists of a switch--restore--switch sequence, where the qubit is moved from a low-decoherence computational configuration to a high-decoherence restoring configuration and then returned for reuse. For superconducting qubits in four representative environments, this strategy reduces the reset time from typically $\\gtrsim\\SI{100}{\\nano\\second}$ to $\\SI{20}{\\nano\\second}$, about $40\\%$ of a typical two-qubit gate time, while achieving a reset precision of $10^{-5}$. Our results identify environmental spectral structure as a practical resource for rapid, high-fidelity qubit reset and provide a design principle for qubit reuse on qubit-limited processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-23",
+      "score": 0.7327080946695,
+      "similar_to": [
+        {
+          "title": "Fast Reset and Suppressing Spontaneous Emission of a Superconducting Qubit",
+          "id": "1003.0142",
+          "similarity": 0.8695816993713379
+        },
+        {
+          "title": "Scalable and Site-Specific Frequency Tuning of Two-Level System Defects in Superconducting Qubit Arrays",
+          "id": "2503.04702",
+          "similarity": 0.8508237600326538
+        }
+      ],
+      "summary": {
+        "summary": "This work solves the time-optimal qubit reset problem for frequency-tunable superconducting qubits coupled to a structured environment by applying Pontryagin's minimum principle to derive an optimal switch–restore–switch control sequence. For representative environmental spectra, the scheme achieves reset times as short as 20 ns with fidelity $10^{-5}$, about 40% of typical two-qubit gate times, while exploiting spectral structure as a practical resource.",
+        "motivation": "Fast, high-fidelity reset is critical for qubit reuse in NISQ processors where logical qubit counts exceed available hardware, but achieving rapid reset conflicts with the weak decoherence required for high-fidelity gates. The time-optimal reset strategy under realistic spectral and control constraints remains unclear.",
+        "method": "We formulate reset as an optimal control problem where the tunable qubit frequency $\\omega(t)$ minimizes the restoring duration $\\tau_{st}$ subject to the Lindblad dynamics $\\dot{p}_e = -\\Gamma(\\omega)(p_e - p_e^{\\mathrm{eq}}(\\omega))$ and frequency path constraints $\\omega(t) \\in [\\omega_{\\min}, \\omega_{\\max}]$. Pontryagin's principle yields an algebraic optimality condition that the restoring frequency satisfies $\\omega^*(p_e) = \\arg\\max_{\\omega} \\Gamma(\\omega)(p_e - p_e^{\\mathrm{eq}}(\\omega))$, enabling time-local control.",
+        "result": "For four representative superconducting qubit environments (Lorentzian, protected, mixed, and Josephson quantum filter spectra), the total reset time including switching is $T_{\\mathrm{reset}} = 2\\tau_{sw} + \\tau_{st} \\sim 20$ ns (prot spectrum) versus $\\gtrsim 100$ ns for existing active schemes, with reset precision $\\epsilon = 10^{-5}$. For high-contrast spectra, the scheme reduces extra thermodynamic work below the constant-decoherence bound, and fidelity exceeds 99.999% over substantial experimental deviations.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.21692",
+      "title": "Bipartite entanglement under frequency comb pumping in parametric Josephson circuits",
+      "authors": [
+        "Mikael Vartiainen",
+        "Ilari Lilja",
+        "Ekaterina Mukhanova",
+        "Kirill Petrovnin",
+        "Gheorghe Sorin Paraoanu",
+        "Pertti Hakonen"
+      ],
+      "abstract": "The creation of high-quality cluster states in superconducting microwave circuits is a relevant ingredient in continuous-variable quantum computing. Although large-scale cluster states have been established in optical systems, dissipation prevents their direct applicability to the microwave realm. Recent improvements in superconducting parametric circuits, in particular Josephson parametric amplifiers (JPA) and traveling wave parametric amplifiers (TWPA), have permitted substantial progress in producing entangled states using microwave photons. In this paper, we examine experimentally and theoretically the effects of numerous parametric pump tones on the degree of two-mode squeezing in a quantum circuit and apply it to the JPA. We find that additional pumps diminish the initial two-mode correlations achieved with a single pump by redistributing it among a larger network of modes and by introducing entanglement with additional idler frequencies. Taking into account the actual heterodyne measurement conditions, the experimental results are consistent with theoretical expectations.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-23",
+      "score": 0.7206594313503615,
+      "similar_to": [
+        {
+          "title": "A near-quantum-limited Josephson traveling-wave parametric amplifier",
+          "id": null,
+          "similarity": 0.8501266837120056
+        },
+        {
+          "title": "High-gain and large-bandwidth Josephson parametric amplifier influenced by Fabry-Perot interference",
+          "id": "2604.13881",
+          "similarity": 0.8445048928260803
+        }
+      ],
+      "summary": {
+        "summary": "This paper experimentally and theoretically investigates how bipartite entanglement between mode pairs degrades in a Josephson parametric amplifier (JPA) when the number of parametric pump tones is increased from one to fifteen. The work demonstrates that additional pumps redistribute two-mode squeezing correlations across a larger network of modes and idler frequencies, reducing the logarithmic negativity of any individual mode pair despite constant or increasing total pump power.",
+        "motivation": "Cluster states in microwave parametric circuits are a resource for continuous-variable quantum computing, but achieving high-quality multimode entanglement in superconducting systems requires understanding how multiple pumps couple modes. The fundamental trade-off between network connectivity and usable bipartite entanglement in microwave platforms remains unclear.",
+        "method": "The authors pumped a SNAIL-based JPA (resonance frequency $5.808$ GHz, quality factor $Q \\approx 500$) with frequency combs containing up to 15 pump tones spaced by $0.1$ MHz, measuring quadrature correlations via heterodyne detection with a Presto arbitrary waveform generator. Theory was developed using conditional Gaussian dynamics (Riccati equations) with measured cavity parameters $\\kappa/2\\pi \\approx 6$ MHz and $\\gamma = 0.21\\kappa$, accounting for measurement backaction and losses via an attenuator channel.",
+        "result": "Logarithmic negativity $E_N$ between the central mode pair $(-1, 1)$ dropped rapidly with increasing pump number in both symmetric and asymmetric configurations, from $E_N \\sim 0.5$ (single pump) to near zero with 15 pumps, with decay independent of whether the Hilbert space size remained fixed (symmetric) or grew via extra idler modes (asymmetric), indicating redistribution rather than dilution drives the entanglement loss.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.21463",
+      "title": "Dynamical Regimes of Finite-Length Transmission Lines in Circuit Quantum Electrodynamics",
+      "authors": [
+        "Fabio Borrelli",
+        "Giovanni Miano",
+        "Adrian Parra-Rodriguez",
+        "Carlo Forestiere"
+      ],
+      "abstract": "We study the emergence of continuum, discrete-multimode, and single-mode regimes in finite-length transmission lines capacitively coupled to transmon qubits. We show that the appropriate description is selected by the hierarchy among the qubit frequency $ω_q$, the characteristic transmission line frequency $ω_{\\mathrm{TL}}$, and the characteristic coupling frequency $ω_g$. In the long-line continuum limit, the transmission line acts as a structured reservoir described by a Drude--Lorentz spectral density; in the short-line limit, it reduces to an effective single-mode resonator; and, between these limits, it behaves as a discrete multimode coupler. This provides a unified cQED picture of the dynamical regimes of finite-length transmission lines in superconducting-circuit architectures.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-23",
+      "score": 0.5691307252921697,
+      "similar_to": [
+        {
+          "title": "Cavity quantum electrodynamics for superconducting electrical circuits: an architecture for quantum computation",
+          "id": null,
+          "similarity": 0.8807975649833679
+        },
+        {
+          "title": "Circuit Quantum Electrodynamics",
+          "id": "2005.12667",
+          "similarity": 0.8512341380119324
+        }
+      ],
+      "summary": {
+        "summary": "This paper establishes a unified dynamical regime map for finite-length transmission lines capacitively coupled to transmon qubits, showing that the appropriate description—continuum reservoir, discrete multimode coupler, or single-mode resonator—is selected by the hierarchy among the qubit frequency $\\omega_q$, transmission line characteristic frequency $\\omega_{\\mathrm{TL}} = 2\\pi v_p/d$, and coupling characteristic frequency $\\omega_g = 2\\pi/(Z_{\\mathrm{TL}}C_s)$. Using hierarchical equations of motion and symmetry-resolved decomposition into even/odd parity sectors, the authors characterize memory effects, non-Markovianity via the Breuer–Laine–Piilo measure, and the validity of perturbative approximations across all three regimes.",
+        "motivation": "Finite transmission lines in superconducting circuits play qualitatively different physical roles depending on operating parameters, yet no unified framework has clarified when a continuum, multimode, or single-mode description applies, nor when Markovian approximations remain valid.",
+        "method": "Starting from circuit quantization using the auxiliary-mode representation, the authors derive a Hamiltonian where transmission line modes separate into even and odd parity sectors coupled via collective qubit operators $L_\\pm = \\sigma_y^{(1)} \\pm \\sigma_y^{(2)}$. They solve the full reduced dynamics non-perturbatively using HEOM and compare with secular GKLS and time-convolutionless master equations.",
+        "result": "In the long-line continuum limit ($\\omega_{\\mathrm{TL}} \\ll \\omega_g, \\omega_q$), each parity sector exhibits Drude–Lorentz spectral density $J(\\omega) = 2\\lambda\\gamma\\omega/(\\gamma^2 + \\omega^2)$ with $\\gamma \\approx \\omega_g/(2\\pi)$; the comb-edge discrete region ($\\omega_{\\mathrm{TL}} \\ll \\omega_g$, $\\omega_q \\lesssim \\omega_{\\mathrm{TL}}$) requires explicit multimode treatment; in the short-line limit ($\\omega_g \\ll \\omega_{\\mathrm{TL}}$), a single isolated mode dominates with coupling $g_n \\propto 1/n$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8721,
+    0.7327,
+    0.7207,
+    0.5691,
+    0.4695,
+    0.4591,
+    0.4428,
+    0.3873,
+    0.3832,
+    0.3622,
+    0.3594,
+    0.3149,
+    0.296,
+    0.2956,
+    0.2955,
+    0.2903,
+    0.2565,
+    0.2541,
+    0.24,
+    0.2076,
+    0.2072,
+    0.1985,
+    0.1709,
+    0.1656,
+    0.1591,
+    0.1571,
+    0.1344,
+    0.1322,
+    0.128,
+    0.1209,
+    0.1054,
+    0.0887,
+    0.0873,
+    0.0849,
+    0.0846,
+    0.0693,
+    0.0692,
+    0.068,
+    0.0584,
+    0.0574,
+    0.0551,
+    0.0534,
+    0.0531,
+    0.0463,
+    0.0456,
+    0.0421,
+    0.0413,
+    0.0409,
+    0.0405,
+    0.0358,
+    0.0355,
+    0.0351,
+    0.0344,
+    0.0329,
+    0.0323,
+    0.0301,
+    0.0289,
+    0.0288,
+    0.0283,
+    0.028,
+    0.0276,
+    0.0249,
+    0.0245,
+    0.0237,
+    0.0229,
+    0.022,
+    0.0219,
+    0.0215,
+    0.0203,
+    0.0201,
+    0.0186,
+    0.0174,
+    0.0154,
+    0.0151,
+    0.015,
+    0.0145,
+    0.0139,
+    0.0127,
+    0.0123,
+    0.0122,
+    0.0114,
+    0.0113,
+    0.0101,
+    0.0089,
+    0.0082,
+    0.0079,
+    0.0072,
+    0.007,
+    0.007,
+    0.0069,
+    0.005,
+    0.0045,
+    0.0042,
+    0.0037,
+    0.0033,
+    0.0032,
+    0.0023
+  ]
+}

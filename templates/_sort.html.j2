@@ -1,0 +1,14 @@
+{# sort bar above the feed: day order, or the best papers of a window (the lists are in _top.html.j2) #}
+<div class="sortbar">
+  <div class="sorts" role="group" aria-label="Sort">
+    <button type="button" data-sort="new" class="on" aria-pressed="true">Newest first</button>
+    <button type="button" data-sort="old" aria-pressed="false">Oldest first</button>
+    <button type="button" data-sort="top" aria-pressed="false">Top</button>
+  </div>
+  <div class="seg" id="range" role="group" aria-label="Top papers of the past" style="--n:{{ tops|length }};--i:0" hidden>
+    <i></i>
+    {% for t in tops %}
+    <button type="button" data-range="{{ t.key }}"{{ ' class="on"'|safe if loop.first }} aria-pressed="{{ 'true' if loop.first else 'false' }}">{{ t.label }}</button>
+    {% endfor %}
+  </div>
+</div>

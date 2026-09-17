@@ -1,0 +1,313 @@
+{
+  "date": "2026-06-17",
+  "n_fetched": 94,
+  "papers": [
+    {
+      "id": "2606.17866",
+      "title": "Experimental Characterization and Modeling of Measurement-Induced State-Transitions in a Fluxonium Superconducting Qubit",
+      "authors": [
+        "Martijn F. S. Zwanenburg",
+        "Jinlun Hu",
+        "Eugene Y. Huang",
+        "Figen Yilmaz",
+        "Siddharth Singh",
+        "Christian Kraglund Andersen"
+      ],
+      "abstract": "Superconducting qubits are most often measured using dispersive readout, which, ideally, implements a projective quantum non-demolition (QND) measurement. While a larger readout drive can increase the signal and, thus, reduce discrimination errors in the readout, strong microwave drives may also cause non-QND errors by driving the qubit to a state outside the computational subspace. In this work, we experimentally characterize measurement-induced state transitions (MIST) in a fluxonium qubit over its full external flux range. We further numerically calculate the MIST errors, and find that the theory accurately predicts eleven experimentally identified regions with increased MIST. In addition to transitions to higher fluxonium levels, we also find that, at certain flux points, MIST errors are dominated by transitions that include the transmission-line-like array modes of the fluxonium's superinductor. The excellent match between theory and experiment validates that the models accurately predict the occurrence of MIST in these systems, and further highlights the influence of array modes in fluxonium readout.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-16",
+      "score": 0.8463170229850533,
+      "similar_to": [
+        {
+          "title": "Experimental Characterization and Modeling of Measurement-Induced State-Transitions in a Fluxonium Superconducting Qubit",
+          "id": "2606.17866",
+          "similarity": 1.0000001192092896
+        },
+        {
+          "title": "Measurement-induced state transitions in dispersive qubit readout schemes",
+          "id": "2402.07360",
+          "similarity": 0.9109296798706055
+        }
+      ],
+      "summary": {
+        "summary": "This work experimentally characterizes measurement-induced state transitions (MIST) in a fluxonium qubit across its full external flux range and validates theoretical models predicting their occurrence. Branch analysis without array modes explains six of eleven identified MIST regions, while Floquet branch analysis including the two lowest array modes accounts for the remaining five, with five of these being dominated by transitions involving superinductor array modes.",
+        "motivation": "Strong microwave readout drives in dispersive readout can cause non-QND errors by exciting qubits outside the computational subspace; understanding and predicting MIST is critical for quantum error correction and informs fluxonium readout optimization.",
+        "method": "A fluxonium with $E_J/h = 2.571$ GHz and $E_L/h = 0.449$ GHz coupled to a resonator at $\\omega_R/2\\pi = 6.79$ GHz was characterized via two-tone spectroscopy and readout fidelity mapping, then MIST was isolated using a sequence comparing qubit state populations with and without readout pulses to separate MIST errors from relaxation and thermal excitation.",
+        "result": "Eleven MIST regions were identified with maximum average photon numbers up to $\\langle N_R \\rangle \\approx 6$; peak readout assignment fidelity reached 86.1% at an optimal point, limited by array-mode-induced MIST at sweet spot ($\\phi_\\mathrm{ext} = 0.5$), which could be suppressed by balancing circuit self-capacitances to restore symmetry protection of odd array modes.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.17338",
+      "title": "Effects of Josephson Junction Non-idealities on Adiabatic Quantum Flux Parametron Circuits",
+      "authors": [
+        "Daryoush Shiri",
+        "Likai Yang",
+        "Mohamed A. Hassan",
+        "Philip Krantz",
+        "Eric T. Holland"
+      ],
+      "abstract": "Adiabatic quantum flux parametron (AQFP) gate is a promising approach to scale up the cryogenic microwave electronics for superconducting qubit multiplexed control. However, the performance of these circuits depends on the quality of the Josephson junctions which are ideally superconductor-insulator-superconductor (SIS) type following the ideal sinusoidal relation between current and quantum phase. We demonstrate how the non-sinusoidal current-phase relation in Superconductor-Normal metal-Superconductor (SNS) and weak link (WL) junctions affects the speed, delay, and margin of the AQFP gates. The JJ models are defined in the Keysight ADS simulator using symbolically defined device (SDD) method.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-06-15",
+      "score": 0.7807901840564385,
+      "similar_to": [
+        {
+          "title": "Observation of Josephson Harmonics in Tunnel Junctions",
+          "id": "2302.09192",
+          "similarity": 0.8253138661384583
+        },
+        {
+          "title": "Quasiparticle dynamics in epitaxial Al-InAs planar Josephson junctions",
+          "id": "2303.04784",
+          "similarity": 0.805345356464386
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates hierarchical simulation of adiabatic quantum flux parametron (AQFP) gates in Keysight ADS using symbolically defined devices (SDD) to model Josephson junctions with arbitrary current-phase relations. The non-sinusoidal $I(\\phi)$ characteristics of SNS and weak-link junctions are shown to substantially alter AQFP switching speed, output current swing ($\\pm 20$ µA for SIS versus $\\pm 40$ µA for SNS), and timing margins.",
+        "motivation": "AQFP logic gates promise low-dissipation cryogenic control circuits for superconducting qubit multiplexing, but their performance depends sensitively on Josephson junction quality, necessitating quantitative understanding of how deviations from ideal SIS junctions affect gate dynamics.",
+        "method": "SDD models of SIS, SNS, and weak-link junctions with different current-phase relations $I/I_c = \\sum_{n=1}^{N} \\alpha_n \\sin(n\\phi)$ were implemented in ADS and used to simulate AQFP buffers ($I_{c1} = I_{c2} = 50$ µA, $L_1 = L_2 = 2.64$ pH) and a 3-stage shift register with phase-shifted clocks.",
+        "result": "SNS junctions produced doubled output current swing ($\\pm 40$ µA) but slower switching than SIS or weak-link junctions; weak links achieved the sharpest switching with smallest current margin, while SIS junctions exhibited intermediate behavior due to their symmetric sinusoidal relation.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.17709",
+      "title": "Optimizing bias-tailored quantum error correction beyond code-capacity noise",
+      "authors": [
+        "César Benito",
+        "I. Jesán Velázquez-Reséndiz",
+        "Alejandro Bermudez"
+      ],
+      "abstract": "We find that the substantial advantages predicted for bias-tailored quantum error correction (QEC) under code-capacity noise are strongly reduced once realistic syndrome extraction and circuit-level noise models are considered. We start by comparing XZZX codes to rectangular surface codes with a bias-dependent optimised anisotropy. Although code-capacity simulations predict an advantage of rectangular surface codes in the limit of high noise bias, this actually disappears under circuit-level noise, making the XZZX codes the preferred and simplest choice even for platforms that allow for a flexible variation of the code layout adapted to changes in noise calibration. Our results identify bias degradation during syndrome extraction under circuit-level noise as the central limitation of biased-tailored QEC. To partially mitigate this effect, we introduce a bias-filtering CNOT gadget that temporarily encodes the ancillary target qubit during syndrome extraction in a repetition code and, upon measurement and feed forward, manages to reduce the bias degradation. In a regime of high-bias and low-idle errors, this bias-filtering gadget yields a few-percent relative improvement of the XZZX code error threshold, demonstrating that lightweight bias-filtering strategies can recover part of the lost bias-tailoring advantage for realistic circuit-level noise.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-16",
+      "score": 0.6632875763521743,
+      "similar_to": [
+        {
+          "title": "Quantum error correction at ultra-low overhead",
+          "id": "2608.02773",
+          "similarity": 0.8481873273849487
+        },
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8436674475669861
+        }
+      ],
+      "summary": {
+        "summary": "This work quantifies how bias-tailored quantum error correction advantages predicted under code-capacity noise are substantially reduced by realistic circuit-level effects, and proposes a bias-filtering CNOT gadget to partially recover these advantages. The authors compare XZZX codes to optimized anisotropic surface codes and find that although anisotropic codes outperform XZZX under code-capacity noise, this advantage disappears under circuit-level noise due to bias degradation in syndrome extraction.",
+        "motivation": "Understanding whether noise-bias tailoring strategies survive realistic gate-level errors and circuit-level propagation is crucial for practical quantum error correction, since prior works suggested substantial improvements under idealized models but the fundamental question of bias preservation through fault-tolerant circuits remained unresolved.",
+        "method": "The authors performed circuit-level simulations comparing XZZX and rectangular surface codes with optimized anisotropy under biased dephasing noise ($\\eta = p_{\\mathrm{bias}}/p_{\\mathrm{unbias}}$), and introduced an encoded CNOT gadget that temporarily encodes the target qubit in a $d=3$ repetition code during syndrome extraction to filter non-bias-preserving errors via majority-vote decoding and feed-forward.",
+        "result": "Under circuit-level noise with $p = 0.003$, the XZZX code achieves comparable performance to optimized anisotropic surface codes, and the bias-filtering CNOT gadget yields a few-percent relative improvement to the XZZX threshold in the regime of high bias ($\\eta_{2q} > 50$) and low idle errors ($p_{\\mathrm{id}} < p_{2q}/5$), demonstrating that lightweight bias-filtering can recover part of the lost bias-tailoring advantage.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.17907",
+      "title": "SPICE-Q and Large-Scale Quantum Chip Production",
+      "authors": [
+        "Cai",
+        "Ling Qiao",
+        "Bin Yang",
+        "Fumin Luo",
+        "Chang Liu",
+        "WeiGui Guo",
+        "GuoRong Zhang",
+        "XueFei Liu",
+        "Qinglang Guo",
+        "Bin Wu"
+      ],
+      "abstract": "We propose SPICE-Q, a SPICE-inspired design-technology co-optimization framework for superconducting quantum processors. Rather than replacing tools such as HFSS, Qiskit Metal, pyEPR, SQcircuit, SQuADDS, scqubits, or QuTiP, SPICE-Q aims to connect them through a unified, traceable data chain spanning process rules, layout, electromagnetic simulation, energy-participation-ratio and circuit quantization, Hamiltonian extraction, noise analysis, cryogenic test, and manufacturing feedback. The central mapping is from process and PDK constraints to layout geometry, electromagnetic modes, equivalent circuit parameters, effective Hamiltonians, and finally metrics such as frequency, coupling, anharmonicity, decoherence, readout performance, and yield. This flow must capture Josephson-junction variability, transmon frequency allocation, resonator and Purcell constraints, coupler crosstalk, microwave routing, 3D interconnects, material/interface loss, package modes, and wafer-scale process statistics. By introducing standardized model interfaces, statistical parameter models, model cards, version governance, and closed-loop calibration from cryogenic and fabrication data, SPICE-Q frames superconducting quantum-chip design as an engineering workflow rather than a collection of isolated simulations. We argue that scalable and fault-tolerant quantum processors will require such a continuous model chain from device physics and electromagnetic fields to quantum dynamics, noise, manufacturability, and system-level yield.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-16",
+      "score": 0.6527022106570548,
+      "similar_to": [
+        {
+          "title": "A Review of Design Concerns in Superconducting Quantum Circuits",
+          "id": "2411.16967",
+          "similarity": 0.845295250415802
+        },
+        {
+          "title": "Component-Level Inverse Design of Transmon Qubits Using Neural Networks",
+          "id": "2607.20795",
+          "similarity": 0.8421998620033264
+        }
+      ],
+      "summary": {
+        "summary": "This paper proposes SPICE-Q, a design-technology co-optimization framework for superconducting quantum processors that unifies process rules, layout, electromagnetic simulation, circuit quantization, Hamiltonian extraction, noise analysis, and manufacturing feedback into a single traceable data chain. The framework draws an analogy with classical SPICE, which transformed integrated-circuit design from trial-and-error into model-driven engineering, arguing that quantum computing requires an analogous unified infrastructure to scale from NISQ toward fault-tolerant processors.",
+        "motivation": "Superconducting quantum-chip design currently relies on fragmented, isolated tools (HFSS, Qiskit Metal, pyEPR, SQcircuit, QuTiP) without unified interfaces or manufacturing feedback. Large-scale quantum processors require continuous model updating across device physics, electromagnetics, quantum dynamics, and process statistics—a capability that classical SPICE enabled for semiconductors but remains absent in quantum computing.",
+        "method": "SPICE-Q organizes simulation into physical-space (EM fields, $S$-parameters, energy participation ratios) and information-space (Hamiltonians, Lindblad dynamics, decoherence) layers connected through cross-domain netlists. It implements a closed-loop design-technology co-optimization cycle: design and Monte Carlo yield prediction with process-statistical models → fabrication with standardized test structures → cryogenic measurement → Bayesian model calibration → redesign, using version-controlled model cards and parametrized cells.",
+        "result": "The framework maps process deviations ($J_c$ fluctuations, capacitance variations, material loss) through device parameters ($E_J$, $E_C$) to system-level metrics (frequency distributions, coupling strength, $T_1/T_2$, yield). By explicitly incorporating manufacturing uncertainty into design optimization ($\\max_x \\mathbb{E}_{\\theta \\sim p(\\theta)}[\\mathcal{L}(x,\\theta)]$), SPICE-Q enables predictive design of manufacturable multi-qubit arrays and informs process control priorities through sensitivity analysis without requiring multiple fabrication iterations.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.18084",
+      "title": "Cavity-enhanced superconducting response in an underdoped cuprate",
+      "authors": [
+        "Angela Montanaro",
+        "Vadim Plastovets",
+        "Nitesh Khatiwada",
+        "Jacopo Fiore",
+        "Giacomo Jarc",
+        "Abdullah Alabbadi",
+        "Antonio Mastropasqua",
+        "Enrico Maria Rigoni",
+        "Shahla Y. Mathengattil",
+        "Simone Dal Zilio",
+        "Francesca Fassioli Olsen",
+        "Fabio Novelli",
+        "Stephan Winnerl",
+        "Michael A. Sentef",
+        "Dante M. Kennes",
+        "Andrew J. Millis",
+        "Francesco Piazza",
+        "Daniele Fausti"
+      ],
+      "abstract": "Superconductors carry electrical current without resistance when paired electrons condense into a coherent macroscopic quantum state. In underdoped cuprates, evidence suggests that pairing-related correlations and superconducting fluctuations can survive above the temperature at which global coherence is lost, pointing to phase fluctuations as a key limitation on superconductivity in this regime. Motivated by recent demonstrations of cavity-modified collective states in quantum materials, we investigate whether superconducting coherence can be stabilized by engineering the electromagnetic environment of the superconductor. We study an underdoped YBa$_2$Cu$_3$O$_{7-δ}$ thin film in a tunable terahertz cavity formed with a semi-transparent gold mirror. From temperature-dependent terahertz transmission measurements, we find that the cavity enhances the superconducting response below the critical temperature, with an increase of the inferred superfluid weight. The effect becomes more pronounced at smaller cavity lengths and is accompanied by an upward shift of the superconducting onset temperature. Calculations based on a cavity-coupled model for phase-fluctuating superconductors capture these trends and support an interpretation in terms of cavity-enhanced phase stiffness. These results showcase the potential of cavity engineering for designing emergent functionalities in correlated systems.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mes-hall",
+        "physics.optics",
+        "quant-ph"
+      ],
+      "published": "2026-06-16",
+      "score": 0.5658433183244532,
+      "similar_to": [
+        {
+          "title": "Cavity quantum electrodynamics for superconducting electrical circuits: an architecture for quantum computation",
+          "id": null,
+          "similarity": 0.8012915849685669
+        },
+        {
+          "title": "Electrical post-fabrication tuning of aluminum Josephson junctions at room temperature",
+          "id": "2602.20002",
+          "similarity": 0.7975242137908936
+        }
+      ],
+      "summary": {
+        "summary": "An underdoped YBa$_2$Cu$_3$O$_{7-δ}$ thin film embedded in a tunable terahertz cavity exhibits enhanced superconducting response with increased inferred superfluid weight below $T_c$, accompanied by an upward shift of the superconducting onset temperature. A cavity-coupled model for phase-fluctuating superconductors interprets the effect as cavity-enhanced phase stiffness that suppresses long-wavelength phase fluctuations and shifts the Berezinskii-Kosterlitz-Thouless transition to higher temperature.",
+        "motivation": "In underdoped cuprates, pairing correlations persist above the critical temperature $T_c$ where global phase coherence is lost, suggesting phase fluctuations limit superconductivity. The possibility that cavity-modified electromagnetic environments can stabilize superconducting coherence by suppressing phase-disrupting mechanisms rather than strengthening pairing provides a compelling platform to test cavity control of correlated states.",
+        "method": "Time-domain terahertz spectroscopy measured the temperature-dependent complex conductivity of a 100 nm YBCO film in a tunable Fabry-Pérot cavity formed by the film and a semi-transparent gold mirror separated by 20–4000 μm, with cavity length adjusted by piezoelectric positioners; complex optical conductivity was extracted using the thin-film Tinkham formalism accounting for full cavity propagation effects.",
+        "result": "The frequency-averaged imaginary conductivity $\\bar{\\sigma}_2$ (proportional to superfluid weight) is systematically enhanced below $T_c$ in the cavity, with larger enhancement at shorter cavity lengths (most pronounced for $L=20$ μm); the superconducting onset temperature shifts upward by approximately 1 K in the shortest cavity relative to free space, consistent with cavity-enhanced phase stiffness predicted by a modified XY/BKT model.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8463,
+    0.7808,
+    0.6633,
+    0.6527,
+    0.5658,
+    0.488,
+    0.4173,
+    0.3952,
+    0.3841,
+    0.3788,
+    0.3412,
+    0.2914,
+    0.2671,
+    0.2657,
+    0.1944,
+    0.1905,
+    0.1702,
+    0.1663,
+    0.1653,
+    0.1583,
+    0.1385,
+    0.1241,
+    0.1203,
+    0.1187,
+    0.1104,
+    0.1093,
+    0.1025,
+    0.101,
+    0.0947,
+    0.0912,
+    0.0879,
+    0.0877,
+    0.0827,
+    0.0803,
+    0.0787,
+    0.0771,
+    0.0769,
+    0.0742,
+    0.0724,
+    0.072,
+    0.0628,
+    0.0626,
+    0.0552,
+    0.0501,
+    0.0499,
+    0.0469,
+    0.046,
+    0.043,
+    0.041,
+    0.0353,
+    0.0348,
+    0.0319,
+    0.0317,
+    0.0311,
+    0.0292,
+    0.0283,
+    0.0281,
+    0.0262,
+    0.0221,
+    0.0212,
+    0.0201,
+    0.0183,
+    0.0164,
+    0.016,
+    0.0159,
+    0.0148,
+    0.0145,
+    0.014,
+    0.014,
+    0.0109,
+    0.0101,
+    0.0101,
+    0.0097,
+    0.0096,
+    0.0095,
+    0.0094,
+    0.0091,
+    0.009,
+    0.0087,
+    0.0084,
+    0.0082,
+    0.0077,
+    0.0073,
+    0.0061,
+    0.0057,
+    0.0054,
+    0.0053,
+    0.0045,
+    0.0032,
+    0.0028,
+    0.0023,
+    0.0017,
+    0.0016,
+    0.0013
+  ]
+}

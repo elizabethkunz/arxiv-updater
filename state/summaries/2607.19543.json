@@ -1,0 +1,8 @@
+{
+  "summary": "This work presents a method to replace distributed transmission line resonators in superconducting circuits with accurate single parallel $LC$ lumped elements by fitting scattering parameters in the presence of coupling capacitors. The technique outperforms traditional analytical lumped oscillator models and Foster synthesis approaches, particularly under heavy loading, and is implemented in the open-source package $\\texttt{simpleLOMs}$.",
+  "motivation": "Superconducting circuit designers need computationally tractable lumped-element models for quantization, but existing approaches for modeling loaded distributed resonators (such as coupled CPW resonators) become inaccurate under strong coupling or require cumbersome phenomenological adjustments.",
+  "method": "The authors fit effective $C_\\mathrm{eff}$ and $L_\\mathrm{eff}$ values of a single $LC$ circuit to match the scattering parameters ($S_{11}$ and $S_{22}$) of a transmission line with its coupling capacitors explicitly included, using least-squares regression in the frequency range $f_0 \\pm 5\\kappa$ and validating against ANSYS HFSS simulations.",
+  "result": "The optimized model predicts shifted resonant frequencies and linewidths of coupled CPW resonators with errors below 0.5% and 3% respectively across coupling capacitances up to 200 fF, outperforming both analytical models and Foster synthesis methods which produced significantly larger errors especially at high coupling strengths.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

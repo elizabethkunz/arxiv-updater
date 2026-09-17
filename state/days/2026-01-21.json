@@ -1,0 +1,218 @@
+{
+  "date": "2026-01-21",
+  "n_fetched": 92,
+  "papers": [
+    {
+      "id": "2601.13509",
+      "title": "Gigahertz-frequency Lamb wave resonator cavities on suspended lithium niobate for quantum acoustics",
+      "authors": [
+        "Michele Diego",
+        "Hong Qiao",
+        "Byunggi Kim",
+        "Minseok Ryu",
+        "Shiheng Li",
+        "Gustav Andersson",
+        "Masahiro Nomura",
+        "Andrew N. Cleland"
+      ],
+      "abstract": "Phononic nanodevices offer a promising route toward quantum technologies, as phonons combine strong confinement within matter with broad coupling capabilities to various quantum systems. In particular, the piezoelectric response of materials such as lithium niobate enables coupling between superconducting qubits and gigahertz-frequency phonons. However, bulk lithium niobate phononic devices typically rely on surface acoustic waves and are therefore inherently subject to leakage from the surface into the bulk substrate. Here, we explore the acoustic behavior of resonator cavities supporting GHz-frequency Lamb waves in a 200 nm-thick suspended lithium niobate layer. We characterize the acoustic response at both room and millikelvin temperatures. We find that our resonator cavities with strong confinement reach intrinsic quality factors of approximately 6000 at the single phonon level. We use the measured parameters of the resonators to model their coupling to a superconducting transmon qubit, allowing us to evaluate their potential as quantum acoustic devices.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-01-20",
+      "score": 0.7461590431220895,
+      "similar_to": [
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.8158363699913025
+        },
+        {
+          "title": "Wireless millikelvin interconnects for superconducting quantum hardware",
+          "id": "2607.13834",
+          "similarity": 0.8145369291305542
+        }
+      ],
+      "summary": {
+        "summary": "Suspended lithium niobate acoustic resonator cavities supporting GHz-frequency antisymmetric $A_0$ Lamb waves are demonstrated with intrinsic quality factors reaching approximately 6000 at millikelvin temperatures. The devices are characterized across room and cryogenic regimes, with lumped-element parameters extracted to design inductive coupling to superconducting transmon qubits achieving coupling strengths above 1 MHz.",
+        "motivation": "Surface acoustic wave devices on bulk piezoelectric substrates suffer from bulk acoustic leakage losses; confining phonons to thin suspended membranes reduces this loss channel while maintaining piezoelectric coupling to superconducting qubits.",
+        "method": "200 nm Y-cut LiNbO$_3$ suspended cavities with aluminum IDTs (20 electrode pairs, 1 μm pitch) and 200-finger Bragg mirrors are characterized via vector network analyzer transmission and reflection measurements at room temperature and $\bar{10}$ mK, with finite element simulations to map the $A_0$ mode profile and BvD lumped-element fitting to extract $Q_i$, $Q_c$, and coupling parameters.",
+        "result": "At 10 mK, cavity RC-A (5 μm IDT-mirror spacing, tee configuration) achieves $Q_i \bar{6600}$ and $Q_c \bar{6350}$ at $-60$ dBm VNA power with estimated phonon occupation $N_{\text{ph}} \bar{25}$; $Q_i$ increases with phonon number and saturates near $N_{\text{ph}} \bar{100}$, consistent with two-level system saturation; coupling designs predict achievable transmon-resonator couplings $> 1$ MHz with aperture scaling to $C_0 = 0.7$ pF.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.13648",
+      "title": "3D Stacked Surface-Code Architecture for Measurement-Free Fault-Tolerant Quantum Error Correction",
+      "authors": [
+        "GunSik Min",
+        "IlKwon Sohn",
+        "Jun Heo"
+      ],
+      "abstract": "Mid-circuit measurements are a major bottleneck for superconducting quantum processors because they are slower and noisier than gates. Measurement-free quantum error correction (mfec) replaces repeated measurements and classical feed-forward by coherent quantum feedback, but existing mfec protocols suffer from severe connectivity overhead when mapped to planar surface-code architectures: transversal interactions between logical patches require SWAP chains of length $O(d)$ in the code distance, which increase depth and generate hook errors. This work introduces a 3D stacked surface-code architecture for measurement-free fault-tolerant quantum error correction that removes this connectivity bottleneck. Vertical transversal couplers between aligned surface-code patches enable coherent parity mapping and feedback with zero SWAP overhead, realizing constant-depth $O(1)$ inter-layer operations in d while preserving local 2D stabilizer checks. A fault-tolerant mfec protocol for the surface code is constructed that suppresses hook errors under realistic noise. An analytical performance model shows that the 3D architecture overcomes the readout error floor and achieves logical error rates orders of magnitude below both standard measurement-based surface codes and 2D mfec variants in regimes with slow, noisy measurements, identifying 3D integration as a key enabler for scalable measurement-free fault tolerance.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-20",
+      "score": 0.62836080761482,
+      "similar_to": [
+        {
+          "title": "Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code",
+          "id": "2112.03708",
+          "similarity": 0.8833345174789429
+        },
+        {
+          "title": "Repeated Quantum Error Detection in a Surface Code",
+          "id": "1912.09410",
+          "similarity": 0.8714536428451538
+        }
+      ],
+      "summary": {
+        "summary": "This work proposes a 3D stacked surface-code architecture for measurement-free quantum error correction that eliminates the $O(d)$ SWAP routing overhead required for transversal coupling between logical patches in 2D layouts. Vertical couplers enable constant-depth inter-layer operations, and performance analysis shows the 3D MFEC surface code achieves logical error rates orders of magnitude below standard measurement-based codes in regimes where measurements are slow and noisy.",
+        "motivation": "Mid-circuit measurements on superconducting platforms are substantially slower and noisier than coherent gates (10–100$\\times$ worse), creating a readout floor that limits logical performance of surface codes. While measurement-free QEC (MFEC) avoids repeated measurements, planar implementations require SWAP chains of length $O(d)$ to implement transversal coupling between logical patches, negating the measurement advantage.",
+        "method": "The architecture stacks three distance-$d$ rotated surface-code patches vertically—encoding $|0\\rangle_L$, $|\\psi\\rangle_L$, and $|+\\rangle_L$—with native vertical couplers enabling parallel inter-layer two-qubit gates. A fault-tolerant MFEC protocol uses these vertical transversals for coherent parity mapping and feedback with $O(1)$ depth in $d$. Performance is compared against standard measurement-based surface codes and 2D MFEC variants under a decoherence noise model calibrated to superconducting timescales ($T_1 = 200$ µs, $T_2 = 150$ µs, $t_{2q} = 40$ ns).",
+        "result": "At break-even decoherence ratio $R_{\\mathrm{decoh}} = p_{\\mathrm{decoh}}(t_m)/p_{\\mathrm{decoh}}(t_{\\mathrm{idle,op}}) \\sim 30$–200 (depending on distance), the 3D MFEC architecture achieves competitive or superior logical error to measurement-based surface codes, remaining effective to distance $d=11$ while 2D MFEC approaches unit error for $d \\geq 7$. At fixed noise ($s=1$, $R_{\\mathrm{decoh}}=200$), logical error of 3D MFEC scales only mildly with distance while measurement-based codes saturate near $p_L \\sim 0.3$–0.4.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.14226",
+      "title": "Deep Learning Approaches to Quantum Error Mitigation",
+      "authors": [
+        "Leonardo Placidi",
+        "Ifan Williams",
+        "Enrico Rinaldi",
+        "Daniel Mills",
+        "Cristina Cîrstoiu",
+        "Vanya Eccles",
+        "Ross Duncan"
+      ],
+      "abstract": "We present a systematic investigation of deep learning methods applied to quantum error mitigation of noisy output probability distributions from measured quantum circuits. We compare different architectures, from fully connected neural networks to transformers, and we test different design/training modalities, identifying sequence-to-sequence, attention-based models as the most effective on our datasets. These models consistently produce mitigated distributions that are closer to the ideal outputs when tested on both simulated and real device data obtained from IBM superconducting quantum processing units (QPU) up to five qubits. Across several different circuit depths, our approach outperforms other baseline error mitigation techniques. We perform a series of ablation studies to examine: how different input features (circuit, device properties, noisy output statistics) affect performance; cross-dataset generalization across circuit families; and transfer learning to a different IBM QPU. We observe that generalization performance across similar devices with the same architecture works effectively, without needing to fully retrain models.",
+      "categories": [
+        "quant-ph",
+        "cs.LG"
+      ],
+      "published": "2026-01-20",
+      "score": 0.586700445619659,
+      "similar_to": [
+        {
+          "title": "Dynamical decoupling for superconducting qubits: a performance survey",
+          "id": "2207.03670",
+          "similarity": 0.8403629064559937
+        },
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.839543879032135
+        }
+      ],
+      "summary": {
+        "summary": "This work presents a systematic evaluation of deep learning architectures for mitigating noise in quantum circuit output probability distributions using IBM 5-qubit superconducting processors and over 246,000 unique circuits. Attention-based models, particularly the Transformer and Perceiver, consistently outperform classical baselines (SPAM, Repolarizer, Mix, Thresholding) and simpler neural networks, achieving mitigation on ~80% of real hardware circuits by reducing the $L_1$ distance between noisy and ideal distributions.",
+        "motivation": "Quantum error mitigation requires exponentially more samples using standard methods, motivating investigation of machine learning approaches that can learn noise patterns from data-driven supervision to improve practical utility of near-term quantum devices.",
+        "method": "Models ranging from MLPs to sequence-to-sequence attention architectures were trained on 8,000 simulated circuits per depth value, fine-tuned on real data from ibm_algiers (5-qubit subset, 15,000 circuits per depth, January–April 2024), and evaluated via ablation studies, cross-dataset generalization, and transfer to ibm_hanoi using KL-divergence loss with pre-training and 50-trial Bayesian hyperparameter optimization.",
+        "result": "The Perceiver achieved median $L_1$ Relative Change of $-0.2062$ (83.2% circuits improved) on real Pauli data and $-0.0210$ (64.4% improved) on real Random data; transfer to ibm_hanoi without retraining showed comparable performance; ablations revealed the noisy distribution is the dominant input feature, circuit information weakly exploited, and attention mechanisms most robust to distribution shift across circuit types and devices.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.7462,
+    0.6284,
+    0.5867,
+    0.4506,
+    0.3945,
+    0.2766,
+    0.2747,
+    0.2396,
+    0.2196,
+    0.2115,
+    0.2067,
+    0.1965,
+    0.173,
+    0.1668,
+    0.155,
+    0.1461,
+    0.1435,
+    0.1168,
+    0.1101,
+    0.0967,
+    0.0917,
+    0.0874,
+    0.0802,
+    0.079,
+    0.078,
+    0.0745,
+    0.0741,
+    0.0731,
+    0.0713,
+    0.0677,
+    0.0652,
+    0.0644,
+    0.0636,
+    0.0601,
+    0.0524,
+    0.0513,
+    0.0513,
+    0.0416,
+    0.0393,
+    0.0391,
+    0.0386,
+    0.0353,
+    0.0352,
+    0.0349,
+    0.034,
+    0.0337,
+    0.0306,
+    0.0304,
+    0.0304,
+    0.0299,
+    0.0294,
+    0.0288,
+    0.0262,
+    0.0258,
+    0.0234,
+    0.0208,
+    0.0207,
+    0.0192,
+    0.0184,
+    0.018,
+    0.0178,
+    0.0149,
+    0.0147,
+    0.0146,
+    0.0144,
+    0.0143,
+    0.0115,
+    0.0114,
+    0.0113,
+    0.0113,
+    0.0105,
+    0.0104,
+    0.0103,
+    0.0102,
+    0.0102,
+    0.0099,
+    0.0097,
+    0.0094,
+    0.0079,
+    0.0066,
+    0.0064,
+    0.0061,
+    0.0058,
+    0.0058,
+    0.0054,
+    0.0054,
+    0.0052,
+    0.004,
+    0.0039,
+    0.0037,
+    0.002,
+    0.0005
+  ]
+}

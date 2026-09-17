@@ -1,0 +1,8 @@
+{
+  "summary": "This paper analyzes quantum $XX$ and $ZZ$ couplings in a capacitively coupled three-transmon-qubit star array using dressed-state perturbation theory and numerical solutions of the Schrödinger equation. The work demonstrates that highly-connected systems exhibit multiple types of $ZZ$ couplings (three pairwise and one all-to-all) that create crosstalk channels and identifies detuning regimes where couplings can be suppressed.",
+  "motivation": "Understanding qubit-qubit interactions in fully-connected architectures is essential for implementing high-connectivity quantum processors and quantum simulations with superconducting qubits, where unwanted $ZZ$ coupling leads to operation errors that scale with system connectivity.",
+  "method": "Dressed-state perturbation theory to first order in the coupling amplitudes $K_{ij}$, with analytical expressions derived for both degenerate and detuned qubits, validated against full Schrödinger equation solutions for transmons with $I_c = 40$ nA, $C = 100$ fF, $C_x = 1$ fF, and $\nu_{qb}/(2\beta) = 6$ GHz.",
+  "result": "For degenerate qubits, the $XX$ coupling is $\\_XX/(2\beta) \\approx 30$ MHz while pairwise $ZZ$ couplings reach $\\approx 1.89$ MHz and the all-to-all $ZZ$ coupling reaches $\\approx 4.7$ MHz; the error state occupation probability decays as $\\Delta\\omega^{-2}$ with detuning, while all $ZZ$ couplings show resonant spikes at detuning values determined by qubit anharmonicity before decaying to near-zero above $\\approx 200$ MHz.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

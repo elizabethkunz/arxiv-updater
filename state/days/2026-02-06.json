@@ -1,0 +1,231 @@
+{
+  "date": "2026-02-06",
+  "n_fetched": 99,
+  "papers": [
+    {
+      "id": "2602.05806",
+      "title": "Assessing the Sensitivity of Niobium- and Tantalum-Based Superconducting Qubits to Infrared Radiation",
+      "authors": [
+        "Michael Kerschbaum",
+        "Felix Wagner",
+        "Uroš Ognjanović",
+        "Giovanni Vio",
+        "Kuno Knapp",
+        "Dante Colao Zanuz",
+        "Alexander Flasby",
+        "Mohsen Bahrami Panah",
+        "Andreas Wallraff",
+        "Jean-Claude Besse"
+      ],
+      "abstract": "The use of tantalum films for superconducting qubits has recently extended qubit coherence times significantly, primarily due to reduced dielectric losses at the metal-air interface. However, the choice of base material also influences the sensitivity to quasiparticle-induced decoherence. In this study, we investigate quasiparticle tunneling rates in niobium and tantalum-based offset-charge-sensitive qubits. Using a source of thermal radiation, we characterize the sensitivity of either material to infrared radiation and explore the impact of the infrared background through the targeted use of in-line filters in the wiring and ambient infrared absorbers. We identify both radiation channels as significant contributions to decoherence for tantalum but not for niobium qubits and achieve tunneling rates of 100 Hz and 300 Hz for niobium and tantalum respectively upon installation of infrared filters. Additionally, we find a time-dependence in the observed tunneling rates on the scale of days, which we interpret as evidence of slowly cooling, thermally radiating components in the experimental setup. Our findings indicate that continued improvements in coherence times may require renewed attention to radiative backgrounds and experimental setup design, especially when introducing new material platforms.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-05",
+      "score": 0.9768142052052707,
+      "similar_to": [
+        {
+          "title": "Assessing the Sensitivity of Niobium- and Tantalum-Based Superconducting Qubits to Infrared Radiation",
+          "id": "2602.05806",
+          "similarity": 0.9999998807907104
+        },
+        {
+          "title": "New material platform for superconducting transmon qubits with coherence times exceeding 0.3 milliseconds",
+          "id": "2003.00024",
+          "similarity": 0.8678658604621887
+        }
+      ],
+      "summary": {
+        "summary": "Tantalum-based superconducting qubits exhibit quasiparticle tunneling rates approximately three times higher than niobium qubits (1542 Hz vs 461 Hz), with stronger dependence on infrared radiation power ($\\Gamma_0 \\propto P_W^{2.6 ± 0.1}$ for Ta vs $P_W^{1.4 ± 0.1}$ for Nb), but infrared filtering reduces tantalum tunneling rates to 300 Hz and niobium to 100 Hz. The time-dependent decay of tunneling rates over days after cooldown indicates slowly radiating components in the cryostat contribute significantly to quasiparticle generation in both materials.",
+        "motivation": "Tantalum films reduce dielectric losses and extend qubit coherence times compared to niobium, but the material choice also influences sensitivity to quasiparticle-induced decoherence, motivating investigation of whether radiative backgrounds affect these two superconducting platforms differently.",
+        "method": "Quasiparticle tunneling rates were extracted via charge-parity mapping on offset-charge-sensitive transmons ($E_J/E_C \\approx 20$, charge dispersion $\\approx 5$ MHz) using a Ramsey-type protocol repeated at 0.5–1 MHz. Power spectral density analysis of parity time traces identified tunneling rates as the characteristic switching frequency. Tantalum and niobium qubits with Al/AlO$_x$/Al junctions were exposed to thermal radiation from a Manganin wire (2 Ω, 0.2 mm diameter) and characterized with various combinations of in-line Eccosorb filters and foam absorbers.",
+        "result": "With baseline filtering, tantalum showed $\\Gamma_0 = (1542 ± 176)$ Hz vs niobium $(461 ± 16)$ Hz; foam absorbers alone reduced rates by factors of 11.9 (Ta) and 6.8 (Nb), while combined foam + in-line filters achieved $(300 ± \\text{?})$ Hz (Ta) and $(100 ± \\text{?})$ Hz (Nb). Tunneling rates decayed as power laws $\\propto t^{-0.73}$ (Ta) and $t^{-0.55}$ (Nb) over 2–3 weeks post-cooldown, consistent with slow thermal radiation from internal components.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.06108",
+      "title": "Quantum-controlled synthetic materials",
+      "authors": [
+        "Andrei Vrajitoarea",
+        "Gabrielle Roberts",
+        "Kaden R. A. Hazzard",
+        "Jonathan Simon",
+        "David I. Schuster"
+      ],
+      "abstract": "Analog quantum simulators and digital quantum computers are two distinct paradigms driving near-term applications in modern quantum science, from probing many-body phenomena to identifying computational advantage over classical systems. A transformative opportunity on the horizon is merging the high-fidelity many-body evolution in analog simulators with the robust control and measurement of digital machines. Such a hybrid platform would unlock new capabilities in state preparation, characterization and dynamical control. Here, we embed digital quantum control in the analog evolution of a synthetic quantum material by entangling the lattice potential landscape of a Bose-Hubbard circuit with an ancilla qubit. This Hamiltonian-level control induces dynamics under a superposition of different lattice configurations and guides the many-body system to novel strongly-correlated states where different phases of matter coexist -- ordering photons into superpositions of solid and fluid eigenstates. Leveraging hybrid control modalities, we adiabatically introduce disorder to localize the photons into an entangled cat state and enhance its coherence using a many-body echo technique. This work illustrates the potential for entangling quantum computers with quantum matter -- synthetic and solid-state -- for advantage in sensing and materials characterization.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.quant-gas"
+      ],
+      "published": "2026-02-05",
+      "score": 0.6498994296828854,
+      "similar_to": [
+        {
+          "title": "Engineering quantum criticality and dynamics on an analog-digital simulator",
+          "id": "2602.18555",
+          "similarity": 0.891770601272583
+        },
+        {
+          "title": "Multi-purpose quantum laboratories from superconducting circuits",
+          "id": "2608.17020",
+          "similarity": 0.8197067975997925
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates quantum-controlled synthetic materials by entangling the lattice potential landscape of a superconducting Bose-Hubbard circuit with an ancilla qubit, enabling the system to evolve under superpositions of different lattice configurations. The approach generates novel strongly-correlated states where solid (Mott insulator) and fluid phases coexist as entangled $N00N$ states, which are probed and enhanced using many-body Ramsey interferometry and echo techniques.",
+        "motivation": "Current analog simulators rely entirely on classical control of the Hamiltonian parameters. Interfacing analog many-body systems with small quantum computers would enable quantum-level control of synthetic matter, unlocking new capabilities for state preparation, characterization, and dynamical control of strongly-correlated states.",
+        "method": "We implemented a chain of capacitively coupled transmon qubits ($J/2\\pi \\approx 9$ MHz, $U/2\\pi \\approx 240$ MHz) with site-resolved flux tuning to realize a 1D Bose-Hubbard model. An ancilla qubit controls transport by detuning the middle site by $U$, making particle tunneling resonant only if the ancilla is occupied. Superposing the ancilla state in $(|0\\rangle + |1\\rangle)/\\sqrt{2}$ creates a solid$+$fluid superposition, which adiabatic relocation in an inverted disorder potential maps to an entangled cat state.",
+        "result": "For $N=5$ and $N=7$ qubits, we prepared multipartite $N00N$ states and verified entanglement through Ramsey fringes with fringe frequency shift scaling as $(N-1)\\delta$ under perturbations. Using many-body echo with ancilla $\\pi$ pulses, we suppressed dephasing from low-frequency flux noise, achieving coherence recovery from undetectable to visible oscillations in the 7-qubit case. Off-diagonal errors were measured at $\\epsilon_X = (9.1 \\pm 0.9)\\%$ and $(17.7 \\pm 1.3)\\%$ for 5- and 7-qubit states respectively, with photon lifetime $T_1 \\approx 45$ µs.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.05959",
+      "title": "Extended Rydberg Lifetimes in a Cryogenic Atom Array",
+      "authors": [
+        "Junlan Jin",
+        "Yue Shi",
+        "Youssef Aziz Alaoui",
+        "Jingxin Deng",
+        "Yukai Lu",
+        "Jeff D. Thompson",
+        "Waseem S. Bakr"
+      ],
+      "abstract": "We report on the realization of a $^{133}$Cs optical tweezer array in a cryogenic blackbody radiation (BBR) environment. By enclosing the array within a 4K radiation shield, we measure long Rydberg lifetimes, up to $406 (36)\\,μ$s for the $55 P_{3/2}$ Rydberg state, a factor of 3.3(3) longer than the room-temperature value. We employ single-photon coupling for coherent manipulation of the ground-Rydberg qubit. We measure a small differential dynamic polarizability of the transition, beneficial for reducing dephasing due to light intensity fluctuations. Our results pave the path for advancing neutral-atom two-qubit gate fidelities as their error budgets become increasingly dominated by $T_1$ relaxation of the ground-Rydberg qubit.",
+      "categories": [
+        "physics.atom-ph",
+        "cond-mat.quant-gas",
+        "quant-ph"
+      ],
+      "published": "2026-02-05",
+      "score": 0.5667561591939918,
+      "similar_to": [
+        {
+          "title": "Controlling the spontaneous emission of a superconducting transmon qubit",
+          "id": "0803.4490",
+          "similarity": 0.8187910914421082
+        },
+        {
+          "title": "Probing excited-state dynamics of transmon ionization",
+          "id": "2505.00639",
+          "similarity": 0.8017789125442505
+        }
+      ],
+      "summary": {
+        "summary": "A $^{133}$Cs optical tweezer array enclosed in a 4 K radiation shield achieves Rydberg lifetimes of $406(36)$ μs for the $55P_{3/2}$ state, a factor of $3.3(3)$ longer than room temperature, by suppressing blackbody radiation-induced transitions to an effective temperature below 25 K. Single-photon excitation and small differential light-shift coefficient $\bm\beta = 29(15)$ kHz/MHz$^2$ enable coherent ground-Rydberg qubit control with $T_2^* = 6.2(4)$ μs and project $T_1$ contribution to two-qubit gate infidelity down to $1.6 \times 10^{-4}$ at optimized Rabi frequency.",
+        "motivation": "Two-qubit gate fidelities in neutral-atom arrays now exceed 99.7%, making $T_1$ relaxation from Rydberg spontaneous emission and blackbody radiation the dominant error source; suppressing the latter via cryogenic environment offers a pathway to further improvement.",
+        "method": "Cesium atoms are loaded into optical tweezers inside nested 4 K and 35 K radiation shields with ITO-coated windows to attenuate microwave blackbody radiation; ground-Rydberg qubits are manipulated via single-photon UV excitation at 319 nm; lifetimes are measured by two-pulse sequences with pushout of decay products.",
+        "result": "The $55P_{3/2}$ lifetime extends from $122$ μs at room temperature to $406(36)$ μs at cryogenic temperature, suppressing BBR-induced decay by more than one order of magnitude and approaching the spontaneous-decay limit of $429$ μs; projected $T_1$-limited gate infidelity drops from $(1$–$3) \times 10^{-3}$ to $1.6 \times 10^{-4}$ at beam waist $20$ μm.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9768,
+    0.6499,
+    0.5668,
+    0.4602,
+    0.4175,
+    0.3439,
+    0.3389,
+    0.3141,
+    0.2466,
+    0.2372,
+    0.1908,
+    0.1527,
+    0.1469,
+    0.1454,
+    0.1413,
+    0.1356,
+    0.1307,
+    0.127,
+    0.1259,
+    0.1211,
+    0.1144,
+    0.1142,
+    0.1095,
+    0.1091,
+    0.1057,
+    0.0944,
+    0.093,
+    0.0899,
+    0.0878,
+    0.0779,
+    0.0768,
+    0.0717,
+    0.0694,
+    0.0689,
+    0.0688,
+    0.0679,
+    0.0673,
+    0.0673,
+    0.0651,
+    0.0618,
+    0.0589,
+    0.0575,
+    0.0565,
+    0.0547,
+    0.0516,
+    0.048,
+    0.0452,
+    0.0444,
+    0.042,
+    0.0411,
+    0.0399,
+    0.0399,
+    0.0393,
+    0.0385,
+    0.035,
+    0.0347,
+    0.0339,
+    0.032,
+    0.0311,
+    0.0309,
+    0.0307,
+    0.0305,
+    0.03,
+    0.0284,
+    0.0283,
+    0.0274,
+    0.0261,
+    0.024,
+    0.0223,
+    0.0216,
+    0.0203,
+    0.0195,
+    0.0192,
+    0.0189,
+    0.0181,
+    0.0181,
+    0.0172,
+    0.0163,
+    0.0148,
+    0.0147,
+    0.0146,
+    0.0143,
+    0.0135,
+    0.0124,
+    0.0122,
+    0.0109,
+    0.0096,
+    0.008,
+    0.0079,
+    0.0071,
+    0.0068,
+    0.0056,
+    0.0055,
+    0.0051,
+    0.0051,
+    0.0049,
+    0.0049,
+    0.0037,
+    0.0029
+  ]
+}

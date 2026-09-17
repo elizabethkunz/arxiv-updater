@@ -1,0 +1,8 @@
+{
+  "summary": "Scanning-probe quantum microscopy using a quantum spin sensor locally probes the microwave and static magnetic field environment of an on-chip niobium superconducting resonator. Rabi oscillations enable coherent control of the spin sensor by the resonator's microwave mode, while static field measurements reveal vortex formation and depinning dynamics in the superconductor.",
+  "motivation": "Understanding microscopic electromagnetic properties of superconducting resonators is essential for optimizing their design and performance in quantum circuits, sensing, and metrology applications.",
+  "method": "A quantum spin sensor is scanned near an on-chip Nb resonator; Rabi oscillation measurements map the microwave magnetic field from the resonator mode, and static field response reveals vortex behavior under applied magnetic fields.",
+  "result": "The scanning-probe approach successfully achieves nanoscale spatial resolution of both the coherent microwave field distribution from the resonator and the static magnetic field-induced vortex dynamics in the Nb film.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

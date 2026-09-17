@@ -1,0 +1,206 @@
+{
+  "date": "2026-02-04",
+  "n_fetched": 86,
+  "papers": [
+    {
+      "id": "2602.03186",
+      "title": "A Tunable, Modeless, and Hybridization-free Cross-Kerr Coupler for Miniaturized Superconducting Qubits",
+      "authors": [
+        "Gihwan Kim",
+        "Andreas Butler",
+        "Oskar Painter"
+      ],
+      "abstract": "Superconducting quantum circuits typically use capacitive charge-based linear coupling schemes to control interactions between elements such as qubits. While simple and effective, this coupling scheme makes it difficult to satisfy competing circuit design requirements such as maintaining large qubit anharmonicity and coherence along with a high degree of qubit connectivity and packing density. Moreover, tunable interactions using linear coupling elements produce dynamical variations in mode hybridization, which can induce non-adiabatic transitions, resulting in leakage errors and limiting gate speeds. In this work we attempt to address these challenges by proposing a junction-based coupling architecture based on SQUID (superconducting quantum interference device) couplers with relatively small Josephson energies. SQUID couplers provide intrinsic cross-Kerr interactions that can be controlled by external fluxes and that do not rely on mode hybridization. The small Josephson energies of the coupler maintain the interaction at a perturbative scale, which limits undesired higher-order mixing between coupled elements while achieving a sufficiently strong cross-Kerr interaction originating from diagonal coupling elements. Based on these properties, we show that a SQUID coupler can be used to implement a fast, adiabatic, and high-fidelity controlled-Z gate without introducing extra modes, and the operation is robust against junction asymmetry for high-frequency qubits. Although unconventional crosstalk may arise due to junction asymmetries and parasitic hybridization with spectator qubits, we show that these effects are sufficiently small for realistic circuit parameters. As an example of the utility of such junction-based coupling schemes, we present a scalable tiling strategy for a miniaturized superconducting quantum processor based on merged-element transmon qubits.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-03",
+      "score": 0.9517430383236771,
+      "similar_to": [
+        {
+          "title": "A double-resonator coupler for high-fidelity two-qubit gates between superconducting qubits",
+          "id": "2609.05222",
+          "similarity": 0.8939371705055237
+        },
+        {
+          "title": "Optimizing the frequency positioning of tunable couplers in a circuit QED processor to mitigate spectator effects on quantum operations",
+          "id": "2503.13225",
+          "similarity": 0.8911046981811523
+        }
+      ],
+      "summary": {
+        "summary": "This work proposes SQUID couplers with small Josephson energies ($E_{J,C}/2\\pi \\lesssim 1$ GHz) for tunable cross-Kerr coupling between superconducting qubits, enabling high-fidelity CZ gates without introducing additional modes or mode hybridization. A scalable miniaturized mergemon processor architecture is presented where all interactions are mediated by junction-based couplers, achieving predicted 100 µm lattice constants and qubit densities up to $10^6$ per 10 cm × 10 cm.",
+        "motivation": "Standard capacitive linear coupling limits qubit anharmonicity, coherence, and integration density while mode hybridization in tunable couplers causes leakage errors and restricts gate speed. Merged-element transmons reduce dielectric loss but require a coupling scheme that avoids bulky capacitors and hybridization-induced errors.",
+        "method": "Full circuit quantization and perturbation theory analyze a SQUID coupler circuit mediating two far-detuned transmon qubits. The cross-Kerr ZZ interaction rate scales as $\\zeta^{(1)} \\propto \\Sigma E_{J,C}\\cos(\\phi_{e,1}/2)(\\phi^{zpf})^4$, controllable via external flux $\\Phi_{e,1}$ with an idle point at $\\Phi_{off} \\approx 0.5\\Phi_0$. Adiabatic CZ gates use dynamically shaped flux waveforms; robustness against junction asymmetry up to 20%, flux noise, and crosstalk is verified numerically.",
+        "result": "A 22 ns CZ gate achieves coherent error $3\\times10^{-7}$ with minimal 3.4 ns adiabaticity overhead and $\\zeta_{on}/2\\pi = -26.9$ MHz for experimentally realistic parameters ($E_{J,1}/2\\pi = 11.5$ GHz, $E_{J,2}/2\\pi = 20.0$ GHz, $E_{J,C}/2\\pi = 0.4$ GHz per junction). Coherence-limited infidelity $\\approx 1.8\\times10^{-5}$ for $T_1 = 1$ ms; next-nearest-neighbor crosstalk remains $\\lesssim 60$ kHz and spectator ZZ crosstalk $\\lesssim 100$ kHz for realistic stray capacitances.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.03765",
+      "title": "Accelerating qubit reset through the Mpemba effect",
+      "authors": [
+        "Théo Lejeune",
+        "Miha Papič",
+        "John Goold",
+        "Felix C. Binder",
+        "François Damanet",
+        "Mattia Moroder"
+      ],
+      "abstract": "Passive qubit reset is a key primitive for quantum information processing, whereby qubits are initialized by allowing them to relax to their ground state through natural dissipation, without the need for active control or feedback. However, passive reset occurs on timescales that are much longer than those of gate operations and measurements, making it a significant bottleneck for algorithmic execution. Here, we show that this limitation can be overcome by exploiting the Mpemba effect, originally indicating the faster cooling of hot systems compared to cooler ones. Focusing on the regime where coherence times exceed energy relaxation times ($T_2 > T_1$), we propose a simple protocol based on a single entangling two-qubit gate that converts local single-qubit coherences into fast-decaying global two-qubit coherences. This removes their overlap with the slowest decaying Liouvillian mode and enables a substantially faster relaxation to the ground state. For realistic parameters, we find that our protocol can reduce reset times by up to $50\\%$ compared to standard passive reset. We analyze the robustness of the protocol under non-Markovian noise, imperfect coherent control and finite temperature, finding that the accelerated reset persists across a broad range of realistic error sources. Finally, we present an experimental implementation of our protocol on an IQM superconducting quantum processor. Our results demonstrate how Mpemba-like accelerated relaxation can be harnessed as a practical tool for fast and accurate qubit initialization.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.stat-mech"
+      ],
+      "published": "2026-02-03",
+      "score": 0.7024089086673141,
+      "similar_to": [
+        {
+          "title": "Fast Reset and Suppressing Spontaneous Emission of a Superconducting Qubit",
+          "id": "1003.0142",
+          "similarity": 0.8565585017204285
+        },
+        {
+          "title": "Erasure qubits: Overcoming the $T_1$ limit in superconducting circuits",
+          "id": "2208.05461",
+          "similarity": 0.8545985221862793
+        }
+      ],
+      "summary": {
+        "summary": "This work proposes and experimentally demonstrates an Mpemba-inspired protocol to accelerate passive qubit reset in the $T_2 > T_1$ regime by converting local single-qubit coherences into fast-decaying global two-qubit coherences via a single entangling gate. The protocol achieves up to 50% reduction in reset time compared to standard passive reset and remains robust under non-Markovian noise and imperfect control on an IQM superconducting processor.",
+        "motivation": "Passive reset bottlenecks quantum algorithm execution on timescales much longer than gates and measurements, and the problem is exacerbated in regimes with $T_2 > T_1$, where residual coherence persists after relaxation to ground state, causing unwanted correlations between shots.",
+        "method": "A controlled unitary (CNOT or $\\mathrm{C}R_y(\\pi)$) between the target qubit and an incoherent ancilla transforms local coherences $C$ into global two-qubit coherences with reduced amplitude $\\kappa = \\mathrm{Tr}[\\rho_2 V_0^\\dagger V_1]$, which decay faster and avoid the slowest Liouvillian mode $|l_2\\rangle\\rangle$.",
+        "result": "For realistic device parameters, the asymptotic speedup ratio $|\\mathrm{Re}(\\lambda_3)|/|\\mathrm{Re}(\\lambda_2)|$ yields speedups across a wide range of $T_1$, $T_2$ values; robustness is confirmed under non-Markovian dynamics, finite gate fidelity, and finite temperature; experimental implementation on IQM hardware validates the protocol's practical utility.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.03037",
+      "title": "Device variability of Josephson junctions induced by interface roughness",
+      "authors": [
+        "Yu Zhu",
+        "Félix Beaudoin",
+        "Hong Guo"
+      ],
+      "abstract": "As quantum processors scale to large qubit numbers, device-to-device variability emerges as a critical challenge. Superconducting qubits are commonly realized using Al/AlO$_{\\text{x}}$/Al Josephson junctions operating in the tunneling regime, where even minor variations in device geometry can lead to substantial performance fluctuations. In this work, we develop a quantitative model for the variability of the Josephson energy $E_{J}$ induced by interface roughness at the Al/AlO$_{\\text{x}}$ interfaces. The roughness is modeled as a Gaussian random field characterized by two parameters: the root-mean-square roughness amplitude $σ$ and the transverse correlation length $ξ$. These parameters are extracted from the literature and molecular dynamics simulations. Quantum transport is treated using the Ambegaokar--Baratoff relation combined with a local thickness approximation. Numerical simulations over $5,000$ Josephson junctions show that $E_{J}$ follows a log-normal distribution. The mean value of $E_{J}$ increases with $σ$ and decreases slightly with $ξ$, while the variance of $E_{J}$ increases with both $σ$ and $ξ$. These results paint a quantitative and intuitive picture of Josephson energy variability induced by surface roughness, with direct relevance for junction design.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-03",
+      "score": 0.6370820559741797,
+      "similar_to": [
+        {
+          "title": "Observation of Josephson Harmonics in Tunnel Junctions",
+          "id": "2302.09192",
+          "similarity": 0.8512516021728516
+        },
+        {
+          "title": "Electrical post-fabrication tuning of aluminum Josephson junctions at room temperature",
+          "id": "2602.20002",
+          "similarity": 0.8441110849380493
+        }
+      ],
+      "summary": {
+        "summary": "This work develops a quantitative model connecting interface roughness at Al/AlO$_x$ interfaces to Josephson energy variability in superconducting qubits by modeling roughness as a Gaussian random field and computing transport via the Ambegaokar–Baratoff relation. Monte Carlo simulations of 5,000 junctions show $E_J$ follows a log-normal distribution, with mean $E_J/h = 20.447 \text{ GHz}$ (for $\bar{d} = 1.0$ nm, $\bar{U} = 1.1$ eV, $\bar{\".pm",
+        "motivation": "Al/AlO$_x$/Al Josephson junctions are the core nonlinearity in transmon qubits, but small variations in barrier geometry cause exponentially sensitive fluctuations in critical current and qubit frequency; understanding and controlling this variability is essential for scaling beyond current 10$^2$–10$^3$ qubit processors toward fault-tolerant systems.",
+        "method": "Interface roughness is modeled as a Gaussian random field with RMS amplitude $\bar{\\sigma}$ and transverse correlation length $\bar{\\xi}$ (parameters from literature and molecular dynamics); quantum transport is computed using the Ambegaokar–Baratoff relation $I_c = \\pi\\Delta^2 e R_N$ combined with a local thickness approximation, applied to 5,000 junctions with varying barrier profiles.",
+        "result": "For $\\sigma = 0.85$ Å and $\\xi = 10$ nm, $E_J/h = 20.447 \\pm 2.326$ GHz; this translates to transmon qubit frequency $\\omega_{01}/2\\pi = 6.145 \\pm 0.364$ GHz (for $E_C/h = 0.25$ GHz). Both mean and variance of $E_J$ increase with $\\sigma$; variance increases sharply with $\\xi$ due to reduced self-averaging, while mean $E_J$ decreases slightly with larger $\\xi$ due to finite-size effects.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9517,
+    0.7024,
+    0.6371,
+    0.4739,
+    0.4233,
+    0.3827,
+    0.3682,
+    0.3098,
+    0.2806,
+    0.2701,
+    0.2494,
+    0.2179,
+    0.1967,
+    0.1892,
+    0.1367,
+    0.1324,
+    0.1323,
+    0.1306,
+    0.1267,
+    0.1244,
+    0.1144,
+    0.1051,
+    0.0979,
+    0.0944,
+    0.0938,
+    0.0932,
+    0.0927,
+    0.0906,
+    0.0868,
+    0.0868,
+    0.0759,
+    0.0659,
+    0.0651,
+    0.0542,
+    0.0529,
+    0.0505,
+    0.0471,
+    0.0465,
+    0.0407,
+    0.0405,
+    0.04,
+    0.0399,
+    0.038,
+    0.0314,
+    0.0298,
+    0.0297,
+    0.0297,
+    0.0282,
+    0.0281,
+    0.0278,
+    0.0269,
+    0.0257,
+    0.0253,
+    0.0244,
+    0.022,
+    0.0218,
+    0.0209,
+    0.0202,
+    0.0199,
+    0.0196,
+    0.0191,
+    0.0175,
+    0.0174,
+    0.0173,
+    0.0163,
+    0.016,
+    0.016,
+    0.0149,
+    0.0142,
+    0.0135,
+    0.0127,
+    0.0122,
+    0.012,
+    0.0117,
+    0.0105,
+    0.0098,
+    0.0093,
+    0.0091,
+    0.0085,
+    0.0055,
+    0.0054,
+    0.0051,
+    0.0041,
+    0.0027,
+    0.0022,
+    0.0021
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "The work demonstrates a superconducting phase-transition radio-frequency single-electron transistor (PTSET) that exploits a superconducting-to-normal phase transition in a high-kinetic-inductance TiN inductor to enhance charge sensing sensitivity for semiconductor spin qubits. The device achieves one order of magnitude improvement in the large-signal regime and two orders of magnitude in the small-signal regime compared to conventional rfSETs.",
+  "motivation": "Semiconductor spin qubits require fast and accurate charge readout to enable rapid error correction cycles, and phase-transition sensors offer a route to enhanced sensitivity by operating near a material phase transition where small perturbations produce large macroscopic changes.",
+  "method": "A 22-nm CMOS integrated circuit with a TiN superconducting thin film (3 nm thick, $L_K = 122$ nH, $T_c = 1.1$ K) tuned via 0.6 T out-of-plane magnetic field to $I_c \\sim 33$ nA is connected in series with a silicon-on-insulator FET-based SET. Charge sensing events modulate the tunneling current through the SET to trigger the phase transition, abruptly changing the circuit impedance from inductive to resistive ($R_{\\mathrm{norm}} = 75$ kΩ).",
+  "result": "In the small-signal regime typical of spin readout, minimum integration time $t_{\\mathrm{min}}$ drops by nearly two orders of magnitude when operating across the phase transition (at $V_{\\mathrm{DS}} = -7.5$ mV) compared to conventional rfSET mode; theoretical modeling predicts SNR improvement factors exceeding 350 for well-overcoupled designs ($\\beta = 10$), with recovery times estimated at 10–100 ns based on TiN superconducting gap.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

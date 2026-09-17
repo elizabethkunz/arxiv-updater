@@ -1,0 +1,8 @@
+{
+  "summary": "A cascaded microwave-to-microwave (M2M) and microwave-to-optical (M2O) transduction system demonstrates continuous frequency coverage from 5.0 to 8.5 GHz using flux-tunable NbN kinetic-inductance resonators, enabling optical readout of superconducting qubits detuned by gigahertz-scale offsets from the M2O native resonance. Optical readout of a qubit at 7.339 GHz (1.7 GHz detuned from the M2O resonance at 5.669 GHz) yields $T_1 = 28.7 ± 3.1$ µs and $T_2 = 2.6 ± 0.3$ µs, consistent with microwave readout measurements.",
+  "motivation": "State-of-the-art M2O transducers operate efficiently only over narrow frequency spans (~10 MHz), complicating deployment with heterogeneous superconducting processors detuned by several gigahertz, thus limiting practical quantum networking applications.",
+  "method": "An electro-optic M2O transducer (AlN double-ring resonator with 50 nm NbN microwave resonator on sapphire) is cascaded with a multimode M2M frequency converter (5 nm NbN meander resonator with 76 MHz free spectral range on silicon). Independent flux tuning of both stages enables deterministic frequency alignment, with the M2M stage (30 dB parametric gain, 67% internal conversion efficiency) bridging arbitrary input frequencies to the M2O operating band.",
+  "result": "The combined M2M–M2O system achieves M2O conversion efficiency ~$10^{-3}$ at 0 dBm optical pump power across the 5.0–8.5 GHz band, with M2M-mediated optical qubit readout showing only modest degradation compared to conventional microwave readout, validating cascaded conversion for frequency-agile superconducting quantum networks.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

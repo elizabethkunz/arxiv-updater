@@ -1,0 +1,8 @@
+{
+  "summary": "An improved optical biasing scheme for SNSPDs using a cryogenic InGaAs-InP photodiode as a local bias source is demonstrated, achieving performance comparable to electrical biasing with 80.7% system detection efficiency and 57.5 ps timing jitter. By screening stray photons from the photodiode, an ultra-low intrinsic dark count rate of $10^{-4}$ cps is obtained, establishing cryogenic-PD-based optical biasing as a viable low-noise alternative for all-photonic SNSPD systems.",
+  "motivation": "Electrical biasing of SNSPDs introduces noise and timing jitter through wiring and control electronics; optical biasing with a cryogenic photodiode offers a path toward low-noise, all-photonic architectures for quantum photonics applications.",
+  "method": "An InGaAs-InP photodiode operating at ~2.3 K is used to generate stable photocurrent under illumination from an external light source, with stray photon leakage blocked through careful screening to suppress background dark counts in the SNSPD.",
+  "result": "System detection efficiency of 80.7%, background dark count rate of 32.6 cps, minimum timing jitter of 57.5 ps, and intrinsic dark count rate of $10^{-4}$ cps—matching electrical biasing performance with significantly reduced electronic noise coupling.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

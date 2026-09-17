@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates that polaron formation due to qubit-environment entanglement limits dissipative reset fidelity in transmon qubits, and shows this can be overcome by time-dependent control of the system-environment coupling. Optimized smooth switching protocols achieve excited-state populations of $10^{-6}$ in 10 ns at zero temperature, with achievable protocols reaching $10^{-6.5}$.",
+  "motivation": "Dissipative reset is crucial for superconducting qubits, but non-Markovian effects limit speed and fidelity; understanding and controlling system-environment entanglement beyond the Born-Markov approximation offers a path to faster, higher-fidelity reset.",
+  "method": "The authors use exact tensor-network TEMPO simulations and the time-dependent variational principle (TDVP) applied to the polaron ansatz for the spin-boson model with Ohmic spectral density ($\\alpha = 0.03$, $\\omega_q/2\\pi = 5$ GHz, $\\omega_c = \\omega_q$) to study time-dependent coupling protocols $u(t)$. Optimal decoupling functions are found via linear-quadratic regulator control theory.",
+  "result": "Linear switching reduces residual population by two orders of magnitude; smoother protocols with exponent $\\lambda = 2$ achieve $P_+ \\approx 10^{-6.5}$ at zero temperature in $\\sim 10$ ns, compared to $P_+ \\sim 10^{-3}$ over hundreds of nanoseconds in current experiments, limited ultimately by thermal population $\\sim 10^{-5}$ at 20 mK.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

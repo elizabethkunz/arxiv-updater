@@ -1,0 +1,304 @@
+{
+  "date": "2026-06-05",
+  "n_fetched": 90,
+  "papers": [
+    {
+      "id": "2606.06455",
+      "title": "Breakeven demonstration of quantum low-density parity-check codes",
+      "authors": [
+        "Edwin Tham",
+        "Michael L. Goldman",
+        "Shantanu Debnath",
+        "Ashay N. Patel",
+        "Jyothi Saraladevi",
+        "Jason Nguyen",
+        "Erik Nielsen",
+        "Neal Pisenti",
+        "Kenneth Wright",
+        "John Gamble",
+        "Nicolas Delfosse"
+      ],
+      "abstract": "High-rate quantum low-density parity-check (qLDPC) codes are a leading candidate for fault-tolerant quantum computing. They feature higher encoding rates than planar alternatives such as the surface code, but their implementation often entails significant hardware hurdles like the need for long-range couplers. We leverage the flexibility of a trapped-ion quantum computer to demonstrate nine quantum error-correcting codes with starkly different qubit connectivity requirements on a single device without any hardware reconfiguration. These experiments span three families of quantum error-correcting codes: qLDPC codes, topological codes, and concatenated codes. With a qLDPC code encoding 4 logical qubits into 18 physical qubits, we achieve a logical error rate up to $9\\times$ better than a previous demonstration of a similar code on superconducting solid-state qubits. Moreover, our implementation exhibits breakeven performance, with some instances achieving qubit lifetimes comparable to or slightly exceeding that of our trapped-ion qubits. We use a novel implementation of the optical-metastable-ground (OMG) architecture for addressable mid-circuit measurement and reset, which enables us to perform these experiments without any ion transport or dedicated coolant ions, requirements that typically consume a large fraction of the runtime or ion count of trapped-ion quantum computers.",
+      "categories": [
+        "quant-ph",
+        "cs.IT"
+      ],
+      "published": "2026-06-04",
+      "score": 0.7808440031945182,
+      "similar_to": [
+        {
+          "title": "Breakeven demonstration of quantum low-density parity-check codes",
+          "id": "2606.06455",
+          "similarity": 0.9979699850082397
+        },
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.8854510188102722
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates breakeven quantum error correction with five distinct high-rate qLDPC codes on a 40-ion $^{133}$Ba trapped-ion system, achieving logical error rates $9\\times$ better than prior superconducting demonstrations and logical qubit lifetimes comparable to physical qubits ($3.95 \\pm 0.68$ s vs. $3.84 \\pm 0.48$ s). The key innovation is a full implementation of the optical-metastable-ground (OMG) architecture enabling mid-circuit measurement without ion transport or dedicated coolant ions, providing sufficient flexibility to implement three code families (qLDPC, topological, concatenated) with different connectivity requirements on a single device without reconfiguration.",
+        "motivation": "qLDPC codes promise higher encoding rates than surface codes but are notoriously difficult to implement due to non-local two-qubit gate connectivity requirements; previous demonstrations required hardware specifically engineered for a single code instance.",
+        "method": "All-to-all steerable Raman beams address any ion pair in a stationary chain without transport. The OMG architecture uses phase-coherent shuttling within a single ion between the ground $6^2S_{1/2}$ and metastable $5^2D_{5/2}$ manifolds to enable parallel mid-circuit measurement and reset of up to 16 ancillae simultaneously while sympathetically cooling the chain, eliminating the need for dedicated coolant species.",
+        "result": "For the BB5 $[[18,4,3]]$ code: $p_L = 1.95 \\pm 0.39 \\times 10^{-2}$ (X basis) and $1.10 \\pm 0.15 \\times 10^{-2}$ (Z basis) per cycle per qubit, giving $T_X = 1.06 \\pm 0.18$ s and $T_Z = 1.90 \\pm 0.23$ s. The GB5 $[[26,2,5]]$ code achieved $T_{\\mathcal{N}} = 3.95 \\pm 0.68$ s, exceeding the physical lifetime by under 3% accounting for error bars.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.06069",
+      "title": "Forbidden transitions in superconducting artificial atoms",
+      "authors": [
+        "Alberto Del Ángel",
+        "Théo Sépulcre",
+        "Ricardo Gutiérrez-Jáuregui",
+        "Anton Frisk Kockum"
+      ],
+      "abstract": "Artificial atoms built from Josephson junctions have become a powerful tool to explore the limits of quantum optics due to their strong coupling to electromagnetic fields and their sensitivity to changes at the single-photon level. This sensitivity to quantum fluctuations complements their metrological and computational use, which are based on the precise oscillating frequency of the underlying supercurrents. We present here a theory for Josephson junctions immersed in electromagnetic fields where focus is shifted from temporal correlations and towards spatial ones. Unlike the commonly used circuit and black-box descriptions, our work is based on a microscopic model that enables systematically accounting for the effect of the spatial and vectorial profile of an electromagnetic field over a junction. As an example of the interactions that emerge in such a setup, we investigate the possibility of driving a junction via a quadrupole transition, using typical experimental parameters in existing devices. With the transition being dependent on the gradient of the electric field -- rather than its intensity -- the junction can be excited in a region where the electric field vanishes.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-04",
+      "score": 0.7049528886797483,
+      "similar_to": [
+        {
+          "title": "Characterization of drive-induced unwanted state transitions in superconducting circuits",
+          "id": "2506.24070",
+          "similarity": 0.852694034576416
+        },
+        {
+          "title": "Circuit Quantum Electrodynamics: Coherent Coupling of a Single Photon to a Cooper Pair Box",
+          "id": null,
+          "similarity": 0.8489025235176086
+        }
+      ],
+      "summary": {
+        "summary": "This work develops a microscopic theory of Josephson junctions coupled to structured electromagnetic fields, going beyond lumped-circuit models by explicitly accounting for spatial and vectorial field profiles. As a key example, the authors demonstrate theoretically that a junction can be driven via a quadrupole transition—sensitive to field gradients rather than intensity—enabling excitation in regions where the electric field vanishes.",
+        "motivation": "Recent improvements in fabrication and circuit placement techniques have made the polarization and spatial profile of electromagnetic fields relevant to superconducting artificial atoms, but standard circuit theory ignores these effects and fails near boundaries where fields strongly mix, motivating a microscopic model that properly separates field and junction degrees of freedom.",
+        "method": "Starting from the Josephson relations and a path-integral derivation of a minimal-coupling Hamiltonian, the authors derive a multipolar Hamiltonian (Eq. 7) that explicitly couples the junction's charge imbalance and phase difference to the electric and magnetic field components and their gradients. They then apply a static magnetic field $B \\approx 5$ G to weakly mix the fundamental and first excited Swihart modes of a short Nb or Al junction, generating a small quadrupole moment ($\\sin\\alpha \\approx 10^{-3}$) on the lower dressed state.",
+        "result": "For realistic junction parameters ($L_x = 10$ µm, $\\lambda_J = 200$ µm, $\\omega_0/2\\pi = 7$ GHz in Nb), the ratio of maximal quadrupole to dipole couplings in a coplanar waveguide resonator is $R = 2\\pi \\times 10^{-3}$; quadrupole-driven excitation becomes observable with a low-loss resonator, opening new control paths insensitive to electric field intensity at the antinode but sensitive to its gradient at the node where $E = 0$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.06062",
+      "title": "Barbell Codes: qLDPC Codes for Superconducting Quantum Hardware",
+      "authors": [
+        "Shin Ho Choe",
+        "Vincent Steffan",
+        "Florian Vigneau",
+        "Pedro Parrado-Rodríguez",
+        "Hsiang-Sheng Ku",
+        "Martin Leib",
+        "Francisco Revson Fernandes Pereira",
+        "Fedor Šimkovic"
+      ],
+      "abstract": "The major challenge on the way to fault-tolerant quantum computing comes from the insufficient quality of hardware components and the difficulty of scaling their number without further compromising fidelity. Quantum Low-Density Parity-Check (qLDPC) codes offer a promising solution by encoding logical qubits with low overhead and at a comparatively high code distance. However, it remains an open question how to scalably implement efficient qLDPC codes on fixed-connectivity quantum chips without increasing hardware complexity to enable the non-local interactions in their underlying QEC cycles. We resolve this challenge for the first time by introducing a family of qLDPC \"barbell\" codes accompanied by a realistic chip layout that natively supports all required two-qubit interactions. Crucially, the hardware complexity required to implement barbell codes remains constant as code distance increases. We provide a detailed investigation into the feasibility of all required hardware components and simulate a specific family of barbell codes against circuit-level noise. We find that, with a modest overhead of $<30$ data qubits per logical qubit, barbell codes can preserve information at a physical noise strength of $10^{-4}$ for several trillion QEC cycles. Simulations of logical multi-Pauli measurements, performed with circuits tailored to the chip, yield similar logical performance per QEC round, indicating that entangling gates between logical qubits in barbell codes can be realized fault-tolerantly.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-04",
+      "score": 0.6555370549497059,
+      "similar_to": [
+        {
+          "title": "Breakeven demonstration of quantum low-density parity-check codes",
+          "id": "2606.06455",
+          "similarity": 0.8963727951049805
+        },
+        {
+          "title": "Multivariate Bicycle Codes",
+          "id": "2406.19151",
+          "similarity": 0.8914366960525513
+        }
+      ],
+      "summary": {
+        "summary": "Barbell codes are qLDPC codes designed for superconducting quantum processors using a six-qubit star lattice plus near-local coupler architecture, achieving up to 8× qubit overhead reduction compared to surface codes while maintaining constant hardware complexity with increasing code distance. Circuit-level noise simulations demonstrate that distance-14 barbell codes preserve information at physical error rates above $10^{-4}$ for several trillion QEC cycles, with logical error rates comparable to surface codes of the same distance.",
+        "motivation": "Current qLDPC codes require non-local interactions difficult to implement on fixed-connectivity superconducting chips without excessive crosstalk and multi-layer routing, preventing their practical deployment despite superior overhead scaling.",
+        "method": "Barbell codes are constructed as a variant of tile codes where $X$ and $Z$ stabilizers are paired and measured via superdense syndrome extraction using near-local couplers on a hexagonal lattice; all near-local couplers are parallel with fixed length independent of code distance, routing to a single hardware layer with hardware complexity $C_\\mathrm{hw} \\approx 1.65$.",
+        "result": "At $p = 10^{-3}$, a distance-11 barbell code with 400 data qubits encodes 16 logical qubits with logical error rate $8.8 \\times 10^{-7}$ per round, compared to $9.6 \\times 10^{-4}$ for distance-5 surface code patches using the same qubit count; logical measurements show similar per-round error rates, enabling fault-tolerant multi-qubit gates via lattice surgery.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.06152",
+      "title": "2.4 GHz Flip-flop Device within Nonequilibrium Superconducting Diode",
+      "authors": [
+        "Xiangyu Bi",
+        "Hongyi Li",
+        "Aoshen Yang",
+        "Yuqiang Fang",
+        "Ganyu Chen",
+        "Shichong Yang",
+        "Yicheng Shen",
+        "Qizheng Sun",
+        "Junwei Huang",
+        "Wei Jiang",
+        "Da Wang",
+        "Fuqiang Huang",
+        "Haijun Zhang",
+        "Qianghua Wang",
+        "Hongtao Yuan"
+      ],
+      "abstract": "Superconducting diode effect exhibits asymmetric critical supercurrent and has profound implications for condensed matter physics. The technical appeals of such superconducting diodes are their ultrahigh on-off ratio and diode efficiency for superconducting electronics owing to the dissipationless supercurrent therein. However, realizing superconducting diode operation at high working frequency, which is a key requirement for practical applications, remains elusive and challenging. Here, we demonstrate a polarity-controllable superconducting diode with non-equilibrium Josephson junction and its edge-triggered flip-flop operation at a high frequency up to 2.4 GHz, within a van der Waals superconductor 2M-WS$_2$. By simply tuning the thickness of superconducting 2M-WS$_2$ nanoflakes to engineer inversion asymmetry in the junction, we achieve a high diode efficiency of 67% and an on-off ratio exceeding 10$^5$. Importantly, the pulse width and duty cycle of output pulse signals in such superconducting diode flip-flop devices can be controlled in a broadband frequency range crossing 12 orders of magnitude. Theoretical analysis reveals that the non-equilibrium dynamic nature of supercurrent in these Josephson junctions enables such a high diode operating frequency and the polarity control of supercurrent. The 2.4 GHz non-equilibrium Josephson diode developed here provides a promising platform for advanced superconducting logic circuits and broadband telecommunication applications.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-06-04",
+      "score": 0.5606961737287495,
+      "similar_to": [
+        {
+          "title": "Electrical post-fabrication tuning of aluminum Josephson junctions at room temperature",
+          "id": "2602.20002",
+          "similarity": 0.8198689222335815
+        },
+        {
+          "title": "An All-van-der-Waals Qubit",
+          "id": "2609.14230",
+          "similarity": 0.8089826703071594
+        }
+      ],
+      "summary": {
+        "summary": "A nonequilibrium Josephson junction in 2M-WS$_2$ van der Waals superconductor demonstrates polarity-controllable superconducting diode action with edge-triggered flip-flop operation up to 2.4 GHz. The device achieves 67% diode efficiency, on-off ratio exceeding $10^5$, and tunable pulse characteristics across 12 orders of magnitude frequency range via thickness-engineered inversion asymmetry.",
+        "motivation": "Realizing superconducting diodes at high operating frequencies remains a key challenge despite their attractive dissipationless transport and ultrahigh on-off ratios for superconducting electronics and logic applications.",
+        "method": "The authors fabricated asymmetric Josephson junctions in 2M-WS$_2$ nanoflakes by tuning thickness to engineer inversion asymmetry, enabling polarity control and nonequilibrium supercurrent dynamics that support GHz-frequency switching.",
+        "result": "The flip-flop device operates at 2.4 GHz with 67% diode efficiency, $>10^5$ on-off ratio, and output pulse width and duty cycle controllable across a 12-order-magnitude broadband frequency range via gate tuning.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.05815",
+      "title": "Engineered dissipation for faster adiabatic state preparation",
+      "authors": [
+        "Yuanyang Zhou",
+        "Biao Wu"
+      ],
+      "abstract": "Adiabatic state preparation is often slowed by nonadiabatic leakage near small spectral gaps. We propose an engineered dissipative protocol that uses a filtered reservoir to induce predominantly downward transitions in the instantaneous energy eigenbasis while leaving the instantaneous ground state dark. The leaked population generated by nonadiabatic driving is therefore continuously relaxed back toward the low-energy sector. An effective avoided-crossing analysis shows that in the regime where the engineered relaxation strength is much larger than the minimum gap, the runtime scaling can improve from the closed-system behavior $\\mathcal{O}(Δ^{-2})$ to $\\mathcal{O}(Δ^{-1})$ Finite-temperature upward transitions introduce a thermal error floor, but the enhancement survives when this heating rate remains below the target error tolerance. Numerical results show improved ground-state preparation over closed-system annealing. We also discuss a possible superconducting-circuit implementation using structured bosonic reservoirs.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-04",
+      "score": 0.5567981193667384,
+      "similar_to": [
+        {
+          "title": "On-demand driven dissipation for cavity reset and cooling",
+          "id": "2310.16785",
+          "similarity": 0.8678925037384033
+        },
+        {
+          "title": "Erasure qubits: Overcoming the $T_1$ limit in superconducting circuits",
+          "id": "2208.05461",
+          "similarity": 0.8441141247749329
+        }
+      ],
+      "summary": {
+        "summary": "Engineered dissipation using a filtered reservoir that induces downward transitions in the instantaneous energy eigenbasis while keeping the ground state dark can accelerate adiabatic state preparation. This directional cooling mechanism improves runtime scaling from $\\mathcal{O}(\\Delta^{-2})$ to $\\mathcal{O}(\\Delta^{-1})$ in the strong-relaxation regime, with finite-temperature thermal excitations introducing an error floor that is surmountable when heating remains below target tolerance.",
+        "motivation": "Adiabatic state preparation is limited by nonadiabatic leakage near small spectral gaps, requiring runtime scaling $\\mathcal{O}(\\Delta^{-2})$ to suppress excitation to error tolerance $\\varepsilon$. Reservoir engineering suggests that carefully designed dissipation can stabilize useful quantum states; this work exploits this principle to remove nonadiabatic excitations as they are generated rather than requiring the system to avoid them.",
+        "method": "A filtered Lindblad dissipator with engineered jump operators $K(s) = \\sum_{m<n} \\kappa_{mn}(s)|m(s)\\rangle\\langle n(s)|$ induces only downward transitions in the instantaneous eigenbasis, keeping the ground state dark. Effective two-level analysis near avoided crossings shows the quasi-steady excited-state population becomes $p_{\\max} \\approx \\dot{\\theta}^2/(4\\Delta^2 + \\Gamma^2)$, and finite-temperature effects including detailed balance are analyzed systematically.",
+        "result": "Numerical simulations on transverse-field Ising chains ($N=10$, $J=1$, $h=0.3$, $\\Gamma=3$) show the dissipative protocol reaches $P_{GS} \\geq 0.90$ at substantially shorter annealing time than closed-system evolution; random spin-glass instances ($N=10$, $\\Gamma=8$) averaged over 10 disorder realizations confirm the improvement persists despite disordered spectra. A superconducting-circuit implementation using structured multi-mode bosonic reservoirs and Purcell filtering is outlined to achieve the required asymmetric noise spectrum.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.7808,
+    0.705,
+    0.6555,
+    0.5607,
+    0.5568,
+    0.4416,
+    0.4147,
+    0.3965,
+    0.3862,
+    0.3666,
+    0.3021,
+    0.2957,
+    0.2945,
+    0.2118,
+    0.1698,
+    0.1669,
+    0.1486,
+    0.1224,
+    0.1205,
+    0.1153,
+    0.1024,
+    0.0893,
+    0.0883,
+    0.0879,
+    0.0843,
+    0.0842,
+    0.0756,
+    0.0748,
+    0.0701,
+    0.0636,
+    0.0628,
+    0.0609,
+    0.0584,
+    0.0563,
+    0.0472,
+    0.0466,
+    0.0429,
+    0.0408,
+    0.0388,
+    0.0382,
+    0.0374,
+    0.0371,
+    0.0365,
+    0.036,
+    0.0326,
+    0.0313,
+    0.031,
+    0.0298,
+    0.0298,
+    0.0292,
+    0.0285,
+    0.0275,
+    0.0274,
+    0.0269,
+    0.0268,
+    0.0262,
+    0.0247,
+    0.0245,
+    0.0225,
+    0.0212,
+    0.0197,
+    0.0192,
+    0.0184,
+    0.0171,
+    0.0171,
+    0.0158,
+    0.0153,
+    0.014,
+    0.013,
+    0.013,
+    0.0129,
+    0.0128,
+    0.0124,
+    0.0119,
+    0.0114,
+    0.0102,
+    0.0084,
+    0.0068,
+    0.0067,
+    0.0062,
+    0.006,
+    0.0057,
+    0.0054,
+    0.0051,
+    0.0048,
+    0.0047,
+    0.0043,
+    0.0036,
+    0.0028,
+    0.0018
+  ]
+}

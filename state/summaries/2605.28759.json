@@ -1,0 +1,8 @@
+{
+  "summary": "A hybrid method combining microwave stripline resonator measurements with COMSOL finite-element simulations is developed to extract absolute penetration depth values from superconducting thin films over wide temperature ranges. The technique is demonstrated on NbN films using variable thicknesses and extended to lower-$T_c$ materials via a flip-film geometry with a NbN resonator separated by Mylar dielectric.",
+  "motivation": "Kinetic-inductance microstrip resonators are sensitive probes of superconducting electrodynamics at microwave frequencies, but extracting quantitative absolute penetration depth from resonator measurements has remained problematic.",
+  "method": "Resonator frequency shifts measured as functions of temperature are combined with electromagnetic simulations in COMSOL to determine $\\lambda(T)$ absolutely; for lower-$T_c$ materials, a sample is placed above a NbN resonator with thin Mylar spacing to create a coupled structure.",
+  "result": "The method provides non-destructive, high-sensitivity characterization of penetration depth across diverse superconducting thin films without requiring prior knowledge of material parameters.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

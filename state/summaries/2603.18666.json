@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates a single-atom parametric amplifier (SAPA) based on a GaAs double quantum dot (DQD) integrated with a superconducting NbTiN microwave cavity ($\\omega_r / 2\\pi = 5.198$ GHz, $\\kappa / 2\\pi = 14$ MHz), achieving a parametric gain exceeding 11 dB via four-wave mixing. When one DQD operates as amplifier for readout of a second DQD, the signal-to-noise ratio improves by approximately twofold (SNR enhanced from 5.5 to 10.9).",
+  "motivation": "Conventional parametric amplifiers (JPAs, TWPAs) suffer from insertion losses, limited tunability, and magnetic field sensitivity, motivating integration of low-noise amplification directly on-chip with quantum devices.",
+  "method": "Two GaAs gate-defined DQDs are coupled to a high-impedance cavity ($Z_r = 2$ k$\\Omega$) with coupling strength $g_c^{(1)} / 2\\pi \\approx 60$ MHz and cooperativity $C \\approx 10$. Parametric amplification is activated by applying a pump tone ($P_{d,1} = -68.3$ dBm) to one DQD near resonance, exploiting the DQD nonlinearity for signal amplification at a probe frequency detuned by $\\Delta\\omega = 2\\pi \\times 5$ kHz.",
+  "result": "Effective gain $G_e = 4.22$ dB and parametric gain $G_p = 11.28$ dB are achieved; readout of a second DQD shows signal extinction $\\delta A$ increasing from 0.3 to 1.0 and SNR improving from 5.5 to 10.9 (approximately 2$\\times$ enhancement). The added noise corresponds to $T_{\\mathrm{eff}} \\approx 0.3$ K ($\\approx 1.5$ photon quanta).",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

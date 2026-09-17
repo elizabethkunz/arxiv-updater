@@ -1,0 +1,247 @@
+{
+  "date": "2026-07-27",
+  "n_fetched": 76,
+  "papers": [
+    {
+      "id": "2607.22294",
+      "title": "Substrate-metal interface engineering enhances TaN/Ta thin film superconducting resonator performance",
+      "authors": [
+        "Moritz Singer",
+        "Harsh Gupta",
+        "Benedikt Schoof",
+        "Elena Willinger",
+        "Anton Orekhov",
+        "Alexandra Schewski",
+        "Samuil Kostadinov",
+        "Philip Constantin Schneider",
+        "Marc Tornow"
+      ],
+      "abstract": "Tantalum has been demonstrated as a promising material for superconducting qubits. However, comparatively little attention has been given to its nitrides. Tantalum nitride exhibits a range of stoichiometries, resulting in a variety of material properties, including both superconducting and non-superconducting phases. Owing to this versatility, tantalum nitrides can serve multiple purposes in superconducting qubits: as seed layers for alpha-Ta growth, as a superconducting base material and as a non-superconducting barrier in the Josephson junction. In this study, we explore the performance of superconducting TaN and Ta thin film combinations on silicon substrates in terms of internal quality factor Qi. We find that standalone TaN films exhibit Qi values of about 1.5x10^5 at 100mK in the single-photon regime. Surprisingly, a resonator made from Ta grown on a few-nanometers-thick TaN seed layer yields largely the same performance. However, adding an additional, few-nanometers-thick Ta buffer layer between the Si substrate and this TaN seed layer enhances Qi significantly up to 5.9x10^5. Supporting transmission electron microscopy measurements reveal nitrogen accumulation and structural disorder at the TaN-Si interface, while this interfacial modification is suppressed when the Ta buffer layer is introduced. The observed improvement in resonator performance is consistent with a reduction of interface-related two-level system losses and strongly supports the hypothesis that controlling the substrate-metal interface is pivotal for the performance of superconducting qubit circuitry.",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.supr-con",
+        "quant-ph"
+      ],
+      "published": "2026-07-24",
+      "score": 0.909698157978733,
+      "similar_to": [
+        {
+          "title": "Reducing TLS loss in tantalum CPW resonators using titanium sacrificial layers",
+          "id": "2601.16369",
+          "similarity": 0.8816792964935303
+        },
+        {
+          "title": "Tantalum as a base material for superconducting integrated circuits",
+          "id": "2606.13750",
+          "similarity": 0.8740642070770264
+        }
+      ],
+      "summary": {
+        "summary": "Superconducting resonators made from Ta/TaN bilayers on Si substrates achieve $Q_i = 5.9 \\times 10^5$ at 100 mK when a few-nanometer Ta buffer layer separates the TaN seed layer from the substrate, a 4× improvement over standalone TaN films. TEM imaging shows that the Ta buffer suppresses nitrogen accumulation and structural disorder at the TaN-Si interface, reducing interface-related two-level system losses.",
+        "motivation": "Tantalum nitride offers tunable stoichiometry enabling multiple roles in superconducting qubits—as seed layers, superconducting films, and Josephson junction barriers—but interfacial quality in substrate-coupled Ta/TaN structures remains poorly characterized.",
+        "method": "Planar resonators using Ta and TaN thin films of nanometer thickness were fabricated on Si substrates in various layer stacks, measured in the single-photon regime at 100 mK, and characterized with transmission electron microscopy to correlate interface structure with $Q_i$ performance.",
+        "result": "The Ta/TaN/Ta/Si stack achieved $Q_i = 5.9 \\times 10^5$ compared to $1.5 \\times 10^5$ for bare TaN, with TEM confirming that the Ta buffer layer eliminates nitrogen diffusion and interfacial disorder at the TaN-Si boundary.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.22265",
+      "title": "Low loss superconducting resonators enabled by aluminum microstructural engineering and dielectric trimming",
+      "authors": [
+        "Mahmoud Almansouri",
+        "Umar T. F. Alhuwaymel",
+        "Ibraheem AlYousef",
+        "Albaraa Shafi",
+        "Abdullah Albogime",
+        "Igor Getmanov",
+        "Ahmed Hajr",
+        "Atif Shamim"
+      ],
+      "abstract": "Material losses in superconducting circuits fundamentally limit qubit coherence times and resonator quality factors. Most research efforts focus on mitigating losses at circuit interfaces, including metal--substrate, substrate--air, and metal--air interfaces. However, the correlation between TLS and non-TLS losses with the intrinsic properties of the superconducting metal and the dielectric edge smoothness is not well studied. In this work, we link the aluminum film grain size to non-TLS losses and the dielectric trimming profile and roughness to TLS loss; both loss mechanisms are subsequently mitigated. To reduce metal-related losses, we engineer the aluminum microstructure by heating during deposition, increasing grain size and reducing grain boundary density. Beyond mitigating metal losses, we introduce a two-step etching technique, Tropic etching, to suppress dielectric TLS loss by producing an ultra-smooth silicon surface with minimal defects and redeposition. These results lay out the fabrication pathway for aluminum resonators with lower loss, demonstrating two-orders-of-magnitude improvement in quality factor from $6\\times10^{4}$ to $2.3\\times10^{6}$. Since aluminum is the basis for most high-coherence Josephson junctions and dielectric edges are inherent to all common device geometries, the improvements in aluminum microstructure and edge profiling, presented here, can enhance the performance of superconducting quantum devices.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-24",
+      "score": 0.8813130249713006,
+      "similar_to": [
+        {
+          "title": "Comparison of Dielectric Loss in Titanium Nitride and Aluminum Superconducting Resonators",
+          "id": "2007.07338",
+          "similarity": 0.8861645460128784
+        },
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.8832195401191711
+        }
+      ],
+      "summary": {
+        "summary": "Aluminum grain-size engineering and silicon dielectric-edge trimming both suppress loss in superconducting coplanar waveguide resonators, improving quality factors from $6 \\times 10^4$ to $2.3 \\times 10^6$ on high-resistivity silicon. Substrate heating during $200$ nm aluminum deposition increases grain size to $1.2$ µm and reduces non-TLS loss, while a two-step \"Tropic\" etch (SF$_6$ followed by CHF$_3$) smooths silicon surfaces and suppresses TLS loss.",
+        "motivation": "Material losses in superconducting circuits limit qubit $T_1$ and resonator quality factors; understanding how intrinsic superconductor microstructure and dielectric-edge roughness drive TLS and non-TLS loss mechanisms has remained poorly characterized.",
+        "method": "Aluminum films ($200$ nm) were deposited at four substrate temperatures ($25$–$300$ °C) on high-resistivity silicon ($\\rho \\geq 10$ kΩ·cm), with grain sizes characterized by AFM and cross-sectional STEM-EDS. Silicon etching variants (unetched, anisotropic CHF$_3$, and hybrid SF$_6$/CHF$_3$ Tropic profiles) were applied to $\\lambda/4$ CPW resonators, with single-photon quality factors measured at $10$ mK via vector-network-analyzer reflection.",
+        "result": "Non-TLS loss decreased from $Q_i \\approx 4 \\times 10^4$ to $4.2 \\times 10^5$ with $300$ °C deposition (grain boundaries reduced, no oxide detected at boundaries by EDS); TLS loss further suppressed by dielectric trimming, reaching $Q_i = 2.3 \\times 10^6$ with the smooth-sidewall Stropic profile, operating at $6.5$–$8.1$ GHz where TLS loss is most pronounced.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.22138",
+      "title": "Mitigating Capacitive Loading Enables Fast Two-Qubit Gates in Highly Connected Fluxonium Quantum Processors",
+      "authors": [
+        "Quan Guan",
+        "Guo Xuan Chan",
+        "Xu Dou",
+        "Chunqing Deng",
+        "Lijing Jin"
+      ],
+      "abstract": "Fluxonium qubits combine long coherence times with strong anharmonicity, making them attractive for scalable superconducting quantum processors. Recent experiments have demonstrated high-fidelity two-qubit gates and multi-qubit entanglement in one-dimensional and connectivity-four fluxonium processors, motivating their extension to highly connected two-dimensional (2D) architectures. A central challenge in this extension is to achieve strong coupling to multiple circuit elements while preserving the finite capacitance budget of fluxonium qubits, which constrains the attainable qubit-qubit effective coupling strength and, consequently, two-qubit gate performance. Here, we establish a unified theoretical framework that identifies the connectivity-dependent upper bound on capacitive coupling and quantifies its reduction by distinct parasitic-capacitance channels, applicable across both fluxonium and transmon regimes. We show that pad-to-ground loading is primarily geometry limited and can be substantially suppressed through qubit-pad engineering, whereas inter-pad loading is ultimately constrained by parasitic capacitances of Josephson junctions and Josephson junction arrays. Building on these insights, we formulate practical design principles and numerically demonstrate two-qubit gates as fast as 27 ns and leakage-induced infidelity below $10^{-3}$ under representative fabrication variations in 2D fluxonium architectures. These results establish a quantitative framework for understanding and mitigating capacitive loading, suggesting that it does not impose a fundamental performance limit on highly connected fluxonium processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-24",
+      "score": 0.8544218472818784,
+      "similar_to": [
+        {
+          "title": "Scalable Fluxonium Quantum Processors via Tunable-Coupler Architecture",
+          "id": "2604.13363",
+          "similarity": 0.9022653698921204
+        },
+        {
+          "title": "The high-coherence fluxonium qubit",
+          "id": "1810.11006",
+          "similarity": 0.8939716815948486
+        }
+      ],
+      "summary": {
+        "summary": "This work establishes a quantitative theoretical framework for understanding capacitive loading in superconducting circuits, deriving analytical relations between finite qubit capacitance budgets and achievable qubit-coupler coupling strengths. The framework identifies pad-to-ground participation as geometrically optimizable and inter-pad participation as limited by Josephson-junction parasitic capacitance, enabling design principles that achieve two-qubit MAP gates as fast as 27 ns with leakage infidelity below $10^{-3}$ in highly connected 2D fluxonium architectures.",
+        "motivation": "Scaling fluxonium quantum processors to highly connected 2D lattices requires strong qubit-coupler interactions, but the intrinsically limited capacitance budget of fluxonium qubits ($C_q^\\mathrm{eff} \\sim 14$–$24$ fF) constrains achievable coupling strengths, making capacitive loading a critical bottleneck for fast two-qubit gate operations.",
+        "method": "The authors develop circuit-QED analysis of symmetric dumbbell-floating, grounded, and concentric-floating fluxonium geometries, deriving compact expressions for effective capacitances and coupling strengths. They decompose loading into participation ratios: $C_{ab}/C_q^\\mathrm{eff}$ (inter-pad, dominated by junction parasitic capacitance $C_{ab}^{J,\\Sigma} \\sim 4$ fF for $E_J/h = 5$ GHz) and $C_{bg}/C_{bg}^\\mathrm{eff}$ (pad-to-ground, suppressible via geometric optimization to $< 0.1$). Electromagnetic simulations validate analytical predictions and optimize layouts achieving $J_{qc}/h \\approx 900$ MHz versus 470 MHz in conventional designs.",
+        "result": "For a representative optimized $5q4c$ unit cell with double-transmon couplers and improved junction process ($0.6 E_J/(h \\cdot \\mathrm{GHz})$ fF parasitic capacitance), statistically sampled two-qubit gates over 180 nearest-neighbor pairs achieve $t_\\mathrm{gate}^* = 27$ ns at the 95th percentile with leakage infidelity $< 10^{-3}$ under 5% fabrication variations; extension to six-neighbor hexagonal architectures maintains $J_{qc}/h \\geq 535$ MHz across all couplings.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.24836",
+      "title": "Can a quantum circuit detect the Unruh effect?",
+      "authors": [
+        "Pravin Kumar Dahal",
+        "Timothy C. Ralph",
+        "William J. Munro",
+        "Arkady Fedorov",
+        "James Q. Quach"
+      ],
+      "abstract": "The Unruh effect predicts that an accelerating observer perceives the Minkowski vacuum as a thermal bath, yet direct detection remains experimentally inaccessible. Its timelike counterpart, arising from the entanglement of massless fields between the future and past light cones, offers a more feasible route but requires a detector whose transition frequency follows a specific conformal-time scaling. We propose and analyze a practical implementation of such a detector using superconducting fluxonium circuits, which naturally provide two quasi-degenerate ground states and a tunable excited state, forming an effective $Λ$-system. By modulating the excited-state transition frequency in Minkowski time, the detector accumulates a geometric phase associated with the timelike Unruh effect. Open-system simulations predict $\\sim 10\\%$ shift in the ground-state population within $530$ ns, representing a three-order-of-magnitude sensitivity enhancement over two-level Unruh-DeWitt detectors. These results establish a realistic quantum-circuit platform for experimentally probing the timelike Unruh effect and, more broadly, for testing fundamental nature of quantum fields using engineered quantum systems.",
+      "categories": [
+        "quant-ph",
+        "gr-qc",
+        "hep-th"
+      ],
+      "published": "2026-07-24",
+      "score": 0.6011080438559799,
+      "similar_to": [
+        {
+          "title": "Quasiparticle-induced transitions in a fluxonium qubit",
+          "id": "2607.21329",
+          "similarity": 0.8197313547134399
+        },
+        {
+          "title": "Resolving photon number states in a superconducting circuit",
+          "id": null,
+          "similarity": 0.8177464604377747
+        }
+      ],
+      "summary": {
+        "summary": "This paper proposes a superconducting fluxonium circuit modified with a flux-tunable split junction and engineered superinductor to operate as a tunable $\\Lambda$-system for detecting the timelike Unruh effect. Open-system simulations predict $\\sim 10\\%$ ground-state population shift over 530 ns ($\\sim 25$ quasicycles in conformal time), achieving three orders of magnitude sensitivity enhancement over two-level Unruh–DeWitt detectors by exploiting geometric-phase accumulation.",
+        "motivation": "The timelike Unruh effect—arising from entanglement between future and past light cones—offers better experimental accessibility than the standard Unruh effect, but requires a detector whose transition frequency scales inversely with Minkowski time, which prior superconducting $\\Lambda$-systems lack due to missing frequency tunability.",
+        "method": "The circuit combines a flux-tunable split junction (replacing a fixed Josephson junction) with a superinductor ($E_L = 0.72$ GHz $> E_C = 0.55$ GHz) to form a $\\Lambda$-system with quasi-degenerate ground states $|g_1\\rangle, |g_2\\rangle$ and tunable excited state. External magnetic fluxes modulate the transition frequency between $4.4$ and $6.2$ GHz, and a Lindblad master equation governs evolution in a thermal bath induced by vacuum entanglement.",
+        "result": "The ground-state population $P_1$ undergoes $\\Delta P_1 \\approx 10\\%$ shift over 530 ns at decay rate $\\Gamma \\sim 10^{-4}\\omega$, compared to $8.7 \\times 10^{-4}$ for a two-level detector, with dark-state dephasing $\\gamma_-^\\phi \\sim 10^4$ reducing the effect by $<1\\%$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9097,
+    0.8813,
+    0.8544,
+    0.6011,
+    0.4909,
+    0.4655,
+    0.4028,
+    0.3513,
+    0.3094,
+    0.3018,
+    0.183,
+    0.1742,
+    0.1422,
+    0.1364,
+    0.1298,
+    0.128,
+    0.1267,
+    0.1221,
+    0.1044,
+    0.0994,
+    0.096,
+    0.0866,
+    0.0838,
+    0.0716,
+    0.0659,
+    0.062,
+    0.0572,
+    0.0536,
+    0.0526,
+    0.0501,
+    0.0487,
+    0.0439,
+    0.0415,
+    0.0342,
+    0.0341,
+    0.0307,
+    0.0283,
+    0.026,
+    0.0258,
+    0.0256,
+    0.0236,
+    0.0235,
+    0.022,
+    0.0216,
+    0.0214,
+    0.0205,
+    0.0184,
+    0.018,
+    0.0179,
+    0.0175,
+    0.0173,
+    0.0166,
+    0.0166,
+    0.0147,
+    0.0146,
+    0.0138,
+    0.0137,
+    0.0127,
+    0.0122,
+    0.0117,
+    0.0111,
+    0.0108,
+    0.0098,
+    0.0096,
+    0.0078,
+    0.0074,
+    0.0068,
+    0.0062,
+    0.0057,
+    0.0055,
+    0.0051,
+    0.0044,
+    0.0038,
+    0.0033,
+    0.003,
+    0.0007
+  ]
+}

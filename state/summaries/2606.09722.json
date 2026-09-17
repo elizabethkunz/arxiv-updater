@@ -1,0 +1,8 @@
+{
+  "summary": "A GaAs double-quantum-dot charge qubit coupled to a frequency-tunable SQUID-array resonator enables frequency-resolved decoherence spectroscopy from 3 to 6 GHz, revealing a crossover from dephasing-dominated to relaxation-dominated decoherence. The measured relaxation rate exhibits cubic scaling with qubit frequency, consistent with piezoelectric acoustic phonon coupling and demonstrating the utility of tunable hybrid circuits as quantitative probes of microscopic dissipation.",
+  "motivation": "Charge qubits are sensitive probes of electrostatic noise but also suffer from phonon-induced relaxation; identifying which decoherence mechanism dominates at different qubit frequencies requires frequency-resolved measurements over a broad range while maintaining sufficient signal-to-noise ratio for time-domain analysis.",
+  "method": "We performed time-resolved measurements (Ramsey, Hahn-echo, relaxation) on a DQD charge qubit at the sweet spot $\\varepsilon = 0$ across multiple tunnel-coupling configurations $2t/h = 3.7$–6.1 GHz, with the SQUID-array resonator tuned to resonance at each frequency to maintain high dispersive readout fidelity; master-equation fits to 2D spectroscopy data extracted $g_0/2\\pi \\approx 35$–60 MHz and $\\Gamma_2$ values.",
+  "result": "At low frequencies ($\\leq 4.5$ GHz), pure dephasing dominates with $\\Gamma_\\phi$ weakly frequency-dependent; at higher frequencies, relaxation becomes dominant and follows $\\Gamma_1 \\propto \\omega_q^3$, consistent with piezoelectric phonon emission in GaAs. Peak cooperativity $C \\approx 20$ is achieved at $\\omega_q/2\\pi = 3.71$ GHz with $g_0/\\Gamma_2 \\sim 10$.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

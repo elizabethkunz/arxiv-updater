@@ -1,0 +1,8 @@
+{
+  "summary": "This paper develops a fault-tolerant mapping of rotated surface codes onto a $2\\times N$ silicon spin-qubit railway using coherent electron shuttling, with circuit-level noise modeling showing that the XZZX surface code outperforms CSS variants under dephasing-biased noise inherent to shuttling. A distance-7 code achieving Megaquop requires only $p = 10^{-3}$ physical error rate, reducing qubit footprint by up to 72% compared to symmetric noise models.",
+  "motivation": "Silicon spin-qubit arrays face a wiring fan-out bottleneck in 2D layouts; shuttling-based 1D railway architectures offer a practical solution but require tailored error-correction strategies that account for the specific noise biases arising from micromagnet gradients and spin-orbit coupling during transport.",
+  "method": "The authors derive an asymmetric Pauli-channel noise model from the underlying Hamiltonian incorporating trajectory fluctuations through micromagnet fields and spin-orbit coupling effects, implement a unidirectional 'train schedule' syndrome extraction protocol satisfying stabilizer commutation, and compare XZZX versus CSS codes under check versus data shuttling using STIM circuit-level simulations with minimum-weight perfect matching decoding.",
+  "result": "Check-qubit shuttling with the XZZX code under $Z$-biased shuttling noise ($\\eta = 100$, $\\eta_Z = 100$) achieves a threshold of $p_\\mathrm{th} = 4.0 \\times 10^{-3}$, substantially higher than CSS alternatives; at $p = 10^{-3}$ and full bias, distance-7 XZZX requires only 97 qubits (49 data, 48 check) for Megaquop, down from 1799 qubits in symmetric noise—a 72% footprint reduction.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

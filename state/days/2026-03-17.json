@@ -1,0 +1,582 @@
+{
+  "date": "2026-03-17",
+  "n_fetched": 169,
+  "papers": [
+    {
+      "id": "2603.13857",
+      "title": "Readout-induced degradation of transmon lifetimes: interplay of TLSs and qubit spectral reshaping",
+      "authors": [
+        "Ziwen Huang",
+        "Jimmy Shih-Chun Hung",
+        "Mouktik Raha",
+        "Ming-Han Chou",
+        "Harry Levine",
+        "Alex Retzker",
+        "Connor T. Hann",
+        "David Hover",
+        "Fernando G. S. L. Brandão",
+        "Aashish A. Clerk",
+        "Arbel Haim",
+        "Oskar Painter"
+      ],
+      "abstract": "Measurement backaction degrades dispersive readout of superconducting qubits even at modest drive strengths, often via the reduction of qubit lifetimes during readout. In this work, we theoretically and experimentally study this degradation and show how it can result from the interplay between detuned two-level systems (TLSs) and a drive-renormalized qubit spectrum. For modest to strong readout, the qubit emission spectrum becomes non-Lorentzian and depends sensitively on the readout drive frequency (even when measurement rate is fixed). We combine the readout-modified qubit emission spectrum with time-dependent perturbation theory to predict qubit lifetimes in the presence of a TLS bath. Master equation simulations and experimental measurements on a frequency-tunable transmon confirm these predictions quantitatively. In particular, we find that driving at the resonator frequency associated with the qubit ground state yields the narrowest qubit emission spectrum and the least lifetime degradation for a fixed measurement rate, providing a practical guideline for optimizing readout protocols in future quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-14",
+      "score": 0.9769269340568261,
+      "similar_to": [
+        {
+          "title": "Readout-induced suppression and enhancement of superconducting qubit lifetimes",
+          "id": "2305.10508",
+          "similarity": 0.8974237442016602
+        },
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.8907228112220764
+        }
+      ],
+      "summary": {
+        "summary": "This work develops a theory for readout-induced transmon lifetime degradation by incorporating drive-renormalized qubit spectral shapes beyond the weak-coupling limit, showing that the qubit emission spectrum becomes non-Lorentzian and depends sensitively on readout drive frequency even at fixed measurement rate. Experiments on a strongly dispersive transmon ($|\\chi|/\\kappa = 1$ to $4$) validate the predictions quantitatively and reveal that driving at the ground-state resonator frequency $\\omega_r^{(g)}$ minimizes $T_1$ degradation by producing the narrowest emission spectrum.",
+        "motivation": "Dispersive readout of superconducting qubits degrades with increasing drive power due to enhanced qubit-TLS interaction, but existing Lorentzian broadening models fail in modern devices operating at large $|\\chi|/\\kappa$ ratios where spectral reshaping becomes non-trivial.",
+        "method": "The authors generalize number-splitting theory to derive the qubit decay rate via Fermi's golden rule applied to the drive-modified emission spectrum, incorporating state-dependent resonator loss rates from Purcell filters. Theory is validated against master equation simulations and experiments on a flux-tunable transmon coupled to a Purcell-filtered resonator with $\\chi/2\\pi = -8.8$ MHz and $\\kappa_g/2\\pi = 9.0$ MHz.",
+        "result": "For a fixed measurement rate, driving at $\\omega_d = \\omega_r^{(g)}$ yields narrower qubit spectra and substantially less $T_1$ degradation than driving at $\\omega_d = \\omega_r^{(e)}$ (separated by $\\chi$), with quantitative agreement between theory and measurements on both far-detuned ($\\Delta_{\\mathrm{tls}}/2\\pi \\approx -16$ MHz) and near-resonant ($\\Delta_{\\mathrm{tls}}/2\\pi \\approx -6$ MHz) TLSs.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.13837",
+      "title": "Millimeter Wave Readout of a Superconducting Qubit",
+      "authors": [
+        "Akash V. Dixit",
+        "Zachary L. Parrott",
+        "Dennis Chunikhin",
+        "Bradley Hauer",
+        "Trevyn F. Q. Larson",
+        "John D. Teufel"
+      ],
+      "abstract": "Millimeter waves are emerging as an enabling technology for connecting and enhancing different quantum platforms such as Rydberg atoms, optomechanics, and superconducting qubits. In this work, we focus on the interaction between millimeter wave photons and conventional transmon qubits, specifically for qubit readout. We study a circuit quantum electrodynamic (cQED) system consisting of a millimeter-wave cavity at $ω_r = 2π\\times 34.7$ GHz and a transmon qubit at $ω_q = 2π\\times 3.1$ GHz coupled at rate $g = 2π\\times 1.3$ GHz. With such a large detuning between cavity and qubit, $ω_r/ω_q > 10$, we are able to suppress drive induced unwanted state transitions, enabling strong drives for qubit readout. We measure no resonant state transitions up to $1,000$ drive photons and readout the qubit state with more than $100$ photons to achieve a measurement fidelity greater than 99% without the aid of a quantum limited amplifier.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-14",
+      "score": 0.9421315431936292,
+      "similar_to": [
+        {
+          "title": "Quantum-limited millimeter wave to optical transduction",
+          "id": "2207.10121",
+          "similarity": 0.8582802414894104
+        },
+        {
+          "title": "Measurement-induced state transitions in multi-qubit transmon processors",
+          "id": "2606.05010",
+          "similarity": 0.8553742170333862
+        }
+      ],
+      "summary": {
+        "summary": "A transmon qubit at $\\omega_q = 2\\pi \\times 3.1$ GHz is readout using a millimeter-wave cavity at $\\omega_r = 2\\pi \\times 34.7$ GHz with coupling rate $g = 2\\pi \\times 1.3$ GHz, achieving a large detuning ratio $\\omega_r/\\omega_q > 10$ that suppresses drive-induced unwanted state transitions. Measurement fidelity exceeds 99% with over 100 readout photons and no quantum-limited amplifier, with resilience demonstrated up to $1,000$ drive photons.",
+        "motivation": "Drive-induced resonant state transitions limit readout fidelity in conventional circuit QED systems where cavity and qubit frequencies are comparable; operating with large frequency separation between readout and qubit can suppress these transitions while maintaining fast qubit gates and low thermal occupancy.",
+        "method": "Floquet simulations and experiments on a transmon-cavity system probe drive-induced transitions by sweeping drive strength and frequency. The state is prepared, driven near the readout resonance with variable photon number, and multistate readout distinguishes transitions to higher transmon levels.",
+        "result": "No resonant state transitions observed up to $\\bar{n}_d \\approx 1,000$ photons from either $|0\\rangle$ or $|1\\rangle$, with measurement fidelities $\\mathcal{F}_{|0\\rangle} = \\mathcal{F}_{|1\\rangle} = 0.992$ at $\\bar{n}_r = 109$ and readout time $\\tau_r = 780$ ns; measurement efficiency is 1.74% with system added noise $\\bar{n}_{\\mathrm{sys}} = 28$ photons.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.13653",
+      "title": "Quantum dial",
+      "authors": [
+        "Aashish Sah",
+        "Suman Kundu",
+        "Priyank Singh",
+        "Eemeli Forsbom",
+        "Vasilii Vadimov",
+        "Mikko Möttönen"
+      ],
+      "abstract": "Accurate control of quantum degrees of freedom is promising for sensing, communication, and computing, but building a useful quantum computer faces a central isolation-and-control challenge: qubits must remain well isolated from their environment to preserve coherence, yet also be coupled strongly enough for control, readout, and reset. Existing approaches address this challenge only partially, using separate reset elements, drive schemes, and Purcell filters, often with added complexity and tradeoffs such as heating and crosstalk. Here we introduce and demonstrate a first-generation quantum dial: a device that on demand mediates the coupling of a qubit to selected auxiliary degrees of freedom. Our implementation uses a band-stop filter between a high-coherence transmon qubit and a broadband transmission line, enabling the coupling strength to be tuned by several orders of magnitude on nanosecond timescales without significant Stark shift. In the reset configuration, we reduce the qubit energy relaxation time T1 from >150 $μ$s to about 200 ns and demonstrate reset independent of the initial state. In the control configuration, we obtain 99.99% idle fidelity and 99.9% gate fidelities for 40 ns pulses at about -110 dBm. The same device also enables thermometry of the qubit environment, reaching a noise-equivalent temperature of 0.6 mK/$\\sqrt{Hz}$ at 60 mK and approaching the Cramér-Rao bound at higher temperatures. The quantum dial thus offers fast, on-demand switching between isolation and strong coupling, with potential to reduce noise and errors in future quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-13",
+      "score": 0.933778550313277,
+      "similar_to": [
+        {
+          "title": "Fast readout and reset of a superconducting qubit coupled to a resonator with an intrinsic Purcell filter",
+          "id": "2202.06202",
+          "similarity": 0.8575299978256226
+        },
+        {
+          "title": "The Flux Qubit Revisited to Enhance Coherence and Reproducibility",
+          "id": "1508.06299",
+          "similarity": 0.8506574630737305
+        }
+      ],
+      "summary": {
+        "summary": "A quantum dial is a tunable on-chip band-stop filter integrated with a dc SQUID array that dynamically modulates qubit–environment coupling by several orders of magnitude on nanosecond timescales, enabling fast switching between isolation (T₁ > 150 µs), resonant control (99.9% gate fidelity at 40 ns, −110 dBm), and dissipative reset (T₁ ≈ 200 ns, >97% ground-state population in 1.2 µs from |e⟩, |f⟩, |h⟩). The same device performs near-Cramér–Rao-bound qubit thermometry with noise-equivalent temperature of 0.6 mK/√Hz at 60 mK, unifying reset, control, and readout functions on a single tunable transmission line without separate dissipative elements.",
+        "motivation": "Superconducting qubits require both long coherence times (demanding weak coupling) and fast control/reset (demanding strong coupling), a fundamental tension addressed only partially by existing Purcell filters and separate subsystems. Dynamic environmental engineering on nanosecond timescales offers an attractive solution to this isolation-and-control challenge.",
+        "method": "A quarter-wavelength transmission-line filter capacitively coupled to a transmon qubit is made frequency-tunable by inserting a series array of five dc SQUIDs (effective inductance 0.075 nH) at an optimized position along the line; fast-flux lines enable nanosecond switching between three configurations—idle (filter tuned to qubit frequency $f_q$ for voltage node, maximizing $T_1$), control (detuned for Rabi frequency 12.5 MHz with $T_1 = 14$ µs), and reset (minimum $T_1 = 238$ ns for sequential relaxation).",
+        "result": "Static and dynamic dialing achieve $F_\\mathrm{avg}^\\mathrm{Cliff.} = 0.9987$ and $0.9986$ respectively; dynamic dialing yields 10× improvement in interleaved idle fidelity ($F_\\mathrm{I} = 0.9998$); reset from |e⟩, |f⟩, |h⟩ reaches $P_g \\gtrsim 0.97$ in 1.2 µs with decay times $T_1^{ge} = 238.2 ± 3.3$ ns, $T_1^{ef} = 136.8 ± 2.8$ ns, $T_1^{fh} = 128.8 ± 3.4$ ns; thermometry precision approaches the four-level quantum Fisher information bound up to 400 mK.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.15534",
+      "title": "Analog-Digital Quantum Computing with Quantum Annealing Processors",
+      "authors": [
+        "Rahul Deshpande",
+        "Majid Kheirkhah",
+        "Chris Rich",
+        "Richard Harris",
+        "Jack Raymond",
+        "Emile Hoskinson",
+        "Pratik Sathe",
+        "Andrew J. Berkley",
+        "Stefan Paul",
+        "Brian Barch",
+        "Daniel A. Lidar",
+        "Markus Müller",
+        "Gabriel Aeppli",
+        "Andrew D. King",
+        "Mohammad H. Amin"
+      ],
+      "abstract": "Quantum annealing processors typically control qubits in unison, attenuating quantum fluctuations uniformly until the applied system Hamiltonian is diagonal in the computational basis. This simplifies control requirements, allowing annealing QPUs to scale to much larger sizes than gate-based systems, but constraining the class of available operations. Here we expand the class by performing analog-digital quantum computing in a highly-multiplexed, superconducting quantum annealing processor. This involves evolution under a fixed many-body Hamiltonian that, in the weak-coupling regime, is well-described by an effective XY model, together with arbitrary-basis initialization and measurement via auxiliary qubits. Operationally, this is equivalent to implementing single-qubit gates at the beginning and end of an analog quantum evolution. We demonstrate this capability with several foundational applications: single-qubit and two-qubit coherent oscillations with varying initialization and measurement bases, a multi-qubit quantum walk with fermionic dispersion in line with theory, and Anderson localization in a disordered chain. These experiments open the door to a wide range of new possibilities in quantum computation and simulation, greatly expanding the applications of commercially available quantum annealing processors.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.dis-nn",
+        "cond-mat.stat-mech"
+      ],
+      "published": "2026-03-16",
+      "score": 0.8692498059637168,
+      "similar_to": [
+        {
+          "title": "Engineering quantum criticality and dynamics on an analog-digital simulator",
+          "id": "2602.18555",
+          "similarity": 0.8529528379440308
+        },
+        {
+          "title": "Laser-annealing Josephson junctions for yielding scaled-up superconducting quantum processors",
+          "id": "2009.00781",
+          "similarity": 0.8472846150398254
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates analog-digital quantum computing in a 1178-qubit D-Wave quantum annealer using multicolor annealing to independently control source, target, and detector qubits. The protocol combines arbitrary-basis initialization and measurement via auxiliary qubits with coherent analog evolution under an effective XY Hamiltonian, achieving coherence times exceeding normalized evolution $|\\mathcal{J}|t/\\hbar \\gtrsim 100$.",
+        "motivation": "Quantum annealers scale to thousands of qubits but lack the flexibility of gate-based systems for arbitrary state preparation and measurement. This work addresses whether gate-like control can be retrofitted onto annealing processors to access excited-state dynamics and arbitrary measurement bases without sacrificing scalability.",
+        "method": "Independent anneal schedules on six control lines partition qubits into three sets: source qubits (two lines) initialize target qubits via inductive coupling during a quench, targets evolve under a fixed Hamiltonian, and detector qubits (two lines) perform basis-rotated readout. Four lines control target qubits, realizing effective single-qubit rotations before and after analog evolution through rapid quenches of source and detector to $s=0$ and $s=1$.",
+        "result": "Single-qubit Larmor precession with arbitrary initialization and measurement shows $T_1 = 32$ ns and $T_\\varphi = 12$ ns; two-qubit coherent exchange yields $T_\\varphi = 37$ ns and excellent agreement with theory. A 56-qubit periodic chain exhibits fermionic dispersion $E(k) = \\pm\\sqrt{(\\Delta + \\mathcal{J}\\cos k)^2 + \\mathcal{J}^2\\sin^2 k}$ with no free parameters; Anderson localization in a 124-qubit disordered chain shows the predicted quadratic scaling $\\mathcal{I} \\sim 0.017 W^2$ for disorder strength $W$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.15356",
+      "title": "Error semitransparent universal control of a bosonic logical qubit",
+      "authors": [
+        "Saswata Roy",
+        "Owen C. Wetherbee",
+        "Valla Fatemi"
+      ],
+      "abstract": "Bosonic codes offer hardware-efficient approaches to logical qubit construction and hosted the first demonstration of beyond-break even logical quantum memory. However, such accomplishments were done for idling information, and realization of fault-tolerant logical operations remains a critical bottleneck for universal quantum computation in scaled systems. Error-transparent (ET) gates offer an avenue to resolve this issue, but experimental demonstrations have been limited to phase gates. Here, we introduce a framework based on dynamic encoding subspaces that enables simple linear drives to accomplish universal gates that are error semi-transparent (EsT) to oscillator photon loss. With an EsT logical gate set of {X, H, T}, we observe a five-fold reduction in infidelity conditioned on photon loss, demonstrate extended active-manipulation lifetimes with quantum error correction, and construct a composite EsT non-Clifford operation using a sequence of eight gates from the set. Our approach is compatible with methods for detectable ancilla errors, offering an approach to error-mitigated universal control of bosonic logical qubits with the standard quantum control toolkit.",
+      "categories": [
+        "quant-ph",
+        "physics.app-ph"
+      ],
+      "published": "2026-03-16",
+      "score": 0.8678458402003455,
+      "similar_to": [
+        {
+          "title": "Hardware-efficient quantum error correction via concatenated bosonic qubits",
+          "id": "2409.13025",
+          "similarity": 0.8876293897628784
+        },
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8752530217170715
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates error semi-transparent (EsT) universal control of a bosonic logical qubit using linear drives on a binomial 'kitten' code in a superconducting cavity coupled to a transmon ancilla. EsT operations leverage dynamic encoding subspaces to achieve fault-tolerant gates with reduced infidelity conditioned on photon loss, extending active-manipulation lifetimes under quantum error correction.",
+        "motivation": "While bosonic codes have demonstrated beyond-break-even quantum memory, realizing fault-tolerant logical operations remains a bottleneck for scaled quantum computation. Prior error-transparent gate demonstrations were limited to phase gates, and theoretical proposals for amplitude-mixing gates required strong nonlinear drives impractical for oscillator control.",
+        "method": "The authors develop a framework based on dynamic (time-evolving) code and error subspaces that enables simple linear cavity and qubit drives to achieve universal EsT gates. Drive amplitudes $\\epsilon(t)$ and $\\Omega(t)$ are numerically optimized using GRAPE with a weighted cost function combining code-space fidelity, error-transparency metrics (QEC violation, leakage, trajectory mismatch), and velocity variance. Gates are implemented with 1 µs (X, H) and 0.6 µs (T) durations on a cavity with $T_1 = 180$ µs and ancilla with $T_1 = 70$ µs.",
+        "result": "EsT gates achieve a five-fold reduction in infidelity conditioned on photon loss ($F_{\\mathrm{err|jump}}$ increases from 0.45 to 0.85 for X gate), 17-fold reduction in error-space operation infidelity ($F_{\\mathrm{err}}$ from 0.4 to 0.95), and improved performance after single autonomous QEC correction steps. An eight-gate composite non-Clifford sequence ($THXTHTХX$) preserves EsT properties with 3.6× infidelity reduction in error space.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.13726",
+      "title": "Phononic Bragg Reflectors for Thermal Insulation of Scalable Cryogenic Control Electronics from Qubits",
+      "authors": [
+        "Isabelle V. Sprave",
+        "Denny Dütz",
+        "Sebastian Kock",
+        "René Otten",
+        "Tobias Hangleiter",
+        "Felix Mende",
+        "Marcus Wislicenus",
+        "Hendrik Bluhm"
+      ],
+      "abstract": "Scaling solid-state architectures to the millions of qubits required for utility-scale quantum computing could benefit from the integration of control electronics in the immediate vicinity of the quantum layer. However, lithographically fabricated solid-state qubits perform best at temperatures well below 1 K, where available cooling power is limited, whereas the control electronics dissipate substantial power and therefore require the higher cooling power available at elevated temperatures. To address this challenge, we propose a cryopackaging concept that uses broadband phononic Distributed Bragg Reflectors (DBRs) as a thermal barrier between cryoelectronics and the qubit chip. As an experimental realization of this concept, we fabricate and characterize Ta/SiO$_2$ DBR structures. In this architecture, the DBR is intended to provide mechanical support for superconducting vias while offering substantially better thermal insulation than typical bulk materials. For a 600-nm-thick DBR consisting of 10 Ta/SiO$_2$ bilayers, we obtain a thermal conduction below 1 mW/cm$^2$ from 1.5 K to 100 mK. In a centimeter-scale architecture, this level of isolation is compatible with Watt-level cooling power for nearby electronics while maintaining a qubit temperature around 100 mK in commercially available dilution refrigerators.",
+      "categories": [
+        "quant-ph",
+        "physics.app-ph"
+      ],
+      "published": "2026-03-14",
+      "score": 0.7530653913834275,
+      "similar_to": [
+        {
+          "title": "Wireless millikelvin interconnects for superconducting quantum hardware",
+          "id": "2607.13834",
+          "similarity": 0.8604401350021362
+        },
+        {
+          "title": "A Modular Cryogenic Link for Microwave Quantum Communication Over Distances of Tens of Meters",
+          "id": "2604.15971",
+          "similarity": 0.8501636981964111
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates a phononic distributed Bragg reflector (DBR) cryopackaging concept to thermally isolate cryogenic control electronics from superconducting qubits while maintaining high-density electrical interconnects. Experiments on Ta/SiO$_2$ DBRs with 10 bilayers and thickness up to 600 nm achieve thermal conduction below 1 mW/cm$^2$ from 1.5 K to 100 mK, enabling Watt-level power dissipation at higher stages of a dilution refrigerator while keeping qubits near 100 mK.",
+        "motivation": "Scaling to millions of qubits requires integrating control electronics near the quantum layer to avoid impractical wiring complexity, but qubits operate best below 1 K where cooling power is limited, while electronics dissipate substantial power at warmer temperatures.",
+        "method": "Ta/SiO$_2$ multilayer stacks with exponentially graded layer thicknesses were fabricated via magnetron sputtering (Ta) and plasma-enhanced atomic layer deposition (SiO$_2$), and thermal transport was characterized by applying 0–1 mW heater power and measuring steady-state temperature gradients across the stack in a dilution refrigerator from 100 mK to 700 mK, with analysis via an iterative procedure solving the quasi-ballistic heat transfer equation.",
+        "result": "The 600 nm DBR (10 bilayers) reduces heat flux to $0.80 ± 0.16$ mW/cm$^2$ at 1.5 K and $1.7 ± 0.4$ mW/cm$^2$ at 1.8 K, achieving one order of magnitude better thermal insulation than reference SiO$_2$ layers of comparable or larger thickness; superconducting vias are estimated to add only $\\approx 6$ µW/cm$^2$ thermal load at $T/T_C = 0.15$ for NbTiN.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.14455",
+      "title": "Quantum-limited traveling-wave parametric amplifier based on DUV-defined planar structures",
+      "authors": [
+        "Hao Li",
+        "Marco Scigliuzzo",
+        "Evgenii Guzovskii",
+        "Seog-Tae Han",
+        "Kyungho Han",
+        "Tobias J. Kippenberg"
+      ],
+      "abstract": "The relentless scaling of classical microelectronics has been enabled by the precision and reproducibility of deep-ultraviolet (DUV) optical lithography. Implementing large-scale superconducting quantum processors will require cryogenic microwave components that follow a similarly scalable fabrication path. This need is particularly acute for high circuit-density devices such as traveling-wave parametric amplifiers (TWPAs), where recent implementations have demonstrated high gain, broad bandwidth, high saturation power, and near-quantum-limited noise, but trade-offs between footprint, insertion loss, and scalable integration remain. Here, we demonstrate a four-wave-mixing TWPA fabricated via a hybrid scheme that combines DUV-defined planar circuit elements with electron-beam-patterned Josephson junctions, constituting a first step toward fully scalable manufacturing. The device combines a compact footprint of 6.6 mm $\\times$ 6.6 mm with broadband gain over the measured 3-11 GHz span and an average 1 dB compression point of -102 dBm. By using planar capacitors to reduce loss, it operates near the quantum limit, with an average added noise of 0.4 photons above the standard quantum limit in the 4 to 8 GHz band. The phase-matching stopband remains narrow, with a bandwidth of 43 MHz, consistent with resonator-frequency variation below 1% and indicative of the circuit-parameter uniformity enabled by DUV lithography. These results show that DUV-defined planar elements can enable compact, low-loss, near-quantum-limited TWPAs and provide a promising route toward high-density cryogenic microwave hardware for large-scale quantum systems.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-15",
+      "score": 0.6864491852932199,
+      "similar_to": [
+        {
+          "title": "A Traveling-Wave Parametric Amplifier With Integrated Diplexers",
+          "id": "2603.12327",
+          "similarity": 0.884250283241272
+        },
+        {
+          "title": "A near-quantum-limited Josephson traveling-wave parametric amplifier",
+          "id": null,
+          "similarity": 0.8727054595947266
+        }
+      ],
+      "summary": {
+        "summary": "A compact four-wave-mixing TWPA is demonstrated using a hybrid DUV-lithography and electron-beam-defined Josephson-junction process, achieving a 6.6 mm × 6.6 mm footprint with broadband gain over 3–11 GHz, sub-dB insertion loss, and added noise of 0.4 photons above the standard quantum limit in the 4–8 GHz band. The device combines scalable planar fabrication with quantum-limited amplification performance suitable for frequency-multiplexed qubit readout.",
+        "motivation": "Large-scale superconducting quantum processors require cryogenic microwave amplifiers with high circuit density, low footprint, and near-quantum-limited noise, but existing TWPAs trade off between compact integration and performance.",
+        "method": "A resonantly phase-matched TWPA was fabricated by combining DUV photolithography (248 nm KrF, $4×$ reduction) to define niobium planar capacitors and inductors with electron-beam lithography to pattern aluminum Josephson junctions, yielding 256 cascaded unit cells with individual resonator footprints of $\\sim100$ µm × 170 µm.",
+        "result": "The device exhibits $>10$ dB gain across most of the 3–11 GHz band, a 1 dB compression point of $-102$ dBm, insertion loss $<1$ dB (3–8 GHz), and average added noise of 0.4 photons/s/Hz above SQL (4–8 GHz), with phase-matching stopband width of 43 MHz indicating $<1$% resonator-frequency variation.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.15610",
+      "title": "Universal Weakly Fault-Tolerant Quantum Computation via Code Switching in the [[8,3,2]] Code",
+      "authors": [
+        "Shixin Wu",
+        "Dawei Zhong",
+        "Todd A. Brun",
+        "Daniel A. Lidar"
+      ],
+      "abstract": "Code-switching offers a route to universal, fault-tolerant quantum computation by circumventing the limitation implied by the Eastin-Knill theorem against a universal transversal gate set within a single quantum code. Here, we present a fault-tolerant code-switching protocol between two versions of the $[[8, 3, 2]]$ code. One version supports weakly fault-tolerant single-qubit Clifford gates, while the other supports a logical $\\overline{\\mathrm{CCZ}}$ gate via transversal $T/T^\\dagger$ together with logical $\\overline{\\mathrm{CZ}}$, $\\overline{\\mathrm{CNOT}}$, and $\\overline{\\mathrm{SWAP}}$ gates. Because both codes have distance 2, the protocol operates in a postselected, error-detecting regime: single faults lead to detectable outcomes, and accepted runs exhibit quadratic suppression of logical error rates. This yields a universal scheme for postselected fault-tolerant computation. We validate the protocol numerically through simulations of state preparation, code switching, and a three-logical-qubit implementation of Grover's search.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-16",
+      "score": 0.6442325338293162,
+      "similar_to": [
+        {
+          "title": "Entangling logical qubits without physical operations",
+          "id": "2601.20927",
+          "similarity": 0.8504462242126465
+        },
+        {
+          "title": "Realizing Lattice Surgery on Two Distance-Three Repetition Codes with Superconducting Qubits",
+          "id": "2501.04612",
+          "similarity": 0.8451734185218811
+        }
+      ],
+      "summary": {
+        "summary": "Code-switching between two versions of the [[8,3,2]] code enables universal fault-tolerant quantum computation in the error-detecting (postselected) regime. Version 1 supports weakly fault-tolerant logical Clifford gates via two-qubit rotations, while Version 2 supports transversal logical $\\overline{\\mathrm{CCZ}}$ via $T/T^\\dagger$ gates, yielding an overcomplete universal gate set with quadratic suppression of logical errors in accepted runs.",
+        "motivation": "The Eastin-Knill theorem forbids a universal set of transversal gates within a single code; code-switching circumvents this by alternating between complementary code versions while maintaining distance-2 error detection.",
+        "method": "Two versions of the [[8,3,2]] code are derived from the [[8,3,3,2]] subsystem code by fixing gauge qubits to $|0\\rangle$ (Version 2) or $|+\\rangle$ (Version 1). Fault-tolerant switching uses gauge measurements with complementary checks and stabilizer verification; state preparation and Grover's algorithm are benchmarked via Monte Carlo simulation with depolarizing noise.",
+        "result": "Numerical simulations confirm $p_L \\sim O(p^2)$ postselected logical error scaling for state preparation, code-switching, and three-logical-qubit Grover search, demonstrating weak fault tolerance; acceptance rates decay as $O(p)$ due to postselection overhead.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.15587",
+      "title": "A direct controlled-phase gate between microwave photons",
+      "authors": [
+        "Adrian Copetudo",
+        "Amon M. Kasper",
+        "Tanjung Krisnanda",
+        "Gregoire Veyrac",
+        "Shushen Qin",
+        "Hui Khoon Ng",
+        "Yvonne Y. Gao"
+      ],
+      "abstract": "The rich dynamics and large Hilbert space of quantum harmonic oscillators make them natural candidates for hardware-efficient and error-correctable quantum information processing. However, implementing direct entangling operations between oscillators remains an outstanding challenge. Existing strategies typically rely on parametrically activating interactions that populate the excited states of a nonlinear element, which introduces additional dissipation channels and potential leakage from the encoded manifold. Here, we engineer a Raman-assisted cross-Kerr interaction between microwave photons hosted in two superconducting cavities. Crucially, this dynamics does not excite the mediating nonlinear coupler, thereby suppressing coupler induced decoherence and leakage out of the bosonic code space. We use this direct nonlinear coupling to implement a controlled-phase gate within the single- and two-photon subspaces of two oscillators, deterministically generating entanglement between them. Finally, we use these engineered dynamics to implement a photon-number parity check on a storage cavity via purely bosonic interactions with an ancillary cavity, demonstrating an enhancement in the storage lifetime. Our work provides a promising pathway toward engineering robust operations that act entirely within a protected bosonic code space and realizing fault-tolerant quantum information processing with bosonic elements.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-16",
+      "score": 0.5924422836710362,
+      "similar_to": [
+        {
+          "title": "A mid-circuit erasure check on a dual-rail cavity qubit using the joint-photon number-splitting regime of circuit QED",
+          "id": "2406.14621",
+          "similarity": 0.8447561264038086
+        },
+        {
+          "title": "The Kerr-Cat Qubit: Stabilization, Readout, and Gates",
+          "id": "1907.12131",
+          "similarity": 0.8300557732582092
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates a Raman-assisted cross-Kerr interaction between microwave photons in two superconducting cavities without populating the mediating transmon coupler, achieving a controlled-phase gate with ~5% infidelity and performing bosonic parity checks that preserve the code space. The engineered coupling is $g_{ab}/2\\pi \\approx 90$ kHz (two orders of magnitude stronger than the residual always-on interaction), enabling deterministic entanglement generation and opening a pathway toward fault-tolerant bosonic quantum computing.",
+        "motivation": "Direct nonlinear coupling between harmonic oscillators is essential for deterministic entanglement and universal quantum computation with bosonic modes, yet existing parametric schemes populate excited states of the nonlinear coupler, introducing decoherence and leakage from the protected code space.",
+        "method": "An off-resonant microwave drive at the coherent exchange frequency between the cavities and coupler activates virtual transitions via second-order Raman processes; this is derived via Schrieffer–Wolff transformation and yields an effective Hamiltonian $\\hat{H}_{\\text{eff}}/\\hbar = g_{ab}\\hat{a}^\\dagger\\hat{a}\\hat{b}^\\dagger\\hat{b}|g\\rangle\\langle g|$ with strength $g_{ab} \\approx g_1^2 \\Delta/(\\Delta - \\chi_b)/(\\Delta + \\chi_b)$ at detuning $\\Delta/2\\pi = -6$ MHz and exchange rate $g_1/2\\pi = 0.8$ MHz.",
+        "result": "Controlled-Z gates in the 0/1 subspace operate in $\\approx 5.2$ µs with average infidelity per gate of 4.2 ± 0.3% (limited primarily by driven cavity decoherence); in the 0/2 subspace, gates run in 1.94 µs with 1.9 ± 0.1% infidelity post-selected on even parity; bosonic parity checks enhance storage lifetime from $T_1 = 763 ± 11$ µs to $1173 ± 41$ µs when post-selected, preserving Wigner negativity of $|2\\rangle$ against photon loss.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.14113",
+      "title": "Analysis of Hydrogen Contamination in Al/AlOx/Al Josephson Junctions",
+      "authors": [
+        "Yu Zhu",
+        "Aldilene Saraiva-Souza",
+        "Félix Beaudoin",
+        "Hong Guo"
+      ],
+      "abstract": "Hydrogen contamination in Josephson junctions is a potential source of device-to-device variability and two-level-system loss in superconducting qubits. In this work, we investigate hydrogen incorporation in oxidized aluminum barriers by combining molecular dynamics simulations with atomistic quantum transport calculations. The oxide growth simulations are performed using CHGNet for Al surfaces exposed to dense O$_{\\text{2}}$ and H$_{\\text{2}% }$O environments, yielding amorphous AlO$_{\\text{x}}$ layers with hydrogen content comparable to experimentally relevant levels. From $400$ statistically independent samples, we find that the number of H atoms in the oxide is well described by a beta-binomial distribution, reflecting correlations induced by the self-limiting oxidation process. Structural analysis shows that most hydrogen atoms reside near the AlO$_{\\text{x}}$ surface and predominantly form Al-OH and Al-OH-Al motifs. To assess the impact of hydrogen on transport, we construct Al/Al$_{\\text{2}}$O$_{\\text{3}} $/Al junction models and perform NEGF-DFT calculations with NanoDCAL, using a GGA+U scheme to calibrate the band gap and band alignment. H atoms are found to increase the transmission coefficient near the Fermi level and shift the electronic structure in a manner consistent with effective p-type doping. By combining the H atom number statistics from molecular dynamics with the transmission coefficients from quantum transport calculations, we obtain a probability distribution for the Josephson energy. For a Josephson junction with an average hydrogen content of $2.56$ at.\\%, the resulting Josephson energy is predicted to be $% E_{J}/h=10.92\\pm 0.26$ GHz. These results provide an atomistic picture of hydrogen contamination and an estimate of device variability in Josephson junctions.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-14",
+      "score": 0.5795148261308894,
+      "similar_to": [
+        {
+          "title": "Observation of Josephson Harmonics in Tunnel Junctions",
+          "id": "2302.09192",
+          "similarity": 0.8331615924835205
+        },
+        {
+          "title": "Electric field spectroscopy of material defects in transmon qubits",
+          "id": "1909.09749",
+          "similarity": 0.8081926107406616
+        }
+      ],
+      "summary": {
+        "summary": "This work combines molecular dynamics simulations using CHGNet with NEGF-DFT transport calculations in NanoDCAL to investigate hydrogen contamination in Al/AlO$_x$/Al Josephson junctions, finding that H atom incorporation follows a beta-binomial distribution across 400 samples and acts as p-type dopant to increase tunneling transmission. For 2.56 at.% average hydrogen content, the predicted Josephson energy is $E_J/h = 10.92 \\\\ \\pm 0.26$ GHz, providing an atomistic picture of device-to-device variability.",
+        "motivation": "Hydrogen contamination in Al/AlO$_x$/Al Josephson junctions is a source of device-to-device variability and two-level-system loss that limits qubit coherence and complicates scaling toward fault-tolerant quantum computing, with experimental SIMS measurements reporting peak H concentrations from 1.1 to 4.1 at.% depending on fabrication method.",
+        "method": "MD simulations of Al surface oxidation in high-density O$_2$ and H$_2$O environments using CHGNet generate 400 statistically independent AlO$_x$ samples; quantum transport is evaluated by constructing Al/Al$_2$O$_3$/Al two-probe junctions and solving the Hamiltonian self-consistently with NEGF-DFT using GGA+$U$ ($U = 1.0$ eV on Al p orbitals) to match experimental band alignment.",
+        "result": "The H atom number distribution is well-described by beta-binomial statistics with $\\alpha = 17.69$, $\\beta = 15.36$, $M = 40$; most H atoms (91.3%) form Al-OH or Al-OH-Al surface motifs; single H atoms increase transmission at $E_F$ from $1.61 \\times 10^{-5}$ to $1.74 \\times 10^{-5}$ via $\\sim$0.8 eV Fermi-level shift consistent with p-type doping.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9769,
+    0.9421,
+    0.9338,
+    0.8692,
+    0.8678,
+    0.7531,
+    0.6864,
+    0.6442,
+    0.5924,
+    0.5795,
+    0.5407,
+    0.5238,
+    0.5195,
+    0.5094,
+    0.4631,
+    0.4425,
+    0.4239,
+    0.3805,
+    0.3796,
+    0.3659,
+    0.3624,
+    0.3596,
+    0.2821,
+    0.2736,
+    0.2482,
+    0.2406,
+    0.2361,
+    0.2294,
+    0.2155,
+    0.211,
+    0.2082,
+    0.2044,
+    0.2034,
+    0.1939,
+    0.1857,
+    0.1828,
+    0.169,
+    0.1671,
+    0.1625,
+    0.1614,
+    0.1602,
+    0.1581,
+    0.1386,
+    0.1304,
+    0.1251,
+    0.125,
+    0.1246,
+    0.1213,
+    0.1181,
+    0.1143,
+    0.1138,
+    0.1097,
+    0.1068,
+    0.1037,
+    0.103,
+    0.0995,
+    0.0959,
+    0.093,
+    0.0876,
+    0.0868,
+    0.0865,
+    0.0858,
+    0.0831,
+    0.0827,
+    0.0826,
+    0.0823,
+    0.078,
+    0.0758,
+    0.0749,
+    0.0746,
+    0.0737,
+    0.0708,
+    0.0702,
+    0.0689,
+    0.0683,
+    0.0673,
+    0.0665,
+    0.0655,
+    0.0654,
+    0.0639,
+    0.063,
+    0.061,
+    0.059,
+    0.057,
+    0.057,
+    0.057,
+    0.051,
+    0.0464,
+    0.0463,
+    0.0459,
+    0.0454,
+    0.042,
+    0.0399,
+    0.0395,
+    0.0353,
+    0.0337,
+    0.0328,
+    0.0314,
+    0.0299,
+    0.029,
+    0.0279,
+    0.0277,
+    0.0276,
+    0.0276,
+    0.0263,
+    0.026,
+    0.0248,
+    0.024,
+    0.0234,
+    0.0228,
+    0.0227,
+    0.0225,
+    0.0222,
+    0.0205,
+    0.0197,
+    0.0196,
+    0.0193,
+    0.0192,
+    0.0186,
+    0.0185,
+    0.0183,
+    0.0179,
+    0.0178,
+    0.0173,
+    0.0168,
+    0.0162,
+    0.0159,
+    0.0147,
+    0.0146,
+    0.0145,
+    0.0141,
+    0.0136,
+    0.0132,
+    0.011,
+    0.0105,
+    0.0103,
+    0.01,
+    0.0095,
+    0.0092,
+    0.0092,
+    0.0085,
+    0.0084,
+    0.0083,
+    0.0081,
+    0.0075,
+    0.0074,
+    0.0074,
+    0.0072,
+    0.0069,
+    0.0066,
+    0.0057,
+    0.0054,
+    0.0053,
+    0.0051,
+    0.0048,
+    0.0047,
+    0.0045,
+    0.0039,
+    0.0037,
+    0.0036,
+    0.0036,
+    0.0034,
+    0.0031,
+    0.0024,
+    0.0024,
+    0.0022,
+    0.0022,
+    0.0014,
+    0.001
+  ]
+}

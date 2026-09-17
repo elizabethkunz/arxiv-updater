@@ -1,0 +1,323 @@
+{
+  "date": "2026-07-07",
+  "n_fetched": 159,
+  "papers": [
+    {
+      "id": "2607.05072",
+      "title": "Transmon Phase Gates Controlled by Superconducting Soliton DAC",
+      "authors": [
+        "Derek Reitz",
+        "Tony X. Zhou",
+        "Aditya Sharma",
+        "Ryan Bilotta",
+        "John McFarland",
+        "Aref Fouladi",
+        "Jacob Glasby",
+        "Aruna Ramanayaka",
+        "Zachary Stegen",
+        "Aaron Pesetski",
+        "Mark Covington",
+        "Gregory Boyd",
+        "Jeremy Clark"
+      ],
+      "abstract": "We introduce a superconducting digital-to-analog converter (DAC) that filters control noise, provides native multiplexing, performs quantum gates in nanoseconds, and can be controlled by CMOS. This is achieved by transducing a trapezoidal drive pulse into a superconducting soliton, which is then held in the DAC load loop, applying flux to a mutually-coupled superconducting qubit or gate coupler. The analog flux output by the DAC can be easily controlled by varying the soliton hold time, or with a DC-biased tunable DAC-qubit coupler, allowing the DAC to perform a fixed-time, high-fidelity gate that's robust to fabrication variance or flux offsets in the quantum circuit. Our initial demonstration shows that the DAC can successfully perform 5.6 ns S-gates on transmons. We measure the DAC-induced quantum state excitation probability per gate to be 0.05%, and find that the DAC-induced relaxation rate from the qubit 1 state is below the intrinsic T1 rate limit of the transmon. Quantum simulations show qualitative agreement with the measured data, and predict that the DAC excitation rate can be lowered 10 times further by overdamping the Josephson junction (JJ) in the DAC load loop. may be limited by a Interleaved Randomized Benchmarking (IRB) sequences on an observer qubit reveal that, when scaling to many qubits, the DAC's performance may be limited by a non-local, DAC-induced phase error of 1.6% per gate, appearing in ancilla qubits that are not directly coupled to any of the 30 DACs on the chip. We discuss strategies for future layouts of multi-DAC chips that focus on mitigating the source of these non-local, high-frequency electromagnetic interactions (EMI), and how to incorporate a DC-tunable coupler for phase correction.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-06",
+      "score": 0.9110889545026682,
+      "similar_to": [
+        {
+          "title": "Optimizing the frequency positioning of tunable couplers in a circuit QED processor to mitigate spectator effects on quantum operations",
+          "id": "2503.13225",
+          "similarity": 0.8632559776306152
+        },
+        {
+          "title": "Long-distance transmon coupler with CZ gate fidelity above 99.8%",
+          "id": "2208.09460",
+          "similarity": 0.8509082198143005
+        }
+      ],
+      "summary": {
+        "summary": "This paper demonstrates a superconducting soliton digital-to-analog converter (DAC) that converts digital CMOS inputs into smooth flux pulses for controlling transmon qubits, achieving 5.6 ns phase gates with 0.05% excitation probability per gate. The soliton DAC provides passive noise filtering (-80 dB attenuation at transmon frequencies), native multiplexing, and CMOS compatibility, but reveals significant non-local electromagnetic crosstalk (1.6% phase error per gate) from 30 simultaneously triggered DACs on the control chip.",
+        "motivation": "Scaling superconducting quantum processors requires solving the wiring bottleneck and control noise issues that arise from individually driving each qubit with room-temperature microwave lines.",
+        "method": "A Josephson transmission line (JTL) with 10 spoke Josephson junctions ($I_\\mathrm{crit} = 340$ μA, $\\beta = 0.5$) stores and releases flux via soliton propagation, controlled by a trapezoidal current pulse exceeding the injection threshold. The DAC load loop is mutually coupled ($M = 4.6$ pH) to transmon qubits ($I_c = 47$ nA, $C = 83$ fF, $f_{01} = 6.8$ GHz). Gate performance is characterized via Ramsey spectroscopy, interleaved randomized benchmarking, and WRSpice/Circuitizer simulations.",
+        "result": "Measured gate fidelity is $1.9 \\pm 0.4$% for $\\pi/2$ phase gates; direct qubit excitation is $0.05\\%$ per gate with relaxation rate below intrinsic $T_1 = 8 \\pm 0.3$ μs. Non-local phase errors from unshunted middle JJs dominate, but simulations predict $4 \\times 10^{-6}$ error with optimized damping and improved waveform timing, well below surface code thresholds.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.04097",
+      "title": "Full Gate-Voltage Control of a Parity-Protected Superconducting Qubit with an Altermagnetic Josephson Junction",
+      "authors": [
+        "Guo-Liang Guo"
+      ],
+      "abstract": "Parity-protected superconducting qubits offer intrinsically long coherence, but many current implementations require magnetic-flux biasing, which introduces flux noise, control overhead, and limited scalability. Here we propose a parity-protected qubit based on a gate-tunable superconductor-altermagnet-superconductor Josephson junction. Altermagnets are compensated magnets with momentum-dependent spin splitting and zero net magnetization, providing spin-dependent functionality without external magnetic fields. In the proposed junction, the two spin sectors acquire opposite phase shifts, generating two Josephson channels whose interference is controlled electrically by the chemical potential. At the tuned $0$-$π$ transition, the first Josephson harmonic is strongly suppressed while the second harmonic dominates, yielding a double-well potential with two nearly degenerate states of opposite Cooper-pair parity. For realistic gatemon-compatible parameters, we estimate coherence times of up to tens of milliseconds while maintaining fully gate-controlled qubit operations. These results establish altermagnetic Josephson junctions as a promising route toward protected superconducting qubits with local, scalable, and all-electrical control.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-07-05",
+      "score": 0.8035477496720772,
+      "similar_to": [
+        {
+          "title": "Distinguishing parity-switching mechanisms in a superconducting qubit",
+          "id": "2204.07458",
+          "similarity": 0.8440205454826355
+        },
+        {
+          "title": "Experimental realization of an intrinsically error-protected superconducting qubit",
+          "id": "1910.07542",
+          "similarity": 0.8350182175636292
+        }
+      ],
+      "summary": {
+        "summary": "This work proposes a parity-protected superconducting qubit based on a gate-tunable superconductor-altermagnet-superconductor Josephson junction, where the altermagnet's momentum-dependent spin splitting generates two Josephson channels with opposite phase shifts that can be tuned to a 0-$\\pi$ transition via electrical gate control. Realistic parameter estimates yield coherence times reaching tens of milliseconds while maintaining fully electrical qubit operations without magnetic-flux biasing.",
+        "motivation": "Parity-protected qubits offer intrinsic coherence but current implementations rely on external magnetic-flux biasing, which introduces flux noise and scalability challenges. Altermagnets provide spin-dependent functionality through momentum-dependent spin splitting without net magnetization, offering a route to eliminate these limitations.",
+        "method": "The authors model a superconductor-altermagnet-superconductor Josephson junction where the altermagnet's spin splitting $M(\\cos k_x - \\cos k_y)$ creates opposite momentum shifts $\\pm q \\approx \\pm k_F M/(2t)$ for the two spin sectors, generating opposite Andreev channel phase shifts $\\pm 2qd$. Chemical-potential tuning at $2qd \\approx \\pi/2$ suppresses the first Josephson harmonic while driving the system to a $\\cos 2\\phi$ double-well potential with nearly degenerate opposite-parity states.",
+        "result": "At realistic gatemon parameters with $\\Delta/h = 45$ GHz (Al), $\\kappa \\approx 10^{-2}$ eV/V, and $C_g \\approx 3$–5 fF, the qubit achieves $T_1^\\mu \\sim$ hundreds of milliseconds and $T_2 \\sim$ tens of milliseconds, with nanosecond $\\pi$-pulse control enabled by $\\sim$ GHz transverse coupling $h_x(\\delta\\mu)$ near the sweet spot; parity protection suppresses charge-noise-induced transitions via vanishing $\\langle \\psi_0|\\hat{n}|\\psi_1\\rangle$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.04082",
+      "title": "A Cross-Platform Analysis of High-Performance Quantum Error Correction Codes",
+      "authors": [
+        "Bryan Pan",
+        "Yufeng Xin"
+      ],
+      "abstract": "The theory of quantum error correction was established decades ago. Yet the limitation of the quantum computing platforms in terms of noise level and available physical qubit count persists, which greatly hinders the development of scalable quantum computing systems. In this paper, we present analytical estimates of logical error rates of advanced QEC codes across leading hardware platforms and distributed quantum computing systems using a simple but unified framework. The analysis captures two dominant contributors to logical error: code structure and two-qubit gate overhead. The framework provides a fast estimate of logical error rates and identification of dominating factors in different hardware platforms, such as circuit volume, routing overhead, inter-QPU operations, or asymmetric noise protection. We show that several qualitative trends observed in larger-scale simulations can be reproduced and interpreted analytically within this framework. We further demonstrate that the framework can be used to find the sweet spot design region of distributed QEC, which is critical for the design of distributed quantum computing systems.",
+      "categories": [
+        "quant-ph",
+        "cs.ET"
+      ],
+      "published": "2026-07-05",
+      "score": 0.5860380146383477,
+      "similar_to": [
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.9069050550460815
+        },
+        {
+          "title": "Quantum error correction at ultra-low overhead",
+          "id": "2608.02773",
+          "similarity": 0.8747435212135315
+        }
+      ],
+      "summary": {
+        "summary": "This paper presents a lightweight analytical framework for estimating logical error rates of quantum error correction codes across multiple hardware platforms and distributed quantum systems, capturing the dominant contributions from code structure and two-qubit gate overhead. The framework reproduces qualitative trends from full-stack simulations and identifies sweet spots for distributed QEC architectures, revealing that inter-QPU operation overhead critically constrains scalability.",
+        "motivation": "Choosing optimal QEC codes for specific quantum platforms requires understanding tradeoffs between code distance, circuit volume, and hardware constraints across diverse topologies and noise models, yet full-stack simulations are computationally expensive and difficult to interpret analytically.",
+        "method": "The authors developed a binomial fault model approximating logical error probability as $p_L \\leq \\mathbb{P}[X \\geq \\kappa]$ where $X$ counts faults in a QEC cycle and $\\kappa$ is the correctable fault threshold, extended to heterogeneous distributed systems with separate intra-QPU ($p_{\\mathrm{intra}}$) and inter-QPU ($p_{\\mathrm{inter}}$) error rates, and applied to five code families across trapped-ion, superconducting, and neutral-atom platforms.",
+        "result": "For surface codes distributed across $q$ QPUs with $p_{\\mathrm{intra}} = 10^{-4}$ and $p_{\\mathrm{inter}}/p_{\\mathrm{intra}} = 10$, the model predicts an optimal sweet spot at $q = 9$, $d = 29$ yielding $p_L \\approx 6.94 \\times 10^{-10}$ versus $4.30 \\times 10^{-8}$ for single-QPU $d=9$; for qLDPC Bivariate Bicycle codes with similar parameters, distribution becomes detrimental unless embedding factor $\\lambda \\lesssim 0.05$, demonstrating that topological and nonlocal codes exhibit fundamentally different distribution tradeoffs.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.04393",
+      "title": "Atomic oven with rapid thermal response for atom experiments",
+      "authors": [
+        "Weilong Huang",
+        "Congjun Zou",
+        "Feiyu Dong",
+        "Huirong Xiao",
+        "Zejian Ren",
+        "Shanchao Zhang"
+      ],
+      "abstract": "Atomic oven generating controllable atomic beam flux plays a fundamental role in quantum gas experiments. Here, we report a new heater design that can heat up an high temperature atomic oven with fast thermal response. The new heater shows a heating rate improved by 7.65 times comparing to that of the conventional resistive heater while the crucible temperature can heated up to 1200K. With this oven, we generated a collimated ytterbium beam with flux exceeding $10^{14} \\text{ atoms/s}$ at 823 K. We believe that our design offers a promising solution for shortening experimental dead time and improve the experiment efficiency in cold atom researches.",
+      "categories": [
+        "physics.atom-ph",
+        "quant-ph"
+      ],
+      "published": "2026-07-05",
+      "score": 0.5152521312287148,
+      "similar_to": [
+        {
+          "title": "Quantum non-demolition dispersive readout of a superconducting artificial atom using large photon numbers",
+          "id": "2009.14785",
+          "similarity": 0.7713642120361328
+        },
+        {
+          "title": "Electrical post-fabrication tuning of aluminum Josephson junctions at room temperature",
+          "id": "2602.20002",
+          "similarity": 0.7562143802642822
+        }
+      ],
+      "summary": {
+        "summary": "An inductively heated atomic oven achieves a 7.65× improvement in heating rate compared to resistive heating, reaching the 773 K target temperature in 4.33 minutes versus 33.13 minutes, and demonstrates stable operation to 1273 K with temperature fluctuations below ±2 K. A collimated ytterbium beam with flux exceeding $10^{14}$ atoms/s at 823 K is generated using a hexagonally packed capillary nozzle array, with the enhanced thermal response enabling faster experimental cycles for quantum gas and precision metrology work.",
+        "motivation": "Conventional resistive heating of atomic crucibles in cold atom experiments requires hours to heat or cool, creating substantial apparatus dead time that limits experimental efficiency for high-temperature species like Yb, Er, and Dy operating at 700–1200 K.",
+        "method": "A water-cooled copper induction coil at 65 mm winding diameter drives eddy currents in a 304 stainless steel crucible with optimized wall thickness matched to the electromagnetic skin depth $\\delta = \\sqrt{2\\rho/\\omega\\mu}$, directly heating the crucible rather than relying on thermal contact conductance; temperature is stabilized by PI feedback with pulse-width modulation control.",
+        "result": "At 823 K crucible temperature, the source produces a collimated Yb beam with velocity spread $\\pm 72$ m/s and isotopic flux measured via resonance fluorescence of $10^{14}$ atoms/s, following expected Arrhenius vapor-pressure scaling across the 373–1273 K range.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9111,
+    0.8035,
+    0.586,
+    0.5153,
+    0.4745,
+    0.4369,
+    0.3235,
+    0.3195,
+    0.2736,
+    0.2666,
+    0.2427,
+    0.217,
+    0.1977,
+    0.1948,
+    0.1871,
+    0.1729,
+    0.1719,
+    0.1704,
+    0.1691,
+    0.1595,
+    0.1583,
+    0.1448,
+    0.1448,
+    0.1408,
+    0.1373,
+    0.1348,
+    0.1252,
+    0.1089,
+    0.105,
+    0.1022,
+    0.0956,
+    0.0946,
+    0.0933,
+    0.0928,
+    0.0911,
+    0.0878,
+    0.0878,
+    0.0869,
+    0.0861,
+    0.0813,
+    0.0805,
+    0.0771,
+    0.0748,
+    0.0732,
+    0.0716,
+    0.0712,
+    0.063,
+    0.062,
+    0.0619,
+    0.0608,
+    0.0602,
+    0.0578,
+    0.0565,
+    0.0559,
+    0.0542,
+    0.0535,
+    0.0531,
+    0.052,
+    0.0514,
+    0.0505,
+    0.0504,
+    0.0488,
+    0.0467,
+    0.0462,
+    0.045,
+    0.0448,
+    0.0441,
+    0.042,
+    0.0418,
+    0.0391,
+    0.0382,
+    0.038,
+    0.0376,
+    0.0375,
+    0.0367,
+    0.0361,
+    0.036,
+    0.0355,
+    0.0344,
+    0.034,
+    0.0335,
+    0.0309,
+    0.0302,
+    0.0301,
+    0.0301,
+    0.0296,
+    0.0265,
+    0.0253,
+    0.0249,
+    0.0244,
+    0.0236,
+    0.0234,
+    0.0227,
+    0.0227,
+    0.0225,
+    0.0215,
+    0.0204,
+    0.0201,
+    0.0196,
+    0.0196,
+    0.0193,
+    0.019,
+    0.0169,
+    0.016,
+    0.0155,
+    0.0153,
+    0.0152,
+    0.0151,
+    0.0144,
+    0.014,
+    0.0138,
+    0.0135,
+    0.0133,
+    0.0127,
+    0.0125,
+    0.0116,
+    0.0115,
+    0.0114,
+    0.0112,
+    0.0112,
+    0.0108,
+    0.0106,
+    0.0102,
+    0.0091,
+    0.009,
+    0.0089,
+    0.0089,
+    0.0088,
+    0.0079,
+    0.0073,
+    0.0072,
+    0.0069,
+    0.0064,
+    0.0064,
+    0.0061,
+    0.0055,
+    0.0053,
+    0.0049,
+    0.004,
+    0.0039,
+    0.0039,
+    0.0039,
+    0.0035,
+    0.0034,
+    0.0034,
+    0.0033,
+    0.0031,
+    0.0028,
+    0.0028,
+    0.0025,
+    0.0021,
+    0.0021,
+    0.0019,
+    0.0018,
+    0.0017,
+    0.0017,
+    0.0016,
+    0.0011,
+    0.0008
+  ]
+}

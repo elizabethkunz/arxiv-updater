@@ -1,0 +1,8 @@
+{
+  "summary": "A linear Paul trap for electrons was fabricated from a single printed circuit board with two copper layers and an integrated RF resonator, eliminating assembly and reducing manufacturing tolerances compared to multi-component designs. The trap confined electrons with lifetimes of 2.13 ms and secular frequencies up to $90$ MHz radially and $55$ MHz axially.",
+  "motivation": "Electron spin qubits offer advantages over trapped ions for quantum information processing, including higher secular frequencies enabling faster gates and simplified RF-based control, but previous electron confinement has faced challenges with Penning trap anharmonicities or surface-proximity decoherence.",
+  "method": "A monolithic PCB trap with a half-wave coplanar RF resonator (1.753 GHz, $Q_L \\approx 40.7$) at 36 dBm coupling power and 20 DC electrodes was used to confine electrons photoionized from calcium atoms ($422$ nm and $390$ nm two-photon ionization); trap characterization used resonant tickling spectroscopy and lifetime measurements in ultrahigh vacuum.",
+  "result": "Axial frequencies scaled as $\\omega_{\\mathrm{axial}}/2\\pi = 90.68|U_2| - 3.8$ MHz·mm/V with $|U_2|$ ranging $0.25$–$0.4$ V/mm$^2$; radial frequencies up to $2\\pi \\times 90$ MHz achieved at stability parameter $q = 0.147$; discrepancy between measured and simulated radial frequencies (factor of 2.2) explained by non-optimal RF coupling ($Q_c = 207$ vs. simulated 618).",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

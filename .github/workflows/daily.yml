@@ -1,0 +1,64 @@
+name: Daily arXiv digest
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # 06:00 UTC, after arXiv's ~00:00 UTC announcement
+  workflow_dispatch:
+    inputs:
+      site_only:
+        description: "Only rebuild and deploy the site from state/ (no fetch, no scoring, no email)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/fastembed
+            /tmp/fastembed_cache
+          key: fastembed-${{ hashFiles('config.yaml') }}
+      - run: uv sync --frozen
+      - name: Rebuild site only
+        if: ${{ inputs.site_only }}
+        run: uv run python -m digest.cli site
+      - name: Run digest
+        if: ${{ !inputs.site_only }}
+        run: uv run python -m digest.cli run
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SMTP_HOST: smtp.gmail.com
+          SMTP_PORT: "465"
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          EMAIL_RECIPIENTS: ${{ secrets.EMAIL_RECIPIENTS }}
+      - name: Commit state and site
+        run: |
+          git config user.name "arxiv-digest-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state site
+          git diff --cached --quiet || git commit -m "digest $(date -u +%F)"
+          git push
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4

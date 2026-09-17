@@ -1,0 +1,8 @@
+{
+  "summary": "A nonequilibrium Josephson junction in 2M-WS$_2$ van der Waals superconductor demonstrates polarity-controllable superconducting diode action with edge-triggered flip-flop operation up to 2.4 GHz. The device achieves 67% diode efficiency, on-off ratio exceeding $10^5$, and tunable pulse characteristics across 12 orders of magnitude frequency range via thickness-engineered inversion asymmetry.",
+  "motivation": "Realizing superconducting diodes at high operating frequencies remains a key challenge despite their attractive dissipationless transport and ultrahigh on-off ratios for superconducting electronics and logic applications.",
+  "method": "The authors fabricated asymmetric Josephson junctions in 2M-WS$_2$ nanoflakes by tuning thickness to engineer inversion asymmetry, enabling polarity control and nonequilibrium supercurrent dynamics that support GHz-frequency switching.",
+  "result": "The flip-flop device operates at 2.4 GHz with 67% diode efficiency, $>10^5$ on-off ratio, and output pulse width and duty cycle controllable across a 12-order-magnitude broadband frequency range via gate tuning.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

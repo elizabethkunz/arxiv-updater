@@ -1,0 +1,371 @@
+{
+  "date": "2026-02-10",
+  "n_fetched": 137,
+  "papers": [
+    {
+      "id": "2602.07617",
+      "title": "Effect of metal encapsulation on bulk superconducting properties of niobium thin films used in qubits",
+      "authors": [
+        "Amlan Datta",
+        "Kamal R. Joshi",
+        "Sunil Ghimire",
+        "Bicky S. Moirangthem",
+        "Makariy A. Tanatar",
+        "Mustafa Bal",
+        "Zuhawn Sung",
+        "Sabrina Garattoni",
+        "Francesco Crisa",
+        "Akshay Murthy",
+        "David A. Garcia-Wetten",
+        "Dominic P. Goronzy",
+        "Mark C. Hersam",
+        "Michael J. Bedzyk",
+        "Shaojiang Zhu",
+        "David Olaya",
+        "Peter Hopkins",
+        "Matthew J. Kramer",
+        "Alexander Romanenko",
+        "Anna Grassellino",
+        "Ruslan Prozorov"
+      ],
+      "abstract": "Niobium metal occupies nearly 100\\% of the volume of a typical 2D transmon device. While the aluminum Josephson junction is of utmost importance, maintaining quantum coherence across the entire device means that pair-breaking in Nb leads, capacitive pads, and readout resonators can be a major source of decoherence. The established contributors are surface oxides and hydroxides, as well as absorbed hydrogen and oxygen. Metal encapsulation of freshly grown surfaces with non-oxidizing metals, preferably without breaking the vacuum, is a successful strategy to mitigate these issues. While the positive effects of encapsulation are undeniable, it is important to understand its impact on the macroscopic behavior of niobium films. We present a comprehensive study of the bulk superconducting properties of Nb thin films encapsulated with gold and palladium/gold, and compare them to those of bare Nb films. Magneto-optical imaging, magnetization, resistivity, and London and Campbell penetration depth measurements reveal significant differences in encapsulated samples. Both sputtered, and epitaxial Au-capped films exhibit the highest residual resistivity ratio and superconducting transition temperature, as well as the lowest upper critical field, London penetration depth, and critical current. These results are in good agreement with the microscopic theory of anisotropic normal and superconducting states of Nb. We conclude that pair-breaking in the bulk of niobium films, driven by disorder throughout the film rather than just at the surface, is a significant source of quantum decoherence in transmons. We also conclude that gold capping not only passivates the surface but also affects the properties of the entire film, significantly reducing the scattering rate due to defects likely induced by surface diffusion if the film is not protected immediately after fabrication.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-02-07",
+      "score": 0.9004516723820704,
+      "similar_to": [
+        {
+          "title": "Assessing the Sensitivity of Niobium- and Tantalum-Based Superconducting Qubits to Infrared Radiation",
+          "id": "2602.05806",
+          "similarity": 0.8589996099472046
+        },
+        {
+          "title": "New material platform for superconducting transmon qubits with coherence times exceeding 0.3 milliseconds",
+          "id": "2003.00024",
+          "similarity": 0.8412426114082336
+        }
+      ],
+      "summary": {
+        "summary": "Metal encapsulation of niobium thin films with gold or palladium/gold significantly alters bulk superconducting properties beyond surface passivation, including residual resistivity ratio, transition temperature, upper critical field, and London penetration depth. Comprehensive measurements of 110–163 nm thick Nb films on sapphire via resistivity, magnetization, magneto-optical imaging, and TDR reveal that Au-capped films exhibit the highest residual resistivity ratio ($\text{RRR} \\\napprox 34$ for epitaxial, $\\\napprox 24$ for sputtered) and transition temperature while showing the lowest upper critical field, London penetration depth, and critical current density.",
+        "motivation": "Understanding the mechanisms behind metal encapsulation's effectiveness in improving transmon qubit coherence (previously reported as $\\\\sim 5\\\\times$ improvement with Ta capping) requires investigation of how capping affects bulk Nb properties, since disorder throughout the film contributes significantly to decoherence alongside surface oxides.",
+        "method": "Six Nb films (bare, Au-capped, and PdAu-capped sputtered samples at 150–163 nm; bare and Au-capped epitaxial samples at 110–120 nm) were characterized via four-probe resistivity, vibrating sample magnetometry with field parallel to the film, magneto-optical Faraday imaging of flux penetration, tunnel diode resonator measurements of London and Campbell penetration depths, and transport measurements of $H_{c2}(T)$ with TOF-SIMS compositional profiling.",
+        "result": "Au-capped films achieve $T_c$ values closest to the clean limit, suppress themagnetic avalanches entirely, and exhibit the lowest critical current density ($j_c$) and Campbell penetration depth ($\\\\lambda_C$) at $H = 0.4$ T, while bare Nb films show the highest disorder ($\text{RRR} \\\\approx 5$), highest $H_{c2}(0)$, and strong thermomagnetic instabilities; oxygen concentration is $\\\\sim 10\\\\times$ higher in bare Nb than Au-capped sputtered films, correlating with disorder-driven $T_c$ suppression described by the anisotropic multiband BCS theory for Nb.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.08869",
+      "title": "A cavity-mediated reconfigurable coupling scheme for superconducting qubits",
+      "authors": [
+        "Shinyoung Hwang",
+        "Sangyeon Lee",
+        "Eunjong Kim"
+      ],
+      "abstract": "Superconducting qubits have achieved remarkable progress in gate fidelity and coherence, yet their typical nearest-neighbor connectivity presents constraints for implementing complex quantum circuits. Here, we introduce a cavity-mediated coupling architecture in which a shared cavity mode, accessed through tunable qubit-cavity couplers, enables dynamically reconfigurable interactions between non-adjacent qubits. By selectively activating the couplers, we demonstrate that high-fidelity iSWAP and CZ gates can be performed within 50 ns with simulated coherent error below $10^{-4}$, while residual $ZZ$ interaction during idling remains below a few kilohertz. Extending to a four-qubit system, we also simulate gates between every qubit pair by selectively enabling the couplers with low qubit crosstalk. This approach provides a practical route toward enhanced interaction flexibility in superconducting quantum processors and may serve as a useful building block for devices that benefit from selective non-local coupling.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-09",
+      "score": 0.8836766810122437,
+      "similar_to": [
+        {
+          "title": "A double-resonator coupler for high-fidelity two-qubit gates between superconducting qubits",
+          "id": "2609.05222",
+          "similarity": 0.900364100933075
+        },
+        {
+          "title": "A tunable coupling scheme for implementing high-fidelity two-qubit gates",
+          "id": "1803.09813",
+          "similarity": 0.896998941898346
+        }
+      ],
+      "summary": {
+        "summary": "A cavity-mediated architecture uses tunable qubit-cavity couplers to enable dynamically reconfigurable interactions between arbitrary superconducting qubit pairs through a shared bus resonator, achieving iSWAP and CZ gates in 45–70 ns with coherent errors below $10^{-4}$ and residual $ZZ$ interactions suppressed to kilohertz levels. Simulations of a four-qubit system demonstrate selective non-local two-qubit gates for all qubit pairs with fidelities exceeding 99.9% and minimal spectator crosstalk, relaxing geometric constraints on qubit placement.",
+        "motivation": "Superconducting quantum processors with nearest-neighbor-only connectivity require swap networks that increase circuit depth and accumulated error; extending connectivity to arbitrary qubit pairs without direct coupling enables higher error-correction encoding rates and native long-range-interacting simulations.",
+        "method": "The architecture uses frequency-tunable transmon couplers mediating interactions between qubits and a shared $\\lambda/2$ coplanar waveguide resonator at $\\omega_R/2\\pi = 3.85$ GHz. Qubits park at 4–5 GHz and couplers at 6–7 GHz in the idle state; lowering selected couplers to $\\sim 4.3$ GHz activates cavity-mediated exchange coupling $2g_{QQ}/2\\pi \\approx 25$ MHz between chosen pairs while others remain isolated. iSWAP and CZ gates use Slepian-like frequency trajectories with polynomial shaping, optimized numerically through diagonalization of the full circuit Hamiltonian including capacitive couplings $(C_{QC}, C_{QR}, C_{CR}) = (3.7, 1.0, 37.4)$ fF and anharmonicities $(\\alpha_Q/2\\pi, \\alpha_C/2\\pi) = -(220, 268)$ MHz.",
+        "result": "Two-qubit simulations achieve iSWAP fidelity 99.995% at $t_g = 45$ ns and CZ fidelity 99.998% at $t_g = 58$ ns with coherent errors $< 10^{-5}$; four-qubit simulations show all six qubit-pair iSWAP gates at $>99.91\\%$ fidelity and CZ gates at $>99.91\\%$ fidelity with $\\varepsilon_{ZZ} < 2 \\times 10^{-4}$ on spectators. For realistic $T_1, T_\\phi \\sim 100$ µs, total gate fidelity exceeds 99.9%; at $T_1, T_\\phi \\sim 300$ µs the four-qubit CZ fidelity approaches 99.9%.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.07522",
+      "title": "Systematic Characterization of Transmon Qubit Stability with Thermal Cycling",
+      "authors": [
+        "Cong Li",
+        "Zhaohua Yang",
+        "Xinfang Zhang",
+        "Zhihao Wu",
+        "Shichuan Xue",
+        "Mingtang Deng"
+      ],
+      "abstract": "The temporal stability and reproducibility of qubit parameters are critical for the long-term operation and maintenance of superconducting quantum processors. In this work, we present a comprehensive longitudinal characterization of 27 frequency-tunable transmon qubits spanning over one year across four thermal cycles. Our results establish a distinct hierarchy of stability for superconducting hardware. We find that the intrinsic device parameters determining the qubit frequency and the baseline energy relaxation times ($T_1$) exhibit high robustness against thermal stress, characterized by frequency deviations typically confined within 0.5\\% and non-degraded coherence baselines. In stark contrast, the environmental variables, specifically the background magnetic flux offsets and the microscopic landscape of two-level system (TLS) defects, undergo a significant stochastic reconfiguration after each cycle. By employing frequency-dependent relaxation spectroscopy and a quantitative metric, the $T_1$ Spectral Topography Fidelity, we demonstrate that thermal cycling acts as a ``hard reset'' for the local defect environment. This process introduces a level of spectral randomization equivalent to thousands of hours of continuous low-temperature evolution. These findings confirm that while the fabrication quality is preserved, the specific noise realization is statistically distinct for each thermal cycle, necessitating automated recalibration strategies for large-scale quantum systems.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-07",
+      "score": 0.826061208581087,
+      "similar_to": [
+        {
+          "title": "Scalable and Site-Specific Frequency Tuning of Two-Level System Defects in Superconducting Qubit Arrays",
+          "id": "2503.04702",
+          "similarity": 0.884946882724762
+        },
+        {
+          "title": "New material platform for superconducting transmon qubits with coherence times exceeding 0.3 milliseconds",
+          "id": "2003.00024",
+          "similarity": 0.8809218406677246
+        }
+      ],
+      "summary": {
+        "summary": "This work presents a year-long longitudinal characterization of 27 frequency-tunable transmon qubits across four thermal cycles, revealing a clear stability hierarchy: intrinsic device parameters (qubit frequency and baseline $T_1$) remain robust with $|\\Delta f_{01}^{\\mathrm{max}}| < 0.5\\%$, while environmental variables (flux offsets and two-level system defect distributions) undergo stochastic reconfiguration. Through frequency-dependent relaxation spectroscopy and a novel $T_1$ Spectral Topography Fidelity metric, the authors demonstrate that each thermal cycle acts as a 'hard reset' of the defect landscape, inducing spectral randomization equivalent to $>1000$ hours of continuous low-temperature evolution.",
+        "motivation": "Superconducting quantum processors require repeated thermal cycling for maintenance and upgrades, yet systematic studies quantifying the impact on device stability and qubit parameters have been absent. Understanding how thermal cycles affect both intrinsic hardware quality and the microscopic TLS environment is essential for developing maintenance strategies for scalable systems.",
+        "method": "The authors tracked 27 qubits over nine months across four thermal cycles using flux-dependent spectroscopy, $T_1$ measurements, and frequency-dependent relaxation spectroscopy. They introduced a Z-score normalized metric ($\\rho = \\alpha/\\delta$) to quantify reproducibility of the qubit's time-frequency decay landscape, comparing intra-cycle and inter-cycle spectral fingerprints.",
+        "result": "Qubit frequencies deviate by $\\pm 20$ MHz ($0.5\\%$ relative) and $T_1$ baselines show no degradation across cycles, confirming fabrication robustness. Conversely, flux biases and TLS distributions randomize after each cycle with $\\rho \\sim 0.3$ (inter-cycle) versus $\\rho \\sim 0.8$ (initial intra-cycle), matching fidelity levels observed after $>1000$ hours of continuous diffusion at 20 mK.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.08890",
+      "title": "Multiplexed microwave resonators by frequency comb spectroscopy",
+      "authors": [
+        "Angelo Greco",
+        "Jukka-Pekka Kaikkonen",
+        "Luca Chirolli",
+        "Alberto Ronzani",
+        "Jorden Senior",
+        "Francesco Giazotto",
+        "Alessandro Crippa"
+      ],
+      "abstract": "Coplanar waveguide resonators are central to the thriving field of circuit quantum electrodynamics. Recently, we have demonstrated the generation of a broadband microwave-frequency comb spectrum using a superconducting quantum interference device (SQUID) driven by a time-dependent magnetic field. Here, the frequency comb is used to spectroscopically probe a bank of coplanar microwave resonators, inductively coupled to a common transmission line, a standard circuit with a variety of applications. We compare the resonator line shape obtained from signals synthesized at room temperature using conventional electronics with the radiation produced in the cryogenic environment by our source, showing substantial equivalence in the estimation of the resonator quality factors. To measure non-uniformly spaced resonant frequencies, we drive the generator with a bi-chromatic tone to generate intermodulation products. Such a dense frequency comb spectrum enables simultaneous addressing of a few resonators via frequency multiplexing. Finally, we discuss the criteria for achieving effective spectroscopic coverage of a given frequency bandwidth.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-02-09",
+      "score": 0.7352156161855614,
+      "similar_to": [
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.8424569368362427
+        },
+        {
+          "title": "High-gain and large-bandwidth Josephson parametric amplifier influenced by Fabry-Perot interference",
+          "id": "2604.13881",
+          "similarity": 0.8321821689605713
+        }
+      ],
+      "summary": {
+        "summary": "A superconducting SQUID-based frequency comb generator operating at cryogenic temperature is used to perform spectroscopy of coplanar waveguide microwave resonators, achieving quality factor measurements comparable to vector network analyzer characterization. Bi-chromatic pumping generates intermodulation products enabling simultaneous multiplexed readout of multiple non-uniformly spaced resonators via frequency combs of the form $f_{n,m} = nf_{p1} + mf_{p2}$.",
+        "motivation": "Scaling quantum processors and sensor arrays requires multiplexed readout to reduce wiring from room temperature to the mixing chamber, motivating development of cryogenic signal sources with low dissipation.",
+        "method": "A dc Al SQUID on a 150 nm optical lithography process generates harmonics up to the 4–8 GHz band from pump tones in the 0.4–0.5 GHz range. Resonator spectra acquired via frequency comb spectroscopy (sweeping pump frequency to scan the $n$-th harmonic across resonance) are compared against VNA measurements at matched input power ($n_{\\mathrm{ph}} \\approx 1$ and $\\approx 1000$). Bi-chromatic pumping with $f_{p1} = 404.65$ MHz and $f_{p2} = 541.07$ MHz generates a dense intermodulation lattice to address three resonators with internal quality factors $Q_i = 98$–$148$ k simultaneously.",
+        "result": "VNA and frequency comb spectroscopy yield consistent quality factors (differences within fit parameter variation across photon number regimes), though Fano phase factors $\\phi$ differ by $\\sim 0.5$ rad due to different input impedance networks; the 9th and 13th harmonics probe resonator linewidths with amplitude dips matching at $n_{\\mathrm{ph}} \\approx 1000$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.08610",
+      "title": "Quantum Charging Advantage in Superconducting Solid-State Batteries",
+      "authors": [
+        "Chang-Kang Hu",
+        "Chilong Liu",
+        "Jingchao Zhao",
+        "Liuzhu Zhong",
+        "Yuxuan Zhou",
+        "Mingze Liu",
+        "Haolan Yuan",
+        "Yongchang Lin",
+        "Yue Xu",
+        "Guantian Hu",
+        "Guixu Xie",
+        "Zixing Liu",
+        "Ruiyang Zhou",
+        "Yougui Ri",
+        "Wenxuan Zhang",
+        "Ruicheng Deng",
+        "Andreia Saguia",
+        "Xiayu Linpeng",
+        "Marcelo S. Sarandy",
+        "Song Liu",
+        "Alan C. Santos",
+        "Dian Tan",
+        "Dapeng Yu"
+      ],
+      "abstract": "Quantum battery, as a novel energy storage device, offers the potential for unprecedented efficiency and performance beyond the capabilities of classical systems, with broad implications for future quantum technologies. Here, we experimentally \\RefC{demonstrate quantum charging advantage (QCA)} in a scalable solid-state quantum battery. More specifically, we show how double-excitation Hamiltonians for two-level systems promote scalable QCA \\RefB{with standard methods.} We effectively implement the collective evolution of quantum systems with 2 up to 12 battery cells in a superconducting quantum processor, and study the performance of quantum charging compared to its uncorrelated classical counterpart. The model considered is a linear chain of superconducting transmon qubits with only \\textit{nearest-neighbor} and \\textit{pairwise} interactions, which constitute the simplest model of a multi-cell quantum battery. Our results empirically realize substantial QCA without the necessity of adopting long-range and many-body interactions \\RefB{ and showcase the quantum features of the QB charging processes with measurements of non-zero coherent ergotropy, incoherent ergotropy and entanglement,} revealing a promising prospect for further developments of efficient and experimentally feasible protocols for QCA.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-09",
+      "score": 0.6285544650596995,
+      "similar_to": [
+        {
+          "title": "Charge insensitive qubit design derived from the Cooper pair box",
+          "id": null,
+          "similarity": 0.81502366065979
+        },
+        {
+          "title": "The superconducting grid-states qubit",
+          "id": "2509.14656",
+          "similarity": 0.8090693950653076
+        }
+      ],
+      "summary": {
+        "summary": "This work experimentally demonstrates quantum charging advantage (QCA) in superconducting quantum batteries with 2–12 transmon qubits arranged in a linear chain, using only nearest-neighbor pairwise two-photon interactions. The quantum charging protocol (double-excitation Hamiltonian $V_\\mathrm{qu} = \\sum_{n=1}^{N-1} \\hbar g(\\sigma_n^+ \\sigma_{n+1}^+ + \\sigma_n^- \\sigma_{n+1}^-)$) outperforms classical local driving ($V_\\mathrm{cl} = \\sum_n \\hbar \\Omega(\\sigma_n^+ + \\sigma_n^-)$) under equal energy constraints.",
+        "motivation": "Prior theoretical proposals for QCA required complex many-body or long-range all-to-all interactions; this work addresses the gap between theory and experiment by demonstrating QCA with experimentally accessible nearest-neighbor pairwise couplings in a scalable solid-state platform.",
+        "method": "Using a 16-qubit superconducting lattice with frequency-tunable couplers, the authors implement parametric bSWAP operations via sinusoidal flux modulation at frequency $\\omega_d \\approx \\omega_n + \\omega_{n+1}$ to engineer two-photon transitions. They measure ergotropy, average charging power $\\overline{\\mathcal{P}}_\\mathrm{opt}(N)$, and the advantage parameter $\\Gamma_\\mathrm{ad} = \\overline{\\mathcal{P}}^\\mathrm{opt}_\\mathrm{qu}/\\overline{\\mathcal{P}}^\\mathrm{opt}_\\mathrm{cl} - 1$, along with entanglement via second-order Rényi entropy.",
+        "result": "Quantum charging achieves $\\Gamma_\\mathrm{ad}(N) > 0$ with $\\eta(N) \\geq 0$ for $N \\in [2,12]$, confirming genuine QCA without excess energy cost; the maximum power scales linearly with $N$ for quantum charging versus sublinear for classical, with measured effective coupling $g \\approx 1.03 \\times 2\\pi$ MHz, coherent and incoherent ergotropy contributions, and $g^{(2)} > 1$ (giant bunching) indicating anti-blockade-like excitation-facilitating dynamics.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9005,
+    0.8837,
+    0.8261,
+    0.7352,
+    0.6286,
+    0.4874,
+    0.4489,
+    0.4476,
+    0.3528,
+    0.3354,
+    0.3126,
+    0.3012,
+    0.2669,
+    0.2528,
+    0.2357,
+    0.2245,
+    0.2121,
+    0.2062,
+    0.1925,
+    0.1907,
+    0.1896,
+    0.1647,
+    0.1618,
+    0.1579,
+    0.1483,
+    0.1458,
+    0.1448,
+    0.1407,
+    0.1359,
+    0.1345,
+    0.1302,
+    0.1181,
+    0.1166,
+    0.1134,
+    0.1056,
+    0.1006,
+    0.0912,
+    0.0866,
+    0.0852,
+    0.0831,
+    0.0782,
+    0.0762,
+    0.0755,
+    0.074,
+    0.0726,
+    0.0655,
+    0.0652,
+    0.0651,
+    0.0649,
+    0.0644,
+    0.0641,
+    0.0641,
+    0.0622,
+    0.0583,
+    0.0565,
+    0.0548,
+    0.0528,
+    0.0487,
+    0.0482,
+    0.0471,
+    0.0461,
+    0.0434,
+    0.0433,
+    0.0428,
+    0.0428,
+    0.0416,
+    0.0396,
+    0.0368,
+    0.0353,
+    0.034,
+    0.0339,
+    0.0328,
+    0.0325,
+    0.0324,
+    0.0323,
+    0.0287,
+    0.0279,
+    0.0277,
+    0.0276,
+    0.0275,
+    0.0273,
+    0.0273,
+    0.0272,
+    0.0267,
+    0.0267,
+    0.0256,
+    0.025,
+    0.0245,
+    0.0236,
+    0.0234,
+    0.0214,
+    0.0201,
+    0.02,
+    0.0184,
+    0.0173,
+    0.015,
+    0.0143,
+    0.0142,
+    0.014,
+    0.013,
+    0.0121,
+    0.0121,
+    0.012,
+    0.0119,
+    0.011,
+    0.0109,
+    0.0108,
+    0.0107,
+    0.0104,
+    0.0104,
+    0.0101,
+    0.0101,
+    0.0099,
+    0.0099,
+    0.009,
+    0.0088,
+    0.0081,
+    0.0077,
+    0.0076,
+    0.0071,
+    0.0066,
+    0.0063,
+    0.0059,
+    0.0055,
+    0.0054,
+    0.0049,
+    0.0049,
+    0.0047,
+    0.0045,
+    0.004,
+    0.0034,
+    0.0034,
+    0.0032,
+    0.0026,
+    0.0026,
+    0.0018,
+    0.0012
+  ]
+}

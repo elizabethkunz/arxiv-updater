@@ -1,0 +1,249 @@
+{
+  "date": "2026-09-07",
+  "n_fetched": 87,
+  "papers": [
+    {
+      "id": "2609.05192",
+      "title": "Dynamical Reduction of Two Series Josephson Junctions to a Synthetic High-Transparency Josephson Element",
+      "authors": [
+        "Claudio Guarcello",
+        "Sergio Pagano",
+        "Carlo Barone",
+        "Alessandro Bruno",
+        "A. Mert Bozkurt",
+        "Giovanni Filatrella"
+      ],
+      "abstract": "Two conventional Josephson junctions connected in series can reproduce, in the static limit in which the currents through the capacitive and resistive channels are negligible, the current-phase relation of a single effective weak link with tunable transparency. Therefore, the two-junction series can be treated as a single synthetic high-transparency element. Here, we investigate to what extent this mapping remains valid under finite-frequency drive and retaining the junctions' resistive and capacitive terms. The full resistively and capacitively shunted junction equations are compared with an effective synthetic element with tunable transparency that retains the synthetic tunable-transparency current-phase relation together with effective capacitive and dissipative terms, thus reducing the two second order degree of freedom system to a single second order degree of freedom. The resulting single-element dynamics is compared with the complete two-junction system under ac excitation. The agreement is quantified through a normalized root-mean-square error between the full and effective voltage waveforms. A broad low-error region is found at low drive frequency, while pronounced deviations emerge as the drive frequency approaches the relevant plasma-frequency scale and at larger drive amplitudes. The results provide a quantitative dynamical criterion for using the reduced single-element description of a synthetic high-transparency Josephson element in superconducting circuits.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-09-04",
+      "score": 0.6672542710020058,
+      "similar_to": [
+        {
+          "title": "Observation of Josephson Harmonics in Tunnel Junctions",
+          "id": "2302.09192",
+          "similarity": 0.825061023235321
+        },
+        {
+          "title": "Collapse and Inversion of the Josephson Potential in a Strongly Driven Superconducting Circuit",
+          "id": "2607.14344",
+          "similarity": 0.8242723941802979
+        }
+      ],
+      "summary": {
+        "summary": "Two series Josephson junctions with areas scaled in ratio $\\alpha$ can be reduced to a single effective high-transparency element with $\\mathcal{T} = 4\\alpha/(1+\\alpha)^2$, whose validity under dynamical drive is systematically investigated through normalized voltage-waveform RMS error. The reduction remains accurate to $\\epsilon_V \\lesssim 10^{-4}$–$10^{-5}$ over broad frequency and amplitude ranges but breaks down in the strongly nonlinear near-resonant regime where internal relative-phase dynamics emerge.",
+        "motivation": "Engineering nonsinusoidal current-phase relations from conventional junctions is useful for tailoring superconducting nonlinearities, but the validity of the static CPR mapping to finite-frequency drive with finite capacitance and dissipation must be established before deploying synthetic elements as circuit blocks.",
+        "method": "Full two-junction RCSJ equations with $I_{c1} = 2\\ \\mu$A, $C_1 = 200$ fF, $R_1 = R_2 = 20$ k$\\Omega$ are compared numerically to an effective single-junction model derived by requiring equal electrostatic energy and dissipated power; comparison is quantified via normalized RMS error between complete and effective voltage waveforms over $\\alpha \\in \\{0.25, 0.50, 0.75, 0.99\\}$, drive frequencies $0.05 \\lesssim \\Omega \\lesssim 1.05$, and amplitudes $10^{-3} \\lesssim i_{ac} \\lesssim 0.5$.",
+        "result": "High-accuracy region extends to low normalized drive frequency with $\\epsilon_V$ near numerical floor; accuracy deteriorates approaching the plasma resonance $\\Omega_p = 1$ and at large drive amplitudes, with superharmonic structures near $\\Omega \\approx 1/3$; agreement improves markedly as $\\alpha \\to 1$, approaching exact equivalence in the symmetric limit.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.05226",
+      "title": "TETRIS-Q: Tiling-based Effective Transient-fault Reduction on Interleaved Superconducting Qubits",
+      "authors": [
+        "Marzio Vallero",
+        "Gioele Casagranda",
+        "Flavio Vella",
+        "Paolo Rech"
+      ],
+      "abstract": "The struggle of the hour in quantum computing research is achieving effective suppression of the error mechanisms induced by the interaction of external radiation with superconducting quantum devices. Despite the rapid advancements in quantum error correction (QEC) of recent years, radiation-induced faults are yet to be fully addressed. These events are known to be the cause of simultaneous correlated defects in qubits that lie onto a single substrate, ultimately jeopardising QEC code effectiveness. In this paper, we propose to selectively combine substrate-level phonon barriers and QEC interleaving via a planar-mesh tiling algorithm, TETRIS-Q, reaching efficient and effective suppression of radiation events. Our cross-layer solution comes at no extra cost in terms of QEC code execution or decoding time. We model and simulate radiation-induced transient faults over a plethora of barrier and QEC interleaving configurations. Through more than 51 million quantum circuit simulations, we show peak logical error reductions of more than $99.8 \\%$, together with an $80\\%$ reduction of the observable transient duration with permeable barriers. We find that sparser tiling can reach comparable performance to single qubit tiling, prompting cost reductions of upwards of $87 \\%$ in barrier tracing. By leveraging independent QEC code interleaving, we measure up to one order of magnitude average logical error rate reductions without the use of permeable barriers, and up to three orders of magnitude with the joint usage of barriers.",
+      "categories": [
+        "quant-ph",
+        "cs.AR"
+      ],
+      "published": "2026-09-04",
+      "score": 0.6623588955142465,
+      "similar_to": [
+        {
+          "title": "Resolving catastrophic error bursts from cosmic rays in large arrays of superconducting qubits",
+          "id": "2104.05219",
+          "similarity": 0.8666670322418213
+        },
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8665587902069092
+        }
+      ],
+      "summary": {
+        "summary": "TETRIS-Q is a planar-mesh tiling algorithm that combines substrate-level phonon barriers with QEC code interleaving to suppress radiation-induced correlated faults in superconducting qubits. Through over 51 million simulations on rotated surface codes, the approach achieves logical error reductions exceeding 99.8% and reduces observable transient duration by 80%, with sparse tiling enabling 87% cost reductions in barrier implementation.",
+        "motivation": "Radiation events cause spatio-temporally correlated faults affecting multiple qubits on a substrate, disrupting QEC codes despite recent advances; superconducting qubits are thousands of times more sensitive to radiation than CMOS transistors, and existing solutions (underground shielding, gap engineering, quasiparticle traps) impose impractical scalability and manufacturing constraints.",
+        "method": "TETRIS-Q partitions a 1741-qubit square-lattice quantum chip into tiles enclosed by phonon barriers with tunable permeability $b_p \\in [0, 0.01]$, reducing quasiparticle propagation via a dampening factor $B(\\Delta l) = b_p^{\\Delta l}$; independently interleaved QEC codes increase physical distance between virtually close qubits; rotated surface codes (distances $d \\in \\{5,7,9,11\\}$) are evaluated under SI1000 noise ($p = 10^{-5}$) and simulated 100 ms radiation events with $\\tau_1 = 85$ µs qubits.",
+        "result": "Single-qubit tiles with $b_p = 0.1$ reduce peak logical error to ~3% at distance-5 and <1% at distance-11; tiles containing up to 25% of a QEC code's qubits match single-qubit performance with >75% cost savings; interleaving four surface codes with 15-qubit tiles at $b_p = 0.1$ achieves 9.3×10⁻⁴ average logical error rate while reducing barrier cost by 70%, and combined barriers+interleaving provide up to three orders of magnitude logical error suppression.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.04704",
+      "title": "Strong-Drive Limits in Josephson Circuits: From Chaos to an Unbound-Resonance Threshold",
+      "authors": [
+        "Xinyuan You",
+        "Aniket Maiti",
+        "Yao Lu"
+      ],
+      "abstract": "Strong microwave drives enable fast measurement and parametric control in superconducting circuits but can induce transitions out of the intended low-energy manifold. We develop a unified description of strong-drive limits in flux- and charge-driven Josephson circuits across drive frequency and dc flux bias. Using classical phase-space analysis and Floquet--Markov simulations, we identify distinct low- and high-frequency mechanisms. At low frequency, we characterize bound-state resonances and separatrix chaos and find that the flux-drive chaos threshold depends strongly on dc flux bias. At high frequency, these mechanisms are suppressed, and the dissipative steady state transfers from the central bound-state sector to outer resonances formed by above-barrier running trajectories. The resulting unbound-resonance threshold is nearly independent of drive frequency and circuit parameters over the regime studied and is controlled primarily by dc flux bias. Coherent simulations show that parametric operation persists beyond this threshold, but at a reduced rate, setting an effective upper bound on the achievable operation speed. We derive analytical criteria for both thresholds, validate them numerically, and experimentally confirm the predicted dc-bias dependence of the low-frequency threshold in a flux-driven SQUID. We also determine the timescales for transfer into the unbound-resonance regime and relaxation back to the bound-state manifold after the drive is removed. Finally, we relate the stability limits to a complementary picture based on the junction critical current and extend the framework to multitone drives and inductively shunted circuits. Together, these results identify the mechanisms limiting strong driving and suggest routes to extend the stable operating range of Josephson circuits.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-04",
+      "score": 0.6187488791553147,
+      "similar_to": [
+        {
+          "title": "Collapse and Inversion of the Josephson Potential in a Strongly Driven Superconducting Circuit",
+          "id": "2607.14344",
+          "similarity": 0.8886873722076416
+        },
+        {
+          "title": "Characterization of drive-induced unwanted state transitions in superconducting circuits",
+          "id": "2506.24070",
+          "similarity": 0.87931889295578
+        }
+      ],
+      "summary": {
+        "summary": "This paper develops a unified description of strong-drive limits in flux- and charge-driven Josephson circuits across drive frequency and dc flux bias using classical phase-space analysis and Floquet–Markov simulations. At low frequency, bound-state resonances and separatrix chaos govern the response with a dc-bias-dependent chaos threshold, while at high frequency a distinct unbound-resonance transition occurs where the dissipative steady state transfers from the central bound-state region to outer resonances formed by above-barrier running trajectories.",
+        "motivation": "Strong microwave drives enable fast measurement and parametric control in superconducting circuits but induce transitions out of the intended low-energy manifold at large amplitudes. Understanding these intrinsic strong-drive limitations across different drive channels and frequencies is essential for extending reliable operation in driven Josephson devices.",
+        "method": "The authors perform Floquet–Markov simulations of driven SQUID systems including dissipation, supplemented by classical Poincaré analysis and analytical criteria derived from Melnikov theory and Bessel-function arguments. They validate the low-frequency dc-flux-bias dependence experimentally in a flux-driven SQUID and verify parametric exchange rates above the unbound-resonance threshold through coherent simulations.",
+        "result": "At low frequency, the chaos threshold follows $\\max\\{|M_1|, |M_2|\\} = 1$ with $M_1, M_2$ from Melnikov analysis, strongly dependent on $\\phi_{\\text{dc}}$. At high frequency, the unbound-resonance threshold is determined by $J_0(\\phi_{\\text{ac}}^*) = J_2(\\phi_{\\text{ac}}^*)$ giving $\\phi_{\\text{ac}}^* = 0.59\\pi$ (independent of drive frequency and nearly independent of circuit parameters), controlling the onset of steady-state transfer to outer resonances. Parametric operation persists beyond this threshold but at reduced rates, setting an effective speed limit. Experimental verification of the low-frequency $\\phi_{\\text{dc}}$ dependence in a SQUID with $E_C/2\\pi = 0.09$ GHz, $E_J/2\\pi = 66$ GHz, and $g/2\\pi = 39$ MHz confirms the predictions.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.05177",
+      "title": "Transparency-engineered SQUID cells for Kerr-free three-wave-mixing Josephson metamaterials",
+      "authors": [
+        "Claudio Guarcello",
+        "A. Mert Bozkurt",
+        "Carlo Barone",
+        "Giovanni Filatrella",
+        "Alessandro Bruno",
+        "Sergio Pagano"
+      ],
+      "abstract": "We introduce a transparency-engineered rf-SQUID cell for Kerr-free three-wave-mixing Josephson metamaterials. This design replaces the conventional tunnel-junction element with an effective Josephson element formed by two junctions in series, yielding a non-sinusoidal energy-phase relation that can be used as a tunable nonlinear design resource. We show that the asymmetry between the two series junctions and the applied flux bias provide independent control over the local expansion of the rf-SQUID potential, enabling operating points where the leading quartic Kerr term is suppressed while the cubic nonlinearity remains finite. We derive the corresponding Kerr-free condition, identify the resulting operating ridge in parameter space, and analyze the local stability and passive-matching constraints that bound its physically accessible portion. Our results provide a compact unit-cell design principle for three-wave-mixing Josephson metamaterials and suggest a route toward Kerr-suppressed Josephson traveling-wave parametric amplifiers.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-09-04",
+      "score": 0.5296414097282723,
+      "similar_to": [
+        {
+          "title": "High-gain and large-bandwidth Josephson parametric amplifier influenced by Fabry-Perot interference",
+          "id": "2604.13881",
+          "similarity": 0.8429006338119507
+        },
+        {
+          "title": "Phase-sensitive cascade quantum amplifier with nearly noiseless operation",
+          "id": "2608.25645",
+          "similarity": 0.8378548622131348
+        }
+      ],
+      "summary": {
+        "summary": "This paper introduces the TRAIL cell, a transparency-engineered rf-SQUID unit cell using two series Josephson junctions to achieve Kerr-free three-wave mixing, where the quartic nonlinearity vanishes while cubic nonlinearity persists. A Kerr-free operating ridge is identified in the $\\left(\\beta, \\Phi\\right)$ parameter space by tuning junction asymmetry $\\beta = I_{c2}/I_{c1}$ and magnetic flux bias, enabling selective control over nonlinear coefficients $c_3$ and $c_4$ in the local potential expansion.",
+        "motivation": "Standard Josephson traveling-wave parametric amplifiers suffer from unwanted Kerr-type four-wave mixing that degrades phase matching and gain. A central challenge is obtaining strong cubic nonlinearity while suppressing the quartic Kerr term, motivating an engineered approach to the nonlinear response at the elementary cell level.",
+        "method": "Two Josephson junctions in series with asymmetry parameter $\\beta$ form an effective transparent element with non-sinusoidal energy-phase relation embedded in a flux-biased inductive loop. Local expansion around equilibrium points yields coefficients $c_2$, $c_3$, $c_4$ that control stiffness, 3WM, and Kerr nonlinearity respectively. The Kerr-free condition $c_4(\\beta, \\Phi^\\star, \\beta) = 0$ defines a one-dimensional ridge in parameter space.",
+        "result": "For representative parameters $I_{c1} = 2\\ \\mu$A and $L_G = 120$ pH (screening parameter $\\beta \\approx 0.73$), the Kerr-free ridge extends to critical asymmetry $\\beta_{\\mathrm{crit}} \\approx 0.66$ where passive 50 Ω matching becomes impossible; the cubic-to-stiffness ratio $\\mathcal{F} = |c_3|/c_2$ monotonically increases with $\\beta$ along the ridge, with higher $\\beta$ yielding larger cubic response but lower cutoff frequency.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.6673,
+    0.6624,
+    0.6187,
+    0.5296,
+    0.4503,
+    0.4461,
+    0.248,
+    0.245,
+    0.2281,
+    0.2219,
+    0.1661,
+    0.1631,
+    0.1562,
+    0.152,
+    0.1369,
+    0.1361,
+    0.1334,
+    0.1318,
+    0.1223,
+    0.1176,
+    0.117,
+    0.1163,
+    0.0983,
+    0.0966,
+    0.0964,
+    0.0926,
+    0.0916,
+    0.0906,
+    0.0789,
+    0.0733,
+    0.0719,
+    0.0639,
+    0.0638,
+    0.0622,
+    0.0589,
+    0.0578,
+    0.0552,
+    0.0536,
+    0.0533,
+    0.0505,
+    0.0481,
+    0.0471,
+    0.0436,
+    0.0421,
+    0.0379,
+    0.0352,
+    0.035,
+    0.0318,
+    0.0297,
+    0.0262,
+    0.0259,
+    0.0234,
+    0.0234,
+    0.0214,
+    0.0209,
+    0.0203,
+    0.0188,
+    0.0184,
+    0.0159,
+    0.0155,
+    0.0152,
+    0.0139,
+    0.0137,
+    0.0134,
+    0.0134,
+    0.0133,
+    0.0128,
+    0.0128,
+    0.0127,
+    0.0123,
+    0.0116,
+    0.0095,
+    0.0091,
+    0.0081,
+    0.008,
+    0.0078,
+    0.0063,
+    0.0059,
+    0.0048,
+    0.004,
+    0.0038,
+    0.0038,
+    0.0034,
+    0.0028,
+    0.0027,
+    0.0014,
+    0.0013
+  ]
+}

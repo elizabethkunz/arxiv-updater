@@ -1,0 +1,8 @@
+{
+  "summary": "This paper presents a bang-bang protocol for nondispersive qubit readout using sudden quenches of the qubit-resonator coupling instead of adiabatic parameter sweeps. The protocol achieves fast, high-fidelity quantum-non-demolition readout with errors scaling as $1/N_\\mathrm{eff}$ by exploiting dynamics in the Jaynes-Cummings model with a large photon number $N_\\mathrm{eff}$.",
+  "motivation": "Conventional dispersive readout limits the readout rate to $\\sim g^2\\sqrt{N}/\\Delta \\ll g$, while adiabatic approaches in the nondispersive regime ($g^2 N/\\Delta^2 \\gg 1$) encounter measurement-induced state transitions from multiphoton resonances. Eliminating parameter sweeps via sudden coupling quenches offers a route to fast, QND readout without these resonance crossings.",
+  "method": "The authors develop an analytical theory for the Jaynes-Cummings model combining saddle-point approximation with systematic perturbation theory in $1/N_\\mathrm{eff}$. A preloaded resonator couples suddenly to the qubit at strength $g$, pointer states separate at rate $g$ over readout time $t_r \\approx 4g^{-1}$, then the coupling switches off for projective resonator measurement. The qubit post-measurement occupies time-dependent sweet-spot states $|\\pm(t)\\rangle$ with high purity.",
+  "result": "At typical parameters ($g/2\\pi \\approx 100$ MHz, $\\Delta/2\\pi \\approx 23$ MHz), readout times drop below 10 ns with QNDness and fidelity exceeding 99% at effective photon number $N_\\mathrm{eff} \\geq 11$, representing $>10\\times$ speedup over dispersive readout while maintaining high-fidelity state preservation for mid-circuit measurements and reset.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

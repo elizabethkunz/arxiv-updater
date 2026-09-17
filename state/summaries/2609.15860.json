@@ -1,0 +1,8 @@
+{
+  "summary": "Two neighbouring $^{28}$Si/SiGe micromagnet spin qubits are compared, one sitting at a sweet spot where the longitudinal field gradient is locally minimized. At the sweet spot $T_2^*$ reaches 67 µs and CPMG coherence 4.6 ms versus $T_2^* = 5.2$ µs next door, with residual noise consistent with $^{29}$Si nuclear spins at 800 ppm.",
+  "motivation": "Micromagnet gradients convert charge noise into qubit frequency noise, which limits spin-qubit coherence.",
+  "method": "They measure coherence times, frequency-noise power spectra and inter-qubit noise correlations for a sweet-spot qubit and a large-gradient neighbour in the same device.",
+  "result": "Frequency noise near 1 Hz is almost two orders of magnitude lower at the sweet spot, and the weakly correlated residual spectrum matches the prediction for $^{29}$Si nuclear-spin noise.",
+  "source": "abstract",
+  "generated_by": "Claude, written in-session for the sample day (not via the script's API path)"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "This work introduces a level-wise adaptive concatenation strategy for quantum error correction that estimates the effective noise channel after each concatenation level and selects tailored codes accordingly, switching between variational non-additive encoders for structured noise and standard stabilizer codes once noise becomes nearly uniform. Simulations demonstrate that this hybrid approach reduces qubit overhead by one to two orders of magnitude compared to stabilizer-only concatenation for structured initial noise.",
+  "motivation": "Code concatenation achieves double-exponential error suppression but the effective noise channel reshapes at each level, making fixed code sequences suboptimal; prior work shows that noise-tailored encodings can reduce overhead, but systematic scaling of such learned codes via concatenation remains unexplored.",
+  "method": "The authors develop a fidelity-only two-design estimator (Equation 15) to recover the Pauli-Liouville diagonal of the logical channel without full process tomography, then iteratively tailor variational quantum error correction (VarQEC) codes with randomized entangling ansatz to estimated noise at each level, switching to standard codes ($[5,1,3]$) once the effective channel becomes nearly depolarizing.",
+  "result": "For $p=0.1$ Pauli Y-flip noise, the hybrid strategy achieves $10^5$-fold qubit reduction (from $n\\approx 2625$ to $n=25$); for bitflip noise, 90-fold reduction; for asymmetric depolarizing noise with $c=0.5$, 4.5-fold reduction, compared to pure $[5,1,3]$ concatenation at each level.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

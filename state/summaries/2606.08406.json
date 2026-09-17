@@ -1,0 +1,8 @@
+{
+  "summary": "A junction-free kinetic-inductance parametric amplifier (KIPA) in NbN thin film operates at 23 GHz in the K-band, achieving 40 dB gain, 100 MHz gain-bandwidth product, and added noise $\\leq 1.4$ quanta for phase-preserving amplification. The device demonstrates high saturation power of $-85$ dBm at 23 dB gain, enabling near-quantum-limited readout of millimeter-wave superconducting qubits and dark-matter searches at frequencies beyond conventional aluminum-based amplifiers.",
+  "motivation": "Advancing superconducting quantum devices to higher frequencies ($>10$ GHz) requires near-quantum-limited amplifiers, but aluminum (gap $\\Delta \\approx 40$ GHz) fundamentally limits conventional parametric amplifier designs; NbN with $T_c \\approx 12.5$ K and larger superconducting gap enables operation in the K-band and beyond.",
+  "method": "A single-layer NbN resonator with parallel nanowires (50 nm $\\times$ 1 μm $\\times$ 25 nm, kinetic inductance $\\sim 300$ pH per wire) coupled to a WR-42 waveguide supports four-wave mixing gain via two-tone or single-tone detuned pumping; noise is calibrated by monitoring signal-to-noise ratio degradation against a downstream HEMT amplifier (26 dB gain, $T_H \\leq 10$ K).",
+  "result": "At $G_K = 23$ dB, saturation input power reaches $-85$ dBm (conservative lower bound); SNR measurements with interstage loss $\\alpha \\leq -7$ dB yield an upper bound on added noise of 1.4 photons, approximately 3 times the quantum limit, with nominal loss assumptions suggesting 0.7 quanta.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "This paper generalizes Pauli Check Sandwiching (PCS) from qubits to qudits of arbitrary dimension $d$ by constructing checks from Heisenberg-Weyl operators that deterministically map errors to unique ancilla readouts. The protocol achieves unit fidelity under joint post-selection on noiseless checks and is validated numerically across $d = 2$ to $9$, demonstrating error-mitigated fidelities above $97.5\\%$ under realistic depolarizing noise.",
+  "motivation": "While qudit platforms such as trapped ions, superconducting circuits, and neutral atoms enable high-dimensional quantum information processing (up to $d = 20$ demonstrated), effective error management techniques for qudits remain underdeveloped compared to qubit-based methods.",
+  "method": "Generalized left and right Pauli checks are constructed using controlled $\\mathcal{M}_d^n$ (shift) and $\\mathcal{Z}_d^n$ (clock) operators from the Heisenberg-Weyl set, each controlled by a dedicated ancilla qudit. Propositions 1 and 2 prove that arbitrary errors $E = X^a Z^b$ deterministically collapse the ancilla to states $|a \\bmod d\\rangle$ and $|b \\bmod d\\rangle$ respectively, enabling syndrome-based detection.",
+  "result": "For the Mod-2 circuit, PCS provides fidelity improvements of $\\approx 20\\%$ at $d = 3$ to $\\approx 32\\%$ at $d = 7$ under $p = 0.3$ depolarizing error; for the two-qudit GHZ-2 circuit, fidelities remain above $97.5\\%$ across dimensions at $p = 0.025$, though post-selection overhead grows exponentially with dimension for multi-gate circuits.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

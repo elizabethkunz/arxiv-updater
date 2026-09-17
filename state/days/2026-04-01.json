@@ -1,0 +1,293 @@
+{
+  "date": "2026-04-01",
+  "n_fetched": 119,
+  "papers": [
+    {
+      "id": "2603.29498",
+      "title": "Junction-Intrinsic Dissipation in Hybrid Superconductor-Semiconductor Gatemon Qubits",
+      "authors": [
+        "Zhenhai Sun",
+        "David Feldstein-Bofill",
+        "Ksenia Shagalov",
+        "Amalie T. J. Paulsen",
+        "Casper Wied",
+        "Shikhar Singh",
+        "Brian D. Isakov",
+        "Jacob Hastrup",
+        "Christopher W. Warren",
+        "Svend Krøjer",
+        "Anders Kringhøj",
+        "András Gyenis",
+        "Morten Kjaergaard"
+      ],
+      "abstract": "Superconducting transmon qubits based on hybrid superconductor-semiconductor Josephson junctions (gatemons) offer gate tunability, but their relaxation times remain well below those of state-of-the-art transmons, and the origin of this discrepancy is not fully understood. Here, we co-fabricate gatemons and SIS-junction transmons with nominally identical circuit layouts, gate dielectrics, and control lines, so that the Josephson element is the only intentional distinction. Across multiple chips, transmons in this architecture reach relaxation times in the tens of microseconds, whereas gatemons saturate in the few-microsecond range. Using the transmons as on-chip references, we construct a loss budget including Purcell decay, spontaneous emission through the control line, and internal dielectric loss, and find that the corresponding T1 limits exceed all measured gatemon values by more than an order of magnitude. Temperature-dependent T1 measurements follow a common quasiparticle-activation model and yield similar superconducting gaps for S-Sm-S and SIS junctions, indicating that the reduced gatemon coherence is dominated by additional temperature-independent, junction-intrinsic dissipation.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-03-31",
+      "score": 0.8889367757584932,
+      "similar_to": [
+        {
+          "title": "Surface participation and dielectric loss in superconducting qubits",
+          "id": "1509.01854",
+          "similarity": 0.8787693977355957
+        },
+        {
+          "title": "2D transmons with lifetimes and coherence times exceeding 1 millisecond",
+          "id": "2503.14798",
+          "similarity": 0.8703905940055847
+        }
+      ],
+      "summary": {
+        "summary": "This work co-fabricates InAs/Al nanowire-based gatemons and SIS-junction transmons on identical high-resistivity silicon substrates with shared circuit layouts and dielectrics to isolate junction-intrinsic dissipation. Co-integrated transmons reach $T_1 = 25.8$–93.8 µs while gatemons saturate at $T_1 = 0.69$–9.1 µs (roughly sixfold gap), with a comprehensive loss budget showing Purcell decay ($T_{1,\text{Pur}} > 300$ µs), gate-line spontaneous emission ($T_{1,\text{spont}} > 30$ µs), and internal dielectric loss ($Q_\text{int} \times 2\text{π} f_q$, tens of microseconds) all exceeding measured gatemon values by $> 10\times$, indicating temperature-independent junction-intrinsic dissipation.",
+        "motivation": "Gatemons offer in-situ gate tunability via the energy–phase relation $E(\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\t\\\\\\t\\\\\\\\\\\\phi) = -\\\\\\Ϸ\\\\\\\\Ϸ\\\\\\\\\\\\Ϸ \\\\\\\\\\\\Ϸ\\\\\\Ϸ i \\\\\\\\\\\\Ϸ \\\\\\\\1-\\\\\\\\Ϸ \\\\\\Ϸ_i(V_g) \\\\\\Ϸ \\\\\\\\\\\\Ϸ^2(\\\\\\\\\\\\Ϸ/2)$, but their $T_1 \\\\\\\\\\\\Ϸ 10$ µs systematically lags state-of-the-art transmons; isolating whether this arises from hybrid superconductor–semiconductor interfaces versus known loss channels requires controlled comparison.",
+        "method": "Co-integrated gatemon and transmon qubits on the same chip share identical circuit geometry, HfO$_x$ gate dielectric ($15$ nm), control-line architecture (XYZ-style design with optimized $C_c = 0.19$ fF), and readout resonators ($\\\\\\\\\\\\Ϸ_r/2\\\\\\\\\\\\Ϸ = 6.43$ GHz, $\\\\\\\\\\\\Ϸ_r/Q_r \\\\\\\\\\\\Ϸ 0.87$ MHz), differing only in the Josephson junction; temperature-dependent $T_1$ measurements (30 mK–1 K) probe quasiparticle activation.",
+        "result": "Phenomenological loss model with temperature-independent $Q_\\\\\\\\\\\\Ϸ \\\\\\\\\\\\Ϸ 2.5 \\\\\\\\\\\\Ϸ 10^5$ reconciles data; quasiparticle-activation model yields comparable superconducting gaps ($\\\\\\\\\\\\Ϸ/h \\\\\\\\\\\\Ϸ 48$–55 GHz) but reveals larger temperature-independent decay rate $\\\\\\\\\\\\Ϸ_0$ for gatemons, suggesting enhanced dissipation from subgap conductance or defective S–Sm interfaces rather than reduced induced gap.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.29065",
+      "title": "Oxide-nitride heteroepitaxy for low-loss dielectrics in superconducting quantum circuits",
+      "authors": [
+        "David A. Garcia-Wetten",
+        "Mitchell J. Walker",
+        "Peter G. Lim",
+        "André Vallières",
+        "Maria G. Jimenez-Guillermo",
+        "Miguel A. Alvarado",
+        "Dominic P. Goronzy",
+        "Anna Grassellino",
+        "Jens Koch",
+        "Vinayak P. Dravid",
+        "Mark C. Hersam",
+        "Michael J. Bedzyk"
+      ],
+      "abstract": "Superconducting qubits show great promise for the realization of fault-tolerant quantum computing, but lossy, amorphous dielectrics limit current technology. Identifying highly crystalline and stoichiometric dielectrics with intrinsically low microwave loss is therefore a central materials challenge, yet experimentally validated platforms remain scarce. In this work, we integrate a crystalline dielectric into a heteroepitaxial TiN/$γ$-Al$_2$O$_3$/TiN trilayer grown via pulsed laser deposition. Correlative high-resolution imaging, diffraction, and spectroscopy measurements confirm the single-crystal quality and chemical integrity of all layers, with minimal defects and limited anion interdiffusion across the oxide-nitride interfaces. Using microwave lumped-element resonators with parallel-plate capacitors, we report the first direct measurement of the dielectric loss of epitaxial $γ$-Al$_2$O$_3$, for which we find a low intrinsic two-level system loss, $δ_{\\text{TLS}}^0 = (2.8 \\pm 0.1) \\times 10^{-5}$. These results establish heteroepitaxial oxides on transition metal nitrides as an attractive materials platform for superconducting quantum circuits, particularly for integration into compact device architectures such as merged-element transmons and microwave kinetic inductance detectors.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mtrl-sci",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-03-30",
+      "score": 0.7638497433754698,
+      "similar_to": [
+        {
+          "title": "High-Q superconducting microwave resonators using MBE titanium nitride",
+          "id": "2607.15230",
+          "similarity": 0.8802147507667542
+        },
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.878017246723175
+        }
+      ],
+      "summary": {
+        "summary": "This work grows crystalline $\\gamma$-Al$_2$O$_3$ as a single-crystal dielectric layer sandwiched between TiN electrodes using pulsed laser deposition, achieving a measured intrinsic two-level system loss of $\\delta_{\\text{TLS}}^0 = (2.8 \\pm 0.1) \\times 10^{-5}$ via microwave resonator spectroscopy. The heteroepitaxial oxide-nitride platform with minimal interface interdiffusion and defects opens a path toward low-loss dielectrics for superconducting qubit architectures.",
+        "motivation": "Amorphous dielectrics dominate current superconducting qubit technology but suffer from high microwave loss; identifying crystalline, stoichiometric dielectrics with intrinsically low dissipation is a bottleneck for scaling fault-tolerant quantum processors.",
+        "method": "TiN/$\\gamma$-Al$_2$O$_3$/TiN trilayers were grown by pulsed laser deposition and characterized via high-resolution imaging, diffraction, and spectroscopy to confirm single-crystal quality and chemical integrity; dielectric loss was measured directly using lumped-element parallel-plate capacitor resonators.",
+        "result": "Epitaxial $\\gamma$-Al$_2$O$_3$ exhibits an intrinsic two-level system loss of $\\delta_{\\text{TLS}}^0 = (2.8 \\pm 0.1) \\times 10^{-5}$, establishing the oxide-nitride heteroepitaxial platform as suitable for compact qubit architectures including merged-element transmons and microwave kinetic inductance detectors.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.29525",
+      "title": "Non-perturbative CPMG scaling and qutrit-driven breakdown under compiled superconducting-qubit control: a single-qubit study",
+      "authors": [
+        "Jun Ye"
+      ],
+      "abstract": "Decoherence in superconducting qubits arises from both multilevel dynamics and structured environmental noise, yet perturbative models cannot capture all resulting signatures. Here, EmuPlat couples instruction-set-architecture-level waveform generation to the hierarchical equations of motion HEOM under $1/f$ non-Markovian pure dephasing. In the resulting non-perturbative regime -- where filter-function predictions become quantitatively uninformative -- CPMG scaling of a three-level superconducting transmon yields one calibration result, two physical findings, and one structural null. Y-CPMG exhibits axis-dependent scaling-law breakdown -- non-monotonic decoherence, partial coherence revival, and pronounced X--Y population asymmetry ($0.204$ vs ${<}\\,0.01$) -- driven by third-level anharmonicity amplified by bath memory; X-CPMG maintains well-behaved power-law scaling with a finite-$n$ transient excess consistent with non-Markovian bath-memory effects. This null result is equally informative: waveform-level differences -- Standard versus VPPU realisations -- remain undetectable across all coupling strengths. This shows that rotating-frame pure-dephasing coupling renders control-layer detail invisible to scaling observables. These findings define testable predictions, the most experimentally accessible requiring only qualitative verification.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-31",
+      "score": 0.6136804679186215,
+      "similar_to": [
+        {
+          "title": "Dynamical decoupling for superconducting qubits: a performance survey",
+          "id": "2207.03670",
+          "similarity": 0.8631031513214111
+        },
+        {
+          "title": "Dynamical decoupling and noise spectroscopy with a superconducting flux qubit",
+          "id": "1101.4707",
+          "similarity": 0.8622262477874756
+        }
+      ],
+      "summary": {
+        "summary": "This paper couples instruction-set-level waveform generation to hierarchical equations of motion (HEOM) to study non-perturbative decoherence in superconducting transmons under $1/f$ pure dephasing and compiled control. Y-CPMG exhibits axis-dependent scaling-law breakdown—non-monotonic decoherence and population imbalance ($0.204$ vs $<0.01$)—driven by third-level anharmonicity amplified by bath memory, while X-CPMG maintains power-law scaling with finite-$n$ transient consistent with non-Markovian effects; waveform-level differences remain undetectable across all coupling strengths.",
+        "motivation": "Superconducting qubit decoherence arises from both multilevel dynamics and structured environmental noise, yet perturbative models cannot capture the resulting signatures when compiled control interacts with non-Markovian baths. Understanding which phenomena emerge from this interplay—and which control details remain invisible to sequence-level observables—requires a framework bridging hardware-faithful waveform generation to beyond-Lindblad open-system dynamics.",
+        "method": "EmuPlat couples pulse-specification pipelines (four-level intermediate representation from OpenQASM to time-domain waveforms) to rotating-frame HEOM under $1/f$ noise with $\\eta \\in [7.85 \\times 10^{-7}, 5 \\times 10^{-6}]$ GHz across three coupling tiers. Two compilation routes (Standard analytical envelopes and VPPU bit-faithful FPGA emulation) feed the same bath model and solver interface, isolating compiled-control–bath-memory interplay while holding device, control architecture, and frame fixed. CPMG scaling is analysed in $\\chi$-space ($\\chi = -\\ln(1-\\epsilon)$) to resolve saturation-compressed differences.",
+        "result": "First-order filter-function theory becomes quantitatively uninformative (>12-order-of-magnitude gap at Ramsey $T_2^*/2$), establishing the non-perturbative baseline. X-CPMG yields $\\gamma \\approx 1.12$ ($R^2 > 0.99$), marginally exceeding perturbative prediction $\\gamma \\approx 1$ with finite-$n$ transient absent under matched Lindblad dynamics. Y-CPMG exhibits non-monotonic $\\chi(n)$ with peak at $n_\\pi = 4$ and partial coherence revival ($R^2 = 0.21$), driven by $\\alpha \\approx -293$ MHz anharmonicity under finite-duration pulses ($t_\\pi \\gtrsim 1/|\\alpha|$); Standard and VPPU waveforms produce indistinguishable exponents ($|\\Delta\\gamma| < 10^{-6}$ for X-CPMG, $\\chi$-offset $\\lesssim 2 \\times 10^{-3}$) across all couplings, confirming structural protection by diagonal pure-dephasing operator.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.29439",
+      "title": "PAEMS: Precise and Adaptive Error Model for Superconducting Quantum Processors",
+      "authors": [
+        "Songhuan He",
+        "Yifei Cui",
+        "Bo Liu",
+        "Kai Guo",
+        "Cheng Wang"
+      ],
+      "abstract": "Superconducting quantum processor units (QPUs) are incapable of producing massive datasets for quantum error correction (QEC) because of hardware limitations. Thus, QEC decoders heavily depend on synthetic data from qubit error models. Classic depolarizing error models with polynomial complexity present limited accuracy. Coherent density matrix methods suffer from exponential complexity $\\propto O(4^n)$ where $n$ represents the number of qubits. This paper introduces PAEMS: a precise and adaptive qubit error model. Its qubit-wise separation framework, incorporating leakage propagation, captures error evolvements crossing spatial and temporal domains. Utilizing repetition-code experiment datasets, PAEMS effectively identifies the intrinsic qubit errors through an end-to-end optimization pipeline. Experiments on IBM's QPUs have demonstrated a 19.5$\\times$, 9.3$\\times$, and 5.2$\\times$ reduction in timelike, spacelike, and spacetime error correlation, respectively, surpassing all of the previous works. It also outperforms the accuracy of Google's SI1000 error model by 58$\\sim$73\\% on multiple quantum platforms, including IBM's Brisbane, Sherbrooke, and Torino, as well as China Mobile's Wuyue and China Telecom's Tianyan.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-31",
+      "score": 0.568969241481713,
+      "similar_to": [
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8530334234237671
+        },
+        {
+          "title": "Resolving catastrophic error bursts from cosmic rays in large arrays of superconducting qubits",
+          "id": "2104.05219",
+          "similarity": 0.8386193513870239
+        }
+      ],
+      "summary": {
+        "summary": "PAEMS is a qubit-error model with $O(n^2)$ complexity that captures spatial heterogeneity, temporal error accumulation, and leakage propagation in superconducting QPUs by using qubit-specific depolarizing channels initialized from calibration and optimized via CMA-ES on repetition-code datasets. On IBM Brisbane, Sherbrooke, and Torino, PAEMS achieves 19.5×, 9.3×, and 5.2× reductions in timelike, spacelike, and spacetime error-correlation differences versus prior models, and shows 58–73% lower total variation distance than Google's SI1000 across five QPU platforms.",
+        "motivation": "QEC decoder training requires massive synthetic error datasets, but superconducting QPUs cannot generate them directly due to scale and cost constraints; existing models based on uniform, Markovian, or phenomenological assumptions fail to capture realistic correlated detection-event statistics and spatiotemporal error dynamics.",
+        "method": "PAEMS employs a circuit-level framework with asymmetric depolarizing channels for decoherence (parameterized by calibrated $T_1$, $T_2$, operation duration), symmetric depolarizing channels for gate errors, distinct SPAM error probabilities per qubit for initialization and reset, and explicit leakage/seepage processes; parameters are initialized from platform calibration and optimized using CMA-ES on multi-round repetition-code measurements from target QPUs.",
+        "result": "On 30-round repetition codes with 21 qubits on Torino, PAEMS reproduces timelike correlations (e.g., 0.337 ± 0.008 vs. measured 0.335 ± 0.012 for ancilla qubit 1) with 19.5× correlation-difference improvement over SI1000, and captures leakage-induced error accumulation with root-mean-square detection-event-fraction error of $3.4 \times 10^{-3}$; single-round experiments across Brisbane, Wuyue, and Tianyan show TVD reductions of 69.4%, 58.1%, and 68.9% respectively versus SI1000.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8889,
+    0.7638,
+    0.6137,
+    0.569,
+    0.3714,
+    0.3594,
+    0.3055,
+    0.2632,
+    0.2254,
+    0.2195,
+    0.2091,
+    0.1808,
+    0.1644,
+    0.1494,
+    0.1485,
+    0.1453,
+    0.123,
+    0.1229,
+    0.1223,
+    0.12,
+    0.1195,
+    0.1179,
+    0.1168,
+    0.1068,
+    0.099,
+    0.097,
+    0.0956,
+    0.0879,
+    0.0861,
+    0.0789,
+    0.078,
+    0.0774,
+    0.0701,
+    0.0698,
+    0.0678,
+    0.0647,
+    0.0624,
+    0.0623,
+    0.0611,
+    0.06,
+    0.0598,
+    0.0566,
+    0.0539,
+    0.0525,
+    0.0523,
+    0.0504,
+    0.0491,
+    0.0481,
+    0.0478,
+    0.0438,
+    0.0406,
+    0.0386,
+    0.0384,
+    0.0376,
+    0.0367,
+    0.0357,
+    0.0332,
+    0.032,
+    0.0305,
+    0.0291,
+    0.0286,
+    0.0267,
+    0.0264,
+    0.0257,
+    0.0247,
+    0.0245,
+    0.0243,
+    0.0239,
+    0.0235,
+    0.0217,
+    0.0215,
+    0.0213,
+    0.0206,
+    0.0205,
+    0.0202,
+    0.0199,
+    0.0198,
+    0.0198,
+    0.0184,
+    0.0184,
+    0.0181,
+    0.0175,
+    0.017,
+    0.0166,
+    0.0166,
+    0.0159,
+    0.0157,
+    0.0156,
+    0.0139,
+    0.0135,
+    0.0132,
+    0.0124,
+    0.0119,
+    0.0116,
+    0.01,
+    0.0091,
+    0.0089,
+    0.0086,
+    0.0082,
+    0.008,
+    0.0076,
+    0.0075,
+    0.0072,
+    0.0071,
+    0.0069,
+    0.0064,
+    0.0062,
+    0.006,
+    0.0057,
+    0.0054,
+    0.0039,
+    0.0038,
+    0.0033,
+    0.0021,
+    0.002,
+    0.0018,
+    0.0015,
+    0.0012,
+    0.0011
+  ]
+}

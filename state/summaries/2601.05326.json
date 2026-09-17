@@ -1,0 +1,8 @@
+{
+  "summary": "Atom-probe tomography and TEM reveal oxygen segregation at grain boundaries in Nb and Ta/Nb thin films used for superconducting qubits, with enrichment factors $C_\text{gb}/C_\text{grain}$ of 2.7 ± 0.3 for bare Nb and 2.3 ± 0.3 for Ta-capped Nb (Ta layer itself shows 3.0 ± 0.3). Higher oxygen concentration in Nb grains correlates with stronger GB segregation and suppressed critical temperature $T_c$, suggesting oxygen control during deposition and processing is critical for reducing a potential decoherence mechanism.",
+  "motivation": "Oxygen impurities and their distribution in Nb-based qubits are suspected contributors to decoherence; understanding grain-boundary chemistry at atomic resolution can identify pathways to improve superconductor quality.",
+  "method": "Atom-probe tomography and transmission electron microscopy were used to quantify oxygen concentration and segregation at grain boundaries in both bare Nb and Ta-encapsulated Nb thin films, with cross-correlation to superconducting properties via critical temperature measurements.",
+  "result": "Oxygen segregation enrichment at Nb grain boundaries reaches $2.7 ± 0.3$, with Ta capping reducing underlying Nb GB enrichment to $2.3 ± 0.3$ while the Ta layer itself exhibits $3.0 ± 0.3$ enrichment; increasing grain oxygen concentration correlates with suppressed $T_c$.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

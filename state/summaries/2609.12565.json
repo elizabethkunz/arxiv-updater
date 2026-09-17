@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates that measurement-induced crosstalk on superconducting quantum processors can leak information about victim qubits to adjacent attacker qubits, enabling potential side-channel attacks. Using Support Vector Machine classifiers on VTT Q50 hardware, the authors achieve 76.30% accuracy for single-victim classification and 53.37% for two-victim scenarios, showing hardware-dependent vulnerability compared to prior IBM work (96% accuracy).",
+  "motivation": "Measurement crosstalk is a known scalability issue in superconducting quantum processors, but its potential exploitation as a security threat in multi-tenant cloud quantum systems has not been thoroughly evaluated across different hardware platforms.",
+  "method": "Circuits with 1–10 $X$ gates applied to victim qubits (Q0, Q2) were executed on VTT Q50 (53-qubit superconducting processor with lattice topology), measuring the probability of the attacker qubit reading $|1\\rangle$ across configurations: single victim measured as $|0\\rangle$, $|1\\rangle$, or not measured (two-qubit case); two victims with six measurement combinations (three-qubit case). RBF SVM classifiers were trained on 900–1800 circuits at 1000 shots each.",
+  "result": "Two-qubit framework achieved 76.30% accuracy (precision 0.7724, recall 0.7553) with additional measurement scenarios versus prior work; three-qubit framework yielded 53.37% accuracy; measurement-count framework (ignoring outcome, only counting measured qubits) achieved 86.11% accuracy, showing impact scales with number of simultaneously measured neighbors.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

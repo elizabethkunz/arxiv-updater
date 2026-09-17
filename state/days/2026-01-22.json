@@ -1,0 +1,212 @@
+{
+  "date": "2026-01-22",
+  "n_fetched": 81,
+  "papers": [
+    {
+      "id": "2601.15101",
+      "title": "Bose condensation and Bogoliubov excitation in resonator-embedded superconducting qubit network",
+      "authors": [
+        "Patrick Navez",
+        "Valentina Di Meo",
+        "Berardo Ruggiero",
+        "Claudio Gatti",
+        "Fabio Chiarello",
+        "Alessandro D'Elia",
+        "Alessio Rettaroli",
+        "Emanuele Enrico",
+        "Luca Fasolo",
+        "Mikhail Fistul",
+        "Ilya Eremin",
+        "Alexandre Zagoskin",
+        "Paolo Vanacore",
+        "Paolo Silvestrini",
+        "Mikhail Lisitskiy"
+      ],
+      "abstract": "Superconducting qubit networks (SQNs) embedded in a low-dissipative resonator is a promising device allowing one not only to establish the collective quantum dynamics on a macroscopic scale but also to greatly enhance the sensitivity of detectors of microwave photons. A quantum ac Stark effect provided by coupling between an SQN and microwave photons of a resonator, leads to a strong nonlinear interaction between photons. Here, we present a two-tone spectroscopy experiment in which a set of 10 superconducting flux qubits is coupled to the input R- resonator and the output T- transmission line. An external microwave pump field close to the resonance frequency populates macroscopically the resonator mode as a Bose-Einstein condensate, while a second probe beam scans the resonances referred also as Bogoliubov-like excitations. The corresponding excitation frequency measured from the transmission coefficient, |S21(f)| displays an abrupt change of the resonant dip position once the power of the pump field overcomes a critical value Pcr. This sharp shift occurs in a narrow region of pump frequencies, and can be tuned by an applied magnetic field. It is a signature of bistability of the photon number inside the resonator, in agreement with theory.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-21",
+      "score": 0.6600187041734188,
+      "similar_to": [
+        {
+          "title": "Cavity quantum electrodynamics for superconducting electrical circuits: an architecture for quantum computation",
+          "id": null,
+          "similarity": 0.8409352898597717
+        },
+        {
+          "title": "Measurement-induced state transitions in a superconducting qubit: Beyond the rotating wave approximation",
+          "id": "1606.05721",
+          "similarity": 0.8307099938392639
+        }
+      ],
+      "summary": {
+        "summary": "A superconducting flux qubit network (10 qubits) coupled to a low-dissipation hybrid resonator exhibits Bose-Einstein condensation of microwave photons and collective Bogoliubov-like excitations observed via two-tone spectroscopy. The system displays bistability and hysteresis in photon occupancy as a function of pump power, with theory based on a nonlinear Gross-Pitaevskii-type equation quantitatively reproducing the experimental transmission spectra.",
+        "motivation": "Josephson junction networks coupled to high-quality resonators can exhibit macroscopic collective quantum dynamics and strong photon-photon interactions via the ac Stark effect, enabling exploration of nonlinear photon physics and potential applications in quantum sensing.",
+        "method": "Two-tone spectroscopy measured transmission $|S_{21}(f)|$ through a T-resonator ($f_r \\approx 7.7$ GHz, $Q_c \\approx 10^5$) while a pump field at variable power $P_{\\mathrm{pump}}$ and frequency populated the coupled R-resonator, with a probe beam scanning resonances. The system operated at 15 mK with applied static magnetic field $B$ up to 0.489 G. Theoretical analysis employed a semiclassical nonlinear Schrödinger equation with ac Stark-induced photon nonlinearity of the form $1+4g_j^2|\\psi|^2/\\Delta_j^2$.",
+        "result": "Sharp abrupt frequency shift of the resonant transmission dip occurred above critical pump power $P_{\\mathrm{cr}}$ within a narrow pump frequency window ($7.743$–$7.746$ GHz), accompanied by hysteresis loops and emergence of idler resonances. Fitted parameters: $g/2\\pi \\approx 25$ MHz, $\\Delta/2\\pi \\approx 1.78$ GHz, cavity decay $\\gamma_c/2\\pi \\approx 3.2$ MHz; magnetic field tuning shifted $P_{\\mathrm{cr}}$ downward and modified resonant positions by $\\approx 0.2$ MHz/G in qubit frequency.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.14547",
+      "title": "Active interference suppression in frequency-division-multiplexed quantum gates via off-resonant microwave tones",
+      "authors": [
+        "Haruki Mitarai",
+        "Yukihiro Tadokoro",
+        "Hiroya Tanaka"
+      ],
+      "abstract": "The increasing number of control lines connecting quantum processors to external electronics constitutes a major bottleneck in the realization of large-scale quantum computers. Frequency-division multiplexing is expected to enable control of multiple qubits through a single microwave cable; however, interference from off-resonant microwave tones hinders precise qubit control. Here, we propose an active interference suppression method for frequency-division-multiplexed simultaneous gates on microwave-controlled qubits. We demonstrate that the deliberate incorporation of off-resonant microwave tones improves single-qubit gate fidelity. In particular, the gate infidelity scales inversely with the square of the number of microwave tones when off-resonant orthogonal or quasi-orthogonal tones are incorporated. Furthermore, we show that fast oscillations, neglected under the rotating wave approximation, degrade the gate fidelity, and that this degradation can be mitigated through optimized frequency allocation. The proposed approach is simple and effective for improving the performance of frequency-division-multiplexed quantum gates.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-21",
+      "score": 0.6050439433627767,
+      "similar_to": [
+        {
+          "title": "Quantum crosstalk cancellation for fast entangling gates and improved multi-qubit performance",
+          "id": "2106.00675",
+          "similarity": 0.8479264378547668
+        },
+        {
+          "title": "Procedure for systematically tuning up crosstalk in the cross resonance gate",
+          "id": "1603.04821",
+          "similarity": 0.8444910049438477
+        }
+      ],
+      "summary": {
+        "summary": "This work proposes active interference suppression (AIS) for frequency-division-multiplexed simultaneous single-qubit gates on microwave-controlled qubits, demonstrating that deliberately adding off-resonant orthogonal or quasi-orthogonal microwave tones reduces gate infidelity. The gate infidelity scales inversely with the square of the number of applied microwave tones, and this scaling is optimized by shifting the frequency allocation to compensate for fast-oscillating terms neglected under the rotating-wave approximation.",
+        "motivation": "Frequency-division multiplexing promises to reduce control wiring in large-scale quantum processors by routing multiple qubit-drive tones through a single cable, but off-resonant tone crosstalk degrades gate fidelity; active suppression of this interference is essential for practical multi-qubit FDM control.",
+        "method": "Using the Hamiltonian formulation for $N_q$ qubits driven by $N_d$ microwave tones at frequencies spaced by $\\Delta$, the authors perform Magnus-expansion analysis under the RWA to derive infidelity scaling, then employ orthogonal ($\\tau = m\\tau_0/2$ with even $m$) and quasi-orthogonal ($m$ odd, where $\\tau_0 = 2\\pi/\\Delta$) rectangular pulses such that spectral nulls align across tones, and optimize frequency allocation via shift parameter $S_d$ to compensate for beyond-RWA fast-oscillating terms $\\propto 2\\omega_{q,k_q} + \\Delta_{k_d k_q}$.",
+        "result": "For $N_q = 7$ and optimally shifted frequency allocation, gate infidelity scales as $N_d^{-2}$, decreasing from $1.45 \\times 10^{-3}$ (S_d = 0) to $1.01 \\times 10^{-3}$ (S_d = -1) at $\\omega_{q,0}/2\\pi = 1$ GHz and $N_d = 21$, and reaching $4.39 \\times 10^{-4}$ at $N_d = 31$ with $S_d = -2$—a 52.3% reduction compared to symmetric allocation.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.14463",
+      "title": "Lumped-Element Model of THz HEB Mixer Based on Sputtered MgB2 Thin Film",
+      "authors": [
+        "Changyun Yoo",
+        "Changsub Kim",
+        "Daniel P. Cunnane",
+        "Boris S. Karasik"
+      ],
+      "abstract": "We present a comprehensive analysis and experimental study of THz hot-electron bolometer (HEB) mixers made from 40-nm-thick sputtered magnesium diboride (MgB2) thin films on high-resistivity silicon substrates. Using a lumped-element bolometric model, we achieve strong quantitative agreement with measurements of conversion gain, noise temperature, and local-oscillator (LO) coupling to the HEB devices. Our analysis shows that the sensitivity of current HEB devices is primarily limited by on-chip optical losses, with both Johnson and thermal-fluctuation noise contributing significantly to the overall noise temperature. Simulations of an optimized device with near-ideal optical coupling suggest that Johnson noise remains a substantial factor even with improved coupling. Further reduction of the noise temperature may require additional suppression of Johnson noise (via improved intrinsic conversion gain) beyond optimizing optical coupling efficiency. We emphasize the importance of accurate modeling to achieve good numerical agreement with experiments, thereby enabling understanding of the causes of sensitivity loss.",
+      "categories": [
+        "cond-mat.supr-con",
+        "physics.app-ph",
+        "physics.ins-det"
+      ],
+      "published": "2026-01-20",
+      "score": 0.5675891630597278,
+      "similar_to": [
+        {
+          "title": "Assessing the Sensitivity of Niobium- and Tantalum-Based Superconducting Qubits to Infrared Radiation",
+          "id": "2602.05806",
+          "similarity": 0.7954955101013184
+        },
+        {
+          "title": "A First Demonstration of the SQUAT Detector Architecture: Direct Measurement of Resonator-Free Charge-Sensitive Transmons",
+          "id": "2601.16261",
+          "similarity": 0.7776200771331787
+        }
+      ],
+      "summary": {
+        "summary": "A lumped-element bolometric model of THz HEB mixers based on 40-nm sputtered MgB$_2$ thin films achieves quantitative agreement with measured conversion gain, noise temperature, and LO coupling. The analysis reveals that on-chip optical losses and Johnson noise are the dominant sensitivity limiters, with Johnson noise persisting as a fundamental constraint even with optimized optical coupling.",
+        "motivation": "Understanding the noise and sensitivity limits of MgB$_2$-based HEB mixers requires accurate modeling that connects intrinsic device physics to measured performance metrics.",
+        "method": "A lumped-element bolometric model was developed and validated against experimental measurements of conversion gain, noise temperature, and LO coupling efficiency for MgB$_2$ HEBs on high-resistivity silicon substrates; simulations of optimized device geometries were performed to identify remaining noise sources.",
+        "result": "On-chip optical losses primarily limit current device sensitivity; Johnson noise and thermal-fluctuation noise both contribute significantly to overall noise temperature, and Johnson noise remains substantial even in simulations with near-ideal optical coupling, indicating that further improvements require enhanced intrinsic conversion gain beyond coupling optimization.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.66,
+    0.605,
+    0.5676,
+    0.4337,
+    0.3368,
+    0.2835,
+    0.2361,
+    0.2282,
+    0.2235,
+    0.1985,
+    0.1832,
+    0.1642,
+    0.1547,
+    0.1513,
+    0.1475,
+    0.1242,
+    0.1145,
+    0.1137,
+    0.112,
+    0.1059,
+    0.097,
+    0.0925,
+    0.0923,
+    0.0917,
+    0.0884,
+    0.0829,
+    0.0789,
+    0.0767,
+    0.0767,
+    0.0762,
+    0.0746,
+    0.0732,
+    0.0732,
+    0.0728,
+    0.0709,
+    0.07,
+    0.0612,
+    0.0585,
+    0.0529,
+    0.043,
+    0.0412,
+    0.0398,
+    0.0391,
+    0.0391,
+    0.0384,
+    0.0377,
+    0.0373,
+    0.0345,
+    0.0344,
+    0.0329,
+    0.0312,
+    0.0306,
+    0.0287,
+    0.0264,
+    0.0253,
+    0.0228,
+    0.0208,
+    0.02,
+    0.02,
+    0.017,
+    0.0169,
+    0.0159,
+    0.0158,
+    0.0153,
+    0.0141,
+    0.0137,
+    0.0136,
+    0.0132,
+    0.0124,
+    0.0114,
+    0.0109,
+    0.0098,
+    0.0091,
+    0.009,
+    0.0052,
+    0.0048,
+    0.0047,
+    0.0045,
+    0.0037,
+    0.0026,
+    0.0019
+  ]
+}

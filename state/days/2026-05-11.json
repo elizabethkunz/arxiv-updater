@@ -1,0 +1,210 @@
+{
+  "date": "2026-05-11",
+  "n_fetched": 88,
+  "papers": [
+    {
+      "id": "2605.07868",
+      "title": "Systematic frequency-collision analysis of the cross-resonance gate outside the straddling regime",
+      "authors": [
+        "Shinichi Inoue",
+        "Shotaro Shirai",
+        "Shuhei Tamate",
+        "Shu Watanabe",
+        "Kohei Matsuura",
+        "Rui Li",
+        "Yasunobu Nakamura"
+      ],
+      "abstract": "Frequency crowding remains a major obstacle to scaling fixed-frequency transmon processors. Among the widely used all-microwave two-qubit gates, the cross-resonance (CR) gate is particularly sensitive to qubit-frequency spread because the conventional straddling regime condition constrains assignable qubit frequencies tightly and makes the system susceptible to frequency collisions. Here, we propose and analyze the CR gate outside the straddling regime, which we refer to as the far-detuned regime, and evaluate frequency collisions using a numerical method that remains accurate under high-intensity, smoothly ramped microwave drives. Based on this analysis, we perform systematic parameter sweeps and provide collision-free conditions that define designable frequency regions in which qubit frequencies can be assigned consistently with surrounding qubit frequencies. Furthermore, we formulate frequency allocation as a linear programming optimization on a unit-cell lattice with periodic boundary conditions to obtain an optimal allocation. We demonstrate that far-detuned designs significantly reduce collisions compared with designs in the straddling regime. Monte Carlo yield analysis indicates that 10% collision-free yield for a 1024-qubit square lattice at a 0.1% two-qubit-gate error threshold requires $σ_{\\mathrm{f}}/2π\\le 6.8~\\mathrm{MHz}$. Our findings suggest that this is feasible with an approximately twofold reduction in the state-of-the-art qubit-frequency spread.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-08",
+      "score": 0.8384923748879065,
+      "similar_to": [
+        {
+          "title": "Procedure for systematically tuning up crosstalk in the cross resonance gate",
+          "id": "1603.04821",
+          "similarity": 0.8984935283660889
+        },
+        {
+          "title": "Laser-annealing Josephson junctions for yielding scaled-up superconducting quantum processors",
+          "id": "2009.00781",
+          "similarity": 0.8882420063018799
+        }
+      ],
+      "summary": {
+        "summary": "This work develops a systematic frequency-collision analysis for cross-resonance gates in the far-detuned regime ($3\\alpha_c \\le \\Delta_{ct} \\le \\alpha_c$) of fixed-frequency transmon processors, showing that this regime significantly improves tolerance to fabrication-induced qubit-frequency spread compared to the conventional straddling regime. Using a long-time-averaged numerical method to accurately model high-intensity smoothly-ramped drives, the authors derive collision-free conditions, perform frequency-allocation optimization via linear programming, and demonstrate that 1024-qubit square-lattice devices require only $\\sigma_f/2\\pi \\le 6.8$ MHz for 10% collision-free yield at 0.1% error threshold—approximately twofold better than current achievable spread.",
+        "motivation": "Frequency crowding severely limits scaling of fixed-frequency transmon processors because the straddling regime ($0 \\le \\Delta_{ct} \\le -\\alpha_c$) constrains qubit frequencies to a narrow range, making systems highly susceptible to frequency collisions that degrade gate fidelity. Current straddling designs achieve vanishing collision-free yields at thousand-qubit scales even with modest error budgets.",
+        "method": "A five-step framework combining: (1) extraction of three-qubit chains from lattices; (2) numerical two-dimensional collision-landscape sweeps incorporating smooth pulse ramps via long-time-averaged transition probabilities; (3) identification of collision processes and extraction of collision windows; (4) max–min linear-programming optimization of frequency allocations on 4×4 unit cells with periodic boundary conditions; and (5) Monte Carlo yield estimation for 1024-qubit devices under realistic Gaussian qubit-frequency spread.",
+        "result": "Far-detuned CR designs require $\\sigma_{10\\%}/2\\pi = 6.8$ MHz (square), 8.9 MHz (hexagonal), and 12.9 MHz (heavy-hexagonal) for 10% collision-free yield on 1024-qubit devices at 0.1% error threshold, compared to 0.1, 1.4, and 2.1 MHz respectively for straddling designs—an order-of-magnitude improvement, requiring approximately 2× reduction from state-of-the-art $\\sigma_f/2\\pi \\approx 14.5$ MHz to reach feasibility.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.06928",
+      "title": "Realistic Simulation of Quantum Repeater with Encoding and Classical Error Correction",
+      "authors": [
+        "Sagar Patange",
+        "Caitao Zhan",
+        "Bikun Li",
+        "Joaquin Chung",
+        "Allen Zang",
+        "Liang Jiang",
+        "Rajkumar Kettimuthu"
+      ],
+      "abstract": "Quantum repeaters are essential for scalable long-distance quantum networking. As quantum information processing moves toward fault-tolerant and error-corrected operations, it becomes increasingly important to study quantum repeaters that also move beyond raw physical entanglement and towards logical entanglement. In this paper, we implement and simulate the quantum repeater with encoding and classical error correction (QRE-CEC) protocol in SeQUeNCe, a discrete-event simulator of quantum networks. The protocol distributes logical Bell pairs, performs encoded entanglement swapping, and uses classical error correction for the decoding of entanglement swapping measurement outcomes to determine Pauli-frame corrections. For this study, we extend SeQUeNCe with a stabilizer-based backend, add support for CSS code-based encoded operations, and integrate gate, measurement, idle decoherence, and state-initialization noise models. Our simulation results show that QRE-CEC suppresses all modeled errors to the second order. Also, QRE-CEC can distribute logical Bell pairs with 0.91 fidelity over a distance of 2000 km under the parameter regimes we study. Beyond protocol-level performance evaluation, our implementation exposes practical simulator and control-plane challenges that are typically abstracted away in theoretical studies.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-07",
+      "score": 0.582760538573604,
+      "similar_to": [
+        {
+          "title": "Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code",
+          "id": "2112.03708",
+          "similarity": 0.851323127746582
+        },
+        {
+          "title": "Demonstrating Quantum Error Correction that Extends the Lifetime of Quantum Information",
+          "id": "1602.04768",
+          "similarity": 0.8486909866333008
+        }
+      ],
+      "summary": {
+        "summary": "This paper implements and simulates the quantum repeater with encoding and classical error correction (QRE-CEC) protocol in SeQUeNCe, extending the simulator with a stabilizer-based backend supporting CSS code operations and realistic noise models. The protocol distributes logical Bell pairs using Steane $\\lfloor 7,1,3 \\rfloor$ codes with encoded entanglement swapping and classical error correction for Pauli-frame corrections, achieving 0.91 fidelity over 2000 km while suppressing errors to second order.",
+        "motivation": "Quantum repeaters must evolve toward distributing logical rather than physical entanglement as quantum networks move toward fault-tolerant operation, but the system-level interactions between heralded generation, encoding, idle decoherence, and classical error correction are difficult to evaluate analytically.",
+        "method": "We extended SeQUeNCe with a tableau-based backend using Stim for efficient stabilizer simulation (memory scaling as $O(n^2)$ rather than $O(2^{2n})$), implemented CSS code operations, integrated five noise sources (one-qubit gate error $p_1^g$, two-qubit gate error $p_2^g$, measurement error $p_m$, idle decoherence with $T_1, T_2$ dependence, state initialization error), and simulated the five-phase QRE-CEC protocol including Barrett-Kok heralding, fault-tolerant state preparation via Paetznick–Reichardt 8-CNOT encoder with verification, transversal teleported CNOT, encoded swapping with Hamming-code syndrome decoding, and Pauli-frame correction.",
+        "result": "QRE-CEC achieves second-order error suppression with fitted scaling exponent $c \\approx 1.81$–$2.19$ consistent with $Q \\sim q^2$; distributes logical Bell pairs with fidelity 0.91 at 2000 km (100 links with 20 km spacing) compared to 0.24 for unencoded QRE-None; and shows fidelity above 0.99 out to 100 km with latency 15–45 ms independent of correction overhead.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.07033",
+      "title": "Analytic $C_{\\ell_1}$ norm of Coherence Evolution for Bell States under a Two-Qubit Superconducting Hamiltonian",
+      "authors": [
+        "Seyed Mohsen Moosavi Khansari"
+      ],
+      "abstract": "We present the first exact analytic study of unitary coherence dynamics in a minimal two qubit superconducting system with zz-coupling and transverse Josephson tunneling. By deriving the full time evolution operator without approximations and propagating all four Bell state initial conditions, we obtain novel closed form time dependent pure state density matrices and an explicit analytic expression for the C_(l_1 ) norm of coherence that, to our knowledge, has not been previously reported in the literature. Two of the Bell states are shown to be invariant under the model dynamics with constant coherence, whereas the other two exhibit controlled, parameter dependent coherence oscillations. The oscillatory behavior is governed by two distinct frequency scales that directly map onto the circuit coupling and tunneling parameters, allowing for predictable tuning of amplitude and periodicity. Numerical visualizations clarify operating regimes for transient enhancement or suppression of coherence. These results deliver compact, analytically tractable tools for parameter optimization and provide a clear foundation for incorporating dissipation and experimental validation.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-07",
+      "score": 0.5002824249995359,
+      "similar_to": [
+        {
+          "title": "Controlling the spontaneous emission of a superconducting transmon qubit",
+          "id": "0803.4490",
+          "similarity": 0.8595558404922485
+        },
+        {
+          "title": "Coherent control of macroscopic quantum states in a single-Cooper-pair box",
+          "id": null,
+          "similarity": 0.838104248046875
+        }
+      ],
+      "summary": {
+        "summary": "An exact analytic solution for coherence evolution is derived for a two-qubit superconducting system with $ZZ$-coupling and transverse Josephson tunneling, yielding closed-form time-dependent density matrices and an explicit $C_{\nable_1}$ norm expression for all four Bell state initial conditions. Two Bell states are dynamically invariant with constant coherence, while the other two display parameter-dependent oscillations governed by two distinct frequency scales mapping directly to circuit parameters.",
+        "motivation": "Analytic solutions for coherence dynamics in multi-qubit superconducting systems are scarce, limiting understanding of quantum state evolution and parameter optimization for coherence control in circuit QED platforms.",
+        "method": "The full time evolution operator was derived exactly without approximations for a two-qubit system with $ZZ$-coupling and transverse Josephson tunneling, with all four Bell states propagated to obtain explicit analytic expressions.",
+        "result": "Two Bell states exhibit dynamically protected constant coherence while the other two show controlled oscillations with amplitudes and periodicities directly tunable through the $ZZ$-coupling and tunneling parameters, providing analytically tractable tools for parameter optimization.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8385,
+    0.5828,
+    0.5003,
+    0.4675,
+    0.4154,
+    0.248,
+    0.2283,
+    0.2123,
+    0.1846,
+    0.1532,
+    0.1513,
+    0.1392,
+    0.1349,
+    0.1245,
+    0.1219,
+    0.1146,
+    0.1136,
+    0.1126,
+    0.1079,
+    0.1074,
+    0.1067,
+    0.1014,
+    0.1002,
+    0.0986,
+    0.0978,
+    0.0965,
+    0.0872,
+    0.085,
+    0.0839,
+    0.0728,
+    0.066,
+    0.0606,
+    0.0574,
+    0.0558,
+    0.0539,
+    0.047,
+    0.0456,
+    0.0441,
+    0.0434,
+    0.0431,
+    0.0401,
+    0.0393,
+    0.0389,
+    0.0381,
+    0.0374,
+    0.0354,
+    0.0342,
+    0.0296,
+    0.0267,
+    0.0243,
+    0.0236,
+    0.023,
+    0.0213,
+    0.0204,
+    0.0201,
+    0.0198,
+    0.0177,
+    0.016,
+    0.0157,
+    0.0154,
+    0.0143,
+    0.0138,
+    0.0132,
+    0.0132,
+    0.0125,
+    0.012,
+    0.0115,
+    0.0114,
+    0.0111,
+    0.0111,
+    0.0094,
+    0.0092,
+    0.0085,
+    0.0083,
+    0.0082,
+    0.0081,
+    0.0081,
+    0.0078,
+    0.0075,
+    0.0067,
+    0.0059,
+    0.0058,
+    0.0051,
+    0.005,
+    0.004,
+    0.0038,
+    0.0031,
+    0.0015
+  ]
+}

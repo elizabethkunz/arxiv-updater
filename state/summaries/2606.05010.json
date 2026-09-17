@@ -1,0 +1,8 @@
+{
+  "summary": "This work introduces a multimode Floquet branch analysis method to characterize measurement-induced state transitions (MIST) when a transmon qubit under dispersive readout is coupled to spectator modes in a quantum processor. The method reveals that spectator qubits and tunable couplers can dramatically alter MIST thresholds, with implications for readout fidelity in multi-qubit systems.",
+  "motivation": "Understanding MIST in isolated transmons has progressed significantly, but the impact of neighboring qubits and coupler modes on readout breakdown remains poorly explored despite being ubiquitous in circuit QED processors.",
+  "method": "The authors develop coupling-first and drive-first Floquet labeling schemes that track whether spectators induce avoided crossings in the quasienergy spectrum by comparing state assignments when couplings and drives are introduced in different orders. They apply this to two capacitively-coupled transmons and to systems with transmon tunable couplers, mapping critical photon numbers over ranges of detuning and coupling strength.",
+  "result": "For two transmons with $E_C/2\\pi \\approx 195$ MHz and $g/2\\pi \\approx 160$ MHz qubit-resonator coupling, spectator-induced MIST reduces critical photon numbers by $\\sim 50\\%$ over detuning ranges spanning hundreds of megahertz near single-photon resonances; tunable couplers can suppress this via destructive interference of charge-qubit matrix elements when $\\omega_c - \\omega_s = g_{sc}(g_{qc}/g_{qs} - g_{qs}/g_{qc})$, but this suppression condition does not coincide with ZZ-cancellation conditions.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

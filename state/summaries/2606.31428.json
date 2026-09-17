@@ -1,0 +1,8 @@
+{
+  "summary": "This work investigates erasure-based postselection for error mitigation in dual-rail transmon qubits, where thermal relaxation becomes a detectable erasure event rather than unheralded amplitude damping. The authors develop a circuit-level simulation framework (erado) and demonstrate that postselection can mitigate erasures in QFT up to erasure check error rates below 3.0%, with postselected dual-rail systems surpassing the noise floor at kiloquop scales where comparable single-rail systems fail.",
+  "motivation": "Dual-rail encodings like the dimon qubit convert dominant $T_1$ relaxation into heralded erasures, which are fundamentally easier to correct than unheralded errors. Exploiting this via postselection in the NISQ regime could provide practical error mitigation before full quantum error correction becomes feasible.",
+  "method": "The authors implement two equivalent noise models in erado: an ErasureCircuitSampler that deletes gates downstream of erasure events, and an ErasurePass that adds classical control. They simulate QFT circuits with erasure rate $p_e$, imperfect erasure checks ($p_{\\mathrm{fp}} = p_{\\mathrm{fn}} = q$), and gate depolarizing noise ($p_1^Q = 0.001$, $p_2^Q = 0.010$), tracking fidelity and rejection rate with and without postselection.",
+  "result": "For $p_e = 0.010$ and $n = 7$ qubits, postselection achieves maximum fidelity gain $\\Delta F \\approx 0.026$ (Figure 4); for $q < 0.030$, fidelity matches the $T_1 \\to \\infty$ limit within error (Table 1). At 1 kquop with $p_e = 0.008$, dual-rail qubits reach $F \\approx 0.163$ versus single-rail $F \\approx 0.023$, exceeding the estimated 3% shot-noise floor (Figure 6).",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

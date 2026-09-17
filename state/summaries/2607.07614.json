@@ -1,0 +1,8 @@
+{
+  "summary": "A quantum-amplifier-based readout chain (QARC) using two-stage kinetic inductance traveling-wave parametric amplifiers (KTWPAs) achieves nearly quantum-limited noise of ~3 quanta over 2 GHz bandwidth while dissipating three orders of magnitude less power than conventional readout chains that use cryogenic semiconductor amplifiers. The QARC demonstrates an input compression point of -93 dBm and maintains system performance suitable for scaled superconducting detector arrays and space-based observatories.",
+  "motivation": "Cryogenic readout chains for superconducting detectors require quantum-limited amplification with low power dissipation, but semiconductor amplifiers used in contemporary chains dissipate 10–15 mW at 3–4 K, which limits scaling and cooling feasibility for large detector arrays and space missions.",
+  "method": "A double-KTWPA frontend (each ~20 dB gain) replaces the conventional HEMT second stage; individual bias and pump optimization enables reaching ~40 dB total gain needed to overwhelm the room-temperature warm amplifier's ~300 K added noise. System noise is characterized using shot-noise tunnel junctions and validated using a novel mesoscopic diffusive copper nanowire noise source.",
+  "result": "The QARC dissipates ~210 nW of cryogenic power (120 nW dc + 90 nW rf) versus ~15 mW for HEMTs, achieves mean excess noise of 3 quanta over 2 GHz with 5 GHz of 5-quanta bandwidth, maintains -93 dBm input compression point, and exhibits efficiency metric $\\beta_{\\mathrm{KTWPA}} \\sim 0.3$ compared to $\\beta_{\\mathrm{HEMT}} \\sim 0.02$.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

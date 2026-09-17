@@ -1,0 +1,8 @@
+{
+  "summary": "A single electron trapped on solid neon is coupled to a superconducting NbTiN nanowire resonator to realize a charge qubit with coherent microwave control at Rabi frequencies up to 76 MHz, an order of magnitude higher than previous work. The electron position is inferred from coupling strengths to multiple electrodes, and despite non-optimal trapping due to neon surface roughness, spin-qubit fidelities up to 99.995% are estimated to be achievable with integrated ferromagnets.",
+  "motivation": "Electrons on solid neon offer isolation from material defects and potentially long coherence times for quantum information processing, making them attractive for spin-qubit implementations that require magnetic-field-compatible resonators to deliver control signals.",
+  "method": "A single electron on solid neon was coupled to an NbTiN nanowire resonator (bare resonance $f_r = 5.345$ GHz, $Q_l = 1841$, $\\kappa/2\\pi = 2.9$ MHz) with coupling strength $g/2\\pi = 2.1$ MHz determined by microwave spectroscopy; coherent control was demonstrated via Rabi oscillations, Ramsey interferometry, and Hahn-echo measurements.",
+  "result": "Rabi frequencies up to $f_{\\mathrm{Rabi}} = 76$ MHz were achieved; charge-qubit coherence times $T_2^* = 91$ ns and $T_2 = 202$ ns were measured; energy relaxation $T_1 = 3.06$ μs was observed (improving to $17.7$ μs after annealing); spin-qubit gate fidelity estimated at $99.52\\%$ using measured parameters or $99.995\\%$ with post-annealing values and intermediate spin-relaxation rates.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

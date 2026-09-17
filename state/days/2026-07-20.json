@@ -1,0 +1,274 @@
+{
+  "date": "2026-07-20",
+  "n_fetched": 92,
+  "papers": [
+    {
+      "id": "2607.16151",
+      "title": "Radiopurity material assays and radiation exposure projections for superconducting qubit measurements at SNOLAB",
+      "authors": [
+        "Y. Ahmed",
+        "B. Binoy",
+        "R. Bunker",
+        "D. Chauhan",
+        "P. Delsing",
+        "R. Germond",
+        "J. Hall",
+        "Z. Hong",
+        "A. Iqbal",
+        "V. Iyer",
+        "A. Klepikova",
+        "A. Kubik",
+        "S. P. Mantry",
+        "A. C. Masuskapoe",
+        "C. C. Monk",
+        "G. Peng",
+        "P. Qin",
+        "W. Rau",
+        "T. Reynolds",
+        "M. Stukel",
+        "C. M. Wilson",
+        "B. Zatschler",
+        "S. Zatschler",
+        "A. Zuniga"
+      ],
+      "abstract": "Interactions of cosmic rays and other forms of ionizing radiation pose a significant challenge to the reliable operation of state-of-the-art quantum devices and error correction in quantum computing based on superconducting circuits which are typically fabricated on semiconductor substrates. Shielded by 2 km of rock overburden, the Cryogenic Underground TEst facility (CUTE) at SNOLAB provides a unique ultra-low radiation environment to probe the performance of quantum technologies with a particular interest in quantum coherence studies. In this article, we present the findings of an extensive material assaying program in preparation for the first underground operation of superconducting qubits at SNOLAB. The radioactivity levels identified by the material assays enter a thorough Monte Carlo study based on the Geant4 particle physics tracking code. From these simulations, we estimate the rates of energy deposits from radiogenic sources expected for a quantum-device assembly operated in the CUTE facility. We further characterize the spectral components of the projected background and identify the dominant particle interaction types. Finally, we outline how crystal dynamics simulations using the G4CMP solid-state physics extension for Geant4 can inform the community-wide efforts to identify effective strategies to mitigate the effects of high-energy particle impacts.",
+      "categories": [
+        "physics.ins-det",
+        "quant-ph"
+      ],
+      "published": "2026-07-17",
+      "score": 0.8098217571004712,
+      "similar_to": [
+        {
+          "title": "Radiopurity material assays and radiation exposure projections for superconducting qubit measurements at SNOLAB",
+          "id": "2607.16151",
+          "similarity": 1.0
+        },
+        {
+          "title": "Impact of ionizing radiation on superconducting qubit coherence",
+          "id": "2001.09190",
+          "similarity": 0.7906410098075867
+        }
+      ],
+      "summary": {
+        "summary": "This paper presents material assay results and radiation transport simulations for the QUTEbits collaboration's first deployment of superconducting qubits at SNOLAB, a deep underground facility providing $2$ km of rock shielding. Geant4 and G4CMP simulations predict a total background rate of $0.70$ mHz per Si chip in the shielded CUTE facility, dominated by bulk $^{238}$U and $^{232}$Th contamination, with calibration sources ($^{133}$Ba, $^{252}$Cf) allowing controlled radiation exposure studies.",
+        "motivation": "Cosmic rays and environmental ionizing radiation cause decoherence and correlated errors in superconducting qubits, violating assumptions of quantum error correction schemes. Characterizing radiation effects in a controlled underground environment is essential to understand and mitigate radiation-induced qubit errors.",
+        "method": "High-purity germanium spectroscopy assayed components to $\\mathcal{O}(10\\text{–}100)$ μBq/kg sensitivity. Measured radioactivities were propagated through Geant4 simulations of the CUTE geometry and shielding ($11$ cm lead, mu-metal, copper enclosures). G4CMP simulations of phonon and charge carrier dynamics in Si/Al devices determined phonon collection times ($\\tau_{\\mathrm{max}} \\approx 14.7$ μs) and qubit hit multiplicities.",
+        "result": "Bulk contamination yields $5.51 \\times 10^{-1}$ mHz in Si chips and $7.78 \\times 10^{1}$ mHz in Al cavities; $^{210}$Pb surface contamination from radon adds $\\approx 0.14$ mHz to Si. External cavern radiation contributes $<8 \\times 10^{-3}$ mHz. Calibration source rates reach $38.8 ± 5.8$ mHz ($^{133}$Ba, optimal angle) and $0.9 ± 0.3$ mHz ($^{252}$Cf), providing 7–50× excess over background. G4CMP shows energy deposits $\\gtrsim 100$ eV cause correlated errors across all four transmon qubits on the $7 \\times 7$ mm$^2$ chip.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.15757",
+      "title": "Contactless terahertz mapping of wafer-scale superconducting NbTiN thin films",
+      "authors": [
+        "Yayi Lin",
+        "Marc Neis",
+        "Marcello Pio Guardascione",
+        "Janine Lorenz",
+        "Thomas J. Smart",
+        "F. Stefan Tautz",
+        "Felix Lüpke",
+        "Frederik Bolle",
+        "Martin Dressel",
+        "Rami Barends",
+        "Pavel A. Bushev",
+        "Marc Scheffler"
+      ],
+      "abstract": "For large-scale superconducting quantum technology, e.g. quantum computing, the homogeneity of wafer-scale superconducting thin films is vital for consistent performance of the fabricated devices. Terahertz (THz) spectroscopy as a contactless and non-destructive measurement technique is a powerful tool to characterize the superconducting films. In this work, a set of niobium titanium nitride (NbTiN) thin films on 4-inch and 6-inch silicon wafers, grown via plasma-enhanced magnetron sputtering, are investigated via THz spectroscopy: full wafers are mapped at room temperatures and exemplary segments are characterized at cryogenic temperatures. The deviations in observed sheet resistance depend on the used deposition device and the film thickness. While the deviations in superconducting sheet kinetic inductance match those of the normal-state sheet resistance, the critical temperature and energy gap exhibit little variation. This THz mapping technique demonstrates the feasibility of evaluating wafer-scale superconducting thin films before lithography, facilitating preparation of the thin films for reproducible device fabrication.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-07-17",
+      "score": 0.6156668528714415,
+      "similar_to": [
+        {
+          "title": "Assessing the Sensitivity of Niobium- and Tantalum-Based Superconducting Qubits to Infrared Radiation",
+          "id": "2602.05806",
+          "similarity": 0.7981183528900146
+        },
+        {
+          "title": "High-Q superconducting microwave resonators using MBE titanium nitride",
+          "id": "2607.15230",
+          "similarity": 0.7921829223632812
+        }
+      ],
+      "summary": {
+        "summary": "Terahertz spectroscopy is used to map wafer-scale homogeneity of NbTiN thin films on 4-inch and 6-inch Si wafers grown by plasma-enhanced magnetron sputtering, measuring sheet resistance $R_s$ at room temperature via THz-FDS and superconducting properties at cryogenic temperatures via THz-TDS. Room-temperature $R_s$ variations (1.77–7.78% standard deviation) correlate with film thickness and deposition device, while the zero-temperature sheet kinetic inductance $L_{k0}$ follows $R_s$ variations, but critical temperature $T_c$ (13.68–13.81 K) and energy gap $2\\Delta_0$ remain uniform across the wafer.",
+        "motivation": "Homogeneous superconducting thin films are essential for reproducible large-scale device fabrication in quantum computing and sensing platforms, yet standard characterization requires lithography and electrical contacts.",
+        "method": "NbTiN films of thicknesses 5–60 nm on Si substrates were characterized by THz-FDS (9–10.5 cm$^{-1}$, room temperature) for $R_s$ mapping and THz-TDS (300 GHz–3 THz, down to 1.5 K) on diced samples for optical conductivity and superconducting parameters via Mattis-Bardeen theory fits.",
+        "result": "For films thicker than 30 nm, $R_s$ uniformity plateaus with standard deviation $\\sim$0.6–0.7%, while sub-30 nm films show degraded homogeneity (up to 7.78%); $L_{k0}$ deviations match $R_s$ deviations ($\\delta L_{k0} \\propto \\delta R_s$), enabling prediction of device performance from room-temperature measurements, but $T_c$ and $2\\Delta_0$ show minimal spatial variation ($<$0.1 K and meV scales).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.15909",
+      "title": "Reconstruction of the noise correlation spectral density from the cavity emission in a two-qubit system",
+      "authors": [
+        "Nadine Lenke",
+        "Guido Burkard"
+      ],
+      "abstract": "A significant challenge in the field of large-scale fault-tolerant quantum computation is the influence of noise. In addition to the influence of noise on individual qubits, the smaller additional effect of noise correlations is also of high significance because correlated errors pose a challenge for quantum error correction. We describe the dynamics of two cavity-coupled qubits that are subject to correlated noise, assuming that the qubits are affected by longitudinal noise and not coupled directly. We find that the cavity emission enables the characterization of the noise correlations and describe the cases of white noise, quasi-static noise, and Ornstein-Uhlenbeck noise. For a known frequency spectrum, the reconstruction of the noise correlation spectral density from the cavity emission is possible by averaging over many different noise realizations. We demonstrate that, in the case of white noise, the noise correlation effects scale with the fifth order of the cavity-qubit coupling constant and are thus strongly suppressed compared with the case of quasi-static noise, where they scale with the third order. Furthermore, we present a method for extracting the noise correlation spectral density from the cavity emission in the case where the underlying noise type remains unidentified. This can be achieved by applying the convolution theorem.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-07-17",
+      "score": 0.6025166032562147,
+      "similar_to": [
+        {
+          "title": "Noise cross-correlations from single-shot measurements",
+          "id": "2509.22073",
+          "similarity": 0.8659127950668335
+        },
+        {
+          "title": "Introduction to Quantum Noise, Measurement and Amplification",
+          "id": "0810.4729",
+          "similarity": 0.8627916574478149
+        }
+      ],
+      "summary": {
+        "summary": "This work characterizes noise correlations between two cavity-coupled qubits by measuring the cavity emission, developing a perturbative theory in the qubit-cavity coupling $g$ up to third order. The method is demonstrated for white noise (where correlation effects scale as $g^5$ and are negligible), quasi-static noise (linear scaling with correlation spectral density $S_{12}$), and Ornstein-Uhlenbeck noise (intermediate behavior), with a general extraction procedure via the convolution theorem.",
+        "motivation": "Correlated noise across multiple qubits severely degrades quantum error correction performance and limits scalability of quantum processors; understanding these correlations is essential for fault-tolerant quantum computation.",
+        "method": "The authors solve quantum Langevin equations perturbatively in the qubit-cavity coupling to third order, averaging the cavity output field over many noise realizations with Gaussian statistics, and extract the noise correlation spectral density from measured cavity emission by subtracting single-qubit contributions and using convolution analysis.",
+        "result": "For quasi-static noise, $\\langle\\langle B_{\\mathrm{out}}^{q1,q2}(t)\\rangle\\rangle_\\mathrm{qs} \\propto g^3 S_{12} \\lambda^2$; for white noise the correlation contribution is suppressed to $\\propto g^5$; for Ornstein-Uhlenbeck noise the effect decreases exponentially with correlation decay rate $\\Gamma_{12}$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.16166",
+      "title": "Fast logical operations in quantum LDPC codes using simple resource states",
+      "authors": [
+        "Mark Webster",
+        "Nicolas Delfosse"
+      ],
+      "abstract": "Quantum LPDC codes provide a substantial reduction in qubit overhead required for fault-tolerant quantum computation compared to surface code, thanks to their high encoding rate. However, operating simultaneously on multiple logical qubits encoded in the same block is more challenging and may slow down logical operations. Prior work addresses this problem by designing complex resource states to perform logical measurements in LDPC codes. Here, we propose an approach that only consumes cat states. Whereas previous work on cat-based measurements focuses on a single logical measurement, we design a protocol for the joint measurement of $\\ell$ commuting logical operators. The key ingredient is the design of a scheduler code determining the measurement sequence and allowing for the decoding of all logical measurement outcomes. Numerical simulations with the LDPC codes Q70 and Q102 of the walking cat architecture show a speed-up of nearly $3\\times$ over Viterbi measurements for the measurement of $\\ell=20$ commuting logical operators. Combining our fast logical measurements with a new variant of the CliNR partial error correction scheme, we achieve a speed-up of up to $74\\times$ for random Clifford circuits. Our approach also applies to non-Clifford gates, producing a speed-up of up to $5\\times$ for Toffoli gates.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-17",
+      "score": 0.5316350717211864,
+      "similar_to": [
+        {
+          "title": "Demonstration of High-Fidelity Entangled Logical Qubits using Transmons",
+          "id": "2503.14472",
+          "similarity": 0.8578056693077087
+        },
+        {
+          "title": "Entangling logical qubits without physical operations",
+          "id": "2601.20927",
+          "similarity": 0.8571364283561707
+        }
+      ],
+      "summary": {
+        "summary": "This work accelerates logical operations in quantum LDPC codes by combining cat-state-based measurements of multiple commuting Pauli operators using scheduler codes, achieving 3× speedup for joint logical measurements and up to 74× speedup for random Clifford circuits when integrated with a modified CliNR scheme. The approach is demonstrated numerically on the Q70 and Q102 codes from the walking cat architecture with measurement flip rate $p_F = 6.3 \\times 10^{-3}$ and target error rate $\\varepsilon = 10^{-10}$.",
+        "motivation": "Quantum LDPC codes offer high encoding rates and qubit efficiency compared to surface codes, but simultaneous logical operations on multiple qubits within the same block are slow because prior work requires complex resource states for logical measurements.",
+        "method": "The authors generalize Shor's cat-based measurement scheme to jointly measure $\\ell$ commuting logical Pauli operators using an $\\ell \\times m$ scheduler code (a binary linear code) that specifies the measurement sequence and enables decoding of all outcomes. They develop error-detected (MEDM) and error-corrected (MECM) variants that terminate early when sufficient confidence is reached, and combine these with a modified CliNR protocol where stabilizer state preparation and verification are merged at the logical level and injection is implemented physically.",
+        "result": "For $\\ell = 20$ commuting logical operators on Q70 and Q102, the MECM protocol requires only 1.71 and 1.70 cat-state measurements per logical operator respectively, compared to 5.06 for the single-Pauli Viterbi protocol. Logical CliNR produces speedups of $4.2\\times$ (Q70) and $5.0\\times$ (Q102) for Toffoli gates, and $18.5\\times$ (Q70) and $74.4\\times$ (Q102) for random Clifford operators, versus gate-based Viterbi synthesis.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8098,
+    0.6157,
+    0.6025,
+    0.5316,
+    0.4072,
+    0.3549,
+    0.3493,
+    0.3117,
+    0.2587,
+    0.2543,
+    0.2251,
+    0.2156,
+    0.2038,
+    0.1965,
+    0.1924,
+    0.1699,
+    0.1686,
+    0.1564,
+    0.1493,
+    0.1403,
+    0.1264,
+    0.1261,
+    0.1212,
+    0.1063,
+    0.101,
+    0.0975,
+    0.095,
+    0.0946,
+    0.0915,
+    0.0889,
+    0.0873,
+    0.087,
+    0.0694,
+    0.064,
+    0.0596,
+    0.0547,
+    0.0537,
+    0.0534,
+    0.0531,
+    0.0531,
+    0.0516,
+    0.049,
+    0.0483,
+    0.0463,
+    0.0459,
+    0.0448,
+    0.0442,
+    0.0418,
+    0.0356,
+    0.0354,
+    0.0353,
+    0.0349,
+    0.0341,
+    0.0333,
+    0.0323,
+    0.0319,
+    0.0318,
+    0.0311,
+    0.0305,
+    0.0289,
+    0.0255,
+    0.0244,
+    0.0241,
+    0.0199,
+    0.0175,
+    0.0168,
+    0.0167,
+    0.0153,
+    0.0143,
+    0.0143,
+    0.0139,
+    0.0134,
+    0.0131,
+    0.0121,
+    0.0115,
+    0.0112,
+    0.0111,
+    0.0098,
+    0.0091,
+    0.0079,
+    0.0078,
+    0.0075,
+    0.0075,
+    0.0073,
+    0.0066,
+    0.0065,
+    0.0057,
+    0.005,
+    0.0037,
+    0.003,
+    0.0027,
+    0.0018
+  ]
+}

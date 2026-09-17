@@ -1,0 +1,335 @@
+{
+  "date": "2026-01-13",
+  "n_fetched": 118,
+  "papers": [
+    {
+      "id": "2601.07825",
+      "title": "Mechanical Resonator-based Quantum Computing",
+      "authors": [
+        "Yu Yang",
+        "Igor Kladaric",
+        "Martynas Skrabulis",
+        "Michael Eichenberger",
+        "Stefano Marti",
+        "Simon Storz",
+        "Jonathan Esche",
+        "Raquel Garcia Belles",
+        "Max-Emanuel Kern",
+        "Andraz Omahen",
+        "Arianne Brooks",
+        "Marius Bild",
+        "Mateo Fadel",
+        "Yiwen Chu"
+      ],
+      "abstract": "Hybrid quantum systems combine the unique advantages of different physical platforms with the goal of realizing more powerful and practical quantum information processing devices. Mechanical systems, such as bulk acoustic wave resonators, feature a large number of highly coherent harmonic modes in a compact footprint, which complements the strong nonlinearities and fast operation times of superconducting quantum circuits. Here, we demonstrate an architecture for mechanical resonator-based quantum computing, in which a superconducting qubit is used to perform quantum gates on a collection of mechanical modes. We show the implementation of a universal gate set, composed of single-qubit gates and controlled arbitrary-phase gates, and showcase their use in the quantum Fourier transform and quantum period finding algorithms. These results pave the way toward using mechanical systems to build crucial components for future quantum technologies, such as quantum random-access memories.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-12",
+      "score": 0.8732823643505713,
+      "similar_to": [
+        {
+          "title": "A double-resonator coupler for high-fidelity two-qubit gates between superconducting qubits",
+          "id": "2609.05222",
+          "similarity": 0.8424638509750366
+        },
+        {
+          "title": "Observation of high coherence in Josephson junction qubits measured in a three-dimensional circuit QED architecture",
+          "id": "1105.4652",
+          "similarity": 0.8382160663604736
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates mechanical resonator-based quantum computing (MRQC) using a superconducting transmon qubit coupled to a high-overtone bulk acoustic wave resonator (HBAR) with three phonon modes serving as quantum memory. A universal gate set including single-qubit operations and controlled arbitrary-phase gates is implemented, enabling quantum Fourier transform and period-finding algorithms with measured fidelities exceeding 85% for two-qubit gates.",
+        "motivation": "Superconducting qubits suffer from limited connectivity and lack clear separation between processing and memory units. Hybrid architectures coupling qubits to mechanical systems offer dense multi-mode spectra with long coherence times—HBARs in particular provide compact storage with $T_1$ up to 196 µs and the potential for coupling to other quantum systems.",
+        "method": "A cQAD system combines a transmon qubit ($T_{1,q} = 30$ µs, $T_{2,q}^E = 23$ µs) with an HBAR at coupling strength $g/2\\pi = 296$ kHz. Single-phonon gates achieve 94.95–95.93% fidelity via randomized benchmarking across three modes. Off-resonant transmon–phonon interactions in the dispersive regime implement $C\\phi$ gates; a $C\\pi$ gate requires two off-resonant pulses ($\\Delta/2\\pi$ tunable, $t_{\\mathrm{int}} \\approx 2.5\\times$ SWAP duration) with a Z-rotation sandwich.",
+        "result": "Two-qubit $C\\phi$ gate process tomography yields $\\mathcal{F}_\\pi = 89.2\\%$ (no-SPAM) and 85.7% (with SPAM) for $C\\pi$; gates at $\\phi = \\pi/4, \\pi/2, \\pi$ achieve $\\geq 85\\%$ fidelity across all modes. Three-phonon quantum Fourier transform demonstrates $F_{\\mathrm{QFT},3} = 54.8\\%$ fidelity; quantum period finding correctly identifies period $r=2$ with clear population peaks at states $|0\\rangle$ and $|4\\rangle$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.07529",
+      "title": "Hardware-Economic Manipulation of Dual-Type ${}^{171}$Yb$^+$ Qubits",
+      "authors": [
+        "Y. -J. Yi",
+        "Y. -Y. Chen",
+        "Y. -H. Hou",
+        "Y. -K. Wu",
+        "L. Zhang",
+        "C. Zhang",
+        "Y. -L. Xu",
+        "J. Ye",
+        "W. -X. Guo",
+        "B. -X. Qi",
+        "Z. -C. Zhou",
+        "P. -Y. Hou",
+        "L. -M. Duan"
+      ],
+      "abstract": "The dual-type qubit scheme is an emerging method to suppress crosstalk errors in scalable trapped-ion quantum computation and quantum network. Here we report a hardware-economic way to control dual-type $^{171}\\mathrm{Yb}^+$ qubits using a single $355\\,$nm mode-locked pulsed laser. Utilizing its broad frequency comb structure, we drive the Raman transitions of both qubit types encoded in the $S_{1/2}$ and the $F_{7/2}$ hyperfine levels, and probe their carrier transitions and the motional sidebands. We further demonstrate a direct entangling gate between the two qubit types. Our work can simplify the manipulation of the $^{171}\\mathrm{Yb}^+$ qubits both at the hardware and the software level.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-12",
+      "score": 0.8355346514066068,
+      "similar_to": [
+        {
+          "title": "Bias-preserving and error-detectable entangling operations in a superconducting dual-rail system",
+          "id": "2503.10935",
+          "similarity": 0.8153018951416016
+        },
+        {
+          "title": "Dual-rail encoding with superconducting cavities",
+          "id": "2212.12077",
+          "similarity": 0.8135941624641418
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates hardware-economical control of dual-type $^{171}\\mathrm{Yb}^+$ qubits encoded in $S_{1/2}$ and $F_{7/2}$ hyperfine levels using a single 355 nm mode-locked pulsed laser with broad frequency comb structure. A direct entangling gate between the two qubit types is demonstrated with 70% fidelity, simplifying the experimental requirements for scalable trapped-ion quantum computation.",
+        "motivation": "Dual-type qubit schemes suppress crosstalk errors in trapped-ion quantum computation by encoding qubits in different hyperfine manifolds, but typically require separate laser systems for each type due to their large frequency difference ($\\omega_S = 2\\pi \\times 12.642$ GHz and $\\omega_F = 2\\pi \\times 3.620$ GHz). Recent success with $^{137}\\mathrm{Ba}^+$ motivates exploring whether this hardware-economic approach generalizes to $^{171}\\mathrm{Yb}^+$.",
+        "method": "The 355 nm frequency comb structure (67 GHz bandwidth, 80 MHz repetition rate) bridges Raman transitions for both qubit types using comb teeth $k_S = 158$ and $k_F = 45$ respectively. Phase-locked loops stabilize each qubit type's transition frequency independently, while an arbitrary waveform generator selects carrier and sideband detunings. An alternating gate scheme rapidly switches addressing between the two qubit types during entanglement.",
+        "result": "Individual carrier and sideband manipulations are demonstrated; resolved sideband cooling achieves $\\bar{n}_c = 0.3$ for center-of-mass and $\\bar{n}_r = 0.1$ for rocking modes. The direct $S$-$F$ entangling gate achieves 70% Bell state fidelity with 470.5 µs gate time, limited by spin coherence ($T_2 = 2.5$ ms) and motional coherence (2 ms) rather than fundamental constraints.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.06668",
+      "title": "Comparison of Two-Level System Microwave Losses in Pure Bulk Microcrystalline Nb2O5 and NbO2 Oxide Samples",
+      "authors": [
+        "Vishal Ganesan",
+        "Jiankun Zhang",
+        "Drew G. Wild",
+        "Alexey Bezryadin"
+      ],
+      "abstract": "Losses from two-level systems (TLS) associated with amorphous oxides remain one of the primary limitations to the performance of superconducting qubits and microwave cavities. Niobium resonators are widely used in quantum science experiments, yet niobium's natural oxide layer contains various types of oxides whose relative contributions to TLS loss have not been clearly distinguished. Here, we use a superconducting 3D microwave cavity to measure commercial 99.9\\% trace metal pure, microcrystalline oxide powders \\ch{Nb2O5} and \\ch{NbO2} in bulk amounts. Using this approach, we directly compare the loss characteristics of \\ch{Nb2O5} and \\ch{NbO2}. Our measurements show that the nominal \\ch{Nb2O5} bulk oxide powder samples exhibit losses which have the power and temperature behavior expected for TLS. Moreover, the measurements agree with existing theoretical models. Analogous measurements performed on \\ch{NbO2} bulk powder samples do not show any detectable TLS loss signatures. Based on our results we propose that the TLS losses might be reduced if a high quality microcrystalline \\ch{NbO2} oxide dominates the \\ch{Nb2O5} oxide in practical Nb cavities. These results establish a materials based strategy for isolating oxide specific TLS losses and provide a reference measurement for niobium oxide phases relevant to superconducting quantum devices.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-01-10",
+      "score": 0.6501068349272224,
+      "similar_to": [
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.8833671808242798
+        },
+        {
+          "title": "Comparison of Dielectric Loss in Titanium Nitride and Aluminum Superconducting Resonators",
+          "id": "2007.07338",
+          "similarity": 0.826540470123291
+        }
+      ],
+      "summary": {
+        "summary": "This work isolates two-level system (TLS) microwave losses in commercial niobium oxide powders by measuring their quality factors in a 3D superconducting cavity. The authors find that monoclinic Nb$_2$O$_5$ exhibits clear TLS-dominated losses consistent with the tunneling model, while tetragonal NbO$_2$ shows negligible TLS signatures, suggesting oxide phase and crystal symmetry are critical factors in determining TLS loss in niobium resonators.",
+        "motivation": "TLS losses in amorphous oxides limit the performance of superconducting qubits and cavities, but the relative contributions from different niobium oxide phases in the native oxide stack remain unclear. Direct experimental comparison of isolated oxide phases is needed to identify which phases dominate dissipation.",
+        "method": "Commercially obtained microcrystalline Nb$_2$O$_5$ (monoclinic, XRD-confirmed) and NbO$_2$ (tetragonal) powders (~20 mg each, 99.9% purity) were deposited on sapphire substrates using nail polish binder and inserted into a Nb cavity at the electric field antinode. Quality factors were measured via transmission ($S_{21}$) fitting versus circulating power ($P_\\mathrm{circ}$ from $-75$ to $+35$ dBm) and temperature (60 mK to 1.1 K) using a vector network analyzer.",
+        "result": "Nb$_2$O$_5$ samples show power-dependent $Q_i$ reduction with fits to Eq. 2 yielding small $\\beta \\approx 0.1$--0.3 (indicating TLS-TLS interactions), loss tangent $\\delta = (8.1 \\pm)\\times10^{-4}$ to $1.8\\times10^{-3}$ (Methods I and II), and $Q_i$ increasing ~10× from 60 mK to 1.1 K; NbO$_2$ samples show flat $Q_i$ across power, with dissipation only at high power consistent with quasiparticle effects, establishing monoclinic Nb$_2$O$_5$ as the primary TLS source in the Nb oxide stack.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.06682",
+      "title": "Aharonov-Casher Effect and the Coherent Flux Tunneling in the Hybrid Charge Quantum Interference Device",
+      "authors": [
+        "J. W. Dunstan",
+        "R. Shaikhaidarov",
+        "K. H. Kim",
+        "A. Shesterikov",
+        "I. Antonov",
+        "S. Linzen",
+        "E. V. Il'ichev",
+        "V. N. Antonov",
+        "O. V. Astafiev"
+      ],
+      "abstract": "By exploiting the Aharonov-Casher effect we demonstrate a suppression of magnetic flux tunneling in a Hybrid Charge Quantum Interference Device. The main part of this device is two Josephson junctions with a small superconducting island between them. To minimize phase fluctuations across Josephson junctions, this structure is embedded in a compact super-inductive NbN loop. The Interference between the flux tunneling paths is determined by the island-induced charge, which is controlled by an external voltage. The charge sensitive operation of the device is subjected to poisoning by the quasiparticles generated in the NbN film.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-01-10",
+      "score": 0.5711896662492336,
+      "similar_to": [
+        {
+          "title": "Distinguishing parity-switching mechanisms in a superconducting qubit",
+          "id": "2204.07458",
+          "similarity": 0.8222553730010986
+        },
+        {
+          "title": "Quasiparticle-induced transitions in a fluxonium qubit",
+          "id": "2607.21329",
+          "similarity": 0.8165433406829834
+        }
+      ],
+      "summary": {
+        "summary": "A hybrid charge quantum interference device (h-CQUID) combining Josephson junctions with a high kinetic-inductance NbN loop demonstrates control of fluxon tunneling via the Aharonov-Casher effect, with the interference between two tunneling paths modulated by charge on a superconducting island. At destructive interference conditions ($Q = 2e(n + 1/2)$), the phase-slip energy $E_S$ is suppressed, with minimum $E_S/h \\approx 0.4$ GHz achieved for asymmetric junctions with $\\nu_1 = 1.48$ GHz and $\\nu_2 = 1.08$ GHz tunneling rates.",
+        "motivation": "The h-CQUID architecture addresses fabrication limitations of earlier CQUID designs that relied on 10 nm nanowires (fabrication accuracy $\\pm 2$ nm) with highly variable phase-slip energy; Josephson junctions offer $>90\\%$ parameter reproducibility and can be cleanly integrated with kinetic-inductance films.",
+        "method": "Two Josephson junctions with a superconducting aluminum island between them were embedded in a compact NbN loop ($L_k \\approx 81.3$ nH, $L_{\\square} \\sim 1.6$ nH/sq, grown by atomic layer deposition) and coupled inductively to a $\\lambda/2$ resonator at 10.676 GHz; two-tone spectroscopy and Rabi oscillations were measured at 12 mK in a dilution refrigerator.",
+        "result": "Two-tone spectroscopy shows periodic modulation with period $2e$ in the excitation energy $\\Delta E = \\sqrt{\\epsilon(\\Phi)^2 + E_S(Q)^2}$ as gate voltage varies the island charge $Q = C_g V_g$; the persistent current is $I_P \\sim 11.5$ nA with $T_1 \\approx 20$ ns, though quasiparticle poisoning in the NbN film creates parasitic charge-parity states that prevent complete suppression of tunneling.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.07860",
+      "title": "Fault-Tolerant Quantum Error Correction: Implementing Hamming-Based Codes with Advanced Syndrome Extraction Techniques",
+      "authors": [
+        "Soham Bhadra",
+        "Diyansha Singh",
+        "Angana Chowdhury"
+      ],
+      "abstract": "Building reliable quantum computers requires protecting fragile quantum states from inevitable environmental noise and operational errors. While quantum error correction codes like the Steane $[\\![7,1,3]\\!]$ code provide elegant theoretical solutions, their practical success hinges critically on how we measure errors - a process called syndrome extraction. The challenge lies in the ancilla qubits used for measurement: when they fail, errors can cascade across the entire quantum system, destroying the very information we're trying to protect. We address this fundamental problem by implementing and comparing three sophisticated syndrome measurement strategies: Shor's cat-state approach, which distributes measurements across multiple entangled ancillas achieving 85-92% preparation success; Steane's encoded-ancilla method using complete error-corrected logical qubits reaching 97.8% syndrome fidelity; and a flexible unified framework that adapts strategies based on hardware capabilities. Through extensive simulations using IBM's Qiskit platform spanning randomized benchmarking and T-heavy circuits, we demonstrate that intelligent ancilla management improves error suppression by up to 2.4$\\times$ compared to standard approaches. Our implementations achieve logical error rates as low as $5.1 \\times 10^{-5}$ under realistic noise conditions with physical error rates of $10^{-3}$, while maintaining near-unity logical fidelity (0.99997) even for deep circuits. The threshold analysis reveals robust performance across distance-3 to distance-13 codes with characteristic threshold curves showing exponential error suppression below the critical physical error rate. These results provide immediately deployable tools for near-term quantum devices and establish practical design principles for scaling toward fault-tolerant quantum computers.",
+      "categories": [
+        "quant-ph",
+        "cs.ET"
+      ],
+      "published": "2026-01-10",
+      "score": 0.5322870492719995,
+      "similar_to": [
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.8917773962020874
+        },
+        {
+          "title": "Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code",
+          "id": "2112.03708",
+          "similarity": 0.8817453384399414
+        }
+      ],
+      "summary": {
+        "summary": "This paper implements and compares three fault-tolerant syndrome extraction strategies for the Steane $[\\![7,1,3]\\!]$ code: Shor's cat-state method (85–92% preparation success, 96.8% syndrome fidelity), Steane's encoded-ancilla approach (97.8% syndrome fidelity), and a unified CSS scheduler framework. Extensive Qiskit simulations under realistic noise ($p_{\\mathrm{phys}}=10^{-3}$) achieve logical error rates as low as $5.1 \\times 10^{-5}$ and demonstrate 2.4$\\times$ improvement in error suppression compared to standard syndrome extraction.",
+        "motivation": "Practical quantum error correction hinges on syndrome extraction, but ancilla qubits used for measurement can propagate errors across the system if they fail, destroying the information being protected. This work addresses the fundamental ancilla error propagation problem that threatens the viability of fault-tolerant quantum computing.",
+        "method": "Three syndrome measurement strategies were implemented in Qiskit with configurable parameters: cat-state ancillas with adjustable verification depth (2–3 parity checks optimal), encoded logical ancillas with adaptive swap policies, and a flexible scheduler enabling hardware-specific mode selection. Benchmarking spans randomized Clifford circuits (depth 2000) and $T$-heavy circuits (82,000 shots) under superconducting noise ($p_{1q}=10^{-3}$, $p_{2q}=10^{-2}$, $p_{\\mathrm{meas}}=1.5\\%$). Decoding uses majority voting, Viterbi, and Bayesian inference with temporal tracking across distances $d=3$ to $d=13$.",
+        "result": "Steane encoded-ancilla achieves 97.8% syndrome fidelity with logical error rates of $5.1 \\times 10^{-5}$ (20$\\times$ suppression) at $p_{\\mathrm{phys}}=10^{-3}$; cat-state extraction reaches 96.8% fidelity with 5$\\times$ ancilla overhead; threshold analysis reveals exponential error suppression below $p_{\\mathrm{phys}} \\approx 1\\%$, confirming fault-tolerant quantum error correction is viable on current hardware operating $10\\times$ below threshold.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8733,
+    0.8355,
+    0.6501,
+    0.5712,
+    0.5323,
+    0.4986,
+    0.4036,
+    0.3968,
+    0.3534,
+    0.34,
+    0.3393,
+    0.3357,
+    0.3335,
+    0.3264,
+    0.3231,
+    0.274,
+    0.2703,
+    0.2583,
+    0.2411,
+    0.2326,
+    0.1885,
+    0.1686,
+    0.1683,
+    0.1587,
+    0.1529,
+    0.1434,
+    0.13,
+    0.1284,
+    0.1282,
+    0.1273,
+    0.1243,
+    0.122,
+    0.1074,
+    0.1055,
+    0.0982,
+    0.0916,
+    0.0901,
+    0.0891,
+    0.0865,
+    0.0864,
+    0.084,
+    0.0783,
+    0.0739,
+    0.0672,
+    0.0635,
+    0.0627,
+    0.0594,
+    0.0588,
+    0.0579,
+    0.0569,
+    0.0562,
+    0.0524,
+    0.0508,
+    0.0501,
+    0.0487,
+    0.0483,
+    0.0452,
+    0.0445,
+    0.0423,
+    0.0417,
+    0.0407,
+    0.0401,
+    0.0395,
+    0.0386,
+    0.0378,
+    0.0377,
+    0.0367,
+    0.0359,
+    0.0357,
+    0.0356,
+    0.0343,
+    0.0331,
+    0.0291,
+    0.0284,
+    0.0277,
+    0.0262,
+    0.0234,
+    0.0233,
+    0.0217,
+    0.0214,
+    0.0214,
+    0.0201,
+    0.0192,
+    0.0176,
+    0.0166,
+    0.0163,
+    0.0157,
+    0.0154,
+    0.0152,
+    0.0149,
+    0.0149,
+    0.0146,
+    0.0145,
+    0.0144,
+    0.0127,
+    0.0124,
+    0.012,
+    0.0113,
+    0.0112,
+    0.0106,
+    0.01,
+    0.0091,
+    0.0083,
+    0.0079,
+    0.007,
+    0.0069,
+    0.0069,
+    0.0067,
+    0.0061,
+    0.006,
+    0.0057,
+    0.0053,
+    0.0045,
+    0.004,
+    0.0034,
+    0.0024,
+    0.0023,
+    0.0018
+  ]
+}

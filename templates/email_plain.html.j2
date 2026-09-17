@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"></head>
+{# Deliberately unstyled: the mail client's own font and colours, bold slightly larger titles, nothing else. #}
+<body>
+{% if not papers %}
+<p>No new papers scored above the email threshold today.</p>
+{% endif %}
+{% for p in papers %}
+<p><b style="font-size:1.2em;">{% if p.score >= 0.95 %}&#11088; {% endif %}[{{ p.score|pct }}] {{ p.title|detex }}</b><br>
+ArXiV: <a href="https://arxiv.org/abs/{{ p.id }}">https://arxiv.org/abs/{{ p.id }}</a><br>
+Link: <a href="{{ base_url }}/{{ p.id }}">{{ base_url }}/{{ p.id }}</a><br>
+Authors: {{ p.authors|short_authors }}<br>
+Summary: {{ p.summary.summary|detex }}</p>
+{% endfor %}
+<p>--<br>
+{{ day.n_fetched }} new papers scanned for {{ day.date }}. All papers: <a href="{{ base_url }}/">{{ base_url }}/</a></p>
+</body>
+</html>

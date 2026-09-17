@@ -1,0 +1,8 @@
+{
+  "summary": "Bilayer NbSe$_2$ coupled to a terahertz CSRR cavity shows a 10% enhancement of $T_c$ (from 3.02 K to 3.41 K) at 0.92 THz resonance, with the effect growing sharply in the two-dimensional limit and scaling roughly four times larger than in ten-layer devices. QED-DFT calculations show the enhancement arises from cavity-induced redistribution of spectral weight in the Eliashberg function, weakening electron-phonon coupling while hardening the logarithmic average phonon frequency, with the sign change in $T_c$ emerging from competition between these effects.",
+  "motivation": "Cavity-induced modification of superconductivity has been theoretically predicted, but the microscopic mechanism and scaling with material dimensionality remain unknown.",
+  "method": "Few-layer NbSe$_2$ flakes were coupled to a terahertz CSRR tuned to 0.92 THz, with $T_c$ and lower critical field measured spatially across the cavity field profile on a single continuous device; QED-DFT calculations tracked cavity-induced changes to the Eliashberg function.",
+  "result": "Bilayer NbSe$_2$ shows $\triangle T_c = +0.39$ K at the cavity field maximum, decreasing to zero outside the resonator, with frequency-dependent non-monotonic response peaking near 0.96 THz; the effect is approximately four times larger in bilayers than in ten-layer NbSe$_2$ at the same cavity frequency.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

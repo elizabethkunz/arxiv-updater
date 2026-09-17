@@ -1,0 +1,370 @@
+{
+  "date": "2026-03-13",
+  "n_fetched": 117,
+  "papers": [
+    {
+      "id": "2603.11188",
+      "title": "Rhenium as a material platform for long-lived transmon qubits",
+      "authors": [
+        "Yanhao Wang",
+        "Suhas Ganjam",
+        "Ishan Narra",
+        "Luigi Frunzio",
+        "Robert J. Schoelkopf"
+      ],
+      "abstract": "Dielectric loss at the interfaces of superconducting films has long been recognized as limiting the performance of state-of-the-art superconducting circuits. Notably, the presence of a native oxide layer on the film is hypothesized to contribute to dielectric loss at the metal-air interface. Here, we explore rhenium as a candidate for the film, motivated by its remarkable property to suppress native oxide formation. We demonstrate rhenium on sapphire as a promising material platform for superconducting circuits through the realization of transmons with mean relaxation times $T_1$ up to 407 microseconds at 5 GHz. Our transmons are supplemented with a loss characterization study, in which we separate the dominant loss mechanisms and construct a loss budget that agrees with our $T_1$ measurements. Further characterization may establish rhenium as a leading candidate for maximizing decoherence time.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-11",
+      "score": 0.9497516288226556,
+      "similar_to": [
+        {
+          "title": "2D transmons with lifetimes and coherence times exceeding 1 millisecond",
+          "id": "2503.14798",
+          "similarity": 0.8625160455703735
+        },
+        {
+          "title": "Surpassing millisecond coherence times in on-chip superconducting quantum memories by optimizing materials, processes, and circuit design",
+          "id": "2308.15539",
+          "similarity": 0.857491135597229
+        }
+      ],
+      "summary": {
+        "summary": "Rhenium on sapphire transmons achieve $T_1$ up to 407 µs at 5 GHz, competitive with tantalum despite suppression of native oxide formation. A loss budget constructed from tripole and segmented stripline resonators reveals surface loss dominates, with the rhenium-aluminum interface contributing negligibly.",
+        "motivation": "Native oxide layers at metal-air interfaces are hypothesized to limit transmon coherence times. Rhenium's remarkable capacity to suppress native oxide formation under ambient conditions suggests it may improve qubit performance when integrated with conventional aluminum junction processes.",
+        "method": "Five rhenium/sapphire transmons with aluminum junctions were fabricated and measured at 20 mK in a hanger configuration. Loss mechanisms were separated using tripole stripline resonators (sensitive to surface, bulk, and package losses) and segmented stripline resonators (isolating rhenium-aluminum interface loss), with participations computed via electromagnetic simulation.",
+        "result": "Mean $Q_\text{int} = 9.1 ± 2.5 \\times 10^6$ ($T_1 = 289 ± 80$ µs at 5 GHz) with best device at $T_1 = 407 ± 34$ µs. Predicted loss budget of $Q_\text{int} = 9.2 \\times 10^6$ agrees with measurements; surface loss accounts for ~74% of total loss, with rhenium and aluminum surfaces each contributing ~36–38%.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.12114",
+      "title": "Measurement-Induced State transitions in Inductively-Shunted Transmons",
+      "authors": [
+        "Nicholas Zobrist",
+        "John Mark Kreikebaum",
+        "Mostafa Khezri",
+        "Sergei V. Isakov",
+        "Brian J. Lester",
+        "Yaxing Zhang",
+        "Agustin Di Paolo",
+        "Daniel Sank",
+        "W. Clarke Smith"
+      ],
+      "abstract": "Fast and high-fidelity qubit measurement plays a key role in quantum error correction. In superconducting qubits, measurement is typically performed using a resonant microwave drive on a readout resonator dispersively coupled to the qubit. Shorter measurement times require larger numbers of photons populating the readout resonator, which ultimately leads to undesired measurementinduced state transitions (MIST) of the qubit. MIST can be particularly problematic because these transitions often leave the qubit in a high energy state, and the MIST locations in readout parameter space drift as a function of qubit offset charge. In transmon qubits, these drifts have been avoided using very large qubit-resonator detunings or dedicated offset charge biases. In this work, we take an alternative approach and add an inductive shunt to the transmon to eliminate the offset charge dependence and stabilize the MIST. We experimentally characterize MIST in several different inductively-shunted transmons, in agreement with quantum and semiclassical models for MIST. These results extend to other inductively-shunted qubits.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-12",
+      "score": 0.9476652567135326,
+      "similar_to": [
+        {
+          "title": "Experimental Characterization and Modeling of Measurement-Induced State-Transitions in a Fluxonium Superconducting Qubit",
+          "id": "2606.17866",
+          "similarity": 0.9023689031600952
+        },
+        {
+          "title": "Measurement-induced state transitions in multi-qubit transmon processors",
+          "id": "2606.05010",
+          "similarity": 0.9018417000770569
+        }
+      ],
+      "summary": {
+        "summary": "This work characterizes measurement-induced state transitions (MIST) in inductively-shunted transmon (IST) qubits, showing experimentally that the inductive shunt eliminates offset-charge dependence and stabilizes MIST compared to standard transmons. The results are explained using full quantum simulations and a modified semiclassical model that accounts for the IST's unbounded potential energy structure.",
+        "motivation": "MIST becomes problematic during fast dispersive readout because it can leave qubits in high-energy states, and in transmons the MIST locations drift with offset charge, degrading quantum error correction performance. Adding an inductive shunt to the transmon offers an alternative solution by removing charge-offset dependence.",
+        "method": "Two groups of inductively-shunted transmons (six qubits each, operating above and below the readout resonator) were fabricated with Josephson junction arrays providing the shunt inductance. MIST was measured by preparing qubits in $|0\\rangle$ or $|1\\rangle$, driving the readout resonator for $\\sim 10/\\kappa_r$, and measuring final qubit state as a function of resonator drive power and qubit frequency. Results were compared to full quantum (Lindblad) simulations and a renormalized semiclassical Floquet model.",
+        "result": "Full quantum simulations with Hilbert space $\\sim \\bar{n} + 3\\sqrt{\\bar{n}}$ for the resonator and 18–24 IST levels showed good agreement with experimental MIST onsets and feature locations for both $|0\\rangle$ and $|1\\rangle$ initial states; the modified semiclassical model (Eq. 6) reproduced essential features but underpredicted photon thresholds. Over 24 hours, MIST in IST qubits demonstrated qualitatively lower variability than Willow transmons at similar frequencies, confirming charge-noise immunity; $T_1$ values reached $\\sim 100$ µs despite resonant defects.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.11889",
+      "title": "Probing the memory of a superconducting qubit environment",
+      "authors": [
+        "Nicolas Gosling",
+        "Denis Bénâtre",
+        "Nicolas Zapata",
+        "Paul Kugler",
+        "Mitchell Field",
+        "Sumeru Hazra",
+        "Simon Günzler",
+        "Thomas Reisinger",
+        "Martin Spiecker",
+        "Mathieu Féchant",
+        "Ioan M. Pop"
+      ],
+      "abstract": "Achieving fault tolerance with superconducting quantum processors requires qubits to operate within the regime of threshold theorems based on the Born-Markov approximation. This approximation, which models dissipation as constant energy decay into a memoryless environment, breaks down when qubits couple to long-lived two-level systems (TLSs) that become polarized during operation and retain memory of past qubit states. Here, we show that non-Poissonian quantum jump traces carry the information required to distinguish long-lived TLSs from the standard Markovian bath. By fitting the Solomon equations to measured quantum jumps dynamics arising naturally due to thermal fluctuations, we can disentangle the coupling of the qubit to the two environments. Sweeping the qubit frequency reveals distinct peaks, each associated with a TLS that outlives the qubit, providing a handle to understand their microscopic origin.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-12",
+      "score": 0.8812829909522355,
+      "similar_to": [
+        {
+          "title": "Entanglement assisted probe of the non-Markovian to Markovian transition in open quantum system dynamics",
+          "id": "2401.13735",
+          "similarity": 0.8742594718933105
+        },
+        {
+          "title": "Characterization of drive-induced unwanted state transitions in superconducting circuits",
+          "id": "2506.24070",
+          "similarity": 0.8477902412414551
+        }
+      ],
+      "summary": {
+        "summary": "The authors demonstrate that non-Poissonian quantum jump correlations in superconducting qubits reveal coupling to long-lived two-level systems (TLSs) that violate the Born-Markov approximation and retain memory of past qubit states. By fitting the Solomon equations to measured quantum jump dynamics and performing correlation spectroscopy versus qubit frequency and electric field bias, they identify individual TLSs with lifetimes orders of magnitude exceeding the qubit $T_1$ and characterize their electric-field susceptibility.",
+        "motivation": "Superconducting quantum processors require operation in the Markovian regime for fault-tolerant error correction, but long-lived TLSs in the qubit environment become polarized during operation and introduce time-correlated errors that violate standard $T_1$ analysis and threaten threshold theorems.",
+        "method": "Continuous quantum jump monitoring via stroboscopic readout every 6 μs of a fluxonium qubit (fabricated on sapphire with granular aluminum inductance, $E_J/h = 10.32$ GHz, $E_C/h = 4.48$ GHz) reveals bunching in the $g^2$ correlation function persisting beyond $T_1$. The authors extract qubit-TLS coupling rates $\\Gamma_{qt}$, qubit decay rate $\\Gamma_q$, and TLS decay rate $\\Gamma_t$ by fitting the Solomon equations to conditioned relaxation dynamics from ground state selection and post-jump scenarios, then map the TLS spectrum by repeating measurements across 50 MHz frequency spans and various electric field biases applied via an external pin.",
+        "result": "Spectroscopy reveals 8 distinct long-lived TLSs (labeled A–H) with coupling rates $\\Gamma_{qt}$ showing resolved peaks above the featureless Markovian background ($\\Gamma_q$). Long-lived TLSs display diverse electric-field responses: increasing frequency (E), decreasing at various rates (B, C, F), constant frequency (A, D, G, H), or time-dependent shifts (D, G), contrasting with a short-lived TLS (D) visible in $\\Gamma_q$ where $\\Gamma_t \\sim \\Gamma_{qt}$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.11692",
+      "title": "Demonstration of High-Fidelity Gates in a Strongly Anharmonic with Long-Coherence C-Shunt Flux Qubit",
+      "authors": [
+        "Silu Zhao",
+        "Li Li",
+        "Weiping Yuan",
+        "Xinhui Ruan",
+        "Jinzhe Wang",
+        "Bingjie Chen",
+        "Yunhao Shi",
+        "Guihan Liang",
+        "Shi Xiao",
+        "Jiacheng Song",
+        "Jinming Guo",
+        "Xiaohui Song",
+        "Kai Xu",
+        "Heng Fan",
+        "Zhongcheng Xiang",
+        "Dongning Zheng"
+      ],
+      "abstract": "We demonstrate high-fidelity single-qubit gates on a C-shunt flux qubit that simultaneously combines a large anharmonicity ($\\mathcal{A}/2π=848~\\mathrm{MHz}$) with long relaxation time ($T_1 = 23~μ\\text{s}$). The large anharmonicity significantly suppresses leakage to higher energy levels, enabling fast and precise microwave control. Using DRAG pulses and randomized benchmarking, the qubit achieves gate fidelities exceeding 99.9\\%, highlighting the capability of C-shunt flux qubits for robust and high-performance quantum operations. These results establish them as a promising platform for scalable quantum information processing.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-12",
+      "score": 0.7237398859853388,
+      "similar_to": [
+        {
+          "title": "The high-coherence fluxonium qubit",
+          "id": "1810.11006",
+          "similarity": 0.8717239499092102
+        },
+        {
+          "title": "The Flux Qubit Revisited to Enhance Coherence and Reproducibility",
+          "id": "1508.06299",
+          "similarity": 0.8657138347625732
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates high-fidelity single-qubit gates on a C-shunt flux qubit combining large anharmonicity ($\\mathcal{A}/2\\pi = 848$ MHz) with long relaxation time ($T_1 = 23$ µs) using DRAG-corrected Gaussian pulses and randomized benchmarking. Gate fidelities exceed 99.9% for all single-qubit rotations, including 99.99% for the identity gate and 99.91–99.94% for $\\pi/2$ gates around $X$ and $Y$ axes.",
+        "motivation": "Transmon qubits suffer from small anharmonicity limiting gate speed and causing frequency crowding, while conventional flux qubits have poor coherence; hybrid architectures like C-shunt flux qubits promise to balance these trade-offs, but prior work focused on design and spectroscopy rather than gate-level performance.",
+        "method": "A C-shunt flux qubit with a three-junction SQUID loop shunted by large capacitance was fabricated using electron-beam lithography and double-angle evaporation. Single-qubit gates were implemented with 20 ns Gaussian pulses optimized via DRAG correction, and characterized by standard and interleaved randomized benchmarking with Clifford sequences.",
+        "result": "Clifford fidelity was 99.68 ± 0.02%, with interleaved gate fidelities of 99.91–99.99% depending on the rotation axis and angle; these results were achieved at base temperature in a dilution refrigerator with $T_2^{\\mathrm{Ramsey}} = 6.3$ µs and $T_2^{\\mathrm{spin-echo}} = 17.4$ µs at the flux sweet spot.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.11469",
+      "title": "Impact of Oxygen Vacancies in Josephson Junction on Decoherence of Superconducting Qubits",
+      "authors": [
+        "Hanqin Bai",
+        "Shi-Yao Hou",
+        "Mu Lan"
+      ],
+      "abstract": "Superconducting quantum circuits are promising platforms for scalable quantum computing, where qubit coherence is critically determined by microscopic defects in the oxide tunneling barrier of Josephson junctions. Amorphous Al$_2$O$_3$ is widely used as a barrier material, but under irradiation, oxygen vacancy (V$_O$) defects are readily generated, introducing noise sources that accelerate qubit decoherence. We systematically investigate the structural characteristics and electronic impact of V$_O$ defects in amorphous Al$_2$O$_3$ using first-principles calculations and \\textit{ab initio} molecular dynamics. Our results show that both the coordination environment and concentration of V$_O$s strongly influence electrical conductivity. In particular, two- and three-coordinated V$_O$s, unique to the amorphous structure, enhance conductivity more than conventional four-coordinated vacancies. Increasing V$_O$ concentration amplifies conductivity fluctuations, which we link to critical current noise in Josephson junctions. Using a noise model, we estimate that higher V$_O$ densities lead to shorter qubit coherence times. These findings provide insights for radiation-hard design of superconducting quantum devices.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-03-12",
+      "score": 0.6822500531280725,
+      "similar_to": [
+        {
+          "title": "Towards understanding two-level-systems in amorphous solids -- Insights from quantum circuits",
+          "id": "1705.01108",
+          "similarity": 0.8616122007369995
+        },
+        {
+          "title": "Electric field spectroscopy of material defects in transmon qubits",
+          "id": "1909.09749",
+          "similarity": 0.8447175025939941
+        }
+      ],
+      "summary": {
+        "summary": "This work uses first-principles calculations and ab initio molecular dynamics to investigate how oxygen vacancies in amorphous Al$_2$O$_3$ Josephson junction barriers affect superconducting qubit coherence. Both the coordination environment (2-, 3-, or 4-fold) and concentration of $V_O$ defects are shown to dramatically alter electrical conductivity, which translates to critical current noise and reduced coherence times via $1/f$ noise mechanisms.",
+        "motivation": "Oxygen vacancies in Al$_2$O$_3$ tunnel barriers are readily generated under irradiation and are a major source of low-frequency noise in superconducting qubits. Understanding how $V_O$ defects with different local structures influence conductivity and charge transport is essential for designing radiation-tolerant quantum devices.",
+        "method": "A 160-atom amorphous Al$_2$O$_3$ supercell (density 4.04 g/cm$^3$, bandgap 6.84 eV) was constructed via melt-quench AIMD and validated against experiment. Electronic structure and conductivity ($\\sigma/\\tau$) were calculated using DFT with SCAN for geometry and HSE06 for band structure. Models with 1–9 vacancies of varying coordination were created to isolate defect effects. Decoherence times were estimated from critical current noise using Van Harlingen's $1/f$ framework.",
+        "result": "Four-coordinated $V_O$ (conventional) reduces conductivity by 23% and produces largest fluctuations ($\\Delta\\sigma/\\sigma_0 = -0.232$), degrading $T_2$ from 1.0 ms to 0.95 ms. Two- and three-coordinated $V_O$ (amorphous-specific) enhance conductivity by 9–19% with smaller fluctuations, yielding $T_2 \\approx 0.97$ ms. At high density (9 vacancies), conductivity drops to $7.78 \\times 10^{18}$ Ω$^{-1}$m$^{-1}$s$^{-1}$ with $\\Delta\\sigma/\\sigma_0 = -1.40$, reducing $T_2$ to 0.053 ms and nearly suppressing Rabi oscillations within 50 µs.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.11568",
+      "title": "Hybrid Quantum Error Correction and Mitigation by Purification",
+      "authors": [
+        "Jonathan Raghoonanan",
+        "Tim Byrnes"
+      ],
+      "abstract": "Quantum error correction physically removes errors from a quantum state, while quantum error mitigation improves observable estimates by processing noisy measurement data. We introduce \\emph{purification quantum error suppression} (PQES), a hybrid approach that uses multiple noisy copies of an unknown state to combine these two ideas. The protocol uses SWAP tests to physically reduce errors by purification, while the full outcome record is used to combine all branches without postselection. In this way, PQES avoids the fixed-success-outcome requirement of standard SWAP-test purification while still accessing the power-purified state $ρ^N$. The SWAP identities allow purification steps to be interleaved with unitary circuit blocks, so errors can be suppressed during a computation rather than only at the final measurement. We provide both a parallel binary-tree implementation and a more compact register-recycled implementation using $O(M\\ell)$ coherent data qubits for an $M$-qubit register and $N=2^\\ell$ input copies. We analyze the resulting error thresholds under representative noise models. For local depolarizing noise on the product-state family studied here, the threshold is $p_{\\mathrm{th}}=3/4$ for any register size, while local dephasing of $|+\\rangle^{\\otimes M}$ has a threshold of $p_{\\mathrm{th}}=1/2$. Local Clifford twirling can be used to convert dephasing into a depolarization channel and restore the higher threshold.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-12",
+      "score": 0.5326595550026412,
+      "similar_to": [
+        {
+          "title": "Real-time quantum error correction beyond break-even",
+          "id": "2211.09116",
+          "similarity": 0.8400123715400696
+        },
+        {
+          "title": "Quantum error correction of a qubit encoded in grid states of an oscillator",
+          "id": "1907.12487",
+          "similarity": 0.8340520858764648
+        }
+      ],
+      "summary": {
+        "summary": "We introduce purification quantum error suppression (PQES), which uses SWAP tests on multiple noisy copies to physically suppress errors while retaining all measurement outcomes through signed branch averaging, accessing the power-purified state $\\rho^N/\\mathrm{Tr}(\\rho^N)$. PQES combines quantum error correction's physical error removal with quantum error mitigation's outcome-record processing, achieving error thresholds of $p_{\\mathrm{th}}=3/4$ for local depolarizing noise and $p_{\\mathrm{th}}=1/2$ for local dephasing on product-state families.",
+        "motivation": "Conventional QEC requires substantial architectural overhead including syndrome extraction and magic-state factories, while QEM leaves noisy states intact, motivating a hybrid approach that physically removes errors using multiple copies without postselection.",
+        "method": "The protocol applies SWAP tests recursively to pairs of noisy copies in a binary tree; the ancilla measurement partitions registers into symmetric and antisymmetric subspaces, and the full outcome record (total parity $\\Omega_{\\sigma_\\ell}$) selects expectation values of $\\rho^N$ via signed averaging. A qubit-recycled implementation uses $O(M\\ell)$ coherent qubits for an $M$-qubit register and $N=2^\\ell$ copies.",
+        "result": "For local depolarizing noise on product states $|+\\rangle^{\\otimes M}$, the threshold is $p_{\\mathrm{th}}=3/4$ regardless of register size; local dephasing has lower threshold $p_{\\mathrm{th}}=1/2$, but full Clifford twirling restores $p_{\\mathrm{th}}=3/4$. Below threshold, increasing purification rounds $\\ell$ exponentially suppresses the logical error rate; above threshold, purification converges to the wrong dominant eigenvector.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9498,
+    0.9477,
+    0.8813,
+    0.7237,
+    0.6823,
+    0.5327,
+    0.4824,
+    0.4747,
+    0.3551,
+    0.3509,
+    0.3024,
+    0.292,
+    0.2873,
+    0.2836,
+    0.2776,
+    0.2512,
+    0.2319,
+    0.2137,
+    0.213,
+    0.205,
+    0.2004,
+    0.1958,
+    0.1902,
+    0.1736,
+    0.1446,
+    0.1382,
+    0.1328,
+    0.13,
+    0.127,
+    0.1249,
+    0.1249,
+    0.1229,
+    0.1215,
+    0.1169,
+    0.1151,
+    0.1129,
+    0.1047,
+    0.0952,
+    0.0899,
+    0.0887,
+    0.0827,
+    0.0783,
+    0.0776,
+    0.0759,
+    0.0717,
+    0.07,
+    0.0679,
+    0.0677,
+    0.0643,
+    0.0555,
+    0.0504,
+    0.0496,
+    0.0443,
+    0.0441,
+    0.0426,
+    0.041,
+    0.0408,
+    0.0402,
+    0.036,
+    0.0358,
+    0.0351,
+    0.0345,
+    0.0326,
+    0.0309,
+    0.0303,
+    0.0289,
+    0.0284,
+    0.0264,
+    0.0227,
+    0.0227,
+    0.0223,
+    0.0218,
+    0.0205,
+    0.0201,
+    0.0199,
+    0.0194,
+    0.019,
+    0.0178,
+    0.0175,
+    0.0159,
+    0.0155,
+    0.0154,
+    0.0153,
+    0.0133,
+    0.0131,
+    0.0127,
+    0.0124,
+    0.0124,
+    0.0122,
+    0.0121,
+    0.0118,
+    0.0115,
+    0.0113,
+    0.011,
+    0.011,
+    0.0109,
+    0.0109,
+    0.0101,
+    0.0098,
+    0.0094,
+    0.0084,
+    0.008,
+    0.0075,
+    0.0068,
+    0.0059,
+    0.0058,
+    0.0057,
+    0.0053,
+    0.005,
+    0.0047,
+    0.0046,
+    0.0046,
+    0.0045,
+    0.0043,
+    0.0039,
+    0.0034,
+    0.0029
+  ]
+}

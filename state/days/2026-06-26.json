@@ -1,0 +1,181 @@
+{
+  "date": "2026-06-26",
+  "n_fetched": 88,
+  "papers": [
+    {
+      "id": "2606.27017",
+      "title": "Lattice patch structure for fixed-frequency transmon quantum computer with high-fidelity CNOT gates",
+      "authors": [
+        "Chanpyo Kim",
+        "Jeongsoo Kang",
+        "Younghun Kwon"
+      ],
+      "abstract": "Superconducting transmon processors represent a leading platform for large-scale quantum computing due to their high gate fidelities and scalability. However, conventional qubit-coupler-qubit (QCQ) architectures face critical physical and structural bottlenecks, notably frequency crowding [spectator qubit collisions] during system scaling and inefficient mapping onto the standard surface code.To overcome these limitations, we propose a novel lattice-patch architecture that couples four fixed-frequency transmons to a single fixed-frequency coupler.This design enhances qubit connectivity and maps directly onto the surface-code lattice unit [plaquette], thereby minimizing the compilation overhead associated with logical qubit implementation. Furthermore, utilizing an entirely fixed-frequency design intrinsically eliminates susceptibility to external flux noise, ensuring robust operational stability.Multi-level numerical simulations demonstrate CNOT gate fidelities exceeding 0.98 across all six connectivity directions within the patch. Nevertheless, the complex interaction network of the four-qubit architecture induces unintended residual phase accumulation during cross-resonance driving. This parasitic effect necessitates precise calibration, achievable via virtual $R_z$ gates [software phase updates]. Ultimately, our results establish the lattice-patch architecture as an efficient, robust building block for future fault-tolerant quantum computers.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-25",
+      "score": 0.8908441495125379,
+      "similar_to": [
+        {
+          "title": "Laser-annealing Josephson junctions for yielding scaled-up superconducting quantum processors",
+          "id": "2009.00781",
+          "similarity": 0.8810448050498962
+        },
+        {
+          "title": "Suppression of static ZZ interaction in an all-transmon quantum processor",
+          "id": "2011.03976",
+          "similarity": 0.8668538928031921
+        }
+      ],
+      "summary": {
+        "summary": "This work proposes a lattice-patch architecture coupling four fixed-frequency transmon qubits to a single fixed-frequency coupler, achieving CNOT gate fidelities exceeding 0.98 across all six connectivity directions. The design directly maps onto surface-code plaquettes, eliminating flux-noise sensitivity and reducing coupler count compared to conventional grid or heavy-hexagon architectures.",
+        "motivation": "Conventional superconducting qubit architectures face frequency crowding and inefficient surface-code mapping during scaling; a fixed-frequency 1:4 coupling scheme could resolve these bottlenecks while maintaining high gate fidelity.",
+        "method": "Four transmon qubits ($\\omega_i/2\\pi = 4.67$–$5.03$ GHz, $E_J/2\\pi = 10.4$–$11.0$ MHz, $E_C/2\\pi = 0.3$–$0.33$ MHz) are capacitively coupled to a central LC resonator ($\\omega_C/2\\pi = 7.0$ GHz, $G_i/2\\pi = 0.03$–$0.06$ MHz). CNOT gates use cross-resonance pulses with DRAG correction and virtual $R_z$ phase calibration; optimization employs Suzuki-Trotter decomposition with $\\tau = 0.001$ ns timesteps and Nelder-Mead refinement.",
+        "result": "All 12 bidirectional CNOT gates achieve success probabilities $\\geq 0.96$; average fidelities range from $0.83$ to $0.99$, with worst gates (CNOT$_{13}$, CNOT$_{31}$) limited by frequency crowding ($4.67$–$5.03$ GHz span). Leakage into non-computational states $\\epsilon_L \\approx 0.022$–$0.025$; reverse gates with physical Hadamards ($F_{X_{\\pi/2}} = 0.993$–$0.999$) achieve effective fidelity $0.90$–$0.98$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.27415",
+      "title": "Elimination of Flux Trapping in Superconducting Circuits in Ambient Magnetic Fields",
+      "authors": [
+        "Rohan T. Kapur",
+        "Alex Wynn",
+        "Sergey K. Tolpygo",
+        "Neel Parmar",
+        "Anil Mankame",
+        "Adam A. Libson",
+        "Rabindra Das",
+        "Michele Kelley",
+        "Pauli Kehayias",
+        "Nathaniel J. O'Connor",
+        "Collin N. Muniz",
+        "Justin L. Mallek",
+        "Jennifer M. Schloss"
+      ],
+      "abstract": "Superconductor digital electronics and quantum computing with superconducting qubits are promising next-generation computing technologies. When cooled down or operated in the presence of a nonzero background magnetic field $B_r$, superconducting thin films comprising the circuits can trap magnetic vortices that can degrade circuit or qubit performance. In this work, we report a practical solution for eliminating flux trapped during cooldown in ambient magnetic fields, $B_r\\leq 60$ $\\upmu$T, based on controlled local thermal gradients and moats, etched holes in the superconducting films of the circuit. Thermal gradients created by integrated on-chip resistive heaters move vortices towards the moats, where they become trapped away from circuitry regions and pinning sites. Using magnetic imaging and electrical circuit readout, we demonstrate that this approach is capable of removing magnetic flux trapped during field cooling and magnetic flux nucleated by circuit operation. If used in an environment with basic magnetic shielding, this solution is capable of suppressing all magnetic flux in a large-scale circuit, overcoming one of the long-standing challenges preventing high-performance scalable computing using superconductors.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mes-hall",
+        "physics.app-ph",
+        "quant-ph"
+      ],
+      "published": "2026-06-25",
+      "score": 0.8047881804115563,
+      "similar_to": [
+        {
+          "title": "Superconducting Flux Memory for Cryogenic Applications",
+          "id": "2609.00772",
+          "similarity": 0.88559889793396
+        },
+        {
+          "title": "On-demand driven dissipation for cavity reset and cooling",
+          "id": "2310.16785",
+          "similarity": 0.83363276720047
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates magnetic flux trapping suppression in superconducting circuits using on-chip resistive heaters that generate thermal gradients to drive vortices toward moats (etched holes) during cooldown in ambient magnetic fields $B_r \\leq 60$ µT. Magnetic imaging with NV-diamond microscopy and electrical measurements of Josephson junction chains confirm effective flux removal both during field cooling and from circuit-generated vortices.",
+        "motivation": "Magnetic flux trapping in superconducting thin films (Nb, NbN, NbTiN, Al, Ta) degrades qubit coherence and digital circuit performance, with a single vortex capable of disrupting device operation; scaling to large circuits exacerbates this problem as trapped vortex number scales as $N_{\\Phi_0} = B_r A / \\Phi_0$, making a practical defluxing solution necessary.",
+        "method": "Mo resistors (40 nm thick, 1 µm wide, $\\sim$2 Ω/□) in the SFQ5ee process create localized thermal gradients ($\\lesssim 50$ mK/µm) that drive vortices toward moat-containing ground planes (M1, M4, M7 Nb layers with 10 µm square moats spaced 10 µm apart) during cooldown via thermal force $F_{\\mathrm{th}} \\propto \\nabla T$ that overcomes pinning forces near $T_c$; flux distribution and circuit performance monitored via widefield magnetic imaging and critical current measurements of JJ chains.",
+        "result": "At $B_r = 63.6$ µT with $\\dot{Q} = 0.78$ mW applied to outer moat resistors during cooldown, vortices are completely expelled from the film between heaters and concentrate in aligned moats; electrical recovery of suppressed JJ chains shows $>99\\%$ of junctions restore baseline behavior at $\\dot{Q}_{\\mathrm{max}} \\geq 4.26$ mW (corresponding to $\\Delta T \\approx 9.2$ K and $|\\nabla T| \\approx 44$ mK/µm), with up to $8\\Phi_0$ trapped per moat demonstrating capability to suppress flux over large-scale circuits with basic magnetic shielding.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8908,
+    0.8048,
+    0.352,
+    0.3258,
+    0.3018,
+    0.3015,
+    0.2379,
+    0.2073,
+    0.2043,
+    0.1916,
+    0.1431,
+    0.1408,
+    0.1405,
+    0.1403,
+    0.1319,
+    0.1237,
+    0.1184,
+    0.1113,
+    0.1091,
+    0.1057,
+    0.1051,
+    0.0997,
+    0.0982,
+    0.0969,
+    0.0947,
+    0.0901,
+    0.0822,
+    0.0796,
+    0.0792,
+    0.0783,
+    0.0766,
+    0.0711,
+    0.0694,
+    0.0667,
+    0.0629,
+    0.0575,
+    0.0545,
+    0.0541,
+    0.0413,
+    0.0403,
+    0.0378,
+    0.0354,
+    0.0327,
+    0.0298,
+    0.0287,
+    0.0275,
+    0.0264,
+    0.0256,
+    0.0246,
+    0.0239,
+    0.0238,
+    0.0235,
+    0.02,
+    0.0197,
+    0.0187,
+    0.0181,
+    0.0178,
+    0.0168,
+    0.0164,
+    0.0162,
+    0.0148,
+    0.0147,
+    0.0137,
+    0.0128,
+    0.0123,
+    0.0116,
+    0.0115,
+    0.0111,
+    0.0107,
+    0.0107,
+    0.0106,
+    0.0106,
+    0.01,
+    0.0097,
+    0.0081,
+    0.008,
+    0.0079,
+    0.0076,
+    0.0074,
+    0.0068,
+    0.0067,
+    0.0061,
+    0.0056,
+    0.0048,
+    0.0043,
+    0.0041,
+    0.0028,
+    0.0024
+  ]
+}

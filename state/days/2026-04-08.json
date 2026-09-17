@@ -1,0 +1,288 @@
+{
+  "date": "2026-04-08",
+  "n_fetched": 116,
+  "papers": [
+    {
+      "id": "2604.05693",
+      "title": "A plug-and-play superconducting quantum controller at millikelvin temperatures enables exceeding 99.9% average gate fidelity",
+      "authors": [
+        "Kuang Liu",
+        "Zhiyuan Wang",
+        "Xiaoliang He",
+        "Siqi Li",
+        "Hao Wu",
+        "Xiangyu Ren",
+        "Zhengqi Niu",
+        "Wangpeng Gao",
+        "Chenluo Zhang",
+        "Pei Huang",
+        "Yu Wu",
+        "Liliang Ying",
+        "Wei Peng",
+        "Jaw-Shen Tsai",
+        "Zhirong Lin"
+      ],
+      "abstract": "The development of large-scale superconducting quantum computing requires efficient in-situ control methods that allow high-fidelity operations at millikelvin temperatures. Superconducting circuits based on Josephson junctions offer a promising solution due to their high speed, low power dissipation, and cryogenic nature. Here, we report a superconducting quantum controller that enables direct chip-to-chip interconnection with qubits at 10 mK and high-fidelity, all-digital manipulation. Randomized benchmarking reveals a uniformly high average Clifford fidelity of 99.9% with leakage to high energy levels on the order of $10^{-4}$, and an estimated average gate operation energy of 0.121 fJ, demonstrating the potential to resolve the control bottleneck in superconducting quantum computing.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-07",
+      "score": 0.9742243906804264,
+      "similar_to": [
+        {
+          "title": "Quantum Computer Controlled by Superconducting Digital Electronics at Millikelvin Temperature",
+          "id": "2503.09879",
+          "similarity": 0.8935872316360474
+        },
+        {
+          "title": "Above 99.9% Fidelity Single-Qubit Gates, Two-Qubit Gates, and Readout in a Single Superconducting Quantum Device",
+          "id": "2508.16437",
+          "similarity": 0.8615260720252991
+        }
+      ],
+      "summary": {
+        "summary": "A superconducting quantum controller fabricated in Nb on high-resistivity silicon achieves 99.9% average Clifford fidelity with $10^{-4}$-level leakage when integrated at 10 mK with a transmon qubit, using single-flux-quantum (SFQ) pulse trains for all-digital qubit control. The device combines a fully passive bias network and spectrum-engineering unit to suppress quasiparticle poisoning and high-energy-level leakage, operating at an average gate energy of 0.121 fJ with negligible thermal load.",
+        "motivation": "Superconducting quantum computing faces a control bottleneck due to wiring complexity, heat load, and decoherence when operating room-temperature electronics at millikelvin temperatures; cryogenic superconducting control schemes promise low power and high speed but have not yet matched room-temperature electronics performance.",
+        "method": "The controller uses SFQ pulse trains with frequency $\\omega_{\\mathrm{SQC}} \\approx \\omega_{01}/2$ as a noise-immune digital drive, employs a passive superconducting bias network and low-critical-current topology to minimize quasiparticle generation, integrates spectrum engineering to filter high-frequency harmonics and reduce leakage, and connects directly to qubits via coaxial cables at the 10 mK stage of a dilution refrigerator.",
+        "result": "Randomized benchmarking yields uniformly high gate fidelities (99.90(1)% average Clifford, 99.90(2)% for $X^{\\pi/2}_{\\mathrm{SQC}}$) with leakage $L_{\\mathrm{SQC}} = 2.90 \\times 10^{-4}$ per Clifford, decoherence-limited error $r^{\\mathrm{cliff}}_{\\mathrm{dec}} = 8.91 \\times 10^{-4}$, and baseline qubit excited-state population $P_e = (4.76 \\pm 0.49)\\%$ indicating $T_{\\mathrm{eff}} = 78.3 \\pm 2.8$ mK with no measurable controller-induced heating.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.05105",
+      "title": "A superconducting quantum circuit single artificial atom maser",
+      "authors": [
+        "Maria Mucci",
+        "Nicholas Hougland",
+        "Chun-Che Wang",
+        "Israa Yusuf",
+        "Chenxu Liu",
+        "David Pekker",
+        "Michael Hatridge"
+      ],
+      "abstract": "We demonstrate a circuit QED analog of an atomic micromaser that utilizes an artificial, multi level atom, pumped into a population-inverted state by a microwave tone, as the gain medium. Our demonstration is enabled by the flexibility of the circuit QED platform, which allowed us to precisely engineer the level-structure, coupling, and dissipation of the micromaser components. Our device shows rich physics and perhaps points to ways to use the recent developments in the domain of microwave quantum circuits to probe the domain of maser physics.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-06",
+      "score": 0.9514744740365362,
+      "similar_to": [
+        {
+          "title": "Circuit Quantum Electrodynamics: Coherent Coupling of a Single Photon to a Cooper Pair Box",
+          "id": null,
+          "similarity": 0.8761793375015259
+        },
+        {
+          "title": "Cavity quantum electrodynamics for superconducting electrical circuits: an architecture for quantum computation",
+          "id": null,
+          "similarity": 0.8606662750244141
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates a circuit QED micromaser using a multi-level artificial atom (SNAIL-transmon hybrid) as the gain medium, pumped into population inversion via microwave drive and coupled to a superconducting cavity. The device exhibits three distinct pump cycles and produces coherent maser output with linewidth narrowed to 54 Hz, approximately 365 times below the bare cavity linewidth of 19.7 kHz.",
+        "motivation": "Circuit QED platforms offer unprecedented tunability of artificial atom properties (level structure, coupling, dissipation) compared to conventional atomic masers, enabling precise engineering of maser components and exploration of single-atom gain media in the microwave domain.",
+        "method": "A lossy SNAIL resonator ($\\kappa_s / 2\\pi = 24.5$ MHz at $f_s = 5.76$ GHz) coupled to a flux-tunable transmon provides parametric three-wave mixing that drives population inversion via a pump at $\\omega_p \\approx \\omega_s + \\omega_t$, with the transmon-cavity coupling at $g_{tc}/2\\pi = 0.44$ MHz enabling photon transfer to the masing cavity ($\\Gamma_c / 2\\pi = 6$–20 kHz). Master equation simulations validate the three pump cycles: $|e\\rangle \\to |g\\rangle$, $|f\\rangle \\to |e\\rangle$, and $|f\\rangle \\to |g\\rangle$ (two-photon).",
+        "result": "Maser operates coherently over $\\sim$50 MHz pump frequency range with output linewidth of 54 Hz (frequency-domain) and 38 Hz (time-domain phase diffusion with $\\sim$26 ms coherence time), both consistent with observations and demonstrating nearly 365-fold cavity linewidth compression relative to the bare value of 19.7 kHz.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.05048",
+      "title": "Unlocking a fast adiabatic CZ gate and exact residual $ZZ$ cancellation between fixed-frequency transmons using a floating tunable coupler",
+      "authors": [
+        "Angela Q. Chen",
+        "Xian Wu",
+        "Sarah Strong",
+        "Stefano Poletto"
+      ],
+      "abstract": "Tunable couplers in superconducting qubit architectures enable strong qubit-qubit interactions for two-qubit gates while suppressing unwanted coupling during single-qubit operations. However, achieving low error rates for fast two-qubit gates remains challenging, as suppressing leakage and non-adiabatic errors typically requires specialized qubit, coupler, or pulse designs, often at the expense of an idling $ZZ=0$ condition. In this work, we demonstrate that a symmetric floating tunable coupler provides a natural platform for fast, high-fidelity adiabatic controlled-Z (CZ) gates. Its favorable energy-level structure eliminates the conventional trade-off between rapid conditional-phase accumulation and adiabatic evolution while preserving exact cancellation of residual $ZZ$ interaction at idling. This architecture exhibits intrinsic robustness to non-adiabatic transitions, even under simple flux modulation waveforms. To push performance at short gate durations, where maintaining adiabaticity becomes more challenging despite the favorable level structure, we introduce pulse-shaping techniques based on the instantaneous adiabatic factor that further suppress non-adiabatic errors. We experimentally realize a 24 ns adiabatic CZ gate with fidelity exceeding 99.9% and stable operation over several hours.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-06",
+      "score": 0.8722818071041891,
+      "similar_to": [
+        {
+          "title": "Realization of high-fidelity CZ and ZZ-free iSWAP gates with a tunable coupler",
+          "id": "2011.01261",
+          "similarity": 0.898297131061554
+        },
+        {
+          "title": "Long-distance transmon coupler with CZ gate fidelity above 99.8%",
+          "id": "2208.09460",
+          "similarity": 0.8926848769187927
+        }
+      ],
+      "summary": {
+        "summary": "A symmetric floating tunable coupler enables fast adiabatic CZ gates between fixed-frequency transmons while maintaining exact residual $ZZ=0$ cancellation at idling, exploiting favorable energy-level ordering that eliminates the traditional trade-off between gate speed and adiabatic evolution. The work demonstrates a 24 ns gate with fidelity $99.919 \text{ ± } 0.010\text{ %}$ using adiabatically-weighted pulse shaping based on instantaneous adiabatic factors.",
+        "motivation": "Prior tunable-coupler architectures faced a fundamental trade-off: achieving large dynamical phase accumulation for fast gates, maintaining favorable energy-level ordering for robust adiabatic evolution, and preserving exact $ZZ=0$ idling were mutually incompatible, especially in non-straddling regimes required for high-speed gates.",
+        "method": "Two fixed-frequency transmons (Q1, Q2 at 3588, 3686 MHz with anharmonicities $-227, -221$ MHz) are coupled via a symmetric floating coupler idled at $\\Phi_{c,\\mathrm{dc}} = 0.35\\,\\Phi_0$ with $ZZ = 27.3$ kHz. Gates use flux pulses with simple Fourier-cosine envelopes or adiabatically-weighted pulses (AWP) that modulate coupler frequency based on computed instantaneous adiabatic factors $D(\\omega_c)$, maintaining $\\zeta/2\\pi$ up to 60 MHz while operating in the straddling regime.",
+        "result": "Fourier-cosine pulses achieve $>99.5\\text{ %}$ iRB fidelity down to 40 ns; AWP extends this to 24 ns with $99.919 \\text{ ± } 0.010\\text{ %}$ iRB fidelity (peak value), and 8.5-hour stability yields $99.874 \\text{ ± } 0.018\\text{ %}$ average, with coherence-limited performance from $T_1 \\sim 35$ µs and $T_2^* \\sim 10$–40 µs in the high-frequency gate regime where $f_c \\approx 3.5$ GHz.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.05126",
+      "title": "In-Situ Simultaneous Magic State Injection on Arbitrary CSS qLDPC Codes",
+      "authors": [
+        "Kun Liu",
+        "Shifan Xu",
+        "Tomas Jochym-O'Connor",
+        "Zhiyang He",
+        "Shraddha Singh",
+        "Yongshan Ding"
+      ],
+      "abstract": "Quantum low-density parity-check (qLDPC) codes can encode many logical qubits within a single code block at low physical qubit overhead, yet magic state injection into such codes remains largely underexplored. Existing state injection proposals for qLDPC codes predominantly follow an external prepare-and-transfer paradigm, in which raw magic states are prepared outside the target code block and subsequently injected via inter-code operations. We propose the first \\emph{in-situ} magic state injection: a scheme in which logical magic states are directly prepared within a qLDPC memory block, only using resources required for syndrome extraction. We show that our scheme is generalizable to any CSS qLDPC code, with examples of circuit-level simulations on the $[[144,12,12]]$ Bivariate Bicycle (BB) code and the $[[225,9,4]]$ Hypergraph Product code. We focus on a regime where correlated injection errors are negligible. In the BB code, this corresponds to a configuration that simultaneously injects four logical $|Y\\rangle$ states. Under a uniform depolarizing noise model with physical error rate $10^{-3}$, this achieves an injection error rate of $1.62 \\times 10^{-3}$ per logical qubit, while the correlated-error contribution is only $2 \\times 10^{-5}$ per logical qubit (about $1\\%$ of the injection error rate). Under a hardware-motivated asymmetric noise model where single-qubit gate errors are $10\\%$ of two-qubit gate errors, the injection error rate per logical qubit falls to $ 6.7 \\times 10^{-4} $, below the error rate ($ 10^{-3} $) of the two-qubit gates used to encode the magic states. Its simplicity allows our scheme to be applied to arbitrary CSS qLDPC codes using only the ancilla qubits native to syndrome extraction, and yield a reduction in space overhead relative to both prepare-and-transfer approaches and surface-code-based magic state injection schemes.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-06",
+      "score": 0.653798590848643,
+      "similar_to": [
+        {
+          "title": "Breakeven demonstration of quantum low-density parity-check codes",
+          "id": "2606.06455",
+          "similarity": 0.8571224212646484
+        },
+        {
+          "title": "Entangling logical qubits without physical operations",
+          "id": "2601.20927",
+          "similarity": 0.8560967445373535
+        }
+      ],
+      "summary": {
+        "summary": "This work presents the first in-situ magic state injection scheme for arbitrary CSS qLDPC codes, where logical magic states are prepared directly within a code block using only syndrome extraction resources. Circuit-level simulations on the $[[144,12,12]]$ Bivariate Bicycle code achieve injection error rates of $1.62 \\times 10^{-3}$ per logical qubit when simultaneously injecting four logical $|Y\\rangle$ states under depolarizing noise at $p=10^{-3}$, falling to $6.7 \\times 10^{-4}$ under asymmetric noise where single-qubit errors are 10% of two-qubit errors.",
+        "motivation": "Existing magic state injection proposals for qLDPC codes rely on external prepare-and-transfer paradigms that require separate auxiliary blocks, whereas qLDPC codes naturally encode multiple logical qubits in a single block at low overhead. A native in-situ injection primitive is needed to leverage this advantage for non-Clifford resource state preparation.",
+        "method": "The scheme identifies carrier qubits and peeled qubits via stabilizer cleaning, then resolves overlaps in logical $X$ and $Z$ supports through Bell state preparation on compatible pairings. A noise-aware variant optimizes initial state configurations to maximize first-round protection of injected logical supports using mixed-integer linear programming, enabling post-selection on fixed stabilizers with deterministic measurement outcomes.",
+        "result": "For the $[[144,12,12]]$ BB code injecting four logical qubits: injection error rate $1.62 \\times 10^{-3}$ per logical qubit (uniform depolarizing, $p=10^{-3}$); $6.7 \\times 10^{-4}$ per logical qubit (asymmetric noise with $p_{1Q}=0.1p_{2Q}$); discard rate 93%; correlated errors contribute only $\\sim 1\\%$ of total error. The $[[225,9,4]]$ hypergraph product code achieves $8 \\times 10^{-3}$ per logical qubit when injecting six logicals, demonstrating generality across CSS qLDPC families.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9742,
+    0.9515,
+    0.8723,
+    0.6538,
+    0.4788,
+    0.2634,
+    0.2301,
+    0.2266,
+    0.1691,
+    0.1589,
+    0.1542,
+    0.1457,
+    0.1444,
+    0.1426,
+    0.1391,
+    0.1341,
+    0.1221,
+    0.1215,
+    0.1101,
+    0.1091,
+    0.1079,
+    0.105,
+    0.103,
+    0.0997,
+    0.0993,
+    0.0992,
+    0.0957,
+    0.0899,
+    0.0876,
+    0.0855,
+    0.0853,
+    0.0812,
+    0.0766,
+    0.0748,
+    0.0698,
+    0.0669,
+    0.063,
+    0.0607,
+    0.0586,
+    0.0567,
+    0.0561,
+    0.0531,
+    0.0511,
+    0.0503,
+    0.05,
+    0.0495,
+    0.0494,
+    0.0459,
+    0.0453,
+    0.0452,
+    0.0451,
+    0.0449,
+    0.0369,
+    0.0363,
+    0.034,
+    0.0296,
+    0.0281,
+    0.0261,
+    0.0249,
+    0.0244,
+    0.0238,
+    0.0232,
+    0.0228,
+    0.0227,
+    0.0225,
+    0.0214,
+    0.0181,
+    0.0179,
+    0.0165,
+    0.0163,
+    0.0161,
+    0.0158,
+    0.0157,
+    0.0148,
+    0.0144,
+    0.0144,
+    0.0139,
+    0.0138,
+    0.0138,
+    0.0128,
+    0.0127,
+    0.0127,
+    0.0126,
+    0.0126,
+    0.0114,
+    0.0107,
+    0.0103,
+    0.0099,
+    0.0097,
+    0.0097,
+    0.0093,
+    0.0087,
+    0.0082,
+    0.0081,
+    0.008,
+    0.0079,
+    0.0074,
+    0.0073,
+    0.0072,
+    0.0069,
+    0.006,
+    0.006,
+    0.0059,
+    0.0059,
+    0.0056,
+    0.0053,
+    0.0048,
+    0.0041,
+    0.0036,
+    0.0032,
+    0.003,
+    0.003,
+    0.003,
+    0.0029,
+    0.0025,
+    0.0024
+  ]
+}

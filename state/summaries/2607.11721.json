@@ -1,0 +1,8 @@
+{
+  "summary": "Moiré-engineered graphene/hBN Josephson junctions achieve phase-coherent Andreev transport up to 6 T by exploiting Hofstadter minibands, where the moiré potential converts zero-group-velocity Landau levels into dispersive magnetic Bloch bands. This enables high-field superconducting interferometry in the quantum Hall regime via extended electron-hole Andreev trajectories that would be forbidden in conventional ballistic junctions.",
+  "motivation": "Magnetic fields suppress phase-coherent Josephson transport and limit conventional superconducting interferometry to relatively low fields; overcoming this constraint requires novel mechanisms to preserve Andreev transport in the presence of strong orbital effects.",
+  "method": "Phase-coherent Andreev transport through ballistic graphene/hBN junctions was characterized via Fabry-Pérot oscillations and Fraunhofer interference patterns across the Dirac cone and moiré minibands, with comparison to Hofstadter-spectrum calculations to identify the mechanism enabling high-field superconductivity.",
+  "result": "Phase-coherent Josephson interference persists up to 6 T in the fractal Hofstadter-butterfly regime, exceeding expectations for conventional ballistic graphene junctions by stabilizing superconductivity through dispersive magnetic Bloch bands with finite quasiparticle group velocity.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

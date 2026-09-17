@@ -1,0 +1,490 @@
+{
+  "date": "2026-07-14",
+  "n_fetched": 178,
+  "papers": [
+    {
+      "id": "2607.10743",
+      "title": "Connectivity-induced surface-loss penalty in superconducting qubit-coupler lattices",
+      "authors": [
+        "Xu-Yang Gu",
+        "Gui-Han Liang",
+        "Ming-Chuan Wang",
+        "Yongxi Xiao",
+        "Cheng-Lin Deng",
+        "Zheng-He Liu",
+        "Tian-Ming Li",
+        "Kai Xu",
+        "Zhongcheng Xiang",
+        "Heng Fan"
+      ],
+      "abstract": "Recent advances in design and fabrication have increased the energy-relaxation times of isolated superconducting transmon qubits to the hundreds-of-microseconds regime, with reported values exceeding 500 $μ$s. However, the same progress has not automatically translated to multiqubit processors, where qubits are embedded in connected qubit-coupler lattices and often exhibit much shorter lifetimes than isolated qubits. To identify possible sources of this discrepancy, here we use finite-element simulation to investigate how surface participation ratios and the resulting surface dielectric loss change when a qubit is embedded in a flip-chip qubit-coupler lattice. Controlled comparisons show that higher connectivity can indeed lead to larger surface loss: in the simulated lattice, connecting a qubit to two and four couplers increases the surface loss by factors of 1.3 and 1.8, respectively. We attribute this change to the combined effects of added edge fields from coupling claws, field redistribution over the larger connected metal network, and hybridization with coupler modes. We further examine how this connectivity-induced surface-loss penalty depends on the geometric design parameters of both the qubit electrodes and the coupling claws, and derive guidelines for designing low-loss multiqubit processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-12",
+      "score": 0.8302009823265732,
+      "similar_to": [
+        {
+          "title": "Wiring surface loss of a superconducting transmon qubit",
+          "id": "2311.16794",
+          "similarity": 0.9201838970184326
+        },
+        {
+          "title": "Surface participation and dielectric loss in superconducting qubits",
+          "id": "1509.01854",
+          "similarity": 0.8997468948364258
+        }
+      ],
+      "summary": {
+        "summary": "Finite-element simulations show that embedding superconducting transmon qubits in flip-chip qubit-coupler lattices increases surface dielectric loss: connecting a qubit to four couplers raises the surface-loss rate by a factor of 1.8 and reduces estimated $T_{1}^{\\mathrm{surf}}$ from 133 to 74 µs. Counterintuitively, geometric optimizations that improve isolated-qubit lifetimes (larger qubit-ground gap, opposite-chip holes) can increase the connectivity-induced loss penalty, motivating design rules for low-loss multiqubit processors.",
+        "motivation": "Multiqubit processor lifetimes significantly lag behind isolated-qubit records (Figure 1 shows typical values $\\sim$50–150 µs versus best isolated-qubit values >500 µs), but the root causes in connected lattice geometries remain unclear.",
+        "method": "Two-step finite-element simulation of surface participation ratios (SPR) on aluminum-on-sapphire flip-chip layouts with Xmon qubits coupled to tunable couplers; controlled comparisons isolate contributions from coupling claws, field redistribution, and mode hybridization via models 1Q, 1QwP, 2Q1C, 1Q2C, 1Q4C, and 1Q4C single-mode control.",
+        "result": "Connecting to four couplers increases metal-substrate and substrate-air SPRs by factors of 2.18 and 2.27, yielding $R_{\\Gamma} = 1.80$ (surface-loss rate relative to isolated baseline) and $T_{1}^{\\mathrm{surf}} = 73.6$ µs versus 132.7 µs isolated; increasing qubit-ground gap from 30 to 80 µm worsens $R_{\\Gamma}$ in 1Q4C from 1.58 to 1.91 despite improving single-qubit lifetime.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.11514",
+      "title": "States dressing analysis in a transmon-transmon-bus system",
+      "authors": [
+        "P. A. Gladilovich",
+        "R. A. Migdisov",
+        "A. V. Sabluk",
+        "P. S. Burtsev",
+        "N. N. Abramov",
+        "N. Y. Rudenko",
+        "V. I. Chichkov",
+        "N. A. Maleeva"
+      ],
+      "abstract": "The multi-qubit gates fidelity of superconducting quantum processors can be limited due to the dressing of computational states by noncomputational ones. Here, we experimentally and analytically investigate a transmon-transmon-bus system where the computational states dressing is tunable over a broad range. We estimate the dressing using three methods: a full three-element model, an effective mode approach, and an unperturbed mode approach. The obtained results highlight the importance of the accurate estimation and control of the computational states dressing in order to optimize gates on superconducting platform.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-07-13",
+      "score": 0.7818405903924374,
+      "similar_to": [
+        {
+          "title": "Suppression of static ZZ interaction in an all-transmon quantum processor",
+          "id": "2011.03976",
+          "similarity": 0.8599802851676941
+        },
+        {
+          "title": "Suppression of crosstalk in superconducting qubits using dynamical decoupling",
+          "id": "2108.04530",
+          "similarity": 0.8525116443634033
+        }
+      ],
+      "summary": {
+        "summary": "This work experimentally and theoretically investigates state dressing in a transmon-transmon-bus coupler architecture, measuring how noncomputational states admix into computational states across a tunable parameter range. Three estimation methods—full system, effective mode, and unperturbed mode—are compared, revealing that dressing varies from ~1% to 50% and critically coincides with spectral inversion and effective coupling equalization at $f_U^c \\approx 4.252$ GHz.",
+        "motivation": "Multi-qubit gate fidelity in superconducting processors is limited by parasitic dressing of computational states by noncomputational coupler modes; accurate estimation and control of this dressing is essential for optimizing gate performance.",
+        "method": "Frequency-domain spectroscopy on a three-element circuit (Xmon qubit Q, Xmon coupler C, $\\lambda/2$ bus resonator) characterized by Hamiltonian with parameters $E_C = 285$ MHz, $E_J^Q = 4.7$ GHz, $E_J^C = 4.4$ GHz, $g_{Q-C} = 7.861$ MHz, $g_{C-\\mathrm{bus}} = 14.675$ MHz, and $\\omega_\\mathrm{bus}/2\\pi = 4.238$ GHz; dressing quantified via three methods treating the bare-state composition of dressed eigenstates.",
+        "result": "Dressing $D$ increases from ~1% to 50% as coupler frequency tunes from 4.4 to 4.252 GHz; at the critical point $f_U^c = 4.252$ GHz, effective couplings equalize at $g_\\mathrm{eff}^c \\approx 5.2$ MHz and spectral ordering inverts; effective-mode and unperturbed-mode methods provide conservative upper and lower bounds on dressing, with full-system calculation being the most accurate but limited to single noncomputational states.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.11668",
+      "title": "Multi-Stage Mamba-Based Architecture for Fast and Scalable Superconducting Qubit Readout",
+      "authors": [
+        "Luca Otting",
+        "Xiaorang Guo",
+        "Emmanouil Giortamis",
+        "Benjamin Lienhard",
+        "Pramod Bhatotia",
+        "Martin Schulz"
+      ],
+      "abstract": "Reliable qubit readout is a critical bottleneck toward fault-tolerant quantum computing (FTQC). In superconducting quantum processors, readout operations are both error-prone and high-latency. These challenges become more severe in frequency-multiplexed architectures, where signal crosstalk among neighboring qubits significantly degrades readout fidelity. Existing machine learning (ML)-based approaches rely on feed-forward neural networks (FNNs) that suffer from large parameter sizes and lack an end-to-end network that jointly addresses relaxation errors and discriminates qubit states. In this work, we present a multi-stage qubit state discriminator based on the Mamba model, which enables efficient sequence modeling with linear complexity. The first stage performs initial state discrimination, followed by a refinement stage that identifies and mitigates relaxation-induced errors. Our lightweight model achieves a geometric mean readout fidelity of 0.906, outperforming the best-reported state-of-the-art method while reducing parameter size by 49.6%; our optimal model further reaches 0.911. Both models remain robust across varying input trace lengths, maintaining a high fidelity of 0.893 at readout durations as short as 500 $ns$, achieving up to a 26% reduction in logical error rate over prior work in quantum error correction (QEC).",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-13",
+      "score": 0.7702681375910333,
+      "similar_to": [
+        {
+          "title": "Model-based Optimization of Superconducting Qubit Readout",
+          "id": "2308.02079",
+          "similarity": 0.8850020170211792
+        },
+        {
+          "title": "Transmon qubit readout fidelity at the threshold for quantum error correction without a quantum-limited amplifier",
+          "id": "2208.05879",
+          "similarity": 0.884476900100708
+        }
+      ],
+      "summary": {
+        "summary": "This work presents a multi-stage Mamba-based qubit state discriminator for superconducting quantum processors that achieves 0.906–0.911 geometric-mean readout fidelity while reducing model parameters by 49.6–99.4% compared to prior state-of-the-art approaches. The architecture integrates sequence modeling via a structured state machine for initial state discrimination with a neural error detector for post-correcting relaxation-induced errors, maintaining 0.893 fidelity at 500 ns readout durations and enabling 26% reduction in surface-code logical error rate relative to existing methods.",
+        "motivation": "Readout is the most error-prone and latency-critical stage in superconducting quantum computers, with measurement errors 12× higher than gate errors and durations 23–38× longer than two-qubit gates, severely limiting mid-circuit measurement feedback required for quantum error correction. Frequency-multiplexed architectures introduce additional crosstalk-induced errors, while existing feed-forward neural network discriminators suffer from parameter counts scaling multiplicatively with trace length, hindering scalability to multi-qubit systems.",
+        "method": "The authors employ Mamba, a state-space model with linear computational complexity, to replace fully connected layers in the discriminator, decoupling model size from readout trace length. A two-stage pipeline uses a Mamba classifier for initial state discrimination, followed by a second Mamba-based error detector trained on hard-to-classify relaxation events using focal loss, with optional incorporation of helper traces from neighboring qubits identified via conditional error probability analysis to mitigate localized crosstalk.",
+        "result": "The lightweight single-qubit model achieves $F_{5Q} = 0.906$ with 769 parameters per qubit on 1.6 million experimental multiplexed traces from a five-qubit superconducting processor, while the optimal variant with helper traces and detector reaches $F_{5Q} = 0.911$; both maintain $F_{5Q} \\geq 0.893$ at 500 ns duration, compared to $\\sim 0.89$ for prior methods at 700 ns, enabling up to 26% lower logical error rate in surface-code simulations under IBM Heron noise assumptions.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.10249",
+      "title": "Branch-resolved Pauli-block spectroscopy of residual conditional phase in two-qubit gates",
+      "authors": [
+        "Xudan Chai",
+        "Yanwu Gu",
+        "Huiqi Xue",
+        "Kerui Li",
+        "Dong E. Liu"
+      ],
+      "abstract": "Recent progress in quantum physics and quantum technologies is driving quantum computing from the noisy intermediate-scale (NISQ) era toward fault-tolerant operation. High-precision control of two-qubit gates is among the most critical requirements in this transition and hinges on accurate two-qubit calibration. For controlled-phase and CZ-style operations, the residual conditional phase (the nonlocal ZZ-type deviation after local compensation) is weakly resolved at leading order in average infidelity and randomized benchmarking, and repeated Ramsey amplification does not reliably isolate it from ordinary target detuning, SPAM errors, and contrast loss in long sequences. We introduce branch-resolved Pauli-block spectroscopy to estimate the per-cycle residual ZZ-rotation angle theta_c with its sign, from which the controlled-phase residual follows by a fixed convention. The protocol repeats a fixed probe for N cycles, measures the closed Pauli block IX, IY, ZX, and ZY, and forms branch coherences C+ and C- conditioned on the control qubit; theta_c splits the two branch phase slopes in opposite directions, while local target phase beta_c shifts them together. An echoed-cycle variant suppresses removable local terms while preserving the nonlocal contribution. Numerical simulations with injected theta_c, detuning, damping, and SPAM confirm unbiased signed readout where scalar-sector alternatives fail and distinguish opposite-sign errors at equal infidelity. On one superconducting cloud qubit-coupler pair, a pulse-level calibration closed loop shows near-linear injection, preserved branch contrast, and tracking of the native residual conditional phase through one iteration. The approach yields a low-overhead, signed per-cycle estimate of residual conditional phase that standard fidelity benchmarks underresolve at leading order.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-11",
+      "score": 0.5765969419092913,
+      "similar_to": [
+        {
+          "title": "Branch-resolved Pauli-block spectroscopy of residual conditional phase in two-qubit gates",
+          "id": "2607.10249",
+          "similarity": 1.0
+        },
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.8241404891014099
+        }
+      ],
+      "summary": {
+        "summary": "Branch-resolved Pauli-block spectroscopy estimates the signed per-cycle residual $ZZ$-rotation angle $\\vartheta_c$ in two-qubit gates by measuring the closed four-moment block $\\{IX, IY, ZX, ZY\\}$ and forming differential branch coherences $C_\\pm$ conditioned on the control qubit. On a QuantumCTek cloud processor (66 transmons with tunable couplers), the echoed protocol achieves near-unit-slope injection response and one-step point-estimate feedback suppression ($|\\vartheta_c|_{R0}/|\\vartheta_c|_{R1} \\approx 16$) while preserving branch contrast $\\min|C| \\gtrsim 0.83$.",
+        "motivation": "Standard fidelity benchmarks and randomized benchmarking are quadratically insensitive to small coherent residual phases and carry no sign information; repeated Ramsey amplification cannot reliably disentangle the nonlocal $ZZ$ deviation from ordinary target-qubit detuning $\\beta_c$, SPAM errors, and contrast loss in long sequences.",
+        "method": "The protocol repeats a calibrated residual cycle $N$ times on probe $|+\\rangle|+\\rangle$, measures the four Pauli moments via two target pre-rotation bases ($X$ and $Y$), forms complex branch coherences $C_\\sigma(N) = (r_{IX} + ir_{IY}) + \\sigma(r_{ZX} + ir_{ZY})$ with $\\sigma=\\pm1$ labels, and extracts the differential phase slope via matrix-pencil pole fitting: $\\vartheta_c$ splits the two branch slopes in opposite directions while $\\beta_c$ shifts them together. An optional echoed variant $(XX)U_{\\mathrm{cyc}}(XX)U_{\\mathrm{cyc}}$ suppresses removable local $IZ$ terms while preserving $ZZ$.",
+        "result": "Numerical simulations with injected $\\vartheta_c$, detuning, damping ($\\Gamma = 10^{-3}$ cycle$^{-1}$), and SPAM confirm unbiased signed readout down to $|\\vartheta_c| = 10^{-3}$ rad/cycle and distinguish opposite-sign errors at equal infidelity; on native CZ pulses, injection gain $G_{\\mathrm{inj}} \\approx 57.1$ rad/(detune unit) gives linearity slope $1.10$ ($R^2 = 0.996$), and one feedback step yields $16\\times$ suppression of native residual with branch contrast preserved.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.11846",
+      "title": "Optimal operating temperature for industry-compatible silicon spin quantum computing: colder is not necessarily better",
+      "authors": [
+        "Paul Steinacker",
+        "Amanda E. Seedhouse",
+        "Nard Dumoulin Stuyck",
+        "Tuomo Tanttu",
+        "MengKe Feng",
+        "Santiago Serrano",
+        "Ensar Vahapoglu",
+        "Samuel K. Bartee",
+        "Philip Y. Mai",
+        "Alexis Shaw",
+        "Andreas Nickl",
+        "Sebastian Pauka",
+        "Brendan Harlech-Jones",
+        "Juan P. Dehollain",
+        "Fay E. Hudson",
+        "Kok Wai Chan",
+        "Thomas A. Ohki",
+        "David Reilly",
+        "Christopher C. Escott",
+        "Chih Hwan Yang",
+        "Wee Han Lim",
+        "Arne Laucht",
+        "Andre Saraiva",
+        "Andrew S. Dzurak",
+        "Jared H. Cole"
+      ],
+      "abstract": "Silicon spin qubits are a leading candidate for large-scale quantum computing owing to their compatibility with semiconductor manufacturing. However, scaling to useful fault-tolerant processors will likely generate thermal loads that exceed the cooling power available at millikelvin temperatures. Raising the operating temperature eases cooling requirements but reduces gate fidelity, increasing the overhead of quantum error correction. Identifying the operating temperature that minimizes total power consumption is therefore a key challenge for commercially viable quantum computers. Here, we use gate set tomography to benchmark two-qubit silicon chips fabricated in both industrial and academic environments over a range of temperatures. Elevated temperatures substantially shorten coherence times and increase gate and state-preparation-and-measurement infidelities. Based on these measurements, we develop a general power model for silicon quantum computers that combines cryogenic cooling requirements with error-correction overheads. We show that a finite optimal operating temperature exists and is strongly influenced by a crossover temperature near 1 K in current devices, above which gate fidelity degrades rapidly. These results connect device-level fidelity limitations to system-level power requirements, providing design guidelines for large-scale silicon quantum computers.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-07-13",
+      "score": 0.5477815073575489,
+      "similar_to": [
+        {
+          "title": "Evidence for the utility of quantum computing before fault tolerance",
+          "id": null,
+          "similarity": 0.839438259601593
+        },
+        {
+          "title": "Logic gates at the surface code threshold: Superconducting qubits poised for fault-tolerant quantum computing",
+          "id": "1402.4848",
+          "similarity": 0.838629961013794
+        }
+      ],
+      "summary": {
+        "summary": "Silicon spin qubits fabricated in industrial and academic facilities exhibit remarkably consistent power-law degradation of gate fidelity with temperature, with a characteristic crossover near 1 K above which performance degrades rapidly. A system-level power model combining cryogenic cooling requirements with quantum error correction overhead predicts a finite optimal operating temperature of 0.5–1.5 K that balances refrigeration cost against the physical-qubit overhead needed to maintain logical performance.",
+        "motivation": "Utility-scale silicon quantum computers will generate thermal loads exceeding dilution-refrigerator cooling power at millikelvin temperatures, yet cooling power increases dramatically with operating temperature while qubit fidelity degrades. Understanding the trade-off between cryogenic cooling requirements and error-correction overhead is essential for identifying the commercially viable operating point.",
+        "method": "Gate set tomography characterizes the temperature dependence of single- and two-qubit gate fidelities, relaxation times, and coherence times across six silicon MOS double-quantum-dot devices (three from imec's 300 mm industrial process with 400 ppm residual $^{29}$Si, three from academic facilities with 50–800 ppm $^{29}$Si). Measured infidelities are fit to power-law forms $\\mathcal{M} = \\kappa[1 + (T/T_X)^n]$ and combined with surface-code error-correction scaling and generalized Carnot refrigerator modeling to compute total system power as a function of temperature.",
+        "result": "Device A achieves $>99.9\\%$ SPAM and single-qubit fidelity, $>99\\%$ two-qubit fidelity up to 0.5–0.7 K; above 1 K, fidelities degrade rapidly due to dephasing. The power model shows a well-defined optimum at 0.5–1.5 K for realistic silicon architectures with 500 logical qubits, demonstrating that minimizing total power does not require millikelvin operation and that the crossover temperature $T_X = 0.5$–1 K strongly influences the optimal point.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.11647",
+      "title": "Anomalous Dissipation in Current Biased Josephson Systems",
+      "authors": [
+        "Johannes Hauff",
+        "Niklas Gaiser",
+        "Joachim Ankerhold",
+        "Dominik Maile"
+      ],
+      "abstract": "A new phase diffusive regime in a current biased Josephson junction is theoretically explored which originates from embedding the junction in a circuit environment with anomalous dissipation. This is realized by placing parallel to the junction a resistor in series with a capacitor such that electromagnetic fluctuations effectively couple also to the charge of the junction. This leads to rich Josephson dynamics, in particular for the switching of the junction out of a zero voltage state. Modelled as the escape process of a fictitious phase-particle out of a metastable well, a detailed study reveals that anomalous dissipation has a strong impact at low temperatures when quantum tunneling dominates against thermal activation. As a manifestation, a regime is found, where for realistic circuit parameters the quantum escape process is substantially enhanced, followed by a short voltage pulse and re-trapping with high probability. This class of circuits may be leveraged for detecting microwave photons or dissipative quantum annealing processes. In addition, the analysis provides a general framework for engineering dissipative dynamics in nonlinear systems using anomalous environments.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "published": "2026-07-13",
+      "score": 0.5438089023803725,
+      "similar_to": [
+        {
+          "title": "On-demand driven dissipation for cavity reset and cooling",
+          "id": "2310.16785",
+          "similarity": 0.8553064465522766
+        },
+        {
+          "title": "Collapse and Inversion of the Josephson Potential in a Strongly Driven Superconducting Circuit",
+          "id": "2607.14344",
+          "similarity": 0.8468565940856934
+        }
+      ],
+      "summary": {
+        "summary": "This paper presents a theoretical analysis of a current-biased Josephson junction with an anomalous dissipative environment created by adding a resistor $R_g$ in series with a capacitor $C$ in parallel to the junction. The work reveals a new phase diffusive regime at low temperatures where quantum tunneling is substantially enhanced, followed by voltage pulses and re-trapping in the next potential minimum, with applications to microwave photon detection and dissipative quantum annealing.",
+        "motivation": "Standard Josephson junction circuits with Ohmic shunt resistors $R_S$ suppress quantum tunneling, but adding a capacitive coupling to charge—anomalous dissipation—offers a contrasting effect. Understanding this regime is important for engineering dissipative dynamics in superconducting circuits and improving single-photon detectors.",
+        "method": "The authors derive quantum Langevin equations for both conventional (phase) and anomalous (charge) dissipation using transmission-line models, perform semiclassical simulations of washboard potential dynamics, and apply path-integral techniques (bounce methods) to calculate metastable decay rates across thermal and quantum regimes for realistic circuit parameters ($I_C = 21$ µA, $C_\\mathrm{tot} = 6$ pF, $C/C_J = 0.01$, bias $I_b/I_C \\geq 0.98$).",
+        "result": "Increasing $R_g$ raises the crossover temperature $T_0$ and enhances the quantum escape rate by orders of magnitude while shifting the most probable tunneling point deep in the potential well; combined with $R_S$, this leads to deterministic re-trapping with voltage pulses even at $I_b \\sim I_C$, and the tunneling rate shows weak temperature dependence over a broad range ($\\sim 5$–$50$ mK), enabling efficient dissipative cooling.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.11721",
+      "title": "High-field Josephson effect enabled by a moiré Hofstadter spectrum",
+      "authors": [
+        "A. Díez-Carlón",
+        "M. Cárdenes Wuttig",
+        "N. Wei",
+        "D. Ivanov",
+        "P. Altpeter",
+        "P. Hakonen",
+        "K. Watanabe",
+        "T. Taniguchi",
+        "L. I. Glazman",
+        "D. K. Efetov"
+      ],
+      "abstract": "Magnetic fields generally suppress phase-coherent Josephson transport, limiting superconducting interferometry to relatively low fields. Here we show that moiré-engineered graphene Josephson junctions can overcome this constraint. Using ballistic graphene/hBN junctions, we establish phase-coherent Andreev transport through Fabry-Pérot oscillations and Fraunhofer interference that persist across both the primary Dirac cone and reconstructed moiré minibands. We then demonstrate phase-coherent Josephson interference up to 6 T in the fractal Hofstadter-butterfly regime, well beyond the range expected for conventional ballistic graphene junctions. Comparison with Hofstadter-spectrum calculations reveals that superconductivity survives where the moiré potential transforms Landau levels with quenched group velocity into dispersive magnetic Bloch bands with finite quasiparticle group velocity, enabling extended electron-hole Andreev trajectories across the junction. Our results show that Hofstadter minibands can stabilize phase-coherent superconductivity deep into the parameter domain conventionally associated with the quantum Hall regime, establishing a new platform for high-field superconducting interferometry.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.supr-con",
+        "quant-ph"
+      ],
+      "published": "2026-07-13",
+      "score": 0.5263949072077688,
+      "similar_to": [
+        {
+          "title": "Coherent Josephson qubit suitable for scalable quantum integrated circuits",
+          "id": "1304.2322",
+          "similarity": 0.7943435907363892
+        },
+        {
+          "title": "Observation of high coherence in Josephson junction qubits measured in a three-dimensional circuit QED architecture",
+          "id": "1105.4652",
+          "similarity": 0.7801551222801208
+        }
+      ],
+      "summary": {
+        "summary": "Moiré-engineered graphene/hBN Josephson junctions achieve phase-coherent Andreev transport up to 6 T by exploiting Hofstadter minibands, where the moiré potential converts zero-group-velocity Landau levels into dispersive magnetic Bloch bands. This enables high-field superconducting interferometry in the quantum Hall regime via extended electron-hole Andreev trajectories that would be forbidden in conventional ballistic junctions.",
+        "motivation": "Magnetic fields suppress phase-coherent Josephson transport and limit conventional superconducting interferometry to relatively low fields; overcoming this constraint requires novel mechanisms to preserve Andreev transport in the presence of strong orbital effects.",
+        "method": "Phase-coherent Andreev transport through ballistic graphene/hBN junctions was characterized via Fabry-Pérot oscillations and Fraunhofer interference patterns across the Dirac cone and moiré minibands, with comparison to Hofstadter-spectrum calculations to identify the mechanism enabling high-field superconductivity.",
+        "result": "Phase-coherent Josephson interference persists up to 6 T in the fractal Hofstadter-butterfly regime, exceeding expectations for conventional ballistic graphene junctions by stabilizing superconductivity through dispersive magnetic Bloch bands with finite quasiparticle group velocity.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8302,
+    0.7818,
+    0.7703,
+    0.5766,
+    0.5478,
+    0.5438,
+    0.5264,
+    0.484,
+    0.4508,
+    0.3997,
+    0.3524,
+    0.3399,
+    0.3324,
+    0.3166,
+    0.3131,
+    0.2794,
+    0.2782,
+    0.2773,
+    0.2643,
+    0.2599,
+    0.2566,
+    0.218,
+    0.2007,
+    0.2,
+    0.1998,
+    0.192,
+    0.1726,
+    0.1637,
+    0.1619,
+    0.1617,
+    0.1569,
+    0.1468,
+    0.1353,
+    0.1314,
+    0.1289,
+    0.1275,
+    0.1258,
+    0.1234,
+    0.1182,
+    0.1154,
+    0.111,
+    0.1101,
+    0.109,
+    0.1084,
+    0.1072,
+    0.1067,
+    0.0996,
+    0.0985,
+    0.0963,
+    0.0929,
+    0.0928,
+    0.0925,
+    0.0898,
+    0.088,
+    0.0869,
+    0.0867,
+    0.0808,
+    0.0796,
+    0.0786,
+    0.0785,
+    0.076,
+    0.0754,
+    0.0752,
+    0.0741,
+    0.0737,
+    0.0712,
+    0.0704,
+    0.0676,
+    0.0666,
+    0.0659,
+    0.0635,
+    0.0625,
+    0.062,
+    0.0606,
+    0.0597,
+    0.0585,
+    0.057,
+    0.0563,
+    0.0561,
+    0.0547,
+    0.0547,
+    0.0544,
+    0.0525,
+    0.0505,
+    0.0491,
+    0.048,
+    0.0476,
+    0.0475,
+    0.0466,
+    0.0455,
+    0.0455,
+    0.0454,
+    0.043,
+    0.0413,
+    0.0406,
+    0.0398,
+    0.0382,
+    0.0377,
+    0.0369,
+    0.0368,
+    0.0365,
+    0.0362,
+    0.0348,
+    0.0337,
+    0.0333,
+    0.0325,
+    0.0322,
+    0.0304,
+    0.0294,
+    0.0292,
+    0.0283,
+    0.0282,
+    0.0261,
+    0.0242,
+    0.0238,
+    0.0222,
+    0.022,
+    0.0218,
+    0.0218,
+    0.0205,
+    0.0204,
+    0.0203,
+    0.02,
+    0.0199,
+    0.0192,
+    0.0186,
+    0.0182,
+    0.0168,
+    0.0162,
+    0.016,
+    0.016,
+    0.0151,
+    0.0141,
+    0.0137,
+    0.0132,
+    0.0129,
+    0.0129,
+    0.0124,
+    0.0124,
+    0.0118,
+    0.0118,
+    0.0112,
+    0.0112,
+    0.0112,
+    0.0105,
+    0.0104,
+    0.0103,
+    0.0102,
+    0.0098,
+    0.0096,
+    0.0094,
+    0.0089,
+    0.0087,
+    0.0087,
+    0.0086,
+    0.0082,
+    0.0081,
+    0.0078,
+    0.0075,
+    0.0073,
+    0.0066,
+    0.0065,
+    0.0065,
+    0.0064,
+    0.006,
+    0.0056,
+    0.0056,
+    0.0051,
+    0.0051,
+    0.0049,
+    0.0049,
+    0.0043,
+    0.0042,
+    0.0036,
+    0.0034,
+    0.003,
+    0.003,
+    0.0017
+  ]
+}

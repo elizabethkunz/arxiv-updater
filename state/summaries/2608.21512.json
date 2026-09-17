@@ -1,0 +1,8 @@
+{
+  "summary": "This work presents robust cavity metrology observables based on the scissors phase $\\Sigma = 2\\phi_0 - (\\phi_- + \\phi_+)$ that eliminate systematic errors in Pound-Drever-Hall (PDH) spectroscopy caused by sideband amplitude imbalance and demodulation-phase errors. An experimentally efficient observable $\\mathbb{S}_Q = E_- E_+ E_0^2 \\sin\\Sigma$ is introduced that requires only addition and multiplication (no arctangent) and is demonstrated in both optical cavity locking and superconducting qubit readout.",
+  "motivation": "PDH spectroscopy is widely used for precision cavity measurements across quantum technologies, but suffers from systematic zero-crossing offsets due to residual amplitude modulation and demodulation-phase errors, which limit the performance of ultrastable lasers and scalable quantum computers.",
+  "method": "The three-tone interrogation signal is decomposed into orthogonal collective phase modes ($\\mathcal{A}$, $\\mathcal{B}$, $\\Sigma$), and heterodyne detection of all three tones is used to reconstruct the scissors phase $\\Sigma$ and the computationally efficient observable $\\mathbb{S}_Q$ directly from measured IQ quadratures, rejecting common-mode and differential-mode phase errors by construction.",
+  "result": "In optical spectroscopy with 17% sideband imbalance and varying demodulation phase, $\\mathbb{S}_Q$ maintains a stable zero-crossing while PDH shows demodulation-dependent offsets proportional to $\\beta\\Delta_{\\text{amp}}$; in microwave qubit readout under RF timing errors inducing both $\\alpha$ and $\\beta$, $\\mathbb{S}_Q$ retains 95% Gaussian resolvability compared to PDH's 50% under the same degraded conditions.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

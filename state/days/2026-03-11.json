@@ -1,0 +1,307 @@
+{
+  "date": "2026-03-11",
+  "n_fetched": 100,
+  "papers": [
+    {
+      "id": "2603.09870",
+      "title": "Crosstalk in Multi-Qubit Fluxonium Architectures with Transmon Couplers",
+      "authors": [
+        "Martijn F. S. Zwanenburg",
+        "Christian Kraglund Andersen"
+      ],
+      "abstract": "In recent years, several architectures have been proposed for implementing two-qubit operations on fluxonium superconducting qubits. A particularly promising approach, which was demonstrated experimentally by Refs. [1,2], employs a transmon superconducting qubit as a tunable coupler between the fluxonium qubits. These experiments have shown that the transmon coupler enables fast, high-fidelity two-qubit operations while suppressing unwanted ZZ crosstalk between the fluxonium qubits. In this work, we numerically study the scalability of this architecture. We find that, when trivially scaling this architecture, crosstalk from spectator qubits limits the gate fidelity to below 90%. We show that these spectator errors can be reduced to below $10^{-4}$ by reducing the coupling strength and by dynamically tuning transmons that are not used for a two-qubit operation to an off position. We further investigate the resilience of the operation to direct capacitive coupling between the transmon couplers and to microwave crosstalk.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-10",
+      "score": 0.9739427147048552,
+      "similar_to": [
+        {
+          "title": "High-Fidelity, Frequency-Flexible Two-Qubit Fluxonium Gates with a Transmon Coupler",
+          "id": "2304.06087",
+          "similarity": 0.9148644208908081
+        },
+        {
+          "title": "Scalable Fluxonium Quantum Processors via Tunable-Coupler Architecture",
+          "id": "2604.13363",
+          "similarity": 0.9098196029663086
+        }
+      ],
+      "summary": {
+        "summary": "This work numerically investigates spectator-qubit crosstalk in scaled-up fluxonium-transmon-fluxonium (FTF) architectures, finding that trivial scaling limits fidelity below 90%. The authors demonstrate that reducing coupling strength to $g_{FT}/2\\pi = 200$ MHz and dynamically tuning inactive transmons to an off position suppresses spectator errors below $10^{-4}$ in 1D and 2D systems with up to six spectator qubits.",
+        "motivation": "Recent experiments with the FTF architecture have demonstrated fast, high-fidelity two-qubit gates with ZZ suppression, but the scalability of this approach to larger qubit arrays like surface codes has not been thoroughly analyzed.",
+        "method": "Using density matrix renormalization group for excited states (DMRG-X) tensor network simulations on systems up to ~$11 \\times 10^6$ Hilbert space dimension (equivalent to 23 qubits), the authors compute eigenspectra and drive matrix elements for 1D chains, 2D grids, and $\\llbracket 4,2,2 \\rrbracket$ error-correcting code layouts, then time-evolve the center FTF pair under realistic drive pulses incorporating DRAG and compensating drives.",
+        "result": "With optimized parameters ($g_{FT}/2\\pi = 200$ MHz coupling, off-transmon detuning $\\sim 300$ MHz above fluxonium $|1\\rangle\\leftrightarrow|2\\rangle$), gate fidelities exceed $1 - 10^{-4}$ for 50–100 ns gates across all spectator configurations in both 1D and 2D layouts; transmon-to-transmon coupling up to $g_{TT}/2\\pi = 40$ MHz and microwave crosstalk up to $\\gamma \\sim 0.3$ remain tolerable at 70–100 ns gate times.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.08801",
+      "title": "Large Language Model-Assisted Superconducting Qubit Experiments",
+      "authors": [
+        "Shiheng Li",
+        "Jacob M. Miller",
+        "Phoebe J. Lee",
+        "Gustav Andersson",
+        "Christopher R. Conner",
+        "Yash J. Joshi",
+        "Bayan Karimi",
+        "Amber M. King",
+        "Howard L. Malc",
+        "Harsh Mishra",
+        "Hong Qiao",
+        "Minseok Ryu",
+        "Xuntao Wu",
+        "Siyuan Xing",
+        "Haoxiong Yan",
+        "Jian Shi",
+        "Andrew N. Cleland"
+      ],
+      "abstract": "Superconducting circuits have demonstrated significant potential in quantum information processing and quantum sensing. Implementing novel control and measurement sequences for superconducting qubits is often a complex and time-consuming process, requiring extensive expertise in both the underlying physics and the specific hardware and software. In this work, we introduce a framework that leverages a large language model (LLM) to automate qubit control and measurement. Specifically, our framework conducts experiments by generating and invoking schema-less tools on demand via a knowledge base on instrumental usage and experimental procedures. We showcase this framework with two experiments: an autonomous resonator characterization and a direct reproduction of a quantum non-demolition (QND) characterization of a superconducting qubit from literature. This framework enables rapid deployment of standard control-and-measurement protocols and facilitates implementation of novel experimental procedures, offering a more flexible and user-friendly paradigm for controlling complex quantum hardware.",
+      "categories": [
+        "quant-ph",
+        "cs.AI"
+      ],
+      "published": "2026-03-09",
+      "score": 0.8768955527445841,
+      "similar_to": [
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.8506489396095276
+        },
+        {
+          "title": "Model-based Optimization of Superconducting Qubit Readout",
+          "id": "2308.02079",
+          "similarity": 0.8462364673614502
+        }
+      ],
+      "summary": {
+        "summary": "The paper introduces HAL (Heuristic Autonomous Lab), an LLM-driven system that automates superconducting qubit experiments by generating and invoking Python code for pulse-level control via a knowledge base. The framework is demonstrated through autonomous resonator characterization and reproduction of a quantum non-demolition leakage measurement ($L = 0.124 \\ \\pm 0.017$) directly from published literature.",
+        "motivation": "Implementing novel control and measurement sequences for superconducting qubits requires extensive expertise and is time-consuming; the authors exploit the purely digital nature of cryogenic qubit control to enable LLM agents to interact directly with lab hardware through Python.",
+        "method": "HAL uses Gemini 3 Flash with iterative retrieval-augmented generation to search a knowledge base of experimental plans and API documentation, alternating between a planner component (what to do) and developer component (how to implement in Python), with signal-based feedback and a sandbox runtime supporting persistent state and code reuse.",
+        "result": "HAL successfully conducted autonomous resonator characterization finding 8 resonators and extracted their quality factors, and reproduced the RILB protocol from a journal article using only general lab knowledge and the published description, with the QND characterization consuming $\\sim 10^5$ input and $10^4$ output tokens and executing in $\\sim 3$ minutes.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.09096",
+      "title": "Reconfigurable Superconducting Quantum Circuits Enabled by Micro-Scale Liquid-Metal Interconnects",
+      "authors": [
+        "Zhancheng Yao",
+        "Nicholas E. Fuhr",
+        "Nicholas Russo",
+        "David W. Abraham",
+        "Kevin E. Smith",
+        "David J. Bishop"
+      ],
+      "abstract": "Modular architectures are a promising route toward scalable superconducting quantum processors, but finite fabrication yield and the lack of high quality temporary interconnects impose fundamental limitations on system size. Here, we demonstrate chip-scale liquid-metal interconnects that show promise for plug-and-play superconducting quantum circuits by enabling non-destructive module replacement while maintaining high microwave performance. Using gallium-based liquid metals, we realize high-quality inter-module signal and ground interconnects, comparable in performance to conventional coplanar waveguide resonators. We illustrate consistent device characteristics across three thermal cycles between room temperature and 15 mK, as well as the ability to reform superconducting connections following module replacement. A width-dependent resonance frequency shift reveals a significant kinetic inductance fraction, which we attribute to the presence of $β$-phase tantalum as confirmed by X-ray characterization. Finally, we investigate power-dependent loss mechanisms and observe high-power dissipative nonlinearities qualitatively consistent with a readout-power heating model. These results establish liquid metals as viable chip-scale interconnects for reconfigurable, modular superconducting quantum systems.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-03-10",
+      "score": 0.758225844890445,
+      "similar_to": [
+        {
+          "title": "A Modular Cryogenic Link for Microwave Quantum Communication Over Distances of Tens of Meters",
+          "id": "2604.15971",
+          "similarity": 0.8696233034133911
+        },
+        {
+          "title": "Surpassing millisecond coherence times in on-chip superconducting quantum memories by optimizing materials, processes, and circuit design",
+          "id": "2308.15539",
+          "similarity": 0.8618148565292358
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates gallium-based liquid-metal interconnects for modular superconducting quantum circuits, enabling non-destructive chip replacement while maintaining microwave performance comparable to conventional coplanar waveguides. The liquid-metal interconnects show negligible degradation after multiple thermal cycles and achieve virtually zero resistance before and after module replacement, with the observed kinetic inductance fraction attributed to $β$-tantalum identified via X-ray characterization.",
+        "motivation": "Finite fabrication yield and lack of high-quality reusable interconnects limit scalability of superconducting quantum processors, motivating the development of plug-and-play modular architectures that allow defective modules to be replaced without discarding entire systems.",
+        "method": "Chip-scale assemblies with half-wavelength resonators split across two modules connected by gallium-based liquid-metal bumps were fabricated on Ta/TiN metallization and measured at 15 mK across multiple thermal cycles and power levels, with X-ray diffraction and photoelectron spectroscopy characterizing the material composition.",
+        "result": "LM-bridged resonators maintained comparable total loss to control resonators ($Q_i \\sim 10^4$), with power-independent loss dominating over two-level-system loss; kinetic inductance fraction $\\alpha_L \\approx 0.5$–$0.7$ from width-dependent frequency shifts; high-power dissipative nonlinearities consistent with readout-power heating model generating excess quasiparticles.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.09913",
+      "title": "Quantum control of the environment in open quantum systems enables rapid qubit reset",
+      "authors": [
+        "Carlos Ortega-Taberner",
+        "Eoin O'Neill",
+        "Paul Eastham"
+      ],
+      "abstract": "Qubit reset is crucial in quantum technology and is typically achieved by coupling the qubit to a dissipative environment. However, the achievable speed and fidelity are limited by qubit-environment entanglement. We use exact tensor-network simulations and a time-dependent variational approach to investigate these effects for transmon qubits with a time-dependent system-environment coupling. We show that they are due to the formation of a polaron state and how this can be reversed using a time-dependent coupling. Coupling protocols are identified which achieve reset with an excited-state population of $10^{-6}$ in $10$ ns. A related paper [C. Ortega-Taberner, E. O'Neill and P. R. Eastham, arXiv:XXXX.XXXX] addresses the complementary case of control via a time-dependent Hamiltonian. Our work shows how the dynamics of the environment of an open quantum system can be controlled to design effective quantum processes in non-Markovian systems.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.stat-mech"
+      ],
+      "published": "2026-03-10",
+      "score": 0.6150485939272435,
+      "similar_to": [
+        {
+          "title": "Entanglement assisted probe of the non-Markovian to Markovian transition in open quantum system dynamics",
+          "id": "2401.13735",
+          "similarity": 0.855036735534668
+        },
+        {
+          "title": "Fast Reset and Suppressing Spontaneous Emission of a Superconducting Qubit",
+          "id": "1003.0142",
+          "similarity": 0.8320242166519165
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates that polaron formation due to qubit-environment entanglement limits dissipative reset fidelity in transmon qubits, and shows this can be overcome by time-dependent control of the system-environment coupling. Optimized smooth switching protocols achieve excited-state populations of $10^{-6}$ in 10 ns at zero temperature, with achievable protocols reaching $10^{-6.5}$.",
+        "motivation": "Dissipative reset is crucial for superconducting qubits, but non-Markovian effects limit speed and fidelity; understanding and controlling system-environment entanglement beyond the Born-Markov approximation offers a path to faster, higher-fidelity reset.",
+        "method": "The authors use exact tensor-network TEMPO simulations and the time-dependent variational principle (TDVP) applied to the polaron ansatz for the spin-boson model with Ohmic spectral density ($\\alpha = 0.03$, $\\omega_q/2\\pi = 5$ GHz, $\\omega_c = \\omega_q$) to study time-dependent coupling protocols $u(t)$. Optimal decoupling functions are found via linear-quadratic regulator control theory.",
+        "result": "Linear switching reduces residual population by two orders of magnitude; smoother protocols with exponent $\\lambda = 2$ achieve $P_+ \\approx 10^{-6.5}$ at zero temperature in $\\sim 10$ ns, compared to $P_+ \\sim 10^{-3}$ over hundreds of nanoseconds in current experiments, limited ultimately by thermal population $\\sim 10^{-5}$ at 20 mK.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.09302",
+      "title": "Fictitious Copy Quantum Error Mitigation",
+      "authors": [
+        "Akib Karim",
+        "Harish J. Vallury",
+        "Muhammad Usman"
+      ],
+      "abstract": "Errors are arguably the most pressing challenge impeding practical applications of quantum computers, which has instigated vigorous research on the development of quantum error mitigation (QEM) techniques. Existing QEM methods suppress errors with a varying degree of efficacy but importantly demand significant additional quantum and classical computational resources. In this work, we present Fictitious Copy Quantum Error Mitigation (FCQEM) method which corrects quantum errors without requiring any additional quantum resources and purely relies on using classical postprocessing of a joint probability distribution to correct expectation values. The joint probability distribution can be measured ``fictitiously'' by sampling one copy of noisy quantum circuit twice, or classically squaring probabilities from simply one copy. We show that FCQEM can recover eigenvalues even if exact eigenstates are not prepared. Furthermore, our technique can benefit other noise mitigation techniques with no additional quantum resources, which is demonstrated by combining FCQEM with the Quantum Computed Moments (QCM) method. FCQEM can compensate for noise that is pathological to QCM, and QCM allows for FCQEM to recover the ground state energy with a larger variety of trial states. We show that our technique can find the exact ground state energy of molecular and spin models under simulated noise models as well as experiments on a Rigetti 84-qubit superconducting quantum processor. The reported FCQEM method is general purpose for the current generation of quantum devices and is applicable to any problem that measures eigenvalues of operators on sharply peaked distributions.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-10",
+      "score": 0.5029655135224601,
+      "similar_to": [
+        {
+          "title": "Demonstrating Quantum Error Correction that Extends the Lifetime of Quantum Information",
+          "id": "1602.04768",
+          "similarity": 0.8491984605789185
+        },
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8486960530281067
+        }
+      ],
+      "summary": {
+        "summary": "Fictitious Copy Quantum Error Mitigation (FCQEM) corrects quantum errors through classical post-processing of probability distributions by squaring them, requiring no additional quantum resources and performing equivalently to first-order truncated Virtual Distillation for eigenstates. Experiments on a Rigetti 82-qubit superconducting processor demonstrate that FCQEM combined with Quantum Computed Moments recovers ground state energies of HeH$^+$ to $10^{-5}$ Ha and a 10-qubit TFIM to 0.3% accuracy despite noise.",
+        "motivation": "Existing quantum error mitigation techniques require significant additional quantum and classical resources, motivating development of methods that suppress errors through postprocessing alone.",
+        "method": "FCQEM exploits a first-order power-series expansion of the Virtual Distillation swap operator, deriving a classical correction that squares sampled probability distributions: $\\langle M \\rangle \\approx \\sum_i w_i \\sum_j \\lambda_{ij} p_{ij}^2 / \\sum_j \\lambda_{Zj} p_{Zj}^2$. The method is combined with QCM for eigenvalue problems where trial states show sharply peaked distributions.",
+        "result": "On Rigetti Ankaa-3 hardware, FCQEM+QCM achieves chemical accuracy for HeH$^+$ at bond lengths 0.5–3 Å and recovers TFIM ground state energies with depolarizing noise rates up to $10^{-2}$ on 1024-qubit stabilizer simulations; alone, FCQEM outperforms QCM for diagonal Hamiltonians while QCM dominates when distributions are uniform.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9739,
+    0.8769,
+    0.7582,
+    0.615,
+    0.503,
+    0.3583,
+    0.2262,
+    0.2065,
+    0.1824,
+    0.18,
+    0.1722,
+    0.1528,
+    0.1424,
+    0.1268,
+    0.1245,
+    0.1235,
+    0.11,
+    0.105,
+    0.1025,
+    0.1,
+    0.094,
+    0.0885,
+    0.0827,
+    0.0794,
+    0.0788,
+    0.0774,
+    0.0752,
+    0.0719,
+    0.0711,
+    0.0699,
+    0.0697,
+    0.0677,
+    0.0613,
+    0.0583,
+    0.0561,
+    0.0543,
+    0.0524,
+    0.0513,
+    0.0512,
+    0.0491,
+    0.0487,
+    0.0467,
+    0.0462,
+    0.043,
+    0.0425,
+    0.041,
+    0.0399,
+    0.0398,
+    0.0386,
+    0.0368,
+    0.0363,
+    0.0346,
+    0.0334,
+    0.0319,
+    0.0299,
+    0.0296,
+    0.0283,
+    0.0245,
+    0.0243,
+    0.0225,
+    0.0214,
+    0.0214,
+    0.0213,
+    0.0207,
+    0.02,
+    0.0197,
+    0.0196,
+    0.0193,
+    0.0192,
+    0.0185,
+    0.0183,
+    0.0173,
+    0.0169,
+    0.0159,
+    0.0153,
+    0.0138,
+    0.0126,
+    0.0124,
+    0.0123,
+    0.0109,
+    0.0106,
+    0.0096,
+    0.0082,
+    0.0074,
+    0.0066,
+    0.0063,
+    0.0062,
+    0.0061,
+    0.006,
+    0.0051,
+    0.0048,
+    0.0042,
+    0.0042,
+    0.0035,
+    0.0034,
+    0.003,
+    0.0029,
+    0.0021,
+    0.002,
+    0.0009
+  ]
+}

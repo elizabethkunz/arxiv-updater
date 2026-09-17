@@ -1,0 +1,8 @@
+<a class="row{{ '' if p.score >= min_score else ' low' }}" href="{{ root }}{{ p.id }}/index.html">
+  <div class="score" style="{{ p.score|score_tone }}">{{ "%.1f"|format(100 * p.score) }}<small>%</small><span class="track"><b style="width:{{ "%.0f"|format(100 * p.score) }}%"></b></span></div>
+  <div>
+    <h3>{{ p.title }}</h3>
+    <p class="meta">{{ p.authors|short_authors }} &nbsp;/&nbsp; {{ p.id }} &nbsp;/&nbsp; {{ p.categories[0] }}{% if show_day %} &nbsp;/&nbsp; {{ p.day }}{% endif %}</p>
+    <p class="sum">{{ p.summary.summary }}</p>
+  </div>
+</a>

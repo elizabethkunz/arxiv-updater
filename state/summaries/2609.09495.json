@@ -1,0 +1,8 @@
+{
+  "summary": "This pre-registered study on a five-qubit superconducting processor certifies bipartite entanglement in a depth-one QAOA cost layer via two-qubit tomographic negativity of 0.077 (95% CI [0.065, 0.091]), with the entanglement signal controlled by CZ pulse amplitude and peaking at conditional phase $|\\zeta| = \\pi$. The entanglement certificate collapses by depth three and no optimization advantage emerges at depth three, highlighting how device physics—not algorithm design—governs QAOA behavior on current hardware.",
+  "motivation": "QAOA demonstrations on superconducting processors rarely prove that intended two-qubit coupling is realized, genuine entanglement is prepared, or what physical mechanisms control it, motivating careful characterization of the coupling strength and its relationship to entanglement certification.",
+  "method": "On the nine-qubit Red processor at BSC (five-qubit subset), six calibrations certified bipartite entanglement of a corrected QAOA cost layer at depth one using two-qubit tomographic negativity, then directly measured device physics by varying CZ pulse amplitude on a fixed Bell preparation and fit the causal dependence of negativity.",
+  "result": "Certified negativity reached 0.077 with high statistical confidence (BCa 95% CI [0.065, 0.091]), scaled linearly with CZ amplitude ($R^2 = 0.83$–0.96), peaked at $|\\zeta| = \\pi$, and disappeared by depth three with no optimization signal (Wilcoxon $p = 0.15$).",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

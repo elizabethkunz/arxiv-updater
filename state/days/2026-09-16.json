@@ -1,0 +1,405 @@
+{
+  "date": "2026-09-16",
+  "n_fetched": 145,
+  "papers": [
+    {
+      "id": "2609.16488",
+      "title": "Error-Bounded Fixed-Point Design of Super-Sample-Rate IIR Filters for Real-Time Superconducting Qubit Flux Predistortion",
+      "authors": [
+        "Matt Huszabianlou",
+        "Angelos Ioannou",
+        "Nirmalendu Bikash Patra",
+        "Anastasiia Butko",
+        "Gang Huang",
+        "Irfan Siddiqi"
+      ],
+      "abstract": "Flux-activated two-qubit gates in superconducting processors require correction of line distortion, which otherwise produces residual detuning, conditional-phase error, and leakage. Prior demonstrations of cryoscope-based distortion calibration have generally used commercial solutions that specify the filter models but not their FPGA implementation. These details matter for custom and open-source systems, where the fixed-point coefficient and datapath formats set how accurately the correction is realized, and the IIR feedback loop in its standard form does not meet timing at the required clock rate. We derive the coefficient formats of the correction filters from a step response error tolerance, using bounds on the quantization-induced displacement of the poles and zeros over the physical parameter range of each distortion, and the accumulator format from the smallest input change that must remain resolvable at the output. The same analysis gives the conditions under which quantization preserves filter stability. We implement the resulting FIR/IIR cascade on the QubiC platform at a fabric clock rate of \\SI{500}{MHz}, using a super-sample-rate structure with scattered look-ahead pipelining, which removes the feedback recursion from the critical path without changing the target transfer function. A representative cascade for our \\SI{1}{GS/s} flux lines, comprising an integrator, a second-order section, and a 20-tap FIR, consumes 88 DSP slices and adds \\SI{162}{ns} of latency. We confirm the hardware implementation by correcting characteristic bias-tee distortion, an intermediate step toward full cryoscope-based calibration.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-15",
+      "score": 0.8917041420936584,
+      "similar_to": [
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.8432397842407227
+        },
+        {
+          "title": "Enhancing Dispersive Readout of Superconducting Qubits Through Dynamic Control of the Dispersive Shift: Experiment and Theory",
+          "id": "2307.07765",
+          "similarity": 0.8307787775993347
+        }
+      ],
+      "summary": {
+        "summary": "Fixed-point number formats for real-time flux-predistortion filters are derived from a step-response error tolerance and implemented on the open-source QubiC FPGA platform. A super-sample-rate IIR structure with scattered look-ahead pipelining takes the feedback recursion out of the critical path, so an integrator, a second-order section and a 20-tap FIR run at a 500 MHz fabric clock for 1 GS/s flux lines, using 88 DSP slices and adding 162 ns of latency.",
+        "motivation": "Distortion on the flux line, dominated by the droop from the bias-tee blocking capacitor, leaves residual detuning, conditional-phase error and leakage in flux-activated two-qubit gates. Commercial systems specify the correction filter models but not their FPGA implementation, which custom and open-source systems need.",
+        "method": "Bounds on how far quantization moves the poles and zeros, over the physical parameter range of each distortion, set the coefficient formats; the smallest input change that must stay visible at the output sets the accumulator format, and the same analysis gives the conditions for stability. Scattered look-ahead places the added poles at the radii of the original ones, so the pipelined filter stays stable for any look-ahead depth and keeps the target transfer function.",
+        "result": "The cascade meets timing at 500 MHz with 88 DSP slices and 162 ns latency. It was checked in hardware by correcting the characteristic bias-tee distortion, which the authors describe as an intermediate step; full cryoscope-based calibration on a qubit is not shown.",
+        "source": "full text",
+        "generated_by": "Claude, written in-session from the full text (not via the script's API path)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.15604",
+      "title": "Parametric two-qubit gates via Landau-Zener interference",
+      "authors": [
+        "Simon Geisert",
+        "Albert Hertel",
+        "Soeren Ihssen",
+        "Zhongyi Jiang",
+        "Paul Kugler",
+        "Nicolas Zapata",
+        "Nicolas Gosling",
+        "Ameya Nambisan",
+        "Yuan Gao",
+        "Asier Galicia",
+        "Jéferson R. Guimarães",
+        "Yorgo Haddad",
+        "Marc Neis",
+        "Harsh Bhardwaj",
+        "Dmitriy A. Volkov",
+        "Juan Cereijo",
+        "Marcello Guardascione",
+        "Yebin Liu",
+        "Markus Jerger",
+        "Pavel Bushev",
+        "Frank Wilhelm-Mauch",
+        "Wolfgang Wernsdorfer",
+        "Shai Machnes",
+        "Mohammad Ansari",
+        "Rami Barends",
+        "Ioan M. Pop"
+      ],
+      "abstract": "We propose and demonstrate gates between two superconducting qubits based on quantum interference of consecutive Landau-Zener (LZ) transitions. This gate mechanism bridges between baseband and parametric two-qubit control, enabling in situ tuning of the control frequency across a continuous interval up to hundreds of MHz. Another advantage compared to dispersive couplers is that the speed of the LZ gate is on the order of the full coupling strength. We experimentally demonstrate the gate on two platforms, a modular chiplet architecture of coupled generalized flux qubits, and on a monolithic transmon architecture. The combination of tunability and gate speed establishes the LZ gate as a unique tool for multiplexing control pulses and interconnecting superconducting chiplet architectures.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-15",
+      "score": 0.8718393445014954,
+      "similar_to": [
+        {
+          "title": "Realization of high-fidelity CZ and ZZ-free iSWAP gates with a tunable coupler",
+          "id": "2011.01261",
+          "similarity": 0.8604259490966797
+        },
+        {
+          "title": "Optimizing the frequency positioning of tunable couplers in a circuit QED processor to mitigate spectator effects on quantum operations",
+          "id": "2503.13225",
+          "similarity": 0.8600989580154419
+        }
+      ],
+      "summary": {
+        "summary": "A two-qubit gate is built from interference between consecutive Landau-Zener transitions of a flux-tunable coupler that is driven sinusoidally through resonance with the data qubits; the coupler returns to its initial state as the qubits swap, giving a gate locally equivalent to iSWAP. It is demonstrated on a modular flip-chip flux-qubit device and on a monolithic transmon device, where the population-swap fidelity is about 0.98, limited by $T_2^\\mathrm{echo} = 2.2$ µs.",
+        "motivation": "Parametric gates through dispersive couplers run well below the bare coupling $g$ and at a fixed control frequency. A gate that runs near $g$ at a freely chosen drive frequency would help multiplex control lines and connect chiplets.",
+        "method": "Only the coupler is driven, with no drive or flux pulse on the data qubits, and full swaps occur when successive Landau-Zener passages interfere constructively. The modular device has $g/2\\pi \\approx 3$ MHz (swap at about 250 ns with a 50 MHz drive); the monolithic transmon device has $g/2\\pi \\approx 300$ MHz with the qubits on resonance at 5.891 GHz, and fidelity is taken from the decay of repeated swaps.",
+        "result": "The swap rate approaches the $\\sqrt{2}\\,g$ limit and the drive frequency was tuned in situ from 10 to 350 MHz. $F \\approx 0.98$ including a 16 ns wait between pulses, and the authors project 99.9% with roughly 100 times longer coherence; because the gate is not dispersive, coupler state preparation and measurement quality also matter.",
+        "source": "full text",
+        "generated_by": "Claude, written in-session from the full text (not via the script's API path)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.16133",
+      "title": "Pulse-Level Compilation of Measurement-Free Recovery in Transmon Circuits",
+      "authors": [
+        "Yi-Han Yu",
+        "Kai Xu",
+        "Heng Fan"
+      ],
+      "abstract": "Quantum error correction commonly relies on syndrome measurement, decoding, and conditional feedback. We numerically show that the conditional spectrum of an interacting transmon circuit can compile a local recovery rule into a fixed open-loop control cycle. In a four-bit repetition-code ring, the resulting input-independent control slows the decay of logical coherence under Pauli-\\(X\\) noise and stabilizes logical-one population under data relaxation relative to uncorrected references. Its local, bounded-degree architecture provides a hardware-native framework for extending compiled recovery control to larger quantum networks.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-14",
+      "score": 0.7867447733879089,
+      "similar_to": [
+        {
+          "title": "Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code",
+          "id": "2112.03708",
+          "similarity": 0.8391590118408203
+        },
+        {
+          "title": "Lattice surgery with Bell measurements: Modular fault-tolerant quantum computation at low entanglement cost",
+          "id": "2510.13541",
+          "similarity": 0.8382927179336548
+        }
+      ],
+      "summary": {
+        "summary": "This paper demonstrates compilation of quantum error correction recovery rules directly into fixed open-loop control pulses for transmon circuits, using conditional transition frequencies as a control resource. In a four-qubit repetition-code ring, the resulting input-independent waveform protects logical coherence under Pauli-X noise and logical population under amplitude damping, with a scalable two-color scheduling architecture.",
+        "motivation": "Conventional quantum error correction requires syndrome measurement, classical decoding, and measurement-conditioned feedback, creating overhead in readout fidelity, latency, and control routing. This work explores measurement-free QEC by compiling the joint syndrome selection and recovery into a single fixed waveform, leveraging spectral selectivity of coupled transmons.",
+        "method": "The approach uses capacitive couplings between transmons to generate data-state-dependent frequency shifts on an auxiliary qubit. A two-stage composite drive—first a dual-tone photon-number-conserving swap, then a conditional two-photon 0↔2 transition on the auxiliary—addresses only the syndrome-selected data configurations while leaving others undriven. The local module is then pipelined across a four-site ring using a two-color bipartite schedule that avoids sideband crosstalk.",
+        "result": "For the four-bit ring, the compiled waveform maps both error-syndrome-indicated computational basis inputs to their corrected targets with high fidelity (Figure 3(c)), and repeated cycles slow the decay of logical coherence C_Y by a factor ~2 under 30 μs^{-1} Pauli-X dephasing and stabilize the logical-one population P_1^L under 30 μs T₁ amplitude damping relative to unrecovered encoded states.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.17465",
+      "title": "Quantum Compiler Design for Fault-Tolerant Quantum Computing",
+      "authors": [
+        "Chenghong Zhu",
+        "Jiahan Chen",
+        "Keming He",
+        "Hongshun Yao",
+        "Zhaohui Yang",
+        "Jin-Guo Liu",
+        "Anbang Wu",
+        "Xiaotong Ni",
+        "Xingsheng Luan",
+        "Zhuo Fu",
+        "Shenggen Zheng",
+        "Xin Wang"
+      ],
+      "abstract": "Scalable quantum computation is expected to rely on fault-tolerant quantum computation (FTQC), in which quantum error correction (QEC) suppresses physical errors sufficiently to support reliable logical operations. This requires quantum compilation to move beyond general-purpose circuit optimization toward encoding-aware and protocol-structured compilation across the full stack of fault-tolerant quantum computers. Beyond circuit synthesis and hardware mapping, an FTQC compiler must lower algorithm-level operations into the logical gate set supported by the chosen code, coordinate encoded data and ancilla resources, realize logical operations together with repeated syndrome extraction under hardware constraints, and provide the resulting measurement stream to real-time decoding. This survey presents a full-stack view of compiler design for QEC-protected quantum computation. We organize existing work into three interacting layers: logical-level QEC compilation, physical-level QEC realization, and decoder runtime integration. At the logical level, we review surface-code lattice-surgery compilers, beyond-surface-code code-surgery frameworks including emerging qLDPC approaches, and compilation support for non-Clifford operations such as magic-state distillation and code switching. At the physical level, we survey hardware-aware QEC realization on superconducting, trapped-ion, and neutral-atom platforms. We further examine decoder models, real-time decoding systems, and frame-management mechanisms that close the feedback loop during fault-tolerant execution. Finally, we identify open challenges in cross-layer optimization, qLDPC compilation, compiler-decoder co-design, runtime adaptivity, and the development of integrated and benchmarkable FTQC compilation stacks. An actively maintained paper list is available at: github.com/chenghongz/QEC-compiler-design.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-15",
+      "score": 0.5622614622116089,
+      "similar_to": [
+        {
+          "title": "A superconducting surface-code processor with lattice-surgery logical operations",
+          "id": "2606.06598",
+          "similarity": 0.867814302444458
+        },
+        {
+          "title": "Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code",
+          "id": "2112.03708",
+          "similarity": 0.8660447597503662
+        }
+      ],
+      "summary": {
+        "summary": "This survey presents a full-stack view of quantum compiler design for fault-tolerant quantum error correction, organizing compiler techniques into three interacting layers: logical-level QEC compilation, physical-level QEC realization, and decoder runtime integration. The work reviews surface-code lattice-surgery compilers, beyond-surface-code and qLDPC code-surgery frameworks, syndrome-extraction scheduling, hardware-aware implementation on superconducting/trapped-ion/neutral-atom platforms, and real-time decoding algorithms including matching, belief propagation, and neural approaches.",
+        "motivation": "Practical fault-tolerant quantum computation requires moving beyond circuit optimization toward encoding-aware, protocol-structured compilation that jointly optimizes algorithmic operations, logical error correction procedures, hardware constraints, and classical decoding. Recent experimental demonstrations of below-threshold surface-code memories and logical processors have made QEC-aware compilation an urgent systems problem.",
+        "method": "The survey organizes existing work into three coupled compiler layers: (1) logical level—where algorithmic gates are lowered into lattice-surgery operations, magic-state distillation, and code switching; (2) physical level—where syndrome circuits are scheduled and mapped to superconducting, trapped-ion, and neutral-atom hardware under connectivity and timing constraints; (3) runtime—where detector error models are generated and decoded in real time using matching, belief propagation, or neural algorithms.",
+        "result": "The survey identifies key cross-layer bottlenecks: layouts optimized for routing can strain decoders, hardware-friendly schedules can waste magic-state resources, and codes with favorable asymptotic parameters may incur unacceptable overhead once mapping and decoding costs are included. Open challenges include compiler-decoder co-design, qLDPC operation synthesis, resource-flow management for magic states, and end-to-end benchmarking across all three layers on shared evaluation baselines.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.16630",
+      "title": "Two-qubit gates for the soft 0-π qubit",
+      "authors": [
+        "Zhenxing Liu",
+        "Eli Weissler",
+        "Joshua Combes"
+      ],
+      "abstract": "The 0-π qubit promises longer lifetimes than the transmon, making it a strong candidate for a next-generation, lower-error qubit. Gyenis et al. experimentally demonstrated an unprotected single-qubit gate in the soft 0-π regime [1], but no corresponding two-qubit gate has yet been proposed. We propose an unprotected CZ gate for capacitively coupled soft 0-π qubits. The gate uses a direct transition between a computational state and a higher non-computational state. Assuming negligible device disorder and a phenomenological noise model, the simulated CZ gate achieves a fidelity of approximately 99.9% at a gate time of approximately 160 ns.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-15",
+      "score": 0.5591127872467041,
+      "similar_to": [
+        {
+          "title": "Suppression of static ZZ interaction in an all-transmon quantum processor",
+          "id": "2011.03976",
+          "similarity": 0.8119426965713501
+        },
+        {
+          "title": "Above 99.9% Fidelity Single-Qubit Gates, Two-Qubit Gates, and Readout in a Single Superconducting Quantum Device",
+          "id": "2508.16437",
+          "similarity": 0.8088459968566895
+        }
+      ],
+      "summary": {
+        "summary": "This work proposes a microwave-activated CZ gate for capacitively coupled soft 0-π qubits operating via direct transitions to non-computational states, achieving simulated fidelity of approximately 99.9% at gate time ~160 ns in the idealized zero-disorder limit. The paper also develops single-qubit X gates by driving the θ mode (25 ns, 99.758% fidelity) and demonstrates that this coupling architecture supports two-qubit gates beyond CZ.",
+        "motivation": "The soft 0-π qubit promises longer coherence times than the transmon, but while single-qubit gates have been experimentally demonstrated, no two-qubit gate scheme for soft 0-π devices has been proposed, leaving a critical gap for realizing multi-qubit operations in this platform.",
+        "method": "The authors analyze capacitive coupling schemes between two 0-π circuits that produce an $n_{\\theta 1} n_{\\theta 2}$ interaction, design a CZ gate that drives transitions between logical states ($|2,0\\rangle \\leftrightarrow |5,0\\rangle$) and auxiliary states to accumulate conditional phase, and develop a phenomenological noise model (including $T_1$ and $T_\\phi$ processes) to evaluate performance under decoherence.",
+        "result": "The noiseless CZ gate achieves $F=99.893\\%$ at $t_g=91.95$ ns and maintains $F > 99.9\\%$ coherent fidelity for drive-frequency deviations of ~500 kHz and amplitude deviations of ±2%; under noise with $T=30$ μs, fidelity degrades to $99.830\\%$ at the shorter gate time, suggesting error rates of ~$10^{-3}$ are achievable with modest improvements in coherence times.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.16159",
+      "title": "Towards Block-Level Fault-Tolerant Quantum Simulation on Small High-Rate Non-CSS Codes",
+      "authors": [
+        "Zhuangzhuang Chen",
+        "Narayanan Rengaswamy"
+      ],
+      "abstract": "Small high-rate non-CSS stabilizer codes provide compact platforms for encoded quantum computation, but mixed-Pauli checks and limited native transversal logical gates complicate fault-tolerant dynamics. Block-level constructions offer an alternative by mapping an entire logical block to a physical circuit rather than compiling separately protected logical gates. We investigate this approach using the high-rate [[8,3,3]] non-CSS code and logical Trotter circuits as a testbed. We construct flagged syndrome-extraction circuits and establish a circuit-level memory pseudo-threshold near \\(1.5\\times10^{-3}\\). We then apply our symplectic-transvection construction, which maps a logical Trotter circuit to a physical circuit with the same block pattern for any stabilizer code. Although this mapping preserves the intended unitary algebraically, encoded Trotter circuits exhibit asymmetry between logical-\\(X\\) and logical-\\(Z\\) failure channels. Single-fault analysis identifies the mechanism: a fault on the shared parity ancilla can propagate through the uncomputation network into an undetectable logical operator, reducing the effective circuit distance in the affected sector. We evaluate flag-conditioned recovery, biased-noise decoding, CliNR resource verification, flag postselection, and asymmetric gate-noise models. These methods suppress propagated faults but do not simultaneously suppress both logical sectors in the realistic configurations studied. A diagnostic protected limit removing the identified malignant first-order locations restores pseudo-threshold behavior in both sectors, approaching memory performance. These results demonstrate the potential of block-level logical constructions for non-CSS codes without rich native transversal gate sets and the joint protection of the parity network, analog rotation, and recovery required to preserve fault-tolerant distance.",
+      "categories": [
+        "quant-ph",
+        "cs.IT",
+        "math.IT"
+      ],
+      "published": "2026-09-14",
+      "score": 0.5459207892417908,
+      "similar_to": [
+        {
+          "title": "A superconducting surface-code processor with lattice-surgery logical operations",
+          "id": "2606.06598",
+          "similarity": 0.8711907863616943
+        },
+        {
+          "title": "Entangling logical qubits without physical operations",
+          "id": "2601.20927",
+          "similarity": 0.8582890629768372
+        }
+      ],
+      "summary": {
+        "summary": "This work investigates circuit-level fault tolerance for logical Pauli-rotation (Trotter) circuits implemented on the [[8,3,3]] non-CSS stabilizer code using block-level constructions that preserve the Trotter pattern under encoding. A circuit-level memory pseudo-threshold of $1.5\\times10^{-3}$ is established for the Chao–Reichardt protocol, but the encoded Trotter implementation exhibits asymmetric logical-$X$ and logical-$Z$ failure channels due to phase faults on the parity ancilla propagating into undetectable logical operators with trivial syndrome.",
+        "motivation": "Small high-rate non-CSS codes offer compact platforms for encoded quantum computation, but their mixed-Pauli stabilizers and limited native transversal gates complicate fault-tolerant implementation. Understanding whether block-level logical constructions can preserve fault tolerance when the algebraic Trotter mapping is applied to codes without rich gate sets is essential for near-term quantum simulation.",
+        "method": "Single-fault analysis of the [[8,3,3]] code's encoded Pauli-rotation circuit identifies the circuit-distance-one mechanism: a $Z$ fault after the phase gate propagates through the parity-uncomputation CNOT ladder to produce $Z_2^{\\overline{}}$, an undetectable logical operator. Flag-conditioned recovery, CliNR resource verification, flag postselection, and biased-noise models are evaluated, and a diagnostic protected limit with ideal phase gates and flag couplings is constructed to identify required protection levels.",
+        "result": "No tested mitigation achieves simultaneous suppression of both logical sectors under realistic noise. CliNR and flag postselection strongly suppress one sector while leaving the orthogonal axis (aligned with the rotation) above unencoded reference rates. The diagnostic limit with Z-biased Trotter noise and idealized phase/flag CNOTs restores pseudo-threshold behavior in both sectors, approaching memory-benchmark performance and revealing that suppressing identified first-order Trotter faults leaves Chao–Reichardt recovery as the dominant contribution.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8917,
+    0.8718,
+    0.7867,
+    0.5623,
+    0.5591,
+    0.5459,
+    0.4412,
+    0.4305,
+    0.4242,
+    0.4212,
+    0.3772,
+    0.3705,
+    0.3641,
+    0.3373,
+    0.3351,
+    0.3308,
+    0.3222,
+    0.2991,
+    0.2964,
+    0.2886,
+    0.2831,
+    0.2777,
+    0.2684,
+    0.2661,
+    0.2654,
+    0.2638,
+    0.2528,
+    0.2372,
+    0.2371,
+    0.2329,
+    0.2159,
+    0.1892,
+    0.1849,
+    0.1768,
+    0.1661,
+    0.1589,
+    0.1584,
+    0.1548,
+    0.154,
+    0.1475,
+    0.1443,
+    0.1427,
+    0.1419,
+    0.1412,
+    0.1411,
+    0.1351,
+    0.135,
+    0.1337,
+    0.1337,
+    0.1333,
+    0.1328,
+    0.1305,
+    0.1208,
+    0.1201,
+    0.1196,
+    0.1179,
+    0.1165,
+    0.1157,
+    0.1145,
+    0.1059,
+    0.1046,
+    0.1038,
+    0.1034,
+    0.093,
+    0.0889,
+    0.0818,
+    0.08,
+    0.0796,
+    0.0765,
+    0.0758,
+    0.0731,
+    0.0708,
+    0.0691,
+    0.0661,
+    0.0623,
+    0.0616,
+    0.0561,
+    0.0559,
+    0.0558,
+    0.055,
+    0.0534,
+    0.049,
+    0.0466,
+    0.0463,
+    0.046,
+    0.0453,
+    0.0446,
+    0.0415,
+    0.0403,
+    0.0403,
+    0.0397,
+    0.0385,
+    0.0377,
+    0.0367,
+    0.0363,
+    0.0361,
+    0.0346,
+    0.0344,
+    0.0317,
+    0.0316,
+    0.0304,
+    0.027,
+    0.0262,
+    0.0245,
+    0.0239,
+    0.0234,
+    0.0232,
+    0.0222,
+    0.022,
+    0.0217,
+    0.0214,
+    0.0214,
+    0.0199,
+    0.0193,
+    0.019,
+    0.0183,
+    0.0182,
+    0.018,
+    0.0175,
+    0.0174,
+    0.0173,
+    0.0162,
+    0.0157,
+    0.0156,
+    0.0154,
+    0.0137,
+    0.0133,
+    0.0132,
+    0.0125,
+    0.0124,
+    0.0119,
+    0.0118,
+    0.0114,
+    0.0113,
+    0.0113,
+    0.0112,
+    0.0099,
+    0.0089,
+    0.0083,
+    0.0071,
+    0.0069,
+    0.0041,
+    0.0038,
+    0.0024,
+    0.0022
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "date": "2026-09-10",
+  "n_fetched": 132,
+  "papers": [
+    {
+      "id": "2609.05222",
+      "title": "A double-resonator coupler for high-fidelity two-qubit gates between superconducting qubits",
+      "authors": [
+        "Seunghyeon Jin",
+        "Seungha Woo",
+        "Shinyoung Hwang",
+        "June-Young M. Lee",
+        "Jeongmin Shim",
+        "Sunje Kim",
+        "Dae Seok Han",
+        "Jaeho Shin",
+        "Eunjong Kim"
+      ],
+      "abstract": "Tunable couplers have enabled two-qubit gate fidelities in superconducting quantum processors to approach $99.9\\%$, yet simultaneously suppressing residual interactions and maintaining flexible qubit-frequency allocation remain central challenges for scaling. Here, we propose a double-resonator coupler (DRC) consisting of two resonators interconnected by a single Josephson junction and a capacitor. The hybridized resonator modes provide two mediated exchange paths whose interference controls the qubit-qubit interaction. The DRC enables complete cancellation of residual $ZZ$ interaction for qubit-qubit detunings well outside the straddling regime, even in the absence of direct qubit-qubit coupling, thereby relaxing constraints on frequency allocation and qubit placement. Away from the idle point, the same circuit provides a strong $ZZ$ interaction of approximately $70\\,\\mathrm{MHz}$, enabling a $20\\,\\mathrm{ns}$ controlled-Z gate with simulated coherent infidelity below $10^{-5}$. These results establish the DRC as a flexible single-junction coupler architecture for high-fidelity superconducting quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-09",
+      "score": 0.9207712115499013,
+      "similar_to": [
+        {
+          "title": "A double-resonator coupler for high-fidelity two-qubit gates between superconducting qubits",
+          "id": "2609.05222",
+          "similarity": 1.0
+        },
+        {
+          "title": "A tunable coupling scheme for implementing high-fidelity two-qubit gates",
+          "id": "1803.09813",
+          "similarity": 0.9097404479980469
+        }
+      ],
+      "summary": {
+        "summary": "A double-resonator coupler (DRC) for transmons is proposed: two resonators joined by a single Josephson junction and a capacitor, whose common and differential modes give two exchange paths between the qubits that interfere. Flux-tuning the differential mode cancels ZZ completely at the idle point for detunings well outside the straddling regime, and near half a flux quantum gives $|\\mathrm{ZZ}| \\approx 70$ MHz, enough for a 20 ns CZ gate with simulated coherent infidelity below $10^{-5}$ and fidelity above 99.9% once relaxation and flux noise are included.",
+        "motivation": "Tunable couplers have brought two-qubit fidelities close to 99.9%, but cancelling residual ZZ usually restricts the qubit-qubit detuning to the straddling regime or relies on a direct qubit-qubit capacitance. Both constrain frequency allocation and qubit placement.",
+        "method": "The differential mode behaves as a flux-tunable rf-SQUID and the common mode as a fixed oscillator; sweeping the differential mode through the common mode changes the relative strength of the two virtual exchange paths and takes the effective coupling from positive through zero to negative. The CZ gate is a round-trip baseband flux pulse from the idle point towards half a flux quantum, shaped as a Slepian-like three-term Fourier series and optimized in full-Hamiltonian simulations (qubit detuning 590 MHz, anharmonicities $-200$ MHz).",
+        "result": "ZZ crosses zero at the idle flux even with no direct qubit-qubit capacitance, and the zero is insensitive to the Josephson energy of the coupler junction; at 20 ns the coherent infidelity is about $10^{-5}$, 74% of it leakage. With $T_1 = 50$ µs on all qubit and coupler modes relaxation adds $3\\times10^{-4}$, and $1/f$ flux noise of $(1\\,\\mu\\Phi_0)^2/\\mathrm{Hz}$ at 1 Hz adds $1.6\\times10^{-5}$, so the gate stays above 99.9% and is relaxation-limited, which asks for coupler modes near 8 GHz with $Q \\approx 10^6$.",
+        "source": "full text",
+        "generated_by": "Claude, written in-session from the full text (not via the script's API path)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.00772",
+      "title": "Superconducting Flux Memory for Cryogenic Applications",
+      "authors": [
+        "Gregory R. Boyd",
+        "Jeremy Clark",
+        "Mark Covington",
+        "David G. Ferguson",
+        "Aref Fouladi",
+        "Keith D. Hillaire",
+        "Moe Khalil",
+        "John McFarland",
+        "Aaron Pesetski",
+        "Anthony J. Przybysz",
+        "John X. Przybysz",
+        "Sambarta Rakshit",
+        "Aruna N. Ramanayaka",
+        "Brian Sears",
+        "Robert Smith",
+        "Colin Stack",
+        "Robert M. Young",
+        "Tony X. Zhou"
+      ],
+      "abstract": "We report the development of flux memory for use with superconducting circuits. This technology stores persistent currents in superconducting loops on-chip to be used to provide flux biasing for superconducting circuits, like qubits. We developed three types of flux memory and draw comparisons among them for circuit design. We demonstrate the utility of flux memory by using an in-situ flux detector and characterize each approach and further demonstrate that once flux is set in a memory cell, benchtop DC control sources can be powered off, leaving the on-chip flux bias in place. We propose that flux memory can be arranged in a two-dimensional configuration to multiplex control signals and reduce how line counts scale (N^2 devices -> 2N control lines), and our experimental results pave the path to the proposed scalability. We demonstrate the use of flux memory to flux bias a transmon qubit and show the tunability of the qubit state to a target frequency which remained stable on-chip for 20 hours.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall",
+        "cond-mat.supr-con",
+        "physics.ins-det"
+      ],
+      "published": "2026-09-08",
+      "score": 0.8941718671615507,
+      "similar_to": [
+        {
+          "title": "Superconducting Flux Memory for Cryogenic Applications",
+          "id": "2609.00772",
+          "similarity": 1.0
+        },
+        {
+          "title": "Surpassing millisecond coherence times in on-chip superconducting quantum memories by optimizing materials, processes, and circuit design",
+          "id": "2308.15539",
+          "similarity": 0.8567262291908264
+        }
+      ],
+      "summary": {
+        "summary": "On-chip flux memory stores persistent currents in superconducting loops to flux-bias circuits such as qubits, and three cell types are built and compared. Once a cell is set, the room-temperature DC sources can be switched off, and a transmon biased this way held its target frequency for 20 hours.",
+        "motivation": "Every flux-biased device normally needs its own always-on DC line, so wiring and control-source counts grow quickly with system size.",
+        "method": "Three flux-memory designs are characterized with an in-situ flux detector, then used to bias a transmon, and a two-dimensional multiplexed addressing scheme is proposed.",
+        "result": "Flux remains in place with the bench sources powered off, the transmon frequency was stable for 20 hours, and the 2D layout would address $N^2$ devices with $2N$ control lines.",
+        "source": "abstract",
+        "generated_by": "Claude, written in-session from the abstract (not via the script's API path)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.07250",
+      "title": "Qubit-Based Benchmarking of InP HEMT LNAs: Readout Fidelity Versus Power Consumption",
+      "authors": [
+        "Junjie Li"
+      ],
+      "abstract": "High-fidelity single-shot readout of superconducting qubits is essential for fault-tolerant quantum computation. Without a quantum-limited amplifier such as a Josephson parametric amplifier, the cryogenic high-electron-mobility-transistor (HEMT) low-noise amplifier (LNA) at the 4 K stage is the dominant noise source in the readout chain. HEMT LNAs are conventionally characterized by Y-factor measurements of the noise temperature $T_N$, independently of the quantum measurement they ultimately serve. Here we present a qubit-in-the-loop benchmarking method. The method uses the two-dimensional IQ histogram of single-shot readout as a direct figure of merit. We apply it to three state-of-the-art cryogenic InP HEMT LNAs with 53\\%, 60\\%, and 70\\% channel indium content, together with a commercial reference amplifier. The 60\\% and 70\\% devices have similar $T_N$ in Y-factor measurements, both lower than the 53\\% device. The 70\\% device has the highest gain, but qubit readout SNR and assignment fidelity $\\mathcal{F}_a$ instead peak at 60\\%. Using this method, we map $\\mathcal{F}_a$ against HEMT LNA dc power consumption for each device. $\\mathcal{F}_a$ does not simply saturate with increasing power. For several devices it declines above a device-dependent power well below typical operating points. For the 60\\% device, which has the highest overall $\\mathcal{F}_a$, about 1~mW is needed to maintain $\\mathcal{F}_a > 85\\%$. Across all four devices, $\\mathcal{F}_a > 80\\%$ is reached with as little as about 0.3~mW, roughly an order of magnitude below typical operating points. These results establish a qubit-referenced benchmarking methodology and provide practical guidance for amplifier selection and bias in power-constrained multi-qubit readout systems.",
+      "categories": [
+        "quant-ph",
+        "physics.app-ph"
+      ],
+      "published": "2026-09-09",
+      "score": 0.7948552255652253,
+      "similar_to": [
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.8495916724205017
+        },
+        {
+          "title": "Benchmarking the readout of a superconducting qubit for repeated measurements",
+          "id": "2407.10934",
+          "similarity": 0.8484435081481934
+        }
+      ],
+      "summary": {
+        "summary": "Cryogenic InP HEMT low-noise amplifiers with 53%, 60% and 70% channel indium content are benchmarked with a qubit in the loop, using the single-shot IQ readout histogram as the figure of merit instead of a Y-factor noise temperature. Readout SNR and assignment fidelity peak for the 60% device, which beats a commercial reference amplifier by about 5% on average, although the 60% and 70% devices have similar Y-factor noise temperatures and the 70% device has the most gain.",
+        "motivation": "Without a quantum-limited amplifier the 4 K HEMT dominates the noise of the readout chain, adding on the order of 10 noise quanta. HEMTs are nevertheless characterized with a matched resistive load, independently of the qubit measurement they serve.",
+        "method": "All amplifiers are compared at a 5.9 GHz readout frequency with fixed readout power and integration time, first at a common 7.8 mW bias and then while sweeping the drain current from 1.5 to 15 mA (75 µW to 10.5 mW). Assignment fidelity comes from a classifier on the IQ shots without assuming Gaussian clouds, and the qubit $T_1$ stayed within 5% across amplifier swaps.",
+        "result": "The cloud separation is the same for every amplifier and only the cloud width changes. 80% fidelity is reached at 0.29 mW (70% device) and 0.35 mW (60% device), 22-27 times below the nominal 7.8 mW, and about 1 mW holds the 60% device above 85%, which the commercial amplifier never reaches; fidelity falls again at high drain current for several devices, an effect Y-factor measurements do not show and whose cause is left open.",
+        "source": "full text",
+        "generated_by": "Claude, written in-session from the full text (not via the script's API path)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.09495",
+      "title": "Certifying bipartite entanglement on a superconducting processor from a corrected QAOA cost layer",
+      "authors": [
+        "Carlos-Miguel Lorenzo"
+      ],
+      "abstract": "The Quantum Approximate Optimisation Algorithm is the canonical near-term heuristic, yet on real superconducting hardware its behaviour is set by device physics, not by the algorithm. Hardware demonstrations rarely prove the intended coupling is realised, that genuine entanglement is prepared, or what controls it. We report a pre-registered single-device study on the nine-qubit superconducting processor Red at the Barcelona Supercomputing Center, using its five-qubit component. Across six calibrations we certify bipartite entanglement of a corrected QAOA cost layer on the good coupler at depth one by two-qubit tomographic negativity: 0.077, BCa 95% CI [0.065, 0.091], excluding zero every day, while the coupling-off twin stays separable and the degraded coupler equals zero. We then measure the device physics directly: in a pre-registered manipulation on a fixed Bell preparation (not the QAOA layer), reducing the CZ pulse amplitude causally reduces the certified negativity along a positive, well-fit slope (R^2 = 0.83-0.96), every rung-level interval excluding zero and surviving Holm and Benjamini-Hochberg correction. This is a local linearisation of a peaked response, not a global monotone law: the negativity peaks at conditional phase |zeta| = pi, which the nominal amplitude overshoots. The J=0 twin is a separate off-state control and the fringe visibility is constant, so the effect is coherent. The average gate fidelity is non-monotone in the drive and is reported only as a diagnostic. A per-circuit statevector guardrail excludes a diagonal compilation fault we disclose and repair. A randomized-measurement witness is consistent with entanglement but underpowered. The certificate collapses by depth three, and a pre-registered sixteen-instance depth-three ensemble shows no optimisation signal (one-sided Wilcoxon p = 0.15). We claim no advantage; the instances are classically trivial.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-08",
+      "score": 0.6267972828148084,
+      "similar_to": [
+        {
+          "title": "Above 99.9% Fidelity Single-Qubit Gates, Two-Qubit Gates, and Readout in a Single Superconducting Quantum Device",
+          "id": "2508.16437",
+          "similarity": 0.8337373733520508
+        },
+        {
+          "title": "Bias-preserving and error-detectable entangling operations in a superconducting dual-rail system",
+          "id": "2503.10935",
+          "similarity": 0.8330907821655273
+        }
+      ],
+      "summary": {
+        "summary": "This pre-registered study on a five-qubit superconducting processor certifies bipartite entanglement in a depth-one QAOA cost layer via two-qubit tomographic negativity of 0.077 (95% CI [0.065, 0.091]), with the entanglement signal controlled by CZ pulse amplitude and peaking at conditional phase $|\\zeta| = \\pi$. The entanglement certificate collapses by depth three and no optimization advantage emerges at depth three, highlighting how device physics—not algorithm design—governs QAOA behavior on current hardware.",
+        "motivation": "QAOA demonstrations on superconducting processors rarely prove that intended two-qubit coupling is realized, genuine entanglement is prepared, or what physical mechanisms control it, motivating careful characterization of the coupling strength and its relationship to entanglement certification.",
+        "method": "On the nine-qubit Red processor at BSC (five-qubit subset), six calibrations certified bipartite entanglement of a corrected QAOA cost layer at depth one using two-qubit tomographic negativity, then directly measured device physics by varying CZ pulse amplitude on a fixed Bell preparation and fit the causal dependence of negativity.",
+        "result": "Certified negativity reached 0.077 with high statistical confidence (BCa 95% CI [0.065, 0.091]), scaled linearly with CZ amplitude ($R^2 = 0.83$–0.96), peaked at $|\\zeta| = \\pi$, and disappeared by depth three with no optimization signal (Wilcoxon $p = 0.15$).",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.09426",
+      "title": "Josephson energy of superconducting junctions: amorphous versus crystalline tunnel barriers",
+      "authors": [
+        "Wanting Zhang",
+        "Aldilene Saraiva-Souza",
+        "Félix Beaudoin",
+        "Xianghua Kong",
+        "Hong Guo",
+        "Yu Zhu"
+      ],
+      "abstract": "The Josephson energy $E_J$ is a key parameter governing the properties of transmon superconducting qubits. In Al/AlO$_x$/Al junctions, $E_J$ is set by electron tunneling through an ultrathin oxide barrier and therefore depends exponentially on the atomic structure of the barrier. We compute $E_J$ by first-principles device modeling based on the NEGF-DFT quantum-transport method, comparing a junction with a crystalline Al$_2$O$_3$ barrier against ten junctions with melt--quenched amorphous Al$_2$O$_3$ barriers of the same thickness. From the Fermi-level transmission and the Ambegaokar--Baratoff relation, we obtain a mean $E_J/h$ of $2.78$ GHz for the amorphous ensemble, with a standard deviation of $4.67$ GHz, compared with $0.73$ GHz for the crystalline reference; individual amorphous values span nearly two orders of magnitude. Scattering-state analysis shows that transport is quantum tunneling and that the variability originates from stoichiometric inhomogeneity of the amorphous oxide: Al-rich, low-barrier regions can connect into percolation-like tunneling pathways that strongly enhance the conductance. A realistic $200\\times200$ nm$^2$ junction self-averages over more than $2\\times10^4$ such microscopic regions. These results establish a quantitative atomistic route from oxide microstructure to the superconducting-circuit energy scale $E_J$.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-08",
+      "score": 0.528474632832224,
+      "similar_to": [
+        {
+          "title": "Observation of Josephson Harmonics in Tunnel Junctions",
+          "id": "2302.09192",
+          "similarity": 0.8503862023353577
+        },
+        {
+          "title": "Towards understanding two-level-systems in amorphous solids -- Insights from quantum circuits",
+          "id": "1705.01108",
+          "similarity": 0.8416701555252075
+        }
+      ],
+      "summary": {
+        "summary": "First-principles NEGF-DFT calculations of Al/AlO$_x$/Al Josephson junctions show that amorphous Al$_2$O$_3$ barriers produce a mean $E_J/h$ of 2.78 GHz with 4.67 GHz standard deviation, spanning nearly two orders of magnitude, compared to 0.73 GHz for crystalline Al$_2$O$_3$. The variability arises from percolation-like tunneling pathways formed by stoichiometric inhomogeneity in the amorphous oxide, but a realistic $200 \times 200$ nm$^2$ junction self-averages over $>2 \times 10^4$ microscopic regions.",
+        "motivation": "Josephson energy $E_J$ depends exponentially on atomic-scale barrier structure, and real Al/AlO$_x$/Al junctions contain amorphous rather than crystalline oxides; a systematic atomistic comparison was needed to connect oxide microstructure to the $E_J$ energy scale in transmon qubits.",
+        "method": "Quantum transport was computed via NEGF-DFT using NanoDCAL for one crystalline Al$_2$O$_3$ junction and ten melt-quenched amorphous junctions of identical oxide thickness, extracting the Fermi-level transmission $T(E_F)$ and converting it to $E_J$ via the Ambegaokar–Baratoff relation with $\\Delta = 0.18$ meV.",
+        "result": "Amorphous samples yield mean $E_J/h = 2.78 \\pm 4.67$ GHz (median 0.86 GHz) versus crystalline 0.73 GHz; scattering-state analysis confirms quantum tunneling and identifies Al-rich low-barrier regions forming conduction channels when connected, explaining the wide spread and high-$E_J$ outliers.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9208,
+    0.8942,
+    0.7949,
+    0.6268,
+    0.5285,
+    0.4023,
+    0.3798,
+    0.3467,
+    0.2967,
+    0.2923,
+    0.2902,
+    0.2719,
+    0.2668,
+    0.2655,
+    0.2562,
+    0.1763,
+    0.1713,
+    0.1693,
+    0.1512,
+    0.1391,
+    0.1353,
+    0.1266,
+    0.1196,
+    0.1137,
+    0.1077,
+    0.1049,
+    0.1013,
+    0.1,
+    0.0935,
+    0.0871,
+    0.0794,
+    0.0775,
+    0.0771,
+    0.0767,
+    0.0705,
+    0.0687,
+    0.0662,
+    0.066,
+    0.0646,
+    0.0634,
+    0.0611,
+    0.06,
+    0.0567,
+    0.0566,
+    0.0554,
+    0.0551,
+    0.0534,
+    0.052,
+    0.0486,
+    0.0483,
+    0.0478,
+    0.0451,
+    0.045,
+    0.0426,
+    0.0402,
+    0.0399,
+    0.0397,
+    0.0397,
+    0.0386,
+    0.0376,
+    0.0345,
+    0.0336,
+    0.032,
+    0.0319,
+    0.0317,
+    0.0307,
+    0.0306,
+    0.0298,
+    0.0295,
+    0.0293,
+    0.0288,
+    0.0271,
+    0.0269,
+    0.0265,
+    0.0262,
+    0.0261,
+    0.0259,
+    0.0224,
+    0.022,
+    0.0219,
+    0.0216,
+    0.0213,
+    0.0211,
+    0.0203,
+    0.0194,
+    0.0178,
+    0.0176,
+    0.0171,
+    0.0163,
+    0.0155,
+    0.015,
+    0.0148,
+    0.0148,
+    0.0147,
+    0.0143,
+    0.0137,
+    0.0124,
+    0.0121,
+    0.0114,
+    0.0109,
+    0.0105,
+    0.0101,
+    0.0099,
+    0.0098,
+    0.0094,
+    0.0092,
+    0.009,
+    0.0089,
+    0.0082,
+    0.008,
+    0.0076,
+    0.0075,
+    0.0071,
+    0.0071,
+    0.0068,
+    0.0055,
+    0.0052,
+    0.0051,
+    0.005,
+    0.005,
+    0.0042,
+    0.0037,
+    0.0031,
+    0.0029,
+    0.0028,
+    0.0022,
+    0.002,
+    0.002,
+    0.0014,
+    0.0013,
+    0.0012,
+    0.0008
+  ]
+}

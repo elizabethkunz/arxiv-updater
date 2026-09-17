@@ -1,0 +1,8 @@
+{
+  "summary": "A cryoCMOS RF multiplexer operating at 10 mK with 200 pW static power dissipation achieves $<2$ dB insertion loss and $>30$ dB isolation across DC–8 GHz, enabling integrated multiplexing of readout, flux bias, and drive signals at the qubit plane. Direct connection to transmon qubits preserves coherence times in the 100 µs range, addressing the input-output bottleneck in large-scale superconducting qubit systems.",
+  "motivation": "Superconducting qubit platforms face severe cryogenic wiring constraints for output signals, where room-temperature components limit scalability; moving multiplexing to the millikelvin stage can alleviate this bottleneck.",
+  "method": "A cryogenic CMOS multiplexer circuit was designed and characterized operating at 10 mK, with integration tests performed on transmon qubits to measure coherence degradation and isolation performance across the DC–8 GHz band.",
+  "result": "The device achieves record-low 200 pW quiescent power consumption with $<2$ dB insertion loss, $>30$ dB isolation, and marginal coherence time degradation in transmon qubits, enabling simultaneous multiplexing of readout, flux bias, and XY control lines.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

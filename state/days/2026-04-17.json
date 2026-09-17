@@ -1,0 +1,249 @@
+{
+  "date": "2026-04-17",
+  "n_fetched": 122,
+  "papers": [
+    {
+      "id": "2604.14296",
+      "title": "Scalable quantum error correction tailored for a heavy-hex qubit array",
+      "authors": [
+        "Seok-Hyung Lee",
+        "Xanda C. Kolesnikow",
+        "Jun Zen",
+        "Evan T. Hockings",
+        "Campbell K. McLauchlan",
+        "Georgia M. Nixon",
+        "Thomas R. Scruby",
+        "Stephen D. Bartlett",
+        "Robin Harper",
+        "Benjamin J. Brown"
+      ],
+      "abstract": "To produce an operable quantum computer that is made with imperfect hardware, we must design and test scalable quantum error correcting codes that are suited for the devices we can build and, in unison, develop decoding strategies that accommodate device-specific noise characteristics. Here, we introduce the \\emph{dynamic compass code}, a subsystem code with a novel syndrome extraction cycle, that has a competitive threshold while making efficient use of qubits arranged on a heavy-hex lattice. We use a superconducting qubit array to implement a distance-5 instance of this code, and demonstrate how detailed noise characterisation can boost decoder performance to yield significant improvements in logical error rates. We perform averaged circuit eigenvalue sampling (ACES) to acquire detailed context-dependent error information on all elements of the syndrome extraction process. Furthermore, we leverage soft information produced from measurement devices to augment the decoder with measurement error information and detect leakage errors for exclusion through post-selection. Our noise-informed approach yields up to 38.3\\% improvement in the logical error rate of a distance-5 implementation of the dynamic compass code in experiment.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-15",
+      "score": 0.7170450611274298,
+      "similar_to": [
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8700408935546875
+        },
+        {
+          "title": "Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code",
+          "id": "2112.03708",
+          "similarity": 0.861124575138092
+        }
+      ],
+      "summary": {
+        "summary": "A distance-5 dynamic compass code is demonstrated on the IBM Quantum Heron heavy-hex processor, incorporating detailed noise characterization via ACES and soft readout information from IQ data to improve logical error rates. The noise-informed decoding approach yields 24–38% reduction in logical error rates compared to standard calibration-based decoders, with leakage post-selection providing an additional 11–16% improvement.",
+        "motivation": "Matching decoders require accurate noise models to perform near-optimally, but standard uniform circuit-level assumptions poorly capture real device-dependent errors; leveraging shot-specific characterization and measurement information can substantially improve logical error correction performance on current superconducting hardware.",
+        "method": "The dynamic compass code uses a dynamic syndrome extraction schedule to maintain constant-weight detectors on the heavy-hex lattice; ACES characterization provides context-dependent gate and measurement error rates; soft decoding extracts state probabilities from raw IQ readout via Gaussian mixture models; leakage post-selection rejects shots exceeding a cutoff leakage probability using the soft information.",
+        "result": "On ibm_pittsburgh, the distance-5 dynamic compass code achieves 38.3% reduction in X-basis logical error rate and 24.2% reduction in Z-basis error rate using ACES+soft+leakage post-selection versus global calibration baseline, with per-round abort rates remaining below 4% in the optimized regime.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.14623",
+      "title": "Quantum Landscape of Superconducting Diodes",
+      "authors": [
+        "Muhammad Nadeem",
+        "Xiaolin Wang"
+      ],
+      "abstract": "This study maps the quantum landscape of superconducting diodes (SDs) \\cite{nadeem23} onto the quantum technology architecture, which is currently constrained by fundamental challenges in control and scalability. In the existing non-integrated quantum technology hardware, control and scalability related issues emerge at two fronts: First, nonlinear and nonreciprocal circuit elements, which are essential building blocks for quantum processors, are often complex, bulky, and dissipative. Second, the temperature gradient between classical control electronics ($T_C\\gtrsim$ K), which is also dissipative, and the quantum processor at cryogenic temperatures ($T_Q\\sim$ mK) makes scalability even more challenging. The main focus is to reveal how the built-in nonlinearity, nonreciprocity, and quantum functionalities of SDs are significant for on-chip integrated circuit quantum electrodynamics (c-QED), enabling scalable integration of noise-resilient qubit and qubit-interfaces for efficient power delivery, coherent control and memory, high-fidelity readout, and quantum-limited amplification. To this end, this study will also shed light on how thermodynamic constraints and field effects can be harnessed within a quantum-enhanced SD platform, thereby enabling thermal compatibility between classical and quantum workflows, isothermal all-electrical control, and on-chip scalability. This perspective is expected to play a pivotal role in the advancement of superconducting circuit-based quantum hardware with temperature-matched classical, quantum, and hybrid workflows.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mtrl-sci",
+        "quant-ph"
+      ],
+      "published": "2026-04-16",
+      "score": 0.5965949104730603,
+      "similar_to": [
+        {
+          "title": "Quantum Computer Controlled by Superconducting Digital Electronics at Millikelvin Temperature",
+          "id": "2503.09879",
+          "similarity": 0.8595051169395447
+        },
+        {
+          "title": "A Modular Cryogenic Link for Microwave Quantum Communication Over Distances of Tens of Meters",
+          "id": "2604.15971",
+          "similarity": 0.8382824659347534
+        }
+      ],
+      "summary": {
+        "summary": "This perspective maps superconducting diodes (SDs) onto circuit quantum electrodynamics (c-QED) architectures, showing how device-level nonreciprocity and Kerr-free nonlinearity address fundamental scalability and control challenges in superconducting quantum processors. SD-integrated platforms promise isothermal classical-quantum hybrid workflows, directional qubit transfer, efficient power management, and quantum-limited amplification without bulky external isolators or circulators.",
+        "motivation": "Current superconducting quantum hardware faces critical scalability challenges: nonlinear elements are dissipative or require complex multipole circuits, nonreciprocal components (isolators, circulators) are bulky and lossy, and the temperature gradient between room-temperature controls ($T_C \\gtrsim$ K) and cryogenic qubits ($T_Q \\sim$ mK) dissipates power and introduces noise that shortens coherence times.",
+        "method": "The authors systematically review superconducting diode mechanisms (intrinsic via symmetry-breaking, extrinsic via vortex dynamics, Josephson-based), analyze their quantum control through broken time-reversal and inversion symmetries, and propose integrating SDs into c-QED for qubits, power delivery, memory, readout, and amplification—highlighted with numerical simulations of transmon chains with twisted NbSe$_2$ Josephson diodes ($\\eta \\approx 27\\%$) and flux-controlled SQUID-resonators enabling nonreciprocal qubit-qubit coupling.",
+        "result": "Demonstrations include: SD-controlled anharmonicity stabilizing two-level systems in transmon chains with intermediate diode efficiency; nonreciprocal qubit transfer fidelity robust to charge, flux, and dissipative noise; superconducting rectifiers achieving up to 50% efficiency at MHz-GHz frequencies; field-free, Kerr-free third-order nonlinearity ($g_3 \\neq 0$, $K = 0$) tunable via gate and flux in SQUID-based elements; path toward topological quantum SDs with dissipationless transport in both directions via quantized chiral edge states.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.14931",
+      "title": "Learning to Concatenate Quantum Codes",
+      "authors": [
+        "Nico Meyer",
+        "Christopher Mutschler",
+        "Dominik Seuß",
+        "Andreas Maier",
+        "Daniel D. Scherer"
+      ],
+      "abstract": "Concatenating quantum error correction codes scales error correction capability by driving logical error rates down double-exponentially across levels. However, the noise structure shifts under concatenation, making it hard to choose an optimal code sequence. We automate this choice by estimating the effective noise channel after each level and selecting the next code accordingly. In particular, we use learning-based methods to tailor small, non-additive encoders when the noise exhibits sufficient structure, then switch to standard codes once the noise is nearly uniform. In simulations, this level-wise adaptation achieves a target logical error rate with far fewer qubits than concatenating stabilizer codes alone--reducing qubit counts by up to two orders of magnitude for strongly structured noise. Therefore, this hybrid, learning-based strategy offers a promising tool for early fault-tolerant quantum computing.",
+      "categories": [
+        "quant-ph",
+        "cs.LG"
+      ],
+      "published": "2026-04-16",
+      "score": 0.5671810758629284,
+      "similar_to": [
+        {
+          "title": "Hardware-efficient quantum error correction via concatenated bosonic qubits",
+          "id": "2409.13025",
+          "similarity": 0.854341447353363
+        },
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8473357558250427
+        }
+      ],
+      "summary": {
+        "summary": "This work introduces a level-wise adaptive concatenation strategy for quantum error correction that estimates the effective noise channel after each concatenation level and selects tailored codes accordingly, switching between variational non-additive encoders for structured noise and standard stabilizer codes once noise becomes nearly uniform. Simulations demonstrate that this hybrid approach reduces qubit overhead by one to two orders of magnitude compared to stabilizer-only concatenation for structured initial noise.",
+        "motivation": "Code concatenation achieves double-exponential error suppression but the effective noise channel reshapes at each level, making fixed code sequences suboptimal; prior work shows that noise-tailored encodings can reduce overhead, but systematic scaling of such learned codes via concatenation remains unexplored.",
+        "method": "The authors develop a fidelity-only two-design estimator (Equation 15) to recover the Pauli-Liouville diagonal of the logical channel without full process tomography, then iteratively tailor variational quantum error correction (VarQEC) codes with randomized entangling ansatz to estimated noise at each level, switching to standard codes ($[5,1,3]$) once the effective channel becomes nearly depolarizing.",
+        "result": "For $p=0.1$ Pauli Y-flip noise, the hybrid strategy achieves $10^5$-fold qubit reduction (from $n\\approx 2625$ to $n=25$); for bitflip noise, 90-fold reduction; for asymmetric depolarizing noise with $c=0.5$, 4.5-fold reduction, compared to pure $[5,1,3]$ concatenation at each level.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.717,
+    0.5966,
+    0.5672,
+    0.4196,
+    0.3795,
+    0.3022,
+    0.2921,
+    0.2774,
+    0.2452,
+    0.2402,
+    0.2166,
+    0.2021,
+    0.2011,
+    0.2,
+    0.1796,
+    0.1675,
+    0.1673,
+    0.1653,
+    0.1647,
+    0.1642,
+    0.1634,
+    0.1599,
+    0.1504,
+    0.147,
+    0.1461,
+    0.1405,
+    0.1309,
+    0.1296,
+    0.1272,
+    0.1259,
+    0.1239,
+    0.1234,
+    0.1153,
+    0.114,
+    0.1113,
+    0.1112,
+    0.1107,
+    0.1105,
+    0.1017,
+    0.1014,
+    0.0985,
+    0.0839,
+    0.0833,
+    0.0825,
+    0.0777,
+    0.0773,
+    0.0732,
+    0.0705,
+    0.0694,
+    0.0683,
+    0.0665,
+    0.0638,
+    0.0636,
+    0.0635,
+    0.0571,
+    0.0547,
+    0.0536,
+    0.053,
+    0.0509,
+    0.0456,
+    0.0449,
+    0.0431,
+    0.0422,
+    0.0416,
+    0.0416,
+    0.0408,
+    0.0402,
+    0.0393,
+    0.039,
+    0.0386,
+    0.0365,
+    0.0334,
+    0.0332,
+    0.0327,
+    0.031,
+    0.0303,
+    0.028,
+    0.0275,
+    0.025,
+    0.0247,
+    0.0238,
+    0.0235,
+    0.0207,
+    0.02,
+    0.0192,
+    0.0188,
+    0.0186,
+    0.0179,
+    0.0158,
+    0.0158,
+    0.0156,
+    0.0151,
+    0.0134,
+    0.0131,
+    0.0131,
+    0.0122,
+    0.0115,
+    0.0113,
+    0.0103,
+    0.0099,
+    0.0099,
+    0.009,
+    0.0087,
+    0.0075,
+    0.0074,
+    0.0069,
+    0.0068,
+    0.0066,
+    0.0061,
+    0.006,
+    0.0052,
+    0.005,
+    0.0048,
+    0.0047,
+    0.0041,
+    0.004,
+    0.0029,
+    0.0028,
+    0.0026,
+    0.0023,
+    0.0019,
+    0.0008
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "This paper presents a detailed benchmarking study of quantum error detection on IBM quantum computers using the repetition code and triangular color code, demonstrating exponential convergence of expectation values to noiseless results as code distance increases up to 74 physical qubits. The work characterizes the practical challenges of sampling overhead and classical post-processing, and identifies pseudothresholds below which error detection outperforms unencoded circuits.",
+  "motivation": "Quantum error detection is an unbiased error mitigation technique that can improve accuracy with additional spatial resources, but its scaling properties on real hardware have been relatively understudied despite two major drawbacks: exponential sampling overhead in circuit depth and exponential classical processing in code distance.",
+  "method": "Experiments performed on IBM quantum computers (Kyiv, Fez, Boston) implementing repetition codes ($[n,1,n]$) for memory experiments and logical Bell state preparation, and triangular color codes ($[n,1,d]$ with $n = (3d^2+1)/4$) at distances $d=3,5,7$ corresponding to 14, 38, and 74 physical qubits, with up to 3146 two-qubit gates and dynamical decoupling.",
+  "result": "For the repetition code memory experiment, $\\langle \\bar{Z} \\rangle$ converges exponentially to the ideal value as $n$ increases, consistent with the theoretical prediction $\\langle \\bar{O} \\rangle(n) = p^D \\mathrm{Tr}[\\bar{\\rho}\\bar{O}]/(p^D + (1-p^D)/2^{n-1})$; triangular color code experiments show better-than-physical performance at distance 3 for all depths and identify a pseudothreshold $p^*$ that decreases exponentially with circuit depth $D$.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

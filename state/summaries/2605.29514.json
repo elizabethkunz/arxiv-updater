@@ -1,0 +1,8 @@
+{
+  "summary": "This work uses hybrid stabilizer-tensor network methods to simulate coherent crosstalk noise during syndrome extraction in surface codes, capturing non-Clifford noise dynamics inaccessible to previous classical simulations. The inclusion of coherence in the noise model increases logical error rates and lowers the code threshold compared to incoherent-only models.",
+  "motivation": "Standard surface code analyses assume incoherent noise or perfect syndrome measurements, missing the coherent crosstalk that arises during multi-qubit syndrome extraction in realistic devices.",
+  "method": "Hybrid stabilizer-tensor network simulation techniques are used to model coherent quantum crosstalk noise during the syndrome extraction process in surface codes, allowing classical simulation of previously intractable non-Clifford noise.",
+  "result": "Coherent noise increases logical error rates and reduces the threshold for fault-tolerant operation; the spatial distribution of crosstalk noise quantitatively affects performance metrics.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

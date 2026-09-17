@@ -1,0 +1,8 @@
+{
+  "summary": "A distance-5 dynamic compass code is demonstrated on the IBM Quantum Heron heavy-hex processor, incorporating detailed noise characterization via ACES and soft readout information from IQ data to improve logical error rates. The noise-informed decoding approach yields 24–38% reduction in logical error rates compared to standard calibration-based decoders, with leakage post-selection providing an additional 11–16% improvement.",
+  "motivation": "Matching decoders require accurate noise models to perform near-optimally, but standard uniform circuit-level assumptions poorly capture real device-dependent errors; leveraging shot-specific characterization and measurement information can substantially improve logical error correction performance on current superconducting hardware.",
+  "method": "The dynamic compass code uses a dynamic syndrome extraction schedule to maintain constant-weight detectors on the heavy-hex lattice; ACES characterization provides context-dependent gate and measurement error rates; soft decoding extracts state probabilities from raw IQ readout via Gaussian mixture models; leakage post-selection rejects shots exceeding a cutoff leakage probability using the soft information.",
+  "result": "On ibm_pittsburgh, the distance-5 dynamic compass code achieves 38.3% reduction in X-basis logical error rate and 24.2% reduction in Z-basis error rate using ACES+soft+leakage post-selection versus global calibration baseline, with per-round abort rates remaining below 4% in the optimized regime.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

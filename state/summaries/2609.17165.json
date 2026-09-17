@@ -1,0 +1,8 @@
+{
+  "summary": "A Josephson voltage standard is integrated as a noise-tolerant phase reference for dc-biased Josephson photonics devices, and that reference is shown to transfer coherently to an inelastic Cooper-pair tunneling amplifier through the superconducting order parameter. The low-phase-noise bias gives a 14 dB enhancement in averaged gain, improved quantum-limited noise performance, and the first observation of phase-sensitive gain and squeezing in a dc-biased amplifier.",
+  "motivation": "Microwave-pumped parametric devices suffer from parasitic Kerr nonlinearity and higher harmonics; dc-biased Josephson photonics avoids these but has been held back by high phase noise and the lack of a stable phase reference.",
+  "method": "The junction's voltage bias is locked to a Josephson voltage standard, and the resulting phase coherence is tested on an inelastic Cooper-pair tunneling amplifier.",
+  "result": "14 dB higher averaged gain, better quantum-limited noise performance, and phase-sensitive gain and squeezing demonstrated for the first time in a dc-biased amplifier.",
+  "source": "abstract",
+  "generated_by": "Claude, written in-session from the abstract (not via the script's API path)"
+}

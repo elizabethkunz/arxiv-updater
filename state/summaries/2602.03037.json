@@ -1,0 +1,8 @@
+{
+  "summary": "This work develops a quantitative model connecting interface roughness at Al/AlO$_x$ interfaces to Josephson energy variability in superconducting qubits by modeling roughness as a Gaussian random field and computing transport via the Ambegaokar–Baratoff relation. Monte Carlo simulations of 5,000 junctions show $E_J$ follows a log-normal distribution, with mean $E_J/h = 20.447 \text{ GHz}$ (for $\bar{d} = 1.0$ nm, $\bar{U} = 1.1$ eV, $\bar{\".pm",
+  "motivation": "Al/AlO$_x$/Al Josephson junctions are the core nonlinearity in transmon qubits, but small variations in barrier geometry cause exponentially sensitive fluctuations in critical current and qubit frequency; understanding and controlling this variability is essential for scaling beyond current 10$^2$–10$^3$ qubit processors toward fault-tolerant systems.",
+  "method": "Interface roughness is modeled as a Gaussian random field with RMS amplitude $\bar{\\sigma}$ and transverse correlation length $\bar{\\xi}$ (parameters from literature and molecular dynamics); quantum transport is computed using the Ambegaokar–Baratoff relation $I_c = \\pi\\Delta^2 e R_N$ combined with a local thickness approximation, applied to 5,000 junctions with varying barrier profiles.",
+  "result": "For $\\sigma = 0.85$ Å and $\\xi = 10$ nm, $E_J/h = 20.447 \\pm 2.326$ GHz; this translates to transmon qubit frequency $\\omega_{01}/2\\pi = 6.145 \\pm 0.364$ GHz (for $E_C/h = 0.25$ GHz). Both mean and variance of $E_J$ increase with $\\sigma$; variance increases sharply with $\\xi$ due to reduced self-averaging, while mean $E_J$ decreases slightly with larger $\\xi$ due to finite-size effects.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,317 @@
+{
+  "date": "2026-02-13",
+  "n_fetched": 88,
+  "papers": [
+    {
+      "id": "2602.11576",
+      "title": "Control the qubit-qubit coupling with double superconducting resonators",
+      "authors": [
+        "Hui Wang",
+        "Rui Wang",
+        "Daichi Sugiyama",
+        "Chih-Yao Shih",
+        "Ching-Yeh Chen",
+        "Hiroto Mukai",
+        "Hang Xue",
+        "J. S. Tsai"
+      ],
+      "abstract": "We experimentally studied the switching off processes in the double-resonator coupler superconducting quantum circuit. In both frequency and time-domain, we observed the variation of qubit-qubit effective coupling by tuning the frequency differences between qubits and the double-resonator coupler. According to the measurement results, by just shifting about 50 MHz of qubits' frequencies, we can tune the effective qubit-qubit coupling strength from switching off point to two qubit gate point (effective coupling larger than 5 MHz) in double-resonator superconducting quantum circuit.The double-resonator (coupler) superconducting quantum circuit has the advantage of simple fabrications, introducing less flux noises, reducing occupancy of dilution refrigerator cables,which might supply a promising platform for future large-scale superconducting quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-12",
+      "score": 0.9888679177686315,
+      "similar_to": [
+        {
+          "title": "A double-resonator coupler for high-fidelity two-qubit gates between superconducting qubits",
+          "id": "2609.05222",
+          "similarity": 0.9092434644699097
+        },
+        {
+          "title": "Superconducting coupler with exponentially large on-off ratio",
+          "id": "2107.09861",
+          "similarity": 0.8895938396453857
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates tunable qubit-qubit coupling in a double-resonator coupler circuit using two fixed-frequency resonators (4.47 GHz and 4.80 GHz) coupled to two tunable Xmon qubits. By tuning the qubits' frequencies with DC-bias currents, the effective coupling $g_\text{eff}$ can be modulated from a switching-off point (near zero) to approximately 5 MHz through a frequency shift of only 50 MHz, measured via two-tone spectroscopy and vacuum Rabi oscillations.",
+        "motivation": "Tunable couplers enable switchable interactions and reduced ZZ crosstalk in multi-qubit processors; the double-resonator approach offers advantages over transmon couplers including simpler fabrication, reduced flux noise, and smaller physical footprint without additional control lines.",
+        "method": "Two tunable qubits coupled capacitively to two common fixed-frequency resonators allow frequency-selective interactions. The effective coupling $g_\text{eff} = \\frac{1}{2}\\sum_{\\lambda=a,b}\\left(\\frac{g_{\\lambda 1}g_{\\lambda 2}}{\\Delta_{\\lambda\\beta}} - \\frac{g_{\\lambda 1}g_{\\lambda 2}}{\\Sigma_{\\lambda\\beta}}\\right) + g_{12}$ was characterized in frequency domain (two-tone spectroscopy with $g_{\\lambda\\beta} \\approx 27$–30 MHz) and time domain (vacuum Rabi oscillations) as qubit-1 frequency was swept near qubit-2 using flux pulses.",
+        "result": "Anti-crossing gaps measured in two-tone spectroscopy reduce from $\\sim$10 MHz to below 2 MHz and approach zero at the switching-off point (qubit-2 at 4.37 GHz); vacuum Rabi measurements confirm coupling variation with frequency detuning, showing measurable envelope modulation despite low SNR (no Josephson parametric amplifier, 25 mK base temperature).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.11739",
+      "title": "Experimental setup for the combined study of spin ensembles and superconducting quantum circuits",
+      "authors": [
+        "Lukas Vogl",
+        "Gerhard B. P. Huber",
+        "Ana Strinić",
+        "Achim Marx",
+        "Stefan Filipp",
+        "Kirill G. Fedorov",
+        "Rudolf Gross",
+        "Nadezhda P. Kukharchyk"
+      ],
+      "abstract": "A hybrid quantum computing architecture combining quantum processors and quantum memory units allows for exploiting each component's unique properties to enhance the overall performance of the total system. However, superconducting qubits are highly sensitive to magnetic fields, while spin ensembles require finite fields for control, creating a major integration challenge. In this work, we demonstrate the first experimental setup that satisfies these constraints and provides verified qubit stability. Our cryogenic setup comprises two spatially and magnetically decoupled sample volumes inside a single dilution refrigerator: one hosting flux-tunable superconducting qubits and the other a spin ensemble equipped with a superconducting solenoid generating fields up to 50 mT. We show that several layers of Cryophy shielding and an additional superconducting aluminum shield suppress magnetic crosstalk by more than eight orders of magnitude, ensuring stability of the qubit's performance. Moreover, the operation of the solenoid adds minimal thermal load on the relevant stages of the dilution refrigerator. Our results enable scalable hybrid quantum architectures with low-loss integration, marking a key step toward scalable hybrid quantum computing platforms.",
+      "categories": [
+        "physics.app-ph",
+        "quant-ph"
+      ],
+      "published": "2026-02-12",
+      "score": 0.8982908944215109,
+      "similar_to": [
+        {
+          "title": "The superconducting grid-states qubit",
+          "id": "2509.14656",
+          "similarity": 0.8585247993469238
+        },
+        {
+          "title": "Quantum Computer Controlled by Superconducting Digital Electronics at Millikelvin Temperature",
+          "id": "2503.09879",
+          "similarity": 0.8581610918045044
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates the first experimental setup integrating flux-tunable superconducting qubits and spin ensembles in separate sample volumes within a single dilution refrigerator, achieving magnetic field suppression by more than eight orders of magnitude. The hybrid architecture uses a superconducting NbTi solenoid generating fields up to 50 mT enclosed in layered Cryophy® and superconducting aluminum shields, with verified qubit stability under full field operation.",
+        "motivation": "Hybrid quantum systems combining superconducting processors with spin-ensemble quantum memories promise enhanced performance, but the incompatibility of operating conditions—spin ensembles require moderate-to-high magnetic fields (300 mT–1.5 T) while superconducting qubits are highly sensitive to magnetic perturbations—presents a major integration challenge that had not been experimentally solved in a single cryogenic environment.",
+        "method": "Two spatially separated sample volumes 250 mm apart were installed in a Bluefors XLD 1000sl dilution refrigerator: sample volume 1 housed flux-tunable qubits with Cryoperm® shielding, while sample volume 2 contained a superconducting solenoid (4360 turns of 101 µm NbTi wire, inner diameter 70 mm) at 100 mK generating the magnetic field, enclosed in three 1 mm-thick Cryophy® magnetic shields with the outermost replaced by superconducting aluminum. Magnetic field distribution and qubit coherence were characterized via simulation and direct measurement.",
+        "result": "A flux-tunable qubit with $E_{J1}/h = 16.9$ GHz and $E_{J2}/h = 8.4$ GHz showed no detectable frequency shift or coherence degradation ($T_2^* \\approx 1.3$ µs) when the solenoid field was swept through $\\pm 50$ mT, corresponding to an attenuation factor of $> 10^8$ at the qubit position. Field homogeneity at the optimal sample position was better than $10^{-4}$ over $\\pm 1$ cm radially and $10^{-3}$ over $\\pm 10$ mm axially, with thermal load from solenoid operation estimated at 4.2 mW at the 4 K stage.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.11912",
+      "title": "Millisecond-Scale Calibration and Benchmarking of Superconducting Qubits",
+      "authors": [
+        "Malthe A. Marciniak",
+        "Rune T. Birke",
+        "Johann B. Severin",
+        "Fabrizio Berritta",
+        "Daniel Kjær",
+        "Filip Nilsson",
+        "Smitha N. Themadath",
+        "Sangeeth Kallatt",
+        "James L. Webb",
+        "Kristoffer Bentsen",
+        "Tonny Madsen",
+        "Zhenhai Sun",
+        "Svend Krøjer",
+        "Christopher W. Warren",
+        "Jacob Hastrup",
+        "Morten Kjaergaard"
+      ],
+      "abstract": "Superconducting qubit parameters drift on sub-second timescales, motivating calibration and benchmarking techniques that can be executed on millisecond timescales. We demonstrate an on-FPGA workflow that co-locates pulse generation, data acquisition, analysis, and feed-forward, eliminating CPU round trips. Within this workflow, we introduce sparse-sampling and on-FPGA inference tools, including computationally efficient methods for estimation of exponential and sine-like response functions, as well as on-FPGA implementations of Nelder-Mead optimization and golden-section search. These methods enable low-latency primitives for readout calibration, spectroscopy, pulse-amplitude calibration, coherence estimation, and benchmarking. We deploy this toolset to estimate $T_1$ in 10 ms, optimize readout parameters in 100 ms, optimize pulse amplitudes in 1 ms, and perform Clifford randomized gate benchmarking in 107 ms on a flux-tunable superconducting transmon qubit. Running a closed-loop on-FPGA recalibration protocol continuously for 6 hours enables more than 74,000 consecutive recalibrations and yields gate errors that consistently retain better performance than the baseline initial calibration. Correlation analysis shows that recalibration suppresses coupling of gate error to control-parameter drift while preserving a coherence-linked performance. Finally, we quantify uncertainty versus time-to-decision under our sparse sampling approaches and identify optimal parameter regimes for efficient estimation of qubit and pulse parameters.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-12",
+      "score": 0.8812232317924948,
+      "similar_to": [
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.8836920261383057
+        },
+        {
+          "title": "Benchmarking the readout of a superconducting qubit for repeated measurements",
+          "id": "2407.10934",
+          "similarity": 0.8762503862380981
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates an on-FPGA calibration and benchmarking workflow for superconducting qubits that achieves millisecond time-to-decision by co-locating pulse generation, data acquisition, analysis, and feedback on the control hardware. The workflow introduces analytical decay estimation (ADE) and sparse phase estimation (SPE) methods that enable rapid extraction of $T_1$, readout parameters, pulse amplitudes, and gate fidelities while operating a flux-tunable transmon in a closed-loop recalibration protocol over 6 hours.",
+        "motivation": "Superconducting qubit parameters drift on sub-second timescales, but conventional calibration workflows suffer from millisecond-scale communication latency when offloading data to a CPU for analysis, making them fundamentally mismatched to environmental dynamics and unable to track coherence fluctuations of $T_1 = 14.5$–$27.5$ μs observed in real devices.",
+        "method": "The authors implement on-FPGA versions of calibration primitives using sparse sampling ($n=3$ points) with closed-form analytical estimators: ADE extracts exponential decay rates via a SPAM-independent formula, and SPE estimates phase corrections from sinusoidally-varying signals. Additional primitives use on-FPGA implementations of Nelder–Mead optimization (readout tuning in 100 ms) and golden-section search (spectroscopy in 39 ms), all executing within the 25 ms LAN round-trip latency baseline.",
+        "result": "On-FPGA recalibration achieves $T_1$ estimation in 10 ms, $\\pi$-pulse amplitude optimization in 1 ms, and Clifford randomized benchmarking in 107 ms. Over 6 hours with 74,525 recalibration cycles, continuous feedback yields a 6.4% reduction in average gate infidelity ($\\epsilon_g$) relative to static calibration; correlation analysis shows recalibration suppresses gate-error coupling to detuning and amplitude drift while preserving correlation to instantaneous coherence.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.11469",
+      "title": "Structural control of two-level defect density revealed by high-throughput correlative measurements of Josephson junctions",
+      "authors": [
+        "Oliver F. Wolff",
+        "Harshvardhan Mantry",
+        "Rahim Raja",
+        "Wei-Hsiang Peng",
+        "Kaushik Singirikonda",
+        "Seungkyun Lee",
+        "Shishir Sudhaman",
+        "Rafael Goncalves",
+        "Pinshane Y. Huang",
+        "Angela Kou",
+        "Wolfgang Pfaff"
+      ],
+      "abstract": "Materials defects in Josephson junctions (JJs), often referred to as two-level systems (TLS), couple to superconducting qubits and are a critical bottleneck for scalable quantum processors. Despite their importance, understanding the microscopic sources of TLS and how to mitigate them has remained a major challenge. Here, we demonstrate a high-throughput, correlated approach to trace the microstructural origins of strongly-coupled TLS in Josephson circuits. We assembled a massive dataset of TLS across 6,000 Al/AlOx/Al JJs and more than 600 atomic resolution transmission electron microscopy images. We statistically link fabrication, microstructure, and TLS occurrence, revealing a strong correlation between Al electrode thickness, Al grain size, and TLS density. Correspondingly, we find a two-thirds reduction in TLS prompted by a change in electrode fabrication parameters. These results demonstrate a robust, data-driven methodology to understand and control defects in quantum circuits and pave the way for significantly reducing TLS density.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-02-12",
+      "score": 0.8730523924343843,
+      "similar_to": [
+        {
+          "title": "Observation of directly interacting coherent two-level systems in a solid",
+          "id": "1503.03681",
+          "similarity": 0.8732610940933228
+        },
+        {
+          "title": "Towards understanding two-level-systems in amorphous solids -- Insights from quantum circuits",
+          "id": "1705.01108",
+          "similarity": 0.8560084700584412
+        }
+      ],
+      "summary": {
+        "summary": "This work establishes a high-throughput methodology to correlate two-level system (TLS) density in Al/AlOx/Al Josephson junctions with fabrication parameters and microstructure using 6,000 junctions and 600+ STEM images. A two-thirds reduction in TLS density ($\\rho_{\\mathrm{TLS}}$: from $0.20 \\pm 0.10$ to $0.07 \\pm 0.04$ GHz$^{-1}$ µm$^{-2}$) is achieved by increasing Al electrode thickness, which correlates with larger grain size (128 nm versus 40–60 nm) and reduced grain boundary density.",
+        "motivation": "Strongly-coupled TLS in Josephson junctions limit qubit coherence and reliability, but their microscopic origins remain poorly understood and current mitigation strategies (thermal cycling, strain, electric fields) are complex and unscalable. Establishing direct correlations between fabrication, microstructure, and TLS density could enable predictive control through improved fabrication methods.",
+        "method": "An automated resonator spectroscopy workflow detected 393 distinct TLS across five samples via residual-peak identification; an empirical Bayesian framework with calibrated false-positive and false-negative rates inferred TLS densities. Cross-sectional STEM imaging extracted electrode thickness, grain size, and roughness metrics across 709 images, which were statistically linked to TLS density via Pearson correlation and ridge regression.",
+        "result": "Thicker Al electrodes (bottom 100 nm, top 150 nm) reduced mean TLS density by two-thirds compared to standard devices, with statistical significance ($p \\le 0.05$, Kruskal–Wallis). Mean electrode thickness and grain size showed statistically significant correlations with reduced $\\rho_{\\mathrm{TLS}}$, with permutation importance identifying mean thickness as the primary predictor.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.12248",
+      "title": "Simultaneous High-Fidelity Readout and Strong Coupling for a Donor-Based Spin Qubit",
+      "authors": [
+        "Si Yan Koh",
+        "Weifan Wu",
+        "Kelvin Onggadinata",
+        "Arghya Maity",
+        "Mark Chiyuan Ma",
+        "Calvin Pei Yu Wong",
+        "Kuan Eng Johnson Goh",
+        "Bent Weber",
+        "Hui Khoon Ng",
+        "Teck Seng Koh"
+      ],
+      "abstract": "Superconducting resonators coupled to solid-state qubits offer a scalable architecture for long-range entangling operations and fast, high-fidelity readout. Realizing this requires low photon-loss rates and qubits with tunable electric dipole moments that couple strongly to the resonator's electric field while maintaining long coherence times. For spin qubits, spin-photon coupling is typically achieved via spin-charge hybridization. However, this introduces a fundamental trade-off: a large spin-charge admixture enhances the coupling strength, which boosts readout and resonator-mediated gate speeds, but exposes the qubit to increased decoherence, thereby increasing the threshold required for strong coupling and limiting the time available for accurate state measurement. This makes it essential to identify optimal operating points for each qubit platform. We address this for the donor-based flip-flop qubit, whose microwave-controllable electron-nuclear spin states make it suitable for coupling to microwave resonators. We demonstrate that, by choosing intermediate tunnel couplings that balance strong interaction with long qubit lifetimes, high-fidelity readout and strong coupling are simultaneously achievable. We also map out the respective charge-photon couplings and photon-loss rates required. Furthermore, we show that experimental constraints on charge-photon coupling and photon loss can be mitigated using squeezed input fields. As similar trade-offs appear in quantum-dot-based qubits, our methods and insights extend naturally to these platforms, offering a potential route toward scalable architectures.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-02-12",
+      "score": 0.7700577788442878,
+      "similar_to": [
+        {
+          "title": "Enhancing Dispersive Readout of Superconducting Qubits Through Dynamic Control of the Dispersive Shift: Experiment and Theory",
+          "id": "2307.07765",
+          "similarity": 0.8769493103027344
+        },
+        {
+          "title": "Realizing Rapid, High-Fidelity, Single-Shot Dispersive Readout of Superconducting Qubits",
+          "id": "1701.06933",
+          "similarity": 0.8761127591133118
+        }
+      ],
+      "summary": {
+        "summary": "This paper demonstrates that simultaneous high-fidelity readout ($F \\geq 99\\%$, $\\mathrm{SNR}^2 \\geq 282$) and strong coupling ($g_s \\geq \\kappa$) are achievable in donor-based flip-flop qubits coupled to superconducting resonators by optimizing the tunnel coupling $V_t$. The authors rigorously map the competing trade-offs between spin-photon coupling strength, qubit relaxation, and readout efficiency, showing that intermediate $V_t \\approx 2\\pi \\times (10$–$16)$ GHz provides the widest operational window, with squeezed input fields offering a practical route to relax experimental constraints on charge-photon coupling $g_c$ and photon loss $\\kappa$.",
+        "motivation": "Scaling spin qubits via circuit QED requires strong spin-photon coupling for long-range interactions and high-fidelity readout, but spin-charge hybridization—necessary to generate an electric dipole moment—introduces competing decoherence and relaxation channels that degrade readout performance. This work identifies optimal operating points that balance these fundamental constraints in the flip-flop qubit platform.",
+        "method": "The authors perform Schrieffer-Wolff transformations to derive the dispersive Hamiltonian, account for valley-enhanced phonon-mediated relaxation ($\\gamma_{\\mathrm{FF}}$ following Eq. 15 with $\\Theta = 2.37 \\times 10^{-24}$ s$^2$) and Purcell decay ($\\gamma_{\\mathrm{pu}} \\approx g_s^2 \\kappa / \\Delta_-^2$), and use input-output theory to calculate the readout SNR and signal-to-noise ratio-limited fidelity. They systematically map the parameter space ($\\epsilon$, $V_t$, $g_c$, $\\kappa$) against critical photon numbers and validity constraints to identify regimes where both metrics are simultaneously optimized.",
+        "result": "For realistic parameters ($g_c = 2\\pi \\times 75$ MHz, $\\kappa = 2\\pi \\times 0.325$ MHz), simultaneous strong coupling and $F \\geq 99\\%$ fidelity is accessible at $V_t \\approx 2\\pi \\times (10$–$16)$ GHz with no squeezing; modest squeezing ($r \\approx 0.37$–$2.3$) extends this window and enables $F \\approx 99.3\\%$ at higher $V_t$, demonstrating that experimentally achievable squeezing (currently $\\sim 15$ dB) can bridge the $g_c$ and $\\kappa$ bottlenecks for scalable cQED architectures.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9889,
+    0.8983,
+    0.8812,
+    0.8731,
+    0.7701,
+    0.4765,
+    0.3512,
+    0.3016,
+    0.2893,
+    0.2617,
+    0.2075,
+    0.1975,
+    0.1959,
+    0.1925,
+    0.1856,
+    0.1842,
+    0.1839,
+    0.1833,
+    0.1514,
+    0.1293,
+    0.1267,
+    0.116,
+    0.1129,
+    0.1025,
+    0.0842,
+    0.0838,
+    0.0806,
+    0.0771,
+    0.0752,
+    0.0698,
+    0.0685,
+    0.0648,
+    0.0647,
+    0.0597,
+    0.0579,
+    0.0544,
+    0.0539,
+    0.0506,
+    0.0461,
+    0.0447,
+    0.0431,
+    0.0418,
+    0.0402,
+    0.0357,
+    0.0352,
+    0.0331,
+    0.033,
+    0.0323,
+    0.0316,
+    0.03,
+    0.0298,
+    0.0296,
+    0.0291,
+    0.0289,
+    0.0266,
+    0.0249,
+    0.0214,
+    0.0192,
+    0.019,
+    0.0167,
+    0.0165,
+    0.016,
+    0.0159,
+    0.0158,
+    0.0154,
+    0.014,
+    0.0117,
+    0.0111,
+    0.011,
+    0.0107,
+    0.0101,
+    0.0093,
+    0.0091,
+    0.007,
+    0.0069,
+    0.0068,
+    0.0061,
+    0.0061,
+    0.0049,
+    0.0048,
+    0.0048,
+    0.0047,
+    0.004,
+    0.0037,
+    0.0034,
+    0.0026,
+    0.0025,
+    0.0014
+  ]
+}

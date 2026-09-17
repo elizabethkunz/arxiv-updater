@@ -1,0 +1,8 @@
+{
+  "summary": "This paper evaluates speculative window decoding for quantum error correction across a range of qubit technologies and parameters, extending beyond the superconducting-qubit regime with fast gates where it was previously benchmarked. The work identifies design principles for when speculative decoding outperforms conventional decoding and characterizes regimes where non-speculative decoders are superior.",
+  "motivation": "Speculative window decoding was validated only for fast-gate superconducting qubits with surface codes and matching decoders; its performance across slower quantum platforms and diverse codes, decoders, and hardware parameters remains unexplored.",
+  "method": "The authors systematically evaluated speculative decoder performance as a function of gate speed, speculation accuracy, decoder latency, processor count, and workload parallelism, establishing conditions for when speculation yields performance gains.",
+  "result": "The analysis reveals crossover regimes where speculative decoders underperform conventional decoders, establishing quantitative design principles for decoder architecture selection across different quantum error correction implementations.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

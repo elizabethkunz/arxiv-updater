@@ -1,0 +1,290 @@
+{
+  "date": "2026-07-10",
+  "n_fetched": 122,
+  "papers": [
+    {
+      "id": "2607.07798",
+      "title": "Observation of coherent flux-charge interaction in a gate-tunable fluxonium",
+      "authors": [
+        "Brian D. Isakov",
+        "Shikhar Singh",
+        "Adrian Parra-Rodriguez",
+        "David Feldstein-Bofill",
+        "Zhenhai Sun",
+        "Anders Kringhøj",
+        "Svend Krøjer",
+        "Alexandre Blais",
+        "Morten Kjaergaard",
+        "András Gyenis"
+      ],
+      "abstract": "Interactions that mix conjugate variables, such as the flux through a circuit element and the charge across it, lie outside the reach of the elementary couplings of superconducting circuits. Capacitors connect charge to charge, and inductors connect flux to flux, while no two-terminal element couples flux to charge directly. A native flux-charge coupling would thus serve as a circuit primitive in its own right, opening direct routes to non-reciprocity, protected modes, and unconventional readout. In this work, we demonstrate a flux-charge coupling by harnessing a voltage-tunable Josephson junction with parametrically modulated critical current, which mediates the interaction between a classical charge variable and a quantum flux operator. Relying on parity-selection rules in a hybrid superconducting-semiconductor fluxonium, we isolate the flux-charge coupling from other parasitic capacitive contributions and perform cross-quadrature-activated coherent control of states. Critically, we realize a flux-charge coupling that scales linearly with driving amplitude while keeping the transition energy first-order-insensitive to gate voltage. Such unconventional interaction broadens the toolbox of superconducting circuits with a critical missing component that enables the coherent coupling of conjugate variables.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-07-08",
+      "score": 0.8718418161873306,
+      "similar_to": [
+        {
+          "title": "Quasiparticle-induced transitions in a fluxonium qubit",
+          "id": "2607.21329",
+          "similarity": 0.8505565524101257
+        },
+        {
+          "title": "Optimizing the frequency positioning of tunable couplers in a circuit QED processor to mitigate spectator effects on quantum operations",
+          "id": "2503.13225",
+          "similarity": 0.8466897010803223
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates coherent flux-charge coupling in a gate-tunable fluxonium by parametrically modulating the critical current of a voltage-tunable InAs/Al Josephson junction, enabling direct interaction between a classical charge variable and a quantum flux operator. The coupling is isolated from parasitic capacitive effects using parity selection rules at half-flux frustration, enabling charge-insensitive yet strongly coupled control via a ChIVE point where $\\partial f_{02}/\\partial E_J = 0$.",
+        "motivation": "Superconducting circuits lack a native two-terminal element that couples conjugate flux and charge variables, unlike separate capacitors (charge-charge) and inductors (flux-flux). Cross-quadrature coupling enables non-reciprocal devices, squeezing, and protected modes unavailable with conventional same-quadrature interactions.",
+        "method": "A hybrid superconductor-semiconductor fluxonium with $E_J/h = 3.28$ GHz, $E_L/h = 1.00$ GHz, and $E_C/h = 0.88$ GHz employs a gate-tunable junction (gate line) alongside a standard drive line. At $\\Phi_\\mathrm{ext} = \\Phi_0/2$, parity symmetry forbids $\\langle 2|\\hat{n}|0\\rangle$ transitions but allows $\\langle 2|\\cos\\hat{\\phi}|0\\rangle$. The flux-charge coupling $g_\\mathrm{FC} \\propto \\partial E_J/\\partial V_G$ scales linearly with drive amplitude while remaining first-order insensitive to gate noise at the ChIVE point.",
+        "result": "Two-tone spectroscopy isolates the $|0\\rangle \\to |2\\rangle$ transition at half-flux quantum exclusively via gate-line driving ($\\partial E_J/\\partial V_G \\approx 76$ GHz/V), whereas drive-line excitation is forbidden. Rabi oscillations with 48 ns Gaussian pulses confirm coherent flux-charge control at $f_d = 3.61$ GHz, with measured $T_1$ and $T_2$ comparable to state-of-the-art superconducting qubits.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.07999",
+      "title": "Optimizing LZSM protocol for high-fidelity gates in open-system fluxonium",
+      "authors": [
+        "Santiago Ferreyra",
+        "Valentın Reparaz",
+        "Maria Jose Sanchez",
+        "Leandro Tosi",
+        "Daniel Dominguez"
+      ],
+      "abstract": "Quantum gates based on resonant Rabi oscillations are inherently slow for small-frequency qubits. They are also prone to errors due to counter-rotating terms. However, when the anharmonicity is sufficiently high, as in the fluxonium architecture, alternative manipulation protocols can outperform standard resonant driving. In this work, we implement fast, high-fidelity quantum gates based on a one-period Landau-Zener-Stückelberg-Majorana (LZSM) driving protocol. We derive analytical expressions that simplify the exploration of the parameter space while accounting for the multi-level structure of the circuit. Furthermore, we analyze the role of leakage, discussing strategies to mitigate it and identifying regimes in which it becomes the dominant source of error. Finally, to evaluate the impact of dissipation on gate fidelity, we develop a robust formalism suitable for analyzing the open-system performance of quantum gates in the strong driving regime.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-07-09",
+      "score": 0.6532416915296455,
+      "similar_to": [
+        {
+          "title": "High-Fidelity, Frequency-Flexible Two-Qubit Fluxonium Gates with a Transmon Coupler",
+          "id": "2304.06087",
+          "similarity": 0.8807601928710938
+        },
+        {
+          "title": "Suppressing Counter-Rotating Errors for Fast Single-Qubit Gates with Fluxonium",
+          "id": "2406.08295",
+          "similarity": 0.87229323387146
+        }
+      ],
+      "summary": {
+        "summary": "This work develops a theoretical framework for optimizing Landau-Zener-Stückelberg-Majorana (LZSM) single-qubit gates in fluxonium circuits, incorporating multilevel dynamics, leakage mitigation, and open-system dissipation. Fast, high-fidelity Y(π/2) rotations are demonstrated with gate errors approaching $10^{-5}$ at 2 ns and $10^{-5}$ at 1.3 ns in optimal architectures accounting for environmental decoherence.",
+        "motivation": "LZSM protocols offer speed advantages over resonant Rabi-driven gates in low-frequency qubits with large anharmonicity, but standard two-level analytical tools neglect multilevel structure and strong-drive-dependent dissipation that become critical in real fluxonium devices.",
+        "method": "The authors derive analytical solutions via the counter-rotating hybridized rotating-wave approximation (CHRW) and a Floquet-Schrieffer-Wolf (FSW) effective Hamiltonian accounting for qubit-frequency renormalization by higher levels, identify leakage-suppression valleys at privileged frequencies $\\omega_d = \\omega_{21}/n$ ($n \\geq 2$), and analyze open-system fidelity using a Floquet-Born-Markov master equation capturing drive-amplitude-dependent $T_1(A_e, \\omega_d)$ from dielectric loss.",
+        "result": "For a moderate architecture with $\\{E_J, E_C, E_L\\} = \\{4, 1, 1\\} \\times 2\\pi$ GHz ($\\omega_{10}/2\\pi = 0.58$ GHz, $\\alpha/2\\pi = 2.81$ GHz), LZSM gates achieve infidelity $\\sim 10^{-5}$ and $t_g \\approx 1.92$ ns; optimization across architecture space reveals regimes around $E_L/E_J \\sim 0.1$ and $E_C/E_J \\sim 0.5$ achieving $\\mathcal{F}_g > 0.99995$ with $t_g < 1.3$ ns at $T_b = 15$ mK and $T_1^0 = 500$ μs.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.08363",
+      "title": "Stroboscopic Stabilization of Cat Qubits",
+      "authors": [
+        "Timo Hillmann",
+        "Franco Nori",
+        "Fernando Quijandría"
+      ],
+      "abstract": "Dissipatively stabilized cat qubits provide a promising route toward fault-tolerant quantum computation, exhibiting exponential suppression of bit-flip errors with increasing phase-space separation of the logical states, while incurring only a linear increase in phase-flip errors. Existing implementations rely on engineered two-photon dissipation via nonlinear coupling to a lossy environment, an approach largely confined to superconducting platforms and limited by spurious decay channels and finite dissipation rates. Here, we propose a fundamentally different stabilization paradigm based on repeated interactions with an auxiliary two-level system mediated by a quadratic Hamiltonian, enabling dissipative stabilization without reservoir engineering. Our approach overcomes key limitations of existing schemes and is compatible with a wider class of experimental platforms. Furthermore, it preserves the noise bias and extends to squeezed cat qubits, rendering single-photon loss errors partially correctable.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-09",
+      "score": 0.6142659450312471,
+      "similar_to": [
+        {
+          "title": "The Kerr-Cat Qubit: Stabilization, Readout, and Gates",
+          "id": "1907.12131",
+          "similarity": 0.8852676153182983
+        },
+        {
+          "title": "Quantum control of a cat-qubit with bit-flip times exceeding ten seconds",
+          "id": "2307.06617",
+          "similarity": 0.8519006371498108
+        }
+      ],
+      "summary": {
+        "summary": "This work proposes stroboscopic stabilization of cat qubits via repeated interactions with an auxiliary two-level system mediated by quadratic Hamiltonians, eliminating the need for engineered two-photon dissipation. The protocol preserves the noise bias, extends to squeezed cat qubits with partial single-photon-loss correction, and is compatible with trapped-ion and circuit-QED platforms.",
+        "motivation": "Existing cat-qubit implementations rely on two-photon dissipation via nonlinear couplings to lossy reservoirs, limiting scalability and platform compatibility. A stabilization scheme without reservoir engineering would overcome these constraints and enable broader experimental implementations.",
+        "method": "The authors derive stroboscopic stabilization sequences (small-Big-small, Sharpen-Trim, Big-small-Big) from a modular dissipator $d_\\Delta^\\mu$ using Suzuki-Trotter decompositions, implemented via conditional displacements $\\mathrm{CD}(\\alpha)$ and qubit rotations. The stabilizer operator $S_\\Delta = -\\exp[\\pi(i\\hat{q} - \\Delta^2\\hat{p})/2\\alpha]$ has period $2\\sqrt{2}\\alpha$ and fixes $\\Gamma\\delta t = \\Delta\\pi/2\\sqrt{2}\\alpha$ for modularity.",
+        "result": "Simulations show exponential bit-flip suppression $\\Gamma_Z \\sim \\exp(-c|\\beta_\\mathrm{eff}|^2)$ with $c \\approx 3$ for the small-Big-small sequence at $\\alpha \\gg 1$. For squeezed cat qubits with $r=0.4$ and $\\kappa_- \\delta t = 10^{-3}$, bit-flip rates reach $\\approx 10^{-6}$ at $n_\\mathrm{bar} \\approx 4$, with phase-flip rates partially suppressed by squeezing and auxiliary-qubit dephasing contributing linearly at low rates ($\\gamma_\\phi/\\kappa_- = 1$).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.08078",
+      "title": "Experimental demonstration of entanglement sudden death induced by natural dissipation",
+      "authors": [
+        "Yan Wang",
+        "Hao-Long Zhang",
+        "Jia-Hao Lü",
+        "Ken Chen",
+        "Wen Ning",
+        "Li-Hua Lin",
+        "Zhen-Biao Yang",
+        "Shi-Biao Zheng"
+      ],
+      "abstract": "Any quantum system inevitably interacts with its natural environment, which can be modeled as a Markovian reservoir consisting of a continuum of electromagnetic field modes. The quantum coherence of qubits in a zero-temperature natural reservoir decays asymptotically, whereas the quantum entanglement of two qubits coupled to such reservoirs may disappear in a finite time. This phenomenon, referred to as entanglement sudden death (ESD), has been simulated with artificially engineered dissipative channels, but ESD induced by natural dissipative channels has not been confirmed. We here present the first demonstration of natural-dissipation-induced ESD for two photonic qubits, each stored in a leaky resonator of a superconducting circuit. The disentanglement dynamics of the two photonic qubits is monitored with two ancilla superconducting qubits, which can be controllably coupled to the corresponding leaky resonators. The techniques developed in our experiment pave the way for experimental exploration of entanglement dynamics in natural environments.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-09",
+      "score": 0.5221045786447968,
+      "similar_to": [
+        {
+          "title": "Driven-dissipative entanglement of distant giant atoms",
+          "id": "2606.13375",
+          "similarity": 0.8662112951278687
+        },
+        {
+          "title": "Entanglement assisted probe of the non-Markovian to Markovian transition in open quantum system dynamics",
+          "id": "2401.13735",
+          "similarity": 0.8579201698303223
+        }
+      ],
+      "summary": {
+        "summary": "This work presents the first experimental demonstration of entanglement sudden death (ESD) induced by natural dissipation, where two photonic qubits stored in leaky superconducting circuit QED resonators lose entanglement in finite time despite asymptotic individual decay. Two ancilla qubits prepare and measure the photonic qubit state while monitoring disentanglement dynamics under Markovian spontaneous emission with decay rates $\\kappa_1 \\approx 1/240$ ns$^{-1}$ and $\\kappa_2 \\approx 1/226$ ns$^{-1}$.",
+        "motivation": "ESD has been theoretically predicted and simulated using engineered dissipative channels or non-Markovian environments, but direct confirmation under natural vacuum reservoir dissipation has been missing. This experiment addresses the gap by realizing the original Yu-Eberly scenario with controllable circuit QED.",
+        "method": "An X-type mixed entangled state is prepared in readout resonators $R_1$ ($\\omega_1^r/2\\pi \\approx 6.65$ GHz) and $R_2$ ($\\omega_2^r/2\\pi \\approx 6.76$ GHz) via parametric sideband coupling to ancilla qubits $Q_1$ and $Q_2$ ($T_1 = 11.2$ and $21.6$ µs), then allowed to evolve under natural decay, and finally state-tomography is performed by reverse mapping back to the ancillas.",
+        "result": "Concurrence measurements show that for sufficiently large initial entanglement parameter $\\beta > 1/2$, entanglement completely vanishes at a finite time $t_\\mathrm{ESD}$ (measured up to 400 ns), whereas for $\\beta \\leq 1/2$ it decays monotonically; the observed ESD times and critical conditions agree with master equation predictions across the measured parameter range.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8718,
+    0.6532,
+    0.6143,
+    0.5221,
+    0.4307,
+    0.4123,
+    0.3195,
+    0.2851,
+    0.2674,
+    0.2501,
+    0.2314,
+    0.2244,
+    0.2198,
+    0.1868,
+    0.1818,
+    0.1794,
+    0.1748,
+    0.173,
+    0.1702,
+    0.1637,
+    0.1447,
+    0.1319,
+    0.1308,
+    0.1299,
+    0.1251,
+    0.1223,
+    0.122,
+    0.1163,
+    0.1108,
+    0.1095,
+    0.1061,
+    0.1043,
+    0.1036,
+    0.0953,
+    0.0953,
+    0.0918,
+    0.0899,
+    0.0828,
+    0.0799,
+    0.0708,
+    0.0686,
+    0.0589,
+    0.0586,
+    0.057,
+    0.0558,
+    0.0541,
+    0.0537,
+    0.0537,
+    0.0523,
+    0.0521,
+    0.0504,
+    0.0497,
+    0.0486,
+    0.0475,
+    0.0469,
+    0.0461,
+    0.0459,
+    0.0435,
+    0.0419,
+    0.0409,
+    0.0398,
+    0.039,
+    0.0362,
+    0.0346,
+    0.0346,
+    0.034,
+    0.0325,
+    0.0296,
+    0.0289,
+    0.0288,
+    0.0278,
+    0.0263,
+    0.0244,
+    0.0237,
+    0.0233,
+    0.023,
+    0.0218,
+    0.0215,
+    0.0214,
+    0.0212,
+    0.021,
+    0.0203,
+    0.0198,
+    0.0186,
+    0.0178,
+    0.0172,
+    0.0161,
+    0.016,
+    0.0143,
+    0.014,
+    0.0135,
+    0.0133,
+    0.0131,
+    0.0127,
+    0.0124,
+    0.0116,
+    0.0114,
+    0.0114,
+    0.0107,
+    0.0107,
+    0.0102,
+    0.0097,
+    0.0095,
+    0.0091,
+    0.0075,
+    0.0072,
+    0.006,
+    0.0057,
+    0.0049,
+    0.0047,
+    0.0044,
+    0.0039,
+    0.0036,
+    0.003,
+    0.0029,
+    0.0028,
+    0.0027,
+    0.0025,
+    0.002,
+    0.0015,
+    0.0013,
+    0.0005
+  ]
+}

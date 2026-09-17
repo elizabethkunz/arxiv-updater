@@ -1,0 +1,8 @@
+{
+  "summary": "Syndrome resampling (SR) enhances quantum error correction thresholds by reweighting syndromes according to powers of their probability distribution, establishing a connection to Rényi coherent information phase transitions. Applied to surface codes, SR reduces logical error rates by up to four orders of magnitude in simulation and two orders in experimental lattice-surgery data without additional hardware or decoder modifications.",
+  "motivation": "Current superconducting qubit and trapped-ion QEC experiments operate near or above physical error thresholds, necessitating decoder-agnostic methods to suppress logical errors using only syndrome statistics.",
+  "method": "SR constructs the syndrome probability distribution $P(s)$ and resamples syndromes according to $Q_\\alpha(s) = P^\\alpha(s) / \\sum_s P^\\alpha(s)$, combined with maximum likelihood or minimum-weight perfect matching decoding. The method maps to phase transitions in the Rényi coherent information $I^{(\\alpha)} = S^{(\\alpha)}(\\rho_Q) - S^{(\\alpha)}(\\rho_{RQ})$, generating a family of thresholds parametrized by $\\alpha \\geq 1$.",
+  "result": "For the $d=5$ surface code under bit-flip noise, MLD with SR achieves thresholds of $p_{\\mathrm{th}} = 10.75(2)\\%$ ($\\alpha=1$), $17.74(3)\\%$ ($\\alpha=2$), and $20.93(2)\\%$ ($\\alpha=3$), compared to the standard $10.93\\%$. On a superconducting-qubit lattice-surgery experiment with surface-17 code, SR applied to 44268 samples retains 40% while achieving logical error reduction comparable to post-selection ($5\\%$ retention), yielding $\\sim 100\\times$ suppression of logical error rates.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

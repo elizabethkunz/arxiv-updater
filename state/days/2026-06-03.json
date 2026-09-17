@@ -1,0 +1,588 @@
+{
+  "date": "2026-06-03",
+  "n_fetched": 103,
+  "papers": [
+    {
+      "id": "2606.03815",
+      "title": "A Tutorial for Characterizing Transmon Qubits",
+      "authors": [
+        "Alexandre M. Souza",
+        "Davi A. D. Chaves",
+        "Carmem M. Gilardoni",
+        "Roberto S. Sarthour",
+        "João P. Sinnecker",
+        "Ivan S. Oliveira"
+      ],
+      "abstract": "Superconducting transmon qubits are a leading technology for quantum information processing, yet their reliable operation rests on meticulous calibration and characterization routines. These processes have been fine-tuned and are relatively well understood by the quantum computing community. Nevertheless, it is often challenging for newcomers to compile all the available information into a practical experimental flow. In this tutorial, we present a comprehensive walkthrough for the characterization and optimization of tunable transmon qubits, demonstrated on a commercial five-qubit processor. Moving beyond theoretical description, we detail in a straightforward manner the complete workflow, from cryogenic setup and wiring to parametric amplifier optimum operation, flux sweet-spot identification, pulse calibration, and readout optimization. We also demonstrate the characterization of qubit-qubit coupling, covering all steps before multiqubit operations. This guide serves as a reference for experimentalists seeking to efficiently bring up transmon-based quantum devices.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-02",
+      "score": 0.9514051399665945,
+      "similar_to": [
+        {
+          "title": "New material platform for superconducting transmon qubits with coherence times exceeding 0.3 milliseconds",
+          "id": "2003.00024",
+          "similarity": 0.8762120008468628
+        },
+        {
+          "title": "Transmon qubit readout fidelity at the threshold for quantum error correction without a quantum-limited amplifier",
+          "id": "2208.05879",
+          "similarity": 0.8702592253684998
+        }
+      ],
+      "summary": {
+        "summary": "This tutorial presents a comprehensive experimental workflow for characterizing and calibrating tunable transmon qubits, demonstrated on a commercial five-qubit Soprano-D2 processor in a dilution refrigerator. The paper details procedures from cryogenic setup through parametric amplifier optimization, flux sweet-spot identification, pulse calibration, readout optimization, and qubit-qubit coupling characterization, with emphasis on practical considerations and expected parameter ranges.",
+        "motivation": "While the theoretical principles of transmon control are well established, experimentalists face significant practical challenges in bringing up superconducting quantum devices, requiring repeated discovery of procedures, calibration heuristics, and failure modes that vary with specific hardware and wiring schemes.",
+        "method": "The authors applied a systematic sequence of spectroscopy and calibration measurements to a five-qubit coupled transmon chip, including VNA-based resonator spectroscopy, one-tone and two-tone qubit spectroscopy, Rabi oscillations for pulse calibration, dispersive readout optimization via $IQ$ diagrams, avoided-level-crossing measurements for coupling characterization, and deterministic benchmarking for error quantification.",
+        "result": "Representative results show: flux sweet-spot identification via $\\omega_q(\\Phi)$ mapping; Rabi calibration of $\\pi$ and $\\pi/2$ pulses with linewidth control (15–43 MHz depending on drive power $-66$ to $-72$ dBm); anharmonicity $\\alpha \\approx 200$–300 MHz from two-tone and one-photon spectroscopy; readout fidelities up to $\\sim 0.95$ with optimized pulse durations ($\\geq 1500$ ns); qubit–qubit coupling strength $J \\approx 3.0$ MHz from avoided crossing; and error characterization yielding $T_1 \\approx 24.5$ µs, $T_2 \\approx 9.3$ µs, rotation errors $\\delta\\theta \\approx 2.2°$, and phase errors $\\delta\\phi \\approx 1.0°$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.03897",
+      "title": "Parametrically induced strong coupling between a superconducting quantum circuit and a solid-state spin ensemble",
+      "authors": [
+        "Alejandro E. Baptista",
+        "Jinwoong Kim",
+        "Sonia Rani",
+        "Xi Cao",
+        "Wolfgang Pfaff"
+      ],
+      "abstract": "Efficient quantum state transfer between superconducting circuits and solid-state spins would unlock high-coherence quantum memories for superconducting quantum processors. We demonstrate dynamically controlled strong coupling between a Josephson circuit and a rare-earth spin ensemble. Using a parametric pump, we realize on-demand coupling of several MHz, which will enable faithful state transfer between quantum circuits and spins. Our architecture enables quantum control of spin ensembles, and paves the way for hybrid memories with coherence far beyond those of superconducting circuits alone.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-06-02",
+      "score": 0.8645695877926277,
+      "similar_to": [
+        {
+          "title": "Suppression of crosstalk in superconducting qubits using dynamical decoupling",
+          "id": "2108.04530",
+          "similarity": 0.8409782648086548
+        },
+        {
+          "title": "Observation of high coherence in Josephson junction qubits measured in a three-dimensional circuit QED architecture",
+          "id": "1105.4652",
+          "similarity": 0.8353543281555176
+        }
+      ],
+      "summary": {
+        "summary": "Dynamically controlled strong coupling between a superconducting SNAIL coupler and a rare-earth spin ensemble ($\\mathrm{Yb}^{171}_{3+}$:YSO) was demonstrated using parametric pumping, achieving MHz-scale on-demand coupling to enable quantum state transfer. Simulations predict $\\geq 98\\%$ fidelity single-excitation swaps in $\\sim 200$ ns, paving the way for hybrid quantum memories with coherence times ($\\sim 10$ ms for spins versus $\\sim 1$ ms for superconducting qubits) surpassing circuit-alone storage.",
+        "motivation": "Superconducting processors suffer from limited coherence (millisecond timescale), while solid-state spin ensembles offer hours-long coherence times. Efficient quantum state transfer between circuits and spins requires dynamically tunable strong coupling, which has not been previously demonstrated despite static strong coupling being observed.",
+        "method": "A 3D cavity architecture integrated a nonlinear SNAIL element capacitively coupled to a microwave bus cavity inductively coupled to a Yb$^{171}$ spin ensemble ($10$ ppm doped in Y$_2$SiO$_5$). A parametric pump applied to the SNAIL at the cavity-spin difference frequency ($\\approx 10$ MHz detuning from the clock transition at $2.87$ GHz) mediated beamsplitter interactions, with coupling strength $g_{\\mathrm{pump}} \\propto \\xi g_3$ where $\\xi$ is pump amplitude and $g_3$ is the SNAIL third-order nonlinearity.",
+        "result": "Normal-mode splittings confirmed strong coupling with parametric SNAIL-cavity coupling reaching several MHz linearly with pump power, and parametric SNAIL-spin coupling exceeding the static cavity-spin coupling ($1.1$ MHz) at high pump power. The apparent saturation of observed spin coupling at $1$ MHz was explained by cavity dressing; correcting for this revealed true parametric coupling of order MHz, enabling the projected fast swap timescales.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.04079",
+      "title": "Quantum error correction with the toric code",
+      "authors": [
+        "Atom Computing",
+        "Collaborators"
+      ],
+      "abstract": "Quantum computing platforms based on arrays of tweezer-confined neutral atoms have recently emerged as a competitive modality thanks to a direct path toward high qubit count, rapidly advancing operation fidelities, and their ability to execute circuits with arbitrary qubit connectivity. These features will enable the use of efficient error correction schemes with high encoding-rates, time-efficient decoding, and resource-efficient architectures based on transversal gates. With these goals in mind, recent state of the art neutral atom demonstrations focus on the transition from the use of physical qubits to error-corrected logical qubits, but to date there has been no demonstration of repeated error correction scalable to arbitrary depth. Here, we demonstrate many cycles of syndrome extraction in a toric quantum error correcting code, using mid-circuit measurement and replacement of lost qubits, including reloading of a qubit reservoir for indefinite coherent operation. We characterize the logical error rate after up to 90 cycles, showing that logical information can be preserved through multiple rounds of qubit reloading. Comparing two distances of the code up to 8 rounds of syndrome extraction shows a lower absolute logical error rate for the larger distance code.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.quant-gas",
+        "physics.atom-ph"
+      ],
+      "published": "2026-06-02",
+      "score": 0.8519233982263508,
+      "similar_to": [
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8923556208610535
+        },
+        {
+          "title": "Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code",
+          "id": "2112.03708",
+          "similarity": 0.8910422325134277
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates repeated syndrome extraction cycles in a twisted toric code using tweezer-trapped $^{171}$Yb atoms, with mid-circuit measurement, qubit reloading from a MOT, and role-swapping to mitigate heating and loss. Up to 90 syndrome extraction cycles are performed with detector probability maintained at constant baseline $\\approx 0.2$, and logical information outlasts physical qubit lifetimes of $\\sim 10$ s by more than 200× when encoded in distance-7 repetition codes.",
+        "motivation": "Repeated syndrome extraction at arbitrary depth is required for fault-tolerant quantum computation, but heating and atom loss in neutral-atom platforms degrade performance. Demonstrating stable, indefinitely repeatable error correction cycles is essential to validate neutral atoms as a competitive platform for quantum computing.",
+        "method": "The system implements a zone-based $^{171}$Yb processor with 128-qubit capacity using movable tweezers for arbitrary connectivity. Twisted toric codes with parameters $[[16,1,(4,3)]]$ (det8) and $[[32,1,(6,4)]]$ (det16) are probed via loss-tolerant syndrome extraction with alternating data–ancilla role-swaps, mid-circuit measurement and reset (MCM), and mid-circuit reloading of a storage zone (SZ) from a MOT every 10 cycles. Minimum-weight perfect matching decoding uses loss-aware detector error models.",
+        "result": "Z-type logical error rates without reload are $\\epsilon_{\\mathrm{cycle,det8}}^Z = 0.74 \\pm 0.01\\%$ and $\\epsilon_{\\mathrm{cycle,det16}}^Z = 0.56 \\pm 0.01\\%$, showing suppression factor $\\Lambda_{\\mathrm{no\\ reload}}^Z = 1.9 \\pm 0.1$ at 4 cycles. With SZ reloading, logical error rates plateau at $\\epsilon_{\\mathrm{cycle,det8}}^Z = 0.63 \\pm 0.03\\%$ and $\\epsilon_{\\mathrm{cycle,det16}}^Z = 0.64 \\pm 0.04\\%$ across 70–90 cycles, independent of code distance. Distance-7 repetition code memory persists for $\\tau_L = 225(33)$ s, exceeding physical atom lifetimes of $15.6(5)$ s by $>10\\times$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.02761",
+      "title": "Superconducting Qubits with Altermagnetic Josephson Junctions",
+      "authors": [
+        "Johanne Bratland Tjernshaugen",
+        "Morten Amundsen",
+        "Jacob Linder"
+      ],
+      "abstract": "Identifying a materials platform for creating qubits that are both tunable and resilient towards environmental noise is one of the main hurdles that need to be overcome to realize quantum computation that is practically useful. One pursued avenue to this end is to use superconducting qubits with intrinsic spin-dependent interactions, such as spin-orbit coupling or magnetism. However, the recently discovered class of materials known as altermagnets remains largely unexplored in this context. We here use microscopic calculations to determine how the properties of superconducting qubits are modified when altermagnetic Josephson junctions are included. The key qubit performance parameters, including splitting, anharmonicity, decoherence, and single/coupled-qubit gate operation times, display rich behavior depending on the characteristic properties of the altermagnetic material, such as the strength of the Néel field and the crystallographic orientation of the altermagnetic relative to the interfaces in the system. We focus in particular on the transmon design and show that the qubit is very well protected against decoherence and simultaneously shows superior anharmonicity both near 0-$π$ transition points and when it is in a $φ$-state. We propose that by using strain, the altermagnetic qubit can be moved out of its protected regime to enable faster gate operation times, and then moved back to its protected state. We establish the physical mechanism underlying the behavior of all central qubit metrics, clarifying how real devices interpolate between an altermagnetic double-well regime exhibiting barrier-induced protection and a conventional transmon-like single-well regime. We also discuss how the altermagnetic properties influence flux qubits and fluxonium.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-06-01",
+      "score": 0.7291045680318968,
+      "similar_to": [
+        {
+          "title": "Experimental realization of an intrinsically error-protected superconducting qubit",
+          "id": "1910.07542",
+          "similarity": 0.8281221389770508
+        },
+        {
+          "title": "Quasiparticle-induced transitions in a fluxonium qubit",
+          "id": "2607.21329",
+          "similarity": 0.8273562788963318
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates through microscopic calculations that altermagnetic Josephson junctions enable superconducting qubits with simultaneously enhanced protection against decoherence and improved anharmonicity, operating near $0$–$\\pi$ transitions or $\\phi$-states. The qubit performance is tunable via the Néel field strength and crystallographic orientation, with strain-engineered modulation proposed to dynamically balance protection and gate speed.",
+        "motivation": "Superconducting qubits require simultaneous improvements in noise resilience and anharmonicity, but conventional designs face fundamental trade-offs; altermagnets offer a stray-field-free magnetic platform combining spin-split band structure with zero net magnetization that remains largely unexplored for qubit engineering.",
+        "method": "Using generalized BTK transport theory and numerical diagonalization of the Bogoliubov-de Gennes equations, the authors calculated the energy-phase relations $U_{\\mathrm{AM}}(\\varphi)$ of altermagnetic junctions with $d_{xy}$ and $d_{x^2-y^2}$ symmetries, then incorporated these into transmon, flux qubit, and fluxonium Hamiltonians to compute splitting, anharmonicity $\\alpha$, charge and dielectric noise relaxation/dephasing rates $\\Gamma_1^{\\mathrm{cg}}$, $\\Gamma_\\phi^{\\mathrm{cg}}$, single-qubit gate times $T_\\pi$, and two-qubit CZ gate performance.",
+        "result": "Near $0$–$\\pi$ transitions at specific $t_0$ values, the transmon exhibits $\\Gamma_1^{\\mathrm{diel}} < 1$ kHz (orders of magnitude improved over $\\sim 10^4$ Hz baseline) while maintaining $\\alpha \\gg 1$ GHz due to second-harmonic dominance; $\\phi$-states near $t_0 \\approx 0.16$ ($\\gamma = 0$) provide analogous protection, and strain engineering via piezoelectric substrates can reversibly detune the qubit from protected to fast-gate regimes with $T_\\pi \\sim 50$–100 ns away from transitions.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.02715",
+      "title": "Trapping 11,000 Atoms in a Tweezer Array Generated by a Single Metasurface",
+      "authors": [
+        "Yuqing Wang",
+        "Zhongchi Zhang",
+        "Tao Zhang",
+        "Yuxuan Liao",
+        "Hanteng Wang",
+        "Ye Tian",
+        "Binjie Ji",
+        "Yujia Wu",
+        "Luming Ma",
+        "Chen Qing",
+        "Chengshu Li",
+        "Wei Zhang",
+        "Yidong Huang",
+        "Wenjun Zhang",
+        "Xue Feng",
+        "Wenlan Chen",
+        "Hui Zhai"
+      ],
+      "abstract": "The scalability of physical qubit numbers is a central challenge toward a universal fault-tolerant quantum computer. The inherent scalability of atom array quantum computers stems from the identical nature of atomic qubits, so the available qubit resource is primarily limited by the number of atoms that can be trapped and controlled. Here, we robustly trap 11,000 individual atoms in a tweezer array, thereby enabling the available qubit resource to reach the tens-of-thousands scale for the first time among all quantum computation platforms. This advance is enabled by a single metasurface, approximately 2 cm in diameter, that generates the entire tweezer array without the need for microscope objectives, thereby maximizing laser-power efficiency. The large aperture ensures a working distance of about 1.5 cm, allowing the metasurface to be placed outside the vacuum cell and avoiding the technical complications of in-vacuum operation. We further characterize the randomly loaded atom array using the statistical theory of percolation phase transitions. This work takes an important first step toward a quantum computer at the 10,000-qubit scale.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.quant-gas",
+        "cond-mat.stat-mech",
+        "cond-mat.str-el"
+      ],
+      "published": "2026-06-01",
+      "score": 0.6319115438371533,
+      "similar_to": [
+        {
+          "title": "Surface codes: Towards practical large-scale quantum computation",
+          "id": "1208.0928",
+          "similarity": 0.831963300704956
+        },
+        {
+          "title": "Logic gates at the surface code threshold: Superconducting qubits poised for fault-tolerant quantum computing",
+          "id": "1402.4848",
+          "similarity": 0.8309584259986877
+        }
+      ],
+      "summary": {
+        "summary": "A 19.8 mm diameter silicon-nitride metasurface generates an 18,225-site optical tweezer array that traps 11,022 ± 167 $^{87}$Rb atoms with 60.5% filling fraction, reaching the tens-of-thousands-qubit scale for the first time across all platforms. The metasurface is positioned 1.5 cm outside the vacuum cell, eliminating the need for microscope objectives and achieving superior power efficiency (0.823 mW per tweezer, 12.2 W total diffraction power) compared to conventional SLM and AOD approaches.",
+        "motivation": "Scaling beyond 6,100 atoms (the previous record from dual SLMs) requires overcoming fundamental bottlenecks in power utilization, diffraction efficiency, and working distance; conventional high-NA microscope objectives inherently limit addressable field-of-view and introduce attenuation, damage thresholds, and fabrication complexity.",
+        "method": "A centimeter-scale metasurface with subwavelength nanostructure control was designed using blocked fast Fourier transforms to compensate for spherical aberrations through the Pyrex cell, fabricated via electron-beam lithography with thermal-drift correction and reactive-ion-etching optimization to maintain uniformity across the 19.8 mm diameter, and deployed 2.5 mm outside a standard cold-atom vacuum cell to achieve NA = 0.58 and Airy disk radius of 1.11 µm.",
+        "result": "The system traps 11,000 atoms with a standard deviation of only 167 atoms over 100 iterations, achieves 13.2% power non-uniformity across the array, delivers a measured trap depth of 0.305 mK, and produces site-resolved loading probabilities peaking at 60%; finite-size percolation analysis reveals a critical loading fraction $p_c ≈ 0.59$ consistent with statistical mechanics predictions.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.03916",
+      "title": "Practical gates by Majorana fermion motion",
+      "authors": [
+        "Yuri D. Lensky",
+        "Bryce Kobrin",
+        "Kostyantyn Kechedzhi",
+        "Igor Aleiner"
+      ],
+      "abstract": "Quantum error correction protocols protect against local errors by storing logical information non-locally. This poses a challenge: how to design efficient logical gates on the non-local ``hidden'' logical information, and how to implement these gates using the local physical operations. We develop a general description of planar Pauli stabilizer codes and protocols for logical operations in terms of point-like particles called Majorana fermions. Information is stored in the pairwise fermion parities of spatially separated Majorana fermions. The description in terms of Majorana fermions captures not only large distance asymptotics, but also all scales down to the lattice constants. We exploit this locality to densely pack logical information in spacetime. The simplest application is to a static case: dense memory. More importantly, we implement fault-tolerant Majorana motion and leverage this primitive to design braiding-based logical gates. This approach reduces space overhead of logical operations resulting in an improved logical error rate given fixed number of physical qubits. We illustrate a practical use of our approach by designing and benchmarking of 2-qubit Clifford gates. We find numerically that our protocol outperforms lattice surgery in this setting for near-term error rates and realistic device constraints. More generally, introduction of compact motion of Majorana fermions as an efficient computational primitive opens a promising new route for the design of low overhead error correction protocols.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.other"
+      ],
+      "published": "2026-06-02",
+      "score": 0.5182141742900249,
+      "similar_to": [
+        {
+          "title": "Logical-qubit operations in an error-detecting surface code",
+          "id": "2102.13071",
+          "similarity": 0.8707120418548584
+        },
+        {
+          "title": "Surface codes: Towards practical large-scale quantum computation",
+          "id": "1208.0928",
+          "similarity": 0.8641809821128845
+        }
+      ],
+      "summary": {
+        "summary": "This work develops a macroscopic description of 2D Pauli stabilizer codes and fault-tolerant logical operations using Majorana fermion motion, showing that braiding-based gates achieve lower space overhead than lattice surgery for near-term error rates. The framework captures code properties from lattice scales to asymptotic regimes, enabling compact design of fault-tolerant 2-qubit Clifford gates.",
+        "motivation": "Efficient logical gate implementation on non-local encoded information requires optimizing space overhead and reducing physical qubit requirements for fault-tolerant quantum computation.",
+        "method": "The authors map planar Pauli codes to Majorana fermion configurations, define code distance via Wilson and 't Hooft line lengths on the Majorana graph, implement fault-tolerant motion through both isentropic and virtual particle protocols, and design braiding-based gates that densely pack Majorana fermions while maintaining distance. Numerical benchmarks using the SI1000 error model compare braiding protocols against lattice surgery on square-grid superconducting qubit devices.",
+        "result": "Braiding-based 2-qubit Clifford gates require $4d^2 + O(d)$ physical qubits versus $6d^2 + O(d)$ for lattice surgery (asymptotic scaling advantage $\\eta_{\\mathrm{LS} \\to B} \\approx 0.184$), and simulations show higher fidelities even at small code distances for realistic error rates, with unoptimized circuits already satisfying the exponential advantage condition.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.03884",
+      "title": "20 Second Parity Lifetime in an InAs--Pb Tetron Device",
+      "authors": [
+        "Morteza Aghaee",
+        "Zulfi Alam",
+        "Mariusz Andrzejczuk",
+        "Andrey Antipov",
+        "Theodora Asimakidis",
+        "Mikhail Astafev",
+        "Lukas Avilovas",
+        "Ahmad Azizimanesh",
+        "Amin Barzegar",
+        "Bela Bauer",
+        "Jonathan Becker",
+        "Umesh Kumar Bhaskar",
+        "Andrea G. Boa",
+        "Srini Boddapati",
+        "Nichlaus Bohac",
+        "Jouri Bommer",
+        "Jan Borovsky",
+        "Léo Bourdet",
+        "Samuel Boutin",
+        "Srivatsa Chakravarthi",
+        "Benjamin J. Chapman",
+        "Nikolaos Chatzaras",
+        "Tzu-Chiao Chien",
+        "Jason Cho",
+        "Patrick T. Codd",
+        "William Cole",
+        "Paul W. Cooper",
+        "Fabiano Corsetti",
+        "Ajuan Cui",
+        "Tareq El Dandachi",
+        "Konstantinos Divanis",
+        "Clayton Doyle",
+        "Andreas Ekefjard",
+        "Javier A. Falcon",
+        "Saeed Fallahi",
+        "Luca Galletti",
+        "Geoffrey C. Gardner",
+        "Haris Gavranovic",
+        "João Pedro Morais Gomes",
+        "Deshan Govender",
+        "Flavio Griggio",
+        "Ruben Grigoryan",
+        "Sebastian Grijalva",
+        "Sergei Gronin",
+        "Jan Gukelberger",
+        "Marzie Hamdast",
+        "Esben Bork Hansen",
+        "Sebastian Heedt",
+        "Samantha Ho",
+        "Laurens Holgaard",
+        "Kevin van Hoogdalem",
+        "Jinnapat Indrapiromkul",
+        "Henrik Ingerslev",
+        "Lovro Ivancevic",
+        "Max Jantos",
+        "Thomas Jensen",
+        "Jaspreet Singh Jhoja",
+        "Vidul R. Joshi",
+        "Konstantin V. Kalashnikov",
+        "Ray Kallaher",
+        "Rachpon Kalra",
+        "Farhad Karimi",
+        "Torsten Karzig",
+        "Maren Elisabeth Kloster",
+        "Christina Knapp",
+        "Jonathan Knoblauch",
+        "Jonne Koski",
+        "Anders Kringhøj",
+        "Tom Laeven",
+        "Jeffrey Lai",
+        "Gijs de Lange",
+        "Thorvald W. Larsen",
+        "Kyunghoon Lee",
+        "Kongyi Li",
+        "Shuang Liang",
+        "Tyler Lindemann",
+        "Luna Lochmatter",
+        "Marijn Lucas",
+        "Roman Lutchyn",
+        "Morten Hannibal Madsen",
+        "Nasiari Madulid",
+        "Ivan Maliyov",
+        "Yanick Mampaey",
+        "Michael Manfra",
+        "Signe Brynold Markussen",
+        "Esteban A. Martinez",
+        "J. R. Mattinson",
+        "Mónica Meira",
+        "Camille A. Mikolas",
+        "Sarang Mittal",
+        "Gopakumar Mohandas",
+        "Christian Mollgaard",
+        "Michiel W. A. de Moor",
+        "Chris Moore",
+        "George Moussa",
+        "Bhargav Nabar",
+        "Anirudh Narla",
+        "Ahmad Naseri",
+        "Chetan Nayak",
+        "Bjørn Funch Schrøder Nielsen",
+        "Jens Hedegaard Nielsen",
+        "Michael J. Nystrom",
+        "Eoin O'Farrell",
+        "Keita Ohtani",
+        "Theodore Rex Orth",
+        "Sara Di Paolo",
+        "Camille Papon",
+        "Luca Petit",
+        "Dima Pikulin",
+        "Mohana Rajpalke",
+        "Alejandro Alcaraz Ramirez",
+        "Katrine Rasmussen",
+        "David Razmadze",
+        "Yuan Ren",
+        "Mariya Romanova",
+        "Loïc Roure",
+        "Ivan Sadovskyy",
+        "Lauri Sainiemi",
+        "Juan Carlos Estrada Saldaña",
+        "Irene Sanlorenzo",
+        "Tatiane Pereira dos Santos",
+        "Carl Vincent C. Saruda",
+        "Simon Schaal",
+        "John Schack",
+        "Emma R. Schmidgall",
+        "Christina Sfetsou",
+        "Cristina Sfiligoj",
+        "Zahra Shekason",
+        "Sarat Shankar Sinha",
+        "Patrick Sohr",
+        "Maria João Lourenço de Sousa",
+        "Kasper Roed Spiegelhauer",
+        "Tomas Stankevic",
+        "Henri J. Suominen",
+        "Judith Suter",
+        "Attila Szénási",
+        "Samuel M. L. Teicher",
+        "Naganivetha Thiyagarajah",
+        "Raj Tholapi",
+        "Mason Thomas",
+        "Dennis Tom",
+        "Emily Toomey",
+        "Joshua Tracy",
+        "Michelle Turley",
+        "Matthew D. Turner",
+        "Ivan Urban",
+        "Aakash Valliappan",
+        "Dmitrii V. Viazmitinov",
+        "Anna Wulff Viazmitinova",
+        "Dominik Johannes Vogel",
+        "Wenbo Wang",
+        "Christopher A. Watson",
+        "John Watson",
+        "Alex Webster",
+        "Joseph Weston",
+        "Timothy Williamson",
+        "Georg W. Winkler",
+        "David J. van Woerkom",
+        "Brian Paquelet Wuetz",
+        "Cécile X. Yu",
+        "Emrah Yucelen",
+        "Jesús Herranz Zamorano",
+        "Roland Zeisel",
+        "Guoji Zheng",
+        "A. M. Zimmerman"
+      ],
+      "abstract": "A central promise of topological quantum computing is that increasing the excitation gap improves device performance significantly. Here, we experimentally validate this principle in an InAs--Pb tetron device via interferometric single-shot parity measurements. By replacing aluminum with the higher-gap superconductor lead in our superconductor-semiconductor hybrid devices, we have improved the robustness of our topological phase. In addition, to enable fast and precise bring-up at scale, we have developed an rf measurement technique that resolves low-energy wire-end states and directly measures their energy splitting with $μ\\text{eV}$ precision. We employ this technique to bring up a device in a multi-tetron array and perform parity measurements of one of the tetron's hybrid nanowires (NWs). By controllably switching the wire parity, we observe $h/2e$-periodic bimodal shifts in the quantum capacitance of a quantum dot coupled to the hybrid nanowire in an interference loop. Further time-resolved measurements reveal a characteristic parity switching time of $\\sim 20$ s with some instances reaching minute-scale. Such extremely long parity lifetimes are orders of magnitude longer than typical qubit operation times, which are on the order of $μ\\text{s}$. Finally, we discuss potential implications for the fidelity of Pauli measurements.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "published": "2026-06-02",
+      "score": 0.5174776863421245,
+      "similar_to": [
+        {
+          "title": "Distinguishing parity-switching mechanisms in a superconducting qubit",
+          "id": "2204.07458",
+          "similarity": 0.8508160710334778
+        },
+        {
+          "title": "Direct Dispersive Monitoring of Charge Parity in Offset-Charge-Sensitive Transmons",
+          "id": "1903.00113",
+          "similarity": 0.8342694640159607
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates parity lifetimes exceeding 20 s in InAs–Pb tetron devices via interferometric readout, representing a $>1000\times$ improvement over Al-based tetrons and validating that larger superconducting gap directly suppresses quasiparticle poisoning errors. The authors introduce rf-based wire spectroscopy to measure Majorana splitting $E_M < 1$ µeV with $μ$eV precision and identify operating regimes where both Majorana hybridization and non-equilibrium poisoning are strongly suppressed.",
+        "motivation": "Topological qubits based on Majorana zero modes promise exponentially suppressed error rates with increasing topological gap, but this principle has not been experimentally validated at the qubit level. The authors sought to test whether replacing Al (gap $\\Delta_{\\text{Pb}} \\approx 1.3$ meV versus $\\Delta_{\\text{Al}} \\approx 300$ µeV) with Pb and optimizing the semiconductor heterostructure on GaSb substrate would yield measurable improvements in device robustness.",
+        "method": "The work employs a multi-tetron array with optimized InAs–Pb hybrid structure exhibiting topological gap $\\Delta_T \\sim 70$ µeV (versus $\\sim 30$ µeV in Al devices) and spin-orbit coupling $\\alpha \\sim 12$–16 meV·nm. An rf-based parity injection spectroscopy technique measures low-energy wire-end states with $\\sim 1$ µeV resolution by coupling quantum dots to both ends of the nanowire in an interferometric configuration. Parity lifetimes are extracted from telegraph noise in quantum-capacitance time traces following controlled electron injection via QD4.",
+        "result": "Characteristic $Z$-parity switching time is $\\tau_Z = 22 ± 1$ s with some traces reaching minute-scale, compared to 1–12 ms in Al-based tetrons—a $>1000\\times$ enhancement. The measured Majorana splitting remains $E_M < 1$ µeV across extended parameter regimes, and the parity lifetime substantially exceeds typical qubit operation times ($\\sim 1$ µs), suggesting that qubit operations are no longer limited by quasiparticle poisoning.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.03891",
+      "title": "Efficient Quantum Error Mitigation for Unitary k-Designs",
+      "authors": [
+        "Ayush Pancholy",
+        "K. Birgitta Whaley"
+      ],
+      "abstract": "Quantum circuit ensembles that have the properties of unitary k-designs represent applications where there is no obvious bias toward any particular Pauli support, as is the case in simulating systems exhibiting ''quantum chaos,'' which range from quantum dynamics near black holes to gapless spin fluid analysis. However, noisy hardware makes quantum circuits prone to a myriad of error sources, of which depolarizing and coherent error can be particularly destructive. To combat depolarizing error, popular techniques typically involve circuit or gate folding, which can be time-intensive procedures due to increased circuit depth and shot overhead. Other tensor-network-based mitigation techniques suffer from intractability in high-entanglement regimes. In this work, we leverage the structure of unitary k-design Pauli support distributions by introducing a technique we name ''circuit balancing,'' along with gate benchmarking data, in order to estimate circuit-wide depolarization. We describe how to invert the diagnosed circuit depolarization even in the presence of coherent error, via Pauli twirling. We provide asymptotics to estimate the number of twirls needed to maintain a desired output fidelity. We test our method numerically in a variety of simulation settings and find that it can significantly reduce average random circuit infidelity. Further, we employ our methods to find significant infidelity reductions when running a random circuit ensemble on a contemporary superconducting quantum computer, IBM Fez. Overall, we show that the method effectively reduces gate-based error for unitary k-designs without incurring any two-qubit gate overhead.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-02",
+      "score": 0.5003425807916146,
+      "similar_to": [
+        {
+          "title": "Erasure qubits: Overcoming the $T_1$ limit in superconducting circuits",
+          "id": "2208.05461",
+          "similarity": 0.8683146238327026
+        },
+        {
+          "title": "The superconducting grid-states qubit",
+          "id": "2509.14656",
+          "similarity": 0.8626470565795898
+        }
+      ],
+      "summary": {
+        "summary": "This paper introduces circuit balancing and depolarizing parameter estimation techniques to mitigate two-qubit gate errors in unitary $k$-design circuits without two-qubit gate overhead. The method leverages the uniform Pauli support distribution of such circuits, combined with gate benchmarking data and Pauli twirling to suppress coherent error, achieving over 92% Hellinger distance reduction in simulations and doubling the Loschmidt echo survival probability on IBM Fez.",
+        "motivation": "Existing error mitigation techniques like zero-noise extrapolation and tensor-network methods incur prohibitive circuit depth overhead or fail in high-entanglement regimes, limiting their applicability to deep, scrambling circuits that represent unitary $k$-designs relevant for simulating quantum chaos and other physical systems.",
+        "method": "The authors exploit the fact that for balanced circuits (where each qubit pair undergoes similar total depolarization), the average per-gate depolarizing contribution to the global channel scales as $\\lambda_2^{15/16}$. Circuit balancing is formulated as an optimization problem over qubit layout assignments. After benchmarking extracts gate-level depolarizing parameters $\\lambda_2$, the global parameter $\\lambda_n$ is estimated, Pauli twirls suppress coherent error with $t \\geq O(m\\theta^2\\delta^{-2}\\lambda^{-15/16 \\cdot 2}_d)$ twirls required, and bitstring probabilities are inverted via $S^{-1}(\\lambda_n, p_i)$ and projected onto the probability simplex.",
+        "result": "Numerical experiments show $\\geq 92\\%$ mean Hellinger distance reduction across $n=7$–$11$ qubits, with stability under varying coherent error strengths ($\\theta \\in \\{3, 6, 9\\} \\times 10^{-3}$ rad) when $t$ scales quadratically in $\\theta$. On IBM Fez, balanced layout with inversion achieved $> 2 \\times$ ground-state survival probability in Loschmidt echo ($\\sim 0.3$ vs. $\\sim 0.15$ unmitigated) with circuit balancing cost function $6.17 \\times 10^{-5}$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9514,
+    0.8646,
+    0.8519,
+    0.7291,
+    0.6319,
+    0.5182,
+    0.5175,
+    0.5003,
+    0.4638,
+    0.4343,
+    0.3956,
+    0.2467,
+    0.2327,
+    0.2208,
+    0.1998,
+    0.1952,
+    0.1845,
+    0.1803,
+    0.1704,
+    0.1576,
+    0.1535,
+    0.1481,
+    0.1471,
+    0.1355,
+    0.1335,
+    0.1326,
+    0.1306,
+    0.1147,
+    0.1107,
+    0.0976,
+    0.0869,
+    0.0711,
+    0.0704,
+    0.0675,
+    0.0638,
+    0.0614,
+    0.0612,
+    0.0572,
+    0.0568,
+    0.0555,
+    0.0549,
+    0.0539,
+    0.0477,
+    0.0463,
+    0.0463,
+    0.0451,
+    0.044,
+    0.0428,
+    0.0424,
+    0.0404,
+    0.0403,
+    0.0384,
+    0.0383,
+    0.038,
+    0.0367,
+    0.0322,
+    0.0317,
+    0.0292,
+    0.0279,
+    0.0278,
+    0.0257,
+    0.0254,
+    0.024,
+    0.0238,
+    0.0232,
+    0.0217,
+    0.0208,
+    0.0201,
+    0.0192,
+    0.0173,
+    0.0169,
+    0.0161,
+    0.0161,
+    0.0161,
+    0.0161,
+    0.016,
+    0.0152,
+    0.0148,
+    0.0137,
+    0.0131,
+    0.0125,
+    0.0121,
+    0.0118,
+    0.0114,
+    0.0113,
+    0.011,
+    0.0106,
+    0.0103,
+    0.0092,
+    0.0088,
+    0.0076,
+    0.0068,
+    0.0068,
+    0.0067,
+    0.0059,
+    0.0052,
+    0.0052,
+    0.0051,
+    0.0042,
+    0.0038,
+    0.003,
+    0.002,
+    0.0011
+  ]
+}

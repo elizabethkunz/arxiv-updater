@@ -1,0 +1,312 @@
+{
+  "date": "2026-05-15",
+  "n_fetched": 112,
+  "papers": [
+    {
+      "id": "2605.14656",
+      "title": "Blind Quantum Computation on a Modular Superconducting Processor",
+      "authors": [
+        "Yongxin Song",
+        "Johannes Knörzer",
+        "Kieran Dalton",
+        "Andreas Wallraff",
+        "Jean-Claude Besse"
+      ],
+      "abstract": "Current cloud-based quantum processors offer access to advanced hardware hosted on a remote server, but do not guarantee data or algorithm privacy. Blind quantum computation provides information-theoretic privacy by enabling a client to execute an algorithm without disclosing information about either the task or the final result. Here, we execute a measurement-based blind quantum computation protocol on a superconducting processor comprising two flip-chip-bonded modules, one acting as a server and the other as a client. The server generates a two-dimensional cluster state and forwards it to the client. Using this resource, the client implements a universal gate set with only adaptive single-qubit rotations and measurements. To illustrate this approach, we execute a three-qubit instance of the Deutsch-Jozsa algorithm. We analyze the server's quantum state after each rotation of a measurement-based single-qubit gate to verify that negligible information about the computation is revealed to the server, consistent with the one-way flow of information that guarantees blindness. This proof-of-principle demonstration establishes key elements of blind quantum computation in superconducting-circuit architectures, indicating that intermediate-scale implementations of blind protocols may become feasible with realistic near-term improvements in gate fidelities.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-14",
+      "score": 0.8565456620587429,
+      "similar_to": [
+        {
+          "title": "Evidence for the utility of quantum computing before fault tolerance",
+          "id": null,
+          "similarity": 0.8370713591575623
+        },
+        {
+          "title": "Lattice surgery with Bell measurements: Modular fault-tolerant quantum computation at low entanglement cost",
+          "id": "2510.13541",
+          "similarity": 0.8337934017181396
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates measurement-based blind quantum computation on a modular superconducting processor with separate server and client modules, where the server generates two-dimensional cluster states and the client performs universal quantum computation through adaptive measurements without revealing the algorithm or results. The protocol is validated through resource-state characterization, single- and two-qubit gate implementations achieving process fidelities of 0.902 and 0.845, and a three-qubit Deutsch-Jozsa algorithm with 79.7% success probability, with Holevo information of $2.3 \\times 10^{-4}$ bits confirming information-theoretic blindness.",
+        "motivation": "Cloud-based quantum processors lack privacy guarantees for users' algorithms and data. Measurement-based blind quantum computation protocols provide information-theoretic security by enabling clients to delegate computations while hiding both the task and results from the server.",
+        "method": "A modular superconducting device with three transmon qubits each on server and client modules, flip-chip bonded with inter-module couplers, implements iterative generation of $w \\times d$ cluster states at the server and adaptive measurements at the client using real-time feedforward control with a $300$ ns signal processing delay.",
+        "result": "Two-dimensional cluster states up to $n = 3 \\times 3 = 9$ qubits achieved fidelities $F \\approx 0.53$; measurement-based T-gate and two-qubit entangling operations reached process fidelities $F_{\\mathrm{proc}} = 0.902$ and $0.845$; Deutsch-Jozsa algorithm for $m=2$ inputs succeeded with probability $0.797$; projections with state-of-the-art error rates predict $F > 0.99$ for single-qubit gates and $> 0.98$ for the algorithm.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.14586",
+      "title": "Fraxonium: Fractional fluxon states for qudit encoding",
+      "authors": [
+        "Luca Chirolli",
+        "Valentina Brosco",
+        "Uri Vool",
+        "Gianluigi Catelani",
+        "Luigi Amico"
+      ],
+      "abstract": "We propose a superconducting circuit hosting $d$ low-lying states, well separated from the rest of the spectrum, that naturally realizes a qudit system protected from leakage errors. The system represents a generalization of the fluxonium and the low-energy states are constituted by fractional fluxon states, that we call {\\it fraxons}, localized in the minima of a suitably designed Josephson potential. The latter is tailored through a Fourier engineering approach, that employs multi-harmonic Josephson building block elements composed by a Josephson junction and an inductance connected in series. We present the spectrum of a $d=4$ and a $d=5$ qudit system and study in detail the qutrit case. We analyze the dipole matrix elements for coupling to radiation and propose a non-Abelian, stimulated Raman adiabatic passage (STIRAP) protocol for single-qutrit gates, that is particularly suited for the present system. The proposed platform opens novel perspectives in circuit engineering and quantum computing beyond the qubit paradigm.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-05-14",
+      "score": 0.7451310060450888,
+      "similar_to": [
+        {
+          "title": "The high-coherence fluxonium qubit",
+          "id": "1810.11006",
+          "similarity": 0.8572102785110474
+        },
+        {
+          "title": "Scalable Fluxonium Quantum Processors via Tunable-Coupler Architecture",
+          "id": "2604.13363",
+          "similarity": 0.837134838104248
+        }
+      ],
+      "summary": {
+        "summary": "This work proposes fraxonium, a superconducting circuit hosting $d$ degenerate low-energy states separated from higher levels by a large gap, generalizing the fluxonium to encode qudits protected from leakage errors. The system uses fractional fluxon states (fraxons) localized in minima of a Josephson potential engineered via Fourier harmonics using multi-harmonic elements composed of Josephson junctions and inductors.",
+        "motivation": "Transmon-based qudits suffer from leakage errors because their computational levels lack separation from the rest of the spectrum, whereas qudits offer advantages for quantum error correction, magic state distillation, and algorithm efficiency compared to two-level qubits.",
+        "method": "High-harmonic Josephson potentials are engineered by superimposing $\\cos(nφ)$ terms with controlled amplitudes to create $d$ degenerate potential minima; high harmonics are realized through parallel connections of Josephson junction-inductor pairs with fractional flux insertion (kite design), and a tight-binding model describes fraxon dynamics via quantum phase slips with tunneling amplitude $t \\propto e^{-8\\bar{E}_J/\\bar{E}_C}$.",
+        "result": "For the qutrit ($d=3$) with $E_C/E_J = 0.08$ and $E_L/E_J = 0.03$, three states are well-localized around phase minima at $φ_l = πl$ with fractional flux character, separated from higher fluxon and plasmon states; non-Abelian STIRAP protocols implementing geometric single-qutrit gates are demonstrated with simultaneous fulfillment of adiabaticity ($\\bar{Ω}T \\gg 1$) and rotating-wave approximation ($Ω_i \\ll |E_u - E_i|$) conditions.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.14582",
+      "title": "Quantum battery optimized by parametric amplification",
+      "authors": [
+        "Fang-Mei Yang",
+        "Jun-Hong An",
+        "Fu-Quan Dou"
+      ],
+      "abstract": "The parametric amplification enabled by two-photon driving constitutes a versatile platform for advanced quantum technologies. We present an optimized scheme for implementing quantum batteries (QBs) based on a superconducting circuit system, where a two-photon-driven LC resonator serves as the charger and an array of transmon qubits functions as the battery. Our results show that two-photon parametric driving exponentially enhances the effective cavity-qubit coupling, which in turn gives rise to near-degenerate energy-level structures and highly entangled quantum states. This significantly enhances the charging power and enables rapid energy transfer from the charger to the battery. Moreover, the engineered squeezed cavity mode and the associated quantum correlations effectively suppress environmentally induced decoherence, thereby delaying energy leakage and facilitating stable energy storage. The proposed scheme remains robust against practical experimental imperfections, such as parameter disorder and environmental noise, preserving its performance advantages. The work provides a feasible platform for realizing high-power, high-stability QBs and highlights the potential of parametric control in quantum energy technologies.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-14",
+      "score": 0.6506134686612897,
+      "similar_to": [
+        {
+          "title": "Characterization of drive-induced unwanted state transitions in superconducting circuits",
+          "id": "2506.24070",
+          "similarity": 0.8091895580291748
+        },
+        {
+          "title": "Collapse and Inversion of the Josephson Potential in a Strongly Driven Superconducting Circuit",
+          "id": "2607.14344",
+          "similarity": 0.8077555894851685
+        }
+      ],
+      "summary": {
+        "summary": "This work proposes a superconducting circuit platform for quantum batteries consisting of a two-photon-driven LC resonator coupled to an array of transmon qubits, showing that parametric amplification exponentially enhances the cavity-qubit coupling to enable rapid charging. The scheme achieves 12.5× enhancement in maximum charging power at squeezing parameter $r/\\delta_c = 3$ while maintaining $N^{1.5}$ collective scaling, and demonstrates dark-state protection that stabilizes energy storage in open-system conditions including dissipation rates $\\kappa/\\gamma = 0.01$–$0.10$.",
+        "motivation": "Strong light-matter coupling is essential for coherent quantum dynamics and quantum advantage in energy storage, but achieving ultra-strong coupling typically requires specialized device architectures with poor scalability and tunability. Two-photon parametric driving offers a generalizable approach to engineer effective ultra-strong coupling through nonlinear dynamics without exotic materials.",
+        "method": "A superconducting circuit with a flux-pumped SQUID in the resonator loop provides two-photon driving at frequency $\\omega_p = 2\\omega_c$, creating an effective generalized Dicke model with enhanced coupling $\\tilde{g} = g e^{r/2}$ and reduced critical coupling $g_c = (\\delta_c \\delta_q / 2)\\mathrm{sech}(2r)$. Charging dynamics under decoherence ($\\kappa$ and $\\gamma$) are computed via master equation for up to $N = 6$ qubits with Hilbert space cutoff $n_{\\mathrm{ph}} = 4N + 1$.",
+        "result": "In the closed system, maximum power scales as $P_{\\mathrm{max}} = \\alpha N^{1.5}$ with $\\alpha$ increasing by 12.5× at $r/\\delta_c = 3$ versus $r = 0$; in the open system with $\\kappa/\\delta_c = \\gamma/\\delta_c = 0.01$, stable stored energy $E_{\\mathrm{sta}}$ remains finite due to dark-state protection and squeezing-induced effective thermalization. Robustness to parameter disorder ($\\delta/\\delta_c \\approx g$) and high dissipation ($\\gamma/\\delta_c = 0.10$) is demonstrated numerically.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.14829",
+      "title": "Superconducting single-photon detectors for integrated quantum photonics",
+      "authors": [
+        "Ilya A. Stepanov",
+        "Oksana I. Shmonina",
+        "Evgeniy V. Sergeev",
+        "Aleksandr S. Baburin",
+        "Danila Yu. Ulyanov",
+        "Kirill A. Buzaverov",
+        "Sergey S. Avdeev",
+        "Aleksey B. Kramarenko",
+        "Yuri V. Panfilov",
+        "Ilya A. Rodionov"
+      ],
+      "abstract": "Single-photon detection possibility is a fundamental requirement for quantum technologies, including communication, computing and sensing. To achieve scalability and practical deployment, increasing attention is being directed toward integration of detectors with photonic integrated circuits, which offer compactness and compatibility with mass production. Superconducting nanowire single-photon detectors have emerged as the leading solution, combining near-unity efficiency, high temporal performance and the ability to be embedded across a wide range of photonic material platforms. In this review we trace the development of integrated superconducting nanowire single-photon detectors from early demonstrations to recent advances, outlining the progress in device architectures, material engineering and integration strategies. We also discuss performance benchmarks, emerging alternative designs, the future opportunities and challenges for this rapidly evolving field.",
+      "categories": [
+        "physics.optics",
+        "quant-ph"
+      ],
+      "published": "2026-05-14",
+      "score": 0.6007716392677709,
+      "similar_to": [
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.8299775123596191
+        },
+        {
+          "title": "Real-time detection of correlated quasiparticle tunneling events in a multi-qubit superconducting device",
+          "id": "2602.01945",
+          "similarity": 0.8286988735198975
+        }
+      ],
+      "summary": {
+        "summary": "This comprehensive review examines integrated superconducting nanowire single-photon detectors (iSNSPDs), covering their operational principles, performance metrics, material platforms, and integration strategies for quantum photonic systems. State-of-the-art iSNSPDs achieve on-chip detection efficiency exceeding 99% at telecom wavelengths, dark count rates below 0.0001 Hz, sub-500 ps recovery times, and timing jitter below 15 ps, with demonstrated photon-number resolution up to 100 photons.",
+        "motivation": "Scalable quantum photonics requires integration of single-photon detectors with photonic circuits to minimize losses and enable multichannel detection, yet previous reviews have not comprehensively addressed the rapidly evolving field of integrated SNSPDs, particularly recent advances in device architectures, material engineering, and integration strategies.",
+        "method": "The review systematically analyzes iSNSPD working principles across multiple theoretical models (hotspot, vortex, vortex-antivortex pair mechanisms), characterizes performance metrics and their dependencies on nanowire geometry and material properties, evaluates superconducting materials (NbN, NbTiN, WSi, MoSi) and photonic platforms (SOI, SiN, LNOI, GaAs, diamond), and discusses photon-number-resolving implementations.",
+        "result": "Record iSNSPDs demonstrate simultaneous high performance: on-chip detection efficiency of $99.73\\%$ at 1550 nm, recovery time of 120 ps, jitter of 12.2 ps, and dark count rates reaching $10^{-4}$ Hz; integration with active photonic components (sources, modulators) has been demonstrated across multiple platforms, though scalability challenges remain in array uniformity, thermal management, and the fundamental absorption-speed-loss tradeoff.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.14080",
+      "title": "Dual Shapiro steps and fundamental transconductance in the dc-driven Bloch transistor",
+      "authors": [
+        "A. B. Zorin"
+      ],
+      "abstract": "We propose a superconducting circuit based on the Bloch transistor, a quantum device consisting of two small-capacitance Josephson junctions, connected in series and having a small superconducting island in between. This device is driven by two dc electrical sources controlling Josephson oscillations of frequency $f_J = 2e\\overline{V_J}/h$, related to the average transistor voltage $\\overline{V_J}$, and Bloch oscillations of frequency $f_B = \\overline{I_B}/2e$, related to the average current $\\overline{I_B}$ injected into the transistor island. We show that due to the Bloch transistor properties, these two types of oscillations are coupled and can mutually phase-lock, i.e., $f_J = f_B$. This leads to the formation of a current step on the current-voltage curve at $\\overline{I_B} = 2ef_J$, which is similar to the dual Shapiro step, appearing under microwave irradiation of frequency $f$ on the current-voltage curve of a small Josephson Junction at current $I=2ef$. Moreover, the Bloch transistor transconductance $\\overline{I_B}/\\overline{V_J}$ takes the fundamental value of $1/R_Q$, where $R_Q = h/4e^2$ is the resistance quantum. The obtained results pave the way to an alternative quantum standard of resistance, based on the superconducting circuit and operating without applying a strong magnetic field.",
+      "categories": [
+        "cond-mat.supr-con",
+        "quant-ph"
+      ],
+      "published": "2026-05-13",
+      "score": 0.5952937676439678,
+      "similar_to": [
+        {
+          "title": "Observation of Josephson Harmonics in Tunnel Junctions",
+          "id": "2302.09192",
+          "similarity": 0.814278781414032
+        },
+        {
+          "title": "Electrical post-fabrication tuning of aluminum Josephson junctions at room temperature",
+          "id": "2602.20002",
+          "similarity": 0.8081508874893188
+        }
+      ],
+      "summary": {
+        "summary": "This paper proposes a superconducting circuit based on the Bloch transistor (two serial Josephson junctions with a small island) that generates coupled Josephson oscillations at frequency $f_J = 2e\\overline{V_J}/h$ and Bloch oscillations at frequency $f_B = \\overline{I_B}/2e$, which can phase-lock to produce dual Shapiro steps without external microwave drive. When phase-locked, the device exhibits quantized transconductance $\\overline{I_B}/\\overline{V_J} = 1/R_Q = 4e^2/h$, providing an alternative superconducting quantum resistance standard without requiring strong magnetic fields.",
+        "motivation": "Bloch oscillations in superconducting circuits require high-impedance biasing ($|Z| \\gg R_Q \\approx 6.45$ k$\\Omega$) and have been observed only with external microwave drives or phase-slip circuits. This work seeks to demonstrate dual Shapiro steps through intrinsic coupling of two oscillation types in a single device, enabling dc-driven operation and quantized transconductance metrology.",
+        "method": "The authors analyze a three-terminal Bloch transistor circuit with independent dc voltage and current sources controlling phase $\\phi$ and quasicharge $q$ on the island. Using the ground-state Hamiltonian with charging energy $E_c = e^2/2C_\\Sigma$ and Josephson energies $E_{J1,2}$, they derive coupled equations for the Bloch and Josephson circuits and employ the slowly-varying phase method to show that modulation of the Bloch oscillation's critical current by the Josephson phase leads to phase-locking and step formation, with the step size $\\Delta V \\approx \\pi e|A_{11}|/(2C_\\Sigma)$ where $A_{km}$ are Fourier coefficients of the ground-state energy.",
+        "result": "At phase-lock ($f_J = f_B$), a dual Shapiro step appears at $\\overline{I_B} = 2ef_J$ with differential resistance on the step $R_d^{\\text{step}} = R_Q^2/R_s$ (e.g., $\\sim 40$ M$\\Omega$ for $R_s = 1$ $\\Omega$) and transconductance $\\overline{I_B}/\\overline{V_J} = R_Q^{-1}$. For typical parameters ($\\lambda = (E_{J1}+E_{J2})/2E_c \\sim 1$, asymmetry $a = 0.1$), the relative step size is $\\Delta V/V_c \\approx 0.4$, comparable to optimized Shapiro steps with microwave drive.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8565,
+    0.7451,
+    0.6506,
+    0.6008,
+    0.5953,
+    0.4327,
+    0.3732,
+    0.3287,
+    0.298,
+    0.2965,
+    0.2906,
+    0.2705,
+    0.2688,
+    0.253,
+    0.2322,
+    0.2156,
+    0.1958,
+    0.1937,
+    0.1921,
+    0.1833,
+    0.1689,
+    0.1672,
+    0.1614,
+    0.1496,
+    0.1454,
+    0.1352,
+    0.1288,
+    0.1167,
+    0.1043,
+    0.1037,
+    0.1021,
+    0.1015,
+    0.0932,
+    0.09,
+    0.0805,
+    0.0726,
+    0.0698,
+    0.0647,
+    0.0634,
+    0.059,
+    0.0583,
+    0.0572,
+    0.0529,
+    0.0527,
+    0.0526,
+    0.0491,
+    0.0472,
+    0.0432,
+    0.043,
+    0.0423,
+    0.042,
+    0.0418,
+    0.0412,
+    0.0407,
+    0.0389,
+    0.0372,
+    0.0362,
+    0.0356,
+    0.0337,
+    0.0331,
+    0.0315,
+    0.0301,
+    0.0278,
+    0.0277,
+    0.0251,
+    0.0227,
+    0.0226,
+    0.0226,
+    0.0225,
+    0.0219,
+    0.0177,
+    0.0176,
+    0.0175,
+    0.0173,
+    0.0163,
+    0.0162,
+    0.0162,
+    0.0159,
+    0.0148,
+    0.0135,
+    0.0134,
+    0.0133,
+    0.0133,
+    0.013,
+    0.0126,
+    0.0124,
+    0.0123,
+    0.0118,
+    0.0115,
+    0.0104,
+    0.01,
+    0.0099,
+    0.0098,
+    0.0097,
+    0.009,
+    0.0085,
+    0.0084,
+    0.0083,
+    0.0082,
+    0.0078,
+    0.007,
+    0.0069,
+    0.0061,
+    0.0061,
+    0.0052,
+    0.0048,
+    0.0047,
+    0.0042,
+    0.0037,
+    0.0036,
+    0.003,
+    0.0025
+  ]
+}

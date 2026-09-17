@@ -1,0 +1,539 @@
+{
+  "date": "2026-02-17",
+  "n_fetched": 150,
+  "papers": [
+    {
+      "id": "2602.14165",
+      "title": "Bidirectional Quantum Processor Interfacing by a 4-Kelvin Analog Signal Chain for Superconducting Qubit Control and Quantum State Readout",
+      "authors": [
+        "Deepak R",
+        "Lokendra Kanawat",
+        "Jayadeep K",
+        "Priyesh Shukla"
+      ],
+      "abstract": "This paper presents a comprehensive cryogenic analog signal processing architecture designed for superconducting qubit control and quantum state readout operating at 4 Kelvin. The proposed system implements a complete bidirectional signal path bridging room-temperature digital controllers with quantum processors at millikelvin stages. The control path incorporates a Phase-Locked Loop (PLL) for stable local oscillator generation, In-phase/Quadrature (I/Q) modulation for precise qubit gate operations, and a cryogenic power amplifier for signal conditioning. The readout path features a Low Noise Amplifier (LNA) with 14 dB gain and 8-Phase Shift Keying (8-PSK) demodulation for quantum state discrimination. All circuit blocks are designed and validated through SPICE simulations employing cryogenic MOSFET models at 180nm that account for carrier freeze-out, threshold voltage elevation, and enhanced mobility at 4 K. Simulation results demonstrate successful end-to-end signal integrity with I/Q phase error below 2°, image rejection ratio exceeding 35~dB, and symbol error rate below $10^{-6}$. This work provides a modular, simulation-validated framework for scalable cryogenic quantum control systems.",
+      "categories": [
+        "quant-ph",
+        "eess.SP"
+      ],
+      "published": "2026-02-15",
+      "score": 0.8997627096248099,
+      "similar_to": [
+        {
+          "title": "A digitally controlled silicon quantum processing unit",
+          "id": "2604.16216",
+          "similarity": 0.8548341989517212
+        },
+        {
+          "title": "Quantum Computer Controlled by Superconducting Digital Electronics at Millikelvin Temperature",
+          "id": "2503.09879",
+          "similarity": 0.8506056666374207
+        }
+      ],
+      "summary": {
+        "summary": "This paper presents a complete bidirectional cryogenic analog signal processing architecture operating at 4 K for superconducting qubit control and readout, featuring a PLL-based I/Q modulator, power amplifier, LNA with 14 dB gain, and 8-PSK demodulator. All circuits are validated through LTSpice simulations with 180 nm cryogenic MOSFET models, achieving I/Q phase error below 2°, image rejection exceeding 35 dB, and symbol error rate below $10^{-6}$.",
+        "motivation": "Conventional room-temperature control electronics routed via coaxial cables to millikelvin quantum processors introduce prohibitive thermal load ($\\sim 10$ µW per line), latency, and wiring complexity that limit scaling beyond 100 qubits. Integrating signal processing at 4 K reduces the thermal footprint to the mixing chamber while enabling tighter feedback for quantum error correction.",
+        "method": "A complete bidirectional signal chain was designed using standard CMOS topology: control path implements XOR-based PLL, VCO with 50 kΩ and 10 pF RC elements, I/Q modulator with third-order RC lowpass filter ($40$ dB harmonic rejection) and all-pass quadrature shifter achieving 90° phase accuracy, and binary-weighted DAC; readout path features LT1028 LNA (0.9 nV/$\\sqrt{\\text{Hz}}$ input noise) with gain set to 5 V/V and flash ADC. All simulations employed cryogenic MOSFET models capturing carrier freeze-out, threshold voltage elevation, and 75× thermal noise reduction at 4 K.",
+        "result": "PLL achieves phase lock within 2 ms with residual error $<0.5°$ RMS; I/Q amplitude imbalance $<0.3$ dB yields image rejection ratio $>35$ dB; 8-PSK demodulation achieves symbol error rate $<10^{-6}$; steady-state power consumption of 199.7 mW scales to approximately 88 mW projected at 65 nm node, offering $5\\times$ efficiency over Delta-Sigma approaches and reducing thermal budget utilization from 20% to 9%.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.14333",
+      "title": "High-fidelity Quantum Readout Processing via an Embedded SNAIL Amplifier",
+      "authors": [
+        "Leon Bello",
+        "Boris Mesits",
+        "Michael Hatridge",
+        "Hakan E. Türeci"
+      ],
+      "abstract": "Scalable, high-fidelity quantum-state readout remains a central challenge in the development of large-scale superconducting quantum processors. Conventional dispersive readout architectures depend on bulky isolators and external amplifiers, introducing significant hardware overhead and limiting opportunities for on-chip information processing. In this work, we propose a novel approach that embeds a nonlinear Superconducting Nonlinear Asymmetric Inductive eLement (SNAIL) into the readout chain, enabling coherent and directional processing of readout signals directly on-chip. This embedded SNAIL platform allows frequency-multiplexed resonators to interact through engineered couplings, forming a tunable readout-amplifier-output architecture that can manipulate quantum readout data \\textit{in situ}. Through theoretical modeling and numerical optimization, we show that this platform enhances fidelity, suppresses measurement-induced decoherence, and simplifies hardware complexity. These results establish the hybridized SNAIL as a promising building block for scalable and coherent quantum-state readout in next-generation processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-15",
+      "score": 0.8808493543873022,
+      "similar_to": [
+        {
+          "title": "Enhancing Dispersive Readout of Superconducting Qubits Through Dynamic Control of the Dispersive Shift: Experiment and Theory",
+          "id": "2307.07765",
+          "similarity": 0.8709713816642761
+        },
+        {
+          "title": "Readout-Induced Leakage in Superconducting Circuits with Nonlinear Couplings",
+          "id": "2606.16055",
+          "similarity": 0.8694765567779541
+        }
+      ],
+      "summary": {
+        "summary": "This paper proposes embedding a SNAIL amplifier on-chip within the readout chain of superconducting qubits to enable coherent, directional signal processing and parametric amplification, replacing bulky external isolators and achieving higher readout fidelity through a \"Catch-Process-Release\" protocol. The architecture uses frequency-multiplexed parametric interactions to sequentially squeeze, displace, convert, and amplify the readout signal while it remains in the high-Q readout and SNAIL resonators, then releases it to a fast output resonator for extraction.",
+        "motivation": "Conventional dispersive readout requires external circulators and isolators that introduce losses, thermal load, and hardware overhead, while limiting information efficiency by forcing continuous signal extraction. Integrating on-chip directional amplification could eliminate these bottlenecks and enable scalable readout with reduced photon budgets.",
+        "method": "A readout resonator (dispersively coupled to a qubit), SNAIL mode, and output resonator are weakly hybridized at detuned frequencies. Parametric pumps at sum/difference frequencies activate three-wave mixing processes (squeezing, beam-splitter conversion, phase-sensitive amplification) via the cubic SNAIL nonlinearity, implemented as a five-gate sequence: readout squeezing, displacement under dispersive rotation, readout-to-SNAIL conversion, phase-sensitive amplification, and SNAIL-to-output conversion. System dynamics are modeled using covariance-matrix descriptions of linear, time-varying Gaussian systems.",
+        "result": "The Embedded Amplifier protocol achieves 99.9% fidelity with $\\sim 5$ photons and $\\sim 1$ µs integration time, compared to Conventional Dispersive Readout requiring significantly longer times or higher photon budgets; the narrow dead-time overhead ($\\sim 300$ ns) of parametric gate operations is offset by the ability to saturate SNR at optimal interaction time $t_a = \\pi/2\\chi$ ($\\chi \\approx 3$ MHz), and efficiency approaches unity by eliminating losses from external components and implementing on-chip quantum-limited amplification.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.13736",
+      "title": "Quantum dynamics of microwave photons in synthetic frequency dimension",
+      "authors": [
+        "Zheshu Xie",
+        "Luojia Wang",
+        "Jiawei Qiu",
+        "Libo Zhang",
+        "Yuxuan Zhou",
+        "Ziyu Tao",
+        "Wenhui Huang",
+        "Yongqi Liang",
+        "Jiajian Zhang",
+        "Yuanzhen Chen",
+        "Song Liu",
+        "Jingjing Niu",
+        "Yang Liu",
+        "Youpeng Zhong",
+        "Luqi Yuan",
+        "Dapeng Yu"
+      ],
+      "abstract": "Synthetic frequency dimension offers a powerful approach to simulate lattice models and control photon dynamics. However, extending this concept into the quantum regime, particularly at the single-photon level, has remained challenging in photonic platforms. Here, we demonstrate quantum-state initialization and detection of single-photon evolutions within a synthetic frequency lattice by integrating a superconducting qubit with a 16-meter aluminum coaxial cable. A tunable superconducting quantum interference device (SQUID)-based modulator is employed to synthesize lattice couplings and artificial gauge fields. We observe single-photon quantum random walks and Bloch oscillations, as well as nonadiabatic, unidirectional frequency conversion under rapid temporal modulation of the lattice Hamiltonian, together with band-structure measurements. The lattice connectivity can be readily reconfigured to construct higher-dimensional lattices using multiple drive tones. Our results establish superconducting quantum circuits as a versatile platform for programmable Hamiltonians and extensible synthetic lattices with flexible single-photon control.",
+      "categories": [
+        "quant-ph",
+        "physics.optics"
+      ],
+      "published": "2026-02-14",
+      "score": 0.7971839230417868,
+      "similar_to": [
+        {
+          "title": "Characterization of drive-induced unwanted state transitions in superconducting circuits",
+          "id": "2506.24070",
+          "similarity": 0.838604211807251
+        },
+        {
+          "title": "Cavity quantum electrodynamics for superconducting electrical circuits: an architecture for quantum computation",
+          "id": null,
+          "similarity": 0.836868405342102
+        }
+      ],
+      "summary": {
+        "summary": "A superconducting qubit integrated with a 16 m aluminum coaxial cable and SQUID-based modulator realizes single-photon quantum dynamics in a synthetic frequency lattice with $\\Omega_{\\mathrm{fsr}}/2\\pi = 7.33$ MHz and mode coherence times $T_1 \\sim 29.1$ µs, $T_2 \\sim 57.9$ µs. The platform demonstrates quantum random walks, Bloch oscillations with period $T_B = 5$ µs, non-adiabatic unidirectional frequency conversion, band-structure mapping, and synthetic gauge fields via dual-tone driving.",
+        "motivation": "Single-photon quantum dynamics in synthetic frequency dimensions have been limited in photonic platforms by losses and weak photon detection, motivating exploration of low-loss superconducting cables recently developed for qubit interconnects.",
+        "method": "A transmon qubit ($\\omega_q/2\\pi = 4.32$ GHz) couples to cable modes via a gmon tunable coupler (0 to 7.4 MHz) and is used as a single-photon source and detector; a flux-tunable SQUID modulator enables inter-mode hopping with $\\sim 30$ addressable modes within the $\\sim 230$ MHz bandwidth near mode indices $m \\in [576,608]$; microwave drives on the SQUID synthesize programmable couplings with tunable phases creating synthetic gauge flux $\\Phi = 2\\phi_1 - \\phi_2$ per plaquette.",
+        "result": "Single-site excitations exhibit nearest-neighbor and next-nearest-neighbor quantum random walks; Bloch oscillations occur with detuning $\\Delta = -0.2$ MHz; wave packets show asymmetric Bloch motion and undergo unidirectional transport via periodic detuning reversal every 2.5 µs; band structures are measured via Fourier-transformed quadrature readout and verify theory; dual-tone driving at phases $\\phi_1 = \\pi, \\phi_2 = \\pi$ and $0.5\\pi$ produces tunable band asymmetry.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.13563",
+      "title": "Flux Pumped Kerr-Free Parametric Amplifier",
+      "authors": [
+        "Kagan Yanik",
+        "Irwin Huang",
+        "Bibek Bhandari",
+        "Bingcheng Qing",
+        "Ahmed Hajr",
+        "Ke Wang",
+        "David I. Santiago",
+        "Irfan Siddiqi",
+        "Justin Dressel",
+        "Andrew N. Jordan"
+      ],
+      "abstract": "We propose a flux-pumped superconducting parametric amplifier based on symmetrically threaded superconducting quantum interference devices (SQUIDs) that achieves a Kerr-free operating point under suitable drive conditions. Eliminating the Kerr nonlinearity is advantageous for quantum-limited amplification, as it mitigates unwanted distortions in squeezing and prevents degradation of both gain and quantum efficiency in the high-gain strong drive regime. By replacing the central junction in the symmetrically threaded SQUIDs (STS) configuration with a linear inductor, we find that the Kerr-nonlinearity can be eliminated and the effective Hamiltonian reduces to that of a degenerate parametric amplifier (DPA), up to higher-order corrections in the zero-point fluctuations of the superconducting phase operator. We show that the deviations from ideal DPA behavior introduced by these higher-order terms are significantly weaker than those associated with a Kerr nonlinearity. Consequently, the STS design can be driven strongly while maintaining near-quantum-limited performance at the Kerr-free point. Our analysis predicts phase-preserving gain and efficiency approaching the quantum limit, with robust operation demonstrated up to 25 dB of gain.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-14",
+      "score": 0.7712351917481615,
+      "similar_to": [
+        {
+          "title": "High-gain and large-bandwidth Josephson parametric amplifier influenced by Fabry-Perot interference",
+          "id": "2604.13881",
+          "similarity": 0.8809167146682739
+        },
+        {
+          "title": "Phase-sensitive cascade quantum amplifier with nearly noiseless operation",
+          "id": "2608.25645",
+          "similarity": 0.8762365579605103
+        }
+      ],
+      "summary": {
+        "summary": "This paper proposes a flux-pumped superconducting parametric amplifier using symmetrically threaded SQUIDs (STS) with a linear inductor in the central branch that achieves Kerr-free operation at a static flux bias of $F = -\\pi/2$. The design maintains near-quantum-limited phase-preserving gain and efficiency up to 25 dB, substantially outperforming conventional single-loop SQUID-based JPAs limited by residual Kerr nonlinearity.",
+        "motivation": "Kerr nonlinearity in flux-pumped JPAs degrades squeezing and efficiency at high gains, preventing operation near the quantum limit. A flux-pumped platform that systematically cancels Kerr nonlinearity while maintaining strong pump coupling would enable improved qubit readout.",
+        "method": "The STS architecture replaces the central Josephson junction with a linear inductor $L=100$ pH and threads both SQUID loops symmetrically. At the bias point $F = -\\pi/2$ where $\\cos F = 0$, the Kerr coefficient $K \\propto \\cos F$ vanishes while the pump term $\\lambda \\propto \\sin F$ remains active. The effective Hamiltonian reduces to a DPA plus a weak cubic correction term $\\Lambda \\propto (\\Phi_{\\text{zps}}/\\phi_0)^4$. Linear-response gain and efficiency are calculated via harmonic balance and input-output theory with parameters $\\kappa/2\\pi = 300$ MHz, $L_J = 80$ pH, $C_\\Sigma = 4$ pF.",
+        "result": "The STS amplifier achieves phase-preserving gain matching the ideal DPA up to 25 dB with quantum efficiency $\\eta \\approx 0.5$ at high gain, compared to single-SQUID JPAs with $|K|/\\kappa = 10^{-2}$ that fall below quantum-limited performance beyond 15 dB. Wigner function analysis confirms the Kerr-free design produces nearly ideal squeezed states, while the residual $\\Lambda$ term remains negligible ($|\\Lambda|/\\kappa \\lesssim 2.4 \\times 10^{-4}$).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.13456",
+      "title": "Shunt-controlled resistive state of superconducting wires",
+      "authors": [
+        "Khalil Harrabi",
+        "Zain Alzoubi",
+        "Leonardo Cadorim",
+        "Milorad Milosevic"
+      ],
+      "abstract": "The use of resistive shunts in superconducting electronics is vast and versatile, to dampen oscillations in junctions, stabilize switching behavior, aid current sensing, divert current during quenches, and protect both the superconductor and the circuit from damage. In single-photon detection by superconducting nanowires, the shunt is crucial for the timely relaxation of the sensor between the events to detect. Here we step out from the superconducting state and discuss the effect of the shunt resistor on the resistive state of a superconducting wire, at elevated currents still below the critical current for the transition to the normal state. We reveal how the shunt resistance controls the system dynamics and the onset of different resistive phases that include hot-spot and phase-slippage events. The accompanying dynamic current redistribution in the circuit also affects the local heating properties and additionally contributes to the control of the resistive state, particularly important at the elevated operation temperatures.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-02-13",
+      "score": 0.5709179364159817,
+      "similar_to": [
+        {
+          "title": "Electrical post-fabrication tuning of aluminum Josephson junctions at room temperature",
+          "id": "2602.20002",
+          "similarity": 0.8091973662376404
+        },
+        {
+          "title": "Superconducting Flux Memory for Cryogenic Applications",
+          "id": "2609.00772",
+          "similarity": 0.8009722232818604
+        }
+      ],
+      "summary": {
+        "summary": "This work experimentally and numerically investigates how shunt resistance controls the resistive state of superconducting NbTiN wires (20 nm thick, 10 μm wide), revealing two distinct dynamic regimes: hot-spot and phase-slip behavior accessed through shunt-dependent current redistribution. Time-dependent Ginzburg–Landau simulations show that higher shunt resistance ($R_s \to 10 \\\\\\\\\\\bf{R}_{\\\\mathrm{GL}}$) accelerates the characteristic timescale $\\tau = L_K/(R_s + R_w)$ for Cooper-pair destruction/recovery cycles, transitioning the system from periodic hot-spot formation to stabilized quasi-phase-slip lines at smaller currents.",
+        "motivation": "Shunts are ubiquitous in superconducting circuits for damping, protection, and current diversion, particularly in superconducting nanowire single-photon detectors where they enable sensor relaxation between detection events. Understanding how shunt resistance controls vortex dynamics in the resistive regime below the critical current has implications for optimizing current capacity and heating in these devices.",
+        "method": "NbTiN whiskers with $T_c \\approx 11$ K were biased with 450 ns voltage pulses to measure temperature-dependent $I$–$V$ curves across shunt resistances $R_{sh} \\in \\{0.03, 0.05, 0.075, 1.3\\}$ Ω at $T = 5$–$9$ K. Simulations solved the TDGL equation coupled to circuit Poisson equation with $\\gamma = 10$ on a $100\\xi \\times 100\\xi$ domain, incorporating dynamic current redistribution via equation $L_K \\frac{dJ_s}{dt} = (J - J_s) R_s - V_s$.",
+        "result": "Measured and simulated $I$–$V$ characteristics show voltage increasing with $R_s$ at fixed current, with negative differential resistance at the hot-spot to phase-slip transition; increasing $R_s$ from $0.5$ to $10 \\ R_{\\\\mathrm{GL}}$ reduces the destruction/recovery timescale from $\\Delta t = 4929 \\tau_{\\\\mathrm{GL}}$ to $991 \\tau_{\\\\mathrm{GL}}$, pushing quasi-phase-slip-line formation to lower currents and lowering transition voltage by roughly an order of magnitude.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.14694",
+      "title": "Demonstrating and Benchmarking Classical Shadows for Lindblad Tomography",
+      "authors": [
+        "Rune Thinggaard Birke",
+        "Johann Bock Severin",
+        "Malthe A. Marciniak",
+        "Emil Hogedal",
+        "Andreas Nylander",
+        "Irshad Ahmad",
+        "Amr Osman",
+        "Janka Biznárová",
+        "Marcus Rommel",
+        "Anita Fadavi Roudsari",
+        "Jonas Bylander",
+        "Giovanna Tancredi",
+        "Daniel Stilck França",
+        "Albert Werner",
+        "Christopher W. Warren",
+        "Jacob Hastrup",
+        "Svend Krøjer",
+        "Morten Kjaergaard"
+      ],
+      "abstract": "Spurious couplings and decoherence degrade the performance of solid-state quantum processors, demanding careful design, calibration, and mitigation protocols. These strategies often rely on characterization of the idling processor, but tomographic recovery of (time-independent) Lindblad dynamics scales exponentially with qubit count. Here, we experimentally benchmark and demonstrate that randomized (\"shadow\") measurements accelerate Lindblad tomography on a superconducting transmon processor. We first implement extensible Lindblad tomography, which estimates Lindblad parameters using a complete tomographic dataset, and use it as a baseline to benchmark a shadow tomography approach, shadow Lindblad tomography. The shadow approach recycles randomized configurations to estimate the same Lindblad parameters using far fewer resources under physically motivated locality assumptions. We experimentally verify these assumptions in our processor by implementing the protocols on one- and three-qubit subsystems; here, shadow Lindblad tomography reproduces extensible Lindblad tomography within uncertainties while using exponentially fewer configurations. Leveraging this efficiency, we apply shadow Lindblad tomography to the full five-qubit processor and recover all single qubit dissipation and two-qubit coupling parameters in 9 hours of acquisition time compared to an estimated 58 hours for extensible Lindblad tomography. Additionally, our shadow implementation is compatible with conventional Gaussian error propagation, avoiding the use of median-of-means estimators. Together, these results demonstrate how randomized shadow tomography protocols can be practically implemented to learn quantum processor dynamics at an increasing qubit count.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-16",
+      "score": 0.5550724091967618,
+      "similar_to": [
+        {
+          "title": "Benchmarking quantum gates and circuits",
+          "id": "2407.09942",
+          "similarity": 0.8512961268424988
+        },
+        {
+          "title": "Dynamical decoupling for superconducting qubits: a performance survey",
+          "id": "2207.03670",
+          "similarity": 0.8239279985427856
+        }
+      ],
+      "summary": {
+        "summary": "This work experimentally demonstrates shadow Lindblad tomography (SLT) on a superconducting 5-qubit transmon processor, achieving exponential reduction in measurement overhead compared to extensible Lindblad tomography (ELT) while maintaining agreement within uncertainties. The protocol learns time-independent Lindblad parameters describing idling dynamics and two-qubit couplings in 9 hours versus an estimated 58 hours for ELT on the full processor.",
+        "motivation": "Tomographic recovery of open-system Lindblad dynamics scales exponentially with qubit count, demanding efficient characterization schemes for device calibration and performance diagnostics in superconducting processors.",
+        "method": "Both ELT and SLT extract Lindblad coefficients from short-time evolution traces of product-state preparations and Pauli measurements, but SLT leverages randomized configurations with classical-shadow post-processing to estimate all required Pauli transfer-matrix elements via reusable randomized data, while ELT uses a complete deterministic set of tomographic probes.",
+        "result": "On 1-qubit and 3-qubit subsystems, SLT reproduces ELT parameters while using exponentially fewer configurations; the relative sample fraction required by SLT decreases with system size, consistent with $k$-local structure. On the full 5-qubit processor under a 2-local model, SLT recovered all single-qubit dissipation rates (e.g., $T_1 \\sim 10$–$30$ µs) and two-qubit coupling strengths ($< 5$ kHz), with nearest-neighbor interactions dominating over next-nearest-neighbor terms by two orders of magnitude.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.13399",
+      "title": "Protection of Exponential Operation using Stabilizer Codes in the Early Fault Tolerance Era",
+      "authors": [
+        "Dawei Zhong",
+        "Todd A. Brun"
+      ],
+      "abstract": "Quantum error correction offers a promising path to suppress errors in quantum processors, but the resources required to protect logical operations from noise, especially non-Clifford operations, pose a substantial challenge to achieve practical quantum advantage in the early fault-tolerant quantum computing (EFTQC) era. In this work, we develop a systematic scheme to encode exponential maps of the form $\\exp(-iθP)$ into stabilizer codes with simple circuit structures and low qubit overhead. We provide encoded circuits with small first-order logical error rate after postselection for the [[n, n-2, 2]] quantum error-detecting codes and the [[5, 1, 3]], [[7, 1, 3]], and [[15, 7, 3]] quantum error-correcting codes. Detailed analysis shows that under the level of physical noise of current devices, our encoding scheme is 4--7 times less noisy than the unencoded operation, while at most 3% of runs need to be discarded.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-13",
+      "score": 0.5370162717816425,
+      "similar_to": [
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.8692936897277832
+        },
+        {
+          "title": "Exponential suppression of bit-flips in a qubit encoded in an oscillator",
+          "id": "1907.11729",
+          "similarity": 0.8622923493385315
+        }
+      ],
+      "summary": {
+        "summary": "This work develops a systematic scheme to encode exponential maps $\\exp(-i\\theta P)$ into small stabilizer codes with simple circuit structures and low overhead, achieving 4–7× noise reduction compared to unencoded operations at current device noise levels ($p \\approx 10^{-3}$) with less than 3% postselection overhead. The encoding leverages postselection to suppress first-order logical errors without requiring full fault-tolerance, targeting near-term early fault-tolerant quantum computing applications.",
+        "motivation": "Non-Clifford operations like exponential maps are essential for variational ansätze and Hamiltonian simulation, but existing error-suppression methods such as magic-state distillation require prohibitive overhead for near-term devices.",
+        "method": "For $[[n, k, d]]$ stabilizer codes, encode $\\exp(-i\\theta\\bar{P})$ as $\\exp(-i\\theta P)$ where $P$ is a physical representative of logical Pauli $\\bar{P}$, using circuits of the form $U\\exp(-i\\theta P_1)U^\\dagger$ with Clifford gates $U$ and single-qubit rotation $R(\\theta)$. Systematically search candidate circuits by varying base structures (XBase, YBase, ZBase), ancilla positions, and gate arrangements to minimize first-order logical error rate $p_L = q + \\frac{l}{15}p$ under postselection, where $q$ is analog error rate, $p$ is two-qubit gate error rate, and $l$ counts undetectable two-qubit errors.",
+        "result": "For [[5,1,3]], [[7,1,3]], and [[15,7,3]] codes, single-qubit rotations achieve $l=2$ (lower bound); multi-qubit $Z$-rotations achieve $l=2$ on [[5,1,3]]/[[7,1,3]] and $l \\leq 2$ on [[15,7,3]]. With $p=10^{-3}$ and $q=10^{-3}$, encoded weight-$w$ operators in [[n,n-2,2]] codes show improvement ratios $p_U/(p_L/p_S) = 5$–$7$ for $w=4,6,8$; improvement grows to 12–30× at $q=10^{-4}$, with postselection acceptance rates $\\geq 97$%",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.13593",
+      "title": "Josephson-like magnetic tunnel junction -- transition from classical to quantum regime",
+      "authors": [
+        "V. V. Yurlov",
+        "P. N. Skirdkov",
+        "K. A. Zvezdin",
+        "A. K. Zvezdin"
+      ],
+      "abstract": "We theoretically propose and analyze a Josephson-like magnetic tunnel junction (MTJ) structure that exhibits quantum spin dynamics analogous to those in superconducting Josephson junctions. By exploiting the isomorphism between the equations of motion for low-dissipation MTJs with easy-plane anisotropy and the Josephson phase dynamics, we construct a theoretical framework for realizing spintronic qubits. Within this framework, we identify the physical parameters -- such as anisotropy constants, Gilbert damping, spin current amplitude, and geometric factors -- that govern the transition from classical to quantum behavior. We show that different types of spintronic qubits, including analogs of charge, flux, and transmon superconducting qubits, can be implemented depending on the hierarchy of energy scales. A Hamiltonian formalism is developed for each regime, enabling an analytical treatment of the two-level quantum dynamics and estimation of coherence times. In particular, we demonstrate that the spin current can be used not only to excite but also to stabilize the qubit states through dissipation control. These findings provide a route toward integrating spintronic qubits into CMOS-compatible architectures and lay the groundwork for a fully spintronic platform for quantum computation.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "physics.app-ph"
+      ],
+      "published": "2026-02-14",
+      "score": 0.518725291902986,
+      "similar_to": [
+        {
+          "title": "Coherent Josephson qubit suitable for scalable quantum integrated circuits",
+          "id": "1304.2322",
+          "similarity": 0.8356865644454956
+        },
+        {
+          "title": "Observation of Josephson Harmonics in Tunnel Junctions",
+          "id": "2302.09192",
+          "similarity": 0.8251945376396179
+        }
+      ],
+      "summary": {
+        "summary": "This paper establishes a theoretical framework for implementing Josephson-like qubits using easy-plane magnetic tunnel junctions (MTJs) by exploiting the mathematical isomorphism between low-dissipation MTJ spin dynamics and superconducting Josephson junction physics. The authors develop a Hamiltonian formalism identifying three distinct MTJ-based qubit types—transmon, flux, and charge—and derive conditions on anisotropy constants, Gilbert damping $\\alpha \\lesssim 10^{-3}$, resonance frequency $\\omega_r \\sim 10^{10}$ rad/s, and temperature $T \\lesssim 0.36$ K for quantum operation.",
+        "motivation": "MTJs are CMOS-compatible and industrially deployed in memory applications, making them attractive alternatives to Josephson junctions for scalable quantum integration without requiring millikelvin operation, despite Josephson junctions' proven success in quantum computing.",
+        "method": "The authors derive an effective Lagrangian and Hamiltonian from the Landau-Lifshitz-Gilbert equation under low-dissipation conditions ($\\omega_d \\ll \\omega_r$), establishing correspondence with Josephson junction theory where azimuthal angle $\\varphi$ and magnetization projection $M_z$ play roles analogous to phase and charge operators, then systematically analyze different energy scale hierarchies to realize transmon, flux, and charge qubit analogs.",
+        "result": "Transmon and flux MTJ qubits are feasible with realistic parameters: $\\hbar\\omega_{01} \\sim 10^{-17}$ to $10^{-16}$ erg, $T_1 \\sim 1$ µs coherence times comparable to Josephson qubits, tunable effective damping via spin current injection to suppress decoherence, and critical temperatures up to $\\sim 360$ mK for ferromagnets (relaxable to 1 K using ferrimagnets/antiferromagnets with $\\omega_r \\sim 1$ THz).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.14637",
+      "title": "A scalable non-superconducting tunnel junction technology",
+      "authors": [
+        "Juho Luomahaara",
+        "Kristupas Razas",
+        "Omid Sharifi Sedeh",
+        "Renan P. Loreto",
+        "Janne S. Lehtinen",
+        "Mingchi Xu",
+        "Armel A. Cotten",
+        "Aldo Tarascio",
+        "Peter Müller",
+        "Nikolai Yurttagül",
+        "Lassi Lehtisyrjä",
+        "Leif Grönberg",
+        "Christian P. Scheller",
+        "Jonathan R. Prance",
+        "Michael D. Thompson",
+        "Richard P. Haley",
+        "Mika Prunnila",
+        "Dominik M. Zumbühl"
+      ],
+      "abstract": "Tunnel junctions are one of the key elements of chip-scale microsystems serving various technologies from classical microelectronics to quantum information. Aluminium and its oxide (AlOx) have dominated cryogenic tunnel junction technology for decades due to the high quality of AlOx barriers and Al superconducting properties below 1.2 K. However, many applications require non-superconducting junctions, either standalone or in combination with superconducting technology, motivating efforts to suppress Al superconductivity through magnetic fields, doping, or proximity effects -- approaches that so far suffered from integration compatibility and scalability issues. Here, we present a CMOS-compatible normal-metal tunnel junction technology based on TiW alloy and AlOx barriers. We demonstrate wafer-scale fabrication of TiW/Al-AlOx/TiW junctions and validate their performance in Coulomb blockade thermometers operating down to 20 mK, confirming robust normal-state behavior. This TiW-based architecture offers a scalable solution for non-superconducting tunnel junctions across a broad temperature range, enabling integration into advanced cryogenic, quantum and nanoelectronic chip-level systems.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-02-16",
+      "score": 0.5151857139948905,
+      "similar_to": [
+        {
+          "title": "Investigation of Parasitic Two-Level Systems in Merged-Element Transmon Qubits",
+          "id": "2509.22593",
+          "similarity": 0.8100725412368774
+        },
+        {
+          "title": "2D transmons with lifetimes and coherence times exceeding 1 millisecond",
+          "id": "2503.14798",
+          "similarity": 0.8099146485328674
+        }
+      ],
+      "summary": {
+        "summary": "A CMOS-compatible normal-metal tunnel junction technology based on TiW/Al-AlOx/TiW trilayers has been demonstrated with wafer-scale yield and validated using Coulomb blockade thermometers down to 20 mK. The TiW electrodes suppress Al superconductivity via proximity effects while preserving the high-quality AlOx barrier, enabling zero-field operation of non-superconducting junctions across a broad cryogenic temperature range.",
+        "motivation": "Practical applications spanning quantum information, thermometry, and nanoelectronics require non-superconducting tunnel junctions either standalone or integrated with superconducting circuits, but previous suppression strategies (magnetic fields, Mn doping, Cu proximity) suffer from integration incompatibility and scalability limitations.",
+        "method": "A TiW alloy—a standard CMOS-compatible diffusion barrier—was integrated as the normal-metal electrode in place of Al in a trilayer stack with in-situ oxidized Al tunnel barriers; devices were characterized via room-temperature resistance scaling ($R = \\rho_t/(d_J - \\text{LWR})^2$ with $\\rho_t = 6900$ to 21000 Ω μm$^2$ across three wafers) and low-temperature transport measurements of CBT arrays ($61 \\times 20$ junctions, $E_c/k_B = 41.3$ mK).",
+        "result": "CBTs remained strictly normal-conducting from 20 mK to 1 K with junction temperature $T_\\mathrm{CBT}$ agreeing with a calibrated ruthenium-oxide thermometer to within 1% over nearly two orders of magnitude; application of parallel magnetic fields up to 1 T produced negligible deviation ($\\lesssim 3\\%$), confirming complete absence of superconductivity and demonstrating robust thermometry without external magnetic field suppression.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8998,
+    0.8808,
+    0.7972,
+    0.7712,
+    0.5709,
+    0.5551,
+    0.537,
+    0.5187,
+    0.5152,
+    0.3414,
+    0.3304,
+    0.324,
+    0.3178,
+    0.3095,
+    0.2781,
+    0.2756,
+    0.2724,
+    0.2531,
+    0.2356,
+    0.2224,
+    0.2103,
+    0.1955,
+    0.1917,
+    0.1876,
+    0.1757,
+    0.1632,
+    0.1621,
+    0.1612,
+    0.1603,
+    0.1546,
+    0.1508,
+    0.1503,
+    0.15,
+    0.1488,
+    0.1431,
+    0.1386,
+    0.1377,
+    0.1271,
+    0.1254,
+    0.1214,
+    0.1197,
+    0.1197,
+    0.1128,
+    0.1108,
+    0.1089,
+    0.1079,
+    0.1078,
+    0.0986,
+    0.095,
+    0.091,
+    0.0895,
+    0.0895,
+    0.0892,
+    0.0857,
+    0.0827,
+    0.0766,
+    0.0752,
+    0.072,
+    0.0702,
+    0.07,
+    0.068,
+    0.0661,
+    0.0627,
+    0.0615,
+    0.0565,
+    0.0562,
+    0.0537,
+    0.0505,
+    0.0491,
+    0.0485,
+    0.0482,
+    0.0458,
+    0.045,
+    0.0435,
+    0.0428,
+    0.042,
+    0.0392,
+    0.0388,
+    0.038,
+    0.035,
+    0.0339,
+    0.0337,
+    0.0321,
+    0.0312,
+    0.031,
+    0.0285,
+    0.0285,
+    0.0272,
+    0.0265,
+    0.0263,
+    0.0257,
+    0.0253,
+    0.0252,
+    0.0242,
+    0.024,
+    0.0222,
+    0.0222,
+    0.0218,
+    0.0217,
+    0.0216,
+    0.0213,
+    0.0199,
+    0.0196,
+    0.0192,
+    0.0189,
+    0.0186,
+    0.0182,
+    0.0173,
+    0.0173,
+    0.016,
+    0.0157,
+    0.0153,
+    0.0148,
+    0.0146,
+    0.0142,
+    0.0133,
+    0.0133,
+    0.0123,
+    0.0119,
+    0.0115,
+    0.0108,
+    0.0107,
+    0.01,
+    0.0096,
+    0.0095,
+    0.0095,
+    0.0086,
+    0.0086,
+    0.0083,
+    0.0082,
+    0.0081,
+    0.0081,
+    0.0081,
+    0.0073,
+    0.0071,
+    0.0069,
+    0.0066,
+    0.0061,
+    0.0055,
+    0.0054,
+    0.0049,
+    0.0039,
+    0.0034,
+    0.003,
+    0.0024,
+    0.0022,
+    0.0017,
+    0.0017,
+    0.0015,
+    0.0011
+  ]
+}

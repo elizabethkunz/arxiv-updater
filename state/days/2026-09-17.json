@@ -1,0 +1,304 @@
+{
+  "date": "2026-09-17",
+  "n_fetched": 113,
+  "papers": [
+    {
+      "id": "2609.14230",
+      "title": "An All-van-der-Waals Qubit",
+      "authors": [
+        "Sein Park",
+        "Sameia Zaman",
+        "Junghyun Kim",
+        "Junyoung An",
+        "Daniel Rodan-Legrain",
+        "Hung-Yu Tsao",
+        "Chia-Chin Tsai",
+        "Aranya Goswami",
+        "Réouven Assouly",
+        "William P. Banner",
+        "Gabriel D. Cutter",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Terry P. Orlando",
+        "Gil-Ho Lee",
+        "Kyle Serniak",
+        "Max Hays",
+        "Jeffrey A. Grover",
+        "Philip Kim",
+        "Pablo Jarillo-Herrero",
+        "Joel Î-j. Wang",
+        "William D. Oliver"
+      ],
+      "abstract": "Advances in solid-state physics, materials science, and device engineering have accelerated the development of superconducting qubits. Among emerging platforms, van der Waals (vdW) materials and their heterostructures are potentially attractive building blocks for quantum devices, yet their realization in qubit architectures remains largely underexplored. Here we report an all-vdW superconducting qubit based on a NbSe$_2$-hBN-NbSe$_2$ junction, in which a thin hBN layer simultaneously provides Josephson coupling and capacitive shunting between two NbSe$_2$ islands, forming a \"merged-element\" transmon. Temporal characterization using circuit quantum electrodynamics (cQED) techniques yields an average energy-relaxation time $T_{1,\\mathrm{avg}} = 55 ~μs$, Hahn-echo coherence time $T_{2\\mathrm{E},\\mathrm{avg}} = 21 ~μs$, and Ramsey coherence time $T_{2\\mathrm{R},\\mathrm{avg}} = 1.9~μs$. The relatively low Ramsey time is primarily attributable to an enhanced sensitivity to charge noise consistent with the realized device parameters and not a fundamental limitation. These results show that lumped-element superconducting qubits based on vdW heterostructures can achieve coherence times comparable to those of conventional Al-AlO$_\\mathrm{x}$-Al qubits, while offering a reduced device footprint and suppressed stray capacitive coupling.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-09-16",
+      "score": 0.9437765896353411,
+      "similar_to": [
+        {
+          "title": "An All-van-der-Waals Qubit",
+          "id": "2609.14230",
+          "similarity": 1.000000238418579
+        },
+        {
+          "title": "New material platform for superconducting transmon qubits with coherence times exceeding 0.3 milliseconds",
+          "id": "2003.00024",
+          "similarity": 0.8655136227607727
+        }
+      ],
+      "summary": {
+        "summary": "An all-van-der-Waals superconducting qubit is built from a NbSe$_2$-hBN-NbSe$_2$ junction in which the thin hBN layer provides both the Josephson coupling and the shunt capacitance between two NbSe$_2$ islands, giving a merged-element transmon. cQED characterization yields average $T_1 = 55$ μs, Hahn-echo $T_{2E} = 21$ μs and Ramsey $T_{2R} = 1.9$ μs, comparable to conventional Al-AlO$_x$-Al qubits in a much smaller footprint.",
+        "motivation": "van der Waals heterostructures are attractive building blocks for compact, low-stray-coupling quantum devices, but have barely been explored in actual qubit architectures.",
+        "method": "A single hBN layer between two NbSe$_2$ islands serves as tunnel barrier and capacitor dielectric at once, and the device is measured in the time domain with standard circuit-QED techniques.",
+        "result": "$T_{1,\\mathrm{avg}} = 55$ μs and $T_{2E,\\mathrm{avg}} = 21$ μs; the short $T_{2R,\\mathrm{avg}} = 1.9$ μs is attributed to enhanced charge-noise sensitivity at the realized device parameters rather than to a fundamental limit.",
+        "source": "abstract",
+        "generated_by": "Claude, written in-session from the abstract (not via the script's API path)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.18081",
+      "title": "Remote Adiabatic Controlled-Z Gate between Distant Superconducting Qubits",
+      "authors": [
+        "Si-Yu Xu",
+        "Yi-Rong Jin",
+        "Wen-Gang Zhang",
+        "Hai-Feng Yu"
+      ],
+      "abstract": "Direct entangling gates between spatially separated qubits are a key capability for modular quantum computing. They enable nonlocal quantum circuits to be executed across different processor modules, thereby alleviating single-chip scaling constraints and expanding the effective connectivity of the system. Here, we propose and numerically investigate a remote adiabatic controlled-Z gate between two frequency-tunable superconducting qubits connected by a multi-mode coaxial cable. The cable-mediated interaction enables the gate to be implemented without additional tunable couplers, preserving a simple circuit architecture. For a 30-cm cable, simulations incorporating ten standing-wave modes yield an optimized gate infidelity of $4.71\\times10^{-7}$ with a duration of 376.7 ns in the absence of decoherence. The gate maintains high fidelity under qubit-frequency fluctuations and millimeter-scale cable-length variations. Calculations for 50- and 100-cm cable situations demonstrate its potential for even larger cryogenic systems. These results provide a promising approach to extending high-fidelity quantum operations beyond individual chips and toward scalable, interconnected superconducting quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-16",
+      "score": 0.8128473268029995,
+      "similar_to": [
+        {
+          "title": "Realization of high-fidelity CZ and ZZ-free iSWAP gates with a tunable coupler",
+          "id": "2011.01261",
+          "similarity": 0.8594793081283569
+        },
+        {
+          "title": "Quantum crosstalk cancellation for fast entangling gates and improved multi-qubit performance",
+          "id": "2106.00675",
+          "similarity": 0.8594714403152466
+        }
+      ],
+      "summary": {
+        "summary": "A remote adiabatic controlled-Z gate is proposed and simulated for two frequency-tunable superconducting qubits joined by a multi-mode coaxial cable, with the cable-mediated interaction removing the need for tunable couplers. For a 30 cm cable modelled with ten standing-wave modes, the optimized gate reaches an infidelity of $4.71\\times10^{-7}$ in 376.7 ns without decoherence.",
+        "motivation": "Direct entangling gates between qubits on separate modules would let nonlocal circuits run across processors, easing single-chip scaling limits and extending connectivity.",
+        "method": "Numerical simulation and pulse optimization of an adiabatic CZ between two tunable qubits coupled through the standing-wave modes of a coaxial cable, with no additional coupler elements in the circuit.",
+        "result": "Infidelity $4.71\\times10^{-7}$ at 376.7 ns for 30 cm (decoherence-free), robust to qubit-frequency fluctuations and millimetre-scale cable-length variations; 50 cm and 100 cm cables are also evaluated.",
+        "source": "abstract",
+        "generated_by": "Claude, written in-session from the abstract (not via the script's API path)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.17165",
+      "title": "Phase-stable voltage bias for Josephson photonics devices",
+      "authors": [
+        "Amir Hosein Esmaeili",
+        "Naveen Nehra",
+        "Alexandre Paquette",
+        "Mona Arabmohammadi",
+        "Baptiste Monge",
+        "Alexandre Rogalle",
+        "Francois Cyrenne-Bergeron",
+        "Yannick Lapointe",
+        "Nicolas Lavoie",
+        "Nicolas Bourlet",
+        "Max Hofheinz"
+      ],
+      "abstract": "Parametric interactions are foundational to superconducting quantum technologies, yet conventional microwave-driven pumping introduces parasitic Kerr nonlinearities and higher-order harmonics that limit device performance. Josephson Photonics (JP) avoids these parasitics by utilizing dc-biased junctions but has remained constrained by high phase noise and the absence of a stable phase reference. Here, we overcome this limitation by integrating a Josephson voltage standard (JVS) to establish a noise-tolerant phase reference, and demonstrate that this reference is coherently transferred to an inelastic Cooper-pair tunneling amplifier (ICTA) via the superconducting order parameter. The resulting low-phase-noise architecture yields a 14-dB enhancement in averaged gain and better quantum-limited noise performance. Critically, the phase reference enables the first observation of phase-sensitive gain and squeezing in a dc-biased amplifier. By reconciling clean, Kerr-free nonlinearities with phase-coherent drive, our architecture establishes a robust platform for high-purity parametric processes in superconducting circuits.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-16",
+      "score": 0.6828370181332387,
+      "similar_to": [
+        {
+          "title": "Phase-sensitive cascade quantum amplifier with nearly noiseless operation",
+          "id": "2608.25645",
+          "similarity": 0.8722773790359497
+        },
+        {
+          "title": "A near-quantum-limited Josephson traveling-wave parametric amplifier",
+          "id": null,
+          "similarity": 0.868105947971344
+        }
+      ],
+      "summary": {
+        "summary": "A Josephson voltage standard is integrated as a noise-tolerant phase reference for dc-biased Josephson photonics devices, and that reference is shown to transfer coherently to an inelastic Cooper-pair tunneling amplifier through the superconducting order parameter. The low-phase-noise bias gives a 14 dB enhancement in averaged gain, improved quantum-limited noise performance, and the first observation of phase-sensitive gain and squeezing in a dc-biased amplifier.",
+        "motivation": "Microwave-pumped parametric devices suffer from parasitic Kerr nonlinearity and higher harmonics; dc-biased Josephson photonics avoids these but has been held back by high phase noise and the lack of a stable phase reference.",
+        "method": "The junction's voltage bias is locked to a Josephson voltage standard, and the resulting phase coherence is tested on an inelastic Cooper-pair tunneling amplifier.",
+        "result": "14 dB higher averaged gain, better quantum-limited noise performance, and phase-sensitive gain and squeezing demonstrated for the first time in a dc-biased amplifier.",
+        "source": "abstract",
+        "generated_by": "Claude, written in-session from the abstract (not via the script's API path)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.17787",
+      "title": "Superconducting levitation and control of a high-reflectivity micromirror",
+      "authors": [
+        "Philipp Koller",
+        "Jannek J. Hansen",
+        "David Walcher",
+        "Tomáš Plichta",
+        "Rémi Claessen",
+        "Martin Žemlička",
+        "Philip Schmidt",
+        "Rhys G. Povey",
+        "Stefan Minniberger",
+        "Stefan Putz",
+        "Markus Aspelmeyer",
+        "Michael Trupke"
+      ],
+      "abstract": "We introduce a method to suspend an optical micromirror, with a total mass of \\SI{30}{\\micro\\gram}, using superconducting magnetic levitation. The micromirror is formed on a silicon membrane, coated with a high-reflectivity dielectric stack and attached to superconducting microspheres. The object is stably levitated inside a magnetic quadrupole field at cryogenic temperatures. Magnetic feedback on the transverse motion is used to stabilize the position of the levitator within the trapping field, allowing to measure the axial displacement of the levitator using optical interferometry. The system reaches a sensitivity of order \\SI{100}{\\pico\\metre/\\sqrt{\\hertz}} near the axial trap frequency of \\SI{167}{Hz}. This approach enables free-standing mirrors with minimal dissipation and tunable oscillation frequencies, offering a platform for precision sensing and quantum cavity optomechanics in the microgram regime.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-15",
+      "score": 0.5120081374181663,
+      "similar_to": [
+        {
+          "title": "High fidelity control of superconducting qubits with optical transmitted signal",
+          "id": "2608.19602",
+          "similarity": 0.7856001853942871
+        },
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.772870659828186
+        }
+      ],
+      "summary": {
+        "summary": "A 30 μg optical micromirror, made of a silicon membrane with a high-reflectivity dielectric stack attached to superconducting microspheres, is stably levitated in a magnetic quadrupole field at cryogenic temperature. With magnetic feedback stabilizing the transverse motion, optical interferometry of the axial displacement reaches a sensitivity of order 100 pm/$\\sqrt{\\mathrm{Hz}}$ near the 167 Hz axial trap frequency.",
+        "motivation": "Free-standing mirrors with minimal dissipation and tunable oscillation frequency would open precision sensing and quantum cavity optomechanics in the microgram mass regime.",
+        "method": "Superconducting magnetic levitation of the mirror assembly in a quadrupole trap, magnetic feedback on the transverse modes, and interferometric readout of the axial mode.",
+        "result": "Stable levitation of a 30 μg high-reflectivity mirror with displacement sensitivity of order 100 pm/$\\sqrt{\\mathrm{Hz}}$ near the 167 Hz axial trap frequency.",
+        "source": "abstract",
+        "generated_by": "Claude, written in-session from the abstract (not via the script's API path)"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9438,
+    0.8128,
+    0.6828,
+    0.512,
+    0.3457,
+    0.3228,
+    0.2518,
+    0.2471,
+    0.2418,
+    0.2314,
+    0.2046,
+    0.1855,
+    0.182,
+    0.177,
+    0.174,
+    0.1619,
+    0.1451,
+    0.1411,
+    0.1346,
+    0.133,
+    0.1284,
+    0.1277,
+    0.1165,
+    0.111,
+    0.1102,
+    0.1002,
+    0.0978,
+    0.0972,
+    0.0967,
+    0.0965,
+    0.0944,
+    0.0943,
+    0.0837,
+    0.0765,
+    0.0745,
+    0.0703,
+    0.0692,
+    0.0685,
+    0.0685,
+    0.0653,
+    0.0651,
+    0.0633,
+    0.0604,
+    0.058,
+    0.0541,
+    0.0536,
+    0.0518,
+    0.0506,
+    0.0495,
+    0.049,
+    0.046,
+    0.046,
+    0.0415,
+    0.0415,
+    0.0407,
+    0.0401,
+    0.0401,
+    0.039,
+    0.0361,
+    0.0358,
+    0.0345,
+    0.0333,
+    0.0317,
+    0.0315,
+    0.03,
+    0.0263,
+    0.0263,
+    0.0262,
+    0.0241,
+    0.0236,
+    0.0235,
+    0.0231,
+    0.023,
+    0.0214,
+    0.0213,
+    0.0189,
+    0.0184,
+    0.016,
+    0.0158,
+    0.0151,
+    0.015,
+    0.015,
+    0.0135,
+    0.0134,
+    0.0131,
+    0.0117,
+    0.0113,
+    0.0111,
+    0.0109,
+    0.0106,
+    0.0096,
+    0.0094,
+    0.009,
+    0.0089,
+    0.0088,
+    0.0086,
+    0.0085,
+    0.0081,
+    0.0074,
+    0.0061,
+    0.0057,
+    0.0056,
+    0.0047,
+    0.0046,
+    0.0045,
+    0.0039,
+    0.0035,
+    0.0033,
+    0.0028,
+    0.0027,
+    0.0024,
+    0.0019,
+    0.0008
+  ]
+}

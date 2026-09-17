@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates high-fidelity single-qubit gates on a C-shunt flux qubit combining large anharmonicity ($\\mathcal{A}/2\\pi = 848$ MHz) with long relaxation time ($T_1 = 23$ µs) using DRAG-corrected Gaussian pulses and randomized benchmarking. Gate fidelities exceed 99.9% for all single-qubit rotations, including 99.99% for the identity gate and 99.91–99.94% for $\\pi/2$ gates around $X$ and $Y$ axes.",
+  "motivation": "Transmon qubits suffer from small anharmonicity limiting gate speed and causing frequency crowding, while conventional flux qubits have poor coherence; hybrid architectures like C-shunt flux qubits promise to balance these trade-offs, but prior work focused on design and spectroscopy rather than gate-level performance.",
+  "method": "A C-shunt flux qubit with a three-junction SQUID loop shunted by large capacitance was fabricated using electron-beam lithography and double-angle evaporation. Single-qubit gates were implemented with 20 ns Gaussian pulses optimized via DRAG correction, and characterized by standard and interleaved randomized benchmarking with Clifford sequences.",
+  "result": "Clifford fidelity was 99.68 ± 0.02%, with interleaved gate fidelities of 99.91–99.99% depending on the rotation axis and angle; these results were achieved at base temperature in a dilution refrigerator with $T_2^{\\mathrm{Ramsey}} = 6.3$ µs and $T_2^{\\mathrm{spin-echo}} = 17.4$ µs at the flux sweet spot.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

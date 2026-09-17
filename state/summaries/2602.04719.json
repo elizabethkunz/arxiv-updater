@@ -1,0 +1,8 @@
+{
+  "summary": "This doctoral thesis develops methods to advance digital quantum simulation on superconducting qubits through hardware innovations, noise modeling, error mitigation, and algorithmic improvements across the full computational stack. The work addresses the fundamental challenge that current noisy devices cannot yet achieve fault-tolerant operation, requiring hybrid quantum-classical strategies to extract meaningful results.",
+  "motivation": "Practical quantum advantage for scientifically relevant problems remains hindered by device imperfections in superconducting qubit platforms, and fault-tolerant approaches require prohibitive qubit overhead.",
+  "method": "The thesis explores coordinated improvements at multiple levels: hardware-level innovations, refined noise characterization and error mitigation techniques, and algorithmic enhancements exploiting efficient measurement processing and hardware-native operations.",
+  "result": "The thesis contributes to enabling quantum simulation on near-term superconducting devices through combined strategies that merge quantum and classical resources to extract meaningful results from noisy data.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

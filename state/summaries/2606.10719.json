@@ -1,0 +1,8 @@
+{
+  "summary": "Planar $\\alpha$-Ta superconducting resonators fabricated on 300 mm ultra-high-resistivity MCZ silicon using industrial processes achieve median internal $Q$ factors exceeding 40 million and maxima above 60 million. Energy-participation-ratio analysis reveals interface loss as the dominant dissipation channel, with inferred substrate loss tangent below $1.0 \\times 10^{-8}$.",
+  "motivation": "Bosonic qubit architectures require ultra-high-$Q$ storage modes for hardware-efficient error correction, but achieving such factors in scalable planar circuits is challenging due to multiple competing loss mechanisms.",
+  "method": "Resonators were fabricated using industrial 300 mm processing on ultra-high-resistivity ($>10$ k$\\Omega$ cm) intrinsic silicon, and dissipation sources were identified through energy-participation-ratio analysis.",
+  "result": "The best-performing substrate yielded $Q$ factors exceeding 60 million with inferred substrate loss tangent below $1.0 \\times 10^{-8}$, establishing MCZ silicon as a competitive ultra-low-loss platform, though the exceptional performance showed no correlation with standard room-temperature resistivity or impurity concentration metrics.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

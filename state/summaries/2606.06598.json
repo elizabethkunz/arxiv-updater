@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates lattice-surgery operations between distance-three surface-code logical qubits on a 125-qubit superconducting processor, achieving per-cycle logical error rates of $0.0365(2)$ and $0.0282(1)$ for the two qubits. The authors realize deterministic Bell-state preparation, execute a two-qubit Deutsch-Jozsa algorithm at the logical level, and implement magic-state injection to achieve non-Clifford rotations with a logical $R_X(\\\\/4)$ gate fidelity of $0.943_{-9}^{+10}$.",
+  "motivation": "Lattice surgery is the natural paradigm for fault-tolerant logical operations in planar superconducting qubit arrays, yet its experimental realization between fully error-correctable surface-code patches with non-Clifford gates remained outstanding.",
+  "method": "Two distance-three surface codes with median single-qubit and CZ gate fidelities of $0.9995$ and $0.996$ respectively were used to implement lattice-merge and lattice-split operations via dynamic reconfiguration of stabilizer measurements; logical operations were characterized using belief-matching and MWPM decoding with soft post-selection strategies.",
+  "result": "Decoded logical Bell-state fidelity reached $0.532_{-1}^{+1}$, Deutsch-Jozsa classification accuracy improved from $0.623_{-1}^{+1}$ to $0.716_{-1}^{+1}$ after error correction for balanced functions, and detected-error-free post-selection achieved logical $R_X(\\\\pi/4)$ gate fidelity of $0.943_{-9}^{+10}$.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "A superconducting SQUID-based frequency comb generator operating at cryogenic temperature is used to perform spectroscopy of coplanar waveguide microwave resonators, achieving quality factor measurements comparable to vector network analyzer characterization. Bi-chromatic pumping generates intermodulation products enabling simultaneous multiplexed readout of multiple non-uniformly spaced resonators via frequency combs of the form $f_{n,m} = nf_{p1} + mf_{p2}$.",
+  "motivation": "Scaling quantum processors and sensor arrays requires multiplexed readout to reduce wiring from room temperature to the mixing chamber, motivating development of cryogenic signal sources with low dissipation.",
+  "method": "A dc Al SQUID on a 150 nm optical lithography process generates harmonics up to the 4–8 GHz band from pump tones in the 0.4–0.5 GHz range. Resonator spectra acquired via frequency comb spectroscopy (sweeping pump frequency to scan the $n$-th harmonic across resonance) are compared against VNA measurements at matched input power ($n_{\\mathrm{ph}} \\approx 1$ and $\\approx 1000$). Bi-chromatic pumping with $f_{p1} = 404.65$ MHz and $f_{p2} = 541.07$ MHz generates a dense intermodulation lattice to address three resonators with internal quality factors $Q_i = 98$–$148$ k simultaneously.",
+  "result": "VNA and frequency comb spectroscopy yield consistent quality factors (differences within fit parameter variation across photon number regimes), though Fano phase factors $\\phi$ differ by $\\sim 0.5$ rad due to different input impedance networks; the 9th and 13th harmonics probe resonator linewidths with amplitude dips matching at $n_{\\mathrm{ph}} \\approx 1000$.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

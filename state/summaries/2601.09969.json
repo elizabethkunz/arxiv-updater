@@ -1,0 +1,8 @@
+{
+  "summary": "This survey reviews superconductor-semiconductor interface circuits, focusing on output drivers that convert single-flux-quantum (SFQ) pulses (1 mV, 2 ps duration) into voltage signals processable by CMOS (hundreds of mV to volts). Two main categories are identified: Josephson-junction-based drivers (latching and SQUID-based) and multi-terminal devices (cryotrons and superconductor-based transistors).",
+  "motivation": "Hybrid integration of superconductor and semiconductor electronics is essential for emerging applications including high-performance computing with SFQ logic operating at 57.2 GHz with 11.2 mW power, superconducting qubit control using SFQ technology for ultra-low-power readout, and direct RF signal digitization in software-defined radios.",
+  "method": "A taxonomy of output drivers is presented with detailed analysis of working principles: latching drivers (4JL gates, Suzuki stacks, HUFFLE), SQUID-based drivers (SQUID stacks, SFQ-to-DC converters, voltage doublers), and multi-terminal devices (nanocryotrons producing 100 mV to 8.1 V, heater-cryotrons, wire-based cryotrons). Circuit-level and system-level performance parameters including output voltage, data rate, power dissipation, layout area, and bit-error rate are compared.",
+  "result": "Trade-offs are identified: Suzuki stacks achieve tens to hundreds of millivolts at a few Gbps; SQUID stacks reach 20–30 Gbps with <10 mV output; SFQ-to-DC converters support up to 40–50 Gbps but produce ~1 mV; cryotrons exceed 1 V but operate below 1 GHz. State-of-the-art implementations demonstrate bit-error rates below $10^{-12}$ at 10–20 Gbps for SQUID stacks and 1–5 Gbps for Suzuki stacks.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "This work presents the first 12-CNOT decomposition of the double-qubit excitation operator $U^{ij}_{kl}(\\theta) = \\exp[-i\\theta/8(\\sum_m c_m P_m)]$, which rotates between computational basis states $|0011\\rangle$ and $|1100\\rangle$. The new circuit improves upon state-of-the-art 13-CNOT implementations with reduced CNOT depth (8, ∼27% reduction; 7 with output relabeling, ∼36% reduction) and total circuit depth (15, ∼25% reduction).",
+  "motivation": "The double-qubit excitation operator serves as a fundamental building block in near-term variational algorithms like VQE with UCCSD ansätze and in fault-tolerant algorithms for electronic-structure Hamiltonian simulation and quantum phase estimation, so reducing its resource footprint compounds over hundreds or thousands of uses.",
+  "method": "Using systematic exploration with circuit synthesis tools (Q-Synth, Qiskit Transpiler, Tket) and techniques including Clifford synthesis and CNOT+$R_z$ synthesis, a 12-CNOT circuit was discovered that improves upon the previous SOTA approach of absorbing CNOTs from $L$ and $R$ transformation circuits into the $C_3R_y$ rotation decomposition.",
+  "result": "The 12-CNOT circuit (Figure 5) achieves CNOT depth 8 with 13 single-qubit gates and total depth 15; with output-wire relabeling (Figure 6) CNOT depth reduces to 7 while maintaining 12 CNOT count and total depth 15, compared to Nam's 13-CNOT best-previous with CNOT depth 13 and depth 22.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

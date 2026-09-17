@@ -1,0 +1,8 @@
+{
+  "summary": "WISER is a cross-layer design-space exploration framework that asks whether globally controlled WISE trapped-ion architectures can run quantum error correction. It finds only a narrow feasible region, and even with ~10x better physical errors the cycle time for below 1e-8 logical error is about 100 ms, roughly 3x slower than local control.",
+  "motivation": "WISE promises orders-of-magnitude less wiring than QCCD, but its restrictive global control may not support fault-tolerant workloads.",
+  "method": "WISE-specific compilation, noise modelling and simulation are combined to produce lower-bound estimates of logical clock speed and logical error rate.",
+  "result": "Feasibility needs two-ion traps, moderate control multiplexing, aggressive recooling and bivariate-bicycle codes, and practical early FTQC additionally needs >10x lower physical error and >100x shallower fault-tolerant circuits.",
+  "source": "abstract",
+  "generated_by": "Claude, written in-session for the sample day (not via the script's API path)"
+}

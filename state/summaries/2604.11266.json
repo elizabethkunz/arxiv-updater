@@ -1,0 +1,8 @@
+{
+  "summary": "A cryo-CMOS sample-and-hold multiplexing circuit successfully controls a silicon double quantum dot at 0.5 K, demonstrating stable biasing of all five charge configurations from $(4,0)$ to $(0,4)$ and rapid voltage pulsing that resolves single-electron tunneling events. This validates that SH-based multiplexed control is compatible with both static and dynamic operation of isolated quantum dots, advancing scalable architectures for large-scale spin-qubit processors.",
+  "motivation": "Scaling gate-defined spin qubits to millions requires reducing wiring complexity and thermal load from the cryostat while maintaining precise voltage control; sample-and-hold multiplexing offers a solution but its compatibility with stringent quantum dot stability and pulsing requirements remained experimentally unvalidated.",
+  "method": "A cryo-CMOS demultiplexer biasing seven gates of a FDSOI silicon DQD at 0.5 K sequentially refreshes voltages using two analog inputs with 6.4 µs per refresh cycle; charge stability is mapped via RF-SET reflectometry ($91.5\\%$ fidelity between $(0,4)$ and $(1,3)$) and pulsing dynamics are captured in single-shot readout traces.",
+  "result": "Voltage drift measured at $1.5$ V is $5.5$ µV with exponential dependence on voltage, allowing projection of biasing $>10^7$ independent gates at $<100$ µV error from one input; inter-dot charge transitions show well-defined four parallel lines despite sequential refreshing, and pulsing resolves stochastic tunneling events at the $(1,3)$–$(0,4)$ transition with response time faster than the $\\sim 1$ ms inter-dot tunnel coupling.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

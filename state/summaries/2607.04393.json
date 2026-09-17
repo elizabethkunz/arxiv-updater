@@ -1,0 +1,8 @@
+{
+  "summary": "An inductively heated atomic oven achieves a 7.65× improvement in heating rate compared to resistive heating, reaching the 773 K target temperature in 4.33 minutes versus 33.13 minutes, and demonstrates stable operation to 1273 K with temperature fluctuations below ±2 K. A collimated ytterbium beam with flux exceeding $10^{14}$ atoms/s at 823 K is generated using a hexagonally packed capillary nozzle array, with the enhanced thermal response enabling faster experimental cycles for quantum gas and precision metrology work.",
+  "motivation": "Conventional resistive heating of atomic crucibles in cold atom experiments requires hours to heat or cool, creating substantial apparatus dead time that limits experimental efficiency for high-temperature species like Yb, Er, and Dy operating at 700–1200 K.",
+  "method": "A water-cooled copper induction coil at 65 mm winding diameter drives eddy currents in a 304 stainless steel crucible with optimized wall thickness matched to the electromagnetic skin depth $\\delta = \\sqrt{2\\rho/\\omega\\mu}$, directly heating the crucible rather than relying on thermal contact conductance; temperature is stabilized by PI feedback with pulse-width modulation control.",
+  "result": "At 823 K crucible temperature, the source produces a collimated Yb beam with velocity spread $\\pm 72$ m/s and isotopic flux measured via resonance fluorescence of $10^{14}$ atoms/s, following expected Arrhenius vapor-pressure scaling across the 373–1273 K range.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

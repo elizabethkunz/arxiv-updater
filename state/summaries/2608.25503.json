@@ -1,0 +1,8 @@
+{
+  "summary": "A fluxonium quantum processor using lumped-element resonator couplers achieves a connectivity-four unit cell with single-qubit gate fidelities exceeding 99.9%, residual ZZ interactions below 1 kHz, and two-qubit RIP-gate fidelities exceeding 99% via refocused pulse sequences that suppress spectator errors. GHZ states up to five qubits are prepared with tomographic fidelities reaching 90%, demonstrating multi-qubit entanglement compatible with surface-code error correction.",
+  "motivation": "Scaling fluxonium processors to two-dimensional lattices for quantum error correction requires extending qubit connectivity to four neighbors while suppressing parasitic interactions and gate-fidelity degradation from multi-qubit entanglement.",
+  "method": "Fluxonium-resonator-fluxonium architecture using high-impedance ($Z > 150$ Ω), grounded lumped-element LC couplers with 2 µm niobium inductors; resonator-induced phase gates driven off-resonantly with detuning $\\Delta$ from the state-dependent coupler frequencies; refocused RIP gates with $\\pi$ pulses on spectator qubits to cancel conditional-phase accumulation.",
+  "result": "Parallel single-qubit fidelities of 99.957(5)%, median ZZ coupling $\\xi_{\\mathrm{ZZ}} = 30(215)$ Hz, median two-qubit fidelity 98.8(12)% via IRB with 128 ns pulses, and three/four/five-qubit GHZ fidelities of 96.9(2)%/95.4(2)%/90.0(2)% after measurement-error correction.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

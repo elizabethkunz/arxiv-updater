@@ -1,0 +1,8 @@
+{
+  "summary": "A superconducting tunnelling magnetoresistance device is demonstrated as a non-volatile cryogenic memory element by integrating a de Gennes spin valve with a superconducting tunnel junction in current perpendicular-to-plane geometry, enabling exchange-field control of the superconducting gap. The device operates with millivolt bias, nanowatt-level read power, and zero standby dissipation from 0.25 K across the full superconducting temperature range, with vertical Nb-based architecture compatible with superconducting logic.",
+  "motivation": "Scalable, low-dissipation cryogenic memory below 4 K is critical for superconducting and quantum computing systems, but existing solutions rely on CMOS derivatives or hybrid architectures with leakage, refresh overhead, or poor compatibility with superconducting logic.",
+  "method": "A de Gennes spin valve was integrated with a superconducting tunnel junction in current perpendicular-to-plane geometry to realize exchange-field control of the superconducting energy gap, producing two magnetically switchable gap voltages.",
+  "result": "The device exhibits robust quasiparticle tunnelling magnetoresistance down to 0.25 K with nanowatt-level read power and zero standby dissipation, compatible with Nb-based superconducting logic for scalable memory arrays.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

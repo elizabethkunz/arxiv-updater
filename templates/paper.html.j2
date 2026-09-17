@@ -1,0 +1,41 @@
+{% extends "base.html.j2" %}
+{% block title %}{{ p.title }}{% endblock %}
+{% block body %}
+<header class="hero"><div class="wrap">
+  <p class="eyebrow"><a href="{{ root }}days/{{ day.date }}.html">{{ day.date }}</a> &nbsp;/&nbsp; <span class="bigscore" style="{{ p.score|score_tone }}">{{ p.score|pct }} match</span></p>
+  <h1 class="paper">{{ p.title }}</h1>
+  <div class="actions">
+    <a class="btn primary" href="https://arxiv.org/abs/{{ p.id }}">arXiv:{{ p.id }}</a>
+    <a class="btn" href="https://arxiv.org/pdf/{{ p.id }}">PDF</a>
+    <a class="btn" href="https://arxiv.org/html/{{ p.id }}">HTML</a>
+  </div>
+</div></header>
+<main class="wrap">
+<dl>
+  <div class="spec"><dt>Summary</dt><dd class="big">{{ p.summary.summary }}</dd></div>
+  {% if p.summary.motivation %}
+  <div class="spec"><dt>Motivation</dt><dd>{{ p.summary.motivation }}</dd></div>
+  <div class="spec"><dt>Method</dt><dd>{{ p.summary.method }}</dd></div>
+  <div class="spec"><dt>Result</dt><dd>{{ p.summary.result }}</dd></div>
+  {% endif %}
+  <div class="spec"><dt>Authors</dt><dd class="small">{{ p.authors|join(", ") }}</dd></div>
+  <div class="spec"><dt>Similar papers</dt><dd class="small">
+    <div class="sub">In the database</div>
+    <div class="simlist">
+    {% for s in p.similar_to %}
+    <div>{% if s.id %}<a href="https://arxiv.org/abs/{{ s.id }}">{{ s.title }}</a>{% else %}{{ s.title }}{% endif %} <span class="sim">&nbsp;{{ "%.2f"|format(s.similarity) }}</span></div>
+    {% endfor %}
+    </div>
+    {% if similar %}
+    <div class="sub">Among all indexed papers</div>
+    <div class="simlist">
+    {% for s in similar %}
+    <div><a href="{{ root }}{{ s.id }}/index.html">{{ s.title }}</a> <span class="sim">&nbsp;{{ s.day }} · {{ "%.0f"|format(100 * s.score) }}% match</span></div>
+    {% endfor %}
+    </div>
+    {% endif %}
+  </dd></div>
+  <div class="spec"><dt>Abstract</dt><dd class="small">{{ p.abstract }}</dd></div>
+</dl>
+</main>
+{% endblock %}

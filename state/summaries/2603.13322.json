@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates that irreversible exponential energy relaxation in a superconducting qubit emerges from intrinsic many-body thermalization of an interacting TLS environment, without external baths or phenomenological dissipation. The relaxation times exhibit $T_1, T_2 \\propto J_{q,\\tau}^{-2}$ scaling consistent with Fermi's golden rule, arising directly from unitary many-body dynamics driven by stochastic frequency fluctuations (FFTIE sequence) that enable information erasure.",
+  "motivation": "TLS are dominant decoherence sources in superconducting qubits, yet the microscopic origin of irreversible relaxation from coherent qubit-TLS interactions in finite interacting environments remains unclear, especially when TLS dissipation into phonons is suppressed.",
+  "method": "A superconducting qubit is coupled ($J_{q,\\tau}/2\\pi = 0.002$–$0.1$ MHz) to a 7-site 1D chain of interacting TLS ($J_\\tau = J_\\upsilon/2\\pi = 1$ MHz, $U_{\\tau,\\upsilon}/2\\pi = -0.2$ MHz) with stochastic frequency fluctuations applied via alternating unitary evolution and random-Hamiltonian segments (forward-time information-erasure sequence).",
+  "result": "Extracted $T_1$ values range from $975.88$ µs (at $J_{q,\\tau}/2\\pi = 0.01$ MHz) to $24536.80$ µs (at $J_{q,\\tau}/2\\pi = 0.002$ MHz), with $T_1 \\propto J_{q,\\tau}^{-1.997}$ and $T_2 \\approx 2.14 T_1$; relaxation transitions from exponential decay to oscillatory decay as coupling increases to $J_{q,\\tau}/2\\pi = 0.1$ MHz ($T_1 = 13.0$ µs), demonstrating suppression of coherent backflow via many-body thermalization.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

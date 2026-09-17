@@ -1,0 +1,8 @@
+{
+  "summary": "A fault-tolerant architecture for trapped-ion quantum computers using LDPC codes and cat-state factories for logical operations is proposed, with detailed compiler, decoder, and micro-architecture specifications. The dense variant achieves 110 logical qubits with $\\sim$1 million T gates per day using 2,514 physical qubits, and estimates 100-site Heisenberg simulation within one month on 10,000 physical qubits.",
+  "motivation": "Trapped-ion platforms require practical, near-term scalable fault-tolerance schemes that emphasize experimentally demonstrated components over hypothetical improvements.",
+  "method": "LDPC codes organized via cat-state factories distribute quantum information and logical operations; three architecture instances are analyzed, including a [[70, 6, 9]] fast-gate variant with Clifford-frame tracking and a [[102, 22, 9]] dense variant encoding 22 logical qubits per block, with full simulations including decoder performance.",
+  "result": "The dense architecture targets 110 logical qubits executing $\\sim$10$^6$ T gates/day with 2,514 ions; 100-site Heisenberg model simulation achievable in $\\sim$1 month at 10,000 physical qubits with chemical-accuracy precision.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

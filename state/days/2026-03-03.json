@@ -1,0 +1,437 @@
+{
+  "date": "2026-03-03",
+  "n_fetched": 145,
+  "papers": [
+    {
+      "id": "2603.01672",
+      "title": "Extremely weak electron-phonon coupling in Josephson junctions built on InAs on Insulator",
+      "authors": [
+        "Giorgio De Simoni",
+        "Sebastiano Battisti",
+        "Alessandro Paghi",
+        "Lucia Sorba",
+        "Francesco Giazotto"
+      ],
+      "abstract": "InAs-on-Insulator (InAsOI) enables an effective superconducting proximity effect and extremely weak electron-phonon (e-ph) coupling, allowing precise electronic-temperature control with minimal power. Using Josephson junction thermometry, we extract sub-Kelvin e-ph coupling parameters, confirming strong thermal decoupling and robust superconducting performance. The combination of weak e-ph interaction and full electrostatic tunability makes InAsOI a powerful platform for coherent caloritronics, ultrasensitive bolometry, single-photon detection, and gate-controlled superconducting thermal circuits.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-03-02",
+      "score": 0.7511506200231419,
+      "similar_to": [
+        {
+          "title": "Quasiparticle dynamics in epitaxial Al-InAs planar Josephson junctions",
+          "id": "2303.04784",
+          "similarity": 0.806686282157898
+        },
+        {
+          "title": "Electrical post-fabrication tuning of aluminum Josephson junctions at room temperature",
+          "id": "2602.20002",
+          "similarity": 0.8027583956718445
+        }
+      ],
+      "summary": {
+        "summary": "Al/InAsOI Josephson junctions exhibit exceptionally weak electron-phonon coupling with $\\Sigma \\approx (3$-$4) \\times 10^7$ W/(m$^3$K$^n$) and $n \\approx 5.8$ at sub-Kelvin temperatures, enabling strong thermal decoupling while maintaining high-quality superconductivity with $T_c \\approx 1.2$ K. The platform combines transparent S-Sc interfaces, full electrostatic tunability, and a noise-equivalent temperature of 100-200 μK/Hz for Josephson thermometry, making it suitable for coherent caloritronics and gate-controlled thermal circuits.",
+        "motivation": "Coherent caloritronics requires weak electron-phonon coupling, but this is difficult to combine with high-quality superconducting proximity effects; InAsOI was designed to provide both transparent superconducting contacts and intrinsically weak thermal relaxation.",
+        "method": "Josephson junction thermometry was used to extract electronic temperature $T_e$ under Joule heating at various bath temperatures, fitting the power-law relation $T_e = (\\dot{Q}_{\\mathrm{inj}}/(\\Sigma V) + T^n)^{1/n}$ between 100-220 mK to determine the e-ph coupling parameters $\\Sigma$ and $n$.",
+        "result": "InAsOI shows $\\Sigma$ values 1-2 orders of magnitude smaller than typical metals and comparable to or superior to other semiconductor platforms, with stability in $\\Sigma$ and $n$ over a 120 mK temperature range and fits with reduced $\\chi^2 \\approx 1.1 \\times 10^{-4}$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.01612",
+      "title": "Sustaining high-fidelity quantum logic in neutral-atom circuits via mid-circuit operations",
+      "authors": [
+        "Rui Lin",
+        "You Li",
+        "Le-Tian Zheng",
+        "Tai-Ran Hu",
+        "Si-Yuan Chen",
+        "Hong-Ming Wu",
+        "Yu-Chen Zhang",
+        "Hao-Wen Cheng",
+        "Yu-Hao Deng",
+        "Zhan Wu",
+        "Ming-Cheng Chen",
+        "Jun Rui",
+        "Chao-Yang Lu",
+        "Jian-Wei Pan"
+      ],
+      "abstract": "The realization of fault-tolerant quantum computation hinges on the ability to execute deep quantum circuits while maintaining gate fidelities consistently above error-correction thresholds. Although neutral-atom arrays have recently demonstrated high-fidelity two-qubit gates and early-stage logical quantum processors, sustaining such high performance across deep, repetitive circuits remains a formidable challenge due to cumulative motional heating and atom loss. Here we demonstrate a sustainable neutral-atom framework that overcomes these limitations by integrating a suite of hardware-efficient mid-circuit operations. We report a two-qubit controlled logic gate with a raw fidelity of 99.60(1)%, which is further increased to a fidelity of 99.81(1)% via non-destructive erasure detection. Crucially, by implementing in-circuit Raman sideband cooling and qubit re-initialization, we demonstrate that gate fidelities can be maintained at the ~99.8% level across multiple operational rounds without observable degradation. By actively managing the internal and motional entropy of the system mid-stream, our in-situ refreshable architecture provides a critical pathway for executing the repeated syndrome-extraction cycles required for large-scale, continuous quantum error correction.",
+      "categories": [
+        "quant-ph",
+        "physics.atom-ph"
+      ],
+      "published": "2026-03-02",
+      "score": 0.7460556963662784,
+      "similar_to": [
+        {
+          "title": "Logic gates at the surface code threshold: Superconducting qubits poised for fault-tolerant quantum computing",
+          "id": "1402.4848",
+          "similarity": 0.8586844205856323
+        },
+        {
+          "title": "Erasure qubits: Overcoming the $T_1$ limit in superconducting circuits",
+          "id": "2208.05461",
+          "similarity": 0.8510700464248657
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates sustainable high-fidelity quantum logic in neutral-atom arrays by integrating mid-circuit cooling and re-initialization to counteract motional heating and atom loss across deep circuits. A controlled logic gate achieving 99.60(1)% raw fidelity is improved to 99.81(1)% via non-destructive erasure detection, with fidelities maintained at ~99.8% across multiple operational rounds without degradation.",
+        "motivation": "Neutral-atom arrays show promise for fault-tolerant quantum computation, but cumulative heating and atom loss degrade gate fidelities below error-correction thresholds during execution of deep, repetitive circuits needed for syndrome extraction in quantum error correction.",
+        "method": "The authors implemented in-circuit Raman sideband cooling and qubit re-initialization within a neutral-atom framework to actively manage internal and motional entropy, thereby refreshing qubit and motional states mid-stream while performing controlled logic gates.",
+        "result": "Two-qubit gate fidelity maintained at ~99.8% across multiple operational rounds without observable degradation, with raw fidelity of 99.60(1)% further improved to 99.81(1)% via non-destructive erasure detection.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.00441",
+      "title": "Optimizing CMOS-compatible, superconducting titanium nitride resonators: Deposition conditions and structuring processes",
+      "authors": [
+        "Simon J. K. Lang",
+        "Alexandra Schewski",
+        "Ignaz Eisele",
+        "Johannes Weber",
+        "Carla Moran-Guizan",
+        "Zhen Lou",
+        "Moritz Singer",
+        "Benedikt Schoof",
+        "Marc Tornow",
+        "Thomas Mayer",
+        "Daniela Zahn",
+        "Rui N. Pereira",
+        "Christoph Kutter"
+      ],
+      "abstract": "We report on the fabrication and characterization of superconducting coplanar waveguide (CPW) resonators based on titanium nitride (TiN) thin films deposited on 200\\,mm diameter high-resistivity Si(100) substrates. We systematically investigate how deposition conditions, dry-etch power and in-situ resist strip temperature affect morphology, superconducting properties and dielectric losses. By tuning reactive sputtering conditions, three distinct preferred out-of-plane crystal orientations - (111), (200), and a mix of both are achieved. Our results demonstrate that all films exhibit similar minimal two-level system (TLS) losses, with TiN111 exhibiting the lowest median TLS losses $\\tildeδ_\\mathrm{TLS}$, and greater robustness against reoxidation. The applied structuring process, in contrast, has a far greater influence on the TLS loss than the crystal orientation of the TiN film and, consequently, the intrinsic material properties of the superconducting layer. The lowest TLS losses for all TiN depositions were achieved with a low power etch and low temperature resist strip. An additional buffered oxide etch (BOE) treatment could remove high-loss interfacial oxides at the metal-air (MA) and substrate-air (SA) interface and recover the etch-induced TLS losses. Consequently, TiN resonators exhibiting $\\tildeδ_\\mathrm{TLS}$ values as low as $9.67 \\times 10^{-7}$ were realized. The corresponding median low-power loss, $\\tildeδ_\\mathrm{LP}$, amounts to $11.04 \\times 10^{-7}$, which translates to an internal quality factor approaching one million. These findings highlight the critical role of process induced oxide formation at the MA and SA interfaces in limiting the performance of TiN resonators and provide a scalable, low-loss process compatible with industry-grade 200\\,mm CMOS qubit fabrication workflows.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-28",
+      "score": 0.7060560766185773,
+      "similar_to": [
+        {
+          "title": "Comparison of Dielectric Loss in Titanium Nitride and Aluminum Superconducting Resonators",
+          "id": "2007.07338",
+          "similarity": 0.9126121997833252
+        },
+        {
+          "title": "High-Q superconducting microwave resonators using MBE titanium nitride",
+          "id": "2607.15230",
+          "similarity": 0.9037477374076843
+        }
+      ],
+      "summary": {
+        "summary": "This work systematically investigates TiN CPW resonators on 200 mm high-resistivity Si wafers, isolating how deposition conditions, dry-etch power, and resist-strip temperature affect two-level-system (TLS) losses across three distinct crystal orientations (111, 200, mixed). The dominant loss mechanism is interfacial oxide formation at metal-air and substrate-air interfaces during structuring, recoverable by buffered oxide etch, yielding $\\delta_{\\mathrm{TLS}} = 9.67 \\times 10^{-7}$ and $Q_i \\approx 10^6$.",
+        "motivation": "Process-induced TLS losses at superconducting film interfaces limit qubit coherence and resonator quality factors; understanding which fabrication steps control these losses is essential for scaling TiN qubits to industry CMOS workflows.",
+        "method": "Three TiN depositions with different crystal textures (controlled by sputtering parameters: temperature, power, gas ratios) were patterned using high-power (500 W, 180 V bias, overetch 20–100 nm) and low-power (70 W, 17 V bias, no overetch) dry etches, followed by hydrogen-plasma resist strips at 150 °C (LT) or 250 °C (HT). Resonators were characterized by XRD, four-point-probe sheet resistance, SEM, ellipsometry, RRR measurements, and cryogenic $S_{21}$ fitting to extract $\\delta_{\\mathrm{TLS}} = \\delta_{\\mathrm{LP}} - \\delta_{\\mathrm{HP}}$; participation-ratio modeling isolated loss contributions by interface.",
+        "result": "Structuring dominates over material: low-power etch plus low-temperature strip minimizes losses ($\\delta_{\\mathrm{TLS}} \\sim 10^{-6}$); high-temperature plasma grows lossy oxides (up to 3.2 nm) at grain boundaries; buffered oxide etch removes interfacial oxides and converges all prior process variants to $\\delta_{\\mathrm{TLS}} = 9.67 \\times 10^{-7}$ and $\\delta_{\\mathrm{LP}} = 11.04 \\times 10^{-7}$, with internal $Q_i$ approaching $10^6$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.01676",
+      "title": "4-Pixel NbN Hot-Electron Bolometer Integrated in a Si$_3$N$_4$ Planar Optical Waveguide with On-Chip Fiber-Alignment Trench",
+      "authors": [
+        "N. A. Vovk",
+        "G. A. Matveev",
+        "M. A. Mumlyakov",
+        "M. V. Shibalov",
+        "I. A. Filippov",
+        "I. D. Burkov",
+        "S. D. Perov",
+        "N. V. Porohov",
+        "N. N. Osipov",
+        "M. A. Tarkhov"
+      ],
+      "abstract": "In this work, we design and characterize a 4-pixel superconducting hot-electron bolometer (HEB) based on niobium nitride (NbN), integrated with individual planar silicon nitride (Si$_3$N$_4$) waveguides. The implemented architecture enables simultaneous detection of an optical signal in four independent channels. To efficiently couple optical radiation under cryogenic conditions, we employ an edge (end-fire) coupling approach using dedicated U-shaped grooves that provide accurate and stable positioning of an optical fiber with respect to the on-chip waveguide facet. The device responsivity is measured as a function of the HEB operating point. The measured voltage responsivity reaches $3800~\\mathrm{V/W}$ at a modulation frequency of $3~\\mathrm{GHz}$. We demonstrate detection of optically modulated signals in the gigahertz range. The developed fabrication route is promising for compact integrated receiver systems and low-noise cryogenic microwave transducers, including superconducting nanowire single-photon detectors (SNSPDs).",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-03-02",
+      "score": 0.683460617071568,
+      "similar_to": [
+        {
+          "title": "High-Q superconducting microwave resonators using MBE titanium nitride",
+          "id": "2607.15230",
+          "similarity": 0.8001206517219543
+        },
+        {
+          "title": "High-performance multiplexed readout of superconducting qubits with a tunable broadband Purcell filter",
+          "id": "2509.11822",
+          "similarity": 0.7931121587753296
+        }
+      ],
+      "summary": {
+        "summary": "A four-pixel NbN hot-electron bolometer array is integrated with individual Si$_3$N$_4$ planar waveguides on a single chip, with fiber coupling via U-shaped grooves etched in the substrate. The measured voltage responsivity reaches 3800 V/W at 3 GHz with process reproducibility across pixels ($T_c = 7.45$–7.52 K, responsivity spread $\\sim$10–15%), demonstrating effective optical isolation via on-chip Si$_3$N$_4$ scatterers despite 10 µm waveguide spacing.",
+        "motivation": "Terahertz heterodyne receivers require miniaturized, multichannel detector systems with fast response and low-noise operation; waveguide integration on photonic platforms offers compact architectures with reduced alignment sensitivity compared to free-space optics.",
+        "method": "Four NbN strips (1 µm $\\times$ 7 µm, 9 nm thick) were patterned on a 400 nm Si$_3$N$_4$ waveguide platform and cladded with 140 nm SiO$_2$; single-mode fibers were positioned in 65 µm-deep Bosch-etched grooves for end-fire coupling at $\\lambda$ = 1550 nm. Responsivity was measured via RF rectification at 2.5 K with optical power $P_\\mathrm{optic}$ = 4.6 µW (coupling efficiency $\\eta \\approx 2\\%$) and RF loss 0.95 dB.",
+        "result": "All four pixels show critical temperatures near 7.5 K with normal-state sheet resistances 63–70 Ω/sq; maximum voltage responsivity is 3400–3800 V/W at 3 GHz with no measurable optical crosstalk between adjacent channels.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.00837",
+      "title": "ReloQate: Transient Drift Detection and In-Situ Recalibration in Surface Code Quantum Error Correction",
+      "authors": [
+        "Maxwell Poster",
+        "Jason Chadwick",
+        "Jonathan Mark Baker"
+      ],
+      "abstract": "Quantum error correction (QEC) promises to exponentially suppress qubit noise, but typically assumes spatially-uniform and temporally-constant noise rates. However, real quantum hardware exhibits variation in noise levels over time, which will be amplified by QEC if not addressed. To mitigate this drift in error rates, we leverage transient information readily available in surface code quantum error correction to predict logical error rates (LER) in real time. We infer a prediction model by sampling physical error rates from real hardware, and mapping detector fire rate (DFR), or parity of stabilizer measurements across QEC rounds, to LER. This allows for on-the-fly LER predictions without the typical characterization overhead required to determine LER. This method can easily be extended to other stabilizer codes. Importantly, we observe that this prediction should be accurate yet conservative (i.e. give an upper estimate) to enable appropriately fast responses to real-time physical error changes. That is, responses should be executed marginally ahead of time to allow for their execution to complete, and minimize time spent (ideally none) above intolerable error rates. More importantly, we pair this predictor with a scheme which remaps drifted logical qubits to fresh tiles in a patch-based architecture while their original tiles are recalibrated. Our results demonstrate DFR-based prediction to be an effective LER predictor, and remapping as a spatially efficient and timely mitigation response for small code distances, both of which are significant steps in furthering practical QEC.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-28",
+      "score": 0.5519339227302344,
+      "similar_to": [
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8780002593994141
+        },
+        {
+          "title": "Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code",
+          "id": "2112.03708",
+          "similarity": 0.871800422668457
+        }
+      ],
+      "summary": {
+        "summary": "This work develops a real-time logical error rate (LER) predictor for surface code QEC by correlating detector fire rate (DFR)—readily available from stabilizer measurements—with LER using circuits simulated with physical error rates from real hardware. The approach pairs this predictor with a dynamic remapping scheme that relocates drifted logical qubits to fresh tiles while their original tiles undergo recalibration, demonstrating effective drift mitigation for small code distances.",
+        "motivation": "Real quantum hardware exhibits temporally-varying noise that violates standard QEC assumptions of spatially-uniform and temporally-constant error rates, yet characterizing true error rates mid-execution is infeasible, requiring methods to detect and respond to drift without additional characterization overhead.",
+        "method": "A DFR-to-LER predictor is trained using Stim simulations spanning physical error rates from IBM and Google hardware traces, establishing the scaling $p_L \\propto (\\mathrm{DFR})^{(d+1)/2}$ across code distances. The predictor uses a tunable buffer of recent DFRs and confidence parameter $\\alpha$ to produce conservative LER estimates; when predicted LER exceeds a threshold, a remap operation moves the logical qubit to a dedicated relocation patch while the original tile is recalibrated.",
+        "result": "The DFR-based predictor achieves accurate real-time LER predictions without additional sampling overhead, and remapping maintains target LER with a relocation-qubit ratio $M/N \\leq 1$ for small distances; however, spatial efficiency diminishes as $d^{-2}$, making remapping preferable only for $d \\lesssim 5$ compared to code deformation methods for larger codes.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.02106",
+      "title": "Obstacles to Continuous Quantum Error Correction via Parity Measurements",
+      "authors": [
+        "Anton Halaski",
+        "Christiane P. Koch"
+      ],
+      "abstract": "Time-continuous quantum error correction, necessary to protect quantum information under time-dependent Hamiltonians, relies on weak continuous syndrome measurements. Implementing these measurements requires a continuous coupling among at least two qubits and a meter, a demanding requirement. We show that, under continuous operation, common parity-measurement protocols in the circuit quantum electrodynamics platform corrupt the logical information. The failure arises from approximating the three-body interaction by a sum of two-body couplings to the meter, which prevents simultaneous suppression of measurement backaction on the logical and error subspaces. We argue that the same mechanism applies more generally beyond the circuit quantum electrodynamics setting. Taken together, our results impose a practical limitation on continuous stabilizer quantum error correction and point to the viable alternatives -- architectures that realize native three-body interactions, or erasure-based encodings in which the error subspace need not be protected.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-02",
+      "score": 0.5489517943059063,
+      "similar_to": [
+        {
+          "title": "Erasure qubits: Overcoming the $T_1$ limit in superconducting circuits",
+          "id": "2208.05461",
+          "similarity": 0.8462799191474915
+        },
+        {
+          "title": "Demonstration of High-Fidelity Entangled Logical Qubits using Transmons",
+          "id": "2503.14472",
+          "similarity": 0.8442895412445068
+        }
+      ],
+      "summary": {
+        "summary": "Continuous quantum error correction requires weak continuous parity measurements, but implementing these via two-body qubit-meter couplings in circuit QED and other platforms causes uncorrectable dephasing of logical states. The fundamental issue is that approximating required three-body interactions from native two-body couplings lifts degeneracy in one parity subspace, leading to distinguishability and entanglement with the meter during non-equilibrium dynamics.",
+        "motivation": "Time-dependent Hamiltonians in adiabatic quantum computing do not commute with error operators, making continuous syndrome measurements necessary to correct errors in real time. However, existing parity-measurement protocols designed for gate-based quantum computing have not been carefully examined under continuous operation.",
+        "method": "The authors analyze parity measurements in circuit QED using the three-qubit bit-flip code encoded in transmon qubits coupled dispersively to microwave resonators. They solve the stochastic master equation numerically and derive fourth-order perturbation theory to characterize measurement backaction, then generalize to arbitrary platforms by considering what happens when engineering three-body interactions $Z_i Z_{i+1} \\hat{M}$ from two-body terms $\\chi(Z_i + Z_{i+1})\\hat{M}$.",
+        "result": "For odd encoding, the purity drops to ~0.55 (close to maximally mixed) after a single bit flip even with perfect detection ($\\eta = 1$), because the unknown error time produces uncorrectable phase spread. For even encoding, backaction persists during meter relaxation to steady state, and two rapid consecutive errors cause undetected transitions with unknown timing, producing ~0.2 purity loss. The paper shows these problems are fundamental to any two-body-coupling-based measurement, proposing that erasure-based encodings (where errors erase logical information) enable backaction-free continuous QEC with only two-body interactions.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.01987",
+      "title": "Cavity-enhanced optical readout and control of nuclear spin qubits",
+      "authors": [
+        "Alexander Ulanowski",
+        "Johannes Früh",
+        "Fabian Salamon",
+        "Adrian Holzäpfel",
+        "Andreas Reiserer"
+      ],
+      "abstract": "Their exceptional coherence makes nuclear spins in solids a prime candidate for quantum memories in quantum networks and repeaters. Still, the direct all-optical initialization, coherent control, and readout of individual nuclear spin qubits have been an outstanding challenge. Here, this is achieved by embedding 167-Er dopants in yttrium orthosilicate in a cryogenic Fabry-Perot cavity, whose linewidth of 65 MHz is much smaller than the 0.9 GHz separation of neighboring hyperfine levels. Frequency-selective emission enhancement thus enables a single-shot readout fidelity of 91(2)%. Furthermore, a large magnetic field freezes paramagnetic impurities, leading to coherence times exceeding 0.2 s. The combination of nuclear-spin qubits with frequency-multiplexed addressing and lifetime-limited photon emission in the minimal-loss telecommunications C-band establishes 167-Er as a leading platform for long-range, fiber-based quantum networks.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-02",
+      "score": 0.5240518523659212,
+      "similar_to": [
+        {
+          "title": "Enhancing Dispersive Readout of Superconducting Qubits Through Dynamic Control of the Dispersive Shift: Experiment and Theory",
+          "id": "2307.07765",
+          "similarity": 0.8307647705078125
+        },
+        {
+          "title": "Realizing Rapid, High-Fidelity, Single-Shot Dispersive Readout of Superconducting Qubits",
+          "id": "1701.06933",
+          "similarity": 0.8254142999649048
+        }
+      ],
+      "summary": {
+        "summary": "All-optical initialization, coherent control, and single-shot readout of $^{167}$Er nuclear spin qubits are demonstrated by embedding dopants in yttrium orthosilicate within a 65 MHz linewidth Fabry-Perot cavity that selectively enhances spin-preserving transitions. A large 6.8 T magnetic field freezes paramagnetic impurities, enabling 91(2)% readout fidelity, $T_2^* = 0.62(3)$ ms dephasing time, and coherence times reaching 0.28(8) s under dynamical decoupling, establishing a promising platform for fiber-based quantum networks at telecommunications wavelengths.",
+        "motivation": "Nuclear spins offer exceptional coherence for quantum memories in repeaters and networks, but direct all-optical control and readout of individual nuclear spin qubits in solids has been outstanding. The combination of long storage times, minimal fiber loss in the C-band, and frequency-multiplexed addressing motivates using $^{167}$Er:YSO as a quantum networking platform.",
+        "method": "A 10.9 µm YSO membrane containing $^{167}$Er dopants is integrated into a frequency-tunable Fabry-Perot cavity (Q = 3 × 10$^6$, linewidth 65 MHz) operated at <1.8 K in 6.8 T magnetic field. Optical pumping on $\\Delta m_I = -1$ red-sideband transitions initializes the qubit, selective cavity enhancement of $\\Delta m_I = 0$ spin-preserving transitions (Purcell factor up to 95) enables single-shot readout, and two-photon Raman transitions with 90 MHz detuning provide coherent control while suppressing scattering.",
+        "result": "Single-shot readout fidelity reaches 91(2)% (limited by 43.9 Hz dark counts; >98% expected with better detectors), $T_2^\\text{Hahn} = 16.7(9)$ ms in Hahn-echo, and $T_\\text{DD} = 0.28(8)$ s with 64-pulse XY decoupling scaling as $N^{0.82(2)}$, while T$_1$ exceeds 33 s at 1.72 K and spin lifetime $T_1 > 0.2$ s is achieved at applied field.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.7512,
+    0.7461,
+    0.7061,
+    0.6835,
+    0.5519,
+    0.549,
+    0.5241,
+    0.4206,
+    0.3707,
+    0.366,
+    0.3197,
+    0.2894,
+    0.2497,
+    0.2455,
+    0.2137,
+    0.1975,
+    0.1972,
+    0.1954,
+    0.1882,
+    0.1828,
+    0.1704,
+    0.1624,
+    0.1587,
+    0.1543,
+    0.1491,
+    0.1453,
+    0.1401,
+    0.1294,
+    0.1275,
+    0.1272,
+    0.1249,
+    0.122,
+    0.1194,
+    0.1078,
+    0.1037,
+    0.1014,
+    0.0994,
+    0.0921,
+    0.0915,
+    0.0913,
+    0.0901,
+    0.0867,
+    0.0836,
+    0.0831,
+    0.0813,
+    0.0801,
+    0.0791,
+    0.0772,
+    0.0769,
+    0.0746,
+    0.0743,
+    0.071,
+    0.0672,
+    0.0651,
+    0.062,
+    0.0599,
+    0.0591,
+    0.0561,
+    0.0521,
+    0.0511,
+    0.0508,
+    0.0459,
+    0.0448,
+    0.0447,
+    0.0438,
+    0.04,
+    0.0394,
+    0.0384,
+    0.0363,
+    0.0353,
+    0.0345,
+    0.0335,
+    0.0324,
+    0.0317,
+    0.0316,
+    0.0308,
+    0.0307,
+    0.0298,
+    0.0298,
+    0.0296,
+    0.0292,
+    0.0288,
+    0.0286,
+    0.0283,
+    0.0279,
+    0.0274,
+    0.027,
+    0.0256,
+    0.0255,
+    0.0243,
+    0.024,
+    0.0221,
+    0.021,
+    0.021,
+    0.0205,
+    0.0182,
+    0.017,
+    0.0168,
+    0.016,
+    0.0158,
+    0.0155,
+    0.0142,
+    0.014,
+    0.014,
+    0.0135,
+    0.0134,
+    0.0132,
+    0.0131,
+    0.0129,
+    0.0123,
+    0.0121,
+    0.012,
+    0.0114,
+    0.0108,
+    0.0106,
+    0.0105,
+    0.0103,
+    0.01,
+    0.0099,
+    0.0095,
+    0.0095,
+    0.0094,
+    0.009,
+    0.0089,
+    0.0087,
+    0.0082,
+    0.0081,
+    0.0081,
+    0.0073,
+    0.0073,
+    0.0072,
+    0.0059,
+    0.0057,
+    0.0054,
+    0.0054,
+    0.0052,
+    0.0048,
+    0.0046,
+    0.0041,
+    0.0041,
+    0.0035,
+    0.0032,
+    0.0026,
+    0.0019,
+    0.0011
+  ]
+}

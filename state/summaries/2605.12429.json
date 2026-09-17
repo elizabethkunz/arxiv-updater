@@ -1,0 +1,8 @@
+{
+  "summary": "We implement programmable energy-selective local reservoirs in superconducting qubits by parametrically modulating coupling to readout resonators, achieving incoherent pump and loss that autonomously stabilize entangled Bell states. We demonstrate stabilization of the single-excitation state $|{-}\\rangle$ with $90.8\\%$ fidelity using a two-qubit transmon array with $J \\approx 2\\pi \\times 6$ MHz and validate characterization via robust classical shadow estimation.",
+  "motivation": "Engineered dissipation offers a scalable approach to stabilizing correlated many-body states in superconducting circuits, but existing implementations require dedicated hardware or coherent drives that limit scalability and flexibility in qubit arrays.",
+  "method": "We use parametric sideband coupling between transmons and their readout resonators (via flux-modulation waveforms at red and blue sidebands) to create energy-selective local dissipation with bandwidth $\\kappa_r \\approx 2\\pi \\times 1.5$ MHz, enabling incoherent pump ($g_S = 2\\pi \\times 0.75$ MHz) and loss ($g_D = 2\\pi \\times 0.58$ MHz) on individual qubits without additional hardware.",
+  "result": "Starting from $|gg\\rangle$, we reach steady-state fidelity $F = 90.8\\%$ to $|{-}\\rangle$ within $2$ μs with concurrence $C \\approx 0.82$; dominant infidelity sources are resonator thermal population ($2.5\\%$, contributing $5.5\\%$ error), intrinsic relaxation ($T_1^{|{-}\\rangle} = 50$ μs, $2.4\\%$ error), and off-resonant transitions ($1.6\\%$ error), all mitigable via existing techniques.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

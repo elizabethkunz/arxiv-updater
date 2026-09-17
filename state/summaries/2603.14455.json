@@ -1,0 +1,8 @@
+{
+  "summary": "A compact four-wave-mixing TWPA is demonstrated using a hybrid DUV-lithography and electron-beam-defined Josephson-junction process, achieving a 6.6 mm × 6.6 mm footprint with broadband gain over 3–11 GHz, sub-dB insertion loss, and added noise of 0.4 photons above the standard quantum limit in the 4–8 GHz band. The device combines scalable planar fabrication with quantum-limited amplification performance suitable for frequency-multiplexed qubit readout.",
+  "motivation": "Large-scale superconducting quantum processors require cryogenic microwave amplifiers with high circuit density, low footprint, and near-quantum-limited noise, but existing TWPAs trade off between compact integration and performance.",
+  "method": "A resonantly phase-matched TWPA was fabricated by combining DUV photolithography (248 nm KrF, $4×$ reduction) to define niobium planar capacitors and inductors with electron-beam lithography to pattern aluminum Josephson junctions, yielding 256 cascaded unit cells with individual resonator footprints of $\\sim100$ µm × 170 µm.",
+  "result": "The device exhibits $>10$ dB gain across most of the 3–11 GHz band, a 1 dB compression point of $-102$ dBm, insertion loss $<1$ dB (3–8 GHz), and average added noise of 0.4 photons/s/Hz above SQL (4–8 GHz), with phase-matching stopband width of 43 MHz indicating $<1$% resonator-frequency variation.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

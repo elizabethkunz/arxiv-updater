@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates crystalline Josephson junctions fabricated from Ga-doped Ge superconductors grown entirely by molecular beam epitaxy, featuring atomically sharp interfaces and a 0.5 nm Si weak link with no amorphous barrier. The devices exhibit strong Josephson coupling in the ultra-short regime and an unconventional magnetic-field enhancement of switching current attributed to quasiparticle-assisted thermalization through Al contacts.",
+  "motivation": "Standard Al/AlO$_x$ Josephson junctions suffer from amorphous barriers hosting defects and two-level systems that limit coherence, particularly in merged-element transmon architectures where the electromagnetic field concentrates in the junction.",
+  "method": "Vertical Ga:Ge/Si/Ga:Ge heterostructures with 10 nm superconducting layers separated by a coherent 0.5 nm Si barrier were grown by MBE on Ge substrates and contacted with Al leads; six devices with areas ranging from 300 to 1200 µm$^2$ were fabricated and characterized via four-terminal transport measurements at 18 mK in applied magnetic fields.",
+  "result": "All six junctions show clear supercurrent with $eR_N I_{\rm SW}/\\Delta$ ranging from 1.05 to 1.97, scaling as expected with junction area and positioning between the Ambegaokar–Baratoff limit ($\\pi/2$) and the short ballistic SNS limit ($\\pi$); in-plane magnetic field enhancement of $I_{\rm SW}$ peaks near 80 mT and persists up to 160 mK, consistent with quasiparticle cooling channels opening in the Al leads with transparency $\\tau = 0.8$.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

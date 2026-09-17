@@ -1,0 +1,8 @@
+{
+  "summary": "A non-magnetic infrared filter for cryogenic quantum devices is demonstrated using Mie scattering from sapphire spheres (0.45–700 µm diameter) embedded in epoxy resin, achieving IR attenuation $\\mu_{\\mathrm{ext}} \\approx 2$ mm$^{-1}$ below 200 µm while maintaining microwave transparency. A prototype coaxial filter based on the SP0.45-700 composition shows insertion loss below 0.4 dB at frequencies up to 10 GHz at 15 mK, with approximately 25× lower pass-band attenuation than metal-powder alternatives at comparable IR blocking.",
+  "motivation": "Superconducting qubits and other cryogenic quantum devices suffer degraded coherence and sensitivity when thermal infrared radiation from higher-temperature cryostat stages breaks Cooper pairs; existing absorptive filter materials like Eccosorb attenuate both IR and the desired microwave signal.",
+  "method": "Mie scattering theory was used to simulate extinction efficiency $Q_{\\mathrm{ext}}$ as a function of sphere diameter and wavelength; composites with tailored size distributions were fabricated in UHU plus Endfest 300 epoxy and characterized via Fourier-transform infrared spectroscopy (1–1000 µm) and vector-network-analyzer measurements (0.1–14 GHz) at room temperature and 15 mK.",
+  "result": "SP0.45-700 achieves transmission $< 10^{-4}$ at 2 and 40 µm and $< 5.3 \\times 10^{-5}$ at 200 µm (1.5 mm thickness), matching or exceeding Eccosorb CR124 performance in the IR stop-band, while the extinction coefficient at 9 GHz is $\\mu_{\\mathrm{ext}} \\approx 1.9 \\times 10^{-3}$ mm$^{-1}$ versus $1.9 \\times 10^{-1}$ mm$^{-1}$ for Eccosorb.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

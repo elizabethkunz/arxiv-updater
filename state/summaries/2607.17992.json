@@ -1,0 +1,8 @@
+{
+  "summary": "This work proposes a voltage-controlled Josephson frequency-comb generator based on a gate-tunable superconductor–semiconductor–superconductor junction operated as a relaxation oscillator, where electrostatic control of carrier density in an InAs two-dimensional electron gas enables direct tuning of both critical current and Josephson inductance. Time-domain SPICE simulations demonstrate continuous 1–10 GHz frequency coverage with equidistant comb lines whose spacing, central frequencies, and modal power distribution can be dynamically adjusted via gate voltage, with extension to niobium showing $\\sim 100$ GHz bandwidth at temperatures around 3 K.",
+  "motivation": "Microwave frequency combs are essential for quantum information processing and cryogenic sensing, but existing Josephson-based implementations suffer from limited tunability, low power output, or reliance on magnetic-field or cavity engineering that constrains scalability and in situ control.",
+  "method": "A ballistic Al/InAs SNS junction with a capacitively coupled gate electrode is embedded in a resistively shunted circuit and operated in the relaxation-oscillation regime; the nonlinear dynamics are simulated via SPICE using the Kulik–Omelyanchuk current–phase relation with sub-picosecond time resolution to compute steady-state voltage waveforms and their Fourier spectra.",
+  "result": "For Al/InAs at 20 mK, the device produces phase-coherent voltage pulses with mode spacing $\\Delta f = 1/\\tau \\approx 1$ GHz tunable over 65% via gate voltage; peak powers reach $\\sim 0.5$ pW per mode at 1 GHz, increasing to $\\sim 10$ pW per mode for Nb electrodes at 3 K with bandwidth extended to 100 GHz.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

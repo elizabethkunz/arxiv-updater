@@ -1,0 +1,8 @@
+{
+  "summary": "CPW resonators fabricated from YBCO thin films exhibit $Q_i$ of $4\\times10^3$–$10^4$ at 70 mK, reaching maxima of $8\\times10^3$–$1.2\\times10^4$ near 6 K, with anomalous low-temperature frequency shifts and losses that cannot be explained by conventional two-level-system models. The low-temperature frequency upturn is consistent with a paramagnetic response from defect-induced local moments or Andreev bound states, while the loss follows an unexplained logarithmic temperature dependence.",
+  "motivation": "YBCO's high critical temperature and field resilience motivate its use in hybrid quantum systems and cryogenic microwave devices, requiring characterization of loss and dispersion in patterned planar circuits beyond bulk surface-impedance models.",
+  "method": "CPW resonators were fabricated from two YBCO films (S-type and M-type, 210 nm on CeO$_2$/sapphire) with resonance frequencies 4–6 GHz, characterized from 70 mK to 40 K via microwave transmission measurements and fitted to models incorporating quasiparticle kinetic inductance, two-level-system response, and paramagnetic contributions.",
+  "result": "The temperature dependence of frequency shift is well-described by a model combining quasiparticle effects with a Curie-Weiss-like paramagnetic term ($\\mu_r = 1 + c/(T+\\theta)$) yielding $\\lambda_{ab}(0) = 232 \\pm 6$ nm (chip 1) and $160 \\pm 9$ nm (chip 2) with $\\beta \\approx 2.1$–$2.3$ for penetration-depth temperature dependence; low-temperature $Q_i$ follows $Q_i^{LT} = A + B \\ln(T/1\\,\\mathrm{K})$ with no observable power dependence up to $-80$ dBm.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

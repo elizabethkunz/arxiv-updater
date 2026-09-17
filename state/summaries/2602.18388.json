@@ -1,0 +1,8 @@
+{
+  "summary": "This study investigates qubit error bursts in two Quantum Inspire transmon processors (Starmon-5 with Dolan junctions and Starmon-7 with Manhattan junctions) and reveals junction-specific signatures, including quasiparticle pumping in Dolan devices and an anomalous surge-and-suppression pattern in burst rate. Burst rates of $\\gamma_\\mathrm{kept} \\approx 1.5$ and $1$ min$^{-1}$ are comparable to prior work after area normalization, with recovery times differing by $\\times 8$ between devices ($t_\\mathrm{rec} \\sim 2$ ms versus $\\sim 250$ µs).",
+  "motivation": "Ionizing radiation–induced qubit error bursts limit quantum error correction performance in superconducting processors, motivating investigation of burst dynamics, recovery mechanisms, and mitigation strategies across nominally similar devices.",
+  "method": "Mid-circuit measurement and template-matched filtering of simultaneous multi-qubit errors distinguish radiation-induced bursts from baseline $T_1$ and readout errors in two refrigerators; burst rate and duration are extracted as functions of cycle time and detection pulse rate.",
+  "result": "Dolan-junction qubits show quasiparticle pumping: increasing π-pulse rate shortens $t_\\mathrm{rec}$ by $\\sim 4\\times$ (from $\\sim 2$ ms to $\\sim 500$ µs) via a built-in trap, absent in Manhattan junctions; separately, Starmon-5 exhibits an anomalous surge with $\\gamma_\\mathrm{kept}$ rising by $\\times 10$–$\\times 100$ after 1–4 weeks at base temperature, then suppressing to $\\times 100$ below initial levels until thermal cycling.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "This paper presents a digital predistortion (DPD) framework using cascaded IIR and FIR filters to compensate for distortion in flux-control signals of superconducting qubits, achieving sub-percent deviations from ideal behavior. Experiments on a 20-qubit IQM Garnet QPU demonstrate correction of combined classical (AWG, cryogenic line, bias-tee) and quantum chip voltage-to-flux transfer function distortions using Cryoscope characterization.",
+  "motivation": "Flux-tunable qubits require fast, accurate control pulses for two-qubit CZ gates, but non-ideal electronics, parasitic components, and cryogenic response degrade gate fidelity; compensating distortions avoids costly settling delays.",
+  "method": "Distortion sources (AWG modeled as second-order underdamped system with time constants 1–100 ns; cryo line exponential overshoot 1 ns–10 µs; bias-tee 10 µs–10 ms) are characterized via 2D flux spectroscopy and Cryoscope Ramsey measurements to extract the voltage-to-flux transfer function, then inverted to calculate IIR ($M_a=1$, $M_b=2$) and FIR filter coefficients via linear least-squares optimization.",
+  "result": "IIR correction alone achieves 0.65% deviation from ideal linear response; cascaded FIR filtering reduces this to 0.17% deviation with $\\log(\\mathrm{NMSE}) < -30$ dB, using measured $T_1 = 21.5$ µs and $T_2^* = 4.9$ µs on qubit Q1.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

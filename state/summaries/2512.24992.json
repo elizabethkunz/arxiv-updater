@@ -1,0 +1,8 @@
+{
+  "summary": "Mathieu control uses off-resonant two-photon drives on superconducting qubit circuits to engineer selective nonlinear frequency shifts that tune interactions while preserving computational subspace integrity. The scheme enables continuous ZZ coupling tuning (including zero), low-leakage gates with process fidelities $>99.94\\%$ and $1-\\mathrm{Tr}(\\chi^2) \\sim 10^{-5}$, and programmable XXZ Hamiltonians in scalable qubit-coupler chains.",
+  "motivation": "Superconducting circuits face a trade-off between strong tunable couplings and protection of the computational subspace from leakage and dressing errors that limit gate fidelity and scaling.",
+  "method": "A high-frequency two-photon flux drive $\\Delta\\omega(t)=\\epsilon\\cos(\\omega_d t)$ on the SQUID loop creates a dispersive nonlinear shift $\\propto (\\epsilon^2/\\delta)\\hat{a}^\\dagger{}^2\\hat{a}^2$ that modifies effective spin-spin interactions without real population transfer; applied to directly coupled transmons or tunable couplers in QCQ architectures, it gives independent control of $J_{zz}$ via drive amplitude while leaving $J_{xx}$ nearly unchanged.",
+  "result": "For two directly coupled transmons, $J_{zz}$ spans from $\\sim-10$ to $\\sim+10$ MHz with zero crossing at $\\epsilon_0$; in a five-qubit chain with alternating couplers, Mathieu control successfully reproduces the XXZ phase diagram with programmable anisotropy $\\Delta=J_{zz}/(2J_{xx})$ across gapless XY, gapped Ising-antiferromagnetic, and ferromagnetic phases, with relaxation dynamics matching exact simulations except for $\\sim 17\\%$ slowdown due to effective coupling renormalization from multi-coupler dressing.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

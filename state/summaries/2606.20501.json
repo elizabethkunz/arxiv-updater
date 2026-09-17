@@ -1,0 +1,8 @@
+{
+  "summary": "This Letter generalizes analytical fidelity-reduction formulae from static to time-dependent Markovian dissipation, enabling prediction of average gate fidelity for quantum operations where decoherence rates vary during execution. Application to adiabatic controlled-Z gates in superconducting circuits reveals that flux-dependent noise sensitivity and qubit-coupler hybridization significantly degrade fidelity in tunable architectures.",
+  "motivation": "Baseband flux gates in superconducting quantum computers dynamically modulate qubit or coupler frequencies, causing dissipation rates to become time-dependent, but existing analytical fidelity formulae assume static noise and thus fail for these increasingly common tunable architectures.",
+  "method": "The authors extend the Lindblad master equation framework with time-dependent dissipative rates $\\Gamma_k(t)$ and expand the average gate fidelity $\\bar{F}$ to first order in the small parameter $\\bar{\\Gamma}_k \\tau$, showing that each dissipative process contributes independently via time-dependent jump operators $\\hat{L}(t)$ evolved in the Heisenberg picture.",
+  "result": "The generalized fidelity formula $\\bar{F} = 1 + \\sum_k \\int_0^\\tau dt\\, \\Gamma_k(t)\\, \\delta F[\\hat{L}_k(t)]$ provides a rigorous bound for adiabatic operations, revealing that interplay between parameter-dependent noise channels and mode hybridization fundamentally restricts achievable fidelity in flux-tuned superconducting quantum computers.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

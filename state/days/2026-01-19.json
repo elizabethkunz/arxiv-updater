@@ -1,0 +1,343 @@
+{
+  "date": "2026-01-19",
+  "n_fetched": 59,
+  "papers": [
+    {
+      "id": "2601.11086",
+      "title": "Converting qubit relaxation into erasures with a single fluxonium",
+      "authors": [
+        "Chenlu Liu",
+        "Yulong Li",
+        "Jiahui Wang",
+        "Quan Guan",
+        "Lijing Jin",
+        "Lu Ma",
+        "Ruizi Hu",
+        "Tenghui Wang",
+        "Xing Zhu",
+        "Hai-Feng Yu",
+        "Chunqing Deng",
+        "Xizheng Ma"
+      ],
+      "abstract": "Qubits that experience predominantly erasure errors offer distinct advantages for fault-tolerant operation. Indeed, dual-rail encoded erasure qubits in superconducting cavities and transmons have demonstrated high-fidelity operations by converting physical-qubit relaxation into logical-qubit erasures, but this comes at the cost of increased hardware overhead and circuit complexity. Here, we address these limitations by realizing erasure conversion in a single fluxonium operated at zero flux, where the logical state is encoded in its 0-2 subspace. A single, carefully engineered resonator provides both mid-circuit erasure detection and end-of-line (EOL) logical measurement. Post-selection on non-erasure outcomes results in more than four-fold increase of the logical lifetime, from $193~μ$s to $869~μ$s. Finally, we characterize measurement-induced logical dephasing as a function of measurement power and frequency, and infer that each erasure check contributes a negligible error of $7.2\\times 10^{-5}$. These results establish integer-fluxonium as a promising, resource-efficient platform for erasure-based error mitigation, without requiring additional hardware.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-16",
+      "score": 0.9266327485299168,
+      "similar_to": [
+        {
+          "title": "Bias-preserving and error-detectable entangling operations in a superconducting dual-rail system",
+          "id": "2503.10935",
+          "similarity": 0.8893214464187622
+        },
+        {
+          "title": "Fast, High-Fidelity Erasure Detection of Dual-Rail Qubits with Symmetrically Coupled Readout",
+          "id": "2604.16292",
+          "similarity": 0.8883650302886963
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates erasure conversion in a single fluxonium qubit operated at zero flux, where the logical qubit is encoded in the $|0\\rangle$–$|2\\rangle$ subspace and physical relaxation is routed through the intermediate $|1\\rangle$ state as a detectable erasure. A single resonator coupled dispersively to the qubit performs both mid-circuit erasure detection and end-of-line logical readout, achieving a four-fold increase in logical lifetime from 193 µs to 869 µs via post-selection on non-erasure outcomes.",
+        "motivation": "Dual-rail erasure qubits in cavities and transmons require substantial hardware overhead and circuit complexity. This work seeks a hardware-efficient single-qubit platform for erasure-based error mitigation by exploiting symmetry-induced suppression of direct decay at zero flux.",
+        "method": "An integer fluxonium with $E_c/\\hbar = 2\\pi \\times 1.72$ GHz, $E_J/\\hbar = 2\\pi \\times 7.07$ GHz, and $E_L/\\hbar = 2\\pi \\times 0.32$ GHz is operated at $\\Phi_{\\mathrm{ext}} = 0$ to suppress the charge matrix element $|\\langle 0|\\hat{n}|2\\rangle|$, forcing decay through $|1\\rangle$. A single resonator with tunable dispersive shifts ($\\chi_{02} = -2\\pi \\times 147$ kHz at $\\Phi_{\\mathrm{ext}} = 0$, $\\chi_{02} = -2\\pi \\times 760$ kHz at $\\Phi_{\\mathrm{ext}} = 1.3$ m$\\Phi_0$) enables selective erasure detection without perturbing the computational manifold.",
+        "result": "At $\\Phi_{\\mathrm{ext}} = 0$, the direct transition rate $\\Gamma_{20}$ is suppressed to below the measurement threshold while $\\Gamma_{10} = 2\\pi \\times 1.22$ kHz and $\\Gamma_{21} = 2\\pi \\times 1.21$ kHz remain comparable. Post-selection on erasure-free runs increases $T_{1L}$ from 193 µs to 869 µs, while each erasure check contributes a negligible pure-dephasing error of $7.2 \\times 10^{-5}$ and QND infidelity below 0.1 % per check.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.11316",
+      "title": "Dressed-state relaxation in coupled qubits as a source of two-qubit gate errors",
+      "authors": [
+        "Ruixia Wang",
+        "Jiayu Ding",
+        "Chenlu Wang",
+        "Yujia Zhang",
+        "He Wang",
+        "Wuerkaixi Nuerbolati",
+        "Zhen Yang",
+        "Xuehui Liang",
+        "Weijie Sun",
+        "Haifeng Yu",
+        "Fei Yan"
+      ],
+      "abstract": "Understanding error mechanisms in two-qubit gate operations is essential for building high-fidelity quantum processors. While prior studies predominantly treat dephasing noise as either Markovian or predominantly low-frequency, realistic qubit environments exhibit structured, frequency-dependent spectra. Here we demonstrate that noise at frequencies matching the dressed-state energy splitting--set by the inter-qubit coupling strength g--induces a distinct relaxation channel that degrades gate performance. Through combined theoretical analysis and experimental verification on superconducting qubits with engineered noise spectra, we show that two-qubit gate errors scale predictably with the noise power spectral density at frequency 2g, extending the concept of $T_{1ρ}$ relaxation to interacting systems. This frequency-selective relaxation mechanism, universal across platforms, enriches our understanding of decoherence pathways during gate operations. The same mechanism sets coherence limits for dual-rail or singlet-triplet encodings.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-16",
+      "score": 0.8902064902697147,
+      "similar_to": [
+        {
+          "title": "Dynamical decoupling and noise spectroscopy with a superconducting flux qubit",
+          "id": "1101.4707",
+          "similarity": 0.8801645040512085
+        },
+        {
+          "title": "Scalable and Site-Specific Frequency Tuning of Two-Level System Defects in Superconducting Qubit Arrays",
+          "id": "2503.04702",
+          "similarity": 0.8563636541366577
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates that noise at frequencies matching the dressed-state energy splitting $2g$ (set by inter-qubit coupling) induces a distinct relaxation channel in coupled superconducting qubits during two-qubit gates, with gate errors scaling as $\\epsilon_\\mathrm{avg} = \\frac{1}{5}\\Gamma_g \\tau$ where $\\Gamma_g = \\frac{1}{2}S_\\Delta(2g)$. The mechanism, validated experimentally on tunable transmon qubits with engineered noise spectra from 5–20 MHz, extends the concept of $T_{1\\rho}$ relaxation to interacting systems and applies universally to dual-rail and singlet-triplet encodings.",
+        "motivation": "Realistic qubit environments exhibit structured, frequency-dependent noise spectra rather than white or quasi-static noise; understanding how this frequency-selective noise impacts gate performance is essential for error budgeting and mitigation in quantum processors.",
+        "method": "Theoretical analysis using Bloch–Redfield theory combined with experimental verification: injected classical Gaussian noise (filtered to 5–20 MHz passband) was applied to transmon qubits during spin-locking and two-qubit gate operations; dressed-state relaxation rates were measured independently and related to gate fidelity via cross-entropy benchmarking.",
+        "result": "Measured dressed-state relaxation rates $\\Gamma_g$ and single-qubit $T_{1\\rho}$ rates agree when $2g = \\Omega/2\\pi = 15$ MHz, with slopes $\\partial\\Gamma_g/\\partial P_\\mathrm{out} = 1.13\\,(\\mathrm{mW}\\cdot\\mu\\mathrm{s})^{-1}$; fSim gate errors scale linearly with $P_\\mathrm{out}$ and interaction time $\\tau = 48$ ns in excellent agreement with theory, confirming that suppressing noise near $2g$ is critical for high-fidelity entangling gates.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.11378",
+      "title": "Transmon Architecture for Emission and Detection of Single Microwave Photons",
+      "authors": [
+        "Daniel L. Campbell",
+        "Stephen McCoy",
+        "Melinda Andrews",
+        "Alexander Madden",
+        "Viva R. Horowitz",
+        "Bakir Husremović",
+        "Samuel Marash",
+        "Christopher Nadeau",
+        "Man Nguyen",
+        "Andrew M. Brownell",
+        "Derrick Sica",
+        "Michael Senatore",
+        "Samuel Schwab",
+        "Erin Sheridan",
+        "Matthew D. LaHaye"
+      ],
+      "abstract": "We develop a compact transmon emitter/detector (TED) superconducting circuit and demonstrate its dual functionality as a single-photon source and detector. In our setup, photons emitted by a source TED are transmitted via a meter-long coaxial cable, routed through a circulator, and captured by a measurement TED. Both TED modules operate with nominally identical parameters, highlighting the flexibility of this novel architecture. Furthermore, we introduce an efficient microwave photon detection scheme tailored to the TED. Using this setup, we detect 60% of the emitted Fock state photons and infer a 95% detection efficiency at the input of the measurement TED, which we calibrate against coherent state measurements. The reset and photon emission/detection processes each require approximately $2\\,μs$, yielding a minimum protocol duration of $4\\,μs$ as constrained by our chosen TED parameters. Ultimately, the TED demonstrates a new use case for the recently developed double transmon coupler (DTC): a compact, drop-in, tunable, and transition-selective link between a coherent data transmon and a waveguide. Circuits like the TED will play a vital role in quantum information processing by facilitating unconditional fast reset, enabling microwave photon metrology, and serving as nascent quantum communication interfaces (QCIs). QCIs mediate entanglement distribution between quantum processing units (QPUs) within a cryostat or interface with microwave-to-optical transducers for long-range quantum networking.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-16",
+      "score": 0.8742834921326581,
+      "similar_to": [
+        {
+          "title": "Enhancing the sensitivity of single microwave photon detection with bandwidth tunability",
+          "id": "2501.07354",
+          "similarity": 0.8673720955848694
+        },
+        {
+          "title": "A First Demonstration of the SQUAT Detector Architecture: Direct Measurement of Resonator-Free Charge-Sensitive Transmons",
+          "id": "2601.16261",
+          "similarity": 0.8430800437927246
+        }
+      ],
+      "summary": {
+        "summary": "We develop a transmon emitter/detector (TED) superconducting circuit combining a data transmon, a double transmon coupler (DTC), and a waveguide-coupled transmon to enable tunable single-photon emission and detection while preserving data-qubit coherence. In a meter-scale pitch-and-detect configuration, we demonstrate 60% detection of emitted Fock states with inferred 95% intrinsic detection efficiency, with both emission and detection protocols completing in ~2 µs each.",
+        "motivation": "Scalable quantum networking requires compact, reconfigurable quantum communication interfaces that preserve quantum processor coherence while enabling entanglement distribution between heterogeneous nodes with frequency flexibility.",
+        "method": "We exploit the recently developed DTC architecture to mediate parametric exchange interactions between a well-isolated data transmon and waveguide modes, using flux-driven modulation at the difference frequency $\\omega_p = |\\omega_w - \\omega_d|$ to emit superposition states and detect incident Fock photons via a $|11\\rangle \\leftrightarrow |02\\rangle$ transition. The sTED and mTED are connected via coaxial cable and circulator, with the composite system modeled using SLH formalism incorporating transmission loss $\\eta$.",
+        "result": "At optimal tuning, the mTED achieves 95% intrinsic detection fidelity with $T_1 = 81(35)$ µs for $Q_d$ and $\\gamma_m = 11.2(1) \\times 10^6 \\text{ s}^{-1}$ for $Q_w$, detecting 60% of incident photons end-to-end (35% loss attributed to 1 m coaxial cable and circulator); the $Q_w$ transition frequency is tunable over ~300 MHz via static flux bias with $g_p = 0.584(6)\\gamma_m$ for emission and $g_p = 0.259(3)\\gamma_m$ for detection.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.11303",
+      "title": "Controlled Parity of Cooper Pair Tunneling in a Hybrid Superconducting Qubit",
+      "authors": [
+        "David Feldstein-Bofill",
+        "Leo Uhre Jakobsen",
+        "Ksenia Shagalov",
+        "Zhenhai Sun",
+        "Casper Wied",
+        "Shikhar Singh",
+        "Anders Kringhøj",
+        "Jacob Hastrup",
+        "András Gyenis",
+        "Karsten Flensberg",
+        "Svend Krøjer",
+        "Morten Kjaergaard"
+      ],
+      "abstract": "Superconducting quantum circuits derive their nonlinearity from the Josephson energy-phase relation. Besides the fundamental $\\cosφ$ term, this relation can also contain higher Fourier harmonics $\\cos(kφ)$ corresponding to correlated tunneling of $k$ Cooper pairs. The parity of the dominant tunneling process, i.e.~whether an odd or even number of Cooper pairs tunnel, results in qualitatively different properties, and controlling this opens up a wide range of applications in superconducting technology. However, access to even-dominated regimes has remained challenging and has so far relied on complex multi-junction or all-hybrid architectures. Here, we demonstrate a simple \"harmonic parity qubit\" (HPQ); an element that combines two aluminum-oxide tunnel junctions in parallel to a gate-tunable InAs/Al nanowire junction forming a SQUID, and use spectroscopy versus flux to reconstruct its energy-phase relation at 85 gate voltage points. At half flux quantum, the odd harmonics of the Josephson potential can be suppressed by up to two orders of magnitude relative to the even harmonics, producing a double-well potential dominated by even harmonics with minima near $\\pmπ/2$. The ability to control harmonic parity enables supercurrent carried by pairs of Cooper pairs and provides a new building block for Fourier engineering in superconducting circuits.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-01-16",
+      "score": 0.7516250103631474,
+      "similar_to": [
+        {
+          "title": "Observation of Josephson Harmonics in Tunnel Junctions",
+          "id": "2302.09192",
+          "similarity": 0.8771697878837585
+        },
+        {
+          "title": "Distinguishing parity-switching mechanisms in a superconducting qubit",
+          "id": "2204.07458",
+          "similarity": 0.8478480577468872
+        }
+      ],
+      "summary": {
+        "summary": "A hybrid superconducting qubit combines aluminum-oxide tunnel junctions with a gate-tunable InAs/Al nanowire junction in a SQUID to achieve controlled parity of Cooper pair tunneling. By tuning a single gate voltage, the device suppresses odd Josephson harmonics by up to two orders of magnitude at half-flux quantum, producing a $\\cos(2\\phi)$-dominated potential with a deep double well.",
+        "motivation": "Conventional Josephson junctions rely on single-Cooper-pair tunneling via the $\\cos(\\phi)$ term, but higher harmonics $\\cos(k\\phi)$ corresponding to $k$-pair tunneling can improve protection in superconducting qubits. Previous work required complex multi-junction or all-hybrid architectures to achieve even-harmonic dominance; a simpler, gate-tunable approach was needed.",
+        "method": "A parallel SQUID with two SIS junctions in one arm and a gate-tunable S-Sm-S nanowire junction in the other was fabricated on NbTiN. Multi-transition spectroscopy was performed at 85 gate voltages from $-7$ V to $9.8$ V, and harmonic coefficients were extracted by fitting the full circuit Hamiltonian to the reconstructed energy-phase relation.",
+        "result": "The odd harmonic coefficient $c_{\\mathrm{odd}}$ was reduced to 0.6 GHz from 30.9 GHz while the even coefficient $c_{\\mathrm{even}}$ remained at 15–20 GHz; the ratio $|c_{\\mathrm{even}}/c_{\\mathrm{odd}}|$ spans nearly two orders of magnitude. At the even-dominated point ($V_g = 7.2$ V), $|c_2/c_1| = 3.47$ and the ground and excited states exhibit opposite Cooper-pair parity with suppressed parity-violating transitions.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.10786",
+      "title": "Elevator Codes: Concatenation for resource-efficient quantum memory under biased noise",
+      "authors": [
+        "Peter Shanahan",
+        "Diego Ruiz"
+      ],
+      "abstract": "Biased-noise qubits, in which one type of error (e.g. $X$- and $Y$-type errors) is significantly suppressed relative to the other (e.g. $Z$-type errors), can significantly reduce the overhead of quantum error correction. Codes such as the rectangular surface code or XZZX code substantially reduce the qubit overhead under biased noise, but they still face challenges. The rectangular surface code suffers from a relatively low threshold, while the XZZX code requires twice as many physical qubits to maintain the same code distance as the surface code. In this work, we introduce a 2D local code construction that outperforms these codes for noise biases $η\\ge 7\\times10^{4}$, reducing the qubit overhead by over 50% at $p_Z=10^{-3}$ and $η= 2 \\times 10^6$ to achieve a logical error rate of $10^{-12}$. Our construction relies on the concatenation of two classical codes. The inner codes are repetition phase-flip codes while the outer codes are high-rate bit-flip codes enabled by their implementation at the logical level, which circumvents device connectivity constraints. These results indicate that under sufficiently biased noise, it is advantageous to address phase-flip and bit-flip errors at different layers of the coding scheme. The inner code should prioritize a high threshold for phase-flip errors, while the bit-flip outer code should optimize for encoding rate efficiency. In the strong biased-noise regime, high-rate outer codes keep the overhead for correcting residual bit-flip errors comparable to that of the repetition code itself, meaningfully lower than that required by earlier approaches.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-15",
+      "score": 0.6392875232756641,
+      "similar_to": [
+        {
+          "title": "Hardware-efficient quantum error correction via concatenated bosonic qubits",
+          "id": "2409.13025",
+          "similarity": 0.8855722546577454
+        },
+        {
+          "title": "Quantum error correction at ultra-low overhead",
+          "id": "2608.02773",
+          "similarity": 0.8742217421531677
+        }
+      ],
+      "summary": {
+        "summary": "Elevator codes are concatenated classical codes designed for biased-noise qubits, combining inner repetition phase-flip codes ($d_Z^\\mathrm{inner}$ variable, $d_X^\\mathrm{inner}=1$) with high-rate outer bit-flip codes executed at the logical level. For noise bias $\\eta \\geq 7\\times10^4$, these codes reduce qubit overhead by over 50% compared to rectangular and XZZX surface codes at $p_Z=10^{-3}$ and $\\eta=2\\times10^6$ when achieving logical error rate $10^{-12}$.",
+        "motivation": "Biased-noise qubits like superconducting cat qubits exhibit exponential bit-flip suppression at the cost of increased phase-flip errors, but existing asymmetric codes either suffer from low thresholds (rectangular surface code) or require twice as many qubits (XZZX code) to maintain code distance. The authors exploit concatenation to address phase-flip and bit-flip errors at different layers for better resource efficiency in the strong-bias regime.",
+        "method": "Inner codes are phase-flip repetition codes supporting transversal CNOTs; outer codes are matchable classical linear codes ($[15,9,3]$, $[15,6,5]$, $[16,3,8]$) designed to correct only bit-flip errors ($d_Z^\\mathrm{outer}=1$) to avoid logical hook errors. Outer code syndrome extraction uses sequential transversal CNOT and SWAP gates between stacked inner code blocks, decoded with BP+OSD to handle hypergraph structure. Overall code achieves $d_X = d_X^\\mathrm{inner} \\cdot d_X^\\mathrm{outer}$ and $d_Z = d_Z^\\mathrm{inner} \\cdot d_Z^\\mathrm{outer}$.",
+        "result": "At $p_Z=10^{-3}$ and $\\eta=10^6$, concatenated codes achieve $3\\times$ lower overhead than XZZX and $2\\times$ lower than thin surface codes for logical error $10^{-12}$; at $p_Z=10^{-2}$ and $\\eta=10^6$, advantage reaches $3\\times$ for errors $10^{-6}$–$10^{-11}$ due to phase-flip threshold roughly five times higher than surface code.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.11245",
+      "title": "Concatenated continuous driving of silicon qubit by amplitude and phase modulation",
+      "authors": [
+        "Takuma Kuno",
+        "Takeru Utsugi",
+        "Andrew J. Ramsay",
+        "Normann Mertig",
+        "Noriyuki Lee",
+        "Itaru Yanagi",
+        "Toshiyuki Mine",
+        "Nobuhiro Kusuno",
+        "Hideo Arimoto",
+        "Sofie Beyne",
+        "Julien Jussot",
+        "Stefan Kubicek",
+        "Yann Canvel",
+        "Clement Godfrin",
+        "Bart Raes",
+        "Yosuke Shimura",
+        "Roger Loo",
+        "Sylvain Baudot",
+        "Danny Wan",
+        "Kristiaan De Greve",
+        "Shinichi Saito",
+        "Digh Hisamoto",
+        "Ryuta Tsuchiya",
+        "Tetsuo Kodera",
+        "Hiroyuki Mizuno"
+      ],
+      "abstract": "The rate of coherence loss is lower for a qubit under the Rabi drive than a freely evolving qubit $T_{2}^{\\rm{Rabi}}>T_{2}^*$. Building on this principle, concatenated continuous driving (CCD) keeps the qubit under continuous drive to suppress noise and manipulate dressed states by either phase or amplitude modulation. In this work, we propose a variant of CCD which simultaneously modulates both the amplitude and phase of the driving field to generate a circularly polarized field in the rotating frame of the carrier frequency. This circular-modulated CCD(CMCCD) cancels the counter-rotating term in the second rotating frame, eliminating a systematic pulse-area error that arises from an imperfect rotating wave approximation for fast gates. Numerical simulations demonstrate that the proposed CMCCD achieves higher gate fidelity than conventional CCD schemes. We further implement and compare different CCD protocols using an electron spin-qubit in an isotopically purified $^{28}$Si-MOS quantum dot and evaluate its robustness by applying static detuning and Rabi frequency errors. The robustness is significantly improved compared with the standard Rabi drive, showing the effectiveness of this scheme for qubit arrays with variation in qubit frequency, coupling to the Rabi drive, and low-frequency noise. The proposed scheme can be applied to various physical systems, including trapped atoms, cold atoms, superconducting qubits, and NV centers.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-16",
+      "score": 0.5631998413494752,
+      "similar_to": [
+        {
+          "title": "Suppressing Counter-Rotating Errors for Fast Single-Qubit Gates with Fluxonium",
+          "id": "2406.08295",
+          "similarity": 0.833849310874939
+        },
+        {
+          "title": "Hardware-efficient quantum error correction via concatenated bosonic qubits",
+          "id": "2409.13025",
+          "similarity": 0.8300416469573975
+        }
+      ],
+      "summary": {
+        "summary": "This work proposes circular-modulated concatenated continuous driving (CMCCD) for silicon spin qubits, which simultaneously modulates both amplitude and phase of the microwave drive to generate a circularly polarized field that cancels counterrotating terms in the second rotating frame, eliminating systematic pulse-area errors from the imperfect rotating wave approximation. Experimental implementation on an isotopically purified $^{28}$Si-MOS quantum dot demonstrates that CMCCD achieves higher gate fidelity than conventional amplitude- or phase-modulated CCD schemes and exhibits significantly improved robustness to static detuning and Rabi frequency errors without requiring the second rotating wave approximation.",
+        "motivation": "Conventional concatenated continuous driving schemes using either amplitude or phase modulation alone suffer from residual counterrotating terms in the second rotating frame that limit gate fidelity, particularly for fast gates where the rotating wave approximation breaks down.",
+        "method": "The authors implemented CMCCD with equal amplitude and phase modulation ratios ($\\alpha_A = \\alpha_P = 1/2$) on an electron spin qubit in a silicon quantum dot, performing chevron measurements, Rabi oscillations under artificial detuning and Rabi errors, and randomized benchmarking at modulation strength $\\epsilon_m = \\Omega_0/4$ with $\\Omega_0/2\\pi = 2.2$–$3.6$ MHz.",
+        "result": "CMCCD achieved state infidelity $\\sim 10^{-3}$ at zero error and maintained robust gate fidelity over $\\pm 20\\%$ Rabi frequency variation, compared to bare qubit infidelity $\\sim 10^{-2}$ at similar error levels; the device exhibited $T_2^{\\mathrm{CCD-Rabi}} = 12.8$ µs and $T_2^{\\mathrm{CCD-Ramsey}} = 17.7$ µs in the double-dressed state, demonstrating superior tolerance to both detuning and drive amplitude fluctuations versus conventional CCD schemes.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9266,
+    0.8902,
+    0.8743,
+    0.7516,
+    0.6393,
+    0.5632,
+    0.4956,
+    0.4255,
+    0.3819,
+    0.336,
+    0.3322,
+    0.3281,
+    0.2275,
+    0.2225,
+    0.1827,
+    0.1537,
+    0.1422,
+    0.1142,
+    0.1078,
+    0.1045,
+    0.1035,
+    0.0946,
+    0.0836,
+    0.0733,
+    0.0623,
+    0.0588,
+    0.0586,
+    0.0572,
+    0.0571,
+    0.0536,
+    0.0492,
+    0.0469,
+    0.0457,
+    0.0434,
+    0.0421,
+    0.0385,
+    0.0366,
+    0.0354,
+    0.0322,
+    0.0317,
+    0.0307,
+    0.0302,
+    0.0284,
+    0.0269,
+    0.0261,
+    0.0243,
+    0.022,
+    0.022,
+    0.0193,
+    0.0162,
+    0.015,
+    0.0146,
+    0.0141,
+    0.0132,
+    0.0097,
+    0.0081,
+    0.0071,
+    0.0071,
+    0.004
+  ]
+}

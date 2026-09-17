@@ -1,0 +1,248 @@
+{
+  "date": "2026-04-15",
+  "n_fetched": 127,
+  "papers": [
+    {
+      "id": "2604.12261",
+      "title": "Long-range tunable coupler for modular fluxonium quantum processors",
+      "authors": [
+        "Peng Zhao",
+        "Peng Xu",
+        "Zheng-Yuan Xue"
+      ],
+      "abstract": "The path toward practical superconducting quantum processors requires the integration of a large number of high-performance qubits. Modular architectures could offer a way to address the scaling limitations of monolithic designs by partitioning a large quantum processor into physically separated modules, or chiplets, linked through long-range interconnects. In this context, although fluxonium qubits have emerged as a compelling platform for quantum computing due to their long coherence times and high-fidelity gates, existing coupling schemes remain restricted to qubits in close proximity on a single chip. This limitation inherently precludes the long-range interconnects essential for modular integration. In this work, we propose a long-range tunable coupler designed to interconnect fluxonium qubits separated by more than one centimeter, thereby supporting the realization of modular fluxonium quantum processors. Under realistic assumptions, the proposed coupler has the potential to achieve inter-module two-qubit gate performance, specifically sub-100-ns gates with intrinsic errors below $10^{-4}$, comparable to that of intra-module (intra-chiplet) gates, while enabling modular integration with low quantum crosstalk, a key requirement for scalable systems. We further discuss the integration of this coupler into modular fluxonium lattices and explore its feasibility for achieving the higher connectivity and longer coupling range required for complex quantum error correction codes. This work could contribute to the development of large-scale fluxonium quantum processors by bridging their demonstrated potential with modular scalability.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-14",
+      "score": 0.7513569407906151,
+      "similar_to": [
+        {
+          "title": "Scalable Fluxonium Quantum Processors via Tunable-Coupler Architecture",
+          "id": "2604.13363",
+          "similarity": 0.9265305399894714
+        },
+        {
+          "title": "Fault-tolerant interfaces for modular quantum computing on diverse qubit platforms",
+          "id": "2510.05221",
+          "similarity": 0.8660795092582703
+        }
+      ],
+      "summary": {
+        "summary": "This paper proposes a long-range tunable coupler (LTC) based on two quarter-wave CPW resonators coupled via an rf-SQUID to enable tunable interactions between fluxonium qubits separated by over one centimeter for modular quantum processors. The coupler achieves sub-100-ns CZ gates with intrinsic errors below $10^{-4}$ while maintaining low quantum crosstalk and supporting degree-four connectivity for surface codes and higher-degree connectivity for quantum LDPC codes.",
+        "motivation": "Fluxonium qubits offer long coherence times and high-fidelity gate operations but existing coupling schemes are restricted to close proximity on a single chip, preventing modular architectures needed for large-scale systems while addressing wiring bottlenecks, yield, and crosstalk challenges.",
+        "method": "The LTC uses two identical $\\lambda/4$ CPW resonators (each 0.5 cm long, 50 Ω characteristic impedance) terminated by linear inductors ($L_S = 0.5$ nH) and inductively coupled via a Josephson junction ($I_c = 200$ nA, $E_{J,c}/2\\pi \\approx 99$ GHz) tuned by external flux bias. Two fluxonium qubits ($E_C/2\\pi \\approx 1$ GHz, $E_L/2\\pi \\approx 0.8$ GHz, $E_J/2\\pi \\approx 6.6$ GHz) couple to the coupler modes with $J_c/2\\pi = 125$ MHz; microwave-activated CZ gates exploit the plasmon transition $|1\\rangle \\leftrightarrow |2\\rangle$ with state-dependent frequency shifts $|\\delta\\omega|/2\\pi \\approx 64$ MHz.",
+        "result": "For the one-centimeter coupler, CZ gates via the $|11\\rangle \\leftrightarrow |21\\rangle$ transition achieve 75–100 ns duration with intrinsic error below $10^{-4}$ limited by two-photon transitions; for a longer 1.5 cm coupler with $|\\delta\\omega|/2\\pi \\approx 11$ MHz, combining synchronized and DRAG pulse schemes yields sub-100 ns gates with error below $10^{-4}$. Extended analysis shows the LTC can support degree-four surface-code lattices and higher-degree connectivity for LDPC codes with coupling loading manageable via careful capacitor design ($C_{q,L}$ as low as 8–14.5 fF).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.12947",
+      "title": "Emission and Absorption of Microwave Photons in Orthogonal Temporal Modes across a 30-Meter Two-Node Network",
+      "authors": [
+        "Alonso Hernández-Antón",
+        "Josua D. Schär",
+        "Aleksandr Grigorev",
+        "Guillermo F. Peñas",
+        "Ricardo Puebla",
+        "Juan José García-Ripoll",
+        "Jean-Claude Besse",
+        "Andreas Wallraff",
+        "Anatoly Kulikov"
+      ],
+      "abstract": "The tunable interaction between stationary quantum bits and propagating modes of light allows for the encoding of quantum information in the state of itinerant photons. This ability fulfills a central requirement for quantum networking, enabling quantum state transfer between distant quantum devices. Conventionally, a symmetric envelope of the photon wavepacket is used for such purposes. Yet, the use of alternative \\textit{temporal modes} enables multiple applications in waveguide quantum electrodynamics that remain unexplored experimentally. Here, we use superconducting quantum circuits to generate individual itinerant microwave photons shaped in three mutually orthogonal temporal modes. We transfer the created photons across a 30-m cryogenic link, showing that the orthogonality allows us to decide at the receiver which mode to absorb, reflecting the other two with a selectivity ratio of 40. This experimental capability extends the microwave-frequency quantum communication toolbox, enabling a new photonic degree of freedom.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-14",
+      "score": 0.6928007748056295,
+      "similar_to": [
+        {
+          "title": "Seamless high-Q microwave cavities for multimode circuit QED",
+          "id": "2010.16382",
+          "similarity": 0.8404272794723511
+        },
+        {
+          "title": "Controlling the spontaneous emission of a superconducting transmon qubit",
+          "id": "0803.4490",
+          "similarity": 0.8355465531349182
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates emission, transmission, and absorption of microwave photons shaped into three mutually orthogonal temporal modes across a 30-meter cryogenic waveguide connecting two superconducting qubits. The orthogonality of these modes enables mode-selective absorption at the receiver, achieving a selectivity ratio of 40 dB between diagonal and off-diagonal transfer matrix elements.",
+        "motivation": "Conventional quantum communication protocols using symmetric photon envelopes exploit only one temporal degree of freedom; extending to orthogonal temporal modes could enable new applications in waveguide QED such as mode-selective routing, photonic qubit encoding for photon-loss detection, and in-situ channel tomography.",
+        "method": "Transmon qubits coupled to transfer resonators at rates $\\kappa_A = 26.7$ MHz and $\\kappa_B = 30.7$ MHz generate photons with envelopes $f_n(t)$ ($n = 0, 1, 2$) via time-dependent f0-g1 drives derived from Gram-Schmidt orthogonalization. The emitter qubit population is tracked during emission to characterize mode shapes; the receiver performs mode-selective absorption by time-reversal of the generation process with matching or mismatched temporal mode.",
+        "result": "Transfer efficiencies exceed 75% for matched modes ($n_A = n_B$) with delays around $\\tau_0 = 145.9 \\pm 0.2$ ns consistent with $v_g \\approx 0.72c$ in the 30-m waveguide, while mismatched modes ($n_A \\neq n_B$) yield receiver $|f\\rangle$-state populations of 1–4%, demonstrating orthogonality with a measured selectivity ratio $\\Sigma \\approx 40 \\approx 16$ dB averaged across the $3 \\times 3$ mode combination matrix, with 17% photon loss attributed to interface impedance mismatches and control errors.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.12742",
+      "title": "Josephson coupling through a magnetic racetrack",
+      "authors": [
+        "A. A. Mazanik",
+        "F. S. Bergeret"
+      ],
+      "abstract": "We investigate the Josephson coupling between two superconducting electrodes connected by a ferromagnetic racetrack hosting a Bloch-like domain wall (DW). We show that the interplay between superconductivity and the DW leads to highly non-trivial spatial distributions of the supercurrent, including the formation of current loops and a strong sensitivity to the DW position and orientation. We further demonstrate that the Josephson critical current $I_c$ can be efficiently controlled by the DW position along the racetrack, exhibiting pronounced variations and tunable $0$--$π$ transitions. These results provide clear design principles for superconducting racetrack devices and establish domain walls as a viable control element for readout schemes in racetrack memory architectures.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-04-14",
+      "score": 0.5852379627579825,
+      "similar_to": [
+        {
+          "title": "Superconducting Flux Memory for Cryogenic Applications",
+          "id": "2609.00772",
+          "similarity": 0.8259342908859253
+        },
+        {
+          "title": "Coherent Josephson qubit suitable for scalable quantum integrated circuits",
+          "id": "1304.2322",
+          "similarity": 0.7870640754699707
+        }
+      ],
+      "summary": {
+        "summary": "This paper investigates Josephson coupling in a ferromagnetic racetrack with a Bloch-like domain wall using the linearized Usadel equation in the diffusive limit, showing that the critical current $I_c$ can be tuned via domain wall position and exhibit $0$--$\\pi$ transitions. The supercurrent distribution exhibits non-trivial spatial structure including vortex-like loops at the junction edges and position-dependent attraction or repulsion of supercurrent by the domain wall.",
+        "motivation": "Hybrid superconductor-racetrack devices promise low-energy readout of magnetic memory with high speed and density; understanding how domain wall position modulates the Josephson current is essential for practical readout schemes in these architectures.",
+        "method": "The authors solve the Usadel equation numerically via finite element methods for two superconducting electrodes ($h = 10\\pi T_{c0}$ and $h = 1.5\\pi T_{c0}$ exchange fields) coupled to a diffusive ferromagnetic racetrack hosting a Bloch domain wall parameterized by position $y_0$ and tilt angle $\\theta$, with domain wall width $w = 0.5\\xi$, spin polarization $\\gamma = 0.1$, and Josephson junction width $W = 2\\xi$.",
+        "result": "For $h = 10\\pi T_{c0}$, domain wall entry into the superconducting region ($|y_0| < W/2$) suppresses $I_c$ sufficiently to drive $0$--$\\pi$ transitions; the supercurrent is attracted to centrally positioned domain walls but repelled when the wall approaches junction boundaries, with attraction-repulsion switching attributed to interplay between triplet generation and edge current vortices.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.7514,
+    0.6928,
+    0.5852,
+    0.4883,
+    0.464,
+    0.3599,
+    0.3454,
+    0.3317,
+    0.3315,
+    0.3275,
+    0.303,
+    0.2685,
+    0.2578,
+    0.2408,
+    0.2366,
+    0.194,
+    0.185,
+    0.1739,
+    0.1708,
+    0.1679,
+    0.1571,
+    0.1404,
+    0.1392,
+    0.1375,
+    0.1239,
+    0.1235,
+    0.1206,
+    0.0955,
+    0.0944,
+    0.0943,
+    0.0851,
+    0.081,
+    0.0779,
+    0.0765,
+    0.0708,
+    0.0668,
+    0.0661,
+    0.0658,
+    0.0652,
+    0.0581,
+    0.0562,
+    0.056,
+    0.0557,
+    0.055,
+    0.0522,
+    0.0512,
+    0.0467,
+    0.0458,
+    0.0446,
+    0.0441,
+    0.0439,
+    0.0425,
+    0.0411,
+    0.041,
+    0.0406,
+    0.0402,
+    0.0399,
+    0.0384,
+    0.0362,
+    0.0347,
+    0.0328,
+    0.0295,
+    0.0287,
+    0.0272,
+    0.0264,
+    0.0253,
+    0.0249,
+    0.0233,
+    0.0231,
+    0.0215,
+    0.0209,
+    0.0205,
+    0.0203,
+    0.0201,
+    0.0197,
+    0.0194,
+    0.0193,
+    0.0186,
+    0.0185,
+    0.0177,
+    0.0176,
+    0.0175,
+    0.0174,
+    0.017,
+    0.0166,
+    0.0163,
+    0.0142,
+    0.0141,
+    0.0136,
+    0.0131,
+    0.013,
+    0.0126,
+    0.0122,
+    0.0118,
+    0.0115,
+    0.0108,
+    0.0107,
+    0.0101,
+    0.0098,
+    0.0096,
+    0.0094,
+    0.0081,
+    0.008,
+    0.0079,
+    0.0078,
+    0.0075,
+    0.0075,
+    0.0068,
+    0.0068,
+    0.0067,
+    0.0066,
+    0.0065,
+    0.0063,
+    0.0061,
+    0.0061,
+    0.0053,
+    0.0049,
+    0.0043,
+    0.004,
+    0.004,
+    0.0039,
+    0.0035,
+    0.003,
+    0.0029,
+    0.0027,
+    0.0026,
+    0.001
+  ]
+}

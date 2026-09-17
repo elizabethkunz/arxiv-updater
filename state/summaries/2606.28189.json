@@ -1,0 +1,8 @@
+{
+  "summary": "Scanning tunnelling spectroscopy of Cu(111) islands on superconducting Nb(110) reveals Andreev bound-state spectra controlled by phase accumulation along confined surface-state trajectories. The zero-field excitation energy $E_0$ scales with trajectory length $\\ell$ and the magnetic-field collapse scale $B_0 \\propto 1/w$ with transverse projection, capturing geometry-tuned phase-coherent cavity physics.",
+  "motivation": "Andreev cavities enable engineering of superconducting proximity spectra through phase-coherent electron-hole motion, but real-space local spectroscopy of extended two-dimensional cavities remains largely unexplored. Understanding how trajectory geometry shapes low-energy spectra in ballistic systems is relevant for phase-sensitive hybrid superconducting devices.",
+  "method": "STM/STS measured proximitised Cu(111) surface states ($\\Delta_{\\mathrm{eff}} \\approx 0.92$ meV, $v_F \\simeq 5.8 \\times 10^5$ m/s) on Nb(110) films. Ray-traced trajectory ensembles extracted from STM topography were combined with a semiclassical Andreev bound-state condition incorporating dynamical phase $2E\\ell/(\\hbar v_F)$ and gauge-invariant magnetic phase bias $|\\delta\\varphi| \\simeq 2\\pi(\\Phi_0/B) h_{\\mathrm{eff}} w$ to simulate spectra.",
+  "result": "Across seven islands, $E_0$ decreases with $\\ell$ (range 175–624 nm) and $B_0$ decreases with $w$ (range 92–624 nm), both captured by the phase-accumulation model with $h_{\\mathrm{eff}} \\approx 24$ nm. Out-of-plane field introduces vortex phase textures with spatial $\\pi$-phase excursions across the island, demonstrating sensitivity to condensate-phase winding.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

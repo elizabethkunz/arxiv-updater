@@ -1,0 +1,8 @@
+{
+  "summary": "The multiunimon is a single-junction superconducting circuit encoding three qubits with native controlled-controlled-NOT gates achieved via microwave drives on a branched coplanar waveguide structure. Simulations demonstrate twelve three-qubit gates with mean fidelity $99.56\\%$ at $20$ ns gate times, limited primarily by dielectric loss, with coherent-error-only simulations suggesting fidelities approaching $99.99\\%$ at $60$ ns.",
+  "motivation": "Scaling superconducting quantum processors typically requires multiple tunable couplers and flux lines per qubit pair, adding complexity. Native multi-qubit gates within single devices offer more efficient circuit compilations and reduce hardware overhead, particularly valuable for near-term noisy systems and quantum error correction.",
+  "method": "Operating in the shallow double-well regime ($E_J/E_L = 1.67$), the authors use leakage-aware encoding to select eight computational eigenstates that minimize gate errors via off-resonance transitions and decoherence. An iterative diagonalization scheme efficiently handles $\\sim 150$ CPW modes, while nested optimization loops search over circuit geometry and state mappings using differential evolution.",
+  "result": "At individually optimized gate times (10–32.5 ns), the twelve CCNOT gates achieve infidelities ranging from $2.0 \\times 10^{-3}$ to $7.7 \\times 10^{-3}$ ($99.70\\%$–$99.23\\%$ fidelities). Dielectric quality factor $Q_{\\mathrm{diel}} = 3.5 \\times 10^5$ dominates losses; raising $Q_{\\mathrm{diel}}$ above $10^6$ and applying advanced pulse shaping could yield sub-$10^{-4}$ infidelities.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

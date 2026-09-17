@@ -1,0 +1,8 @@
+{
+  "summary": "A current-output CMOS DAC operating at cryogenic temperatures is designed and tested for setting the flux coupled to superconducting qubits or for use in readout. Its pulse amplitude and rise and fall slopes are set digitally and its width by external triggers, and measurements of the planar 90 nm CMOS chip closely match circuit predictions.",
+  "motivation": "Cryo-CMOS control architectures need flexible, precisely programmable current sources located close to the superconducting circuit.",
+  "method": "The DAC was implemented in a planar 90 nm CMOS process and tested at cryogenic temperature while driving a superconducting circuit.",
+  "result": "Measured behaviour agrees closely with circuit simulation across the digitally tunable range. No qubit-level figures such as gate fidelity are reported in the abstract.",
+  "source": "abstract",
+  "generated_by": "Claude, written in-session from the abstract (not via the script's API path)"
+}

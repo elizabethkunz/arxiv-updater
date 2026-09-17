@@ -1,0 +1,271 @@
+{
+  "date": "2026-05-28",
+  "n_fetched": 105,
+  "papers": [
+    {
+      "id": "2605.28536",
+      "title": "Trapped-Ion Multiqubit Gates are Compatible with Scalable Quantum Error Correction",
+      "authors": [
+        "Ori Grossman",
+        "Yotam Kadish",
+        "Snir Gazit",
+        "Amit Ben-Kish",
+        "Roee Ozeri",
+        "Yotam Shapira"
+      ],
+      "abstract": "We construct a detailed microscopic noise model for multi-qubit (MQ) gate operations in the context of trapped ion architecture with all-to-all connectivity. We find that phonon heating and motional dephasing are well captured by effective single- and two-qubit error channels that can, in principle, act between arbitrary pairs of qubits. Nevertheless, the median magnitude of two-qubit errors between uncoupled qubits is substantially smaller than that of errors between gate-coupled qubits. Errors associated with photon scattering are shown to solely propagate to qubits participating in gate operations. Lastly, we combine all noise sources, assigned with experimentally relevant parameters, and explore the scalability of a quantum error correction (QEC) scheme based on the rotated surface code, as a function of error rates and code size. Our analysis bridges device-level physics and QEC performance for MQ gates in trapped-ion architectures.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-27",
+      "score": 0.7885663482936236,
+      "similar_to": [
+        {
+          "title": "Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code",
+          "id": "2112.03708",
+          "similarity": 0.8753470182418823
+        },
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8700532913208008
+        }
+      ],
+      "summary": {
+        "summary": "This work develops a microscopic noise model for multiqubit gates in trapped-ion systems by deriving effective single- and two-qubit error channels from phonon heating, motional dephasing, and photon scattering. The analysis shows that scattering errors and two-qubit errors from dephasing are largely confined to gate-coupled qubits, and demonstrates a finite threshold for surface-code error correction with physically realistic error rates.",
+        "motivation": "Multiqubit gates enable all-to-all connectivity and reduced circuit depth in trapped-ion quantum computers, but their compatibility with quantum error correction hinges on understanding how noise propagates through the simultaneous multiqubit interactions, which differs substantially from the well-characterized two-qubit gate case.",
+        "method": "The authors construct a detailed microscopic model by analyzing the Lindblad master equation in the rotated frame with respect to ideal gate evolution, then tracing out phonon degrees of freedom to extract effective Pauli error channels. They characterize three noise sources: photon scattering (via Raman transitions), phonon heating, and motional dephasing, deriving analytic leading-order expressions for error probabilities as functions of the phase-space trajectories $\\alpha_j^{(n)}(t)$ and entangling phases $\\phi_{nm}(t)$.",
+        "result": "For a 37-qubit $d=5$ rotated surface code with stabilizer measurements via single multiqubit gates, the authors observe a crossing point at $p_c \\approx 2 \\times 10^{-2}$ when two-qubit errors between uncoupled qubits are included, and a clear threshold at $p_{\\mathrm{th}} \\approx 1.3\\%$ when restricting two-qubit errors to gate-coupled pairs, demonstrating scalable quantum error correction with experimentally relevant parameters ($\\Gamma_s \\tau \\approx 2.6 \\times 10^{-4}$, $\\Gamma_h n_{\\mathrm{th}} = 50$ Hz, $\\Gamma_d = 10$ Hz).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.28808",
+      "title": "Device-Agnostic Microwave Noise Metrology for Nonlinear Cryogenic Quantum Devices",
+      "authors": [
+        "Andrea Celotto",
+        "Alessandro Alocco",
+        "Bernardo Galvano",
+        "Luca Fasolo",
+        "Emanuele Palumbo",
+        "Luca Callegaro",
+        "Luca Oberto",
+        "Patrizia Livreri",
+        "Emanuele Enrico"
+      ],
+      "abstract": "Microwave devices capable of near-quantum-limited signal processing are essential components in the toolbox of solid-state quantum technologies. The manipulation and readout of single-photon microwave signals through amplifiers, mixers, isolators, etc. must fulfill strict requirements in terms of signal integrity to ensure reliable operation. These active microwave quantum devices operate in complex cryo-electronic setups. This poses challenges to their characterization, since all relevant figures of merit must be expressed at the reference planes of their ports. Even though cryogenic S-parameter calibration is non-trivial, metrological approaches are converging toward rigorous methods. Furthermore, preserving signal integrity must be quantified via absolute noise levels at the ports of the Device Under Test (DUT), requiring an absolute power reference. In this work, we present an in situ noise metrology protocol based on substituting a controllable noise source for the DUT. We motivate this choice by showing that placing the noise source at the DUT input impacts the separability of the calibration from the DUT characteristics. Our proposed architecture combines Planck spectroscopy using a Variable Temperature Stage with Short-Open-Load-Reciprocal scattering-parameter calibration, so that noise and scattering quantities are referred to the same cryogenic reference planes. In this configuration, the readout-chain calibration is separated from the internal dynamics of the DUT. As a demanding use case, we apply the protocol to a Josephson Traveling Wave Parametric Amplifier and extract its gain and input-referred added noise under pump conditions activating multimode nonlinear behavior. This illustrates how our device-agnostic protocol supports portable noise characterization of nonlinear cryogenic microwave devices.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-27",
+      "score": 0.6978425981730627,
+      "similar_to": [
+        {
+          "title": "Phase-sensitive cascade quantum amplifier with nearly noiseless operation",
+          "id": "2608.25645",
+          "similarity": 0.8561261892318726
+        },
+        {
+          "title": "Introduction to Quantum Noise, Measurement and Amplification",
+          "id": "0810.4729",
+          "similarity": 0.847806453704834
+        }
+      ],
+      "summary": {
+        "summary": "This paper presents a device-agnostic in situ noise metrology protocol for cryogenic microwave quantum devices that combines Planck spectroscopy using a Variable Temperature Stage with Short-Open-Load-Reciprocal S-parameter calibration, ensuring both noise and scattering measurements refer to the same cryogenic reference planes. The protocol avoids embedding the DUT's nonlinear model into readout-chain calibration by substituting the noise source for the DUT, and is demonstrated on a Josephson Traveling Wave Parametric Amplifier under multimode nonlinear conditions.",
+        "motivation": "Absolute noise characterization at cryogenic DUT reference planes requires careful separation of readout-chain calibration from DUT dynamics, particularly for nonlinear devices like parametric amplifiers where serial noise-source placement can introduce model-dependent systematic errors through unmodeled multimode noise channels.",
+        "method": "A substitution configuration places a calibrated Variable Temperature Stage noise source at the DUT's input via cryogenic switches, decoupling the noise-calibrated readout chain from the DUT itself, while SOLR calibration extracts S-parameters at identical reference planes; the protocol is applied to an AI-TWPA-C JTWPA under pump conditions activating multimode behavior.",
+        "result": "For the JTWPA at $3.6$$-$$5.5$ GHz, the band-averaged input-referred added noise increases with pump power more rapidly than gain at higher powers, consistent with activation of higher-order wave-mixing or pump-enhanced loss channels, without requiring assumptions about the device's internal noise-transmission model in the calibration itself.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.28342",
+      "title": "Low-cost quantum error mitigation via auxiliary qubit return validation",
+      "authors": [
+        "Gilad Kishony",
+        "Avi Elazari",
+        "Ron Cohen",
+        "Lior Gazit"
+      ],
+      "abstract": "We introduce a low-overhead technique for quantum error mitigation based on post-selection using auxiliary qubit measurements. The method exploits the structural property that, in an error-free computation, auxiliary qubits are often expected to return to the zero state after use. By selectively measuring these qubits at carefully chosen points in the circuit, erroneous shots can be identified and discarded, improving result fidelity with minimal hardware overhead. To account for circuit noise, including measurement errors, we analyze the likelihood that a measurement outcome indicates a corrupted shot. This analysis is informed by the measurement's backward light cone, namely the set of circuit operations that could affect the outcome. Shots whose auxiliary measurement outcomes imply a corruption likelihood above a tunable threshold are rejected. Simulations show that the method reduces the false-negative rate by approximately 10% while discarding only approximately 1% of valid shots. The threshold controls the bias-variance tradeoff inherent to post-selection, allowing the method to be adapted to the fidelity and sampling requirements of different applications.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-27",
+      "score": 0.6457378422245242,
+      "similar_to": [
+        {
+          "title": "Model-based Optimization of Superconducting Qubit Readout",
+          "id": "2308.02079",
+          "similarity": 0.8521232604980469
+        },
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8421419858932495
+        }
+      ],
+      "summary": {
+        "summary": "This work introduces a post-selection error mitigation technique that measures auxiliary qubits at circuit points where they are expected to return to the $|0\\rangle$ state; shots with measurement outcomes inconsistent with the zero state are rejected based on a likelihood model accounting for gate and measurement noise. Simulations on arithmetic circuits compiled by the Classiq platform show a $\\sim 10\\%$ reduction in false-negative rate while discarding only $\\sim 1\\%$ of valid shots.",
+        "motivation": "Auxiliary qubits are ubiquitous in quantum algorithms for entanglement generation and circuit control, and in many designs (particularly compiler-generated arithmetic circuits) they are expected to return to $|0\\rangle$ after use; deviations from this behavior indicate circuit-level errors and can inform post-selection.",
+        "method": "A probabilistic likelihood model estimates $\\Pr(\\text{no error in lightcone}_i | m_i = 1) \\approx \\frac{q}{G_i r p + q}$ for each auxiliary measurement by analyzing the backward lightcone of gates (depth $G_i$) that could affect that outcome, accounting for independent gate failure probability $p$, flip probability $r$, and measurement error $q$; shots with $\\mathcal{P}(\\vec{m}) < \\mathcal{P}_{\\text{th}}$ are rejected.",
+        "result": "Mid-circuit validation at all expected auxiliary reset points reduces the false-negative rate by $\\sim 10\\%$ compared to no validation, with a false-positive overhead (discarded valid shots) of only $\\sim 1\\%$; validation at the final measurement alone provides intermediate performance, demonstrating the benefit of placement at intermediate reset points with localized backward lightcones.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.28759",
+      "title": "Absolute measurement of penetration depth of superconducting thin films using microwave stripline resonators",
+      "authors": [
+        "Arghya Dutta",
+        "Ajeet Salunke",
+        "Mahesh Poojary",
+        "Vivas Bagwe",
+        "Sangita Bose",
+        "Pratap Raychaudhuri"
+      ],
+      "abstract": "Superconducting microstrip resonators, which leverage kinetic inductance to probe electrodynamics, are sensitive tools for studying superconducting thin films at microwave frequencies. However, extracting the absolute superconducting penetration depth from these measurements remains challenging. In this work, we present a hybrid method to determine the absolute value of penetration depth over a wide temperature range by combining resonator measurements with finite-element electromagnetic simulations in COMSOL Multiphysics. We demonstrate this approach by extracting the penetration depth of NbN films by fabricating resonators from films of various thicknesses. Furthermore, we extend the technique to materials with lower critical temperatures by employing a flip-film geometry. By placing a sample above a NbN resonator, separated by a thin Mylar dielectric, we create a coupled structure where changes in the sample's penetration depth shift the resonant frequency. This non-destructive method provides a reliable, high-sensitivity platform for characterizing the penetration depth of diverse superconducting thin films.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-05-27",
+      "score": 0.6244369302087884,
+      "similar_to": [
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.8320924043655396
+        },
+        {
+          "title": "Surface loss simulations of superconducting coplanar waveguide resonators",
+          "id": "1107.4698",
+          "similarity": 0.818386435508728
+        }
+      ],
+      "summary": {
+        "summary": "A hybrid method combining microwave stripline resonator measurements with COMSOL finite-element simulations is developed to extract absolute penetration depth values from superconducting thin films over wide temperature ranges. The technique is demonstrated on NbN films using variable thicknesses and extended to lower-$T_c$ materials via a flip-film geometry with a NbN resonator separated by Mylar dielectric.",
+        "motivation": "Kinetic-inductance microstrip resonators are sensitive probes of superconducting electrodynamics at microwave frequencies, but extracting quantitative absolute penetration depth from resonator measurements has remained problematic.",
+        "method": "Resonator frequency shifts measured as functions of temperature are combined with electromagnetic simulations in COMSOL to determine $\\lambda(T)$ absolutely; for lower-$T_c$ materials, a sample is placed above a NbN resonator with thin Mylar spacing to create a coupled structure.",
+        "result": "The method provides non-destructive, high-sensitivity characterization of penetration depth across diverse superconducting thin films without requiring prior knowledge of material parameters.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.7886,
+    0.6978,
+    0.6457,
+    0.6244,
+    0.3772,
+    0.3459,
+    0.2698,
+    0.2609,
+    0.2537,
+    0.2046,
+    0.1777,
+    0.1775,
+    0.168,
+    0.166,
+    0.1589,
+    0.157,
+    0.1486,
+    0.142,
+    0.1399,
+    0.139,
+    0.1385,
+    0.1363,
+    0.1332,
+    0.1279,
+    0.1222,
+    0.1201,
+    0.12,
+    0.1031,
+    0.0984,
+    0.09,
+    0.0852,
+    0.0825,
+    0.0816,
+    0.0804,
+    0.0794,
+    0.0731,
+    0.0718,
+    0.0698,
+    0.0593,
+    0.0541,
+    0.0513,
+    0.0492,
+    0.0487,
+    0.0485,
+    0.0462,
+    0.0429,
+    0.042,
+    0.0403,
+    0.0398,
+    0.0386,
+    0.0379,
+    0.035,
+    0.0346,
+    0.0314,
+    0.0313,
+    0.0309,
+    0.0298,
+    0.0292,
+    0.0276,
+    0.0267,
+    0.0253,
+    0.0248,
+    0.0242,
+    0.0239,
+    0.023,
+    0.0221,
+    0.0207,
+    0.0191,
+    0.017,
+    0.0163,
+    0.0158,
+    0.015,
+    0.0148,
+    0.0122,
+    0.0122,
+    0.0121,
+    0.012,
+    0.0119,
+    0.0119,
+    0.0117,
+    0.0106,
+    0.0104,
+    0.0103,
+    0.0098,
+    0.0092,
+    0.0088,
+    0.008,
+    0.0069,
+    0.0067,
+    0.0066,
+    0.006,
+    0.0059,
+    0.0056,
+    0.0049,
+    0.0042,
+    0.0034,
+    0.0025,
+    0.0025,
+    0.0022,
+    0.0021,
+    0.002,
+    0.0017,
+    0.0015,
+    0.0011,
+    0.0008
+  ]
+}

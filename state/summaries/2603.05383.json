@@ -1,0 +1,8 @@
+{
+  "summary": "Temperature-dependent ellipsometric measurements of ALD-deposited TaN films (13 nm and 25 nm thicknesses) show a dielectric function with band gap 1.5–1.8 eV, mid-infrared transparency, and no free-carrier absorption from 80–600 K, demonstrating insulating behavior suitable for Josephson junction tunnel barriers. XPS reveals N/Ta ratio ~1.2 throughout the films, with superior thermal stability and lower roughness compared to AlOx, enabling thicker barriers while maintaining required critical current densities for superconducting quantum circuits.",
+  "motivation": "ALD-grown TaN films are a promising alternative to AlOx tunnel barriers in Ta-based Josephson junctions, but their optical and dielectric properties across relevant temperatures needed characterization to validate their suitability for scalable quantum device fabrication.",
+  "method": "Spectroscopic ellipsometry measured dielectric functions of ALD TaN films on 300 mm Si/SiO$_2$ substrates at 70° incidence over 0.03–6.5 eV photon energies and 80–600 K temperatures; data were fit with Tauc-Lorentz oscillator models and validated with transmission electron microscopy, selected-area diffraction, X-ray diffraction, and depth-profiling XPS.",
+  "result": "ALD TaN exhibits insulating behavior (no infrared free-carrier absorption) at all temperatures for both 13 nm and 25 nm thicknesses, with band gap 1.5–1.8 eV, thermal stability to 600 K, and N/Ta stoichiometry ~1.2, enabling thicker barriers than AlOx while maintaining quantum-application critical current densities.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates a superconducting switch based on an inductive Wheatstone bridge of tunable rf-SQUID inductors, controlled via a persistent current bias and direct current actuation rather than flux threading. The switch achieves >20 dB isolation over 1.9 GHz bandwidth, handles >100 pW power, and exhibits >600 MHz modulation bandwidth suitable for large-scale quantum processors.",
+  "motivation": "Flux-biased Josephson junction switches require power-consuming constant bias and dynamic flux actuation that are difficult to isolate from nearby devices, limiting integration density. A persistent current bias with DC actuation could reduce static power, crosstalk, and simplify operation in large quantum systems.",
+  "method": "An inductive bridge with four arms of $N=20$ antisymmetric rf-SQUID arrays (with $\\beta = L_{\\mathrm{sh}}/L_J = 1.2$) enables orthogonal current patterns for input (X mode), output (Y mode), actuation ($I_Z$), and persistent bias ($I_C$). A heat-activated aluminum patch with lower $T_C$ allows trapping of discrete flux quanta by dissipating applied current, creating a fully superconducting loop once cooled. The coupling rate follows $g_{XY} \\propto \\sin(\\phi_Z/N)\\sin(\\phi_C/4N)$.",
+  "result": "Trapped persistent currents (up to ~34 flux quanta) remain stable with <1% decay per day; single flux jumps occur at ~100 h intervals. The switch achieves 20 dB on/off contrast from DC to 1.9 GHz, 1 dB compression at 200 pW (suitable for readout at ~0.1 pW), and modulation bandwidth exceeding 600 MHz with 2.3% single-trap failure rate.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

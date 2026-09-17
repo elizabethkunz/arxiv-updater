@@ -1,0 +1,8 @@
+{
+  "summary": "This work presents a real-time quantum state discrimination system using a multi-layer neural network implemented on the AMD Xilinx VCK190 FPGA AI Engine to classify qubit IQ-plane readout data. The approach achieves $81.6$ ns kernel latency with $0.25\\%$ resource utilization on the AI Engine tile array, enabling mid-circuit measurements while preserving FPGA programmable logic resources for other quantum control tasks.",
+  "motivation": "Quantum state discrimination is the bottleneck in superconducting qubit readout and mid-circuit measurements, requiring sub-microsecond latency and high classification fidelity. Traditional FPGA programmable logic implementations consume scarce resources even for 8–16 qubit systems, prompting exploration of specialized AI accelerators to offload this compute-intensive task.",
+  "method": "A three-layer ReLU neural network with vector operations mapped onto the AI Engine's 400-tile array of 7-way VLIW processors, fed by a streaming pipeline from DDR4 memory via AXI Stream interfaces, operating at $1250$ MHz on the Versal AI platform.",
+  "result": "Kernel latency of $81.6$ ns (versus $54$ ns for prior RFSoC-based QubiCML), occupying only $0.25\\%$ of kernel tiles, $0.50\\%$ of buffer tiles, and $0.44\\%$ of stream interconnect tiles, with estimated power consumption of $0.593$ W dominated by on-chip memory activity ($0.501$ W).",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,183 @@
+{
+  "date": "2026-04-09",
+  "n_fetched": 94,
+  "papers": [
+    {
+      "id": "2604.06319",
+      "title": "Heterogeneous architectures enable a 138x reduction in physical qubit requirements for fault-tolerant quantum computing under detailed accounting",
+      "authors": [
+        "Pranav S. Mundada",
+        "Aleksei Khindanov",
+        "Yulun Wang",
+        "Claire L. Edmunds",
+        "Paul Coote",
+        "Michael J. Biercuk",
+        "Yuval Baum",
+        "Michael Hush"
+      ],
+      "abstract": "Quantum computer hardware is predicted to scale over hundreds of thousands of qubits coming online in the next decade. Despite significant theoretical and experimental QEC progress, quantum computer architecture has suffered a significant gap, with bottom-up physical-device-driven challenges largely disconnected from top-down QEC-code-driven considerations. In this work, we unify these two views, presenting a complete heterogeneous quantum computing architecture incorporating task-specific hardware selection and QEC encoding, and agnostic to code selection or physical qubit parameters. Our approach further enables special-purpose processing modules, and includes a full microarchitecture for fault-tolerant implementation of interfaces between quantum processing units and quantum memories. Using this architecture and a new fully featured compiler functioning across subsystems at the scale of $1,000$ logical qubits, we schedule and orchestrate a variety of algorithms down to hardware-specific instructions; a detailed accounting of all operations reveals up to 551x reduction in algorithmic logical error and up to 138x reduction in physical-qubit overhead compared to a monolithic baseline architecture. We then consider the factorization of 2048-bit RSA-integers; using an experimentally demonstrated grid-coupling topology, factoring RSA-2048 requires 381k physical qubits and 9.2 days, which can be reduced to 4.9 days via addition of an algorithm-specific accelerator for the Adder subroutine (requiring 439k qubits). Finally, assuming hypothetical long-range coupling, implementing quantum memory using qLDPC codes reduces the resources required for factoring to just 190k qubits and under 10 days. These results and the tooling we have built indicate that heterogeneous quantum-computer architectures can deliver significant, verifiable benefits on realistic hardware.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-07",
+      "score": 0.5899928531832324,
+      "similar_to": [
+        {
+          "title": "Fault-tolerant interfaces for modular quantum computing on diverse qubit platforms",
+          "id": "2510.05221",
+          "similarity": 0.8625295162200928
+        },
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8593602180480957
+        }
+      ],
+      "summary": {
+        "summary": "This work introduces Q-NEXUS, a heterogeneous quantum computing architecture with specialized modules for computation (small fixed-size QPUs), memory (STQM and RAQM), and communication (quantum bus), orchestrated by the Q-CHESS compiler. For RSA-2048 factorization, Q-NEXUS reduces physical qubit requirements from 0.9 M in a monolithic baseline to 0.19 M (with qLDPC codes) or 0.25 M, achieving 138× reduction in total qubits and 11× reduction in local couplers while maintaining comparable runtimes.",
+        "motivation": "Quantum systems face a 'tyranny of numbers' scaling problem similar to early classical computing: expanding monolithic designs requires prohibitive growth in control wiring, readout channels, and cryogenic interconnects. Existing top-down QEC-driven analyses and bottom-up hardware constraints remain disconnected, missing opportunities to match hardware specialization to functional requirements.",
+        "method": "The authors develop a modular architecture segregating fast (1 μs) 3-qubit superconducting QPUs from slow (50–1000 μs) long-coherence quantum memory (STQM using rare-earth ions or RAQM with active error correction), connected via teleportation-based quantum buses. Q-CHESS performs error-aware compilation with explicit accounting of timing mismatches, idling penalties, state-transfer costs, and scheduling across modules operating at different clock rates.",
+        "result": "For 1,000 logical-qubit AQFT, heterogeneous architectures achieve 59× reduction in algorithmic error and 138× reduction in physical qubits (0.4 vs 49 M) using RAQM. For RSA-2048, B6 configuration with hierarchical memory, qLDPC codes in RAQM, and Adder accelerator requires 0.25 M qubits and 4.9 days; qLDPC-only variant (B3) needs 0.19 M qubits and 9.2 days, compared to 0.9 M qubits and 5 days in Gidney's monolithic baseline.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.07163",
+      "title": "Robust and High-Fidelity Controlled Two-Qubit Gates via Asymmetric Parallel Resonant Excitation",
+      "authors": [
+        "Licheng Lin",
+        "Jize Han",
+        "Peng Zhu",
+        "Ziyu Wang",
+        "Ying Yan",
+        "Jie Lu",
+        "Zhiguo Huang"
+      ],
+      "abstract": "Implementing high-fidelity controlled two-qubit gates in dipole-dipole interacting systems, such as rare-earth-ion crystals, in hindered by spectral inhomogeneity and weak coupling. Existing method often rely on detuned pulses, making them susceptible to frequency errors and AC Stark shifts. We propose a robust resonant scheme for arbitrary controlled two-qubit gates that utilizes asymmetric excitation and pulse engineering to achieve decoupled, parallel qubit control. Simulations on rare-earth-ion ensemble qubits demonstrate gate fidelities exceeding 99% within a 170 kHz detuning range with off-resonant excitation below 0.2%. This approach offers a robust, scalable route for quantum computing in spectrally crowded systems.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-08",
+      "score": 0.5198369726181442,
+      "similar_to": [
+        {
+          "title": "A tunable coupling scheme for implementing high-fidelity two-qubit gates",
+          "id": "1803.09813",
+          "similarity": 0.8550176024436951
+        },
+        {
+          "title": "Procedure for systematically tuning up crosstalk in the cross resonance gate",
+          "id": "1603.04821",
+          "similarity": 0.8478704690933228
+        }
+      ],
+      "summary": {
+        "summary": "A robust resonant two-qubit gate scheme for rare-earth-ion systems uses asymmetric parallel excitation and pulse engineering to achieve decoupled qubit control, avoiding susceptibility to frequency errors and AC Stark shifts. Simulations demonstrate gate fidelities exceeding 99% within a 170 kHz detuning tolerance with off-resonant excitation below 0.2%.",
+        "motivation": "Rare-earth-ion qubits suffer from spectral inhomogeneity and weak dipole-dipole coupling, making existing detuned pulse schemes fragile against frequency errors and AC Stark shifts.",
+        "method": "The authors propose a resonant gate scheme employing asymmetric parallel excitation combined with pulse engineering to achieve decoupled control of the two qubits in the dipole-dipole interacting system.",
+        "result": "Simulations on rare-earth-ion ensemble qubits achieve gate fidelities exceeding 99% over a 170 kHz detuning range while maintaining off-resonant excitation below 0.2%.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.59,
+    0.5198,
+    0.3916,
+    0.3898,
+    0.3422,
+    0.3221,
+    0.2837,
+    0.2341,
+    0.2,
+    0.1974,
+    0.1872,
+    0.1812,
+    0.1799,
+    0.1468,
+    0.1401,
+    0.135,
+    0.131,
+    0.1107,
+    0.1098,
+    0.1085,
+    0.1083,
+    0.0959,
+    0.0898,
+    0.0859,
+    0.0841,
+    0.0833,
+    0.0814,
+    0.0801,
+    0.0751,
+    0.0724,
+    0.0645,
+    0.0637,
+    0.0623,
+    0.0607,
+    0.0579,
+    0.0555,
+    0.0541,
+    0.0466,
+    0.0447,
+    0.0434,
+    0.0433,
+    0.0426,
+    0.0399,
+    0.0393,
+    0.0366,
+    0.0354,
+    0.0348,
+    0.0346,
+    0.0334,
+    0.0328,
+    0.0322,
+    0.0317,
+    0.0314,
+    0.0301,
+    0.0294,
+    0.0284,
+    0.027,
+    0.0243,
+    0.0231,
+    0.0225,
+    0.0221,
+    0.022,
+    0.0216,
+    0.0206,
+    0.0185,
+    0.0174,
+    0.0168,
+    0.0162,
+    0.0161,
+    0.0157,
+    0.0156,
+    0.0141,
+    0.014,
+    0.0139,
+    0.0132,
+    0.0128,
+    0.0122,
+    0.0119,
+    0.0119,
+    0.0114,
+    0.0094,
+    0.008,
+    0.0076,
+    0.0074,
+    0.0074,
+    0.0074,
+    0.0055,
+    0.0029,
+    0.0025,
+    0.002,
+    0.0018,
+    0.0015,
+    0.0013,
+    0.0012
+  ]
+}

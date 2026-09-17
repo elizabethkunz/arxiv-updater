@@ -1,0 +1,13 @@
+{# jump list of months and days on the index #}
+<aside class="side" aria-label="Jump to day"><div>
+  {# only the newest month starts open #}
+  {% for m in months %}
+  <details{{ " open" if loop.first }}><summary>{{ m.label }}</summary>
+  <ul>
+    {% for d in m.days %}
+    <li><a href="#d-{{ d.date }}">{{ d.label }}</a></li>
+    {% endfor %}
+  </ul>
+  </details>
+  {% endfor %}
+</div></aside>

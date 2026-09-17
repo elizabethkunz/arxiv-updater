@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates a fully integrated silicon exchange-only qubit processing unit combining a custom cryogenic CMOS controller at 4 K, a superconducting Nb/polyimide ribbon cable, and a 54-dot quantum chip, achieving single-qubit gate errors of $2 \times 10^{-4}$ and CNOT errors of $3 \times 10^{-3}$—an order of magnitude improvement over prior EO qubits. The system validates quantum error correction capability through distance-5 repetition codes and a [[4,2,2]] quantum error detecting code with logical fidelities of $F_L = 0.95$ post-selected.",
+  "motivation": "Silicon spin qubits have advanced rapidly but system-level control and integration lag behind qubit performance; a scalable architecture is needed that avoids the \"wiring bottleneck\" of room-temperature control while managing cryogenic heat loads.",
+  "method": "A cryo-CMOS controller (130 nm, 70 million transistors, ≤3.5 W) at 4 K generates 150 time-varying voltage signals via 366 DACs and 78 pulse generators with $\\approx$1 ps timing resolution, routed through a high-density superconducting ribbon cable (296 lines on polyimide, <10 μW thermal load, <−80 dB crosstalk at 10 GHz) to mK qubits in a Si/SiGe heterostructure with engineered meV-scale valley splitting and $^{28}$Si/$^{29}$Ge isotopic enhancement.",
+  "result": "Measured intrinsic charge noise improved by ~10× over prior work; multiqubit demonstrations show distance-5 code logical error rate $\\approx 5 \\times 10^{-3}$ with scaling factor $\\Lambda_{5/3} = 4.7$ and [[4,2,2]] code throughput-fidelity comparable across all four basis preparations, with detector error model analysis confirming well-behaved, mostly low-weight errors.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,109 @@
+{
+  "date": "2026-01-07",
+  "n_fetched": 61,
+  "papers": [
+    {
+      "id": "2601.02474",
+      "title": "Probing Dark Matter-Electron Interactions with Superconducting Qubits",
+      "authors": [
+        "Yonit Hochberg",
+        "Majed Khalaf",
+        "Noah Kurinsky",
+        "Alessandro Lenoci",
+        "Rotem Ovadia"
+      ],
+      "abstract": "Quantum device measurements are powerful tools to probe dark matter interactions. Among these, transmon qubits stand out for their ability to suppress external noise while remaining highly sensitive to tiny energy deposits. Ambient galactic halo dark matter interacting with electrons can deposit energy in the qubit, leading to changes in its decoherence time. Recent measurements of transmons have consistently measured, in various experimental setups, a residual contribution to the decoherence time unexplained by thermal noise or known external sources. We use such measurements to set the most stringent laboratory-based constraints to date on dark matter-electron scattering at the keV scale and competitive constraints on dark photon absorption.",
+      "categories": [
+        "hep-ph",
+        "hep-ex",
+        "quant-ph"
+      ],
+      "published": "2026-01-05",
+      "score": 0.6657748966921796,
+      "similar_to": [
+        {
+          "title": "New material platform for superconducting transmon qubits with coherence times exceeding 0.3 milliseconds",
+          "id": "2003.00024",
+          "similarity": 0.8060818910598755
+        },
+        {
+          "title": "Real-time detection of correlated quasiparticle tunneling events in a multi-qubit superconducting device",
+          "id": "2602.01945",
+          "similarity": 0.7961663007736206
+        }
+      ],
+      "summary": {
+        "summary": "Transmon qubits are used to constrain dark matter–electron scattering by leveraging residual quasiparticle populations that exceed thermal expectations, which can arise from dark matter energy deposits breaking Cooper pairs in the superconductor. The analysis of existing transmon coherence measurements yields the strongest terrestrial laboratory constraints to date on spin-independent dark matter–electron scattering in the 1–100 keV mass range and competitive bounds on dark photon absorption.",
+        "motivation": "Recent transmon measurements consistently observe excess quasiparticle fractions of $x_{\text{qp}} \tnrm{sim} 10^{-8}$ to $10^{-10}$ unexplained by thermal noise or known backgrounds; this residual population could partly originate from galactic dark matter interactions with electrons via Cooper-pair breaking.",
+        "method": "The work models the transmon as a 5 nm aluminum thin film with superconducting gap $2\\Delta \\simeq 170$ µeV and uses the longitudinal dielectric function (Lindhard formalism with coherence factor) to compute the power density $D_{\\text{dm}}$ injected by dark matter scattering and absorption, then bounds this via the quasiparticle generation rate $\\Gamma_G = s x_{\\text{qp}}$ (trapping regime) or $\\Gamma_G = r x_{\\text{qp}}^2$ (recombination regime) inferred from measured $x_{\\text{qp}}$ in devices from Refs. [22, 24].",
+        "result": "For DM-electron spin-independent scattering with light mediator, constraints on the fiducial cross section $\\bar{\\sigma}_e$ from Ref. [24] data ($x_{\\text{qp}} = 5.6 \\times 10^{-10}$, $s \\sim 10$–$10^3$ Hz) surpass all existing terrestrial limits below 30 keV, with projections reaching $\\bar{\\sigma}_e \\propto s x_{\\text{qp}}$; for kinetically mixed dark photon absorption, the bound is competitive with terrestrial constraints below 0.1 eV and surpasses them for $m_{A'} < 0.1$ eV.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.6658,
+    0.4144,
+    0.2979,
+    0.2232,
+    0.1675,
+    0.1541,
+    0.154,
+    0.1465,
+    0.1419,
+    0.1382,
+    0.1283,
+    0.1032,
+    0.0963,
+    0.0962,
+    0.0958,
+    0.0906,
+    0.0872,
+    0.0788,
+    0.0716,
+    0.0602,
+    0.0542,
+    0.0537,
+    0.0504,
+    0.0491,
+    0.0489,
+    0.0439,
+    0.0435,
+    0.0366,
+    0.0319,
+    0.0274,
+    0.0233,
+    0.0232,
+    0.0225,
+    0.0204,
+    0.0182,
+    0.0179,
+    0.0178,
+    0.0161,
+    0.014,
+    0.0135,
+    0.0129,
+    0.0128,
+    0.0109,
+    0.0106,
+    0.01,
+    0.0076,
+    0.0073,
+    0.0072,
+    0.0067,
+    0.0066,
+    0.0064,
+    0.0064,
+    0.0059,
+    0.0057,
+    0.0054,
+    0.005,
+    0.0049,
+    0.0044,
+    0.0021,
+    0.002,
+    0.0014
+  ]
+}

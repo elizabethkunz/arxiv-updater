@@ -1,0 +1,8 @@
+{
+  "summary": "Silicon capping of NbTiN superconducting nanowire single-photon detectors (SNSPDs) suppresses oxidation and enables superconductivity in films as thin as 3 nm at 3 K, while significantly extending the detection saturation plateau from visible to 2050 nm. Devices with 250 nm wide nanowires and 20×20 μm² active areas maintain sub-50 ps timing jitter and show saturated detection efficiency across visible through near-infrared wavelengths.",
+  "motivation": "Reducing NbTiN film thickness below 5 nm is necessary to achieve high detection efficiency in wider nanowires (which mitigate kinetic inductance and fabrication challenges), but thin films suffer from surface oxidation and degraded superconducting properties that degrade SNSPD performance.",
+  "method": "NbTiN films (3–9 nm thick) were deposited on SiO$_2$/Si wafers with in-situ 5 nm Si capping; critical temperature, sheet resistance, and residual resistance ratio were characterized via four-point probe; SNSPDs were patterned by 50 keV electron-beam lithography and reactive ion etching, then tested under flood illumination at 650 nm, 1310 nm, 1550 nm, and 2050 nm.",
+  "result": "Si-capped 3 nm NbTiN films achieved $T_c > 3$ K (versus non-superconducting uncapped 3 nm films), sheet resistance decreased from ~2500 to ~1500 Ω/□ at 3 nm thickness, and 4 nm Si-capped devices showed well-defined saturation across all wavelengths; 250 nm wide nanowires exhibited 43 ps timing jitter (FWHM) at 1550 nm and saturated detection efficiency at 2050 nm.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

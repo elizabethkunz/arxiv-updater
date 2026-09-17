@@ -1,0 +1,8 @@
+{
+  "summary": "Cryogenic InP HEMT low-noise amplifiers with 53%, 60% and 70% channel indium content are benchmarked with a qubit in the loop, using the single-shot IQ readout histogram as the figure of merit instead of a Y-factor noise temperature. Readout SNR and assignment fidelity peak for the 60% device, which beats a commercial reference amplifier by about 5% on average, although the 60% and 70% devices have similar Y-factor noise temperatures and the 70% device has the most gain.",
+  "motivation": "Without a quantum-limited amplifier the 4 K HEMT dominates the noise of the readout chain, adding on the order of 10 noise quanta. HEMTs are nevertheless characterized with a matched resistive load, independently of the qubit measurement they serve.",
+  "method": "All amplifiers are compared at a 5.9 GHz readout frequency with fixed readout power and integration time, first at a common 7.8 mW bias and then while sweeping the drain current from 1.5 to 15 mA (75 µW to 10.5 mW). Assignment fidelity comes from a classifier on the IQ shots without assuming Gaussian clouds, and the qubit $T_1$ stayed within 5% across amplifier swaps.",
+  "result": "The cloud separation is the same for every amplifier and only the cloud width changes. 80% fidelity is reached at 0.29 mW (70% device) and 0.35 mW (60% device), 22-27 times below the nominal 7.8 mW, and about 1 mW holds the 60% device above 85%, which the commercial amplifier never reaches; fidelity falls again at high drain current for several devices, an effect Y-factor measurements do not show and whose cause is left open.",
+  "source": "full text",
+  "generated_by": "Claude, written in-session from the full text (not via the script's API path)"
+}

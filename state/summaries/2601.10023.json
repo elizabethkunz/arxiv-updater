@@ -1,0 +1,8 @@
+{
+  "summary": "Planar Al/InAs Josephson junction chains achieve superinductance with characteristic impedance $Z = 4.7$ to $5.2~\text{k}\\ \\",
+  "motivation": "High-impedance superconducting circuits like fluxonium require superinductors, but tunnel junctions face a conflict: small charging energy $E_C \\ll E_J$ minimizes phase slips but reduces plasma frequency $\\omega_p \\sim \\sqrt{E_C E_J}$, whereas hybrid superconductor-semiconductor junctions could potentially evade this constraint through high transparency despite $E_C > E_J$.",
+  "method": "Arrays of 800 planar Al/InAs junctions with lengths $l_J = 400$ or $700$ nm were fabricated on epitaxial InAs 2D electron gas (mobility $1.5 \\times 10^4~\\mathrm{cm}^2/\\mathrm{Vs}$, density $9.76 \\times 10^{11}~\\mathrm{cm}^{-2}$), coupled capacitively to a coplanar waveguide, and characterized via microwave spectroscopy and two-tone cross-Kerr measurements at $23~\\mathrm{mK}$.",
+  "result": "Devices with $l_J = 700$ nm exhibit $Z > R_Q$ (4.7–5.2 kΩ vs 1.03 kΩ), linear mode dispersion to $12~\\mathrm{GHz}$ with junction inductance $1.8$–$2.14~\\mathrm{nH}$ per unit cell, negligible shunt capacitance, but internal quality factors decay as $Q_i \\propto 1/f_r$, decreasing an order of magnitude from 1–10 GHz; fitted shunt resistance $R_J \\approx 10$–$11~\\mathrm{k}\\Omega$ (700 nm) or $3~\\mathrm{k}\\Omega$ (400 nm) is attributed to diffusive-junction loss.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

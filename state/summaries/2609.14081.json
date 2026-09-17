@@ -1,0 +1,8 @@
+{
+  "summary": "A three-quarter-wavelength coplanar-waveguide Purcell filter with two notches (intrinsic at 5.6 GHz, bandstop at 4.9 GHz) and an added reset stub separates the readout and reset paths, so each can be made fast without shortening $T_1$. Measured on a device: a Purcell-limited $T_1$ floor above 1 ms across 4.7-5.9 GHz, 500 ns single-shot readout without a Josephson parametric amplifier, and 100 ns reset with 99.6% efficiency.",
+  "motivation": "Fast reset and readout need strong coupling to a lossy environment, which shortens $T_1$ through Purcell decay. Earlier multi-purpose filters coupled the qubits directly to the filter and suffered stray qubit-qubit interactions.",
+  "method": "The two notches bracket a protected band and the reset stub adds a reset mode below it, near 4 GHz. Each qubit has its own reset resonator (linewidth about 18 MHz, coupling about 32 MHz) whose $\\kappa$ is deliberately mismatched from $\\chi$, and 5 GHz high-pass filters on the lines keep thermal photons out of it.",
+  "result": "The readout band is 300 MHz wide (extendable to about 800 MHz) and the reset band 100 MHz. A 100 ns reset takes the excited-state population from 92.67% to 0.37%, about 20 ns is possible by stopping at the first swap minimum, and photon-shot-noise dephasing through the reset resonator is 70 times weaker than through the readout resonator.",
+  "source": "full text",
+  "generated_by": "Claude, written in-session from the full text (not via the script's API path)"
+}

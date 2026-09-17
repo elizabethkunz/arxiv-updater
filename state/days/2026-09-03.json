@@ -1,0 +1,369 @@
+{
+  "date": "2026-09-03",
+  "n_fetched": 97,
+  "papers": [
+    {
+      "id": "2609.01817",
+      "title": "Bosonic quantum control with a weakly coupled fluxonium qubit",
+      "authors": [
+        "Anaida Ali",
+        "Shantanu R. Jha",
+        "Shoumik D. Chowdhury",
+        "Lev-Arcady Sellem",
+        "Max Hays",
+        "William D. Oliver",
+        "Baptiste Royer"
+      ],
+      "abstract": "Echoed Conditional Displacement (ECD) gates constitute a fundamental building block for quantum control of harmonic oscillator modes. However, bit-flips of the auxiliary qubit remain a dominant error mechanism for this kind of bosonic control. In this work, we present a numerical case study of a bit-flip protected fluxonium operating as the control qubit and numerically implement ECD gates in a single-mode resonator-fluxonium device, demonstrating that fidelities exceeding 99.9% are possible. We systematically investigate the resonator dynamics using a combination of semiclassical trajectories and master equation simulations, numerically revealing asymptotic saturation of the dispersive shift in the strongly driven regime of the resonator. We develop an efficient technique to numerically simulate the strongly driven regime of the resonator using a semiclassical formulation that maps the full perturbation series in the dispersive expansion as order-by-order frequency shifts. This provides a compact polynomial description of the resonator which is intuitive and remains valid throughout the dispersive regime. Furthermore, we propose an improved ECD sequence that accounts for the effects of photon loss and spurious nonlinear terms on resonator trajectories.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-01",
+      "score": 0.8330945229952511,
+      "similar_to": [
+        {
+          "title": "Suppressing Counter-Rotating Errors for Fast Single-Qubit Gates with Fluxonium",
+          "id": "2406.08295",
+          "similarity": 0.8689054846763611
+        },
+        {
+          "title": "Simple pulses for elimination of leakage in weakly nonlinear qubits",
+          "id": "0901.0534",
+          "similarity": 0.8408180475234985
+        }
+      ],
+      "summary": {
+        "summary": "This work numerically demonstrates Echoed Conditional Displacement (ECD) gates for bosonic control using a fluxonium qubit, achieving vacuum-subspace fidelities exceeding 99.9% and GKP logical fidelities near 99%. The authors develop a semiclassical framework accounting for all-order dispersive terms via displacement transformation, revealing saturation of the dispersive shift $\\chi_\\mathrm{eff}(|\\alpha|^2)$ at large resonator amplitudes and deriving an improved ECD pulse sequence that compensates for photon loss and higher-order nonlinearities.",
+        "motivation": "Fluxonium qubits operating at half-flux feature suppressed bit-flip relaxation ($T_1 \\sim 1$ ms) due to double-well confinement, making them attractive control qubits for ECD gates where qubit bit-flips are the dominant error mechanism. However, the dynamics of strongly driven resonators deviates from standard fourth-order perturbative models, requiring careful treatment of higher-order nonlinearities.",
+        "method": "The authors numerically simulate a resonator-fluxonium device (Device 1: $g/2\\pi = 6.329$ MHz, $\\chi/2\\pi = 32.77$ kHz, $\\kappa/2\\pi = 6.37$ kHz, $\\omega_q/2\\pi = 233$ MHz at half-flux) by solving the full Hamiltonian in a displaced frame. They extract effective dispersive parameters $\\Delta_\\mathrm{eff}(|\\alpha|^2)$ and $\\chi_\\mathrm{eff}(|\\alpha|^2)$ from numerical out-and-back sequences and develop analytical pulse sequences (Eqs. 12a–12c) that explicitly account for photon loss and resonator Kerr nonlinearities.",
+        "result": "ECD gates targeting $\\beta = 2\\pi$ displacement achieve vacuum fidelities exceeding 99.9% in ≈600 ns and GKP logical fidelities $\\approx 99\\%$ in 240 ns with intermediate displacement $|\\alpha_0| \\approx 20$. The conditional displacement rate $g_\\mathrm{CD} = \\chi_\\mathrm{eff}|\\alpha|$ saturates nonmonotonically with $|\\alpha|$ due to competing higher-order Kerr terms; photon loss emerges as the primary fidelity-limiting mechanism in the GKP codespace, which the improved ECD sequence mitigates by suppressing residual unconditional displacements by one order of magnitude.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.02372",
+      "title": "Implementation of quantum gates by Floquet analysis of kicked quantum system",
+      "authors": [
+        "Andrea De Luca",
+        "Carola Ciaramelletti",
+        "Simone Paganelli"
+      ],
+      "abstract": "Precise control of multi-qubit architectures remains a critical bottleneck in superconducting quantum processors. In this work, we investigate the synthesis of high-fidelity quantum operations and state transfer protocols within an extended superconducting linear chain, scaling from three to seven sites. Using Floquet theory, we model the periodic drive as a train of delta-like pulses, mapping the quantum control problem onto quasi-energy resonance conditions. Combining the Baker-Campbell-Hausdorff expansion with Floquet spectral decomposition, we analytically identify optimal driving parameters, refined via the Covariance Matrix Adaptation Evolution Strategy (CMA-ES). In the three-qubit architecture, this enables high-fidelity synthesis of the iSWAP gate. Extending to a seven-site chain, we implement periodic trains of finite-width Gaussian pulses to activate distinct double-excitation transport channels with ultra-short gate durations t_gate (~170 ns). This achieves a clear scale separation from energy-relaxation times (T1) typical of fixed-frequency transmon devices with tunable couplers, such as IBM Quantum hardware. Finally, we benchmark stability under realistic imperfections, revealing a heightened sensitivity to static parameter disorder at the sub-percent level (eta ~ 10^-3) driven by spectral crowding, and discuss how closed-loop topologies could mitigate this constraint. This framework bridges time-periodic control theory and practical quantum gate engineering.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-09-02",
+      "score": 0.6167508485124036,
+      "similar_to": [
+        {
+          "title": "Scalable and Site-Specific Frequency Tuning of Two-Level System Defects in Superconducting Qubit Arrays",
+          "id": "2503.04702",
+          "similarity": 0.8565952777862549
+        },
+        {
+          "title": "Characterization of drive-induced unwanted state transitions in superconducting circuits",
+          "id": "2506.24070",
+          "similarity": 0.8529562950134277
+        }
+      ],
+      "summary": {
+        "summary": "This work synthesizes high-fidelity quantum gates in superconducting linear chains by mapping periodic pulsed driving onto Floquet quasi-energy resonance conditions, achieving iSWAP gates in a three-qubit processor and demonstrating multi-excitation transport with $t_\text{gate} \thicksim 170$–430 ns in a seven-site architecture. Robustness analysis reveals sharp performance degradation under sub-percent static disorder ($\theta \thicksim 10^{-3}$) in linear topologies, suggesting closed-loop ring geometries as a mitigation strategy.",
+        "motivation": "Precise multi-qubit control remains a bottleneck in superconducting quantum processors; achieving high-fidelity entangling gates with durations much shorter than relaxation times ($T_1$, $T_//phi$) while maintaining scalability is essential for practical quantum computation.",
+        "method": "Using Floquet theory, delta-kick pulses on flux-tunable transmon buses are mapped to quasi-energy resonance conditions via Baker-Campbell-Hausdorff expansion; optimal driving parameters ($\\lambda$, $T$, pulse amplitude $A$) are identified analytically and refined via Covariance Matrix Adaptation Evolution Strategy (CMA-ES), with Gaussian pulse trains replacing idealized kicks for experimental feasibility.",
+        "result": "Three-qubit iSWAP achieves fidelity $\\mathcal{F} \\approx 1.0$; seven-site double-excitation transfers reach $\\mathcal{F} \\gtrsim 0.99$ with ultra-short durations achieving $t_\\text{gate}/T_1 \\lesssim 2\\%$, but fidelity collapses sharply for $\\eta \\gtrsim 10^{-3}$ parameter disorder due to spectral crowding in linear chains.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.01848",
+      "title": "Error accumulation in dissipative quantum circuits",
+      "authors": [
+        "Nadir Samos-Sáenz de Buruaga",
+        "Rodrigo M. C. Pereira",
+        "Karol Życzkowski",
+        "Sergey Denisov",
+        "Pedro Ribeiro"
+      ],
+      "abstract": "Present-day quantum processors are open systems in which dissipation and decoherence degrade the information carried by a quantum state as it propagates through a circuit. We study this degradation in dissipative random quantum circuits, modeling each two-qubit gate as a diluted unitary that interpolates between the intended unitary operation and a random dissipative quantum channel. Using the fidelity between the ideal and noisy output states as a diagnostic, we show that sufficiently random unitary gates or dissipative Kraus operators lead to a universal decay of the average fidelity. This decay is determined only by the dissipation strength, system size, and circuit depth, while microscopic details of the gates and noise, including the Kraus rank, appear only in subleading corrections to higher moments. We derive a closed-form expression for the average fidelity in terms of three physically meaningful error parameters, dissipation strength, coherent two-qubit gate-error strength, and connectivity-error probability. Finally, we identify the cases when dissipative effects can be reproduced by an unitary-noise model and when dissipation-induced decoherence remains distinguishable from coherent noise at the level of the average fidelity.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-01",
+      "score": 0.5994560298971384,
+      "similar_to": [
+        {
+          "title": "Erasure qubits: Overcoming the $T_1$ limit in superconducting circuits",
+          "id": "2208.05461",
+          "similarity": 0.8610490560531616
+        },
+        {
+          "title": "Manufacturing low dissipation superconducting quantum processors",
+          "id": "1901.08042",
+          "similarity": 0.8595823645591736
+        }
+      ],
+      "summary": {
+        "summary": "This work establishes universal error accumulation in dissipative random quantum circuits, deriving closed-form expressions for average fidelity decay that depend only on dissipation strength, system size, and depth, while being insensitive to microscopic details like Kraus rank at the mean-fidelity level. The analysis identifies regimes where dissipative noise can or cannot be reproduced by effective unitary errors, providing guidance for distinguishing physical error mechanisms in NISQ devices.",
+        "motivation": "Understanding which microscopic features of local dissipative noise survive in many-body observables is crucial for benchmarking and error mitigation in quantum processors, which are inherently open systems where dissipation and decoherence degrade quantum information during circuit execution.",
+        "method": "The authors model each two-qubit gate as a diluted unitary (convex combination of ideal unitary and dissipative Kraus channels, parameterized by strength $\\kappa$), analyze dissipative random circuits using fidelity between ideal and noisy output states, employ random-matrix theory with Haar-random unitaries replacing permutations, and derive exact results that are validated numerically against permutation-based local circuits.",
+        "result": "For generic gate ensembles, the mean fidelity is $\\bar{\\mathcal{F}}(\\kappa) = \\frac{1}{d} + \\left[(16-15\\kappa)^{L/2} - \\frac{1}{d^2-1}\\right]^T(1-\\frac{1}{d})$, independent of Kraus rank $r$ (which appears only in higher-moment corrections suppressed by $1/d^2$); combined with unitary noise (strength $\\alpha$) and permutation errors (probability $p$), dissipative effects remain distinguishable from coherent noise only in specific parameter regimes.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.01901",
+      "title": "Need One Bell-pair Only (NOBOL) for Low-Overhead Fault-Tolerant Quantum Computing",
+      "authors": [
+        "Sean Grzenda",
+        "Shahram Babaie",
+        "Chunming Qiao"
+      ],
+      "abstract": "Fault-tolerant quantum computation fundamentally relies on encoding a logical qubit into a structured block of physical qubits, typically in the tens to hundreds. As a trade-off for improved fault-tolerance, logical gate operations will incur a linear overhead in terms of both the amount of time and quantum resources than before. For example, in monolithic quantum computing, performing a gate operation on two distant logical qubits will first require using a linear number of SWAP operations in order to move the logical qubits next to each other; while in distributed quantum computing, doing so will first require a linear number of ancilla qubits in order to form entanglement connections (or a logical Bell pair). In this paper, we focus on significantly reducing the overhead involved in logical CNOT operations, a fundamental primitive. We propose NOBOL, a novel approach that requires only one Bell pair to perform a logical CNOT operation on two distant qubits encoded in arbitrary CSS codes. More importantly, NOBOL only requires performing gate operations on the logical X or Z operator subsets of the logical qubits. For many CSS codes, such as the surface code, these subsets are significantly smaller than the size of the code itself. In this paper, we describe various circuit realizations of NOBOL, including a depth-optimal circuit with logarithmic depth in terms of the size of the logical operators. Finally, we propose effective methods to contain error propagation without incurring much additional overhead. Since NOBOL can be effectively applied to a wide range of quantum error-correcting (QEC) codes and, in addition, is agnostic to qubit modalities and effective for various architectures, including those based on either a monolithic QPU or distributed QPUs.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-01",
+      "score": 0.582158394689597,
+      "similar_to": [
+        {
+          "title": "A superconducting surface-code processor with lattice-surgery logical operations",
+          "id": "2606.06598",
+          "similarity": 0.8662291765213013
+        },
+        {
+          "title": "Logic gates at the surface code threshold: Superconducting qubits poised for fault-tolerant quantum computing",
+          "id": "1402.4848",
+          "similarity": 0.8562731742858887
+        }
+      ],
+      "summary": {
+        "summary": "This paper proposes NOBOL, a method for implementing logical CNOT gates between distant qubits encoded in arbitrary CSS codes using only a single Bell pair and local operations. The approach achieves logarithmic circuit depth $O(\\log \\tau)$ where $\\tau$ is the weight of the logical operator, reducing the entanglement overhead from linear in code size $N$ to a single shared pair.",
+        "motivation": "Standard logical CNOT operations between distant qubits require linear overhead: either $O(N)$ SWAP operations in monolithic systems or $O(N)$ Bell pairs in distributed quantum computing, with lattice surgery requiring $O(d^2)$ pairs for 2D surface codes. This entanglement bottleneck severely limits scalability of distributed quantum architectures.",
+        "method": "NOBOL generalizes the physical remote CNOT primitive (using one Bell pair and LOCC) to the logical level by exploiting the fact that logical operations need only act on the support of logical operators. A CNOT between single qubit $q$ and logical qubit $B_L$ uses $2\\tau_B - 1$ CNOTs on the $\\tau_B$ qubits in $B_X^L$; a CZ between $q'$ and $A_L$ similarly uses the $\\tau_A$ qubits in $A_Z^L$. Algorithms 1 and 2 construct depth-optimal circuits achieving $O(\\log \\tau)$ depth through recursive binary tree structures.",
+        "result": "The method requires only one Bell pair independent of code distance, compared to $O(d^2)$ for surface codes via lattice surgery. Error containment strategies using small repetition codes on the Bell pair qubits and intermittent adaptive stabilization (tracking predictable stabilizer evolution) suppress error propagation at the cost of $O(\\tau_B d)$ depth for stabilization or additional ancillas for encoding. The approach is agnostic to qubit modality and applicable to all CSS codes.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.02641",
+      "title": "Transversal Gates and Magic State Distillation in an Optimally Synthesized Spin-Qubit Shuttling Bus",
+      "authors": [
+        "Pau Escofet",
+        "Andrii Semenov",
+        "Niall Murphy",
+        "Elena Blokhina",
+        "Carmen G. Almudéver",
+        "Sergi Abadal",
+        "Eduard Alarcón"
+      ],
+      "abstract": "Fault-tolerant quantum computing requires not only reliable logical qubit storage, but also the ability to perform high-fidelity logical operations between error-corrected qubits at scale. While much of the existing literature focuses on optimizing syndrome extraction for a single logical qubit, the co-design of physical architectures that support both robust error correction and efficient logical computation remains an open challenge. In this work, we propose a multi-qubit spin-qubit shuttling bus architecture that addresses both requirements simultaneously. The architecture optimizes the physical qubit layout for syndrome extraction and supports transversal two-qubit logical gates between an arbitrary number of logical qubits, achieving all-to-all logical connectivity through coherent spin shuttling. We further propose an ancilla-sharing scheme that encodes multiple logical qubits within a single logical element, compressing the physical footprint of the processor and improving long-range gate fidelity. Extending the architecture from a one-dimensional bus to a two-dimensional grid of shuttling tracks reduces the inter-qubit distance, yielding consistent improvements in logical error. Finally, we apply the Quantum Reverse Mapping methodology at the logical level to optimize the layout of a \\textit{15-to-1} magic state distillation circuit, demonstrating how the transversal capabilities of the proposed architecture can be leveraged for universal fault-tolerant computation. Taken together, these results establish a principled co-design framework that bridges the physical, error-correction, and logical computation layers of the quantum stack, and demonstrate that spin-qubit shuttling architectures are a viable and flexible substrate for scalable fault-tolerant quantum computation.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-02",
+      "score": 0.5181140964561864,
+      "similar_to": [
+        {
+          "title": "A superconducting surface-code processor with lattice-surgery logical operations",
+          "id": "2606.06598",
+          "similarity": 0.862044095993042
+        },
+        {
+          "title": "Fault-tolerant interfaces for modular quantum computing on diverse qubit platforms",
+          "id": "2510.05221",
+          "similarity": 0.8585788607597351
+        }
+      ],
+      "summary": {
+        "summary": "This work extends a 1D spin-qubit shuttling bus architecture optimized for syndrome extraction to support transversal two-qubit logical gates via pairwise interactions between data qubits from distant logical elements, with all-to-all connectivity and logical error rates reaching $2 \\times 10^{-10}$ per syndrome-extraction round at distance $d=21$. The architecture integrates ancilla-sharing schemes to compress the physical footprint, explores 2D junction-based connectivity to reduce inter-qubit distances, and demonstrates application to 15-to-1 magic state distillation with optimized logical-qubit placement via Quantum Reverse Mapping.",
+        "motivation": "Fault-tolerant quantum computing requires both reliable error-corrected qubit storage and high-fidelity logical operations between separated patches; existing work focuses on either syndrome extraction or isolated two-qubit gates, leaving the co-design of storage and transversal computation largely unexplored.",
+        "method": "Building on the Quantum Reverse Mapping methodology from Escofet et al. (2026), the authors concatenate optimized logical elements along a single shuttling bus, benchmark memory and transversal CNOT logical error rates under a realistic spin-qubit noise model including gate depolarization, dephasing ($T_\\phi^\\mathrm{Store}$ and $T_\\phi^\\mathrm{Op}$), and distance-dependent shuttling dephasing, and explore architectural tradeoffs including symmetric versus asymmetric shuttling, ancilla-sharing ratios $m \\in \\{1,2,4,6,8\\}$, and 1D versus 2D topologies.",
+        "result": "Symmetric shuttling improves transversal CNOT fidelity by up to 60% at large code distances; ancilla sharing with $m=2$ outperforms the $m=1$ baseline beyond $\\sim 14$ logical hops; 2D grid connectivity reduces worst-case logical-hop separations from $\\mathcal{O}(N)$ to $\\mathcal{O}(\\sqrt{N})$ with consistent improvements across all code distances; the 15-to-1 magic state distillation circuit achieves estimated distillation failure probability below $10^{-3}$ at $d=15$ with $T_\\phi^\\mathrm{Store}=800$ µs.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.02828",
+      "title": "Effective Sub-Quantum Readout for Non-Monochromatic Axion Signals in High-$Q$ Haloscopes",
+      "authors": [
+        "Junu Jeong",
+        "Max Silva-Feaver"
+      ],
+      "abstract": "The search for wave-like dark matter using microwave cavity haloscopes is constrained by the Standard Quantum Limit, which dictates that phase-preserving linear amplification results in a minimum of one quantum of total system noise for a narrow-band signal. We demonstrate that this limit is effectively halved for a non-monochromatic axion signal coupled to a high-$Q$ cavity. By operating a Josephson Parametric Amplifier such that the cavity resonance is centered exactly at the half-pump frequency, the axion signal symmetrically populates both the signal and idler bands. Through quadrature analysis of the homodyne readout, we show that the incoherent sum of these mirrored spectral components doubles the measured signal power while the vacuum noise remains constant. This operation yields an effective noise limit of 0.5 quanta per frequency bin, translating to an overall effective limit of $1/\\sqrt{2}$ quanta after optimal matched filtering.",
+      "categories": [
+        "hep-ex",
+        "quant-ph"
+      ],
+      "published": "2026-09-02",
+      "score": 0.514190514240963,
+      "similar_to": [
+        {
+          "title": "Introduction to Quantum Noise, Measurement and Amplification",
+          "id": "0810.4729",
+          "similarity": 0.8255255222320557
+        },
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.8006324172019958
+        }
+      ],
+      "summary": {
+        "summary": "For non-monochromatic axion signals in high-$Q$ cavities ($Q_c \\gg Q_a$), operating a Josephson Parametric Amplifier with the cavity resonance centered at the half-pump frequency allows the axion signal to symmetrically populate both signal and idler bands, effectively halving the Standard Quantum Limit from 1 quantum to 0.5 quanta per frequency bin. After optimal matched filtering over the merged spectral lineshape, this configuration yields an overall noise floor of $1/\\sqrt{2}$ quanta and doubles the scanning rate compared to conventional non-degenerate operation.",
+        "motivation": "Microwave cavity haloscopes for axion dark matter detection are fundamentally limited by the Standard Quantum Limit imposed on phase-preserving linear amplification. This work exploits the finite bandwidth of the axion signal to overcome this constraint in high-$Q$ systems where the cavity quality factor vastly exceeds that of the dark matter field.",
+        "method": "The cavity resonance is tuned exactly to the JPA half-pump frequency $f_p/2$, causing a broadband axion signal to split symmetrically across both $+\\delta$ and $-\\delta$ sidebands relative to this center frequency. Homodyne readout with image rejection via complex voltage $V_X + iV_Y(\\delta)$ isolates the positive-frequency JPA output mode. Mathematical analysis of the Power Spectral Density shows that while both signal components add incoherently to double the measured signal power, the vacuum noise floor remains unchanged.",
+        "result": "For a symmetric signal distribution $S_a(\\delta) \\approx S_a(-\\delta)$, the output PSD becomes $S_\\mathrm{out}(\\delta) \\approx G(2S_a + 1)$, yielding an effective noise of 0.5 quanta per bin versus 1 quantum for standard single-sideband operation. When combined with optimal matched filtering, the integrated signal-to-noise ratio improves by a factor of 2, directly translating to a twofold increase in dark matter search scanning rate.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.02226",
+      "title": "Coherent microwave-to-optical transduction with Yb:YSO spins strongly coupled to a 3D resonator",
+      "authors": [
+        "Ujjwal Gautam",
+        "Nasser Gohari Kamel",
+        "Sourabh Kumar",
+        "Daniel Oblak"
+      ],
+      "abstract": "Microwave-to-optical quantum transducers are essential for entangling remote superconducting qubits. Among the available transduction platforms, ensembles of Er$^{3+}$ and Yb$^{3+}$ ions doped into solids have emerged as leading candidates. While external magnetic fields are needed to split the Zeeman levels of erbium ions and enable a microwave--qubit interface, superconducting qubits suffer decoherence in such fields. In contrast, ytterbium ions exhibit zero-first-order Zeeman transitions and large hyperfine splittings at zero magnetic field (when doped into inorganic crystals). Owing to its long optical and spin coherence times, Yb:YSO has been widely used as a quantum memory, yet its potential for quantum transduction remains largely unexplored. Investigating this material could enable the integration of quantum memory and transduction in a single platform. Here, we demonstrate microwave-to-optical transduction in the continuous-wave regime using a 5\\,ppm doped Yb:YSO crystal. The internal transduction efficiency is $2\\times10^{-8}$ with a bandwidth of 200\\,kHz, achieved using a 3D loop-gap microwave resonator (LGR) and a single-pass optical configuration. We explore all the ground states that form a V-type three-level system with the first and second optical excited states and assert the use of the ground state, which provides the highest efficiency and isolated optical transition. We further establish strong spin-microwave coupling from avoided crossing measurements. With a strong microwave drive to saturate the spin transition, we estimate the spin population pumped into the excited state, close to the simulated value. Finally, we calculate target parameter values for maximum efficiency with our system and suggest using 50\\,ppm doped Yb:YSO crystal. With the calculated target parameters, the internal transduction efficiency is predicted to reach up to $10^{-4}$ in the current LGR.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-02",
+      "score": 0.5070590639563457,
+      "similar_to": [
+        {
+          "title": "Quantum-limited millimeter wave to optical transduction",
+          "id": "2207.10121",
+          "similarity": 0.8522142767906189
+        },
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.8110369443893433
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates continuous-wave microwave-to-optical transduction using a 5 ppm doped Yb:YSO crystal coupled to a 3D loop-gap resonator, achieving an internal efficiency of $2\\times10^{-8}$ and 200 kHz bandwidth at zero magnetic field. The measurement establishes strong spin-microwave coupling ($g_{m,\\mathrm{ens}}/2\\pi = 850$ kHz, $C_m = 2.6$) and projects that optimized parameters (50 ppm doping, reduced beam diameter, increased pump power) could reach $10^{-4}$ efficiency while preserving the long coherence times ($T_{2,\\mathrm{o}} = 800$ µs, $T_1 = 1.3$ ms) needed for quantum memory integration.",
+        "motivation": "Yb:YSO offers zero-first-order Zeeman transitions and hyperfine splittings in the GHz range at zero field, making it compatible with superconducting qubits that suffer decoherence in external magnetic fields, unlike Er$^{3+}$-based transducers. The material's long coherence times already establish it as a leading quantum memory platform, motivating exploration of its potential for transduction to enable integrated memory-transducer nodes.",
+        "method": "The authors couple a 2.5 $\\times$ 2.6 $\\times$ 10 mm Yb:YSO crystal to a copper 3D loop-gap microwave resonator (resonance 2625.3 MHz, $Q = 653$) and drive a V-type three-level system with optical pump ($|4_g\\rangle \\leftrightarrow |1_e\\rangle$) and microwave fields ($|1_e\\rangle \\leftrightarrow |2_e\\rangle$ at 2623.3 MHz). They measure heterodyne-detected transduction efficiency across the spin transition and characterize spin-cavity coupling via avoided crossing at varied magnetic field.",
+        "result": "Transduction efficiency is $2\\times10^{-8}$ with 200 kHz bandwidth; avoided crossing reveals $g_{m,\\mathrm{ens}}/2\\pi = 850$ kHz and $C_m = 2.6$. Saturation power measurements estimate $3.7\\times10^{14}$ spins in the optical mode volume with $1.7\\times10^{-3}$ to $6.7\\times10^{-3}$ population fraction in the excited state. Projected improvements via 50 ppm doping, reduced beam waist (150 µm), higher pump power (10 mW), and optical cavity integration could achieve $\\sim10^{-4}$ efficiency.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8331,
+    0.6168,
+    0.5995,
+    0.5822,
+    0.5181,
+    0.5142,
+    0.5071,
+    0.4551,
+    0.4153,
+    0.4072,
+    0.3889,
+    0.2694,
+    0.2313,
+    0.2233,
+    0.1963,
+    0.1962,
+    0.1849,
+    0.1801,
+    0.1494,
+    0.1427,
+    0.1407,
+    0.1387,
+    0.1367,
+    0.1355,
+    0.1332,
+    0.1156,
+    0.1102,
+    0.1047,
+    0.0986,
+    0.0952,
+    0.0869,
+    0.0848,
+    0.0822,
+    0.0816,
+    0.0751,
+    0.0734,
+    0.0621,
+    0.0619,
+    0.0566,
+    0.0528,
+    0.0508,
+    0.0498,
+    0.0473,
+    0.044,
+    0.041,
+    0.0393,
+    0.039,
+    0.0334,
+    0.0297,
+    0.0295,
+    0.0288,
+    0.0272,
+    0.0268,
+    0.0265,
+    0.0256,
+    0.0256,
+    0.0253,
+    0.0253,
+    0.0244,
+    0.0237,
+    0.0221,
+    0.021,
+    0.0198,
+    0.0187,
+    0.0177,
+    0.0174,
+    0.0172,
+    0.017,
+    0.0151,
+    0.0149,
+    0.0142,
+    0.0123,
+    0.0115,
+    0.0107,
+    0.0106,
+    0.0103,
+    0.0097,
+    0.0097,
+    0.0094,
+    0.008,
+    0.0078,
+    0.0078,
+    0.0077,
+    0.0071,
+    0.0061,
+    0.0052,
+    0.0052,
+    0.005,
+    0.0049,
+    0.0044,
+    0.0038,
+    0.003,
+    0.0029,
+    0.0029,
+    0.0026,
+    0.0013,
+    0.0007
+  ]
+}

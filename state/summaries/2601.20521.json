@@ -1,0 +1,8 @@
+{
+  "summary": "Scanning tunneling spectroscopy of a 100 nm NitrAl thin film with $T_c = 2.4$ K reveals a superconducting gap $\\Delta_0 = 360$ µeV close to BCS prediction with spatial homogeneity (~10% variation) superior to typical disordered nitride films, and zero in-gap density of states up to 250 µeV. The work demonstrates STM as a materials-screening tool for superconducting quantum circuits, showing NitrAl's promise as an alternative to pure Al with enhanced critical temperature and field resilience.",
+  "motivation": "NitrAl has recently emerged as a superconducting candidate with higher $T_c$ and improved magnetic-field resilience compared to Al, but its microscopic superconducting properties and suitability for quantum circuits remain uncharacterized.",
+  "method": "Very low-temperature STM (100 mK) spectroscopy measured the tunneling conductance and density of states across a 100 nm NitrAl film ($\\rho_{4\\,\\mathrm{K}} = 48.5$ µΩ cm) as a function of position and applied out-of-plane magnetic field up to 600 mT. DOS was extracted by deconvoluting the Fermi function from conductance curves using a gap-distribution model.",
+  "result": "The superconducting gap of 360 µeV varies only ~10% spatially (compared to >20% in TiN/NbN), with zero subgap DOS below 250 µeV and broad quasiparticle peaks consistent with disorder-induced phase-coherence suppression; superconductivity persists to $\\sim 500$ mT, suggesting reduced superfluid density and potentially enhanced kinetic inductance desirable for flux qubits.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

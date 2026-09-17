@@ -1,0 +1,8 @@
+{
+  "summary": "Rhenium on sapphire transmons achieve $T_1$ up to 407 µs at 5 GHz, competitive with tantalum despite suppression of native oxide formation. A loss budget constructed from tripole and segmented stripline resonators reveals surface loss dominates, with the rhenium-aluminum interface contributing negligibly.",
+  "motivation": "Native oxide layers at metal-air interfaces are hypothesized to limit transmon coherence times. Rhenium's remarkable capacity to suppress native oxide formation under ambient conditions suggests it may improve qubit performance when integrated with conventional aluminum junction processes.",
+  "method": "Five rhenium/sapphire transmons with aluminum junctions were fabricated and measured at 20 mK in a hanger configuration. Loss mechanisms were separated using tripole stripline resonators (sensitive to surface, bulk, and package losses) and segmented stripline resonators (isolating rhenium-aluminum interface loss), with participations computed via electromagnetic simulation.",
+  "result": "Mean $Q_\text{int} = 9.1 ± 2.5 \\times 10^6$ ($T_1 = 289 ± 80$ µs at 5 GHz) with best device at $T_1 = 407 ± 34$ µs. Predicted loss budget of $Q_\text{int} = 9.2 \\times 10^6$ agrees with measurements; surface loss accounts for ~74% of total loss, with rhenium and aluminum surfaces each contributing ~36–38%.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

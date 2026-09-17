@@ -1,0 +1,8 @@
+{
+  "summary": "A four-pixel NbN hot-electron bolometer array is integrated with individual Si$_3$N$_4$ planar waveguides on a single chip, with fiber coupling via U-shaped grooves etched in the substrate. The measured voltage responsivity reaches 3800 V/W at 3 GHz with process reproducibility across pixels ($T_c = 7.45$–7.52 K, responsivity spread $\\sim$10–15%), demonstrating effective optical isolation via on-chip Si$_3$N$_4$ scatterers despite 10 µm waveguide spacing.",
+  "motivation": "Terahertz heterodyne receivers require miniaturized, multichannel detector systems with fast response and low-noise operation; waveguide integration on photonic platforms offers compact architectures with reduced alignment sensitivity compared to free-space optics.",
+  "method": "Four NbN strips (1 µm $\\times$ 7 µm, 9 nm thick) were patterned on a 400 nm Si$_3$N$_4$ waveguide platform and cladded with 140 nm SiO$_2$; single-mode fibers were positioned in 65 µm-deep Bosch-etched grooves for end-fire coupling at $\\lambda$ = 1550 nm. Responsivity was measured via RF rectification at 2.5 K with optical power $P_\\mathrm{optic}$ = 4.6 µW (coupling efficiency $\\eta \\approx 2\\%$) and RF loss 0.95 dB.",
+  "result": "All four pixels show critical temperatures near 7.5 K with normal-state sheet resistances 63–70 Ω/sq; maximum voltage responsivity is 3400–3800 V/W at 3 GHz with no measurable optical crosstalk between adjacent channels.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

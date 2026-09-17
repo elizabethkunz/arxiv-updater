@@ -1,0 +1,11 @@
+# secrets: any .env variant, anywhere in the tree
+.env
+.env.*
+*.env
+.venv/
+__pycache__/
+out/
+state/background.json
+state/emb_cache/
+disliked*.csv
+state/model.v*.joblib

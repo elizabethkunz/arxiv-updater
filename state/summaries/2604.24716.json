@@ -1,0 +1,8 @@
+{
+  "summary": "This paper quantifies the observable impact of gate-voltage-dependent capacitance renormalization ($\\delta C_\\Sigma$) and charge offsets ($\\delta n_g$ and $n_z$) on gatemon qubit spectra in the weak tunneling regime ($\\Gamma_{L,R} \\ll \\Delta$), derived from a many-body treatment with self-consistent phase quantization. The main prediction is an effective charge offset shift $\\delta n_\\mathrm{eff}(\\epsilon_g)$ in asymmetric junctions ($\\Gamma_L \\neq \\Gamma_R$) that manifests as an $\\epsilon_g$-dependent displacement of charge-parity oscillations in $E_{01}(n_g)$.",
+  "motivation": "Simplified gatemon models have neglected phase-fluctuation effects in the charging energy, leading to incomplete predictions for energy spectra and anharmonicity, particularly for explaining recently observed anomalous anharmonicity behavior in experiments.",
+  "method": "Numerical solutions of the Schrödinger equation with the full Hamiltonian ($\\hat{H}_\\mathrm{even}$) including the two Andreev branches and new charging-energy terms, combined with WKB analysis at high transparency ($T \\approx 1$) to elucidate the interplay between upper and lower Andreev branches.",
+  "result": "The capacitance renormalization contributes to anharmonicity comparably to the continuum energy shift $E_\\mathrm{cont}(\\phi)$ for moderate $\\epsilon_g \\in (0.1\\Delta, 0.7\\Delta)$; the effective charge offset $\\delta n_\\mathrm{eff}(\\epsilon_g)$ ranges from a few percent to $\\lesssim 0.5 e$ and can be detected spectroscopically by measuring $E_{01}(n_g)$ at varied gate voltages in asymmetric junctions.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

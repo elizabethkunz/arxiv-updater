@@ -1,0 +1,8 @@
+{
+  "summary": "This work proposes a two-stage protocol for generating entanglement between a local superconducting qubit and remote magnons in a hybrid magnon-mediated system. Stage 1 uses shortcuts to adiabaticity to create a Bell state between the superconducting qubit and local magnons; Stage 2 coherently transfers entanglement to remote magnons via engineered Hamiltonian dynamics mediated by a waveguide.",
+  "motivation": "Magnon-mediated hybrid systems offer strong magnetic dipole coupling, low dissipation, and reduced component count compared to conventional quantum network implementations, motivating their use for scalable distributed quantum networks.",
+  "method": "The protocol employs invariant-based shortcuts to adiabaticity for local Bell-state generation with engineered coupling $g_1(t)$ and $g_2(t) = \\pi/(4T_1)$, followed by coherent state transfer via an effective magnon-magnon coupling $g_{\\mathrm{eff}} = 2ig G_L G_R$ derived through the Nakajima-Zwanzig projection operator technique under Markovian approximation.",
+  "result": "Numerical simulations achieve fidelity $F > 0.90$ and bipartite negativity $\\mathcal{N}_2 > 0.40$ for SQ-QM2 entanglement under realistic noise with $\\gamma_q/2\\pi = 0.01$ MHz, $\\gamma_\\phi/2\\pi = 0.1$ MHz, $\\kappa_c = \\kappa_{m_L} = \\kappa_{m_R} = 0.5$ MHz at $T_{\\mathrm{th}} = 50$ mK, with analysis showing dephasing dominates over relaxation in fidelity degradation.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

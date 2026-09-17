@@ -1,0 +1,8 @@
+{
+  "summary": "XCOM is a full-mesh network architecture for synchronizing multiple QICK boards and their absolute time counters to within 100 ps while providing deterministic all-to-all data communication with latency below 186 ns at 100 MHz clock speed (reducible to 62 ns at 300 MHz). The system combines PLL nested zero-delay mode locking, multi-tile DAC/ADC synchronization, and LVDS-based point-to-point communication via a central fanout hub to enable scalable multi-board control for superconducting and spin qubit systems.",
+  "motivation": "Superconducting and spin qubit testbeds require expansion beyond single FPGA boards to handle the high I/O count and complex control signals, necessitating precise synchronization and low-latency communication across multiple hardware components without drift or loss of lock.",
+  "method": "XCOM implements a full-mesh topology with one dedicated $200$ Mb/s LVDS data/clock pair per board (32-bit words at $\\sim$100 MHz) transmitted to a central fanout hub using TI DS90LV804 drivers and LMK1D2108 buffers, combined with firmware protocols for network ID auto-assignment, clock reset/start commands, and deterministic message exchange managed by the tProc at the fabric clock (430 MHz).",
+  "result": "Three RF waveforms from different boards show 20 ps timing skew (demonstrating sub-100 ps cross-board synchronization), 186 ns latency per 32-bit word at current clock speed with drift-free lock stability over multiple days, and the prototype currently supports up to five boards with firmware already supporting 15 boards.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

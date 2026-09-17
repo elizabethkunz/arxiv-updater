@@ -1,0 +1,8 @@
+{
+  "summary": "TaN and TaN/Cu bilayer nanowires were fabricated on 300 mm wafers using CMOS-compatible processes, achieving $T_c = 4.1$ K and coherence length $\rlap{\raise 0.25em\\hbox{$\rlap{-}$}}\\xi_0 = 7$ nm for 39 nm thick TaN with <5% variation across the wafer. Cu integration provides ~100× enhancement in the SBT heat-transfer parameter $\\beta$ and near-unity critical-to-retrapping current ratio, enabling faster reset times in SNSPDs while maintaining superconducting performance.",
+  "motivation": "Wafer-scale SNSPD arrays require fast reset times and uniform superconducting properties across large areas, motivating investigation of integrated heatsinking in TaN nanowires fabricated with scalable CMOS-compatible processes.",
+  "method": "TaN and TaN/Cu bilayer nanowires were patterned on 300 mm Si wafers and characterized through current-voltage hysteresis measurements and Skocpol-Beasley-Tinkham hotspot model analysis to evaluate thermal dissipation and superconducting parameters.",
+  "result": "Cu heatsinking improved heat transfer by ~100× (SBT $\\beta$ parameter) with critical current uniformity better than 5% across the 300 mm wafer for all measured linewidths, demonstrating process viability for scalable SNSPD fabrication.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,363 @@
+{
+  "date": "2026-07-31",
+  "n_fetched": 127,
+  "papers": [
+    {
+      "id": "2607.27392",
+      "title": "Anomalous Microwave Response in YBCO Resonators beyond the Two-Level-System Model",
+      "authors": [
+        "Kaiwen Zheng",
+        "Nathan J. Johnson",
+        "Nathan T. Thobaben",
+        "Sidharth Duthaluru",
+        "Haochen Shen",
+        "Denae T. Cherry",
+        "David S. Wisbey",
+        "Kater W. Murch"
+      ],
+      "abstract": "We report the microwave response of coplanar-waveguide (CPW) resonators fabricated from $\\mathrm{YBa_2Cu_3O_{7-δ}}$ (YBCO) thin films over temperatures from approximately $70~\\mathrm{mK}$ to $40~\\mathrm{K}$. The resonators exhibit internal quality factors $Q_\\mathrm{i}$ in the range of $4\\times10^3$ to $10^4$ at 70 mK, which increase to a maximum of approximately $8\\times10^3$ to $1.2\\times10^4$ near $6~\\mathrm{K}$. At low temperatures, both $Q_\\mathrm{i}$ and the fractional shift of the resonance frequency $Δf_\\mathrm{r}/f_\\mathrm{r}$ increases with temperature, qualitatively resembling behavior commonly associated with two-level-system (TLS) defects. However, neither response saturates on the temperature scale set by the resonator frequency, and the loss exhibits no observable microwave-power dependence. We show that low-temperature frequency upturn may be better described by an additional paramagnetic response associated with defect-induced local moments or Andreev bound states, while the low-temperature loss follows an approximately logarithmic temperature dependence whose microscopic origin remains unresolved. These measurements establish the millikelvin performance of patterned YBCO resonators and show that their low-temperature response cannot be understood within the conventional TLS framework alone.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "published": "2026-07-29",
+      "score": 0.8675985663881085,
+      "similar_to": [
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.8595924377441406
+        },
+        {
+          "title": "Surface loss simulations of superconducting coplanar waveguide resonators",
+          "id": "1107.4698",
+          "similarity": 0.8527030348777771
+        }
+      ],
+      "summary": {
+        "summary": "CPW resonators fabricated from YBCO thin films exhibit $Q_i$ of $4\\times10^3$–$10^4$ at 70 mK, reaching maxima of $8\\times10^3$–$1.2\\times10^4$ near 6 K, with anomalous low-temperature frequency shifts and losses that cannot be explained by conventional two-level-system models. The low-temperature frequency upturn is consistent with a paramagnetic response from defect-induced local moments or Andreev bound states, while the loss follows an unexplained logarithmic temperature dependence.",
+        "motivation": "YBCO's high critical temperature and field resilience motivate its use in hybrid quantum systems and cryogenic microwave devices, requiring characterization of loss and dispersion in patterned planar circuits beyond bulk surface-impedance models.",
+        "method": "CPW resonators were fabricated from two YBCO films (S-type and M-type, 210 nm on CeO$_2$/sapphire) with resonance frequencies 4–6 GHz, characterized from 70 mK to 40 K via microwave transmission measurements and fitted to models incorporating quasiparticle kinetic inductance, two-level-system response, and paramagnetic contributions.",
+        "result": "The temperature dependence of frequency shift is well-described by a model combining quasiparticle effects with a Curie-Weiss-like paramagnetic term ($\\mu_r = 1 + c/(T+\\theta)$) yielding $\\lambda_{ab}(0) = 232 \\pm 6$ nm (chip 1) and $160 \\pm 9$ nm (chip 2) with $\\beta \\approx 2.1$–$2.3$ for penetration-depth temperature dependence; low-temperature $Q_i$ follows $Q_i^{LT} = A + B \\ln(T/1\\,\\mathrm{K})$ with no observable power dependence up to $-80$ dBm.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.28479",
+      "title": "Mitigating quantum decoherence via global optimal control",
+      "authors": [
+        "Ashkan Abedi",
+        "Roberto Menta",
+        "Julien Despres",
+        "Marco Polini",
+        "Francesco Caravelli",
+        "Vittorio Giovannetti"
+      ],
+      "abstract": "We show that global optimal control can drastically suppress the impact of decoherence in globally driven superconducting quantum computing architectures, taking as a prototype a recently proposed quasi-two-dimensional ladder geometry. Using a tensor-network-based approach, we quantify how amplitude-damping and dephasing channels degrade the flow of quantum information along the ladder and the fidelity of one- and two-qubit gate operations. We then demonstrate that shaping the global drive compresses the gate sequences by an order of magnitude in time, restoring high gate fidelities. We stress that this mitigation is far from trivial: in a globally driven processor, dissipation acts on every physical qubit---including those outside the logical register that sustain the surrounding ordered phases---so its impact cannot be suppressed by protecting an isolated subsystem, and is instead overcome purely through the temporal shaping of the global drive.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-07-30",
+      "score": 0.6213600867643351,
+      "similar_to": [
+        {
+          "title": "The superconducting grid-states qubit",
+          "id": "2509.14656",
+          "similarity": 0.850800096988678
+        },
+        {
+          "title": "Suppression of crosstalk in superconducting qubits using dynamical decoupling",
+          "id": "2108.04530",
+          "similarity": 0.8470696210861206
+        }
+      ],
+      "summary": {
+        "summary": "This work investigates decoherence in a globally driven superconducting ladder architecture using tensor-network simulations and demonstrates that relaxation is the dominant dissipative error, degrading single-qubit and two-qubit gate fidelities. Pulse optimization via GRAPE reduces gate duration by nearly an order of magnitude (from ~3000 ns to ~320 ns for the Hadamard), restoring high fidelities ($\\mathcal{F} \\approx 0.96$) across dissipation rates up to $\\gamma_- = 0.08$ µs$^{-1}$ ($T_1 \\approx 12.5$ µs).",
+        "motivation": "Globally driven architectures reduce wiring complexity and control-line thermal noise in superconducting qubit processors, but their robustness against relaxation and dephasing in the presence of dissipation acting on all $2N^2 + 4N - 1$ physical qubits—including spectator qubits maintaining Néel and polarized phases—remains uncharacterized.",
+        "method": "Using the quantum trajectory method combined with matrix product state representations, we quantify how amplitude-damping ($L_{j,-} = \\gamma_- \\sigma_j^-$) and dephasing ($L_{j,z} = \\gamma_z \\sigma_j^z$) channels degrade information flow and gate operations in the 15-qubit ladder ($N=2$ logical qubits, $\\eta = \\zeta/\\Omega_\\chi = 20$), then apply MPS-based GRAPE to generate optimized control pulses for the Hadamard gate.",
+        "result": "Relaxation dominates infidelity for all operations by disrupting the blockade mechanism at the Néel–ferromagnetic phase boundary; the GRAPE-optimized Hadamard achieves $\\mathcal{F} \\approx 0.96$ at $\\gamma_- = 0.08$ µs$^{-1}$ versus $\\mathcal{F} \\approx 0.64$ for standard rectangular pulses (9.4× time reduction), with residual infidelity dropping from 0.36 to 0.04.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.28605",
+      "title": "Logical computation with canonical lifted product codes",
+      "authors": [
+        "Han Zheng",
+        "Guo Zheng",
+        "Liang Jiang",
+        "Qian Xu"
+      ],
+      "abstract": "High-rate quantum low-density parity-check (qLDPC) codes encode many logical qubits with low physical-qubit overhead, but realizing efficient fault-tolerant computation on such dense encodings remains a major challenge. Generic, code-agnostic techniques such as code surgery and gate teleportation apply broadly, but are difficult to make modular, low-overhead, and fully certifiable on complex high-rate codes whose structure is left unexploited. Here we overcome these obstacles by co-designing the code together with its logical instruction set for a broad family of \\emph{canonical} lifted-product (LP) codes with cyclic symmetry. We show that these codes admit a \\emph{canonical logical basis}, in which conjugate logical operators are organized into rows and columns of cyclic orbits inherited directly from the underlying classical codes, analogous to the structure that makes hypergraph-product codes so tractable. This canonical basis unlocks a complete logical instruction set, including constant-depth automorphism and fold-transversal Clifford gates, modular graph code surgeries built from a constant number of reusable seed surgery gadgets or a compact canonical extractor, highly parallel logical Pauli-product measurements, and parallel magic-state injection. For example, a $[[1122,148,\\leq\\!20]]$ (resp. $[[4350,1224,\\leq\\!20]]$) LP code requires only two (resp. four) seed surgery gadgets, while arbitrary high-weight logical measurements can be implemented using a full extractor smaller than half of the data code block. These results advance the frontier of fault-tolerant quantum computation on ultra-high-rate quantum architectures.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-30",
+      "score": 0.6033961641284489,
+      "similar_to": [
+        {
+          "title": "High-rate qLDPC processors",
+          "id": "2607.28795",
+          "similarity": 0.8776979446411133
+        },
+        {
+          "title": "Entangling logical qubits without physical operations",
+          "id": "2601.20927",
+          "similarity": 0.8727326393127441
+        }
+      ],
+      "summary": {
+        "summary": "This work develops a complete fault-tolerant logical instruction set for a family of lifted-product (LP) quantum error-correcting codes by identifying a canonical logical basis with cyclic and row-column-parallel structure. The canonical LP codes achieve high rates with distances up to 20, encoding hundreds to thousands of logical qubits while supporting low-overhead modular gate implementations and highly parallel measurements.",
+        "motivation": "High-rate qLDPC codes promise dramatic reductions in physical-qubit overhead for quantum computation, but realizing efficient fault-tolerant logic on high-density encodings remains challenging because generic code-agnostic techniques incur substantial overhead when applied to arbitrary codes without exploiting code structure.",
+        "method": "We co-design the code structure with its logical instruction set by characterizing when LP codes over cyclic groups admit a canonical logical basis inherited from classical codewords. This structure enables constant-depth automorphism and fold-transversal Clifford gates, modular graph-surgery gadgets requiring only $r_A$ seed surgery gadgets (independent of lift size $l$), compact canonical extractors smaller than half the code block, and parallel intra- and inter-column measurements via hypergraph surgery with proven distance preservation.",
+        "result": "For $[[1122,148,\\leq 20]]$ and $[[4350,1224,\\leq 20]]$ canonical LP codes, we construct explicit fault-tolerant gadgets: only 2 and 4 seed surgery gadgets respectively, extractors requiring $<50\\%$ overhead, parallel magic-state injection from surface codes into full code blocks with phenomenological distance $\\geq\\min(d,d_s)$, and verified soundness $\\rho_d\\geq 1$ for all seed gadgets.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.27930",
+      "title": "Design of a Quantum Error Correction Decoder Exploiting Temporal Parallelism",
+      "authors": [
+        "Leo Itoh",
+        "Takuya Kasamura",
+        "Hidetsugu Irie",
+        "Junichiro Kadomoto"
+      ],
+      "abstract": "In the pursuit of fault-tolerant quantum computing, low-latency quantum error correction (QEC) is essential to prevent rapid error accumulation within the syndrome measurement cycle. In this work, we propose a microarchitecture that implements the sandwich decoding method using the Union-Find algorithm by exploiting temporal parallelism, and we present an ASIC implementation. Through logic synthesis and simulation, we show that the proposed decoder achieves an average latency reduction of 35% at code distance d = 21 compared with a conventional batch Union-Find decoder, while maintaining a comparable logical error threshold of approximately 1.5% under phenomenological noise.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-30",
+      "score": 0.5897962445610753,
+      "similar_to": [
+        {
+          "title": "Quantum error correction below the surface code threshold",
+          "id": "2408.13687",
+          "similarity": 0.8528538346290588
+        },
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.8509722948074341
+        }
+      ],
+      "summary": {
+        "summary": "This paper proposes a microarchitecture for sandwich decoding using the Union-Find algorithm with temporal parallelism to accelerate surface code QEC, achieving 35% average latency reduction at code distance $d=21$ compared to batch decoding while maintaining a logical error threshold of 1.5% under phenomenological noise. The design is implemented as an ASIC in TSMC 22 nm and 7 nm processes, with detailed RTL and synthesis results demonstrating sub-microsecond decoding latencies suitable for superconducting qubit cycles.",
+        "motivation": "Fault-tolerant quantum computing requires QEC decoding latency below 1 µs to prevent error accumulation within the syndrome measurement cycle; conventional batch decoding processes all accumulated syndrome data at once, leading to latency that grows with code distance $d$.",
+        "method": "A five-unit microarchitecture (Window Dispatcher, two parallel Type-1 Union-Find decoders, Seam Pairer, Type-2 decoder, Result Merger) implements sandwich decoding by decomposing the spatiotemporal graph into fixed-size windows with step size $s=\\lfloor(d+1)/4\\rfloor$ and buffer size $b=\\lfloor(d-1)/4\\rfloor$, enabling incremental decoding in parallel with syndrome measurement; seam data management via FIFOs handles asynchronous completion of parallel decoders.",
+        "result": "At $d=21$ and physical error rate $p=1.0\\%$: average latency reduction of 34.9% (from 186.7 ns to 122.1 ns on 22 nm), worst-case latency reduction of 11.5%, threshold 1.5% vs 1.6% for batch decoder, circuit area increase of 1.38× scaling as $\\mathcal{O}(d^3)$; outperforms Online UF decoder (136.4 ns) and QECOOL (15.3 ns) at comparable code distances.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.27527",
+      "title": "Noise-resilient and Scalable Quantum Error Correction for Nuclear Spin Qubits in Silicon with Electron Shuttling",
+      "authors": [
+        "Wayne M. Witzel",
+        "Matthew D. Grace",
+        "Dwight R. Luhman"
+      ],
+      "abstract": "Nuclear spin qubits in silicon are well-isolated from their environment. Consequently, they have very long lifetimes and low sensitivity to noise, but this also suggests that control and measurement is challenging. We introduce electron pair interferometry (EPI), a protocol to overcome this challenge and maintain robustness to noise. EPI is implemented using an array of quantum dots with isoelectronic nuclear spin qubits located in the dots. A pair of electrons are initialized into a singlet ground state, split apart, and shuttled to the dots containing nuclear spin qubits. We show it is possible to coherently transfer the parity of the nuclei onto the measurable state of singlet/triplet-encoded electrons. Global nuclear magnetic resonance (NMR) can be used to change bases and implement dynamical decoupling (DD). Combined with selective hyperfine-induced $Z_π$ rotations, our gate set is complete for universal quantum computation, tailored to Calderbank-Shor-Steane (CSS) quantum error correction, and robust to noise. We discuss very low sensitivity to charge noise and study the sensitivity to both DC and AC magnetic field inhomogeneity which depends strongly on their relative strengths.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-07-29",
+      "score": 0.53983752753907,
+      "similar_to": [
+        {
+          "title": "The Flux Qubit Revisited to Enhance Coherence and Reproducibility",
+          "id": "1508.06299",
+          "similarity": 0.8504782319068909
+        },
+        {
+          "title": "Suppressing Counter-Rotating Errors for Fast Single-Qubit Gates with Fluxonium",
+          "id": "2406.08295",
+          "similarity": 0.8426491022109985
+        }
+      ],
+      "summary": {
+        "summary": "This paper introduces electron pair interferometry (EPI), a measurement protocol for nuclear spin qubits in silicon quantum dots that uses shuttled electron pairs to read out parity via singlet/triplet interference, enabling a complete gate set for universal quantum computation tailored to CSS quantum error correction. The approach maintains robustness to charge noise and demonstrates controlled sensitivity to magnetic field inhomogeneities, leveraging recent advances in isotopically enriched silicon (single-digit ppm $^{29}$Si), large quantum dot arrays, and coherent electron shuttling.",
+        "motivation": "Nuclear spins in silicon offer extremely long coherence times but are difficult to control and measure directly; the hyperfine interaction with shuttled electrons provides a scalable path to entanglement, but a measurement protocol robust to the noise environment of this platform was lacking.",
+        "method": "Electrons are initialized into a singlet state, split and adiabatically shuttled along distinct paths through a quantum dot array to visit complementary subsets of isoelectronic nuclear spin qubits via hyperfine CPhase operations, accumulating a phase $\\phi(t_M)$ dependent on nuclear parity; recombination and singlet/triplet measurement via spin-to-charge conversion yields parity readout with $P_S = \\cos^2(\\phi(t_M)/2)$. Global NMR and selective hyperfine $Z_\\pi$ rotations complete the gate set.",
+        "result": "EPI achieves parity measurements sensitive only to the magnitude of magnetic field differences (not sign), showing very low sensitivity to charge noise and tunable sensitivity to DC/AC magnetic field inhomogeneity depending on their relative strengths, with the architecture compatible with error rates below $10^{-3}$ when $^{29}$Si backgrounds are reduced to $\\lesssim 50$ ppm.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.27644",
+      "title": "Quantum LDPC codes with design rate 1/5 and good performance below 1000 physical qubits",
+      "authors": [
+        "Yifan Hong"
+      ],
+      "abstract": "Constant-rate quantum low-density parity-check (LDPC) codes promise fault-tolerant quantum computation with constant spatial overhead in the asymptotic limit. Nonetheless, discovering finite-length code instances with good practical performance remains challenging. We introduce a new family of quantum LDPC codes with design rate $1/5$ and check weight $9$ that approaches the teraquop memory regime per qubit-round with several hundred physical qubits, under idling-free circuit-level noise of strength $0.1\\%$ and GPU-accelerated Relay-belief-propagation (Relay-BP) decoding with average latencies around 1-2 ms, a regime relevant to trapped-ion and neutral-atom processors. The construction involves the balanced product of classical LDPC codes with design rate $1/2$ that share non-abelian $\\mathbb{Z}_\\ell \\rtimes \\mathbb{Z}_m$ group symmetries, which may be of independent interest for classical error correction. We build syndrome extraction circuits tailored to reconfigurable atom arrays using a simple greedy scheduler, with single-round rearrangement times around 30-60 ms using present hardware specifications, and substantial room for future improvements. We also construct logical Pauli bases that are equivariant with respect to the group symmetry, which can significantly compress the design space for code surgery. Together, these results further advance the practicality of constant-rate quantum LDPC codes for near-term, fault-tolerant quantum computers.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-30",
+      "score": 0.503630016481525,
+      "similar_to": [
+        {
+          "title": "Quantum error correction at ultra-low overhead",
+          "id": "2608.02773",
+          "similarity": 0.8772108554840088
+        },
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.8736555576324463
+        }
+      ],
+      "summary": {
+        "summary": "This work introduces quantum LDPC codes with design rate $1/5$ constructed from balanced products of classical codes with non-abelian $\\mathbb{Z}_{\\ell_1} \\rtimes \\mathbb{Z}_{\\ell_2}$ (ZSZ) group symmetries, achieving code-capacity memory efficiency $kd^2/n$ superior to prior constructions for block lengths below 1000 physical qubits. Under idling-free circuit-level depolarizing noise at $0.1\\%$ strength with GPU-accelerated Relay-belief-propagation decoding, ZSZ-LP codes with $d \\in \\{10,12,14,16,18\\}$ approach the gigaquop and teraquop regimes with latencies of 1–2 ms, and syndrome extraction on reconfigurable atom arrays requires 30–60 ms rearrangement overhead per round.",
+        "motivation": "Constant-rate quantum LDPC codes promise constant spatial overhead for fault-tolerant quantum computation, but discovering finite-length instances with practical performance remains challenging. Prior work showed that abelian group algebras suffer from distance bounds of $O(1)$ in the 5-block construction; this work exploits non-abelian groups to circumvent that obstruction.",
+        "method": "ZSZ-LP codes are constructed via balanced product of pairs of classical $(3,6)$-regular LDPC codes (ZSZ-2BGA codes with rate $1/2$ and minimum distances 10–22) that share free ZSZ group actions. Classical codes are found by filtered random search over trinomial pairs with girth and distance criteria. Logical Pauli bases are constructed as group orbits, yielding one-generator-minimal (OGM) and one-generator-symplectic (OGS) forms. Syndrome extraction schedules are optimized for optical tweezers via a greedy AOD routing algorithm.",
+        "result": "ZSZ-LP-320 ($\\langle 320, 64, 14 \\rangle$) and ZSZ-LP-390 ($\\langle 390, 78, \\leq 16 \\rangle$) achieve per-qubit-round logical error rates of $2.3 \\times 10^{-11}$ and $2 \\times 10^{-12}$ respectively at $p=0.1\\%$; ZSZ-LP-550 extrapolates to $10^{-13}$ regimes. Classical ZSZ-2BGA codes show $95\\%$-ile minimum distances exceeding those of configuration-model and PEG ensembles at lengths up to 310, with pseudothreshold near 1.25 dB on AWGN-BPSK, within 1.1 dB of Shannon limit for rate $1/2$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8676,
+    0.6214,
+    0.6034,
+    0.5898,
+    0.5398,
+    0.5036,
+    0.4947,
+    0.4439,
+    0.4233,
+    0.3304,
+    0.2535,
+    0.2392,
+    0.2382,
+    0.1998,
+    0.1911,
+    0.1763,
+    0.1653,
+    0.1561,
+    0.1489,
+    0.1486,
+    0.1356,
+    0.1341,
+    0.1316,
+    0.1242,
+    0.1238,
+    0.1184,
+    0.1166,
+    0.113,
+    0.1107,
+    0.1093,
+    0.1063,
+    0.0985,
+    0.0958,
+    0.0936,
+    0.0898,
+    0.0892,
+    0.0856,
+    0.0838,
+    0.0769,
+    0.0719,
+    0.0708,
+    0.0702,
+    0.0695,
+    0.0693,
+    0.0677,
+    0.0673,
+    0.0669,
+    0.0651,
+    0.0629,
+    0.0628,
+    0.0583,
+    0.057,
+    0.0566,
+    0.0552,
+    0.0518,
+    0.0505,
+    0.048,
+    0.0479,
+    0.0465,
+    0.0445,
+    0.0442,
+    0.0434,
+    0.0423,
+    0.0423,
+    0.0416,
+    0.0403,
+    0.0395,
+    0.0393,
+    0.0379,
+    0.0376,
+    0.0374,
+    0.0371,
+    0.0363,
+    0.036,
+    0.0343,
+    0.0312,
+    0.0306,
+    0.0303,
+    0.0298,
+    0.0295,
+    0.0289,
+    0.0273,
+    0.0272,
+    0.0224,
+    0.0215,
+    0.0212,
+    0.0211,
+    0.0201,
+    0.0186,
+    0.0184,
+    0.018,
+    0.0175,
+    0.0158,
+    0.0142,
+    0.0132,
+    0.0132,
+    0.0121,
+    0.012,
+    0.0119,
+    0.0118,
+    0.0101,
+    0.0098,
+    0.0094,
+    0.0094,
+    0.0091,
+    0.009,
+    0.0082,
+    0.0081,
+    0.0079,
+    0.0076,
+    0.0074,
+    0.0071,
+    0.0069,
+    0.0066,
+    0.0064,
+    0.0063,
+    0.0061,
+    0.0053,
+    0.0053,
+    0.0049,
+    0.0046,
+    0.0041,
+    0.0032,
+    0.0024,
+    0.0019,
+    0.0011,
+    0.0011
+  ]
+}

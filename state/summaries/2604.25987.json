@@ -1,0 +1,8 @@
+{
+  "summary": "Neutral-atom quantum processors achieve 99.854(4)% raw fidelity and 99.941(3)% loss-postselected fidelity for $CZ$ entangling gates using high Rabi frequency smooth-amplitude pulses ($\\Omega \\approx 2\\pi \\times 17$ MHz) on $^{87}$Rb atoms in $n=53$ Rydberg states, with stable performance over 10 hours without recalibration. These gates enable quantum circuits with coherent atom rearrangement, including cluster state benchmarks and nonlocal scrambling circuits with super-ballistic entanglement growth, demonstrating compatibility with deep-circuit fault-tolerant computation.",
+  "motivation": "Two-qubit entangling gate fidelity is the dominant error source limiting circuit depth in quantum processors; achieving error rates around 0.1% is necessary for efficient quantum error correction and fault-tolerant quantum computation.",
+  "method": "The authors implement $CZ$ gates via Rydberg blockade using optimal-control smooth-amplitude pulse profiles with peak two-photon Rabi frequencies of $2\\pi \\times 17$ MHz, loss-resolved qubit readout enabling fast calibration by reuse and refilling from an atom reservoir, and characterize performance via echo randomized benchmarking, symmetric stabilizer benchmarking, and quantum circuits with atom transport using SLM and AOD traps.",
+  "result": "Raw CZ gate error of 0.146(4)% improves to 0.059(3)% with loss postselection; error dominated by Rydberg state decay ($T_1 \\approx 72$ μs) and intermediate state scattering; loss per qubit per gate is 0.054(2)%, with 60% of total error from atom loss; cluster state circuits achieve 99.843(6)% and nonlocal 20-qubit circuits show agreement with numerical simulations including noise.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

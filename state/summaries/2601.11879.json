@@ -1,0 +1,8 @@
+{
+  "summary": "Single Er$^{3+}$ ions in a CMOS-compatible platform achieve record optical coherence times exceeding 500 μs in the telecom C-band at room temperature, surpassing previously cryogenic-only performance. Background-free upconversion-enabled single-photon readout and self-aligned nanofabrication enable scalable, individually addressable Er-qudits (five-level systems) without cryogenic cooling.",
+  "motivation": "Telecom quantum technologies require long quantum coherence at ambient conditions while maintaining CMOS compatibility and scalability, eliminating the need for cryogenic infrastructure.",
+  "method": "Self-aligned nanofabrication was used to spatially isolate individual Er$^{3+}$ ions, suppressing dephasing, with upconversion-based single-photon readout in the visible band to detect coherent transitions in the C-band.",
+  "result": "Optical coherence times exceed 500 μs at room temperature in the telecom C-band—a 900× improvement over prior vacuum-based systems at millikelvin temperatures—with background-free readout and demonstrated individual addressability.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

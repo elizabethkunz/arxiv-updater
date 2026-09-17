@@ -1,0 +1,226 @@
+{
+  "date": "2026-06-18",
+  "n_fetched": 94,
+  "papers": [
+    {
+      "id": "2606.18755",
+      "title": "Quantum simulation of neutrino oscillations with bosonic encoding",
+      "authors": [
+        "Sandeep Joshi"
+      ],
+      "abstract": "Superconducting qubits offer a versatile platform for quantum simulation. In this architecture, quantum information can be encoded in the bosonic modes of a microwave cavity, offering an alternative to conventional qubit-based encoding schemes. These cavity bosonic modes can be manipulated using a single ancillary qubit. In this work, we investigate the quantum simulation of two- and three-flavor neutrino oscillations using Fock-basis encoding of a cavity mode. We design pulse sequences for implementing the required unitary operations through selective number-dependent arbitrary phase (SNAP) and displacement gates. Pulse-level control is employed to realize high-fidelity gate operations on the encoded cavity mode. The resulting neutrino oscillation probabilities obtained from quantum simulation exhibit close agreement with the corresponding theoretical predictions, demonstrating the feasibility of cavity-based bosonic encoding schemes for quantum simulation.",
+      "categories": [
+        "quant-ph",
+        "hep-ph"
+      ],
+      "published": "2026-06-17",
+      "score": 0.7425230135064126,
+      "similar_to": [
+        {
+          "title": "Hardware-efficient quantum error correction via concatenated bosonic qubits",
+          "id": "2409.13025",
+          "similarity": 0.8121668100357056
+        },
+        {
+          "title": "Cavity quantum electrodynamics for superconducting electrical circuits: an architecture for quantum computation",
+          "id": null,
+          "similarity": 0.8097153902053833
+        }
+      ],
+      "summary": {
+        "summary": "This paper demonstrates quantum simulation of two- and three-flavor neutrino oscillations using Fock-basis encoding of a microwave cavity mode in superconducting circuits, with control via SNAP and displacement gates applied to an ancillary transmon qubit. Pulse-level simulations show oscillation probabilities in close agreement with theoretical predictions despite gate fidelities reduced to ~0.97 (two-flavor) and ~0.925 (three-flavor) by ancilla decoherence.",
+        "motivation": "Cavity bosonic encodings offer advantages over qubit-based approaches including long coherence times (~1 ms for 3D cavities) and reduced control hardware complexity, making them attractive for quantum simulation of particle physics phenomena.",
+        "method": "Arbitrary unitary operations on the cavity Fock subspace are implemented by interleaving sequences of displacement operations $D(\\alpha)$ (Gaussian pulses on cavity drive) and SNAP gates $S(\\vec{\\theta})$ (conditional number-dependent ancilla rotations via flat-top Gaussian pulses lasting ~2.77 µs). Two-flavor oscillations use direct compilation; three-flavor oscillations use optimized sequences of building blocks $B(\\alpha, \\vec{\\theta}) = D^\\dagger(\\alpha) S(\\vec{\\theta}) D(\\alpha)$ with gradient-descent parameter optimization via JAX.",
+        "result": "Direct-compilation fidelities reached $>0.99$ for two-flavor and $\\approx 0.99$ for three-flavor protocols; pulse-level simulations with $T_1 = 100$ µs and $T_\\phi \\approx 55$ µs yielded fidelities of $\\approx 0.97$ and $\\approx 0.925$ respectively, with simulated neutrino oscillation probabilities matching theory across the full range of $L/E$ values tested.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.19339",
+      "title": "Quantum solitons and their quantum walks in transmon arrays",
+      "authors": [
+        "Ben Blain",
+        "Giampiero Marchegiani",
+        "Luigi Amico",
+        "Gianluigi Catelani"
+      ],
+      "abstract": "Superconducting qubits are artificial atoms whose spectra and interactions can be engineered through appropriate circuit design, a versatility that can be exploited for quantum simulation. We theoretically investigate a linear array of capacitively coupled transmons, effectively described by a Bose-Hubbard Hamiltonian with attractive interaction. We revisit the discrete-soliton nature of the lowest-energy band of the spectrum, and identify spatially localized quantum solitons. The solitonic character of these states is revealed through their time evolution, which displays a quantum interference pattern, or quantum walk, highlighting their composite nature. We discuss protocols for preparing spatially localized quantum solitons that are compatible with current state-of-the-art tunable-transmon circuits. Our results demonstrate that superconducting circuits provide a promising and experimentally accessible platform for the investigation of quantum soliton physics.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall",
+        "cond-mat.quant-gas",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-06-17",
+      "score": 0.7418298441412501,
+      "similar_to": [
+        {
+          "title": "Controlling the spontaneous emission of a superconducting transmon qubit",
+          "id": "0803.4490",
+          "similarity": 0.8260180354118347
+        },
+        {
+          "title": "The superconducting grid-states qubit",
+          "id": "2509.14656",
+          "similarity": 0.8204687833786011
+        }
+      ],
+      "summary": {
+        "summary": "This work theoretically investigates spatially localized quantum solitons in linear arrays of capacitively coupled transmons described by the attractive Bose-Hubbard model, and proposes protocols for their preparation and characterization via quantum walks in transmon circuits. The solitonic states are superpositions of the lowest-energy band eigenstates with exponentially localized density profiles, revealing composite-particle behavior distinct from both single-particle and boson-stack dynamics.",
+        "motivation": "Quantum simulation with superconducting transmon arrays can realize the attractive Bose-Hubbard model, where strong correlations and particle clustering make classical simulation difficult; quantum walks of composite solitonic excitations provide both fundamental insight into quantum interference in interacting systems and potential applications in quantum-enhanced sensing.",
+        "method": "Three protocols construct spatially localized quantum solitons from soliton-band eigenstates (projected boson stacks, single-stack solitons, narrowest solitons); for transmon implementation, a non-adiabatic protocol prepares solitons by evolving a boson stack under constant pinning $\\Delta\\mu_i \\approx U(N-1)$ for time $t_0 \\approx \\pi/2|U|(N-1)$, then quenching to the uniform system. Fidelities exceed 99.8% for $N=2$ and 99.999% for $N\\geq5$ with typical transmon parameters ($E_J/E_C \\approx 50$–100, $J \\approx 1$–40 MHz, $|U| \\approx E_C/\\hbar \\sim$ hundreds of MHz).",
+        "result": "Quantum walks of localized solitons ($U=-10J$, $N=2,3$) show composite-particle behavior with reduced high-momentum components compared to unprojected boson stacks; Hellinger distances between soliton and single-particle density distributions remain smaller than boson-stack distances at short timescales, and single-boson occupation at array edges reaches percent level only after times $\\sim(M-1)/2\\cdot2\\tilde{J}$ compared to $\\sim(M-1)/2J$ for uncorrelated particles, enabling experimental discrimination via edge-site readout.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.19171",
+      "title": "Cavity-enhanced superconductivity in the two-dimensional limit of NbSe2",
+      "authors": [
+        "Hanxiang Zhang",
+        "Zexin Feng",
+        "I-Te Lu",
+        "Zhiwei Li",
+        "Songhao Guo",
+        "Qiuyu Shang",
+        "Thomas Tan",
+        "Xiaodan Lyu",
+        "Xiangming Shen",
+        "Dening Luan",
+        "Mingcheng Panmai",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Ranjan Singh",
+        "Angel Rubio",
+        "Weibo Gao"
+      ],
+      "abstract": "Vacuum electromagnetic fluctuations have emerged as a means of controlling collective quantum phases without external driving. Cavity-induced modification of superconductivity has been widely predicted. What sets the size of the effect, and which microscopic channel carries it, remain open. Here we couple few-layer NbSe2 to a terahertz complementary split-ring resonator (CSRR) and show that the enhancement grows sharply on approaching the two-dimensional limit. In bilayer NbSe2 the superconducting transition temperature rises by 10%, from 3.02 K to 3.41 K, on a cavity resonant at 0.92 THz - roughly four times the shift measured in a ten-layer device at the same resonance. Within a single device the shift maps onto the simulated cavity field profile, falling from 0.39 K at the field maximum to zero outside the resonator, with the lower critical field following the same spatial ordering; because all regions are measured on one continuous flake in a single cooldown, sample-to-sample variation is excluded by construction. The frequency dependence is non-monotonic, with suppression below resonance and maximal enhancement near 0.96 THz. Quantum electrodynamical density functional theory calculations show that cavity coupling redistributes spectral weight in the Eliashberg function, weakening the total electron-phonon coupling while hardening the logarithmic average phonon frequency; competition between the two reproduces a sign change in Tc. These results identify dimensionality, local field amplitude and detuning as the control parameters of cavity-enhanced superconductivity, and point to electron-phonon reweighting as its microscopic origin.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-06-17",
+      "score": 0.6071838382989657,
+      "similar_to": [
+        {
+          "title": "Cavity quantum electrodynamics for superconducting electrical circuits: an architecture for quantum computation",
+          "id": null,
+          "similarity": 0.8354978561401367
+        },
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.8151913285255432
+        }
+      ],
+      "summary": {
+        "summary": "Bilayer NbSe$_2$ coupled to a terahertz CSRR cavity shows a 10% enhancement of $T_c$ (from 3.02 K to 3.41 K) at 0.92 THz resonance, with the effect growing sharply in the two-dimensional limit and scaling roughly four times larger than in ten-layer devices. QED-DFT calculations show the enhancement arises from cavity-induced redistribution of spectral weight in the Eliashberg function, weakening electron-phonon coupling while hardening the logarithmic average phonon frequency, with the sign change in $T_c$ emerging from competition between these effects.",
+        "motivation": "Cavity-induced modification of superconductivity has been theoretically predicted, but the microscopic mechanism and scaling with material dimensionality remain unknown.",
+        "method": "Few-layer NbSe$_2$ flakes were coupled to a terahertz CSRR tuned to 0.92 THz, with $T_c$ and lower critical field measured spatially across the cavity field profile on a single continuous device; QED-DFT calculations tracked cavity-induced changes to the Eliashberg function.",
+        "result": "Bilayer NbSe$_2$ shows $\triangle T_c = +0.39$ K at the cavity field maximum, decreasing to zero outside the resonator, with frequency-dependent non-monotonic response peaking near 0.96 THz; the effect is approximately four times larger in bilayers than in ten-layer NbSe$_2$ at the same cavity frequency.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.7425,
+    0.7418,
+    0.6072,
+    0.3896,
+    0.3642,
+    0.259,
+    0.2453,
+    0.2411,
+    0.2324,
+    0.2085,
+    0.2035,
+    0.1956,
+    0.1951,
+    0.1913,
+    0.1844,
+    0.1682,
+    0.1653,
+    0.157,
+    0.145,
+    0.1357,
+    0.1132,
+    0.1043,
+    0.0988,
+    0.0985,
+    0.0972,
+    0.0942,
+    0.0839,
+    0.0834,
+    0.0785,
+    0.0783,
+    0.0741,
+    0.0734,
+    0.0615,
+    0.0566,
+    0.0554,
+    0.055,
+    0.0527,
+    0.0522,
+    0.0513,
+    0.0497,
+    0.0495,
+    0.0488,
+    0.0473,
+    0.047,
+    0.0421,
+    0.0394,
+    0.0356,
+    0.035,
+    0.0344,
+    0.032,
+    0.0315,
+    0.0304,
+    0.0292,
+    0.0291,
+    0.0279,
+    0.0277,
+    0.0258,
+    0.0254,
+    0.0223,
+    0.0221,
+    0.0219,
+    0.0219,
+    0.0212,
+    0.0193,
+    0.019,
+    0.0188,
+    0.018,
+    0.0146,
+    0.014,
+    0.0133,
+    0.0129,
+    0.0114,
+    0.0114,
+    0.0114,
+    0.0109,
+    0.0104,
+    0.0096,
+    0.0095,
+    0.0093,
+    0.0084,
+    0.0081,
+    0.0075,
+    0.0072,
+    0.0072,
+    0.007,
+    0.0067,
+    0.0061,
+    0.0053,
+    0.0045,
+    0.0045,
+    0.0039,
+    0.0036,
+    0.0034,
+    0.0027
+  ]
+}

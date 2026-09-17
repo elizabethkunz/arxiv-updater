@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates integration of Purcell filters into multilayer PCBs for superconducting quantum processors, with each embedded triangular patch antenna filter coupling to up to nine readout resonators and providing ~1000-fold radiative isolation at the qubit frequency. Experimental validation on a 35-qubit OQC-Toshiko device achieved median $T_1 = 84$ µs and $T_2^{\\mathrm{echo}} = 110$ µs while maintaining fast readout with external quality factors $Q_{\\mathrm{ext}} \\sim 8 \\times 10^3$.",
+  "motivation": "Purcell filtering in superconducting qubits requires careful layout to balance readout speed against coherence; existing on-chip solutions increase substrate complexity and device footprint, motivating a scalable off-chip integration approach.",
+  "method": "A 9–1 multiplexed filter was designed as a short-circuited triangular patch antenna at 9.8 GHz in a three-layer Rogers RT/duroid PCB with 0.9 GHz bandwidth, tiled to six filters (four 9–1 and two 3–1) for 35-qubit multiplexing, and validated via finite-element eigenmode simulations and cryogenic measurements at 11 mK.",
+  "result": "All measured qubit $T_1$ values exceeded the 39 µs no-filter radiative limit (best $T_1 = 128$ µs), confirming Purcell protection; simulations predicted $\\sim 28$ dB suppression of radiative decay at 4.4 GHz with resonator bandwidth spanning 700 MHz.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

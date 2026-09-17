@@ -1,0 +1,8 @@
+{
+  "summary": "This work develops a theoretical framework for optimizing Landau-Zener-Stückelberg-Majorana (LZSM) single-qubit gates in fluxonium circuits, incorporating multilevel dynamics, leakage mitigation, and open-system dissipation. Fast, high-fidelity Y(π/2) rotations are demonstrated with gate errors approaching $10^{-5}$ at 2 ns and $10^{-5}$ at 1.3 ns in optimal architectures accounting for environmental decoherence.",
+  "motivation": "LZSM protocols offer speed advantages over resonant Rabi-driven gates in low-frequency qubits with large anharmonicity, but standard two-level analytical tools neglect multilevel structure and strong-drive-dependent dissipation that become critical in real fluxonium devices.",
+  "method": "The authors derive analytical solutions via the counter-rotating hybridized rotating-wave approximation (CHRW) and a Floquet-Schrieffer-Wolf (FSW) effective Hamiltonian accounting for qubit-frequency renormalization by higher levels, identify leakage-suppression valleys at privileged frequencies $\\omega_d = \\omega_{21}/n$ ($n \\geq 2$), and analyze open-system fidelity using a Floquet-Born-Markov master equation capturing drive-amplitude-dependent $T_1(A_e, \\omega_d)$ from dielectric loss.",
+  "result": "For a moderate architecture with $\\{E_J, E_C, E_L\\} = \\{4, 1, 1\\} \\times 2\\pi$ GHz ($\\omega_{10}/2\\pi = 0.58$ GHz, $\\alpha/2\\pi = 2.81$ GHz), LZSM gates achieve infidelity $\\sim 10^{-5}$ and $t_g \\approx 1.92$ ns; optimization across architecture space reveals regimes around $E_L/E_J \\sim 0.1$ and $E_C/E_J \\sim 0.5$ achieving $\\mathcal{F}_g > 0.99995$ with $t_g < 1.3$ ns at $T_b = 15$ mK and $T_1^0 = 500$ μs.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

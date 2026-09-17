@@ -1,0 +1,8 @@
+{
+  "summary": "A simplified photolithography-based method for fabricating Al/AlO$_x$/Al Josephson junctions with 1–6 µm$^2$ areas and tunable resistance from below 50 Ω to ~1 kΩ is demonstrated, eliminating reactive ion etching and complex resist stacks. SQUIDs fabricated with this approach exhibit reduced resistance variation (±25%) compared to electron-beam lithography (±200%), stable flux response over 10+ thermal cycles, and parametric gain of ~40 dB with quantum-limited noise.",
+  "motivation": "Existing Josephson junction fabrication methods like the Dolan bridge and Manhattan techniques face challenges with stray junctions, resist damage, or complexity; a simpler, more reproducible approach is needed to enable widespread adoption of superconducting quantum technologies.",
+  "method": "Photolithography-patterned lift-off metallization combined with argon etching before aluminum deposition and controlled in-situ oxidation; SQUID-resonators are embedded in 3D cavities for characterization and parametric amplification.",
+  "result": "SQUIDs show symmetric, periodic flux response with no flux jumps or TLS-coupling signatures; 20 devices across multiple chips yield nominally identical performance; one device sustains unchanged response over 6 months with >10 thermal cycles to 10 mK; parametric amplifier achieves ~40 dB gain with half a photon added noise.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "Suspended lithium niobate acoustic resonator cavities supporting GHz-frequency antisymmetric $A_0$ Lamb waves are demonstrated with intrinsic quality factors reaching approximately 6000 at millikelvin temperatures. The devices are characterized across room and cryogenic regimes, with lumped-element parameters extracted to design inductive coupling to superconducting transmon qubits achieving coupling strengths above 1 MHz.",
+  "motivation": "Surface acoustic wave devices on bulk piezoelectric substrates suffer from bulk acoustic leakage losses; confining phonons to thin suspended membranes reduces this loss channel while maintaining piezoelectric coupling to superconducting qubits.",
+  "method": "200 nm Y-cut LiNbO$_3$ suspended cavities with aluminum IDTs (20 electrode pairs, 1 μm pitch) and 200-finger Bragg mirrors are characterized via vector network analyzer transmission and reflection measurements at room temperature and $\bar{10}$ mK, with finite element simulations to map the $A_0$ mode profile and BvD lumped-element fitting to extract $Q_i$, $Q_c$, and coupling parameters.",
+  "result": "At 10 mK, cavity RC-A (5 μm IDT-mirror spacing, tee configuration) achieves $Q_i \bar{6600}$ and $Q_c \bar{6350}$ at $-60$ dBm VNA power with estimated phonon occupation $N_{\text{ph}} \bar{25}$; $Q_i$ increases with phonon number and saturates near $N_{\text{ph}} \bar{100}$, consistent with two-level system saturation; coupling designs predict achievable transmon-resonator couplings $> 1$ MHz with aperture scaling to $C_0 = 0.7$ pF.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

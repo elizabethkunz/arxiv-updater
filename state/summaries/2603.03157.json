@@ -1,0 +1,8 @@
+{
+  "summary": "An ancilla-assisted gate-based protocol enhances sensitivity to hidden photon kinetic mixing using a single two-qubit entangling gate on NISQ devices, achieving up to 10-fold reduction in integration time compared to Rabi-sampling experiments. Under realistic noise with three years of data taking, the projected exclusion limit on the mixing parameter reaches $\\varepsilon \\approx 1 \\times 10^{-14}$ across $2.5$–$6.0$ GHz ($10$–$25$ µeV).",
+  "motivation": "Direct dark matter detection via transmon qubits requires either maintaining long-lived multi-qubit entangled states or accepting reduced sensitivity; this work exploits the fact that weak Rabi oscillations from hidden photons on the qubit can be enhanced with modest gate fidelity ($>99\\%$) without such constraints.",
+  "method": "After a sensing qubit interacts with dark matter for time $\\tau \\sim 100$ µs, a CNOT, X-gate, and controlled-$R_Y(\\beta)$ gate transform the state; post-selection on ancilla collapse to $|1_A\\rangle$ creates signal amplification via $P_\\sim \\propto \\sin^{-2}(\\beta/2) \\, P_e$ for small excitation probability $P_e$, with noise model including $T_1$, $T_\\phi$, thermal occupation, and readout/preparation errors.",
+  "result": "Speedup factor $\\mathcal{G} = 4$–$6$ achieved when readout error $r \\gtrsim 2\\%$ and preparation error $p \\lesssim 0.3\\%$; scaling to $n$ sensing qubits coupled sequentially to one ancilla gives $\\mathcal{G} \\to 2\\mathcal{G}$ asymptotically, reaching $\\sim 10$-fold enhancement with 120 physical qubits in realistic hardware regimes.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

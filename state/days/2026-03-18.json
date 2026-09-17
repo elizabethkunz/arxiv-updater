@@ -1,0 +1,439 @@
+{
+  "date": "2026-03-18",
+  "n_fetched": 100,
+  "papers": [
+    {
+      "id": "2603.16494",
+      "title": "Distinguishing types of correlated errors in superconducting qubits",
+      "authors": [
+        "Hannah P. Binney",
+        "H. Douglas Pinckney",
+        "Kate Azar",
+        "Patrick M. Harrington",
+        "Shantanu Jha",
+        "Mingyu Li",
+        "Jiatong Yang",
+        "Felipe Contipelli",
+        "Renée DePencier Piñero",
+        "Michael Gingras",
+        "Bethany M. Niedzielski",
+        "Hannah Stickler",
+        "Mollie E. Schwartz",
+        "Jeffrey A. Grover",
+        "Max Hays",
+        "Kyle Serniak",
+        "Joseph A. Formaggio",
+        "William D. Oliver"
+      ],
+      "abstract": "Errors in superconducting qubits that are correlated in time and space can pose problems for quantum error correction codes. Radiation from cosmic and terrestrial sources can increase the quasiparticle (QP) density in a superconducting qubit device, resulting in an increased rate of QPs tunneling across proximal Josephson junctions (JJs) and causing correlated errors. Mechanical vibrations, such as those induced by the pulse tube (PT) in a dry dilution refrigerator, are also a known source of correlated errors. We measure two types of errors in the same device, linking the first to ionizing radiation and the second to PT operation. We present a method for distinguishing these two types of errors by their temporal, spatial, and frequency domain features, enabling physically motivated error-mitigation strategies. We also present accelerometer data to study the correlation between PT-induced vibrations and the errors. We measure arrays of transmon qubits where the difference in superconducting gap across the JJ is less than the qubit energy, as well as those where the gap is greater than the qubit energy, which has been shown to mitigate radiation-induced errors. The rate of both types of errors is reduced in these latter devices, suggesting that gap engineering is also protective against PT-induced errors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-17",
+      "score": 0.9750623055320783,
+      "similar_to": [
+        {
+          "title": "Correlated Phase Error Bursts in a Gap-Engineered Superconducting Qubit Array",
+          "id": null,
+          "similarity": 0.9106570482254028
+        },
+        {
+          "title": "Correlated Charge Noise and Relaxation Errors in Superconducting Qubits",
+          "id": "2012.06029",
+          "similarity": 0.8981583118438721
+        }
+      ],
+      "summary": {
+        "summary": "This work distinguishes two populations of correlated errors in superconducting transmon qubits: radiation-induced events with $\\tau \\approx 5$ ms decay time and pulse-tube (PT)-induced events with longer lifetimes occurring at $\\approx 1.4$ Hz. Gap-engineered devices with $\\delta\\Delta_{JJ} > f_q$ show suppression of both error types, suggesting a quasiparticle-mediated mechanism for PT errors.",
+        "motivation": "Correlated errors in superconducting qubits degrade quantum error correction performance; understanding their sources enables targeted mitigation. While radiation-induced errors are well-studied, PT vibrations in dilution refrigerators represent an under-characterized and potentially larger source of correlated errors in laboratory-scale systems.",
+        "method": "Matched filtering with exponential template ($\\tau_0 = 5$ ms) was applied to relaxation measurements from 10-qubit arrays in transmon devices. Events were characterized by filter score, decay lifetime, spatial distribution across the qubit array, and frequency content. PT-off measurements, two-DR comparisons, and room-temperature accelerometer measurements (50 kHz sampling) validated the PT-error hypothesis.",
+        "result": "In DR1, $\\approx 99\\%$ of detected events were PT-induced; they vanished when the PT was turned off and did not occur in DR2 (which had lower acceleration at PT frequency). Gap-engineered devices ($d_2$: $\\delta\\Delta_{JJ} \\approx 10$ GHz, $d_3$: $\\delta\\Delta_{JJ} \\approx 7$ GHz) showed no detectable radiation or PT-induced events in the same cool-down, while unengineered device $d_1$ ($\\delta\\Delta_{JJ} < f_q$) exhibited both. PT-off operation increased estimated $T_1$ by $\\approx 9$ µs; DR2 showed 2× higher average $T_1$ (76 vs 38 µs) and 2.2× higher $T_2$ (79 vs 36 µs) than DR1.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.16693",
+      "title": "A Compact Broadband Purcell Filter for Superconducting Quantum Circuits in a 3D Flip-Chip Architecture",
+      "authors": [
+        "Zhen Luo",
+        "Lea Richard",
+        "Ivan Tsitsilin",
+        "Anirban Bhattacharjee",
+        "Christian M. F. Schneider",
+        "Stefan Filipp",
+        "Amelie Hagelauer"
+      ],
+      "abstract": "Fast and high-fidelity qubit readout requires strong coupling between the readout resonator and the feedline. However, such coupling unavoidably enhances qubit decay through the Purcell effect. We present a four-pole broadband Purcell filter implemented on a 3D flip-chip platform to overcome this trade-off. The filter provides a flat 1 GHz passband centered at 7.68 GHz and achieves more than 45 dB suppression at typical qubit frequencies. We demonstrate the filter's compatibility with multiplexed readout using a test chip that integrates six floating readout resonators strongly coupled within the passband. The chip is fabricated using a 150 nm Niobium (Nb) thin-film process and characterized at 20 mK in a cryogenic measurement setup. We also develop an analytical model that accurately captures the filter response and determines the resonance frequencies and external quality factors of the floating resonators directly from their physical geometry, enabling rapid circuit synthesis and design optimization. The proposed design is compact and fabrication-tolerant, making it a practical solution for large-scale superconducting quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-17",
+      "score": 0.9744355861832684,
+      "similar_to": [
+        {
+          "title": "Broadband Purcell Filter for Fast Superconducting Qubit Reset and Readout",
+          "id": "2609.14081",
+          "similarity": 0.9174327850341797
+        },
+        {
+          "title": "High-performance multiplexed readout of superconducting qubits with a tunable broadband Purcell filter",
+          "id": "2509.11822",
+          "similarity": 0.9056052565574646
+        }
+      ],
+      "summary": {
+        "summary": "A four-pole broadband Purcell filter implemented on a 3D flip-chip platform achieves 1 GHz flat passband centered at 7.68 GHz with >45 dB suppression at typical qubit frequencies, demonstrated with six multiplexed readout resonators on a compact 10×6 mm² chip fabricated in 150 nm Nb. An analytical model based on coupling matrices accurately predicts the transmission response and enables rapid circuit synthesis, accounting for spiral and CPW resonators with conformal-mapping calculations and validated against HFSS eigenmode and driven-modal simulations.",
+        "motivation": "Fast, high-fidelity qubit readout requires strong resonator-feedline coupling, but this inevitably enhances Purcell decay; existing single-pole filters offer only ~200 MHz passband, limiting multiplexed readout density and frequency discrimination.",
+        "method": "Four coupled resonators (input/output spirals, two inner CPW $\\lambda/4$ lines) form a bandpass topology with six floating readout resonators coupled via parallel-plate capacitances and parallel-coupled line sections; coupling matrix formalism with conformal-mapping techniques for self- and mutual-coupling coefficients predicts $S_{21}$ including frequency-dependent response.",
+        "result": "Measured passband transmission exhibits flat response from 7.2–8.2 GHz with six readout resonators spaced ~100 MHz apart; extracted resonance frequencies agree with simulation within <100 MHz (kinetic inductance effect); external $Q_e$ varies 0.9–2.4 × 10³ with ~30% deviation from simulation attributed to 9.91 ± 0.12 µm flip-chip spacing nonuniformity.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.16608",
+      "title": "CryoCMOS RF multiplexer for superconducting qubit control, readout and flux biasing at millikelvin temperatures with picowatt power consumption",
+      "authors": [
+        "Liam Fallik",
+        "Sriram Balamurali",
+        "Alican Caglar",
+        "Rohith Acharya",
+        "Jacques Van Damme",
+        "Tsvetan Ivanov",
+        "Shana Massar",
+        "Ruben Asanovski",
+        "A. M. Vadiraj",
+        "Massimo Mongillo",
+        "Jan Craninckx",
+        "Alexander Grill",
+        "Danny Wan",
+        "Anton Potočnik",
+        "Kristiaan De Greve"
+      ],
+      "abstract": "Large-scale cryogenic quantum systems are constrained by an input-output bottleneck between room-temperature electronics and millikelvin stages, particularly in superconducting qubit platforms. This bottleneck is most acute for output lines, where bulky and expensive microwave components limit scalability. A promising approach for scalable characterization and testing is to perform signal multiplexing directly at the qubit plane. We demonstrate a cryogenic CMOS (cryoCMOS) RF multiplexer operating at 10 millikelvin with record-low static power consumption of 200 pW. The device provides < 2 dB insertion loss and > 30 dB isolation across DC-8 GHz. Direct connection to transmon qubits marginally affects coherence times in the range of 100 microseconds, enabling multiplexing of readout, flux and, in principle, XY drive lines. This work introduces cryoCMOS multiplexers as valuable tools for scalable, high-throughput cryogenic characterization and testing, and advances co-integrated quantum-classical control for future large-scale quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-17",
+      "score": 0.8828825366028162,
+      "similar_to": [
+        {
+          "title": "Wireless millikelvin interconnects for superconducting quantum hardware",
+          "id": "2607.13834",
+          "similarity": 0.8772590160369873
+        },
+        {
+          "title": "Superconducting Flux Memory for Cryogenic Applications",
+          "id": "2609.00772",
+          "similarity": 0.8464391231536865
+        }
+      ],
+      "summary": {
+        "summary": "A cryoCMOS RF multiplexer operating at 10 mK with 200 pW static power dissipation achieves $<2$ dB insertion loss and $>30$ dB isolation across DC–8 GHz, enabling integrated multiplexing of readout, flux bias, and drive signals at the qubit plane. Direct connection to transmon qubits preserves coherence times in the 100 µs range, addressing the input-output bottleneck in large-scale superconducting qubit systems.",
+        "motivation": "Superconducting qubit platforms face severe cryogenic wiring constraints for output signals, where room-temperature components limit scalability; moving multiplexing to the millikelvin stage can alleviate this bottleneck.",
+        "method": "A cryogenic CMOS multiplexer circuit was designed and characterized operating at 10 mK, with integration tests performed on transmon qubits to measure coherence degradation and isolation performance across the DC–8 GHz band.",
+        "result": "The device achieves record-low 200 pW quiescent power consumption with $<2$ dB insertion loss, $>30$ dB isolation, and marginal coherence time degradation in transmon qubits, enabling simultaneous multiplexing of readout, flux bias, and XY control lines.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.15804",
+      "title": "Enhancing qubit readout fidelity with two-mode squeezing of the coherent measurement signal",
+      "authors": [
+        "Baleegh Abdo",
+        "William Shanks",
+        "Oblesh Jinka",
+        "J. R. Rozen"
+      ],
+      "abstract": "The ability to perform high-fidelity quantum nondemolition qubit readout is pivotal for the realization of large and powerful quantum computers. Such readout of superconducting qubits is generally enabled by amplifying the weak dispersive measurement signals using phase-preserving quantum-limited Josephson amplifiers with sufficient gain to dilute the contribution of the added noise by the output chain. Here, we further enhance the qubit readout fidelity by (1) simultaneously measuring the two-mode squeezed states of the amplified readout signals at the signal and idler frequencies of the nondegenerate amplifier and (2) coherently combining them at the classical processing stage following a relative rotation that maximizes the signal to noise ratio of the qubit-encoded readout quadrature. Such readout scheme exhibits enhancement in the readout fidelity for all practical values of amplifier gain and noise added by the output chain and is fully compatible with frequency multiplexed setups used in large quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-16",
+      "score": 0.8169805857108885,
+      "similar_to": [
+        {
+          "title": "Transmon qubit readout fidelity at the threshold for quantum error correction without a quantum-limited amplifier",
+          "id": "2208.05879",
+          "similarity": 0.879943311214447
+        },
+        {
+          "title": "Realizing Rapid, High-Fidelity, Single-Shot Dispersive Readout of Superconducting Qubits",
+          "id": "1701.06933",
+          "similarity": 0.8643167018890381
+        }
+      ],
+      "summary": {
+        "summary": "This work enhances superconducting qubit readout fidelity by exploiting two-mode squeezed states generated at the signal and idler frequencies of a nondegenerate Josephson mixer, coherently combining simultaneous measurements to amplify the qubit-encoded quadrature while suppressing noise. The scheme achieves fidelity improvements of 2–6% for practical gains (2–13 dB) and noise levels (8–50 photons), with improvements of 0.05–0.25% remaining possible above 99.5% fidelity at $G = 20$ dB, without requiring hardware changes or in-situ phase matching.",
+        "motivation": "Standard dispersive readout of superconducting qubits using phase-preserving quantum-limited amplifiers (Josephson parametric amplifiers, traveling-wave parametric amplifiers) suffers from noise added by subsequent amplification stages in realistic output chains, which typically contain 3–10 dB insertion loss and elevates effective added noise to 20–100 photons at the HEMT input, motivating methods to further enhance readout SNR.",
+        "method": "A cQED device with a transmon qubit coupled to a superconducting readout resonator outputs measurements amplified by a three-wave Josephson mixer (JM) with gain $G = 1.3$–4 dB and added noise ≈0.5 photons. Measurements at both output ports $a$ and $b$ (signal and idler at frequencies $f_a = 7.23$ GHz and $f_b = 9.71$ GHz) are simultaneously acquired, rotated by a relative phase $\\phi$ to optimize SNR, then coherently combined by adding the rotated quadratures $(I_a + I_b^{\\text{rot}}, Q_a + Q_b^{\\text{rot}})$ to antisqueeze the qubit-carrying quadrature.",
+        "result": "At fixed $\\bar{n}_{\\text{in}} = 90$, the combined mode achieves maximum assignment fidelity $F_{ab,\\max} > 0.99$ vs $F_a \\approx 0.985$ for single-mode readout; power SNR enhancements exceed a factor of two at $G = 2.3$–4 dB (e.g., $R_{ab,\\max}/R_a = 1.66$ at $G = 8$ dB and $N_{\\text{sys}} = 50$ photons); and $\\Delta F = F_{ab,\\max} - F_a$ remains positive for all practical gains $G > 1$ dB and noise $N_{\\text{sys}} > 0.5$ photons.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.16522",
+      "title": "Stroboscopic detection of itinerant microwave photons",
+      "authors": [
+        "Hanna Zeller",
+        "Lukas Danner",
+        "Max Hofheinz",
+        "Ciprian Padurariu",
+        "Joachim Ankerhold",
+        "Björn Kubala"
+      ],
+      "abstract": "We present a novel scheme to detect itinerant microwave radiation at the single photon level. Using existing Josephson-photonics devices, where two microwave cavities are coupled by a dc-voltage biased superconducting junction, we theoretically show how to implement a stroboscopically repeated, near-projective measurement of a photon impinging on one of the cavities. Optimizing rate, duration, and strength of the measurement by flux control of the junction and developing a threshold protocol to detect the photon from a homodyne measurement of the radiation output of the other cavity, we achieve highly efficient detection with low dark counts. By cascading the detector with a preamplifier, where a similar two-cavity Josephson-photonics device acts as a photon multiplier, we can further improve the device to reach a detection efficiency of $88.5 \\%$ with a dark count rate of $\\sim10^{-4} γ_a$, set by the resonance width $γ_a$ of the absorbing cavity. These results for a multiplication factor of two suggest that near-unity efficiencies may be reached for higher multiplication factors.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-03-17",
+      "score": 0.7695086653470604,
+      "similar_to": [
+        {
+          "title": "Enhancing the sensitivity of single microwave photon detection with bandwidth tunability",
+          "id": "2501.07354",
+          "similarity": 0.8740582466125488
+        },
+        {
+          "title": "Always-on, highly efficient microwave photon detector based on a superconducting artificial molecule",
+          "id": "2608.12972",
+          "similarity": 0.8599303960800171
+        }
+      ],
+      "summary": {
+        "summary": "This paper presents a scheme for single-photon detection of itinerant microwave radiation using stroboscopically repeated projective measurements of a cavity coupled to a dc-biased Josephson junction device. By cascading a photon multiplier with the detector, detection efficiencies of 88.5% with dark counts $\\sim 10^{-4} \\gamma_a$ are achieved theoretically, promising near-unity efficiency for higher multiplication factors.",
+        "motivation": "Efficient single-photon detection of itinerant microwave radiation is essential for quantum information, sensing, and communication with superconducting devices, yet remains challenging due to measurement backaction limiting cavity absorption.",
+        "method": "Two microwave cavities coupled by a dc-voltage biased Josephson junction implement near-projective measurements: the junction creates state-dependent driving of one cavity via Bessel function renormalization, detected by homodyne measurement of its output. Stroboscopic switching of the coupling at optimal rate $\\gamma_m \\approx 0.4 \\gamma_a$ balances quantum Zeno suppression against detection probability. A second identical JPD operates as a photon multiplier ($n=2$) in preamplification configuration.",
+        "result": "The detector alone achieves 69.8% efficiency with 0.116 × 10$^{-3} \\gamma_a$ dark rate. With $n=2$ preamplification, efficiency reaches 88.5% at comparable dark rate ($10^{-4} \\gamma_a$), approaching the 96% upper limit for independent two-photon detection and suggesting near-unity efficiency is attainable with higher multiplication factors.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.16203",
+      "title": "A Scalable Open-Source QEC System with Sub-Microsecond Decoding-Feedback Latency",
+      "authors": [
+        "Junyi Liu",
+        "Yi Lee",
+        "Yilun Xu",
+        "Gang Huang",
+        "Xiaodi Wu"
+      ],
+      "abstract": "Quantum error correction (QEC) is essential for realizing large-scale, fault-tolerant quantum computation, yet its practical implementation remains a major engineering challenge. In particular, QEC demands precise real-time control of a large number of qubits and low-latency, high-throughput and accurate decoding of error syndromes. While most prior work has focused primarily on decoder design, the overall performance of any QEC system depends critically on all its subsystems including control, communication, and decoding, as well as their integration. To address this challenge, we present an open-source, fully integrated QEC system built on RISC-Q, a generator for RISC-V-based quantum control architectures. Implemented on RFSoC FPGAs, our system prototype integrates real-time qubit control, a scalable distributed multi-board architecture, and the state-of-the-art hardware QEC decoder within a low-latency, high-throughput decoding pipeline, forming a complete hardware platform ready for deployment with superconducting qubits. Experimental evaluation on a three-board prototype based on AMD ZCU216 RFSoCs demonstrates an end-to-end QEC decoding-feedback latency of 446 ns for a distance-3 surface code, including syndrome aggregation, network communication, syndrome decoding, and error distribution. Extrapolating from measured subsystem performance and state-of-the-art decoder benchmarks, the architecture can achieve sub-microsecond decoding-feedback latency up to a distance-21 surface code ($\\sim$881 physical qubits) when scaled to larger hardware configurations.",
+      "categories": [
+        "quant-ph",
+        "cs.AR"
+      ],
+      "published": "2026-03-17",
+      "score": 0.6373995301759013,
+      "similar_to": [
+        {
+          "title": "Demonstrating Quantum Error Correction that Extends the Lifetime of Quantum Information",
+          "id": "1602.04768",
+          "similarity": 0.8733161687850952
+        },
+        {
+          "title": "Real-time quantum error correction beyond break-even",
+          "id": "2211.09116",
+          "similarity": 0.8538535237312317
+        }
+      ],
+      "summary": {
+        "summary": "This work presents a fully integrated, open-source quantum error correction (QEC) system built on RISC-Q and implemented on AMD ZCU216 RFSoCs, combining distributed multi-core qubit control, fiber-optic networking, and hardware-accelerated decoding. The system achieves measured end-to-end decoding-feedback latency of 446 ns for a distance-3 surface code and extrapolates to sub-microsecond latency up to distance-21 surface codes (~881 physical qubits).",
+        "motivation": "While QEC is essential for fault-tolerant quantum computation, prior work has focused primarily on decoder design in isolation, leaving the integration of control, communication, and decoding subsystems as an open engineering challenge. Achieving sub-microsecond feedback latency comparable to Google's 1.1 µs QEC cycle time while scaling to hundreds of qubits requires holistic system design.",
+        "method": "The system employs a hierarchical architecture with dedicated RISC-V cores (500 MHz) per qubit on leaf nodes, centralized Helios decoder at the root, fiber-optic tree-topology networking using custom 64B/66B protocols achieving 156 ns one-way latency, and sub-nanosecond synchronization via lightweight Precision Time Protocol. All components integrate in hardware on FPGAs with deterministic real-time execution, eliminating software overhead.",
+        "result": "Measured end-to-end decoding-feedback latency is 446 ns for distance-3 surface code (206 ns aggregation + 56 ns decode + 189 ns error distribution); extrapolation predicts 881 ns latency at distance-21 with one router layer and 476+ qubits, maintaining sub-microsecond performance while achieving 38.26 Gb/s decoder throughput sufficient for 1 µs QEC cycles.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.15758",
+      "title": "Quantum Noise Suppression at Scale with Crosstalk-Robust Gate Sets",
+      "authors": [
+        "Andy J. Goldschmidt",
+        "Emilio Peláez Cisneros",
+        "Ryan Sitler",
+        "Kevin Olsson",
+        "Kaitlin N. Smith",
+        "Gregory Quiroz"
+      ],
+      "abstract": "We introduce crosstalk-robust gate sets, which are obtained using a novel, scalable optimal control problem exploiting locality. Through the suppression of pairwise quantum crosstalk, the gate sets enable robustness that extends to multi-qubit circuits. The IBM Quantum Platform devices provide a testbed for our gate sets, where we study their efficacy via error suppression protocols and randomized parallel single-qubit circuits of up to eight qubits. Furthermore, we provide the first known assessment of the impact of complete optimal control gate sets on quantum algorithms. Using a Hamiltonian simulation of a four-qubit transverse field Ising model, we show that noise-informed gates enhance median algorithmic performance by a factor of four over baseline Gaussian gates using the same calibration procedures. Lastly, we provide numerical evidence that optimized gate sets enable larger qubit-qubit coupling strengths that can cut two-qubit gate times in half. This result confirms that hardware-software co-design using quantum optimal control can create new opportunities for quantum computing architectures.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-16",
+      "score": 0.6028174736940004,
+      "similar_to": [
+        {
+          "title": "Crosstalk In Contemporary Quantum Devices",
+          "id": "2605.26528",
+          "similarity": 0.8616503477096558
+        },
+        {
+          "title": "Quantum crosstalk cancellation for fast entangling gates and improved multi-qubit performance",
+          "id": "2106.00675",
+          "similarity": 0.857089638710022
+        }
+      ],
+      "summary": {
+        "summary": "This work introduces crosstalk-robust gate sets (CRGS) designed via optimal control to suppress pairwise quantum crosstalk in parallel single-qubit operations on superconducting qubit devices. Demonstrations on IBM Brisbane (127-qubit Eagle processor with heavy-hex layout) and in-house transmon hardware show $4\\times$ median improvement in transverse-field Ising model simulation fidelity, $4$–$5\\times$ reduction in decay rates under dynamical decoupling, and enable faster two-qubit gates through hardware–software co-design.",
+        "motivation": "Quantum crosstalk from always-on static couplings between transmons degrades fidelity in multi-qubit circuits and limits scalability; software-only approaches avoid hardware overhead but have not been comprehensively evaluated at the algorithmic level.",
+        "method": "Optimal control problems minimizing error susceptibility $\\mathcal{R}(\\mathbf{Z}; H_{\\text{error}})$ to $ZZ$ crosstalk are formulated using graph coloring of the device connectivity. The approach achieves linear scaling by exploiting locality: the total crosstalk sensitivity factors as $\\sum_{i,j \\in E} \\bar{\\mathcal{R}}(\\mathbf{Z}_i, \\mathbf{Z}_j, \\sigma_Z^{(i)}\\sigma_Z^{(j)})$, requiring only independent two-qubit trajectories. CRGS are calibrated using standard Qiskit Pulse routines and integrated via a transpilation pass that schedules parallel gates without crosstalk accumulation.",
+        "result": "On IBM Brisbane: random Clifford circuits show $1.6\\%$ simultaneous four-qubit gate error versus $9.3\\%$ for Gaussian gates; $XY_4$ dynamical decoupling achieves $0.039$ MHz decay rate over $0.163$ MHz for baseline on eight qubits. TFIM simulation reaches $50\\times$ better accuracy after one Trotter step and $4\\times$ median improvement. Simulations predict $3.4\\times$ and $11.3\\times$ fidelity improvements over detuning-robust and Gaussian gates at $J=2$ coupling, with two-qubit gate times reduced by half while maintaining performance.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.16502",
+      "title": "High Fidelity Single-NV Qubit Quantum State Tomography by Photoelectric Readout",
+      "authors": [
+        "Boo Carmans",
+        "Michael Petrov",
+        "Milos Nesladek"
+      ],
+      "abstract": "Quantum computing is a rapidly developing field. However, the most commonly used qubits require cryogenic conditions to operate, which increases the costs and puts constraints on the up-scaling. Ambient solid-state qubits provide an alternative with potential for large-scale application. The nitrogen-vacancy (NV) center in diamond is one of the main candidates for solid-state computing architectures at room temperature and has proven to be competitive in terms of gate fidelity, quantum error correction, couplings, etc. Each NV center has an associated electronic spin that is conventionally read out by photoluminescence. However, regarding the creation of small, ambient NV-based quantum processors, the optical readout introduces limitations on the collection efficiency and resolution of the readout as well as the size of the final device and its integration into standard semiconductor architectures. In this work, we investigate the competitiveness of the photoelectric readout versus the traditional optical readout. In particular, we report on using photoelectrical detection to perform quantum state tomography measurements on a single NV center. We achieve the fidelity $0.995 \\pm 0.0062$ for state reconstruction, comparable to optical measurements, demonstrating that the fidelity does not suffer from the adapted readout, highlighting the value of photoelectric detection for NV-based quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-17",
+      "score": 0.5290787529989377,
+      "similar_to": [
+        {
+          "title": "Transmon qubit readout fidelity at the threshold for quantum error correction without a quantum-limited amplifier",
+          "id": "2208.05879",
+          "similarity": 0.8357094526290894
+        },
+        {
+          "title": "Realizing Rapid, High-Fidelity, Single-Shot Dispersive Readout of Superconducting Qubits",
+          "id": "1701.06933",
+          "similarity": 0.8208010792732239
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates Rabi phase quantum state tomography on a single NV center spin using photoelectric readout instead of conventional optical detection, achieving a reconstruction fidelity of $0.995 \\ \\pm 0.0062$ across 21 measurements. The photoelectric approach offers improved spatial resolution, integration with electronics, and compact device scaling while maintaining fidelity comparable to optical readout.",
+        "motivation": "NV centers in diamond are promising room-temperature solid-state qubits, but optical readout suffers from poor collection efficiency and spatial resolution limited by the Abbe diffraction limit, hindering scalability of multi-qubit processors on integrated platforms.",
+        "method": "Single NV electron spins in HPHT diamond (type IIA, <10 ppb nitrogen) were manipulated via microwave pulses and read out using photoelectric detection of magnetic resonance (PDMR), wherein a two-photon process ionizes the NV$^-$ center; the resulting photocurrent was amplified and measured with a picoammeter. Rabi phase quantum state tomography was performed at room temperature using dual-axis Rabi measurements with 500 ms envelope duration to determine polar ($\\theta$) and azimuthal ($\\phi$) angles on the Bloch sphere.",
+        "result": "PC-RPQST achieved $F = 0.995 \\pm 0.0062$ across 10 distinct spin states sampled on the Bloch sphere, matching simultaneous optical RPQST measurements ($F = 0.995 \\pm 0.0081$) and prior results ($F = 0.995 \\pm 0.0048$), with systematic-error-free optimization predicting $F = 0.998 \\pm 0.001$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9751,
+    0.9744,
+    0.8829,
+    0.817,
+    0.7695,
+    0.6374,
+    0.6028,
+    0.5291,
+    0.3453,
+    0.3421,
+    0.3331,
+    0.3067,
+    0.2526,
+    0.233,
+    0.2282,
+    0.1926,
+    0.1898,
+    0.1403,
+    0.136,
+    0.122,
+    0.1154,
+    0.1125,
+    0.1115,
+    0.1047,
+    0.1022,
+    0.097,
+    0.0947,
+    0.0874,
+    0.0826,
+    0.0801,
+    0.0793,
+    0.0701,
+    0.0694,
+    0.0691,
+    0.0677,
+    0.062,
+    0.057,
+    0.0542,
+    0.052,
+    0.0512,
+    0.0499,
+    0.0468,
+    0.0451,
+    0.0442,
+    0.0442,
+    0.0437,
+    0.0425,
+    0.0396,
+    0.0393,
+    0.0366,
+    0.0362,
+    0.0351,
+    0.0338,
+    0.033,
+    0.0314,
+    0.0304,
+    0.03,
+    0.0264,
+    0.026,
+    0.0255,
+    0.0232,
+    0.0228,
+    0.0227,
+    0.022,
+    0.0215,
+    0.0212,
+    0.0203,
+    0.019,
+    0.0182,
+    0.0173,
+    0.017,
+    0.017,
+    0.0161,
+    0.0147,
+    0.0147,
+    0.0145,
+    0.0141,
+    0.014,
+    0.0133,
+    0.0132,
+    0.012,
+    0.0119,
+    0.0117,
+    0.0106,
+    0.0099,
+    0.0096,
+    0.0093,
+    0.0085,
+    0.0079,
+    0.0074,
+    0.0065,
+    0.0057,
+    0.0052,
+    0.005,
+    0.0044,
+    0.0043,
+    0.0042,
+    0.004,
+    0.002,
+    0.0014
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "Niobium coplanar quarter-wave resonators exhibit staircase-like jumps in resonance frequency and quality factor when exposed to perpendicular magnetic fields up to 40 Oe, with the jumps forming an equidistant series at $\\Delta H \\simeq 1.7$–$1.8$ Oe upon field reversal. These signatures are attributed to discrete multiple-vortex entry and exit events, with the effect strongly dependent on superconducting film quality and persistent only in higher-quality samples above 5 K.",
+  "motivation": "Abrikosov vortices limit the performance of superconducting microwave resonators in perpendicular magnetic fields, yet the discrete nature of vortex entry and collective vortex–antivortex dynamics remain poorly understood. Understanding this is critical for reliable design of field-compatible cryogenic circuits and quantum processors.",
+  "method": "High-resolution magnetospectroscopy of 100 nm niobium coplanar resonators (center line width $W = 30$ µm, $Z_0 = 50$ Ω) on two chips with different film quality, sweeping perpendicular fields at rates $\\sim 0.2$ Oe/s between 18 mK and 5 K, extracting $f_r$ and $Q_i$ by asymmetric Lorentzian fits; validated with analytical and Ginzburg–Landau calculations of vortex-induced kinetic inductance.",
+  "result": "Upon field reversal, frequency jumps form equidistant sequences with $\\Delta H \\simeq 1.7$–$1.8$ Oe; inductance changes $\\delta L \\sim 0.1$–$1$ pH per jump imply $\\delta N \\sim 10^2$ vortex entries; sample A (Si/SiO$_2$, $T_c = 8.7$ K, larger grains) preserves equidistant jumps to 5 K, while sample B (high-resistivity Si, $T_c = 6.1$ K, finer grains $\\sim 10$ nm) shows irregular steps that smear by 4.5 K.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

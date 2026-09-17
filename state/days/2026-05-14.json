@@ -1,0 +1,171 @@
+{
+  "date": "2026-05-14",
+  "n_fetched": 86,
+  "papers": [
+    {
+      "id": "2605.12588",
+      "title": "Coherent control of spinmons",
+      "authors": [
+        "Johanne Bratland Tjernshaugen",
+        "Florinda Viñas Boström",
+        "Jeroen Danon",
+        "Jacob Linder",
+        "Karsten Flensberg",
+        "Antonio L. R. Manesco"
+      ],
+      "abstract": "The protection of superconducting qubits from certain noise sources often comes at the cost of increased sensitivity to other decoherence channels. Here, we explore a route to avoid this tradeoff by encoding quantum information in quantum states of a transmon entangled with the spin of a trapped Andreev quasiparticle. We term such devices spinmons. We lift the spinmon Kramers degeneracy by introducing a Zeeman field and develop two routes for full qubit control via electrostatic gates and an AC flux drive, providing multiple directions for experimental implementations. Finally, we compute coherence times and verify the qubit robustness against flux and charge noise sources.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.supr-con",
+        "quant-ph"
+      ],
+      "published": "2026-05-12",
+      "score": 0.8401723606043783,
+      "similar_to": [
+        {
+          "title": "Controlling the spontaneous emission of a superconducting transmon qubit",
+          "id": "0803.4490",
+          "similarity": 0.8414335250854492
+        },
+        {
+          "title": "Millisecond coherence in a superconducting qubit",
+          "id": "2103.08578",
+          "similarity": 0.8317443132400513
+        }
+      ],
+      "summary": {
+        "summary": "Spinmons are superconducting qubits formed by entangling a transmon with the spin of a trapped Andreev quasiparticle in a mesoscopic Josephson junction, offering potential simultaneous protection against multiple decoherence channels. Full qubit control is achieved through electrostatic gating and AC flux driving, with computed relaxation rates below 100 Hz and protection against charge noise via operation at a stationary point of qubit frequency.",
+        "motivation": "Single-degree-of-freedom superconducting qubits face fundamental tradeoffs between protection against relaxation and dephasing; combining macroscopic (transmon) and microscopic (Andreev spin) quantum degrees of freedom offers a route to avoid this tradeoff while leveraging the Franck-Condon blockade for suppression of spin-flip relaxation.",
+        "method": "The spinmon Hamiltonian combines an odd-parity Josephson junction with spin-orbit coupling (Andreev spin qubit) in parallel with a gate-tunable even-parity junction, shunted by a capacitor. Zeeman field $B \\sim E_c = h \\times 40$ MHz lifts Kramers degeneracy, enabling control via electric dipole spin resonance ($\\Omega_{xx}$ driving) and AC flux ($\\Omega$ qubit-flip coupling), computed in the heavy transmon limit where $E_C \\ll E_0 \\sim E_{SO} \\sim E_J$ with $E_0 = E_{SO} = h \\times 500$ MHz.",
+        "result": "Flux noise and charge noise relaxation rates remain below 100 Hz and 10 Hz respectively at idle configuration, excitation rates out of computational subspace below 10 Hz, with protection against dephasing from charge noise since qubit frequency sits at extremum of $\\Delta E = E_0 - E_J(V_{g2})$; thermal excitations at $T = 10$ mK limit initialization since $\\hbar\\omega_q/k_B \\ll 1$ K due to small $E_{SO}$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.13571",
+      "title": "Cryogenic microwave frequency combs based on quantum paraelectric superconducting resonators",
+      "authors": [
+        "Prasad Muragesh",
+        "Harikrishnan Sundaresan",
+        "Madhu Thalakulam"
+      ],
+      "abstract": "A frequency comb, known for its precision as an \"optical ruler\", features an evenly spaced spectral pattern. While these combs are vital in photonic quantum technologies, their microwave counterparts are now highly sought after for cryogenic quantum technologies, including semiconducting and superconducting qubits and quantum electrical metrology, which mainly operate in the microwave regime. However, microwave combs are still largely underexplored, and typically rely on complex, high-power optical systems incompatible with the low-power, cryogenic on-chip quantum technologies. In this manuscript, we present an all-electrical, on-chip, cryogenic microwave frequency comb on Strontium Titanate (SrTiO$_3$), exploiting its Pockels-like effect in its quantum paraelectric phase. Our device, utilizing a superconducting microwave cavity, generating the frequency comb via cavity phase modulation enabled by the field-induced effective $χ(2)$ of SrTiO$_3$. The ability to continuously vary the dielectric constant of SrTiO$_3$ by the application of electric field, in its quantum paraelectric phase, makes it possible to control the comb's operating frequency range. The exceptionally high dielectric constant of SrTiO$_3$, > 20,000 in its quantum paraelectric state, enables an ultra-miniature design and on-chip integration with cryogenic quantum technologies.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-05-13",
+      "score": 0.5996619228673377,
+      "similar_to": [
+        {
+          "title": "High fidelity control of superconducting qubits with optical transmitted signal",
+          "id": "2608.19602",
+          "similarity": 0.8178128004074097
+        },
+        {
+          "title": "A Modular Cryogenic Link for Microwave Quantum Communication Over Distances of Tens of Meters",
+          "id": "2604.15971",
+          "similarity": 0.8089165091514587
+        }
+      ],
+      "summary": {
+        "summary": "An all-electrical, on-chip microwave frequency comb is demonstrated using a superconducting cavity loaded with SrTiO$_3$ in its quantum paraelectric phase, exploiting field-induced Pockels-like $χ(2)$ for cavity phase modulation. The high dielectric constant (> 20,000) of SrTiO$_3$ enables miniaturization and direct integration with cryogenic superconducting qubits and quantum metrology platforms without requiring external optical systems.",
+        "motivation": "Cryogenic quantum technologies operating with superconducting and semiconducting qubits require microwave-domain frequency combs for precision spectroscopy and metrology, but existing approaches rely on bulky, high-power optical systems incompatible with on-chip integration.",
+        "method": "A superconducting cavity is loaded with SrTiO$_3$ tuned into its quantum paraelectric regime, where applied electric fields induce an effective second-order nonlinearity; phase modulation of the cavity resonance via field-tuned dielectric constant generates the frequency comb pattern.",
+        "result": "The device achieves continuous, electric-field-controlled tuning of the comb operating frequency range while maintaining the compact, low-power, on-chip architecture required for direct integration with superconducting qubit platforms.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8402,
+    0.5997,
+    0.3264,
+    0.3146,
+    0.2816,
+    0.2426,
+    0.228,
+    0.2022,
+    0.1763,
+    0.164,
+    0.162,
+    0.1605,
+    0.1588,
+    0.1437,
+    0.1398,
+    0.1345,
+    0.1283,
+    0.1267,
+    0.114,
+    0.1059,
+    0.1003,
+    0.0985,
+    0.0973,
+    0.0942,
+    0.0828,
+    0.0825,
+    0.0789,
+    0.0731,
+    0.0726,
+    0.0689,
+    0.0688,
+    0.0676,
+    0.0673,
+    0.0653,
+    0.0646,
+    0.0633,
+    0.0629,
+    0.0627,
+    0.0607,
+    0.059,
+    0.0573,
+    0.0558,
+    0.0494,
+    0.0475,
+    0.0463,
+    0.045,
+    0.0444,
+    0.044,
+    0.0428,
+    0.0406,
+    0.039,
+    0.0385,
+    0.0384,
+    0.0382,
+    0.0379,
+    0.0362,
+    0.0344,
+    0.0322,
+    0.0293,
+    0.0284,
+    0.0268,
+    0.0246,
+    0.0239,
+    0.0229,
+    0.0219,
+    0.0212,
+    0.02,
+    0.0192,
+    0.0186,
+    0.0177,
+    0.017,
+    0.0168,
+    0.0163,
+    0.0128,
+    0.0122,
+    0.012,
+    0.0119,
+    0.0114,
+    0.0112,
+    0.0105,
+    0.0103,
+    0.0099,
+    0.0094,
+    0.0093,
+    0.0069,
+    0.0036
+  ]
+}

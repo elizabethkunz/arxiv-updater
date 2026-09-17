@@ -1,0 +1,8 @@
+{
+  "summary": "A four-pole broadband Purcell filter implemented on a 3D flip-chip platform achieves 1 GHz flat passband centered at 7.68 GHz with >45 dB suppression at typical qubit frequencies, demonstrated with six multiplexed readout resonators on a compact 10×6 mm² chip fabricated in 150 nm Nb. An analytical model based on coupling matrices accurately predicts the transmission response and enables rapid circuit synthesis, accounting for spiral and CPW resonators with conformal-mapping calculations and validated against HFSS eigenmode and driven-modal simulations.",
+  "motivation": "Fast, high-fidelity qubit readout requires strong resonator-feedline coupling, but this inevitably enhances Purcell decay; existing single-pole filters offer only ~200 MHz passband, limiting multiplexed readout density and frequency discrimination.",
+  "method": "Four coupled resonators (input/output spirals, two inner CPW $\\lambda/4$ lines) form a bandpass topology with six floating readout resonators coupled via parallel-plate capacitances and parallel-coupled line sections; coupling matrix formalism with conformal-mapping techniques for self- and mutual-coupling coefficients predicts $S_{21}$ including frequency-dependent response.",
+  "result": "Measured passband transmission exhibits flat response from 7.2–8.2 GHz with six readout resonators spaced ~100 MHz apart; extracted resonance frequencies agree with simulation within <100 MHz (kinetic inductance effect); external $Q_e$ varies 0.9–2.4 × 10³ with ~30% deviation from simulation attributed to 9.91 ± 0.12 µm flip-chip spacing nonuniformity.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "This work uses scanning SQUID microscopy to directly image the spatial phase structure and susceptibility of a square-lattice hybrid Josephson junction array, revealing periodic phase patterns at commensurate magnetic fillings and fragmentation into phase-locked domains at fields $< 1\\%$ of $\\Phi_0$ per unit cell. The measurements provide the first direct observation of long-range superconducting phase coherence in such arrays and its suppression across a quantum phase transition.",
+  "motivation": "Understanding how macroscopic phase coherence emerges from local pairing and how it breaks down near quantum critical points requires direct access to the spatial phase structure of superconducting states, which has not been experimentally resolved in Josephson junction arrays.",
+  "method": "The authors fabricated a square lattice of narrow superconducting islands and used scanning SQUID microscopy to simultaneously measure the local susceptibility amplitude and phase in each junction, recording phase patterns as a function of applied magnetic field.",
+  "result": "At zero field, long-range phase coherence is maximal; at fields exceeding $\\sim 0.01 \\Phi_0$ per plaquette, the array fragments into macroscopic regions of uniform superconducting phase, with periodic phase structures appearing at rational flux fillings.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

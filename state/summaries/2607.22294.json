@@ -1,0 +1,8 @@
+{
+  "summary": "Superconducting resonators made from Ta/TaN bilayers on Si substrates achieve $Q_i = 5.9 \\times 10^5$ at 100 mK when a few-nanometer Ta buffer layer separates the TaN seed layer from the substrate, a 4× improvement over standalone TaN films. TEM imaging shows that the Ta buffer suppresses nitrogen accumulation and structural disorder at the TaN-Si interface, reducing interface-related two-level system losses.",
+  "motivation": "Tantalum nitride offers tunable stoichiometry enabling multiple roles in superconducting qubits—as seed layers, superconducting films, and Josephson junction barriers—but interfacial quality in substrate-coupled Ta/TaN structures remains poorly characterized.",
+  "method": "Planar resonators using Ta and TaN thin films of nanometer thickness were fabricated on Si substrates in various layer stacks, measured in the single-photon regime at 100 mK, and characterized with transmission electron microscopy to correlate interface structure with $Q_i$ performance.",
+  "result": "The Ta/TaN/Ta/Si stack achieved $Q_i = 5.9 \\times 10^5$ compared to $1.5 \\times 10^5$ for bare TaN, with TEM confirming that the Ta buffer layer eliminates nitrogen diffusion and interfacial disorder at the TaN-Si boundary.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "Barbell codes are qLDPC codes designed for superconducting quantum processors using a six-qubit star lattice plus near-local coupler architecture, achieving up to 8× qubit overhead reduction compared to surface codes while maintaining constant hardware complexity with increasing code distance. Circuit-level noise simulations demonstrate that distance-14 barbell codes preserve information at physical error rates above $10^{-4}$ for several trillion QEC cycles, with logical error rates comparable to surface codes of the same distance.",
+  "motivation": "Current qLDPC codes require non-local interactions difficult to implement on fixed-connectivity superconducting chips without excessive crosstalk and multi-layer routing, preventing their practical deployment despite superior overhead scaling.",
+  "method": "Barbell codes are constructed as a variant of tile codes where $X$ and $Z$ stabilizers are paired and measured via superdense syndrome extraction using near-local couplers on a hexagonal lattice; all near-local couplers are parallel with fixed length independent of code distance, routing to a single hardware layer with hardware complexity $C_\\mathrm{hw} \\approx 1.65$.",
+  "result": "At $p = 10^{-3}$, a distance-11 barbell code with 400 data qubits encodes 16 logical qubits with logical error rate $8.8 \\times 10^{-7}$ per round, compared to $9.6 \\times 10^{-4}$ for distance-5 surface code patches using the same qubit count; logical measurements show similar per-round error rates, enabling fault-tolerant multi-qubit gates via lattice surgery.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

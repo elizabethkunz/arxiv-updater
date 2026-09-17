@@ -1,0 +1,8 @@
+{
+  "summary": "This work proposes stroboscopic stabilization of cat qubits via repeated interactions with an auxiliary two-level system mediated by quadratic Hamiltonians, eliminating the need for engineered two-photon dissipation. The protocol preserves the noise bias, extends to squeezed cat qubits with partial single-photon-loss correction, and is compatible with trapped-ion and circuit-QED platforms.",
+  "motivation": "Existing cat-qubit implementations rely on two-photon dissipation via nonlinear couplings to lossy reservoirs, limiting scalability and platform compatibility. A stabilization scheme without reservoir engineering would overcome these constraints and enable broader experimental implementations.",
+  "method": "The authors derive stroboscopic stabilization sequences (small-Big-small, Sharpen-Trim, Big-small-Big) from a modular dissipator $d_\\Delta^\\mu$ using Suzuki-Trotter decompositions, implemented via conditional displacements $\\mathrm{CD}(\\alpha)$ and qubit rotations. The stabilizer operator $S_\\Delta = -\\exp[\\pi(i\\hat{q} - \\Delta^2\\hat{p})/2\\alpha]$ has period $2\\sqrt{2}\\alpha$ and fixes $\\Gamma\\delta t = \\Delta\\pi/2\\sqrt{2}\\alpha$ for modularity.",
+  "result": "Simulations show exponential bit-flip suppression $\\Gamma_Z \\sim \\exp(-c|\\beta_\\mathrm{eff}|^2)$ with $c \\approx 3$ for the small-Big-small sequence at $\\alpha \\gg 1$. For squeezed cat qubits with $r=0.4$ and $\\kappa_- \\delta t = 10^{-3}$, bit-flip rates reach $\\approx 10^{-6}$ at $n_\\mathrm{bar} \\approx 4$, with phase-flip rates partially suppressed by squeezing and auxiliary-qubit dephasing contributing linearly at low rates ($\\gamma_\\phi/\\kappa_- = 1$).",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

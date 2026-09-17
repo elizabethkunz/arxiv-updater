@@ -1,0 +1,8 @@
+{
+  "summary": "A superconducting digital-to-analog converter (DAC) programmed by single-flux-quantum (SFQ) pulses has been integrated with fluxonium qubits in a multi-chip module, enabling millikelvin flux tuning without coherence degradation. The DAC stores persistent analog flux signals in an rf-SQUID with screening parameter $\\beta_L = 243$, providing deterministic quantized control compatible with SFQ routing architectures for scalable qubit parameter adjustment.",
+  "motivation": "Scaling superconducting quantum processors beyond 100 qubits is limited by the wiring complexity and heat load of room-temperature DC bias lines needed for flux tuning. Integrating cryogenic control hardware directly at millikelvin temperatures using superconducting digital logic is essential to enable millions-qubit systems required for fault-tolerant quantum computing.",
+  "method": "An rf-SQUID DAC with $I_c = 80$ µA and $L = 1$ nH was integrated on a separate chip from a fluxonium qubit via flip-chip bonding with 10 µm spacing. SFQ pulses from a dc/SFQ converter program the DAC through transient bias pulses that induce transitions between metastable flux states, with qubit spectroscopy used to calibrate the flux output.",
+  "result": "The DAC achieves a minimum step of $4.8 \\pm 0.6$ m$\\Phi_0$ with a range of $\\approx 0.7$ $\\Phi_0$ (146 discrete steps). Operating at millikelvin temperature, the DAC produces flux shifts of $4.58 \\pm 0.01$ m$\\Phi_0$ per SFQ pulse without affecting fluxonium coherence: $T_1 = 82 \\pm 17$ µs and flux noise amplitude $A_\\Phi^R = 6.75 \\pm 0.25$ µ$\\Phi_0$ are consistent with unintegrated qubits, matching literature values.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

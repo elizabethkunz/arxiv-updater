@@ -1,0 +1,8 @@
+{
+  "summary": "This work designs a two-layer superconducting architecture implementing all five universal continuous-variable gates (rotation, displacement, squeezing, Kerr, and beam splitter) using a DC-SQUID mode, a fluxonium qubit for nonlinear interactions, and two ancillary qubits. Numerical simulations achieve fidelities $\\geq 98\\%$ across all gates within state-of-the-art parameter regimes, with gate times ranging from 33 ns (displacement) to 228 µs (Kerr at $\\mathcal{F} = 98.8\\%$).",
+  "motivation": "Superconducting platforms currently lack scalable architectures for universal continuous-variable quantum computation, with existing approaches limited by geometric constraints in planar resonator designs or incomplete gate sets.",
+  "method": "The circuit employs a DC-SQUID encoded as the CV mode ($\\omega_m = 10$ GHz) with a fluxonium qubit ($\\omega_f = 400$ MHz, $\\alpha_f/2\\pi \\gtrsim 500$ MHz) coupled via tunable quadratic coupling $g_{m,f}(\\Phi_{\\mathrm{ext}})$, and two capacitively coupled auxiliary qubits ($g_{m,i} \\approx 104$–105 MHz) for Gaussian operations. Parameters are tuned via external pulses and detunings to realize each gate; fidelities are evaluated on coherent states with $\\nu = 2$ (mean photon number $\\bar{n} = 4$).",
+  "result": "Rotation and beam splitter gates achieve $\\geq 99\\%$ fidelity; displacement is near-perfect; squeezing reaches $\\mathcal{F} = 99.8\\%$ with $\\tau_s = 205$ ns at $g_0 = 8.3$ MHz, $\\Omega_S = 150$ MHz; Kerr reaches $\\mathcal{F} = 98.8\\%$ with $\\tau_k \\approx 228$ µs at $g_{m,f} \\approx 0.83$ MHz—all within demonstrated superconducting coherence times ($T_1, T_2 \\gg 100$ µs).",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

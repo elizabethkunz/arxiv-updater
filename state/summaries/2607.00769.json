@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates a universal logic circuit based on gate-controlled supercurrent (GCS) in NbTiN nanowires that implements AND, OR, NOT, COPY, and more complex gates at 4 K using only three nanowires with two side-gate electrodes each. The device exploits voltage-controlled switching between superconducting and normal states to perform classical logic operations with output voltages reaching ~2 V, enabling direct interfacing with CMOS technology.",
+  "motivation": "Superconductor-semiconductor hybrid computing architectures could overcome CMOS power dissipation and scaling limits, but require voltage-controlled rather than magnetically-controlled superconducting switches to achieve scalability and energy efficiency.",
+  "method": "NbTiN nanowires (30 nm thick, $T_c \\approx 12$ K) on SiO$_2$/Si were patterned by electron-beam lithography and reactive DC magnetron sputtering. The GCS effect was exploited where side-gate voltages suppress the critical current ($I_c$ suppression between $V_{\\mathrm{sg,onset}} \\approx 30$ V and $V_{\\mathrm{sg,offset}} \\approx 40$ V for NW1), switching devices between zero-voltage superconducting state ($I_c \\approx 332$ µA for NW1) and dissipative normal state ($R_n \\approx 5.86$ k$\\Omega$, output voltage $\\approx 2$ V).",
+  "result": "All logic gates reproduced correct truth tables: AND and OR gates with 5 V input signals and output ~0.47–0.86 V, NOT gate with 1 k$\\Omega$ parallel resistor producing inverted output, COPY gate preserving analog voltage information up to 1.72 V, plus demonstration of half-adder and ring oscillator circuits—matching CMOS NAND functionality (4 transistors) with only 3 nanowires.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

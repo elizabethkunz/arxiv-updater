@@ -1,0 +1,8 @@
+{
+  "summary": "Al/InAsOI Josephson junctions exhibit exceptionally weak electron-phonon coupling with $\\Sigma \\approx (3$-$4) \\times 10^7$ W/(m$^3$K$^n$) and $n \\approx 5.8$ at sub-Kelvin temperatures, enabling strong thermal decoupling while maintaining high-quality superconductivity with $T_c \\approx 1.2$ K. The platform combines transparent S-Sc interfaces, full electrostatic tunability, and a noise-equivalent temperature of 100-200 μK/Hz for Josephson thermometry, making it suitable for coherent caloritronics and gate-controlled thermal circuits.",
+  "motivation": "Coherent caloritronics requires weak electron-phonon coupling, but this is difficult to combine with high-quality superconducting proximity effects; InAsOI was designed to provide both transparent superconducting contacts and intrinsically weak thermal relaxation.",
+  "method": "Josephson junction thermometry was used to extract electronic temperature $T_e$ under Joule heating at various bath temperatures, fitting the power-law relation $T_e = (\\dot{Q}_{\\mathrm{inj}}/(\\Sigma V) + T^n)^{1/n}$ between 100-220 mK to determine the e-ph coupling parameters $\\Sigma$ and $n$.",
+  "result": "InAsOI shows $\\Sigma$ values 1-2 orders of magnitude smaller than typical metals and comparable to or superior to other semiconductor platforms, with stability in $\\Sigma$ and $n$ over a 120 mK temperature range and fits with reduced $\\chi^2 \\approx 1.1 \\times 10^{-4}$.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

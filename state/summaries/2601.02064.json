@@ -1,0 +1,8 @@
+{
+  "summary": "This work extends quantum circuit cutting to heterogeneous registers of mixed-dimensional qudits by decomposing non-local interactions into tensor products of local generalized Gell-Mann matrices, generalizing the qubit-based CNOT decomposition to arbitrary qudit dimensions $d_1$ and $d_2$. Validation on qubit–qutrit interfaces achieves exact state reconstruction with Total Variation Distance of 0 within single-precision tolerance and demonstrates a memory reduction from 128 MB to 64 KB for an 8-particle dimension-8 system.",
+  "motivation": "Existing circuit cutting methods are qubit-centric and rely on Pauli operators, leaving a gap for heterogeneous architectures that naturally support higher-dimensional qudits and could access larger Hilbert spaces with fewer physical carriers.",
+  "method": "The authors generalize the controlled-sum gate $\\mathrm{CSUM}_d$ to qudits and decompose qudit–qudit interactions into tensor products using generalized Gell-Mann matrices indexed by $k$ with $1 \\leq k < d^2$ as basis operators, then reconstruct quantum states from local measurement and preparation outcomes.",
+  "result": "Exact state reconstruction is achieved on qubit–qutrit ($2$–$3$) interfaces with Total Variation Distance of 0 at single-precision floating-point accuracy, and memory usage is reduced by $2000\\times$ (from 128 MB to 64 KB) in an 8-particle dimension-8 system simulation.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

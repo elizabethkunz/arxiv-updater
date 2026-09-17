@@ -1,0 +1,231 @@
+{
+  "date": "2026-08-19",
+  "n_fetched": 82,
+  "papers": [
+    {
+      "id": "2608.17020",
+      "title": "Multi-purpose quantum laboratories from superconducting circuits",
+      "authors": [
+        "Arpit Arora",
+        "Emily M. Been",
+        "William Munizzi",
+        "Joel Wang",
+        "Taylor L. Patti",
+        "Aaron Chou",
+        "Prineha Narang"
+      ],
+      "abstract": "Superconducting circuits (SCs) are the cornerstone of modern quantum technology, enabling scalable computing through coherent control of macroscopic quantum states. Through a legacy that predates modern quantum computing, SCs have emerged as high-precision instruments for discovery. In this review, we highlight the role of SCs as general-purpose quantum laboratories, outlining the emerging landscape of correlated matter-circuit science. We review and unify the capabilities of superconducting quantum hardware across condensed matter, high energy and quantum information sciences. We trace the technical evolution of these architectures, illustrating how their foundational development has culminated in a toolkit for resolving the complexities of macroscopic quantum states.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall",
+        "hep-th"
+      ],
+      "published": "2026-08-17",
+      "score": 0.8316204013824933,
+      "similar_to": [
+        {
+          "title": "Multi-purpose quantum laboratories from superconducting circuits",
+          "id": "2608.17020",
+          "similarity": 1.0
+        },
+        {
+          "title": "Circuit Quantum Electrodynamics: Coherent Coupling of a Single Photon to a Cooper Pair Box",
+          "id": null,
+          "similarity": 0.8577650189399719
+        }
+      ],
+      "summary": {
+        "summary": "This review unifies superconducting circuits (SCs) as multi-purpose quantum laboratories spanning condensed matter physics, dark matter detection, and quantum information science. SCs leverage their high-quality microwave resonators and coherent control capabilities to simultaneously serve as precision measurement instruments for discovering emergent quantum phenomena and as platforms for generating and manipulating quantum resources like entanglement and magic.",
+        "motivation": "Superconducting circuits have historically enabled precision metrology and quantum measurements before modern quantum computing, but recent advances in coherence times and control have positioned them as general-purpose discovery tools across multiple scientific domains.",
+        "method": "The review traces the technical evolution of SC platforms including circuit-QED and waveguide-QED architectures, describes their use as high-sensitivity resonant probes for condensed matter systems through frequency and linewidth shifts, details quantum-enhanced dark matter detection schemes using transmon single-photon counters and squeezed states, and discusses hardware-native generation of entanglement and non-local magic through engineered nonlinear interactions and AI-assisted optimization.",
+        "result": "Recent experiments achieved single-photon dark matter sensitivities of $10^{-22}$–$3 \\times 10^{-23}$ W/Hz and dark count rates of $\\sim 0.1$ s$^{-1}$; SC-based spectroscopy extracted kinetic inductances up to $1.2$ nH/□ in NbSe$_2$ monolayers and resolved nodal superconductivity in twisted graphene through power-law temperature scaling; neural-network design workflows achieved $<2\\%$ errors with $\\sim 2000\\times$ speedup in qubit parameter prediction.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2608.17400",
+      "title": "Quantum sensors that compute: quantum computational magnetic-field sensing using a superconducting qubit",
+      "authors": [
+        "Purnendu Sen",
+        "Mathieu Ouellet",
+        "Saeed A. Khan",
+        "Wayne Wang",
+        "Sridhar Prabhu",
+        "Alen Senanian",
+        "William P. Banner",
+        "William D. Oliver",
+        "Peter L. McMahon"
+      ],
+      "abstract": "A measurement of a single-qubit quantum sensor reveals at most 1 bit of information about the signal that was sensed. To perform a classification task on the signal, the conventional approach is to repeat a sensing protocol many times, averaging the measurement results to obtain a high-precision estimate of the sensed signal, and then to apply classical postprocessing. Quantum computational sensing (QCS) is an alternative approach that breaks with the paradigm of first obtaining a classical estimate of the signal and then computing a function of the estimated signal in postprocessing. QCS instead combines quantum sensing with quantum computing to concentrate information about the signal relevant to the task into the solitary bit revealed by each measurement. Here, we report on the experimental demonstration of QCS where sensing and computing were both performed by the same single superconducting transmon qubit. We consider various binary classification tasks based on static and oscillating magnetic fields induced by current through a flux line. The fields were sensed through a double-junction superconducting quantum interference device (SQUID) loop that was part of the qubit. We used a protocol based on quantum signal processing to preprocess the sensed signals in the quantum domain prior to measurement. For tasks on static magnetic fields, our protocol outperformed the conventional baseline of Ramsey-based phase estimation by as much as 15 percentage points. For tasks on oscillating magnetic fields, we classified signal amplitude and frequency with up to 20 and 15 percentage points higher accuracy, respectively, compared to the conventional baseline of optimized dynamical-decoupling protocols. Our results illustrate how quantum computing can enhance quantum sensing even with a minimally sized quantum system subject to the practical limitations of decoherence and error-prone operations.",
+      "categories": [
+        "quant-ph",
+        "physics.app-ph",
+        "physics.ins-det"
+      ],
+      "published": "2026-08-18",
+      "score": 0.7631979822855377,
+      "similar_to": [
+        {
+          "title": "Beating the Ramsey limit on sensing with deterministic qubit control",
+          "id": "2408.15926",
+          "similarity": 0.859947919845581
+        },
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.8420236706733704
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates quantum computational sensing (QCS) using a single superconducting transmon qubit with an integrated SQUID loop, where quantum signal processing interleaves sensing operations with trained control unitaries to encode task-relevant information into measurement outcomes prior to readout. For binary classification of static magnetic fields, the protocol achieves 3.0–14.9 percentage point accuracy improvements over Ramsey-based phase estimation, and for oscillating fields achieves 3.8–20.1 percentage points over dynamical decoupling, with advantages growing for more complex classification tasks.",
+        "motivation": "Conventional quantum sensing first estimates a continuous signal parameter and then applies classical postprocessing to extract task-relevant information, discarding measurement information in the process. QCS instead directly encodes task-specific features into the measurement outcome, trading generality for efficiency by requiring less sensing time to complete a classification task.",
+        "method": "A flux-tunable transmon qubit with $\\partial f_{g-e}/\\partial I_{\\text{flux}} \\approx 29$ MHz/mA sensitivity was biased away from the flux sweet spot to sense static ($0{-}5$ MHz detuning range, $T_s = 100$ µs) and oscillating (amplitude $0{-}5$ MHz or frequency $1{-}2$ MHz, $T_s = 200$ µs) magnetic fields through free evolution interleaved with trained X-rotations across $L = 2{-}28$ layers. Measurement outcomes were averaged over $S = 1{-}68$ shots and classified with random forests; protocols were optimized on a digital twin and benchmarked against optimized Ramsey and dynamical-decoupling baselines.",
+        "result": "For static fields at 100 µs sensing time, QCS achieved 14.9 percentage point advantage over baseline on the most complex task and exceeded ideal shot-noise-limited baseline performance by up to 3.0 percentage points. For oscillating fields at 200 µs, amplitude and frequency classification improved by up to 20.1 and 15.4 percentage points respectively, with single-shot $T_1 = 30$ µs and $T_2^* = 8$ µs decoherence times and readout errors of $\\sim 28$ % limiting performance.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2608.17189",
+      "title": "Fast Nondestructive Readout for High-Clock-Rate Atom Array Quantum Processor",
+      "authors": [
+        "Xu-Zhao-Qiu Zeng",
+        "Chang You",
+        "Qing-Wei Wang",
+        "Zi-Feng Li",
+        "Yi Ji",
+        "Dong An",
+        "Chao Yu",
+        "Jia-Rui Liu",
+        "Zi-Mo He",
+        "Jia-Rui Gu",
+        "Yuhao Mei",
+        "Hao-Wen Cheng",
+        "Yu-Chen Zhang",
+        "Rui Lin",
+        "Zhan Wu",
+        "Jun Rui",
+        "Jun Zhang",
+        "Ming-Cheng Chen",
+        "Yu-Hao Deng",
+        "Chao-Yang Lu",
+        "Jian-Wei Pan"
+      ],
+      "abstract": "Neutral-atom arrays have rapidly advanced to support thousands of qubits and execute high-fidelity logical operations. However, these processors remain severely throttled by their slowest fundamental operation: nondestructive qubit measurement, which requires milliseconds and fundamentally limits the system's clock rate. This bottleneck arises from both an inherent photon-budget dilemma---sufficient fluorescence for reliable state discrimination must be collected without excessive heating or loss---and frame-based imaging, which imposes one common exposure and decision latency on intrinsically independent, site-local measurements. Here, we overcome these limitations with a fast, nondestructive readout architecture based on real-time, site-resolved adaptive protection. By integrating continuous photon counting with a dynamic feedforward framework, we decode qubit states with sub-microsecond latency and instantly shield atoms from redundant scattering. Demonstrated in parallel across a 100-qubit reconfigurable atom array, with adaptive protection on a 25-site subarray, this dynamic decision protocol reduces the average probe time to just $15\\ μ\\text{s}$. Model-free benchmarking yields a discrimination infidelity of $4.1 \\times 10^{-5}$ and an atom loss of $2.1 \\times 10^{-4}$, simultaneously setting new performance records for atom arrays. Exploiting this capability, we operate repeated quantum circuits at an unprecedented 1.7 kHz clock rate with atoms reused over 120 consecutive rounds---nearly sevenfold higher than the previous record---and enter the sub-millisecond cycle regime for the first time. By removing nondestructive readout as the dominant cycle-time bottleneck, this work unlocks high-clock-rate mid-circuit syndrome extraction, paving the way for high-throughput, fault-tolerant quantum computation.",
+      "categories": [
+        "quant-ph",
+        "physics.atom-ph"
+      ],
+      "published": "2026-08-17",
+      "score": 0.7594064974943473,
+      "similar_to": [
+        {
+          "title": "Rapid high-fidelity multiplexed readout of superconducting qubits",
+          "id": "1801.07904",
+          "similarity": 0.8493392467498779
+        },
+        {
+          "title": "Enhancing Dispersive Readout of Superconducting Qubits Through Dynamic Control of the Dispersive Shift: Experiment and Theory",
+          "id": "2307.07765",
+          "similarity": 0.8450868129730225
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates fast nondestructive readout (FNDR) for neutral-atom arrays by combining real-time photon counting with adaptive per-site optical hiding to suppress unnecessary photon scattering, reducing average probe time to 15 µs and achieving state-averaged discrimination infidelity of $4.1 \\times 10^{-5}$ with atom loss of $2.1 \\times 10^{-4}$. Operating repeated quantum circuits at 1.7 kHz clock rate with atoms reused over 120 consecutive rounds—nearly sevenfold faster than previous records—FNDR removes measurement as the dominant bottleneck for fault-tolerant quantum computation.",
+        "motivation": "Neutral-atom arrays have achieved thousands of qubits with high-fidelity gates, but nondestructive readout at the millisecond scale fundamentally limits clock rate and prevents rapid syndrome extraction needed for quantum error correction.",
+        "method": "A multimode fibre array coupled to avalanche photodiodes provides site-resolved photon counting with sub-microsecond latency; an FPGA running a dynamic decision algorithm identifies each atom's state and triggers a corresponding hiding beam (π-polarized, 852 nm) through a polarization-maintaining fibre array to decouple bright atoms from the probe transition, reducing photon-scattering exposure to one-fifth of worst-case.",
+        "result": "Discrimination infidelity of $4.1 \\times 10^{-5}$ and atom loss of $2.1 \\times 10^{-4}$ simultaneously improve prior array-scale results by roughly an order of magnitude; 120-round circuits at 1.7 kHz and over 1000 rounds at 0.7 kHz with per-round recooling enter the sub-millisecond cycle regime for the first time on neutral-atom processors.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8316,
+    0.7632,
+    0.7594,
+    0.339,
+    0.3034,
+    0.2839,
+    0.2801,
+    0.2452,
+    0.2347,
+    0.2232,
+    0.2123,
+    0.1943,
+    0.1771,
+    0.1664,
+    0.1541,
+    0.152,
+    0.1517,
+    0.1233,
+    0.0976,
+    0.0951,
+    0.0815,
+    0.0774,
+    0.0758,
+    0.0701,
+    0.0658,
+    0.0653,
+    0.0593,
+    0.0553,
+    0.0508,
+    0.0473,
+    0.046,
+    0.0446,
+    0.0437,
+    0.0409,
+    0.0394,
+    0.0389,
+    0.0385,
+    0.0324,
+    0.0323,
+    0.0318,
+    0.0312,
+    0.0287,
+    0.0225,
+    0.0224,
+    0.0221,
+    0.0219,
+    0.0211,
+    0.0203,
+    0.0195,
+    0.0193,
+    0.019,
+    0.0188,
+    0.0185,
+    0.0183,
+    0.0167,
+    0.0157,
+    0.0144,
+    0.0143,
+    0.0143,
+    0.014,
+    0.0139,
+    0.0134,
+    0.0128,
+    0.0127,
+    0.0102,
+    0.0099,
+    0.0093,
+    0.0084,
+    0.008,
+    0.008,
+    0.0079,
+    0.0077,
+    0.0076,
+    0.0075,
+    0.0074,
+    0.0066,
+    0.0066,
+    0.0062,
+    0.0061,
+    0.0059,
+    0.0033,
+    0.0029
+  ]
+}

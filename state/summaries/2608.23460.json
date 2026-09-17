@@ -1,0 +1,8 @@
+{
+  "summary": "This paper presents a SAT-based computational framework for designing quantum error correction codes that can incorporate physics-inspired symmetries and hardware-specific noise models. The authors prove code design is NP-complete, demonstrate a SAT–UNSAT phase transition in random instances, and experimentally validate the approach by discovering novel codes—including extensions of a 100-qubit Fermi-Hubbard code in minutes and surface codes outperforming the XZZX code under biased noise.",
+  "motivation": "Quantum error correction codes have traditionally been designed by hand without systematic respect to problem constraints or realistic hardware noise profiles. Computational design methods can accelerate discovery of codes tailored to specific physical platforms and noise characteristics.",
+  "method": "The authors formulate quantum code design as a Boolean satisfiability (SAT) problem by encoding stabilizer commutativity and error detectability/correctability as CNF clauses in the binary symplectic representation. The framework handles code discovery (empty initial stabilizer set), code extension (building from existing stabilizers), and incorporates arbitrary noise models via weighted soft constraints in maximum satisfiability.",
+  "result": "SAT solvers design $[[100, 50, 4]]$ codes in under 5 minutes (versus ~1 hour with prior methods), find physics-inspired codes for 100-qubit Fermi-Hubbard models in minutes to hours, and discover novel surface codes with logical error rates lower than the XZZX code across biased noise regimes $\\ eta \\in [0.1, 10]$.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

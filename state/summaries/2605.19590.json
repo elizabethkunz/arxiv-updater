@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates photolithography-only fabrication of transmon Josephson junctions using double-oblique Al shadow evaporation, achieving a geometrical junction area of ~$10^4$ nm$^2$ well below the ~1 µm optical linewidth. The fabricated junctions are characterized at room temperature and integrated into a 3D cavity qubit at 20 mK, demonstrating functional transmon operation with $f_{01} = 4.865$ GHz, $T_1 \thicksim 9$ µs, and $T_2^* \thicksim 0.4$ µs.",
+  "motivation": "Standard transmon fabrication relies on electron-beam lithography for sub-100-nm Josephson junction definition, which limits throughput and cost; photolithography-only processes could improve scalability and wafer-scale integration.",
+  "method": "A bilayer resist (200 nm PMGI SF5 / 1.8 µm THMR iP1800) patterned with 375 nm direct-write photolithography is combined with Al shadow evaporation at $\\theta = 60°$ tilt and additional in-plane angular offset $\\phi = 15°$ or $25°$, creating a narrowed junction crossing through modified shadowing geometry.",
+  "result": "Room-temperature screening of 27 devices per design shows junction resistance falls into the target range (1–10 kΩ) for 0.5–0.6 µm nominal linewidth with up to 23/27 yield; a single $\\phi = 25°$ device exhibits qubit operation with $T_1 = 9.2 ± 0.4$ µs and $T_2^* \\sim 0.4$ µs in the 3D cavity.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

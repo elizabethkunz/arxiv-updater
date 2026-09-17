@@ -1,0 +1,305 @@
+{
+  "date": "2026-05-13",
+  "n_fetched": 108,
+  "papers": [
+    {
+      "id": "2605.12429",
+      "title": "Entangling Superconducting Qubits via Energy-Selective Local Reservoirs",
+      "authors": [
+        "Qihao Guo",
+        "Botao Du",
+        "Ruichao Ma"
+      ],
+      "abstract": "Engineered dissipation provides a powerful route to controlling and stabilizing quantum states in open systems. Superconducting circuits are particularly suited to this approach due to their tunable coupling to dissipative environments. Here we realize programmable local reservoirs for superconducting qubits through parametrically driven coupling to readout resonators, creating energy-selective incoherent pump and loss. Using coupled superconducting qubits, we autonomously stabilize entangled single-excitation states with fidelity up to 90.8%. We probe the stabilization dynamics under varying initial conditions and bath parameters, and implement robust classical shadow estimation for accurate and scalable state characterization. Finally, we numerically study a configuration where the engineered pump and loss share a common dissipative mode, leading to reservoir-mediated interference and classically correlated steady states. Our results demonstrate a scalable and hardware-efficient framework for dissipative preparation and control of correlated many-body states in superconducting circuits.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-12",
+      "score": 0.8717740098949828,
+      "similar_to": [
+        {
+          "title": "On-demand driven dissipation for cavity reset and cooling",
+          "id": "2310.16785",
+          "similarity": 0.8995940685272217
+        },
+        {
+          "title": "Driven-dissipative entanglement of distant giant atoms",
+          "id": "2606.13375",
+          "similarity": 0.8767290711402893
+        }
+      ],
+      "summary": {
+        "summary": "We implement programmable energy-selective local reservoirs in superconducting qubits by parametrically modulating coupling to readout resonators, achieving incoherent pump and loss that autonomously stabilize entangled Bell states. We demonstrate stabilization of the single-excitation state $|{-}\\rangle$ with $90.8\\%$ fidelity using a two-qubit transmon array with $J \\approx 2\\pi \\times 6$ MHz and validate characterization via robust classical shadow estimation.",
+        "motivation": "Engineered dissipation offers a scalable approach to stabilizing correlated many-body states in superconducting circuits, but existing implementations require dedicated hardware or coherent drives that limit scalability and flexibility in qubit arrays.",
+        "method": "We use parametric sideband coupling between transmons and their readout resonators (via flux-modulation waveforms at red and blue sidebands) to create energy-selective local dissipation with bandwidth $\\kappa_r \\approx 2\\pi \\times 1.5$ MHz, enabling incoherent pump ($g_S = 2\\pi \\times 0.75$ MHz) and loss ($g_D = 2\\pi \\times 0.58$ MHz) on individual qubits without additional hardware.",
+        "result": "Starting from $|gg\\rangle$, we reach steady-state fidelity $F = 90.8\\%$ to $|{-}\\rangle$ within $2$ μs with concurrence $C \\approx 0.82$; dominant infidelity sources are resonator thermal population ($2.5\\%$, contributing $5.5\\%$ error), intrinsic relaxation ($T_1^{|{-}\\rangle} = 50$ μs, $2.4\\%$ error), and off-resonant transitions ($1.6\\%$ error), all mitigable via existing techniques.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.11488",
+      "title": "Breaking the scalability barrier via a vertical tunable coupler in 3D integrated transmon system",
+      "authors": [
+        "Xudong Liao",
+        "Shuyi Pan",
+        "Zhenxing Zhang",
+        "Sainan Huai",
+        "Zhiwen Zong",
+        "Xiaopei Yang",
+        "Kunliang Bu",
+        "Wen Zheng",
+        "Xinsheng Tan",
+        "Yang Yu",
+        "Yuan Li",
+        "Yi-Cong Zheng",
+        "Tianqi Cai",
+        "Shengyu Zhang"
+      ],
+      "abstract": "Scaling superconducting quantum processors beyond the constraints of monolithic planar architectures is essential for fault-tolerant quantum computation. Here we demonstrate a three-dimensional (3D) integrated superconducting quantum processor in which two qubit chips are vertically stacked on opposing sides of a carrier chip and galvanically connected via multilayer flip-chip bonding. Intrachip qubit coupling is mediated by planar tunable couplers, whereas interchip coupling is enabled by vertical tunable couplers embedded in the carrier chip. Randomized benchmarking reveals simultaneous single-qubit gate fidelities of 99.87 % with negligible crosstalk, and controlled-Z gates achieve an average fidelity of 97.5 % for both intrachip and interchip operations. We further demonstrate high-fidelity Bell-state preparation and coherent generation of a four-qubit $W$ state, confirming the architecture's capability for interchip entanglement distribution. These results establish vertical coupling as a promising pathway toward scalable quantum processors compatible with advanced quantum error-correcting codes.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-12",
+      "score": 0.8603000389500993,
+      "similar_to": [
+        {
+          "title": "Long-distance transmon coupler with CZ gate fidelity above 99.8%",
+          "id": "2208.09460",
+          "similarity": 0.8800877332687378
+        },
+        {
+          "title": "Scalable Fluxonium Quantum Processors via Tunable-Coupler Architecture",
+          "id": "2604.13363",
+          "similarity": 0.8785266876220703
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates a three-dimensional integrated superconducting quantum processor with two qubit chips vertically stacked on opposing sides of a carrier chip, coupled through vertical tunable couplers embedded in the carrier. Single-qubit gates achieve 99.87% simultaneous fidelity with negligible crosstalk, two-qubit $\\mathrm{CZ}$ gates reach 97.5% fidelity for both intrachip and interchip operations, and four-qubit $W$-state generation confirms coherent multipartite entanglement across chips.",
+        "motivation": "Monolithic planar scaling faces fundamental limits from declining fabrication yields, routing congestion, and increasing crosstalk, motivating distributed modular architectures that exploit vertical integration perpendicular to the chip surface alongside existing lateral interconnects.",
+        "method": "Two transmon qubit chips with planar tunable couplers were bonded to opposing sides of a 330 μm-thick sapphire carrier chip via indium bumps using double-sided processing and multilayer flip-chip bonding, with vertical tunable couplers and etched regions on the carrier enabling independent $\\mathrm{CZ}$ gate control between chips.",
+        "result": "Interchip $\\mathrm{CZ}$ gates (Q$_3$–Q$_7$) match intrachip performance (Q$_2$–Q$_3$) at 97.5% average fidelity; Bell states achieve 97.0% state fidelity via quantum state tomography; four-qubit $W$-state reaches maximal coherence at $\\sim 68$ ns with equal coupling calibration among vertical and lateral interactions.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.12385",
+      "title": "Lower overhead fault-tolerant building blocks for noisy quantum computers",
+      "authors": [
+        "Prithviraj Prabhu"
+      ],
+      "abstract": "Quantum computation holds the promise of solving certain complex problems exponentially faster than classical computers. However, the high prevalent noise in current quantum devices impedes the accurate execution of even basic algorithms. This can be remedied by protecting quantum information with a quantum error-correcting code, where the logical information of an algorithmic qubit is spread across multiple physical qubits. Individual quantum errors are then located and corrected by the fault-tolerant measurement of multi-qubit stabilizer operators (parity checks). Unfortunately, error correction and fault tolerance both impose large demands on the qubit overhead: hundreds to thousands of physical qubits per logical qubit. We reduce the spacetime cost of fault tolerance by redesigning key building blocks of an error-corrected quantum computer. First, we develop a combinatorial proof with flag fault tolerance that exponentially reduces the extra qubits needed to measure a stabilizer of any size, while tolerating one fault. We leverage these proofs to then design state preparation circuits for the Steane and Golay codes with 100% yield. Next, we improve error correction on a planar layout by showing that a distance-four code encoding six logical qubits protects information as well as the distance-five surface code, using one-tenth as many physical qubits. Finally, we optimize the time overhead of logical gates in surface code quantum computers by protecting measurement results with a classical code, cutting computation time by a factor of two to six. Our hardware-agnostic optimizations of fault tolerance overheads thus suggest new routes to advance the timeline of error-free quantum computing.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-12",
+      "score": 0.7488873277242064,
+      "similar_to": [
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.9177892804145813
+        },
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.9132847785949707
+        }
+      ],
+      "summary": {
+        "summary": "This dissertation develops hardware-agnostic optimizations of fault-tolerant quantum computing by redesigning key building blocks including stabilizer measurement, state preparation, error correction, and logical gates to reduce qubit and time overhead. Techniques include flag-based fault tolerance with logarithmic ancilla requirements, deterministic state preparation for CSS codes with 100% yield, distance-four codes encoding six logical qubits using one-tenth the qubits of distance-five surface codes, and temporal encoding of lattice surgery reducing gate time by factors of 2–6.",
+        "motivation": "Current quantum devices require hundreds to thousands of physical qubits per logical qubit due to error correction overhead, making the timeline for error-free quantum computing prohibitively long. Reducing both space and time costs of fault-tolerant components is essential to make large-scale quantum computation practical.",
+        "method": "The work develops combinatorial proofs with flag fault tolerance for stabilizer measurement, uses flag circuits and measurement-based stabilizer state preparation to achieve deterministic encoding of ancilla states, optimizes planar error-correcting codes through postselection to improve code rates, and applies classical error-correcting codes to protect lattice surgery measurement results in the time domain, enabling faster computation without additional qubits.",
+        "result": "Distance-three stabilizer measurement requires only $\\lceil \\log_2 w \\rceil + 1$ ancilla qubits versus $O(w)$ previously; distance-four codes achieve comparable logical error rates to distance-five surface codes using 90% fewer qubits; temporal encoding of lattice surgery cuts computation time by factors of 2–6 depending on noise regime and target fidelity; deterministic Steane code state preparation uses 21 CNOT gates and Golay code preparation achieves 100% yield.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.11088",
+      "title": "Tolerating Device Failure in Distributed Quantum Computing",
+      "authors": [
+        "Evan Sutcliffe",
+        "Coral M. Westoby"
+      ],
+      "abstract": "It is desirable that a distributed quantum computer can operate despite the replacement or failure of its constituent components, allowing the reliability of the distributed system to exceed that of its subcomponents. We first show that when quantum error correction is performed over a modular quantum network, quantum devices can be swapped out or replaced, during operation, with minimal impact on logical error rates. We also investigate the ability of the toric and hyperbolic Floquet quantum error correcting codes to protect logical information under low rates of modular node failure. In particular, we show that under the proposed distributed quantum error scheme, the selected codes are able to maintain good logical error suppression during the failure of entire nodes. For catastrophic node failure of probability p/100, we suggest that a distributed toric code would outperform one implemented on a monolithic device below a physical error rate of 0.05%.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-11",
+      "score": 0.6009427282132279,
+      "similar_to": [
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.8703833818435669
+        },
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8649625778198242
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates that distributed quantum error correction codes implemented over modular quantum networks can tolerate both scheduled node replacement and catastrophic unscheduled node failure, whereas monolithic systems hit a logical error rate floor from such events. For a per-round node failure probability of $p/100$, distributed toric codes outperform monolithic implementations below a physical error rate of 0.05%.",
+        "motivation": "Scaling fault-tolerant quantum computers to utility-scale requires $10^5$–$10^6$ physical qubits, but monolithic scaling is engineering-intensive. Distributed QEC across modular quantum processing units offers an alternative, but device failures would be catastrophic in standard implementations—motivating a study of failure tolerance.",
+        "method": "The authors analyze distributed implementations of toric and semi-hyperbolic Floquet codes ($[[576,20,12]]$ example) partitioned over QPUs with $16$–$48$ qubits each via spectral partitioning. For scheduled downtime, qubits are teleported transversally to replacement nodes; for unscheduled failure, failed nodes are replaced and their qubits initialized to maximally mixed states, treated as correlated errors correctable by standard syndrome-based decoding. Simulations use circuit-level noise with local errors at probability $p_l=p$ and non-local Bell state errors at $p_{nl}=10p$, with node failure modeled as per-round depolarization at $p_{dropout}=p/100$.",
+        "result": "Scheduled swap-out has negligible impact on logical error rates for both code families. Under unscheduled failure at $p_{dropout}=10^{-4}$ per round, distributed toric codes achieve $P_L\times100$ lower than monolithic systems; monolithic codes hit an analytical floor $P_L\thicksim 3\times10^{-3}$ from equation $1-(1-p_{dropout})^r$, while distributed codes suppress both node failure and circuit noise through increasing code distance, with crossover at $p\thicksim 1.5\times 10^{-4}$ for $d=6$ toric codes.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.12442",
+      "title": "Programmable Superradiance in an Interacting Qubit Array",
+      "authors": [
+        "Botao Du",
+        "Qihao Guo",
+        "Ruichao Ma"
+      ],
+      "abstract": "When multiple quantum emitters couple to a common electromagnetic environment, interference in their collective radiative dynamics gives rise to superradiance and subradiance. In regimes where coherent interactions and collective dissipation compete, the microscopic many-body dynamics and quantum correlations among the emitters that underlie superradiance and subradiance are theoretically challenging and remain experimentally elusive, even though collective emission has been observed in many physical systems. Here, we realize a superconducting qubit array coupled to a common microwave waveguide that mediates collective dissipation, with simultaneous access to coherent interactions and microscopic measurements of many-body dynamics. Engineered qubit-waveguide couplings with tunable amplitude and phase enable control of collective interference and the resulting super- and subradiant states. Leveraging site-resolved control and readout, we directly observe the microscopic decay dynamics of multi-qubit states across different excitation manifolds and track the evolution of populations and tunable quantum correlations. We reveal collective decay in regimes beyond the ideal Dicke model, where strong qubit-qubit interactions stabilize superradiance and subradiance against local dephasing and reshape decay pathways through spatially and spectrally structured many-body eigenstates. Our results establish a flexible platform for exploring collective phenomena in many-body quantum optics and driven-dissipative approaches to robust quantum information processing.",
+      "categories": [
+        "cond-mat.quant-gas",
+        "quant-ph"
+      ],
+      "published": "2026-05-12",
+      "score": 0.5275296006838192,
+      "similar_to": [
+        {
+          "title": "Controlling the spontaneous emission of a superconducting transmon qubit",
+          "id": "0803.4490",
+          "similarity": 0.8643686175346375
+        },
+        {
+          "title": "Driven-dissipative entanglement of distant giant atoms",
+          "id": "2606.13375",
+          "similarity": 0.8620433807373047
+        }
+      ],
+      "summary": {
+        "summary": "A superconducting qubit array coupled to a common microwave waveguide enables programmable control of collective dissipation with simultaneous access to microscopic many-body dynamics. Site-resolved measurements reveal how strong coherent interactions reshape superradiant and subradiant decay through spectrally structured many-body eigenstates, with tunable quantum correlations enabling exploration of collective phenomena beyond the ideal Dicke model.",
+        "motivation": "Understanding microscopic many-body dynamics and quantum correlations during collective emission in regimes where coherent interactions compete with dissipation remains experimentally elusive, motivating development of platforms with simultaneous control over dissipation, interactions, and qubit-resolved measurements.",
+        "method": "Four transmon qubits with nearest-neighbor exchange coupling $J \\approx 2\\pi \\times 6$ MHz couple to resonators ($\\kappa_r \\approx 2\\pi \\times 1.5$ MHz) connected to a common waveguide. Parametric flux modulation engineers qubit-waveguide couplings with tunable amplitude ($\\gamma_{\\mathrm{wg}} \\approx 2\\pi \\times 15$ kHz) and phase, enabling control of interference. Site-resolved control and readout track populations and two-qubit correlations throughout decay from prepared initial states across multiple excitation manifolds.",
+        "result": "For uniform-phase coupling ($\\theta = 0$), the highest-energy single-excitation eigenstate exhibits superradiant decay scaling linearly with lattice size ($\\Gamma^{m=1} \\approx \\gamma_{\\mathrm{wg}} N_q$), while decay from the fully inverted state shows non-exponential dynamics with enhanced emission rate $R(t) \\approx 2\\pi \\times 130$ kHz during early superradiant regime ($t \\lesssim 200$ ns), followed by long-lived subradiant tail ($t \\sim 10$–$100$ µs). Transverse correlations develop with peak magnitude $C_{ij}^\\perp \\approx 0.15$ during superradiance and reverse sign during subradiance, demonstrating programmable spatial correlation patterns via phase engineering ($\\theta = 0$ versus $\\theta = \\pi$).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8718,
+    0.8603,
+    0.7489,
+    0.6009,
+    0.5275,
+    0.4871,
+    0.4158,
+    0.4084,
+    0.3984,
+    0.3886,
+    0.3615,
+    0.3165,
+    0.3161,
+    0.2883,
+    0.2847,
+    0.278,
+    0.2726,
+    0.2674,
+    0.264,
+    0.2624,
+    0.2553,
+    0.2528,
+    0.2047,
+    0.1776,
+    0.1752,
+    0.1747,
+    0.1675,
+    0.1656,
+    0.1589,
+    0.1473,
+    0.1408,
+    0.1272,
+    0.1251,
+    0.1227,
+    0.1083,
+    0.0955,
+    0.0929,
+    0.0914,
+    0.0912,
+    0.0892,
+    0.088,
+    0.0831,
+    0.083,
+    0.0827,
+    0.0825,
+    0.081,
+    0.0723,
+    0.0675,
+    0.0672,
+    0.0661,
+    0.0592,
+    0.056,
+    0.051,
+    0.0487,
+    0.0474,
+    0.0473,
+    0.0468,
+    0.0448,
+    0.0447,
+    0.0439,
+    0.0436,
+    0.0403,
+    0.0399,
+    0.0383,
+    0.0329,
+    0.0309,
+    0.0281,
+    0.0259,
+    0.0252,
+    0.0241,
+    0.0234,
+    0.0224,
+    0.0224,
+    0.0211,
+    0.0206,
+    0.0176,
+    0.0173,
+    0.0169,
+    0.0166,
+    0.0164,
+    0.0163,
+    0.0151,
+    0.0138,
+    0.0126,
+    0.0115,
+    0.0115,
+    0.0112,
+    0.0109,
+    0.0107,
+    0.0099,
+    0.0087,
+    0.0076,
+    0.0075,
+    0.0074,
+    0.0073,
+    0.0071,
+    0.0067,
+    0.0062,
+    0.0044,
+    0.0043,
+    0.0041,
+    0.0038,
+    0.0037,
+    0.0037,
+    0.0033,
+    0.0023,
+    0.0012,
+    0.0004
+  ]
+}

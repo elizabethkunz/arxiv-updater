@@ -1,0 +1,258 @@
+{
+  "date": "2026-05-07",
+  "n_fetched": 98,
+  "papers": [
+    {
+      "id": "2605.04892",
+      "title": "Real-time Surface-Code Error Correction Using an FPGA-based Neural-Network Decoder",
+      "authors": [
+        "Xiaohan Yang",
+        "Xuandong Sun",
+        "Zhiyi Wu",
+        "Jiawei Zhang",
+        "Ji Jiang",
+        "Xiayu Linpeng",
+        "Yuxuan Zhou",
+        "Ji Chu",
+        "Jingjing Niu",
+        "Youpeng Zhong",
+        "Song Liu",
+        "Dapeng Yu"
+      ],
+      "abstract": "Quantum error correction (QEC) is essential for achieving low error rates required for fault-tolerant quantum computation. In stabilizer-based codes such as the surface code, errors are inferred from repeated syndrome measurements and corrected by a classical decoder. To prevent error accumulation, decoding must be performed with both high throughput and low latency to keep pace with the QEC cycle and enable real-time feedback for universal logical operations. Here we report a hardware-integrated control architecture featuring an FPGA-based neural-network (NN) decoder and experimentally demonstrate real-time surface-code (distance-3) QEC on a superconducting quantum processor. The system achieves a deterministic closed-loop latency of 550 ns, including 124 ns for NN decoding, enabling feedback corrections within a 1.25 us QEC cycle. We show that real-time decoding and feedback correction achieve logical performance comparable to offline decoding while maintaining robustness against varying error conditions. We further demonstrate mid-circuit feedback correction in non-Clifford logical circuits, where Pauli-frame updating alone becomes insufficient. Our results establish a low-latency hardware architecture for embedded QEC control and provide a pathway towards scalable fault-tolerant quantum computing systems.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-06",
+      "score": 0.8315693366129209,
+      "similar_to": [
+        {
+          "title": "Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code",
+          "id": "2112.03708",
+          "similarity": 0.88581782579422
+        },
+        {
+          "title": "Quantum error correction below the surface code threshold",
+          "id": "2408.13687",
+          "similarity": 0.8817476630210876
+        }
+      ],
+      "summary": {
+        "summary": "An FPGA-based LSTM neural-network decoder integrated into a superconducting quantum processor achieves real-time surface-code error correction with 550 ns closed-loop latency and 124 ns decoding latency on a distance-3 code. The system demonstrates logical error rates ($\\epsilon_L = 6.9\\%(2)$ per round) comparable to offline MWPM decoding and enables mid-circuit feedback in non-Clifford logical circuits where Pauli-frame tracking alone fails.",
+        "motivation": "Real-time classical decoding and feedback must operate within the ~1 µs QEC cycle to prevent error accumulation and enable universal fault-tolerant quantum computation, yet existing GPU/CPU systems suffer from nondeterministic latency while traditional FPGA decoders are limited in algorithmic complexity.",
+        "method": "A central feedback module on an AMD Kintex-7 FPGA (XC7K410T) implements an LSTM decoder with 32 hidden units and 6-bit quantized weights, processing syndrome data with 4-stage pipelined architecture; syndrome extraction takes 20 ns, NN decoding 124 ns, and Pauli-frame updating 4 ns, with the full closed-loop latency measured via oscilloscope calibration to be 550 ns.",
+        "result": "Real-time NN decoding achieves $\\epsilon_L = 6.9(2)\\%$ per round, matching offline MWPM performance ($\\epsilon_L = 7.2(2)\\%$), and maintains robustness under artificially injected errors; mid-circuit feedback in non-Clifford logical circuits preserves logical coherence where uncorrected data show 2–3× larger decoherence, with scaling analysis suggesting support for distance-13 codes on current high-end FPGAs.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.05256",
+      "title": "Error Mitigation in Dynamic Circuits for Hamiltonian Simulation",
+      "authors": [
+        "Sumeet Shirgure",
+        "Siyuan Niu"
+      ],
+      "abstract": "Dynamic quantum circuits integrate mid-circuit measurements and feed-forward operations to enable real-time classical processing and conditional quantum logic. These capabilities are central to key quantum protocols such as quantum error correction, and have recently demonstrated significant potential for reducing quantum resources, including circuit depth and gate count, across a range of applications. However, executing dynamic circuits on real quantum hardware introduces a critical trade-off: while resource requirements decrease, circuit fidelity degrades due to high error rates of mid-circuit measurements, as well as the decoherence errors accumulated during the extended idle periods introduced by both mid-circuit measurements and feed-forward operations. In this paper, we systematically investigate the impact of standard error mitigation techniques on dynamic circuit applications pertaining to Hamiltonian simulation and ground state estimation of physically relevant systems like the Heisenberg model. We explore dynamical decoupling (DD) as a strategy to suppress decoherence and crosstalk errors during idle windows introduced by mid-circuit measurements and feed-forward delays, and also examine error mitigation via zero-noise extrapolation (ZNE). Through experiments conducted on IBM quantum hardware, we benchmark effective combinations of these strategies that maximize the practical benefits of dynamic quantum circuits in these applications. We demonstrate that a combination of DD and ZNE is effective in mitigating the errors introduced during mid-circuit measurements and feed-forward operations, as well as the errors arising from faulty measurements. This approach yields a energy gap improvement of at least 60% in ground state estimation and reduces observed error of time-evolved states by up to 99% for the Ising model and up to 20% for the Heisenberg model.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-06",
+      "score": 0.6554794247337832,
+      "similar_to": [
+        {
+          "title": "Dynamical decoupling for superconducting qubits: a performance survey",
+          "id": "2207.03670",
+          "similarity": 0.884812593460083
+        },
+        {
+          "title": "Suppression of crosstalk in superconducting qubits using dynamical decoupling",
+          "id": "2108.04530",
+          "similarity": 0.866157591342926
+        }
+      ],
+      "summary": {
+        "summary": "This work systematically evaluates error mitigation strategies for dynamic circuits executing Hamiltonian simulation and ground state estimation on IBM quantum hardware, specifically combining dynamical decoupling (DD) during mid-circuit measurement and feed-forward latencies with zero-noise extrapolation (ZNE). The integrated DD+ZNE approach yields at least 60% improvement in energy gap for ground state estimation and recovers 15%–99% of energy gap error for the Ising model time evolution, with more modest 3%–20% improvements for the Heisenberg model.",
+        "motivation": "Dynamic circuits reduce circuit depth via mid-circuit measurements and conditional logic, but introduce substantial classical processing latencies during which idle qubits accumulate dephasing and crosstalk errors from readout operations, negating fidelity gains from resource reduction.",
+        "method": "Experiments on IBM Kingston benchmark DD and ZNE individually and in combination across two 1D spin models (TFIM and Heisenberg chain) with system sizes $n \\in \\{3, 5, 8, 12\\}$ qubits and field strengths $h \\in \\{0, 0.5, 2, 5\\}$. DD uses simple $X$-pulse sequences on idle data qubits during measurement/feed-forward windows; ZNE applies global circuit folding ($U(U^\\dagger U)^k$) with manual inversion of dynamic gadgets to scale measurement and latency errors.",
+        "result": "Combined DD+ZNE consistently outperforms individual techniques, achieving $\\geq 60\\%$ energy gap reduction for ground state preparation across both models and 15%–99% recovery for Ising model time evolution versus only 3%–20% for Heisenberg, reflecting higher complexity of non-commuting $RXX$ and $RYY$ terms.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.04663",
+      "title": "Distributed Quantum Error Correction with Bivariate Bicycle Codes in a Modular Architecture",
+      "authors": [
+        "Nitish Kumar Chandra",
+        "Eneet Kaur",
+        "Reza Nejabati",
+        "Kaushik P. Seshadreesan"
+      ],
+      "abstract": "Quantum low density parity check (qLDPC) codes, particularly bivariate bicycle (BB) codes, achieve competitive fault tolerance thresholds while offering substantially higher encoding rates than planar surface codes. However, their intrinsically long-range stabilizer structure makes them difficult to implement on monolithic devices with nearest neighbor connectivity and limited qubit capacity. In this work, we study the realization of a BB code in a modular multiprocessor architecture, where quantum processors are interconnected through shared Bell pairs. We consider processors with all to all internal connectivity, which is feasible on trapped ion and neutral atom platforms, enabling flexible local gate execution while inter-processor (nonlocal) gates are mediated by shared entanglement. We describe a star network architecture that can realize this distributed setting. We partition the qubits of the [[144,12,12]] BB code across 4, 6, and 12 quantum processors and analyze the resulting logical error rates and pseudo-threshold performance under circuit level noise by varying the number of processors and a scaling factor that captures the additional noise associated with nonlocal operations. We use Monte Carlo simulations with BP+OSD decoding and extend the previously known BB code ansatz to the distributed setting. Our results provide architectural insight and design considerations for distributed BB codes in modular quantum computing architectures.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-06",
+      "score": 0.5582038599067053,
+      "similar_to": [
+        {
+          "title": "Multivariate Bicycle Codes",
+          "id": "2406.19151",
+          "similarity": 0.9137095808982849
+        },
+        {
+          "title": "Breakeven demonstration of quantum low-density parity-check codes",
+          "id": "2606.06455",
+          "similarity": 0.8671286106109619
+        }
+      ],
+      "summary": {
+        "summary": "This work studies distributed implementations of the [[144,12,12]] bivariate bicycle code across 4, 6, and 12 quantum processors connected via a star network using shared Bell pairs for nonlocal gates. The pseudo-threshold decreases monotonically from $p_0 \\approx 0.0063$ (monolithic, $\\alpha=1$) to $p_0 \\approx 0.0016$–$0.0023$ as nonlocal gate error penalty $\\alpha$ increases to 7, with coarser partitioning (4 QPU) outperforming finer ones ($\\alpha \\geq 3$).",
+        "motivation": "Bivariate bicycle codes offer higher encoding rates than surface codes but require long-range stabilizer interactions difficult to implement on monolithic devices with nearest-neighbor connectivity. Modular architectures with all-to-all intra-QPU connectivity and entanglement-mediated inter-QPU gates are feasible on trapped-ion and neutral-atom platforms, but their noise characteristics require systematic analysis.",
+        "method": "The authors partition the [[144,12,12]] BB code (12×6 torus, 144 qubits, 12 logical qubits) into contiguous vertical strips across QPUs, classify CNOT gates as local ($p$) or nonlocal ($\\alpha p$), and perform Monte Carlo simulations with BP+OSD decoding under circuit-level depolarizing noise. They extend the BB code ansatz to $p_L(p,\\alpha) = p^{d'_{\\text{circ}}/2} \\exp[c_0(\\alpha) + c_1(\\alpha)p + c_2(\\alpha)p^2]$ with quadratic $\\alpha$-dependence.",
+        "result": "For 12 QPUs, pseudo-threshold decreases from $p_0(1)=0.006343$ to $p_0(7)=0.001651$ as $\\alpha \\in \\{1,3,5,7\\}$; similar trends hold for 6 and 4 QPU partitions with $p_0(7)$ values of 0.001912 and 0.002313 respectively. Fits achieve logarithmic $R^2 > 0.989$ across all configurations, confirming the ansatz captures distributed BB code degradation quantitatively.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.05035",
+      "title": "Network-Mediated Capacitive Coupling Drives Fast OTOC Saturation in Superconducting Circuits",
+      "authors": [
+        "Carla Caro Villanova",
+        "Alan C. Santos"
+      ],
+      "abstract": "We investigate the dynamical and spectral consequences of capacitance-network-mediated interactions in superconducting transmon arrays beyond effective nearest-neighbor descriptions. While weak coupling regimes are well captured by an effective nearest-neighbor interacting models, we show that increasing capacitive connectivity induces a pronounced departure from this approximation in dynamical observables. Using Out-of-Time-Ordered Correlators (OTOCs), we demonstrate that such network-mediated couplings significantly accelerate operator scrambling, leading to rapid saturation compared to the nearest-neighbor limit. This dynamical crossover is accompanied by a shift in spectral statistics away from Poissonian behavior toward level repulsion, with the ratio parameter remaining intermediate between Poisson and Gaussian Orthogonal Ensemble (GOE) limits. This indicates the emergence of partial ergodicity rather than fully developed quantum chaos. As this behavior arises within experimentally realistic regimes of current superconducting transmon devices, identifying when network-mediated couplings qualitatively alter information dynamics is directly relevant for scalable superconducting architectures.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-06",
+      "score": 0.5189982785477945,
+      "similar_to": [
+        {
+          "title": "Collapse and Inversion of the Josephson Potential in a Strongly Driven Superconducting Circuit",
+          "id": "2607.14344",
+          "similarity": 0.8325991630554199
+        },
+        {
+          "title": "Real-time detection of correlated quasiparticle tunneling events in a multi-qubit superconducting device",
+          "id": "2602.01945",
+          "similarity": 0.8274940252304077
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates that capacitance-network-mediated interactions in superconducting transmon arrays drive rapid operator scrambling via Out-of-Time-Ordered Correlators (OTOCs), accelerating saturation compared to nearest-neighbor approximations. The system exhibits partial ergodicity with level-spacing ratios intermediate between Poisson and GOE limits, rather than fully developed quantum chaos, within experimentally accessible parameter regimes where $C_C/C_q \\approx 0.15$–0.2.",
+        "motivation": "Understanding when network-mediated capacitive couplings in transmon arrays depart qualitatively from nearest-neighbor models is crucial for scalable superconducting architectures, particularly given that collateral (non-local) couplings arise generically from tridiagonal capacitance matrix inversions even without explicit long-range connections.",
+        "method": "Using the exact analytical inverse of tridiagonal Toeplitz capacitance matrices expressed via Chebyshev polynomials of the second kind, the authors characterized non-local coupling energies $E_{C,nm} = e^2(\\mathbf{C}^{-1})_{nm}/2$ that scale exponentially with Manhattan distance $d = |n-m|$ as $(C_q/C_C)^{-d}$. They then compared dynamical evolution under the full non-local Hamiltonian in Eq. (9) against the nearest-neighbor approximation, measuring OTOC saturation and spectral statistics via the level-spacing ratio $\\langle r \\rangle$.",
+        "result": "For $C_C/C_q = 0.15$, the non-local model exhibits significantly faster OTOC saturation reaching smooth approach to $C(t) \\sim 10^{-1}$, whereas nearest-neighbor models show coherent reflections with $\\max_t C(t) = 2$. Spectral analysis yields $\\langle r \\rangle_{\\mathrm{nLoc}} \\geq 0.386$ (breaking integrability), but remains $\\langle r \\rangle_{\\mathrm{nLoc}} < 0.535$ (GOE threshold), indicating partial ergodicity rather than chaos for systems with $N = 8$–14 qubits.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8316,
+    0.6555,
+    0.5582,
+    0.519,
+    0.3944,
+    0.3905,
+    0.3441,
+    0.3357,
+    0.2555,
+    0.2465,
+    0.1873,
+    0.1806,
+    0.1791,
+    0.1707,
+    0.1641,
+    0.1598,
+    0.1573,
+    0.1483,
+    0.1479,
+    0.1278,
+    0.1202,
+    0.1174,
+    0.1153,
+    0.1153,
+    0.104,
+    0.1036,
+    0.0988,
+    0.0963,
+    0.0946,
+    0.0918,
+    0.085,
+    0.0815,
+    0.0777,
+    0.0715,
+    0.0712,
+    0.0676,
+    0.066,
+    0.0631,
+    0.0538,
+    0.0528,
+    0.0489,
+    0.0465,
+    0.0462,
+    0.046,
+    0.046,
+    0.0438,
+    0.0418,
+    0.0401,
+    0.039,
+    0.0385,
+    0.0384,
+    0.0382,
+    0.0374,
+    0.0363,
+    0.0347,
+    0.0341,
+    0.0333,
+    0.0327,
+    0.0321,
+    0.0308,
+    0.0306,
+    0.0284,
+    0.0273,
+    0.0241,
+    0.0229,
+    0.0225,
+    0.0193,
+    0.0191,
+    0.0189,
+    0.0174,
+    0.0173,
+    0.0158,
+    0.0148,
+    0.0145,
+    0.0142,
+    0.0142,
+    0.014,
+    0.0133,
+    0.0132,
+    0.0132,
+    0.0131,
+    0.0126,
+    0.0123,
+    0.0117,
+    0.0109,
+    0.0094,
+    0.0088,
+    0.0087,
+    0.0082,
+    0.0078,
+    0.0071,
+    0.0071,
+    0.0069,
+    0.0061,
+    0.0045,
+    0.0035,
+    0.0014,
+    0.0011
+  ]
+}

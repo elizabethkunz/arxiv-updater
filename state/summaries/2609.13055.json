@@ -1,0 +1,8 @@
+{
+  "summary": "Measurements on 14 transmons with a wide range of anharmonicities show that the largest usable sub-resonant drive amplitude, above which the spectrum hybridizes strongly ('chaos') and the transmon leaves its logical states, is set by a single parameter, $\\gamma = \\omega_q/\\alpha$. The threshold scales as $\\eta_\\mathrm{max} \\propto \\gamma^{0.61}$, with a prefactor that depends only weakly on the normalized drive frequency.",
+  "motivation": "Strong drives speed up gates and readout but eventually excite the transmon out of its logical states, and how that threshold depends on design parameters was not established. For a transmon used as a parametrically driven coupler the threshold caps the interaction rate, which is the product of the anharmonicity and $\\eta_\\mathrm{max}$.",
+  "method": "Each transmon ($\\gamma$ from 18 to 99 in the examples shown) receives a sub-resonant stimulation pulse over a range of drive frequencies and amplitudes, and the remaining ground-state population is measured. The thresholds are compared with Floquet branch analysis and a semiclassical model.",
+  "result": "Experiment and the three threshold estimates agree across the drive-frequency range, with the largest deviations near nonlinear resonances, the strongest being the fourth-order 1:3 resonance. At $\\eta_\\mathrm{max}$ the Stark shift is about $\\omega_q/8$ whatever the anharmonicity, so the only clear way to much faster parametric rates is a higher coupler frequency; rates are tabulated for a 5 GHz coupler with 150 MHz anharmonicity and $g/\\Delta = 0.1$.",
+  "source": "full text",
+  "generated_by": "Claude, written in-session from the full text (not via the script's API path)"
+}

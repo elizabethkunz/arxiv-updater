@@ -1,0 +1,344 @@
+{
+  "date": "2026-03-12",
+  "n_fetched": 85,
+  "papers": [
+    {
+      "id": "2603.11018",
+      "title": "Mitigating crosstalk errors for simultaneous single-qubit gates on a superconducting quantum processor",
+      "authors": [
+        "Jaap J. Wesdorp",
+        "Eric Hyyppä",
+        "Joona Andersson",
+        "Janos Adam",
+        "Rohit Beriwal",
+        "Ville Bergholm",
+        "Saga Dahl",
+        "Simone Diego Fasciati",
+        "Alejandro Gomez Friero",
+        "Zheming Gao",
+        "Daria Gusenkova",
+        "Andrew Guthrie",
+        "Johannes Heinsoo",
+        "Tuukka Hiltunen",
+        "Keiran Holland",
+        "Amin Hosseinkhani",
+        "Sinan Inel",
+        "Joni Ikonen",
+        "Shan W. Jolin",
+        "Kristinn Juliusson",
+        "Seung-Goo Kim",
+        "Anton Komlev",
+        "Roope Kokkoniemi",
+        "Otto Koskinen",
+        "Joonas Kylmälä",
+        "Alessandro Landra",
+        "Julia Lamprich",
+        "Magdalena Lehmuskoski",
+        "Nizar Lethif",
+        "Per Liebermann",
+        "Tianyi Li",
+        "Aleksi Lintunen",
+        "Fabian Marxer",
+        "Kunal Mitra",
+        "Jakub Mrożek",
+        "Lucas Ortega",
+        "Miha Papič",
+        "Matti Partanen",
+        "Alexander Plyushch",
+        "Stefan Pogorzalek",
+        "Michael Renger",
+        "Jussi Ritvas",
+        "Sampo Saarinen",
+        "Indrajeet Sagar",
+        "Matthew Sarsby",
+        "Mykhailo Savytskyi",
+        "Ville Selinmaa",
+        "Ivan Takmakov",
+        "Brian Tarasinski",
+        "Francesca Tosto",
+        "David Vasey",
+        "Panu Vesanen",
+        "Jeroen Verjauw",
+        "Alpo Välimaa",
+        "Nicola Wurz",
+        "Hsiang-Sheng Ku",
+        "Frank Deppe",
+        "Juha Hassel",
+        "Caspar Ockeloen-Korppi",
+        "Wei Liu",
+        "Jani Tuorila",
+        "Chun Fai Chan",
+        "Attila Geresdi",
+        "Antti Vepsäläinen"
+      ],
+      "abstract": "Single-qubit gates on superconducting quantum processors are typically implemented using microwave pulses applied through dedicated control lines. However, these microwave pulses may also drive other qubits due to crosstalk arising from capacitive coupling and wavefunction overlap in systems with closely spaced transition frequencies. Crosstalk and frequency crowding increase errors during simultaneous single-qubit operations relative to isolated gates, thus forming a major bottleneck for scaling superconducting quantum processors. In this work, we combine model-based qubit frequency optimization with pulse shaping to demonstrate crosstalk error mitigation in single-qubit gates on a 49-qubit superconducting quantum processor. We introduce and experimentally verify an analytical model of simultaneous single-qubit gate error caused by microwave crosstalk that depends on a given pulse shape. By employing a model-based optimization strategy of qubit frequencies, we minimize the crosstalk-induced error across the processor and achieve a mean simultaneous single-qubit gate fidelity of 99.96% for a 16-ns gate duration, approaching the mean individual gate fidelity. To further reduce the simultaneous error and required qubit frequency bandwidth on high-crosstalk qubit pairs, we introduce a crosstalk transition suppression (CTS) pulse shaping technique that minimizes the spectral energy around transitions inducing leakage and crosstalk errors. Finally, we combine CTS with model-based frequency optimization across the device and experimentally show a systematic reduction in the required qubit frequency bandwidth for high-fidelity simultaneous gates, supported by simulations of systems with up to 1000 qubits. By alleviating constraints on qubit frequency bandwidth for parallel single-qubit operations, this work represents an important step for scaling towards larger quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-11",
+      "score": 0.9380279168876983,
+      "similar_to": [
+        {
+          "title": "Quantum crosstalk cancellation for fast entangling gates and improved multi-qubit performance",
+          "id": "2106.00675",
+          "similarity": 0.8946200609207153
+        },
+        {
+          "title": "Crosstalk In Contemporary Quantum Devices",
+          "id": "2605.26528",
+          "similarity": 0.8905670046806335
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates crosstalk error mitigation for simultaneous single-qubit gates on a 49-qubit superconducting processor by combining model-based qubit frequency optimization with pulse shaping. The authors introduce an analytical model of crosstalk-induced gate error and experimentally achieve 99.96% mean fidelity for simultaneous $X_{\\pi/2}$ gates at 16 ns duration on 46 qubits, with simulations showing scalability to 1000 qubits.",
+        "motivation": "Simultaneous single-qubit operations are essential for quantum error correction and scaling superconducting processors, but microwave crosstalk from capacitive coupling between drive lines causes significant errors during parallel gates, especially in systems with closely spaced transition frequencies.",
+        "method": "The authors develop an analytical second-order perturbation theory model (Eq. 4) of crosstalk-induced error including Rabi splitting effects, use it to optimize qubit frequency configurations via error landscapes, and introduce crosstalk transition suppression (CTS) using higher-derivative DRAG pulses combined with off-resonant driving to suppress spectral energy at harmful transitions ($f_{01}^T$, $f_{12}^T$, $f_{12}^C$).",
+        "result": "With frequency optimization and CTS, mean simultaneous gate error reaches $4.7 \\times 10^{-4}$ on 46 qubits at 20 ns gate duration within a 197 MHz frequency bandwidth; on the highest-crosstalk pair ($C_{TC} = -13.9$ dB), CTS reduces crosstalk error by a factor $28 \\pm 4$ compared to conventional pulses, and simulations predict CTS reduces required bandwidth by $119 \\pm 4$ MHz for devices with 54+ qubits.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.10699",
+      "title": "Efficient and accurate two-qubit-gate operation in a high-connectivity transmon lattice utilizing a tunable coupling to a shared mode",
+      "authors": [
+        "Tuure Orell",
+        "Hao Hsu",
+        "Joona Andersson",
+        "Jani Tuorila",
+        "Frank Deppe",
+        "Hsiang-Sheng Ku"
+      ],
+      "abstract": "Increasing connectivity and decreasing qubit-state delocalization without compromising the speed and accuracy of elementary gate operations are topical challenges in the development of large-scale superconducting quantum computers. In this theoretical work, we study a special honeycomb qubit lattice where each qubit inside a unit cell is coupled to every other one via two dedicated tunable couplers and a common central element. This results in an effective multi-mode interaction enabling tunable, on-demand, all-to-all connectivity between each qubit pair within the unit cell. We provide a thorough analysis of the unit cell, including a proposal for a novel and efficient conditional-Z gate scheme which takes advantage of the effective multi-mode coupling. We develop an experimentally viable pulse protocol for a single-step gate implementation which considerably improves the gate speed compared to the previous two-qubit-gate realizations suggested for architectures utilizing a center mode. We also show numerical results on how the presence of spectator qubits affects the average two-qubit-gate fidelity, and analyse how the multi-mode coupling structure mitigates the delocalization-induced crosstalk during simultaneous single-qubit gates within the unit cell. We also provide analytical estimates for the errors caused by relaxation and dephasing during a two-qubit-gate operation, including noise terms for the multi-mode coupling structure. Our multi-mode coupling architecture results in a good balance between increased connectivity and available parallelism, especially when several interacting unit cells form a quantum processing unit. We anticipate that the obtained results pave the way towards high-connectivity quantum processors with efficient and low-overhead quantum algorithms.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-11",
+      "score": 0.8504036402146794,
+      "similar_to": [
+        {
+          "title": "A tunable coupling scheme for implementing high-fidelity two-qubit gates",
+          "id": "1803.09813",
+          "similarity": 0.8974021077156067
+        },
+        {
+          "title": "Quantum crosstalk cancellation for fast entangling gates and improved multi-qubit performance",
+          "id": "2106.00675",
+          "similarity": 0.8822520971298218
+        }
+      ],
+      "summary": {
+        "summary": "This theoretical work proposes a honeycomb lattice architecture for superconducting qubits with high connectivity, where each qubit is coupled via dedicated tunable couplers to a shared central mode, enabling all-to-all connectivity within unit cells. A novel single-step CZ gate protocol is introduced with gate times roughly 2× faster than prior sequential MOVE-CZ-MOVE schemes, achieving infidelities ~$6 \\times 10^{-7}$ in the minimal two-qubit system.",
+        "motivation": "Conventional superconducting processors use low-connectivity planar grids that require longer gate sequences and suffer from delocalization-induced crosstalk errors during simultaneous single-qubit operations. The multi-mode coupling architecture with a central element offers potential to simultaneously increase connectivity and suppress these delocalization-induced errors.",
+        "method": "An effective three-mode coupling between two qubits and a shared center mode is created by simultaneously exciting states in single- and two-excitation manifolds via tunable coupler frequency pulses with Gaussian envelopes. The protocol is optimized numerically over pulse amplitudes and filter widths using full Hamiltonian simulations including all coupling modes and realistic pulse shapes.",
+        "result": "For $N=2$ qubits with $\\tau = 60.0$ ns gate duration, infidelity reaches $6.2 \\times 10^{-7}$; including four spectator qubits increases infidelity to ~$2 \\times 10^{-4}$ due to off-resonant leakage channels. Decoherence-limited fidelity at $T_1 = 30$ µs yields $1-\\mathcal{F} \\sim 10^{-3}$, with the protocol showing equal $T_1$ vulnerability but reduced $T_2^*$ sensitivity compared to conventional diabatic CZ gates.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.10224",
+      "title": "Reducing Quantum Error Mitigation Bias Using Verifiable Benchmark Circuits",
+      "authors": [
+        "Joseph Harris",
+        "Kevin Lively",
+        "Peter Schuhmacher"
+      ],
+      "abstract": "We present a simple, malleable and low-overhead approach for improving generic biased quantum error mitigation (QEM) methods, achieving up to 15% fidelity improvements over standard QEM on 100-qubit circuits with up to 2000 entangling gates. We do so by constructing verifiable benchmark circuits which mirror the application circuit's native-gate structure and thus noise profile. These circuits can be used to benchmark and mitigate the bias of the underlying error mitigation method, requiring only the application circuit and hardware native gate set. We present two methods for generating benchmark circuits; one is agnostic to the target hardware at the expense of a small overhead of single-qubit gates, while the other is specific to the IBM superconducting hardware and has no gate overhead. As a corollary, we introduce benchmarked-noise zero-noise extrapolation (bnZNE) as a simple adaptation of zero-noise extrapolation (ZNE), one of the most popular error mitigation methods. We consider as an example the bias-mitigated ZNE and bnZNE of Trotterized Hamiltonian simulations, observing that our approaches outperform standard ZNE using both small-scale classical simulations and 100-qubit utility-scale experiments on the IBM superconducting hardware. We consider the measurement of both single-site observables as well as two-site correlations along a one-dimensional qubit chain. We also provide a software package for implementing the error mitigation techniques used in this research.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-10",
+      "score": 0.7425140687747951,
+      "similar_to": [
+        {
+          "title": "Benchmarking quantum gates and circuits",
+          "id": "2407.09942",
+          "similarity": 0.8756753206253052
+        },
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8610713481903076
+        }
+      ],
+      "summary": {
+        "summary": "This work introduces verifiable benchmark circuits that mirror application circuit structure to reduce bias in quantum error mitigation methods, achieving up to 15% fidelity improvements on 100-qubit circuits with up to 2000 entangling gates on IBM superconducting hardware. The method is applied to zero-noise extrapolation and a new variant called benchmarked-noise ZNE (bnZNE), validated on Trotterized Ising and Heisenberg simulations.",
+        "motivation": "Biased quantum error mitigation methods like ZNE achieve error correction up to order $\\mathcal{O}(p^m)$ but retain residual fidelity bias that limits accuracy of expectation values on NISQ devices.",
+        "method": "For a given application circuit, classically verifiable benchmark circuits are constructed satisfying conditions C1–C3: matching native-gate structure, efficiently classically computable outcomes, and exact expectation value $\\langle O \\rangle^{\\mathrm{exact}}_\\mathcal{B} = 1$. Bias-mitigated estimates are obtained via $\\langle O \\rangle^{\\mathrm{b-mit}} = \\langle O \\rangle^{\\mathrm{QEM}}_\\mathcal{A}/\\langle O \\rangle^{\\mathrm{QEM}}_\\mathcal{B}$. Two benchmark circuit generation methods are provided: hardware-agnostic (Pauli rotations, small single-qubit overhead) and IBM Heron-tailored (zero overhead, using basis gates $\\{\\mathrm{CZ}, R_Z(\\theta), X, \\sqrt{X}\\}$).",
+        "result": "On 100-qubit ibm_fez experiments with 1–20 Trotter layers (495–1980 CZ gates), bnZNE outperforms standard ZNE in mean fidelity and root-mean-squared error for both single-site $\\langle Z_i \\rangle$ observables and two-site correlations; bias-mitigated bnZNE achieves best decay-rate recovery with mean improvements of order 0.05–0.11 RMSE reduction depending on circuit depth.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.10193",
+      "title": "Charge-tunable Cooper-pair diode",
+      "authors": [
+        "Jon Ortuzar",
+        "Stefano Trivini",
+        "Leonard Edens",
+        "F. Sebastian Bergeret",
+        "Jose Ignacio Pascual"
+      ],
+      "abstract": "Superconducting diodes, devices that allow Cooper-pair currents to flow more easily in one direction than the other, are set to become key building blocks for dissipationless electronics. Existing realizations, however, rely on magnetic fields, ferromagnets, or complex heterostructures that hinder integration and scalability. Here we demonstrate a diode effect for Cooper-pairs that arises solely from electron-electron interactions in nanoscale superconducting lead islands. When these islands are driven into the Coulomb blockade regime, Cooper-pair transport occurs through resonant charge states. By tuning the island's electrostatic environment, we controllably break particle-hole symmetry and induce nonreciprocal supercurrents, thereby achieving a gate-switchable superconducting diode without any external magnetic field. Our approach enables robust rectification of superconducting currents and microwave photoresponse, providing a scalable strategy to superconducting logic devices.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-03-10",
+      "score": 0.562193431372308,
+      "similar_to": [
+        {
+          "title": "Distinguishing parity-switching mechanisms in a superconducting qubit",
+          "id": "2204.07458",
+          "similarity": 0.8075042963027954
+        },
+        {
+          "title": "The superconducting grid-states qubit",
+          "id": "2509.14656",
+          "similarity": 0.8058869242668152
+        }
+      ],
+      "summary": {
+        "summary": "A superconducting diode effect is demonstrated in nanoscale lead islands on graphene using Coulomb blockade to break particle-hole symmetry without external magnetic fields or ferromagnets. Gate-tunable nonreciprocal Cooper-pair currents are achieved through resonant charge states, enabling rectification with a rectification ratio near 10 and microwave photodetection with responsivity $1.38$ nA/pW at $10$–$20$ GHz.",
+        "motivation": "Existing superconducting diode realizations rely on magnetic fields or complex heterostructures that hinder integration and scalability; a simpler, gate-switchable approach based on Coulomb interactions is desired for scalable superconducting logic devices.",
+        "method": "Pb islands (effective radius $5$–$40$ nm) on bilayer graphene are coupled to proximitized graphene via a double-junction geometry, where gating with voltage pulses tunes the fractional excess charge $n_0$ over $\\pm 1$ e to controllably break particle-hole symmetry and induce nonreciprocal resonant Cooper-pair tunneling through charge states separated by gaps $4E_C/e$ up to $1.5$ mV.",
+        "result": "Two symmetric resonant Cooper-pair tunneling peaks shift with $n_0$, producing asymmetric $V(I)$ characteristics with hysteresis in the easy-flow direction and switchable diode polarity; sinusoidal current drive yields rectification ratios $\\text{RR}(I) \\approx 10$ and microwave photodetection at $10$–$20$ GHz with linear power responsivity $1.38$ nA/pW.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.10506",
+      "title": "Temporal-Mode Engineering for Multiplexed Microwave Photons and Mode-Selective Quantum State Transfer",
+      "authors": [
+        "Keika Sunada",
+        "Takeaki Miyamura",
+        "Kohei Matsuura",
+        "Zhiling Wang",
+        "Jesper Ilves",
+        "Shingo Kono",
+        "Yasunobu Nakamura"
+      ],
+      "abstract": "Quantum communication between distant superconducting qubits on separate chips using itinerant microwave photons has been studied to realize distributed quantum information processing. To enhance information capacity and fault tolerance in quantum networks, it is beneficial to encode a large quantity of quantum information using auxiliary degrees of freedom of these photons. In this work, we experimentally investigate the use of temporal modes of photon wave packets. Through the photon-shaping technique with a fixed-frequency transmon qubit, we generate single microwave photons in four orthogonal temporal modes propagating along a waveguide. We demonstrate mode-selective absorption across orthogonal modes via the time-reversed process of emission, achieving absorption efficiencies exceeding 0.89 for mode-matched cases, while remaining below 0.13 for orthogonal modes. Photons rejected by a given receiver mode can remain mutually orthogonal, enabling selective absorption at subsequent receivers in future multi-node architectures. These results highlight the feasibility of temporal-mode engineering for constructing a higher-dimensional orthogonal basis for multiplexed quantum networks.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-11",
+      "score": 0.5412191757867568,
+      "similar_to": [
+        {
+          "title": "Seamless high-Q microwave cavities for multimode circuit QED",
+          "id": "2010.16382",
+          "similarity": 0.8397959470748901
+        },
+        {
+          "title": "Controlling the spontaneous emission of a superconducting transmon qubit",
+          "id": "0803.4490",
+          "similarity": 0.8172330856323242
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates temporal-mode engineering for microwave photons using superconducting qubits, generating four orthogonal temporal modes via photon-shaping techniques with fixed-frequency transmons. Mode-selective absorption is achieved with efficiencies exceeding $0.89$ for matched modes and below $0.13$ for orthogonal modes, preserving orthogonality among rejected photons for multiplexed quantum networks.",
+        "motivation": "Distributed quantum computing requires scalable quantum channels between remote superconducting qubits; leveraging auxiliary degrees of freedom of propagating microwave photons can increase information capacity and enable multiplexing while mitigating photon loss.",
+        "method": "Single microwave photons in four orthogonal temporal modes are generated by controlling the decay rate $\\Gamma_m(t)$ via time-dependent sender drives $\\zeta_m^S(t)$ in a resonator-assisted Raman process; selective absorption is implemented by applying the time-reversed receiver drive $\\zeta_n^R(-t+\\Delta t)$ with independently configurable mode index $n$, and mode orthogonality is verified via squared-overlap matrices $|I_{mm'}|^2$.",
+        "result": "Process tomography yields averaged fidelity $\\mathcal{F} = 0.62$ across four modes for matched-mode quantum state transfer; off-diagonal absorption efficiencies remain suppressed ($R_{m\\neq n} \\leq 0.13$), and rejected photons preserve mutual orthogonality ($|I_{mm'}|^2 \\leq 0.01$ for $m < n$), with simulations indicating potential for fidelity exceeding $0.96$ for matched modes and below $0.01$ for orthogonal modes with improved drive stability.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.938,
+    0.8504,
+    0.7425,
+    0.5622,
+    0.5412,
+    0.4374,
+    0.3686,
+    0.3212,
+    0.3139,
+    0.2978,
+    0.2783,
+    0.2157,
+    0.1897,
+    0.1672,
+    0.1656,
+    0.1589,
+    0.1561,
+    0.152,
+    0.1439,
+    0.1409,
+    0.1086,
+    0.1015,
+    0.0935,
+    0.0882,
+    0.0851,
+    0.077,
+    0.0757,
+    0.0754,
+    0.0726,
+    0.0721,
+    0.0697,
+    0.065,
+    0.0636,
+    0.0631,
+    0.0582,
+    0.0424,
+    0.0405,
+    0.0397,
+    0.0392,
+    0.0388,
+    0.0387,
+    0.0376,
+    0.0375,
+    0.0369,
+    0.0358,
+    0.0357,
+    0.0324,
+    0.0295,
+    0.0294,
+    0.0274,
+    0.026,
+    0.0253,
+    0.0248,
+    0.0232,
+    0.0228,
+    0.0223,
+    0.0214,
+    0.0193,
+    0.0136,
+    0.0134,
+    0.0134,
+    0.0134,
+    0.0129,
+    0.0122,
+    0.0122,
+    0.0117,
+    0.0116,
+    0.0107,
+    0.0098,
+    0.0089,
+    0.0083,
+    0.0076,
+    0.0074,
+    0.0074,
+    0.0069,
+    0.0069,
+    0.0066,
+    0.0064,
+    0.0059,
+    0.0054,
+    0.0045,
+    0.0032,
+    0.0028,
+    0.0026,
+    0.0026
+  ]
+}

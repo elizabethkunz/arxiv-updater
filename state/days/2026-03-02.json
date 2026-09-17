@@ -1,0 +1,336 @@
+{
+  "date": "2026-03-02",
+  "n_fetched": 83,
+  "papers": [
+    {
+      "id": "2602.24003",
+      "title": "3D Integrated Embedded Filters for Superconducting Quantum Circuits",
+      "authors": [
+        "Waqas Ahmad",
+        "Gioele Consani",
+        "Mohammad Tasnimul Haque",
+        "Jacob Dunstan",
+        "Brian Vlastakis"
+      ],
+      "abstract": "Microwave filtering for superconducting qubits is a key element of quantum computing technology, enabling high coherence and fast state detection. This work presents the design and implementation of novel microwave Purcell filters for superconducting quantum circuits, integrated within a multilayer printed circuit board (PCB). The off-chip design removes all filter components from the qubit substrate, reducing device complexity, improving layout footprint and allowing better scalability to large qubit counts. Each embedded filter can couple up to nine readout resonators, enabling efficient multiplexed readout. Electromagnetic simulations of the filter predict a thousand-fold improvement in qubit isolation from the readout port. The design was experimentally validated under cryogenic conditions in conjunction with a 35-qubit device, demonstrating compatibility of the PCB-based filter with high-coherence superconducting qubits. The comparison of the measured qubit median T1 of 84 $μ$s with the expected radiative limit from electromagnetic simulations validated the presence of Purcell filtering in the system.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-27",
+      "score": 0.9319288714349016,
+      "similar_to": [
+        {
+          "title": "Fast readout and reset of a superconducting qubit coupled to a resonator with an intrinsic Purcell filter",
+          "id": "2202.06202",
+          "similarity": 0.8876601457595825
+        },
+        {
+          "title": "Broadband Purcell Filter for Fast Superconducting Qubit Reset and Readout",
+          "id": "2609.14081",
+          "similarity": 0.8855267763137817
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates integration of Purcell filters into multilayer PCBs for superconducting quantum processors, with each embedded triangular patch antenna filter coupling to up to nine readout resonators and providing ~1000-fold radiative isolation at the qubit frequency. Experimental validation on a 35-qubit OQC-Toshiko device achieved median $T_1 = 84$ µs and $T_2^{\\mathrm{echo}} = 110$ µs while maintaining fast readout with external quality factors $Q_{\\mathrm{ext}} \\sim 8 \\times 10^3$.",
+        "motivation": "Purcell filtering in superconducting qubits requires careful layout to balance readout speed against coherence; existing on-chip solutions increase substrate complexity and device footprint, motivating a scalable off-chip integration approach.",
+        "method": "A 9–1 multiplexed filter was designed as a short-circuited triangular patch antenna at 9.8 GHz in a three-layer Rogers RT/duroid PCB with 0.9 GHz bandwidth, tiled to six filters (four 9–1 and two 3–1) for 35-qubit multiplexing, and validated via finite-element eigenmode simulations and cryogenic measurements at 11 mK.",
+        "result": "All measured qubit $T_1$ values exceeded the 39 µs no-filter radiative limit (best $T_1 = 128$ µs), confirming Purcell protection; simulations predicted $\\sim 28$ dB suppression of radiative decay at 4.4 GHz with resonator bandwidth spanning 700 MHz.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.24098",
+      "title": "A frequency-agile microwave-optical interface for superconducting qubits",
+      "authors": [
+        "Yufeng Wu",
+        "Yiyu Zhou",
+        "Haoqi Zhao",
+        "Danqing Wang",
+        "Matthew D. LaHaye",
+        "Daniel L. Campbell",
+        "Hong X. Tang"
+      ],
+      "abstract": "Superconducting quantum processors operate at microwave frequencies in millikelvin environments, making it challenging to interconnect distant nodes using conventional microwave wiring. Coherent microwave-to-optical (M2O) transduction enables superconducting quantum networks by interfacing itinerant microwave photons with low-loss optical fiber. However, many state-of-the-art transducers provide efficient conversion only over a narrow frequency span, complicating deployment with heterogeneous superconducting devices that are detuned by gigahertz-scale offsets. Here we demonstrate a frequency-agile microwave-optical interface that overcomes this bandwidth mismatch by cascading an electro-optic M2O transducer with a multimode microwave-to-microwave (M2M) frequency converter, with in situ tunability of the microwave resonances in both stages. Using this architecture, we realize continuous frequency coverage from 5.0 to 8.5 GHz within a single system. As an application relevant to superconducting-qubit networking, we use the cascaded M2M-M2O interface to optically read out a superconducting qubit whose readout resonator is detuned by 1.7 GHz from the native M2O microwave resonance, demonstrating a scalable route toward fiber-linked superconducting quantum nodes.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-27",
+      "score": 0.8859383251773579,
+      "similar_to": [
+        {
+          "title": "Quantum-limited millimeter wave to optical transduction",
+          "id": "2207.10121",
+          "similarity": 0.8580343127250671
+        },
+        {
+          "title": "Wireless millikelvin interconnects for superconducting quantum hardware",
+          "id": "2607.13834",
+          "similarity": 0.8491840958595276
+        }
+      ],
+      "summary": {
+        "summary": "A cascaded microwave-to-microwave (M2M) and microwave-to-optical (M2O) transduction system demonstrates continuous frequency coverage from 5.0 to 8.5 GHz using flux-tunable NbN kinetic-inductance resonators, enabling optical readout of superconducting qubits detuned by gigahertz-scale offsets from the M2O native resonance. Optical readout of a qubit at 7.339 GHz (1.7 GHz detuned from the M2O resonance at 5.669 GHz) yields $T_1 = 28.7 ± 3.1$ µs and $T_2 = 2.6 ± 0.3$ µs, consistent with microwave readout measurements.",
+        "motivation": "State-of-the-art M2O transducers operate efficiently only over narrow frequency spans (~10 MHz), complicating deployment with heterogeneous superconducting processors detuned by several gigahertz, thus limiting practical quantum networking applications.",
+        "method": "An electro-optic M2O transducer (AlN double-ring resonator with 50 nm NbN microwave resonator on sapphire) is cascaded with a multimode M2M frequency converter (5 nm NbN meander resonator with 76 MHz free spectral range on silicon). Independent flux tuning of both stages enables deterministic frequency alignment, with the M2M stage (30 dB parametric gain, 67% internal conversion efficiency) bridging arbitrary input frequencies to the M2O operating band.",
+        "result": "The combined M2M–M2O system achieves M2O conversion efficiency ~$10^{-3}$ at 0 dBm optical pump power across the 5.0–8.5 GHz band, with M2M-mediated optical qubit readout showing only modest degradation compared to conventional microwave readout, validating cascaded conversion for frequency-agile superconducting quantum networks.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.23888",
+      "title": "Characterization of Josephson Junction Aging and Annealing Under Different Environments",
+      "authors": [
+        "Rangga P. Budoyo",
+        "Rasanayagam S. Kajen",
+        "Bing Wen Cheah",
+        "Long H. Nguyen",
+        "Rainer Dumke"
+      ],
+      "abstract": "Understanding the aging behavior of Josephson junctions and the effect of annealing on junction resistances is important in building large-scale superconducting quantum processors. Here we study the effects of aging of Josephson junctions under different storage conditions from immediately after fabrication up to 2 to 3 months. We find that the aging curve follows a logarithmic curve, with the aging amplitude mainly determined by fabrication conditions and the aging speed determined by storage conditions. Junctions stored at ambient laboratory conditions aged faster compared to junctions stored in a nitrogen atmosphere or vacuum, with the aging speed appreciably changes when the storage condition changed. We also compared the effect of thermal annealing under nitrogen environment with annealing under ambient conditions up to 250$^\\circ$ C. We find that under nitrogen environment, the resistances decreased at all temperatures tested, while under ambient environment the resistances increased at 200$^\\circ$ C and decreased at 250$^\\circ$ C instead. We were unable to decrease the resistance below the initial-time resistance, suggesting a lower limit on the range of resistance tuning.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-02-27",
+      "score": 0.8126409107474312,
+      "similar_to": [
+        {
+          "title": "Electrical post-fabrication tuning of aluminum Josephson junctions at room temperature",
+          "id": "2602.20002",
+          "similarity": 0.8314512968063354
+        },
+        {
+          "title": "Readout-induced suppression and enhancement of superconducting qubit lifetimes",
+          "id": "2305.10508",
+          "similarity": 0.8035474419593811
+        }
+      ],
+      "summary": {
+        "summary": "This work characterizes aging and annealing of Al/AlO$_x$/Al Josephson junctions over 2–3 months under different storage environments and thermal conditions. Aging follows a logarithmic curve where the amplitude is set by fabrication (oxidation parameters) while aging speed is governed by storage conditions, with ambient atmosphere aging 3–5× faster than nitrogen or vacuum storage.",
+        "motivation": "Precise junction resistance control is essential for large-scale superconducting quantum processors, where wafer-scale $I_c$ variations reach 3% and chip-scale 1–2%. Understanding how storage and post-fabrication annealing affect junction resistance enables optimal frequency tuning and reduces unexpected qubit frequency shifts between measurement and cooldown.",
+        "method": "Al/AlO$_x$/Al junctions (250 nm × 250 nm, Dolan process) were fabricated on high-resistivity silicon and stored in ambient atmosphere, nitrogen glove box ($<0.01\\%$ O$_2$), or vacuum ($\\sim 10^{-7}$ mbar). Resistance was monitored via I–V curve slope over 56–85 days. Thermal annealing was performed up to 250°C in N$_2$ and ambient; voltage annealing used alternating $\\pm 0.9$ V pulses.",
+        "result": "Logarithmic aging fits give amplitude parameter $a = 0.21 ± 0.02$ (ambient) vs. $0.15 ± 0.02$ (glove box) and timescale $\\tau = 1.2 ± 0.5 \\times 10^4$ s (ambient) vs. $4.3 ± 2.2 \\times 10^4$ s (glove box). In N$_2$, resistance decreases monotonically up to 250°C; in ambient, resistance increases at 200°C and decreases at 250°C. Minimum achievable resistance equals the initial post-fabrication value, setting a lower limit on tuning range.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.23544",
+      "title": "High-Temporal-Resolution Measurements of the Impacts of Ionizing Radiation on Superconducting Qubits",
+      "authors": [
+        "Jihee Yang",
+        "Thomas J. Carroll",
+        "Philip Mason",
+        "Robert Schwartz",
+        "Kenneth M. O'Hara",
+        "Jennifer Lund",
+        "Michael Gottschalk",
+        "Timothy Stephenson",
+        "Lawrence H. Friedman",
+        "Francisco Yumiceva",
+        "Justin Hackley",
+        "Aurelius L. Graninger",
+        "Chris Rotella",
+        "Pat Warner",
+        "Jonathan M. Cochran",
+        "Adam V. Bruce",
+        "Melody Wagner",
+        "James Wenner",
+        "Stan Steers",
+        "Christopher Moore",
+        "Alex Marakov",
+        "Bradley G. Christensen"
+      ],
+      "abstract": "We measure the effect of ionizing radiation on superconducting qubits with a timing resolution of 1 $μs$ using microwave kinetic inductance detectors (MKIDs) fabricated on the same substrate. We observe no correlation between two-level system (TLS) scrambling events and ionizing radiation events detected with the MKIDs, suggesting TLS scrambling events may not arise from ionizing radiation and instead the previously reported apparent correlation may be due to events without sufficient energy to trigger our MKIDs. We characterize the fast-time system recovery of transmons following a radiation event, where we observe the recovery of the enhanced qubit relaxation and excitation to be well-described by an exponential recovery to the baseline quasiparticle density, with a characteristic time of $13\\pm1\\ μ$s, and a peak quasiparticle density at the junction per deposited energy of $240/μm^3/MeV$. The fast recovery is consistent with literature reported values for Nb-based devices with direct injection of 2$Δ_{\\text{Al}}$ phonons, demonstrating the recovery is strongly dependent on the proximity of niobium to the junction.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-26",
+      "score": 0.7282587859533033,
+      "similar_to": [
+        {
+          "title": "Impact of ionizing radiation on superconducting qubit coherence",
+          "id": "2001.09190",
+          "similarity": 0.8852377533912659
+        },
+        {
+          "title": "Real-time detection of correlated quasiparticle tunneling events in a multi-qubit superconducting device",
+          "id": "2602.01945",
+          "similarity": 0.8677206039428711
+        }
+      ],
+      "summary": {
+        "summary": "Superconducting transmons on a silicon chip were monitored at 1 μs temporal resolution using co-integrated microwave kinetic inductance detectors (MKIDs) to study ionizing radiation effects. No correlation was found between TLS scrambling events and cosmic-ray-induced ionizing radiation across 371 TLS events and 18,454 radiation triggers, suggesting previous charge-jump correlations arise from lower-energy processes.",
+        "motivation": "Two-level-system (TLS) dynamics and qubit relaxation degradation during ionizing radiation events have been reported previously, but with timing resolution limited to milliseconds or relying on charge-sensitive measurements with energy thresholds well below cosmic-ray energies, leaving ambiguity about causation.",
+        "method": "MKIDs fabricated from 30 nm granular aluminum with 250 kHz linewidth achieved 1 μs response time and ~40 keV energy threshold for ionizing radiation detection. Transmons with niobium capacitors and aluminum junctions were simultaneously measured during cosmic-ray exposure at sea level. Enhanced relaxation and excitation dynamics relative to MKID-detected radiation events were extracted by averaging over 3731 (90 h) and 606 (17 h) events respectively.",
+        "result": "Qubit $T_1$ recovery after radiation events exhibited characteristic time $13 ± 1$ μs following a quasiparticle trapping model ($\\dot{n}_{qp} = -s n_{qp}$), corresponding to peak quasiparticle density $85^{+9}_{-8}$ μm$^{-3}$ or $240$ μm$^{-3}$MeV$^{-1}$. Excess excitations ($|0\\rangle \\to |1\\rangle$) recovered with $8.3^{+1.7}_{-1.2}$ μs, attributed to energetic quasiparticles diffusing from niobium onto aluminum leads before thermalization; proximity effect of niobium reduced recovery times compared to all-aluminum devices ($25$–$5$ ms in literature).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.24075",
+      "title": "Highly-linear flux-to-voltage transducer based on superconducting quantum interference proximity transistors",
+      "authors": [
+        "Angelo Greco",
+        "Giorgio De Simoni",
+        "Francesco Giazotto"
+      ],
+      "abstract": "Superconducting quantum interference devices (SQUIDs) are state-of-the-art in ultra-sensitive magnetometry; however, conventional SQUID devices are fundamentally limited by the inherently nonlinear and periodic nature of their transfer function. Although flux-locked loop (FLL) configurations can mitigate this issue, they introduce electronic complexity and bandwidth constraints that hinder scalability in quantum circuits. In this work, we present an experimental demonstration of the bi-SQUIPT, a flux transducer that modulates the density of states in a proximitized superconducting weak link. The device employs a dual-loop architecture with differential readout, which enables cancellation of non-linearities typical of individual elements, achieving a voltage swing of approximately 120 $μ$V. Measurements yield a spurious-free dynamic range (SFDR) of up to 60 dB, consistent with theoretical predictions and comparable to that of SQUID arrays, while maintaining power dissipation in the femtowatt range. The results further highlight a remarkable operational stability up to 600 mK, positioning the bi-SQUIPT as an enabling technology for high-density cryogenic quantum electronics.",
+      "categories": [
+        "cond-mat.supr-con",
+        "quant-ph"
+      ],
+      "published": "2026-02-27",
+      "score": 0.6863690241870883,
+      "similar_to": [
+        {
+          "title": "The Flux Qubit Revisited to Enhance Coherence and Reproducibility",
+          "id": "1508.06299",
+          "similarity": 0.8364551663398743
+        },
+        {
+          "title": "Superconducting Flux Memory for Cryogenic Applications",
+          "id": "2609.00772",
+          "similarity": 0.8278103470802307
+        }
+      ],
+      "summary": {
+        "summary": "The bi-SQUIPT is a flux-to-voltage transducer employing a dual-loop proximity-based architecture with differential readout that achieves $60$ dB spurious-free dynamic range (SFDR) while maintaining femtowatt-level power dissipation and operational stability up to $600$ mK. The device linearizes the inherently nonlinear periodic response of conventional SQUIDs by exploiting flux-modulated density-of-states changes in proximitized weak links, with performance comparable to superconducting quantum arrays but without the scaling penalties.",
+        "motivation": "Conventional SQUIDs suffer from periodic, quasi-sinusoidal transfer functions that restrict dynamic range and introduce harmonic distortion, while flux-locked loop feedback adds complexity and limits scalability; there is need for intrinsically linear low-dissipation flux transducers suitable for dense integration in quantum circuits.",
+        "method": "Two SQUIDs with proximitized Al/Cu weak links tunnel-coupled to Al/Al-oxide probes were operated in a parallel differential configuration, with each independently biased ($I_{b,a} = 55.0$ pA, $I_{b,b} = 4.9$ pA) to compensate tunnel resistance mismatch ($R_a = 1.18$ M$\\ $ and $R_b = 35.71$ M$\\ $) and independently flux-biased via flux lines; transfer-function linearity was characterized by digitizing $V$-$\\m$ curves and computing SFDR from monochromatic input.",
+        "result": "Peak voltage swing of $120$ µV with maximum SFDR of $60$ dB below $150$ mK, thermal stability with SFDR of $36$ dB at $600$ mK, negligible power dissipation in the femtowatt range, and demonstrated robustness to fabrication variations through bias-current tuning.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.23975",
+      "title": "Coherent Control of Population and Quantum Coherence in Superconducting Circuits",
+      "authors": [
+        "Madan Mohan Mahana",
+        "Gunjan Yadav",
+        "Tarak Nath Dey"
+      ],
+      "abstract": "Quantum mechanics, with its counterintuitive principles and probabilistic nature, has long been confined to the microscopic realm of atoms and photons. Yet, recent breakthroughs have pushed the boundaries of quantum behavior into the macroscopic world, where objects are visible to the naked eye and governed by classical physics. This review article traces the extraordinary progress toward achieving coherent control of population distributions among multiple quantum levels, as well as manipulation of absorption and refractive index, in such large-scale quantum systems, a feat once considered beyond reach.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-27",
+      "score": 0.5669814308436422,
+      "similar_to": [
+        {
+          "title": "Coherent control of macroscopic quantum states in a single-Cooper-pair box",
+          "id": null,
+          "similarity": 0.8587994575500488
+        },
+        {
+          "title": "Circuit Quantum Electrodynamics",
+          "id": "2005.12667",
+          "similarity": 0.8573622107505798
+        }
+      ],
+      "summary": {
+        "summary": "This review article comprehensively covers coherent control of population and quantum coherence in superconducting quantum circuits (SQCs), progressing from field quantization through the Jaynes-Cummings model to multilevel phenomena in circuit QED. The work demonstrates how dressed-state engineering enables quantum-optical effects such as electromagnetically induced transparency (EIT), Autler-Townes splitting (ATS), and stimulated Raman adiabatic passage (STIRAP) in superconducting artificial atoms coupled to microwave resonators.",
+        "motivation": "Superconducting circuits offer a macroscopic platform for exploring quantum coherence and control beyond natural atomic systems, with advantages including strong light-matter coupling ($g/2\\pi \\approx 1$-$100$ MHz), engineered energy spectra via external parameters, and easy integration into quantum processors.",
+        "method": "The review develops quantization of electromagnetic fields in cavity modes and lumped LC circuits, introduces the Lindblad master equation for open quantum systems, discusses transmon and flux qubit implementations with anharmonicity $E_C/\\hbar \\approx 100$-$500$ MHz, and describes engineering of three-level $\\Lambda$ systems in doubly-dressed polariton states via external microwave drives at controlled detunings $\\Delta/2\\pi$.",
+        "result": "Key demonstrations include EIT with probe absorption suppression via coherent control when $\\Omega_c < (\\Gamma_{31} - \\gamma_{21})/2$, ATS-induced spectral splitting proportional to control Rabi frequency $\\Omega_c$, and accelerated population transfer via superadiabatic STIRAP (saSTIRAP) that bypasses strict adiabatic constraints while maintaining high fidelity coherent control without populating intermediate states.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9319,
+    0.8859,
+    0.8126,
+    0.7283,
+    0.6864,
+    0.567,
+    0.2821,
+    0.2752,
+    0.215,
+    0.2079,
+    0.1799,
+    0.1765,
+    0.1763,
+    0.1678,
+    0.1497,
+    0.1465,
+    0.1307,
+    0.1293,
+    0.129,
+    0.1127,
+    0.1005,
+    0.0942,
+    0.0802,
+    0.0699,
+    0.0699,
+    0.0677,
+    0.0674,
+    0.0652,
+    0.0648,
+    0.064,
+    0.0612,
+    0.0605,
+    0.0592,
+    0.0587,
+    0.047,
+    0.0449,
+    0.0436,
+    0.0426,
+    0.0425,
+    0.0417,
+    0.0415,
+    0.0393,
+    0.0355,
+    0.0354,
+    0.0315,
+    0.0306,
+    0.0301,
+    0.0287,
+    0.0275,
+    0.027,
+    0.0223,
+    0.0215,
+    0.0196,
+    0.018,
+    0.0164,
+    0.016,
+    0.0139,
+    0.0138,
+    0.0129,
+    0.012,
+    0.0115,
+    0.0108,
+    0.0103,
+    0.0101,
+    0.0096,
+    0.0096,
+    0.0091,
+    0.0079,
+    0.0064,
+    0.0063,
+    0.0062,
+    0.0061,
+    0.0055,
+    0.0053,
+    0.0049,
+    0.0048,
+    0.0047,
+    0.0038,
+    0.0033,
+    0.003,
+    0.0029,
+    0.0019,
+    0.0019
+  ]
+}

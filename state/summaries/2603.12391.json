@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates hybrid analog-digital and fully digital quantum simulations of the (1+1)D Abelian Higgs model using superconducting transmon qutrits on two lattice sites. Both protocols observe real-time dynamics of electric-field-like observables ($L_z$ and $L_z^2$) by encoding the spin-1 truncated model naturally into the three-level Hilbert space of transmons.",
+  "motivation": "Investigating gauge theories on near-term quantum computers requires resource-efficient simulation protocols; qutrit platforms offer potential advantages over qubit-based approaches for spin-1 and SU(3)-structured models, but prior experimental demonstrations of qudit-based lattice field theory are extremely limited.",
+  "method": "The analog-digital protocol engineers a Floquet Hamiltonian via alternating local analog drives, Stark-modified cross-Kerr interactions, and dynamical decoupling $\\pi_{02}$ pulses to suppress unwanted entangling terms. The digital protocol implements Trotterized evolution using native single-qutrit rotations ($R_x^{01}$, $R_x^{12}$, $R_z^{01}$, $R_z^{12}$) and controlled-sum gates, achieving a fourfold reduction in entangling operations compared to qubit decomposition.",
+  "result": "Both protocols successfully observe AHM dynamics; the analog-digital approach shows agreement with Lindblad master equation models including measured $T_1$ and $T_2$ times (transmons: $T_1^{01} \\sim 26$–30 µs, $T_1^{12} \\sim 15$–17 µs), while the digital approach with randomized compilation and purification-based error mitigation recovers dynamics beyond shallow circuit depths and demonstrates scalability to 15-site chains in simulation.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

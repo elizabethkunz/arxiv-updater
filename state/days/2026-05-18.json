@@ -1,0 +1,295 @@
+{
+  "date": "2026-05-18",
+  "n_fetched": 87,
+  "papers": [
+    {
+      "id": "2605.15554",
+      "title": "Interface Piezoelectric Loss in Superconducting Qubits",
+      "authors": [
+        "Haoxin Zhou",
+        "Kangdi Yu",
+        "Yashwanth Balaji",
+        "Sanjit Shirol",
+        "Leo Sementilli",
+        "Zi-Huai Zhang",
+        "Adam Schwartzberg",
+        "Alp Sipahigil"
+      ],
+      "abstract": "Dissipation remains a central obstacle to improving superconducting quantum circuits, yet the microscopic origins of loss in widely used materials platforms are not fully understood. Here, we report the observation of interface piezoelectricity-induced dissipation in superconducting qubits fabricated on high-resistivity silicon. Our devices use a transmon qubit with a shunt capacitor that simultaneously serves as an interdigital transducer embedded in a surface acoustic wave resonator. By tuning the qubit transition into resonance with discrete mechanical modes, we observe up to a factor-of-two reduction in qubit lifetime, consistent with energy exchange between the qubit and mechanical modes mediated by piezoelectric coupling at the aluminum-silicon interface. Our findings provide direct evidence for interface piezoelectricity as a distinct loss channel in superconducting qubits. Combined with multiphysics simulations, these findings suggest that interface piezoelectric loss can dominate over loss from two-level systems at sufficiently high frequencies.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-05-15",
+      "score": 0.9425648451702718,
+      "similar_to": [
+        {
+          "title": "Surface participation and dielectric loss in superconducting qubits",
+          "id": "1509.01854",
+          "similarity": 0.8968219757080078
+        },
+        {
+          "title": "Wiring surface loss of a superconducting transmon qubit",
+          "id": "2311.16794",
+          "similarity": 0.8948609232902527
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates interface piezoelectricity as a dissipation mechanism in superconducting qubits fabricated on high-resistivity silicon by integrating a transmon qubit into a surface acoustic wave resonator, observing up to 50% reduction in qubit lifetime $T_1$ when tuned into resonance with mechanical modes. Finite-element simulations predict that interface piezoelectric loss scales as $\\Gamma_{\\mathrm{piezo}} \\propto f_q^{3.4}$ and will dominate over two-level system loss above approximately 10 GHz, posing a critical challenge for millimeter-wave superconducting qubits.",
+        "motivation": "While two-level systems have been identified as a primary loss channel in superconducting qubits on nominally non-piezoelectric substrates like silicon, recent classical measurements revealed an effective piezoelectric response at metal-dielectric interfaces despite bulk centrosymmetry; whether this coupling limits qubit coherence has remained unknown.",
+        "method": "A floating transmon SQUID shunted by an interdigital transducer (IDT) serving simultaneously as the qubit capacitor and electromechanical transducer was embedded in a Bragg-reflector-defined SAW resonator on 50 nm aluminum on high-resistivity silicon. Qubit lifetime $T_1$ and coherence $T_2^*$ were measured as functions of qubit frequency; piezoelectric signatures were isolated by applying a DC bias voltage $V_{\\mathrm{bias}}$ to distinguish field-insensitive mechanical resonances from Stark-tunable two-level system defects.",
+        "result": "Extracted electromechanical coupling strengths $g_{m,k}/2\\pi \\sim 100$ kHz and SAW mode linewidths $\\kappa_{m,k}/2\\pi \\sim 1$ MHz across three samples; simulations yielded $\\tan\\delta_{\\mathrm{piezo}} \\approx 1.7 \\times 10^{-4}$ at 4.5 GHz (subdominant to state-of-the-art TLS loss of $10^{-3}$) but predict crossover frequency near 10 GHz where interface piezoelectric loss becomes comparable to and subsequently exceeds TLS-limited dissipation.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.16010",
+      "title": "Demonstration of a Multiplexing Trapped Ion Quantum Processing Unit",
+      "authors": [
+        "F. Anmasser",
+        "M. Abu Zahra",
+        "K. Schüppert",
+        "M. Pototschnig",
+        "J. Wahl",
+        "M. Dietl",
+        "M. Pfeifer",
+        "Y. Colombe",
+        "J. Repp",
+        "M. Brandl",
+        "P. Schindler",
+        "C. Rössler"
+      ],
+      "abstract": "A fault-tolerant quantum computer is expected to require thousands of qubits. Trapped ion architectures provide a modular approach where the quantum register is divided into multiple subregisters connected by physically moving the corresponding ions. Transporting ions at scale comes with several challenges such as the need to connect thousands of control lines to an ion trap chip. Multiplexing the required control voltages from few input signals to multiple electrodes offers a solution to this wiring challenge. Here we demonstrate a quantum processing unit that combines a surface ion trap with a time multiplexer via a sample-and-hold technique that initially charges electrodes to fixed voltages and disconnects them during qubit operations. We characterize the unit's performance by measuring motional heating rates below one phonon per second in both open and closed switch configurations. We further characterize the sample and hold process and find that sampling intervals below 50 ms are sufficient to keep expected gate errors from decaying charges during the hold phase below $10^{-4}$. Our results indicate that the multiplexing scheme is compatible with high-fidelity operations.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-15",
+      "score": 0.6719432419971322,
+      "similar_to": [
+        {
+          "title": "Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code",
+          "id": "2112.03708",
+          "similarity": 0.851490318775177
+        },
+        {
+          "title": "A digitally controlled silicon quantum processing unit",
+          "id": "2604.16216",
+          "similarity": 0.847244143486023
+        }
+      ],
+      "summary": {
+        "summary": "A surface ion trap integrated with a cryogenic multiplexer based on analog switches and sample-and-hold capacitances demonstrates sub-phonon heating rates and compatible performance for scaling trapped-ion processors. The multiplexed architecture reduces the wiring bottleneck by distributing 22 DAC inputs across 199 DC electrodes using time-division multiplexing with integrated 15–50 pF capacitances.",
+        "motivation": "Scaling trapped-ion quantum processors to thousands of qubits requires routing ~1 million DC control lines into ultra-high-vacuum cryostats, creating severe wiring constraints at both the cryostat feedthrough and trap-chip interfaces that co-wiring and integrated DACs cannot adequately solve.",
+        "method": "An Infineon 130 nm ASIC multiplexer was integrated with a surface ion trap on fused silica ($d = 170$ µm ion-surface distance, single aluminum layer). Charge injection was suppressed by adding 39 nF external capacitors per electrode; heating rates and voltage decay were measured via sideband thermometry and ion position tracking.",
+        "result": "Heating rates of $0.55 ± 0.21$ ph/s (closed switches) and $0.43 ± 0.17$ ph/s (open switches) at $1.71 \\times 2\\pi$ MHz, with $\\dot{n}(\\omega) \\propto \\omega^{-\\alpha}$ scaling ($\\alpha = 3.16(28)$ closed, $2.50(18)$ open). Voltage decay for 50 pF electrodes was $\\sim 0.1$ V/min; adding 39 nF reduced it to $< 2.5$ mV/min, compatible with $< 10^{-4}$ gate error when refreshed above 20 Hz. A stacked demonstrator with 194 DC electrodes and $d = 80$ µm was fabricated and thermally validated to 110 V RF drive.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.15389",
+      "title": "Radio-frequency reflectometry in silicon carbide large-area transistors",
+      "authors": [
+        "Alexander Zotov",
+        "Conor McGeough",
+        "Megan Powell",
+        "Alessandro Rossi"
+      ],
+      "abstract": "Radio-frequency (RF) reflectometry is widely used for high-bandwidth readout of semiconductor quantum devices at cryogenic temperatures, but its application has mainly been limited to nanoscale structures with relatively small capacitances. Here, we investigate RF readout in a different regime by applying gate-based reflectometry to a large-area silicon carbide transistor with parasitic capacitances orders of magnitude larger than those of typical quantum devices, conditions normally expected to hinder RF readout. We observe a gate-dependent RF response which degrades and eventually vanishes as temperature is lowered, although MOSFET operation in DC transport is maintained down to deep cryogenic temperatures. We attribute this behaviour to impedance changes introduced by carrier freeze-out in the transistor drift region, and propose a modified circuit configuration designed to restore sensitivity under these conditions. These results establish how parasitic pathways and device geometry can limit RF readout, providing insight into the design of scalable cryogenic-CMOS quantum systems.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "physics.app-ph"
+      ],
+      "published": "2026-05-14",
+      "score": 0.6019685920559998,
+      "similar_to": [
+        {
+          "title": "Wireless millikelvin interconnects for superconducting quantum hardware",
+          "id": "2607.13834",
+          "similarity": 0.8178975582122803
+        },
+        {
+          "title": "Sub-kelvin thermal conductivity of substrates and on-chip routing in quantum integrated systems",
+          "id": "2605.06146",
+          "similarity": 0.8103208541870117
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates gate-based RF reflectometry on a large-area vertical 4H-SiC MOSFET (Wolfspeed CPM2-1200-0025A) with parasitic capacitances of order nanofarads, showing gate-dependent reflectometry response at room temperature near $f_0 \\approx 566$ MHz but complete loss of sensitivity below $T \\approx 45$ K despite maintained DC transport. The signal degradation at cryogenic temperatures is attributed to carrier freeze-out in the drift region increasing $R_\\mathrm{drift}$ from sub-ohms to $\\approx 8.6$ kΩ at 28 K, which redirects RF current through gate-independent parasitic capacitive paths and suppresses the current-participation factor governing reflectometry contrast.",
+        "motivation": "RF reflectometry is the dominant readout technique for semiconductor qubits but has been limited to nanoscale devices with small capacitances; understanding reflectometry in the regime of large parasitic capacitances and complex impedance environments is essential for scaling to cryo-CMOS architectures with multiplexed control lines. Large-area vertical MOSFETs serve as a useful proxy for studying how parasitic pathways degrade RF readout sensitivity in densely integrated quantum systems.",
+        "method": "Gate-based RF reflectometry was performed on a commercial SiC power MOSFET wire-bonded to a custom PCB with resonator inductor $L_r = 8$ nH, using local grounding at the PCB to suppress loom parasitics. DC transfer characteristics and reflection coefficient $S_{11}$ measurements were taken at room temperature and $T = 28$ K, with results modeled using lumped-element circuits including device capacitances ($C_\\mathrm{GS} \\approx 2$ nF, $C_\\mathrm{GD} \\approx 2$ nF) and temperature-dependent resistances. A modified circuit configuration with additional resonant capacitors and RF chokes at the source and drain was proposed to restore sensitivity at cryogenic temperatures.",
+        "result": "At room temperature, $|\\Delta S_{11}|$ peaks near $f_0$ with stronger response ($\\approx 2-3\\times$ larger) for $V_\\mathrm{GS} < V_\\mathrm{th}^\\mathrm{RT} \\approx 1.5$ V, indicating sensitivity to drift-region resistance modulation. At 28 K with $V_\\mathrm{th}^\\mathrm{cryo} \\approx 6$ V and $R_\\mathrm{DS,on}^\\mathrm{cryo} \\approx 110$ kΩ, the reflectometry contrast drops below the VNA noise floor ($< 10^{-3}$ in $|S_{11}|$) across the measurement bandwidth despite gate-controlled DC transport, whereas circuit simulations with $R_\\mathrm{drift} = 8.6$ kΩ recover the observed loss of sensitivity.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.15988",
+      "title": "Ultra-Weak-Pump Microwave-to-Optical Quantum Transduction via a Single Color Center",
+      "authors": [
+        "Kyosuke Goto",
+        "Hodaka Kurokawa",
+        "Hideo Kosaka",
+        "Kazuki Koshino"
+      ],
+      "abstract": "Scaling up superconducting quantum processors remains a central challenge for realizing fault-tolerant quantum computation. Although distributed architectures based on optical photons offer a promising route to scalability, they require an efficient microwave-to-optical quantum transducer that operates at cryogenic temperatures. Existing approaches typically rely on strong optical pumping, which induces undesirable heating and degrades single-photon coherence. Here, we propose a microwave-to-optical quantum transducer based on resonant scattering at a single color center embedded in a diamond optomechanical resonator. We show that strong coupling between the color center and the optical cavity enables coherent conversion at extremely weak pump powers on the order of 10 pW. The proposed scheme enables remote entanglement generation at a kilohertz-scale rate with a fidelity exceeding 0.9, demonstrating a viable pathway toward ultra-weak-pump and high-efficiency quantum transducers based on a solid-state defect.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-15",
+      "score": 0.5687077808444985,
+      "similar_to": [
+        {
+          "title": "Quantum-limited millimeter wave to optical transduction",
+          "id": "2207.10121",
+          "similarity": 0.8645502328872681
+        },
+        {
+          "title": "A near-quantum-limited Josephson traveling-wave parametric amplifier",
+          "id": null,
+          "similarity": 0.8152904510498047
+        }
+      ],
+      "summary": {
+        "summary": "This work proposes a microwave-to-optical quantum transducer based on resonant scattering of a single neutral nitrogen-vacancy ($\\mathrm{NV}^0$) center in a diamond optomechanical resonator, achieving coherent conversion at ultralow pump powers of 48 pW. The scheme enables remote entanglement generation between superconducting qubits at kilohertz rates with fidelity exceeding 0.9, demonstrating a viable path toward distributed fault-tolerant quantum computing.",
+        "motivation": "Distributed quantum computing architectures require efficient microwave-to-optical transducers operating at cryogenic temperatures with low added noise, but existing approaches rely on strong optical pumping that causes heating and degrades single-photon coherence.",
+        "method": "The transducer exploits strong coupling of the $\\mathrm{NV}^0$ center (with $g_{02}/2\\pi = 1$ GHz) to both optical and strain fields, combining a small optomechanical mode volume with resonant dipole transitions. Three theoretical models (full, reduced, phenomenological) analyze the coherent conversion efficiency $P_{\\mathrm{coh}}$ and remote entanglement generation via a single-click interferometric scheme.",
+        "result": "At optimal pump power 48 pW, the device achieves $P_{\\mathrm{coh}} = 0.32$ with 3.0 MHz bandwidth; remote entanglement generation yields fidelity $F_{1c} = 0.91$ and heralding rate 5.3 kHz at 1 MHz repetition rate, more than three orders of magnitude lower pump power than conventional electro-optic and optomechanical transducers.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.15751",
+      "title": "Equidistant resonance jumps in superconducting coplanar resonators driven by Abrikosov vortices",
+      "authors": [
+        "Dmitrii S. Kalashnikov",
+        "Denis Yu. Vodolazov",
+        "Ruslan I. Kinzibaev",
+        "Andrei G. Shishkin",
+        "Vasily S. Stolyarov"
+      ],
+      "abstract": "Superconducting coplanar resonators are key building blocks of cryogenic microwave circuits, yet their performance in perpendicular magnetic fields is ultimately limited by Abrikosov vortices. In this work we investigate the dependence of the transmission parameter $S_{21}$ of niobium quarter-wave coplanar resonators on perpendicular magnetic fields up to 40 Oe and at temperatures between 18 mK and 5 K. Beyond the reversible Meissner regime, the entire resonance peak exhibits abrupt, staircase-like jumps as a function of magnetic field. Upon reversal of the field sweep, these jumps form an almost equidistant series with spacing 1.7-1.8 Oe, which, in agreement with theoretical estimates, we interpret as signatures of multiple-vortex entry and exit events. Additionally, we observe the non-proportional responses of the resonant frequency and the internal quality factor that indicate a complex contribution of vortex and antivortex configurations. We believe that our results will stimulate further studies of large vortex-antivortex systems, explicitly accounting for their discrete nature.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-05-15",
+      "score": 0.5255716654274295,
+      "similar_to": [
+        {
+          "title": "Oval-shaped resonance distortion as a signature of quasiparticle heating effect in a niobium superconducting resonator",
+          "id": "2607.17791",
+          "similarity": 0.8156710267066956
+        },
+        {
+          "title": "Surface loss simulations of superconducting coplanar waveguide resonators",
+          "id": "1107.4698",
+          "similarity": 0.8078628182411194
+        }
+      ],
+      "summary": {
+        "summary": "Niobium coplanar quarter-wave resonators exhibit staircase-like jumps in resonance frequency and quality factor when exposed to perpendicular magnetic fields up to 40 Oe, with the jumps forming an equidistant series at $\\Delta H \\simeq 1.7$–$1.8$ Oe upon field reversal. These signatures are attributed to discrete multiple-vortex entry and exit events, with the effect strongly dependent on superconducting film quality and persistent only in higher-quality samples above 5 K.",
+        "motivation": "Abrikosov vortices limit the performance of superconducting microwave resonators in perpendicular magnetic fields, yet the discrete nature of vortex entry and collective vortex–antivortex dynamics remain poorly understood. Understanding this is critical for reliable design of field-compatible cryogenic circuits and quantum processors.",
+        "method": "High-resolution magnetospectroscopy of 100 nm niobium coplanar resonators (center line width $W = 30$ µm, $Z_0 = 50$ Ω) on two chips with different film quality, sweeping perpendicular fields at rates $\\sim 0.2$ Oe/s between 18 mK and 5 K, extracting $f_r$ and $Q_i$ by asymmetric Lorentzian fits; validated with analytical and Ginzburg–Landau calculations of vortex-induced kinetic inductance.",
+        "result": "Upon field reversal, frequency jumps form equidistant sequences with $\\Delta H \\simeq 1.7$–$1.8$ Oe; inductance changes $\\delta L \\sim 0.1$–$1$ pH per jump imply $\\delta N \\sim 10^2$ vortex entries; sample A (Si/SiO$_2$, $T_c = 8.7$ K, larger grains) preserves equidistant jumps to 5 K, while sample B (high-resistivity Si, $T_c = 6.1$ K, finer grains $\\sim 10$ nm) shows irregular steps that smear by 4.5 K.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9426,
+    0.6719,
+    0.602,
+    0.5687,
+    0.5256,
+    0.3348,
+    0.3166,
+    0.27,
+    0.2677,
+    0.2269,
+    0.2249,
+    0.1894,
+    0.183,
+    0.1791,
+    0.1718,
+    0.1654,
+    0.1616,
+    0.1585,
+    0.1356,
+    0.1283,
+    0.1252,
+    0.1117,
+    0.0936,
+    0.0735,
+    0.0652,
+    0.0623,
+    0.0528,
+    0.0517,
+    0.0502,
+    0.0464,
+    0.0449,
+    0.0443,
+    0.0439,
+    0.0435,
+    0.0396,
+    0.0393,
+    0.0385,
+    0.0332,
+    0.0322,
+    0.0317,
+    0.0312,
+    0.0295,
+    0.0284,
+    0.0265,
+    0.0245,
+    0.0242,
+    0.0241,
+    0.0238,
+    0.0222,
+    0.0209,
+    0.0208,
+    0.0199,
+    0.0193,
+    0.0175,
+    0.0166,
+    0.0153,
+    0.0152,
+    0.015,
+    0.015,
+    0.0141,
+    0.0136,
+    0.0128,
+    0.0126,
+    0.012,
+    0.0116,
+    0.0108,
+    0.0107,
+    0.0104,
+    0.0095,
+    0.0093,
+    0.0078,
+    0.0077,
+    0.0076,
+    0.0059,
+    0.0058,
+    0.0047,
+    0.0039,
+    0.0039,
+    0.0038,
+    0.0033,
+    0.0031,
+    0.0029,
+    0.0026,
+    0.0024,
+    0.0022,
+    0.002,
+    0.0019
+  ]
+}

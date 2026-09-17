@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates a phononic distributed Bragg reflector (DBR) cryopackaging concept to thermally isolate cryogenic control electronics from superconducting qubits while maintaining high-density electrical interconnects. Experiments on Ta/SiO$_2$ DBRs with 10 bilayers and thickness up to 600 nm achieve thermal conduction below 1 mW/cm$^2$ from 1.5 K to 100 mK, enabling Watt-level power dissipation at higher stages of a dilution refrigerator while keeping qubits near 100 mK.",
+  "motivation": "Scaling to millions of qubits requires integrating control electronics near the quantum layer to avoid impractical wiring complexity, but qubits operate best below 1 K where cooling power is limited, while electronics dissipate substantial power at warmer temperatures.",
+  "method": "Ta/SiO$_2$ multilayer stacks with exponentially graded layer thicknesses were fabricated via magnetron sputtering (Ta) and plasma-enhanced atomic layer deposition (SiO$_2$), and thermal transport was characterized by applying 0–1 mW heater power and measuring steady-state temperature gradients across the stack in a dilution refrigerator from 100 mK to 700 mK, with analysis via an iterative procedure solving the quasi-ballistic heat transfer equation.",
+  "result": "The 600 nm DBR (10 bilayers) reduces heat flux to $0.80 ± 0.16$ mW/cm$^2$ at 1.5 K and $1.7 ± 0.4$ mW/cm$^2$ at 1.8 K, achieving one order of magnitude better thermal insulation than reference SiO$_2$ layers of comparable or larger thickness; superconducting vias are estimated to add only $\\approx 6$ µW/cm$^2$ thermal load at $T/T_C = 0.15$ for NbTiN.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

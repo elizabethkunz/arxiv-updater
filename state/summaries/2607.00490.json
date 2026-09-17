@@ -1,0 +1,8 @@
+{
+  "summary": "An analytical model using conformal mapping and four-port network analysis determines resonance frequencies and coupling Q-factors for edge-coupled $\\lambda/4$ CPW resonators in flip-chip superconducting qubit readouts. The model is validated against 3D FEM simulations and cryogenic measurements of ten resonators with varying geometries, showing agreement within $\\Delta f_r/f_r < 1\\%$ and $\\Delta Q_c/Q_c < 20\\%$.",
+  "motivation": "Existing design methods for planar resonators do not account for the complexities of 3D flip-chip architectures with top ground planes, and full-wave EM simulations are computationally expensive, limiting rapid design iteration for scaled-up qubit systems.",
+  "method": "The coupling section is modeled as a four-port network using even- and odd-mode impedance analysis ($Z_{0,e}$ and $Z_{0,o}$) computed from conformal mapping of the top-grounded edge-coupled CPW structure with finite ground plane; short and open boundary conditions at the resonator ends are applied to reduce the network to a two-port system with closed-form transmission coefficient $S'_{21}$, and resonance frequency and $Q_c$ are extracted by curve-fitting.",
+  "result": "A test chip fabricated in flip-chip technology with $h_s = 10$ µm spacing yields measured resonance frequencies from 5.16 to 8.01 GHz and coupling Q-factors from $17.1 \\times 10^3$ to $197.3 \\times 10^3$ across ten resonators; the model predicts these parameters to within the stated tolerances, accounting for kinetic inductance effects ($L_k^l \\approx 12$ nH/m) and fabrication variability in chip spacing.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

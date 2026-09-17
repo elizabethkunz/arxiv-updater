@@ -1,0 +1,304 @@
+{
+  "date": "2026-08-27",
+  "n_fetched": 93,
+  "papers": [
+    {
+      "id": "2608.26018",
+      "title": "The Gain-Engineered Transmon",
+      "authors": [
+        "Ian Yang",
+        "Francesco Adinolfi",
+        "Alessandro Bruno",
+        "Venus Hasanuzzaman Kamrul",
+        "Daniel Z. Haxell",
+        "Alexander Grimm"
+      ],
+      "abstract": "The interaction between a qubit and its environment can be engineered such that one error channel dominates over all others, resulting in noise bias. This property enables error correction codes to focus on the dominant error type, thereby significantly reducing the number of physical systems required for fault-tolerant quantum computation. However, engineering noise bias typically introduces complexity at the physical system level, which decreases its usefulness by limiting scalability. Here, we introduce and experimentally realize a noise-biased qubit in a standard transmon-readout resonator circuit, one of the most common superconducting architectures, by only adding a single microwave tone. We encode the qubit in the transmon $|\\mathrm{g}\\rangle$- and $|\\mathrm{f}\\rangle$-states, and engineer a frequency-selective gain channel that counteracts single-photon loss errors between the computational states. We demonstrate an order-of-magnitude enhancement in relaxation time compared to the $|\\mathrm{g}\\rangle-|\\mathrm{e}\\rangle$ encoding, conceding only a factor-of-two decrease in the echo-coherence time. Furthermore, we show that this qubit is compatible with fast, high-fidelity operations. Our results open a path towards using this system as a simple building-block for hardware-efficient quantum error detection and correction schemes.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-08-26",
+      "score": 0.9663342237472534,
+      "similar_to": [
+        {
+          "title": "Bias-preserving and error-detectable entangling operations in a superconducting dual-rail system",
+          "id": "2503.10935",
+          "similarity": 0.8683909773826599
+        },
+        {
+          "title": "Transmon qubit readout fidelity at the threshold for quantum error correction without a quantum-limited amplifier",
+          "id": "2208.05879",
+          "similarity": 0.8675186634063721
+        }
+      ],
+      "summary": {
+        "summary": "The gain-engineered transmon realizes a noise-biased qubit in a standard transmon-cavity system by adding a single microwave tone that creates frequency-selective single-photon gain on the $|e\\rangle$–$|f\\rangle$ transition, suppressing relaxation errors while preserving coherent control. The $|g\\rangle$–$|f\\rangle$ encoding achieves $T_1 = 2.22$ ms (×16.7 enhancement over $|g\\rangle$–$|e\\rangle$) with $T_2^E = 65$ µs and 99.58% gate fidelity, enabling scalable noise-biased error correction.",
+        "motivation": "Engineering noise bias—where one error channel dominates—enables tailored QEC codes with fewer physical qubits, but previous approaches required specialized circuit elements that limited scalability. This work addresses whether noise bias can be engineered in a standard transmon architecture compatible with high-fidelity gates.",
+        "method": "A parametric pump at frequency $\\omega_\\mathrm{gain} = (\\omega_a - \\alpha + \\omega_b - 2\\chi)/2$ activates four-wave mixing, creating a two-mode squeezing interaction that coherently couples $|e,0\\rangle$ and $|f,1\\rangle$ with strength $g_\\mathrm{gain} = \\alpha\\lambda|\\xi_\\mathrm{gain}|^2$. Cavity photon loss ($\\kappa_b$) renders this unidirectional, producing engineered gain at rate $\\kappa_\\mathrm{gain} = 8g_\\mathrm{gain}^2/\\kappa_b$ acting as a frequency-selective dissipator that drives $|e\\rangle \\to |f\\rangle$ without affecting computational states. Two-photon drives ($\\omega_a - \\alpha/2$) enable fast $|g\\rangle$–$|f\\rangle$ gates.",
+        "result": "At $g_\\mathrm{gain}/2\\pi = 133$ kHz ($\\kappa_\\mathrm{gain}/2\\pi = 165$ kHz), the gain-engineered transmon achieves $T_{1,f} = 2.22(\\pm0.06)$ ms and $T_{1,g} = 1.67(\\pm0.34)$ ms—×14.7 average enhancement over $T_{1,e}$—with $T_2^E_{gf} = 65(\\pm4)$ µs (only 2.1× shorter than $T_2^E_{ge}$) and single-qubit fidelity $\\mathcal{F} = 99.58\\pm0.01\\%$; simulations identify thermal population and off-resonant excitations as limiting factors, suggesting improvements via better thermalization and higher cavity loss rates.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2608.25484",
+      "title": "Low-leakage superconducting-qubit measurement with sub-100-ns total duration",
+      "authors": [
+        "Peter A. Spring",
+        "Adrian L. Hesse",
+        "Shiyu Wang",
+        "Shuhei Tamate",
+        "Yasunobu Nakamura"
+      ],
+      "abstract": "Fast, accurate, and low-leakage qubit measurement is a key requirement for quantum error correction. Here, we demonstrate measurement of a superconducting transmon qubit with a total duration of 97(1) ns, defined as the time from the start of the measurement pulse until the measurement-induced error on a subsequent $π$-pulse operation falls below $10^{-4}$. By combining a large state-averaged resonator decay rate of $κ_\\mathrm{eff}/2π$ = 30.8 MHz with a dispersive shift close to the optimal SNR-per-photon condition, we achieve an assignment error of 0.17(1)% using a 58-ns measurement pulse, with residual readout photons depleting passively in tens of nanoseconds without an active depletion pulse. Using a repeated-measurement sequence together with a leakage-sensitive measurement, we benchmark the measurement-induced state transitions, finding a per-measurement leakage rate of $2.7(2) \\times 10^{-5}$, only twice the background rate and two orders of magnitude below the measurement-induced relaxation rate, which dominates the assignment error. Floquet simulations indicate that the multiphoton resonances present at the operating point are weakly coupled and traversed diabatically, without causing leakage. These results demonstrate that a large resonator decay rate, combined with a dispersive shift close to the optimal SNR-per-photon condition, can enable fast, high-fidelity, low-leakage dispersive readout at small qubit-resonator detuning.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-08-26",
+      "score": 0.9598780870437622,
+      "similar_to": [
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.8968209028244019
+        },
+        {
+          "title": "Realizing Rapid, High-Fidelity, Single-Shot Dispersive Readout of Superconducting Qubits",
+          "id": "1701.06933",
+          "similarity": 0.8886568546295166
+        }
+      ],
+      "summary": {
+        "summary": "Fast dispersive readout of a superconducting transmon qubit is demonstrated with 97(1) ns total measurement duration (from pulse start until measurement-induced π-pulse error drops below $10^{-4}$), achieving 0.17(1)% assignment error with a 58 ns pulse. Measurement-induced leakage is suppressed to $2.7(2) \\times 10^{-5}$ per measurement by operating at small qubit–resonator detuning ($\\omega_r/\\omega_q = 1.24$) where multiphoton resonances are weak and traversed diabatically.",
+        "motivation": "Fast, high-fidelity, low-leakage qubit measurement is essential for quantum error correction, but achieving all three simultaneously in the small-detuning regime—where large dispersive shifts are readily available—has been uncertain due to the dense spectrum of multiphoton resonances.",
+        "method": "A dedicated filter resonator with effective decay rate $\\kappa_\\mathrm{eff}/2\\pi = 30.8$ MHz enables rapid photon depletion without active pulse circuits, combined with dispersive shift near the optimal SNR-per-photon condition ($|\\chi|/2\\pi \\approx 9$ MHz, $J/2\\pi = 24.4$ MHz). Assignment fidelity is characterized via heterodyne measurement using matched-filter weighting; measurement-induced state transitions are benchmarked with a leakage-sensitive three-level readout; and multiphoton resonance coupling is analyzed via Floquet simulations and Landau-Zener crossing rates.",
+        "result": "Assignment error $\\epsilon_\\mathcal{F} = 0.17(1)\\%$ with 58 ns pulse; measurement-induced leakage $P_\\mathcal{L}^\\mathrm{on} = 2.7(2) \\times 10^{-5}$ (twice background); measurement-induced relaxation dominates with $T_1^\\mathrm{meas} = 12.7$ µs; Floquet analysis shows dominant $|0\\rangle$–$|10\\rangle$ resonance has splitting $\\Delta\\varepsilon/2\\pi \\approx 54$ kHz and Landau-Zener leakage probability $P_L \\sim 10^{-7}$ per traversal.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2608.25645",
+      "title": "Phase-sensitive cascade quantum amplifier with nearly noiseless operation",
+      "authors": [
+        "Ilari Lilja",
+        "Ekaterina Mukhanova",
+        "Michael Perelshtein",
+        "Kirill Petrovnin",
+        "Stanislav Khaldeev",
+        "Visa Vesterinen",
+        "Gheorghe Sorin Paraoanu",
+        "Pertti Hakonen"
+      ],
+      "abstract": "Phase-sensitive parametric devices enable quadrature-selective amplification with the potential for sub-quantum-limited noise performance. In this work, we investigate the operation of a SQUID-based Josephson Parametric Amplifier (JPA), comparing its performance in the phase-preserving and phase-sensitive regimes. The device, fabricated using VTT SWAPS technology, is driven in a three-wave mixing configuration and characterized in a reflection-based measurement setup at millikelvin temperatures. To directly probe the noise performance at low JPA gains, we employ a cascaded amplification scheme in which a Traveling-Wave Parametric Amplifier (TWPA) provides low-noise pre-amplification of the JPA output. In a phase-preserving operation, the JPA exhibits near-quantum-limited performance with a system noise temperature of $351\\pm53$ mK at 6 GHz. In contrast, phase-sensitive operation yields a minimum system noise temperature of $94\\pm12$ mK, well below the standard quantum limit of 288 mK. Our results demonstrate that a JPA-TWPA amplifier cascade opens the door to direct, high-fidelity probing of quantum devices without the need for background noise subtraction.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-08-26",
+      "score": 0.8553614020347595,
+      "similar_to": [
+        {
+          "title": "Phase-sensitive cascade quantum amplifier with nearly noiseless operation",
+          "id": "2608.25645",
+          "similarity": 0.9999998211860657
+        },
+        {
+          "title": "A near-quantum-limited Josephson traveling-wave parametric amplifier",
+          "id": null,
+          "similarity": 0.8909043073654175
+        }
+      ],
+      "summary": {
+        "summary": "A SQUID-based Josephson Parametric Amplifier (JPA) fabricated with VTT SWAPS technology was cascaded with a Traveling-Wave Parametric Amplifier (TWPA) to demonstrate phase-sensitive parametric amplification at 6 GHz with system noise temperature of $94 \\pm 12$ mK. This represents $0.06$ added photons in the phase-sensitive regime, well below the standard quantum limit of $288$ mK achieved in phase-preserving operation ($351 \\pm 53$ mK, $0.71$ added photons).",
+        "motivation": "Phase-sensitive parametric amplifiers can theoretically achieve sub-quantum-limited noise by amplifying a single quadrature, but direct measurement of their noise performance at low gains has been challenging due to contributions from subsequent amplifier stages.",
+        "method": "A JPA in 3WM configuration (pump at $\\approx 2 \\times$ resonance) was cascaded with a TWPA pre-amplifier ($\\sim 20$ dB gain, $T_N \\approx 700$ mK) in a reflection setup, with the JPA's added noise extracted via spectrum analyzer measurements of gain and signal-to-noise ratio improvement using Eq. 12, including Friis formula accounting.",
+        "result": "Phase-sensitive operation achieved $T_{N,\\mathrm{JPA}} = 17 \\pm 12$ mK added noise and $T_{S,\\mathrm{JPA}} = 94 \\pm 12$ mK system noise temperature (89 mK from JPA quantum fluctuations and intrinsic noise, 5 mK from downstream amplifiers), compared to phase-preserving saturation at $200 \\pm 54$ mK added noise; the TWPA cascade was essential for suppressing downstream noise contributions and enabling sub-SQL operation.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2608.25503",
+      "title": "High-Fidelity Entangled States in a Connectivity-Four Fluxonium Quantum Processor",
+      "authors": [
+        "J. Schirk",
+        "N. Bruckmoser",
+        "S. M. Taubenberger",
+        "F. Wallner",
+        "N. J. Glaser",
+        "M. Zetzl",
+        "L. Huang",
+        "I. Tsitsilin",
+        "M. Werninghaus",
+        "L. Södergren",
+        "K. Liegener",
+        "C. M. F. Schneider",
+        "Stefan Filipp"
+      ],
+      "abstract": "A central challenge in fluxonium-based quantum processors is the extension of the qubit connectivity to two-dimensional lattices compatible with quantum code-error correction. Here, we present a fluxonium quantum processor that employs lumped-element resonator couplers which realizes, for the first time, a connectivity-four unit cell with suppressed parasitic interactions. We achieve parallel single-qubit gate fidelities exceeding 99.9 % in simultaneous randomized benchmarking experiments, while maintaining residual static ZZ interactions below 1 kHz across all coupled qubit pairs. We implement resonator-induced phase (RIP) gates and benchmark two-qubit gate fidelities exceeding 99 % using interleaved randomized benchmarking. To cancel spectator errors observed in two-qubit operations, we implement a refocused RIP gate, recovering coherent control in the presence of multi-qubit connectivity. Furthermore, we prepare Greenberger-Horne-Zeilinger states of up to five qubits with a tomographic fidelity of 90 %, verifying multi-qubit entanglement within the unit cell. These results establish the fluxonium-resonator-fluxonium architecture as a viable approach to realizing densely connected fluxonium processors and provide a scalable path toward quantum error-correction-compatible processor architectures.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-08-26",
+      "score": 0.8250778913497925,
+      "similar_to": [
+        {
+          "title": "Scalable Fluxonium Quantum Processors via Tunable-Coupler Architecture",
+          "id": "2604.13363",
+          "similarity": 0.9294624924659729
+        },
+        {
+          "title": "Suppressing Counter-Rotating Errors for Fast Single-Qubit Gates with Fluxonium",
+          "id": "2406.08295",
+          "similarity": 0.8597432374954224
+        }
+      ],
+      "summary": {
+        "summary": "A fluxonium quantum processor using lumped-element resonator couplers achieves a connectivity-four unit cell with single-qubit gate fidelities exceeding 99.9%, residual ZZ interactions below 1 kHz, and two-qubit RIP-gate fidelities exceeding 99% via refocused pulse sequences that suppress spectator errors. GHZ states up to five qubits are prepared with tomographic fidelities reaching 90%, demonstrating multi-qubit entanglement compatible with surface-code error correction.",
+        "motivation": "Scaling fluxonium processors to two-dimensional lattices for quantum error correction requires extending qubit connectivity to four neighbors while suppressing parasitic interactions and gate-fidelity degradation from multi-qubit entanglement.",
+        "method": "Fluxonium-resonator-fluxonium architecture using high-impedance ($Z > 150$ Ω), grounded lumped-element LC couplers with 2 µm niobium inductors; resonator-induced phase gates driven off-resonantly with detuning $\\Delta$ from the state-dependent coupler frequencies; refocused RIP gates with $\\pi$ pulses on spectator qubits to cancel conditional-phase accumulation.",
+        "result": "Parallel single-qubit fidelities of 99.957(5)%, median ZZ coupling $\\xi_{\\mathrm{ZZ}} = 30(215)$ Hz, median two-qubit fidelity 98.8(12)% via IRB with 128 ns pulses, and three/four/five-qubit GHZ fidelities of 96.9(2)%/95.4(2)%/90.0(2)% after measurement-error correction.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2608.25959",
+      "title": "Dissipatively Stabilized 0-n Fock Qubits for Noise-Biased Quantum Computing",
+      "authors": [
+        "Su Direkci",
+        "Simon Lieu",
+        "Kyungjoo Noh",
+        "Connor T. Hann"
+      ],
+      "abstract": "Noise-biased qubits have bit-flip errors that are exponentially suppressed relative to phase-flip errors, and offer a promising route toward fault-tolerant quantum computing. However, this bias can be compromised during gate operations with non-biased control qubits. To address this limitation, we propose a \"0-n\" Fock qubit architecture that maintains the noise bias by encoding information in the ground state and n-th excited state of a nonlinear multi-level system, such as a transmon. This encoding is achieved via a dissipative stabilization that acts as decay and gain for lower and upper intermediate levels, respectively. We first analytically demonstrate that bit-flip errors are exponentially suppressed with the number of levels. Then, we present a practical implementation using a multi-mode lossy filter to achieve the frequency-selective dissipation. Finally, we numerically demonstrate that bit-flip probabilities approaching $10^{-8}$ are achievable for controlled-X gates on cat qubits using the 0-n qubit as an ancilla with $n \\geq 9$ (i.e. ten or more levels), for realistic experimental parameters. Building on this, we simulate syndrome extraction in a repetition code, achieving logical error rates in the megaquop regime with only a distance of $d=9$.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-08-26",
+      "score": 0.8150308728218079,
+      "similar_to": [
+        {
+          "title": "Hardware-efficient quantum error correction via concatenated bosonic qubits",
+          "id": "2409.13025",
+          "similarity": 0.8503268361091614
+        },
+        {
+          "title": "Manufacturing low dissipation superconducting quantum processors",
+          "id": "1901.08042",
+          "similarity": 0.8452267646789551
+        }
+      ],
+      "summary": {
+        "summary": "We propose a dissipatively stabilized 0-n Fock qubit that encodes information in the ground state $|0\\rangle$ and n-th excited state $|n\\rangle$ of an anharmonic oscillator, achieving exponentially suppressed bit-flip errors with increasing n through the separation of logical levels. We demonstrate a practical implementation using a multimode lossy filter to engineer frequency-selective dissipation, and show bit-flip probabilities approaching $10^{-8}$ for controlled-X gates with cat qubits using $n\\geq 9$, enabling logical error rates of $10^{-6}$ in a repetition code at distance $d=9$.",
+        "motivation": "Noise-biased qubits promise fault-tolerant quantum computing with reduced overhead, but standard hybrid architectures using transmon ancillas compromise the noise bias during syndrome extraction. A noise-biased ancilla is needed that couples simply to cat qubits while maintaining exponential bit-flip suppression.",
+        "method": "We engineer dissipation that selectively removes population from intermediate Fock levels $1\\leq m\\leq n-1$ while leaving $\\{|0\\rangle,|n\\rangle\\}$ invariant, using a chain of LC resonators coupled capacitively to the qubit. Single-photon loss events take $|n\\rangle\\to|n-1\\rangle$ outside the logical subspace, requiring $\\lceil n/2\\rceil$ sequential loss events to induce a bit flip.",
+        "result": "For $n=9$ with realistic transmon parameters ($\\tau_i^\\downarrow=250\\,\\mu$s, $\\tau_i^\\uparrow=250\\,$ms) and cat mean photon number $|\\alpha|^2=10$, we achieve bit-flip probabilities $p_\\mathrm{bf}<10^{-8}$ for CX gates; using these as ancillas in a repetition code yields logical error rates $p_L^*=10^{-6}$ at $d=9$ with $\\kappa_1 T_\\mathrm{cycle}\\sim 10^{-3}$ (storage lifetime $\\sim 1-2\\,$ms), approaching experimental feasibility.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9663,
+    0.9599,
+    0.8554,
+    0.8251,
+    0.815,
+    0.492,
+    0.4768,
+    0.4765,
+    0.4745,
+    0.3672,
+    0.3463,
+    0.3418,
+    0.3386,
+    0.3061,
+    0.3039,
+    0.302,
+    0.2642,
+    0.2628,
+    0.2567,
+    0.2531,
+    0.2284,
+    0.228,
+    0.2215,
+    0.2191,
+    0.1756,
+    0.1589,
+    0.1438,
+    0.1416,
+    0.1407,
+    0.1396,
+    0.136,
+    0.1341,
+    0.1293,
+    0.1249,
+    0.1193,
+    0.1186,
+    0.1171,
+    0.1169,
+    0.1131,
+    0.1067,
+    0.1051,
+    0.1032,
+    0.102,
+    0.1004,
+    0.0934,
+    0.0929,
+    0.0804,
+    0.0803,
+    0.0799,
+    0.0763,
+    0.0757,
+    0.0668,
+    0.0667,
+    0.0616,
+    0.0599,
+    0.0595,
+    0.0582,
+    0.0539,
+    0.0531,
+    0.052,
+    0.0502,
+    0.0462,
+    0.0462,
+    0.046,
+    0.041,
+    0.0401,
+    0.0395,
+    0.0376,
+    0.0359,
+    0.0354,
+    0.0353,
+    0.0278,
+    0.0266,
+    0.024,
+    0.0238,
+    0.0224,
+    0.0215,
+    0.0159,
+    0.0155,
+    0.015,
+    0.0142,
+    0.0139,
+    0.0135,
+    0.0119,
+    0.0112,
+    0.0095,
+    0.0088,
+    0.0085,
+    0.0077,
+    0.0075,
+    0.0074,
+    0.0067,
+    0.0043
+  ]
+}

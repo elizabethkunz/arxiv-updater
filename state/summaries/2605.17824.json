@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates cryogenic time-division-multiplexed (TDM) voltage control for trapped-ion quantum processors, implementing a 32-channel static-electrode demultiplexer at 27 K with 37.5 kHz update rate and a four-channel dynamic-electrode demultiplexer at 14 K with 1 MHz update rate, both operating over $\\pm 10$ V. The results validate TDM as a practical approach to mitigate the vacuum feedthrough bottleneck in scalable quantum-charge-coupled-device (QCCD) architectures, reducing required feedthrough connections from 32 to 8 for the static system.",
+  "motivation": "QCCD trapped-ion systems require approximately ten electrodes per qubit, creating a wiring bottleneck through the limited number of vacuum feedthroughs as systems approach 100+ qubits. Previous TDM proposals remained either architectural or limited to room-temperature demonstrations, leaving cryogenic operation of both static and dynamic electrode control experimentally unvalidated.",
+  "method": "Two prototype demultiplexed systems were developed and operated cryogenically: a static-electrode control system using cascaded 8:1 TMUX6208 switches with 2.7 nF and 470 pF holding capacitors at 27 K, and a dynamic-electrode control system using a four-channel TMUX6111 switch with 120 pF capacitors at 14 K, both fed by room-temperature DACs and FPGA-controlled logic.",
+  "result": "The static system achieved $37.5$ kHz per-channel update rate with measured DC output across all 32 channels; the dynamic system achieved $1$ MHz per-channel update rate and delivered time-multiplexed sinusoidal waveforms to four channels, with measured crosstalk levels of $-12$ dB (static) and $-29$ to $-35$ dB (dynamic).",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

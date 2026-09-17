@@ -1,0 +1,8 @@
+{
+  "summary": "A planar trimon superconducting circuit with three transmon-like modes coupled by strong all-to-all cross-Kerr interactions enables high-fidelity universal control of multi-qubit gates and qudit operations. The device demonstrates conditional-rotation gates with 99.93% fidelity via randomized benchmarking, Raman-mediated entangling gates (iSWAP and ibSWAP) at 99.19% and 99.59% fidelity, and qudit dynamical decoupling on up to 8 levels with coherence comparable to single qubits.",
+  "motivation": "Multimode superconducting circuits exploit strong dispersive couplings as a resource for flexible control, avoiding the need for additional tunable coupler elements while enabling broader Hamiltonian synthesis than conventional transmon architectures.",
+  "method": "Three modes in a planar geometry with capacitive drive and readout access were characterized using deterministic benchmarking and randomized benchmarking. Two-qubit and process tomography with SPAM correction validated conditional rotations, simultaneous multi-tone driving for unconditional gates, stimulated Raman transitions at detuning $\\Delta \\approx 30$ MHz, and virtual phase corrections for AC Stark shifts.",
+  "result": "The device implements all 16 two-qubit Pauli operators spanning the 15-dimensional traceless operator space, achieves QPT fidelities of 99.87% for $\\mathrm{ccX}_{\\pi/2}$ and 99.76% for $\\mathrm{cX}_{\\pi}$ in the two-qubit subspace, and generates Bell states with fidelities between 99.38% and 99.94%, with $T_1$ values of 33–54 µs and $T_2^{\\mathrm{Hahn}}$ of 30–45 µs across the three modes.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

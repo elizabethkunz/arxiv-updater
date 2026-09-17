@@ -1,0 +1,216 @@
+{
+  "date": "2026-07-22",
+  "n_fetched": 97,
+  "papers": [
+    {
+      "id": "2607.18513",
+      "title": "Observation of a power transfer controlled by the phase of a quantum superposition",
+      "authors": [
+        "Nathanaël Cottet",
+        "Sébastien Jezouin",
+        "Bogdan Reznychenko",
+        "Alexia Auffèves",
+        "Benjamin Huard"
+      ],
+      "abstract": "A driven qubit exchanges energy with the propagating modes that drive it. When two spatially separated modes drive a single qubit with opposite amplitudes, their net action on the qubit cancels. Yet the qubit can still transfer power from one mode to the other through stimulated emission. The directionality originates from opposite stimulated emission powers into each line. We realize this situation with a superconducting transmon qubit coupled to two transmission lines and show that the direction of the power flow is set by the phase $φ$ of the qubit superposition between its ground and excited states, rather than by any classical control parameter. From a time-resolved measurement of the output power in one line, we observe a transfer that varies as $\\cosφ$ and hence changes direction between $φ=0$ and $φ=π$. The directionality of the total power flow is limited by the phase independent contributions of the reflected drive and of spontaneous emission, which sets a routing efficiency that we measure as a function of the input power. For an equal superposition of ground and excited qubit states (maximal coherence), the efficiency reaches $63\\%$, close to the bound of $69\\%$ expected from the measured qubit coherence times.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-20",
+      "score": 0.8699193121725483,
+      "similar_to": [
+        {
+          "title": "Controlling the spontaneous emission of a superconducting transmon qubit",
+          "id": "0803.4490",
+          "similarity": 0.8560032844543457
+        },
+        {
+          "title": "Characterization of drive-induced unwanted state transitions in superconducting circuits",
+          "id": "2506.24070",
+          "similarity": 0.8420109748840332
+        }
+      ],
+      "summary": {
+        "summary": "A superconducting transmon qubit coupled to two transmission lines with asymmetric couplings ($\\gamma_a = 100 \\gamma_b$, $\\gamma_a = 2\\pi \\times 72$ kHz) transfers power between them when driven by two spatially separated modes with canceling classical amplitudes, with the power flow direction controlled by the phase $\\phi$ of the qubit's coherent superposition rather than classical parameters. The stimulated emission power varies as $\\cos\\phi$, reversing direction between $\\phi=0$ and $\\phi=\\pi$, achieving a routing efficiency of 63% for an equal superposition ($|g\\rangle + e^{i\\phi}|e\\rangle$ with $\\theta=\\pi/2$), close to the theoretical bound of 69% set by measured coherence times ($T_1 = 2.22$ µs, $T_2 = 3.21$ µs).",
+        "motivation": "Understanding energy transfer between quantum systems and their environment through genuinely quantum parameters (coherence) rather than classical control knobs relates to quantum thermodynamics and waveguide QED, extending prior demonstrations of photon routing that relied on engineered classical phases or quantum state preparation as which-state bits.",
+        "method": "A transmon qubit at $\\omega_q/2\\pi = 7.088$ GHz is driven by two transmission lines with opposite drive amplitudes ($\\Omega_a = -\\Omega_b = 2\\pi \\times 0.41$ MHz) so their net effect cancels ($H=0$), causing the qubit to undergo pure relaxation while continuously pumping power; output power in line a is measured via heterodyne detection after quantum-limited Josephson parametric amplification, and the Purcell rate is extracted from the transition between spontaneous and stimulated emission regimes by sweeping drive amplitude.",
+        "result": "Time-resolved power measurements show the transfer amplitude $\\delta\\langle a_\\mathrm{out}^\\dagger a_\\mathrm{out}\\rangle \\propto \\cos\\phi$, with maximum efficiency $\\eta_\\mathrm{max} = 63\\%$ at $\\langle a_\\mathrm{in}^\\dagger a_\\mathrm{in}\\rangle = 0.092$ photons/µs ($6 \\times 10^{-2}$ photons total), and 46% efficiency for one input photon on average after $\\tau = 2.7$ µs, compared to ideal limits of 69% and 54% from measured $T_1$ and $T_2$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.18401",
+      "title": "Monolithic printed-circuit board RF-trap for electrons",
+      "authors": [
+        "Zijue Luo",
+        "Jae Eu",
+        "Tianyi Wang",
+        "Boerge Hemmerling"
+      ],
+      "abstract": "Qubits encoded in the spin of trapped electrons have been proposed as a promising novel platform for quantum information processing. While trapping of electrons has been largely carried out in Penning traps for precision measurement purposes, it is desirable to use linear Paul traps instead, leaning on the successes of trapped ion quantum processors. Here we present a Paul trap for electrons made of a single printed circuit board. Our approach requires no assembly and the rigid design minimizes manufacturing intolerances. We characterize the trap performance and observe trapped electron lifetimes of 2.13 ms and secular frequencies of up to 90 MHz.",
+      "categories": [
+        "quant-ph",
+        "physics.atom-ph"
+      ],
+      "published": "2026-07-20",
+      "score": 0.5395926466537299,
+      "similar_to": [
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.7625788450241089
+        },
+        {
+          "title": "Breakeven demonstration of quantum low-density parity-check codes",
+          "id": "2606.06455",
+          "similarity": 0.7624526023864746
+        }
+      ],
+      "summary": {
+        "summary": "A linear Paul trap for electrons was fabricated from a single printed circuit board with two copper layers and an integrated RF resonator, eliminating assembly and reducing manufacturing tolerances compared to multi-component designs. The trap confined electrons with lifetimes of 2.13 ms and secular frequencies up to $90$ MHz radially and $55$ MHz axially.",
+        "motivation": "Electron spin qubits offer advantages over trapped ions for quantum information processing, including higher secular frequencies enabling faster gates and simplified RF-based control, but previous electron confinement has faced challenges with Penning trap anharmonicities or surface-proximity decoherence.",
+        "method": "A monolithic PCB trap with a half-wave coplanar RF resonator (1.753 GHz, $Q_L \\approx 40.7$) at 36 dBm coupling power and 20 DC electrodes was used to confine electrons photoionized from calcium atoms ($422$ nm and $390$ nm two-photon ionization); trap characterization used resonant tickling spectroscopy and lifetime measurements in ultrahigh vacuum.",
+        "result": "Axial frequencies scaled as $\\omega_{\\mathrm{axial}}/2\\pi = 90.68|U_2| - 3.8$ MHz·mm/V with $|U_2|$ ranging $0.25$–$0.4$ V/mm$^2$; radial frequencies up to $2\\pi \\times 90$ MHz achieved at stability parameter $q = 0.147$; discrepancy between measured and simulated radial frequencies (factor of 2.2) explained by non-optimal RF coupling ($Q_c = 207$ vs. simulated 618).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.19187",
+      "title": "Simultaneous calibration of rotation and phase errors in a single experiment",
+      "authors": [
+        "Tien D. Nguyen",
+        "Hung Q. Nguyen"
+      ],
+      "abstract": "In weakly anharmonic qubits, coherent control errors take two generic forms -- over/under-rotation and phase errors -- whose suppression normally requires iterated experiments. We show that, for any symmetric $π/2$ pulse in the weak-driving regime, both follow from a single parametrization, $\\mathcal{X}(π/2)=Z(δ)X(π/2+ε)Z(δ)$, that ties the rotation error $ε$ and the phase error $δ$ directly to the system parameters. The parametrization enables DRAPE, a Ramsey-type protocol in which sweeping the phase-error correction reveals a crossing point that fixes both corrections at once. The phase correction is estimated with Heisenberg scaling while the rotation error saturates the standard quantum limit. We experimentally demonstrate DRAPE by calibrating a $π/2$ gate on the $|1\\rangle\\leftrightarrow |2\\rangle$ transition of an IBM transmon, reducing the over-rotation from $0.997^\\circ$ to $-0.007^\\circ$ and the phase error from $2.52^\\circ$ to $0.0052^\\circ$ per gate, validated independently by phase- and rotation-error amplification protocols.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-21",
+      "score": 0.5093551390526445,
+      "similar_to": [
+        {
+          "title": "Branch-resolved Pauli-block spectroscopy of residual conditional phase in two-qubit gates",
+          "id": "2607.10249",
+          "similarity": 0.8505609035491943
+        },
+        {
+          "title": "Suppressing Counter-Rotating Errors for Fast Single-Qubit Gates with Fluxonium",
+          "id": "2406.08295",
+          "similarity": 0.8470993041992188
+        }
+      ],
+      "summary": {
+        "summary": "This work shows that rotation errors and phase errors in weakly anharmonic qubits follow from a single parametrization $\\mathcal{X}(\\pi/2) = Z(\\delta)X(\\pi/2+\\epsilon)Z(\\delta)$, enabling DRAPE, a single Ramsey-type protocol that simultaneously calibrates both errors by identifying a crossing point in phase-correction sweeps. DRAPE achieves Heisenberg scaling for phase estimation while saturating the standard quantum limit for rotation errors, demonstrated on an IBM transmon with $|1\\rangle\\leftrightarrow|2\\rangle$ encoding, reducing over-rotation from $0.997°$ to $-0.007°$ and phase error from $2.52°$ to $0.0052°$ per gate.",
+        "motivation": "Coherent control errors in superconducting qubits take two generic forms—over/under-rotation and phase errors—whose suppression ordinarily requires iterated calibration loops between separate amplified-error protocols (APE and ARE), making scalable error characterization inefficient as qubit counts grow.",
+        "method": "By analyzing the driven dynamics of weakly anharmonic qubits through Schrieffer-Wolff transformation and the toggling frame, the authors derive that rotation error $\\epsilon$ depends only on drive amplitude while phase error $\\delta$ depends on $\\epsilon$ via the ac Stark shift, exposing a one-directional interplay. DRAPE sweeps a DRAG correction coefficient $\\beta$ during a composite Ramsey sequence with $k$ pseudo-identity pairs; a crossing point in the measured population versus $\\beta$ simultaneously reveals both corrections without iteration.",
+        "result": "On the $|1\\rangle\\leftrightarrow|2\\rangle$ transition of an IBM transmon with anharmonicity $|\\Delta_2|/2\\pi = 307$ MHz and drive amplitude $\\Omega_0/2\\pi = 40$ MHz, DRAPE extracted $\\epsilon = (0.997\\pm0.395)°$ and $\\beta_0 = -0.3894\\pm0.0002$, reducing coherent errors by two to three orders of magnitude—validated independently by APE and ARE protocols without requiring calibration loops.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8699,
+    0.5396,
+    0.5094,
+    0.4022,
+    0.3814,
+    0.21,
+    0.2063,
+    0.2008,
+    0.1925,
+    0.1792,
+    0.1782,
+    0.1772,
+    0.1647,
+    0.1579,
+    0.1525,
+    0.1487,
+    0.1339,
+    0.1332,
+    0.1246,
+    0.1166,
+    0.109,
+    0.1087,
+    0.1042,
+    0.103,
+    0.1007,
+    0.0893,
+    0.0879,
+    0.0756,
+    0.0734,
+    0.0708,
+    0.0631,
+    0.0622,
+    0.0617,
+    0.0555,
+    0.0543,
+    0.0534,
+    0.0533,
+    0.0515,
+    0.0503,
+    0.0486,
+    0.0474,
+    0.0468,
+    0.0458,
+    0.0457,
+    0.045,
+    0.0436,
+    0.0434,
+    0.0429,
+    0.0424,
+    0.0397,
+    0.0389,
+    0.0357,
+    0.0326,
+    0.0305,
+    0.0297,
+    0.0269,
+    0.026,
+    0.0259,
+    0.0246,
+    0.0243,
+    0.0229,
+    0.0214,
+    0.0209,
+    0.0201,
+    0.0192,
+    0.0173,
+    0.0167,
+    0.0166,
+    0.016,
+    0.0153,
+    0.0152,
+    0.0152,
+    0.0151,
+    0.0146,
+    0.0138,
+    0.0133,
+    0.0132,
+    0.0119,
+    0.0116,
+    0.0108,
+    0.0105,
+    0.0103,
+    0.01,
+    0.0099,
+    0.0097,
+    0.0088,
+    0.0081,
+    0.0079,
+    0.0077,
+    0.0068,
+    0.0063,
+    0.0054,
+    0.0048,
+    0.0048,
+    0.0044,
+    0.0025,
+    0.0007
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "Finite-element simulations show that embedding superconducting transmon qubits in flip-chip qubit-coupler lattices increases surface dielectric loss: connecting a qubit to four couplers raises the surface-loss rate by a factor of 1.8 and reduces estimated $T_{1}^{\\mathrm{surf}}$ from 133 to 74 µs. Counterintuitively, geometric optimizations that improve isolated-qubit lifetimes (larger qubit-ground gap, opposite-chip holes) can increase the connectivity-induced loss penalty, motivating design rules for low-loss multiqubit processors.",
+  "motivation": "Multiqubit processor lifetimes significantly lag behind isolated-qubit records (Figure 1 shows typical values $\\sim$50–150 µs versus best isolated-qubit values >500 µs), but the root causes in connected lattice geometries remain unclear.",
+  "method": "Two-step finite-element simulation of surface participation ratios (SPR) on aluminum-on-sapphire flip-chip layouts with Xmon qubits coupled to tunable couplers; controlled comparisons isolate contributions from coupling claws, field redistribution, and mode hybridization via models 1Q, 1QwP, 2Q1C, 1Q2C, 1Q4C, and 1Q4C single-mode control.",
+  "result": "Connecting to four couplers increases metal-substrate and substrate-air SPRs by factors of 2.18 and 2.27, yielding $R_{\\Gamma} = 1.80$ (surface-loss rate relative to isolated baseline) and $T_{1}^{\\mathrm{surf}} = 73.6$ µs versus 132.7 µs isolated; increasing qubit-ground gap from 30 to 80 µm worsens $R_{\\Gamma}$ in 1Q4C from 1.58 to 1.91 despite improving single-qubit lifetime.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

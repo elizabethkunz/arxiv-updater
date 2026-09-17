@@ -1,0 +1,363 @@
+{
+  "date": "2026-05-26",
+  "n_fetched": 157,
+  "papers": [
+    {
+      "id": "2605.25948",
+      "title": "Unified Flux Control Architecture for Fluxonium Qubits",
+      "authors": [
+        "Xianchuang Pan",
+        "Jiahui Wang",
+        "Tao Zhou",
+        "Yanbo Guo",
+        "Fei Wang",
+        "Ze Zhan",
+        "Liang Xiang",
+        "Zishuo Li",
+        "Lu Ma",
+        "Xizheng Ma",
+        "Huijuan Zhan",
+        "Tao Zhang",
+        "Kannan Lu",
+        "Xing Zhu",
+        "Guicheng Gong",
+        "Chunqing Deng",
+        "Tenghui Wang"
+      ],
+      "abstract": "Control architectures that reduce hardware overhead while maintaining high-fidelity operations are essential for the continued scaling of superconducting quantum processors. Here we experimentally realize a unified control architecture for fluxonium qubits, in which both transverse ($XY$) and longitudinal ($Z$) operations are implemented through a single flux-control channel driven by a single arbitrary waveform generator channel. This architecture imposes competing requirements on the shared control channel, which must simultaneously support low-frequency flux transmission for reset operations while strongly attenuating broadband noise near the qubit transition frequency. We address this challenge through frequency-selective cryogenic filtering together with compensated waveform synthesis that corrects the pulse distortion introduced by the filtered control line. Experimentally, this approach preserves coherence times above 100 $μ$s while enabling active reset with approximately 98% fidelity and 20-ns single-qubit gates with fidelities exceeding 99.99%. We further demonstrate FPGA-native instruction-level waveform synthesis based on reusable pulse primitives for unified flux control. These results establish unified flux control as a scalable architecture for fluxonium qubits that reduces control hardware overhead while preserving high-fidelity operation.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-25",
+      "score": 0.902854737978162,
+      "similar_to": [
+        {
+          "title": "Scalable Fluxonium Quantum Processors via Tunable-Coupler Architecture",
+          "id": "2604.13363",
+          "similarity": 0.8810581564903259
+        },
+        {
+          "title": "The high-coherence fluxonium qubit",
+          "id": "1810.11006",
+          "similarity": 0.8789795637130737
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates a unified flux control architecture for fluxonium qubits that consolidates both transverse ($XY$) and longitudinal ($Z$) operations into a single flux-control channel, reducing hardware overhead compared to conventional multi-channel approaches. High-fidelity operation is achieved through frequency-selective cryogenic filtering combined with compensated waveform synthesis and instruction-level FPGA-native synthesis.",
+        "motivation": "Scaling superconducting quantum processors requires reducing control hardware complexity while maintaining performance. Fluxonium qubits enable single-channel universal control via their fluxon-tunneling-based transitions at hundreds of MHz, unlike transmons at few GHz, but require reconciling competing demands: low-frequency transmission for reset operations, broadband noise suppression for coherence, and accurate microwave delivery for high-fidelity gates.",
+        "method": "A Gaussian low-pass filter with 92 MHz cutoff at the 4 K stage, combined with 30 dB cryogenic attenuation, suppresses room-temperature broadband noise while preserving coherence. Pulse distortion from the filtered control line is corrected via bounded inverse-filter pre-distortion ($H_\\mathrm{inv}(f) = H_\\mathrm{qubit}/\\max[H_\\mathrm{gauss}(f), 10^{-G_\\mathrm{max}/20}] \\times W(f)$ with $G_\\mathrm{max} = 50$ dB). Instruction-level waveform synthesis on FPGA uses 5-tap IIR filtering for the $Z$ path and 16-tap FIR filtering for $XY$ modulation, enabling dynamic pulse generation from reusable primitives rather than stored waveforms.",
+        "result": "Device A maintains $T_1 = 110$ µs, $T_2^R = 128$ µs, $T_2^\\mathrm{echo} = 133$ µs; achieves active reset with $\\sim$98% fidelity and $\\Delta\\Phi_\\mathrm{dc} \\approx 0.298\\,\\Phi_0$ excursion; single-qubit gates with 20 ns duration exceed 99.99% fidelity via randomized benchmarking. Across seven additional devices (208–378 MHz), fidelities reach 99.97% or higher for frequencies below 300 MHz; at 378 MHz with 200 ns gates, coherence times exceed 100 µs, confirming scalability of the architecture.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.24262",
+      "title": "Quantum non-demolition measurements as a practical primitive for fault-tolerant computation against biased noise",
+      "authors": [
+        "Christophe Vuillot",
+        "Diego Ruiz",
+        "Jérémie Guillaud",
+        "Mazyar Mirrahimi"
+      ],
+      "abstract": "Leveraging noise bias, where phase-flip errors dominate over bit-flips, can drastically reduce the hardware overhead of fault-tolerant quantum computation, but existing approaches require bias-preserving CNOT gates whose implementation remains experimentally challenging and is provably impossible for strictly two-dimensional systems. We show that high-fidelity quantum non-demolition (QND) multi-qubit Pauli $Z$ measurements provide an equally powerful yet more accessible primitive. We demonstrate that such measurements can fully replace bias-preserving CNOT gates for compiling all operations required by bias-tailored error correction, including stabilizer measurements for repetition codes, XZZX surface codes, and LDPC codes. We propose concrete physical implementations of this primitive for two platforms: solid-state nuclear spins coupled to electron spin ancillas, and dissipatively stabilized superconducting cat qubits. Through circuit-level numerical simulations, we show that an asymmetric XZZX surface code implemented with weight-four QND $Z$ measurements achieves a phase-flip threshold of $\\sim\\!1.25\\%$ and provides a qubit overhead reduction of up to $6\\times$ compared to a bias-unaware surface code at noise bias $η= 10^4$. In the regime of very large bias, a repetition code with QND $Z$ measurements attains a threshold of $\\sim\\!2.3\\%$ and achieves overhead comparable to that of a bias-preserving CNOT scheme, without requiring such a gate. Our results establish QND multi-$Z$ measurements as a practical and hardware-efficient route to fault-tolerant quantum computation for a broad class of biased-noise platforms.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-22",
+      "score": 0.8237523016246301,
+      "similar_to": [
+        {
+          "title": "Logic gates at the surface code threshold: Superconducting qubits poised for fault-tolerant quantum computing",
+          "id": "1402.4848",
+          "similarity": 0.8623927235603333
+        },
+        {
+          "title": "Bias-preserving and error-detectable entangling operations in a superconducting dual-rail system",
+          "id": "2503.10935",
+          "similarity": 0.8608213663101196
+        }
+      ],
+      "summary": {
+        "summary": "High-fidelity quantum non-demolition (QND) multi-qubit Pauli $Z$ measurements provide a practical alternative to bias-preserving CNOT gates for fault-tolerant computation with phase-flip-dominant noise, working universally across all qubit platforms including two-dimensional systems. Circuit-level simulations show that asymmetric XZZX surface codes with weight-four QND $Z$ measurements achieve a phase-flip threshold of $\\sim\\!1.25\\%$ and up to $6\\times$ qubit overhead reduction compared to bias-unaware codes at $\\eta = 10^4$, while repetition codes reach $\\sim\\!2.3\\%$ threshold with overhead comparable to bias-preserving CNOT schemes.",
+        "motivation": "Noise bias—where phase-flip errors dominate bit-flips—enables hardware-efficient fault-tolerance, but existing approaches require bias-preserving CNOT gates that are experimentally challenging and provably impossible for strictly two-dimensional qubits.",
+        "method": "We demonstrate that QND multi-$Z$ measurements can replace bias-preserving CNOT gates for compiling all operations in bias-tailored error correction. We propose physical implementations using nuclear spins coupled to electron spin ancillas (via hyperfine interaction and spin-to-charge readout) and dissipatively stabilized superconducting cat qubits (via engineered three-wave mixing on asymmetrically threaded SQUIDs), and numerically evaluate asymmetric XZZX surface codes and repetition codes under circuit-level biased noise.",
+        "result": "At $\\eta = 10^4$, XZZX + $M_{Z^4}$ achieves phase-flip threshold $\\sim\\!1.25\\%$ with $6\\times$ overhead reduction; repetition code with QND $Z$ measurements reaches threshold $\\sim\\!2.3\\%$ with overhead matching bias-preserving CNOT schemes, eliminating the need for such gates.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.24522",
+      "title": "Synchronization of Bloch Oscillations in array of parallel Josephson Junctions",
+      "authors": [
+        "R. Shaikhaidarov",
+        "R. Hussain",
+        "V. N. Antonov",
+        "E. Il'ichev"
+      ],
+      "abstract": "We demonstrate the synchronization of current quantization in a parallel array of weakly coupled Josephson Junctions operating in the regime of the coherent quantum phase slip. The first quantized current step on the voltage-current characteristic of 69 parallel Josephson junctions, under microwave excitation at a frequency of f = 19.325 GHz, is observed at 426 nA. Experiments show that accuracy of quantization does not degrade with increasing number of combined Josephson junctions. This demonstration addresses the issue of quantized current amplitude requirements adopted for a practical quantum standard, while leaving the question of accuracy for further research. At present, the quantum current standard of accepted metrological accuracy in the triangle of electrical units is under development. The other two, the Volt and Ohm standards based on the Josephson and Quantum Hall effects, respectively, are already well established in metrology.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-05-23",
+      "score": 0.5871053657181676,
+      "similar_to": [
+        {
+          "title": "Observation of high coherence in Josephson junction qubits measured in a three-dimensional circuit QED architecture",
+          "id": "1105.4652",
+          "similarity": 0.8161717653274536
+        },
+        {
+          "title": "Electrical post-fabrication tuning of aluminum Josephson junctions at room temperature",
+          "id": "2602.20002",
+          "similarity": 0.8107598423957825
+        }
+      ],
+      "summary": {
+        "summary": "Synchronization of Bloch oscillations in a parallel array of 69 Al/AlOx/Al Josephson junctions in the coherent quantum phase slip regime yields a quantized current step at $I_1 = 426$ nA under 19.325 GHz microwave excitation, exceeding previous single-junction demonstrations. The quantization accuracy does not degrade with array scaling, though thermal noise in screening resistors limits plateau flatness to $\neq 1$ ppm, preventing metrological acceptance.",
+        "motivation": "Development of a quantum current standard requires amplitudes exceeding $\\sim10$ nA achieved in single junctions, motivating exploration of parallel arrays analogous to historical development of Josephson voltage standards.",
+        "method": "Fabricated arrays of 10–80 Al/AlOx/Al junctions (50 × 40 nm$^2$ each) with individual screening circuits comprising 0.7 μH TiN superinductors and 23 kΩ Pd resistors; measured $I$–$V$ curves and differential resistance maps at 15 mK with filtered microwave and dc lines.",
+        "result": "The 69-junction array achieves synchronized $I_1 = 2ef \\times 69 = 426$ nA at $f = 19.325$ GHz (exceeding 252 nA from QAHR/PJVS hybrid standards) with $I_C^* \\approx 20$ nA per junction and apparent critical voltage $V_C^* \\approx 8$ μV; thermal noise current $\\Delta I_T = 0.4 ± 0.1$ nA and microwave-induced heating to $\\sim160$ mK remain limiting factors for sub-ppm accuracy.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.24501",
+      "title": "Performance Limits of Fault-Tolerant Quantum Error Correction Schemes",
+      "authors": [
+        "Lorenzo Valentini",
+        "Diego Forlivesi",
+        "Marco Chiani"
+      ],
+      "abstract": "Quantum error correction (QEC) is essential for realizing scalable quantum computation. However, when evaluating its benefits, most analyses assume idealized components, overlooking the imperfections inherent in realistic fault-tolerant (FT) implementations. In this paper, we investigate the performance of QEC schemes taking into account that quantum gates and measurements are themselves error-prone. We derive bounds for the failure probability of Shor-style FT-QEC schemes using limited structural information, such as the number of flag qubits and quantum gates. Our analysis separates and quantifies two key contributors to the failure rate: decoding errors and residual errors arising from circuit-level faults. The derived bounds highlight fundamental limitations in Shor-style FT-QEC performance and quantify how circuit imperfections degrade error correction capabilities, under the assumption of depolarizing noise.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-23",
+      "score": 0.5782471587627951,
+      "similar_to": [
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.8770633935928345
+        },
+        {
+          "title": "Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code",
+          "id": "2112.03708",
+          "similarity": 0.8742401599884033
+        }
+      ],
+      "summary": {
+        "summary": "This paper derives analytical upper and lower bounds on the failure probability of Shor-style fault-tolerant quantum error correction (FT-QEC) schemes under depolarizing noise, explicitly accounting for faulty gates and measurements. The analysis separates two failure mechanisms: decoding errors (when the decoder fails to correct) and residual errors (undetected errors from the FT circuit itself that escape a single syndrome extraction round).",
+        "motivation": "While QEC is essential for scalable quantum computation, practical implementations require fault-tolerant circuits, but most analyses assume idealized components. Understanding performance limits under realistic circuit-level faults is crucial for designing reliable quantum systems.",
+        "method": "Using limited structural information (number of flag qubits, gate counts), the authors derive upper bounds on decoding failure probability $P_{\\mathrm{fail,dec}}$ via probabilistic counting of error propagation paths, and both upper and lower bounds on residual error probability $P_{\\mathrm{res}}$. Analysis covers flag-based and cat-state syndrome extraction for CSS codes including surface codes, rotated surface codes, and color codes, with depolarizing error model having probability $p$ for channel errors and $p_{\\mathrm{FT}}$ for gate/measurement faults.",
+        "result": "For the $[[13,1,3]]$ surface code with $p_{\\mathrm{FT}} = p/10$, the refined bound (Theorem 1) shows $P_{\\mathrm{fail,dec}}$ degrades significantly compared to ideal ($p_{\\mathrm{FT}}=0$) performance; the asymptotic upper bound on $P_{\\mathrm{res}}$ (Theorem 3) is tight at low error rates, and combined bounds demonstrate that residual errors impose fundamental limits even for theoretically sound codes, with simulations validating the analytical predictions.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.25830",
+      "title": "Utility-scale quantum experiments using dynamic circuits to address collective dissipation in interacting qubits",
+      "authors": [
+        "Benjamin Tirado",
+        "Joana Fraxanet",
+        "Adrián Juan-Delgado",
+        "Javier Aizpurua",
+        "Ruben Esteban"
+      ],
+      "abstract": "Open quantum systems are central to quantum optics, condensed matter, and chemistry, yet their simulation remains challenging for both classical and near-term quantum hardware. In this work we implement and execute utility-scale quantum circuits that accurately reproduce the dissipative dynamics of interacting qubits. We consider a one-dimensional chain of many qubits weakly coupled to a common Markovian bath. The Markovian time evolution of the system is implemented through Trotterized evolution with the introduction of ancilla-assisted dissipative channels, including single-qubit and two-qubit dissipators to capture collective decay. Mid-circuit measurements, conditional gates, and hardware-aware transpilation significantly reduce circuit depth. We further implement a biased Clifford data regression (biased CDR), an error mitigation strategy that outperforms the uniform Cliffordization baseline and a variety of zero-noise extrapolation protocols. We execute large-scale quantum experiments of the dynamics of chains comprising up to 86 emitters on the IBM System Two \\texttt{ibm\\_basquecountry}. In order to do so, we use 129 total qubits (including ancillas), with the largest circuits contain about 8000 two-qubit gates. To validate these experiments we develop a classical Monte Carlo-Time-Evolving Block-Decimation (MC-TEBD) tensor-network method that incorporates reset operations through stochastic pure-state trajectories, obtaining very good agreement. The approach presented here opens a practical route for utility-scale quantum simulation of dissipative dynamics, enabled by dynamic circuits, targeted error mitigation, and tensor-network validation, and enables to tackle complex dynamics of systems such as quantum emitters in dissipative optical cavities.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-25",
+      "score": 0.5219005696488769,
+      "similar_to": [
+        {
+          "title": "On-demand driven dissipation for cavity reset and cooling",
+          "id": "2310.16785",
+          "similarity": 0.8543738126754761
+        },
+        {
+          "title": "Erasure qubits: Overcoming the $T_1$ limit in superconducting circuits",
+          "id": "2208.05461",
+          "similarity": 0.8475916981697083
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates utility-scale quantum simulation of Markovian dissipative dynamics with collective decay channels on up to 86 emitters (129 total qubits including ancillas) using the IBM Heron processor. The approach combines ancilla-assisted circuit implementations, dynamic circuits with mid-circuit measurements, biased Clifford data regression error mitigation, and Monte Carlo tensor-network validation to reproduce open quantum system evolution beyond classical tractability.",
+        "motivation": "Simulating open quantum systems with collective dissipation is essential for understanding quantum optics and cavity QED phenomena but remains classically intractable for large systems and challenging on near-term quantum devices due to the need for both local and correlated dissipative channels.",
+        "method": "Single-qubit and two-qubit dissipators are encoded via ancilla-assisted amplitude damping channels using the interaction basis to decompose collective decay. Hardware-efficient dynamic circuits employing mid-circuit measurements and conditional gates reduce two-qubit depth to constant scaling with system size. Inverse-bias Clifford data regression with biased Cliffordization outperforms zero-noise extrapolation for error mitigation, and a hybrid Monte Carlo time-evolving block decimation algorithm validates results.",
+        "result": "CDR-corrected quantum experiments on chains of 50 and 86 emitters track Monte Carlo-TEBD classical simulations closely; the largest experiments with $k=3$ Trotter steps contain approximately 8000 two-qubit gates with depth 193, substantially improving upon raw data and capturing superradiant and subradiant dynamics inaccessible to exact simulation.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9029,
+    0.8238,
+    0.5871,
+    0.5782,
+    0.5219,
+    0.4925,
+    0.4196,
+    0.3794,
+    0.3655,
+    0.3505,
+    0.2943,
+    0.291,
+    0.2726,
+    0.2712,
+    0.2653,
+    0.2484,
+    0.2108,
+    0.2024,
+    0.1903,
+    0.1889,
+    0.1849,
+    0.1804,
+    0.1778,
+    0.1712,
+    0.1705,
+    0.1592,
+    0.1572,
+    0.1561,
+    0.1542,
+    0.1538,
+    0.1489,
+    0.147,
+    0.1444,
+    0.1432,
+    0.1353,
+    0.1346,
+    0.1297,
+    0.129,
+    0.1252,
+    0.1243,
+    0.1221,
+    0.1136,
+    0.1132,
+    0.1124,
+    0.1103,
+    0.1043,
+    0.1034,
+    0.0952,
+    0.0884,
+    0.0878,
+    0.0875,
+    0.0872,
+    0.074,
+    0.0722,
+    0.0712,
+    0.07,
+    0.0699,
+    0.0662,
+    0.0659,
+    0.063,
+    0.0629,
+    0.0616,
+    0.0594,
+    0.0586,
+    0.0536,
+    0.0489,
+    0.0485,
+    0.0466,
+    0.0434,
+    0.0411,
+    0.0407,
+    0.0406,
+    0.0396,
+    0.0392,
+    0.0382,
+    0.0375,
+    0.037,
+    0.0366,
+    0.0363,
+    0.0357,
+    0.0348,
+    0.029,
+    0.029,
+    0.0286,
+    0.0272,
+    0.0264,
+    0.0264,
+    0.0261,
+    0.0258,
+    0.0234,
+    0.0233,
+    0.0215,
+    0.0208,
+    0.0205,
+    0.0189,
+    0.0189,
+    0.0187,
+    0.0184,
+    0.0175,
+    0.0166,
+    0.0166,
+    0.0164,
+    0.0163,
+    0.0162,
+    0.016,
+    0.0156,
+    0.015,
+    0.0149,
+    0.0149,
+    0.0145,
+    0.0141,
+    0.0131,
+    0.0124,
+    0.0118,
+    0.0114,
+    0.0111,
+    0.0109,
+    0.0108,
+    0.0101,
+    0.0099,
+    0.0088,
+    0.0087,
+    0.0083,
+    0.0082,
+    0.0082,
+    0.0082,
+    0.0081,
+    0.0081,
+    0.0081,
+    0.008,
+    0.0077,
+    0.0069,
+    0.0066,
+    0.0064,
+    0.0059,
+    0.0054,
+    0.0054,
+    0.0054,
+    0.0053,
+    0.0049,
+    0.0045,
+    0.0044,
+    0.0042,
+    0.0039,
+    0.0035,
+    0.0033,
+    0.0031,
+    0.0027,
+    0.0027,
+    0.0024,
+    0.0024,
+    0.0022,
+    0.0019,
+    0.0018,
+    0.0017,
+    0.0013,
+    0.0013
+  ]
+}

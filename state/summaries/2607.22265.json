@@ -1,0 +1,8 @@
+{
+  "summary": "Aluminum grain-size engineering and silicon dielectric-edge trimming both suppress loss in superconducting coplanar waveguide resonators, improving quality factors from $6 \\times 10^4$ to $2.3 \\times 10^6$ on high-resistivity silicon. Substrate heating during $200$ nm aluminum deposition increases grain size to $1.2$ µm and reduces non-TLS loss, while a two-step \"Tropic\" etch (SF$_6$ followed by CHF$_3$) smooths silicon surfaces and suppresses TLS loss.",
+  "motivation": "Material losses in superconducting circuits limit qubit $T_1$ and resonator quality factors; understanding how intrinsic superconductor microstructure and dielectric-edge roughness drive TLS and non-TLS loss mechanisms has remained poorly characterized.",
+  "method": "Aluminum films ($200$ nm) were deposited at four substrate temperatures ($25$–$300$ °C) on high-resistivity silicon ($\\rho \\geq 10$ kΩ·cm), with grain sizes characterized by AFM and cross-sectional STEM-EDS. Silicon etching variants (unetched, anisotropic CHF$_3$, and hybrid SF$_6$/CHF$_3$ Tropic profiles) were applied to $\\lambda/4$ CPW resonators, with single-photon quality factors measured at $10$ mK via vector-network-analyzer reflection.",
+  "result": "Non-TLS loss decreased from $Q_i \\approx 4 \\times 10^4$ to $4.2 \\times 10^5$ with $300$ °C deposition (grain boundaries reduced, no oxide detected at boundaries by EDS); TLS loss further suppressed by dielectric trimming, reaching $Q_i = 2.3 \\times 10^6$ with the smooth-sidewall Stropic profile, operating at $6.5$–$8.1$ GHz where TLS loss is most pronounced.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

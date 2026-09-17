@@ -1,0 +1,8 @@
+{
+  "summary": "This review analyzes fault-tolerant protocols for biased-noise qubits where phase-flip errors vastly exceed bit-flip errors, examining three architectures based on available bias-preserving operations. The key finding is that substantial overhead reduction requires either a bias-preserving CX gate or high-fidelity quantum non-demolition readout of multi-qubit Pauli Z operators; with only CZ gates, the noise bias provides negligible practical benefit.",
+  "motivation": "Biased-noise qubits from natural (electron/nuclear spins) and engineered (cat qubits) platforms promise reduced overhead for fault-tolerant quantum computing, but this potential can only be realized if operations preserve rather than depolarize the noise bias.",
+  "method": "The review organizes prominent fault-tolerant architectures by their elementary bias-preserving gate sets: (1) {CZ, $\\mathcal{P}_{|+\\rangle}$, $\\mathcal{M}_X$}, (2) {CZ, CX, CY, $\\mathcal{P}_{|0\\rangle}$, $\\mathcal{P}_{|+\\rangle}$, $\\mathcal{M}_X$, $\\mathcal{M}_Z$}, and (3) QND readout of $Z^{\\otimes n}$ operators, with numerical analysis using circuit-level noise models at $p_Z = 10^{-3}$ per operation.",
+  "result": "With CZ only, a distance-9 surface code for depolarizing noise ($\\approx 161$ qubits for $10^{-6}$ logical error rate) remains superior; with bias-preserving CX, concatenated repetition/high-rate codes achieve $< 8$ qubits per logical qubit at $\\eta \\gg 1$; unfolded distillation prepares $|X^{1/4}\\rangle$ magic states with $\\sim 10^{-8}$ logical error using 53 qubits at $p_Z = 10^{-3}$ with $\\eta = 5\\times10^7$.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

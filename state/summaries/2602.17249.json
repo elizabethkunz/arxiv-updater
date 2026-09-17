@@ -1,0 +1,8 @@
+{
+  "summary": "Superconducting Al films grown on GaAs(111)A by molecular beam epitaxy achieve record-low twin-domain ratios of $5 \times 10^{-5}$ to $3 \times 10^{-4}$ and azimuthal rocking-curve FWHM down to $0.55°$, establishing a near-single-domain platform. Critical temperatures approach bulk values with atomically abrupt interfaces and macroscopic in-plane uniformity confirmed by synchrotron X-ray diffraction, EBSD, and STEM.",
+  "motivation": "Al superconducting qubits require exceptional crystalline quality to minimize decoherence, but twin-domain defects in epitaxial Al films degrade coherence and have historically limited practical integration on semiconductor platforms.",
+  "method": "Molecular beam epitaxy was used to grow Al on GaAs(111)A, with crystalline quality assessed via synchrotron X-ray diffraction (twin-domain ratios, rocking curves with FWHM to $0.018°$), electron backscatter diffraction mapping, and cross-sectional STEM characterization of interfaces.",
+  "result": "Twin-domain ratios of $5 \times 10^{-5}$ (19.4 nm thick) and $3 \times 10^{-4}$ (9.6 nm thick) are the lowest ever reported for Al on any substrate, with critical temperatures near bulk and atomically smooth surfaces enabling a high-coherence qubit platform.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

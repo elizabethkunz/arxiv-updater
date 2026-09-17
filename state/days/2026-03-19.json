@@ -1,0 +1,333 @@
+{
+  "date": "2026-03-19",
+  "n_fetched": 99,
+  "papers": [
+    {
+      "id": "2603.17936",
+      "title": "Exploration of Fluxonium Parameters for Capacitive Cross-Resonance Gates",
+      "authors": [
+        "Eugene Y. Huang",
+        "Christian Kraglund Andersen"
+      ],
+      "abstract": "We study the cross-resonance effect in capacitively-coupled fluxonium qubits and devise a simple formula for their maximum ZX interaction strength. By going beyond the perturbative regime, we find that a CNOT gate can generally be realized in under 200 ns with residual ZZ limited to 50 kHz, for fluxonium qubits with frequencies below 1 GHz. Our analysis relies on a semi-analytical method: we first numerically diagonalize the Floquet Hamiltonian of the strongly-driven control qubit and then perturbatively incorporate the weak qubit-qubit coupling to obtain an effective Hamiltonian. We also derive frequency collision windows around harmful control-target and control-spectator transitions. For large fluxonium devices, we predict a collision-free yield that is considerably less sensitive to junction variability compared to transmons in the same layout. These results support the viability of an all-fluxonium cross-resonance architecture with only capacitive couplings.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-18",
+      "score": 0.7938582167352071,
+      "similar_to": [
+        {
+          "title": "High-Fidelity, Frequency-Flexible Two-Qubit Fluxonium Gates with a Transmon Coupler",
+          "id": "2304.06087",
+          "similarity": 0.8945027589797974
+        },
+        {
+          "title": "Procedure for systematically tuning up crosstalk in the cross resonance gate",
+          "id": "1603.04821",
+          "similarity": 0.8741412162780762
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates that an all-fluxonium cross-resonance (CR) architecture with only direct capacitive coupling can achieve CNOT gate durations under 200 ns with residual ZZ rates of 50 kHz, using a semi-analytical approach that combines numerical Floquet diagonalization with perturbative two-qubit coupling. Detailed frequency-collision analysis and Monte Carlo simulations show that the high anharmonicity of fluxoniums enables substantially improved scalability compared to transmons, requiring only ~1–2% Josephson-energy disorder to maintain >50% collision-free yield for surface codes up to distance 21.",
+        "motivation": "Transmon-based CR architectures face severe frequency-collision limitations that restrict scaling beyond ~1000 qubits even with sophisticated fabrication control, motivating exploration of higher-anharmonicity alternatives like fluxoniums to enable practical multi-qubit processors with fixed capacitive couplings and microwave-activated gates.",
+        "method": "For driven control and idle target fluxoniums coupled via $J n_c \\otimes n_t$, the authors (1) numerically diagonalize the Floquet Hamiltonian of the strongly-driven control qubit, (2) perturbatively incorporate the weak coupling to extract effective two-qubit interaction coefficients including the conditional polarization $\\Delta p(\\Omega)$, (3) derive collision windows via semiclassical transition-rate analysis, and (4) run Monte Carlo simulations sampling junction disorder to predict collision-free yields on square, hexagonal, and heavy-hex lattices.",
+        "result": "For control qubits at $\\omega_c/2\\pi \\approx 286$ MHz and targets spanning 422–920 MHz with $|\\mu_{ZZ}|/2\\pi = 50$ kHz, $\\tau_{CNOT}^\\star \\approx \\pi/(2J|n_c^{10}n_t^{10}|)$ yields gates in 130–230 ns depending on Josephson-energy ratios; a distance-21 heavy-hexagon surface code achieves >50% zero-collision yield for $\\sigma(E_J)/\\langle E_J \\rangle < 2\\%$, versus <1% for transmons at the same disorder.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.17253",
+      "title": "Efficient and flexible preparation of photonic NOON states in a superconducting system",
+      "authors": [
+        "Dong-Sheng Li",
+        "Yi-Hao Kang",
+        "Zhi-Cheng Shi",
+        "Yang Xiao",
+        "Ye-Hong Chen",
+        "Yan Xia"
+      ],
+      "abstract": "The NOON states play a critical role as physical resources in quantum information processing and quantum metrology, yet their preparation efficiency and applicability are often constrained by complicated operational procedures or the requirement for nonlinear interactions. In this paper, we propose an efficient protocol to generate the NOON states within two microwave cavities embedded in a superconducting system, assisted by an auxiliary five-level qudit. The state preparation is accomplished in three steps for an arbitrary photon number $N$ by adjusting only external classical fields, while keeping the qudit-cavity coupling strengths and the qudit level spacings fixed. Based on parameters accessible in superconducting systems, numerical simulations show that the protocol achieves relatively high fidelity for the NOON states preparation even in the presence of parameter fluctuations and decoherence effects. Thus, this protocol may provide a practical approach for preparing the NOON states with current technology. Notably, since nonlinear interactions are not required, the protocol is flexible and has the potential to be applied across various physical systems.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-18",
+      "score": 0.7797649809987747,
+      "similar_to": [
+        {
+          "title": "Seamless high-Q microwave cavities for multimode circuit QED",
+          "id": "2010.16382",
+          "similarity": 0.8561950325965881
+        },
+        {
+          "title": "Fast Microwave-free State Preparation and Measurement of Superconducting Qubits",
+          "id": "2609.01334",
+          "similarity": 0.8504113554954529
+        }
+      ],
+      "summary": {
+        "summary": "This work proposes a three-step protocol for preparing NOON states with arbitrary photon number $N$ in two microwave cavities coupled to a five-level superconducting qudit, requiring only linear interactions and classical field adjustments. Numerical simulations demonstrate fidelities exceeding 99% for $N=2,3,4$ under realistic superconducting system parameters, with robustness to systematic errors, coupling strength deviations, inter-cavity crosstalk, and decoherence effects.",
+        "motivation": "Existing NOON state preparation protocols either require probabilistic post-selection or suffer from operational complexity that scales with photon number $N$, or depend on nonlinear interactions that limit applicability across physical platforms.",
+        "method": "The protocol uses reverse-engineered and robust optimal control pulses to excite a five-level flux qudit from ground state $|0\\rangle_0$ to superposition $(|3\\rangle_0 + |4\\rangle_0)/\\sqrt{2}$, then applies off-resonant drives with displacement $\\alpha_0 = N$ to create conditional coherent states, and finally returns the qudit to ground state via frequency-matched pulses that transfer entanglement entirely to the cavity pair.",
+        "result": "For $N=4$, fidelity $F_3 > 99\\%$ is achieved with optimal pulses; under realistic imperfections ($\\delta \\in [-0.2, 0.2]$ in Rabi frequency errors, coupling drift $\\delta\\lambda \\sim 100$ kHz, crosstalk $\\lambda_{12}/\\lambda_k \\sim 0.01$, qudit decay/dephasing $\\Gamma_\\gamma, \\Gamma_d \\sim 10$ kHz, cavity loss $\\Gamma_\\kappa \\sim 1$ kHz), fidelity remains $F_3 > 90\\%$ at total evolution time $T_f = 15$ µs.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.17214",
+      "title": "A Dayem Loop Qubit Based on Interfering Superconducting Nanowires",
+      "authors": [
+        "Cliff Sun",
+        "Alexey Bezryadin"
+      ],
+      "abstract": "We propose a qubit design based on two parallel superconducting nanowires (i.e., a \"Dayem loop qubit\"). The inclusion of two nanowires instead of one leads to the Little-Parks effect, which provides an oscillator behavior for the qubit frequency as well as anharmonicity. Our key result is that even if the nanowires have an increasingly linear CPR at low supercurrents, the quantum interference between two condensates, induced by a magnetic field, leads to a restoration of cubic nonlinearity, which is predicted to be sufficient to create a functional transmon qubit based on thin superconducting wires. We consider both generic (cubic) current-phase relationships (CPR) as well as more realistic microscopic CPR, having higher-order nonlinearities. For higher-order CPRs, we propose a simple power-law phenomenological approximation valid at very low temperatures, at which superconducting qubits normally operate.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-03-17",
+      "score": 0.714048966260593,
+      "similar_to": [
+        {
+          "title": "Erasure qubits: Overcoming the $T_1$ limit in superconducting circuits",
+          "id": "2208.05461",
+          "similarity": 0.8426922559738159
+        },
+        {
+          "title": "Experimental realization of an intrinsically error-protected superconducting qubit",
+          "id": "1910.07542",
+          "similarity": 0.8333472609519958
+        }
+      ],
+      "summary": {
+        "summary": "This paper proposes a Dayem loop qubit based on two parallel superconducting nanowires connected as a SQUID, where quantum interference between the nanowires restores cubic nonlinearity in the current-phase relationship (CPR) even when individual wires have weak or higher-order nonlinearities. The design achieves sufficient anharmonicity for transmon operation by applying a perpendicular magnetic field to tune the phase shift between wires, eliminating the need for tunnel junctions or material interfaces.",
+        "motivation": "Single superconducting nanowire qubits suffer from weak or highly nonlinear-only-near-critical-current CPRs, making it difficult to achieve the ~1% relative anharmonicity needed for practical transmon qubits. A SQUID geometry could enhance nonlinearity through quantum interference while avoiding lossy oxide barriers present in conventional Josephson junctions.",
+        "method": "The authors analyze a two-nanowire SQUID using both simplified cubic CPR models (Likharev model) and realistic zero-temperature microscopic CPRs from Usadel equations, approximated by a power-law form $I/I_0 = \\phi/\\phi_0 - a(\\phi/\\phi_0)^{2m+1}$. They show that applying perpendicular magnetic field $B$ induces phase shift $2\\pi b$ between wires, suppressing the linear CPR term while preserving or enhancing cubic nonlinearity, enabling perturbative and numerical analysis of energy levels and anharmonicity.",
+        "result": "For realistic parameters ($I_0 \\sim 1$ µA, $E_c/h \\approx 0.3$ GHz, nanowire length $\\sim 100$ nm, $\\phi_0 = 10\\pi$), the device achieves relative anharmonicity $\\alpha_r \\sim -1$ to $-3\\%$ at moderate magnetic fields ($b \\sim 5$–$7$), with qubit frequencies tunable from a few GHz to W-band ($75$–$110$ GHz), and can operate at temperatures $\\sim 10$ times higher than aluminum transmons due to higher superconducting gap materials.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.17167",
+      "title": "Optimizing Logical Mappings for Quantum Low-Density Parity Check Codes",
+      "authors": [
+        "Sayam Sethi",
+        "Sahil Khan",
+        "Maxwell Poster",
+        "Abhinav Anand",
+        "Jonathan Mark Baker"
+      ],
+      "abstract": "Early demonstrations of fault tolerant quantum systems have paved the way for logical-level compilation. For fault-tolerant applications to succeed, execution must finish with a low total program error rate (i.e., a low program failure rate). In this work, we study a promising candidate for future fault-tolerant architectures with low spatial overhead: the Gross code. Compilation for the Gross code entails compiling to Pauli Based Computation and then reducing the rotations and measurements to the Bicycle ISA. Depending on the configuration of modules and the placement of code modules on hardware, one can reduce the amount of resulting Bicycle instructions to produce a lower overall error rate. We find that NISQ-based, and existing FTQC mappers are insufficient for mapping logical qubits on Gross code architectures because 1. they do not account for the two-level nature of the logical qubit mapping problem, which separates into code modules with distinct measurements, and 2. they naively account only for length two interactions, whereas Pauli-Products are up to length $n$, where $n$ is the number of logical qubits in the circuit. For these reasons, we introduce a two-stage pipeline that first uses hypergraph partitioning to create in-module clusters, and then executes a priority-based algorithm to efficiently assign clusters onto hardware. We find that our mapping policy reduces the error contribution from inter-module measurements, the largest source of error in the Gross Code, by up to $\\sim36\\%$ in the best case, with an average reduction of $\\sim13\\%$. On average, we reduce the failure rates from inter-module measurements by $\\sim22\\%$ with localized factory availability, and by $\\sim17\\%$ on grid architectures, allowing hardware developers to be less constrained in developing scalable fault tolerant systems due to software driven reductions in program failure rates.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-17",
+      "score": 0.5743611783551366,
+      "similar_to": [
+        {
+          "title": "Nearest-neighbour gates are all you need: High-rate quantum low-density parity-check codes on a planar grid",
+          "id": "2606.19482",
+          "similarity": 0.8843340873718262
+        },
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.8753567934036255
+        }
+      ],
+      "summary": {
+        "summary": "This paper addresses logical qubit mapping for the Gross code, a spatially efficient quantum error correction code, by developing a two-stage compilation pipeline that reduces inter-module measurement errors. The approach uses hypergraph partitioning to cluster logical qubits and a priority-based algorithm for module assignment, achieving ~13% average reduction in non-fixed error rates and up to ~36% in optimal cases compared to existing NISQ and FTQC mappers.",
+        "motivation": "Early fault-tolerant quantum architectures using high-rate qLDPC codes like the Gross code require compilation strategies that minimize program failure rates. Existing NISQ and FTQC qubit mappers are inadequate because they cannot handle the two-level clustering/assignment structure of logical qubit mapping, model only length-2 interactions instead of length-$n$ Pauli products, and neglect factory placement.",
+        "method": "A two-stage pipeline first uses hypergraph partitioning (KaHyPar with $\\varepsilon=0.06$) to group logical qubits into clusters that minimize modules involved per rotation, then applies a priority-based heuristic (Algorithm 1) that assigns modules based on rotation frequency to minimize inter-module measurement paths. The approach is evaluated on QASMBench circuits compiled to Pauli-Based Computation and Bicycle instructions.",
+        "result": "Across benchmarks, the mapper reduces non-fixed error contribution from inter-module measurements by ~13% on average and ~22% with localized factory availability, decreases total program failure rate by ~4% on average, and reduces inter-module measurement count by up to ~62% in best cases. Compilation time is 2.61 s mean across benchmarks with no timeouts.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.17194",
+      "title": "$\\textit{Ab initio}$ Identification of Hydrogen Tunneling as Two-Level Systems in Nb$_2$O$_5$ and Ta$_2$O$_5$",
+      "authors": [
+        "Cristóbal Méndez",
+        "Tomás A. Arias"
+      ],
+      "abstract": "Two-level systems (TLS) in native Nb and Ta oxides limit superconducting-qubit coherence and SRF-cavity quality factors in the microwave frequency range, yet their microscopic origin remains unclear. We combine MLIP-accelerated sampling of hydrogen configurations and diffusion pathways in amorphous Nb and Ta pentoxides with targeted $\\textit{ab initio}$ validation. Hydrogen is the only light interstitial with barrier-distance combinations near the $\\sim0.1-10$ GHz tunneling regime, and its ensemble statistics in amorphous oxides produce effective TLS densities and loss estimates consistent with the experimentally observed higher loss in Nb oxide than in Ta oxide. Our results point to H tunneling as a plausible microscopic TLS source in these materials.",
+      "categories": [
+        "cond-mat.supr-con",
+        "quant-ph"
+      ],
+      "published": "2026-03-17",
+      "score": 0.5356632980384566,
+      "similar_to": [
+        {
+          "title": "Towards understanding two-level-systems in amorphous solids -- Insights from quantum circuits",
+          "id": "1705.01108",
+          "similarity": 0.8524498343467712
+        },
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.8232941031455994
+        }
+      ],
+      "summary": {
+        "summary": "This work identifies hydrogen tunneling as a plausible microscopic origin of two-level systems (TLS) in native Nb$_2$O$_5$ and Ta$_2$O$_5$ oxides that limit superconducting-qubit coherence and SRF-cavity quality factors. Machine-learned interatomic potentials accelerate sampling of hydrogen configurations and diffusion barriers in amorphous oxides, revealing that H is the only light interstitial with barrier–distance combinations yielding tunnel splittings in the $\nu_{\text{TLS}} \to f \text{ range} \true \text{ of } 0.1{-}10$ GHz.",
+        "motivation": "TLS in Nb and Ta pentoxides are a bottleneck for qubit coherence times and cavity $Q$ factors, yet their microscopic origin remains unknown despite clear experimental trends: higher loss in Nb than Ta (30% difference), correlation with oxygen vacancies and amorphous disorder, and stronger H incorporation in Nb oxide.",
+        "method": "The authors sampled $\\sim$10,000 relaxed hydrogen interstitial sites in each 49-structure ensemble of amorphous Nb$_2$O$_{5-\\delta}$ and Ta$_2$O$_{5-\\delta}$ (49 cells per oxide, 162–168 atoms each, seven oxygen-vacancy levels) using MLIP-accelerated NEB to map diffusion barriers, then computed tunnel splittings $\\Delta$ via quartic WKB approximation and extracted TLS statistics to estimate effective TLS densities and dielectric loss.",
+        "result": "At hydrogen concentrations of $\\sim$2 at.% in Nb$_2$O$_5$ and $\\sim$1 at.% in Ta$_2$O$_5$, the model predicts $\\tan\\delta_0 \\approx 8.6 \\times 10^{-4}$ and $6.7 \\times 10^{-4}$ respectively, consistent with measured loss of $(8.1{-}18) \\times 10^{-4}$ for Nb and the observed $\\sim$30% lower loss in Ta oxide, with the difference arising from atomistically derived pair statistics showing higher probability of microwave-active H tunneling in Nb.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.16993",
+      "title": "Chiral and bond-ordered phases in a triangular-ladder superconducting-qubit quantum simulator",
+      "authors": [
+        "Matthew Molinelli",
+        "Joshua C. Wang",
+        "Jeronimo G. C. Martinez",
+        "Sonny Lowe",
+        "Andrew Osborne",
+        "Rhine Samajdar",
+        "Andrew A. Houck"
+      ],
+      "abstract": "Many-body systems with strong interactions often exhibit macroscopic behavior markedly absent in single-particle or noninteracting limits. Such emergent phenomena are well exemplified in lattice Hubbard models, where the interplay between interactions, geometric frustration, and magnetic flux gives rise to rich physics. Superconducting qubits naturally enable analog quantum simulation of Bose-Hubbard models, while offering tunable parameters, site-resolved control, and rapid experimental repetition rates. Here, we study a superconducting-qubit device that realizes the Bose-Hubbard model on a triangular-ladder lattice. By tuning the magnitude and sign of couplings, we engineer a synthetic magnetic flux to characterize the resulting half-filling ground state for various parameter regimes. We measure observables analogous to current-current correlators and bond kinetic energies, finding signatures consistent with chiral superfluids, Meissner superfluids, and bond-ordered insulators. Our results establish superconducting circuits as a platform for robustly probing quantum phases of matter in frustrated Bose-Hubbard systems, even in strongly correlated and gapless regimes.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall",
+        "cond-mat.str-el",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-03-17",
+      "score": 0.5117950019061763,
+      "similar_to": [
+        {
+          "title": "Multi-purpose quantum laboratories from superconducting circuits",
+          "id": "2608.17020",
+          "similarity": 0.8205674886703491
+        },
+        {
+          "title": "Engineering quantum criticality and dynamics on an analog-digital simulator",
+          "id": "2602.18555",
+          "similarity": 0.8174682855606079
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates a superconducting-qubit quantum simulator of the Bose-Hubbard model on a triangular-ladder lattice with tunable synthetic magnetic flux, preparing and characterizing half-filling ground states through measurements of current-current correlators and bond kinetic energies. The experiments reveal chiral superfluids at $\\pi$ flux with staggered loop currents, Meissner superfluids at zero flux with suppressed rung currents, and signatures of bond-ordered insulating phases.",
+        "motivation": "Frustrated bosonic lattice models with synthetic gauge fields host exotic many-body phases difficult to access classically, and superconducting transmons offer a natural platform for realizing attractive Bose-Hubbard Hamiltonians with site-resolved control and rapid repetition rates.",
+        "method": "An 8-qubit triangular-ladder device with tunable transmon couplers implements rung hopping $J/2\\pi = 6.1$ MHz and leg hopping $J_\\parallel/2\\pi = 2.5$–$20.4$ MHz (or negative). Ground states are prepared via adiabatic ramp at half-filling (4 excitations), and observables are extracted by applying calibrated beamsplitter rotations to map currents and bond kinetic energies onto population imbalances.",
+        "result": "Chiral current-current correlations $\\mathcal{C}$ are orders of magnitude larger at $\\pi$ flux ($J_\\parallel/J < 0$) than at zero flux, while bond energies alternate in sign at $\\pi$ flux but remain uniform at zero flux, yielding a bond-order parameter $O_{\\mathrm{BO}}$ peaking near $J_\\parallel/J \\approx -1$ consistent with theoretical predictions for the chiral superfluid–bond-insulator phase boundary.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.7939,
+    0.7798,
+    0.714,
+    0.5744,
+    0.5357,
+    0.5118,
+    0.4752,
+    0.4339,
+    0.4138,
+    0.3315,
+    0.3046,
+    0.29,
+    0.2794,
+    0.2746,
+    0.2692,
+    0.2611,
+    0.2384,
+    0.2012,
+    0.186,
+    0.1851,
+    0.1788,
+    0.175,
+    0.1691,
+    0.1448,
+    0.1337,
+    0.1246,
+    0.1175,
+    0.1156,
+    0.0998,
+    0.0994,
+    0.0988,
+    0.098,
+    0.0864,
+    0.0742,
+    0.0727,
+    0.0706,
+    0.0679,
+    0.0667,
+    0.064,
+    0.061,
+    0.0525,
+    0.0497,
+    0.0462,
+    0.0437,
+    0.0423,
+    0.04,
+    0.0376,
+    0.0371,
+    0.0349,
+    0.0349,
+    0.0349,
+    0.0346,
+    0.0342,
+    0.0335,
+    0.0329,
+    0.0327,
+    0.0315,
+    0.0302,
+    0.0297,
+    0.0292,
+    0.0279,
+    0.0266,
+    0.0261,
+    0.0246,
+    0.0232,
+    0.0214,
+    0.0203,
+    0.0201,
+    0.0192,
+    0.0186,
+    0.0174,
+    0.0169,
+    0.0147,
+    0.0143,
+    0.0139,
+    0.0128,
+    0.0126,
+    0.0126,
+    0.0122,
+    0.0119,
+    0.0115,
+    0.0104,
+    0.0095,
+    0.0093,
+    0.0088,
+    0.0085,
+    0.0082,
+    0.0082,
+    0.0078,
+    0.0072,
+    0.0072,
+    0.0058,
+    0.0057,
+    0.0056,
+    0.0055,
+    0.0039,
+    0.0038,
+    0.0029,
+    0.0027
+  ]
+}

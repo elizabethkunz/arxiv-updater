@@ -1,0 +1,8 @@
+{
+  "summary": "This work proposes a microwave-to-optical quantum transducer based on resonant scattering of a single neutral nitrogen-vacancy ($\\mathrm{NV}^0$) center in a diamond optomechanical resonator, achieving coherent conversion at ultralow pump powers of 48 pW. The scheme enables remote entanglement generation between superconducting qubits at kilohertz rates with fidelity exceeding 0.9, demonstrating a viable path toward distributed fault-tolerant quantum computing.",
+  "motivation": "Distributed quantum computing architectures require efficient microwave-to-optical transducers operating at cryogenic temperatures with low added noise, but existing approaches rely on strong optical pumping that causes heating and degrades single-photon coherence.",
+  "method": "The transducer exploits strong coupling of the $\\mathrm{NV}^0$ center (with $g_{02}/2\\pi = 1$ GHz) to both optical and strain fields, combining a small optomechanical mode volume with resonant dipole transitions. Three theoretical models (full, reduced, phenomenological) analyze the coherent conversion efficiency $P_{\\mathrm{coh}}$ and remote entanglement generation via a single-click interferometric scheme.",
+  "result": "At optimal pump power 48 pW, the device achieves $P_{\\mathrm{coh}} = 0.32$ with 3.0 MHz bandwidth; remote entanglement generation yields fidelity $F_{1c} = 0.91$ and heralding rate 5.3 kHz at 1 MHz repetition rate, more than three orders of magnitude lower pump power than conventional electro-optic and optomechanical transducers.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

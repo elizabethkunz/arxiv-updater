@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>2026-06-11 · arXiv updates</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script>try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<style>
+:root {
+  --bg: #fafafa; --ink: #111111; --ink-2: #444444; --muted: #8a8a8a; --label: #5f6672;
+  --line: #e6e6e6; --grid: rgba(0, 0, 0, .055); --hover: #f3f3f3; --track: #e2e2e2;
+  --sans: "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --score-sign: -1; --score-l: 35%; --thumb: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #0a0a0a; --ink: #ededed; --ink-2: #b4b4b4; --muted: #737373; --label: #9aa1ad;
+          --line: #242424; --grid: rgba(255, 255, 255, .06); --hover: #141414; --track: #2a2a2a;
+          --score-sign: 1; --score-l: 60%; --thumb: #2c2c2c; }
+}
+:root[data-theme="dark"] { --bg: #0a0a0a; --ink: #ededed; --ink-2: #b4b4b4; --muted: #737373; --label: #9aa1ad;
+          --line: #242424; --grid: rgba(255, 255, 255, .06); --hover: #141414; --track: #2a2a2a;
+          --score-sign: 1; --score-l: 60%; --thumb: #2c2c2c; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; font-variant-numeric: tabular-nums; background: var(--bg); color: var(--ink); font: 16px/1.6 var(--sans);
+       -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+/* top bar */
+.bar { border-bottom: 1px solid var(--line); background: var(--bg); position: relative; z-index: 2; }
+.bar .wrap { display: flex; align-items: center; justify-content: space-between; height: 56px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 600; letter-spacing: -.01em; text-decoration: none; }
+.brand i { width: 14px; height: 14px; background: var(--ink); display: block; }
+.bar nav { display: flex; gap: 22px; font-size: 14px; color: var(--ink-2); }
+.bar nav a { text-decoration: none; }
+.bar nav a:hover { color: var(--ink); }
+.bar nav { align-items: center; }
+#theme { width: 30px; height: 30px; padding: 0; border: 1px solid var(--line); border-radius: 999px; background: none;
+  color: var(--ink-2); cursor: pointer; display: grid; place-items: center; }
+#theme:hover { border-color: var(--ink); color: var(--ink); }
+.katex { font-size: 1.05em; }
+
+/* hero with graph-paper ground that fades out */
+.hero { position: relative; border-bottom: 1px solid var(--line); overflow: hidden; }
+.hero::before { content: ""; position: absolute; inset: 0;
+  background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 24px 24px; background-position: -1px -1px;
+  -webkit-mask-image: linear-gradient(100deg, transparent 5%, #000 55%, #000 80%, transparent);
+          mask-image: linear-gradient(100deg, transparent 5%, #000 55%, #000 80%, transparent); }
+.hero .wrap { position: relative; padding-top: 72px; padding-bottom: 56px; }
+.eyebrow { font: 500 13px/1 var(--sans); color: var(--muted); margin: 0 0 20px; }
+.eyebrow a { text-decoration: none; } .eyebrow a:hover { color: var(--ink); }
+h1 { font-size: clamp(34px, 5.4vw, 60px); line-height: 1.04; letter-spacing: -.045em; font-weight: 500; margin: 0; max-width: 18em; text-wrap: balance; }
+h1.paper { font-size: clamp(28px, 3.8vw, 42px); line-height: 1.12; letter-spacing: -.035em; }
+.lede { color: var(--ink-2); font-size: 17px; max-width: 46em; margin: 22px 0 0; }
+
+/* day header */
+.day { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px;
+       padding: 44px 0 14px; border-bottom: 1px solid var(--ink); }
+.day h2 { font: 600 15px/1 var(--sans); margin: 0 0 10px; letter-spacing: -.01em; }
+.day h2 a { text-decoration: none; } .day h2 a:hover { text-decoration: underline; }
+.day .stats { font: 400 13px/1 var(--sans); color: var(--muted); }
+.day .stats a { text-decoration: none; color: var(--ink-2); } .day .stats a:hover { color: var(--ink); text-decoration: underline; }
+.hist { display: block; color: var(--track); } .hist .hi { color: var(--ink); }
+
+/* paper rows */
+.row { display: grid; grid-template-columns: 92px 1fr; gap: 0 28px; padding: 24px 0;
+       border-bottom: 1px solid var(--line); text-decoration: none; }
+a.row:hover { background: var(--hover); box-shadow: -24px 0 0 var(--hover), 24px 0 0 var(--hover); }
+.score { font: 500 23px/1 var(--sans); letter-spacing: -.035em; padding-top: 2px; }
+.score small { font-size: 12px; color: var(--muted); margin-left: 1px; }
+.score .track { display: block; height: 2px; background: var(--track); margin-top: 10px; }
+.score .track b { display: block; height: 2px; background: var(--ink); }
+.score[style] { color: hsl(var(--h) var(--s) var(--l)); } .score[style] .track b { background: hsl(var(--h) var(--s) var(--l)); }
+.row.low .score { opacity: .62; }
+.row h3 { font-size: 18px; line-height: 1.3; letter-spacing: -.015em; font-weight: 500; margin: 0; }
+.meta { font: 400 13px/1.5 var(--sans); color: var(--muted); margin: 7px 0 0; }
+.row p.sum { color: var(--ink-2); font-size: 15px; margin: 10px 0 0; max-width: 50em; }
+.empty { color: var(--muted); padding: 24px 0; border-bottom: 1px solid var(--line); margin: 0; }
+.row.db .score { font-size: 18px; color: var(--ink-2); }
+.row.db .meta a { text-underline-offset: 3px; text-decoration-color: var(--muted); } .row.db .meta a:hover { color: var(--ink); }
+
+/* month heading + jump sidebar (sits in the left gutter, so only on wide screens) */
+.month { font-size: 30px; line-height: 1.1; letter-spacing: -.035em; font-weight: 500; margin: 0; padding-top: 64px; }
+.month + .dayblock > .day { padding-top: 28px; }
+
+/* sort bar: day order, or Top with a sliding window picker */
+[hidden] { display: none !important; }
+.sortbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px;
+  min-height: 34px; margin-top: 28px; }
+.sortbar button { font: 500 14px/1 var(--sans); color: var(--muted); background: none; border: 0; padding: 0; cursor: pointer; }
+.sortbar button:hover, .sortbar button.on, .seg button[aria-pressed="true"] { color: var(--ink); }
+.sorts { display: flex; gap: 22px; }
+.sorts button { padding: 8px 0; border-bottom: 1px solid transparent; }
+.sorts button.on { border-bottom-color: var(--ink); }
+.seg { position: relative; display: grid; grid-template-columns: repeat(var(--n), minmax(76px, 1fr)); padding: 3px;
+  background: var(--hover); border: 1px solid var(--line); border-radius: 999px; animation: seg-in .25s ease-out; }
+.seg i { position: absolute; top: 3px; bottom: 3px; left: 3px; width: calc((100% - 6px) / var(--n)); border-radius: 999px;
+  background: var(--thumb); border: 1px solid var(--line); box-shadow: 0 1px 3px rgba(0, 0, 0, .08);
+  transform: translateX(calc(var(--i) * 100%)); transition: transform .28s cubic-bezier(.3, .9, .3, 1); }
+.seg button { position: relative; height: 26px; font-size: 13px; transition: color .2s; }
+@keyframes seg-in { from { opacity: 0; transform: translateX(8px); } }
+@media (prefers-reduced-motion: reduce) { .seg, .seg i { animation: none; transition: none; } }
+.sortbar + #feed > .dayblock:first-child > .day { padding-top: 28px; }
+.sortbar + #feed > .monthblock:first-child > .month { padding-top: 40px; }
+.more { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 0; padding: 40px 0 8px; font-size: 13px; color: var(--muted); }
+.more button { font: 500 14px/1 var(--sans); color: var(--ink); background: var(--hover); border: 1px solid var(--line);
+  border-radius: 999px; padding: 10px 22px; cursor: pointer; }
+.more button:hover { border-color: var(--ink); }
+.topnote { font-size: 13px; color: var(--muted); margin: 0; padding: 28px 0 14px; border-bottom: 1px solid var(--ink); }
+.day, .month { scroll-margin-top: 16px; }
+.side { position: sticky; top: 0; float: left; height: 0;
+  /* grows with the free gutter beside the 1040px column: 140px on small laptops up to 230px on wide screens */
+  --w: clamp(140px, calc((100vw - 1040px) / 2 - 36px), 230px); width: var(--w); margin-left: calc(-36px - var(--w)); display: none; }
+.side > div { padding: 44px 0 24px; max-height: 100vh; overflow-y: auto; scrollbar-width: none; font-size: 13px; }
+.side h4 { font: 600 13px/1.3 var(--sans); letter-spacing: -.01em; margin: 0 0 6px; }
+.side summary { font: 600 13px/1.3 var(--sans); letter-spacing: -.01em; padding: 4px 0; cursor: pointer; list-style: none; }
+.side summary::-webkit-details-marker { display: none; }
+.side summary::after { content: "+"; float: right; color: var(--muted); font-weight: 400; }
+.side details[open] summary::after { content: "–"; }
+.side summary:hover { color: var(--ink-2); }
+.side ul { list-style: none; margin: 4px 0 14px; padding: 0; border-left: 1px solid var(--line); }
+.side li a { display: block; padding: 3px 0 3px 12px; margin-left: -1px; border-left: 1px solid transparent;
+  color: var(--muted); text-decoration: none; }
+.side li a:hover { color: var(--ink); }
+.side li a.on { color: var(--ink); border-left-color: var(--ink); }
+@media (min-width: 1380px) { .side { display: block; } }
+
+/* search */
+.search { position: relative; flex: 1; max-width: 380px; margin: 0 24px; }
+.search input { width: 100%; height: 34px; padding: 0 12px; font: 400 14px var(--sans); color: var(--ink);
+  background: var(--hover); border: 1px solid var(--line); border-radius: 999px; outline: none; }
+.search input:focus { border-color: var(--ink); background: var(--bg); }
+.search input::placeholder { color: var(--muted); }
+.results { position: absolute; top: 42px; left: 0; right: 0; min-width: 320px; background: var(--bg); border: 1px solid var(--line);
+  border-radius: 10px; box-shadow: 0 12px 32px rgba(0, 0, 0, .12); overflow: hidden; }
+.results a, .results p { display: block; padding: 10px 14px; margin: 0; text-decoration: none; font-size: 14px; line-height: 1.35; }
+.results a + a { border-top: 1px solid var(--line); }
+.results a.on, .results a:hover { background: var(--hover); }
+.results small, .results p { color: var(--muted); font-size: 12.5px; }
+.results small { display: block; margin-top: 3px; }
+
+/* paper page: spec rows */
+.spec { padding: 22px 0; border-bottom: 1px solid var(--line); }
+.spec dt { font: 600 17px/1.3 var(--sans); letter-spacing: -.01em; color: var(--label); margin-bottom: 8px; }
+.spec dd { margin: 0; max-width: 46em; }
+.spec dd.big { font-size: 19px; line-height: 1.5; letter-spacing: -.01em; }
+.spec dd.small { font-size: 15px; color: var(--ink-2); }
+.spec dd a { text-underline-offset: 3px; text-decoration-color: var(--muted); }
+.spec .sim { font: 400 13px var(--sans); color: var(--muted); white-space: nowrap; }
+.spec .sub { font: 500 15px/1.3 var(--sans); color: var(--ink-2); margin: 18px 0 8px; }
+.spec .simlist { margin-left: 2px; padding-left: 14px; border-left: 1px solid var(--line); } .spec .sub:first-child { margin-top: 2px; }
+.spec dd, .row > div { min-width: 0; overflow-wrap: anywhere; }
+dl { margin: 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+.btn { font-size: 14px; font-weight: 500; text-decoration: none; padding: 8px 16px; border-radius: 999px;
+       border: 1px solid var(--line); background: var(--bg); }
+.btn:hover { border-color: var(--ink); }
+.btn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.bigscore { color: hsl(var(--h) var(--s) var(--l)); }
+
+footer { height: 72px; }
+
+@media (max-width: 640px) {
+  .wrap { padding: 0 16px; }
+  .bar nav .ext { display: none; } .search { margin: 0 14px; } .bar nav { gap: 14px; }
+  .hero .wrap { padding-top: 48px; padding-bottom: 40px; }
+  .row { grid-template-columns: 1fr; } .score { margin-bottom: 14px; } .score .track { width: 92px; }
+  .hist { display: none; }
+  a.row:hover { box-shadow: -16px 0 0 var(--hover), 16px 0 0 var(--hover); }
+}
+</style>
+</head>
+<body>
+<div class="bar"><div class="wrap">
+  <a class="brand" href="../index.html"><i></i>arXiv updates</a>
+  <div class="search" role="search">
+    <input id="q" type="search" placeholder="Search papers or authors  ( / )" autocomplete="off" aria-label="Search papers or authors">
+    <div class="results" id="results" hidden></div>
+  </div>
+  <nav><a href="../index.html">Index</a><a href="../database.html">Database</a><a class="ext" href="https://arxiv.org/list/quant-ph/new">quant-ph/new</a>
+    <button id="theme" type="button" aria-label="Switch between light and dark theme" title="Light / dark"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1a7 7 0 0 0 0 14z" fill="currentColor"/></svg></button></nav>
+</div></div>
+<header class="hero"><div class="wrap">
+  <h1>2026-06-11</h1>
+</div></header>
+<main class="wrap">
+<section class="dayblock">
+<div class="day" id="d-2026-06-11">
+  <div>
+    <div class="stats">2 listed &nbsp;/&nbsp; 106 scanned</div>
+  </div>
+  <svg class="hist" width="160" height="30" viewBox="0 0 160 30" role="img" aria-label="Score distribution of all 106 papers, 0 to 100%">
+    <rect class="" x="0" y="2" width="6" height="28" fill="currentColor"/>
+    <rect class="" x="8" y="17" width="6" height="13" fill="currentColor"/>
+    <rect class="" x="16" y="20" width="6" height="10" fill="currentColor"/>
+    <rect class="" x="24" y="25" width="6" height="5" fill="currentColor"/>
+    <rect class="" x="32" y="27" width="6" height="3" fill="currentColor"/>
+    <rect class="" x="40" y="24" width="6" height="6" fill="currentColor"/>
+    <rect class="" x="48" y="27" width="6" height="3" fill="currentColor"/>
+    <rect class="" x="56" y="25" width="6" height="5" fill="currentColor"/>
+    <rect class="" x="64" y="27" width="6" height="3" fill="currentColor"/>
+    <rect class="" x="72" y="27" width="6" height="3" fill="currentColor"/>
+    <rect class="" x="80" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="" x="88" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="" x="96" y="27" width="6" height="3" fill="currentColor"/>
+    <rect class="" x="104" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="" x="112" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="" x="120" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="hi" x="128" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="hi" x="136" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="hi" x="144" y="27" width="6" height="3" fill="currentColor"/>
+    <rect class="hi" x="152" y="30" width="6" height="0" fill="currentColor"/>
+  </svg>
+</div>
+<a class="row" href="../2606.12262/index.html">
+  <div class="score" style="--h:130;--s:81%;--l:calc(var(--score-l) + 0.0% + 5.3% * var(--score-sign))">90.9<small>%</small><span class="track"><b style="width:91%"></b></span></div>
+  <div>
+    <h3>Substrate insulated Josephson junctions for superconducting quantum circuits</h3>
+    <p class="meta">U. Strobel, L. Radtke, ..., H. Rotzinger. &nbsp;/&nbsp; 2606.12262 &nbsp;/&nbsp; cond-mat.supr-con</p>
+    <p class="sum">This work develops a substrate-patterned fabrication technique for Josephson junctions that eliminates organic resists and intentional oxides near the junction by using three-dimensional step-and-undercut geometries etched into the substrate. The approach enables high-quality underdamped Nb/AlOx/Nb junctions across multiple geometries (step-edge insulated, cross-step insulated, Manhattan trench, and cross-trench) without lossy dielectric contamination, achieving $J_c R_n$ values of ~1.6 mV and $R_{sg}/R_n$ up to ~50.</p>
+  </div>
+</a><a class="row low" href="../2606.11496/index.html">
+  <div class="score" style="--h:36;--s:82%;--l:calc(var(--score-l) + 4.1% + 0.0% * var(--score-sign))">64.6<small>%</small><span class="track"><b style="width:65%"></b></span></div>
+  <div>
+    <h3>Logical error estimation from syndrome data of surface-code experiments</h3>
+    <p class="meta">Evangelia Takou, Cesar Benito, ..., Kenneth R. Brown. &nbsp;/&nbsp; 2606.11496 &nbsp;/&nbsp; quant-ph</p>
+    <p class="sum">This work demonstrates that detector error model (DEM) event probabilities for surface-code decoders can be estimated directly from experimental syndrome data without separate calibration or device benchmarking. Syndrome-estimated DEMs reduce logical error probabilities by 5%–10% relative to baseline device-informed DEMs on both Google&#39;s Willow chip (rotated ZXXZ surface code with $d\in\{3,5,7\}$) and IBM&#39;s ibm_miami processor (unrotated code with $d=3$), reaching ~38% improvement in single-cycle cases on IBM without requiring additional circuits or supervised fitting.</p>
+  </div>
+</a></section></main>
+<footer></footer>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: false}, {left: '$', right: '$', display: false}, {left: '\\(', right: '\\)', display: false}], ignoredClasses: ['search'], throwOnError: false})"></script>
+<script>
+document.getElementById("theme").addEventListener("click", function () {
+  var el = document.documentElement, dark = el.dataset.theme ? el.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  el.dataset.theme = dark ? "light" : "dark";
+  try { localStorage.setItem("theme", el.dataset.theme); } catch (e) {}
+});
+(function () {  // sidebar: mark the day currently being read
+  var links = document.querySelectorAll('.side a[href^="#d-"]');
+  if (!links.length || !window.IntersectionObserver) return;
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      links.forEach(function (l) { l.classList.toggle("on", l.getAttribute("href") === "#" + e.target.id); });
+    });
+  }, {rootMargin: "0px 0px -75% 0px"});
+  links.forEach(function (l) { var d = document.getElementById(l.getAttribute("href").slice(1)); if (d) io.observe(d); });
+})();
+(function () {  // sort bar: flip the day order, or swap the feed for a pre-rendered top list
+  var bar = document.querySelector(".sortbar"), feed = document.getElementById("feed"), top = document.getElementById("top");
+  if (!bar || !feed || !top) return;
+  var range = document.getElementById("range"), order = "new", key = "sort:" + location.pathname;
+  var more = document.getElementById("more"), page = +feed.dataset.page || 100, limit = page;
+  function paginate() {  // show days, in their current order, until `limit` papers are on screen
+    var n = 0, left = 0;
+    [].forEach.call(feed.querySelectorAll(".dayblock"), function (d) {
+      var c = d.querySelectorAll(".row").length;
+      d.hidden = n >= limit; if (d.hidden) left += c; n += c;
+    });
+    [].forEach.call(feed.querySelectorAll(".monthblock"), function (m) { m.hidden = !m.querySelector(".dayblock:not([hidden])"); });
+    if (more) { more.hidden = feed.hidden || !left; more.querySelector("span").textContent = left + " more"; }
+  }
+  function reveal(hash) {  // a jump link to a day that is not loaded yet
+    var t = document.getElementById(hash.slice(1)), blk = t && t.closest(".dayblock");
+    if (!blk || !blk.hidden) return false;
+    while (blk.hidden) { limit += page; paginate(); }
+    return true;
+  }
+  if (more) more.addEventListener("click", function () { limit += page; paginate(); });
+  var topMore = document.getElementById("topmore");
+  function topPage(add) {  // the open top list shows 10 papers, then 10 more per click
+    var s = top.querySelector("section:not([hidden])");
+    if (!s || !topMore) return;
+    var rows = s.querySelectorAll(".row"), lim = (+s.dataset.limit || 10) + (add || 0);
+    s.dataset.limit = lim;
+    [].forEach.call(rows, function (r, i) { r.hidden = i >= lim; });
+    s.querySelector(".n").textContent = Math.min(lim, rows.length);
+    topMore.hidden = rows.length <= lim;
+    topMore.querySelector("span").textContent = Math.max(rows.length - lim, 0) + " more";
+  }
+  if (topMore) topMore.addEventListener("click", function () { topPage(10); });
+  function flip(el) {  // headings are not sections, so a month's title stays on top
+    [].slice.call(el.children).filter(function (k) { return k.tagName === "SECTION"; }).reverse()
+      .forEach(function (k) { el.appendChild(k); });
+  }
+  function press(group, on) {
+    [].forEach.call(group.querySelectorAll("button"), function (b) {
+      b.classList.toggle("on", b === on); b.setAttribute("aria-pressed", b === on);
+    });
+  }
+  function show(sort, win) {
+    var isTop = sort === "top";
+    if (!isTop && sort !== order) { order = sort; limit = page; flip(feed); [].forEach.call(feed.querySelectorAll(".monthblock"), flip); }
+    feed.hidden = isTop; top.hidden = range.hidden = !isTop;
+    paginate();
+    press(bar.querySelector(".sorts"), bar.querySelector('[data-sort="' + sort + '"]'));
+    var btn = win && range.querySelector('[data-range="' + win + '"]');
+    if (btn) {
+      press(range, btn);
+      range.style.setProperty("--i", [].indexOf.call(range.querySelectorAll("button"), btn));
+      [].forEach.call(top.children, function (s) { s.hidden = s.dataset.range !== win; });
+    }
+    topPage();
+    try { sessionStorage.setItem(key, sort + " " + range.querySelector(".on").dataset.range); } catch (e) {}
+  }
+  bar.addEventListener("click", function (e) {
+    var b = e.target.closest("button");
+    if (b) show(b.dataset.sort || "top", b.dataset.range);
+  });
+  // a jump link needs the days back on screen
+  window.addEventListener("hashchange", function () {
+    if (!/^#[dm]-/.test(location.hash)) return;
+    var was = feed.hidden; if (was) show(order);
+    if (reveal(location.hash) || was) location.replace(location.hash);
+  });
+  var saved = [];
+  try { saved = (sessionStorage.getItem(key) || "").split(" "); } catch (e) {}
+  if (saved[0] === "top" && /^#[dm]-/.test(location.hash)) saved[0] = "new";
+  if (bar.querySelector('[data-sort="' + saved[0] + '"]')) show(saved[0], saved[1]);
+  paginate();
+  if (/^#d-/.test(location.hash) && reveal(location.hash)) document.getElementById(location.hash.slice(1)).scrollIntoView();
+})();
+</script>
+<script>
+(function () {
+  var root ="../", q = document.getElementById("q"), box = document.getElementById("results"), on = -1;
+  function load() {  // the index is only fetched once someone actually searches
+    if (window.PAPERS || load.started) return;
+    load.started = true;
+    var s = document.createElement("script");
+    s.src = root + "search.js"; s.onload = run; document.head.appendChild(s);
+  }
+  function fold(s) {  // lowercase, accents stripped, so "reouven" finds "Réouven"
+    return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+  }
+  function run() {
+    var words = fold(q.value).split(/\s+/).filter(Boolean);
+    box.textContent = ""; on = -1;
+    if (!words.length || !window.PAPERS) { box.hidden = true; return; }
+    function has(hay) { return words.every(function (w) { return hay.indexOf(w) >= 0; }); }
+    var hits = window.PAPERS.filter(function (p) {
+      if (!p.h) { p.fa = fold(p.a); p.h = fold(p.t + " " + p.id + " " + p.x) + " " + p.fa; }
+      return has(p.h);
+    }).sort(function (a, b) { return has(b.fa) - has(a.fa) || b.s - a.s; }).slice(0, 8);  // author matches first
+    hits.forEach(function (p) {
+      var a = document.createElement("a"), by = document.createElement("small"), m = document.createElement("small");
+      a.href = root + p.id + "/index.html"; a.textContent = p.t;
+      // name the authors the query matched, else the first few
+      var names = p.a.split(", "), match = names.filter(function (n) {
+        var f = fold(n); return words.some(function (w) { return f.indexOf(w) >= 0; });
+      });
+      var shown = (match.length ? match : names).slice(0, 3);
+      by.textContent = shown.join(", ") + (shown.length < names.length ? (match.length ? ", and others" : ", et al.") : "");
+      m.textContent = p.s.toFixed(1) + "%  ·  " + p.d + "  ·  " + p.id;
+      a.appendChild(by); a.appendChild(m); box.appendChild(a);
+    });
+    if (!hits.length) { var e = document.createElement("p"); e.textContent = "No matches."; box.appendChild(e); }
+    box.hidden = false;
+  }
+  q.addEventListener("focus", function () { load(); run(); });
+  q.addEventListener("input", run);
+  q.addEventListener("keydown", function (e) {
+    var links = box.querySelectorAll("a");
+    if (e.key === "Escape") { q.blur(); box.hidden = true; }
+    else if (e.key === "Enter" && links.length) { location.href = links[Math.max(on, 0)].href; }
+    else if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+      e.preventDefault();
+      if (!links.length) return;
+      on = (on + (e.key === "ArrowDown" ? 1 : -1) + links.length) % links.length;
+      links.forEach(function (l, i) { l.classList.toggle("on", i === on); });
+    }
+  });
+  document.addEventListener("click", function (e) { if (!e.target.closest(".search")) box.hidden = true; });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "/" && document.activeElement !== q) { e.preventDefault(); q.focus(); }
+  });
+})();
+</script>
+</body>
+</html>

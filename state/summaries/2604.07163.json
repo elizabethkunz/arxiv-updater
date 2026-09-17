@@ -1,0 +1,8 @@
+{
+  "summary": "A robust resonant two-qubit gate scheme for rare-earth-ion systems uses asymmetric parallel excitation and pulse engineering to achieve decoupled qubit control, avoiding susceptibility to frequency errors and AC Stark shifts. Simulations demonstrate gate fidelities exceeding 99% within a 170 kHz detuning tolerance with off-resonant excitation below 0.2%.",
+  "motivation": "Rare-earth-ion qubits suffer from spectral inhomogeneity and weak dipole-dipole coupling, making existing detuned pulse schemes fragile against frequency errors and AC Stark shifts.",
+  "method": "The authors propose a resonant gate scheme employing asymmetric parallel excitation combined with pulse engineering to achieve decoupled control of the two qubits in the dipole-dipole interacting system.",
+  "result": "Simulations on rare-earth-ion ensemble qubits achieve gate fidelities exceeding 99% over a 170 kHz detuning range while maintaining off-resonant excitation below 0.2%.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

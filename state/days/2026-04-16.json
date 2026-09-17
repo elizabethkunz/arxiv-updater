@@ -1,0 +1,378 @@
+{
+  "date": "2026-04-16",
+  "n_fetched": 99,
+  "papers": [
+    {
+      "id": "2604.13881",
+      "title": "High-gain and large-bandwidth Josephson parametric amplifier influenced by Fabry-Pérot interference",
+      "authors": [
+        "Shingo Kono",
+        "Jesper Ilves",
+        "Arjan F. van Loo",
+        "Yoshiki Sunada",
+        "C. W. Sandbo Chang",
+        "Yutaka Takeda",
+        "Kenshi Yuki",
+        "Takeaki Miyamura",
+        "Kohei Matsuura",
+        "Kazuki Koshino",
+        "Yasunobu Nakamura"
+      ],
+      "abstract": "Quantum-limited parametric amplifiers are essential components for many quantum technologies operating in the microwave domain. Achieving both high gain and broad bandwidth, however, remains challenging due to trade-offs between gain and bandwidth, pump efficiency, and dynamic range. Moreover, high-gain broadband amplifiers become increasingly sensitive to their external electromagnetic environment, which can distort their gain spectra and hinder reliable operation. Here, we present an accurate theoretical model and a systematic design methodology for a flux-driven, lumped-element Josephson parametric amplifier based on a SQUID array. Our device achieves near-quantum-limited, phase-preserving amplification with a net gain of 20 (maximally 44) dB and a 3-dB bandwidth of $\\sim$50 ($\\lesssim$0.2) MHz. We further show that the gain spectra exhibit pronounced sensitivity to weak reflections in the input-output waveguide caused by impedance mismatches in the microwave environment. By incorporating Fabry-Pérot-type interference into a quantum input-output model, we analytically reproduce these complex spectral features and identify how they depend on the physical parameters of the environment. More generally, our results provide a practical framework for separating the intrinsic dynamics of parametric amplifiers from environmental effects. This approach enables reliable characterization and optimization of amplifier performance while providing a systematic strategy for diagnosing microwave reflections and engineering environmental interference to shape amplifier gain spectra, thereby offering a pathway toward robust, reproducible, and truly quantum-limited microwave amplification.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-15",
+      "score": 0.9393748775266445,
+      "similar_to": [
+        {
+          "title": "High-gain and large-bandwidth Josephson parametric amplifier influenced by Fabry-Perot interference",
+          "id": "2604.13881",
+          "similarity": 0.9975800514221191
+        },
+        {
+          "title": "A near-quantum-limited Josephson traveling-wave parametric amplifier",
+          "id": null,
+          "similarity": 0.9046440720558167
+        }
+      ],
+      "summary": {
+        "summary": "We develop a flux-driven Josephson parametric amplifier (JPA) with a SQUID array achieving 20 dB net gain and 50 MHz bandwidth, and demonstrate that its performance is significantly shaped by Fabry–Pérot interference from impedance mismatches in the measurement chain. We model this interference using quantum input–output formalism and show the device achieves near-quantum-limited noise ($\bar{N}_\text{added} \bnApprox 0.8$ photons) with maximum gain reaching 44 dB and 220 kHz bandwidth.",
+        "motivation": "High-gain broadband parametric amplifiers are increasingly sensitive to environmental reflections from circulators and cabling, which distort their gain spectra and limit reproducibility in superconducting qubit readout systems.",
+        "method": "We systematically designed a lumped-element JPA using dimensionless circuit parameters ($\\alpha_a = 0.03$, $p_J = 0.8$, $N = 5$ SQUIDs, $C_i = 470$ fF, $L_g = 80$ pH) and extended the quantum input–output formalism to incorporate Fabry–Pérot-cavity interference via a round-trip reflection coefficient $\\mathcal{R}(\\omega)$, enabling extraction of both intrinsic JPA and environmental parameters from reflection and gain spectra.",
+        "result": "Gain spectra exhibit pronounced frequency-dependent modulation with 3 dB bandwidths ranging from 10–50 MHz at 20 dB gain and 0.1–1.5 MHz at 42 dB gain, depending on round-trip phase $\\varphi_0$; we extract circulator reflectivity $1-\\eta \\approx 0.005$ (−26 dB), propagation loss $1-\\eta_0^2 \\approx 0.24$, and free spectral range $\\Delta/2\\pi = 140$ MHz, confirming the cavity is formed by ∼70 cm coaxial cables.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.13363",
+      "title": "Scalable Fluxonium Quantum Processors via Tunable-Coupler Architecture",
+      "authors": [
+        "Ze Zhan",
+        "Zishuo Li",
+        "Fei Wang",
+        "Wangwei Lan",
+        "Xianchuang Pan",
+        "Liang Xiang",
+        "Xu Dou",
+        "Ran Gao",
+        "Guicheng Gong",
+        "Yanbo Guo",
+        "Quan Guan",
+        "Lijuan Hu",
+        "Ruizhi Hu",
+        "Honghong Ji",
+        "Lijing Jin",
+        "Yongyue Jin",
+        "Chengyao Li",
+        "Kannan Lu",
+        "Lu Ma",
+        "Xizheng Ma",
+        "Hongcheng Wang",
+        "Jiahui Wang",
+        "Huijuan Zhan",
+        "Tao Zhou",
+        "Xing Zhu",
+        "Chunqing Deng",
+        "Tenghui Wang"
+      ],
+      "abstract": "Superconducting quantum processors have largely converged on transmon-based architectures, while alternative qubit modalities with intrinsic error protection have lacked a demonstrated path to scalable system integration. In particular, although tunable-coupler-mediated interactions have been validated for small fluxonium systems, it remains unclear whether such designs can be scaled to a multi-qubit lattice. Here, we establish a scalable fluxonium processor architecture based on a modular qubit-coupler unit cell engineered to suppress residual interactions and spectator errors in a many-qubit lattice. The system enables parallel single-qubit gate fidelities approaching 99.99% and two-qubit CZ gate fidelities around 99%. With an optimized gate duration of 32 ns, the best CZ gate fidelity reaches 99.9%. We further validate this architecture in a 22-qubit processor based on the same configuration, where parallel operations enable the deterministic generation of Greenberger-Horne-Zeilinger states involving up to 10 qubits. Together, these results demonstrate that the fluxonium-tunable-coupler unit cell composes without emergent interaction pathologies and establish fluxonium as a scalable superconducting qubit platform.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-15",
+      "score": 0.9122620722911411,
+      "similar_to": [
+        {
+          "title": "Scalable Fluxonium Quantum Processors via Tunable-Coupler Architecture",
+          "id": "2604.13363",
+          "similarity": 0.9999998807907104
+        },
+        {
+          "title": "High-Fidelity, Frequency-Flexible Two-Qubit Fluxonium Gates with a Transmon Coupler",
+          "id": "2304.06087",
+          "similarity": 0.9041734933853149
+        }
+      ],
+      "summary": {
+        "summary": "Superconducting quantum processors have largely converged on transmon-based architectures, while alternative qubit modalities with intrinsic error protection have lacked a demonstrated path to scalable system integration. In particular, although tunable-coupler-mediated interactions have been validated for small fluxonium systems, it remains unclear whether such designs can be scaled to a multi-qubit lattice.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.13176",
+      "title": "Measuring quasiparticle dynamics for particle impact reconstruction in a superconducting qubit chip",
+      "authors": [
+        "E. Celi",
+        "R. Linehan",
+        "P. M. Harrington",
+        "M. Li",
+        "H. D. Pinckney",
+        "K. Serniak",
+        "W. D. Oliver",
+        "J. A. Formaggio",
+        "E. Figueroa-Feliciano",
+        "D. Baxter"
+      ],
+      "abstract": "Quasiparticle poisoning following particle impacts poses a significant challenge to the development of fault-tolerant superconducting quantum computers, as a sudden excess of quasiparticles can simultaneously degrade the coherence of multiple qubits across large device arrays. In this work, we present a statistical analysis that models the time evolution of radiation-induced qubit energy relaxation through quasiparticle density dynamics. This study provides insight into quasiparticle loss processes by distinguishing between recombination and trapping decay channels and assessing their respective impact on qubit performance. We precisely measure quasiparticle recombination in multiple transmon qubits and uncover an unexpected dependence of qubit relaxation dynamics on deposited energy. By linking correlated relaxation events across qubits to ballistic phonon propagation, we introduce a statistical localization approach to extract the energy deposited in the substrate, which is in good agreement with Monte Carlo simulation. This work establishes the quantitative framework for using an arbitrary subset of superconducting transmon qubits in a QPU as energy-resolving witness particle detectors.",
+      "categories": [
+        "quant-ph",
+        "hep-ex",
+        "physics.ins-det"
+      ],
+      "published": "2026-04-14",
+      "score": 0.8578556498913869,
+      "similar_to": [
+        {
+          "title": "Real-time detection of correlated quasiparticle tunneling events in a multi-qubit superconducting device",
+          "id": "2602.01945",
+          "similarity": 0.8953883647918701
+        },
+        {
+          "title": "Phonon downconversion to suppress correlated errors in superconducting qubits",
+          "id": "2203.06586",
+          "similarity": 0.8827967643737793
+        }
+      ],
+      "summary": {
+        "summary": "Superconducting transmon qubits are used to measure quasiparticle dynamics induced by particle impacts on a silicon substrate, establishing a statistical framework to extract the recombination rate $r$ and linear loss timescale $\\tau_{ss}$ in aluminum films and reconstruct both deposited energy and interaction position. The measured recombination constants $r = 0.052$–$0.095$ ns$^{-1}$ and an unexpected correlation between $\\tau_{ss}$ and deposited energy are validated against Monte Carlo simulation, demonstrating superconducting qubit arrays as energy-resolving particle detectors.",
+        "motivation": "Quasiparticle poisoning from radiation-induced particle impacts degrades coherence across multiple qubits in large arrays, and understanding the underlying quasiparticle loss mechanisms (recombination versus trapping) is critical for fault-tolerant quantum computing.",
+        "method": "Five fixed-frequency transmon qubits on a $5 \\times 5 \\times 0.35$ mm$^3$ silicon substrate were monitored via time-resolved relaxation measurements during exposure to a $^{137}$Cs source ($\\sim$10 mHz event rate). A binomial maximum likelihood fit to qubit relaxation waveforms was performed using a quasiparticle density model governed by the Rothwarf–Taylor equation, with $r$ and $\\tau_{ss}$ extracted via an average pulse method and event-by-event energy reconstruction enabling spatial localization through phonon transport simulations.",
+        "result": "Recombination rates were extracted with $r = 0.052$–$0.095$ ns$^{-1}$ (consistent with prior aluminum measurements), a linear correlation between $\\tau_{ss}$ and deposited energy was revealed for $50\\text{–}300$ eV, and reconstructed particle impact energy spectra from $137$Cs photons showed good agreement with Geant4 simulations (relative energy resolution $\\sigma_E/E_{dep} \\sim 10\\%$ for $E_{dep} \\sim 100$–$200$ eV).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.13177",
+      "title": "Quantum computational displacement sensing",
+      "authors": [
+        "Sridhar Prabhu",
+        "Saeed A. Khan",
+        "Xingrui Song",
+        "Mathieu Ouellet",
+        "Ryotatsu Yanagimoto",
+        "Saswata Roy",
+        "Alen Senanian",
+        "Logan G. Wright",
+        "Valla Fatemi",
+        "Peter L. McMahon"
+      ],
+      "abstract": "Quantum computational sensing (QCS) combines quantum sensing with quantum computing to extract task-relevant information from the physical world. QCS can in principle achieve an accuracy advantage for specific tasks versus the alternative of raw-signal estimation using conventional quantum sensing followed by task-specific classical postprocessing. Here we report the experimental demonstration of quantum computational displacement sensing (QCDS) with a superconducting circuit comprising a qubit coupled to an oscillator. We consider binary classification sensing tasks, where the goal is to predict the class label of a single complex-valued displacement sensed once by the oscillator. Rather than estimating the displacement, our computational-sensing protocol -- using parameterized quantum circuits before and after sensing -- attempts to determine the binary class label using quantum processing and map it onto the ground or excited state of the qubit. A single measurement of the qubit directly outputs the prediction. We implemented circuits with up to 24 entangling gates and 38 free parameters, which were trained in silico. We show that increasing the circuit depth systematically improves expressivity and classification accuracy. We experimentally obtained an accuracy advantage over a suite of protocols that first use conventional quantum sensing to estimate the displacement before using classical postprocessing to perform prediction. For certain tasks, our protocol achieves a 15-percentage-points higher classification accuracy than most conventional approaches considered. Our results establish the feasibility of quantum computational sensing with noisy superconducting hardware and illustrate how integrating quantum computation with quantum sensing can enhance performance when the goal is to estimate a property or function of a signal rather than to estimate the signal.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-14",
+      "score": 0.7672251453457201,
+      "similar_to": [
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.846982479095459
+        },
+        {
+          "title": "Heralded Leakage Detection with Preserved Computational-State Coherence in a Fixed-Frequency Transmon",
+          "id": "2607.17204",
+          "similarity": 0.845034122467041
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates quantum computational displacement sensing (QCDS) using a superconducting qubit coupled to a microwave cavity oscillator, where parameterized quantum circuits directly map displacement classification tasks onto qubit measurement outcomes without estimating the displacement itself. The protocol achieves up to 15 percentage-points higher classification accuracy than conventional quantum sensing baselines for certain binary classification tasks by computing task-specific functions of the sensed displacement in the quantum domain.",
+        "motivation": "Conventional quantum sensing estimates the full signal before classical postprocessing for downstream tasks, but this approach is fundamentally limited by quantum noise when the goal is to compute a specific function of the signal rather than reconstruct it.",
+        "method": "A transmon qubit coupled to a high-purity aluminum cavity implements parameterized unitaries before and after sensing a displacement $D(\\boldsymbol{\\alpha})$, using layers of single-qubit rotations $R(\\theta_i, \\phi_i)$ and echoed conditional displacement gates $\\text{ECD}(\\boldsymbol{\\beta}_i)$ with $|\\boldsymbol{\\beta}_i| = 0.24$ fixed. Circuits with up to $N=10$ depths (38 trainable parameters) were trained in simulation and experimentally validated for spiral, geometric, and threshold-based binary classification tasks.",
+        "result": "Experimental classification accuracy with $N=10$ reaches 15 percentage-points above cat-state and compass-state baselines; outperforms phase-preserving amplifier with HAYSTAC-level noise ($2.3$ photons) across winding numbers $W=1$ to $5$ in spiral tasks, matching two-mode squeezed-vacuum performance at $\\sim1$ dB squeezing while requiring fewer probe photons; qubit readout fidelity (95–96%) and decoherence limit maximum achievable accuracy.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.13364",
+      "title": "Loss Mechanisms in Cryogenic Microwave Epitaxial AlN Resonators",
+      "authors": [
+        "Hemant Gulupalli",
+        "Navnil Choudhury",
+        "Jiacheng Xie",
+        "Yufeng Wu",
+        "Huili Grace Xing",
+        "Hong X. Tang",
+        "Debdeep Jena",
+        "Kanad Basu",
+        "Wenwen Zhao"
+      ],
+      "abstract": "Epitaxial aluminum nitride (AlN) thin-film bulk acoustic resonators (FBARs) enable low loss filtering for future 6G systems. They also provide a compact approach for qubit sensing at cryogenic temperatures. However, these devices are rarely characterized systematically from room temperature to cryogenic temperatures, and the mechanisms that limit their cryogenic performance remain unclear. In this work, we study a 15.6 GHz epitaxial AlN FBAR from room temperature to cryogenic temperatures to identify losses from the AlN film and those introduced by the electrodes, anchors, and other device layers. Small signal RF measurements from 294 K down to 6.5 K show an increase in the raw Qmax from 363 to 1589. A temperature dependent model that includes phonon phonon scattering, thermoelastic damping, dielectric loss, electrical loss, and anchor loss helps explain the measured Q(T) trend and identifies a transition from the Landau Rumer to the Akhiezer regime near 270 K. The model indicates that acoustic energy leakage through the anchors limits Q at cryogenic temperatures, while electrical loss dominates at higher temperatures. These results point to two routes toward higher cryogenic Q: better acoustic isolation of the anchors and lower loss electrodes, including superconducting electrodes. Improved anchor design benefits both high frequency 6G filters and cryogenic quantum microwave circuits, while superconducting electrodes are particularly useful for cryogenic operation.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "physics.app-ph"
+      ],
+      "published": "2026-04-15",
+      "score": 0.5723652240414739,
+      "similar_to": [
+        {
+          "title": "Comparison of Dielectric Loss in Titanium Nitride and Aluminum Superconducting Resonators",
+          "id": "2007.07338",
+          "similarity": 0.8429513573646545
+        },
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.8413587808609009
+        }
+      ],
+      "summary": {
+        "summary": "An epitaxial 15.6 GHz AlN FBAR on SiC exhibits loaded $Q_\text{max}$ increasing from 363 at 294 K to 1589 at 6.5 K ($Q f \\approx 5.66$ to 24.79 THz), with acoustic performance limited by anchor loss at cryogenic temperatures and electrode resistance at room temperature. A temperature-dependent loss model incorporating Landau–Rumer and Akhiezer phonon scattering, thermoelastic damping, dielectric loss, and anchor radiation explains the measured $Q(T)$ trend and identifies the crossover near 270 K where $\\omega_0\\tau_\\text{ph} = 1$.",
+        "motivation": "High-frequency acoustic resonators above 10 GHz are needed for 6G filtering and cryogenic quantum-microwave circuits, but systematic characterization of epitaxial AlN FBARs from room temperature to mK remains scarce, leaving the dominant loss mechanisms at cryogenic temperatures unclear.",
+        "method": "Small-signal RF reflection measurements ($S_{11}$) of a suspended 15.6 GHz AlN FBAR on SiC from 294 K to 6.5 K extract loaded Bode quality factors using group delay; a physics-based model with temperature-dependent AlN properties ($C_v$, $\\kappa$, elastic constants, thermal expansion) decomposes losses from intrinsic phonon processes, thermoelastic damping, dielectric absorption, electrode resistance, and anchor radiation.",
+        "result": "Anchor loss dominates at cryogenic temperatures (predicted $Q_\\text{anchor}$ of order $10^4$), while electrode resistance limits $Q$ above $\\sim$150 K; measured $Q$ remains $\\sim10^2–10^3$ below the intrinsic Landau–Rumer limit, indicating room for improvement via better anchor isolation and lower-resistance (possibly superconducting) electrodes.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.13219",
+      "title": "Fault-Tolerant Error Detection Above Break-Even for Multi-Qubit Gates",
+      "authors": [
+        "Colburn Riffel",
+        "Reece Robertson",
+        "Peter Hendrickson"
+      ],
+      "abstract": "A fully fault-tolerant implementation of the quantum error-detecting Iceberg $[[2m, 2m-2, 2]]$ code applied to a Toffoli circuit achieved beyond-break-even error detection on a leading trapped-ion quantum computer, where the effect of encoding a circuit with a quantum error-detection code enables increased fidelity compared to an unencoded circuit. This code was also applied to Bell state preparation circuits, where a lean non-fault-tolerant implementation of the Iceberg code enables a fidelity gain as well. This highlights the important point that, at least for small-scale circuits with a substantial portion of error-free runs, it can be effective simply to use error detection to filter out the runs with errors. Furthermore, experiments performed in this work highlight the necessity for judicious compilation of circuits not only for a given hardware but also within a quantum error detection code.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-14",
+      "score": 0.5417478976266563,
+      "similar_to": [
+        {
+          "title": "Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code",
+          "id": "2112.03708",
+          "similarity": 0.8662808537483215
+        },
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.8637909889221191
+        }
+      ],
+      "summary": {
+        "summary": "A fully fault-tolerant implementation of the Iceberg $[[2m, 2m-2, 2]]$ quantum error-detection code applied to Toffoli and Bell state preparation circuits achieved beyond-break-even fidelity on a 36-qubit trapped-ion computer, demonstrating fidelity gains by filtering error-flagged runs. The work highlights that strategic circuit compilation for error-detection codes—particularly leveraging transversal Hadamard operations—is critical for achieving overhead-tolerant encoded circuits.",
+        "motivation": "Multi-qubit gates like the Toffoli are essential for universal computation but suffer from noise accumulation on NISQ hardware. Demonstrating beyond-break-even error detection is necessary to validate the practical utility of quantum error-detection codes before advancing to full error correction.",
+        "method": "Three circuit configurations were executed on trapped-ion hardware: unencoded baseline, Iceberg-encoded non-fault-tolerant, and Iceberg-encoded fault-tolerant versions of five circuits (Bell state, transversal-H Bell state, $XX$ Toffoli, $HH$ Toffoli, transversal-H Toffoli). Each configuration ran 2056 shots across three timepoints in a calibration cycle; error-flagged shots in encoded circuits were rejected before fidelity calculation.",
+        "result": "Fault-tolerant Transversal-H Toffoli achieved above-break-even fidelity in all three runs ($99.17\\%$, $99.75\\%$, $99.61\\%$ vs. $98.54\\%$, $98.49\\%$, $98.49\\%$ unencoded baseline), with rejection rates of $80\\%$–$87\\%$. Transversal-H Bell state surpassed break-even in all runs; non-transversal implementations showed mixed results depending on calibration phase and circuit complexity.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9394,
+    0.9123,
+    0.8579,
+    0.7672,
+    0.5724,
+    0.5417,
+    0.4865,
+    0.4649,
+    0.417,
+    0.355,
+    0.3424,
+    0.3217,
+    0.2452,
+    0.2296,
+    0.1858,
+    0.1839,
+    0.1701,
+    0.1696,
+    0.1691,
+    0.1372,
+    0.1347,
+    0.1229,
+    0.1207,
+    0.1195,
+    0.117,
+    0.1155,
+    0.1125,
+    0.1091,
+    0.1027,
+    0.0983,
+    0.0944,
+    0.0868,
+    0.0857,
+    0.0811,
+    0.0769,
+    0.0741,
+    0.073,
+    0.0719,
+    0.066,
+    0.0656,
+    0.0626,
+    0.0587,
+    0.058,
+    0.0569,
+    0.0534,
+    0.0494,
+    0.0445,
+    0.0441,
+    0.0414,
+    0.0374,
+    0.0369,
+    0.0359,
+    0.0353,
+    0.028,
+    0.0278,
+    0.0276,
+    0.0274,
+    0.027,
+    0.0266,
+    0.0233,
+    0.0229,
+    0.0223,
+    0.0221,
+    0.0215,
+    0.0214,
+    0.0204,
+    0.0201,
+    0.0201,
+    0.02,
+    0.0193,
+    0.0183,
+    0.0178,
+    0.0175,
+    0.0162,
+    0.016,
+    0.0155,
+    0.0155,
+    0.0155,
+    0.0148,
+    0.0144,
+    0.0143,
+    0.012,
+    0.0115,
+    0.0114,
+    0.0098,
+    0.0092,
+    0.009,
+    0.0089,
+    0.008,
+    0.0079,
+    0.0073,
+    0.0068,
+    0.0068,
+    0.0048,
+    0.0048,
+    0.0044,
+    0.003,
+    0.0022,
+    0.0003
+  ]
+}

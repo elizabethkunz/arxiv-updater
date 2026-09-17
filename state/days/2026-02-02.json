@@ -1,0 +1,247 @@
+{
+  "date": "2026-02-02",
+  "n_fetched": 75,
+  "papers": [
+    {
+      "id": "2601.22286",
+      "title": "Efficient learning of logical noise from syndrome data",
+      "authors": [
+        "Han Zheng",
+        "Chia-Tung Chu",
+        "Senrui Chen",
+        "Argyris Giannisis Manes",
+        "Su-un Lee",
+        "Sisi Zhou",
+        "Liang Jiang"
+      ],
+      "abstract": "Characterizing errors in quantum circuits is essential for device calibration, yet detecting rare error events requires a large number of samples. This challenge is particularly severe in calibrating fault-tolerant, error-corrected circuits, where logical error probabilities are suppressed to higher order relative to physical noise and are therefore difficult to calibrate through direct logical measurements. Recently, Wagner et al. [PRL 130, 200601 (2023)] showed that, for phenomenological Pauli noise models, the logical channel can instead be inferred from syndrome measurement data generated during error correction. Here, we extend this framework to realistic circuit-level noise models. From a unified code-theoretic perspective and spacetime code formalism, we derive necessary and sufficient conditions for learning the logical channel from syndrome data alone and explicitly characterize the learnable degrees of freedom of circuit-level Pauli faults. Using Fourier analysis and compressed sensing, we develop efficient estimators with provable guarantees on sample complexity and computational cost. We further present an end-to-end protocol and demonstrate its performance on several syndrome-extraction circuits, achieving orders-of-magnitude sample-complexity savings over direct logical benchmarking. Our results establish syndrome-based learning as a practical approach to characterizing the logical channel in fault-tolerant quantum devices.",
+      "categories": [
+        "quant-ph",
+        "math-ph"
+      ],
+      "published": "2026-01-29",
+      "score": 0.6760758787601916,
+      "similar_to": [
+        {
+          "title": "Evidence for the utility of quantum computing before fault tolerance",
+          "id": null,
+          "similarity": 0.8595262765884399
+        },
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.855268657207489
+        }
+      ],
+      "summary": {
+        "summary": "This paper extends prior work on learning logical noise from syndrome data from phenomenological to realistic circuit-level noise models, deriving necessary and sufficient learnability conditions via code-theoretic methods and spacetime code formalism. Efficient estimators using Fourier analysis and compressed sensing are developed with provable sample-complexity guarantees, achieving orders-of-magnitude savings over direct logical benchmarking in estimating logical error probabilities from syndrome data alone.",
+        "motivation": "Characterizing logical error probabilities in fault-tolerant quantum error correction is essential for device calibration, but direct logical measurements are prohibitively expensive since logical errors are suppressed to higher order. Learning from syndrome data collected during error correction provides a practical alternative to rare event detection.",
+        "method": "The work establishes a unified theoretical framework using Boolean group algebra and representation theory to characterize learnable degrees of freedom under circuit-level Pauli faults. A circuit-to-spacetime code isomorphism maps syndrome extraction circuits to subsystem codes, enabling application of Fourier analysis and compressed sensing with restricted isometry properties to design efficient learning protocols with optimal sample complexity.",
+        "result": "The framework achieves $2$–$3$ orders of magnitude reduction in sample complexity for estimating logical error probabilities to $10\\%$ relative precision compared to direct logical benchmarking on rotated surface codes (distances $d=3,5,7$) and color codes, with optimal sample scaling $\\Theta(\\varepsilon^{-1}\\tau^{-2})$ for learning prior distributions to precision $\\tau\\varepsilon$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.23100",
+      "title": "Andreev bound states in a superconducting qubit at odd parity",
+      "authors": [
+        "Manuel Houzet",
+        "Julia S. Meyer",
+        "Yuli V. Nazarov"
+      ],
+      "abstract": "The quantum mechanics of the Josephson effect is the core ingredient for quantum technologies with superconducting circuits. A new avenue was recently opened in this field by predicting that the Josephson quantum mechanics in the odd parity sector, when a quasiparticle in trapped in an Andreev bound state, is fundamentally different from the conventional one in the even sector. The focus was then on a Josephson junction surrounded by an electromagnetic environment formed of a collection of bosonic modes, including the case of an ohmic environment. Here we consider the distinct case of a superconducting qubit made of a single Josephson junction whose environment reduces to a capacitance. We find a novel structure for the low-lying discrete states in the odd sector, which is altogether different from the one that appears in the even sector. Our study of the bound-state spectrum ranges from the Coulomb-dominated (Cooper pair box) to the Josephson-dominated (transmon) regime. Our prediction could be tested in forthcoming experiments with superconductor/semiconductor/superconductor junctions, which have been studied intensively in recent years, both using nanowires as well as two-dimensional electron gases.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-01-30",
+      "score": 0.6470981138738985,
+      "similar_to": [
+        {
+          "title": "Distinguishing parity-switching mechanisms in a superconducting qubit",
+          "id": "2204.07458",
+          "similarity": 0.8246714472770691
+        },
+        {
+          "title": "Quasiparticle-induced transitions in a fluxonium qubit",
+          "id": "2607.21329",
+          "similarity": 0.8181841373443604
+        }
+      ],
+      "summary": {
+        "summary": "This work derives the low-energy spectrum of Andreev bound states in a superconducting qubit (single Josephson junction with capacitive environment) in the odd parity sector, where a quasiparticle is trapped at the junction. The bound-state structure differs markedly from the even parity sector, with multiple bound states appearing in certain regimes, ranging from the Cooper-pair box ($E_J \\ll E_C$) to the transmon ($E_J \\gg E_C$).",
+        "motivation": "Prior work showed that Josephson quantum mechanics in the odd parity sector differs fundamentally from the even sector when a quasiparticle occupies an Andreev bound state, but previous studies focused on junctions coupled to ohmic or galvanic environments. Understanding the bound-state spectrum in the capacitively-coupled case, relevant to realistic superconducting qubits, requires a dedicated analysis.",
+        "method": "The authors derive an effective low-energy eigenvalue problem (Eqs. 24–25) by integrating out fermionic degrees of freedom, reducing the problem to a scalar Schrödinger equation in the superconducting phase $\\phi$. They analyze the spectrum analytically in limiting regimes and numerically for intermediate $E_J/E_C$ ratios, treating both single and multi-channel junctions.",
+        "result": "In the Cooper-pair box limit, a single bound state has binding energy $\\Omega = -E_C|\\mathcal{N} - 1/2| + \\sqrt{E_C^2(\\mathcal{N} - 1/2)^2 + E_J^2/4}$ (Eq. 26). For a transmon with $N_{\\mathrm{ch}} = E_J^\\star/E_J \\gg 1$, $\\Omega = \\hbar\\omega_0/16N_{\\mathrm{ch}}^2$ (Eq. 27); at $N_{\\mathrm{ch}} \\approx 1$, the spectrum resembles a Rosen–Morse potential with energies $E_n = E_C[(n + 1 + \\sqrt{2})^2 - 1/4]$ (Eq. 33), accommodating multiple bound states per channel.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.22785",
+      "title": "Orders of magnitude sampling overhead reduction in quantum error mitigation",
+      "authors": [
+        "Raam Uzdin"
+      ],
+      "abstract": "Quantum error mitigation (QEM) infers noiseless expectation values from noisy variants of a target quantum circuit. Unlike quantum error correction, QEM requires no additional hardware resources and is therefore routinely employed in experiments on contemporary quantum processors. QEM strategies based on agnostic noise amplification (ANA) are intrinsically resilient to temporal noise drift during the execution of the experiment, but their sampling cost (runtime overhead) remains a major practical bottleneck. In this work, we introduce the virtual noise scaling framework and combine it with layered mitigation to further enhance performance. While virtual noise scaling consistently reduces sampling overhead, we identify a specific noise threshold for the layered mitigation approach. When the noise level is above this threshold, layered mitigation decreases the sampling overhead; conversely, when below it, the overhead increases. Notably, this threshold is circuit-independent and depends solely on the number of layers. For strong noise, the combination of virtual noise scaling and layered mitigation yields several orders of magnitude reduction in sampling overhead compared with conventional zero-noise extrapolation post-processing. As a result, mitigation tasks that once seemed unrealistic are now challenging but achievable. The proposed approach is compatible with dynamic circuits and can be seamlessly integrated with error detection and quantum error correction schemes. In addition, it is also applicable to ANA-based mitigation of mid-circuit measurements and preparation errors. Our findings extend to any constant-step amplification factors and therefore also apply to probabilistic error amplification (PEA) QEM. We validate our post-processing approach by applying it to previously reported experimental data, where we observe a substantial improvement in mitigation efficiency and accuracy.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-30",
+      "score": 0.532797264021389,
+      "similar_to": [
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8575304746627808
+        },
+        {
+          "title": "Evidence for the utility of quantum computing before fault tolerance",
+          "id": null,
+          "similarity": 0.8295795321464539
+        }
+      ],
+      "summary": {
+        "summary": "This work introduces virtual noise scaling (VNS) combined with layered mitigation to dramatically reduce sampling overhead in agnostic noise amplification (ANA) based quantum error mitigation, achieving orders-of-magnitude reductions compared to zero-noise extrapolation. The method is compatible with dynamic circuits and mid-circuit measurements, with a circuit-independent noise threshold at $s_{\\mathrm{min,2L}} \\approx 0.65$ determining when two-layer mitigation becomes preferable to single-layer mitigation.",
+        "motivation": "ANA-based QEM is resilient to temporal noise drift but suffers from prohibitive sampling overhead that limits practical applicability on current noisy quantum processors.",
+        "method": "The authors introduce VNS, which rescales the noise operator by a factor $g$ to center the eigenvalue distribution within the plateau of the Taylor mitigation function $G(m, s_i)$, and combine this with layered circuit decomposition. The scaling factor $g$ is determined directly from extrema or inflection points of the mitigated expectation value as a function of $g$, without prior noise characterization.",
+        "result": "For strong noise with $s_{\\mathrm{min}} = 0.4$, combining VNS with two-layer mitigation reduces runtime overhead $\\mathcal{R}$ by factors of $10^4$ to $10^5$ compared to single-layer Taylor mitigation at equal target infidelity (e.g., from $3.6 \\times 10^{11}$ to $9.4 \\times 10^5$ for $I_{\\mathrm{op}} = 9 \\times 10^{-3}$), making previously unrealistic mitigation tasks feasible.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.22503",
+      "title": "Quantum-Enhanced Sensing Enabled by Scrambling-Induced Genuine Multipartite Entanglement",
+      "authors": [
+        "Guantian Hu",
+        "Wenxuan Zhang",
+        "Zhihua Chen",
+        "Liuzhu Zhong",
+        "Jingchao Zhao",
+        "Chilong Liu",
+        "Zixing Liu",
+        "Yue Xu",
+        "Yongchang Lin",
+        "Yougui Ri",
+        "Guixu Xie",
+        "Mingze Liu",
+        "Haolan Yuan",
+        "Yuxuan Zhou",
+        "Yu Zhang",
+        "Chang-Kang Hu",
+        "Song Liu",
+        "Dian Tan",
+        "Dapeng Yu"
+      ],
+      "abstract": "Quantum sensing leverages quantum resources to surpass the standard quantum limit, yet many existing protocols rely on the preparation of complex entangled states and Hamiltonian engineering, posing challenges for universality and scalability. Here, we report an experimental realization of a universal protocol, known as Butterfly Metrology, proposed in [arXiv:2411.12794], demonstrating a scrambling-based approach for quantum-enhanced sensing on a superconducting quantum processor. By exploiting many-body information scrambling, we observe quantum-enhanced sensitivity to an encoded phase beyond the standard quantum limit, with a scaling consistent with a factor-of-two of the Heisenberg limit for system sizes of up to 10 qubits. Importantly, we experimentally establish a connection between the enhanced sensitivity and the dynamics of the out-of-time-order correlator (OTOC), and show that the buildup of scrambling-induced genuine multipartite entanglement underlies the observed sensitivity enhancement. Our results demonstrate a scalable and practical approach for quantum-enhanced sensing in interacting many-body quantum systems.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-30",
+      "score": 0.5195724832697696,
+      "similar_to": [
+        {
+          "title": "Beating the Ramsey limit on sensing with deterministic qubit control",
+          "id": "2408.15926",
+          "similarity": 0.8486531972885132
+        },
+        {
+          "title": "Exponential suppression of bit-flips in a qubit encoded in an oscillator",
+          "id": "1907.11729",
+          "similarity": 0.8292303085327148
+        }
+      ],
+      "summary": {
+        "summary": "Butterfly metrology is experimentally demonstrated on a superconducting quantum processor using information scrambling to achieve quantum-enhanced phase sensing with sensitivity approaching $N/2$ of the Heisenberg limit for up to 10 qubits. The protocol establishes genuine multipartite entanglement dynamically through many-body evolution, directly connecting information scrambling measured via out-of-time-order correlators to sensing performance.",
+        "motivation": "Existing quantum sensing protocols require preparation of complex entangled states or precise Hamiltonian engineering, limiting scalability; scrambling-based approaches offer a universal and scalable alternative that generates entanglement dynamically through many-body interactions.",
+        "method": "A butterfly state is prepared via time-reversal sequences with tunable XX+YY coupling ($J \\approx 2\\pi \\times 3$ MHz) between nearest-neighbor qubits on a 16-qubit superconducting processor, with phase encoding in $e^{-i\\phi S_z}$ and readout via Fisher information extraction from $\\langle\\sigma_x\\rangle(\\phi)$ measurements; genuine multipartite entanglement is characterized via full state tomography and out-of-time-order correlators measured with $\\sim 99.8\\%$ single-qubit fidelity.",
+        "result": "Inverted sensitivity $\\eta^{-1}$ exceeds the standard quantum limit $N$ and saturates near the predicted $N/2$ after normalization, with slopes in $\\langle\\sigma_x\\rangle$ increasing from $-2.97$ to $-4.83$ for $N=6,8,10$; genuine multipartite entanglement concurrence peaks ($C_{\\mathrm{GME}} \\approx 0.1$ for 6 qubits) at $t=56$ ns coinciding with maximal sensitivity, demonstrating sensitivity directly scales with scrambling-induced entanglement buildup.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.6761,
+    0.6471,
+    0.5328,
+    0.5196,
+    0.4352,
+    0.4303,
+    0.4127,
+    0.3428,
+    0.2622,
+    0.2235,
+    0.2233,
+    0.2071,
+    0.1704,
+    0.1663,
+    0.1609,
+    0.1364,
+    0.1267,
+    0.1223,
+    0.1198,
+    0.102,
+    0.0948,
+    0.0932,
+    0.092,
+    0.0897,
+    0.083,
+    0.0801,
+    0.0773,
+    0.0715,
+    0.0688,
+    0.0643,
+    0.0624,
+    0.046,
+    0.0446,
+    0.0444,
+    0.0421,
+    0.0413,
+    0.0399,
+    0.0362,
+    0.0362,
+    0.0354,
+    0.0343,
+    0.0276,
+    0.0255,
+    0.0243,
+    0.024,
+    0.0238,
+    0.0232,
+    0.0227,
+    0.0203,
+    0.02,
+    0.016,
+    0.0147,
+    0.0139,
+    0.013,
+    0.0123,
+    0.0118,
+    0.0116,
+    0.0102,
+    0.0089,
+    0.0087,
+    0.0081,
+    0.008,
+    0.0072,
+    0.0072,
+    0.007,
+    0.0063,
+    0.0057,
+    0.0054,
+    0.0054,
+    0.0051,
+    0.0029,
+    0.0018,
+    0.0017,
+    0.0014,
+    0.0011
+  ]
+}

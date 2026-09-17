@@ -1,0 +1,257 @@
+{
+  "date": "2026-01-29",
+  "n_fetched": 81,
+  "papers": [
+    {
+      "id": "2601.20458",
+      "title": "Echo Cross Resonance gate error budgeting on a superconducting quantum processor",
+      "authors": [
+        "Travers Ward",
+        "Russell P. Rundle",
+        "Richard Bounds",
+        "Norbert Deak",
+        "Gavin Dold",
+        "Apoorva Hegde",
+        "William Howard",
+        "Ailsa Keyser",
+        "George B. Long",
+        "Benjamin Rogers",
+        "Jonathan J. Burnett",
+        "Bryn A. Bell"
+      ],
+      "abstract": "High fidelity quantum operations are key to enabling fault-tolerant quantum computation. Superconducting quantum processors have demonstrated high-fidelity operations, but on larger devices there is commonly a broad distribution of qualities, with the low-performing tail affecting near-term performance and applications. Here we present an error budgeting procedure for the native two-qubit operation on a 32-qubit superconducting-qubit-based quantum computer, the OQC Toshiko gen-1 system. We estimate the prevalence of different forms of error such as coherent error and control qubit leakage, then apply error suppression strategies based on the most significant sources of error, making use of pulse-shaping and additional compensating gates. These techniques require no additional hardware overhead and little additional calibration, making them suitable for routine adoption. An average reduction of 3.7x in error rate for two qubit operations is shown across a chain of 16 qubits, with the median error rate improving from 4.6$\\%$ to 1.2$\\%$ as measured by interleaved randomized benchmarking. The largest improvements are seen on previously under-performing qubit pairs, demonstrating the importance of practical error suppression in reducing the low-performing tail of gate qualities and achieving consistently good performance across a device.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-28",
+      "score": 0.9233062654887563,
+      "similar_to": [
+        {
+          "title": "Bias-preserving and error-detectable entangling operations in a superconducting dual-rail system",
+          "id": "2503.10935",
+          "similarity": 0.8767229318618774
+        },
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8751207590103149
+        }
+      ],
+      "summary": {
+        "summary": "This work presents an error budgeting and suppression procedure for the echo cross-resonance (ECR) gate on an OQC Toshiko Gen-1 32-qubit superconducting processor, identifying and mitigating control-qubit leakage, $I\\hat{Z}$ coherent errors, and background $ZZ$ interactions through pulse-shaping and compensating gates. Applied to a 16-qubit chain, the procedure achieves a 3.7× reduction in two-qubit gate error rates, improving the median error from 4.6% to 1.2% as measured by interleaved randomized benchmarking, with the largest improvements on previously under-performing pairs.",
+        "motivation": "Larger superconducting QPUs exhibit a broad distribution of two-qubit gate qualities across qubit pairs due to fabrication uncertainties in qubit frequencies and frequency-dependent error sources, creating a low-performing tail that limits near-term quantum algorithms and error correction.",
+        "method": "Error sources were systematically characterized via repeated $T_1$ and $T_2^e$ measurements, leakage amplification circuits, and quantum process tomography; control-qubit leakage was suppressed using single-derivative DRAG pulses; $I\\hat{Z}$ errors ($\\sim 2.3\\%$ mean error-per-gate) were corrected with virtual-$Z$ rotations; $Z\\hat{Z}$ errors ($\\sim 0.4\\%$ mean) in four problematic pairs were further suppressed using target-qubit $R_Y$ compensating pulses.",
+        "result": "Median error per gate on the 16-qubit chain decreased from 4.6% to 1.2%; mean error improved from 6.75% to 1.6%; incoherent error ($0.3\\%$–$0.8\\%$) and unexplained error ($0.6\\%$ median after suppression) now dominate over coherent and leakage errors, indicating that further improvements require faster gates relative to coherence times $T_1 \\sim 69$ µs and $T_2^e \\sim 103$ µs.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.20091",
+      "title": "Krypton-sputtered tantalum films for scalable high-performance quantum devices",
+      "authors": [
+        "Maciej W. Olszewski",
+        "Lingda Kong",
+        "Simon Reinhardt",
+        "Daniel Tong",
+        "Xinyi Du",
+        "Gabriele Di Gianluca",
+        "Haoran Lu",
+        "Saswata Roy",
+        "Luojia Zhang",
+        "Aleksandra B. Biedron",
+        "David A. Muller",
+        "Valla Fatemi"
+      ],
+      "abstract": "Superconducting qubits based on tantalum (Ta) thin films have demonstrated the highest-performing microwave resonators and qubits. This makes Ta an attractive material for superconducting quantum computing applications, but, so far, direct deposition has largely relied on high substrate temperatures exceeding \\SI{400}{\\celsius} to achieve the body-centered cubic phase, BCC (\\textalpha-Ta). This leads to compatibility issues for scalable fabrication leveraging standard semiconductor fabrication lines. Here, we show that changing the sputter gas from argon (Ar) to krypton (Kr) promotes BCC Ta synthesis on silicon (Si) at temperatures as low as \\SI{200}{\\celsius}, providing a wide process window compatible with back-end-of-the-line fabrication standards. Furthermore, we find these films to have substantially higher electronic conductivity, consistent with clean-limit superconductivity. We validated the microwave performance through coplanar waveguide resonator measurements, finding that films deposited at \\SI{250}{\\celsius} and \\SI{350}{\\celsius} exhibit a tight performance distribution at the state of the art. Higher temperature-grown films exhibit higher losses, in correlation with the degree of Ta/Si intermixing revealed by cross-sectional transmission electron microscopy. Finally, with these films, we demonstrate transmon qubits with a relatively compact, \\SI{20}{\\micro\\meter} capacitor gap, achieving a median quality factor up to 14 million.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-01-27",
+      "score": 0.917931796990772,
+      "similar_to": [
+        {
+          "title": "Beta Tantalum Transmon Qubits with Quality Factors Approaching 10 Million",
+          "id": "2603.13174",
+          "similarity": 0.8887694478034973
+        },
+        {
+          "title": "Tantalum as a base material for superconducting integrated circuits",
+          "id": "2606.13750",
+          "similarity": 0.8882516622543335
+        }
+      ],
+      "summary": {
+        "summary": "Krypton sputtering enables body-centered cubic tantalum film deposition on silicon at temperatures as low as 200 °C, compared to 350–650 °C for argon, while achieving higher electronic conductivity consistent with clean-limit superconductivity. Coplanar waveguide resonators exhibit median quality factors of 4.1 million at single-photon power (350 °C Kr), and transmon qubits with 20 µm capacitor gaps reach median $Q_1$ up to 14 million.",
+        "motivation": "Scalable manufacturing of superconducting qubits requires back-end-of-line compatibility with the 400 °C temperature ceiling used in semiconductor foundries, but conventional argon sputtering of α-Ta demands substrate temperatures exceeding 400 °C, creating a bottleneck for industrial translation of high-performance Ta-based devices.",
+        "method": "Magnetron sputtering with krypton instead of argon gas was used to deposit 100 nm α-Ta films on Si(100) at temperatures ranging from room temperature to 600 °C. Electronic transport, X-ray diffraction, transmission electron microscopy, and cryogenic microwave measurements characterized the films; coplanar waveguide resonators and transmon qubits with Manhattan-style junctions were fabricated to benchmark device performance.",
+        "result": "Kr-deposited films show residual resistivity ratio ~30 (versus ~15 for Ar at comparable T), mean free paths exceeding the Ginzburg-Landau coherence length ($\\ell_{5\\,\\mathrm{K}} \\gtrsim \\xi_{\\mathrm{GL}}$), reduced Ta/Si intermixing at the interface, and no detectable Kr impurities by secondary ion mass spectrometry; 350 °C Kr resonators achieve $\\delta_\\mathrm{LP} = 2.45 \\times 10^{-7}$ and transmons without oxygen descum reach $Q_1 = 14.4 \\times 10^6$ with $T_1 \\approx 0.71$ ms.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.20521",
+      "title": "Scanning tunneling spectroscopy of superconducting nitridized aluminum thin films",
+      "authors": [
+        "Jose Antonio Moreno",
+        "Pablo García Talavera",
+        "Alba Torras-Coloma",
+        "Gemma Rius",
+        "P. Forn-Díaz",
+        "Edwin Herrera Vasco",
+        "Isabel Guillamón",
+        "Hermann Suderow"
+      ],
+      "abstract": "Nitride-based superconductors represent a family of superconducting thin film materials displaying higher quality than their corresponding bare superconductor when used in devices for applications such as cosmic radiation sensing. In recent times, Niobium-based and Titanium-based nitrides were used to improve the quality of superconducting devices in quantum technology applications. Recently, nitridized Aluminum (NitrAl) has been found to display higher critical temperatures and enhanced resilience to magnetic fields compared to those of Al, making it a new interesting candidate for superconducting quantum circuit applications. However, the microscopic properties of NitrAl remain highly unexplored. Here we use Scanning Tunneling Microscope (STM) to measure the superconducting density of states of a thin film sample of nitridized-Aluminum (NitrAl), with a room temperature resistivity between pure Al and fully insulating aluminum nitride. We show that the in-gap density of states is zero up to about $\\hbarω=250~\\mathrm{μeV}$ and that there is a distribution of values of the superconducting gap around $Δ_0=360~\\mathrm{μeV}$, close to the BCS expectation $Δ=1.76 k_{\\mathrm{B}}T_{\\mathrm{c}}$. We also find varying superconducting gap values at the nanometer scale, by approximately 10\\%, when probing different regions of the sample. These results suggest a gap which is larger than the one of pure Al, and is spatially more homogeneous than the superconducting gap values often found in thin films. Our work demonstrates that STM is as a powerful tool to screen materials for quantum devices through the measurement of the spatial dependence of the superconducting density of states.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-01-28",
+      "score": 0.6062191671431372,
+      "similar_to": [
+        {
+          "title": "High-Q superconducting microwave resonators using MBE titanium nitride",
+          "id": "2607.15230",
+          "similarity": 0.832945704460144
+        },
+        {
+          "title": "Tantalum as a base material for superconducting integrated circuits",
+          "id": "2606.13750",
+          "similarity": 0.8304939866065979
+        }
+      ],
+      "summary": {
+        "summary": "Scanning tunneling spectroscopy of a 100 nm NitrAl thin film with $T_c = 2.4$ K reveals a superconducting gap $\\Delta_0 = 360$ µeV close to BCS prediction with spatial homogeneity (~10% variation) superior to typical disordered nitride films, and zero in-gap density of states up to 250 µeV. The work demonstrates STM as a materials-screening tool for superconducting quantum circuits, showing NitrAl's promise as an alternative to pure Al with enhanced critical temperature and field resilience.",
+        "motivation": "NitrAl has recently emerged as a superconducting candidate with higher $T_c$ and improved magnetic-field resilience compared to Al, but its microscopic superconducting properties and suitability for quantum circuits remain uncharacterized.",
+        "method": "Very low-temperature STM (100 mK) spectroscopy measured the tunneling conductance and density of states across a 100 nm NitrAl film ($\\rho_{4\\,\\mathrm{K}} = 48.5$ µΩ cm) as a function of position and applied out-of-plane magnetic field up to 600 mT. DOS was extracted by deconvoluting the Fermi function from conductance curves using a gap-distribution model.",
+        "result": "The superconducting gap of 360 µeV varies only ~10% spatially (compared to >20% in TiN/NbN), with zero subgap DOS below 250 µeV and broad quasiparticle peaks consistent with disorder-induced phase-coherence suppression; superconductivity persists to $\\sim 500$ mT, suggesting reduced superfluid density and potentially enhanced kinetic inductance desirable for flux qubits.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.20818",
+      "title": "Quantum Memory and Autonomous Computation in Two Dimensions",
+      "authors": [
+        "Gesa Dünnweber",
+        "Georgios Styliaris",
+        "Rahul Trivedi"
+      ],
+      "abstract": "Standard approaches to quantum error correction (QEC) require active maintenance using measurements and classical processing. Passive QEC, by contrast, has so far been established only in unphysical spatial dimensions. Here, we give an explicit scheme for autonomous quantum error correction and computation in two dimensions, formulated as a dissipative quantum cellular automaton with a fixed, local and translation-invariant update rule. The construction uses hierarchical, self-simulating control elements based on ideas from the seminal classical results of Gács (1986, 1989) together with a measurement-free concatenated quantum code. We prove the existence of a nonzero noise threshold under a local noise model. Below this threshold, logical errors on encoded initial states are suppressed exponentially with increasing system size and the memory lifetime diverges in the thermodynamic limit. We also describe an implementation in continuous time as a time-independent, translation-invariant local Lindbladian using engineered dissipative jump operators. The recursive nature of our protocol allows for the fault-tolerant execution of quantum circuits specified by the initial state, and thus constitutes a self-correcting quantum computer capable of universal computation.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-28",
+      "score": 0.5023907092440173,
+      "similar_to": [
+        {
+          "title": "Exponential suppression of bit-flips in a qubit encoded in an oscillator",
+          "id": "1907.11729",
+          "similarity": 0.8620046377182007
+        },
+        {
+          "title": "Surface codes: Towards practical large-scale quantum computation",
+          "id": "1208.0928",
+          "similarity": 0.856540858745575
+        }
+      ],
+      "summary": {
+        "summary": "This paper proves the existence of a two-dimensional quantum system with local, translation-invariant, time-independent interactions that autonomously corrects quantum errors and performs universal computation without measurements or external control. The construction uses a dissipative quantum cellular automaton whose self-simulating structure implements a hierarchical concatenated code with Toom's rule protecting the control layer, and a nonzero noise threshold is established below which logical errors are suppressed exponentially with system size.",
+        "motivation": "Passive quantum error correction has been ruled out in two dimensions under conventional stabilizer Hamiltonian assumptions, but active schemes require external measurements and classical processing. Understanding whether truly autonomous quantum error correction and computation can be achieved in physically realistic two-dimensional systems addresses a fundamental question in quantum information theory.",
+        "method": "The scheme combines: (1) a universal quantum cellular automaton ($\\mathsf{Univ}$) that simulates arbitrary local dynamics via a product-state program; (2) measurement-free concatenated quantum error correction with fault-tolerant gadget sets; (3) Toom's classical cellular automaton rule applied to local structure registers storing space-time coordinates $(\\tau, x, y)$; and (4) self-simulation where the system encodes its own transition rule in the initial state, enabling recursive hierarchical correction. Noise is modeled as local faults at each update location with strength $\\eta$, and the threshold proof uses the extended-rectangle formalism tracking damage sets that shrink geometrically under fault-free evolution.",
+        "result": "For local noise strength $\\eta < \\eta_{\\mathrm{th}}$ (a nonzero constant threshold), a circuit of depth $D$ on $N$ qubits is simulated to accuracy $\\delta$ using $\\mathcal{O}(N \\, \\mathrm{polylog}(ND/\\delta))$ physical qudits and runtime $\\mathcal{O}(D \\, \\mathrm{polylog}(ND/\\delta))$ with $\\mathcal{O}(\\log\\log(ND/\\delta))$ encoding levels; memory lifetime diverges in the thermodynamic limit. A continuous-time implementation using a time-independent local Lindbladian with engineered dissipative jump operators achieves the same threshold.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9233,
+    0.9179,
+    0.6062,
+    0.5024,
+    0.4612,
+    0.4014,
+    0.3911,
+    0.3711,
+    0.311,
+    0.2391,
+    0.2237,
+    0.2154,
+    0.2071,
+    0.1686,
+    0.1567,
+    0.1495,
+    0.1475,
+    0.1461,
+    0.1339,
+    0.1076,
+    0.1038,
+    0.0979,
+    0.0936,
+    0.0871,
+    0.0813,
+    0.0673,
+    0.0672,
+    0.0652,
+    0.0602,
+    0.058,
+    0.0545,
+    0.0483,
+    0.0449,
+    0.0406,
+    0.0387,
+    0.0333,
+    0.0312,
+    0.0307,
+    0.03,
+    0.0255,
+    0.0249,
+    0.0245,
+    0.023,
+    0.0226,
+    0.0226,
+    0.0225,
+    0.0199,
+    0.0195,
+    0.0194,
+    0.0191,
+    0.018,
+    0.0177,
+    0.0155,
+    0.0139,
+    0.0134,
+    0.0132,
+    0.0132,
+    0.013,
+    0.0128,
+    0.0109,
+    0.0109,
+    0.0108,
+    0.0105,
+    0.0098,
+    0.0095,
+    0.0094,
+    0.0093,
+    0.0092,
+    0.0086,
+    0.0084,
+    0.0081,
+    0.0073,
+    0.0072,
+    0.0069,
+    0.0058,
+    0.0043,
+    0.004,
+    0.0033,
+    0.0032,
+    0.0027,
+    0.0017
+  ]
+}

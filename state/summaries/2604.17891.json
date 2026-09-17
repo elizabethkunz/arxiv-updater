@@ -1,0 +1,8 @@
+{
+  "summary": "This work develops numerical simulation methods for microwave photon detection using superconducting Kerr parametric resonators operated near the parametric instability threshold. The authors solve Heisenberg-Langevin and Fokker-Planck equations in a semiclassical approximation to characterize switching dynamics and show that detection efficiency is enhanced by probe signals down to single-photon levels.",
+  "motivation": "Parametric devices at criticality exhibit heightened sensitivity to weak perturbations, offering a promising avenue for single-photon detection in superconducting quantum systems. Understanding the switching mechanisms and detection performance near the phase transition boundary is essential for practical implementations in quantum information processing.",
+  "method": "Semiclassical treatment of a parametrically pumped Kerr oscillator via Heisenberg-Langevin equations, using separation of slow and fast quadratures to derive an effective potential analogous to Landau free energy in phase transitions. Fokker-Planck equation solved numerically and analytically to compute switching probabilities and detection efficiency for coherent probe states.",
+  "result": "At operational point with $|\\alpha|/(\\kappa+\\gamma)=0.506$, $\\Delta/(2\\pi)=0.748$ MHz, $K/(\\kappa+\\gamma)=-3.12\\times10^{-5}$: dark count probability $p_{\\text{dark}}\\approx0.14$, single-photon switching probability $P_{1^+}\\approx0.52$, and detection efficiency $\\eta\\approx0.58$ for $n̄=1$ photon pulses; analytical solutions for Kerr-free resonators ($K=0$) confirm the approximations.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

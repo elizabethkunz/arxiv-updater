@@ -1,0 +1,8 @@
+{
+  "summary": "This work introduces doped Clifford circuits (DCS) that combine sampling-based quantum advantage with verifiable high fidelity by embedding structured circuits in spacetime codes for error detection. A 64-qubit, depth-73 circuit doped with 314 T gates achieves a fidelity lower bound of 0.349 with 95% confidence through syndrome measurements, while effective gate error suppression reaches 10× after post-selection.",
+  "motivation": "Sampling-based quantum advantage proposals lack mechanisms to simultaneously suppress hardware errors and verify quantum computations at scale without strong noise assumptions or prohibitive sampling overhead.",
+  "method": "The authors construct circuits based on random Clifford skeletons with high entanglement, encode them in spacetime codes using ancilla-measured Pauli checks that detect 93% of first-order errors, and inject T gates (implemented virtually with zero noise overhead) at locations commuting with code stabilizers. Fidelity certification exploits the fact that doping preserves syndrome distributions; the fidelity drop is bounded by the probability of 'harmless' errors that stabilize the undoped Clifford state but not the doped state.",
+  "result": "On IBM's 76-qubit processor, the protocol achieves: measured Clifford state fidelity $F_1 = 0.38(1)$ (rising to $0.55(2)$ with readout mitigation), 131× fidelity improvement over unencoded circuits at 990× sampling-rate cost, a certified fidelity lower bound of $F_2 \\\ngeq 0.349$ for the classically hard doped state with maximum harmless-fault probability estimated at $0.010(1)$, and ~1400 samples collected in 14.5 minutes with estimated classical simulation infeasibility.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

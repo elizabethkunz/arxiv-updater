@@ -1,0 +1,8 @@
+{
+  "summary": "This work proposes a lattice-patch architecture coupling four fixed-frequency transmon qubits to a single fixed-frequency coupler, achieving CNOT gate fidelities exceeding 0.98 across all six connectivity directions. The design directly maps onto surface-code plaquettes, eliminating flux-noise sensitivity and reducing coupler count compared to conventional grid or heavy-hexagon architectures.",
+  "motivation": "Conventional superconducting qubit architectures face frequency crowding and inefficient surface-code mapping during scaling; a fixed-frequency 1:4 coupling scheme could resolve these bottlenecks while maintaining high gate fidelity.",
+  "method": "Four transmon qubits ($\\omega_i/2\\pi = 4.67$–$5.03$ GHz, $E_J/2\\pi = 10.4$–$11.0$ MHz, $E_C/2\\pi = 0.3$–$0.33$ MHz) are capacitively coupled to a central LC resonator ($\\omega_C/2\\pi = 7.0$ GHz, $G_i/2\\pi = 0.03$–$0.06$ MHz). CNOT gates use cross-resonance pulses with DRAG correction and virtual $R_z$ phase calibration; optimization employs Suzuki-Trotter decomposition with $\\tau = 0.001$ ns timesteps and Nelder-Mead refinement.",
+  "result": "All 12 bidirectional CNOT gates achieve success probabilities $\\geq 0.96$; average fidelities range from $0.83$ to $0.99$, with worst gates (CNOT$_{13}$, CNOT$_{31}$) limited by frequency crowding ($4.67$–$5.03$ GHz span). Leakage into non-computational states $\\epsilon_L \\approx 0.022$–$0.025$; reverse gates with physical Hadamards ($F_{X_{\\pi/2}} = 0.993$–$0.999$) achieve effective fidelity $0.90$–$0.98$.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

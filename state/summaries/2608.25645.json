@@ -1,0 +1,8 @@
+{
+  "summary": "A SQUID-based Josephson Parametric Amplifier (JPA) fabricated with VTT SWAPS technology was cascaded with a Traveling-Wave Parametric Amplifier (TWPA) to demonstrate phase-sensitive parametric amplification at 6 GHz with system noise temperature of $94 \\pm 12$ mK. This represents $0.06$ added photons in the phase-sensitive regime, well below the standard quantum limit of $288$ mK achieved in phase-preserving operation ($351 \\pm 53$ mK, $0.71$ added photons).",
+  "motivation": "Phase-sensitive parametric amplifiers can theoretically achieve sub-quantum-limited noise by amplifying a single quadrature, but direct measurement of their noise performance at low gains has been challenging due to contributions from subsequent amplifier stages.",
+  "method": "A JPA in 3WM configuration (pump at $\\approx 2 \\times$ resonance) was cascaded with a TWPA pre-amplifier ($\\sim 20$ dB gain, $T_N \\approx 700$ mK) in a reflection setup, with the JPA's added noise extracted via spectrum analyzer measurements of gain and signal-to-noise ratio improvement using Eq. 12, including Friis formula accounting.",
+  "result": "Phase-sensitive operation achieved $T_{N,\\mathrm{JPA}} = 17 \\pm 12$ mK added noise and $T_{S,\\mathrm{JPA}} = 94 \\pm 12$ mK system noise temperature (89 mK from JPA quantum fluctuations and intrinsic noise, 5 mK from downstream amplifiers), compared to phase-preserving saturation at $200 \\pm 54$ mK added noise; the TWPA cascade was essential for suppressing downstream noise contributions and enabling sub-SQL operation.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

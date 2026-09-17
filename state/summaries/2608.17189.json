@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates fast nondestructive readout (FNDR) for neutral-atom arrays by combining real-time photon counting with adaptive per-site optical hiding to suppress unnecessary photon scattering, reducing average probe time to 15 µs and achieving state-averaged discrimination infidelity of $4.1 \\times 10^{-5}$ with atom loss of $2.1 \\times 10^{-4}$. Operating repeated quantum circuits at 1.7 kHz clock rate with atoms reused over 120 consecutive rounds—nearly sevenfold faster than previous records—FNDR removes measurement as the dominant bottleneck for fault-tolerant quantum computation.",
+  "motivation": "Neutral-atom arrays have achieved thousands of qubits with high-fidelity gates, but nondestructive readout at the millisecond scale fundamentally limits clock rate and prevents rapid syndrome extraction needed for quantum error correction.",
+  "method": "A multimode fibre array coupled to avalanche photodiodes provides site-resolved photon counting with sub-microsecond latency; an FPGA running a dynamic decision algorithm identifies each atom's state and triggers a corresponding hiding beam (π-polarized, 852 nm) through a polarization-maintaining fibre array to decouple bright atoms from the probe transition, reducing photon-scattering exposure to one-fifth of worst-case.",
+  "result": "Discrimination infidelity of $4.1 \\times 10^{-5}$ and atom loss of $2.1 \\times 10^{-4}$ simultaneously improve prior array-scale results by roughly an order of magnitude; 120-round circuits at 1.7 kHz and over 1000 rounds at 0.7 kHz with per-round recooling enter the sub-millisecond cycle regime for the first time on neutral-atom processors.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

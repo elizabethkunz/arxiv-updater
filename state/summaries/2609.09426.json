@@ -1,0 +1,8 @@
+{
+  "summary": "First-principles NEGF-DFT calculations of Al/AlO$_x$/Al Josephson junctions show that amorphous Al$_2$O$_3$ barriers produce a mean $E_J/h$ of 2.78 GHz with 4.67 GHz standard deviation, spanning nearly two orders of magnitude, compared to 0.73 GHz for crystalline Al$_2$O$_3$. The variability arises from percolation-like tunneling pathways formed by stoichiometric inhomogeneity in the amorphous oxide, but a realistic $200 \times 200$ nm$^2$ junction self-averages over $>2 \times 10^4$ microscopic regions.",
+  "motivation": "Josephson energy $E_J$ depends exponentially on atomic-scale barrier structure, and real Al/AlO$_x$/Al junctions contain amorphous rather than crystalline oxides; a systematic atomistic comparison was needed to connect oxide microstructure to the $E_J$ energy scale in transmon qubits.",
+  "method": "Quantum transport was computed via NEGF-DFT using NanoDCAL for one crystalline Al$_2$O$_3$ junction and ten melt-quenched amorphous junctions of identical oxide thickness, extracting the Fermi-level transmission $T(E_F)$ and converting it to $E_J$ via the Ambegaokar–Baratoff relation with $\\Delta = 0.18$ meV.",
+  "result": "Amorphous samples yield mean $E_J/h = 2.78 \\pm 4.67$ GHz (median 0.86 GHz) versus crystalline 0.73 GHz; scattering-state analysis confirms quantum tunneling and identifies Al-rich low-barrier regions forming conduction channels when connected, explaining the wide spread and high-$E_J$ outliers.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

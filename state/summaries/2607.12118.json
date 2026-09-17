@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates distance-5 surface codes on the 120-qubit IBM Nighthawk processor with active defect exclusion strategies that quarantine underperforming qubits and couplers. Combining defect exclusion with noise-informed decoding and leakage post-selection yields a distance-5 code outperforming the best distance-3 instance in one basis.",
+  "motivation": "Fabrication of larger superconducting qubit arrays inevitably produces components with varying performance; defects must be mitigated either through decoder adaptation or active circuit modification to achieve practical quantum error correction.",
+  "method": "Distance-5 surface codes were implemented using super-stabilizer constructions and ancilla repurposing to avoid defects identified by benchmark (coupler error rate >5%, measure-qubit error >$7\\times10^{-2}$, data-qubit $T_1$ or $T_2$ <80 µs). Performance was evaluated via memory experiments (logical error per round vs syndrome rounds) and stability experiments (failure rate decay with measurement rounds) with BeliefMatching decoding informed by calibration data.",
+  "result": "Defect exclusion reduced logical error per round from 4.49% to 1.62% in Pauli-Z basis (2.8× improvement) for memory, and restored measurement-based gate suppression in stability experiments ($\\Gamma=0.94$ vs $\\Gamma\\geq1$ without exclusion). With leakage post-selection (3% cutoff), distance-5 achieved 0.98% error per round versus 1.26% for distance-3.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

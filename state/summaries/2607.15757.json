@@ -1,0 +1,8 @@
+{
+  "summary": "Terahertz spectroscopy is used to map wafer-scale homogeneity of NbTiN thin films on 4-inch and 6-inch Si wafers grown by plasma-enhanced magnetron sputtering, measuring sheet resistance $R_s$ at room temperature via THz-FDS and superconducting properties at cryogenic temperatures via THz-TDS. Room-temperature $R_s$ variations (1.77–7.78% standard deviation) correlate with film thickness and deposition device, while the zero-temperature sheet kinetic inductance $L_{k0}$ follows $R_s$ variations, but critical temperature $T_c$ (13.68–13.81 K) and energy gap $2\\Delta_0$ remain uniform across the wafer.",
+  "motivation": "Homogeneous superconducting thin films are essential for reproducible large-scale device fabrication in quantum computing and sensing platforms, yet standard characterization requires lithography and electrical contacts.",
+  "method": "NbTiN films of thicknesses 5–60 nm on Si substrates were characterized by THz-FDS (9–10.5 cm$^{-1}$, room temperature) for $R_s$ mapping and THz-TDS (300 GHz–3 THz, down to 1.5 K) on diced samples for optical conductivity and superconducting parameters via Mattis-Bardeen theory fits.",
+  "result": "For films thicker than 30 nm, $R_s$ uniformity plateaus with standard deviation $\\sim$0.6–0.7%, while sub-30 nm films show degraded homogeneity (up to 7.78%); $L_{k0}$ deviations match $R_s$ deviations ($\\delta L_{k0} \\propto \\delta R_s$), enabling prediction of device performance from room-temperature measurements, but $T_c$ and $2\\Delta_0$ show minimal spatial variation ($<$0.1 K and meV scales).",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

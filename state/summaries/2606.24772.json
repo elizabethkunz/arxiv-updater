@@ -1,0 +1,8 @@
+{
+  "summary": "We demonstrate a 99.62% fidelity CZ gate between two multimode P-mon superconducting qubits coupled via their flux-tunable mediator modes, achieving ZZ-type crosstalk suppressed to 3.6 kHz through mode-selective coupling that keeps computational qubits isolated. The gate exploits qubit-state-dependent frequency shifts from cross-Kerr interactions ($\\alpha_{\\mathcal{AB}} \\approx -164$ and $-108$ MHz) to generate an entangling phase without linear qubit-qubit exchange.",
+  "motivation": "Scaling superconducting quantum processors requires maintaining high coherence times while suppressing always-on ZZ interactions that induce correlated errors; standard transmon architectures using capacitive couplers suffer from frequency crowding and crosstalk in the straddling regime.",
+  "method": "Two P-mons are coupled via an intermediate 8.143 GHz bus resonator connected only to island 3, establishing a $g_{\\mathcal{BB}}/2\\pi = 11.7$ MHz mediator-mediator coupling while leaving qubit modes ($\\omega_{\\mathcal{A}}/2\\pi \\approx 4.5$ GHz) decoupled; we drive the $|0,0\\rangle_\\mathcal{B} \\leftrightarrow |-\\rangle_{00}$ transition selectively with 180 ns HD-DRAG pulses to accumulate an entangling phase via the cyclic Bloch sphere trajectory.",
+  "result": "CZ gate fidelity of $99.62(4)\\%$ measured via interleaved randomized benchmarking with 180 ns HD-DRAG pulses; residual ZZ interaction $\\zeta_{ZZ} = 3.6(5)$ kHz at the gate operation point, with qubit coherence times $T_1 = 139(18)$ and $141(13)$ µs and mediator dephasing $T_2 = 5.2(6)$ µs limiting performance at short durations.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,343 @@
+{
+  "date": "2026-06-12",
+  "n_fetched": 106,
+  "papers": [
+    {
+      "id": "2606.13010",
+      "title": "QuBE/Qubex: an integrated hardware-software system for superconducting qubit experiments with broadband control",
+      "authors": [
+        "Akinori Machino",
+        "Kazuhisa Ogawa",
+        "Takefumi Miyoshi",
+        "Hidehisa Shiomi",
+        "Shinichi Morisaka",
+        "Ryo Matsuda",
+        "Nilton F. G. Filho",
+        "Koichiro Ban",
+        "Takafumi Miyanaga",
+        "Keisuke Koike",
+        "Ryutaro Ohira",
+        "Toshi Sumida",
+        "Yoshinori Kurimoto",
+        "Yuuya Sugita",
+        "Yosuke Ito",
+        "Yasunari Suzuki",
+        "Peter A. Spring",
+        "Shiyu Wang",
+        "Hiroto Mukai",
+        "Arvind Mamgain",
+        "Shuhei Tamate",
+        "Yutaka Tabuchi",
+        "Yasunobu Nakamura",
+        "Makoto Negoro"
+      ],
+      "abstract": "Achieving high-fidelity operation in large-scale superconducting qubit systems requires not only control hardware with broad frequency coverage, low crosstalk, and tight synchronization but also software that coordinates system configuration, experiment execution, and data analysis. Here we present an integrated qubit-control system that combines broadband microwave hardware with a pulse-level software stack for scalable superconducting qubit experiments. The hardware provides broadband microwave coverage, including an instantaneous span of up to 1.6 GHz from a control output, while the software reduces setup and calibration overhead through automated configuration and built-in experiment workflows. We validate the system on a 64-qubit fixed-frequency transmon chip through full-chip frequency identification and representative demonstrations, including multi-unit far-detuned cross-resonance calibration and benchmarking that yields a measured two-qubit gate fidelity of 98.34%, and multilevel readout beyond the computational subspace. By disclosing the hardware architecture and releasing the software stack as open source, this work provides an inspectable hardware-software foundation for scalable superconducting qubit control experiments.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-11",
+      "score": 0.9670829478725276,
+      "similar_to": [
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.859244704246521
+        },
+        {
+          "title": "Quantum Computer Controlled by Superconducting Digital Electronics at Millikelvin Temperature",
+          "id": "2503.09879",
+          "similarity": 0.8510856628417969
+        }
+      ],
+      "summary": {
+        "summary": "QuBE/Qubex is an integrated hardware-software control system combining broadband microwave generation (1.6 GHz instantaneous span, 7.25–10 GHz control, 9.5–11 GHz readout, 19–21 GHz pump) with a pulse-level software framework for scalable superconducting qubit experiments. Validation on a 64-qubit fixed-frequency transmon chip demonstrates automated setup, synchronized multi-unit operation, far-detuned cross-resonance gates with 98.34 % fidelity, and multilevel readout achieving 95.4 % state-assignment fidelity with JPA assistance.",
+        "motivation": "Large-scale fixed-frequency transmon systems operating in the far-detuned regime require broadband, high-power, phase-coherent control across distributed hardware units, coupled with software that reliably translates chip metadata and calibration state into reproducible experimental configurations and pulse sequences.",
+        "method": "QuBE provides multi-unit clock distribution (100 MHz, 250 MHz, 62.5 kHz references), FPGA-based arbitrary waveform generation with three-channel frequency synthesis per control port, and synchronized readout with parametric-amplifier pump support; Qubex resolves qubit frequencies, wiring, and hardware parameters into LO/CNCO/FNCO/AWG terms and implements automated spectroscopy, coherence characterization, and two-qubit calibration workflows.",
+        "result": "On the 64-qubit platform: single-qubit $X_{\\pi/2}$ gate fidelity of 99.963 ± 0.003 %, far-detuned CR gate (Q28–Q25, $\\Delta_{ct} = -729.3$ MHz) fidelity of 98.34 ± 0.08 %, and multilevel readout of $|g\\rangle$, $|e\\rangle$, $|f\\rangle$ with 99.5 %, 95.7 %, and 91.2 % assignment probabilities respectively with JPA amplification. Phase stability across 3600 s measured below 0.456°; neighboring-port crosstalk suppression 88.0 dB; third-order IMD suppression 56.4 dB.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.13052",
+      "title": "Simple analytical flux-tuned iSWAP pulses for leakage suppression",
+      "authors": [
+        "Dimitrios Georgiadis",
+        "Boxi Li",
+        "Asier Galicia",
+        "Rami Barends",
+        "F. A. Cárdenas-López",
+        "Felix Motzoi"
+      ],
+      "abstract": "Fast, high-fidelity two-qubit gates are a key requirement for fault-tolerant quantum computation. Tunable coupler architectures provide a flexible approach for implementing entangling gates through flux control with large on-off ratios, but fast flux modulation can induce diabatic transitions and population leakage to non-computational states, limiting gate performance. Here we present an analytical flux control method enabling derivative removal by adiabatic gate ($Φ$-DRAG) for suppressing leakage in flux tunable two-qubit gates. We show that $Φ$-DRAG differs fundamentally from conventional microwave implementations and derive modified flux modulation protocols that suppress leakage below $10^{-4}$ for fast entangling gates. The method remains effective across a range of asymmetry between qubit anharmonicities and different circuit parameters, enabling high-fidelity two-qubit gates within the fifteen nanosecond range.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-11",
+      "score": 0.8009022516672795,
+      "similar_to": [
+        {
+          "title": "Realization of high-fidelity CZ and ZZ-free iSWAP gates with a tunable coupler",
+          "id": "2011.01261",
+          "similarity": 0.8812034726142883
+        },
+        {
+          "title": "Separate Control of Transient Leakage Exposure and Endpoint Leakage in Fast Transmon Gates",
+          "id": "2607.05779",
+          "similarity": 0.8803863525390625
+        }
+      ],
+      "summary": {
+        "summary": "This paper develops $Φ$-DRAG, an analytical flux-control method for suppressing leakage to non-computational states in fast iSWAP gates on tunable-coupler transmon architectures. The approach generalizes derivative-removal-by-adiabatic-gate (DRAG) techniques from microwave control to the flux domain, enabling leakage suppression below $10^{-4}$ for 15 ns gates through higher-order corrections to the effective coupling.",
+        "motivation": "Fast flux-tunable two-qubit gates are essential for fault-tolerant superconducting quantum processors, but rapid flux modulation induces diabatic transitions to non-computational leakage states, limiting fidelity. While DRAG is successful for microwave-driven single-qubit gates, extending it to flux-controlled architectures is non-trivial because flux modulates the coupler frequency nonlinearly and does not provide direct quadrature control.",
+        "method": "Starting from the tunable-coupler effective model with flux-dependent coupling $g_\\mathrm{eff}(\\omega_c)$, the authors derive modified flux waveforms via second-order corrections ($Φ$-DRAG2) for symmetric anharmonicities ($\\alpha_1 = \\alpha_2$) and fourth-order corrections ($Φ$-DRAG4) for asymmetric systems. The corrected waveforms are obtained by minimizing the deviation between the target modified coupling $\\tilde{g}(t) = g_\\mathrm{eff}(t) + \\frac{1}{\\alpha^2} \\frac{d^2}{dt^2} g_\\mathrm{eff}(t)$ and the realized coupling, with Gaussian pulse shaping parameterized by rise time $\\tau_r$ to enable gate-time selectivity.",
+        "result": "For symmetric systems, $Φ$-DRAG2 suppresses leakage to $|200\\rangle$ and $|002\\rangle$ below $10^{-4}$ for gates $\\tau_f \\geq 15$ ns across realistic device parameters. $Φ$-DRAG4 extends robustness to $\\sim 5$% anharmonicity asymmetry at 17 ns gates and beyond, with leakage remaining below $10^{-4}$ for slower gates regardless of asymmetry. Optimization of pulse rise time provides threefold or greater orders-of-magnitude leakage reduction and proves robust to 0.5 ns sampling-rate limitations of real arbitrary waveform generators.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.13750",
+      "title": "Tantalum as a base material for superconducting integrated circuits",
+      "authors": [
+        "Evgeniy V. Zikiy",
+        "Nikita S. Smirnov",
+        "Stanislav A. Kotenkov",
+        "Ilya A. Stepanov",
+        "Julia A. Agafonova",
+        "Daria A. Moskaleva",
+        "Aleksei R. Matanin",
+        "Anton I. Ivanov",
+        "Dmitry O. Moskalev",
+        "Julia A. Kurochkina",
+        "Aleksander V. Andriyash",
+        "Ilya A. Rodionov"
+      ],
+      "abstract": "The performance of superconducting integrated circuits for quantum applications is fundamentally limited by material-related losses. Tantalum, as an emerging material for next-generation quantum circuits, has attracted considerable attention in recent years after demonstrating breakthrough performance in both superconducting microwave resonators and qubits. Concurrently, a growing body of work is devoted to the operation of tantalum-based circuits and related fabrication techniques. This interest is further stimulated by tantalum thin films polymorphism resulting in a variety of its crystalline structure, superconducting properties, coherence, etc. Furthermore, tantalum circuits exhibit distinctive features in cryogenic experiments, which have not been observed in aluminum- or niobium-based ones. In this review, we summarize the recent research of tantalum thin films growth and phase selection mechanisms on various substrates, key aspects of fabrication and performance of superconducting circuit, including a material first-principles theoretical study. In conclusion, we address a number of open issues, including the role of \\b{eta}-phase impurities, the effect of hydrofluoric acid solutions on chain characteristics, and the anomalous behavior of α-tantalum chains at cryogenic temperatures.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-06-11",
+      "score": 0.7874372452520332,
+      "similar_to": [
+        {
+          "title": "Tantalum as a base material for superconducting integrated circuits",
+          "id": "2606.13750",
+          "similarity": 0.9972742199897766
+        },
+        {
+          "title": "Beta Tantalum Transmon Qubits with Quality Factors Approaching 10 Million",
+          "id": "2603.13174",
+          "similarity": 0.8672887086868286
+        }
+      ],
+      "summary": {
+        "summary": "This review surveys tantalum as a superconducting thin-film material for quantum circuits, covering growth mechanisms, phase selection on various substrates, fabrication techniques, and performance in resonators and qubits. Key unresolved issues include the role of $\\eta$-phase impurities, HF effects on circuit characteristics, and anomalous low-temperature behavior of $\\alpha$-tantalum.",
+        "motivation": "Tantalum has recently demonstrated breakthrough coherence performance in superconducting microwave resonators and qubits compared to conventional aluminum and niobium, motivating systematic study of its material properties and fabrication.",
+        "method": "The authors review recent work on tantalum thin-film growth, crystalline phase selection mechanisms across different substrates, superconducting circuit fabrication and performance, and first-principles theoretical modeling of the material.",
+        "result": "Tantalum exhibits distinctive cryogenic behavior not observed in aluminum or niobium circuits, but several open questions remain about $\\eta$-phase impurity effects, HF-induced degradation mechanisms, and the nature of $\\alpha$-tantalum anomalies at low temperatures.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.13375",
+      "title": "Driven-dissipative entanglement of distant giant atoms",
+      "authors": [
+        "Aziza Almanakly",
+        "Ariadna Soro",
+        "Alejandro Vivas-Viaña",
+        "Beatriz Yankelevich",
+        "Caspar Groiseau",
+        "David Pahl",
+        "Junyoung An",
+        "Gabriel Cutter",
+        "Michael E. Gingras",
+        "Bethany M. Niedzielski",
+        "Hannah Stickler",
+        "Renée DePéncier Piñero",
+        "Mollie E. Schwartz",
+        "Kyle Serniak",
+        "Max Hays",
+        "Jeffrey A. Grover",
+        "Anton Frisk Kockum",
+        "William D. Oliver"
+      ],
+      "abstract": "Quantum interconnects distribute entanglement via controlled light-matter interactions for quantum computing and sensing applications. Many entanglement generation schemes use coherent, reversible interactions that require precisely calibrated pulses to execute. In contrast, driven-dissipative protocols use a continuous-wave drive in the presence of correlated dissipation to stabilize entanglement in protected (dark) states. However, the same dissipation that generates the entanglement also limits its utility once the stabilization protocol ends. Here, we engineer a superconducting system of two giant artificial atoms coupled sequentially to a waveguide, with tunable individual and correlated dissipation enabled by interference between coupling points. Continuously driving the atoms through the waveguide exploits correlated dissipation to generate remote entanglement. We then tune the qubit frequencies in situ to suppress individual dissipation and thereby preserve the entanglement, achieving a Bell-state fidelity F = 0.89 +/- 0.02. This demonstration indicates that the driven dissipation of giant atoms is a viable approach for distributing entanglement across quantum networks.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-11",
+      "score": 0.7857205927056258,
+      "similar_to": [
+        {
+          "title": "Driven-dissipative entanglement of distant giant atoms",
+          "id": "2606.13375",
+          "similarity": 1.0
+        },
+        {
+          "title": "Waveguide Quantum Electrodynamics with Giant Superconducting Artificial Atoms",
+          "id": "1912.12233",
+          "similarity": 0.8436434268951416
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates driven-dissipative entanglement generation in a superconducting waveguide-QED system using two giant atoms (transmon qubits coupled twice to a common waveguide). The protocol exploits correlated dissipation and interference at multiple coupling points to autonomously stabilize a Bell state with fidelity $F = 0.89 \\pm 0.02$, followed by frequency tuning to suppress individual dissipation for readout.",
+        "motivation": "Driven-dissipative protocols offer an alternative to pulse-calibrated coherent schemes for remote entanglement generation, but dissipation that enables entanglement usually corrupts it during readout. Giant-atom interference effects enable tunable individual and collective dissipation to overcome this fundamental limitation.",
+        "method": "Two transmon qubits are coupled sequentially to a waveguide at $\\gamma(\\omega_\\mathrm{super})/2\\pi \\approx 14.7$ MHz per coupling point. A continuous drive at frequency $\\omega_d = \\omega_\\mathrm{super}$ with amplitude $\\Omega/2\\pi = 45$ MHz and detuning $\\delta/2\\pi = 6.81$ MHz for duration $\\tau = 1.5$ µs stabilizes the triplet state $|\\Psi^+\\rangle$ via correlated dissipation; afterward, qubits are flux-tuned to the subradiant frequency $\\omega_\\mathrm{sub}/2\\pi = 4.66$ GHz to decouple from the waveguide ($\\Gamma/2\\pi \\approx 5.4$ kHz) and preserve entanglement for tomography.",
+        "result": "Bell-state fidelity $F = 0.89 \\pm 0.02$ and concurrence $C = 0.86 \\pm 0.02$ are achieved; the dark-state stabilization timescale is $\\tau_S \\approx 159$ ns and dark-state lifetime $\\tau_D \\approx 99.6$ ns. Infidelity sources: finite drive strength (4.7%), leakage to transmon $|f\\rangle$ state (2.9%), pure dephasing (1.8%), non-radiative decay (0.5%).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.12781",
+      "title": "Quantum Network Routing based on Surface Code Error Correction",
+      "authors": [
+        "Tianjie Hu",
+        "Jindi Wu",
+        "Qun Li"
+      ],
+      "abstract": "Quantum networks encounter unavoidable channel noises and erasure errors, presenting a huge obstacle in designing protocols that attain both high reliability and efficiency. Typically, quantum networks fall into two categories: those utilize quantum entanglements for quantum teleportation, and those directly transfer the actual quantum messages. In this paper, we present SurfNet, a quantum network that inherits the main advantages from both categories. It employs surface codes as logical qubits for encoding messages, and utilizes two parallel communication channels to fault-tolerantly transfer each surface code in a modular manner. Our approach of using surface codes can timely correct both operational and photon loss errors within the network, and the integration of the two channels within the network can greatly improve network throughput. For the implementation of SurfNet, we propose a novel network architecture, designed to better integrate surface codes into quantum networks. We also propose a novel error correction decoder, designed to fully utilize the modular characteristic of surface codes within our network. Simulation results demonstrate that SurfNet with its decoder significantly enhances the communication fidelity within quantum networks.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-11",
+      "score": 0.5732051787283627,
+      "similar_to": [
+        {
+          "title": "Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code",
+          "id": "2112.03708",
+          "similarity": 0.8615420460700989
+        },
+        {
+          "title": "Repeated Quantum Error Detection in a Surface Code",
+          "id": "1912.09410",
+          "similarity": 0.8503504395484924
+        }
+      ],
+      "summary": {
+        "summary": "SurfNet is a quantum network architecture that encodes messages as surface codes and transmits them via dual channels: an entanglement-based channel for critical Core qubits and a plain channel for Support qubits, enabling fault-tolerant transfer with improved fidelity. The scheme combines benefits of teleportation-based and direct-transmission networks, supported by a custom decoder exploiting different error rates across code partitions and an integer programming routing protocol.",
+        "motivation": "Quantum networks face fundamental trade-offs between reliability and efficiency: teleportation-based schemes suffer from low entanglement generation rates and communication overhead, while direct transmission schemes require transmitting many physical qubits per logical qubit, increasing network traffic and errors.",
+        "method": "Surface codes are partitioned into Core (critical for logical error rate) and Support (auxiliary) parts transmitted separately via two channels with distinct error mitigation: Core uses entanglement purification (fidelity $\\rho = \\rho_1 \\rho_2 / (\\rho_1 \\rho_2 + (1-\\rho_1)(1-\\rho_2))$ after purification), Support uses direct photonic transmission with re-encoding at switches. A modified decoder based on Union-Find grows clusters at speeds proportional to $-r/\\ln(1-\\rho_i)$ and achieves worst-case complexity $O(n\\alpha(n))$ versus $O(n^2)$ for MWPM.",
+        "result": "SurfNet demonstrates significantly higher average communication fidelity across network scenarios compared to entanglement-based benchmarks (Purification N=1,2,9), with similar throughput and latency; the SurfNet Decoder achieves 7.25% Pauli error threshold versus 7.1% for Union-Find decoder on distance-9 to distance-15 surface codes with fixed 15% erasure rate.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9671,
+    0.8009,
+    0.7874,
+    0.7857,
+    0.5732,
+    0.4082,
+    0.3498,
+    0.2907,
+    0.2888,
+    0.2806,
+    0.2318,
+    0.2294,
+    0.206,
+    0.1976,
+    0.1662,
+    0.1647,
+    0.1613,
+    0.1458,
+    0.1081,
+    0.1017,
+    0.0958,
+    0.0877,
+    0.0859,
+    0.0796,
+    0.0789,
+    0.0767,
+    0.0738,
+    0.0686,
+    0.0679,
+    0.0667,
+    0.0665,
+    0.0657,
+    0.0624,
+    0.0556,
+    0.0555,
+    0.0549,
+    0.053,
+    0.0527,
+    0.0522,
+    0.0522,
+    0.0518,
+    0.0504,
+    0.0485,
+    0.0479,
+    0.0475,
+    0.0461,
+    0.0459,
+    0.0431,
+    0.043,
+    0.0429,
+    0.042,
+    0.0369,
+    0.0359,
+    0.0354,
+    0.0337,
+    0.0334,
+    0.0324,
+    0.0298,
+    0.0298,
+    0.0295,
+    0.028,
+    0.0262,
+    0.0258,
+    0.0236,
+    0.0214,
+    0.0209,
+    0.0206,
+    0.02,
+    0.0187,
+    0.018,
+    0.0179,
+    0.0177,
+    0.0174,
+    0.017,
+    0.0168,
+    0.0165,
+    0.0163,
+    0.0162,
+    0.0159,
+    0.0159,
+    0.0157,
+    0.0153,
+    0.0141,
+    0.0134,
+    0.0117,
+    0.0108,
+    0.0101,
+    0.0096,
+    0.0094,
+    0.0092,
+    0.009,
+    0.0089,
+    0.0088,
+    0.0086,
+    0.007,
+    0.0066,
+    0.0064,
+    0.0058,
+    0.0056,
+    0.0055,
+    0.0053,
+    0.0048,
+    0.0043,
+    0.0042,
+    0.003,
+    0.0024
+  ]
+}

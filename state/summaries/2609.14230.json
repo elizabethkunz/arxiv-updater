@@ -1,0 +1,8 @@
+{
+  "summary": "An all-van-der-Waals superconducting qubit is built from a NbSe$_2$-hBN-NbSe$_2$ junction in which the thin hBN layer provides both the Josephson coupling and the shunt capacitance between two NbSe$_2$ islands, giving a merged-element transmon. cQED characterization yields average $T_1 = 55$ μs, Hahn-echo $T_{2E} = 21$ μs and Ramsey $T_{2R} = 1.9$ μs, comparable to conventional Al-AlO$_x$-Al qubits in a much smaller footprint.",
+  "motivation": "van der Waals heterostructures are attractive building blocks for compact, low-stray-coupling quantum devices, but have barely been explored in actual qubit architectures.",
+  "method": "A single hBN layer between two NbSe$_2$ islands serves as tunnel barrier and capacitor dielectric at once, and the device is measured in the time domain with standard circuit-QED techniques.",
+  "result": "$T_{1,\\mathrm{avg}} = 55$ μs and $T_{2E,\\mathrm{avg}} = 21$ μs; the short $T_{2R,\\mathrm{avg}} = 1.9$ μs is attributed to enhanced charge-noise sensitivity at the realized device parameters rather than to a fundamental limit.",
+  "source": "abstract",
+  "generated_by": "Claude, written in-session from the abstract (not via the script's API path)"
+}

@@ -1,0 +1,22 @@
+{% extends "base.html.j2" %}
+{% block title %}Database · {{ site.title }}{% endblock %}
+{% block body %}
+<header class="hero"><div class="wrap">
+  <h1>Database</h1>
+  <p class="lede">The {{ papers|length }} reference papers that new arXiv listings are scored against, ranked by their own match score.</p>
+</div></header>
+<main class="wrap">
+{% for p in papers %}
+<div class="row db">
+  <div class="score">{{ "%.2f"|format(p.score) }}</div>
+  <div>
+    <h3>{{ p.title }}</h3>
+    <p class="sum">{{ p.first }}</p>
+    {% if p.id %}<p class="meta"><a href="https://arxiv.org/abs/{{ p.id }}">arxiv.org/abs/{{ p.id }}</a></p>{% endif %}
+  </div>
+</div>
+{% else %}
+<p class="empty">No trained model yet.</p>
+{% endfor %}
+</main>
+{% endblock %}

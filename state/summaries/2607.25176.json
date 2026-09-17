@@ -1,0 +1,8 @@
+{
+  "summary": "Dissipation from excited-state decay enables pulsed dynamical decoupling (DD) sequences to develop strong sensitivity to static detuning errors, contrary to the usual detuning insensitivity of DD. This dissipation-induced detuning dependence is observed in both a $^{88}$Sr atom interferometer ($T_1 \\approx 21.3$ µs) and a superconducting transmon qubit ($T_1 \\approx 21$ µs) implementing Carr-Purcell sequences, and is repurposed for spectroscopy.",
+  "motivation": "Dynamical decoupling is designed to suppress detuning errors, but little is known about how relaxation reshapes rather than merely degrades coherent control in long DD sequences where most qubits decay at least once during the sequence.",
+  "method": "Analytical and numerical models of relaxation-induced detuning sensitivity in two-level systems under pulsed control were developed and validated experimentally on Sr atoms and a flux-tunable transmon qubit. A new spectroscopic technique, Dissipative Carr-Purcell Spectroscopy (DCPS), was introduced that exploits this effect to suppress MHz-scale frequency noise via a transfer function $H[\\omega_{\\dot{\\phi}}] = \\gamma^2 / 2(\\gamma^2 + 4\\omega_{\\dot{\\phi}}^2)$ with FWHM linewidth $3\\gamma$.",
+  "result": "The visibility $v = 2(T + \\tau_\\pi)/(T + \\tau_\\pi) |\\delta/\\Omega|$ and phase shift $\\Delta\\phi = \\pi \\pm \\pi/2$ (sign depending on detuning sign) show good quantitative agreement with theory to first order in $\\delta$ across both platforms; DCPS achieves comparable Allan deviation to Ramsey spectroscopy while suppressing noise above the relaxation rate $\\gamma = 1/T_1$.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

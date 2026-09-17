@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates Rabi phase quantum state tomography on a single NV center spin using photoelectric readout instead of conventional optical detection, achieving a reconstruction fidelity of $0.995 \\ \\pm 0.0062$ across 21 measurements. The photoelectric approach offers improved spatial resolution, integration with electronics, and compact device scaling while maintaining fidelity comparable to optical readout.",
+  "motivation": "NV centers in diamond are promising room-temperature solid-state qubits, but optical readout suffers from poor collection efficiency and spatial resolution limited by the Abbe diffraction limit, hindering scalability of multi-qubit processors on integrated platforms.",
+  "method": "Single NV electron spins in HPHT diamond (type IIA, <10 ppb nitrogen) were manipulated via microwave pulses and read out using photoelectric detection of magnetic resonance (PDMR), wherein a two-photon process ionizes the NV$^-$ center; the resulting photocurrent was amplified and measured with a picoammeter. Rabi phase quantum state tomography was performed at room temperature using dual-axis Rabi measurements with 500 ms envelope duration to determine polar ($\\theta$) and azimuthal ($\\phi$) angles on the Bloch sphere.",
+  "result": "PC-RPQST achieved $F = 0.995 \\pm 0.0062$ across 10 distinct spin states sampled on the Bloch sphere, matching simultaneous optical RPQST measurements ($F = 0.995 \\pm 0.0081$) and prior results ($F = 0.995 \\pm 0.0048$), with systematic-error-free optimization predicting $F = 0.998 \\pm 0.001$.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

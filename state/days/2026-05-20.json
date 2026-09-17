@@ -1,0 +1,288 @@
+{
+  "date": "2026-05-20",
+  "n_fetched": 116,
+  "papers": [
+    {
+      "id": "2605.19590",
+      "title": "Photolithography-Only Fabrication of Transmons Using Double-Oblique Evaporation",
+      "authors": [
+        "K. Aoyanagi",
+        "S. Abe",
+        "S. Chen",
+        "T. Inada",
+        "C. Kawai",
+        "Y. Mino",
+        "K. Nakamura",
+        "K. Nakazono",
+        "T. Nitta",
+        "K. Watanabe"
+      ],
+      "abstract": "We investigate a photolithography-only fabrication process for transmon Josephson junctions using a modified double-oblique evaporation geometry. Using a bilayer resist process and Al shadow evaporation, we fabricate junction structures and confirm by optical and scanning electron microscopy that the resulting narrowed crossing region reaches a geometrical area on the order of $10^4~\\mathrm{nm}^2$, which lies in the size range relevant to qubit junction fabrication. Room-temperature resistance screening shows that the junction resistance falls within the target range for the present transmon design over a usable process window and exhibits a clear design dependence. We further implement fabricated junctions in transmon devices and evaluate them in a three-dimensional Al cavity at $20 \\, \\mathrm{mK}$, where we observe basic transmon qubit operation with $f_{01}$=4.865 GHz, $T_1 \\sim 9 \\, μ\\mathrm{s}$, and $T_2^* \\sim 0.4 \\, μ\\mathrm{s}$. These results demonstrate the feasibility of realizing functional transmon devices in a photolithography-only process using double-oblique evaporation.",
+      "categories": [
+        "quant-ph",
+        "physics.app-ph"
+      ],
+      "published": "2026-05-19",
+      "score": 0.7822770093696201,
+      "similar_to": [
+        {
+          "title": "Investigation of Parasitic Two-Level Systems in Merged-Element Transmon Qubits",
+          "id": "2509.22593",
+          "similarity": 0.8596352338790894
+        },
+        {
+          "title": "2D transmons with lifetimes and coherence times exceeding 1 millisecond",
+          "id": "2503.14798",
+          "similarity": 0.8439985513687134
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates photolithography-only fabrication of transmon Josephson junctions using double-oblique Al shadow evaporation, achieving a geometrical junction area of ~$10^4$ nm$^2$ well below the ~1 µm optical linewidth. The fabricated junctions are characterized at room temperature and integrated into a 3D cavity qubit at 20 mK, demonstrating functional transmon operation with $f_{01} = 4.865$ GHz, $T_1 \thicksim 9$ µs, and $T_2^* \thicksim 0.4$ µs.",
+        "motivation": "Standard transmon fabrication relies on electron-beam lithography for sub-100-nm Josephson junction definition, which limits throughput and cost; photolithography-only processes could improve scalability and wafer-scale integration.",
+        "method": "A bilayer resist (200 nm PMGI SF5 / 1.8 µm THMR iP1800) patterned with 375 nm direct-write photolithography is combined with Al shadow evaporation at $\\theta = 60°$ tilt and additional in-plane angular offset $\\phi = 15°$ or $25°$, creating a narrowed junction crossing through modified shadowing geometry.",
+        "result": "Room-temperature screening of 27 devices per design shows junction resistance falls into the target range (1–10 kΩ) for 0.5–0.6 µm nominal linewidth with up to 23/27 yield; a single $\\phi = 25°$ device exhibits qubit operation with $T_1 = 9.2 ± 0.4$ µs and $T_2^* \\sim 0.4$ µs in the 3D cavity.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.19854",
+      "title": "Unveiling Energetic Advantage in Superconducting Cat-Qubits Quantum Computation",
+      "authors": [
+        "Pedro Ramos",
+        "Marco Pezzutto",
+        "Yasser Omar"
+      ],
+      "abstract": "Quantum computers are emerging as a promising new technology due to their ability to solve complex problems that exceed the capabilities of classical systems in terms of time. Among various implementations, superconducting qubits have become the leading technology due to their scalability and compatibility with quantum error correction mechanisms. Although time has traditionally been the primary focus, energetic efficiency is becoming an increasingly important consideration, especially with the possibility of a quantum energetic advantage. In this article, the energy consumption of the Semiclassical Quantum Fourier Transform was analyzed on a superconducting quantum computing platform based on cat qubits. Quantum error correction mechanisms were studied and considered in the energy estimations. The results show how the energy consumption scales with the number of qubits and how the most relevant parameters required for qubit stabilization, gate implementation, and error correction codes contribute to the overall energy usage. An optimization method was developed to tune these parameters with the goal of minimizing energy consumption while maintaining qubit fidelities above a given threshold. Additionally, a comparative study with state-of-the-art classical computers indicates a potential quantum energetic advantage for systems with more than 26 qubits, assuming cryogenic systems operating at Carnot efficiency, with this energetic advantage arising before any computational advantage. This behavior persists even when realistic cryogenic systems and control electronics are taken into account.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-19",
+      "score": 0.7815182216139557,
+      "similar_to": [
+        {
+          "title": "Fluctuations of Energy-Relaxation Times in Superconducting Qubits",
+          "id": "1809.01043",
+          "similarity": 0.8516858816146851
+        },
+        {
+          "title": "Superconducting Qubits: Current State of Play",
+          "id": "1905.13641",
+          "similarity": 0.8487277030944824
+        }
+      ],
+      "summary": {
+        "summary": "This paper analyzes the energy consumption of the Semiclassical Quantum Fourier Transform on superconducting cat-qubit platforms, incorporating quantum error correction and comparing with classical FFT implementations. A quantum energetic advantage is found for systems with more than 26 logical qubits at the macroscopic level, arising before computational advantage and persisting with realistic cryogenic overhead.",
+        "motivation": "Understanding whether quantum computing's algorithmic advantages translate to energy efficiency is essential as classical data centers face mounting power demands and quantum systems require substantial cryogenic and control infrastructure.",
+        "method": "The authors computed microscopic, macroscopic (Carnot-efficiency cryogenics), and billed energy costs for cat-qubit gates ($Z(\\theta)$, CNOT, measurement) with two-photon-driven dissipation stabilization ($\\gamma_X \\propto e^{-2\\alpha^2}$, $\\gamma_Z \\propto \\alpha^2$), developed an optimization procedure to minimize energy while maintaining final-qubit fidelity $F \\geq 0.9$, and compared against state-of-the-art classical supercomputers (El Capitan: $1.641 \\times 10^{-11}$ J/FLOP; KAIROS: $1.365 \\times 10^{-11}$ J/FLOP).",
+        "result": "Quantum energy consumption scales polynomially ($n^{3.06}$ macroscopic, $n^{2.81}$ microscopic optimized), while classical FFT scales exponentially, yielding energetic advantage at $n \\geq 26$ qubits; this advantage emerges before temporal advantage ($n \\gtrsim 34$–44 qubits), with stabilization energy dominating gate energy by orders of magnitude.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.18962",
+      "title": "Scalable Single-Step Generation of W States in 2D Superconducting Qubit Lattices",
+      "authors": [
+        "João H. Romeiro",
+        "Federico A. Roy",
+        "Niklas Bruckmoser",
+        "Ivan Tsitsilin",
+        "Niklas J. Glaser",
+        "Christian M. F. Schneider",
+        "Gerhard B. P. Huber",
+        "Saya A. Schöbe",
+        "Johannes Schirk",
+        "Florian Wallner",
+        "Malay Singh",
+        "Julius Feigl",
+        "Leon Koch",
+        "Lasse Södergren",
+        "Max Werninghaus",
+        "Stefan Filipp"
+      ],
+      "abstract": "The reliable generation of multi-qubit entanglement is a prerequisite for large-scale quantum information technologies. In particular, W states are a valuable resource owing to their resilience under local loss or measurement. Nevertheless, preparing these states with sequential two-qubit gates often requires substantial time overhead. By contrast, engineered simultaneous interactions enable fast entanglement generation, even in qubit systems with limited nearest-neighbour connectivity. Here, we demonstrate a set of fast and robust operations for coherently distributing a single excitation across a lattice of arbitrary size, thereby directly generating W states from initial product states. In 2D lattices, the excitation propagates along both directions simultaneously, such that the total entanglement time scales only with the largest dimension. We exploit this property to prepare a six-qubit W state in a 3$\\times$2 superconducting lattice within 99 ns, achieving a tomographic fidelity of 83.9$\\pm$1.0%. We then extend the protocol to create entanglement across chains of up to seven qubits, with the largest W state generated in 264 ns with a fidelity of 79.6$\\pm$1.3%.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-18",
+      "score": 0.7467603537378897,
+      "similar_to": [
+        {
+          "title": "Efficient Z-Gates for Quantum Computing",
+          "id": "1612.00858",
+          "similarity": 0.8349854946136475
+        },
+        {
+          "title": "Scalable Fluxonium Quantum Processors via Tunable-Coupler Architecture",
+          "id": "2604.13363",
+          "similarity": 0.8323121070861816
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates single-step generation of W states in superconducting qubit lattices by engineering time-independent Hamiltonians that coherently distribute a single excitation across arbitrary geometries. In 2D lattices, simultaneous propagation along multiple directions reduces entanglement time to scale with the largest dimension, enabling a six-qubit W state with 83.9±1.0% fidelity in 99 ns on a 3×2 array and a seven-qubit W state with 79.6±1.3% fidelity in 264 ns.",
+        "motivation": "W states are resilient to local loss and measurement, making them valuable for quantum communication and sensing. Sequential two-qubit gate approaches suffer from large circuit depth in systems with limited connectivity, motivating development of parallel single-step protocols using engineered simultaneous interactions.",
+        "method": "Parametric AC flux drives applied to tunable couplers induce effective $XY$-type interactions within the single-excitation manifold. The required Hamiltonian parameters are determined by solving the inverse eigenvalue problem $e^{-i\\hat{H}\\tau/\\hbar}|q_{\\mathrm{centre}}\\rangle = |W_N\\rangle$, with closed-loop optimization of drive frequencies and amplitudes. For 2D square lattices, independent 1D Hamiltonians along each direction are combined to exploit parallel excitation propagation.",
+        "result": "Genuine multipartite entanglement confirmed via witness operators for all instances. Maximum achievable couplings ranged from 1.8 to 3.5 MHz (median 2.2 MHz). Dominant errors were dephasing (8.7% for 3×2 case) and unmitigated state preparation and measurement errors (~7.7% higher excitation population). The 3×2 implementation outperformed any feasible 1D six-qubit operation in the device, demonstrating the speedup from multidimensional parallelism.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2605.19471",
+      "title": "Efficient Fault-Tolerant Ancilla Preparation for Quantum BCH codes via Cyclic Symmetry",
+      "authors": [
+        "Kohei Yamamoto",
+        "Keisuke Fujii"
+      ],
+      "abstract": "One of the major challenges in realizing fault-tolerant quantum computers (FTQCs) is the requirement for a large number of physical qubits. To address this issue, high-rate quantum error correcting codes, which efficiently embed logical qubits into physical qubits, have recently attracted considerable attention. Among such codes, quantum BCH codes, which offer both high rates and large code distances, are promising yet underexplored candidates. However, no fault-tolerant ancilla preparation method specialized for this class had been established. We employ a two-stage approach (non-fault-tolerant preparation + entanglement distillation) for ancilla preparation. We then propose a framework for designing low-overhead distillation method that strategically leverages the cyclic symmetry of quantum BCH codes to determine which non-fault-tolerant circuits can successfully produce a fault-tolerant state. Numerical simulations on several high-performance quantum BCH codes up to 127 qubits demonstrate that our method achieves lower spatial overhead and logical error rates than conventional distillation circuits. Furthermore, we evaluated the logical error rates under a circuit-level noise model, and obtained performance benchmarks in realistic settings. This efficient state preparation technique is expected to contribute to the early realization of practical FTQCs, particularly on highly connected quantum platforms such as neutral atom systems.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-19",
+      "score": 0.5415457446626619,
+      "similar_to": [
+        {
+          "title": "Hardware-efficient quantum error correction via concatenated bosonic qubits",
+          "id": "2409.13025",
+          "similarity": 0.8590559959411621
+        },
+        {
+          "title": "Developments in superconducting erasure qubits for hardware-efficient quantum error correction",
+          "id": "2601.02183",
+          "similarity": 0.8537258505821228
+        }
+      ],
+      "summary": {
+        "summary": "This paper presents an efficient fault-tolerant ancilla preparation method for quantum BCH codes by leveraging their cyclic symmetry to optimize entanglement-distillation protocols. The approach reduces required ancilla qubits by more than half compared to standard distillation while achieving lower logical error rates, with threshold analysis demonstrating code rates 2–4× higher than the Steane code at comparable distances.",
+        "motivation": "Quantum BCH codes offer high encoding rates and large code distances at moderate block sizes, but lacked practical fault-tolerant state preparation schemes and realistic performance benchmarks needed for implementation on highly-connected platforms like neutral atom systems.",
+        "method": "A two-stage approach combining non-fault-tolerant preparation with entanglement distillation, where cyclic shifts $R$ and Frobenius shifts $F$ from the automorphism group $C_n \\rtimes F_m$ permute error patterns among ancilla blocks to eliminate malignant fault patterns and reduce ancilla overhead from $(t+1)$-to-$1$ to $t$-to-$1$ or better protocols.",
+        "result": "For codes $\\llbracket 31,11,5 \\rrbracket$, $\\llbracket 63,27,7 \\rrbracket$, and $\\llbracket 127,71,9 \\rrbracket$, ancilla requirements reduced to $4/9$, $4/16$, and $6/25$ of standard levels; circuit-level simulations confirm strict fault tolerance; scaling thresholds for codes up to $n=255$ show $\\llbracket 255,159,13 \\rrbracket$ maintains Steane-comparable threshold $\\approx 10^{-3}$ while achieving rate $0.624$ versus $0.086$ for surface codes.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.7823,
+    0.7815,
+    0.7468,
+    0.5415,
+    0.3484,
+    0.3293,
+    0.3208,
+    0.3067,
+    0.2977,
+    0.2635,
+    0.2558,
+    0.2331,
+    0.2172,
+    0.202,
+    0.1829,
+    0.1828,
+    0.1748,
+    0.1733,
+    0.1702,
+    0.1578,
+    0.1513,
+    0.1445,
+    0.1374,
+    0.1339,
+    0.1301,
+    0.1296,
+    0.1266,
+    0.1198,
+    0.1157,
+    0.1121,
+    0.112,
+    0.1105,
+    0.1089,
+    0.1051,
+    0.1051,
+    0.0981,
+    0.0917,
+    0.0889,
+    0.0824,
+    0.0816,
+    0.0767,
+    0.0693,
+    0.0689,
+    0.0658,
+    0.0635,
+    0.0585,
+    0.058,
+    0.0574,
+    0.0511,
+    0.0495,
+    0.0462,
+    0.0451,
+    0.0434,
+    0.0428,
+    0.0407,
+    0.0406,
+    0.0363,
+    0.0344,
+    0.0343,
+    0.0342,
+    0.0338,
+    0.0335,
+    0.032,
+    0.0315,
+    0.0309,
+    0.0308,
+    0.0308,
+    0.0307,
+    0.0301,
+    0.029,
+    0.0268,
+    0.0262,
+    0.026,
+    0.0229,
+    0.021,
+    0.0204,
+    0.0186,
+    0.0172,
+    0.0167,
+    0.0167,
+    0.0165,
+    0.0159,
+    0.0157,
+    0.0136,
+    0.0132,
+    0.0129,
+    0.0123,
+    0.0117,
+    0.0102,
+    0.0101,
+    0.0099,
+    0.0095,
+    0.0094,
+    0.0093,
+    0.0087,
+    0.0082,
+    0.0076,
+    0.0074,
+    0.0069,
+    0.0068,
+    0.0063,
+    0.0062,
+    0.0058,
+    0.0057,
+    0.0053,
+    0.0052,
+    0.0049,
+    0.0043,
+    0.0042,
+    0.0037,
+    0.0033,
+    0.0031,
+    0.0031,
+    0.0021,
+    0.0011,
+    0.0006
+  ]
+}

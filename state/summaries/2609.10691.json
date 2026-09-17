@@ -1,0 +1,8 @@
+{
+  "summary": "A microscopic scheme describes the ac Josephson effect in superconducting junctions as dissipative quantum dynamics of the subgap Andreev bound states. It is aimed at highly transparent junctions at subgap bias voltages, where Landau-Zener tunnelling between Andreev levels combines with the loss of quasiparticles into the continuum, and it yields an extra dissipative, phase-dependent term in the current-phase relation.",
+  "motivation": "In high-transparency junctions at low voltage the Andreev levels pass close to the gap edge, where they become unstable against quasiparticle escape. The adiabatic picture misses this, and a tractable dynamical description was lacking.",
+  "method": "An effective Hamiltonian for the Andreev levels is derived and then extended beyond the adiabatic approximation to include transitions between the Andreev state and the continuum near the gap edge. The non-equilibrium current-phase relation is evaluated at low bias for arbitrary transmission.",
+  "result": "Besides the known contributions, the treatment of quasiparticle dynamics near the gap edge gives an additional sub-Ohmic, phase-dependent dissipative contribution to the current-phase relation. It remains appreciable even deep in the subgap regime; the work is analytical and makes no comparison with experiment.",
+  "source": "full text",
+  "generated_by": "Claude, written in-session from the full text (not via the script's API path)"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "This work compares optical-to-microwave conversion and conventional coaxial control for a transmon qubit, finding no statistically significant difference in coherence over 20 hour measurement runs. Thermal simulations for scaled systems show optical control can reduce heat loads at cryogenic stages compared to all-coaxial wiring.",
+  "motivation": "Scaling quantum processors to thousands of qubits requires efficient control interconnects; optical fiber delivery offers reduced passive heat load and bandwidth advantages over dense coaxial arrays, but the noise performance of optical-microwave conversion at cryogenic temperatures needed direct comparison.",
+  "method": "A transmon qubit ($\\omega_q/2\\pi = 4.5$ GHz, $T_1 \\approx 19.5$ ms Purcell decay time) was controlled using either room-temperature modulated 1510 nm laser light converted to microwave via photodiodes at the 1 K stage or conventional attenuated coaxial lines; repeated $T_1$ and Ramsey $T_2^*$ measurements were interleaved over 20 hour windows in a Bluefors LD400 dilution refrigerator, with thermal loads and flange temperatures simulated for a hypothetical 1008-line XLD1000s system.",
+  "result": "Mean pure dephasing times $T_\\phi = 65$ µs (optical) and $64$ µs (microwave) showed no measurable difference; laser power stability was superior to microwave sources; thermal simulations predicted Still flange loads of 13.9 mW (optical + normal coax) versus 2.9 mW (all-coax), but with lower CP and MXC temperatures achieved when using superconducting coax downstream of photodiodes.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

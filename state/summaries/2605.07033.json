@@ -1,0 +1,8 @@
+{
+  "summary": "An exact analytic solution for coherence evolution is derived for a two-qubit superconducting system with $ZZ$-coupling and transverse Josephson tunneling, yielding closed-form time-dependent density matrices and an explicit $C_{\nable_1}$ norm expression for all four Bell state initial conditions. Two Bell states are dynamically invariant with constant coherence, while the other two display parameter-dependent oscillations governed by two distinct frequency scales mapping directly to circuit parameters.",
+  "motivation": "Analytic solutions for coherence dynamics in multi-qubit superconducting systems are scarce, limiting understanding of quantum state evolution and parameter optimization for coherence control in circuit QED platforms.",
+  "method": "The full time evolution operator was derived exactly without approximations for a two-qubit system with $ZZ$-coupling and transverse Josephson tunneling, with all four Bell states propagated to obtain explicit analytic expressions.",
+  "result": "Two Bell states exhibit dynamically protected constant coherence while the other two show controlled oscillations with amplitudes and periodicities directly tunable through the $ZZ$-coupling and tunneling parameters, providing analytically tractable tools for parameter optimization.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

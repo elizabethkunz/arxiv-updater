@@ -1,0 +1,8 @@
+{
+  "summary": "Tungsten silicide nanowires embedded in an RF-SQUID exhibit nonlinear behavior consistent with a Josephson junction having a sawtooth-like current-phase relation or a quantum phase slip element. Time-domain measurements reveal relaxation times exceeding one hour for metastable persistent-current states trapped in potential minima.",
+  "motivation": "Nonlinearity is essential for implementing qubits and quantum gates in superconducting circuits, but conventional aluminum-oxide tunnel junctions suffer from two-level fluctuators and unpredictable parameters. Superconducting weak links offer an alternative route to nonlinearity without introducing dissimilar barrier materials.",
+  "method": "A WSi nanowire (~40 × 40 nm cross-section, 3 nm thick, $L_K \\approx 300$ pH/□) was fabricated as a constriction in an aluminum loop within a 3D RF-SQUID (shunt capacitance $C_B = 646$ fF) coupled to a cavity. Microwave spectroscopy measured flux-dependent resonance frequencies, modeled using either a sawtooth Josephson junction ($\\chi = 1 - 5 \\times 10^{-5}$, $E_{\\mathrm{WSi0}}/h = 973$ GHz) or a quantum phase slip element ($E_Q/h = 60$ GHz). Single-shot readout tracked metastable state decay as a function of barrier height.",
+  "result": "The resonance curve shows a characteristic downturn and hysteresis near critical flux $\\Phi_{\\mathrm{ext}}^c \\approx 1.56\\,\\Phi_0$, with relaxation times ranging from tens of seconds to over one hour depending on barrier height, demonstrating strong localization due to the large junction energy ($E_{\\mathrm{WSi0}}/h \\approx 1$ THz) and small charging energy ($E_{C\\sigma}/h \\approx 7$ MHz).",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

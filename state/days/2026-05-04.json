@@ -1,0 +1,113 @@
+{
+  "date": "2026-05-04",
+  "n_fetched": 69,
+  "papers": [
+    {
+      "id": "2605.00552",
+      "title": "Suppression of Universal Errors in DFS-Encoded Superconducting Geometric Logical \\emph{T} Gate",
+      "authors": [
+        "Cheng-Yun Ding",
+        "Li-Hua Zhang",
+        "Jian Zhou"
+      ],
+      "abstract": "High-fidelity logical \\emph{T}-gate realization constitutes a core prerequisite for large-scale fault-tolerant quantum computing. However, conventional magic state distillation requires massive physical qubit overhead across successive distillation rounds, alongside sophisticated measurement and feedback control, thereby inducing considerable spatial and temporal resource consumption. Herein, we propose a controlled superconducting geometric logical \\emph{T} gate scheme that achieves high-order suppression of universal errors, by integrating decoherence-free subspace encoding with multi-loop optimized composite geometric pulse engineering. Guided by tailored trajectory design, we systematically establish unified gate construction frameworks for conventional geometric, composite geometric, and optimized composite geometric protocols. By flexibly controling additional parametric degrees of freedom, the proposed scheme achieves substantially enhanced robustness against diverse noise sources. Numerical simulations reveal that, within tunable superconducting quantum circuits, our geometric logical \\emph{T} gate outperforms both conventional composite geometric and dynamical gates in suppressing Rabi frequency, detuning, and residual inter-qubit crosstalk errors that can all be suppressed to the fourth order, while additionally providing inherent suppression of collective dephasing errors. The present strategy alleviates intrinsic limitations of mainstream approaches and opens a promising avenue toward robust high-fidelity logical \\emph{T} gate construction.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-01",
+      "score": 0.639743984888409,
+      "similar_to": [
+        {
+          "title": "A superconducting surface-code processor with lattice-surgery logical operations",
+          "id": "2606.06598",
+          "similarity": 0.8676167130470276
+        },
+        {
+          "title": "Erasure qubits: Overcoming the $T_1$ limit in superconducting circuits",
+          "id": "2208.05461",
+          "similarity": 0.8580504655838013
+        }
+      ],
+      "summary": {
+        "summary": "This work proposes a decoherence-free subspace (DFS) encoded superconducting geometric logical $T$ gate using optimized composite pulse engineering to achieve fourth-order suppression of Rabi frequency, detuning, and residual inter-qubit crosstalk errors while inherently suppressing collective dephasing. Numerical simulations on tunable transmon circuits with parametric coupling show the two-loop optimized composite geometric $T$ gate achieves $>99.9\\%$ fidelity over a wide error range, outperforming conventional composite geometric and dynamical $T$ gates.",
+        "motivation": "Magic state distillation for high-fidelity $T$ gates requires prohibitive physical qubit overhead and complex measurement-feedback control; direct high-fidelity logical $T$ gate construction at the physical layer would reduce resource consumption and simplify fault-tolerant quantum computing architectures.",
+        "method": "Two target transmons in a 2D superconducting lattice are coupled via ac-driven tunable coupling ($g_{12}^{\\prime} = J_1(\\beta)g_{12}$), with information encoded in the single-excitation DFS ($|10\\rangle_{12} = |0\\rangle_L$, $|01\\rangle_{12} = |1\\rangle_L$). The scheme integrates multi-loop optimized composite geometric trajectories on the Bloch sphere with unconstrained inter-loop angular separations ($p_1 = 1.0625\\pi$ for two loops, $p_1 \\approx 1.38\\pi$ for three loops) that simultaneously suppress all three error channels along a single path.",
+        "result": "With optimal modulation parameters ($\\beta = 1.85$, $\\Delta = 2\\pi \\times 462$ MHz) and energy relaxation $\\kappa_- = 2\\pi \\times 2$ kHz, the logical OCGT gate reaches $99.79\\%$ fidelity with leakage suppressed below $0.01\\%$; it maintains $>99.9\\%$ fidelity at $\\kappa_- < 2\\pi \\times 1$ kHz over error amplitudes $\\pm 2\\pi \\times 2$ MHz in Rabi, detuning, and crosstalk channels, significantly outperforming conventional geometric and dynamical $T$ gates.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.6397,
+    0.4034,
+    0.3923,
+    0.3779,
+    0.361,
+    0.3467,
+    0.3404,
+    0.2731,
+    0.1804,
+    0.165,
+    0.1631,
+    0.1594,
+    0.1369,
+    0.1359,
+    0.1198,
+    0.1197,
+    0.0967,
+    0.0962,
+    0.0954,
+    0.0828,
+    0.08,
+    0.0717,
+    0.0671,
+    0.0662,
+    0.0648,
+    0.0567,
+    0.0542,
+    0.0529,
+    0.0518,
+    0.0508,
+    0.0428,
+    0.0408,
+    0.0394,
+    0.0375,
+    0.0363,
+    0.0331,
+    0.0311,
+    0.031,
+    0.0307,
+    0.0301,
+    0.0279,
+    0.0246,
+    0.0242,
+    0.0233,
+    0.0225,
+    0.0225,
+    0.0215,
+    0.0211,
+    0.0207,
+    0.0181,
+    0.0177,
+    0.0166,
+    0.016,
+    0.0159,
+    0.0155,
+    0.0145,
+    0.0133,
+    0.0132,
+    0.0122,
+    0.0122,
+    0.0119,
+    0.0112,
+    0.0097,
+    0.0093,
+    0.0062,
+    0.0057,
+    0.0049,
+    0.004,
+    0.0034
+  ]
+}

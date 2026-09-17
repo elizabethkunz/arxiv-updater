@@ -1,0 +1,8 @@
+{
+  "summary": "NAQsim is an open-source full-stack simulator for neutral-atom fault-tolerant architectures built on transversal gates. As a first use it identifies surface-code patch rotations as a hidden bottleneck and derives a near-rotation-free architecture (D3-ROT) that runs 2.27x faster with minimal footprint overhead.",
+  "motivation": "Neutral-atom operations are orders of magnitude slower than on superconducting qubits, so architects need reliable tools to find fast FTQC designs.",
+  "method": "A simulation framework spanning software, classical hardware and the quantum device is used for full-stack co-optimization of transversal surface-code architectures.",
+  "result": "Eliminating most patch rotations gives a 2.27x speedup on practical FTQC benchmark workloads.",
+  "source": "abstract",
+  "generated_by": "Claude, written in-session for the sample day (not via the script's API path)"
+}

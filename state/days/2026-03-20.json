@@ -1,0 +1,330 @@
+{
+  "date": "2026-03-20",
+  "n_fetched": 104,
+  "papers": [
+    {
+      "id": "2603.18780",
+      "title": "Comparing optical-microwave conversion and all-microwave control schemes for a transmon qubit",
+      "authors": [
+        "Volodymyr Monarkha",
+        "Massimo Borrelli",
+        "Reza Hajitashakkori Kenari",
+        "Mohammad Kobba",
+        "Eugenio Cataldo",
+        "Beer de Zoeten",
+        "Mahnaz Zarrinfar",
+        "Kamal Pandey",
+        "Abhinand Pusuluri",
+        "Filippo D. Michelacci",
+        "Eliot Jouan",
+        "Bennett Sprague",
+        "Simon Groeblacher",
+        "Thierry C. van Thiel",
+        "Robert Stockill",
+        "Russell E. Lake"
+      ],
+      "abstract": "We report a comparative study on transmon qubit control using (i) conventional attenuated coaxial microwave line and (ii) an optical control system using modulated laser light delivered over telecommunications optical fiber to a photodiode located at the 1K stage of a dilution cryostat. During each experiment, we performed repeated measurements of the energy relaxation and coherence times of a transmon qubit using one of the control signal delivery methods. Each measurement run spanned 20 hours of measurement time and from these datasets we observe no measurable effect on coherence of the qubit compared to random coherence fluctuations. Our results open up the possibility of large scale integration of the optical qubit control system.",
+      "categories": [
+        "quant-ph",
+        "physics.app-ph"
+      ],
+      "published": "2026-03-19",
+      "score": 0.9009345580822795,
+      "similar_to": [
+        {
+          "title": "High fidelity control of superconducting qubits with optical transmitted signal",
+          "id": "2608.19602",
+          "similarity": 0.8914287090301514
+        },
+        {
+          "title": "Controlling the spontaneous emission of a superconducting transmon qubit",
+          "id": "0803.4490",
+          "similarity": 0.8722125291824341
+        }
+      ],
+      "summary": {
+        "summary": "This work compares optical-to-microwave conversion and conventional coaxial control for a transmon qubit, finding no statistically significant difference in coherence over 20 hour measurement runs. Thermal simulations for scaled systems show optical control can reduce heat loads at cryogenic stages compared to all-coaxial wiring.",
+        "motivation": "Scaling quantum processors to thousands of qubits requires efficient control interconnects; optical fiber delivery offers reduced passive heat load and bandwidth advantages over dense coaxial arrays, but the noise performance of optical-microwave conversion at cryogenic temperatures needed direct comparison.",
+        "method": "A transmon qubit ($\\omega_q/2\\pi = 4.5$ GHz, $T_1 \\approx 19.5$ ms Purcell decay time) was controlled using either room-temperature modulated 1510 nm laser light converted to microwave via photodiodes at the 1 K stage or conventional attenuated coaxial lines; repeated $T_1$ and Ramsey $T_2^*$ measurements were interleaved over 20 hour windows in a Bluefors LD400 dilution refrigerator, with thermal loads and flange temperatures simulated for a hypothetical 1008-line XLD1000s system.",
+        "result": "Mean pure dephasing times $T_\\phi = 65$ µs (optical) and $64$ µs (microwave) showed no measurable difference; laser power stability was superior to microwave sources; thermal simulations predicted Still flange loads of 13.9 mW (optical + normal coax) versus 2.9 mW (all-coax), but with lower CP and MXC temperatures achieved when using superconducting coax downstream of photodiodes.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.18977",
+      "title": "XCOM: Full Mesh Network Synchronization and Low-Latency Communication for QICK (Quantum Instrumentation Control Kit)",
+      "authors": [
+        "Diego Martin",
+        "Luis H. Arnaldi",
+        "Kenneth Treptow",
+        "Neal Wilcer",
+        "Sho Uemura",
+        "Sara Sussman",
+        "David I Schuster",
+        "Gustavo Cancelo"
+      ],
+      "abstract": "Quantum computing experiments and testbeds with large qubit counts have until recently been a privilege afforded only to large companies or quantum technologies where scaling to hundreds or thousands of qubits does not require a substantial increase in quantum control hardware (neutral atoms, trapped ions, or spin defects). Superconducting and spin qubit testbeds critically depend on scaling their control systems beyond what a single electronics board can provide. Multi-board control systems combining RF, fast DC control, bias, and readout require precise synchronization and communication across many hardware and firmware components. To address this, we present XCOM, a network that synchronizes QICK boards and the absolute clocks governing quantum program execution to within 100 ps, free of drift and loss of lock. XCOM also provides deterministic, all-to-all simultaneous data communication with latency below 185 ns. Like QICK itself, XCOM is compatible with a broad range of qubit technologies and is designed to scale to large systems.",
+      "categories": [
+        "quant-ph",
+        "physics.ins-det"
+      ],
+      "published": "2026-03-19",
+      "score": 0.8045737952242604,
+      "similar_to": [
+        {
+          "title": "Quantum Computer Controlled by Superconducting Digital Electronics at Millikelvin Temperature",
+          "id": "2503.09879",
+          "similarity": 0.7769252061843872
+        },
+        {
+          "title": "Resolving catastrophic error bursts from cosmic rays in large arrays of superconducting qubits",
+          "id": "2104.05219",
+          "similarity": 0.7648844718933105
+        }
+      ],
+      "summary": {
+        "summary": "XCOM is a full-mesh network architecture for synchronizing multiple QICK boards and their absolute time counters to within 100 ps while providing deterministic all-to-all data communication with latency below 186 ns at 100 MHz clock speed (reducible to 62 ns at 300 MHz). The system combines PLL nested zero-delay mode locking, multi-tile DAC/ADC synchronization, and LVDS-based point-to-point communication via a central fanout hub to enable scalable multi-board control for superconducting and spin qubit systems.",
+        "motivation": "Superconducting and spin qubit testbeds require expansion beyond single FPGA boards to handle the high I/O count and complex control signals, necessitating precise synchronization and low-latency communication across multiple hardware components without drift or loss of lock.",
+        "method": "XCOM implements a full-mesh topology with one dedicated $200$ Mb/s LVDS data/clock pair per board (32-bit words at $\\sim$100 MHz) transmitted to a central fanout hub using TI DS90LV804 drivers and LMK1D2108 buffers, combined with firmware protocols for network ID auto-assignment, clock reset/start commands, and deterministic message exchange managed by the tProc at the fabric clock (430 MHz).",
+        "result": "Three RF waveforms from different boards show 20 ps timing skew (demonstrating sub-100 ps cross-board synchronization), 186 ns latency per 32-bit word at current clock speed with drift-free lock stability over multiple days, and the prototype currently supports up to five boards with firmware already supporting 15 boards.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.18666",
+      "title": "On-chip Parametric Amplification in a Double Quantum Dots Circuit",
+      "authors": [
+        "Yong-Qiang Xu",
+        "Rui Wu",
+        "Si-Si Gu",
+        "Shun-Li Jiang",
+        "Shu-Kun Ye",
+        "Bao-Chuan Wang",
+        "Hai-Ou Li",
+        "Guang-Can Guo",
+        "Chang-Ling Zou",
+        "Gang Cao",
+        "Guo-Ping Guo"
+      ],
+      "abstract": "In microwave-based quantum circuits, including double quantum dots (DQDs), superconducting qubits and spin qubits, parametric amplifiers are indispensable in achieving high-fidelity qubit readouts. Despite its importance, the application of parametric amplifiers is hampered by several challenges, such as high insertion losses, constrained tunability, and a pronounced vulnerability to magnetic fields. Here, we demonstrate an on-site single-atom parametric amplifier (SAPA) within a reconfigurable quantum circuit, which consists of a superconducting microwave cavity and two GaAs gate-defined DQDs. Leveraging the inherent nonlinearity of the DQD, a parametric gain exceeding 11 dB is achieved. This gain contributes to enhance the qubit readout, as evidenced by exceeding two times improvement in the signal-to-noise ratio (SNR) when employing the DQD-based amplifier for reading out another DQD. Our work not only presents a versatile experimental platform with enhanced readout capabilities in quantum computing, but also introduces alternative choices of parametric amplifiers for a variety of microwave-based quantum circuits.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-19",
+      "score": 0.722017847346686,
+      "similar_to": [
+        {
+          "title": "High-gain and large-bandwidth Josephson parametric amplifier influenced by Fabry-Perot interference",
+          "id": "2604.13881",
+          "similarity": 0.8551193475723267
+        },
+        {
+          "title": "A near-quantum-limited Josephson traveling-wave parametric amplifier",
+          "id": null,
+          "similarity": 0.8517926335334778
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates a single-atom parametric amplifier (SAPA) based on a GaAs double quantum dot (DQD) integrated with a superconducting NbTiN microwave cavity ($\\omega_r / 2\\pi = 5.198$ GHz, $\\kappa / 2\\pi = 14$ MHz), achieving a parametric gain exceeding 11 dB via four-wave mixing. When one DQD operates as amplifier for readout of a second DQD, the signal-to-noise ratio improves by approximately twofold (SNR enhanced from 5.5 to 10.9).",
+        "motivation": "Conventional parametric amplifiers (JPAs, TWPAs) suffer from insertion losses, limited tunability, and magnetic field sensitivity, motivating integration of low-noise amplification directly on-chip with quantum devices.",
+        "method": "Two GaAs gate-defined DQDs are coupled to a high-impedance cavity ($Z_r = 2$ k$\\Omega$) with coupling strength $g_c^{(1)} / 2\\pi \\approx 60$ MHz and cooperativity $C \\approx 10$. Parametric amplification is activated by applying a pump tone ($P_{d,1} = -68.3$ dBm) to one DQD near resonance, exploiting the DQD nonlinearity for signal amplification at a probe frequency detuned by $\\Delta\\omega = 2\\pi \\times 5$ kHz.",
+        "result": "Effective gain $G_e = 4.22$ dB and parametric gain $G_p = 11.28$ dB are achieved; readout of a second DQD shows signal extinction $\\delta A$ increasing from 0.3 to 1.0 and SNR improving from 5.5 to 10.9 (approximately 2$\\times$ enhancement). The added noise corresponds to $T_{\\mathrm{eff}} \\approx 0.3$ K ($\\approx 1.5$ photon quanta).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.18231",
+      "title": "Iterative Decoding of Stabilizer Codes under Radiation-Induced Correlated Noise",
+      "authors": [
+        "Anuj K. Nayak",
+        "Paul G. Baity",
+        "Peter J. Love",
+        "Nicholas Jeon",
+        "Byung-Jun Yoon",
+        "Adolfy Hoisie",
+        "Lav R. Varshney"
+      ],
+      "abstract": "Fault-tolerant quantum computation demands extremely low logical error rates, yet superconducting qubit arrays are subject to radiation-induced correlated noise arising from cosmic-ray muon-generated quasiparticles. The quasiparticle density is unknown and time-varying, resulting in a mismatch between the true noise statistics and the priors assumed by standard decoders, and consequently, degraded logical performance. We formalize joint noise sensing and decoding using syndrome measurements by modeling the QP density as a latent variable, which governs correlation in physical errors and syndrome measurements. Starting from a variational expectation--maximization approach, we derive an iterative algorithm that alternates between QP density estimation and syndrome-based decoding under the updated noise model. Simulations of surface-code and bivariate bicycle quantum memory under radiation-induced correlated noise demonstrate a measurable reduction in logical error probability relative to baseline decoding with a uniform prior. Beyond improved decoding performance, the inferred QP density provides diagnostic information relevant to device characterization, shielding, and chip design. These results indicate that integrating physical noise estimation into decoding can mitigate correlated noise effects and relax effective error-rate requirements for fault-tolerant quantum computation.",
+      "categories": [
+        "quant-ph",
+        "cs.IT",
+        "eess.SP"
+      ],
+      "published": "2026-03-18",
+      "score": 0.6642694964053982,
+      "similar_to": [
+        {
+          "title": "Correlated Charge Noise and Relaxation Errors in Superconducting Qubits",
+          "id": "2012.06029",
+          "similarity": 0.8761530518531799
+        },
+        {
+          "title": "Correlated Phase Error Bursts in a Gap-Engineered Superconducting Qubit Array",
+          "id": null,
+          "similarity": 0.8584701418876648
+        }
+      ],
+      "summary": {
+        "summary": "This paper develops iterative decoding algorithms for stabilizer codes under radiation-induced correlated noise by jointly inferring quasiparticle (QP) density and decoding from syndrome measurements. Two algorithms are presented: a gradient-based sliding-window approach (Algorithm 1) and an extended Kalman filter variant (Algorithm 2), both using belief propagation with ordered statistics decoding.",
+        "motivation": "Superconducting qubit arrays experience spatiotemporally correlated errors from cosmic-ray muon strikes that generate quasiparticles, but standard decoders assume fixed uniform noise priors, resulting in significant logical error rate degradation—approximately 2.7× worse than a genie decoder with perfect QP knowledge on a distance-7 surface code.",
+        "method": "The approach formalizes joint noise sensing and decoding using a variational expectation–maximization framework that models QP density evolution via linearized diffusion equation $d x/d t = -sx - r x^2 + g(t)$, maps QP density to Pauli error rates via $T_1(x)$ and $T_2(x)$ formulas, and alternates between belief propagation decoding and QP field estimation using either gradient ascent or EKF pseudo-measurements derived from BP posteriors.",
+        "result": "On a distance-7 rotated surface code with 97 data qubits, Algorithm 1 (offline) achieves logical error probability $p_L = 0.12$ versus $p_L = 0.28$ for uniform prior (closing 78% of the gap to genie $p_L = 0.09$); on the $[[72, 12, 6]]$ BB-qLDPC code, it reaches $p_L = 0.18$ versus $p_L = 0.76$ for uniform prior, with QP density estimation mean squared error in log-space of $\\approx 0.70$ for surface code and $\\approx 1.07$ for BB-qLDPC.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.18457",
+      "title": "Simulating Quantum Error Correction beyond Pauli Stochastic Errors",
+      "authors": [
+        "Jordan Hines",
+        "Corey Ostrove",
+        "Kenneth Rudinger",
+        "Stefan Seritan",
+        "Kevin Young",
+        "Robin Blume-Kohout",
+        "Timothy Proctor"
+      ],
+      "abstract": "Quantum error correction (QEC), the lynchpin of fault-tolerant quantum computing (FTQC), is designed and validated against well-behaved Pauli stochastic error models. But in real-world deployment, QEC protocols encounter a vast array of other errors -- coherent and non-Pauli errors -- whose impacts on quantum circuits are vastly different than those of stochastic Pauli errors. The impacts of these errors on QEC and FTQC protocols have been largely unpredictable to date due to exponential classical simulation cost. Here, we show how to accurately and efficiently model the effects of coherent and non-Pauli errors on FTQC, and we study the effects of such errors on syndrome extraction for surface and bivariate bicycle codes, and on magic state cultivation. Our analysis suggests that coherent error can shift fault-tolerance thresholds, increase the space-time cost of magic state cultivation, and can increase logical error rates by an order of magnitude compared to equivalent stochastic errors. These analyses are enabled by a new technique for mapping any Markovian circuit-level error model with sufficiently small error rates onto a detector error model (DEM) for an FTQC circuit. The resulting DEM enables Monte Carlo estimation of logical error rates and noise-adapted decoding, and its parameters can be analytically related to the underlying physical noise parameters to enable approximate strong simulation.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-19",
+      "score": 0.5700211473427386,
+      "similar_to": [
+        {
+          "title": "Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code",
+          "id": "2112.03708",
+          "similarity": 0.8788803219795227
+        },
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8785894513130188
+        }
+      ],
+      "summary": {
+        "summary": "This paper presents a computationally efficient method for constructing detector error models (DEMs) that accurately capture the effects of general Markovian circuit-level errors—including coherent and non-Pauli errors—on fault-tolerant quantum error correction, enabled by propagating errors through Clifford circuits using the elementary error generator (EEG) basis. The analysis shows that coherent errors can shift code thresholds, increase space-time costs for magic state cultivation, and boost logical error rates by up to an order of magnitude compared to equivalent stochastic Pauli errors, with validation on surface codes, bivariate bicycle codes, and $S$-state cultivation.",
+        "motivation": "Quantum error correction protocols are traditionally designed and validated against Pauli stochastic error models, but real hardware exhibits coherent and non-Pauli errors from miscalibrated gates whose impacts on fault-tolerant quantum computing have been largely unpredictable due to exponential classical simulation cost.",
+        "method": "The authors map arbitrary small Markovian circuit-level error models to DEMs by (1) representing errors as $\\mathcal{E} = \\exp(G)$ in the sparse EEG basis, (2) efficiently propagating EEGs through Clifford circuits, (3) combining errors using the Baker–Campbell–Hausdorff formula, and (4) decomposing the circuit error generator by DEM event class using the Zassenhaus expansion, enabling accurate DEM construction with Monte Carlo estimation of logical error rates.",
+        "result": "DEMs generated by this method predict syndrome and logical observable distributions with total variation distance $\\sim 100\\times$ smaller than Pauli-twirled models; surface code thresholds shift by $\\sim 0.006$ CNOT infidelity depending on coherent error fraction; magic state cultivation logical error rates increase by $\\approx 10\\times$ for $35\\%$ coherent $Z$-type error contributions, and certain coherent two-qubit errors are $15$–$28\\%$ more damaging than stochastic equivalents.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9009,
+    0.8046,
+    0.722,
+    0.6643,
+    0.57,
+    0.3682,
+    0.3459,
+    0.294,
+    0.2587,
+    0.2557,
+    0.2446,
+    0.2384,
+    0.2358,
+    0.2319,
+    0.2189,
+    0.1784,
+    0.1714,
+    0.1686,
+    0.1581,
+    0.1524,
+    0.1502,
+    0.1492,
+    0.1479,
+    0.1454,
+    0.1318,
+    0.1239,
+    0.1183,
+    0.1181,
+    0.1124,
+    0.1066,
+    0.1049,
+    0.103,
+    0.097,
+    0.0962,
+    0.0808,
+    0.0782,
+    0.0754,
+    0.0747,
+    0.072,
+    0.0695,
+    0.0639,
+    0.0551,
+    0.0518,
+    0.0503,
+    0.0488,
+    0.0471,
+    0.0444,
+    0.0426,
+    0.0423,
+    0.0422,
+    0.0419,
+    0.0394,
+    0.0383,
+    0.038,
+    0.0371,
+    0.0348,
+    0.0341,
+    0.0341,
+    0.032,
+    0.0319,
+    0.0303,
+    0.03,
+    0.0294,
+    0.0273,
+    0.0268,
+    0.0242,
+    0.0238,
+    0.0237,
+    0.0224,
+    0.0217,
+    0.0207,
+    0.0193,
+    0.0189,
+    0.0186,
+    0.0178,
+    0.0167,
+    0.0166,
+    0.0164,
+    0.0162,
+    0.0161,
+    0.0153,
+    0.0149,
+    0.0135,
+    0.0133,
+    0.0132,
+    0.0126,
+    0.0123,
+    0.0117,
+    0.0113,
+    0.0108,
+    0.0105,
+    0.0105,
+    0.0105,
+    0.0104,
+    0.0096,
+    0.0066,
+    0.0053,
+    0.0051,
+    0.0049,
+    0.0042,
+    0.0038,
+    0.0037,
+    0.0037,
+    0.0024
+  ]
+}

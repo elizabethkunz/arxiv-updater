@@ -1,0 +1,8 @@
+{
+  "summary": "A tantalum-based transmon qubit exhibits an exceptionally stable charge offset $n_g$ pinned at zero for nearly three months across two thermal cycles with $T_1 = 21$–$24$ µs, a phenomenon attributed to an incomplete wet-etch of tantalum on sapphire creating a highly inductive ($L > 20$ µH) or resistive ($R \\gg 0.2$ GΩ) path in parallel with the Josephson junction. The charge offset stability was fragile and disappeared in later cooldowns, but deliberately engineering such a parallel layer could eliminate charge-offset drift in superconducting circuits.",
+  "motivation": "Charge-offset drift $n_g$ in transmons, driven by environmental fluctuations, limits readout speed and constrains device design; all prior measurements show $n_g$ drifting on minute-to-hour timescales.",
+  "method": "Continuous Ramsey spectroscopy on the $3$–$4$ transition ($f_{34}$, charge dispersion $\\Delta f_{34} = 2.0$ MHz) tracked $n_g$ fluctuations via splitting between even and odd quasiparticle parity states; surface analysis by EDX and XPS revealed tantalum residue in nominally etched regions.",
+  "result": "During runs 17–18, $n_g$ remained pinned at $0 \\pm 0.06$ with linewidth-limited fluctuation bound of 0.08 MHz; after thermal cycling and sample-holder reinspection in run 20, $n_g$ drifted with $1/f^2$ spectral density $S_{n_g}(0.1 \\text{ mHz}) = 0.8$ e²/Hz, slower than typical but indicating loss of the stabilizing mechanism.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

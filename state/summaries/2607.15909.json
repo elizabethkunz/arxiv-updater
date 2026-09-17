@@ -1,0 +1,8 @@
+{
+  "summary": "This work characterizes noise correlations between two cavity-coupled qubits by measuring the cavity emission, developing a perturbative theory in the qubit-cavity coupling $g$ up to third order. The method is demonstrated for white noise (where correlation effects scale as $g^5$ and are negligible), quasi-static noise (linear scaling with correlation spectral density $S_{12}$), and Ornstein-Uhlenbeck noise (intermediate behavior), with a general extraction procedure via the convolution theorem.",
+  "motivation": "Correlated noise across multiple qubits severely degrades quantum error correction performance and limits scalability of quantum processors; understanding these correlations is essential for fault-tolerant quantum computation.",
+  "method": "The authors solve quantum Langevin equations perturbatively in the qubit-cavity coupling to third order, averaging the cavity output field over many noise realizations with Gaussian statistics, and extract the noise correlation spectral density from measured cavity emission by subtracting single-qubit contributions and using convolution analysis.",
+  "result": "For quasi-static noise, $\\langle\\langle B_{\\mathrm{out}}^{q1,q2}(t)\\rangle\\rangle_\\mathrm{qs} \\propto g^3 S_{12} \\lambda^2$; for white noise the correlation contribution is suppressed to $\\propto g^5$; for Ornstein-Uhlenbeck noise the effect decreases exponentially with correlation decay rate $\\Gamma_{12}$.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

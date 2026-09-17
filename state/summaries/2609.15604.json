@@ -1,0 +1,8 @@
+{
+  "summary": "A two-qubit gate is built from interference between consecutive Landau-Zener transitions of a flux-tunable coupler that is driven sinusoidally through resonance with the data qubits; the coupler returns to its initial state as the qubits swap, giving a gate locally equivalent to iSWAP. It is demonstrated on a modular flip-chip flux-qubit device and on a monolithic transmon device, where the population-swap fidelity is about 0.98, limited by $T_2^\\mathrm{echo} = 2.2$ µs.",
+  "motivation": "Parametric gates through dispersive couplers run well below the bare coupling $g$ and at a fixed control frequency. A gate that runs near $g$ at a freely chosen drive frequency would help multiplex control lines and connect chiplets.",
+  "method": "Only the coupler is driven, with no drive or flux pulse on the data qubits, and full swaps occur when successive Landau-Zener passages interfere constructively. The modular device has $g/2\\pi \\approx 3$ MHz (swap at about 250 ns with a 50 MHz drive); the monolithic transmon device has $g/2\\pi \\approx 300$ MHz with the qubits on resonance at 5.891 GHz, and fidelity is taken from the decay of repeated swaps.",
+  "result": "The swap rate approaches the $\\sqrt{2}\\,g$ limit and the drive frequency was tuned in situ from 10 to 350 MHz. $F \\approx 0.98$ including a 16 ns wait between pulses, and the authors project 99.9% with roughly 100 times longer coherence; because the gate is not dispersive, coupler state preparation and measurement quality also matter.",
+  "source": "full text",
+  "generated_by": "Claude, written in-session from the full text (not via the script's API path)"
+}

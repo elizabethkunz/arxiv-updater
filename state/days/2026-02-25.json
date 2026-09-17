@@ -1,0 +1,176 @@
+{
+  "date": "2026-02-25",
+  "n_fetched": 96,
+  "papers": [
+    {
+      "id": "2602.20275",
+      "title": "Pulse-level control for quantum resource preparation",
+      "authors": [
+        "K. De La Ossa Doria",
+        "T. Merlo Vergara",
+        "D. Goyeneche"
+      ],
+      "abstract": "Minimizing the time required for quantum state preparation is crucial to mitigate decoherence and enable practical quantum algorithms on near-term hardware. In this work, we introduce a technique for quantum state preparation in transmon-qubit systems using optimized electromagnetic pulse sequences rather than discrete quantum gates. By directly targeting quantum correlations instead of specific target states, we identify minimal-time pulse protocols that optimize relevant entanglement resources, such as concurrence and the three-tangle for two and three qubit systems, respectively. For the figures of merit considered, this approach successfully achieves maximal entanglement in each case: Bell, GHZ and W like states. Beyond state preparation, the resource-oriented nature of the approach leads to a reduced effective expressivity of the control scheme, a feature that represents an advantage in algorithmic settings where excessive control freedom is known to hinder performance.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-23",
+      "score": 0.5576448187007468,
+      "similar_to": [
+        {
+          "title": "Quantum control of a cat-qubit with bit-flip times exceeding ten seconds",
+          "id": "2307.06617",
+          "similarity": 0.8330925703048706
+        },
+        {
+          "title": "Simple pulses for elimination of leakage in weakly nonlinear qubits",
+          "id": "0901.0534",
+          "similarity": 0.8319989442825317
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates pulse-level quantum state preparation in transmon qubits by directly optimizing entanglement measures rather than targeting specific states, achieving Bell states with negativity $\\mathcal{N}(\\rho_{01}) \\approx 0.499$, GHZ states with three-tangle $\\tau_3 \\approx 0.999$, and W states with balanced squared concurrences $\\mathcal{C}^2(\\rho_{ij}) \\approx 0.44$ on the IBM Sherbrooke architecture. The resource-oriented approach yields substantially shorter pulse sequences—1379 dt for Bell, 3750 dt for GHZ, and 6132 dt for W states—compared to transpiled gate-based circuits (2912 dt, 5315 dt, and 8224 dt respectively), with reduced expressivity that naturally suppresses barren plateaus in variational algorithms.",
+        "motivation": "Near-term superconducting quantum processors suffer from decoherence and gate infidelities; designing shorter state-preparation protocols that minimize total evolution time while reducing effective expressivity could mitigate these errors and improve trainability of variational circuits by suppressing barren plateau phenomena.",
+        "method": "Differential evolution optimization of piecewise-constant and Gaussian-square envelope functions on drive channels (D0, D1, D2) and cross-resonance control channels (U0, U1) of three transmon qubits coupled linearly with $J_{01} \\approx 0.013$ GHz and $J_{12} \\approx 0.014$ GHz; cost functions target entanglement measures (negativity, three-tangle, concurrence) rather than specific target states, with integration via jax_odeint in qiskit_dynamics using hardware parameters from Fake_Sherbrooke.",
+        "result": "Two-qubit Bell-like states achieve maximal negativity at 0.499 within 1379 dt; three-qubit GHZ states reach three-tangle 0.999 in 3750 dt; W states achieve squared concurrences near 4/9 (≈0.444) in 6132 dt and pass Bures-distance validation ($D_B = 1.3 \\times 10^{-5}$ from ideal W), all substantially faster than gate-decomposed circuits while maintaining quality in three-level transmon models.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.20614",
+      "title": "First- and Second-Order Digital Quantum Simulation of Three-Level Jaynes-Cummings Dynamics on Superconducting Quantum Processors",
+      "authors": [
+        "J. Thirunirai Selvam",
+        "S. Saravana Veni",
+        "Ria Rushin Joseph"
+      ],
+      "abstract": "This work presents a digital quantum simulation of a three-level atomic system interacting with a single-mode electromagnetic field based on the Jaynes-Cummings model, implemented on IBM Quantum superconducting processors. A qutrit is encoded using two physical qubits to represent the atomic states, while an additional qubit encodes the truncated field mode, enabling the realization of effective $Λ$-type atomic dynamics.The continuous-time light-matter interaction is implemented in a digital form by discretizing the evolution using Suzuki-Trotter decomposition. In contrast to an analog realization, the digital simulation replaces the continuous evolution with a sequence of quantum gates whose parameters are explicitly controlled. Phase evolution arising from the interaction Hamiltonian is digitally encoded using calibrated $R_Z$ gates, whose rotation angles are fixed by the physically relevant coupling scale and the chosen Trotter time step.State preparation is achieved using Hadamard and parametrized rotation gates, while the interaction dynamics are implemented through controlled operations. A comparative analysis between first- and second-order Trotter implementations reveals a trade-off between digital accuracy and hardware-induced noise. Overall, the results demonstrate that calibrated gate operations and noise-aware circuit design enable reliable digital simulation of multi-level light-matter interactions on noisy intermediate-scale quantum platforms.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-24",
+      "score": 0.5234837064092903,
+      "similar_to": [
+        {
+          "title": "Engineering quantum criticality and dynamics on an analog-digital simulator",
+          "id": "2602.18555",
+          "similarity": 0.8594611883163452
+        },
+        {
+          "title": "Dynamical decoupling for superconducting qubits: a performance survey",
+          "id": "2207.03670",
+          "similarity": 0.8399370908737183
+        }
+      ],
+      "summary": {
+        "summary": "This work presents a digital quantum simulation of three-level Jaynes-Cummings dynamics on IBM Quantum superconducting processors, encoding a qutrit in two qubits and a cavity mode in one qubit, with evolution implemented via first- and second-order Suzuki-Trotter decomposition. Comparison across IBM backends reveals a trade-off between algorithmic accuracy and hardware noise: second-order Trotter provides better excitation-number conservation and reduced population leakage, but first-order circuits achieve higher aggregate fidelity (~94.6% on ibm_marrakesh vs ~88.4% for second-order), with ibm_torino most faithfully preserving Jaynes-Cummings selection rules despite lower calibration-based fidelity.",
+        "motivation": "Multi-level light-matter interactions exhibit richer coherence control and quantum interference phenomena than two-level systems, but extending Jaynes-Cummings models to three-level atoms on noisy intermediate-scale quantum hardware requires systematic investigation of how digital discretization errors and hardware noise compete.",
+        "method": "A qutrit is encoded as two qubits with enforced selection rule $q_2 = 1 \\Rightarrow q_1 = 1$, and cavity photon number in one qubit; Hamiltonian terms are decomposed via Suzuki-Trotter steps with calibrated $R_Z$ rotation angles set by the experimentally relevant coupling scale $g \\approx 2\\pi \\times 25$ kHz and time step $\\Delta t$ chosen such that $g \\Delta t \\lesssim 0.1$–$0.2$ rad.",
+        "result": "Circuit fidelity estimated at ~90% on ibm_torino (dominant readout error 2.95%, two-qubit error 2.437 × 10$^{-3}$, single-qubit error 3.086 × 10$^{-4}$); second-order implementation shows sharper population confinement within excitation-conserving subspace despite deeper circuits, while time-dependent measurements exhibit coherent Rabi oscillations in $P_{|1\\rangle}(t)$ with suppressed higher-state population $P_{|2\\rangle}(t)$ remaining negligible.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.5576,
+    0.5235,
+    0.4807,
+    0.4637,
+    0.4217,
+    0.4193,
+    0.3942,
+    0.3676,
+    0.33,
+    0.2799,
+    0.2751,
+    0.2697,
+    0.2459,
+    0.2122,
+    0.203,
+    0.2012,
+    0.1968,
+    0.1955,
+    0.1807,
+    0.1735,
+    0.1555,
+    0.1356,
+    0.1221,
+    0.1217,
+    0.1202,
+    0.1191,
+    0.1186,
+    0.1077,
+    0.1065,
+    0.1044,
+    0.0898,
+    0.0874,
+    0.0871,
+    0.0848,
+    0.0777,
+    0.0765,
+    0.07,
+    0.0634,
+    0.0588,
+    0.0573,
+    0.0569,
+    0.0559,
+    0.0525,
+    0.0514,
+    0.0474,
+    0.0467,
+    0.0459,
+    0.045,
+    0.0446,
+    0.0415,
+    0.0392,
+    0.0382,
+    0.0379,
+    0.0372,
+    0.037,
+    0.0358,
+    0.0346,
+    0.0339,
+    0.0336,
+    0.033,
+    0.0314,
+    0.0305,
+    0.0272,
+    0.0267,
+    0.0266,
+    0.0253,
+    0.0243,
+    0.0243,
+    0.0227,
+    0.0222,
+    0.0192,
+    0.0185,
+    0.0137,
+    0.0137,
+    0.0135,
+    0.0115,
+    0.0114,
+    0.011,
+    0.0105,
+    0.0103,
+    0.0093,
+    0.0091,
+    0.0087,
+    0.0079,
+    0.0078,
+    0.0059,
+    0.0056,
+    0.0051,
+    0.0049,
+    0.0049,
+    0.0047,
+    0.0044,
+    0.0032,
+    0.003,
+    0.0026,
+    0.0012
+  ]
+}

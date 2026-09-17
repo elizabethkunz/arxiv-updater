@@ -1,0 +1,331 @@
+{
+  "date": "2026-01-06",
+  "n_fetched": 129,
+  "papers": [
+    {
+      "id": "2601.02183",
+      "title": "Developments in superconducting erasure qubits for hardware-efficient quantum error correction",
+      "authors": [
+        "Maria Violaris",
+        "Luciana Henaut",
+        "James Wills",
+        "Gioele Consani",
+        "Jamie Friel",
+        "Brian Vlastakis"
+      ],
+      "abstract": "Quantum computers are inherently noisy, and a crucial challenge for achieving large-scale, fault-tolerant quantum computing is to implement quantum error correction. A promising direction that has made rapid recent progress is to design hardware that has a specific noise profile, leading to a significantly higher threshold for noise with certain quantum error correcting codes. This Perspective focuses on erasure qubits, which enable hardware-efficient quantum error correction, by concatenating an inner code built-in to the hardware with an outer code. We focus on implementations of dual-rail encoded erasure qubits using superconducting qubits, giving an overview of recent developments in theory and simulation, and hardware demonstrators. We also discuss the differences between implementations; near-term applications using quantum error detection; and the open problems for developing this approach towards early fault-tolerant quantum computers.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-05",
+      "score": 0.9332424137579938,
+      "similar_to": [
+        {
+          "title": "Developments in superconducting erasure qubits for hardware-efficient quantum error correction",
+          "id": "2601.02183",
+          "similarity": 0.9999998807907104
+        },
+        {
+          "title": "Bias-preserving and error-detectable entangling operations in a superconducting dual-rail system",
+          "id": "2503.10935",
+          "similarity": 0.9167495965957642
+        }
+      ],
+      "summary": {
+        "summary": "This Perspective reviews superconducting erasure qubits, which encode logical information in dual-rail configurations where the dominant noise consists of detectable amplitude-damping events that leave the computational subspace. Erasure qubits enable hardware-efficient quantum error correction by concatenating an inner dual-rail code with outer codes like the surface code, achieving thresholds up to 50% in the code-capacity limit compared to ~19% for depolarizing noise, with realistic implementations showing 5.2× improvement in tolerable Pauli error rates.",
+        "motivation": "Achieving fault-tolerant quantum computing with superconducting qubits requires overcoming the $T_1$ bottleneck from amplitude damping, which limits qubit fidelity and prevents standard quantum error correction from reaching practical thresholds with manageable physical qubit counts.",
+        "method": "The paper surveys dual-rail encoded erasure qubits implemented via three superconducting approaches—coupled transmons, multimode dimonic qubits, and cavity QED systems—analyzing how heralded erasures improve code distance from $\\lfloor (d-1)/2 \\rfloor$ to $d-1$ correctable errors, and reviewing theoretical thresholds, circuit-level simulations, and recent hardware demonstrations from academic and industrial groups.",
+        "result": "Simulations show erasure noise enables surface-code thresholds exceeding 5× that of Pauli noise, logical error rates scaling as $(e/e^*)^d$ versus $(p/p^*)^{\\lceil d/2 \\rceil}$ for erasures versus Pauli errors respectively, and magic-state cultivation with erasure qubits achieves target error rates at heralded erasure rates below $\\sim 4 \\times 10^{-3}$ with residual Pauli errors of order $10^{-4}$, recently demonstrated in proof-of-principle experiments.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.02137",
+      "title": "Flux-noise-resilient transmon qubit via a doubly-connected gradiometric design",
+      "authors": [
+        "J. B. Fu",
+        "Da-Wei Wang",
+        "B. Ren",
+        "Z. H. Yang",
+        "S. Hu",
+        "G. Y. Huang",
+        "S. H. Cao",
+        "D. D. Liu",
+        "X. F. Zhang",
+        "X. Fu",
+        "S. C. Xue",
+        "Y. G. Che",
+        "Yu-xi Liu",
+        "M. T. Deng",
+        "J. J. Wu"
+      ],
+      "abstract": "Frequency-tunable superconducting transmon qubits are a cornerstone of scalable quantum processors, yet their performance is often degraded by sensitivity to low-frequency flux noise. Here we present a doubly-connected gradiometric transmon (the ``8-mon\") that incorporates a nano-airbridge to link its two loops. This design preserves full electrical tunability and remains fully compatible with standard X-mon control and readout, requiring no additional measurement overhead. The airbridge interconnect eliminates dielectric loss, which enables the 8-mon to achieve both energy relaxation times $T_{\\rm 1}$ comparable to reference X-mons and, in the small flux-bias regime, a nearly threefold enhancement in Ramsey coherence time $T_{\\rm 2}^*$. This improved $T_{\\rm 2}^*$ reaches the same order as $T_{\\rm 1}$ without employing echo decoupling. The device also exhibits superior long-term frequency stability even without any magnetic field shielding. We develop a spatially correlated flux-noise model whose simulations quantitatively reproduce the experimental coherence trends, revealing the coexistence of short- and long-correlation-length magnetic noise in the superconducting chip environment. By unifying high tunability with intrinsic flux-noise suppression through a robust geometric design, the 8-mon provides a practical pathway toward more coherent and stable superconducting quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-05",
+      "score": 0.9047461225013491,
+      "similar_to": [
+        {
+          "title": "The Flux Qubit Revisited to Enhance Coherence and Reproducibility",
+          "id": "1508.06299",
+          "similarity": 0.8825153708457947
+        },
+        {
+          "title": "The high-coherence fluxonium qubit",
+          "id": "1810.11006",
+          "similarity": 0.8618555068969727
+        }
+      ],
+      "summary": {
+        "summary": "A doubly-connected gradiometric transmon (8-mon) qubit with nano-airbridge interconnect achieves a nearly threefold enhancement in Ramsey coherence time $T_2^*$ compared to reference X-mons while preserving full electrical tunability and maintaining energy relaxation times $T_1$ in the 20–45 µs range. A spatially correlated flux-noise model reveals that the gradiometric geometry suppresses low-frequency magnetic noise through destructive interference between oppositely wound loops, with suppression factor $S(\">d) \\ propto (d/\\xi)^2$ for long-wavelength noise.",
+        "motivation": "Frequency-tunable transmon qubits suffer significant flux-noise-induced dephasing despite their advantages for individual qubit addressability and parametric gates. Existing strategies relying on material optimization and magnetic shielding do not address the fundamental sensitivity of the SQUID geometry to external flux fluctuations.",
+        "method": "The 8-mon incorporates two counter-wound loops linked by a nano-airbridge to form a symmetrically balanced gradiometric SQUID, where the flux line couples preferentially to one loop. Devices were fabricated on c-plane sapphire substrates using aluminum with Dolan-bridge junctions, and coherence was characterized via Ramsey, echo, and spectroscopic measurements at 15 mK with and without $\\mu$-metal shielding across three chips.",
+        "result": "At small flux bias, the 8-mon achieves $T_2^* > 30$ µs (2–3× longer than X-mon values $< 15$ µs) while maintaining $T_1 \\approx 30$–45 µs without echo decoupling; long-term frequency stability improved from $\\approx 0.4$ MHz drift (X-mon, shielded) to $< 0.1$ MHz (8-mon) over 10 hours, and remained stable without shielding whereas unshielded X-mons drifted $> 20$ MHz.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.01990",
+      "title": "Parallel Quantum Gates via Scalable Subsystem-Optimized Robust Control",
+      "authors": [
+        "Xiaodong Yang",
+        "Ran Liu",
+        "Jun Li"
+      ],
+      "abstract": "Accurate and efficient implementation of parallel quantum gates is crucial for scalable quantum information processing. However, the unavoidable crosstalk between qubits in current noisy processors impedes the achievement of high gate fidelities and renders full Hilbert-space control optimization prohibitively difficult. Here, we overcome this challenge by reducing the full-system optimization to crosstalk-robust control over constant-sized subsystems, which dramatically reduces the computational cost. Our method effectively eliminates the leading-order gate operation deviations induced by crosstalk, thereby suppressing error rates. Within this framework, we construct analytical pulse solutions for parallel single-qubit gates and numerical pulses for parallel multi-qubit operations. We validate the proposed approach numerically across multiple platforms, including coupled nitrogen-vacancy centers, a nuclear-spin processor, and superconducting-qubit arrays with up to 200 qubits. As a result, the noise scaling is reduced from exponential to linear for parallel single-qubit gates, and an order-of-magnitude reduction is achieved for parallel multi-qubit gates. Moreover, our method does not require precise knowledge of crosstalk strengths and makes no assumption about the underlying qubit connectivity or lattice geometry, thereby establishing a scalable framework for parallel quantum control in large-scale quantum architectures.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-05",
+      "score": 0.568049078772411,
+      "similar_to": [
+        {
+          "title": "Quantum crosstalk cancellation for fast entangling gates and improved multi-qubit performance",
+          "id": "2106.00675",
+          "similarity": 0.8625008463859558
+        },
+        {
+          "title": "Crosstalk In Contemporary Quantum Devices",
+          "id": "2605.26528",
+          "similarity": 0.8588781356811523
+        }
+      ],
+      "summary": {
+        "summary": "This work develops a subsystem-optimized robust control framework for implementing high-fidelity parallel quantum gates by reducing full-system optimization to crosstalk-robust control over constant-sized subsystems. The method is validated on coupled NV centers, a 12-qubit NMR processor, and superconducting-qubit arrays up to 200 qubits, achieving linear noise scaling for parallel single-qubit gates and order-of-magnitude reductions for parallel multi-qubit operations.",
+        "motivation": "Crosstalk between qubits severely degrades fidelity in parallel gate operations on large-scale quantum processors, but full Hilbert-space optimization becomes computationally intractable as system size grows exponentially.",
+        "method": "The system is partitioned into L subsystems, and the problem is reformulated as a robust control task that minimizes directional derivatives $\\mathcal{D}_{U_{H_0'}}(H_{S_k S_j})$ representing crosstalk-induced deviations. For single-qubit gates, analytical pulses are constructed via inverse geometric optimization enforcing $\\int_0^T r_\\mu^k(t) r_\\nu^j(t) dt = 0$ for all Pauli components; for multi-qubit gates, the Van Loan integral technique enables efficient computation of crosstalk effects using augmented Liouvillian matrices.",
+        "result": "On coupled NV centers, robust pulses reduce noise scaling from exponential ($F \\propto e^{-\\varepsilon M}$) to linear ($F \\approx 1 - \\varepsilon M$) decay with repetitions. On the 12-qubit NMR processor, robust pulses achieve fidelities $>0.99$ and reduce error accumulation by a factor of 3 for single-qubit gates and 13 for parallel CNOTs. On superconducting arrays up to 200 qubits, parallel CZ gates maintain fidelity $>0.99$ for residual crosstalk $|g_{\\mathrm{max}}| \\leq 1$ MHz without requiring precise knowledge of crosstalk amplitudes.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.02064",
+      "title": "Cutting Quantum Circuits Beyond Qubits",
+      "authors": [
+        "Manav Seksaria",
+        "Anil Prabhakar"
+      ],
+      "abstract": "We extend quantum circuit cutting to heterogeneous registers comprising mixed-dimensional qudits. By decomposing non-local interactions into tensor products of local generalised Gell-Mann matrices, we enable the simulation and execution of high-dimensional circuits on disconnected hardware fragments. We validate this framework on qubit--qutrit ($2$--$3$) interfaces, achieving exact state reconstruction with a Total Variation Distance of 0 within single-precision floating-point tolerance. Furthermore, we demonstrate the memory advantage in an 8-particle, dimension-8 system, reducing memory usage from 128 MB to 64 KB per circuit.",
+      "categories": [
+        "quant-ph",
+        "cs.DC"
+      ],
+      "published": "2026-01-05",
+      "score": 0.5212159882307079,
+      "similar_to": [
+        {
+          "title": "Evidence for the utility of quantum computing before fault tolerance",
+          "id": null,
+          "similarity": 0.8509979248046875
+        },
+        {
+          "title": "Surface codes: Towards practical large-scale quantum computation",
+          "id": "1208.0928",
+          "similarity": 0.8469531536102295
+        }
+      ],
+      "summary": {
+        "summary": "This work extends quantum circuit cutting to heterogeneous registers of mixed-dimensional qudits by decomposing non-local interactions into tensor products of local generalized Gell-Mann matrices, generalizing the qubit-based CNOT decomposition to arbitrary qudit dimensions $d_1$ and $d_2$. Validation on qubit–qutrit interfaces achieves exact state reconstruction with Total Variation Distance of 0 within single-precision tolerance and demonstrates a memory reduction from 128 MB to 64 KB for an 8-particle dimension-8 system.",
+        "motivation": "Existing circuit cutting methods are qubit-centric and rely on Pauli operators, leaving a gap for heterogeneous architectures that naturally support higher-dimensional qudits and could access larger Hilbert spaces with fewer physical carriers.",
+        "method": "The authors generalize the controlled-sum gate $\\mathrm{CSUM}_d$ to qudits and decompose qudit–qudit interactions into tensor products using generalized Gell-Mann matrices indexed by $k$ with $1 \\leq k < d^2$ as basis operators, then reconstruct quantum states from local measurement and preparation outcomes.",
+        "result": "Exact state reconstruction is achieved on qubit–qutrit ($2$–$3$) interfaces with Total Variation Distance of 0 at single-precision floating-point accuracy, and memory usage is reduced by $2000\\times$ (from 128 MB to 64 KB) in an 8-particle dimension-8 system simulation.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.01394",
+      "title": "Distant Entanglement Generation between Magnon and Superconducting Qubits in Magnon-Mediated Hybrid Systems",
+      "authors": [
+        "Guosen Liu",
+        "Pei Pei"
+      ],
+      "abstract": "We propose an efficient two-stage protocol for generating distant entanglement in a magnon-mediated hybrid quantum system, where magnons serve dual roles as both interaction mediators and qubits. This integrated design reduces the physical component count while leveraging the inherent advantages of magnons, such as their strong coupling via magnetic dipole interactions, low dissipation, and high integrability. In our setup, a superconducting resonator interfaces between a local superconducting qubit (SQ) and a local magnonic system (QM1), which is waveguide-coupled to a remote magnonic system (QM2). The protocol comprises two stages: (i) deterministic Bell-state generation between the SQ and QM1 using shortcuts to adiabaticity, and (ii) coherent state transfer to QM2 via engineered Hamiltonian dynamics. This adiabatic characteristic enhances robustness against environmental dissipation. Numerical simulations under realistic noise conditions confirm strong resilience to decoherence, achieving fidelity $F > 0.90$ and negativity $\\mathcal{N}_2 > 0.40$. These results establish the protocol as a scalable and practical building block for distributed quantum networks.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-04",
+      "score": 0.5207742162226757,
+      "similar_to": [
+        {
+          "title": "Driven-dissipative entanglement of distant giant atoms",
+          "id": "2606.13375",
+          "similarity": 0.8380366563796997
+        },
+        {
+          "title": "Cavity quantum electrodynamics for superconducting electrical circuits: an architecture for quantum computation",
+          "id": null,
+          "similarity": 0.8223010301589966
+        }
+      ],
+      "summary": {
+        "summary": "This work proposes a two-stage protocol for generating entanglement between a local superconducting qubit and remote magnons in a hybrid magnon-mediated system. Stage 1 uses shortcuts to adiabaticity to create a Bell state between the superconducting qubit and local magnons; Stage 2 coherently transfers entanglement to remote magnons via engineered Hamiltonian dynamics mediated by a waveguide.",
+        "motivation": "Magnon-mediated hybrid systems offer strong magnetic dipole coupling, low dissipation, and reduced component count compared to conventional quantum network implementations, motivating their use for scalable distributed quantum networks.",
+        "method": "The protocol employs invariant-based shortcuts to adiabaticity for local Bell-state generation with engineered coupling $g_1(t)$ and $g_2(t) = \\pi/(4T_1)$, followed by coherent state transfer via an effective magnon-magnon coupling $g_{\\mathrm{eff}} = 2ig G_L G_R$ derived through the Nakajima-Zwanzig projection operator technique under Markovian approximation.",
+        "result": "Numerical simulations achieve fidelity $F > 0.90$ and bipartite negativity $\\mathcal{N}_2 > 0.40$ for SQ-QM2 entanglement under realistic noise with $\\gamma_q/2\\pi = 0.01$ MHz, $\\gamma_\\phi/2\\pi = 0.1$ MHz, $\\kappa_c = \\kappa_{m_L} = \\kappa_{m_R} = 0.5$ MHz at $T_{\\mathrm{th}} = 50$ mK, with analysis showing dephasing dominates over relaxation in fidelity degradation.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9332,
+    0.9047,
+    0.568,
+    0.5212,
+    0.5208,
+    0.474,
+    0.4507,
+    0.3761,
+    0.3733,
+    0.3356,
+    0.3303,
+    0.2859,
+    0.2795,
+    0.2683,
+    0.2678,
+    0.2439,
+    0.197,
+    0.1808,
+    0.1404,
+    0.1366,
+    0.1347,
+    0.1281,
+    0.127,
+    0.1141,
+    0.11,
+    0.1083,
+    0.1009,
+    0.0995,
+    0.0949,
+    0.0914,
+    0.0849,
+    0.0848,
+    0.0768,
+    0.0739,
+    0.0702,
+    0.0674,
+    0.0669,
+    0.0654,
+    0.0618,
+    0.0581,
+    0.0556,
+    0.0513,
+    0.0511,
+    0.0503,
+    0.0477,
+    0.0458,
+    0.0451,
+    0.0444,
+    0.044,
+    0.043,
+    0.0429,
+    0.0415,
+    0.0391,
+    0.039,
+    0.0385,
+    0.0385,
+    0.0383,
+    0.0383,
+    0.0378,
+    0.037,
+    0.0367,
+    0.036,
+    0.0333,
+    0.0323,
+    0.029,
+    0.0289,
+    0.0281,
+    0.0271,
+    0.0262,
+    0.0259,
+    0.0258,
+    0.0258,
+    0.0244,
+    0.0232,
+    0.0226,
+    0.0226,
+    0.0217,
+    0.021,
+    0.0204,
+    0.0204,
+    0.0194,
+    0.0193,
+    0.0191,
+    0.0191,
+    0.0183,
+    0.0178,
+    0.0167,
+    0.0167,
+    0.0166,
+    0.0151,
+    0.0149,
+    0.0147,
+    0.0141,
+    0.0138,
+    0.0132,
+    0.0125,
+    0.0122,
+    0.0112,
+    0.0111,
+    0.0102,
+    0.0099,
+    0.0091,
+    0.0088,
+    0.0087,
+    0.0085,
+    0.0083,
+    0.008,
+    0.0074,
+    0.0073,
+    0.007,
+    0.0069,
+    0.0068,
+    0.0065,
+    0.0064,
+    0.0061,
+    0.0061,
+    0.0052,
+    0.0036,
+    0.0032,
+    0.0031,
+    0.003,
+    0.0026,
+    0.0024,
+    0.0021,
+    0.002,
+    0.0016,
+    0.0014,
+    0.0013,
+    0.0008
+  ]
+}

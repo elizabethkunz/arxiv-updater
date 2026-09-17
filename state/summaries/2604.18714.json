@@ -1,0 +1,8 @@
+{
+  "summary": "This paper presents a hardware-software co-design for implementing bivariate bicycle quantum LDPC codes on superconducting platforms using a programmable 2D toric network of oscillators as a communication fabric, reducing required long-range couplers from $O(n)$ to $O(\\sqrt{n})$. Circuit-level simulations achieve a logical error rate of 3.06% per logical qubit per cycle for the $[[18,4,4]]$ code with dual-rail qubits and Swap-Wait-Swap gates, a 2.6× improvement over prior experiments.",
+  "motivation": "Bivariate bicycle codes offer superior encoding rates and code distance compared to surface codes, but their requirement for long-range stabilizer measurements poses severe implementation challenges on superconducting platforms with limited connectivity, motivating new architectures that can efficiently execute these non-local interactions.",
+  "method": "The approach uses a 2D toric oscillator network linking qubits at each site, enabling long-range CZ gates via beamsplitter SWAPs and Swap-Wait-Swap entangling gates with dual-rail qubits. A symmetry-aware layout and XY routing algorithm exploit translation and cell invariance to achieve maximum parallelism for all $n$ two-qubit gates within each syndrome-extraction pass.",
+  "result": "For the $[[18,4,4]]$ BB code, realistic noise modeling based on experimental dual-rail parameters yields $\\ell_k = 0.0306$ (logical error per qubit per cycle), 2.6× lower than the best published experimental result of $\\ell_k = 0.0891$ from Wang et al., while reducing fabrication overhead from 324 to 36 long-range couplers for the $[[144,12,12]]$ code.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

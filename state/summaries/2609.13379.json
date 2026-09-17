@@ -1,0 +1,8 @@
+{
+  "summary": "A compiler for linear-optical quantum computing places small subcircuits on the best region of an imperfect interferometer mesh and routes photons to good input/output ports, instead of spreading the computation over the entire chip. Optimizing directly for coincidence rate under beam-splitter, loss and phase-noise imperfections improves coincidence rates by up to 33.2% over existing compilers.",
+  "motivation": "Spatially varying loss and phase noise in photonic meshes strongly degrade accuracy, and current compilers ignore where on the chip a subcircuit is placed.",
+  "method": "An efficient subcircuit-compilation method that trades routing losses from imperfect beam-splitter reflectivities against port transmission losses to maximize the coincidence rate.",
+  "result": "Coincidence rates rise by up to 33.2% across benchmarks, with better robustness to phase noise than existing methods.",
+  "source": "abstract",
+  "generated_by": "Claude, written in-session for the sample day (not via the script's API path)"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "This work develops a unified framework using weight enumerator polynomials to analyze when logical dynamical decoupling (LDD) combined with quantum error correction or detection outperforms either approach alone. The authors derive closed-form entanglement-fidelity expressions and establish conditions under which hybrid protocols achieve advantage, illustrated through analysis of the $[[7,1,3]]$, $[[5,1,3]]$, $[[13,1,3]]$, and $[[4,2,2]]$ codes.",
+  "motivation": "Combining QEC/QED with DD is natural since they suppress complementary error mechanisms, but this benefit is not automatic because DD pulses can conflict with the encoded subspace and recovery quality depends on post-decoding errors, not just those suppressed by DD.",
+  "method": "For a single encode-wait-syndrome-processing cycle with effective Pauli errors parameterized by $p$, DD suppression factor $p_{DD}$, and recovery imperfection $p_{QEC}$ (or detection imperfection $p_{QED}$), closed-form formulas are derived in terms of code-dependent weight enumerators, and comparison criteria are established for when hybrid protocols surpass QEC/QED-only.",
+  "result": "For ideal recovery ($p_{QEC}=0$), LDD+QEC beats QEC-only iff the suppressed sector has higher uncorrectable-error density (Theorem 2); in the low-noise limit, it suffices that LDD suppresses at least one minimum-weight uncorrectable error (Theorem 3). Numerical evaluations on the $[[7,1,3]]$ and $[[5,1,3]]$ codes confirm hybrid advantage in small-$p$ regimes, while the $[[13,1,3]]$ example demonstrates that advantage is code- and generator-dependent and can saturate when minimum-weight uncorrectable errors remain unsuppressed.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

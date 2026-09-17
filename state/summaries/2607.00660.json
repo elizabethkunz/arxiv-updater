@@ -1,0 +1,8 @@
+{
+  "summary": "This work identifies that short-timescale waveform distortions break time-reflection symmetry in control pulses, creating an over-constrained optimization problem that limits fast CZ gate fidelity in superconducting qubits. A cyclic control strategy using parameter-space expansion with independent frequency detunings $\\Delta_1$ and $\\Delta_2$ restores controllability and achieves coherent error suppression from 0.27% to 0.12% without increasing gate duration.",
+  "motivation": "Fast two-qubit gates are limited by a persistent speed-fidelity trade-off where reducing gate duration below ~50 ns increases coherent errors due to sub-10 ns distortions that conventional symmetric pulse protocols cannot suppress.",
+  "method": "The authors demonstrate that short-timescale distortions break time-reflection symmetry ($H(t) = H(\\tau - t)$), increasing cyclic evolution constraints from 2 to 3 in the $|11\\rangle$–$|20\\rangle$ subspace. The PSE-CZ protocol adds a third control degree of freedom by splitting the detuning profile into two segments ($\\Delta_1 \\neq \\Delta_2$), enabling simultaneous satisfaction of leakage and conditional phase conditions on a 72-qubit superconducting processor.",
+  "result": "Cross-entropy benchmarking on 20 qubit pairs at 50 ns gate duration shows mean fidelity improvement of 0.163%, with coherent error reduced from 0.27% to 0.12%, and leakage to $|20\\rangle$ suppressed nearly threefold from 0.224% to 0.0756%, with consistent performance maintained across 30–50 ns durations.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,420 @@
+{
+  "date": "2026-06-02",
+  "n_fetched": 175,
+  "papers": [
+    {
+      "id": "2606.02440",
+      "title": "Microwave Crosstalk in Planar Superconducting Quantum Devices",
+      "authors": [
+        "Yongxin Song",
+        "Dominic Hagmann",
+        "Kieran Dalton",
+        "Felix Henrich",
+        "Felix Wagner",
+        "Mohsen Bahrami Panah",
+        "Marek Pechal",
+        "Andreas Wallraff"
+      ],
+      "abstract": "Microwave crosstalk poses a major challenge to scaling superconducting quantum devices as it introduces excess control errors. Although its magnitude and impact have been explored in various experimental settings, quantitative physical models capable of explaining measured crosstalk for a given device geometry remain scarce. Here, we address this gap by investigating microwave crosstalk in planar superconducting devices with crossovers. We identify two structures that can lead to strong crosstalk: a drive line routed in close proximity to another qubit, and a drive line crossing a qubit-qubit coupler using an air bridge. We design and characterize devices involving these structures and develop physical models that quantitatively explain the experimentally observed crosstalk. Based on these models, we discuss the design considerations for reducing microwave crosstalk. Our results provide practical guidance for low-crosstalk device layouts and establish a basis for the systematic investigation of weaker crosstalk mechanisms.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-01",
+      "score": 0.9592878195584714,
+      "similar_to": [
+        {
+          "title": "Microwave Crosstalk in Planar Superconducting Quantum Devices",
+          "id": "2606.02440",
+          "similarity": 0.9990386366844177
+        },
+        {
+          "title": "Crosstalk In Contemporary Quantum Devices",
+          "id": "2605.26528",
+          "similarity": 0.8738245964050293
+        }
+      ],
+      "summary": {
+        "summary": "This work systematically identifies and quantitatively models two dominant microwave crosstalk mechanisms in planar superconducting quantum devices: proximity-induced crosstalk from drive lines routed near qubits, and crossover-induced crosstalk from drive lines crossing qubit-qubit couplers via air bridges. Electrostatic and RF finite-element simulations combined with experimental measurements on test structures and a 17-qubit processor establish predictive models showing that package-mediated coupling decays as $-2.7$ dB/mm (much slower than direct capacitance at $-26$ dB/mm), imposing stringent layout constraints on scaling.",
+        "motivation": "Microwave crosstalk introduces control errors and becomes increasingly severe in scaled superconducting quantum processors due to frequency crowding and proliferating parasitic coupling pathways, yet quantitative physical models accounting for on-chip circuit elements remain underdeveloped.",
+        "method": "Test devices with tunable qubit separations ($d \\in \\{550, 738, 947, 1165\\}$ μm) and varying air-bridge geometries ($C_{\\text{cross}} \\in \\{1.1, 2.2\\}$ fF) were fabricated in 120 nm niobium on high-resistivity silicon and characterized by measuring cross-drive ratios $X_{k,j} = (\\Omega_{k,j}/\\Omega_{j,j})^2$ via Rabi oscillations. Crosstalk was modeled by combining direct capacitive coupling with package-volume effects through standing-wave analysis and RF simulations.",
+        "result": "Measured crosstalk agreed quantitatively with models treating both capacitive and package-mediated mechanisms (e.g., Fig. 3b); proximity-induced crosstalk alone underestimated observed effects by factors up to $3\\times$ at large distances. Reducing air-bridge cross-capacitance from $2.2$ fF to $0.6$ fF yields $11$ dB crosstalk reduction; achieving $10^{-4}$ single-qubit error at zero detuning requires $X < -42$ dB or alternatively $\\Delta_{dq}/2\\pi > 80$ MHz detuning when $X = -10$ dB.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.00473",
+      "title": "Accelerating Surface Radiation Content to Investigate the Impact of Radon Progeny on Superconducting Qubits",
+      "authors": [
+        "Sagar S. Poudel",
+        "Dylan J. Temples",
+        "Ryan Linehan",
+        "Alejandro Rodriguez",
+        "Matthew Hall",
+        "Dax Kay",
+        "Nathaniel Rodenburg",
+        "Daniel Baxter",
+        "Enectali Figueroa-Feliciano",
+        "Richard W. Schnee",
+        "Lauren Hsu"
+      ],
+      "abstract": "Ionizing radiation in the form of $α$, $β$, $γ$, and additional high-energy particles can induce decoherence via phonon and quasiparticle poisoning in superconducting qubits. Recent studies have explored this effect using cosmic rays or controlled radioactive sources held in the proximity of a qubit package, and have concluded that reductions in such ``external'' environmental radiation may benefit stable operation of qubit devices. However, the effect of long-lived, unstable daughters of $^{222}$Rn that ``plate out'' directly on device and packaging surfaces has not been as extensively explored. This plate-out process, well-known to the dark matter direct detection field, occurs throughout the fabrication and testing lifecycle of a device and (separately) its packaging, and produces a local source of $α$-decays which can remain active for decades. As this scales with chip area, understanding and managing this source of ionizing radiation is relevant for successfully scaling quantum computing architectures to larger numbers of qubits in a radiation-robust way. We present a setup capable of accelerating and enhancing radon daughter plateout by a factor of $7\\times10^4$ over ambient, in order to study, \\textit{in situ}, the impact of these events on superconducting qubits. We also provide outlook on the potential impact of this source of ionizing radiation on current and future qubit arrays.",
+      "categories": [
+        "quant-ph",
+        "physics.ins-det"
+      ],
+      "published": "2026-05-30",
+      "score": 0.8504114728241357,
+      "similar_to": [
+        {
+          "title": "Impact of ionizing radiation on superconducting qubit coherence",
+          "id": "2001.09190",
+          "similarity": 0.9061341285705566
+        },
+        {
+          "title": "Resolving catastrophic error bursts from cosmic rays in large arrays of superconducting qubits",
+          "id": "2104.05219",
+          "similarity": 0.8655581474304199
+        }
+      ],
+      "summary": {
+        "summary": "This work develops an accelerated radon daughter plateout facility that enhances deposition rates by $7 \\times 10^4$ relative to ambient conditions, enabling in situ studies of $^{222}$Rn progeny impacts on superconducting qubits. Simulations and measurements show that $^{210}$Po surface activity from radon plateout can contribute high-energy $\\alpha$-decays ($\\approx 5.3$ MeV) at rates comparable to cosmic-ray protons in surface labs, and becomes dominant in shielded underground operation.",
+        "motivation": "Radon daughters plate out onto device surfaces during fabrication and packaging, creating long-lived $^{210}$Pb (half-life 22.2 y) sources of ionizing radiation that produce spatiotemporally correlated qubit errors. As quantum processors scale to larger areas, understanding and mitigating this intrinsic radiation source—impossible to shield against—is essential for fault-tolerant architectures.",
+        "method": "A closed-loop radon exposure system with a Pylon source and 3.5-liter pressure vessel injected radon at $4{-}7$ MBq/m$^3$ (about $1.8 \\times 10^5$ times ambient) for 7-day exposures. Copper test pieces were exposed with and without applied $-63$ V bias to study electric-field enhancement. $^{210}$Po activities were measured via alpha spectroscopy using an Alpha Duo detector, and a dead-air diffusion model was developed to predict plateout rates and project impacts on qubit devices using Geant4 simulations.",
+        "result": "At $-63$ V bias, copper foils achieved $\\mathcal{A}_{3\\mathrm{y}} \\approx 50$ mBq/cm$^2$ of $^{210}$Po activity three years post-exposure, a $1.8 \\times 10^4$ enhancement over ambient; approximately 62% of plated daughters were removable by wiping. Dead-air model predictions matched measurements to within factors of 1–2. For a benchmark $5 \\times 5 \\times 0.5$ mm$^3$ silicon chip at ambient radon (50 Bq/m$^3$), $^{210}$Pb-chain decays deposit energy at $2.2 \\times 10^{-5}$ s$^{-1}$ above 1 MeV, comparable to cosmic-ray protons ($2.1 \\times 10^{-5}$ s$^{-1}$).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.01647",
+      "title": "Extensible Fluxonium Architecture Using Tunable Couplers with Low Shunt Capacitance",
+      "authors": [
+        "Peng Zhao",
+        "Peng Xu",
+        "Zheng-Yuan Xue"
+      ],
+      "abstract": "Fluxonium qubits have demonstrated high-fidelity operations and long coherence times in small-scale systems, highlighting their promise for quantum computing. However, large-scale integration into a high-performance two-dimensional (2D) qubit array remains the central challenge for practical applications. In this work, we introduce an extensible architecture for scaling up fluxonium qubits in 2D grids. To address the key challenges, namely achieving controllable strong interaction and high connectivity for qubits featuring small shunting capacitors (footprints), we propose using low-shunt-capacitance couplers to enable tunable interactions between fluxonium qubits. When embedded into 2D square lattices, large couplings can be achieved even with relatively small coupling capacitances, thus enabling multiple connections with sufficient capacitance budget. We further propose coupler realizations based on generalized flux qubit circuits, specifically the quarton and the fluxonium, and demonstrate that both enable fast, high-fidelity gates with low spectator errors, while supporting multiple connections on 2D grids.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-01",
+      "score": 0.7667442373740778,
+      "similar_to": [
+        {
+          "title": "Scalable Fluxonium Quantum Processors via Tunable-Coupler Architecture",
+          "id": "2604.13363",
+          "similarity": 0.9181602597236633
+        },
+        {
+          "title": "High-Fidelity, Frequency-Flexible Two-Qubit Fluxonium Gates with a Transmon Coupler",
+          "id": "2304.06087",
+          "similarity": 0.8889723420143127
+        }
+      ],
+      "summary": {
+        "summary": "This work proposes an extensible 2D architecture for scaling fluxonium qubits using low-shunt-capacitance tunable couplers based on generalized flux-qubit circuits (quarton and fluxonium designs). The architecture addresses the capacitance loading problem by achieving coupling strengths $\\sim250$–$500$ MHz with coupling capacitances $C_{qt} \\approx 1.7$–$5.5$ fF (versus $3.5$–$12.2$ fF for transmon-based designs), enabling multiple connections in 2D grids while maintaining tunable control of plasmon interactions and suppression of spectator errors.",
+        "motivation": "While individual fluxonium qubits have demonstrated gate fidelities exceeding 99.9% and coherence times into the millisecond regime, scaling beyond two qubits to 2D lattices requires addressable tunable couplers that do not compromise the small-footprint advantage of fluxonium qubits (typical shunt capacitance $\\sim 20$ fF with charging energy $E_C/2\\pi \\sim 1$ GHz).",
+        "method": "The authors leverage coupler designs with small shunt capacitances ($C_{TC} \\approx 15$ fF) based on $N$-junction arrays: quarton circuits with $\\gamma/N \\sim 0.92$ ($N=8$) and fluxonium couplers with $\\gamma/N \\lesssim 10^{-2}$ ($N \\sim 100$, where $\\gamma = E_{J,a}/E_{J,c}$). Tunable plasmon interactions ($|1\\rangle \\leftrightarrow |2\\rangle$) between qubits are realized by flux-biasing the coupler to modulate its detuning from the qubit transition, achieving sub-100 ns MAP-based CZ gates with DRAG pulse correction.",
+        "result": "CZ gate fidelities comparable to isolated two-qubit systems are demonstrated with spectator-induced frequency shifts suppressed below 1 kHz and gate errors below $10^{-5}$ when spectator couplers are turned off; the quarton coupler reaches conditional frequency shifts of $\\sim 55$ MHz with $50$-ns gate times, while the fluxonium coupler achieves $\\sim 43$ MHz shifts, both with manageable coupler-induced Purcell errors ($\\sim 10^{-4}$ level for non-computational state lifetimes of $\\sim 10$ µs).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.01226",
+      "title": "Realizing leakage elimination operator-based adiabatic speedup on a superconducting quantum processor",
+      "authors": [
+        "Jia-Yi Fan",
+        "Kai-Yu Yuan",
+        "Zong-Yuan Ge",
+        "Feng-Hua Ren",
+        "Zhao-Ming Wang"
+      ],
+      "abstract": "The slow evolution required for adiabaticity in adiabatic quantum computation renders the system vulnerable to environmental noise. Leakage elimination operator (LEO) control provides an effective strategy to realize adiabatic speedup over a short timescale, thus mitigating the noise impact. Despite extensive theoretical investigations, the realization of LEO-based adiabatic speedup on realistic superconducting quantum processors remains absent. In this work, we present such a realization on IBM superconducting quantum processors. We first characterize the trade-off between adiabaticity and noise accumulation by varying the total evolution time on both the Qiskit simulator and the ibm_marrakesh processor, employing a comprehensive noise model that closely reproduces the experimental results. We then implement ideal LEO pulse derived for a closed system and achieve a significant enhancement of adiabatic fidelity within a short evolution time. To further improve the adiabatic fidelity, we refine the ideal LEO pulse via Bayesian optimization based on the comprehensive noise model. The optimized pulse yields a modest fidelity gain in simulation, yet on hardware it falls short of the ideal pulse under the present experimental conditions. Our work validates the feasibility of LEO-based adiabatic speedup on a superconducting quantum processor and highlights the potential of LEO for noise-aware adiabatic dynamics.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-31",
+      "score": 0.6635160135996608,
+      "similar_to": [
+        {
+          "title": "Manufacturing low dissipation superconducting quantum processors",
+          "id": "1901.08042",
+          "similarity": 0.8313282132148743
+        },
+        {
+          "title": "Simple pulses for elimination of leakage in weakly nonlinear qubits",
+          "id": "0901.0534",
+          "similarity": 0.826913058757782
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates leakage elimination operator (LEO)-based adiabatic speedup on IBM superconducting quantum processors, achieving fidelities of $\\sim 0.96$ at short evolution times ($T_{\\mathrm{tot}} = \\pi/2$) compared to $\\sim 0.6$ without control. The results validate the feasibility of using ideal zero-area rectangular LEO pulses for accelerating adiabatic quantum computation while mitigating noise accumulation.",
+        "motivation": "Adiabatic quantum computation faces an inherent trade-off: achieving adiabaticity requires slow evolution, but prolonged evolution times increase environmental noise damage, resulting in an optimal evolution time in realistic noisy systems. LEO control provides a theoretical strategy to realize adiabatic speedup over short timescales, but hardware implementation on superconducting processors was previously lacking.",
+        "method": "Single-qubit adiabatic evolution from $|1\\rangle$ to $(|0\\rangle + |1\\rangle)/\\sqrt{2}$ was implemented on the ibm\\_marrakesh processor using Suzuki–Trotter digital simulation with ideal rectangular LEO pulses ($I = 40$, $\\tau = \\pi/20$) satisfying zero-area conditions. A comprehensive noise model including $T_1 = 180.86$ µs, $T_2 = 94.15$ µs, and depolarizing noise was calibrated to match hardware behavior, and Bayesian optimization of Fourier-parameterized pulses was attempted to further improve performance.",
+        "result": "Ideal LEO pulses increased adiabatic fidelity from $\\approx 0.6$ to $> 0.96$ at $T_{\\mathrm{tot}} = \\pi/2$, demonstrating effective adiabatic speedup; Bayesian-optimized pulses showed modest additional improvement ($\\sim 1.83\\%$) in simulations but comparable or slightly lower fidelity on hardware ($F \\approx 0.92$ at $T_{\\mathrm{tot}} = \\pi$), indicating that real device noise and unmodeled error sources limit the benefit of waveform optimization beyond ideal pulses.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.00358",
+      "title": "Software compensation of trigger-synchronous control-frame errors in qubits and qudits",
+      "authors": [
+        "Gaurav A. Tathed",
+        "Nicholas C. F. Zutt",
+        "Collin J. C. Epstein",
+        "Crystal Senko"
+      ],
+      "abstract": "Quantum control experiments are often subject to coherent, time-dependent disturbances that vary over timescales comparable to the experiment duration. We show that when such disturbances are reproducible with respect to a trigger signal, their effect can be measured and compensated through software-defined updates to the control frequency and phase. We experimentally verify the performance of our protocol using a trapped $^{137}$Ba$^+$ ion experiencing magnetic-field-induced energy shifts synchronous with the laboratory AC mains power. Using this compensation technique, the calibrated AC line contribution to the instantaneous oscillator detuning is reduced by $21(9)\\times$, and the fitted AC-induced phase amplitude is reduced below the measurement uncertainty. We use randomized benchmarking to validate the compensation performance in quantum gate sequences, recovering an average single-qubit gate fidelity of 99.93(1)\\% with a magnetic-field-sensitive qubit. Finally, we extend the compensation framework to multi-level qudit control. Using the Bernstein-Vazirani algorithm as a benchmark, we increase the algorithm's success probability from 10(7)\\% to 70(9)\\% in a 16 level system when compensation is enabled. Our results demonstrate that trigger-synchronized coherent errors can be reframed as deterministic control-frame errors and corrected in software.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-29",
+      "score": 0.6502158678315758,
+      "similar_to": [
+        {
+          "title": "Quantum control of a cat-qubit with bit-flip times exceeding ten seconds",
+          "id": "2307.06617",
+          "similarity": 0.848238468170166
+        },
+        {
+          "title": "Branch-resolved Pauli-block spectroscopy of residual conditional phase in two-qubit gates",
+          "id": "2607.10249",
+          "similarity": 0.8432618379592896
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates software compensation of trigger-synchronous coherent errors in trapped-ion qubits and qudits by measuring AC mains-induced magnetic-field perturbations and updating control pulse frequencies and phases to track instantaneous transition frequencies. The compensation reduces AC line-induced detuning by $21(9)\\times$ and phase amplitude below measurement uncertainty, recovers single-qubit gate fidelity of $99.93(1)\\%$ in randomized benchmarking, and improves Bernstein–Vazirani success probability from $10(7)\\%$ to $70(9)\\%$ in a 16-level system.",
+        "motivation": "Trapped-ion systems and other quantum platforms experience reproducible, time-dependent coherent disturbances synchronized to external triggers (e.g., AC mains at 60 Hz), which act as deterministic control-frame errors rather than stochastic noise. Software-based compensation avoids the need for additional physical shielding, coils, or feedback hardware.",
+        "method": "Line-trigger-referenced calibration of the magnetic-field perturbation $\\Delta B(t)$ is used to derive pulse-by-pulse updates: programmed oscillator frequency $\\omega_L^{(\\mathrm{prog})}_j = \\omega_0 + 2\\pi\\kappa_j\\Delta B(t_j)$ ensures resonance, while phase correction $\\phi_j^{(\\mathrm{comp})} = \\int_0^{t_j}\\Delta B(t')\\mathrm{d}t' - t_j\\Delta B(t_j)$ (scaled by magnetic-field sensitivity $\\kappa_j$) tracks accumulated phase evolution. The protocol extends naturally to multilevel qudits using transition-specific sensitivities.",
+        "result": "Direct Ramsey measurements show harmonic detuning amplitude reduced by $8(1)\\times$ and harmonic phase amplitude by $5(1)\\times$. Randomized benchmarking on a $^{137}\\mathrm{Ba}^+$ ion with $\\kappa \\approx 3.2$ MHz/G recovers $F_{\\mathrm{avg}} = 99.93(1)\\%$ with compensation enabled, matching the magnetic-field-insensitive reference qubit. Qudit algorithms show robustness across dimensions when compensation is applied.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.00433",
+      "title": "Learning Mid-circuit Measurement Backaction from Three Repeated Measurements",
+      "authors": [
+        "Chia-Tung Chu",
+        "Su-un Lee",
+        "Han Zheng",
+        "Senrui Chen",
+        "Bibek Pokharel",
+        "Alireza Seif",
+        "Liang Jiang"
+      ],
+      "abstract": "Accurate modeling of mid-circuit measurements (MCMs) is essential for dynamic-circuit operations such as syndrome extraction, measurement-based reset, and the separation of state-preparation and measurement (SPAM) error. Unlike terminal measurement, a noisy MCM both produces a classical outcome and alters the incoming quantum state, thereby influencing subsequent circuit operations. This makes conventional confusion-matrix or fidelity-level characterization insufficient. Here we introduce an efficient, self-consistent protocol for learning a single-qubit Z-twirled MCM instrument, retaining the readout-backaction correlations and excitation-decay asymmetry that are erased in Pauli-error descriptions. Remarkably, readout bit strings from only three repeated MCMs on a maximally mixed input determine all learnable parameters of the reduced instrument, up to a single unidentifiable gauge degree of freedom. Physicality constraints convert this non-identifiability into narrow, gauge-aware error intervals. Implemented on IBM superconducting processors, the learned instrument improves Pauli-observable prediction by ${\\sim}100\\times$ over a conventional confusion-matrix model and reveals a $T_1$-decay dominated backaction. Our protocol provides a compact characterization layer for SPAM error separation, reset optimization, and noise-aware quantum error correction.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-05-29",
+      "score": 0.6047237025376113,
+      "similar_to": [
+        {
+          "title": "Model-based Optimization of Superconducting Qubit Readout",
+          "id": "2308.02079",
+          "similarity": 0.8537960648536682
+        },
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.831173837184906
+        }
+      ],
+      "summary": {
+        "summary": "This paper introduces an efficient protocol for learning single-qubit mid-circuit measurement (MCM) instruments on superconducting qubits by measuring readout-backaction correlations from three repeated MCMs on a maximally mixed input. The learned instrument, which is $Z$-twirled to eliminate coherences while preserving joint classical-outcome and post-measurement-state statistics, improves Pauli-observable prediction by $\\sim 100\\times$ over confusion-matrix models on IBM Heron transmons and reveals $T_1$-decay-dominated backaction with $\\eta_{\\downarrow} \\gg \\eta_{\\uparrow}$ ($10^1$--$10^2$ asymmetry).",
+        "motivation": "Conventional confusion-matrix characterization of terminal measurements is insufficient for dynamic circuits because mid-circuit measurements both produce classical readout and alter the quantum state; accurately modeling these readout-backaction correlations and excitation-decay asymmetry is essential for syndrome extraction, reset, and SPAM error separation.",
+        "method": "The protocol applies $Z$-twirling to reduce the MCM to a pair of 2×2 conditional-probability matrices $M^{(0)}, M^{(1)}$ mapping pre-measurement basis states and classical outcomes to post-measurement basis states; repeated MCM chains of length $L=3$ on maximally mixed input via Pauli randomization yield all five gauge-invariant scalars (one single-shot probability plus traces and determinants) via closed-form Cayley-Hamilton recurrence relations, leaving only one unidentifiable gauge parameter $t$ that is tightly constrained by physicality ($0 \\le M_{s',s}^{(o)}(t) \\le 1$).",
+        "result": "On 60 qubits across three IBM Heron devices (ibm_kingston, ibm_pittsburgh, ibm_boston), the learned instrument predicts depth-10 $X$-interleaved validation circuits with absolute $\\langle Z \\rangle$ deviations $\\lesssim 10^{-3}$ versus $10^{-2}$ for confusion-matrix models; gauge bands are typically $<10\\%$ relative width due to tight physicality constraints; self-consistency checks via Cayley-Hamilton recurrences show no statistically resolved violations of stationarity or Markovianity.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9593,
+    0.8504,
+    0.7667,
+    0.6635,
+    0.6502,
+    0.6047,
+    0.4251,
+    0.3624,
+    0.357,
+    0.3377,
+    0.3176,
+    0.3023,
+    0.2795,
+    0.2482,
+    0.2456,
+    0.2374,
+    0.2359,
+    0.2324,
+    0.2089,
+    0.1916,
+    0.186,
+    0.1778,
+    0.1735,
+    0.1605,
+    0.1539,
+    0.1425,
+    0.1337,
+    0.1292,
+    0.1173,
+    0.1165,
+    0.1046,
+    0.099,
+    0.0964,
+    0.0944,
+    0.0903,
+    0.0896,
+    0.0893,
+    0.0893,
+    0.0878,
+    0.0852,
+    0.0851,
+    0.0847,
+    0.0835,
+    0.0824,
+    0.0815,
+    0.0793,
+    0.0724,
+    0.0721,
+    0.0721,
+    0.072,
+    0.0714,
+    0.0705,
+    0.0698,
+    0.0693,
+    0.0666,
+    0.0653,
+    0.0647,
+    0.0627,
+    0.0606,
+    0.06,
+    0.0581,
+    0.0575,
+    0.0558,
+    0.0555,
+    0.054,
+    0.0535,
+    0.0534,
+    0.0525,
+    0.0515,
+    0.0503,
+    0.0496,
+    0.0485,
+    0.0475,
+    0.0469,
+    0.0455,
+    0.0444,
+    0.0432,
+    0.0412,
+    0.0408,
+    0.0401,
+    0.0379,
+    0.0374,
+    0.037,
+    0.0362,
+    0.0354,
+    0.0345,
+    0.0331,
+    0.0323,
+    0.0321,
+    0.0316,
+    0.0315,
+    0.031,
+    0.0305,
+    0.0295,
+    0.0291,
+    0.028,
+    0.0279,
+    0.0278,
+    0.0276,
+    0.0272,
+    0.0272,
+    0.027,
+    0.0247,
+    0.0246,
+    0.0245,
+    0.0226,
+    0.0225,
+    0.0222,
+    0.022,
+    0.0217,
+    0.0203,
+    0.0191,
+    0.018,
+    0.017,
+    0.0169,
+    0.0162,
+    0.0161,
+    0.016,
+    0.0159,
+    0.0155,
+    0.0154,
+    0.0147,
+    0.0145,
+    0.0139,
+    0.0132,
+    0.0132,
+    0.013,
+    0.013,
+    0.0129,
+    0.0125,
+    0.0125,
+    0.0121,
+    0.012,
+    0.0116,
+    0.0115,
+    0.0111,
+    0.0107,
+    0.0105,
+    0.0103,
+    0.0101,
+    0.0099,
+    0.0094,
+    0.0091,
+    0.0091,
+    0.0087,
+    0.0086,
+    0.0085,
+    0.0084,
+    0.0083,
+    0.0081,
+    0.0076,
+    0.0072,
+    0.007,
+    0.0065,
+    0.0065,
+    0.0064,
+    0.0062,
+    0.0058,
+    0.0055,
+    0.005,
+    0.0049,
+    0.0049,
+    0.0043,
+    0.0043,
+    0.0042,
+    0.0042,
+    0.0042,
+    0.0041,
+    0.004,
+    0.0036,
+    0.0035,
+    0.0035,
+    0.0027,
+    0.0023,
+    0.0022
+  ]
+}

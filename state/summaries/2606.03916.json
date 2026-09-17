@@ -1,0 +1,8 @@
+{
+  "summary": "This work develops a macroscopic description of 2D Pauli stabilizer codes and fault-tolerant logical operations using Majorana fermion motion, showing that braiding-based gates achieve lower space overhead than lattice surgery for near-term error rates. The framework captures code properties from lattice scales to asymptotic regimes, enabling compact design of fault-tolerant 2-qubit Clifford gates.",
+  "motivation": "Efficient logical gate implementation on non-local encoded information requires optimizing space overhead and reducing physical qubit requirements for fault-tolerant quantum computation.",
+  "method": "The authors map planar Pauli codes to Majorana fermion configurations, define code distance via Wilson and 't Hooft line lengths on the Majorana graph, implement fault-tolerant motion through both isentropic and virtual particle protocols, and design braiding-based gates that densely pack Majorana fermions while maintaining distance. Numerical benchmarks using the SI1000 error model compare braiding protocols against lattice surgery on square-grid superconducting qubit devices.",
+  "result": "Braiding-based 2-qubit Clifford gates require $4d^2 + O(d)$ physical qubits versus $6d^2 + O(d)$ for lattice surgery (asymptotic scaling advantage $\\eta_{\\mathrm{LS} \\to B} \\approx 0.184$), and simulations show higher fidelities even at small code distances for realistic error rates, with unoptimized circuits already satisfying the exponential advantage condition.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

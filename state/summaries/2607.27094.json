@@ -1,0 +1,8 @@
+{
+  "summary": "A native three-qubit CCZ gate locally equivalent to Toffoli is demonstrated on a fluxonium processor with a microwave-driven transmon coupler, achieving 99.39(5)% fidelity in 65 ns. This native implementation avoids the eight two-qubit gates required by conventional decomposition, reaching performance competitive with CZ gates at 99.94% fidelity.",
+  "motivation": "Native multi-qubit gates could reduce circuit depth overhead compared to decompositions, but existing superconducting architectures fail to simultaneously achieve high fidelity, simple control, and scalability without parasitic interactions.",
+  "method": "Three fluxonium qubits capacitively coupled through a transmon coupler exploit state-dependent shifts of the coupler transition frequency to enable spectral selectivity. A single microwave $2\\pi$ pulse on the coupler drive line implements the CCZ gate via resonant excitation of only the target computational state, with calibration via standard Rabi and Ramsey measurements.",
+  "result": "The 65-ns CCZ$_{\\bar{}}$ gate achieves 99.39(5)% fidelity at the coherence limit, equivalent to requiring 99.94% fidelity from CZ gates in conventional eight-gate decompositions; multiplexed control independently addresses $|000\\rangle$ and $|111\\rangle$ phases at 97.7(2)% and 98.87(12)% fidelity respectively without additional coherent errors.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

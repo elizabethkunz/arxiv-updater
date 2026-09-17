@@ -1,0 +1,165 @@
+{
+  "date": "2026-07-06",
+  "n_fetched": 81,
+  "papers": [
+    {
+      "id": "2607.03193",
+      "title": "Self-Specializing Vision-Language Transmon Chip Calibration in a Physics-Grounded Environment",
+      "authors": [
+        "Animesh Tripathy",
+        "Aswanth Krishnan"
+      ],
+      "abstract": "Calibrating a superconducting transmon chip is a sequential decision problem under noise, drift, and a finite budget: an expert must choose experiments, read ambiguous plots, judge fit quality, and revise stale beliefs as the chip drifts. We study whether a vision-language agent can close this loop and specialize itself to one physical device without weight updates, via three co-designed artifacts. The first is a physics-grounded simulation environment for transmon chips: calibration observables derive from circuit-quantized parameters via scqubits, with realistic flux-line distortion, wall-time-scaled and mid-scan drift, and gate leakage, concerns a toy simulator would omit; each tool call advances a modeled clock so drift accrues by wall time, not call count. The second is a vision-language agent that runs the loop end to end, calling tools, reading plots, maintaining a structured notebook, and submitting parameters without hidden truth, scored against hidden parameters and gate fidelities measured on the device. The third is gradient-free online adaptation: a reflector reads truth-free anomaly signatures from past attempts and grows a small, human-readable device note appended to the prompt, admitted by a paired-snapshot accept gate that isolates strategy improvement from drift. On a hard-tier chip under budget pressure, six iterations raised the worst-case CZ fidelity from 0.678 to 0.787 and cut its variance, reproducing at four-qubit scale; a single accepted note raised CZ fidelity from 0.678 to 0.913 on its paired snapshot. A planted-fault study confirms the note is causal, diagnosing a hardware fault truth-free, its principal value raising the failure floor and cutting variance. The agent, scoring, and reward transfer to real hardware via a measurement-backend swap; only the accept gate is a simulation affordance, reducing to a held-out-slice or repeat-and-average form.",
+      "categories": [
+        "quant-ph",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published": "2026-07-03",
+      "score": 0.7398986579435648,
+      "similar_to": [
+        {
+          "title": "Component-Level Inverse Design of Transmon Qubits Using Neural Networks",
+          "id": "2607.20795",
+          "similarity": 0.8424854278564453
+        },
+        {
+          "title": "Superconducting Flux Memory for Cryogenic Applications",
+          "id": "2609.00772",
+          "similarity": 0.8209176063537598
+        }
+      ],
+      "summary": {
+        "summary": "A vision-language agent calibrates superconducting transmon chips end-to-end by reading measurement plots and maintaining a structured notebook, specializing itself to one persistent drifting device via gradient-free online adaptation of an interpretable device note without weight updates. On hard-tier chips under budget pressure, six iterations raised worst-case CZ fidelity from 0.678 to 0.787; a single accepted note raised it to 0.913 on its paired snapshot, and planted-fault studies confirm the note diagnoses hardware defects truth-free while raising the failure floor.",
+        "motivation": "Calibrating a transmon chip is a sequential decision problem under noise, drift, and finite budget where expert judgment must weigh ambiguous plots and stale beliefs. Real hardware provides no ground truth for backpropagation and requires auditable, per-device strategies without impractical weight fine-tuning.",
+        "method": "The work co-designs three artifacts: a physics-grounded environment with circuit-quantized truth (scqubits), LTI flux distortion with FIR predistortion, six independently ablatable wall-time-scaled drift channels, mid-scan drift, and gate leakage; a multimodal calibration agent that calls tools, reads rendered plots, maintains a notebook with evidence records and stale-parameter flags, and submits parameters; and a reflector that grows a human-readable device note from truth-free anomaly signatures, admitted by a paired-snapshot accept gate that runs incumbent and challenger on identical frozen snapshots to isolate strategy improvement from device drift.",
+        "result": "On one hard-tier chip (tight 16/22 call budget), the first accepted note raised measured CZ fidelity from 0.678 to 0.913 on the same frozen snapshot; over six iterations worst-case CZ rose to 0.787 with variance reduction, reproducing at four-qubit scale. Planted-defect studies show the note diagnoses a dead coupler ($g \\times 0.15$) truth-free, with language absent from healthy controls; FIR predistortion achieves 15% better residual RMS than single-pole fitting; and the rendered plot alone recovers $+0.16$ parameter coverage over scalar-only baselines, eliminating catastrophic zero-coverage failures.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.02804",
+      "title": "Fault-tolerant quantum computation with static atomic buses",
+      "authors": [
+        "Matteo Bergonzoni",
+        "Laura Pecorari",
+        "Sam Norrell",
+        "Cody Poole",
+        "Guido Pupillo",
+        "Mark Saffman"
+      ],
+      "abstract": "Efficient quantum error correction and fault-tolerant quantum computing require scalable, high-fidelity long-range connectivity. In neutral-atom quantum computers, this is commonly achieved through atom transport, but shuttling introduces latency and motional heating that worsen with system size. Here, we introduce a neutral-atom architecture based on static atomic buses, in which auxiliary mediator atoms enable long-range entangling operations without qubit transport. The architecture naturally supports long-range stabilizer measurements in high-rate LDPC codes and transversal logical gates between neighboring surface-code patches, enabling a modular framework for efficient logical memories, Clifford computation, and magic-state distillation. To realize these capabilities, we co-design optimal-control protocols for bus-mediated controlled-Z gates that incorporate both microscopic neutral-atom dynamics and architectural constraints. We obtain smooth bus-mediated gates with fidelities approaching 99.9% and durations of a few hundred nanoseconds by combining time-optimal control with interaction-flatness and robustness constraints. Large-scale simulations of quantum error correction and logical entangling operations between neighboring surface-code patches predict more than an order-of-magnitude improvement in logical error rates compared with atom-shuttling architectures under realistic noise. The architecture achieves logical gate times of approximately 100 us and quantum-error-correction cycle times of about 1 ms for code distances d<12. These results establish static atomic buses as a practical alternative to atom shuttling for scalable fault-tolerant neutral-atom quantum computing.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-02",
+      "score": 0.6107395994281838,
+      "similar_to": [
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.868202805519104
+        },
+        {
+          "title": "Logic gates at the surface code threshold: Superconducting qubits poised for fault-tolerant quantum computing",
+          "id": "1402.4848",
+          "similarity": 0.8644815683364868
+        }
+      ],
+      "summary": {
+        "summary": "This work introduces a static neutral-atom architecture using auxiliary mediator atoms to enable long-range entangling gates via Rydberg interactions, eliminating transport-induced heating and latency that scales with code distance. Through co-designed optimal-control pulses achieving $F \\approx 0.999$ fidelity over hundreds of nanoseconds and large-scale error-correction simulations, the architecture demonstrates more than order-of-magnitude improvements in logical error rates compared to atom-shuttling approaches for surface codes ($d \\lesssim 12$) and high-rate LDPC codes.",
+        "motivation": "Neutral-atom quantum computers require scalable long-range connectivity for efficient quantum error correction, but atom transport introduces motional heating with infidelity scaling as $\\mathcal{O}(d^{2/3})$ and latency scaling as $\\mathcal{O}(d^{1/3})$ that severely limits logical performance in large systems.",
+        "method": "Bus-mediated controlled-$Z$ gates between distant qubits are optimized using Gradient Ascent Pulse Engineering (GRAPE), incorporating microscopic Rydberg dynamics and architectural constraints. Pulses are co-designed with interaction-flatness constraints to suppress motional errors, then benchmarked against atom-shuttling architectures via numerical simulations of surface codes, La-cross codes, and bivariate bicycle codes under realistic noise models including spontaneous emission, thermal motion, and motion-induced dephasing.",
+        "result": "Time-optimal bus-mediated gates achieve fidelities approaching 99.9% with durations of a few hundred nanoseconds for code distances up to $d=11$ ($r_0 \\approx 2.6$ µm, $n_{\\rm Rb/Cs} \\approx 73-78$, $\\Omega_{\\max}=2\\pi \\times 2$ MHz); logical gate times are $\\sim 100$ µs and QEC cycles $\\sim 1$ ms for $d \\lesssim 12$, achieving over an order-of-magnitude reduction in logical error rates at $p \\sim 10^{-3}$ compared to shuttling-based implementations.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.7399,
+    0.6107,
+    0.2991,
+    0.2658,
+    0.2624,
+    0.238,
+    0.2283,
+    0.2146,
+    0.2062,
+    0.1847,
+    0.1394,
+    0.1291,
+    0.1267,
+    0.1254,
+    0.1163,
+    0.1139,
+    0.1028,
+    0.1008,
+    0.0988,
+    0.0977,
+    0.0963,
+    0.0932,
+    0.0882,
+    0.081,
+    0.077,
+    0.0748,
+    0.0695,
+    0.0659,
+    0.0612,
+    0.0609,
+    0.0578,
+    0.0573,
+    0.052,
+    0.052,
+    0.0497,
+    0.0486,
+    0.0464,
+    0.0449,
+    0.0446,
+    0.0445,
+    0.0428,
+    0.0422,
+    0.04,
+    0.0388,
+    0.0369,
+    0.0349,
+    0.0329,
+    0.0302,
+    0.0256,
+    0.0252,
+    0.0242,
+    0.0232,
+    0.0217,
+    0.0213,
+    0.0208,
+    0.0192,
+    0.0192,
+    0.0182,
+    0.0172,
+    0.017,
+    0.0168,
+    0.0163,
+    0.0129,
+    0.0119,
+    0.0115,
+    0.0102,
+    0.0085,
+    0.0065,
+    0.0065,
+    0.0064,
+    0.0059,
+    0.0054,
+    0.0054,
+    0.0051,
+    0.0041,
+    0.0039,
+    0.0032,
+    0.0017,
+    0.0016,
+    0.0016,
+    0.0013
+  ]
+}

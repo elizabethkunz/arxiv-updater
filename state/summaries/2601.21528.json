@@ -1,0 +1,8 @@
+{
+  "summary": "This work proposes a high-frequency transmon architecture operating at $12$ GHz (spanning $11$–$13.5$ GHz) designed to achieve longer coherence times and higher scalability than conventional $4$–$6$ GHz qubits. The design targets an 8-qubit prototype with pathways to $72$ qubits, aiming for $T_1 \\approx 1.9$ ms and quality factors $Q \\approx 2.75 \\times 10^7$ using tantalum and Nb/Al/AlO$_x$ trilayer junctions on high-resistivity Si.",
+  "motivation": "Higher operating frequencies enable faster gate times and smaller device footprints while maintaining coherence, potentially improving scalability and operation at elevated temperatures relative to standard $5$ GHz transmons.",
+  "method": "A new transmon topology is designed with optimized superconducting junctions (Ta and Nb/Al/AlO$_x$ tri-layers on high-resistivity silicon) to operate stably at $12$ GHz with reduced charge noise.",
+  "result": "Preliminary design targets relaxation times of $1.9$ ms and quality factors of $2.75 \\times 10^7$, with pathways to scale from 8 to 72 qubits per chip.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

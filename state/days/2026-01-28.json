@@ -1,0 +1,257 @@
+{
+  "date": "2026-01-28",
+  "n_fetched": 96,
+  "papers": [
+    {
+      "id": "2601.19209",
+      "title": "Pareto Front Engineering of Dynamical Sweet Spots in Superconducting Qubits",
+      "authors": [
+        "Zhen Yang",
+        "Shan Jin",
+        "Yajie Hao",
+        "Guangwei Deng",
+        "Xiu-Hao Deng",
+        "Re-Bing Wu",
+        "Xiaoting Wang"
+      ],
+      "abstract": "Operating superconducting qubits at dynamical sweet spots (DSSs) suppresses decoherence from low-frequency flux noise. A key open question is how long coherence can be extended under this strategy and what fundamental limits constrain it. Here we introduce a fully parameterized, multi-objective periodic-flux modulation framework that simultaneously optimizes energy relaxation $T_1$ and pure dephasing $T_φ$, thereby quantifying the tradeoff between them. For fluxonium qubits with realistic noise spectra, our method enhances $T_φ$ by a factor of 3-5 compared with existing DSS strategies while maintaining $T_1$ in the hundred-microsecond range. We further prove that, although DSSs eliminate first-order sensitivity to low-frequency noise, relaxation rate cannot be reduced arbitrarily close to zero, establishing an upper bound on achievable $T_1$. At the optimized working points, we identify double-DSS regions that are insensitive to both DC and AC flux, providing robust operating bands for experiments. As applications, we design single- and two-qubit control protocols at these operating points and numerically demonstrate high-fidelity gate operations. These results establish a general and useful framework for Pareto-front engineering of DSSs that substantially improves coherence and gate performance in superconducting qubits.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-27",
+      "score": 0.8040722837923727,
+      "similar_to": [
+        {
+          "title": "The Flux Qubit Revisited to Enhance Coherence and Reproducibility",
+          "id": "1508.06299",
+          "similarity": 0.8690593838691711
+        },
+        {
+          "title": "The high-coherence fluxonium qubit",
+          "id": "1810.11006",
+          "similarity": 0.8685890436172485
+        }
+      ],
+      "summary": {
+        "summary": "This work introduces a Pareto-front optimization framework for periodic flux modulation of fluxonium qubits that simultaneously optimizes energy relaxation time $T_1$ and pure dephasing time $T_\\phi$, revealing trade-offs between these coherence metrics at dynamical sweet spots. For realistic device parameters ($E_C/2\\pi=1$ GHz, $E_L/2\\pi=0.79$ GHz, $E_J/2\\pi=4.43$ GHz), optimized waveforms achieve $T_\\phi$ enhanced by factors of 3–5 compared to prior DSS schemes while maintaining $T_1$ in the 500–900 μs range, and the framework proves a fundamental upper bound on $T_1$ within the DSS regime under $\\sigma_z$-coupled noise.",
+        "motivation": "Existing dynamical sweet spot strategies suppress low-frequency flux noise sensitivity but suffer an inherent trade-off between $T_1$ and $T_\\phi$ that limits coherence extension. The work asks whether simultaneous optimization of both coherence times is possible under general periodic flux control and what fundamental limits govern the maximum achievable values.",
+        "method": "Multi-objective genetic algorithms (NSGA2, SPEA2, tDEA, ENS-MOEA/D, HypE) optimize Fourier coefficients of periodic flux modulation while computing decoherence rates from Floquet theory in the presence of 1/$f$ flux noise ($A_f=1.8\\times10^{-6}$) and dielectric loss ($\\tan(\\delta_C)=1.1\\times10^{-6}$); results are validated against 5-level full fluxonium Hamiltonians and exemplified by gate design using charge-drive control pulses superimposed on DSS backgrounds.",
+        "result": "A 3–5 fold improvement in $T_\\phi$ (reaching 7.4 ms at DSS-3) with $T_1\\geq550$ μs is demonstrated; double-DSS points insensitive to both DC and AC flux achieve $T_\\phi$ improvements of 215$\\times$ over single-DSS at matched $T_1$; single-qubit X gates achieve $F_\\mathrm{avg}=99.99\\%$ with leakage $L_\\mathrm{avg}=9.35\\times10^{-6}$ in 11 ns, and two-qubit i-SWAP gates achieve $F_\\mathrm{avg}=99.92\\%$ with leakage $L_\\mathrm{avg}=7.18\\times10^{-4}$ in 34 ns (both validated at $N=12$ level truncation).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.19581",
+      "title": "Flux-tunable transmon incorporating a van der Waals superconductor via an Al/AlO$_x$/4Hb-TaS$_2$ Josephson junction",
+      "authors": [
+        "Eliya Blumenthal",
+        "Ilay Mangel",
+        "Amit Kanigel",
+        "Shay Hacohen-Gourgy"
+      ],
+      "abstract": "Incorporating van der Waals (vdW) superconductors into Josephson elements extends circuit-QED beyond conventional Al/AlO$_x$/Al tunnel junctions and enables microwave probes of unconventional condensates and subgap excitations. In this work, we realize a flux-tunable transmon whose nonlinear inductive element is an Al/AlO$_x$/4Hb-TaS$_2$ Josephson junction. The tunnel barrier is formed by sequential deposition and full in-situ oxidation of ultrathin Al layers on an exfoliated 4Hb-TaS$_2$ flake, followed by deposition of a top Al electrode, yielding a robust, repeatable hybrid junction process compatible with standard transmon fabrication. Embedding the device in a three-dimensional copper cavity, we observe a SQUID-like flux-dependent spectrum that is quantitatively reproduced by a standard dressed transmon--cavity Hamiltonian, from which we extract parameters in the transmon regime. Across measured devices we obtain sub-microsecond energy relaxation ($T_1$ from $0.08$ to $0.69~μ$s), while Ramsey measurements indicate dephasing faster than our $16$ ns time resolution. We also find a pronounced discrepancy between the Josephson energy inferred from spectroscopy and that expected from the Ambegaokar--Baratoff relation using room-temperature junction resistances, pointing to nontrivial junction physics in the hybrid Al/AlO$_x$/4Hb-TaS$_2$ system. Although we do not resolve material-specific subgap modes in the present geometry, this work establishes a practical route to integrating 4Hb-TaS$_2$ into coherent quantum circuits and provides a baseline for future edge-sensitive designs aimed at enhancing coupling to boundary and subgap degrees of freedom in vdW superconductors.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-01-27",
+      "score": 0.7973321020223906,
+      "similar_to": [
+        {
+          "title": "An All-van-der-Waals Qubit",
+          "id": "2609.14230",
+          "similarity": 0.8734254240989685
+        },
+        {
+          "title": "Observation of Josephson Harmonics in Tunnel Junctions",
+          "id": "2302.09192",
+          "similarity": 0.8673195838928223
+        }
+      ],
+      "summary": {
+        "summary": "A flux-tunable transmon with an Al/AlO$_x$/4Hb-TaS$_2$ Josephson junction was realized by sequential deposition and full in-situ oxidation of Al layers on exfoliated 4Hb-TaS$_2$, embedded in a 3D copper cavity, and characterized via two-tone spectroscopy and time-domain measurements. The device exhibits SQUID-like tunability and sub-microsecond $T_1$ (0.08–0.69 µs across devices), but exhibits rapid dephasing ($T_2^* < 16$ ns), and shows a factor-of-five deviation from the Ambegaokar–Baratoff relation, suggesting nontrivial junction physics in the hybrid system.",
+        "motivation": "Van der Waals superconductors like 4Hb-TaS$_2$ offer unconventional order parameters, potential topological boundary modes, and subgap excitations inaccessible in conventional Al/AlO$_x$/Al transmons. Integrating them into circuit-QED requires a repeatable, robust junction process compatible with standard transmon fabrication.",
+        "method": "A hybrid Al/AlO$_x$/4Hb-TaS$_2$ SQUID transmon was fabricated by sequential thin-Al deposition with full in-situ oxidation on exfoliated 4Hb-TaS$_2$ flakes, forming a controlled tunnel barrier, then capped with 200 nm Al. Two device geometries were tested: Design 1 routes supercurrent through the flake; Design 2 uses an asymmetric SQUID with one hybrid and one conventional junction to suppress bulk pathways.",
+        "result": "Extracted parameters for device 1A: $E_C/h \\approx 140$ MHz, $E_{J,\\Sigma}/h \\approx 11.6$ GHz, $d \\approx 0.35$, $\\omega_{01}/2\\pi \\approx 3.46$ GHz. Energy relaxation ranged $T_1 = 0.08$–$0.69$ µs; Ramsey dephasing timescale $< 16$ ns. Room-temperature junction resistances (1.9–2.4 kΩ) imply via Ambegaokar–Baratoff a gap of only 33–35 µeV, inconsistent with Al (162 µeV) and 4Hb-TaS$_2$ (390 µeV), suggesting suppressed Josephson coupling from anisotropic pairing or interface effects.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.19235",
+      "title": "AC Response Across the Metal Insulator Transition of YBCO Josephson Junctions Fabricated with a Helium Ion Beam",
+      "authors": [
+        "Adhilsha Parachikunnumal",
+        "Nirjhar Sarkar",
+        "Aravind Rajeev Sreeja",
+        "Sreekar Vattipalli",
+        "Rochelle Qu",
+        "Jay C. LeFebvre",
+        "Roger K. Lake",
+        "Shane A. Cybart"
+      ],
+      "abstract": "Using focused helium ion beam (FHIB) irradiation, we fabricated in-plane, high-Tc YBCO Josephson junctions. By varying the dose of the irradiation, we tune the junction barriers from metallic (SNS) to insulating (SIS) and investigate how this transition affects microwave-driven dynamics. As the barrier transitions from metallic to insulating, the oscillatory response of the Shapiro steps to the RF power changes dramatically. On either side of the metal-insulator transition, the devices exhibit clean integer Shapiro steps without half-integer features, demonstrating that the current--phase relation is dominated by the first harmonic and that the excess current is minimal. The current-voltage response is well-described by the resistively, capacitively shunted junction model assuming a single-harmonic current--phase relation. This behavior indicates well-controlled junction properties suitable for a wide range of superconducting electronics, including detectors, mixers, and high-density integrated circuits.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-01-27",
+      "score": 0.7768969788931702,
+      "similar_to": [
+        {
+          "title": "Electrical post-fabrication tuning of aluminum Josephson junctions at room temperature",
+          "id": "2602.20002",
+          "similarity": 0.8201254606246948
+        },
+        {
+          "title": "Observation of Josephson Harmonics in Tunnel Junctions",
+          "id": "2302.09192",
+          "similarity": 0.7974200248718262
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates that focused helium-ion-beam-irradiated YBCO Josephson junctions exhibit nearly ideal AC Josephson behavior across the metal–insulator transition, with clean integer Shapiro steps and negligible higher harmonics in the current–phase relation. By varying the irradiation dose from 1.6 to 3.4 × 10$^{16}$ ions/cm$^2$, the barrier is continuously tuned from SNS (metallic, $R \thickapprox 0.5$–0.8 Ω) through a crossover at 2.4 × 10$^{16}$ ions/cm$^2$ to SIS (insulating, $R \thickapprox 6$–12 Ω), revealing qualitatively different oscillation periodicities in Shapiro step response to 18 GHz RF power.",
+        "motivation": "High-$T_c$ Josephson junctions typically exhibit excess current and higher harmonics in the current–phase relation that corrupt AC response and limit device applications. Understanding how barrier properties govern microwave dynamics across the metal–insulator transition could guide optimization for metrology, detectors, and integrated circuits.",
+        "method": "FHIB-defined junctions were fabricated on 40 nm YBCO thin films and characterized by four-point transport (I–V, temperature dependence of $I_C$ and $R$) and microwave measurements at 18 GHz. Shapiro step amplitudes versus RF power were fitted with stochastic RCSJ simulations using single-harmonic and third-harmonic current–phase relations.",
+        "result": "Both SNS and SIS junctions are well described by purely sinusoidal CPR with $\thickapprox 2\text{%}$ third-harmonic correction maximum; measured maximum step amplitudes are $\thickapprox 12$ µA (SNS at 3.77 mW) and $\thickapprox 2.4$ µA (SIS at 1.5 mW), matching long-junction Kautz theory to within ~14–58%; voltage-normalized oscillation spacings are $\thickapprox 101$ µV (SNS) and $\thickapprox 85$ µV (SIS).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.19762",
+      "title": "Inter-branch message transfer on superconducting quantum processors: a multi-architecture benchmark",
+      "authors": [
+        "Cameron V. Cogburn"
+      ],
+      "abstract": "We treat inter-branch message transfer in a Wigner's-friend circuit as a practical benchmark for near-term superconducting quantum processors. Implementing Violaris' unitary message-transfer primitive, we compare performance across IBM Eagle, Nighthawk, and Heron (r2/r3) processors for message sizes up to $n=32$, without error mitigation. We study three message families -- sparse (one-hot), half-weight, and dense -- and measure conditional string success $p_{\\mathrm{all}}=\\Pr(P=μ\\mid R=0)$, memory erasure after uncomputation, and correlation diagnostics (branch contrast and bitwise mutual information). The sparse family compiles to essentially constant two-qubit depth, yielding a depth-controlled probe of device noise: at $n=32$ we observe $p_{\\mathrm{all}}$ spanning $\\approx0.07$ to $\\approx0.68$ across backends. In contrast, half and dense messages incur rapidly growing routing overhead, and transpiler-seed variability becomes a practical limitation near the coherence frontier. We further report an amplitude sweep (no-amplification test) and a divergence ``cousins'' sweep that quantifies degradation with branch-conditioned complexity. All data and figure-generation scripts are released.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-27",
+      "score": 0.5335793539853717,
+      "similar_to": [
+        {
+          "title": "Crosstalk In Contemporary Quantum Devices",
+          "id": "2605.26528",
+          "similarity": 0.8535135388374329
+        },
+        {
+          "title": "Surface code scaling on heavy-hex superconducting quantum processors",
+          "id": "2510.18847",
+          "similarity": 0.8516731262207031
+        }
+      ],
+      "summary": {
+        "summary": "This work implements and benchmarks Violaris' unitary inter-branch message-transfer protocol across IBM Eagle, Nighthawk, and Heron (r2/r3) superconducting processors for messages up to $n=32$ qubits without error mitigation. The sparse message family—which compiles to constant two-qubit depth—reveals device-level noise differences ($p_{\rm all}$ ranging from $\rm 0.07$ to $\rm 0.68$ at $n=32$), while half-weight and dense families expose routing overhead and transpiler-seed variability near the coherence frontier.",
+        "motivation": "Understanding how inter-branch message transfer and memory erasure scale with message size, message structure, and device compilation is essential for characterizing current superconducting processors and identifying practical limitations.",
+        "method": "The authors implemented the protocol in Qiskit on four IBM backends (ibm_rensselaer, ibm_miami, ibm_fez, ibm_boston) using three message families (sparse one-hot, half-weight, dense), measuring conditional string success $p_{\rm all}=\\Pr(P=\\mu \\mid R=0)$, memory erasure $p_{\\rm erase}$, branch contrast $\\Delta$, and bitwise mutual information between branch label and paper bits.",
+        "result": "The sparse family (constant compiled depth) reveals device differences at $n=32$; ibm_boston reaches $n=24$ for dense messages and $n=32$ for sparse, while ibm_rensselaer reaches only $n=4$ (dense) and $n=24$ (sparse). Transpiler-seed sweeps on ibm_miami show variability can shift achievable message size, and bitwise mutual information remains nonzero even when string transfer probability $p_{{\\rm all}}$ approaches zero.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8041,
+    0.7973,
+    0.7769,
+    0.5336,
+    0.4806,
+    0.4683,
+    0.3987,
+    0.3933,
+    0.33,
+    0.3092,
+    0.2628,
+    0.2573,
+    0.2082,
+    0.1976,
+    0.1812,
+    0.1799,
+    0.1635,
+    0.139,
+    0.1378,
+    0.1374,
+    0.1371,
+    0.1227,
+    0.1219,
+    0.1214,
+    0.0979,
+    0.0972,
+    0.0956,
+    0.0879,
+    0.0804,
+    0.0745,
+    0.0692,
+    0.0673,
+    0.0671,
+    0.0542,
+    0.0541,
+    0.0541,
+    0.0517,
+    0.0513,
+    0.0492,
+    0.0486,
+    0.048,
+    0.0475,
+    0.0432,
+    0.04,
+    0.038,
+    0.0364,
+    0.0363,
+    0.034,
+    0.0335,
+    0.0325,
+    0.0312,
+    0.0308,
+    0.0304,
+    0.0289,
+    0.0267,
+    0.0252,
+    0.0248,
+    0.0243,
+    0.0235,
+    0.0217,
+    0.0209,
+    0.0203,
+    0.0199,
+    0.0198,
+    0.0193,
+    0.0189,
+    0.0187,
+    0.017,
+    0.016,
+    0.015,
+    0.0149,
+    0.0148,
+    0.0125,
+    0.0117,
+    0.0108,
+    0.0083,
+    0.0082,
+    0.0081,
+    0.0079,
+    0.0077,
+    0.0075,
+    0.0074,
+    0.0074,
+    0.0072,
+    0.0072,
+    0.0064,
+    0.0062,
+    0.0052,
+    0.0049,
+    0.0041,
+    0.0039,
+    0.0033,
+    0.0029,
+    0.0027,
+    0.0025,
+    0.0017
+  ]
+}

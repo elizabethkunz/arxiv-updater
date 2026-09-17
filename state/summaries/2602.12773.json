@@ -1,0 +1,8 @@
+{
+  "summary": "This work presents a wafer-scale package architecture supporting >500 superconducting qubits on a single 3-inch die, engineered to suppress parasitic RF modes and material loss while managing cryogenic thermal contraction. Measurements of qubits loaded into the package demonstrate median $T_1, T_{2e} \\sim 100$ μs across ~100 qubits, readout fidelity of 97.5% (54 qubits), and effective qubit temperatures of 36 mK, validating that large-scale integration can be achieved without compromising device performance.",
+  "motivation": "Fault-tolerant quantum computers require packages supporting large, high-coherence qubit arrays, alongside high-throughput metrology to optimize fabrication and identify performance outliers that limit processor-scale yield and error rates.",
+  "method": "The package uses a superconducting aluminum lid/base with an array of pillars to shift parasitic cavity modes from 2.4 GHz to >12 GHz, employs PCB-based Purcell filters with 9-1 multiplexing to enable simultaneous readout and control, and mitigates loss through simulation-informed material selection and seam design ($g_{\\mathrm{seam, Al/In}} > 3 \\times 10^3$ Ω$^{-1}$m$^{-1}$).",
+  "result": "Simulations predict packaging-induced $T_1 > 20$ ms (Q > 500 million) for 0.5 mm pin distance; measured median $T_1 = 97$ μs and $T_{2e} = 129$ μs align with on-chip material loss limits rather than packaging loss, bootstrapped analysis shows median coherence requires ~5–15 qubits but extrema require ~50+ measurements for 20% accuracy.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

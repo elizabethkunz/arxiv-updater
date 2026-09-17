@@ -1,0 +1,8 @@
+{
+  "summary": "A lumped-element bolometric model of THz HEB mixers based on 40-nm sputtered MgB$_2$ thin films achieves quantitative agreement with measured conversion gain, noise temperature, and LO coupling. The analysis reveals that on-chip optical losses and Johnson noise are the dominant sensitivity limiters, with Johnson noise persisting as a fundamental constraint even with optimized optical coupling.",
+  "motivation": "Understanding the noise and sensitivity limits of MgB$_2$-based HEB mixers requires accurate modeling that connects intrinsic device physics to measured performance metrics.",
+  "method": "A lumped-element bolometric model was developed and validated against experimental measurements of conversion gain, noise temperature, and LO coupling efficiency for MgB$_2$ HEBs on high-resistivity silicon substrates; simulations of optimized device geometries were performed to identify remaining noise sources.",
+  "result": "On-chip optical losses primarily limit current device sensitivity; Johnson noise and thermal-fluctuation noise both contribute significantly to overall noise temperature, and Johnson noise remains substantial even in simulations with near-ideal optical coupling, indicating that further improvements require enhanced intrinsic conversion gain beyond coupling optimization.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

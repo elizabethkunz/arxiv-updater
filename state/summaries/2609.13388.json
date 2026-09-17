@@ -1,0 +1,8 @@
+{
+  "summary": "CUDA-Q Logical is a retargetable compiler infrastructure that lowers logical programs through a logical virtual machine, QEC microcode, physical gate schedules and real-time control plans while preserving semantics and provenance. Resource estimates are derived directly from these compiler artifacts and reconcile with established independent models, including for qLDPC surgery.",
+  "motivation": "Fault-tolerant toolchains are currently stitched together by hand, which separates resource estimates from the artifacts they describe and makes architecture comparisons unreliable.",
+  "method": "A layered, extensible compiler in which QEC codes, execution models, decoders and hardware architectures are modular extensions and every layer verifies composition and resource constraints.",
+  "result": "Schedule-derived estimates agree with independent models across application-architecture studies, qLDPC surgery and detector-error-model composition, and expose cost drivers hidden by aggregate formulas.",
+  "source": "abstract",
+  "generated_by": "Claude, written in-session for the sample day (not via the script's API path)"
+}

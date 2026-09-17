@@ -1,0 +1,374 @@
+{
+  "date": "2026-03-06",
+  "n_fetched": 115,
+  "papers": [
+    {
+      "id": "2603.04566",
+      "title": "Universal Hamiltonian control in a planar trimon circuit",
+      "authors": [
+        "Vivek Maurya",
+        "Daria Kowsari",
+        "Kumar Saurav",
+        "S. A. Shanto",
+        "R. Vijay",
+        "Daniel A. Lidar",
+        "Eli M. Levenson-Falk"
+      ],
+      "abstract": "Multimode circuits provide an avenue for flexible control of single and multi-qubit gates. In this work we implement a multimode circuit known as a trimon integrated in a planar geometry. The trimon features three transmon-like modes with strong all-to-all $ZZ$ coupling. We demonstrate high fidelity operations on the trimon, achieving flexible control of its rich state space. This includes qubit rotations conditioned on one or both other qubits, unconditional single-qubit rotations, and both excitation-conserving and double-excitation two-qubit entangling gates. Through multi-tone driving we are able to implement all 16 two-qubit Pauli operators in the two-qubit space. We further demonstrate using the trimon as a qudit with up to 8 states and higher coherence than typical transmon-based implementations. Our results show a compact, highly controllable device that can potentially replace transmons in standard superconducting processor architectures.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-04",
+      "score": 0.9249792434914267,
+      "similar_to": [
+        {
+          "title": "Universal Hamiltonian control in a planar trimon circuit",
+          "id": "2603.04566",
+          "similarity": 1.0
+        },
+        {
+          "title": "High-Fidelity, Frequency-Flexible Two-Qubit Fluxonium Gates with a Transmon Coupler",
+          "id": "2304.06087",
+          "similarity": 0.8439778089523315
+        }
+      ],
+      "summary": {
+        "summary": "A planar trimon superconducting circuit with three transmon-like modes coupled by strong all-to-all cross-Kerr interactions enables high-fidelity universal control of multi-qubit gates and qudit operations. The device demonstrates conditional-rotation gates with 99.93% fidelity via randomized benchmarking, Raman-mediated entangling gates (iSWAP and ibSWAP) at 99.19% and 99.59% fidelity, and qudit dynamical decoupling on up to 8 levels with coherence comparable to single qubits.",
+        "motivation": "Multimode superconducting circuits exploit strong dispersive couplings as a resource for flexible control, avoiding the need for additional tunable coupler elements while enabling broader Hamiltonian synthesis than conventional transmon architectures.",
+        "method": "Three modes in a planar geometry with capacitive drive and readout access were characterized using deterministic benchmarking and randomized benchmarking. Two-qubit and process tomography with SPAM correction validated conditional rotations, simultaneous multi-tone driving for unconditional gates, stimulated Raman transitions at detuning $\\Delta \\approx 30$ MHz, and virtual phase corrections for AC Stark shifts.",
+        "result": "The device implements all 16 two-qubit Pauli operators spanning the 15-dimensional traceless operator space, achieves QPT fidelities of 99.87% for $\\mathrm{ccX}_{\\pi/2}$ and 99.76% for $\\mathrm{cX}_{\\pi}$ in the two-qubit subspace, and generates Bell states with fidelities between 99.38% and 99.94%, with $T_1$ values of 33–54 µs and $T_2^{\\mathrm{Hahn}}$ of 30–45 µs across the three modes.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.04564",
+      "title": "Demonstrating Noise-adapted Quantum Error Correction With Break-Even Performance",
+      "authors": [
+        "Vismay Joshi",
+        "Anubhab Rudra",
+        "Sourav Dutta",
+        "Siddharth Dhomkar",
+        "Prabha Mandayam"
+      ],
+      "abstract": "The promise of quantum computing is closer to reality today than ever before, thanks to rapid progress in the development of quantum hardware. Even as qubit lifetimes and gate fidelities continue to improve, realizing robust, fault-tolerant quantum computers is contingent upon the successful implementation of quantum error correction (QEC). Conventional QEC schemes have rather high resource overheads and low threshold requirements, making them challenging to implement on present day hardware. Here, we use a recently developed noise-adapted 3-qubit QEC scheme to demonstrate break-even performance against native amplitude-damping (AD) noise on IBM quantum hardware. We use variational quantum circuits to construct hardware-efficient encoding and decoding circuits. This scheme is probabilistic due to the non-unitary nature of the recovery operators, which are implemented via the block-encoding technique. We demonstrate logical qubit lifetimes exceeding those of the physical qubits by performing multiple rounds of QEC. To further protect the qubits from dephasing due to crosstalk, we incorporate dynamical decoupling into our noise-adapted QEC scheme in a seamless fashion. To account for the post-selection overhead, we define a measure of gain, that allows for faithful performance benchmarking of the protocol. Our analysis suggests that the performance of our protocol is limited primarily by the measurement readout fidelity, and is bound to improve with successive generations of quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-04",
+      "score": 0.8093018409574828,
+      "similar_to": [
+        {
+          "title": "Demonstrating Quantum Error Correction that Extends the Lifetime of Quantum Information",
+          "id": "1602.04768",
+          "similarity": 0.8983660340309143
+        },
+        {
+          "title": "Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code",
+          "id": "2112.03708",
+          "similarity": 0.8826652765274048
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates break-even performance of a noise-adapted 3-qubit probabilistic quantum error correction code on IBM superconducting qubits, achieving logical qubit lifetimes of ~740 µs compared to bare qubit T₁ ~ 220 µs. The scheme combines hardware-efficient variational circuits for encoding/recovery, dynamical decoupling (CHaDD) to suppress crosstalk dephasing, and introduces a gain metric accounting for post-selection overhead.",
+        "motivation": "Conventional QEC schemes require prohibitive resources (e.g., surface codes need 17 qubits per logical qubit), while noise-adapted approaches tailored to dominant hardware noise can be more practical on NISQ devices. Demonstrating logical qubit lifetimes exceeding physical qubit relaxation times with only 5 total qubits would validate this noise-engineered approach.",
+        "method": "A 3-qubit Dicke-state code encoding permutation-invariant states ($|0_L\\rangle = (|100\\rangle + |010\\rangle + |001\\rangle)/\\sqrt{3}$, $|1_L\\rangle = |111\\rangle$) was implemented on IBM Torino using variational quantum circuits to construct hardware-efficient encoders and approximate recovery circuits (setting $\\gamma = 0$ in recovery operators to reduce depth from 60+ to 5 CZ gates). Multi-round QEC with 30 µs intervals and interleaved chromatic Hadamard DD (CHaDD) mitigated crosstalk; post-selection quantified via a signal-to-noise ratio gain metric.",
+        "result": "Multiple logical qubits demonstrated $T_1$ lifetimes exceeding physical qubits by 3.4×; $|0_L\\rangle$ and $|1_L\\rangle$ fidelities surpassed bare qubit decay across evolution times up to ~200 µs. Measurement readout fidelity ($\\sim 10^{-2}$) emerged as the primary performance bottleneck; gain reached near-unity in certain regimes. Simulations predict significant improvement with sub-1% readout errors on future devices.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.04584",
+      "title": "Fault-tolerant execution of error-corrected quantum algorithms",
+      "authors": [
+        "Michael A. Perlin",
+        "Zichang He",
+        "Anthony Alexiades Armenakas",
+        "Pablo Andres-Martinez",
+        "Tianyi Hao",
+        "Dylan Herman",
+        "Yuwei Jin",
+        "Karl Mayer",
+        "Chris Self",
+        "David Amaro",
+        "Ciaran Ryan-Anderson",
+        "Ruslan Shaydulin"
+      ],
+      "abstract": "Scaling up quantum algorithms to tackle high-impact problems in science and industry requires quantum error correction and fault tolerance. While progress has been made in experimentally realizing error-corrected primitives, the end-to-end execution of logical quantum algorithms using only fault-tolerant (FT) components has remained out of reach. We demonstrate the FT and error-corrected execution of two quantum algorithms, the Quantum Approximate Optimization Algorithm (QAOA) and the Harrow-Hassidim-Lloyd (HHL) algorithm applied to the Poisson equation, on Quantinuum H2 and Helios trapped-ion quantum processors using the $[[7,1,3]]$ Steane code. For QAOA circuits on 5 and 6 logical qubits, we show performance improvements from increasing the number of QAOA layers and the number of $T$ gates used to approximate logical rotations, despite increased physical circuit complexity. We further show that QAOA circuits with up to 8 logical qubits and 9 logical $T$ gates perform similarly to unencoded circuits. For the largest QAOA circuits we run, with 12 logical (97 physical) qubits and 2132 physical two-qubit gates, we still observe better-than-random performance. Finally, we show that adding active QEC cycles and increasing the repeat-until-success limit of state preparation subroutines can improve the performance of a quantum algorithm, thereby demonstrating critical capabilities of scalable FT quantum computation. Our results are enabled by an FT logical $T$ gate implementation with an infidelity of $\\sim 2.6(4)\\times10^{-3}$ and dynamic circuits with measurement-dependent feedback. Our work demonstrates near-break-even performance of complex, error-corrected algorithmic quantum circuits using only FT components.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-04",
+      "score": 0.6111822697781499,
+      "similar_to": [
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8918488025665283
+        },
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.8867961168289185
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates fault-tolerant execution of two quantum algorithms—QAOA and HHL—using the $[[7,1,3]]$ Steane code on Quantinuum H2 and Helios trapped-ion processors, achieving near-break-even performance with encoded circuits outperforming unencoded ones for up to 8 logical qubits. The results include an improved logical $T$ gate with infidelity $2.6(4)\\times10^{-3}$, identification of Steane-swap as the optimal QEC protocol, and key demonstrations that active error correction and repeat-until-success limits improve algorithm performance.",
+        "motivation": "End-to-end fault-tolerant execution of complex quantum algorithms using only fault-tolerant components has remained unrealized despite progress on isolated error-correction primitives. Demonstrating this capability on current hardware is essential for validating the path toward scalable quantum computation.",
+        "method": "We benchmarked individual fault-tolerant gadgets (specialized $|H\\rangle$-state preparation, T-swap and T-bare $T$ gates, and three QEC variants) and systematically executed full QAOA circuits (5–12 logical qubits, up to 2132 physical two-qubit gates) and HHL circuits for the Poisson equation on trapped-ion systems, varying RUS limits and QEC cycle counts while using trasyn for Clifford+$T$ decomposition.",
+        "result": "QAOA on LABS achieved $N\\cdot p^*=12$ with 6–8 logical qubits performing comparably to unencoded execution; the 12-logical-qubit portfolio optimization circuit (97 physical qubits) outperformed random guessing; HHL fidelity reached $0.97\\pm0.02$ with two QEC cycles inserted strategically, and increasing RUS limits reduced discard rates to nearly zero with minimal performance penalty.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.05145",
+      "title": "Quantum advantages for syndrome-aware noisy logical observable estimation",
+      "authors": [
+        "Kento Tsubouchi",
+        "Hyukgun Kwon",
+        "Liang Jiang",
+        "Nobuyuki Yoshioka"
+      ],
+      "abstract": "Recent progress in fault-tolerant quantum computing suggests that leveraging error-syndrome information at the logical layer can substantially improve performance, including the estimation of logical observables from noisy states. In this work, based on quantum estimation theory, we develop an information-theoretic framework to quantify the utility of error syndromes for noisy logical observable estimation. We distinguish two operational regimes of such syndrome-aware protocols: classical protocols, in which the logical measurement basis is fixed and syndrome information is used only in classical post-processing, and quantum protocols, in which the logical quantum control can be tailored to depend on the observed error syndrome. For classical syndrome-aware protocols, we prove a universal limitation: on average, syndrome information can improve the effective logical error rate by at most a factor of two, implying at most a quadratic reduction in sampling overhead. In contrast, once syndrome-conditioned quantum control is permitted, we demonstrate that the effective logical error rate decays exponentially with the number of code blocks. These findings provide fundamental guidance for designing future fault-tolerant architectures that actively exploit syndrome records rather than discarding them after decoding.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-05",
+      "score": 0.5472557039814261,
+      "similar_to": [
+        {
+          "title": "Lattice surgery with Bell measurements: Modular fault-tolerant quantum computation at low entanglement cost",
+          "id": "2510.13541",
+          "similarity": 0.8501204252243042
+        },
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.839002251625061
+        }
+      ],
+      "summary": {
+        "summary": "This work develops an information-theoretic framework to quantify how error-syndrome information improves logical observable estimation in fault-tolerant quantum computing. The key finding is a sharp separation: classical syndrome-aware protocols (fixed measurement basis) can improve effective logical error rates by at most a factor of two on average, but quantum syndrome-aware protocols (adaptive measurement basis) can achieve exponentially smaller error rates with multiple code blocks.",
+        "motivation": "Early fault-tolerant devices will retain residual logical errors after error correction, requiring estimation of logical observables from noisy states. While syndrome information is routinely discarded after decoding, recent work suggests it could improve performance, but fundamental limits on this utility remain unclear.",
+        "method": "Using quantum estimation theory and Fisher information analysis, the authors compare three protocols: syndrome-agnostic (no syndrome use), classical syndrome-aware (syndrome-conditioned classical post-processing only), and quantum syndrome-aware (syndrome-conditioned quantum measurements). They derive universal bounds via the convexity of the Fisher information function and prove exponential suppression through entanglement-assisted recovery exploiting information correlation between damaged and intact code blocks.",
+        "result": "For classical protocols, Theorem 1 proves the effective logical error rate satisfies $(1-\\theta_i^2)/2 \\cdot \\epsilon_i \\leq \\epsilon_i^\\mathrm{cSynd} \\leq \\epsilon_i$ on average, implying at most quadratic sampling improvement. For quantum protocols, Theorem 2 demonstrates that with $m$ code blocks of even-distance codes, $\\mathbb{E}_\\mathrm{Haar}[\\epsilon_i^\\mathrm{qSynd}]/\\epsilon_i = O(2^{-k'\\,m})$ in the low-noise limit, achieving exponential advantage. Numerical results on surface and repetition codes validate these conclusions.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.05383",
+      "title": "Temperature-Dependent Dielectric Function of Tantalum Nitride Formed by Atomic Layer Deposition for Tunnel Barriers in Josephson Junctions",
+      "authors": [
+        "Ekta Bhatia",
+        "Aaron Lopez Gonzalez",
+        "Yoshitha Hettige",
+        "Tuan Vo",
+        "Sandra Schujman",
+        "Kevin Musick",
+        "Thomas Murray",
+        "Kim Kisslinger",
+        "Chenyu Zhou",
+        "Mingzhao Liu",
+        "Satyavolu S. Papa Rao",
+        "Stefan Zollner"
+      ],
+      "abstract": "We report the dielectric functions of insulating tantalum nitride (TaN) films, deposited using atomic layer deposition (ALD) on 300 mm Si/SiO2 substrates, to demonstrate their suitability as tunnel barriers in tantalum-based Josephson junctions (JJ) for superconducting quantum circuits. The temperature-dependent ellipsometric angles were measured using ALD TaN films with nominal thicknesses of 13 nm and 25 nm at an incidence angle of 70 degrees, across photon energy ranges of 0.03 eV to 0.7 eV (80-300 K) and 0.5 eV to 6.5 eV (80-600 K). This data was used to develop a dispersion model for insulating ALD TaN films that incorporates a Tauc-Lorentz oscillator with a band gap of 1.5-1.8 eV to model the interband optical transitions. The extracted dielectric function of ALD TaN films shows an insulating behavior (mid-infrared transparency) at all temperatures and for both film thicknesses tested. ALD TaN does not exhibit infrared absorption due to free carriers, even at elevated temperatures, demonstrating its insulating nature, which is required for the tunnel barrier of the JJ in quantum applications. The results of transmission electron microscopy, including selected area electron diffraction, and X-ray diffraction are also discussed. Sputter depth-profile X-ray photoelectron spectroscopy (XPS) shows an N/Ta ratio of ~1.2 throughout the film. The lower band gap, low roughness, and thermal stability of ALD TaN compared to AlOx suggest the possibility of fabricating JJs with thicker barriers while achieving critical current densities required for qubits, better control of thickness and composition, reduced topography, and resistance to aging.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-03-05",
+      "score": 0.5384729357963413,
+      "similar_to": [
+        {
+          "title": "Tantalum as a base material for superconducting integrated circuits",
+          "id": "2606.13750",
+          "similarity": 0.8561394214630127
+        },
+        {
+          "title": "Assessing the Sensitivity of Niobium- and Tantalum-Based Superconducting Qubits to Infrared Radiation",
+          "id": "2602.05806",
+          "similarity": 0.8431007862091064
+        }
+      ],
+      "summary": {
+        "summary": "Temperature-dependent ellipsometric measurements of ALD-deposited TaN films (13 nm and 25 nm thicknesses) show a dielectric function with band gap 1.5–1.8 eV, mid-infrared transparency, and no free-carrier absorption from 80–600 K, demonstrating insulating behavior suitable for Josephson junction tunnel barriers. XPS reveals N/Ta ratio ~1.2 throughout the films, with superior thermal stability and lower roughness compared to AlOx, enabling thicker barriers while maintaining required critical current densities for superconducting quantum circuits.",
+        "motivation": "ALD-grown TaN films are a promising alternative to AlOx tunnel barriers in Ta-based Josephson junctions, but their optical and dielectric properties across relevant temperatures needed characterization to validate their suitability for scalable quantum device fabrication.",
+        "method": "Spectroscopic ellipsometry measured dielectric functions of ALD TaN films on 300 mm Si/SiO$_2$ substrates at 70° incidence over 0.03–6.5 eV photon energies and 80–600 K temperatures; data were fit with Tauc-Lorentz oscillator models and validated with transmission electron microscopy, selected-area diffraction, X-ray diffraction, and depth-profiling XPS.",
+        "result": "ALD TaN exhibits insulating behavior (no infrared free-carrier absorption) at all temperatures for both 13 nm and 25 nm thicknesses, with band gap 1.5–1.8 eV, thermal stability to 600 K, and N/Ta stoichiometry ~1.2, enabling thicker barriers than AlOx while maintaining quantum-application critical current densities.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.05249",
+      "title": "Robust and optimal control of open quantum systems",
+      "authors": [
+        "Zi-Jie Chen",
+        "Hongwei Huang",
+        "Lida Sun",
+        "Qing-Xuan Jie",
+        "Jie Zhou",
+        "Ziyue Hua",
+        "Yifang Xu",
+        "Weiting Wang",
+        "Guang-Can Guo",
+        "Chang-Ling Zou",
+        "Luyan Sun",
+        "Xu-Bo Zou"
+      ],
+      "abstract": "Recent advancements in quantum technologies have highlighted the importance of mitigating system imperfections, including parameter uncertainties and decoherence effects, to improve the performance of experimental platforms. However, most of the previous efforts in quantum control are devoted to the realization of arbitrary unitary operations in a closed quantum system. Here, we improve the algorithm that suppresses system imperfections and noises, providing notably enhanced scalability for robust and optimal control of open quantum systems. Through experimental validation in a superconducting quantum circuit, we demonstrate that our approach outperforms its conventional counterpart for closed quantum systems with an ultra-low infidelity of about $0.60\\%$, while the complexity of this algorithm exhibits the same scaling, with only a modest increase in the prefactor. This work represents a notable advancement in quantum optimal control techniques, paving the way for realizing quantum-enhanced technologies in practical applications.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-05",
+      "score": 0.5185806147931596,
+      "similar_to": [
+        {
+          "title": "Dynamical decoupling for superconducting qubits: a performance survey",
+          "id": "2207.03670",
+          "similarity": 0.8550801873207092
+        },
+        {
+          "title": "Simple pulses for elimination of leakage in weakly nonlinear qubits",
+          "id": "0901.0534",
+          "similarity": 0.845610499382019
+        }
+      ],
+      "summary": {
+        "summary": "This work introduces the approximate Open-GRAPE algorithm, a computationally efficient method for optimizing quantum controls in open systems that accounts for both parameter uncertainties and decoherence, demonstrated experimentally in a superconducting cavity-transmon system achieving infidelity below 0.60%. The algorithm maintains $\\mathcal{O}(d^2)$ complexity (only a modest constant factor increase over Closed-GRAPE) while dramatically improving the yield of high-fidelity pulses by over 340-fold compared to conventional approaches.",
+        "motivation": "Practical quantum systems suffer from decoherence and parameter uncertainties, but existing optimal control algorithms either ignore these imperfections (Closed-GRAPE) or require prohibitively expensive $\\mathcal{O}(d^3)$ density matrix computations (Open-GRAPE), creating a need for a scalable algorithm that robustly handles both noise sources.",
+        "method": "The approximate Open-GRAPE expands the open-system evolution perturbatively to first order in weak noise and parameter uncertainty, deriving analytical expressions for contributions $J_d$ (decoherence) and $J_f$ (parameter fluctuations) that can be computed using state vector trajectories rather than density matrices, enabling gradient-based optimization with the L-BFGS-B algorithm.",
+        "result": "In the superconducting cavity ($Q=4.9\\times10^7$, $T_1=1300~\\mu\\mathrm{s}$) with ancillary transmon ($T_1=110~\\mu\\mathrm{s}$, $T_2=130~\\mu\\mathrm{s}$, $\\chi/2\\pi=1.00~\\mathrm{MHz}$), average infidelity improved from $1.84\\%$ to $1.01\\%$ for initialization and from $0.89\\%$ to $0.72\\%$ for logical $R_y(\\pi)$ gates, with best achieved infidelity of $0.44\\%$ at $\\tau=2~\\mathrm{ns}$ step resolution.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.925,
+    0.8093,
+    0.6112,
+    0.5473,
+    0.5385,
+    0.5186,
+    0.4929,
+    0.4863,
+    0.4791,
+    0.4642,
+    0.4494,
+    0.4328,
+    0.4181,
+    0.3968,
+    0.3415,
+    0.3323,
+    0.3225,
+    0.3168,
+    0.2864,
+    0.2805,
+    0.2794,
+    0.2753,
+    0.2588,
+    0.2548,
+    0.2523,
+    0.2471,
+    0.238,
+    0.2207,
+    0.2185,
+    0.2096,
+    0.1688,
+    0.1533,
+    0.1376,
+    0.1347,
+    0.1329,
+    0.132,
+    0.1268,
+    0.1261,
+    0.1184,
+    0.1156,
+    0.1144,
+    0.1061,
+    0.1032,
+    0.0939,
+    0.0935,
+    0.09,
+    0.0894,
+    0.0814,
+    0.0805,
+    0.0792,
+    0.0753,
+    0.0692,
+    0.0649,
+    0.064,
+    0.0595,
+    0.0574,
+    0.0566,
+    0.055,
+    0.0455,
+    0.0432,
+    0.0431,
+    0.043,
+    0.0421,
+    0.0413,
+    0.0412,
+    0.0384,
+    0.0368,
+    0.0353,
+    0.0339,
+    0.0328,
+    0.0324,
+    0.0316,
+    0.0304,
+    0.0297,
+    0.0288,
+    0.0272,
+    0.0261,
+    0.0232,
+    0.0228,
+    0.0219,
+    0.0195,
+    0.0194,
+    0.0189,
+    0.0185,
+    0.0182,
+    0.0153,
+    0.0145,
+    0.014,
+    0.0138,
+    0.0137,
+    0.0135,
+    0.0134,
+    0.0117,
+    0.0115,
+    0.0111,
+    0.0109,
+    0.0101,
+    0.01,
+    0.0086,
+    0.0083,
+    0.0081,
+    0.008,
+    0.0077,
+    0.0074,
+    0.0063,
+    0.0053,
+    0.0053,
+    0.0053,
+    0.0044,
+    0.003,
+    0.0029,
+    0.0028,
+    0.0022,
+    0.0011,
+    0.0007
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "This work benchmarks Quantinuum Helios-1, a 98-qubit trapped-ion QPU, using linear-ramp QAOA and noiseless reference simulations on JUPITER (an exascale supercomputer) for circuits up to 48 qubits with 3,384 two-qubit gates. The study establishes that Helios-1 maintains noise-tolerant performance up to 48 qubits where outputs match noiseless simulations, extends to 93 qubits (12,834 two-qubit gates) with statistically distinguishable algorithmic signal, and transitions to random-like outputs at 95–98 qubits.",
+  "motivation": "Determining the boundary between coherent and noise-dominated regimes in near-term quantum processors requires both ideal reference benchmarks and scalable application-level metrics that isolate intrinsic QPU performance without tuning.",
+  "method": "Large-scale state-vector simulations on JUPITER using JUQCS across 4,096 nodes with 16,384 GH200 superchips at FP32 precision provided noiseless references for up to 48 qubits; performance beyond classical simulability was assessed via mean-of-means resampling with a $3\\sigma$ threshold against random sampling baselines.",
+  "result": "Helios-1 with two-qubit gate infidelity $7.9 \\times 10^{-4}$ operates noise-tolerant up to 48 qubits (verified against JUPITER), maintains coherent performance (statistically distinguishable from random) up to 93 qubits, and becomes random-like beyond 95 qubits; the 48-qubit noiseless simulation at $p=3$ required $\\sim 2490$ s and stressed the full memory-and-network capacity of the exascale system.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

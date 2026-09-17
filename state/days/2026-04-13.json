@@ -1,0 +1,321 @@
+{
+  "date": "2026-04-13",
+  "n_fetched": 82,
+  "papers": [
+    {
+      "id": "2604.08672",
+      "title": "Hardware-Efficient Erasure Qubits With Superconducting Transmon Qutrits",
+      "authors": [
+        "Bao-Jie Liu",
+        "Ying-Ying Wang",
+        "Yu-Xin Wang",
+        "Manthan Badbaria",
+        "Shruti Puri",
+        "Chen Wang"
+      ],
+      "abstract": "Quantum error correction using erasure qubits offers higher fault-tolerant thresholds and improved scaling by converting dominant physical errors into detectable erasures. In superconducting circuits, erasure qubits can be constructed using the dual-rail approach, which, however, requires additional qubit-count overhead and tailored coupling elements. Here, we demonstrate a hardware-efficient scheme that operates transmon qutrits as erasure qubits, which is compatible with standard superconducting circuit-QED hardware. The logical states $\\ket{0_\\text{L}}$ and $\\ket{1_\\text{L}}$ are represented by the ground and second excited states, while the dominant relaxation errors can be detected via an ancilla qubit using a microwave-activated two-qutrit SWAP gate. We demonstrate a logical qubit $T_1$ lifetime exceeding $500\\,μ\\mathrm{s}$, post-selected with repeated mid-circuit erasure detection, which is ten times longer than the $T_1$ time of the transmon physical qubit. Coherence times beyond $300\\,μ\\mathrm{s}$ are achieved using dynamical decoupling. Single-qubit gate operations reach average Clifford gate infidelity on the order of $10^{-4}$. We further demonstrate dual-purposing an ancilla qubit for both erasure detection and parity checking, showing heralded generation of Bell states between erasure qubits. These results suggest that mainstream architectures of transmon qubit arrays may already be capable of implementing erasure-based QEC strategies for hardware-efficient fault-tolerant quantum computing.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-09",
+      "score": 0.981488420936123,
+      "similar_to": [
+        {
+          "title": "Developments in superconducting erasure qubits for hardware-efficient quantum error correction",
+          "id": "2601.02183",
+          "similarity": 0.9312681555747986
+        },
+        {
+          "title": "Bias-preserving and error-detectable entangling operations in a superconducting dual-rail system",
+          "id": "2503.10935",
+          "similarity": 0.9214558601379395
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates hardware-efficient erasure qubits using the ground and second-excited states of individual superconducting transmon qutrits, with erasure detection via a microwave-activated two-qutrit SWAP gate to an ancilla. Post-selected logical $T_1$ and $T_2$ lifetimes exceed 500 μs and 300 μs respectively—ten times longer than the bare transmon—with single-qubit Clifford gate infidelity of $7.6 \\times 10^{-4}$ under erasure detection.",
+        "motivation": "Erasure qubits convert dominant decoherence errors into detectable leakage, enabling higher fault-tolerance thresholds and better QEC scaling than conventional qubit encodings. Dual-rail implementations require three physical qubits per logical qubit; exploiting the multilevel structure of individual transmons could reduce overhead while remaining compatible with standard superconducting circuit-QED hardware.",
+        "method": "Three-qubit device with flux-tunable transmons; data qubit $Q_1$ encodes logical states in $|g\\rangle$ and $|f\\rangle$, with $|e\\rangle$ leakage detected via four-wave-mixing-driven $|eg\\rangle \\leftrightarrow |0_\\mathrm{L}f\\rangle$ SWAP gate to ancilla $Q_a$. Mid-circuit erasure checks interleaved every 3.52 μs with XY4 dynamical decoupling; post-selection retains only trajectories with no detected erasures.",
+        "result": "Logical $T_1$ of $549(56)$ μs for $|+Z\\rangle$ state and phase-flip coherence of $301(22)$ μs with erasure detection; double-decay and false-negative errors contribute $1.0 \\times 10^{-3}$ and $0.9 \\times 10^{-3}$ respectively per cycle; erasure lifetime $\\sim 45$ μs satisfies the hierarchy of Pauli errors substantially below erasure errors. Two-qubit Bell states between erasure qubits demonstrate ancilla dual-purposing for both erasure detection and parity checking with fidelities up to $0.93(3)$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.08655",
+      "title": "High-Fidelity Transmon Reset with a Multimode Acoustic Resonator",
+      "authors": [
+        "Andraž Omahen",
+        "Simon Storz",
+        "Igor Kladarić",
+        "Yiwen Chu"
+      ],
+      "abstract": "Achieving sufficiently low residual excited-state populations remains a key challenge in superconducting quantum circuits, particularly for protocols operating close to noise limits or requiring repeated qubit initialization. Existing protocols primarily address this challenge through sophisticated control, engineered dissipation, or feedback mechanisms. Here, we demonstrate an alternative approach in which a superconducting qubit is reset using a physically distinct, intrinsically colder phononic bath. Specifically, we interface a transmon with a high-overtone bulk acoustic resonator (HBAR), enabling cooling of the qubit into GHz-frequency modes. Using this approach, we achieve a residual excited-state population of the qubit below $10^{-4}$, representing an improvement of one to two orders of magnitude compared to existing reset schemes. These results highlight the potential of phononic baths as a resource for high-fidelity qubit initialization in superconducting circuits.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-04-09",
+      "score": 0.9783390745806134,
+      "similar_to": [
+        {
+          "title": "Fast readout and reset of a superconducting qubit coupled to a resonator with an intrinsic Purcell filter",
+          "id": "2202.06202",
+          "similarity": 0.879393458366394
+        },
+        {
+          "title": "On-demand driven dissipation for cavity reset and cooling",
+          "id": "2310.16785",
+          "similarity": 0.8719148635864258
+        }
+      ],
+      "summary": {
+        "summary": "A transmon qubit is coupled to a high-overtone bulk acoustic resonator (HBAR) and reset via repeated iSWAP gates with different GHz-frequency acoustic modes, achieving residual excited-state population $\\langle p \\rangle = 8.3 \\times 10^{-5}$ with 95% confidence interval $[0.027, 2.52] \\times 10^{-4}$. This represents a 5–10× improvement over existing microwave-based schemes and demonstrates that phononic baths provide intrinsically colder, hardware-efficient resources for high-fidelity qubit initialization.",
+        "motivation": "Standard passive cooling leaves transmon qubits with residual excited-state populations near 1%, limiting protocols that require repeated initialization or operate near noise limits, such as quantum error correction and dark-matter detection.",
+        "method": "A superconducting transmon coupled to an HBAR via a piezoelectric dome is driven with AC Stark shifts to resonantly swap excitations between the qubit and different acoustic modes ($g \\approx 2\\pi \\times 300$ kHz, iSWAP duration $\\sim 0.5$ µs per gate, four gates total). The acoustic modes have intrinsically low thermal occupation (independently measured steady-state phonon population $\\sim 10^{-4}$) and are separated by 12.6 MHz in frequency, enabling multimode entropy extraction without additional dissipation channels.",
+        "result": "After four iSWAP gates, the qubit population saturates at the measured steady-state phonon population level ($p_4 = 8.3 \\times 10^{-5}$), with saturation after three gates ($p_3 = 1.3 \\times 10^{-4}$), consistent with master-equation simulations using measured parameters: $T_{\\mathrm{bath}} = 45 \\pm 4$ mK, $T_1 = 23.1 \\pm 12.4$ µs, $T_\\phi = 17.1 \\pm 8.1$ µs. Reset duration is 3.4 µs.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.09050",
+      "title": "Tantalum-Encapsulated Niobium Superconducting Resonators: High Internal Quality Factor and Improved Temporal Stability via Surface Passivation",
+      "authors": [
+        "Anas Alkhazaleh",
+        "Juan Villegas",
+        "Florent Ravaux",
+        "Alexey Zharinov"
+      ],
+      "abstract": "Superconducting coplanar waveguide resonators are essential components in quantum processors, where their internal quality factor (Qi) constrains qubit coherence and readout fidelity. In niobium devices, microwave losses at millikelvin temperatures are strongly influenced by two-level systems (TLS) associated with the complex NbOx surface oxide. To mitigate these losses, we investigate a surface-engineering approach in which Nb films are capped in situ with a thin tantalum layer to suppress Nb2O5 formation and replace the native NbOx interface with a Ta-based oxide. We fabricate Nb/Ta bilayer and reference Nb resonators on high-resistivity silicon using identical DC sputtering and wet etching conditions, and characterize their performance at millikelvin temperatures. Fresh Ta-encapsulated devices exhibit internal quality factors up to 2.4 x 10^6 in the near-single-photon regime, with power dependence consistent with reduced TLS-related loss at the metal-air interface. A control Nb device fabricated under the same process shows comparatively lower Q_TLS, consistent with the beneficial effect of the Ta capping layer. Furthermore, ageing tests performed on Nb/Ta resonators after six months reveal a moderate reduction in Q_TLS relative to their initial values, yet the performance remains superior to newly fabricated Nb-only devices. These results suggest that thin Ta encapsulation enhances interface quality and contributes to improved temporal stability while remaining compatible with Nb-based fabrication workflows.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-04-10",
+      "score": 0.8831705505462007,
+      "similar_to": [
+        {
+          "title": "Reducing TLS loss in tantalum CPW resonators using titanium sacrificial layers",
+          "id": "2601.16369",
+          "similarity": 0.9082667231559753
+        },
+        {
+          "title": "Beta Tantalum Transmon Qubits with Quality Factors Approaching 10 Million",
+          "id": "2603.13174",
+          "similarity": 0.8797892332077026
+        }
+      ],
+      "summary": {
+        "summary": "Niobium coplanar waveguide resonators are encapsulated with thin tantalum capping layers to suppress the lossy native NbOx surface oxide and replace it with a more uniform Ta2O5 interface. Fresh Nb/Ta bilayer devices achieve internal quality factors up to $2.4 \times 10^6$ in the single-photon regime with reduced two-level-system loss compared to uncapped Nb controls, and remain superior after six months of storage despite moderate degradation.",
+        "motivation": "Niobium's native Nb2O5 oxide is a dominant source of two-level-system loss in superconducting resonators, whereas tantalum forms a more stoichiometric and structurally uniform Ta2O5 with fewer defects, motivating hybrid Nb/Ta bilayers as a surface-engineering route to improve coherence without sacrificing fabrication maturity.",
+        "method": "Eight $\\lambda/4$ CPW resonators were fabricated on high-resistivity silicon with sputtered 165–175 nm Nb base layers and 25–35 nm Ta caps deposited in situ, alongside reference Nb-only devices using identical processing. Power-dependent transmission spectroscopy was performed at 10 mK to extract internal quality factors and decompose losses using a standard tunneling-model fit to $1/Q_i(\\bar{n}) = 1/Q_0 + (1/Q_{\\mathrm{TLS}})/(1 + \\bar{n}/n_c)$.",
+        "result": "Nb/Ta resonators exhibit $Q_{\\mathrm{TLS}} \\sim 4$–$10 \\times 10^6$ (mean $\\sim 7 \\times 10^6$) compared to $Q_{\\mathrm{TLS}} \\approx 2.3 \\times 10^6$ for fresh Nb-only devices; after six months, aged Nb/Ta devices degrade to mean $Q_{\\mathrm{TLS}} \\approx 3.5 \\times 10^6$ but remain superior to baseline Nb, while background loss $Q_0 \\sim 2.9 \\times 10^6$ dominates over TLS contributions (60–80% of total loss).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.08813",
+      "title": "Investigation of coherence of niobium-based resonators enabled by a fast-sealing microwave cavity",
+      "authors": [
+        "Chi Zhang",
+        "Richard Germond",
+        "Noah Janzen",
+        "Anne-Marie Valente-Feliciano",
+        "Mustafa Bal",
+        "Adrian Lupascu"
+      ],
+      "abstract": "Resonators and qubits with a niobium (Nb) base metal layer achieve some of the highest coherence times in superconducting quantum devices. The performance of such devices is often limited by loss associated with two-level systems, which are found primarily at material surfaces and interfaces. The metal-air (MA) interface is a major contributor to device loss. In this work, we develop a fast-sealing microwave cavity that enables devices to be placed under vacuum within five minutes of oxide removal, thereby significantly reducing the MA interface loss compared to common device processing and packaging approaches. Using coplanar stripline resonators, we demonstrate that devices sealed in such a cavity exhibit internal quality factors exceeding one million at single-photon power. After re-exposure to air, the devices show downward resonance frequency shifts and quality factor degradations, quantitatively consistent with a model of Nb oxide regrowth. The fast-sealing microwave cavity provides a practical and consistent method to mitigate MA interface loss and sustain high coherence in Nb devices, and establishes a controlled platform for studying metal oxide regrowth kinetics and dielectric properties, the understanding of which is critical to achieving high coherence in superconducting quantum devices.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-09",
+      "score": 0.8615990590476819,
+      "similar_to": [
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.8771237730979919
+        },
+        {
+          "title": "Comparison of Dielectric Loss in Titanium Nitride and Aluminum Superconducting Resonators",
+          "id": "2007.07338",
+          "similarity": 0.858180046081543
+        }
+      ],
+      "summary": {
+        "summary": "A fast-sealing microwave cavity that evacuates samples within 5 minutes of HF etching suppresses niobium oxide regrowth and enables coplanar stripline resonators with intrinsic quality factors exceeding $(2.5 ± 0.3) × 10^6$ at single-photon power. Deliberate re-oxidation after 8 days in air yields a measured Nb$_2$O$_5$ regrowth thickness of $2.5$ nm and a metal–air interface loss tangent of $(2.9 ± 0.7) × 10^{-3}$, providing quantitative control over oxidation kinetics.",
+        "motivation": "Niobium-based superconducting devices achieve record coherence times but suffer rapid native oxide regrowth after HF etching, which degrades quality factors by suppressing two-level system losses. Understanding and mitigating the metal–air interface loss requires a practical packaging method that preserves chemically treated surfaces on timescales compatible with cryogenic measurement.",
+        "method": "Four $\\lambda/4$ coplanar stripline resonators with gaps from 10 to 100 µm were fabricated on sapphire with 145 nm sputtered Nb, sealed in a copper cavity with indium compression seals and pinch-off tube, evacuated to sub-millibar pressure within 5 minutes post-etch, and measured in reflection at 20 mK; devices were then warmed, exposed to ambient air for 8 days, and remeasured to extract oxide properties from frequency shifts and quality factor degradation.",
+        "result": "Sealed devices show $Q_{\\mathrm{int}} > 10^6$ at single-photon power; after air re-exposure, frequency shifts across all four resonators are consistent with $\\Delta t_{\\mathrm{MA}} = 2.5$ nm Nb$_2$O$_5$ regrowth (versus 1.8 nm predicted from literature kinetics), and $Q_{\\mathrm{int}}$ degradation yields $\\tan\\delta_{\\mathrm{MA}} = (2.9 ± 0.7) × 10^{-3}$, comparable to prior measurements and upper bounds from thermal analysis.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.08861",
+      "title": "Crosstalk-robust superconducting two-qubit geometric gates using tunable couplers",
+      "authors": [
+        "Bo-Xun Deng",
+        "Jia-Qi Hu",
+        "Cheng-Yun Ding",
+        "Zheng-Yuan Xue",
+        "Tao Chen"
+      ],
+      "abstract": "The design of coupler-based superconducting two-qubit gates simplifies circuit layout and alleviate frequency crowding, thereby enhancing the scalability and flexibility of quantum chips. However, in such architectures, a trade-off often exists between suppressing crosstalk and reducing gate duration, and how to achieve synergistic optimization of both remains an open challenge. To address this, this paper proposes a coupler-assisted superconducting two-qubit geometric gate scheme oriented towards crosstalk robustness. By introducing additional parametric degrees of freedom, the scheme steers the system evolution along desired trajectories, thereby flexibly avoiding crosstalk-sensitive operational regions. Numerical simulations demonstrate that the proposed scheme can effectively suppress crosstalk errors while enabling fast gate operations, and exhibits strong robustness against typical experimental imperfections such as qubit frequency drift. Moreover, even when accounting for unavoidable high-frequency oscillation terms and qubit decoherence in realistic physical systems, our crosstalk-robust two-qubit geometric gates still achieve high fidelity. This work provides a feasible pathway toward robust and efficient two-qubit gate implementation in superconducting quantum computation.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-10",
+      "score": 0.7468623817352166,
+      "similar_to": [
+        {
+          "title": "A tunable coupling scheme for implementing high-fidelity two-qubit gates",
+          "id": "1803.09813",
+          "similarity": 0.8911634683609009
+        },
+        {
+          "title": "A double-resonator coupler for high-fidelity two-qubit gates between superconducting qubits",
+          "id": "2609.05222",
+          "similarity": 0.8774511814117432
+        }
+      ],
+      "summary": {
+        "summary": "This paper proposes an unconventional nonadiabatic geometric quantum computation (UNGQC) scheme for implementing crosstalk-robust two-qubit gates in tunable-coupler superconducting systems by introducing parametric degrees of freedom ($\\delta$ and $\\varphi$) that steer evolution along optimized trajectories on the Bloch sphere. Numerical simulations demonstrate that the scheme achieves $>99.7\\%$ fidelity for controlled-phase gates while suppressing ZZ crosstalk errors and maintaining robustness against qubit frequency drift, even under realistic conditions including decoherence and high-frequency oscillation terms.",
+        "motivation": "Tunable-coupler architectures offer improved scalability by alleviating frequency crowding, but conventional implementations face a fundamental trade-off: increasing coupler frequency suppresses ZZ crosstalk ($\\xi_{ZZ}$) but reduces effective coupling strength $g_e$, forcing longer gate times that accumulate decoherence errors. Previous control schemes addressing this require complex pulse shaping or auxiliary resources.",
+        "method": "The authors introduce a trajectory-optimization approach based on geometric phases, allowing evolution along triangle-cap paths in Bloch-sphere parameter space (characterized by polar angle $\\chi$ and azimuthal angle $\\xi$) rather than fixed longitude paths. By varying $\\chi$ from 0 to $\\pi$ and optimizing detuning ($\\Delta_e$) and phase ($\\varphi_e(t)$) parameters, they identify the geometry with minimal crosstalk sensitivity ($\\chi=0.43\\pi$), achieving $g_e/2\\pi\\sim 4.3$ MHz and gate times reduced by tuning $\\omega_c$.",
+        "result": "For $U_T(\\pi)$, $U_T(\\pi/2)$, and $U_T(\\pi/4)$ gates under realistic conditions with $\\kappa=2\\pi\\times 2$ kHz decoherence, the UNGQC scheme improves fidelity by $\\sim 0.7\\text{--}1.4\\%$ over conventional geometric and dynamical schemes, with numerical validation showing validity of second-order approximations ($\\phi_{AC}\\ll 1$) to within $0.01\\%$ difference from full Hamiltonian simulations.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.08955",
+      "title": "Impact of Pump Phase-Noise on Josephson Traveling-Wave Parametric Amplifiers",
+      "authors": [
+        "Daryoush Shiri",
+        "Likai Yang",
+        "Saesun Kim",
+        "Mohamed A. Hassan",
+        "Philip Krantz",
+        "Eric T. Holland"
+      ],
+      "abstract": "Superconducting traveling-wave parametric amplifiers (TWPAs) are essential elements for enhancing the signal-to-noise ratio (SNR) and thus the read-out fidelity of superconducting qubits because of their high gain and near quantum-limited noise. However, the impact of the pump source, e.g., phase noise on these amplifiers, has not yet been studied. In this work, we show that among the two amplification processes in JTWPAs, the three-wave mixing (3WM) process is more sensitive to the pump phase noise than the four-wave mixing (4WM) process. We show that the even-order nonlinearity of 4th order and above in three-wave mixing is responsible for more than 10 dB increase of phase noise at high frequency offsets within the phase noise mask as the power of the pump increases. A polynomial model of the amplifier and cyclo-stationary property of phase noise also corroborate with the simulations. The Harmonic Balance (HB) periodic noise analysis tool and Leeson phase noise model in Keysight Advanced Design System (ADS) simulator were used in this study.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-10",
+      "score": 0.7187202281001909,
+      "similar_to": [
+        {
+          "title": "Phase-sensitive cascade quantum amplifier with nearly noiseless operation",
+          "id": "2608.25645",
+          "similarity": 0.8717803359031677
+        },
+        {
+          "title": "A Traveling-Wave Parametric Amplifier With Integrated Diplexers",
+          "id": "2603.12327",
+          "similarity": 0.8582394123077393
+        }
+      ],
+      "summary": {
+        "summary": "This work investigates how pump phase noise affects Josephson traveling-wave parametric amplifiers (JTWPAs), finding that the three-wave mixing (3WM) process exhibits significant phase noise regrowth at high frequency offsets while the four-wave mixing (4WM) process does not. The mechanism is traced to even-order nonlinearities in 3WM that create cyclo-stationary noise through overlapping of harmonic sidebands, resulting in over 10 dB of phase noise growth at 100 MHz offset as pump power increases from $-100$ dBm to $-86$ dBm.",
+        "motivation": "Understanding pump phase noise effects on JTWPAs is critical for maintaining qubit readout fidelity since these amplifiers are essential for near-quantum-limited amplification but their sensitivity to pump oscillator characteristics has not been previously characterized.",
+        "method": "Harmonic balance periodic noise analysis was performed in Keysight ADS using a full JJ model (critical current $I_c = 1.4$ μA) applied to 1000-unit-cell transmission lines with $C = 93$ fF and 50 Ω characteristic impedance; 4WM ($I = 0$) and 3WM ($I = 0.5 I_c$) JTWPAs were simulated with AnaPico AP5022A phase noise input, validated by polynomial nonlinear transfer function models.",
+        "result": "In 3WM JTWPA the even-order nonlinearities ($a_2, a_4$) cause phase noise spectral density to increase by ~20 dB at 100 MHz offset when pump power increases from $-100$ dBm to $-86$ dBm, while 4WM with only odd harmonics shows no spectral regrowth; cyclo-stationary noise from overlapping of even harmonics explains this difference.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9815,
+    0.9783,
+    0.8832,
+    0.8616,
+    0.7469,
+    0.7187,
+    0.3603,
+    0.3235,
+    0.2883,
+    0.2824,
+    0.2434,
+    0.2232,
+    0.1858,
+    0.1836,
+    0.1648,
+    0.1635,
+    0.1568,
+    0.1537,
+    0.1534,
+    0.1348,
+    0.1146,
+    0.0992,
+    0.0984,
+    0.0954,
+    0.0951,
+    0.093,
+    0.0911,
+    0.0901,
+    0.087,
+    0.081,
+    0.0684,
+    0.0617,
+    0.0607,
+    0.0566,
+    0.0545,
+    0.0531,
+    0.0484,
+    0.0396,
+    0.0385,
+    0.0339,
+    0.0307,
+    0.029,
+    0.0254,
+    0.0248,
+    0.0244,
+    0.0219,
+    0.02,
+    0.0196,
+    0.0184,
+    0.0184,
+    0.0177,
+    0.0175,
+    0.0174,
+    0.0154,
+    0.0154,
+    0.0153,
+    0.0146,
+    0.0143,
+    0.0125,
+    0.0124,
+    0.0119,
+    0.0117,
+    0.0116,
+    0.0112,
+    0.011,
+    0.0108,
+    0.0095,
+    0.0095,
+    0.0081,
+    0.0081,
+    0.0068,
+    0.0065,
+    0.0061,
+    0.0059,
+    0.0053,
+    0.0052,
+    0.0046,
+    0.0041,
+    0.0037,
+    0.0032,
+    0.002,
+    0.0015
+  ]
+}

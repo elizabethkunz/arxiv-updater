@@ -1,0 +1,8 @@
+{
+  "summary": "Fictitious Copy Quantum Error Mitigation (FCQEM) corrects quantum errors through classical post-processing of probability distributions by squaring them, requiring no additional quantum resources and performing equivalently to first-order truncated Virtual Distillation for eigenstates. Experiments on a Rigetti 82-qubit superconducting processor demonstrate that FCQEM combined with Quantum Computed Moments recovers ground state energies of HeH$^+$ to $10^{-5}$ Ha and a 10-qubit TFIM to 0.3% accuracy despite noise.",
+  "motivation": "Existing quantum error mitigation techniques require significant additional quantum and classical resources, motivating development of methods that suppress errors through postprocessing alone.",
+  "method": "FCQEM exploits a first-order power-series expansion of the Virtual Distillation swap operator, deriving a classical correction that squares sampled probability distributions: $\\langle M \\rangle \\approx \\sum_i w_i \\sum_j \\lambda_{ij} p_{ij}^2 / \\sum_j \\lambda_{Zj} p_{Zj}^2$. The method is combined with QCM for eigenvalue problems where trial states show sharply peaked distributions.",
+  "result": "On Rigetti Ankaa-3 hardware, FCQEM+QCM achieves chemical accuracy for HeH$^+$ at bond lengths 0.5–3 Å and recovers TFIM ground state energies with depolarizing noise rates up to $10^{-2}$ on 1024-qubit stabilizer simulations; alone, FCQEM outperforms QCM for diagonal Hamiltonians while QCM dominates when distributions are uniform.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "A superconducting lead sphere magnetically levitated in a millikelvin dilution refrigerator achieves a ring-down time exceeding 110 hours, corresponding to a resonance linewidth of $(0.76 ± 0.02)$ μHz and $T/τ ≈ 10^{-8}$ K s$^{-1}$. The system demonstrates femtonewton-scale force sensitivity by detecting drag from $^3$He impurities at the level of $\bm{3 × 10^{-8}}$ in superfluid $^4$He, with prospects for reaching $T/τ ∼ 10^{-10}$ K s$^{-1}$ using adiabatic nuclear demagnetization.",
+  "motivation": "Testing quantum-gravity and wavefunction-collapse models at laboratory scales requires macroscopic mechanical oscillators with extreme isolation and coherence. Cryogenic levitated bodies offer closed-system approximations superior to tethered masses, motivating pursuit of record-low dissipation rates.",
+  "method": "A 6.33 mg lead-plated Delrin sphere (2 mm diameter, type-I superconductor) is levitated using opposing NbTi superconducting coils in a wet dilution refrigerator with vibration isolation at 5 mK. Position is detected via radio-frequency inductive coupling between transmitter and orthogonal receiver coils. Free oscillations are measured in vacuum and in liquid $^4$He over multiple days using Fourier spectral analysis.",
+  "result": "Vacuum measurements yield $τ = (114 ± 3)$ hours and $Δf = (0.76 ± 0.02)$ μHz; in superfluid $^4$He, drag from $^3$He impurities at $x_3 ≈ 4.2 × 10^{-8}$ produces $τ = 4 × 10^4$ s and drag force $F_D ∼ 3$ fN for 1 μm amplitude oscillations at 3 Hz.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

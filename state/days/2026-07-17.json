@@ -1,0 +1,432 @@
+{
+  "date": "2026-07-17",
+  "n_fetched": 116,
+  "papers": [
+    {
+      "id": "2607.14344",
+      "title": "Collapse and Inversion of the Josephson Potential in a Strongly Driven Superconducting Circuit",
+      "authors": [
+        "Sercan Deve",
+        "Marius Villiers",
+        "Marijn A. Morssink",
+        "Robin C. Dekker",
+        "Gary A. Steele"
+      ],
+      "abstract": "Superconducting circuits embedding Josephson junctions leverage microwave drives for control and measurement of quantum states. Although increasing the drive power is desirable for improving the efficiency of these operations, it eventually triggers unwanted transitions to uncontrolled states. While careful choice of circuit symmetries and parameters can mitigate these effects, the presence of spurious circuit modes spoils the resilience to high power. In this work, we engineer a transmon-resonator system free of any detrimental unwanted transitions. This resilience enables us to access drive powers at which we uncover a remarkable physical phenomenon: the collapse and inversion of the Josephson potential. Through spectroscopy and readout experiments, we confirm that the driven potential goes to zero and inverts as the power increases. The inversion corresponds to the dynamical stabilization of the transmon at its unstable equilibrium point, directly analogous to an inverted pendulum. This result reveals a new limitation of strongly driven superconducting circuits beyond drive-induced transitions. In addition, the dynamical renormalization of the Josephson potential opens up novel avenues for the control of superconducting circuits, and the autonomous stabilization of noise-resilient quantum states.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-15",
+      "score": 0.9346508646874582,
+      "similar_to": [
+        {
+          "title": "Collapse and Inversion of the Josephson Potential in a Strongly Driven Superconducting Circuit",
+          "id": "2607.14344",
+          "similarity": 1.0
+        },
+        {
+          "title": "Characterization of drive-induced unwanted state transitions in superconducting circuits",
+          "id": "2506.24070",
+          "similarity": 0.8927112817764282
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates dynamical collapse and inversion of the Josephson potential in a strongly driven transmon-resonator circuit free of multi-excitation resonances. Through spectroscopy and readout experiments, the authors observe the driven potential vanish at $\\theta_\\mathrm{ac} \\approx 2.405$ (where $J_0(\\theta_\\mathrm{ac}) = 0$) and subsequently invert, realizing autonomous stabilization of the transmon at the unstable equilibrium analogous to an inverted pendulum.",
+        "motivation": "Strong microwave drives are essential for accelerating qubit control and improving readout fidelity in circuit-QED, but their power is limited by drive-induced unwanted transitions. Engineering a transmon-resonator system with native cosine-cosine coupling and careful circuit design enables access to previously inaccessible high-power regimes and reveals fundamental limitations of strongly driven Josephson circuits.",
+        "method": "A grounded transmon with symmetric SQUID ($E_C/h = 103$ MHz, $E_J/2h = 2.6$ GHz) is coupled longitudinally to a quarter-wavelength resonator ($\\omega_a/2\\pi = 8.054$ GHz, $\\kappa/2\\pi = 3.1$ MHz) via a meander inductor with coupling dilution factor $p = 0.49 \\times 0.48 = 0.24$. The resonator-driven transmon Hamiltonian is renormalized to $\\hat{\\mathcal{H}} = 4E_C(\\hat{N} - N_g)^2 - E_J J_0(\\theta_\\mathrm{ac})\\cos\\hat{\\phi}$ under high-frequency averaging, where $\\theta_\\mathrm{ac} = p\\varphi_\\mathrm{zpf}n$ with resonator photon number $n$.",
+        "result": "Two-tone spectroscopy reveals the qubit transition frequency decreasing to zero near $12.5 \\times 10^3$ photons, with signal collapse indicating gapless spectrum. Readout experiments show a $\\pi$-phase shift in the $\\langle\\cos\\hat{\\phi}\\rangle$ expectation value across the collapse point, confirmed by semiclassical simulation of the intracavity field; this inversion manifests as sign reversal of the dispersive readout signal proportional to $\\chi \\propto J_1(\\theta_\\mathrm{ac})\\langle\\cos\\hat{\\phi}\\rangle$ with optimal readout fidelity reaching 97.7% in 330 ns.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.15230",
+      "title": "High-Q superconducting microwave resonators using MBE titanium nitride",
+      "authors": [
+        "Anand Ithepalli",
+        "Haoran Lu",
+        "Eegene Clara Chung",
+        "Xiangqin Wang",
+        "Amit Rohan Rajapurohita",
+        "Keun-Yeol Park",
+        "Celesta S. Chang",
+        "Peter McMahon",
+        "Huili Grace Xing",
+        "David Muller",
+        "Valla Fatemi",
+        "Debdeep Jena"
+      ],
+      "abstract": "Using molecular beam epitaxy, we have realized thin films of titanium nitride (TiN) on c-plane sapphire that exhibit the lowest observed full-width at half maximum X-ray rocking curve width of 18 arcsec. Though the (111) oriented TiN exhibits an abrupt and crystalline interface with sapphire, for the first time we observe sub-surface defects in the sapphire substrate, which nucleate structural defects in the epitaxial TiN layer. Using quarter-wavelength coplanar waveguide (CPW) resonators in a 3 \\textmu m/6 \\textmu m/3 \\textmu m gap/strip/gap lines in a hanger geometry, we find the internal quality factor of the TiN resonators to be $>10^{6}$ in the single-photon $\\langle n \\rangle \\sim 1$ limit at 5.8 GHz and 10 mK, rising to $>20 \\times 10^{6}$ at $\\langle n \\rangle \\sim 10^{6}$. The results are of high interest for applications of superconducting TiN in several areas, and provide a path towards epitaxial Josephson junctions with crystalline barriers in the future for high coherence qubits.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-07-16",
+      "score": 0.9325296828782548,
+      "similar_to": [
+        {
+          "title": "High-Q superconducting microwave resonators using MBE titanium nitride",
+          "id": "2607.15230",
+          "similarity": 1.0
+        },
+        {
+          "title": "Comparison of Dielectric Loss in Titanium Nitride and Aluminum Superconducting Resonators",
+          "id": "2007.07338",
+          "similarity": 0.8696449995040894
+        }
+      ],
+      "summary": {
+        "summary": "MBE-grown titanium nitride thin films on c-plane sapphire achieve record crystalline quality (18 arcsec X-ray rocking curve FWHM) and demonstrate superconducting quarter-wavelength coplanar waveguide resonators with internal quality factors $Q_i > 10^6$ at $\\langle n \\rangle \\sim 1$ and 10 mK. The work establishes TiN as a viable platform for high-coherence qubits and identifies a path toward all-epitaxial crystalline Josephson junctions using TiN/MgO/TiN stacks.",
+        "motivation": "TiN is attractive for superconducting qubits because it permits epitaxial growth on MgO with crystalline barriers (lattice mismatch $\\sim 0.5\\%$), potentially eliminating losses from amorphous tunnel barriers in conventional Al/AlO$_x$/Al Josephson junctions.",
+        "method": "50 nm TiN films were grown at 600 °C on annealed c-plane sapphire using MBE at 2.5 nm/min, with structural characterization via X-ray diffraction, multislice electron ptychography, and STEM. Resonators were fabricated as $\\lambda/4$ coplanar waveguides with 3 µm gaps and 6 µm center strips, measured in a dilution refrigerator at 10 mK using parametric sweeps from single-photon ($\\langle n \\rangle \\sim 1$) to high-photon ($\\langle n \\rangle \\sim 10^6$) regimes.",
+        "result": "The AZ300T photoresist-stripped chip achieved average $Q_{i,LP} \\approx 1.26 \\times 10^6$ at $\\langle n \\rangle \\sim 1$ (maximum $2.20 \\times 10^6$) and $Q_{i,HP} \\approx 5.11 \\times 10^6$ at $\\langle n \\rangle \\sim 10^6$ (maximum $25.0 \\times 10^6$), with $T_c = 5.1$ K and residual resistivity ratio 2.1, achieving performance competitive with Al, Nb, and Ta resonators despite columnar grain structure and surface roughness $\\sim 0.5$ nm.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.15044",
+      "title": "Towards logical entanglement creation in trivalent planar architectures",
+      "authors": [
+        "Lukas Bödeker",
+        "Luis Colmenarez",
+        "Sergey Blinov",
+        "Ants Remm",
+        "Simon Gustavsson",
+        "Markus Müller"
+      ],
+      "abstract": "Low-overhead quantum error-correction schemes are essential for enabling quantum computation on registers containing multiple logical qubits. For planar architectures with limited nearest-neighbor qubit connectivity, the surface code has emerged as the leading paradigm. Recent theoretical and experimental work has shown that a physical-qubit connectivity of degree three is sufficient to implement fault-tolerant quantum error correction. In this work, we study lattice surgery in the context of such trivalent architectures and introduce scalable circuit constructions to implement it. Compared with the four-valent measurement scheme, the trivalent lattice-surgery protocol reduces the required resources by $\\mathcal{O}(d)$ qubits out of a total qubit count of $\\mathcal{O}(d^2)$ and by $\\mathcal{O}(d)$ two-qubit gates out of a total two-qubit gate count of $\\mathcal{O}(d^3)$. We benchmark the logical fidelity of both lattice-surgery schemes in terms of experimentally realistic simulations targeting an implementation with a fluxonium qubit based architecture and find a potential improvement of up to $\\approx25\\%$ for distance-three. These results open a way for scalable planar trivalent qubit architectures to host a surface-code-based logical quantum processor.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-16",
+      "score": 0.8229814793838728,
+      "similar_to": [
+        {
+          "title": "Realizing Lattice Surgery on Two Distance-Three Repetition Codes with Superconducting Qubits",
+          "id": "2501.04612",
+          "similarity": 0.9159703254699707
+        },
+        {
+          "title": "A superconducting surface-code processor with lattice-surgery logical operations",
+          "id": "2606.06598",
+          "similarity": 0.912050187587738
+        }
+      ],
+      "summary": {
+        "summary": "This work develops scalable lattice-surgery protocols for trivalent (degree-3) planar surface-code architectures and benchmarks them against conventional four-valent implementations. Trivalent lattice surgery eliminates the need for additional merging data qubits, reducing resource overhead by $\\mathcal{O}(d)$ qubits and $\\mathcal{O}(d)$ two-qubit gates while achieving up to ~25% logical-fidelity improvement at distance-3 in fluxonium-targeted simulations.",
+        "motivation": "Reducing qubit connectivity from four to three neighbors aligns with hardware constraints of superconducting platforms, particularly fluxonium architectures where capacitive coupling limits make degree-4 connectivity challenging; simultaneously, understanding how lower valency affects both quantum-error-correction cycles and logical entanglement operations is essential for scalable fault-tolerant quantum processors.",
+        "method": "Circuit constructions and numerically realistic simulations under standard circuit-level and experimentally motivated noise models targeting superconducting transmon parameters ($T_1 = 68$ µs, $T_2 = 89$ µs, two-qubit gate error 0.4%, gate time 47 ns) from Ref. [1], with decoder-based benchmarking of memory experiments and logical state teleportation via lattice surgery for distances $d = 3, 5, 7$.",
+        "result": "Under standard noise, trivalent lattice surgery shows ~2% improvement at $d=3$ with reduced gate count ($2d^2$ gates versus $6d^2-2$); however, experimentally motivated noise including idling effects slightly disadvantages trivalent QEC cycles, though this can be compensated by reduced gate times ($\\eta = 0.75$ achieves ~25% improvement for appropriate decoherence-dominated error models), particularly relevant for fluxonium where lower connectivity enables faster two-qubit gates via improved capacitive coupling.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.14293",
+      "title": "Real-Time Detection of Charge Jumps in Superconducting Qubits with a Convolutional Neural Network",
+      "authors": [
+        "Daniel Gaytan-Villarreal",
+        "Peter Meiring",
+        "Daniel Baxter",
+        "Daniel Bowring",
+        "Grace Bratrud",
+        "Matteo Cremonesi",
+        "Giuseppe Di Guglielmo",
+        "Grace Wagner",
+        "Bowen Xiao"
+      ],
+      "abstract": "Ionizing radiation from cosmic rays and gammas can induce discontinuous jumps in the environmental charge of superconducting qubits (charge jumps), causing correlated errors that challenge fault-tolerant quantum computing while simultaneously providing a detection signature for quantum sensing applications. Current detection methods operate offline, introducing latency incompatible with in-the-loop qubit control. In this paper, an online detector of charge jumps for superconducting qubits, based on a dilated causal convolutional neural network (DCCNN) designed for in-the-loop deployment on the Quantum Instrumentation Control Kit (QICK) platform, is presented. The network is trained on synthetic Ramsey tomography scans generated from qubit templates measured at the Northwestern Experimental Underground Site (NEXUS) at Fermilab, and translated to FPGA firmware via hls4ml with ap_fixed$\\langle 16,6 \\rangle$ quantization, reaching a per-inference latency of $6.19 μ$s on the Zynq UltraScale+ RFSoC ZCU216. At this operating point the DCCNN matches the detection efficiency of the established offline $χ^2$ algorithm ($0.843 \\pm 0.022$ vs. $0.866 \\pm 0.020$ on $|Δq| \\in [0.1, 0.5] e$ at matched false-positive rate), while requiring no per-qubit hyperparameter tuning. This shifts charge-jump detection from a post-hoc diagnostic to a control-loop primitive, enabling adaptive protocols that respond to radiation-induced events in situ, with applications to quantum-computing error mitigation and to the use of superconducting qubits as particle detectors.",
+      "categories": [
+        "quant-ph",
+        "cs.LG"
+      ],
+      "published": "2026-07-15",
+      "score": 0.7423313826034994,
+      "similar_to": [
+        {
+          "title": "Correlated Charge Noise and Relaxation Errors in Superconducting Qubits",
+          "id": "2012.06029",
+          "similarity": 0.8596038818359375
+        },
+        {
+          "title": "Resolving catastrophic error bursts from cosmic rays in large arrays of superconducting qubits",
+          "id": "2104.05219",
+          "similarity": 0.8525957465171814
+        }
+      ],
+      "summary": {
+        "summary": "A dilated causal convolutional neural network (DCCNN) with 1,649 parameters enables real-time detection of charge jumps in superconducting qubits by identifying discontinuous shifts in qubit frequency during Ramsey tomography, achieving detection efficiency of $0.843 \times 0.022$ on charge jumps of magnitude $|\\_q| \times [0.1, 0.5] e$ at matched false-positive rate with the offline $\\\\\\_chi^2$ baseline. The model is quantized to $\\\\\\_mathrm{ap\\\\_fixed}\\\\\\_\\\\\\_16,6\\\\\\_\\\\\\_$ fixed-point arithmetic and deployed on the Zynq UltraScale+ RFSoC ZCU216 via hls4ml, achieving $6.19 \\_\\\\\\_mu\\\\\\_s$ inference latency while consuming $81.4\\\\\\_\\\\%$ of available block RAM, enabling in-the-loop adaptive control protocols at NEXUS (Fermilab underground).",
+        "motivation": "Charge jumps induced by cosmic-ray and gamma-ray ionization create correlated multi-qubit errors that challenge fault-tolerant quantum computing and scramble two-level systems, while simultaneously providing sensitive signatures for fundamental physics searches using qubits as particle detectors. Existing offline $\\\\\\_chi^2$ detection methods introduce latency incompatible with real-time qubit control and show reduced sensitivity to jumps within the first $\\\\\\sim 20$ samples of each Ramsey scan.",
+        "method": "A DCCNN with four dilated causal convolution layers (filters: 8, 8, 16, 16; dilations: 1, 1, 2, 2) was trained on 100,000 synthetic Ramsey scans generated from templates measured on five qubits ($E_J/E_C = 24$, weakly charge-sensitive) at NEXUS, using quantization-aware training and a two-channel input combining raw amplitude with first-difference $\\\\\\_Delta x_i = x_i - x_\\\\_{i-1}$; the model was compiled to FPGA firmware via hls4ml and integrated into QICK via AXI4-Stream/AXI4-Lite interfaces for deployment on the control timed processor (tProc).",
+        "result": "On simulated 1,600-scan datasets per qubit at $1.1$ mHz jump rate, the DCCNN matched the $\\\\\\_chi^2$ baseline mean efficiency ($0.843 \\\\pm 0.022$ vs. $0.866 \\\\pm 0.020$) while requiring zero per-qubit parameter tuning, with sustained throughput $1.65 \\\\times 10^5$ inferences per second and resource overhead of $+17.92\\\\\\_\\\\%$ flip-flops, $+52.83\\\\\\_\\\\%$ BRAM, $+19.15\\\\\\_\\\\%$ LUTs, and $+36.70\\\\\\_\\\\%$ DSPs relative to baseline QICK.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.14559",
+      "title": "Dispersive Readout of a SiMOS Quantum Dot Using a Flip-Chip Integrated Microwave Resonator",
+      "authors": [
+        "Vo Kim Hieu Van",
+        "Santiago Serrano",
+        "Cédric Bohémier",
+        "Ajit Dash",
+        "Fay E. Hudson",
+        "Tuomo Tanttu",
+        "Chih Hwan Yang",
+        "MengKe Feng",
+        "Ensar Vahapoglu",
+        "Florian K. Unseld",
+        "Wee Han Lim",
+        "Andrea Morello",
+        "Andrew S. Dzurak",
+        "Kok Wai Chan"
+      ],
+      "abstract": "Heterogeneous integration provides a promising route to combine semiconductor quantum dot devices and superconducting microwave circuits, while allowing each component to be fabricated using an optimized process flow. Here, we demonstrate a flip-chip integrated platform for dispersive readout of silicon metal-oxide semiconductor (SiMOS) quantum dot devices. A SiMOS double quantum dot chip is bonded to a superconducting aluminum resonator chip using indium bump interconnects to enable microwave coupling to the quantum dot gate. We show that the developed flip-chip process is compatible with cryogenic operation of both the SiMOS device and the superconducting resonator, and demonstrate resonator-based detection of charge transitions in the quantum dot system. The readout signal-to-noise ratio follows a dependence of $\\sqrt{t}$ with the integration time, reaching SNR = 1 at an integration time of approximately 0.3 ms. These results establish flip-chip bonding as a viable integration approach for SiMOS quantum dot devices operating at both dc and microwave frequencies, with potential applications for resonator-based techniques such as spin-photon coupling.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-07-16",
+      "score": 0.7082177588791015,
+      "similar_to": [
+        {
+          "title": "Realizing Rapid, High-Fidelity, Single-Shot Dispersive Readout of Superconducting Qubits",
+          "id": "1701.06933",
+          "similarity": 0.820191502571106
+        },
+        {
+          "title": "Balanced cross-Kerr coupling for superconducting qubit readout",
+          "id": "2501.09010",
+          "similarity": 0.8189345598220825
+        }
+      ],
+      "summary": {
+        "summary": "Flip-chip bonding of a SiMOS double quantum dot chip to a superconducting aluminum resonator via indium bumps enables dispersive charge readout with SNR = 1 at 0.3 ms integration time. The integrated device maintains functionality over 60 mK to 760 mK and up to 10 mT in-plane magnetic field, with charge sensitivity limited by the resonator's superconducting properties.",
+        "motivation": "SiMOS qubits require scalable, compact readout techniques integrated with multiple gates, and dispersive resonator-based approaches offer a path to dense qubit arrays while keeping semiconductor and superconducting components on separate, independently optimized chips.",
+        "method": "A three-layer aluminum-gated SiMOS double quantum dot chip ($2 \\times 2$ mm$^2$) was bonded to a superconducting aluminum resonator chip ($10 \\times 6$ mm$^2$) using thermocompression flip-chip bonding with 19 electrically active and 40 floating indium bumps; dispersive readout was performed via reflectometry at $f_r = 4.482$ GHz with $Q_i = 1798$ and $Q_c = 20900$.",
+        "result": "Charge transitions were detected across strongly, intermediate, and weakly coupled interdot regimes and in isolated mode; SNR scaled as $\\sqrt{t}$ with white-noise-limited operation; 1/$f$ charge noise was measured at 134.01 μeV/$\\sqrt{\\mathrm{Hz}}$ (equivalently 18.43 μeV/$\\sqrt{\\mathrm{Hz}}$ in electrochemical potential) with exponent $\\beta \\approx 1.04$; dc transport remained functional where microwave readout degraded above 640 mK and 10 mT.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.15252",
+      "title": "Coulomb blockade in microscopic material defects as a source of decoherence and noise in solid-state quantum circuits",
+      "authors": [
+        "R. Banerjee",
+        "L. P. Lindoy",
+        "M. Hegedus",
+        "A. Hutcheson",
+        "T. Hawkins",
+        "E. Daghigh-Ahmadi",
+        "S. Samaddar",
+        "T. Barker",
+        "J. P. Goff",
+        "A. Ya. Tzalenchuk",
+        "I. Rungger",
+        "S. E. de Graaf"
+      ],
+      "abstract": "A critical limitation of solid-state quantum devices arises from the materials from which they are fabricated: uncontrolled surfaces, interfaces, and structural imperfections introduce numerous sources of loss and decoherence. Despite extensive efforts, linking these decoherence mechanisms to their microscopic material origins -- essential for developing effective mitigation strategies -- remains an outstanding challenge that has slowed coherence improvements. Here, using scanning gate microscopy on live superconducting circuits we identify a previously unrecognised decoherence mechanism originating from Coulomb blockade and microwave-driven charge tunnelling in metallic grains. Such grains are ubiquitous in thin-film devices fabricated by standard lithography processes. By characterising multiple defects across different devices, we find such defects to be as common and as debilitating to device performance as two-level system (TLS) defects, while originating from a fundamentally different physical mechanism. Importantly, conventional characterisation techniques would misattribute this loss to other, microwave power-independent processes. Our observations thus reveal a widespread source of decoherence in superconducting circuits, challenging the prevailing paradigm that coherence lifetimes are primarily limited by TLS defects. Eliminating metallic grains during fabrication provides a clear and practical route to suppress this mechanism, offering a pathway towards improved coherence and reduced noise in microwave-based solid-state quantum devices.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-07-16",
+      "score": 0.6919345272484784,
+      "similar_to": [
+        {
+          "title": "Real-time detection of correlated quasiparticle tunneling events in a multi-qubit superconducting device",
+          "id": "2602.01945",
+          "similarity": 0.8690617084503174
+        },
+        {
+          "title": "Electric field spectroscopy of material defects in transmon qubits",
+          "id": "1909.09749",
+          "similarity": 0.8683279752731323
+        }
+      ],
+      "summary": {
+        "summary": "Scanning gate microscopy on superconducting resonators reveals Coulomb blockade in microscopic metallic grains as a widespread and significant source of decoherence, competing with two-level-system defects but originating from fundamentally different physics. The mechanism—microwave-driven charge tunnelling producing Sisyphus dissipation—is power-independent, temperature-independent below 1 K, and can be eliminated through improved thin-film fabrication.",
+        "motivation": "Understanding the microscopic origins of decoherence in superconducting circuits is essential for reaching fault-tolerant thresholds, yet materials-level defects have resisted direct characterization and correlation with device performance.",
+        "method": "Using a mK scanning gate microscope with tungsten tip, the authors mapped superconducting resonators at $5.3$ and $6.7$ GHz, measuring transmission $S_{21}$ while sweeping tip voltage to electrostatically tune isolated metallic islands. Concentric rings in spatial maps and equidistant peaks in voltage spectra identified Coulomb blockade signatures; Fourier analysis separated multiple overlapping defects. Ex-situ materials characterization (XRR, GIXRD, SEM, AFM) confirmed $10$–$30$ nm grains in the Nb films.",
+        "result": "Four to six Sisyphus defects per scanned region produced peak dissipation rates up to $\\sim 5$ kHz, comparable to TLS contributions; defects remained unsaturated by microwave power (up to $\\langle N \\rangle \\sim 10^4$ photons) and unaffected by cooling below 1 K, with tunnelling resistances $R_t \\sim 15$–$600$ k$\\Omega$ and junction capacitances $C_j \\sim 0.1$–$0.35$ fF matching grain-oxide-junction models.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.14319",
+      "title": "Towards a monolithic platform for coupling superconducting circuits to low-loss microwave phonons in AlScN on 4H-SiC",
+      "authors": [
+        "Yuanchen Deng",
+        "William W. Roberts",
+        "Sueli Skinner-Ramos",
+        "Dalton Anderson",
+        "Katherine Hewey",
+        "Xingyu Du",
+        "Michael Miller",
+        "Brandon Smith",
+        "Hwijong Lee",
+        "Pingping Chen",
+        "Charles Thomas Harris",
+        "Roy H. Olsson",
+        "Lisa Hackett",
+        "Rupert Lewis",
+        "Matt Eichenfield"
+      ],
+      "abstract": "Hybrid superconducting-phonon quantum processing is promising for cavity QED, measurement-based quantum computing, and other quantum applications. Relative to microwave photons at the same frequency, phonons can provide ultra-compact footprints, extremely low losses, and greater connectivity. Phonons can also couple strongly to superconducting circuits through the piezoelectric effect. However, this promise rests on scalable platforms that achieve these benefits without degrading superconducting circuit performance. This motivates a monolithic platform combining low phononic loss, strong electromechanical coupling, and superconducting-circuit compatibility without requiring suspended phononics. Here, we characterize a monolithic quantum acoustic platform combining aluminum superconducting circuits on exposed silicon carbide (SiC) with piezoelectric aluminum scandium nitride (AlScN) on SiC for integrated phononics. This architecture is enabled by selective removal of AlScN from selected chip regions, allowing aluminum superconducting microwave resonators to be fabricated directly on the SiC while preserving adjacent AlScN-on-SiC regions for phonon transduction. The resulting Al-on-SiC resonators exhibit a coherent lifetime of 2.9 μs, demonstrating compatibility with aluminum superconducting quantum devices. In parallel, cryogenic surface acoustic delay-line measurements on the retained AlScN-on-SiC regions show low phononic propagation loss at 4.05 GHz, corresponding to an estimated phonon lifetime of 7.6 μs. Together with a previously demonstrated electromechanical coupling coefficient of about 4.3% and a theoretical upper bound of 8%, these results establish Al-on-SiC/AlScN-on-SiC as a promising monolithic platform for integrating superconducting microwave circuits with piezoelectric phononic components for quantum acoustic networking and hybrid quantum systems.",
+      "categories": [
+        "quant-ph",
+        "physics.app-ph"
+      ],
+      "published": "2026-07-15",
+      "score": 0.5724073458770639,
+      "similar_to": [
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.8446406126022339
+        },
+        {
+          "title": "Surpassing millisecond coherence times in on-chip superconducting quantum memories by optimizing materials, processes, and circuit design",
+          "id": "2308.15539",
+          "similarity": 0.8424156904220581
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates a monolithic platform combining aluminum superconducting circuits on 4H-SiC with piezoelectric 42% Sc-content AlScN on the same substrate for integrated quantum acoustics, enabled by selective AlScN removal to expose low-loss SiC regions. Al-on-SiC resonators achieve $Q_i = 7.5 \times 10^4$ (single-photon, $T_1 = 2.9$ μs at 4.175 GHz) while retained AlScN regions support surface acoustic waves with propagation losses of $1.02 \times 10^{-3}$ dB/μm for Sezawa modes ($\tau_{\text{phonon}} = 7.6$ μs) and $3.16 \times 10^{-3}$ dB/μm for Rayleigh modes ($\tau_{\text{phonon}} = 3.4$ μs) at 7 mK.",
+        "motivation": "Hybrid superconducting-phonon quantum systems require scalable platforms combining strong piezoelectric coupling, ultralow acoustic loss, and superconductor compatibility without suspended structures. Existing heterostructures like thin-film LiNbO$_3$ suffer from high cryogenic losses (1–2 μs phonon lifetimes) and integration challenges.",
+        "method": "Sputter-deposited 1 μm AlScN (42% Sc) on 4H-SiC was selectively etched via TMAH to expose SiC; aluminum CPW resonators were fabricated on exposed regions while retaining AlScN patches for phonons. Superconducting resonator performance was measured via dilution-refrigerator VNA ($<20$ mK); acoustic delay lines ($L_0 = 500$–10,000 μm) were characterized cryogenically using echo-based propagation loss extraction.",
+        "result": "The platform simultaneously achieves competitive superconducting coherence ($T_1 = 2.9$ μs, $Q_i \to 7.5 \times 10^4$) and microsecond-scale phonon lifetimes with measured electromechanical coupling $K^2 = 4.3\text{%}$ (theoretical max 8%), establishing a scalable monolithic architecture for circuit quantum acoustodynamics and measurement-based quantum computing.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9347,
+    0.9325,
+    0.823,
+    0.7423,
+    0.7082,
+    0.6919,
+    0.5724,
+    0.4722,
+    0.4486,
+    0.4215,
+    0.3857,
+    0.378,
+    0.3753,
+    0.3672,
+    0.281,
+    0.2768,
+    0.2689,
+    0.2304,
+    0.2129,
+    0.1899,
+    0.1798,
+    0.167,
+    0.1646,
+    0.1536,
+    0.1408,
+    0.1378,
+    0.1354,
+    0.1303,
+    0.1254,
+    0.1128,
+    0.1123,
+    0.1061,
+    0.1016,
+    0.0952,
+    0.0896,
+    0.0895,
+    0.0882,
+    0.086,
+    0.0853,
+    0.0796,
+    0.0786,
+    0.0702,
+    0.0692,
+    0.0682,
+    0.0664,
+    0.0642,
+    0.064,
+    0.0617,
+    0.0615,
+    0.0608,
+    0.0589,
+    0.0583,
+    0.053,
+    0.0521,
+    0.0515,
+    0.0482,
+    0.0482,
+    0.0467,
+    0.0465,
+    0.0456,
+    0.045,
+    0.0409,
+    0.0402,
+    0.0391,
+    0.0389,
+    0.0388,
+    0.0387,
+    0.0341,
+    0.034,
+    0.03,
+    0.0267,
+    0.0265,
+    0.0261,
+    0.0242,
+    0.0234,
+    0.0231,
+    0.0231,
+    0.0226,
+    0.0226,
+    0.0221,
+    0.022,
+    0.0189,
+    0.0189,
+    0.018,
+    0.0173,
+    0.0153,
+    0.015,
+    0.0119,
+    0.0119,
+    0.0118,
+    0.0111,
+    0.0107,
+    0.0091,
+    0.0091,
+    0.0088,
+    0.0086,
+    0.0083,
+    0.0083,
+    0.008,
+    0.0074,
+    0.0068,
+    0.0066,
+    0.0063,
+    0.0058,
+    0.0054,
+    0.0053,
+    0.0051,
+    0.0048,
+    0.0043,
+    0.0039,
+    0.003,
+    0.0029,
+    0.0025,
+    0.0023,
+    0.0019,
+    0.0015
+  ]
+}

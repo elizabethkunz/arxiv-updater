@@ -1,0 +1,284 @@
+{
+  "date": "2026-04-30",
+  "n_fetched": 120,
+  "papers": [
+    {
+      "id": "2604.26373",
+      "title": "System-Level Design of Scalable Fluxonium Quantum Processors with Double-Transmon Couplers",
+      "authors": [
+        "Guo Xuan Chan",
+        "Wangwei Lan",
+        "Tenghui Wang",
+        "Xizheng Ma",
+        "Chunqing Deng",
+        "Lijing Jin"
+      ],
+      "abstract": "Fluxonium qubits combine long coherence times with strong anharmonicity, making them a promising platform for scalable superconducting quantum processors. Recent experiments have demonstrated high-fidelity operations in multi-qubit processors while suppressing stray qubit interactions using fluxonium-transmon-fluxonium (FTF) architectures. However, scaling such systems to larger arrays is constrained by a trade-off between achievable coupling strength, crosstalk suppression and qubit-qubit spacing required for wiring in a two-dimensional architecture. Multimode couplers, such as the double-transmon coupler (DTC), provide a promising pathway to overcome this limitation by enabling stronger interactions without compromising qubit spacing and isolation. Here, we develop a quantitative design framework for fluxonium-based quantum processors employing DTCs. Central to this work is a frequency-partitioned architecture that places qubit transitions, tunable-coupler excitations, and resonator modes in well-separated spectral regions. This structured allocation reduces parameter interdependence and enables the concurrent optimization of gate operations, readout, and qubit reset. By formulating device design as a multi-objective optimization problem under realistic experimental constraints and fabrication-induced disorder, we develop a tractable sequential workflow and determine a feasible parameter regime that simultaneously supports high-fidelity single- and two-qubit gates, fast qubit reset, and robust dispersive readout. These results establish a system-level architectural methodology that links circuit parameters to processor-level performance, and provide an experimentally actionable pathway toward scalable fluxonium quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-29",
+      "score": 0.8926215606350512,
+      "similar_to": [
+        {
+          "title": "Scalable Fluxonium Quantum Processors via Tunable-Coupler Architecture",
+          "id": "2604.13363",
+          "similarity": 0.9495137333869934
+        },
+        {
+          "title": "High-Fidelity, Frequency-Flexible Two-Qubit Fluxonium Gates with a Transmon Coupler",
+          "id": "2304.06087",
+          "similarity": 0.9131186604499817
+        }
+      ],
+      "summary": {
+        "summary": "This work presents a comprehensive design framework for scalable fluxonium quantum processors using double-transmon couplers (DTCs), addressing the scalability challenges that arise from competing demands of strong coupling, qubit isolation, and wiring density. The framework employs frequency-partitioned architecture and multi-objective optimization to simultaneously achieve single-qubit fidelities $F_{1q} > 99.99\\%$, two-qubit MAP-gate fidelities $F_{2q} > 99.9\\%$, leakage $\\eta < 10^{-3}$, fast reset ($t_{\\mathrm{reset}} < 300$ ns), and spectator crosstalk suppression ($\\zeta < 10$ kHz.",
+        "motivation": "Fluxonium qubits offer long coherence times and strong anharmonicity, but scaling them to 2D arrays requires simultaneously satisfying competing constraints: strong tunable coupling via DTCs for fast gates, qubit isolation to suppress crosstalk, and adequate spacing for control wiring—a problem not rigorously addressed at the system level.",
+        "method": "A frequency-allocation scheme separates qubit transitions ($\\omega_{0,1}^j < 3$ GHz), plasmon modes ($\\omega_{1,2}^j \\approx 4.2$ GHz), DTC operational modes ($\\omega_{\\mathrm{on/off}}^c$), reset resonators ($\\omega_r' \\approx 3.45$ GHz), and readout resonators ($\\omega_r \\approx 7.5$ GHz) into distinct spectral bands, enabling a tractable sequential optimization workflow that maps 16 circuit parameters (fluxonium $E_C, E_J, E_L$; DTC parameters; coupling strengths $J_{j,c}/h = 500$ MHz; resonator properties) to experimentally relevant performance metrics while accounting for fabrication disorder.",
+        "result": "Optimal parameters satisfy all DiVincenzo criteria: $E_J^j/h = 4.65$ GHz, $E_L^j/h = 0.65$ GHz, $E_C^j/h = 1.1$ GHz for fluxoniums; $\\omega_{\\mathrm{on}}^c = \\omega_{1,2}^j \\approx 4.23$ GHz (on-resonance) with large detuning $(\\omega_{\\mathrm{off}}^c - \\omega_{1,2}^j)/2\\pi \\approx 1.8$ GHz to suppress spectator crosstalk; readout dispersive shift $|2\\chi|/2\\pi \\approx 2.55$ MHz with critical photon number $n_{\\mathrm{crit}} \\approx 75$; reset fidelity $F_{\\mathrm{reset}} > 99\\%$ in $\\approx 300$ ns using $g_r'/2\\pi = 50$ MHz, $Q' = 400$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.26423",
+      "title": "Large-Scale Quantum Circuit Simulation on an Exascale System for QPU Benchmarking",
+      "authors": [
+        "J. A. Montanez-Barrera",
+        "Kristel Michielsen"
+      ],
+      "abstract": "Recent advances in quantum computing have enabled the development of quantum processors with hundreds of qubits. However, noise continues to limit the amount of useful information that can be extracted from these systems, making it essential to identify the regime in which experimental outputs remain reliable. In this work, we benchmark Quantinuum Helios-1, a 98-qubit trapped-ion quantum processing unit, using the linear ramp quantum approximate optimization algorithm (LR-QAOA). To this end, we perform large-scale noiseless simulations on JUPITER, Europe's first exascale supercomputer, for circuits of up to 48 qubits and 3,384 two-qubit gates. These simulations, executed on 4,096 nodes equipped with 16,384 GH200 superchips and high-bandwidth CPU-GPU interconnects, provide a reference for validating experimental results at the edge of classical tractability. We find that, up to 48 qubits, Helios-1 remains in a noise-tolerant region, i.e., its samples cannot be clearly distinguished from those coming from a noiseless simulation. We then extend the analysis to larger system sizes using experimental data only, and apply a mean-of-means resampling procedure with a 3$σ$ threshold to determine whether the QPU output is statistically distinguishable from random sampling. This analysis identifies a regime of coherent performance up to 93 qubits (12,834 two-qubit gates), beyond which, at 95 qubits, the outputs become statistically indistinguishable from random sampling. These results demonstrate how exascale classical simulation can be used to validate quantum processors, and provide a quantitative boundary between noise-tolerant and random regimes in quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-29",
+      "score": 0.630298203633287,
+      "similar_to": [
+        {
+          "title": "Benchmarking quantum gates and circuits",
+          "id": "2407.09942",
+          "similarity": 0.8750437498092651
+        },
+        {
+          "title": "Evidence for the utility of quantum computing before fault tolerance",
+          "id": null,
+          "similarity": 0.8741701245307922
+        }
+      ],
+      "summary": {
+        "summary": "This work benchmarks Quantinuum Helios-1, a 98-qubit trapped-ion QPU, using linear-ramp QAOA and noiseless reference simulations on JUPITER (an exascale supercomputer) for circuits up to 48 qubits with 3,384 two-qubit gates. The study establishes that Helios-1 maintains noise-tolerant performance up to 48 qubits where outputs match noiseless simulations, extends to 93 qubits (12,834 two-qubit gates) with statistically distinguishable algorithmic signal, and transitions to random-like outputs at 95–98 qubits.",
+        "motivation": "Determining the boundary between coherent and noise-dominated regimes in near-term quantum processors requires both ideal reference benchmarks and scalable application-level metrics that isolate intrinsic QPU performance without tuning.",
+        "method": "Large-scale state-vector simulations on JUPITER using JUQCS across 4,096 nodes with 16,384 GH200 superchips at FP32 precision provided noiseless references for up to 48 qubits; performance beyond classical simulability was assessed via mean-of-means resampling with a $3\\sigma$ threshold against random sampling baselines.",
+        "result": "Helios-1 with two-qubit gate infidelity $7.9 \\times 10^{-4}$ operates noise-tolerant up to 48 qubits (verified against JUPITER), maintains coherent performance (statistically distinguishable from random) up to 93 qubits, and becomes random-like beyond 95 qubits; the 48-qubit noiseless simulation at $p=3$ required $\\sim 2490$ s and stressed the full memory-and-network capacity of the exascale system.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.25987",
+      "title": "High-fidelity entangling gates and nonlocal circuits with neutral atoms",
+      "authors": [
+        "Simon J. Evered",
+        "Muqing Xu",
+        "Sophie H. Li",
+        "Alexandra A. Geim",
+        "J. Pablo Bonilla Ataides",
+        "Marcin Kalinowski",
+        "Dolev Bluvstein",
+        "Nishad Maskara",
+        "Christian Kokail",
+        "Markus Greiner",
+        "Vladan Vuletić",
+        "Mikhail D. Lukin"
+      ],
+      "abstract": "Creation and manipulation of entanglement with low error is essential in quantum information systems. In practice, two-qubit entangling gates constitute a dominant error source, limiting circuit depths and performance in fault-tolerant architectures. Using a neutral-atom quantum processor, we realize entangling CZ gates with a high Rabi frequency smooth-amplitude pulse, employing state-selective readout and qubit reuse for fast calibration, and achieve state-of-the-art fidelities of 99.854(4)% which improve to 99.941(3)% upon loss postselection, with stable performance for 10 hours. We then use these low-error gates in quantum circuits with coherent atom rearrangement. We first benchmark performance by creating and disentangling cluster states, and subsequently implement scrambling circuits featuring longer-range connectivity to study non-locally entangled states generated through chaotic dynamics. These results pave the way towards deep-circuit, efficient fault-tolerant quantum computation.",
+      "categories": [
+        "quant-ph",
+        "physics.atom-ph"
+      ],
+      "published": "2026-04-28",
+      "score": 0.619690075855789,
+      "similar_to": [
+        {
+          "title": "Evidence for the utility of quantum computing before fault tolerance",
+          "id": null,
+          "similarity": 0.8464709520339966
+        },
+        {
+          "title": "Quantum crosstalk cancellation for fast entangling gates and improved multi-qubit performance",
+          "id": "2106.00675",
+          "similarity": 0.8440518379211426
+        }
+      ],
+      "summary": {
+        "summary": "Neutral-atom quantum processors achieve 99.854(4)% raw fidelity and 99.941(3)% loss-postselected fidelity for $CZ$ entangling gates using high Rabi frequency smooth-amplitude pulses ($\\Omega \\approx 2\\pi \\times 17$ MHz) on $^{87}$Rb atoms in $n=53$ Rydberg states, with stable performance over 10 hours without recalibration. These gates enable quantum circuits with coherent atom rearrangement, including cluster state benchmarks and nonlocal scrambling circuits with super-ballistic entanglement growth, demonstrating compatibility with deep-circuit fault-tolerant computation.",
+        "motivation": "Two-qubit entangling gate fidelity is the dominant error source limiting circuit depth in quantum processors; achieving error rates around 0.1% is necessary for efficient quantum error correction and fault-tolerant quantum computation.",
+        "method": "The authors implement $CZ$ gates via Rydberg blockade using optimal-control smooth-amplitude pulse profiles with peak two-photon Rabi frequencies of $2\\pi \\times 17$ MHz, loss-resolved qubit readout enabling fast calibration by reuse and refilling from an atom reservoir, and characterize performance via echo randomized benchmarking, symmetric stabilizer benchmarking, and quantum circuits with atom transport using SLM and AOD traps.",
+        "result": "Raw CZ gate error of 0.146(4)% improves to 0.059(3)% with loss postselection; error dominated by Rydberg state decay ($T_1 \\approx 72$ μs) and intermediate state scattering; loss per qubit per gate is 0.054(2)%, with 60% of total error from atom loss; cluster state circuits achieve 99.843(6)% and nonlocal 20-qubit circuits show agreement with numerical simulations including noise.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.26008",
+      "title": "Continuous Noise Model for Quantum Circuits",
+      "authors": [
+        "Yunos El Kaderi",
+        "Andreas Honecker",
+        "Iryna Andriyanova"
+      ],
+      "abstract": "Quantum noise is a central challenge in quantum computing across many applications. Extensive work has examined how qubits couple to their environment, leading to decoherence and irreversible relaxation. This work studies a continuous coherent noise model for quantum circuits and compares it with a discrete Pauli model. The focus is on small, coherent gate errors that accumulate across circuit depth. These errors are modeled as random rotations on the Bloch sphere using a von Mises-Fisher distribution. In the small-angle limit, the model reduces to an isotropic Gaussian distribution. We test the model on quantum error-correction circuits based on the [[5,1,3]] and [[7,1,3]] codes. A variant of Grover's search circuit with different qubit counts is also examined. To enable fair comparison, we introduce a model-independent matching scheme. Pauli and continuous noise channels are aligned using the binary entropy at readout. This isolates the effect of noise structure at fixed uncertainty. An approximate analytical method for the propagation of coherent errors is also developed. The method tracks error distributions both on Clifford and non-Clifford circuits without full Monte Carlo sampling. It reduces simulation cost while preserving accuracy for circuit-level error estimates. The approximation is validated against brute-force simulations, identifying its regime of validity with Clifford and non-Clifford circuits under error correction. Our results show that continuous coherent noise and Pauli noise lead to comparable logical-error trends in the stabilizer-code circuits studied here. This behavior is consistent with syndrome extraction projecting a general single-qubit error onto Pauli-error subspaces before recovery. They also show where simplified propagation models work well and where their accuracy is reduced.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-28",
+      "score": 0.5520531695259809,
+      "similar_to": [
+        {
+          "title": "Evidence for the utility of quantum computing before fault tolerance",
+          "id": null,
+          "similarity": 0.8669042587280273
+        },
+        {
+          "title": "Benchmarking quantum gates and circuits",
+          "id": "2407.09942",
+          "similarity": 0.8531025648117065
+        }
+      ],
+      "summary": {
+        "summary": "This work compares continuous coherent noise modeled as von Mises–Fisher distributed rotations on the Bloch sphere with discrete Pauli noise in quantum circuits, testing both on [[5,1,3]] and [[7,1,3]] stabilizer codes and Grover search algorithms. An entropy-matched comparison scheme and an approximate analytical method for propagating coherent errors through circuits are introduced, showing that continuous and Pauli noise produce comparable logical-error trends when syndrome extraction is applied.",
+        "motivation": "Real quantum devices exhibit coherent gate errors from control drift and environmental coupling that accumulate with circuit depth, yet most error-correction approaches rely on discrete Pauli models. Understanding whether continuous coherent noise requires distinct treatment from stochastic Pauli faults is essential for accurate noise modeling and fault-tolerance thresholds.",
+        "method": "Coherent errors are sampled as random rotations using an isotropic Gaussian distribution (small-angle limit of von Mises–Fisher with concentration $\\kappa$, variance $\\sigma^2 = 1/\\kappa$). Fair comparison is enabled by matching continuous and Pauli channels via binary entropy $H$ at readout. An approximate propagation method tracks cumulative variances $v_{\\theta,\\phi}$ on each qubit without full Monte Carlo sampling, with updates $v_{\\theta,\\mathrm{new}} = v_\\theta + \\sigma^2$ per single-qubit gate and transparent CNOT propagation.",
+        "result": "Continuous and Pauli noise yield comparable logical-error curves in stabilizer-code circuits after error correction (especially for [[5,1,3]]), consistent with syndrome extraction projecting general single-qubit errors onto Pauli subspaces. The approximation agrees with full simulations for uncoded circuits and random Clifford circuits (mean fidelity ratio $\\approx 1.0$) but underestimates error in Grover search (non-Clifford), indicating the method's regime of validity is Clifford-dominated circuits.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8926,
+    0.6303,
+    0.6197,
+    0.5521,
+    0.3652,
+    0.3596,
+    0.3154,
+    0.2746,
+    0.2722,
+    0.2509,
+    0.2474,
+    0.2472,
+    0.2465,
+    0.2397,
+    0.2271,
+    0.1975,
+    0.1966,
+    0.1895,
+    0.171,
+    0.17,
+    0.165,
+    0.1603,
+    0.1522,
+    0.1491,
+    0.1457,
+    0.1432,
+    0.1302,
+    0.1291,
+    0.1233,
+    0.1176,
+    0.1155,
+    0.1053,
+    0.1039,
+    0.0995,
+    0.0959,
+    0.0807,
+    0.0806,
+    0.0752,
+    0.0745,
+    0.0742,
+    0.0719,
+    0.0699,
+    0.0698,
+    0.0672,
+    0.0643,
+    0.0618,
+    0.0556,
+    0.0535,
+    0.0513,
+    0.0489,
+    0.0485,
+    0.0472,
+    0.0471,
+    0.0465,
+    0.0451,
+    0.0443,
+    0.0436,
+    0.0428,
+    0.0416,
+    0.0408,
+    0.0374,
+    0.0371,
+    0.0371,
+    0.0354,
+    0.0346,
+    0.0313,
+    0.0302,
+    0.0301,
+    0.0298,
+    0.0272,
+    0.0266,
+    0.0241,
+    0.0238,
+    0.0232,
+    0.0231,
+    0.023,
+    0.0225,
+    0.0223,
+    0.0221,
+    0.0214,
+    0.0209,
+    0.0208,
+    0.0205,
+    0.0177,
+    0.0159,
+    0.0154,
+    0.0148,
+    0.0144,
+    0.0141,
+    0.013,
+    0.0126,
+    0.0123,
+    0.0098,
+    0.0094,
+    0.0094,
+    0.0088,
+    0.0087,
+    0.0078,
+    0.0071,
+    0.007,
+    0.0066,
+    0.0057,
+    0.0054,
+    0.0053,
+    0.0053,
+    0.0046,
+    0.0045,
+    0.0041,
+    0.0038,
+    0.0037,
+    0.0036,
+    0.0034,
+    0.0034,
+    0.0033,
+    0.0031,
+    0.0031,
+    0.0028,
+    0.0025,
+    0.0015,
+    0.0015
+  ]
+}

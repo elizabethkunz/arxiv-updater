@@ -1,0 +1,8 @@
+{
+  "summary": "This work experimentally characterizes measurement-induced state transitions (MIST) in a fluxonium qubit across its full external flux range and validates theoretical models predicting their occurrence. Branch analysis without array modes explains six of eleven identified MIST regions, while Floquet branch analysis including the two lowest array modes accounts for the remaining five, with five of these being dominated by transitions involving superinductor array modes.",
+  "motivation": "Strong microwave readout drives in dispersive readout can cause non-QND errors by exciting qubits outside the computational subspace; understanding and predicting MIST is critical for quantum error correction and informs fluxonium readout optimization.",
+  "method": "A fluxonium with $E_J/h = 2.571$ GHz and $E_L/h = 0.449$ GHz coupled to a resonator at $\\omega_R/2\\pi = 6.79$ GHz was characterized via two-tone spectroscopy and readout fidelity mapping, then MIST was isolated using a sequence comparing qubit state populations with and without readout pulses to separate MIST errors from relaxation and thermal excitation.",
+  "result": "Eleven MIST regions were identified with maximum average photon numbers up to $\\langle N_R \\rangle \\approx 6$; peak readout assignment fidelity reached 86.1% at an optimal point, limited by array-mode-induced MIST at sweet spot ($\\phi_\\mathrm{ext} = 0.5$), which could be suppressed by balancing circuit self-capacitances to restore symmetry protection of odd array modes.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

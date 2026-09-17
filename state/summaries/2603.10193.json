@@ -1,0 +1,8 @@
+{
+  "summary": "A superconducting diode effect is demonstrated in nanoscale lead islands on graphene using Coulomb blockade to break particle-hole symmetry without external magnetic fields or ferromagnets. Gate-tunable nonreciprocal Cooper-pair currents are achieved through resonant charge states, enabling rectification with a rectification ratio near 10 and microwave photodetection with responsivity $1.38$ nA/pW at $10$–$20$ GHz.",
+  "motivation": "Existing superconducting diode realizations rely on magnetic fields or complex heterostructures that hinder integration and scalability; a simpler, gate-switchable approach based on Coulomb interactions is desired for scalable superconducting logic devices.",
+  "method": "Pb islands (effective radius $5$–$40$ nm) on bilayer graphene are coupled to proximitized graphene via a double-junction geometry, where gating with voltage pulses tunes the fractional excess charge $n_0$ over $\\pm 1$ e to controllably break particle-hole symmetry and induce nonreciprocal resonant Cooper-pair tunneling through charge states separated by gaps $4E_C/e$ up to $1.5$ mV.",
+  "result": "Two symmetric resonant Cooper-pair tunneling peaks shift with $n_0$, producing asymmetric $V(I)$ characteristics with hysteresis in the easy-flow direction and switchable diode polarity; sinusoidal current drive yields rectification ratios $\\text{RR}(I) \\approx 10$ and microwave photodetection at $10$–$20$ GHz with linear power responsivity $1.38$ nA/pW.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

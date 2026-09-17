@@ -1,0 +1,8 @@
+{
+  "summary": "This work systematically evaluates error mitigation strategies for dynamic circuits executing Hamiltonian simulation and ground state estimation on IBM quantum hardware, specifically combining dynamical decoupling (DD) during mid-circuit measurement and feed-forward latencies with zero-noise extrapolation (ZNE). The integrated DD+ZNE approach yields at least 60% improvement in energy gap for ground state estimation and recovers 15%–99% of energy gap error for the Ising model time evolution, with more modest 3%–20% improvements for the Heisenberg model.",
+  "motivation": "Dynamic circuits reduce circuit depth via mid-circuit measurements and conditional logic, but introduce substantial classical processing latencies during which idle qubits accumulate dephasing and crosstalk errors from readout operations, negating fidelity gains from resource reduction.",
+  "method": "Experiments on IBM Kingston benchmark DD and ZNE individually and in combination across two 1D spin models (TFIM and Heisenberg chain) with system sizes $n \\in \\{3, 5, 8, 12\\}$ qubits and field strengths $h \\in \\{0, 0.5, 2, 5\\}$. DD uses simple $X$-pulse sequences on idle data qubits during measurement/feed-forward windows; ZNE applies global circuit folding ($U(U^\\dagger U)^k$) with manual inversion of dynamic gadgets to scale measurement and latency errors.",
+  "result": "Combined DD+ZNE consistently outperforms individual techniques, achieving $\\geq 60\\%$ energy gap reduction for ground state preparation across both models and 15%–99% recovery for Ising model time evolution versus only 3%–20% for Heisenberg, reflecting higher complexity of non-commuting $RXX$ and $RYY$ terms.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

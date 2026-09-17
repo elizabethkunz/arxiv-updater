@@ -1,0 +1,218 @@
+{
+  "date": "2026-06-04",
+  "n_fetched": 94,
+  "papers": [
+    {
+      "id": "2606.05010",
+      "title": "Measurement-induced state transitions in multi-qubit transmon processors",
+      "authors": [
+        "Baptiste Hoyau",
+        "Alexander McDonald",
+        "Boris M. Varbanov",
+        "Manuel H. Muñoz-Arias",
+        "Alexandre Blais"
+      ],
+      "abstract": "Dispersive readout of the transmon qubit in circuit QED is known to lose its quantum non-demolition character at small to moderate measurement drive amplitudes. This phenomenon is understood to originate from Laundau-Zener transitions at accidental multi-photon resonances, where $n$ drive photons can promote the transmon by $m$ levels. This interpretation has been shown to be in agreement with experiments characterizing the dispersive readout of a single transmon. The impact of these measurement-induced state transition (MIST) of a transmon embedded in a multi-qubit chip, however, remains largely unexplored. Here, we show that the presence of other components, such as qubits and couplers, can affect the MIST threshold of a measured transmon. To arrive at these results, we present a general method to characterize measurement-induced transition when the qubit under readout is coupled to other circuit elements, a ubiquitous situation in circuit QED-based quantum processors. As an example, we consider the case of two transmon qubits, and we show that the spectator qubit can be impacted by the measurement-induced transition of the readout qubit and, conversely, that the presence of the spectator qubit can lower the MIST threshold of the readout qubit. Finally, we explore how adding a coupler mode between the two qubits further modifies these effects.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-03",
+      "score": 0.9476226495927322,
+      "similar_to": [
+        {
+          "title": "Measurement-induced state transitions in multi-qubit transmon processors",
+          "id": "2606.05010",
+          "similarity": 0.9970486164093018
+        },
+        {
+          "title": "Measurement-induced state transitions in dispersive qubit readout schemes",
+          "id": "2402.07360",
+          "similarity": 0.9024140238761902
+        }
+      ],
+      "summary": {
+        "summary": "This work introduces a multimode Floquet branch analysis method to characterize measurement-induced state transitions (MIST) when a transmon qubit under dispersive readout is coupled to spectator modes in a quantum processor. The method reveals that spectator qubits and tunable couplers can dramatically alter MIST thresholds, with implications for readout fidelity in multi-qubit systems.",
+        "motivation": "Understanding MIST in isolated transmons has progressed significantly, but the impact of neighboring qubits and coupler modes on readout breakdown remains poorly explored despite being ubiquitous in circuit QED processors.",
+        "method": "The authors develop coupling-first and drive-first Floquet labeling schemes that track whether spectators induce avoided crossings in the quasienergy spectrum by comparing state assignments when couplings and drives are introduced in different orders. They apply this to two capacitively-coupled transmons and to systems with transmon tunable couplers, mapping critical photon numbers over ranges of detuning and coupling strength.",
+        "result": "For two transmons with $E_C/2\\pi \\approx 195$ MHz and $g/2\\pi \\approx 160$ MHz qubit-resonator coupling, spectator-induced MIST reduces critical photon numbers by $\\sim 50\\%$ over detuning ranges spanning hundreds of megahertz near single-photon resonances; tunable couplers can suppress this via destructive interference of charge-qubit matrix elements when $\\omega_c - \\omega_s = g_{sc}(g_{qc}/g_{qs} - g_{qs}/g_{qc})$, but this suppression condition does not coincide with ZZ-cancellation conditions.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.04914",
+      "title": "Tunable Resonator Integrated Magnetometry",
+      "authors": [
+        "Colin Stack",
+        "Brian Sears",
+        "Aruna Ramanayaka",
+        "David Ferguson",
+        "Ilya Sochnikov",
+        "Tony X. Zhou"
+      ],
+      "abstract": "The quantum-technology revolution is reshaping computing, sensing, and communication. In magnetometry, recent advances leverage precise control of spin qubits and color centers in solid-state crystals for mesoscopic-scale sensing. Yet at very low temperatures, superconducting sensing technology remains unrivaled because of its non-invasiveness and higher sensitivity. Here we describe a class of superconducting sensors that offers low loss and quantum non-demolition measurement characteristics. We designed and fabricated a superconducting flux-tunable resonator (tRes) in a superconducting chip foundry and matured it to a level that combines the speed of an inductor-capacitor circuit with the flux sensitivity of a superconducting quantum interference device (SQUID) to perform magnetometry at milli-kelvin temperature to investigate targets. We introduce its fundamental functionality readily at MHz magnetic sampling rate, showcase two measurement modalities, and investigate three circuits with gradually increasing complexity to extract target-specific information. The combination of high sensitivity and fast readout characteristics make tRes an attractive and versatile magnetometer.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci",
+        "cond-mat.supr-con",
+        "physics.app-ph",
+        "quant-ph"
+      ],
+      "published": "2026-06-03",
+      "score": 0.7626190629575753,
+      "similar_to": [
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.850121259689331
+        },
+        {
+          "title": "The Flux Qubit Revisited to Enhance Coherence and Reproducibility",
+          "id": "1508.06299",
+          "similarity": 0.8383596539497375
+        }
+      ],
+      "summary": {
+        "summary": "A tunable superconducting resonator (tRes) integrated magnetometer combines the fast readout of an LC circuit with SQUID-level flux sensitivity for cryogenic magnetometry at MHz sampling rates. The device demonstrates quantum non-demolition measurement characteristics and operates across three circuit topologies of increasing complexity at milli-kelvin temperatures.",
+        "motivation": "Existing superconducting magnetometers achieve high sensitivity but face trade-offs in readout speed and architectural flexibility; a tunable resonator approach could enable faster, more versatile measurement modalities while maintaining the non-invasive advantages of superconducting sensors.",
+        "method": "tRes was designed and fabricated using superconducting chip foundry processes, with flux tunability integrated to achieve SQUID-like sensitivity while retaining LC-circuit speed; two measurement modalities were demonstrated and three progressively complex circuits characterized to extract target-specific information.",
+        "result": "The tRes achieves MHz magnetic sampling rates with high sensitivity and quantum non-demolition measurement properties, making it a competitive alternative to spin-qubit and color-center magnetometry for milli-kelvin cryogenic applications.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.04629",
+      "title": "Circuit-Level Noise Estimation via Shuttling in Plaquette Circuits",
+      "authors": [
+        "Huyen Do",
+        "Alexandru Paler"
+      ],
+      "abstract": "We present a method for estimating QEC circuit-level noise levels assuming that only single-shot measurements are available (e.g. measurements are slow and performed in a zoned/parallel fashion), and that lower level quantum hardware calibration is not possible (e.g. cloud access) or not feasible (e.g. large scale computing). We develop and run surface code plaquette experiments using two syndrome qubit configurations: FRESH, involving fresh qubits for each plaquette repetition, and RECYCLE, reusing qubits. To validate our approach, we compile plaquettes to ion-trap (IonQ Aria1) native gate set and apply hardware-aware rewrite templates to reduce circuit depth and execution time. We also run the experiments on a non-shuttling, superconducting processor (IBM Torino). We estimate circuit-level noise rates from the resulting single-shot plaquette measurement statistics, and conclude numerically about the viability of low-depth QEC experiments.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-03",
+      "score": 0.514764532822551,
+      "similar_to": [
+        {
+          "title": "Benchmarking quantum gates and circuits",
+          "id": "2407.09942",
+          "similarity": 0.8381392955780029
+        },
+        {
+          "title": "Evidence for the utility of quantum computing before fault tolerance",
+          "id": null,
+          "similarity": 0.8161233067512512
+        }
+      ],
+      "summary": {
+        "summary": "This paper presents a method to estimate circuit-level noise for surface-code QEC by analyzing repeated plaquette measurements under two ancilla strategies: FRESH (fresh syndrome qubits per round) and RECYCLE (reused syndrome qubit). The approach extracts effective plaquette error rates, idle errors, and time-correlated errors from single-shot measurement statistics without requiring access to low-level gate calibrations.",
+        "motivation": "On near-term quantum computers with cloud access or large-scale deployments, detailed gate-level calibration is often unavailable, yet noise models are essential for predicting QEC code performance. Shuttling-based architectures (ion traps, neutral atoms) introduce reuse-dependent correlation effects not captured by standard metrics, necessitating a circuit-level extraction method.",
+        "method": "Two syndrome-qubit configurations execute plaquette circuits with varying repetition depths on IonQ Aria1 (trapped-ion) and IBM Torino (superconducting). FRESH uses $n$ separate syndrome qubits while RECYCLE uses one; measurement probabilities $p_x$ and $p_{x,y}$ are fit to error model equations to isolate $p_\text{plaq}$, $c_\text{orre}$ (time-like correlated error), $i_\text{dle}$, and $m_\text{ea}$ (measurement error). For IonQ, hardware-aware rewrite templates reduce circuit depth via GPI2 gate cancellations and commutations with Mølmer–Sørensen gates.",
+        "result": "On IonQ Aria1, optimized Plaquette-3 achieves $p_\text{plaq} \\approx 1.5\\%$ (down from $3.0\\%$ for Plaquette-1), reducing circuit depth by roughly 50% through native-gate optimization. On IBM Torino, negative $c_\text{orre}$ values indicate the RECYCLE–FRESH difference is dominated by routing overhead in fixed-connectivity layouts, suggesting the model is most applicable to shuttling platforms where reuse induces genuine time-correlated effects.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9476,
+    0.7626,
+    0.5148,
+    0.3581,
+    0.3287,
+    0.2785,
+    0.253,
+    0.234,
+    0.2264,
+    0.179,
+    0.1742,
+    0.1707,
+    0.1632,
+    0.1532,
+    0.1434,
+    0.1318,
+    0.1307,
+    0.129,
+    0.1223,
+    0.1198,
+    0.1166,
+    0.1161,
+    0.1104,
+    0.1099,
+    0.1083,
+    0.107,
+    0.0975,
+    0.0956,
+    0.0946,
+    0.094,
+    0.0915,
+    0.0885,
+    0.0879,
+    0.0868,
+    0.0847,
+    0.0842,
+    0.0809,
+    0.0753,
+    0.0749,
+    0.0726,
+    0.0699,
+    0.06,
+    0.0543,
+    0.0539,
+    0.0509,
+    0.0454,
+    0.0449,
+    0.0445,
+    0.0427,
+    0.0404,
+    0.039,
+    0.0387,
+    0.0315,
+    0.0312,
+    0.0309,
+    0.0304,
+    0.0272,
+    0.0266,
+    0.0263,
+    0.0262,
+    0.0254,
+    0.0231,
+    0.023,
+    0.0221,
+    0.0216,
+    0.0213,
+    0.0207,
+    0.0192,
+    0.018,
+    0.0179,
+    0.0164,
+    0.0163,
+    0.0163,
+    0.0161,
+    0.0157,
+    0.0153,
+    0.0142,
+    0.0133,
+    0.0128,
+    0.0116,
+    0.0113,
+    0.0112,
+    0.0093,
+    0.0079,
+    0.0079,
+    0.0073,
+    0.0058,
+    0.0057,
+    0.0035,
+    0.0033,
+    0.0031,
+    0.003,
+    0.0024,
+    0.0015
+  ]
+}

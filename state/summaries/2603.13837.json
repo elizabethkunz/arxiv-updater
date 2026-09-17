@@ -1,0 +1,8 @@
+{
+  "summary": "A transmon qubit at $\\omega_q = 2\\pi \\times 3.1$ GHz is readout using a millimeter-wave cavity at $\\omega_r = 2\\pi \\times 34.7$ GHz with coupling rate $g = 2\\pi \\times 1.3$ GHz, achieving a large detuning ratio $\\omega_r/\\omega_q > 10$ that suppresses drive-induced unwanted state transitions. Measurement fidelity exceeds 99% with over 100 readout photons and no quantum-limited amplifier, with resilience demonstrated up to $1,000$ drive photons.",
+  "motivation": "Drive-induced resonant state transitions limit readout fidelity in conventional circuit QED systems where cavity and qubit frequencies are comparable; operating with large frequency separation between readout and qubit can suppress these transitions while maintaining fast qubit gates and low thermal occupancy.",
+  "method": "Floquet simulations and experiments on a transmon-cavity system probe drive-induced transitions by sweeping drive strength and frequency. The state is prepared, driven near the readout resonance with variable photon number, and multistate readout distinguishes transitions to higher transmon levels.",
+  "result": "No resonant state transitions observed up to $\\bar{n}_d \\approx 1,000$ photons from either $|0\\rangle$ or $|1\\rangle$, with measurement fidelities $\\mathcal{F}_{|0\\rangle} = \\mathcal{F}_{|1\\rangle} = 0.992$ at $\\bar{n}_r = 109$ and readout time $\\tau_r = 780$ ns; measurement efficiency is 1.74% with system added noise $\\bar{n}_{\\mathrm{sys}} = 28$ photons.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

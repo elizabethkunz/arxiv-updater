@@ -1,0 +1,161 @@
+{
+  "date": "2026-02-23",
+  "n_fetched": 68,
+  "papers": [
+    {
+      "id": "2602.18388",
+      "title": "Qubit error bursts in superconducting quantum processors of Quantum Inspire: quasiparticle pumping and anomalous time dependence",
+      "authors": [
+        "G. R. Di Carlo",
+        "M. Samiotis",
+        "A. Kamlapure",
+        "M. Finkel",
+        "N. Muthusubramanian",
+        "M. W. Beekman",
+        "N. Haider",
+        "M. S. Moreira",
+        "J. F. Marques",
+        "B. Segers",
+        "S. Vallés-Sanclemente",
+        "L. DiCarlo"
+      ],
+      "abstract": "We investigate qubit error bursts in 5- and 7-transmon processors of similar design, fabrication and packaging, but with different types of qubit Josephson junctions. Measurements for each are performed in two refrigerators to discern device-specific from refrigerator-dependent characteristics. The duration and rate of bursts are device specific but within the range of prior experiments and consistent with ionizing radiation. We observe two unforeseen signatures specifically in the processor with Dolan junctions. First, increasing the rate of $π$ pulsing in the detection scheme shortens the recovery time to equilibrium, which is explained by a quasiparticle pumping mechanism. The second signature is an anomalous time dependence in the burst rate: a surge happens days or weeks after cooldown, followed by a strong suppression that persists until thermal cycling.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-20",
+      "score": 0.9517682763923597,
+      "similar_to": [
+        {
+          "title": "Correlated Phase Error Bursts in a Gap-Engineered Superconducting Qubit Array",
+          "id": null,
+          "similarity": 0.8930124044418335
+        },
+        {
+          "title": "Real-time detection of correlated quasiparticle tunneling events in a multi-qubit superconducting device",
+          "id": "2602.01945",
+          "similarity": 0.8860876560211182
+        }
+      ],
+      "summary": {
+        "summary": "This study investigates qubit error bursts in two Quantum Inspire transmon processors (Starmon-5 with Dolan junctions and Starmon-7 with Manhattan junctions) and reveals junction-specific signatures, including quasiparticle pumping in Dolan devices and an anomalous surge-and-suppression pattern in burst rate. Burst rates of $\\gamma_\\mathrm{kept} \\approx 1.5$ and $1$ min$^{-1}$ are comparable to prior work after area normalization, with recovery times differing by $\\times 8$ between devices ($t_\\mathrm{rec} \\sim 2$ ms versus $\\sim 250$ µs).",
+        "motivation": "Ionizing radiation–induced qubit error bursts limit quantum error correction performance in superconducting processors, motivating investigation of burst dynamics, recovery mechanisms, and mitigation strategies across nominally similar devices.",
+        "method": "Mid-circuit measurement and template-matched filtering of simultaneous multi-qubit errors distinguish radiation-induced bursts from baseline $T_1$ and readout errors in two refrigerators; burst rate and duration are extracted as functions of cycle time and detection pulse rate.",
+        "result": "Dolan-junction qubits show quasiparticle pumping: increasing π-pulse rate shortens $t_\\mathrm{rec}$ by $\\sim 4\\times$ (from $\\sim 2$ ms to $\\sim 500$ µs) via a built-in trap, absent in Manhattan junctions; separately, Starmon-5 exhibits an anomalous surge with $\\gamma_\\mathrm{kept}$ rising by $\\times 10$–$\\times 100$ after 1–4 weeks at base temperature, then suppressing to $\\times 100$ below initial levels until thermal cycling.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.18122",
+      "title": "Flux-Activated Resonant Control of a Bosonic Quantum Memory",
+      "authors": [
+        "Fernando Valadares",
+        "Aleksandr Dorogov",
+        "Tanjung Krisnanda",
+        "May Chee Loke",
+        "Ni-Ni Huang",
+        "Pengtao Song",
+        "Yvonne Y. Gao"
+      ],
+      "abstract": "Universal control of bosonic degrees of freedom provides a hardware-efficient route for quantum information processing with high-dimensional systems. Bosonic circuit quantum electrodynamics (cQED), which leverages auxillary transmons to coherently control long-lived superconducting cavities, is well suited to this goal. However, such systems are traditionally operated in the dispersive regime, where the nearly degenerate cavity transitions prohibit the direct addressability of individual excitation levels of the bosonic mode and increase gate complexity. Here, we achieve direct oscillator control by dynamically accessing the resonant Jaynes-Cummings (JC) interactions, implemented with a hardware that integrates on-chip broadband magnetic flux delivery with a bosonic memory housed in a 3D superconducting cavity with lifetime exceeding 0.5 ms. We demonstrate deterministic preparation of Fock states and their superpositions within 100s of nanoseconds by directly climbing the JC ladder, and realise efficient arbitrary rotations between any pair of Fock states. Our resonant control scheme provides an analytical method for manipulating the entire Hilbert space of the bosonic mode at rates fundamentally more favourable than traditional dispersive strategies. This on-demand access to JC interactions opens a promising path toward realising robust Fock-basis qudits and harnessing the rich dynamics of high-dimensional bosonic systems for quantum information processing.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-20",
+      "score": 0.8557755697406328,
+      "similar_to": [
+        {
+          "title": "Seamless high-Q microwave cavities for multimode circuit QED",
+          "id": "2010.16382",
+          "similarity": 0.864639163017273
+        },
+        {
+          "title": "Circuit Quantum Electrodynamics",
+          "id": "2005.12667",
+          "similarity": 0.8539901971817017
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates direct resonant control of a superconducting cavity using flux-tunable Jaynes–Cummings interactions, achieving preparation of arbitrary Fock state superpositions and Givens rotations between cavity levels. The implementation integrates broadband on-chip flux delivery with cascaded Chebyshev filtering to protect the cavity lifetime at $T_1 = 590 ± 40$ µs while enabling nanosecond-timescale transmon frequency tuning.",
+        "motivation": "Standard dispersive bosonic cQED requires complex numerical control pulses to address cavity transitions since excitation levels are nearly degenerate within each qubit manifold. Direct access to resonant Jaynes–Cummings transitions would enable analytically simple, faster control of bosonic qudits while preserving cavity coherence.",
+        "method": "A 3D superconducting cavity ($\\omega_\\mathrm{cav}/2\\pi = 6.868$ GHz) couples to an asymmetric DC-SQUID transmon ($g/2\\pi = 12.2 ± 0.1$ MHz, $\\gamma = E_{J2}/E_{J1} = 4.02$) with flux bias delivered through an on-chip CPW line featuring two cascaded third-order Chebyshev low-pass filters (cutoff 4 GHz) achieving 98 dB attenuation at cavity frequency. Sequential and multi-tone drives address individual JC ladder transitions, followed by adiabatic detuning of the transmon to map JC eigenstates onto Fock states.",
+        "result": "Deterministic Fock state superposition preparation ($\\frac{1}{2}(|0\\rangle + |3\\rangle)$ with $93 ± 3\\%$ fidelity, $640$ ns) and Givens rotations $\\hat{\\mathcal{R}}_{n_A,n_B}(\\theta)$ between arbitrary Fock pairs ($|1\\rangle$ to $|4\\rangle$ with $68–80\\%$ fidelity depending on $\\theta$) were demonstrated, with gate times fundamentally faster than dispersive SNAP/GRAPE by factors of 5–20 due to interaction strength scaling as $g \\gg \\chi/2\\pi \\approx 1.62$ MHz.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9518,
+    0.8558,
+    0.499,
+    0.3861,
+    0.3786,
+    0.344,
+    0.3168,
+    0.3099,
+    0.2792,
+    0.2451,
+    0.2214,
+    0.195,
+    0.1621,
+    0.1394,
+    0.1351,
+    0.1331,
+    0.1256,
+    0.1151,
+    0.1046,
+    0.0903,
+    0.0898,
+    0.0787,
+    0.0775,
+    0.0762,
+    0.0718,
+    0.0718,
+    0.0701,
+    0.0692,
+    0.0669,
+    0.0606,
+    0.0598,
+    0.0597,
+    0.0592,
+    0.059,
+    0.057,
+    0.0561,
+    0.0515,
+    0.049,
+    0.0412,
+    0.0405,
+    0.0404,
+    0.0313,
+    0.0305,
+    0.0288,
+    0.0265,
+    0.0224,
+    0.0198,
+    0.0194,
+    0.0184,
+    0.0179,
+    0.0158,
+    0.0155,
+    0.0144,
+    0.0142,
+    0.0135,
+    0.0121,
+    0.012,
+    0.0101,
+    0.0075,
+    0.006,
+    0.0059,
+    0.0052,
+    0.0052,
+    0.0047,
+    0.0045,
+    0.0042,
+    0.0025,
+    0.0024
+  ]
+}

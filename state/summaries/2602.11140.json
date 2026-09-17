@@ -1,0 +1,8 @@
+{
+  "summary": "A Reed-Muller RM(1,3) error-correction encoder is implemented in SFQ logic using the MIT-LL SFQ5ee process to protect 4-bit messages converted to 8-bit codewords against bit errors in the SFQ-to-CMOS interface. The encoder dissipates 101.5 μW, occupies 0.193 mm², and is evaluated via a JoSIM–MATLAB framework that models process parameter variations and fabrication defects.",
+  "motivation": "SFQ-to-CMOS data transmission suffers bit errors from flux trapping, process parameter variations, and fabrication defects, yet cooling power and cabling constraints limit the parity bits that can be routed cryogenically.",
+  "method": "An [8,4,4] linear block code encoder based on XOR gates and delay flip-flops was designed in the SuperTools/ColdFlux RSFQ cell library and simulated with JoSIM; a custom MATLAB framework automated fault injection and performance analysis under $\\pm20\\%$ process parameter variations and open-circuit faults.",
+  "result": "At $\\pm20\\%$ process parameter variations, the RM(1,3) encoder achieved 86.7% probability of error-free transmission of 100 messages versus 80.0% for an encoder-less design; at $\\pm15\\%$ and lower variations, error correction succeeded with 99.1% probability or higher.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

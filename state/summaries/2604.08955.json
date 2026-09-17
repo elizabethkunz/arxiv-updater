@@ -1,0 +1,8 @@
+{
+  "summary": "This work investigates how pump phase noise affects Josephson traveling-wave parametric amplifiers (JTWPAs), finding that the three-wave mixing (3WM) process exhibits significant phase noise regrowth at high frequency offsets while the four-wave mixing (4WM) process does not. The mechanism is traced to even-order nonlinearities in 3WM that create cyclo-stationary noise through overlapping of harmonic sidebands, resulting in over 10 dB of phase noise growth at 100 MHz offset as pump power increases from $-100$ dBm to $-86$ dBm.",
+  "motivation": "Understanding pump phase noise effects on JTWPAs is critical for maintaining qubit readout fidelity since these amplifiers are essential for near-quantum-limited amplification but their sensitivity to pump oscillator characteristics has not been previously characterized.",
+  "method": "Harmonic balance periodic noise analysis was performed in Keysight ADS using a full JJ model (critical current $I_c = 1.4$ μA) applied to 1000-unit-cell transmission lines with $C = 93$ fF and 50 Ω characteristic impedance; 4WM ($I = 0$) and 3WM ($I = 0.5 I_c$) JTWPAs were simulated with AnaPico AP5022A phase noise input, validated by polynomial nonlinear transfer function models.",
+  "result": "In 3WM JTWPA the even-order nonlinearities ($a_2, a_4$) cause phase noise spectral density to increase by ~20 dB at 100 MHz offset when pump power increases from $-100$ dBm to $-86$ dBm, while 4WM with only odd harmonics shows no spectral regrowth; cyclo-stationary noise from overlapping of even harmonics explains this difference.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

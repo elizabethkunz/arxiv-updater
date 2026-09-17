@@ -1,0 +1,8 @@
+{
+  "summary": "An all-electrical, on-chip microwave frequency comb is demonstrated using a superconducting cavity loaded with SrTiO$_3$ in its quantum paraelectric phase, exploiting field-induced Pockels-like $χ(2)$ for cavity phase modulation. The high dielectric constant (> 20,000) of SrTiO$_3$ enables miniaturization and direct integration with cryogenic superconducting qubits and quantum metrology platforms without requiring external optical systems.",
+  "motivation": "Cryogenic quantum technologies operating with superconducting and semiconducting qubits require microwave-domain frequency combs for precision spectroscopy and metrology, but existing approaches rely on bulky, high-power optical systems incompatible with on-chip integration.",
+  "method": "A superconducting cavity is loaded with SrTiO$_3$ tuned into its quantum paraelectric regime, where applied electric fields induce an effective second-order nonlinearity; phase modulation of the cavity resonance via field-tuned dielectric constant generates the frequency comb pattern.",
+  "result": "The device achieves continuous, electric-field-controlled tuning of the comb operating frequency range while maintaining the compact, low-power, on-chip architecture required for direct integration with superconducting qubit platforms.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

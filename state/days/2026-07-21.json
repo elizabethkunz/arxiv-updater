@@ -1,0 +1,397 @@
+{
+  "date": "2026-07-21",
+  "n_fetched": 162,
+  "papers": [
+    {
+      "id": "2607.17204",
+      "title": "Heralded Leakage Detection with Preserved Computational-State Coherence in a Fixed-Frequency Transmon",
+      "authors": [
+        "Takeaki Miyamura",
+        "Zhiling Wang",
+        "Peter A. Spring",
+        "Hiroto Mukai",
+        "Kohei Matsuura",
+        "Jesper Ilves",
+        "Yoshiki Sunada",
+        "Yasunobu Nakamura"
+      ],
+      "abstract": "Leakage out of the computational subspace is a major error mechanism in superconducting quantum processors. Detecting leakage without disturbing the encoded quantum information can provide a heralded error signal that error-correction decoders exploit. However, standard dispersive readout collapses all qubit eigenstates indiscriminately. Here, we demonstrate heralded leakage detection on a fixed-frequency transmon by applying a Rabi drive on the computational transition during dispersive readout. The drive makes the computational states indistinguishable to the probe on the resonator while leaving the second and higher excited states distinguishable from the computational states. We achieve a leakage-detection fidelity of 97.1(3)% within the 80-ns detection window, with a false-flag rate of 2.3(3)% from the computational subspace. Conditioned on the no-leakage outcome, the post-detection state retains an average fidelity of 92.9(5)% across the six cardinal states for an equal mixture of computational and leakage population. The scheme requires no circuit elements beyond those used for standard dispersive readout, making it applicable to various types of superconducting qubits without hardware modification.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-19",
+      "score": 0.9567385748475625,
+      "similar_to": [
+        {
+          "title": "Heralded Leakage Detection with Preserved Computational-State Coherence in a Fixed-Frequency Transmon",
+          "id": "2607.17204",
+          "similarity": 1.0
+        },
+        {
+          "title": "Benchmarking the readout of a superconducting qubit for repeated measurements",
+          "id": "2407.10934",
+          "similarity": 0.8759210705757141
+        }
+      ],
+      "summary": {
+        "summary": "A fixed-frequency transmon qubit demonstrates heralded leakage detection by applying a resonant Rabi drive during dispersive readout, which makes the computational states indistinguishable while preserving distinguishability of higher excited states. The protocol achieves 97.1(3)% leakage-detection fidelity with 2.3(3)% false-flag rate and 92.9(5)% average post-detection state fidelity for equal computational-leakage mixtures, requiring no additional hardware.",
+        "motivation": "Leakage from the computational subspace is a major error mechanism in superconducting processors that persists over error-correction cycles, and detecting leakage without disturbing quantum information enables heralded error signals for decoders while managing leakage-induced correlated errors.",
+        "method": "A detuned Rabi drive at $\\Omega_q / 2\\pi = 186$ MHz on the $|g\\rangle$–$|e\\rangle$ transition during 80 ns of dispersive readout time-averages the state-dependent cavity pull, making the dressed computational states transparent to the probe while leaving $|f\\rangle$ and higher states dispersively coupled and detectable; the optimal detuning $\\delta / 2\\pi \\approx +11$ MHz compensates residual dephasing from finite anharmonicity ($\\alpha / 2\\pi = -318$ MHz).",
+        "result": "Binary classification yields $\\varepsilon_{FF} = 2.3(3)\\%$ false-flag rate and $\\varepsilon_{UL} = 3.5(2)\\%$ undetected-leakage rate; errors decompose into separation errors $\\varepsilon_{sep} \\approx 2\\%$ and flip errors (0.2% and 1.6% respectively); with narrower filter bandwidth $\\kappa_{\\mathrm{eff}} / 2\\pi \\approx |\\chi|$, projections suggest false-flag rates below 1% and back-action of $\\sim 10^{-3}$ at $10^{-3}$ separation error with current coherence times $T_1 \\approx 27$ µs.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.17562",
+      "title": "Temporal Diffraction Grating for Engineered Superconducting Qubit Dissipation",
+      "authors": [
+        "Pratik J. Barge",
+        "Kater W. Murch"
+      ],
+      "abstract": "Parametric frequency modulation is a standard tool in superconducting circuits for activating tunable interactions and implementing quantum gates. Here, we engineer dissipation in a flux-tunable transmon qubit by using sideband modulation to bring it into resonance with a lossy resonator, opening an on-demand Purcell decay channel. We find that pulsing this channel on and off does not simply lower the time-averaged decay rate; instead, it reorganizes the dissipation spectrum into a structured interference pattern. A Chebyshev-propagator model for the repeated on/off block reproduces the measured spectra and reveals a close structural correspondence to N-slit Fraunhofer diffraction, with each on-window acting as a temporal aperture. By varying the pulse duration and duty cycle, we demonstrate control over the spacing, contrast, and envelope of the dissipation spectrum. These results establish pulsed parametric modulation as a direct method for shaping engineered dissipation in superconducting circuits and provide a new control knob for open quantum system dynamics.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-20",
+      "score": 0.9478560805993782,
+      "similar_to": [
+        {
+          "title": "On-demand driven dissipation for cavity reset and cooling",
+          "id": "2310.16785",
+          "similarity": 0.8615741729736328
+        },
+        {
+          "title": "High-gain and large-bandwidth Josephson parametric amplifier influenced by Fabry-Perot interference",
+          "id": "2604.13881",
+          "similarity": 0.8476904630661011
+        }
+      ],
+      "summary": {
+        "summary": "We demonstrate that pulsing a parametrically activated Purcell decay channel in a flux-tunable transmon qubit creates a temporal diffraction grating in the dissipation spectrum. Pulsed on/off modulation reorganizes the qubit's decay into interference fringes analogous to N-slit Fraunhofer diffraction, with each modulation window acting as a temporal aperture whose spacing, contrast, and envelope are controlled by the pulse duration and duty cycle.",
+        "motivation": "Dissipation engineering in superconducting circuits traditionally relies on static spectral shaping or continuous coherent drives, but time-domain control of loss channels offers a complementary control knob for open quantum system dynamics.",
+        "method": "We apply periodic on/off gating to a parametric flux modulation ($\\omega_m \\approx 1.308$ GHz, $g_{\\mathrm{eff}}/2\\pi = 0.14$ MHz) that couples a transmon ($\\omega_{q,\\mathrm{on}}/2\\pi = 4.259$ GHz) to a readout resonator ($\\omega_r/2\\pi = 6.8759$ GHz, $\\kappa/2\\pi = 0.375$ MHz) and measure the excited-state probability as a function of modulation detuning while varying $\\tau_{\\mathrm{on}}$ and $\\tau_{\\mathrm{off}}$. We model the dynamics using a Chebyshev-polynomial propagator formalism for repeated on/off blocks.",
+        "result": "Central interference dips are spaced by $\\delta(\\Delta_m/2\\pi) = 1/(2t_c)$ where $t_c = \\tau_{\\mathrm{on}} + \\tau_{\\mathrm{off}}$ is the cycle time; the measured spectra match simulations from Eq. (3) and exhibit single-slit sinc$^2$ envelopes whose width is controlled by $\\tau_{\\mathrm{on}}$ while interference contrast scales with duty cycle, enabling independent tuning of fringe spacing and visibility without changing device parameters.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.17791",
+      "title": "Oval-shaped resonance distortion as a signature of quasiparticle heating effect in a niobium superconducting resonator",
+      "authors": [
+        "Zhenyuan Sun",
+        "Genting Dai",
+        "Xiao Geng",
+        "Liangliang Yang",
+        "Mingjun Cheng",
+        "Qing Yu",
+        "Jinlin Chang",
+        "Yi Yang",
+        "Linpan Jiang",
+        "Jianshe Liu",
+        "Wei Chen"
+      ],
+      "abstract": "We investigate the nonlinear behavior of a superconducting microwave resonator subjected to a dissipative mechanism where the associated quality factor (Q factor) decreases with increasing dissipated power, leading to a dissipative feedback effect. By modifying the Rothwarf-Taylor equations, we establish a macroscopic quasiparticle heating (QPH) model that directly links the quality factor to the microwave readout power. The key finding is the identification of a distinctive oval-shaped distortion in the resonance circle in the complex plane. This distortion serves as a practical experimental signature for identifying the readout power regime in which QPH dominates the loss, under conditions where other nonlinear mechanisms are sufficiently weak. To validate the model, we design and fabricate a niobium (Nb) half-wavelength coplanar waveguide (CPW) resonator and conduct systematic bath temperature and readout power sweeps. The model provides a well fit to the observed oval-shaped resonance circle distortion across a wide range of operating conditions, confirming the QPH mechanism as the primary source of the dissipative non-linearity in the parameter space investigated.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-07-20",
+      "score": 0.7782311273969931,
+      "similar_to": [
+        {
+          "title": "Oval-shaped resonance distortion as a signature of quasiparticle heating effect in a niobium superconducting resonator",
+          "id": "2607.17791",
+          "similarity": 1.0
+        },
+        {
+          "title": "Surface loss simulations of superconducting coplanar waveguide resonators",
+          "id": "1107.4698",
+          "similarity": 0.8205587863922119
+        }
+      ],
+      "summary": {
+        "summary": "We develop a macroscopic quasiparticle heating (QPH) model based on modified Rothwarf–Taylor equations for a niobium CPW resonator, predicting that dissipative nonlinearity manifests as a distinctive oval-shaped distortion of the resonance circle in the complex plane. Experimental measurements on a Nb half-wavelength CPW resonator ($f_r = 4.537$ GHz, $L = 13$ mm) across bath temperatures 20 mK to 1.1 K and readout powers up to 0 dBm confirm this signature, with the model reproducing the observed $Q_r$ degradation and resonance distortion over the QPH-dominated regime.",
+        "motivation": "Dissipative nonlinearities in superconducting resonators limit device performance, particularly in kinetic inductance detectors where high readout power suppresses two-level system noise but can trigger quasiparticle heating losses; identifying the onset and character of this mechanism is crucial for optimizing operating points.",
+        "method": "We solved the steady-state Rothwarf–Taylor equations with a power-dependent quasiparticle generation rate $\\Gamma_r = \\eta P_{qp}/(V\\Delta)$ to derive a quartic equation for normalized quasiparticle density $u = n_{qp}/n^*$ at each detuning, computing $S_{21}$ trajectories across frequency and power sweeps. Measurements employed a dilution refrigerator setup with VNA readout; quality factors were extracted from resonance magnitude data for bath temperatures above 500 mK where two-level system effects saturate.",
+        "result": "At base temperature, the model yields global fit parameters $P_c = 0.0311$ mW and $Q_{other}/Q_c = 1.1$, with $Q_{qp,th}/Q_c$ varying from 8.68 at 0.5 K to 5.51 at 1.1 K; the measured $Q_r$ follows the predicted power law $Q_i \\propto P_r^{-1/3}$ in the high-power limit, and the oval distortion becomes pronounced above $-40$ dBm, providing a clear diagnostic signature of the QPH regime.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.17992",
+      "title": "A Voltage-Controlled Josephson Frequency Comb",
+      "authors": [
+        "Giorgio De Simoni",
+        "Francesco Giazotto"
+      ],
+      "abstract": "Microwave frequency combs constitute promising resources for quantum technologies, cryogenic electronics, and multiplexed sensing architectures. In this work, we propose a frequency-comb generator based on a Josephson field-effect transistor operated in a relaxation-oscillation regime. The device comprises a gate-tunable ballistic superconductor-semiconductor-superconductor junction embedded in a resistively shunted circuit, in which electrostatic control of the carrier density enables in situ tuning of both the critical current and the Josephson inductance. Time-domain circuit simulations indicate that the resulting oscillator produces coherent voltage pulses whose Fourier spectrum forms a microwave frequency comb. In contrast to conventional Josephson-based comb architectures, the proposed platform provides direct electrical control of the comb spacing, emission frequencies, and modal power distribution via a gate electrode. For a representative Al/InAs implementation, we demonstrate continuous frequency coverage in the technologically relevant 1-10 GHz range. Furthermore, the concept is shown to be compatible with higher-$T_c$ superconductors, underscoring its potential as a compact and scalable microwave source for cryogenic quantum information and sensing applications.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-07-20",
+      "score": 0.7775319367412389,
+      "similar_to": [
+        {
+          "title": "Electrical post-fabrication tuning of aluminum Josephson junctions at room temperature",
+          "id": "2602.20002",
+          "similarity": 0.8480088114738464
+        },
+        {
+          "title": "Coherent Josephson qubit suitable for scalable quantum integrated circuits",
+          "id": "1304.2322",
+          "similarity": 0.8266351222991943
+        }
+      ],
+      "summary": {
+        "summary": "This work proposes a voltage-controlled Josephson frequency-comb generator based on a gate-tunable superconductor–semiconductor–superconductor junction operated as a relaxation oscillator, where electrostatic control of carrier density in an InAs two-dimensional electron gas enables direct tuning of both critical current and Josephson inductance. Time-domain SPICE simulations demonstrate continuous 1–10 GHz frequency coverage with equidistant comb lines whose spacing, central frequencies, and modal power distribution can be dynamically adjusted via gate voltage, with extension to niobium showing $\\sim 100$ GHz bandwidth at temperatures around 3 K.",
+        "motivation": "Microwave frequency combs are essential for quantum information processing and cryogenic sensing, but existing Josephson-based implementations suffer from limited tunability, low power output, or reliance on magnetic-field or cavity engineering that constrains scalability and in situ control.",
+        "method": "A ballistic Al/InAs SNS junction with a capacitively coupled gate electrode is embedded in a resistively shunted circuit and operated in the relaxation-oscillation regime; the nonlinear dynamics are simulated via SPICE using the Kulik–Omelyanchuk current–phase relation with sub-picosecond time resolution to compute steady-state voltage waveforms and their Fourier spectra.",
+        "result": "For Al/InAs at 20 mK, the device produces phase-coherent voltage pulses with mode spacing $\\Delta f = 1/\\tau \\approx 1$ GHz tunable over 65% via gate voltage; peak powers reach $\\sim 0.5$ pW per mode at 1 GHz, increasing to $\\sim 10$ pW per mode for Nb electrodes at 3 K with bandwidth extended to 100 GHz.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.17202",
+      "title": "Multi-level Random-Telegraph Noise Mitigation using a Single Spectator Qubit",
+      "authors": [
+        "Yanan Liu",
+        "Hongting Song",
+        "Areeya Chantasri",
+        "Howard M. Wiseman"
+      ],
+      "abstract": "Preserving quantum coherence in the presence of environmental noise is one of the principal challenges for quantum technologies. Noise mitigation using spectator qubits (SQs) has recently emerged as a promising approach, enabling indirect probing of the noise without disturbing the data qubit (DQ). However, existing analyses that probe ultimate performance have been restricted to two-state random telegraph process noise, which does not capture more complex noise processes that may arise in the environment. Therefore, we here develop a SQ-based noise mitigation for DQs subject to general multi-level fluctuator noise. We first derive the coherence dynamics of the DQ under such noise, then develop a mitigation scheme in which information about the noise is inferred from sequential SQ measurements and used for phase correction. A memory-efficient heuristic adaptive protocol is proposed to dynamically select the SQ measurement time and angle based on the current noise estimate. Numerical simulations demonstrate that the proposed strategy significantly suppresses decoherence under multi-level noise, achieving performance comparable to that in the two-level case despite the increased complexity of the noise process.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-19",
+      "score": 0.6727655000522755,
+      "similar_to": [
+        {
+          "title": "Benchmarking quantum gates and circuits",
+          "id": "2407.09942",
+          "similarity": 0.8483891487121582
+        },
+        {
+          "title": "Erasure qubits: Overcoming the $T_1$ limit in superconducting circuits",
+          "id": "2208.05461",
+          "similarity": 0.8483874201774597
+        }
+      ],
+      "summary": {
+        "summary": "This work extends spectator-qubit noise mitigation from two-level random-telegraph noise to general $L$-level fluctuator processes by developing a map-based formalism with $L \\times L$ matrices and deriving a heuristic adaptive protocol that dynamically selects measurement angle $\\theta_n$ and waiting time $\\tau_n$ based on current noise estimates. Numerical simulations for $L=3$ show decoherence rates of $\\sim 10^{-9}$ under the adaptive strategy, achieving comparable suppression to the two-level case despite noise complexity.",
+        "motivation": "Realistic solid-state environments feature multiple charge traps and defects causing complex multi-level noise rather than simple two-level random-telegraph processes, making noise-mitigation strategies that handle general fluctuator spectra essential for practical quantum systems.",
+        "method": "The authors generalize the Bayesian map-based formalism to arbitrary $L$ noise levels described by transition rates $\\gamma_{ij}$ and formulate the problem in terms of accumulated noise-time vectors $\\bar{X}$. A heuristic adaptive algorithm identifies the two most-likely noise levels $\\mu$ and $\\nu$ from the coherence vector $\\bar{A}_n$, then selects $\\tau_{n+1} = \\pi/|K_\\mu - K_\\nu|$ and $\\theta_{n+1}$ to maximally distinguish these hypotheses.",
+        "result": "For $L=3$ with transition rates $\\gamma_{12}=0.1$ to $\\gamma_{32}=0.3$ and sensitivities $\\kappa_i \\in [0.001, 0.005]$, $K_i \\in [40, 180]$, the adaptive algorithm suppresses the decoherence rate to $(9.5\\text{--}9.6) \\times 10^{-10}$ compared to uncontrolled decay, with performance bounded by a conservative upper bound scaling as $\\Gamma^\\mathrm{ub} \\propto \\gamma(\\Delta\\kappa/\\Delta K)^2$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.17081",
+      "title": "quchip: A Differentiable Toolkit for Modeling Quantum Devices",
+      "authors": [
+        "Ibraheem AlYousef"
+      ],
+      "abstract": "Predictive modeling of a superconducting quantum chip requires more than a Hamiltonian: the model must connect device physics, control-line transformations, chosen frames and approximations, dissipation, and measured observables. We present quchip, an open-source Python toolkit that represents these parts explicitly and assembles backend-independent simulations for QuTiP or dynamiqs; with dynamiqs, device and control parameters remain differentiable through the solve. We demonstrate the resulting experimental loop on a five-device model fitted to dressed observables. Simulated phase sweeps identify the complex crosstalk between two control lines, and inversion of the inferred response suppresses the effective leakage by more than two orders of magnitude. Over sixteen simultaneous $π$ pulses, the corrected pulse-end populations remain within $0.3$ percentage points of the crosstalk-free response. Adiabatically eliminating the bus and readout resonators reduces the Hilbert-space dimension from 576 to 16, after which gradients through simulated tomography recover the four injected crosstalk parameters with a maximum complex error of $1.5\\times10^{-5}$. A single explicit model can therefore support prediction, correction, and inverse parameter recovery.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-19",
+      "score": 0.5061214670827913,
+      "similar_to": [
+        {
+          "title": "Component-Level Inverse Design of Transmon Qubits Using Neural Networks",
+          "id": "2607.20795",
+          "similarity": 0.8572293519973755
+        },
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.85219407081604
+        }
+      ],
+      "summary": {
+        "summary": "quchip is an open-source Python toolkit that assembles device-independent simulations for superconducting quantum chips by explicitly representing device physics, control-line transformations, frames, approximations, dissipation, and observables. Using JAX-native dynamiqs, device and control parameters remain differentiable through time evolution, enabling forward prediction, correction via response-matrix inversion, and inverse parameter recovery from tomography.",
+        "motivation": "Superconducting quantum chips require coordinating multiple layers—local Hamiltonians, control electronics, rotating frames, the rotating-wave approximation, noise channels, and measurement—making hand-assembled models brittle and hard to extend.",
+        "method": "quchip organizes a chip as devices (Duffing transmons, resonators), couplings (capacitive interactions), and drives (charge lines with crosstalk). An engine resolves each device's reference frame to its dressed $0 \\to 1$ frequency, decomposes operators into excitation-change bands to apply the RWA automatically, assembles collapse operators, and packs a differentiable problem for QuTiP or dynamiqs backends.",
+        "result": "On a five-device model (two qubits, bus, two readout resonators), phase sweeps identified crosstalk phasors $0.16 e^{i 3.31}$ and $0.14 e^{i 1.885}$ between two charge lines; inverting the response matrix suppressed effective leakage by $>100\\times$ and held corrected populations within 0.3 percentage points over sixteen simultaneous $\\pi$ pulses. Adiabatic elimination reduced the Hilbert space from 576 to 16 dimensions; gradients through tomography recovered all four directed crosstalk parameters ($\\beta_{12}, \\theta_{12}, \\beta_{21}, \\theta_{21}$) with maximum complex error $1.5 \\times 10^{-5}$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9567,
+    0.9479,
+    0.7782,
+    0.7775,
+    0.6728,
+    0.5061,
+    0.466,
+    0.3198,
+    0.311,
+    0.2794,
+    0.2636,
+    0.2634,
+    0.2489,
+    0.247,
+    0.243,
+    0.235,
+    0.2185,
+    0.2143,
+    0.2142,
+    0.1825,
+    0.1804,
+    0.1637,
+    0.1615,
+    0.1389,
+    0.1361,
+    0.1288,
+    0.1205,
+    0.1184,
+    0.1176,
+    0.113,
+    0.1111,
+    0.1101,
+    0.1064,
+    0.105,
+    0.1031,
+    0.097,
+    0.0962,
+    0.0956,
+    0.0925,
+    0.0921,
+    0.091,
+    0.0903,
+    0.09,
+    0.0893,
+    0.0884,
+    0.0868,
+    0.0862,
+    0.0858,
+    0.083,
+    0.0792,
+    0.0791,
+    0.0769,
+    0.0751,
+    0.0713,
+    0.0687,
+    0.0677,
+    0.0668,
+    0.0649,
+    0.0636,
+    0.0608,
+    0.0565,
+    0.053,
+    0.0515,
+    0.0509,
+    0.0495,
+    0.0488,
+    0.0482,
+    0.0481,
+    0.0457,
+    0.0439,
+    0.0422,
+    0.0415,
+    0.0407,
+    0.0386,
+    0.0383,
+    0.037,
+    0.0351,
+    0.0317,
+    0.0317,
+    0.0313,
+    0.0301,
+    0.03,
+    0.029,
+    0.0286,
+    0.0284,
+    0.0279,
+    0.0274,
+    0.0263,
+    0.0235,
+    0.0224,
+    0.0216,
+    0.0211,
+    0.0209,
+    0.0203,
+    0.0202,
+    0.0201,
+    0.02,
+    0.0197,
+    0.0196,
+    0.0188,
+    0.0185,
+    0.0184,
+    0.0181,
+    0.0174,
+    0.0172,
+    0.0171,
+    0.0162,
+    0.0154,
+    0.0152,
+    0.0151,
+    0.0149,
+    0.0135,
+    0.0134,
+    0.0133,
+    0.013,
+    0.013,
+    0.0126,
+    0.0119,
+    0.0119,
+    0.0118,
+    0.0114,
+    0.0113,
+    0.0112,
+    0.0111,
+    0.011,
+    0.0105,
+    0.0101,
+    0.0101,
+    0.0095,
+    0.0095,
+    0.0092,
+    0.0092,
+    0.0092,
+    0.0091,
+    0.0089,
+    0.0081,
+    0.0075,
+    0.0072,
+    0.0066,
+    0.006,
+    0.0056,
+    0.0055,
+    0.0052,
+    0.005,
+    0.0049,
+    0.0048,
+    0.0045,
+    0.0042,
+    0.004,
+    0.004,
+    0.004,
+    0.0033,
+    0.0033,
+    0.0033,
+    0.003,
+    0.0029,
+    0.0027,
+    0.0026,
+    0.0024,
+    0.0023,
+    0.0018,
+    0.0007
+  ]
+}

@@ -1,0 +1,20 @@
+{# one section per day, so the sort bar can reorder days #}
+<section class="dayblock">
+<div class="day" id="d-{{ day.date }}">
+  <div>
+    {% if link_day %}<h2><a href="{{ root }}days/{{ day.date }}.html">{{ day.date }}</a></h2>{% endif %}
+    <div class="stats">{{ day.listed|length }} listed &nbsp;/&nbsp; {{ day.n_fetched }} scanned{% if link_day and day.papers|length > day.listed|length %} &nbsp;/&nbsp; <a href="{{ root }}days/{{ day.date }}.html">view top {{ day.papers|length }} &rarr;</a>{% endif %}</div>
+  </div>
+  {# score distribution of every paper scanned that day; sqrt-scaled so the long tail near 0% stays readable #}
+  <svg class="hist" width="160" height="30" viewBox="0 0 160 30" role="img" aria-label="Score distribution of all {{ day.n_fetched }} papers, 0 to 100%">
+    {% for b in day.hist %}
+    <rect class="{{ 'hi' if b.hi else '' }}" x="{{ loop.index0 * 8 }}" y="{{ 30 - b.h }}" width="6" height="{{ b.h }}" fill="currentColor"/>
+    {% endfor %}
+  </svg>
+</div>
+{% for p in day.listed %}
+{% include "_card.html.j2" %}
+{% else %}
+<p class="empty">Nothing at {{ (100 * min_score)|int }}%+ this day.</p>
+{% endfor %}
+</section>

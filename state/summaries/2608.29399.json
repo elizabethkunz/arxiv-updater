@@ -1,0 +1,8 @@
+{
+  "summary": "FIREQ is an open-source RFSoC-based framework for superconducting qubit control and readout implemented on an AMD Zynq UltraScale+ ZCU216, combining modular AXI-compliant firmware with a PYNQ-based software stack to achieve direct RF synthesis up to 9.3 GHz, 107 ps pulse-duration resolution, and 1.7 ns event-timing resolution. End-to-end validation on a superconducting qubit yields $T_1 = 6.94$ µs and $T_2^* = 13.50$ µs, with normalized resource utilization competitive with existing RFSoC frameworks while maintaining low BRAM footprint through envelope interpolation and memory-efficient buffering.",
+  "motivation": "Scaling superconducting quantum processors requires efficient control electronics that minimize interconnects and hardware cost per channel. FIREQ addresses the need for resource-efficient, extensible room-temperature control platforms suitable for both current instrumentation and future cryogenic integration.",
+  "method": "FIREQ employs a hardware-software co-design with trigger-based deterministic timing, programmable envelope generation with on-the-fly linear interpolation, frequency-multiplexed readout, and a client-server architecture with dependency-aware configuration updates to reduce host-device overhead during parameter sweeps.",
+  "result": "On the ZCU216, FIREQ generates RF pulses with phase noise below $-116$ dBc/Hz at 1 MHz offset (at 0.5 gain), inter-channel timing skew of $1.8 \text{ ps}$ mean and $0.84$ ps standard deviation, and software overhead reducing from 26% for short sequences to $\thicksim 1\text{–}1.5\text{%}$ for longer experiments over millions of shots.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

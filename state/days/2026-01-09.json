@@ -1,0 +1,336 @@
+{
+  "date": "2026-01-09",
+  "n_fetched": 97,
+  "papers": [
+    {
+      "id": "2601.04975",
+      "title": "Fast, high-fidelity Transmon readout with intrinsic Purcell protection via nonperturbative cross-Kerr coupling",
+      "authors": [
+        "Guillaume Beaulieu",
+        "Jun-Zhe Chen",
+        "Marco Scigliuzzo",
+        "Othmane Benhayoune-Khadraoui",
+        "Alex A. Chapple",
+        "Peter A. Spring",
+        "Alexandre Blais",
+        "Pasquale Scarlino"
+      ],
+      "abstract": "Dispersive readout of superconducting qubits relies on a transverse capacitive coupling that hybridizes the qubit with the readout resonator, subjecting the qubit to Purcell decay and measurement-induced state transitions (MIST). Despite the widespread use of Purcell filters to suppress qubit decay and near-quantum-limited amplifiers, dispersive readout often lags behind single- and two-qubit gates in both speed and fidelity. Here, we experimentally demonstrate junction readout, a simple readout architecture that realizes a strong qubit-resonator cross-Kerr interaction without relying on a transverse coupling. This interaction is achieved by coupling a transmon qubit to its readout resonator through both a capacitance and a Josephson junction. By varying the qubit frequency, we show that this hybrid coupling provides intrinsic Purcell protection and enhanced resilience to MIST, enabling readout at high photon numbers. While junction readout is compatible with conventional linear measurement, in this work we exploit the nonlinear coupling to intentionally engineer a large Kerr nonlinearity in the resonator, enabling bifurcation-based readout. Using this approach, we achieve a 99.4 % assignment fidelity with a 68 ns integration time and a 98.4 % QND fidelity without an external Purcell filter or a near-quantum-limited amplifier. These results establish the junction readout architecture with bifurcation-based readout as a scalable and practical alternative to dispersive readout, enabling fast, high-fidelity qubit measurement with reduced hardware overhead.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-08",
+      "score": 0.9798750149188963,
+      "similar_to": [
+        {
+          "title": "Fast, high-fidelity transmon readout with intrinsic Purcell protection via nonperturbative cross-Kerr coupling",
+          "id": "2601.04975",
+          "similarity": 1.0
+        },
+        {
+          "title": "Balanced cross-Kerr coupling for superconducting qubit readout",
+          "id": "2501.09010",
+          "similarity": 0.9402137994766235
+        }
+      ],
+      "summary": {
+        "summary": "Junction readout achieves fast, high-fidelity transmon measurement by coupling the qubit to its readout resonator through both a Josephson junction and a capacitance, creating a nonperturbative cross-Kerr interaction with intrinsic Purcell protection. Operating a bifurcation-based readout on this architecture yields 99.4% assignment fidelity in 68 ns and 98.4% QND fidelity without external Purcell filters or near-quantum-limited amplifiers.",
+        "motivation": "Dispersive readout of superconducting qubits suffers from Purcell decay and measurement-induced state transitions due to transverse qubit-resonator coupling, requiring additional hardware like Purcell filters and parametric amplifiers that increase system complexity and footprint.",
+        "method": "A Josephson junction with energy $E_J^c = 4.01$ GHz is placed in parallel with the capacitive coupling ($J/2\\pi = 83$ MHz) between a flux-tunable transmon and a $\\lambda/4$ resonator ($\\omega_r/2\\pi = 7.66$ GHz, $\\kappa/2\\pi = 10.6$ MHz). The hybrid coupling generates a strong nonperturbative cross-Kerr shift ($2\\chi/2\\pi \\approx -14$ MHz) while forming a lumped LC notch filter that suppresses exchange coupling and Purcell decay. Bifurcation-based readout is implemented by exploiting the resonator self-Kerr nonlinearity ($K/2\\pi = -0.963$ MHz) induced by the junction.",
+        "result": "At the flux bias point of maximum Purcell filtering, the device achieves assignment fidelity of 99.4% (68 ns integration, $\\eta \\approx 4\\%$ quantum efficiency, maximum intracavity photon number $n_{\\max} = 26$ for $|e\\rangle$) and QND fidelity of 98.4% with critical photon number $n_{crit} \\sim 60$. Purcell-limited lifetime $T_{1}^{\\mathrm{pl}}$ increases by nearly four orders of magnitude as qubit frequency approaches the notch frequency, with excellent agreement between theory and finite-element simulations.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.05231",
+      "title": "Scalable Suppression of XY Crosstalk by Pulse-Level Control in Superconducting Quantum Processors",
+      "authors": [
+        "Hui-Hang Chen",
+        "Chiao-Hsuan Wang"
+      ],
+      "abstract": "As superconducting quantum processors continue to scale, high-performance quantum control becomes increasingly critical. In densely integrated architectures, unwanted interactions between nearby qubits give rise to crosstalk errors that limit operational performance. In particular, direct exchange-type (XY) interactions are typically minimized by designing large frequency detunings between neighboring qubits at the hardware level. However, frequency crowding in large-scale systems ultimately restricts the achievable frequency separation. While such XY coupling facilitates entangling gate operations, its residual presence poses a key challenge during single-qubit controls. Here, we propose a scalable pulse-level control framework, incorporating frequency modulation (FM) and dynamical decoupling (DD), to suppress XY crosstalk errors. This framework operates independently of coupling strengths, reducing calibration overhead and naturally supporting multi-qubit connectivity. Numerical simulations show orders-of-magnitude reductions in infidelity for both idle and single-qubit gates in a two-qubit system. We further validate scalability in a five-qubit layout, where crosstalk between a central qubit and four neighbors is simultaneously suppressed. Our crosstalk suppression framework provides a practical route toward high-fidelity operation in dense superconducting architectures.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-08",
+      "score": 0.8407764670740965,
+      "similar_to": [
+        {
+          "title": "Suppression of crosstalk in superconducting qubits using dynamical decoupling",
+          "id": "2108.04530",
+          "similarity": 0.907599151134491
+        },
+        {
+          "title": "Quantum crosstalk cancellation for fast entangling gates and improved multi-qubit performance",
+          "id": "2106.00675",
+          "similarity": 0.8962982296943665
+        }
+      ],
+      "summary": {
+        "summary": "This work develops pulse-level control strategies to suppress residual XY coupling crosstalk in superconducting qubit processors during single-qubit operations and idle periods. Two methods are proposed: frequency modulation (FM) applying sinusoidal Z-drives and dynamical decoupling (DD) applying periodic Z-pulses, both engineered to average out the exchange interaction through phase accumulation.",
+        "motivation": "As superconducting processors scale to larger qubit counts with dense connectivity, frequency crowding prevents maintaining large detunings between neighbors, causing XY crosstalk to emerge as a dominant coherent error source during single-qubit operations despite being suppressed by detuning in sparse architectures.",
+        "method": "The approach exploits the oscillatory dependence of the XY term $H_{XY} = J(\\sigma_1^+ \\sigma_2^- e^{i\\Delta t} + \\text{h.c.})$ on detuning $\\Delta$. At matched gate times $T_M = 2m\\pi/|\\Delta|$ the first-order error vanishes. FM with amplitude $\\gamma$ and modulation cycles $N$ further suppresses second-order errors by modulating the instantaneous detuning, while DD Z-4 uses four equally-spaced $\\pi$ pulses over $T_M$ to invert and average the crosstalk in alternating segments.",
+        "result": "Numerical simulations with $\\Delta/2\\pi = 50$ MHz and $J/2\\pi = 5$ MHz show FM reduces idle-gate infidelity by $>4$ orders of magnitude (reaching $\\sim 6$ orders with $N=8$), and X-gate infidelity by $>2$ orders; DD Z-4 achieves $\\sim 1$ order reduction for idle gates and $\\sim 0.37$ orders for X-gates. Both methods maintain suppression over 20+ consecutive operations and scale to a five-qubit central-neighbor configuration with comparable relative performance despite higher absolute infidelities from multiple coupling paths.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.04830",
+      "title": "Noise tailoring for error mitigation and for diagnozing digital quantum computers",
+      "authors": [
+        "Thibault Scoquart",
+        "Hugo Perrin",
+        "Kyrylo Snizhko"
+      ],
+      "abstract": "Error mitigation (EM) methods are crucial for obtaining reliable results in the realm of noisy intermediate-scale quantum (NISQ) computers, where noise significantly impacts output accuracy. Some EM protocols are particularly efficient for specific types of noise. Yet the noise in the actual hardware may not align with that. In this article, we introduce Noise Tailoring (NT) -- an innovative strategy designed to modify the structure of the noise associated with two-qubit gates through statistical sampling. We perform classical emulation of the protocol behavior and find that the NT+EM results can be up to 5 times more accurate than the results of EM alone for realistic Pauli noise acting on two-qubit gates. At the same time, on actual IBM quantum computers, the NT method falls victim to various small error sources beyond Markovian Pauli noise. We propose to use the NT method for characterizing such error sources on quantum computers in order to inform hardware development.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-01-08",
+      "score": 0.684637490050608,
+      "similar_to": [
+        {
+          "title": "Benchmarking quantum gates and circuits",
+          "id": "2407.09942",
+          "similarity": 0.8522388339042664
+        },
+        {
+          "title": "Evidence for the utility of quantum computing before fault tolerance",
+          "id": null,
+          "similarity": 0.8485130071640015
+        }
+      ],
+      "summary": {
+        "summary": "This paper introduces Noise Tailoring (NT), a sampling technique that reshapes two-qubit gate noise from an arbitrary Pauli channel to a target structure (depolarizing) to improve error mitigation protocol efficiency. Classical emulations show up to 5× accuracy improvement for BCS quench simulations with NT+NEC versus NEC alone, but experiments on IBM quantum computers reveal that NT amplifies unaccounted error sources, making it impractical for current NISQ devices at finite sampling.",
+        "motivation": "While error mitigation methods like NEC are designed for specific noise structures, actual quantum hardware noise often mismatches these assumptions, limiting mitigation effectiveness. The authors sought to develop a technique to reshape hardware noise toward structures that enable more efficient error mitigation.",
+        "method": "The protocol combines Randomized Compiling (RC), Pauli Noise Tomography (PNT), Noise Tailoring (NT), and NEC on superconducting qubits. NT uses quasiprobability distributions to stochastically dress CNOT gates with Pauli operators, converting measured Pauli noise $\\mathcal{N}_p^\\infty$ to a target depolarizing channel $\\mathcal{N}_d^\\infty$. The target depolarizing strength $\\lambda_d$ is optimized to minimize the error amplification factor $\\sigma = \\gamma^{N_{\\mathrm{CNOT}}}/\\mathcal{F}_{\\mathrm{NEC}}$, where $\\gamma$ is the sampling overhead from quasiprobabilities.",
+        "result": "Classical emulations predict $\\sim$5× improvement for deep circuits (>100 CNOT gates), but $N_{\\mathrm{NT}}=10^4$ circuits on ibm\\_hanoi and ibmq\\_ehningen show degraded performance due to amplification of residual coherent noise and single-qubit errors by factor $\\sigma$. Extrapolation suggests NT could outperform RC+NEC with $N_{\\mathrm{NT}}\\gtrsim 10^6$ circuits, but the approach is valuable for diagnosing hardware error sources via systematic comparison of RC+NEC and RC+NT+NEC data.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.05147",
+      "title": "Low-loss Material for Infrared Protection of Cryogenic Quantum Applications",
+      "authors": [
+        "Markus Griedel",
+        "Max Kristen",
+        "Biliana Gasharova",
+        "Yves-Laurent Mathis",
+        "Alexey V. Ustinov",
+        "Hannes Rotzinger"
+      ],
+      "abstract": "The fragile quantum states of low-temperature quantum applications require protection from infrared radiation caused by higher-temperature stages or other sources. We propose a material system that can efficiently block radiation up to the optical range while transmitting photons at low gigahertz frequencies. It is based on the effect that incident photons are strongly scattered when their wavelength is comparable to the size of particles embedded in a weakly absorbing medium (Mie-scattering). The goal of this work is to tailor the absorption and transmission spectrum of an non-magnetic epoxy resin containing sapphire spheres by simulating its dependence on the size distribution. Additionally, we fabricate several material compositions, characterize them, as well as other materials, at optical, infrared, and gigahertz frequencies. In the infrared region (stop band) the attenuation of the Mie-scattering optimized material is high and comparable to that of other commonly used filter materials. At gigahertz frequencies (pass-band), the prototype filter exhibits a high transmission at millikelvin temperatures, with an insertion loss of less than $0.4\\,$dB below $10\\,$GHz.",
+      "categories": [
+        "cond-mat.supr-con",
+        "quant-ph"
+      ],
+      "published": "2026-01-08",
+      "score": 0.6125055343958177,
+      "similar_to": [
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.8142633438110352
+        },
+        {
+          "title": "Wireless millikelvin interconnects for superconducting quantum hardware",
+          "id": "2607.13834",
+          "similarity": 0.8022453784942627
+        }
+      ],
+      "summary": {
+        "summary": "A non-magnetic infrared filter for cryogenic quantum devices is demonstrated using Mie scattering from sapphire spheres (0.45–700 µm diameter) embedded in epoxy resin, achieving IR attenuation $\\mu_{\\mathrm{ext}} \\approx 2$ mm$^{-1}$ below 200 µm while maintaining microwave transparency. A prototype coaxial filter based on the SP0.45-700 composition shows insertion loss below 0.4 dB at frequencies up to 10 GHz at 15 mK, with approximately 25× lower pass-band attenuation than metal-powder alternatives at comparable IR blocking.",
+        "motivation": "Superconducting qubits and other cryogenic quantum devices suffer degraded coherence and sensitivity when thermal infrared radiation from higher-temperature cryostat stages breaks Cooper pairs; existing absorptive filter materials like Eccosorb attenuate both IR and the desired microwave signal.",
+        "method": "Mie scattering theory was used to simulate extinction efficiency $Q_{\\mathrm{ext}}$ as a function of sphere diameter and wavelength; composites with tailored size distributions were fabricated in UHU plus Endfest 300 epoxy and characterized via Fourier-transform infrared spectroscopy (1–1000 µm) and vector-network-analyzer measurements (0.1–14 GHz) at room temperature and 15 mK.",
+        "result": "SP0.45-700 achieves transmission $< 10^{-4}$ at 2 and 40 µm and $< 5.3 \\times 10^{-5}$ at 200 µm (1.5 mm thickness), matching or exceeding Eccosorb CR124 performance in the IR stop-band, while the extinction coefficient at 9 GHz is $\\mu_{\\mathrm{ext}} \\approx 1.9 \\times 10^{-3}$ mm$^{-1}$ versus $1.9 \\times 10^{-1}$ mm$^{-1}$ for Eccosorb.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.04645",
+      "title": "SurgeQ: A Hybrid Framework for Ultra-Fast Quantum Processor Design and Crosstalk-Aware Circuit Execution",
+      "authors": [
+        "Xinxuan Chen",
+        "Hongxiang Zhu",
+        "Zhaohui Yang",
+        "Zhaofeng Su",
+        "Jianxin Chen",
+        "Feng Wu",
+        "Hui-Hai Zhao"
+      ],
+      "abstract": "Executing quantum circuits on superconducting platforms requires balancing the trade-off between gate errors and crosstalk. To address this, we introduce SurgeQ, a hardware-software co-design strategy consisting of a design phase and an execution phase, to achieve accelerated circuit execution and improve overall program fidelity. SurgeQ employs coupling-strengthened, faster two-qubit gates while mitigating their increased crosstalk through a tailored scheduling strategy. With detailed consideration of composite noise models, we establish a systematic evaluation pipeline to identify the optimal coupling strength. Evaluations on a comprehensive suite of real-world benchmarks show that SurgeQ generally achieves higher fidelity than up-to-date baselines, and remains effective in combating exponential fidelity decay, achieving up to a million-fold improvement in large-scale circuits.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-08",
+      "score": 0.6116704742380835,
+      "similar_to": [
+        {
+          "title": "Crosstalk In Contemporary Quantum Devices",
+          "id": "2605.26528",
+          "similarity": 0.8608613014221191
+        },
+        {
+          "title": "A tunable coupling scheme for implementing high-fidelity two-qubit gates",
+          "id": "1803.09813",
+          "similarity": 0.8497490286827087
+        }
+      ],
+      "summary": {
+        "summary": "SurgeQ is a hardware-software co-design framework for superconducting qubits that accelerates two-qubit gate execution by increasing coupling strength (Surge factor $s$ up to 1.8) while mitigating the resulting crosstalk through a crosstalk-free scheduler that eliminates nearest-neighbor ZZ interactions. Evaluated on 127 real-world benchmarks spanning 17 categories on 127-qubit heavy-hex and 225-qubit grid topologies, SurgeQ achieves fidelities up to $10^6$ times higher than baseline Qiskit O3 on large circuits and remains effective even on dense QSIH circuits, where crosstalk-free scheduling introduces $1.61\\times$ depth overhead.",
+        "motivation": "Two-qubit gate errors dominate superconducting qubit performance, but reducing gate time via stronger coupling amplifies crosstalk from stray ZZ interactions between parallel operations on adjacent qubits, creating a fundamental trade-off that prior work addresses only through software-only or frequency-allocation techniques.",
+        "method": "SurgeQ combines hardware design (tunable couplers with adjustable coupling strengths to realize faster CZ gates with duration $\\propto s^{-2}$) with a crosstalk-free scheduler implementing maximum independent set selection to prevent simultaneous gates on adjacent pairs, supplemented by pattern substitution to reduce circuit depth overhead while maintaining fidelity via a digital error model accounting for $T_1^{\\mathrm{eff}}=40$ μs, $T_\\phi^{\\mathrm{eff}}=1.1$ μs, and crosstalk scaling as $E_{1Q}\\propto s^4$ and $E_{2Q}\\propto s^4$.",
+        "result": "Optimal Surge factor calibration selects $s=1.7$ for dense QSIH circuits (100 qubits, fidelity ratio $\\approx 100$) and $s=1.8$ for real-world applications; compared to XtalkSched and CAMEL baselines, SurgeQ achieves higher fidelity on most of 127 benchmarks with circuit duration reductions and maintains advantage over exponential fidelity decay in large-scale circuits.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.05113",
+      "title": "Unitary fault-tolerant encoding of Pauli states in surface codes",
+      "authors": [
+        "Luis Colmenarez",
+        "Remmy Zen",
+        "Jan Olle",
+        "Florian Marquardt",
+        "Markus Müller"
+      ],
+      "abstract": "In fault-tolerant quantum computation, the preparation of logical states is a ubiquitous subroutine, yet significant challenges persist even for the simplest states required. In the present work, we present a unitary, scalable, distance-preserving encoding scheme for preparing Pauli eigenstates in surface codes. Unlike previous unitary approaches whose fault-distance remains constant with increasing code distance, our scheme ensures that the protection offered by the code is preserved during state preparation. Building on strategies discovered by reinforcement learning for the surface-17 code, we generalize the construction to arbitrary code distances and both rotated and unrotated surface codes. The proposed encoding relies only on geometrically local gates, and is therefore fully compatible with planar 2D qubit connectivity, and it achieves circuit depth scaling as $\\mathcal{O}(d)$, consistent with fundamental entanglement-generation bounds. We design explicit stabilizer-expanding circuits with and without ancilla-mediated connectivity and analyze their error-propagation behavior. Numerical simulations under depolarizing noise show that our unitary encoding without ancillas outperforms standard stabilizer-measurement-based schemes, reducing logical error rates by up to an order of magnitude. These results make the scheme particularly relevant for platforms such as trapped ions and neutral atoms, where measurements are costly relative to gates and idling noise is considerably weaker than gate noise. Our work bridges the gap between measurement-based and unitary encodings of surface-code states and opens new directions for distance-preserving state preparation in fault-tolerant quantum computation.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-08",
+      "score": 0.5083648622202321,
+      "similar_to": [
+        {
+          "title": "Surface codes: Towards practical large-scale quantum computation",
+          "id": "1208.0928",
+          "similarity": 0.8984896540641785
+        },
+        {
+          "title": "Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code",
+          "id": "2112.03708",
+          "similarity": 0.8963434100151062
+        }
+      ],
+      "summary": {
+        "summary": "This work presents the first distance-preserving unitary encoding scheme for preparing Pauli eigenstates $|0\\rangle_L$ and $|+\\rangle_L$ in surface codes, generalizing strategies discovered by reinforcement learning for the surface-17 code to arbitrary distances and both rotated and unrotated variants. The scheme uses only geometrically local gates with circuit depth $\\mathcal{O}(d)$, avoiding classical feedback while preserving the code's fault distance during state preparation.",
+        "motivation": "Standard unitary encodings for surface codes suffer from constant fault-distance regardless of code distance $d$, while measurement-based schemes require slow measurements that dominate overall protocol time, particularly problematic on neutral atoms and trapped-ion platforms where measurements are 50–100× slower than gates.",
+        "method": "The authors design stabilizer-expanding circuits that grow Pauli logical states row-by-row using geometrically local two-qubit gates, with two variants: one using ancilla qubits as bridges between data qubits (compatible with superconducting architectures), and one assuming full intra-plaquette connectivity (suitable for neutral atoms and trapped ions). Gate ordering is carefully scheduled to keep hook errors correctable, preserving fault distance for the corresponding error type.",
+        "result": "Numerical simulations under depolarizing noise show the ancilla-free variant reduces logical error rates by up to an order of magnitude compared to measurement-based encoding for $d=3$ to $11$, despite identical circuit depth; the ancilla variant underperforms measurement-based encoding due to additional error sources, but unitary encoding eliminates measurement overhead that dominates protocol duration on platforms with slow measurements.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9799,
+    0.8408,
+    0.6846,
+    0.6125,
+    0.6117,
+    0.5084,
+    0.4802,
+    0.4766,
+    0.4571,
+    0.3614,
+    0.3429,
+    0.3182,
+    0.3054,
+    0.2089,
+    0.1991,
+    0.1743,
+    0.1571,
+    0.1455,
+    0.1403,
+    0.1388,
+    0.1382,
+    0.1343,
+    0.1334,
+    0.1309,
+    0.1195,
+    0.108,
+    0.1071,
+    0.1005,
+    0.0978,
+    0.0952,
+    0.0923,
+    0.0841,
+    0.0825,
+    0.0798,
+    0.0748,
+    0.0733,
+    0.0733,
+    0.0669,
+    0.0618,
+    0.0574,
+    0.0567,
+    0.0553,
+    0.0526,
+    0.0518,
+    0.0493,
+    0.0492,
+    0.0491,
+    0.0474,
+    0.038,
+    0.0377,
+    0.0352,
+    0.0329,
+    0.0328,
+    0.0309,
+    0.0309,
+    0.0307,
+    0.0298,
+    0.0282,
+    0.0279,
+    0.0261,
+    0.026,
+    0.0256,
+    0.0254,
+    0.0248,
+    0.0232,
+    0.0224,
+    0.0204,
+    0.0201,
+    0.0197,
+    0.019,
+    0.0172,
+    0.0158,
+    0.0155,
+    0.0137,
+    0.0132,
+    0.0119,
+    0.0118,
+    0.0117,
+    0.0106,
+    0.0105,
+    0.0102,
+    0.0097,
+    0.0095,
+    0.0085,
+    0.0081,
+    0.0075,
+    0.0071,
+    0.0071,
+    0.0054,
+    0.005,
+    0.0048,
+    0.0041,
+    0.004,
+    0.0038,
+    0.0034,
+    0.0026,
+    0.0023
+  ]
+}

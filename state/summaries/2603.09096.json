@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates gallium-based liquid-metal interconnects for modular superconducting quantum circuits, enabling non-destructive chip replacement while maintaining microwave performance comparable to conventional coplanar waveguides. The liquid-metal interconnects show negligible degradation after multiple thermal cycles and achieve virtually zero resistance before and after module replacement, with the observed kinetic inductance fraction attributed to $β$-tantalum identified via X-ray characterization.",
+  "motivation": "Finite fabrication yield and lack of high-quality reusable interconnects limit scalability of superconducting quantum processors, motivating the development of plug-and-play modular architectures that allow defective modules to be replaced without discarding entire systems.",
+  "method": "Chip-scale assemblies with half-wavelength resonators split across two modules connected by gallium-based liquid-metal bumps were fabricated on Ta/TiN metallization and measured at 15 mK across multiple thermal cycles and power levels, with X-ray diffraction and photoelectron spectroscopy characterizing the material composition.",
+  "result": "LM-bridged resonators maintained comparable total loss to control resonators ($Q_i \\sim 10^4$), with power-independent loss dominating over two-level-system loss; kinetic inductance fraction $\\alpha_L \\approx 0.5$–$0.7$ from width-dependent frequency shifts; high-power dissipative nonlinearities consistent with readout-power heating model generating excess quasiparticles.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

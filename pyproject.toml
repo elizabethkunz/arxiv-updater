@@ -1,0 +1,17 @@
+[project]
+name = "arxiv-digest"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=1.6.0",
+    "beautifulsoup4>=4.15.0",
+    "fastembed>=0.8.0",
+    "feedparser>=6.0.14",
+    "jinja2>=3.1.6",
+    "joblib>=1.6.0",
+    "numpy>=2.5.3",
+    "python-dotenv>=1.2.3",
+    "pyyaml>=6.0.3",
+    "requests>=2.34.2",
+    "scikit-learn>=1.9.1",
+]

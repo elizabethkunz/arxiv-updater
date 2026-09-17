@@ -1,0 +1,8 @@
+{
+  "summary": "PropHunt is an automated optimization tool for syndrome measurement circuits in CSS codes that minimizes ambiguous errors in the circuit-level decoding graph rather than targeting gate depth or count. On surface codes, PropHunt recovers hand-designed circuit performance, and on Lifted Product and Random Quantum Tanner codes it achieves 2.5–4× lower logical error rates than standard coloration circuits at 0.1% physical error rate.",
+  "motivation": "Existing circuit optimization tools target gate depth and count, but in syndrome measurement circuits errors are expected and their propagation determines logical error rates. Common performance predictors like circuit depth and effective code distance are insufficient, leaving a gap between theoretical QEC code designs and their practical implementation.",
+  "method": "PropHunt iteratively identifies ambiguous errors (pairs of error patterns with identical syndromes but different logical effects) in random subgraph samples, solves for minimum-weight logical errors using MaxSAT formulation with auxiliary variables, and applies CNOT reordering and rescheduling changes to eliminate ambiguity while preserving stabilizer commutation.",
+  "result": "On benchmark surface codes ($d = 3, 5, 7, 9$), PropHunt matches hand-designed 'N-Z' schedules automatically. For $[[39,3,3]]$ LP and $[[60,2,6]]$ RQT codes, optimization reduces logical error rates by 2.5–4× compared to baseline. Intermediate circuits enable Hook-ZNE, improving zero-noise extrapolation by 3–6× over distance-scaling ZNE at fixed distance without increased circuit depth or qubit count.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "This paper presents an efficient fault-tolerant ancilla preparation method for quantum BCH codes by leveraging their cyclic symmetry to optimize entanglement-distillation protocols. The approach reduces required ancilla qubits by more than half compared to standard distillation while achieving lower logical error rates, with threshold analysis demonstrating code rates 2–4× higher than the Steane code at comparable distances.",
+  "motivation": "Quantum BCH codes offer high encoding rates and large code distances at moderate block sizes, but lacked practical fault-tolerant state preparation schemes and realistic performance benchmarks needed for implementation on highly-connected platforms like neutral atom systems.",
+  "method": "A two-stage approach combining non-fault-tolerant preparation with entanglement distillation, where cyclic shifts $R$ and Frobenius shifts $F$ from the automorphism group $C_n \\rtimes F_m$ permute error patterns among ancilla blocks to eliminate malignant fault patterns and reduce ancilla overhead from $(t+1)$-to-$1$ to $t$-to-$1$ or better protocols.",
+  "result": "For codes $\\llbracket 31,11,5 \\rrbracket$, $\\llbracket 63,27,7 \\rrbracket$, and $\\llbracket 127,71,9 \\rrbracket$, ancilla requirements reduced to $4/9$, $4/16$, and $6/25$ of standard levels; circuit-level simulations confirm strict fault tolerance; scaling thresholds for codes up to $n=255$ show $\\llbracket 255,159,13 \\rrbracket$ maintains Steane-comparable threshold $\\approx 10^{-3}$ while achieving rate $0.624$ versus $0.086$ for surface codes.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "Magneto-optical imaging of Nb thin films reveals distinct flux-penetration regimes—from Bean critical states to thermo-magnetic dendritic avalanches—that correlate with film microstructure and quality factors in superconducting qubits. The Nb/Si interfacial layer emerges as a critical decoherence bottleneck, with optimal thermal coupling and superconducting order parameter achieved through high-power DC sputtering (sample C), which balances flux screening with thermal stability.",
+  "motivation": "Superconducting Nb thin-film qubits achieve lower coherence than bulk Nb cavities ($Q_i > 2$ s photon lifetime), and the spatial inhomogeneity of the superconducting state and interfacial properties remain underexplored as decoherence sources despite their potential impact on transmon performance.",
+  "method": "Three Nb films (175 nm on Si) were deposited via HiPIMS and DC sputtering at different rates and characterized by Faraday-rotation magneto-optical imaging at 4 K and 6 K with perpendicular applied fields of 40–320 Oe, with magnetic induction profiles fitted to the Bean model to extract critical current density $j_c$ and correlated with grain size, resistivity ratio ($\\mathrm{RRR}$), and measured internal quality factors.",
+  "result": "Sample C (DC sputtering, 25 nm/min) showed the highest $Q_i$ with excellent flux screening comparable to sample B but superior thermal coupling via the thinnest uniform silicide interlayer, while sample B exhibited strong pinning ($j_c$) but pronounced dendritic avalanches at both 4 K and 6 K, indicating poor thermal conductance to the substrate.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,421 @@
+{
+  "date": "2026-07-30",
+  "n_fetched": 116,
+  "papers": [
+    {
+      "id": "2607.27123",
+      "title": "Hardware-efficient erasure-error detection with an integer fluxonium",
+      "authors": [
+        "Junyoung An",
+        "Helin Zhang",
+        "Jeffrey M. Gertler",
+        "Kate Azar",
+        "Renée DePencier Piñero",
+        "Michael Gingras",
+        "Junghyun Kim",
+        "Bethany M. Niedzielski",
+        "Ilan T. Rosen",
+        "Mollie E. Schwartz",
+        "Joel Î-j. Wang",
+        "Terry P. Orlando",
+        "Jeffrey A. Grover",
+        "Max Hays",
+        "Kyle Serniak",
+        "William D. Oliver"
+      ],
+      "abstract": "Erasure-error detection can improve the efficiency of quantum error correction by revealing the times and locations of their error events. In this work, we demonstrate erasure conversions and mid-circuit erasure detections in a single integer fluxonium, in which the states $\\mathrm{|g\\rangle, |f\\rangle}$ encode the logical states and $\\mathrm{|e\\rangle}$ encodes the erasure state. The integer fluxonium suppresses direct $|\\mathrm{f} \\rangle \\rightarrow |\\mathrm{g} \\rangle$ transitions and allows the dominant $|\\mathrm{f} \\rangle \\rightarrow |\\mathrm{e}\\rangle$ transitions to be converted into detectable erasures. Furthermore, we identified a design space that nullifies the resonant-frequency shift between the two logical states, enabling ancilla-free mid-circuit erasure checks using the same resonator employed for final readout. By discarding the detected erasure events, we achieved an 8.4-fold increase in the $|\\mathrm{f}\\rangle$ state lifetime, a 1.38-fold increase in the Hahn-echo time, and a reduction of single-qubit gate error from 0.061(2)% to 0.030(5)%. Our results establish integer fluxonium as a hardware-efficient platform for erasure-error detection and conversion, while identifying the improvements required to realize an effective erasure qubit with high erasure bias.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-29",
+      "score": 0.9138200134986795,
+      "similar_to": [
+        {
+          "title": "Fast, High-Fidelity Erasure Detection of Dual-Rail Qubits with Symmetrically Coupled Readout",
+          "id": "2604.16292",
+          "similarity": 0.8906514048576355
+        },
+        {
+          "title": "Erasure qubits: Overcoming the $T_1$ limit in superconducting circuits",
+          "id": "2208.05461",
+          "similarity": 0.8816730976104736
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates erasure-error detection and conversion in a single integer fluxonium where the ground state $|g\\rangle$ and second excited state $|f\\rangle$ form the logical qubit and the first excited state $|e\\rangle$ encodes erasures. By exploiting the integer fluxonium's energy landscape to suppress direct $|f\\rangle \\to |g\\rangle$ transitions while enabling dominant $|f\\rangle \\to |e\\rangle$ relaxation, the device achieves ancilla-free mid-circuit erasure checks using the readout resonator with minimal dephasing of logical states via careful suppression of the dispersive shift $\\chi_{gf}$.",
+        "motivation": "Erasure errors enable significantly higher fault-tolerance thresholds than Pauli errors in quantum error correction, but conventional superconducting qubits lack inherent erasure bias. Implementing erasure qubits in single physical qubits rather than dual-rail architectures could reduce hardware overhead while achieving the necessary error asymmetry.",
+        "method": "An integer fluxonium with $E_C/h = 1.392$ GHz, $E_J/h = 5.056$ GHz, and $E_L/h = 0.193$ GHz was designed to achieve $|\\chi_{gf}|/2\\pi \\approx 12$ kHz (versus $|\\chi_{ge}|/2\\pi = 1.86$ MHz), enabling mid-circuit erasure checks. Single-qubit gates use two-photon drives via the $|e\\rangle$ intermediate state. Coherence improvements are quantified by postselecting detected erasure events in $T_1$, Hahn-echo, and randomized benchmarking measurements.",
+        "result": "Postselection against erasure detection improved $|f\\rangle$ state lifetime 8.4-fold from 606 µs to 5.09 ms, increased Hahn-echo time by 38% to 620 µs, and reduced single-qubit gate error from 0.061(2)% to 0.030(5)% with $\\approx$94% of leakage errors identified; however, a 7.8(1.7)% false-negative rate and 2.49(0.19)% error per erasure check indicate the device does not yet satisfy full erasure-bias conditions.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.27094",
+      "title": "Native CCZ Gate with Fluxonium Qubits and a Microwave-Driven Coupler",
+      "authors": [
+        "Grigoriy S. Mazhorin",
+        "Tatyana A. Chudakova",
+        "Alena S. Kazmina",
+        "Nikolai G. Berezkin",
+        "Arina V. Zotova",
+        "Artyom M. Polyanskiy",
+        "Nikolay N. Abramov",
+        "Mikhail A. Tarkhov",
+        "Alexander M. Mumlyakov",
+        "Igor V. Trofimov",
+        "Elizaveta A. Krivko",
+        "Nikita Yu. Rudenko",
+        "Maxim V. Chichkov",
+        "Vladimir I. Chichkov",
+        "Ilya A. Simakov"
+      ],
+      "abstract": "Native multi-qubit gates could reduce the overhead associated with decompositions into single- and two-qubit operations, but whether they can simultaneously provide high fidelity, simple control and robustness against parasitic interactions in scalable architectures remains unclear. Here we experimentally realize a 65-ns native controlled-controlled-phase operation, locally equivalent to the Toffoli gate, with a fidelity of 99.39(5)% in a three-qubit processor unit based on fluxonium qubits coupled via a microwave-driven transmon coupler. The implemented operation would require CZ fidelities of approximately 99.94% if realized through a conventional decomposition. The gate is implemented with a single control pulse, that relies on a simple calibration procedure yielding coherence-limited performance. This processor unit naturally extends to scalable two-dimensional layouts with low parasitic interactions. Altogether, these results establish native multi-qubit gates as a viable hardware-efficient primitive for scalable superconducting quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-29",
+      "score": 0.9129387155694224,
+      "similar_to": [
+        {
+          "title": "Scalable Fluxonium Quantum Processors via Tunable-Coupler Architecture",
+          "id": "2604.13363",
+          "similarity": 0.890155017375946
+        },
+        {
+          "title": "High-Fidelity, Frequency-Flexible Two-Qubit Fluxonium Gates with a Transmon Coupler",
+          "id": "2304.06087",
+          "similarity": 0.8831168413162231
+        }
+      ],
+      "summary": {
+        "summary": "A native three-qubit CCZ gate locally equivalent to Toffoli is demonstrated on a fluxonium processor with a microwave-driven transmon coupler, achieving 99.39(5)% fidelity in 65 ns. This native implementation avoids the eight two-qubit gates required by conventional decomposition, reaching performance competitive with CZ gates at 99.94% fidelity.",
+        "motivation": "Native multi-qubit gates could reduce circuit depth overhead compared to decompositions, but existing superconducting architectures fail to simultaneously achieve high fidelity, simple control, and scalability without parasitic interactions.",
+        "method": "Three fluxonium qubits capacitively coupled through a transmon coupler exploit state-dependent shifts of the coupler transition frequency to enable spectral selectivity. A single microwave $2\\pi$ pulse on the coupler drive line implements the CCZ gate via resonant excitation of only the target computational state, with calibration via standard Rabi and Ramsey measurements.",
+        "result": "The 65-ns CCZ$_{\\bar{}}$ gate achieves 99.39(5)% fidelity at the coherence limit, equivalent to requiring 99.94% fidelity from CZ gates in conventional eight-gate decompositions; multiplexed control independently addresses $|000\\rangle$ and $|111\\rangle$ phases at 97.7(2)% and 98.87(12)% fidelity respectively without additional coherent errors.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.26242",
+      "title": "Precise 2D electric field density simulations for superconducting quantum devices",
+      "authors": [
+        "Zydrunas Gimbutas",
+        "Wei-Ren Syong",
+        "Nhi Nguyen",
+        "Ariana Taylor",
+        "Joel N. Ullom",
+        "Bradley K. Alpert",
+        "Douglas A. Bennett",
+        "Corey Rae H. McRae"
+      ],
+      "abstract": "Dielectric loss due to two-level systems is a limiting factor for superconducting qubit relaxation times. These losses arise mostly from nanometer-scale interfacial defect regions in superconducting devices with planar dimensions of microns to millimeters, thus making it resource intensive to accurately simulate the electric field density in these regions with traditional electromagnetic solvers. In this work, we demonstrate a fast boundary integral equation solver that allows precise simulation of electric field density in these thin regions, showing a speedup of around two orders of magnitude over traditional solvers, with relative errors around $10^{-7}$ for a ten-minute solution runtime. By computing participation ratios through Green's first identity without squaring the electric field, our approach is less susceptible to the field singularities near conductor corners. We apply this solver to a basic untrenched coplanar waveguide cross-section, showing that the common assumption of participation ratio linearity with dielectric constant holds well for some interfaces and not others; in particular, while the metal-air (MA) top and corner follow this linear relationship strongly, the MA sidewall does not. We then compare isotropic and anisotropic etching, showing that the MA sidewall and the metal-air-substrate triple junction are the most strongly affected. We are currently leveraging this solver to explore geometries that will uniquely isolate the participation ratios of the different dielectrics. Finally, we are working to combine this solver framework with a full 3D microwave solver to accurately calculate participation ratios for the thin dielectrics that are known sources of loss in superconducting qubits.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-28",
+      "score": 0.754139434103721,
+      "similar_to": [
+        {
+          "title": "Surface participation and dielectric loss in superconducting qubits",
+          "id": "1509.01854",
+          "similarity": 0.8847939372062683
+        },
+        {
+          "title": "Wiring surface loss of a superconducting transmon qubit",
+          "id": "2311.16794",
+          "similarity": 0.8584529757499695
+        }
+      ],
+      "summary": {
+        "summary": "A fast boundary integral equation solver for 2D electrostatic problems achieves 100× speedup over finite-element methods with relative errors around $10^{-7}$ for participation ratio calculations in superconducting coplanar waveguides. The method uses Green's first identity to avoid field squaring near corner singularities, revealing that the metal-air sidewall and triple junction deviate from assumed linear participation scaling with dielectric constant, while other interfaces follow the linearity assumption.",
+        "motivation": "Dielectric loss from two-level systems in nanometer-scale interfacial regions limits superconducting qubit relaxation times, but accurate participation ratio extraction requires ppm-level accuracy in electric field simulations across three orders of magnitude in critical dimensions, making traditional finite-element solvers prohibitively slow and promoting reliance on untested linearity assumptions.",
+        "method": "A boundary integral equation solver based on single-layer potential representation solves the 2D electrostatic problem with piecewise-constant permittivities, computing participation ratios via boundary integrals of $\\phi \\partial\\phi/\\partial n$ rather than squaring the electric field, and employs chunk-based discretization with Legendre polynomial expansions, fast multipole acceleration for large problems, and independent validation via perturbation theory with complex-step differentiation.",
+        "result": "For a CPW with $w = 6$ µm, $g = 3$ µm, $d_t = 3$ nm, the solver runs in ~3 minutes achieving $<1\\%$ error in participation ratios, compared to 506 minutes for Ansys Maxwell; the metal-air top and corner follow linear relationships to dielectric constant, but the sidewall does not; anisotropic trenching to $d = 20$ nm reduces metal-air sidewall participation by ~90% but the triple junction shows strong dependence on etch profile.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.26161",
+      "title": "A two-dimensional piezo-optomechanical transducer",
+      "authors": [
+        "Tian Xie",
+        "Nelson Ooi",
+        "Linus Woodard",
+        "Sultan Malik",
+        "Felix Mayor",
+        "Oliver A. Hitchcock",
+        "André G. Primo",
+        "Wentao Jiang",
+        "Samuel Gyger",
+        "Amir H. Safavi-Naeini"
+      ],
+      "abstract": "Optical quantum networks provide a natural route for connecting distant superconducting quantum processors, enabling distributed quantum computation, sensing, and communication. Piezo-optomechanical transducers are among the leading candidates for scalable microwave-to-optical quantum interfaces. However, prior one-dimensional piezo-optomechanical transducers remain limited by optical-absorption-induced heating and the resulting thermal noise. Two-dimensional optomechanical crystals offer substantially improved thermalization from better thermal anchoring, but their structural complexity has so far hindered the realization of a fully integrated two-dimensional transducer. Here, we overcome this challenge with a new design strategy based on band structure engineering. We fabricate the devices and experimentally characterize the response, measuring an electromechanical damping rate of 4.6 kHz at room temperature and electromechanical coupling rate of 0.17 MHz by wire-bonding to a multi-mode microwave resonator at 10 mK. Bidirectional transduction is performed with a calibrated internal efficiency of 0.85\\% in the continuous-wave operation, alongside pulsed photon-phonon pair generation near its quantum ground state. Our results represent a significant step toward high-efficiency and low-noise transducers for entangling remote superconducting qubits.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-28",
+      "score": 0.6781903514939583,
+      "similar_to": [
+        {
+          "title": "Quantum-limited millimeter wave to optical transduction",
+          "id": "2207.10121",
+          "similarity": 0.8313926458358765
+        },
+        {
+          "title": "Wireless millikelvin interconnects for superconducting quantum hardware",
+          "id": "2607.13834",
+          "similarity": 0.823544442653656
+        }
+      ],
+      "summary": {
+        "summary": "A two-dimensional piezo-optomechanical transducer using band-structure engineering converts microwave photons to optical photons via mechanical phonons, achieving 0.85% internal conversion efficiency at 10 mK with photon-phonon pair generation near the mechanical ground state. The design overcomes thermal and fabrication challenges of prior one-dimensional transducers by using a spatially-graded $\\Gamma$-potential to directly engineer collective mechanical modes that robustly couple to both the optical cavity ($g_{\\mathrm{om}}/2\\pi = 540$ kHz for mode 1) and an integrated lithium niobate piezoelectric element ($\\gamma_{\\mathrm{em}}/2\\pi = 4.6$ kHz at room temperature).",
+        "motivation": "Microwave-to-optical transduction is essential for connecting distant superconducting quantum processors via low-loss optical networks, but previous one-dimensional piezo-optomechanical transducers suffer from optical-absorption-induced heating and thermal noise that limits pump power and repetition rates. Two-dimensional optomechanical crystals offer superior thermalization through full-perimeter substrate anchoring, but their structural complexity has prevented realization of fully integrated transducers with robust electromechanical coupling.",
+        "method": "The authors introduce a $\\Gamma$-potential design strategy that spatially grades the $\\Gamma$-point mechanical frequency across the 2D crystal, creating an effective potential whose bound collective modes extend from the optical cavity to a transfer-printed lithium niobate piezoelectric block. Device optimization used finite-element simulations, room-temperature characterization of cavity-only structures validated the multi-mode mechanical spectrum, and cryogenic measurements with a wire-bonded multi-mode microwave resonator at 10 mK demonstrated bidirectional transduction.",
+        "result": "At room temperature: $g_{\\mathrm{om}}/2\\pi = 540$ kHz (mode 1) and $446$ kHz (mode 2), with $\\gamma_{\\mathrm{em}}/2\\pi = 4.6$ kHz for mode 2 and direct electromechanical efficiency $6.2 \\times 10^{-4}$ without resonator enhancement. Cryogenic measurements: internal conversion efficiency of $0.85\\%$ continuous-wave, photon-phonon pair generation rate of $8.4$ kHz at $5\\%$ scattering probability, and mechanical phonon occupation $n_m = 0.41$ indicating operation near quantum ground state; $g_{\\mathrm{em}}/2\\pi = 0.17$ MHz measured with wire-bonded resonator.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.27111",
+      "title": "Effective Hamiltonians for Predictive Quantum Control",
+      "authors": [
+        "Razvan Stanescu",
+        "Hugo Ribeiro"
+      ],
+      "abstract": "High-fidelity quantum control relies on accurate models of driven dynamics. We examine this re- quirement for single-qubit gates in superconducting transmons by comparing control pulses derived from the standard Duffing approximation and from a Hamiltonian constructed by diagonalizing the transmon eigenbasis. Using the same correction-pulse construction for both models, we show that correction fields derived from the Duffing approximation can substantially reduce the gate error pre- dicted by that model while remaining less effective when combined with an independently calibrated baseline pulse in the diagonalized-transmon model. In the fast-gate regime, such transferred correc- tions can even fail to improve over the uncorrected diagonalized-transmon baseline. We show that small model-dependent differences in both the energy spectrum and the representation of the drive operator can compound during driven evolution, resulting in different predicted error generators and correction pulses. A mismatch in the accumulated AC Stark phase provides one illustrative di- agnostic of this dynamical model dependence. We further demonstrate that the model Hamiltonian informs the choice of control framework: Omitting relevant leakage pathways or higher-order error channels can lead to an overly restricted correction strategy. Including these channels motivates an extended correction framework that improves the gate performance using the same physical control resources.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-29",
+      "score": 0.6166199467300956,
+      "similar_to": [
+        {
+          "title": "Simple pulses for elimination of leakage in weakly nonlinear qubits",
+          "id": "0901.0534",
+          "similarity": 0.8419222831726074
+        },
+        {
+          "title": "Modeling low- and high-frequency noise in transmon qubits with resource-efficient measurement",
+          "id": "2303.00095",
+          "similarity": 0.8338453769683838
+        }
+      ],
+      "summary": {
+        "summary": "The paper investigates how the choice of effective Hamiltonian affects predictive quantum control for transmon qubits, comparing the standard Duffing approximation with a more faithful diagonalized-transmon model that retains the full cosine potential's spectral and control-operator properties. Correction fields derived from the Duffing Hamiltonian substantially reduce error within that model but fail to transfer effectively to an independently calibrated diagonalized-transmon baseline pulse, demonstrating that small differences in transition frequencies and charge-matrix elements compound during driven evolution into substantially different dynamical error generators.",
+        "motivation": "Accurate effective Hamiltonians are essential for reliable open-loop quantum control, yet agreement on static spectral quantities does not guarantee predictive accuracy under driven evolution. For fast transmon gates where leakage and AC Stark shifts become significant, evaluating whether an approximate Hamiltonian correctly predicts the multilevel correction required by more faithful system descriptions is critical.",
+        "method": "The authors constructed correction pulses using the Magnus-based constrained-control framework applied separately to a Duffing Hamiltonian and a diagonalized-transmon model with four-level truncation justified by a sequential-transition estimate. They tested transferability via a hybrid protocol combining Duffing-derived corrections with diagonalized-transmon-calibrated baseline pulses, while isolating model dependence through analysis of accumulated AC Stark phase.",
+        "result": "At $|\\alpha_2| t_f = 5.74$ (fast-gate regime), the hybrid protocol achieves average fidelity error at least a factor of $\\sim 2\\text{–}3$ worse than self-consistent diagonalized-transmon correction; the AC Stark phase mismatch between models reaches $\\sim 5\\text{–}10\\%$ for $E_J/E_C = 30\\text{–}50$. A four-level model reveals higher-order error channels missed by three-level truncations, enabling nonlinear corrections that outperform linear strategies by $\\sim$ one order of magnitude at longer gate times while using identical physical control resources.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.27204",
+      "title": "Fault-Tolerant Logical Operations and Efficient State Preparation in Modular Quantum Architectures with Noisy Interfaces",
+      "authors": [
+        "Siddardha Chelluri",
+        "Riccardo Mengoni",
+        "Tom Darras",
+        "Julien Laurat",
+        "Eleni Diamanti",
+        "Ioannis Lavdas"
+      ],
+      "abstract": "Modular quantum computing is a leading paradigm for scaling quantum computation beyond the resource limitations of monolithic devices. In this architecture, multiple quantum processing units (QPUs), employing identical or distinct qubit modalities, are interconnected via shared entanglement. Here, we investigate how errors at module interfaces and within individual QPUs affect fault-tolerant computation when qubits are encoded using the rotated surface code. Going beyond the logical-memory benchmark, we perform circuit-level simulations of fault-tolerant nonlocal CNOT gates implemented via lattice surgery between QPUs connected by noisy Bell pairs, and analyze the resulting logical error rates. Our results show that interfaces can tolerate noise up to an order of magnitude higher than intra-QPU noise, with only a minor reduction in the fault-tolerance threshold. We further develop an efficient protocol for preparing distributed fault-tolerant logical GHZ states, reducing ancilla overhead, time, and nonlocal Bell-pair consumption. We show that ancilla minimization in this setting is equivalent to a vertex-cover problem on an associated graph, and introduce a polynomial-time heuristic algorithm for finding low-overhead solutions. Our results provide quantitative evidence that distributed quantum error correction can enable scalable, fault-tolerant quantum computation in modular architectures.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-29",
+      "score": 0.5935867486221622,
+      "similar_to": [
+        {
+          "title": "Fault-tolerant interfaces for modular quantum computing on diverse qubit platforms",
+          "id": "2510.05221",
+          "similarity": 0.9390127062797546
+        },
+        {
+          "title": "Lattice surgery with Bell measurements: Modular fault-tolerant quantum computation at low entanglement cost",
+          "id": "2510.13541",
+          "similarity": 0.9283866882324219
+        }
+      ],
+      "summary": {
+        "summary": "This work analyzes fault-tolerant logical operations in modular quantum architectures by simulating distributed CNOT gates via lattice surgery between noisy QPUs connected by imperfect Bell pairs, and develops efficient protocols for preparing distributed logical GHZ states. The key finding is that interfaces tolerate noise up to $\\alpha = 20$ times higher than intra-QPU noise (threshold degradation only $2$–$3 \\times 10^{-3}$), and ancilla minimization for GHZ state preparation reduces to a polynomial-time vertex-cover problem on spanning trees.",
+        "motivation": "Modular quantum computing requires understanding how errors at module interfaces affect fault-tolerant computation beyond logical-memory benchmarks. Prior distributed QEC studies focused on state preservation; this work addresses circuit-level performance of nonlocal logical entangling gates, which are essential for scalable distributed quantum computing.",
+        "method": "Circuit-level simulations using LOOM and STIM with depolarizing noise model ($p_g = \\epsilon$ local, $p_g = \\alpha \\epsilon$ nonlocal) and PyMatching decoding, studying three bipartite and tripartite CNOT configurations. GHZ preparation uses iterative local-state fusion via nonlocal CNOT, formulated as graph optimization: minimum vertex cover on spanning trees with BFS/DFS/Star-Search heuristics.",
+        "result": "Distributed CNOT thresholds remain near monolithic baseline ($\\approx 10^{-3}$) despite $\\alpha=20$ interface noise penalty. For $n$-QPU networks: minimum ancilla QPUs equal maximum matching of optimal spanning tree; Bell-pair consumption fixed at $d(2d-1)(n-1)$; fusion depth trades between $O(\\log n)$ (high ancilla) and $O(n)$ (minimal ancilla); Star-Search heuristic outperforms BFS/DFS in reducing ancilla requirements by $\\sim 15$–$30\\%$ on random graphs.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2607.26480",
+      "title": "Feedback stabilization of multi-qubit Hamiltonian parameters enabled by single-shot measurement-based sequential Monte Carlo",
+      "authors": [
+        "Hyeongyu Jang",
+        "Jaemin Park",
+        "Younguk Song",
+        "Jinwoong Kim",
+        "Hanseo Sohn",
+        "Lucas E. A. Stehouwer",
+        "Davide Degli Esposti",
+        "Giordano Scappucci",
+        "Dohun Kim"
+      ],
+      "abstract": "Fast measurement, signal processing, and accurate estimation of Hamiltonian parameters are essential for feedback control in quantum-classical interface circuitry. However, existing frequentist and Bayesian inference methods typically require a large number of measurements to achieve the accuracy needed to mitigate qubit decoherence. Consequently, feedback control of semiconductor qubits has largely been limited to single-qubit frequency stabilization, whereas two-qubit parameter stabilization remains experimentally unexplored. Here, we demonstrate a real-time feedback framework based on sequential Monte Carlo estimation using one bit of data from a single-shot measurement. Using a four-qubit semiconductor quantum dot device, we rapidly estimate individual qubit frequencies, yielding an approximately twofold increase in coherence time compared with a conventional Bayesian strategy. Moreover, sequential two-qubit parameter estimation using two bits of data enables stabilization of qubit-qubit coupling, allowing both quasi-static frequency drift and exchange-interaction noise to be estimated and suppressed. By shortening the time required for precise parameter estimation, these results demonstrate the importance of the synergistic development of classical and quantum electronics for building robust and scalable quantum technologies in fluctuating environments.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-07-29",
+      "score": 0.5406451456878975,
+      "similar_to": [
+        {
+          "title": "Dynamical decoupling for superconducting qubits: a performance survey",
+          "id": "2207.03670",
+          "similarity": 0.8301652669906616
+        },
+        {
+          "title": "Enhancing Dispersive Readout of Superconducting Qubits Through Dynamic Control of the Dispersive Shift: Experiment and Theory",
+          "id": "2307.07765",
+          "similarity": 0.828925609588623
+        }
+      ],
+      "summary": {
+        "summary": "A sequential Monte Carlo estimation framework enables real-time feedback stabilization of both single-qubit frequencies and two-qubit exchange couplings in a four-qubit semiconductor quantum dot device using minimal measurement data. Single-shot, one-bit frequency estimation achieves approximately twofold coherence time improvement over conventional Bayesian strategies, and two-bit sequential estimation suppresses both quasi-static drift and exchange-interaction noise.",
+        "motivation": "Existing frequentist and Bayesian parameter inference methods require many measurements to achieve the accuracy needed for feedback control, limiting practical stabilization of semiconductor qubits to single-qubit frequencies while two-qubit parameter feedback remains unexplored.",
+        "method": "Sequential Monte Carlo estimation was applied to a four-qubit quantum dot device, using single-shot measurements (one bit per qubit for frequency estimation, two bits for two-qubit coupling estimation) to perform rapid, real-time Hamiltonian parameter estimation and feedback control.",
+        "result": "Single-qubit frequency stabilization via one-bit SMC estimation yielded approximately twofold coherence time improvement compared to conventional Bayesian methods, while two-qubit exchange coupling stabilization was demonstrated with simultaneous suppression of quasi-static drift and noise.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9138,
+    0.9129,
+    0.7541,
+    0.6782,
+    0.6166,
+    0.5936,
+    0.5406,
+    0.3679,
+    0.3516,
+    0.3014,
+    0.2851,
+    0.2782,
+    0.2748,
+    0.2321,
+    0.2255,
+    0.2205,
+    0.2167,
+    0.2023,
+    0.1645,
+    0.1635,
+    0.1316,
+    0.1261,
+    0.126,
+    0.1251,
+    0.1229,
+    0.1181,
+    0.1107,
+    0.1107,
+    0.1066,
+    0.102,
+    0.0959,
+    0.0948,
+    0.0881,
+    0.0867,
+    0.086,
+    0.0814,
+    0.0812,
+    0.081,
+    0.0728,
+    0.0686,
+    0.0646,
+    0.0634,
+    0.0628,
+    0.0605,
+    0.0548,
+    0.0514,
+    0.0485,
+    0.0459,
+    0.044,
+    0.0433,
+    0.0431,
+    0.0423,
+    0.0412,
+    0.0406,
+    0.0398,
+    0.0389,
+    0.0362,
+    0.0349,
+    0.0321,
+    0.0304,
+    0.0301,
+    0.0285,
+    0.028,
+    0.0271,
+    0.0266,
+    0.026,
+    0.0258,
+    0.0254,
+    0.0247,
+    0.0234,
+    0.0224,
+    0.0219,
+    0.0211,
+    0.0207,
+    0.0193,
+    0.0193,
+    0.0191,
+    0.0186,
+    0.0185,
+    0.0184,
+    0.0176,
+    0.0173,
+    0.0171,
+    0.0165,
+    0.0164,
+    0.0164,
+    0.0154,
+    0.0151,
+    0.0138,
+    0.0124,
+    0.0118,
+    0.0108,
+    0.0102,
+    0.0093,
+    0.0089,
+    0.0082,
+    0.0081,
+    0.008,
+    0.0079,
+    0.0076,
+    0.0073,
+    0.0072,
+    0.007,
+    0.0067,
+    0.0063,
+    0.0063,
+    0.0061,
+    0.0044,
+    0.0036,
+    0.0035,
+    0.0028,
+    0.0024,
+    0.0017,
+    0.0014,
+    0.0012,
+    0.0012
+  ]
+}

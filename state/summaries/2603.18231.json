@@ -1,0 +1,8 @@
+{
+  "summary": "This paper develops iterative decoding algorithms for stabilizer codes under radiation-induced correlated noise by jointly inferring quasiparticle (QP) density and decoding from syndrome measurements. Two algorithms are presented: a gradient-based sliding-window approach (Algorithm 1) and an extended Kalman filter variant (Algorithm 2), both using belief propagation with ordered statistics decoding.",
+  "motivation": "Superconducting qubit arrays experience spatiotemporally correlated errors from cosmic-ray muon strikes that generate quasiparticles, but standard decoders assume fixed uniform noise priors, resulting in significant logical error rate degradation—approximately 2.7× worse than a genie decoder with perfect QP knowledge on a distance-7 surface code.",
+  "method": "The approach formalizes joint noise sensing and decoding using a variational expectation–maximization framework that models QP density evolution via linearized diffusion equation $d x/d t = -sx - r x^2 + g(t)$, maps QP density to Pauli error rates via $T_1(x)$ and $T_2(x)$ formulas, and alternates between belief propagation decoding and QP field estimation using either gradient ascent or EKF pseudo-measurements derived from BP posteriors.",
+  "result": "On a distance-7 rotated surface code with 97 data qubits, Algorithm 1 (offline) achieves logical error probability $p_L = 0.12$ versus $p_L = 0.28$ for uniform prior (closing 78% of the gap to genie $p_L = 0.09$); on the $[[72, 12, 6]]$ BB-qLDPC code, it reaches $p_L = 0.18$ versus $p_L = 0.76$ for uniform prior, with QP density estimation mean squared error in log-space of $\\approx 0.70$ for surface code and $\\approx 1.07$ for BB-qLDPC.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

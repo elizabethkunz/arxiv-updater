@@ -1,0 +1,401 @@
+{
+  "date": "2026-06-23",
+  "n_fetched": 151,
+  "papers": [
+    {
+      "id": "2606.22853",
+      "title": "Bunny Codes: Broadening Superconducting Quantum Error Correction Capability through Advanced Control Engineering",
+      "authors": [
+        "Runshi Zhou",
+        "Xingye Yuan",
+        "Linghang Kong",
+        "Fang Zhang",
+        "Kai Zhang",
+        "Zhaohui Yang",
+        "Jianxin Chen"
+      ],
+      "abstract": "Drawing on advances in superconducting qubit control schemes that unlock enriched native gate sets at the hardware level, we systematically examine how harnessing this enlarged physical two-qubit gate pool---specifically CNOT and CXSWAP---streamlines syndrome extraction for certain qLDPC codes with nonlocal stabilizers. Through an exhaustive search, we discover a set of qLDPC codes with various stabilizer weights and distances that can be implemented on the two-dimensional nearest-neighbor qubit connectivity native to superconducting hardware while achieving performance equivalent to that of the direct CNOT implementation requiring long-range interactions. We refer to those codes as Bunny codes. Across all code distances we examine, the best Bunny codes with weight-6 stabilizers in periodic boundary conditions have a code rate approximately $3\\times$ that of the toric code; when converted to open boundary conditions, they retain an approximately $2\\times$ code rate advantage over the rotated surface code. In circuit-level simulation, we find that some Bunny codes exhibit logical error rates an order of magnitude lower than toric codes with comparable code rates. Our results demonstrate that high-performance quantum error correction can be achieved using an expanded gate set rather than long-range couplers, thereby significantly reducing hardware complexity.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-22",
+      "score": 0.8771115708845467,
+      "similar_to": [
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8801698684692383
+        },
+        {
+          "title": "Logic gates at the surface code threshold: Superconducting qubits poised for fault-tolerant quantum computing",
+          "id": "1402.4848",
+          "similarity": 0.8781850934028625
+        }
+      ],
+      "summary": {
+        "summary": "This paper presents Bunny codes, a family of qLDPC codes designed for superconducting hardware that leverages an expanded native gate set (CNOT and CXSWAP) to achieve high code rates on 2D nearest-neighbor connectivity. Through exhaustive search over multiple qubit topologies, the authors demonstrate weight-6 Bunny codes with code rates $\\sim 3\\times$ the toric code in periodic boundaries and $\\sim 2\\times$ the surface code in open boundaries, with logical error rates an order of magnitude lower than comparable toric codes under circuit-level simulation.",
+        "motivation": "Superconducting qubits have limited connectivity, making high-rate qLDPC codes with nonlocal stabilizers difficult to implement. Rather than installing long-range couplers, this work exploits recent advances in control engineering that enable native implementation of both CNOT and CXSWAP gates using XX+YY interactions, allowing simultaneous syndrome extraction and qubit routing.",
+        "method": "A bottom-up search constructs syndrome extraction circuits on 2D lattices (square, hexagonal, snub-square) by defining translation-invariant actions (coupler-gate pairs) and tracking sub-lattice displacements through CXSWAP operations. Circuits are validated by verifying commutation of stabilizers, and resulting codes are evaluated for parameters ($[[n, k, d]]$) via ring-theoretic and integer-programming algorithms, with logical error rates computed under the SI1000 noise model using Stim.",
+        "result": "Best periodic-boundary codes include $[[40, 4, 5]]$ Bunny with $7.5\\times$ lower logical error rate than the $[[18, 2, 3]]$ toric code and $[[36, 8, 4]]$ Bunny with $2\\times$ higher code rate than toric while reducing logical error by factor of $\\sim 2$ at $10^{-3}$ physical error rate; open-boundary variants retain $\\sim 2\\times$ advantage over rotated surface code after deep reduction.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.22594",
+      "title": "Hierarchical Logical Processor on the Rotated Surface Code with Shuttle Buses",
+      "authors": [
+        "Zi-Han Chen",
+        "Ming-Cheng Chen",
+        "Chao-Yang Lu",
+        "Jian-Wei Pan"
+      ],
+      "abstract": "Quantum platforms with beyond-planar connectivity provide new opportunities for fault-tolerant quantum computation (FTQC). While quantum low-density parity-check (qLDPC) codes offer high encoding efficiency, their direct implementation requires non-local couplings in every round of syndrome extraction, incurring additional physical error and implementation complexity. To reduce the frequency of such couplings, we propose the Hierarchical Logical Processor (HLP), which concatenates a high-rate quantum CSS code with the rotated surface code (RSC). HLPs can achieve beyond-RSC encoding efficiency while requiring long-range connectivity only once every $Θ(d_0)$ rounds of level-0 error correction, where $d_0$ denotes the base-code distance, substantially reducing the frequency of non-local couplings relative to direct implementations of qLDPC codes. HLPs introduce elongated RSC patches called shuttle buses. Using transversal hybrid-unit CNOT gates, a single shuttle bus can simultaneously couple to multiple standard RSC patches. This capability enables efficient level-1 syndrome extraction with suppressed level-1 error correlations and supports highly parallel logical Pauli measurements. We perform circuit-level simulations of several concrete HLP constructions and benchmark both logical memory and logical Pauli measurement performance. At a physical error rate of $10^{-3}$, an HLP based on the [[256,194,4]] code achieves 3-4 times higher qubit efficiency than the standard RSC. Compared with the yoked surface code on the same level-1 code, this HLP reduces the space overhead per logical qubit by 100-200 physical qubits and shortens the logical error-correction cycle time by a factor of 20-30.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-21",
+      "score": 0.8171464656236863,
+      "similar_to": [
+        {
+          "title": "Surface code logical operations on a superconducting quantum processor",
+          "id": "2607.01473",
+          "similarity": 0.8748555183410645
+        },
+        {
+          "title": "A superconducting surface-code processor with lattice-surgery logical operations",
+          "id": "2606.06598",
+          "similarity": 0.8710063695907593
+        }
+      ],
+      "summary": {
+        "summary": "This paper proposes the Hierarchical Logical Processor (HLP), which concatenates a high-rate quantum CSS code with the rotated surface code (RSC) to achieve improved qubit efficiency while requiring long-range gates only once every $\\Theta(d_0)$ syndrome extraction rounds. The key innovation is the shuttle bus—an elongated RSC patch enabling transversal hybrid-unit CNOT gates to couple multiple data qubits simultaneously, supporting efficient parallel logical measurements while maintaining suppressed error correlations.",
+        "motivation": "Quantum low-density parity-check codes offer high encoding efficiency but require frequent non-local couplings that introduce additional errors and implementation complexity. Platforms like neutral atom arrays support long-range connectivity but incur overhead; reducing the frequency of such operations while retaining encoding gains is essential for practical fault-tolerant quantum computation.",
+        "method": "The HLP concatenates a distance-$d_1$ CSS code at level 1 with distance-$d_0$ RSC patches (cores) at level 0, introducing elongated RSC patches (shuttle buses) of width $d_0$ and length $d_0 d_1$. Transversal hybrid-unit CNOT gates between shuttle buses and cores enable efficient readout gadgets for level-1 syndrome extraction and logical Pauli measurements. Circuit-level simulations employ correlated matching for level-0 decoding and soft-output extraction to compute level-1 error probabilities.",
+        "result": "At a physical error rate of $10^{-3}$, an HLP based on the $[[256,194,4]]$ code achieves 3–4× higher qubit efficiency than standard RSC. Compared to the yoked surface code, this HLP reduces space overhead per logical qubit by 100–200 physical qubits and shortens the level-1 syndrome extraction cycle by a factor of 20–30. Theoretical analysis proves that with compilation parameters $\\alpha_\\mathsf{b} = d_1$ and $\\alpha_\\mathsf{c} = 1$, level-1 errors are approximately local stochastic with effective error rate $\\sim p^{d_0/2}$, achieving beyond-RSC encoding efficiency.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.22080",
+      "title": "Optimizing Pump Conditions of Parametric Amplifiers for Fast Multiplexed Readout of Superconducting Qubits",
+      "authors": [
+        "Jeongwon Kim",
+        "Wei Dai",
+        "Omrie Ovdat",
+        "Akiva Feintuch",
+        "Nir Alfasi",
+        "Yonuk Chong"
+      ],
+      "abstract": "Low-noise parametric amplifiers are widely used as the first-stage amplifier in qubit readout chains. The performance of parametric amplifiers depends sensitively on the choice of the pump condition. We propose a strategy for determining the pump condition that is tailored for fast multiplexed readout. Choosing the amplifier pump to maximize the signal-to-noise ratio (SNR) improvement at the readout frequency of the limiting qubit--the qubit that requires the longest readout time to reach a target SNR--minimizes the total multiplexed readout time. We demonstrate our pump calibration strategy experimentally on a five-qubit multiplexed readout chain with a traveling-wave parametric amplifier. Using our strategy, we reduce the multiplexed readout time by 320 ns compared to optimizing the average SNR improvement on all qubits, without degrading the target SNR for any qubit.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-20",
+      "score": 0.7696222851731214,
+      "similar_to": [
+        {
+          "title": "Rapid high-fidelity multiplexed readout of superconducting qubits",
+          "id": "1801.07904",
+          "similarity": 0.8729376792907715
+        },
+        {
+          "title": "Realizing Rapid, High-Fidelity, Single-Shot Dispersive Readout of Superconducting Qubits",
+          "id": "1701.06933",
+          "similarity": 0.8714103698730469
+        }
+      ],
+      "summary": {
+        "summary": "This work optimizes traveling-wave parametric amplifier (TWPA) pump conditions for frequency-multiplexed readout of superconducting qubits by tuning to maximize SNR improvement at the limiting qubit's readout frequency rather than average SNR. On a five-qubit multiplexed readout chain, the limiting-qubit-optimized pump reduces total multiplexed readout time $T_\text{RO}^\text{(MPX)}$ from 1280 ns to 960 ns (25% reduction, 320 ns savings) while maintaining minimum $\triangle\text{SNR} \\\\\\\\ 6$ dB across all qubits and mean readout fidelity of 95.32%.",
+        "motivation": "Fast multiplexed qubit readout is critical for quantum error correction and system cycle time, but parametric amplifier performance exhibits frequency-dependent gain ripples sensitive to pump conditions, making conventional average-SNR optimization suboptimal when different qubits require different readout durations.",
+        "method": "The authors characterize TWPA gain and SNR improvement ($\\triangle\\text{SNR}$) across pump frequency and power settings (sampled over 1 MHz bands at each qubit's readout frequency), identify the limiting qubit requiring longest readout time to reach $\\text{SNR}=3$, and select pump parameters that maximize $\\triangle\\text{SNR}$ at that qubit's frequency while enforcing per-qubit minimum $\\triangle\\text{SNR}$ thresholds.",
+        "result": "Limiting-qubit-optimized pump ($f_p = 8.328$ GHz, $P_p = -87.5$ dBm) reduces Q4 readout time from 1280 ns to 800 ns and total multiplexed time to 960 ns versus 1280 ns with average-qubit-optimized pump ($f_p = 8.311$ GHz, $P_p = -86.9$ dBm), with no significant fidelity degradation (95.45% versus 95.32%).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.22732",
+      "title": "Protecting Qubits from Purcell Decay via Permanent Dipoles",
+      "authors": [
+        "Alex Krasnok"
+      ],
+      "abstract": "Reading out a qubit often requires coupling it to a resonator, but that same resonator can also give the qubit an extra path to decay. Here, we study a way to reduce this loss using a built-in permanent electric dipole. The dipole shifts the cavity field in different directions for the qubit ground and excited states. This shift makes the relevant wave functions overlap less, which weakens the transverse qubit--cavity exchange that causes Purcell decay. In a simplified displaced rotating-wave model, this exchange vanishes at $η=\\sqrt{2}$. In the full transverse model, this exact zero is lifted, but strong suppression remains at a larger dipole-induced displacement. Using dressed open-system decay rates, we find an operating point where the cavity-mediated decay is strongly reduced while the longitudinal readout signal remains finite. For the benchmark studied here, at fixed pointer separation, the normalized lifetime increases from $κT_1=11.1$ to $47.3$, and the estimated single-shot readout error drops from $0.21$ to $0.07$. These results show that permanent electric dipoles can provide an internal, channel-selective form of Purcell protection.",
+      "categories": [
+        "quant-ph",
+        "physics.app-ph",
+        "physics.optics"
+      ],
+      "published": "2026-06-22",
+      "score": 0.6409810724961099,
+      "similar_to": [
+        {
+          "title": "Fast Reset and Suppressing Spontaneous Emission of a Superconducting Qubit",
+          "id": "1003.0142",
+          "similarity": 0.8669908046722412
+        },
+        {
+          "title": "Fast readout and reset of a superconducting qubit coupled to a resonator with an intrinsic Purcell filter",
+          "id": "2202.06202",
+          "similarity": 0.8656507730484009
+        }
+      ],
+      "summary": {
+        "summary": "This work shows that a permanent electric dipole on a qubit can suppress cavity-mediated Purcell decay by displacing oscillator wave functions and reducing transverse qubit–cavity exchange, while preserving longitudinal readout coupling. In the displaced rotating-wave approximation, the exchange vanishes exactly at $\\eta = \\sqrt{2}$; in the full-transverse model, strong suppression persists at $\\eta_{\\mathrm{FT}} = 2.60$, yielding cavity-mediated lifetime improvements from $\\kappa T_1 = 11.1$ to $47.3$ and single-shot readout error reduction from $0.21$ to $0.07$ at fixed pointer separation.",
+        "motivation": "Readout and control of superconducting qubits in cavities relies on transverse coupling that inevitably opens a Purcell decay channel. This work explores whether a built-in static asymmetry—a permanent dipole—can internally suppress this cavity-mediated loss without external Purcell filters, leveraging Franck–Condon overlap zeros analogous to those in molecular transport.",
+        "method": "The authors model a two-level qubit with transverse coupling $g_x$ and permanent-dipole longitudinal coupling $g_p$ to a cavity. They analytically derive Franck–Condon factors $F_n(\\eta)$ (where $\\eta = g_p/\\omega_c$) for the transverse matrix element, identify the displaced-RWA exchange zero at $\\eta_0 = \\sqrt{2}$, and compute dressed open-system decay rates in the full-transverse Hamiltonian including counter-rotating terms, benchmarking against a longitudinal readout protocol with fixed pointer separation.",
+        "result": "At $\\eta_{\\mathrm{FT}} = 2.60$ in the full-transverse model with $g_x/\\omega_c = 0.030$, $\\Delta/\\omega_c = 0.10$, and $\\kappa/\\omega_c = 10^{-3}$, the cavity-mediated decay rate is suppressed close to the non-cavity floor ($\\gamma_{1,\\mathrm{floor}}/\\omega_c = 2 \\times 10^{-5}$), increasing $\\kappa T_1$ from $11.1$ to $47.3$ and reducing estimated single-shot readout error from $0.207$ to $0.071$ at matched steady-state pointer separation $|\\Delta \\alpha_{ss}| = 2$ with detection efficiency $\\eta_{\\mathrm{det}} = 0.40$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.21762",
+      "title": "Dynamical Decoupling using Universal Optimal Tracking",
+      "authors": [
+        "Amit Devra",
+        "Emanuel Malvetti",
+        "Niklas J. Glaser",
+        "Abhishek Agarwal",
+        "Ivan Rungger",
+        "Santana Lujan",
+        "Max Werninghaus",
+        "Stefan Filipp",
+        "Leo Van Damme",
+        "Steffen J. Glaser"
+      ],
+      "abstract": "Dynamical decoupling (DD) is a widely used and resource-efficient technique for error suppression, but conventional DD relies on periodically repeating a short pulse block to refocus the qubit state during idle periods. Imperfections in this block cause residual errors to accumulate, ultimately degrading state recovery over long idle times. Here, we introduce a universal optimal tracking approach that extends the original tracking concept to a fully state-independent setting for designing DD sequences. By monitoring the qubit's evolution at predefined waypoints during optimization, the method dynamically compensates residual errors while preserving regular refocusing. Experimental demonstrations on a superconducting-qubit platform confirm the suppression of error accumulation under static control imperfections, in agreement with numerical predictions. Complementary simulations further show that optimal-tracking-based sequences maintain strong performance under time-dependent noise. These results establish optimal tracking as a practical and hardware-agnostic approach to designing short, robust DD sequences suitable for noisy quantum devices.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-19",
+      "score": 0.6212198249918124,
+      "similar_to": [
+        {
+          "title": "Dynamical decoupling for superconducting qubits: a performance survey",
+          "id": "2207.03670",
+          "similarity": 0.9266899228096008
+        },
+        {
+          "title": "Qudit Dynamical Decoupling on a Superconducting Quantum Processor",
+          "id": "2407.04893",
+          "similarity": 0.8680977821350098
+        }
+      ],
+      "summary": {
+        "summary": "This work introduces U-TRACK, a family of dynamical decoupling sequences designed using optimal tracking that enforces identity evolution at intermediate checkpoints in addition to the end of the sequence, preventing error accumulation across pulse blocks. Experimental validation on superconducting-qubit platforms demonstrates that U-TRACK4 maintains superior robustness against static detuning and amplitude errors compared to XY4 and UR40, while simulations show it outperforms both sequences under low-frequency random telegraph noise.",
+        "motivation": "Conventional DD sequences accumulate residual errors over repeated cycles, degrading performance during long idle times, while single-block optimization methods like UR40 are fragile to mid-sequence parameter changes. Combining the block-by-block refocusing of periodic sequences with global optimization would provide both robustness and resilience to time-dependent noise.",
+        "method": "The authors generalized the optimal tracking framework from NMR to a universal (state-independent) setting, optimizing pulse phases of $M$ blocks with $N$ pulses each to maximize average fidelity at all intermediate waypoints using GRAPE with a genetic algorithm for global search. Sequences of 40 $\\pi$-pulses (10 blocks of $N=4$) were optimized over $\\delta/(2\\pi) \\in [-1.5625, 1.5625]$ MHz and $\\epsilon \\in [-0.4, 0.4]$ on a transmon qubit with $T_\\pi = 128$ ns.",
+        "result": "At $T = 5.12$ µs, U-TRACK4 maintains high process fidelity across all intermediate times whereas XY4 shows systematic error accumulation and UR40 exhibits fragmented robustness profiles; under random telegraph noise at $\\lambda = 0.5$ MHz with $\\delta/(2\\pi) = \\pm 0.5$ MHz, UR40 achieves $\\bar{F} \\approx 0.54$ while U-TRACK4 and XY4 achieve $\\bar{F} \\approx 0.92$, with U-TRACK4 maintaining better performance at high detuning amplitudes.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.22376",
+      "title": "Vibe Calibration: Autonomous Bring-up of a 112-Qubit Superconducting Quantum Processor by a Skill-Orchestrating Language Agent",
+      "authors": [
+        "Huikai Xu",
+        "Jiaxiu Han",
+        "Shigang Ou",
+        "Cheng Ye",
+        "Zisong Shen",
+        "Jing Gao",
+        "Yijia Wang",
+        "Tianrui Che",
+        "Yu Song",
+        "Weiyang Liu",
+        "Lei Wang",
+        "Lin-Feng Zhang",
+        "Pan Zhang",
+        "Hai-Feng Yu"
+      ],
+      "abstract": "Superconducting quantum computing is one of the most mature solid-state platforms for quantum computation, with processors exceeding one hundred qubits. Yet further scaling toward fault-tolerant quantum computing is increasingly constrained by calibration complexity. Conventional scripts are brittle to anomalous signals, and expert judgment is bounded by cognitive bandwidth and serial operation time, failing to keep pace with system scale. Here we report Vibe Calibration, an autonomous calibration system orchestrated by large language model agents, which distills expert tacit knowledge into reusable Skills. Each Skill is organized as a decision tree that packages parameterized measurement commands, quantitative acceptance criteria, and audit records, enabling autonomous execution and self-healing. We capture this knowledge through a three-phase human-in-the-loop distillation process and fine-tune a large language model on validated trajectories. On a 112-qubit processor with frequency-tunable transmons, the system autonomously completes calibration of 108 out of 112 qubits in 4.7 hours, achieving a 4--5$\\times$ speedup over manual calibration of the full 112 qubits. A cross-validated comparison with expert manual calibration on a 16-qubit subset shows agreement on 14 out of 16 qubits. More importantly, the model demonstrates transferable calibration workflows across devices. While low-level control scripts require minor interface adaptation for different hardware platforms, the core decision logic and task orchestration generalize to new processors, demonstrating a reusable laboratory interface rather than a memorized script.This work demonstrates, for the first time, fully autonomous calibration of a hundred-qubit superconducting processor through reusable and auditable Skills, removing a critical barrier to scalable quantum hardware operation.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-21",
+      "score": 0.5904380009896257,
+      "similar_to": [
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.8371244072914124
+        },
+        {
+          "title": "Evidence for the utility of quantum computing before fault tolerance",
+          "id": null,
+          "similarity": 0.8309199810028076
+        }
+      ],
+      "summary": {
+        "summary": "Vibe Calibration autonomously calibrates a 112-qubit frequency-tunable transmon processor by orchestrating reusable Skills through a fine-tuned LLM agent, achieving 108/112 qubits in 4.7 hours with 4–5× speedup over manual operation. The system distills expert tacit knowledge via three-phase human-in-the-loop training and demonstrates transfer of calibration workflows across devices without retraining.",
+        "motivation": "Manual calibration of superconducting processors becomes intractable at scale; conventional scripts are brittle to anomalies, and expert judgment is bounded by cognitive bandwidth and serial operation time, creating a bottleneck that prevents scaling toward fault-tolerant quantum computing.",
+        "method": "Expert experimental trajectories are distilled into two complementary training datasets ($\\mathcal{D}_A$ for step-level behavior cloning with full tool schemas preserved, $\\mathcal{D}_B$ for domain knowledge with 6–8 paraphrased surface forms per semantic atom). Qwen3.6-35B-A3B is fine-tuned via LoRA-Over on both datasets; the resulting checkpoint operates as a Claude-Code agent that follows a qubit-characterization Skill organized as a decision tree with explicit quality gates ($R^2 > 0.9$, SNR $\\geq 10$ dB), rollback edges, and audit records.",
+        "result": "On 112 transmons with $E_C/h \\approx 190$ MHz, $E_J^{\\mathrm{max}}/h \\approx 12.97–13.56$ GHz, the agent achieves $T_1 = 96.2$ µs (median, 108/112 qubits), $T_2^R = 7.9$ µs (median, 102/112 qubits), and completes in 4.7 h; expert comparison on 16-qubit subset shows agreement on 14/16 qubits (87.5%) with paired $t$-test $p = 0.31$ for $T_1$ and $p = 0.42$ for $T_2^R$; cross-chip transfer test on unseen 16-qubit architecture shows the 35B-$\\mathcal{D}_A$ checkpoint successfully loads and follows new Skills in all 6 sessions without memorizing training patterns.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8771,
+    0.8171,
+    0.7696,
+    0.641,
+    0.6212,
+    0.5904,
+    0.4964,
+    0.4257,
+    0.4197,
+    0.394,
+    0.3772,
+    0.3361,
+    0.3141,
+    0.2742,
+    0.2704,
+    0.2495,
+    0.2111,
+    0.2046,
+    0.2034,
+    0.1882,
+    0.157,
+    0.146,
+    0.1428,
+    0.137,
+    0.1221,
+    0.1211,
+    0.1189,
+    0.1163,
+    0.1157,
+    0.1141,
+    0.1123,
+    0.104,
+    0.1,
+    0.0947,
+    0.0944,
+    0.0939,
+    0.0929,
+    0.0919,
+    0.0906,
+    0.0903,
+    0.0853,
+    0.0833,
+    0.0823,
+    0.0801,
+    0.0741,
+    0.0701,
+    0.0688,
+    0.0686,
+    0.0648,
+    0.0634,
+    0.0633,
+    0.0627,
+    0.0612,
+    0.0607,
+    0.0581,
+    0.058,
+    0.0554,
+    0.0554,
+    0.054,
+    0.0536,
+    0.0509,
+    0.0508,
+    0.0504,
+    0.0498,
+    0.0472,
+    0.0456,
+    0.0445,
+    0.0424,
+    0.042,
+    0.0419,
+    0.0415,
+    0.0414,
+    0.0413,
+    0.0408,
+    0.0401,
+    0.0382,
+    0.0366,
+    0.0359,
+    0.0356,
+    0.0354,
+    0.0345,
+    0.0329,
+    0.0317,
+    0.0309,
+    0.0302,
+    0.0275,
+    0.0269,
+    0.0257,
+    0.0248,
+    0.0236,
+    0.0233,
+    0.0227,
+    0.0221,
+    0.0221,
+    0.0218,
+    0.0212,
+    0.0208,
+    0.0208,
+    0.0204,
+    0.02,
+    0.0196,
+    0.0195,
+    0.0195,
+    0.0192,
+    0.0183,
+    0.0182,
+    0.0179,
+    0.0178,
+    0.0176,
+    0.0174,
+    0.0164,
+    0.0159,
+    0.0158,
+    0.0147,
+    0.0142,
+    0.0136,
+    0.0117,
+    0.0113,
+    0.0112,
+    0.0108,
+    0.0106,
+    0.0103,
+    0.01,
+    0.0095,
+    0.0093,
+    0.0092,
+    0.0092,
+    0.0092,
+    0.0091,
+    0.0083,
+    0.0078,
+    0.0071,
+    0.0067,
+    0.0067,
+    0.0061,
+    0.006,
+    0.0047,
+    0.0047,
+    0.0047,
+    0.0046,
+    0.0045,
+    0.004,
+    0.0037,
+    0.0036,
+    0.003,
+    0.0029,
+    0.0027,
+    0.0025,
+    0.0024,
+    0.0011,
+    0.0008
+  ]
+}

@@ -1,0 +1,13 @@
+{# one pre-rendered list per window; the sort bar's script shows the chosen one, 10 papers at a time #}
+<div id="top" hidden>
+  {% set show_day = true %}
+  {% for t in tops %}
+  <section data-range="{{ t.key }}"{{ "" if loop.first else " hidden" }}>
+    <p class="topnote">Top <span class="n">{{ t.papers|length }}</span> of the {{ t.total }} papers indexed in the past {{ t.label|lower }}.</p>
+    {% for p in t.papers %}
+    {% include "_card.html.j2" %}
+    {% endfor %}
+  </section>
+  {% endfor %}
+  <p class="more" id="topmore" hidden><button type="button">Load 10 more</button><span></span></p>
+</div>

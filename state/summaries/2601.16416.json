@@ -1,0 +1,8 @@
+{
+  "summary": "A single-step electron-beam lithography process using a triple-layer PMMA/MMA resist stack with triple-exposure-dose and thermal reflow produces smooth, suspended aluminum airbridges with sub-200-nm features and robust mechanical stability. Implemented in gradiometric SQUID transmon qubits, these airbridges achieve $T_1 \\approx 38.65$ μs (no measurable additional loss) and $T_2^* \\approx 36$ μs ($2.5\\times$ enhancement over standard X-mon), compared to $T_2^* \\approx 2$ μs for dielectric crossover controls.",
+  "motivation": "Conventional multi-step airbridge fabrication introduces process defects and organic residues that degrade quantum coherence, hindering miniaturization and integration density in superconducting quantum devices.",
+  "method": "A 300-nm PMMA / 400-nm MMA / 400-nm PMMA:MMA blend resist stack is patterned by EBL with three calibrated doses (>1000 μC/cm², 300–500 μC/cm², <150 μC/cm²), developed in MIBK:IPA, reflowed at 125 °C for 45 s, then metallized with 150-nm Al and lifted off.",
+  "result": "All 60 test samples survived low-power ultrasonic treatment; 8-mon qubits with SL-airbridges achieved $\\bar{T}_1 = 33.70$ μs and $\\bar{T}_2^* = 32.40$ μs (qubit Q1), with maximum $T_1 = 38.65$ μs and $T_2^* = 35.98$ μs, versus dielectric crossover controls showing $T_1 \\approx 1.96$ μs and $T_2^* \\approx 2.34$ μs.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

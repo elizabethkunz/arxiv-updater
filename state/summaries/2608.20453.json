@@ -1,0 +1,8 @@
+{
+  "summary": "This review surveys error suppression and mitigation techniques across the NISQ-to-FTQC transition, treating error correction, suppression, and mitigation as complementary layers of a unified strategy rather than isolated approaches. The work emphasizes practical implementation of hardware-aware circuit design, coherent-error suppression, readout mitigation, noise extrapolation, and classical inference on near-term devices, with extensions to encoded and logical-qubit settings.",
+  "motivation": "Near-term quantum processors operate in a regime where physical and logical errors remain substantial despite growing capabilities for syndrome measurement and partial error correction, necessitating integrated error-reduction strategies that combine multiple techniques at different computational stages.",
+  "method": "The authors provide a comprehensive practical overview of principal hardware error sources and corresponding suppression/mitigation methods, covering hardware-aware design, coherent-error suppression techniques, readout error mitigation, noise extrapolation schemes, classical inference approaches, and software workflows with emphasis on actual processor implementations, plus adaptation of mitigation to encoded/logical-qubit regimes.",
+  "result": "The review synthesizes how error suppression, mitigation, and quantum error correction function as complementary layers to reduce both physical and logical errors, enabling improved simulation reliability and computational accuracy across the current NISQ-FTQC transition.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

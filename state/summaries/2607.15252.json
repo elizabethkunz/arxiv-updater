@@ -1,0 +1,8 @@
+{
+  "summary": "Scanning gate microscopy on superconducting resonators reveals Coulomb blockade in microscopic metallic grains as a widespread and significant source of decoherence, competing with two-level-system defects but originating from fundamentally different physics. The mechanism—microwave-driven charge tunnelling producing Sisyphus dissipation—is power-independent, temperature-independent below 1 K, and can be eliminated through improved thin-film fabrication.",
+  "motivation": "Understanding the microscopic origins of decoherence in superconducting circuits is essential for reaching fault-tolerant thresholds, yet materials-level defects have resisted direct characterization and correlation with device performance.",
+  "method": "Using a mK scanning gate microscope with tungsten tip, the authors mapped superconducting resonators at $5.3$ and $6.7$ GHz, measuring transmission $S_{21}$ while sweeping tip voltage to electrostatically tune isolated metallic islands. Concentric rings in spatial maps and equidistant peaks in voltage spectra identified Coulomb blockade signatures; Fourier analysis separated multiple overlapping defects. Ex-situ materials characterization (XRR, GIXRD, SEM, AFM) confirmed $10$–$30$ nm grains in the Nb films.",
+  "result": "Four to six Sisyphus defects per scanned region produced peak dissipation rates up to $\\sim 5$ kHz, comparable to TLS contributions; defects remained unsaturated by microwave power (up to $\\langle N \\rangle \\sim 10^4$ photons) and unaffected by cooling below 1 K, with tunnelling resistances $R_t \\sim 15$–$600$ k$\\Omega$ and junction capacitances $C_j \\sim 0.1$–$0.35$ fF matching grain-oxide-junction models.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

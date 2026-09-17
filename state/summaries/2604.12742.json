@@ -1,0 +1,8 @@
+{
+  "summary": "This paper investigates Josephson coupling in a ferromagnetic racetrack with a Bloch-like domain wall using the linearized Usadel equation in the diffusive limit, showing that the critical current $I_c$ can be tuned via domain wall position and exhibit $0$--$\\pi$ transitions. The supercurrent distribution exhibits non-trivial spatial structure including vortex-like loops at the junction edges and position-dependent attraction or repulsion of supercurrent by the domain wall.",
+  "motivation": "Hybrid superconductor-racetrack devices promise low-energy readout of magnetic memory with high speed and density; understanding how domain wall position modulates the Josephson current is essential for practical readout schemes in these architectures.",
+  "method": "The authors solve the Usadel equation numerically via finite element methods for two superconducting electrodes ($h = 10\\pi T_{c0}$ and $h = 1.5\\pi T_{c0}$ exchange fields) coupled to a diffusive ferromagnetic racetrack hosting a Bloch domain wall parameterized by position $y_0$ and tilt angle $\\theta$, with domain wall width $w = 0.5\\xi$, spin polarization $\\gamma = 0.1$, and Josephson junction width $W = 2\\xi$.",
+  "result": "For $h = 10\\pi T_{c0}$, domain wall entry into the superconducting region ($|y_0| < W/2$) suppresses $I_c$ sufficiently to drive $0$--$\\pi$ transitions; the supercurrent is attracted to centrally positioned domain walls but repelled when the wall approaches junction boundaries, with attraction-repulsion switching attributed to interplay between triplet generation and edge current vortices.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

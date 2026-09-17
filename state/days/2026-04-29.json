@@ -1,0 +1,305 @@
+{
+  "date": "2026-04-29",
+  "n_fetched": 119,
+  "papers": [
+    {
+      "id": "2604.25303",
+      "title": "Millikelvin digital-to-analog converter for superconducting quantum processors",
+      "authors": [
+        "Ruizi Hu",
+        "Zongyuan Li",
+        "Zhancheng Yao",
+        "Yufei Wu",
+        "Qiang Zhang",
+        "Yining Jiao",
+        "Quan Guan",
+        "Lijing Jin",
+        "Wangwei Lan",
+        "Chengyao Li",
+        "Lu Ma",
+        "Liyong Mao",
+        "Huijuan Zhan",
+        "Ze Zhan",
+        "Ran Gao",
+        "Lijuan Hu",
+        "Kannan Lu",
+        "Xizheng Ma",
+        "Tenghui Wang",
+        "Peng Xiang",
+        "Chunqing Deng",
+        "Shasha Zhu"
+      ],
+      "abstract": "Scaling superconducting quantum processors is increasingly constrained by the wiring, heat load, and calibration overhead associated with delivering high-resolution analog signals from room temperature to qubits at millikelvin temperature. Here we demonstrate a superconducting digital-to-analog converter (DAC) integrated with high-coherence fluxonium qubits in a multi-chip module architecture. The DACs generate persistent analog flux signals for tuning qubit parameters and are programmed deterministically using single-flux-quantum (SFQ) pulses, providing a digital interface compatible with established SFQ routing and demultiplexing technologies. Operating at millikelvin temperature, the DACs enable in-situ tuning of fluxonium qubits without measurable degradation of qubit coherence. The presented device provides a static control primitive for flux-tunable qubits, enabling parameter homogenization and eliminating the need for individual room-temperature DC bias lines. These results establish SFQ-programmable millikelvin DACs as a building block for digitally controlled superconducting quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-28",
+      "score": 0.8498507933615678,
+      "similar_to": [
+        {
+          "title": "Quantum Computer Controlled by Superconducting Digital Electronics at Millikelvin Temperature",
+          "id": "2503.09879",
+          "similarity": 0.8780397772789001
+        },
+        {
+          "title": "Superconducting Flux Memory for Cryogenic Applications",
+          "id": "2609.00772",
+          "similarity": 0.8519759774208069
+        }
+      ],
+      "summary": {
+        "summary": "A superconducting digital-to-analog converter (DAC) programmed by single-flux-quantum (SFQ) pulses has been integrated with fluxonium qubits in a multi-chip module, enabling millikelvin flux tuning without coherence degradation. The DAC stores persistent analog flux signals in an rf-SQUID with screening parameter $\\beta_L = 243$, providing deterministic quantized control compatible with SFQ routing architectures for scalable qubit parameter adjustment.",
+        "motivation": "Scaling superconducting quantum processors beyond 100 qubits is limited by the wiring complexity and heat load of room-temperature DC bias lines needed for flux tuning. Integrating cryogenic control hardware directly at millikelvin temperatures using superconducting digital logic is essential to enable millions-qubit systems required for fault-tolerant quantum computing.",
+        "method": "An rf-SQUID DAC with $I_c = 80$ µA and $L = 1$ nH was integrated on a separate chip from a fluxonium qubit via flip-chip bonding with 10 µm spacing. SFQ pulses from a dc/SFQ converter program the DAC through transient bias pulses that induce transitions between metastable flux states, with qubit spectroscopy used to calibrate the flux output.",
+        "result": "The DAC achieves a minimum step of $4.8 \\pm 0.6$ m$\\Phi_0$ with a range of $\\approx 0.7$ $\\Phi_0$ (146 discrete steps). Operating at millikelvin temperature, the DAC produces flux shifts of $4.58 \\pm 0.01$ m$\\Phi_0$ per SFQ pulse without affecting fluxonium coherence: $T_1 = 82 \\pm 17$ µs and flux noise amplitude $A_\\Phi^R = 6.75 \\pm 0.25$ µ$\\Phi_0$ are consistent with unintegrated qubits, matching literature values.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.25195",
+      "title": "A simple method to fabricate Josephson junctions",
+      "authors": [
+        "Imran Mahboob",
+        "Satoshi Sasaki",
+        "Takaaki Takenaka"
+      ],
+      "abstract": "A minimal method to fabricate Al/AlO$_x$/Al Josephson junctions (JJs) using photolithography and argon etching, before metallization and oxidation, is demonstrated. JJs with areas ranging from 1 to 6 $μ$m$^2$ can be fabricated and, with the appropriate oxidation conditions, the junction resistance can be varied by $\\sim$2 orders of magnitude. Transmission electron microscopy reveals the successful fabrication of JJs with few grain boundaries suggesting reduced energy loss from two-level-systems. Superconducting QUantum Interference Devices (SQUIDs) fabricated from this methodology exhibit reduced resistance variation over multiple chips, compared with electron beam lithography, and the devices can sustain repeated thermal cycles to 10 mK with the excellent flux response remaining unchanged. The quantum applications of this technology are demonstrated by embedding a SQUID resonator into a 3D cavity and parametrically amplifying low photon numbers with gains of $\\sim$40 dB. This work establishes the simplest approach to fabricating JJs to date, and it could prove pivotal to the widespread utilization of superconducting circuit-based quantum technologies.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-28",
+      "score": 0.7507421605782861,
+      "similar_to": [
+        {
+          "title": "Electrical post-fabrication tuning of aluminum Josephson junctions at room temperature",
+          "id": "2602.20002",
+          "similarity": 0.862433910369873
+        },
+        {
+          "title": "High coherence fluxonium manufactured with a wafer-scale uniformity process",
+          "id": "2405.05481",
+          "similarity": 0.8439404964447021
+        }
+      ],
+      "summary": {
+        "summary": "A simplified photolithography-based method for fabricating Al/AlO$_x$/Al Josephson junctions with 1–6 µm$^2$ areas and tunable resistance from below 50 Ω to ~1 kΩ is demonstrated, eliminating reactive ion etching and complex resist stacks. SQUIDs fabricated with this approach exhibit reduced resistance variation (±25%) compared to electron-beam lithography (±200%), stable flux response over 10+ thermal cycles, and parametric gain of ~40 dB with quantum-limited noise.",
+        "motivation": "Existing Josephson junction fabrication methods like the Dolan bridge and Manhattan techniques face challenges with stray junctions, resist damage, or complexity; a simpler, more reproducible approach is needed to enable widespread adoption of superconducting quantum technologies.",
+        "method": "Photolithography-patterned lift-off metallization combined with argon etching before aluminum deposition and controlled in-situ oxidation; SQUID-resonators are embedded in 3D cavities for characterization and parametric amplification.",
+        "result": "SQUIDs show symmetric, periodic flux response with no flux jumps or TLS-coupling signatures; 20 devices across multiple chips yield nominally identical performance; one device sustains unchanged response over 6 months with >10 thermal cycles to 10 mK; parametric amplifier achieves ~40 dB gain with half a photon added noise.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.25863",
+      "title": "MCMit: Hardware-Software Co-Design for Mid-Circuit Measurement Error Mitigation",
+      "authors": [
+        "Emmanouil Giortamis",
+        "Felix Gust",
+        "Aleksandra Świerkowska",
+        "Sandra Stankovic",
+        "Innocenzo Fulginiti",
+        "Yanbin Chen",
+        "Xiaorang Guo",
+        "Benjamin Lienhard",
+        "Martin Schulz",
+        "Pramod Bhatotia"
+      ],
+      "abstract": "Distributed Quantum Computing (DQC) and Quantum Error Correction (QEC) rely on dynamic circuits that include Mid-Circuit Measurements (MCMs) and classical feedback. These operations present a major bottleneck: MCMs suffer from high error rates that lead to real-time branching errors, while MCM and classical feedback latencies amplify decoherence errors. Current hardware controllers, qubit-state discriminators, and software error mitigation techniques fail to address these challenges holistically. We propose MCMit, a hardware-software co-design to mitigate branching and latency-induced errors. MCMit introduces a scalable, constant-latency multi-control branch instruction for faster classical feedback and two qubit-state discriminators, a transformer, and a CNN, with high accuracy even under short measurement durations. On the software side, static MCM elimination and stochastic branching complement the hardware by mitigating residual branching errors that persist despite hardware improvements. We implement MCMit on Qubic and evaluate it using experimentally extracted QPU readout traces. Our branch instruction reduces feedback latency by up to 70\\%, improving circuit depths by up to $7\\times$ over Qubic. Our CNN discriminator achieves up to 62\\% higher accuracy for short measurement durations than the baselines, driving $1.2-9.4\\times$ lower logical error rates in QEC. Last, our software mitigation improves fidelity by 18--30\\% over baseline methods in DQC workloads.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-28",
+      "score": 0.6374707067185138,
+      "similar_to": [
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8388398289680481
+        },
+        {
+          "title": "Fault-tolerant interfaces for modular quantum computing on diverse qubit platforms",
+          "id": "2510.05221",
+          "similarity": 0.8249994516372681
+        }
+      ],
+      "summary": {
+        "summary": "MCMit is a hardware-software co-design that mitigates mid-circuit measurement (MCM) errors and classical feedback latency in superconducting quantum processors through a constant-latency multi-qubit branch instruction, two neural network discriminators achieving 62% higher accuracy for 250–500 ns readout, and circuit-level optimization. Implemented on Qubic and evaluated on experimental readout traces, MCMit reduces feedback latency by 70%, improves QEC logical error rates by 1.2–9.4× for surface codes, and delivers 18–30% fidelity gains for distributed quantum computing workloads.",
+        "motivation": "MCMs suffer from 2–12× higher error rates than two-qubit gates and 23–38× longer durations on IBM Heron/Nighthawk processors, while classical feedback adds 3–10× latency. These bottlenecks severely hinder scalability in DQC architectures and fault tolerance in QEC, yet existing hardware controllers, discriminators, and software techniques operate in isolation without cross-layer co-design.",
+        "method": "MCMit introduces: (1) an FPGA-based $branch_reduce_fproc$ instruction supporting multi-qubit XOR/majority operations with constant latency independent of qubit count; (2) a transformer and lightweight residual CNN discriminator operating directly on raw I/Q traces via spectral preprocessing and learnable downsampling, with INT8 quantization for FPGA deployment; (3) compile-time static MCM elimination via quantum constant propagation, measurement hardening using repetition codes and parity checks, and stochastic branching that probabilistically inverts branch conditions using confusion matrices.",
+        "result": "On five-qubit superconducting QPU readout traces: $branch_reduce_fproc$ reduces feedback latency by up to 70% and circuit depth by 7× over Qubic; MCMit-CNN achieves 62.4% higher discrimination accuracy than HERQULES at 500 ns readout (78.8% excluding crosstalk-affected qubits) with 92% lower LUT utilization; surface code logical error rates drop 1.2–9.4× at 500 ns readout; GHZ and CNOT benchmarks show 37.8–57.3% higher fidelity than Qubic; software mitigation achieves 18–30% fidelity improvement over Qiskit mthree and unmitigated circuits.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.25871",
+      "title": "3D integration of a hybrid quantum dot circuit-QED device for fast gate dispersive charge readout and coherent spin-photon coupling",
+      "authors": [
+        "Sebastien Granel",
+        "Frederic Gustavo",
+        "Jean-Luc Thomassin",
+        "Heimanu Niebojewski",
+        "Benoit Bertrand",
+        "Frederic Berger",
+        "Alain Gueugnot",
+        "Chafik Mhamdi",
+        "Etienne Dumur",
+        "Romain Maurand",
+        "Simon Zihlmann"
+      ],
+      "abstract": "Hybrid circuit quantum electrodynamics (cQED) aims at coupling various quantum degrees of freedom, among which are spin and charge degrees of freedom in gate defined quantum dots, phonons or magnons... with quantized electromagnetic fields in superconducting microwave cavities to investigate fundamental physics questions or for quantum computation and simulation. However, low microwave losses, key for many hybrid cQED experiments, are challenging to achieve given the often exotic and/or complex material stacks (e.g. semiconducting material, ferromagnets, or piezoelectric materials) required to host the various quantum degrees of freedom. In this work, we present a 3D-integration process to overcome this challenge for semi-industrial silicon MOS spin qubits. The process is based on dense indium bump interconnects at a pitch of 10 $\\mathrmμ$m and superconducting thin films of Niobium Nitride (NbN). First, we report on DC and RF interconnect properties that demonstrate a high galvanic interconnection yield and internal quality factors above $10^{5}$ in the single photon regime for NbN resonators interrupted by a single indium bump interconnect. Eventually, we fabricated a 3D-integrated hybrid circuit quantum electrodynamics (cQED) device based on a semi-industrial MOS hole double quantum dot and a high impedance NbN resonator. For this device, we report a cavity internal quality factor above 10000 and demonstrate record sensitivity for gate-based dispersive readout of the charge degree of freedom with an SNR of 100 in 300 ns. Finally, we demonstrate strong spin-photon coupling of $g_{s}/2π$ = 75 MHz, which highlights the viability of 3D-integration for quantum dot based hybrid spin circuit quantum electrodynamics and opens to high-fidelity spin readout and microwave photon-based remote spin qubit entanglement.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-04-28",
+      "score": 0.5118342996880093,
+      "similar_to": [
+        {
+          "title": "Seamless high-Q microwave cavities for multimode circuit QED",
+          "id": "2010.16382",
+          "similarity": 0.8301163911819458
+        },
+        {
+          "title": "Fast, high-fidelity transmon readout with intrinsic Purcell protection via nonperturbative cross-Kerr coupling",
+          "id": "2601.04975",
+          "similarity": 0.8294473886489868
+        }
+      ],
+      "summary": {
+        "summary": "A 3D-integrated hybrid circuit-QED device couples a silicon MOS hole double quantum dot to a high-impedance NbN superconducting resonator using 5 µm indium bump interconnects at 10 µm pitch, achieving a cavity quality factor $Q_i \\sim 10^4$ and demonstrating both fast dispersive charge readout and strong spin-photon coupling. The platform demonstrates record charge readout sensitivity with SNR = 100 in 300 ns and spin-photon coupling strength $g_s/2\\pi = 75$ MHz, establishing the viability of 3D integration for quantum dot based hybrid cQED.",
+        "motivation": "Hybrid cQED systems require both low microwave losses and compatibility with semiconducting quantum dot materials, but conventional 2D integration of superconducting circuits with silicon MOS qubits leads to $Q_i$ of only a few hundred due to parasitic losses from complex material stacks.",
+        "method": "A flip-chip assembly bonds a sapphire chip hosting a 10 nm NbN resonator (1.8 kΩ characteristic impedance) to a 300 mm foundry-fabricated Si-MOS spin qubit chip via dense indium bump interconnects, with 5 µm × 5 µm bumps at 10 µm pitch to minimize stray capacitance, and includes on-chip fifth-order low-pass filters on the readout/control lines.",
+        "result": "The assembled device achieves $Q_i = 11\\,100$ and demonstrates charge-photon coupling $g_c/2\\pi = 350$ MHz with charge dispersive readout SNR = 100 at 300 ns integration time (approximately 10× faster than prior work) and strong spin-photon coupling $g_s/2\\pi = 75$ MHz at 250 mT magnetic field, with 99.98% interconnect yield and superconducting transitions in In bumps below 3.4 K.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8499,
+    0.7507,
+    0.6375,
+    0.5118,
+    0.495,
+    0.4573,
+    0.4315,
+    0.3934,
+    0.3809,
+    0.3437,
+    0.3191,
+    0.3024,
+    0.2085,
+    0.2078,
+    0.2072,
+    0.1919,
+    0.1909,
+    0.1889,
+    0.1856,
+    0.1797,
+    0.1781,
+    0.1767,
+    0.1699,
+    0.1639,
+    0.155,
+    0.1464,
+    0.1447,
+    0.1384,
+    0.1374,
+    0.1345,
+    0.1299,
+    0.1265,
+    0.1257,
+    0.1199,
+    0.1141,
+    0.1106,
+    0.1065,
+    0.1045,
+    0.0987,
+    0.0981,
+    0.0956,
+    0.0928,
+    0.0915,
+    0.091,
+    0.0863,
+    0.0808,
+    0.0804,
+    0.0769,
+    0.0757,
+    0.0719,
+    0.0706,
+    0.0697,
+    0.069,
+    0.0671,
+    0.0646,
+    0.0634,
+    0.0627,
+    0.0605,
+    0.0569,
+    0.0542,
+    0.0499,
+    0.0468,
+    0.0453,
+    0.045,
+    0.0449,
+    0.0449,
+    0.0448,
+    0.0442,
+    0.0371,
+    0.0356,
+    0.0328,
+    0.0319,
+    0.0318,
+    0.0305,
+    0.0289,
+    0.0286,
+    0.0283,
+    0.0282,
+    0.0273,
+    0.0273,
+    0.0269,
+    0.0265,
+    0.0255,
+    0.0241,
+    0.0241,
+    0.0238,
+    0.022,
+    0.0198,
+    0.0198,
+    0.0191,
+    0.0187,
+    0.0187,
+    0.0184,
+    0.0184,
+    0.0182,
+    0.0181,
+    0.0169,
+    0.0168,
+    0.0165,
+    0.0159,
+    0.0159,
+    0.0158,
+    0.0152,
+    0.0126,
+    0.0116,
+    0.0098,
+    0.0094,
+    0.0094,
+    0.0086,
+    0.0078,
+    0.0073,
+    0.0072,
+    0.007,
+    0.0063,
+    0.0057,
+    0.0055,
+    0.0054,
+    0.0035,
+    0.0016
+  ]
+}

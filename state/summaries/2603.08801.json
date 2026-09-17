@@ -1,0 +1,8 @@
+{
+  "summary": "The paper introduces HAL (Heuristic Autonomous Lab), an LLM-driven system that automates superconducting qubit experiments by generating and invoking Python code for pulse-level control via a knowledge base. The framework is demonstrated through autonomous resonator characterization and reproduction of a quantum non-demolition leakage measurement ($L = 0.124 \\ \\pm 0.017$) directly from published literature.",
+  "motivation": "Implementing novel control and measurement sequences for superconducting qubits requires extensive expertise and is time-consuming; the authors exploit the purely digital nature of cryogenic qubit control to enable LLM agents to interact directly with lab hardware through Python.",
+  "method": "HAL uses Gemini 3 Flash with iterative retrieval-augmented generation to search a knowledge base of experimental plans and API documentation, alternating between a planner component (what to do) and developer component (how to implement in Python), with signal-based feedback and a sandbox runtime supporting persistent state and code reuse.",
+  "result": "HAL successfully conducted autonomous resonator characterization finding 8 resonators and extracted their quality factors, and reproduced the RILB protocol from a journal article using only general lab knowledge and the published description, with the QND characterization consuming $\\sim 10^5$ input and $10^4$ output tokens and executing in $\\sim 3$ minutes.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

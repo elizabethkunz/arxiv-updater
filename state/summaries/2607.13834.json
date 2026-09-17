@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates wireless excitation of a superconducting microwave resonator at 20 mK inside a dilution refrigerator, comparing performance against a wired reference at $f_r = 10.8$ GHz using a TX/RX pair with double split-ring resonator metalenses. Direct comparison reveals that wireless excitation preserves intrinsic resonator properties ($Q_i$, $f_r$, temperature-dependent frequency shift from quasiparticles) but exhibits an additional loss channel with $|\\Delta Q_L| \\approx 650$ arising from stray radiation coupling through unintended pathways within the reflective cryostat cavity.",
+  "motivation": "Scaling quantum computers to thousands of qubits requires reducing the dense network of interconnects between cryogenic processors and room-temperature electronics, which introduce substantial thermal loading and routing congestion in dilution refrigerators.",
+  "method": "The authors built a wireless link operating at $\\sim$10.6 GHz through a 10 cm diameter aperture between the 4 K and 20 mK stages, using matched TX and RX modules with metalens beam-shaping, and systematically compared wired and wireless excitation of a NbN resonator using cryogenic switches to isolate propagation pathways.",
+  "result": "At $T_{mxc} = 20$ mK, wireless transmission preserves resonator $Q_i$ and frequency evolution across 20 mK–3 K, but introduces $\\approx$650 additional losses in $Q_L$ due to parasitic coupling; RF absorbers suppress cavity reverberation but do not eliminate residual stray excitation with estimated parasitic capacitance $C_p \\sim 40$ fF.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

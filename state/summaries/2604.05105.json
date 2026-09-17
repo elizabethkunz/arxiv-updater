@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates a circuit QED micromaser using a multi-level artificial atom (SNAIL-transmon hybrid) as the gain medium, pumped into population inversion via microwave drive and coupled to a superconducting cavity. The device exhibits three distinct pump cycles and produces coherent maser output with linewidth narrowed to 54 Hz, approximately 365 times below the bare cavity linewidth of 19.7 kHz.",
+  "motivation": "Circuit QED platforms offer unprecedented tunability of artificial atom properties (level structure, coupling, dissipation) compared to conventional atomic masers, enabling precise engineering of maser components and exploration of single-atom gain media in the microwave domain.",
+  "method": "A lossy SNAIL resonator ($\\kappa_s / 2\\pi = 24.5$ MHz at $f_s = 5.76$ GHz) coupled to a flux-tunable transmon provides parametric three-wave mixing that drives population inversion via a pump at $\\omega_p \\approx \\omega_s + \\omega_t$, with the transmon-cavity coupling at $g_{tc}/2\\pi = 0.44$ MHz enabling photon transfer to the masing cavity ($\\Gamma_c / 2\\pi = 6$–20 kHz). Master equation simulations validate the three pump cycles: $|e\\rangle \\to |g\\rangle$, $|f\\rangle \\to |e\\rangle$, and $|f\\rangle \\to |g\\rangle$ (two-photon).",
+  "result": "Maser operates coherently over $\\sim$50 MHz pump frequency range with output linewidth of 54 Hz (frequency-domain) and 38 Hz (time-domain phase diffusion with $\\sim$26 ms coherence time), both consistent with observations and demonstrating nearly 365-fold cavity linewidth compression relative to the bare value of 19.7 kHz.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

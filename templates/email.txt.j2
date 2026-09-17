@@ -1,0 +1,13 @@
+{% if not papers %}
+No new papers scored above the email threshold ({{ day.n_fetched }} scanned).
+{% endif %}
+{% for p in papers %}
+**{% if p.score >= 0.95 %}⭐ {% endif %}[{{ p.score|pct }}] {{ p.title|detex }}**
+ArXiV: https://arxiv.org/abs/{{ p.id }}
+Link: {{ base_url }}/{{ p.id }}
+Authors: {{ p.authors|short_authors }}
+Summary: {{ p.summary.summary|detex }}
+
+{% endfor %}
+--
+{{ day.n_fetched }} new papers scanned for {{ day.date }}. All papers: {{ base_url }}/

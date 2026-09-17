@@ -1,0 +1,271 @@
+{
+  "date": "2026-06-24",
+  "n_fetched": 97,
+  "papers": [
+    {
+      "id": "2606.24772",
+      "title": "A high-fidelity two-qubit gate for multimode superconducting P-mon qubits",
+      "authors": [
+        "Frederik Pfeiffer",
+        "Federico A. Roy",
+        "Niklas J. Glaser",
+        "Julius Feigl",
+        "Leon Koch",
+        "Kevin Kiener",
+        "Gleb Krylov",
+        "Johannes Schirk",
+        "Christian M. F. Schneider",
+        "Lasse Södergren",
+        "Florian Wallner",
+        "Max Werninghaus",
+        "Carlos A. Riofrío",
+        "Stefan Filipp"
+      ],
+      "abstract": "To scale superconducting quantum processors, it is essential to achieve long coherence times while engineering interactions that do not introduce additional decoherence channels. In superconducting qubit systems, this can be realized using multimode circuits that feature a protected qubit mode alongside a distinct mediator mode. Building on this concept, our recently developed P-mon qubit provides intrinsic protection against decoherence from the readout environment. We extend this approach to controlled two-qubit interactions, by exploiting the mediator modes of P-mons for on-demand coupling. Because direct interactions between the qubit modes are strongly suppressed, unwanted $ZZ$-type interactions are significantly reduced to below $3.6(5)~\\text{kHz}$ in the idle state. When tuning the coupled mediator modes on resonance, the cross-Kerr interaction between the qubit and the hybridized mediator modes leads to a qubit-state dependent frequency shift. By selectively addressing these transitions, we implement a $180~\\text{ns}$ long CZ gate and determine a fidelity of $99.62(4)~\\text{%}$. These results represent a significant step toward a scalable superconducting architecture that maintains high performance at scale.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-23",
+      "score": 0.9633672016838136,
+      "similar_to": [
+        {
+          "title": "Above 99.9% Fidelity Single-Qubit Gates, Two-Qubit Gates, and Readout in a Single Superconducting Quantum Device",
+          "id": "2508.16437",
+          "similarity": 0.8639513254165649
+        },
+        {
+          "title": "Suppression of crosstalk in superconducting qubits using dynamical decoupling",
+          "id": "2108.04530",
+          "similarity": 0.8619256019592285
+        }
+      ],
+      "summary": {
+        "summary": "We demonstrate a 99.62% fidelity CZ gate between two multimode P-mon superconducting qubits coupled via their flux-tunable mediator modes, achieving ZZ-type crosstalk suppressed to 3.6 kHz through mode-selective coupling that keeps computational qubits isolated. The gate exploits qubit-state-dependent frequency shifts from cross-Kerr interactions ($\\alpha_{\\mathcal{AB}} \\approx -164$ and $-108$ MHz) to generate an entangling phase without linear qubit-qubit exchange.",
+        "motivation": "Scaling superconducting quantum processors requires maintaining high coherence times while suppressing always-on ZZ interactions that induce correlated errors; standard transmon architectures using capacitive couplers suffer from frequency crowding and crosstalk in the straddling regime.",
+        "method": "Two P-mons are coupled via an intermediate 8.143 GHz bus resonator connected only to island 3, establishing a $g_{\\mathcal{BB}}/2\\pi = 11.7$ MHz mediator-mediator coupling while leaving qubit modes ($\\omega_{\\mathcal{A}}/2\\pi \\approx 4.5$ GHz) decoupled; we drive the $|0,0\\rangle_\\mathcal{B} \\leftrightarrow |-\\rangle_{00}$ transition selectively with 180 ns HD-DRAG pulses to accumulate an entangling phase via the cyclic Bloch sphere trajectory.",
+        "result": "CZ gate fidelity of $99.62(4)\\%$ measured via interleaved randomized benchmarking with 180 ns HD-DRAG pulses; residual ZZ interaction $\\zeta_{ZZ} = 3.6(5)$ kHz at the gate operation point, with qubit coherence times $T_1 = 139(18)$ and $141(13)$ µs and mediator dephasing $T_2 = 5.2(6)$ µs limiting performance at short durations.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.23952",
+      "title": "Biophysical EPR Using Superconducting Resonators",
+      "authors": [
+        "Austin R. Gamble Jarvi",
+        "Hamid R. Mohebbi",
+        "Ishit Raval",
+        "Omari Culzac",
+        "Jack Erickson",
+        "Sameh Hegazy",
+        "Don Carkner",
+        "Andrew Wiles",
+        "David G. Cory",
+        "Troy W. Borneman"
+      ],
+      "abstract": "We present innovations that enable the use of superconducting resonators for high sensitivity, high bandwidth pulsed electron paramagnetic resonance (EPR) measurements on biologically relevant samples with enhanced stability and throughput. A custom-built X-band pulsed EPR spectrometer with AWG and digital IF capability generated by an FPGA was used to control a novel patterned thin film planar superconducting microstrip resonator capable of generating Rabi fields sufficient to achieve 6 ns pi/2 Gaussian pulses using a 100 W solid-state HPA. The system allows automated sequential calibration, measurement, and analysis of five 3.5 uL samples contained in a sample cartridge. Performance was validated through measurements of double electron-electron resonance (DEER) distances in a variety of spin-labeled protein samples with biologically relevant concentrations, including measurements below 10 uM. The results enable broadening the scope of applications for both superconducting resonators and the use of EPR in biotechnology.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-22",
+      "score": 0.6890149949881728,
+      "similar_to": [
+        {
+          "title": "Fast readout and reset of a superconducting qubit coupled to a resonator with an intrinsic Purcell filter",
+          "id": "2202.06202",
+          "similarity": 0.7838324308395386
+        },
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.7742440104484558
+        }
+      ],
+      "summary": {
+        "summary": "A custom X-band pulsed EPR spectrometer based on a 16-strip YBCO superconducting microstrip resonator achieves automated measurement of spin-labeled protein samples at sub-10 μM concentrations using 3.5 μL sample volumes with $\\pm1$ degree phase stability. The system implements advanced DEER protocols (RELOAD, DEER-Stitch, CPMG echo train detection) to achieve 6× SNR improvement and enables unattended sequential measurement of five samples in a single cartridge with performance competitive to standard Q-band systems.",
+        "motivation": "Superconducting resonators offer intrinsic per-spin sensitivity advantages over conventional EPR cavities, but their small mode volumes limit detection of biophysically relevant samples at physiologically relevant concentrations ($<10$ μM) in large sample volumes needed for structural biology applications.",
+        "method": "A novel patterned 16-microstrip YBCO resonator (operating at $9.447$ GHz with $Q \\approx 80$ and bandwidth $\\sim125$ MHz) was designed to achieve superlinear scaling of sample volume with number of strips, yielding 2.4 μL homogeneous volume with $\\bar{g} = 0.12$ Hz. An FPGA-based spectrometer with 1 ns pulse resolution, 500 MHz digitizer bandwidth, and digital IF generation enables stable acquisition and implementation of advanced pulse sequences (shaped Gaussian/adiabatic pulses, RELOAD, DEER-Stitch, CPMG echo trains) with automated calibration routines.",
+        "result": "Distance measurements of spin-labeled T4-Lysozyme and YopO proteins achieved SNR of 128 for 90 μM T4L and SNR 25 for 25 μM YopO in 12.5 hours (comparable to Q-band round-robin benchmarks), with sub-10 μM capability demonstrated at 5 μM. Automated cartridge measurements of five biradical rulers with distances 2.85–7.52 nm completed in $<12$ hours with SNR 13–104, requiring approximately 120-fold improvement in per-spin sensitivity (factor of 15 from resonator design, factor of 8 from advanced methodologies).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.24048",
+      "title": "An Analysis of Speculative Window Decoders for Quantum Error Correction",
+      "authors": [
+        "Jocelyn Li",
+        "Margaret Martonosi"
+      ],
+      "abstract": "Fault-tolerant quantum computing is essential for realizing the substantial computational speedups that quantum computing can bring, but it requires real-time error decoding with high performance. Speculative window decoding improves performance by reducing the time spent waiting for dependencies from prior decoding windows. However, speculative decoders have only been evaluated under the regime of superconducting qubits with fast gate speeds, surface codes, and matching decoders. Since different quantum technologies can have slower gate speeds, we evaluate the performance of speculative decoding under slow gate speeds. We also examine its sensitivity to speculation accuracy, decoder latency, processor count, and workload parallelism, which can vary across different quantum error correction codes, decoders, and hardware platforms. This work presents design principles for identifying when speculative decoding yields the greatest performance improvements. It also reveals the conditions under which non-speculative decoders outperform speculative decoders.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-23",
+      "score": 0.6450551270040249,
+      "similar_to": [
+        {
+          "title": "Developments in superconducting erasure qubits for hardware-efficient quantum error correction",
+          "id": "2601.02183",
+          "similarity": 0.8622846603393555
+        },
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.859126091003418
+        }
+      ],
+      "summary": {
+        "summary": "This paper evaluates speculative window decoding for quantum error correction across a range of qubit technologies and parameters, extending beyond the superconducting-qubit regime with fast gates where it was previously benchmarked. The work identifies design principles for when speculative decoding outperforms conventional decoding and characterizes regimes where non-speculative decoders are superior.",
+        "motivation": "Speculative window decoding was validated only for fast-gate superconducting qubits with surface codes and matching decoders; its performance across slower quantum platforms and diverse codes, decoders, and hardware parameters remains unexplored.",
+        "method": "The authors systematically evaluated speculative decoder performance as a function of gate speed, speculation accuracy, decoder latency, processor count, and workload parallelism, establishing conditions for when speculation yields performance gains.",
+        "result": "The analysis reveals crossover regimes where speculative decoders underperform conventional decoders, establishing quantitative design principles for decoder architecture selection across different quantum error correction implementations.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.24869",
+      "title": "Rapid Cavity-Based Mid-Circuit Measurement and Feedforward in a Neutral Atom Array",
+      "authors": [
+        "Tsai-Chen Lee",
+        "Jacquelyn Ho",
+        "Yue-Hui Lu",
+        "Tai Xiang",
+        "Nathaniel B. Vilas",
+        "Zhenjie Yan",
+        "Dan M. Stamper-Kurn"
+      ],
+      "abstract": "Measuring part of a quantum system in the midst of its evolution and acting on the result in real time is essential for numerous quantum information protocols. Neutral-atom arrays are a leading platform for quantum information processing, but their mid-circuit measurement-and-feedforward cycle times have remained slow, typically exceeding 1 ms. Here we demonstrate fast mid-circuit measurement and real-time feedforward in an array of atomic qubits coupled to a high-finesse optical cavity. Local light shifts tune individual data qubits out of resonance with the cavity, shielding their coherence, while a near-resonant probe drives a selected qubit whose emission is collected with Purcell enhancement. Mid-circuit measurements of four qubits with sub percent infidelity reduce the coherence of a fifth unmeasured data qubit by less than 2%. We implement real-time feedforward to correct measurement-induced phase shifts and to realize an adaptive circuit for optimal quantum state discrimination and conditional state preparation. Our approach reduces the measurement-and-feedforward cycle time to below 100 $μ$s and establishes optical cavities as a route to fast control of neutral-atom quantum systems.",
+      "categories": [
+        "quant-ph",
+        "physics.atom-ph"
+      ],
+      "published": "2026-06-23",
+      "score": 0.5780951986480365,
+      "similar_to": [
+        {
+          "title": "Fast Reset and Suppressing Spontaneous Emission of a Superconducting Qubit",
+          "id": "1003.0142",
+          "similarity": 0.8456181883811951
+        },
+        {
+          "title": "Enhancing Dispersive Readout of Superconducting Qubits Through Dynamic Control of the Dispersive Shift: Experiment and Theory",
+          "id": "2307.07765",
+          "similarity": 0.8378534317016602
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates fast mid-circuit measurement and real-time feedforward in a neutral-atom array by coupling qubits to a high-finesse optical cavity, reducing measurement-and-feedforward cycle times from ~1 ms to below 100 μs. The approach uses site-selective light shifts to protect unmeasured data qubits and Purcell-enhanced photon collection from measured qubits, achieving sub-percent measurement infidelity with less than 2% coherence loss on unread qubits.",
+        "motivation": "Neutral-atom arrays are a leading platform for quantum information, but their mid-circuit measurement speeds have been limited to >1 ms by the time needed for atom transport to measurement zones and free-space photodetection, slowing implementations of error correction, adaptive circuits, and measurement-based protocols by three orders of magnitude relative to coherent operations.",
+        "method": "Five $^{87}$Rb atoms in a 1D tweezer array couple to a near-concentric Fabry–Perot cavity with cooperativity $C=3.0$ (single-photon Rabi frequency $g_0/2\\pi=3.1$ MHz, cavity linewidth $\\kappa/2\\pi=0.53$ MHz, atomic linewidth $\\gamma/2\\pi=3.0$ MHz). Measured qubits are driven with a probe beam detuned $\\Delta_{pa}=2\\pi\\times 10$ MHz from the $|F=2\\rangle\\to|F'=3\\rangle$ transition and resonant with the cavity; unmeasured qubits are protected by infrared shielding beams inducing $\\Delta_s$ shifts on excited states. An FPGA implements adaptive gating to stop the probe after two photons are detected and controls real-time feedforward microwave rotations.",
+        "result": "Per-atom detection infidelities of $0.9^{+0.4}_{-0.3}$% (bright) and $0.2^{+0.4}_{-0.2}$% (dark) are achieved in 40 μs windows with 20 μs switching intervals; mid-circuit measurements of four qubits reduce coherence of a fifth data qubit by <2% (state-preserving fidelity $\\mathcal{F}=100(2)$%). Adaptive feedforward reduces measurement-induced phase-shift slope from $0.020(2)$ rad/μs to $0.002(2)$ rad/μs, raising fidelity from 96(2)% to 99(2)%. Quantum-state discrimination and coherent state preparation succeed with 81(2)% and 85(2)% probability respectively using adaptive measurements, compared to 69–73% and 72–78% for fixed-axis schemes; total cycle time is 45 μs per qubit.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9634,
+    0.689,
+    0.6451,
+    0.5781,
+    0.4524,
+    0.4019,
+    0.3123,
+    0.3081,
+    0.257,
+    0.248,
+    0.224,
+    0.195,
+    0.1894,
+    0.1873,
+    0.1587,
+    0.1519,
+    0.1215,
+    0.1185,
+    0.1097,
+    0.0976,
+    0.0941,
+    0.0935,
+    0.0791,
+    0.079,
+    0.0781,
+    0.076,
+    0.0724,
+    0.0655,
+    0.0644,
+    0.0623,
+    0.0605,
+    0.0604,
+    0.0595,
+    0.0593,
+    0.0501,
+    0.049,
+    0.0457,
+    0.0432,
+    0.0425,
+    0.0419,
+    0.0388,
+    0.0377,
+    0.0374,
+    0.035,
+    0.0348,
+    0.0345,
+    0.0342,
+    0.0334,
+    0.0322,
+    0.0321,
+    0.0305,
+    0.0304,
+    0.0293,
+    0.0284,
+    0.0255,
+    0.024,
+    0.0239,
+    0.0234,
+    0.0231,
+    0.0228,
+    0.0226,
+    0.0221,
+    0.0214,
+    0.0195,
+    0.0188,
+    0.0185,
+    0.0177,
+    0.0173,
+    0.0166,
+    0.0165,
+    0.016,
+    0.016,
+    0.0148,
+    0.0134,
+    0.0129,
+    0.0127,
+    0.0125,
+    0.0111,
+    0.011,
+    0.0108,
+    0.0106,
+    0.0087,
+    0.0083,
+    0.0072,
+    0.007,
+    0.0068,
+    0.0063,
+    0.006,
+    0.0059,
+    0.0049,
+    0.0043,
+    0.0042,
+    0.0041,
+    0.0034,
+    0.0026,
+    0.0014,
+    0.0012
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "This work theoretically investigates a readout scheme for transmon qubits based on time delay of single flux quanta (fluxons) propagating in Josephson transmission lines (JTLs) with capacitive coupling. The approach exploits the spectral gap in the JTL to exponentially suppress radiative decay and unwanted transitions while avoiding fluxon pinning, offering integration advantages over conventional dispersive readout.",
+  "motivation": "Current superconducting qubit readout relies on bulky microwave components, complicated cryogenic wiring, and large thermal loads that limit scalability of quantum computers. A readout scheme based on SFQ dynamics within low-temperature stages could mitigate these bottlenecks for large-scale quantum processors.",
+  "method": "The authors analyze capacitive coupling between a transmon qubit and a JTL using perturbation theory of sine-Gordon solitons (fluxons) in the classical regime. They derive time delays via Schrieffer–Wolff transformation for two-level and multi-level transmons, evaluate nonadiabatic transition probabilities using Fermi's golden rule, and model the JTL as a Klein–Gordon transmission line (KGTL) to compute radiative decay rates.",
+  "result": "For typical circuit parameters ($C_c = 10$ fF, $Z_J \\approx 7$ Ω, $u_0 = 0.01$), the time delay between qubit states reaches $T_d \\sim 1$ ns with exponentially suppressed nonadiabatic transition probabilities; radiative decay is suppressed as $\\gamma(\\omega_q) \\sim 87$ mHz for $\\alpha = 10^{-5}$ due to the $\\omega_p \\sim 360$ GHz spectral gap, and fluxon pinning is absent for arbitrarily slow fluxons under capacitive coupling.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

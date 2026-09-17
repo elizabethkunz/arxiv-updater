@@ -1,0 +1,8 @@
+{
+  "summary": "This work grows crystalline $\\gamma$-Al$_2$O$_3$ as a single-crystal dielectric layer sandwiched between TiN electrodes using pulsed laser deposition, achieving a measured intrinsic two-level system loss of $\\delta_{\\text{TLS}}^0 = (2.8 \\pm 0.1) \\times 10^{-5}$ via microwave resonator spectroscopy. The heteroepitaxial oxide-nitride platform with minimal interface interdiffusion and defects opens a path toward low-loss dielectrics for superconducting qubit architectures.",
+  "motivation": "Amorphous dielectrics dominate current superconducting qubit technology but suffer from high microwave loss; identifying crystalline, stoichiometric dielectrics with intrinsically low dissipation is a bottleneck for scaling fault-tolerant quantum processors.",
+  "method": "TiN/$\\gamma$-Al$_2$O$_3$/TiN trilayers were grown by pulsed laser deposition and characterized via high-resolution imaging, diffraction, and spectroscopy to confirm single-crystal quality and chemical integrity; dielectric loss was measured directly using lumped-element parallel-plate capacitor resonators.",
+  "result": "Epitaxial $\\gamma$-Al$_2$O$_3$ exhibits an intrinsic two-level system loss of $\\delta_{\\text{TLS}}^0 = (2.8 \\pm 0.1) \\times 10^{-5}$, establishing the oxide-nitride heteroepitaxial platform as suitable for compact qubit architectures including merged-element transmons and microwave kinetic inductance detectors.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

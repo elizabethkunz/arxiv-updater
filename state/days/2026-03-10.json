@@ -1,0 +1,368 @@
+{
+  "date": "2026-03-10",
+  "n_fetched": 153,
+  "papers": [
+    {
+      "id": "2603.06848",
+      "title": "Qubit Noise Sensing via Induced Photon Loss in a Superconducting Cavity",
+      "authors": [
+        "Nitzan Kahn",
+        "Dror Garti",
+        "Uri Goldblatt",
+        "Lalit M. Joshi",
+        "Fabien Lafont",
+        "Serge Rosenblum"
+      ],
+      "abstract": "Characterizing noise in superconducting qubits is essential for improving coherence and gate performance. Conventional noise-sensing methods typically use the qubit itself as the sensor, which limits both accessible bandwidth and applicability during driven operation. Here, we demonstrate a method for measuring qubit frequency noise by converting it into photon loss in a coupled high-Q superconducting cavity. We use repeated mid-circuit qubit measurements with post-selection to separate this induced loss from intrinsic cavity decay. We validate the protocol using injected noise and show that the extracted loss scales as expected with the applied noise strength. Without added noise, we place an upper bound of $5\\times10^3\\,\\mathrm{Hz}^2/\\,\\mathrm{Hz}$ on the qubit frequency-noise power spectral density at 508 MHz. The protocol opens access to a higher-frequency spectral window than standard qubit-based spectroscopy and may enable noise characterization during strong driving.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-06",
+      "score": 0.9369455442135611,
+      "similar_to": [
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.8774078488349915
+        },
+        {
+          "title": "The Flux Qubit Revisited to Enhance Coherence and Reproducibility",
+          "id": "1508.06299",
+          "similarity": 0.8706060647964478
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates a cavity-based method for measuring qubit frequency noise by detecting photon loss induced by dressed dephasing in a high-Q superconducting cavity coupled to a transmon. Repeated mid-circuit qubit measurements with post-selection separate noise-induced photon loss from intrinsic cavity decay, enabling noise spectroscopy at frequencies inaccessible to conventional qubit-based methods.",
+        "motivation": "Standard qubit-based noise spectroscopy methods are limited to frequencies below a few hundred megahertz and cannot operate during strong driving. Superconducting cavities with millisecond-scale lifetimes offer a complementary platform for precision sensing and can probe higher-frequency noise spectral windows.",
+        "method": "A single cavity photon is initialized in a niobium cavity (T$_1^c = 11.3$ ms) coupled to a transmon ($T_1^q = 71$ µs, $\nu_q/2\\pi = 3.8$ GHz, dispersive shift $\\chi/2\\pi = 31.7$ kHz) via cavity-qubit coupling $g/2\\pi = 6.4$ MHz. Qubit frequency noise at detuning $\\Delta/2\\pi = 508$ MHz drives dressed dephasing that converts cavity photons to qubit excitations; repeated mid-circuit qubit measurements every 4.95 µs with post-selection on ground-state outcomes isolate the noise-induced loss rate $\\kappa_{\\mathrm{dd}}$ from intrinsic cavity decay $\\kappa_0$ using Bayesian fitting.",
+        "result": "With injected noise, the protocol extracts $\\kappa_{\\mathrm{dd}} = (5.3 \\pm 0.1)$ ms$^{-1}$ corresponding to a frequency-noise PSD of $S_{\\delta\\omega}(\\Delta) = 295 \\times 10^3$ Hz$^2$/Hz, validated by independent Stark-shift calibration (346 $\\times 10^3$ Hz$^2$/Hz). Without added noise, an upper bound of $\\kappa_{\\mathrm{dd}} < (0.3$ s$)^{-1}$ constrains the intrinsic noise PSD to $S_{\\delta\\omega}(\\Delta) < 5 \\times 10^3$ Hz$^2$/Hz at 508 MHz.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.06830",
+      "title": "Anharmonicity and Charge-Noise Sensitivity of Fraunhofer Qubit",
+      "authors": [
+        "Longyu Ma",
+        "Tony Liu",
+        "Javad Shabani",
+        "Kasra Sardashti",
+        "Vladimir E. Manucharyan",
+        "Maxim G. Vavilov"
+      ],
+      "abstract": "We present a theory of a flux-tunable superconducting qubit, the \"Fraunhofer qubit,\" based on the Fraunhofer interference in a wide ballistic Josephson junction. As magnetic flux threads the junction, the Josephson potential is effectively averaged over a phase window proportional to flux. For perfectly transmitting junctions, as flux approaches one flux quantum h/2e, the flux averaging transforms the potential near its minimum from a quadratic to a triangular shape, resulting in significantly enhanced anharmonicity. This enhancement persists for junctions with lower transparency conducting channels. Microscopic tight-binding simulations that include inhomogeneous electrostatic potential and disorder confirm the enhancement of anharmonicity. These results establish a framework for flux control in hybrid superconducting circuits, providing an operating point where anharmonicity and charge-noise protection can be optimally balanced.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-03-06",
+      "score": 0.8577901754131749,
+      "similar_to": [
+        {
+          "title": "The Flux Qubit Revisited to Enhance Coherence and Reproducibility",
+          "id": "1508.06299",
+          "similarity": 0.8483180999755859
+        },
+        {
+          "title": "The high-coherence fluxonium qubit",
+          "id": "1810.11006",
+          "similarity": 0.8434492349624634
+        }
+      ],
+      "summary": {
+        "summary": "The Fraunhofer qubit uses Fraunhofer interference in a wide ballistic Josephson junction to achieve flux tunability while preserving charge-noise insensitivity. As magnetic flux approaches $\\Phi_0$, the junction potential transforms from quadratic to triangular, dramatically enhancing anharmonicity; tight-binding simulations confirm this enhancement persists with disorder and inhomogeneous potentials.",
+        "motivation": "Existing approaches to flux-tunable superconducting qubits face design trade-offs: SQUIDs introduce flux noise sensitivity, and gatemons suffer increased decoherence and reduced anharmonicity despite offering fast, dissipationless tunability.",
+        "method": "The authors develop an analytical theory based on Beenakker's formula for Andreev bound states in wide ballistic junctions, showing that perpendicular magnetic field effectively averages the Josephson potential over a phase window $2\\pi\\Phi/\\Phi_0$. Perturbative analysis captures behavior at small flux; triangular-well approximation describes the $\\Phi \\to \\Phi_0$ limit. Microscopic tight-binding simulations validate predictions including disorder effects.",
+        "result": "At intermediate flux $\\Phi \\lesssim \\Phi_0$, anharmonicity is substantially enhanced—reaching $\\alpha_\\mathrm{tri}(\\Phi) = \\eta E_C (\\tilde{E}_J/E_C)^{2/3}$ with $\\eta \\approx -0.6496$—while charge noise sensitivity remains exponentially suppressed as $\\exp(-8\\tilde{E}_J/E_C)$ because $\\tilde{E}_J(\\Phi) \\gg E_C$. For $E_C/h = 200$ MHz and $\\Delta/h = 50.7$ GHz, junctions with $N=20$ channels show pronounced anharmonicity peaks broadening as transparency decreases; disorder creates multiple flux sweet spots without sacrificing charge protection.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.06802",
+      "title": "Quasiparticle spectroscopy in tantalum films with different Ta/sapphire interfaces",
+      "authors": [
+        "Bicky S. Moirangthem",
+        "Kamal R. Joshi",
+        "Anthony P. Mcfadden",
+        "Jin-Su Oh",
+        "Amlan Datta",
+        "Makariy A. Tanatar",
+        "Florent Lecocq",
+        "Raymond W. Simmonds",
+        "Lin Zhou",
+        "Matthew J. Kramer",
+        "Ruslan Prozorov"
+      ],
+      "abstract": "One of the crucial aspects of current research in quantum information science is the identification and control of loss mechanisms in superconducting circuits. Although microwave measurements directly quantify device performance, additional techniques that probe quasiparticle excitations in superconducting films are needed to understand the microscopic mechanisms underlying dissipation and decoherence. Here, we present results from quasiparticle spectroscopy of Ta/sapphire films by measuring the Meissner-state magnetic susceptibility using a precision frequency-domain resonator specifically designed for thin films. We find direct evidence for additional low-energy excitations in samples with lower internal quality factors. These excitations are consistent with deep subgap states due to two-level systems, Yu-Shiba-Rusinov states near the gap edge, and perhaps other pair-breaking mechanisms. The developed non-destructive frequency-domain quasiparticle spectroscopy is a valuable addition to the quantum materials toolbox.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-03-06",
+      "score": 0.803428565857552,
+      "similar_to": [
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.8412520885467529
+        },
+        {
+          "title": "Assessing the Sensitivity of Niobium- and Tantalum-Based Superconducting Qubits to Infrared Radiation",
+          "id": "2602.05806",
+          "similarity": 0.8396316766738892
+        }
+      ],
+      "summary": {
+        "summary": "Tunnel-diode resonator measurements of magnetic susceptibility reveal that Ta films with lower microwave quality factors ($Q_i$) exhibit non-activated, non-exponential low-temperature behavior indicating subgap spectral weight, while Ta deposited on a 5 nm Nb interlayer shows clean activated response consistent with a fully gapped spectrum. The superconducting-state quasiparticle spectrum correlates with device performance, with the Nb interlayer dramatically improving both the gap structure and interface quality.",
+        "motivation": "Understanding microscopic dissipation mechanisms in Ta-based superconducting qubits requires characterization methods beyond microwave measurements; Ta film performance is known to be sensitive to Ta/substrate interfaces, but the underlying quasiparticle spectrum has not been directly measured.",
+        "method": "Magnetic susceptibility $\\chi(T)$ was measured in the Meissner state using a precision frequency-domain tunnel-diode resonator at $\\sim 10$ MHz across three sample types: 100 nm Ta on c-plane sapphire (type A), 95 nm Ta on 5 nm Nb/sapphire (type B), and 100 nm Ta on Ar-plasma-treated sapphire (type C); low-temperature behavior was analyzed via power-law fits to extract exponent $n$ and inverse susceptibility changes.",
+        "result": "Type-B samples show exponentially activated low-$T$ response with power-law exponent $n > 6$ and $\\Delta\\chi$ two orders of magnitude smaller than lower-$Q_i$ types, while type-A and type-C samples display non-exponential temperature dependence with bumps and downturns, indicating the presence of Yu-Shiba-Rusinov states or two-level system-induced subgap states that correlate with reduced quality factors.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.06817",
+      "title": "Heterogeneous quantum error-correcting codes",
+      "authors": [
+        "Omid Khosravani",
+        "Guillermo Escobar-Arrieta",
+        "Kenneth R. Brown",
+        "Mauricio Gutierrez"
+      ],
+      "abstract": "We introduce heterogeneous quantum error-correcting codes composed of qubit types with distinct error channels and study their performance in the code-capacity regime using maximum-likelihood tensor network decoding. In the regime where both qubit types share the same noise bias but differ in physical error rate, placing noisier qubits in the bulk -- where each error triggers more syndrome bits -- and cleaner qubits on the boundary yields thresholds exceeding 0.4 (compared to ~0.2 for the reverse placement) and improvements exceeding three orders of magnitude in logical error rate at high bias, with the advantage growing exponentially with code distance. In the regime where both types share the same error rate but differ in bias, the optimal strategy reverses: placing high-bias (more predictable) qubits on the boundary increases the threshold from 0.292(5) to 0.360(9) at a bias ratio of 100, and from 0.29(1) to 0.398(4) at a bias ratio of 1000. We also observe a striking bias-inversion property: the logical error channel becomes strongly XX X- and YY Y-biased despite the physical noise being ZZ Z-biased. We propose a stabilizer-ratio hypothesis that provides a unified information-theoretic explanation for both placement rules and predicts even larger advantages for code families such as color codes.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-06",
+      "score": 0.5749447804289045,
+      "similar_to": [
+        {
+          "title": "Quantum error correction at ultra-low overhead",
+          "id": "2608.02773",
+          "similarity": 0.8570849895477295
+        },
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.8490430116653442
+        }
+      ],
+      "summary": {
+        "summary": "This work introduces heterogeneous quantum error-correcting codes where distinct qubit types with different error rates or noise biases are strategically placed within Clifford-deformed surface codes and studies their performance using tensor network decoding. For qubits with identical bias but different error rates, placing noisier qubits in the bulk (high syndrome multiplicity) yields thresholds exceeding 0.4 with exponential improvements in logical error rate; for qubits with identical error rates but different biases, the optimal strategy reverses, placing high-bias qubits on the boundary and increasing thresholds from 0.29 to 0.40 at $\\eta_{\\mathrm{high}} = 1000$.",
+        "motivation": "Heterogeneous qubit systems are increasingly common across quantum platforms—trapped ions use different atomic species, transmons have fabrication-induced $T_1$ and $T_2$ variation, and hybrid processors mix weakly biased and strongly biased ($\\eta > 100$) qubits—yet prior work has only considered homogeneous error models.",
+        "method": "Heterogeneous codes composed of two qubit types were studied in two regimes isolated via code-capacity analysis: (1) same bias $\\eta \\in \\{10, 100\\}$ but error rates differing by factor 10, and (2) same error rate but biases $\\eta_{\\mathrm{low}} = 10$ and $\\eta_{\\mathrm{high}} \\in \\{100, 1000\\}$. Maximum-likelihood tensor network decoding with bond dimension $\\chi = 16$ and critical exponent fitting on distances $d = 5, 7, 9$ determined thresholds; a stabilizer-ratio hypothesis (ratio of bulk to boundary stabilizer touches) was proposed to unify both placement rules.",
+        "result": "Regime A (same bias, different rates): placing noisy qubits in bulk achieves $p_{\\mathrm{th}} > 0.4$ versus $p_{\\mathrm{th}} \\approx 0.2$ for boundary placement, with the logical error rate ratio exceeding $10^3$ at $d=9$ and $\\eta=100$. Regime B (same rate, different bias): placing high-bias qubits on boundary increases threshold from 0.292(5) to 0.360(9) at $\\eta_{\\mathrm{high}}=100$ and from 0.29(1) to 0.398(4) at $\\eta_{\\mathrm{high}}=1000$. The logical channel exhibits bias inversion despite $Z$-biased physical noise, with $\\eta_L \\approx 4 \\times 10^{-3}$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.07190",
+      "title": "Long-time storage of entangled logical states in decoherence-free subspaces",
+      "authors": [
+        "L. Zhang",
+        "Y. -L. Xu",
+        "Y. -K. Wu",
+        "C. Zhang",
+        "Z. -B. Cui",
+        "Y. -Y. Chen",
+        "W. -Q. Lian",
+        "J. -Y. Ma",
+        "B. -X. Qi",
+        "Y. -F. Pu",
+        "Z. -C. Zhou",
+        "L. He",
+        "P. -Y. Hou",
+        "L. -M. Duan"
+      ],
+      "abstract": "The maintenance of quantum entanglement lays the elementary building block of quantum information processing, requiring an integration of long coherence time, sufficient storage capacity, and high-fidelity entangling gates. Here we encode two-qubit entangled states into the decoherence-free subspaces (DFS) of four ions in a cryogenic trap. By crosstalk-free sympathetic cooling under dual-type encoding and multi-state detection which discards the collision-induced leakage error, we achieve a storage lifetime of about one hour for the entangled logical states. We further study the second-order DFS and show its advantage in suppressing the spatially nonuniform noise over the first-order DFS. Our work paves the way for applications of DFS quantum memories in quantum computing, quantum network and precision measurement.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-07",
+      "score": 0.5071881587567506,
+      "similar_to": [
+        {
+          "title": "Exponential suppression of bit-flips in a qubit encoded in an oscillator",
+          "id": "1907.11729",
+          "similarity": 0.8409627676010132
+        },
+        {
+          "title": "Demonstrating Quantum Error Correction that Extends the Lifetime of Quantum Information",
+          "id": "1602.04768",
+          "similarity": 0.8393596410751343
+        }
+      ],
+      "summary": {
+        "summary": "A cryogenic trapped-ion system storing two-qubit entangled states encoded in decoherence-free subspaces of four $^{171}$Yb$^+$ ions achieves storage lifetimes of approximately one hour with $\\tau_\\mathrm{lower}(|\\psi_L^+\\rangle) = 4.9 \\times 10^3$ s and $\\tau_\\mathrm{lower}(|\\phi_L^+\\rangle) = 3.2 \\times 10^3$ s. The protocol employs dual-type qubit encoding for crosstalk-free sympathetic cooling, individually addressed entangling gates with 99.1% average Bell-state fidelity, and multi-state detection to separate leakage errors.",
+        "motivation": "Extending quantum memory capacity beyond single qubits while maintaining both long coherence times and the ability to store genuine entanglement is essential for quantum repeaters and memory-enhanced entanglement generation. Cryogenic traps suppress collision-induced ion hopping, and second-order decoherence-free subspaces offer immunity to spatially nonuniform magnetic-field noise.",
+        "method": "Two logical qubits are encoded in first- and second-order decoherence-free subspaces of a six-ion $^{171}$Yb$^+$ chain (four memory ions plus two sympathetic-cooling ions at 6 K). GHZ-like entangled states like $|\\psi_L^+\\rangle = \\frac{1}{\\sqrt{2}}(|1001\\rangle + |0110\\rangle)$ are prepared using global microwave gates and individually addressed 411 nm light-shift entangling gates, transferred to magnetically insensitive $F_{7/2}$ levels, stored with a $3.6$ GHz spin echo, and analyzed via multi-observable fidelity decomposition that discriminates leakage events.",
+        "result": "Preparation fidelity for $|\\psi_L^+\\rangle$ reaches 95.3(5)%, and after discarding leakage, storage fidelity decays exponentially with lifetimes $\\gtrsim 3.2 \\times 10^3$ s. The second-order DFS state $|\\psi_L^+\\rangle$ suppresses spatially nonuniform noise more effectively than the first-order state $|\\phi_L^+\\rangle$, exhibiting an oscillation period of 9.9(1) s versus 269.1(1) ms without observable amplitude decay over 12 s under enlarged magnetic-field sensitivity.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9369,
+    0.8578,
+    0.8034,
+    0.5749,
+    0.5072,
+    0.4623,
+    0.4593,
+    0.436,
+    0.396,
+    0.3774,
+    0.3598,
+    0.3526,
+    0.3393,
+    0.2989,
+    0.2779,
+    0.2518,
+    0.2216,
+    0.2172,
+    0.2022,
+    0.1945,
+    0.1859,
+    0.1819,
+    0.1774,
+    0.1766,
+    0.1659,
+    0.1649,
+    0.1637,
+    0.1624,
+    0.1595,
+    0.1568,
+    0.1557,
+    0.1533,
+    0.1414,
+    0.1287,
+    0.1273,
+    0.1253,
+    0.1252,
+    0.1222,
+    0.1178,
+    0.1098,
+    0.1058,
+    0.1047,
+    0.1023,
+    0.1004,
+    0.0953,
+    0.0939,
+    0.0923,
+    0.0923,
+    0.0918,
+    0.0868,
+    0.0804,
+    0.0774,
+    0.0763,
+    0.0709,
+    0.0702,
+    0.0702,
+    0.0642,
+    0.0634,
+    0.0585,
+    0.0548,
+    0.0532,
+    0.0522,
+    0.0504,
+    0.0468,
+    0.0456,
+    0.0444,
+    0.0438,
+    0.043,
+    0.0401,
+    0.0395,
+    0.0388,
+    0.0385,
+    0.0379,
+    0.0375,
+    0.0372,
+    0.0352,
+    0.0336,
+    0.0314,
+    0.0301,
+    0.0295,
+    0.0285,
+    0.0275,
+    0.0265,
+    0.0261,
+    0.0259,
+    0.0245,
+    0.0236,
+    0.0227,
+    0.0227,
+    0.0221,
+    0.0209,
+    0.0197,
+    0.0194,
+    0.0193,
+    0.0192,
+    0.0191,
+    0.0188,
+    0.0185,
+    0.0185,
+    0.0184,
+    0.0183,
+    0.0183,
+    0.0175,
+    0.0169,
+    0.0164,
+    0.0159,
+    0.0155,
+    0.0154,
+    0.0151,
+    0.0143,
+    0.0131,
+    0.0129,
+    0.0128,
+    0.0123,
+    0.0117,
+    0.0116,
+    0.0112,
+    0.0111,
+    0.011,
+    0.01,
+    0.0099,
+    0.0099,
+    0.0091,
+    0.0091,
+    0.0085,
+    0.0078,
+    0.0075,
+    0.0071,
+    0.0068,
+    0.0065,
+    0.0064,
+    0.0063,
+    0.0062,
+    0.0061,
+    0.0059,
+    0.0058,
+    0.0058,
+    0.0057,
+    0.0053,
+    0.0053,
+    0.0049,
+    0.0048,
+    0.0044,
+    0.0043,
+    0.0041,
+    0.0037,
+    0.0034,
+    0.0029,
+    0.0025,
+    0.0023,
+    0.0015,
+    0.0014,
+    0.0008
+  ]
+}

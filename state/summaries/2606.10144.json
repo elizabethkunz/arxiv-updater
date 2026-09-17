@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates synthesis of highly crystalline ZrO$_2$ capping layers on niobium with atomically-sharp superconductor-dielectric interfaces, addressing two-level-system defect density at Nb/oxide interfaces critical for superconducting quantum device coherence. Multislice electron ptychography reveals monoclinic ZrO$_2$ grains (10–15 nm lateral size, 7–8 nm thickness) with 2–3 disordered atomic layers (≈2–5 Å) at the Nb interface and no detectable suboxide layer, in contrast to the amorphous Nb$_2$O$_5$ native oxide.",
+  "motivation": "Two-level systems in amorphous native oxides cause dissipation in superconducting resonators at milliKelvin, low-field conditions; crystalline ZrO$_2$ should suppress defects via lower defect density and better passivation of the Nb substrate.",
+  "method": "Samples with 4 nm metallic Zr deposited on electropolished Nb were vacuum-annealed at 120°C, 800°C, or 1100°C, then characterized by XPS, SEM, STEM-EELS, and multislice electron ptychography (4D-STEM).",
+  "result": "The 800°C-baked sample exhibits monoclinic ZrO$_2$ with minimal suboxide at the interface (suboxide-to-Nb-metal XPS signal ratio of 0.39 after 7 months air exposure), negligible evaporation at 800°C, no carbide formation, and a ZrO$_2$ conduction band significantly above the Fermi level, indicating lower defect density than native Nb$_2$O$_5$ (which shows conduction-band edge near or below Fermi level).",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

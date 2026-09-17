@@ -1,0 +1,103 @@
+{
+  "date": "2026-04-06",
+  "n_fetched": 48,
+  "papers": [
+    {
+      "id": "2604.02809",
+      "title": "Characterizing charge-parity detection based on an offset-charge-tunable transmon qubit via randomized benchmarking",
+      "authors": [
+        "Yao-Yao Jiang",
+        "Tang Su",
+        "Yuxiang Liu",
+        "Yi-Ming Guo",
+        "Yidong Song",
+        "Yu-Long Li",
+        "Yanjie Zeng",
+        "Guang-Ming Xue",
+        "Wei-Jie Sun",
+        "Mei-Ling Li",
+        "Yi-Rong Jin",
+        "Junhua Wang",
+        "Xuegang Li",
+        "Hai-Feng Yu"
+      ],
+      "abstract": "Superconducting qubits are compelling platforms for charge-parity detection and, due to their theoretical sensitivity on the meV energy scale, hold promise for rare event searches. In this work, we realize high-fidelity mapping of charge-parity states onto qubit states using an offset-charge-tunable transmon qubit and efficiently characterize the fidelity of the charge-parity detection via randomized benchmarking. Specifically, a gate control line is applied to control offset charge, allowing us to achieve the single-qubit gate fidelity up to 99.96%. We combine a net-zero-based pulse on the gate line with a spin-echo-based sequence to realize charge-parity mapping, achieving a fidelity of 99.37%. Then, we demonstrate continuous monitoring of the charge-parity state with over 93.4% fidelity at a 4-μs sampling interval. Finally, an error analysis of charge-parity detection is performed, and it is found that qubit readout is currently the largest source of error. We believe this work lays the foundation for future exploration of ultra-low energy particles.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-03",
+      "score": 0.8834064690245915,
+      "similar_to": [
+        {
+          "title": "Direct Dispersive Monitoring of Charge Parity in Offset-Charge-Sensitive Transmons",
+          "id": "1903.00113",
+          "similarity": 0.9118457436561584
+        },
+        {
+          "title": "Distinguishing parity-switching mechanisms in a superconducting qubit",
+          "id": "2204.07458",
+          "similarity": 0.896676778793335
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates high-fidelity charge-parity detection using an offset-charge-tunable transmon qubit with a gate control line, achieving single-qubit gate fidelity of 99.96% and charge-parity mapping fidelity of 99.37% via a spin-echo-based sequence (EchoCPM) with net-zero gate pulses. Continuous monitoring of charge-parity state reaches 93.4% fidelity at 4 μs sampling, with qubit readout identified as the primary error source limiting detection performance.",
+        "motivation": "Superconducting qubits exhibit meV-scale sensitivity to quasiparticle generation from cosmic rays and other low-energy events, making them promising for rare-event detection schemes like quantum parity detectors. Prior Ramsey-based charge-parity detection achieved only 91–92% fidelity; a more robust protocol with quantitative benchmarking via randomized benchmarking was lacking.",
+        "method": "An asymmetric Josephson junction transmon qubit on a flip-chip architecture with separate microwave/flux and gate control lines was used. Charge-parity mapping combined a spin-echo sequence ($X/2$-$X$-$Y/2$) with opposite-sign net-zero gate pulses (amplitude 0.67 V, duration 217 ns) to accumulate $\\pi$ phase difference between even and odd parity states. Gate-pulse duration was calibrated using interleaved randomized benchmarking. Continuous detection fidelity was characterized via power spectral density fitting of random-telegraph-signal quasiparticle tunneling data.",
+        "result": "Interleaved RB yielded pseudo-$Z$ gate fidelity 98.91% and combined charge-parity mapping fidelity $99.45\\% \\times 99.95\\% \\times 99.97\\% = 99.37\\%$. Continuous detection over 30 s with 4 μs sampling gave $F_{\\mathrm{eff}} = 93.4\\%$, compared to calculated $F_{\\mathrm{eff}} = 94.0\\%$ with measured $F_g = 99.5\\%$, $F_e = 95.1\\%$; measured quasiparticle-tunneling time $\\tau = 30.2$ ms. Readout fidelity imbalance limits overall detection fidelity.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8834,
+    0.3872,
+    0.2567,
+    0.2149,
+    0.1836,
+    0.1477,
+    0.1272,
+    0.112,
+    0.1069,
+    0.102,
+    0.0801,
+    0.074,
+    0.0677,
+    0.0648,
+    0.0616,
+    0.058,
+    0.0579,
+    0.0478,
+    0.0464,
+    0.0458,
+    0.0366,
+    0.0363,
+    0.0356,
+    0.03,
+    0.0287,
+    0.0274,
+    0.0247,
+    0.024,
+    0.0201,
+    0.0194,
+    0.0183,
+    0.0181,
+    0.0164,
+    0.0163,
+    0.0148,
+    0.0123,
+    0.0118,
+    0.0115,
+    0.0115,
+    0.0114,
+    0.0109,
+    0.0104,
+    0.0104,
+    0.0101,
+    0.0076,
+    0.0057,
+    0.0042,
+    0.0029
+  ]
+}

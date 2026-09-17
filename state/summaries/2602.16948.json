@@ -1,0 +1,8 @@
+{
+  "summary": "This paper constructs fault-tolerant interfaces for quantum low-density parity-check codes that map encoded logical qubits to bare physical qubits with constant space overhead, improving on previous constructions requiring polylogarithmic overhead. The key innovation is a sequential procedure that gradually decreases the encoding level while increasing the number of code blocks in parallel, enabling constant-overhead fault-tolerant state preparation.",
+  "motivation": "Fault-tolerant quantum computation requires efficient schemes for state preparation, especially for resource state preparation in gate teleportation. Previous approaches using concatenated codes incur polylogarithmic overhead; this work aims to achieve constant overhead by leveraging recent advances in QLDPC codes.",
+  "method": "The construction combines partial decoding interfaces based on quantum teleportation with a novel sequentialization strategy that applies interfaces to a fraction of code blocks in parallel while performing error correction on remaining blocks, gradually transitioning from higher to lower encoding levels with decreasing circuit depth at each level.",
+  "result": "For QLDPC code families satisfying standard properties (constant rate $m_r \\approx \\alpha n_r$, linear minimum distance $d_\\mathrm{min}(r) \\geq \\beta n_r$), the paper proves fault-tolerant state preparation with $O(x)$ qubit overhead for $x$-qubit outputs, with output noise bounded as local stochastic with parameter $(\\kappa_1 \\delta)^{\\kappa_2}$ under circuit-level noise with strength $\\delta < \\delta_\\mathrm{th}$.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

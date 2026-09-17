@@ -1,0 +1,8 @@
+{
+  "summary": "This work numerically investigates spectator-qubit crosstalk in scaled-up fluxonium-transmon-fluxonium (FTF) architectures, finding that trivial scaling limits fidelity below 90%. The authors demonstrate that reducing coupling strength to $g_{FT}/2\\pi = 200$ MHz and dynamically tuning inactive transmons to an off position suppresses spectator errors below $10^{-4}$ in 1D and 2D systems with up to six spectator qubits.",
+  "motivation": "Recent experiments with the FTF architecture have demonstrated fast, high-fidelity two-qubit gates with ZZ suppression, but the scalability of this approach to larger qubit arrays like surface codes has not been thoroughly analyzed.",
+  "method": "Using density matrix renormalization group for excited states (DMRG-X) tensor network simulations on systems up to ~$11 \\times 10^6$ Hilbert space dimension (equivalent to 23 qubits), the authors compute eigenspectra and drive matrix elements for 1D chains, 2D grids, and $\\llbracket 4,2,2 \\rrbracket$ error-correcting code layouts, then time-evolve the center FTF pair under realistic drive pulses incorporating DRAG and compensating drives.",
+  "result": "With optimized parameters ($g_{FT}/2\\pi = 200$ MHz coupling, off-transmon detuning $\\sim 300$ MHz above fluxonium $|1\\rangle\\leftrightarrow|2\\rangle$), gate fidelities exceed $1 - 10^{-4}$ for 50–100 ns gates across all spectator configurations in both 1D and 2D layouts; transmon-to-transmon coupling up to $g_{TT}/2\\pi = 40$ MHz and microwave crosstalk up to $\\gamma \\sim 0.3$ remain tolerable at 70–100 ns gate times.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

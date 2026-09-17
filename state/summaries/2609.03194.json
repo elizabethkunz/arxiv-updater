@@ -1,0 +1,8 @@
+{
+  "summary": "The $[[20,2,6]]$ $C_4$-Helix code has been experimentally validated on Quantinuum Helios as a complete fault-tolerant architecture on a 98-qubit trapped-ion processor, with logical operations outperforming physical baselines without postselection. Repeated QEC achieves $4.6^{+6.2}_{-2.6}\\times10^{-5}$ error per logical qubit per cycle, two-qubit logical Clifford gates achieve $2.8^{+1.0}_{-1.6}\\times10^{-4}$ error, and a heterogeneous three-logical-qubit GHZ state prepared via chain-map to a distance-5 surface code reaches $99.925^{+0.068}_{-0.245}\\%$ fidelity.",
+  "motivation": "Moving beyond quantum memory to full fault-tolerant computation requires demonstrating not just low logical error rates but an integrated architecture that handles efficient encoding, low-overhead logical gates, and access to non-Clifford resources for universal computation.",
+  "method": "The authors implemented the $[[20,2,6]]$ $C_4$-Helix code on Quantinuum Helios and benchmarked its key components: repeated syndrome extraction, complete Clifford group on two logical qubits under active error correction, and a fault-tolerant interface to a surface code for multi-logical-qubit operations.",
+  "result": "All encoded implementations outperform physical baselines; circuit simulations predict reaching $10^{-6}$-$10^{-8}$ logical error rates with modest improvements in physical fidelity, establishing $C_4$-Helix as hardware-validated for early fault-tolerant computation rather than as isolated quantum memory.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

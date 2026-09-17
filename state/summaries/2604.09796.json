@@ -1,0 +1,8 @@
+{
+  "summary": "A resist-free Josephson junction fabrication method based on etched silicon trenches enables Al-AlO$_x$-Al junctions without polymer contamination, producing qubits with median $T_1 = 184$ µs, median $Q_1 = 3.26$ million, and exceptionally stable coherence fluctuations over 36 hours. STEM/EELS confirms minimal carbon and oxygen contamination at the metal-substrate interface, with the process offering CMOS compatibility and broad material flexibility for future qubit platforms.",
+  "motivation": "Conventional resist-based Josephson junction fabrication has remained largely unchanged for 25 years despite improvements to superconductor base layers; the polymer mask causes chemical contamination and limits surface preparation, junction materials, and process scalability.",
+  "method": "Silicon substrates are etched with trenches using CMOS-compatible dry-etch processes; Al electrodes are deposited at $\\ \\pm 49°$ angles with intermediate oxidation ($1$ Torr, $5$ min, $100\\%$ O$_2$) to form overlapping junctions within the trenched geometry, followed by photolithography and wet-etch patterning to define qubits.",
+  "result": "Five qubits with $20$–$150$ µm capacitor gaps achieve relaxation times of $14$–$185$ µs and quality factors up to $3.26$ million; $T_1$ fluctuations over $36$ hours follow Gaussian distributions with robust coefficient of variation $\\leq 0.19$ (significantly lower than comparable resist-based devices), and Allan deviation analysis shows $\\sigma_{T_1} \\approx 7.5$ µs, compared to $\\approx 13$ µs for similar-performance resist-based junctions.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

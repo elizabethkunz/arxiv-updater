@@ -1,0 +1,8 @@
+{
+  "summary": "A sequential Monte Carlo estimation framework enables real-time feedback stabilization of both single-qubit frequencies and two-qubit exchange couplings in a four-qubit semiconductor quantum dot device using minimal measurement data. Single-shot, one-bit frequency estimation achieves approximately twofold coherence time improvement over conventional Bayesian strategies, and two-bit sequential estimation suppresses both quasi-static drift and exchange-interaction noise.",
+  "motivation": "Existing frequentist and Bayesian parameter inference methods require many measurements to achieve the accuracy needed for feedback control, limiting practical stabilization of semiconductor qubits to single-qubit frequencies while two-qubit parameter feedback remains unexplored.",
+  "method": "Sequential Monte Carlo estimation was applied to a four-qubit quantum dot device, using single-shot measurements (one bit per qubit for frequency estimation, two bits for two-qubit coupling estimation) to perform rapid, real-time Hamiltonian parameter estimation and feedback control.",
+  "result": "Single-qubit frequency stabilization via one-bit SMC estimation yielded approximately twofold coherence time improvement compared to conventional Bayesian methods, while two-qubit exchange coupling stabilization was demonstrated with simultaneous suppression of quasi-static drift and noise.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,229 @@
+{
+  "date": "2026-01-26",
+  "n_fetched": 79,
+  "papers": [
+    {
+      "id": "2601.16261",
+      "title": "A First Demonstration of the SQUAT Detector Architecture: Direct Measurement of Resonator-Free Charge-Sensitive Transmons",
+      "authors": [
+        "H. Magoon",
+        "T. Aralis",
+        "T. Dyson",
+        "J. Anczarski",
+        "D. Baxter",
+        "G. Bratrud",
+        "R. Carpenter",
+        "S. Condon",
+        "A. Droster",
+        "E. Figueroa-Feliciano",
+        "C. W. Fink",
+        "S. Harvey",
+        "A. Simchony",
+        "Z. J. Smith",
+        "S. Stevens",
+        "N. Tabassum",
+        "B. A. Young",
+        "C. P. Salemi",
+        "K. Stifter",
+        "D. I. Schuster",
+        "N. A. Kurinsky"
+      ],
+      "abstract": "The Superconducting Quasiparticle-Amplifying Transmon (SQUAT) is a new sensor architecture for THz (meV) detection based on a weakly charge-sensitive transmon directly coupled to a transmission line. In such devices, energy depositions break Cooper pairs in the qubit capacitor islands, generating quasiparticles. Quasiparticles that tunnel across the Josephson junction change the transmon qubit parity, generating a measurable signal. In this paper, we present the design of first-generation SQUATs and demonstrate an architecture validation. We summarize initial characterization measurements made with prototype devices, comment on background sources that influence the observed parity-switching rate, and present experimental results showing simultaneous detection of charge and quasiparticle signals using aluminum-based SQUATs.",
+      "categories": [
+        "physics.ins-det",
+        "quant-ph"
+      ],
+      "published": "2026-01-22",
+      "score": 0.963219159414,
+      "similar_to": [
+        {
+          "title": "A First Demonstration of the SQUAT Detector Architecture: Direct Measurement of Resonator-Free Charge-Sensitive Transmons",
+          "id": "2601.16261",
+          "similarity": 0.9999998807907104
+        },
+        {
+          "title": "Direct Dispersive Monitoring of Charge Parity in Offset-Charge-Sensitive Transmons",
+          "id": "1903.00113",
+          "similarity": 0.8687698841094971
+        }
+      ],
+      "summary": {
+        "summary": "The Superconducting Quasiparticle-Amplifying Transmon (SQUAT) is a new sensor architecture for meV/THz detection based on a weakly charge-sensitive transmon ($E_J/E_C \\sim 25$) directly coupled to a transmission line without an intermediate readout resonator. This first experimental demonstration validates the SQUAT design using aluminum-based prototypes on sapphire, achieving simultaneous readout of charge and parity signals with noise temperatures around 10.37 K and coherence times $T_1 \\sim 50$–100 ns.",
+        "motivation": "Superconducting qubits are inherently sensitive to quasiparticle poisoning from sub-meV energy depositions, but this sensitivity can be repurposed for direct detection of rare events such as dark-matter interactions and THz photons by monitoring parity-switching rates induced by quasiparticle tunneling across the Josephson junction.",
+        "method": "The authors fabricated three-SQUAT chips using Al/AlOx/Al Dolan junctions on niobium-ground-plane sapphire substrates, characterized resonance properties via VNA transmission measurements ($f_0 \\sim 7$–8.5 GHz, $2\\chi_0 \\sim 2$–10 MHz, $Q_r \\sim 1000$), extracted $T_1$ and $T_2^*$ via pulsed sequences, and measured background parity-switching rates as a function of temperature, readout power, and environmental conditions.",
+        "result": "Devices exhibited background parity-switching rates as low as 10–40 Hz (pulse-tube off) dominated by temperature-independent processes at millikelvin temperatures; gap asymmetry $\\delta\\Delta \\approx 2$ GHz was extracted from thermal activation fits; readout fidelity reached 50% at 6 kHz bandwidth; simultaneous charge-parity detection was demonstrated when charge-dependent dispersion varied from $\\chi = 0$ to $\\chi_0$, with infrared shielding reducing switching rates by multiple orders of magnitude.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.16369",
+      "title": "Reducing TLS loss in tantalum CPW resonators using titanium sacrificial layers",
+      "authors": [
+        "Zachary Degnan",
+        "Chun-Ching Chiu",
+        "Yi-Hsun Chen",
+        "David Sommers",
+        "Leonid Abdurakhimov",
+        "Lihuang Zhu",
+        "Arkady Fedorov",
+        "Peter Jacobson"
+      ],
+      "abstract": "We demonstrate a substantial reduction in two-level system loss in tantalum coplanar waveguide resonators fabricated on high-resistivity silicon substrates through the use of an ultrathin titanium sacrificial layer. A 0.2nm titanium film, deposited atop pre-sputtered α-tantalum, acts as a solid-state oxygen getter that chemically modifies the native Ta oxide at the metal-air interface. After device fabrication, the titanium layer is removed using buffered oxide etchant, leaving behind a chemically reduced Ta oxide surface. Subsequent high-vacuum annealing further suppresses two-level system loss. Resonators treated with this process exhibit internal quality factors Qi exceeding an average of 1.5 million in the single-photon regime across ten devices, over three times higher than otherwise identical devices lacking the titanium layer. These results highlight the critical role of interfacial oxide chemistry in superconducting loss and reinforce atomic-scale surface engineering as an effective approach to improving coherence in tantalum-based quantum circuits. The method is compatible with existing fabrication workflows applicable to tantalum films, offering a practical route to further extending T1 lifetimes in superconducting qubits.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mtrl-sci",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-01-22",
+      "score": 0.8443124501922628,
+      "similar_to": [
+        {
+          "title": "Reducing TLS loss in tantalum CPW resonators using titanium sacrificial layers",
+          "id": "2601.16369",
+          "similarity": 0.9996890425682068
+        },
+        {
+          "title": "Beta Tantalum Transmon Qubits with Quality Factors Approaching 10 Million",
+          "id": "2603.13174",
+          "similarity": 0.8758525848388672
+        }
+      ],
+      "summary": {
+        "summary": "A 2 Å titanium sacrificial layer deposited on sputtered α-tantalum acts as an oxygen getter to chemically reduce the native Ta oxide at the metal-air interface; after removal by buffered oxide etchant and high-vacuum annealing at 700°C for 10 hours, tantalum coplanar waveguide resonators on high-resistivity silicon exhibit internal quality factors $Q_i$ exceeding 1.5 million at single-photon occupancy, representing a 2–4× improvement over otherwise identical devices without the titanium layer. The method directly addresses two-level system losses at the metal-air interface, achieving extracted TLS loss tangents $F\tan\rlap{/}{\rule{2pt}{0.4pt}}\text{ }\raisebox{-0.4ex}{δ}_{\text{TLS}}$ as low as $0.58 \times 10^{-6}$ and $Q_i$ values exceeding 2 million at low power and 13 million at high photon occupancy on optimized samples.",
+        "motivation": "Two-level system losses at the metal-air interface of tantalum-based superconducting circuits remain a limiting factor for qubit coherence despite tantalum's superior native oxide compared to niobium; conventional capping layers leave additional interfaces that can introduce losses rather than suppress them.",
+        "method": "An ultrathin titanium film (2 Å) is deposited in situ on α-tantalum under high vacuum, serving as a kinetic barrier and oxygen scavenger during subsequent CF₄-based reactive ion etching and lithography steps; the titanium layer is then selectively removed via buffered oxide etch (20 min) followed by 700°C annealing for 10 hours in high vacuum, leaving a chemically modified, reduced tantalum oxide surface.",
+        "result": "Ten Ti-treated devices achieved mean single-photon $Q_i = (1.27 \text{ to } 1.81) \times 10^6$ with maximum values exceeding $2 \times 10^6$ at low power and up to $13.36 \times 10^6$ at high photon numbers ($\\langle n \\rangle \\geq 10^6$), compared to bare-tantalum reference devices at $Q_i \\approx 0.4$–$0.6 \times 10^6$; the extracted filling-factor-corrected TLS loss tangent dropped from $F\\tan\\delta_\\mathrm{TLS} = 2.86 \\times 10^{-6}$ (reference) to $0.58 \\times 10^{-6}$ (optimized Ti-treated sample).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.16416",
+      "title": "Low-Loss, High-Coherence Airbridge Interconnects Fabricated by Single-Step Lithography",
+      "authors": [
+        "Jibang Fu",
+        "Bo Ren",
+        "Jiandong Ouyang",
+        "Cong Li",
+        "Kechengqi Zhu",
+        "Yonggang Che",
+        "Xiang Fu",
+        "Shichuan Xue",
+        "Zhaohua Yang",
+        "Mingtang Deng",
+        "Junjie Wu"
+      ],
+      "abstract": "Airbridges are essential for creating high-performance, low-parasitic interconnects in integrated circuits and quantum devices. Conventional multi-step fabrication methods hinder miniaturization and introduce process-related defects. We report a simplified process for fabricating nanoscale airbridges using only a single electron-beam lithography step. By optimizing a multilayer resist stack with a triple-exposure-dose scheme and a thermal reflow step, we achieve smooth, suspended metallic bridges with sub-200-nm features that exhibit robust mechanical stability. Fabricated within a gradiometric SQUID design for superconducting transmon qubits, these airbridges introduce no measurable additional loss in the relaxation time $T_1$, while enabling a 2.5-fold enhancement of the dephasing time $T_2^*$. This efficient method offers a practical route toward integrating high-performance three-dimensional interconnects in advanced quantum and nano-electronic devices.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-23",
+      "score": 0.606736940433304,
+      "similar_to": [
+        {
+          "title": "2D transmons with lifetimes and coherence times exceeding 1 millisecond",
+          "id": "2503.14798",
+          "similarity": 0.835505485534668
+        },
+        {
+          "title": "Surpassing millisecond coherence times in on-chip superconducting quantum memories by optimizing materials, processes, and circuit design",
+          "id": "2308.15539",
+          "similarity": 0.8227286338806152
+        }
+      ],
+      "summary": {
+        "summary": "A single-step electron-beam lithography process using a triple-layer PMMA/MMA resist stack with triple-exposure-dose and thermal reflow produces smooth, suspended aluminum airbridges with sub-200-nm features and robust mechanical stability. Implemented in gradiometric SQUID transmon qubits, these airbridges achieve $T_1 \\approx 38.65$ μs (no measurable additional loss) and $T_2^* \\approx 36$ μs ($2.5\\times$ enhancement over standard X-mon), compared to $T_2^* \\approx 2$ μs for dielectric crossover controls.",
+        "motivation": "Conventional multi-step airbridge fabrication introduces process defects and organic residues that degrade quantum coherence, hindering miniaturization and integration density in superconducting quantum devices.",
+        "method": "A 300-nm PMMA / 400-nm MMA / 400-nm PMMA:MMA blend resist stack is patterned by EBL with three calibrated doses (>1000 μC/cm², 300–500 μC/cm², <150 μC/cm²), developed in MIBK:IPA, reflowed at 125 °C for 45 s, then metallized with 150-nm Al and lifted off.",
+        "result": "All 60 test samples survived low-power ultrasonic treatment; 8-mon qubits with SL-airbridges achieved $\\bar{T}_1 = 33.70$ μs and $\\bar{T}_2^* = 32.40$ μs (qubit Q1), with maximum $T_1 = 38.65$ μs and $T_2^* = 35.98$ μs, versus dielectric crossover controls showing $T_1 \\approx 1.96$ μs and $T_2^* \\approx 2.34$ μs.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9632,
+    0.8443,
+    0.6067,
+    0.3804,
+    0.3318,
+    0.3159,
+    0.2817,
+    0.281,
+    0.2113,
+    0.1901,
+    0.182,
+    0.1707,
+    0.1507,
+    0.1392,
+    0.1321,
+    0.1182,
+    0.1088,
+    0.1081,
+    0.1079,
+    0.1017,
+    0.0999,
+    0.0999,
+    0.0948,
+    0.0894,
+    0.087,
+    0.0817,
+    0.0671,
+    0.0608,
+    0.0608,
+    0.06,
+    0.0599,
+    0.0583,
+    0.0561,
+    0.0553,
+    0.0537,
+    0.0517,
+    0.0513,
+    0.0464,
+    0.0456,
+    0.041,
+    0.0402,
+    0.0374,
+    0.036,
+    0.0344,
+    0.033,
+    0.0314,
+    0.031,
+    0.0301,
+    0.0296,
+    0.0294,
+    0.0277,
+    0.027,
+    0.0257,
+    0.0252,
+    0.0243,
+    0.0225,
+    0.0184,
+    0.0165,
+    0.0148,
+    0.0145,
+    0.0128,
+    0.0121,
+    0.0111,
+    0.0099,
+    0.0097,
+    0.0092,
+    0.0091,
+    0.0065,
+    0.006,
+    0.0059,
+    0.0054,
+    0.0047,
+    0.0044,
+    0.0042,
+    0.0041,
+    0.0035,
+    0.0033,
+    0.0031,
+    0.0021
+  ]
+}

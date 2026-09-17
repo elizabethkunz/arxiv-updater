@@ -1,0 +1,316 @@
+{
+  "date": "2026-04-27",
+  "n_fetched": 53,
+  "papers": [
+    {
+      "id": "2604.22086",
+      "title": "Tantalum Damascene Coplanar Waveguide Resonators Fabricated Using 300 mm Scale Processes",
+      "authors": [
+        "Ekta Bhatia",
+        "Yingge Du",
+        "Krishna P Koirala",
+        "Chung Kow",
+        "Mingzhao Liu",
+        "Juan Macy",
+        "Tharanga R. Nanayakkara",
+        "Francisco Ponce",
+        "Satyavolu S. Papa Rao",
+        "Drew J. Rebar",
+        "Peter V. Sushko",
+        "Brent A VanDevender",
+        "Chongmin Wang",
+        "Marvin G. Warner",
+        "Zhihao Xiao"
+      ],
+      "abstract": "Surface oxides contribute to losses in superconducting transmon devices resulting in degraded performance. We explore the use of the damascene process to replace the sidewall native oxide of a device with a metal/substrate interface. We simulate sidewall oxidation by burying an oxide layer during fabrication. We observe a modest improvement between the two types of devices, which is suggestive of a reduction in the surface participation ratio.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-04-23",
+      "score": 0.9051383676780402,
+      "similar_to": [
+        {
+          "title": "Reducing TLS loss in tantalum CPW resonators using titanium sacrificial layers",
+          "id": "2601.16369",
+          "similarity": 0.8754901885986328
+        },
+        {
+          "title": "Surface loss simulations of superconducting coplanar waveguide resonators",
+          "id": "1107.4698",
+          "similarity": 0.8553504347801208
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates tantalum damascene coplanar waveguide resonators fabricated on 300 mm wafers, where the superconductor is embedded in the silicon substrate to eliminate native oxide sidewalls. Cryogenic measurements show a modest $\\times 2$ improvement in internal quality factor for pristine Ta/Si interfaces compared to buried-oxide interfaces, though significant performance variance remains.",
+        "motivation": "Surface oxides, particularly the native $\\mathrm{Ta_2O_5}$ on sidewalls of etched superconductors, contribute to dielectric loss through two-level systems (TLS) at the device interfaces and degrade transmon coherence times via the surface participation ratio.",
+        "method": "Five device variants were fabricated using 300 mm silicon wafers with either buried-oxide (intentionally oxidized TaN after deposition with air exposure) or pristine (in-situ sputter without air exposure) Ta/Si interfaces, followed by chemical mechanical planarization. Devices were characterized in a BlueFors dilution refrigerator at 25–600 mK using forward transmission $S_{21}$ measurements; internal quality factors $Q_I$ were extracted by fitting resonator phase across temperatures and input powers from $-80$ to $-40$ dBm.",
+        "result": "The best-performing resonator (Device C at 4.49 GHz) achieved a constant $Q_C = (8.178 \\pm 0.016) \\times 10^5$ independent of temperature and power; pristine-interface devices showed statistically improved $Q_I$ at $-60$ dBm compared to buried-oxide devices, though one buried-oxide resonator (Device A at 3.29 GHz) achieved comparable performance at $-50$ dBm, suggesting loss mechanisms beyond the Ta/Si interface.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.22112",
+      "title": "Enhanced Tantalum Superconducting Resonator Performance via All-Surface Organic Monolayer Passivation",
+      "authors": [
+        "Harsh Gupta",
+        "Moritz Singer",
+        "Benedikt Schoof",
+        "Anna Cattani-Scholz",
+        "Shreya Sharma",
+        "Luca Rommeis",
+        "Marc Tornow"
+      ],
+      "abstract": "Tantalum is a promising platform for superconducting quantum circuits, yet coherence times remain limited by dielectric losses from interfacial two-level systems (TLS), exacerbated by native oxide regrowth. Here, we implement molecular surface passivation using self-assembled organic monolayers on freshly etched tantalum and silicon in coplanar waveguide resonators. Surface characterization by contact angle, XPS, FTIR and TEM confirm the formation of ordered, nanometer-thick films that suppress oxide formation. Microwave measurements in the ~5-9 GHz range reveal internal quality factors up to 1.8x10^6 in the single-photon regime at 100 mK, representing a ~140% improvement over untreated devices with native oxide. Power and temperature dependent measurements attribute this enhancement to reduced TLS-induced losses. These results demonstrate that molecular passivation effectively engineers low-loss interfaces and provides a scalable route toward high-coherence superconducting quantum devices.",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "physics.app-ph",
+        "quant-ph"
+      ],
+      "published": "2026-04-23",
+      "score": 0.7985553203408563,
+      "similar_to": [
+        {
+          "title": "Reducing TLS loss in tantalum CPW resonators using titanium sacrificial layers",
+          "id": "2601.16369",
+          "similarity": 0.8972966074943542
+        },
+        {
+          "title": "2D transmons with lifetimes and coherence times exceeding 1 millisecond",
+          "id": "2503.14798",
+          "similarity": 0.858021080493927
+        }
+      ],
+      "summary": {
+        "summary": "Self-assembled organic monolayers deposited on tantalum and silicon surfaces suppress native oxide regrowth and reduce interfacial two-level-system losses in coplanar waveguide resonators. Internal quality factors reach $1.8 \\times 10^6$ at $100$ mK in the single-photon regime, a $\\sim140\\%$ improvement over untreated devices.",
+        "motivation": "Tantalum is attractive for superconducting quantum circuits but native oxide formation regenerates after etching, creating high-loss interfacial TLS that degrade coherence times.",
+        "method": "Self-assembled organic monolayers were deposited on freshly etched tantalum and silicon in CPW resonators; surface films were characterized by contact angle, XPS, FTIR and TEM, and microwave performance measured at $5$–$9$ GHz at $100$ mK.",
+        "result": "Passivated devices achieved internal quality factors $Q_i = 1.8 \\times 10^6$ in the single-photon regime, $\\sim140\\%$ above control samples with native oxide, with power and temperature dependence confirming reduced TLS-induced dissipation.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.22650",
+      "title": "Strain engineering of Andreev spin qubits in Germanium",
+      "authors": [
+        "Vittorio Coppini",
+        "Patrick Del Vecchio",
+        "Antonio L. R. Manesco",
+        "Anton Akhmerov",
+        "Valla Fatemi",
+        "Bernard van Heck",
+        "Stefano Bosco"
+      ],
+      "abstract": "Planar germanium heterostructures are promising hosts for hybrid quantum devices due to their compatibility with superconductors, low material disorder, and relaxed fabrication constraints. Also, the potentially low density of nuclear spins and strong spin-orbit interaction make germanium attractive for coherent spin physics. However, recent microwave spectroscopy experiments were unable to resolve a spin-splitting of bound states in germanium Josephson junctions, the prerequisite for defining and controlling Andreev spin qubits. Here, we argue that compressive strain is the key mechanism suppressing spin splitting in current devices. Furthermore, we propose unstrained and tensile-strained heterostructures, fully compatible with state-of-the-art growth technology, that significantly enhance the relevant spin-orbit effect. By numerically simulating ballistic Josephson junctions, we predict spin splittings comfortably in the GHz range, more than 2 orders of magnitude larger than compressively strained cases, and all-electric quantum gates in a hundred nanoseconds. Our results establish strain engineering as a key design principle for realizing Andreev spin qubits in germanium-based devices.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-04-24",
+      "score": 0.6325832914277078,
+      "similar_to": [
+        {
+          "title": "An All-van-der-Waals Qubit",
+          "id": "2609.14230",
+          "similarity": 0.8146771192550659
+        },
+        {
+          "title": "Coherent Josephson qubit suitable for scalable quantum integrated circuits",
+          "id": "1304.2322",
+          "similarity": 0.8082475662231445
+        }
+      ],
+      "summary": {
+        "summary": "Strain engineering is identified as the key mechanism controlling spin splitting of Andreev bound states in germanium Josephson junctions, with compressive strain suppressing while tensile strain enhancing the spin-orbit interaction. Numerical k·p calculations predict spin splittings in the GHz range for unstrained and tensile-strained $\\mathrm{Ge/GeSn}$ heterostructures, enabling all-electric gate operations in ~100 ns and establishing viable platforms for Andreev spin qubits that were previously unobservable in compressively-strained $\\mathrm{Ge/SiGe}$ devices.",
+        "motivation": "Recent microwave spectroscopy on compressively-strained $\\varepsilon$-Ge Josephson junctions failed to observe sizeable spin splitting of Andreev levels needed for qubit definition, despite germanium's attractive properties: low nuclear spin density, strong spin-orbit coupling, isotopic purity, and compatibility with both superconductors and quantum dot platforms.",
+        "method": "Six-band k·p effective Hamiltonians were constructed for Ge heterostructures via Schrieffer-Wolff perturbation theory, then discretized using Kwant to compute Andreev bound state spectra in ballistic junctions with aluminum contacts ($\\Delta = 0.2$ meV) and phase differences $\\varphi$ across lengths $L_N = 300$ nm. Fermi velocity differences $\\delta v$ between spin states were extracted to predict spin splitting via transcendental Bohr-Sommerfeld quantization.",
+        "result": "Spin splitting $\\Delta E$ drops from >1 GHz in unstrained Ge ($x=0$) to <25 MHz at $x \\geq 10\\%$ Si in the barrier; tensile-strained $\\mathrm{Ge/Ge_{1-y}Sn_y}$ reaches $\\Delta E > 3$ GHz at $y \\approx 10\\%$, exceeding unstrained Ge by a factor of 3, with electric-dipole-spin-resonance driving ($\\delta V = 100$ µV) producing Rabi frequencies $\\Omega_{01}/2\\pi \\sim 4$ MHz.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.22214",
+      "title": "Non-volatile superconducting tunnelling magnetoresistance memory enabled by exchange-field gap engineering",
+      "authors": [
+        "Sonam Bhakat",
+        "Pushpak Banerjee",
+        "Ahmedullah Aziz",
+        "Jackson Miller",
+        "Avradeep Pal"
+      ],
+      "abstract": "Scalable, low-dissipation memory operating below 4 K is a critical requirement for superconducting and quantum computing systems. Existing cryogenic memory technologies rely on CMOS derivatives or hybrid architectures that incur leakage, refresh overhead or limited compatibility with superconducting logic. Here we demonstrate a superconducting tunnelling magnetoresistance device that functions as a non-volatile cryogenic memory element across the full superconducting temperature range. By integrating a de Gennes spin valve with a superconducting tunnel junction in a current perpendicular-to-plane geometry, we realise exchange-field control of the superconducting energy gap. This produces two magnetically switchable gap voltages and robust quasiparticle tunnelling magnetoresistance down to 0.25 K.The device operates at millivolt bias with nanowatt-level read power and zero standby dissipation. Its vertical junction architecture and Nb-based materials platform enable compatibility with superconducting logic and scalable cryogenic memory arrays.",
+      "categories": [
+        "cond-mat.supr-con",
+        "physics.app-ph"
+      ],
+      "published": "2026-04-24",
+      "score": 0.5818504364185918,
+      "similar_to": [
+        {
+          "title": "Superconducting Flux Memory for Cryogenic Applications",
+          "id": "2609.00772",
+          "similarity": 0.8527411222457886
+        },
+        {
+          "title": "An All-van-der-Waals Qubit",
+          "id": "2609.14230",
+          "similarity": 0.8225928544998169
+        }
+      ],
+      "summary": {
+        "summary": "A superconducting tunnelling magnetoresistance device is demonstrated as a non-volatile cryogenic memory element by integrating a de Gennes spin valve with a superconducting tunnel junction in current perpendicular-to-plane geometry, enabling exchange-field control of the superconducting gap. The device operates with millivolt bias, nanowatt-level read power, and zero standby dissipation from 0.25 K across the full superconducting temperature range, with vertical Nb-based architecture compatible with superconducting logic.",
+        "motivation": "Scalable, low-dissipation cryogenic memory below 4 K is critical for superconducting and quantum computing systems, but existing solutions rely on CMOS derivatives or hybrid architectures with leakage, refresh overhead, or poor compatibility with superconducting logic.",
+        "method": "A de Gennes spin valve was integrated with a superconducting tunnel junction in current perpendicular-to-plane geometry to realize exchange-field control of the superconducting energy gap, producing two magnetically switchable gap voltages.",
+        "result": "The device exhibits robust quasiparticle tunnelling magnetoresistance down to 0.25 K with nanowatt-level read power and zero standby dissipation, compatible with Nb-based superconducting logic for scalable memory arrays.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.22471",
+      "title": "Boundary-Aware Stabilizer Scheduling for Distributed Quantum Error Correction",
+      "authors": [
+        "Sanidhya Gupta",
+        "Sanidhay Bhambay",
+        "Narges Alavisamani",
+        "Neil Walton",
+        "Thirupathaiah Vasantam"
+      ],
+      "abstract": "Future quantum architectures are expected to be modular, with quantum processors connecting multiple quantum processing units (QPUs) via photonic interconnects. In topological quantum error correction, such as color codes, this creates seam boundaries where parity checks require remote CNOT operations using heralded Bell pairs. These non-local checks are slower and noisier than bulk local checks because entanglement generation is probabilistic, causing data qubits to accumulate idle noise while waiting for remote operations. A natural way to reduce this overhead is to skip some seam measurements; however, doing so makes seam syndrome information stale and can degrade decoding. The central scheduling problem is therefore to determine how frequently seam checks should be measured so as to balance remote-operation and waiting noise against syndrome staleness. To address this trade-off, we develop a scheduling module that integrates directly into standard syndrome-extraction circuits. We consider two policies: Skip-Seam-$τ$ (SS-$τ$), which measures all bulk checks every round while measuring seam checks once every $τ$ rounds and copying the most recent syndrome in skipped rounds, and Adaptive Skip-$τ$ (AST), which selects $τ$ as a function of code distance and entanglement generation rate (EGR). We evaluate these policies on triangular color codes under circuit-level noise in Stim, including idling errors induced by Bell-pair generation delays. Our simulations show that SS-tau and AST reduce remote-operation overhead and can lower the logical error rate (LER) relative to the Measure-All (MA) baseline. For physical error rate $p = 10^{-3}$, we identify an EGR regime in which both SS-$τ$ and AST exhibit behavior consistent with fault-tolerant scaling, with LER decreasing as code distance increases. Across these regimes, SS-$τ$ and AST outperform MA.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-24",
+      "score": 0.5370788544531251,
+      "similar_to": [
+        {
+          "title": "Boundary-Aware Stabilizer Scheduling for Distributed Quantum Error Correction",
+          "id": "2604.22471",
+          "similarity": 0.9936208128929138
+        },
+        {
+          "title": "Lattice surgery with Bell measurements: Modular fault-tolerant quantum computation at low entanglement cost",
+          "id": "2510.13541",
+          "similarity": 0.8598161935806274
+        }
+      ],
+      "summary": {
+        "summary": "This paper develops seam-measurement scheduling policies for distributed quantum error correction using triangular color codes partitioned across multiple QPUs connected by photonic links. The Skip-Seam-$\\tau$ (SS-$\\tau$) and Adaptive Skip-$\\tau$ (AST) schemes reduce how often remote seam stabilizers are measured to balance Bell-pair generation delays against syndrome staleness, achieving lower logical error rates than the Measure-All baseline in identified parameter regimes.",
+        "motivation": "In modular distributed QEC architectures, seam checks requiring non-local CNOTs via heralded Bell pairs are substantially slower and noisier than local bulk checks, accumulating idle decoherence while waiting for entanglement. The entanglement generation rate (EGR) creates an asymmetry not present in monolithic systems, motivating adaptive control of seam-measurement frequency to optimize performance.",
+        "method": "The authors introduce a scheduling module that controls seam-check frequency independently of bulk checks in a distributed triangular color code ($d \\in \\{9, 15, 17, 21\\}$) partitioned across four QPUs. SS-$\\tau$ measures seam checks once every $\\tau$ rounds with syndrome copying; AST adapts $\\tau$ as $\\tau^\\star = (d-1)/2$ at low EGR and $\\tau^\\star = 2$ at high EGR. Simulations use Stim with circuit-level noise ($p = 10^{-3}$), two-qubit seam-gate error $10p$, and idle noise from Bell-pair wait times with $T_1 = 200$ µs, $T_2 = 150$ µs.",
+        "result": "For $p = 10^{-3}$ and EGR in the range 31.6–70.7 MHz, both SS-$\\tau$ and AST exhibit fault-tolerant distance scaling with logical error rate decreasing as code distance increases, significantly outperforming Measure-All and narrowing the gap with monolithic architectures. At fixed EGR = 50 MHz, AST reduces LER by larger margins at $d=19$ than $d=17$, demonstrating increasing benefit at larger distances.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.22596",
+      "title": "Resonance Frequency Shift Measurements of SRF Cavities at DESY",
+      "authors": [
+        "Rezvan Ghanbari",
+        "Thorsten Buettner",
+        "Wolfgang Hillert",
+        "Karol Kasprzak",
+        "Tom Krokotsch",
+        "Ricardo Monroy-Villa",
+        "Detlef Reschke",
+        "Lea Steder",
+        "Alexey Sulimov",
+        "Hans Weise",
+        "Marc Wenskat",
+        "Mateusz Wiencek",
+        "Jonas Wolff"
+      ],
+      "abstract": "The variation of the resonance frequency and intrinsic quality factor of superconducting radio-frequency cavities during the transition from the superconducting to the normal-conducting state provides essential insight into the fundamental superconducting properties of the cavity material. Investigating these transition dynamics is crucial for the continued advancement of niobium cavities whose near-surface regions are intentionally modified through the controlled introduction of interstitial atoms, such as oxygen and nitrogen, leading to the emergence of several novel behaviors whose underlying mechanisms are not yet fully understood. This work reports on the development and commissioning of a dedicated frequency-shift measurement setup. In its initial implementation, the system establishes a precise framework for determining the electron mean free path within both the superconducting penetration depth and the normal-conducting skin depth. It further enables investigation of an anomalous dip in the temperature dependence of the frequency shift near the critical temperature in cavities containing interstitial atoms in the near-surface lattice, a novel phenomenon previously reported in the literature. A recent upgrade, currently in the final stage of validation, significantly improves measurement accuracy and reproducibility. The improved setup enables comprehensive studies of the frequency shift and quality factor over the full temperature range above 7 K, contributing to a deeper understanding of the superconducting properties.",
+      "categories": [
+        "cond-mat.supr-con",
+        "physics.acc-ph"
+      ],
+      "published": "2026-04-24",
+      "score": 0.5319553459972262,
+      "similar_to": [
+        {
+          "title": "Oval-shaped resonance distortion as a signature of quasiparticle heating effect in a niobium superconducting resonator",
+          "id": "2607.17791",
+          "similarity": 0.8029118180274963
+        },
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.7975288033485413
+        }
+      ],
+      "summary": {
+        "summary": "This paper develops and validates a frequency-shift measurement setup for superconducting radio-frequency cavities, enabling precision determination of resonance frequency and quality factor during warm-up from 5 K to 12 K across the superconducting-to-normal transition. The setup quantifies electron mean free paths in both regimes and characterizes an anomalous frequency dip near $T_c$ in mid-temperature heat-treated niobium cavities, with recent upgrades reducing measurement uncertainty to ~25% of empirical drifts and achieving spatial temperature gradients as low as ~2 K/m.",
+        "motivation": "Understanding the superconducting properties of niobium cavities, particularly those intentionally modified by interstitial oxygen and nitrogen doping via mid-T heat treatments, requires study across the full temperature range rather than only at 2 K operation, especially given unexplained phenomena like the anti-Q-slope and anomalous frequency dips near $T_c$.",
+        "method": "A dedicated cryostat apparatus measures transmitted $S_{21}$ spectra every minute during non-adiabatic warm-up with constant pressure regulation; resonance frequency and loaded quality factor $Q_L$ are extracted via Lorentzian fitting of power spectra; mechanical stress artifacts are mitigated by loosening cavity-mounting screws, and systematic empirical frequency-drift corrections are applied to account for transient thermal non-equilibrium; electron mean free paths are derived from surface resistance at 10 K and penetration-depth shifts via Eqs. 8–9.",
+        "result": "Baseline niobium cavities yield $T_c \\approx 9.29$ K from frequency shifts (agreeing with literature 9.27 K), while mid-T heat-treated cavities show suppressed $T_c$, larger total frequency shifts $\\Delta f_{\\max}$, and a reliable anomalous dip feature near $T_c$; mean free paths in the normal-conducting skin depth range from $\\ell_\\delta > 440$ nm (baseline) to $\\ell_\\delta < 75$ nm (mid-T treated), enabling oxygen-concentration estimates via $C_{O,\\delta}$ and $C_{O,\\lambda}$ using the resistivity-oxygen relationship of $4.5 \\times 10^{-8}$ Ω·m·at.%$^{-1}$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9051,
+    0.7986,
+    0.6326,
+    0.5819,
+    0.5371,
+    0.532,
+    0.4414,
+    0.3641,
+    0.3381,
+    0.244,
+    0.2402,
+    0.1865,
+    0.1822,
+    0.1719,
+    0.1658,
+    0.1577,
+    0.1549,
+    0.1203,
+    0.1006,
+    0.0981,
+    0.0786,
+    0.061,
+    0.06,
+    0.0553,
+    0.0509,
+    0.0329,
+    0.0322,
+    0.0281,
+    0.0275,
+    0.0273,
+    0.0272,
+    0.0265,
+    0.0259,
+    0.0233,
+    0.0179,
+    0.0146,
+    0.0145,
+    0.0145,
+    0.0142,
+    0.0136,
+    0.0135,
+    0.0127,
+    0.0124,
+    0.0113,
+    0.009,
+    0.0086,
+    0.0078,
+    0.0076,
+    0.0069,
+    0.0067,
+    0.0051,
+    0.0048,
+    0.0023
+  ]
+}

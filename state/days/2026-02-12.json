@@ -1,0 +1,165 @@
+{
+  "date": "2026-02-12",
+  "n_fetched": 78,
+  "papers": [
+    {
+      "id": "2602.11127",
+      "title": "Two-Level System Spectroscopy from Correlated Multilevel Relaxation in Superconducting Qubits",
+      "authors": [
+        "Tanay Roy",
+        "Xinyuan You",
+        "David van Zanten",
+        "Francesco Crisa",
+        "Sabrina Garattoni",
+        "Shaojiang Zhu",
+        "Anna Grassellino",
+        "Alexander Romanenko"
+      ],
+      "abstract": "Transmon qubits are a cornerstone of modern superconducting quantum computing platforms. Temporal fluctuations of energy relaxation in these qubits are widely attributed to microscopic two-level systems (TLSs) in device dielectrics and interfaces, yet isolating individual defects typically relies on tuning the qubit or the TLS into resonance. We demonstrate a novel spectroscopy method for fixed-frequency transmons based on multilevel relaxation: repeated preparation of the second excited state and simultaneous $T_1$ extraction of the first and second excited states reveals characteristic correlations in the decay rates of adjacent transitions. From these correlations we identify one or more dominant TLSs and reconstruct their frequency drift over time. Remarkably, we find that TLSs detuned by $\\gtrsim 100\\,\\mathrm{MHz}$ from the qubit transition can still significantly influence relaxation. The proposed method provides a powerful tool for TLS spectroscopy without the need to tune the transmon frequency, either via a flux-tunable inductor or AC-Stark shifts.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-11",
+      "score": 0.9081895489694018,
+      "similar_to": [
+        {
+          "title": "New material platform for superconducting transmon qubits with coherence times exceeding 0.3 milliseconds",
+          "id": "2003.00024",
+          "similarity": 0.8648680448532104
+        },
+        {
+          "title": "Controlling the spontaneous emission of a superconducting transmon qubit",
+          "id": "0803.4490",
+          "similarity": 0.861670732498169
+        }
+      ],
+      "summary": {
+        "summary": "A novel spectroscopy method identifies individual two-level system (TLS) defects in fixed-frequency transmon qubits by measuring correlated fluctuations in the decay rates $\\Gamma_{10}$ and $\\Gamma_{21}$ of the first and second excited states over hours-long timescales. The technique reveals that TLSs detuned by $\\gtrsim 100$ MHz from the qubit transition $\\omega_{01}$ still significantly contribute to relaxation through the Lorentzian tails of their noise spectral density.",
+        "motivation": "Direct TLS characterization in superconducting qubits typically requires tuning the qubit frequency into resonance via flux control or AC-Stark shifts, which is impractical for fixed-frequency transmons used in scalable architectures. This work addresses the need for a tunability-free spectroscopy method that can isolate individual off-resonant defects and track their frequency drift over time.",
+        "method": "The protocol repeatedly prepares the second excited state $|2\\rangle$ and extracts $T_{1e}$ and $T_{1f}$ simultaneously by fitting the three-level populations to the master equation solutions (Eq. 2), yielding $\\Gamma_{10}(t)$ and $\\Gamma_{21}(t)$. For Ta/Nb transmons with anharmonicity $\\alpha/2\\pi \\approx 280$ MHz on sapphire, the observed correlations between $T_{1e}$ and $T_{1f}$ are fit to single- or multi-TLS models where decay rates follow $\\Gamma_{j+1,j}(t) = \\sum_n B_n \\gamma_{\\mathrm{TLS},n}/[(\\omega_{j,j+1}-\\omega_{\\mathrm{TLS},n}(t))^2 + \\gamma_{\\mathrm{TLS},n}^2]$.",
+        "result": "Device A exhibits strong anti-correlation in $T_{1e}$ and $T_{1f}$ over 60+ hours consistent with a single dominant TLS drifting $\\sim 10$ MHz in frequency; device B shows weak correlation requiring a two-TLS model. For device A, median $T_{1e} = 155$ µs and $T_{1f} = 64$ µs with 3-level readout fidelity $\\mathcal{F}_3 = 89.9\\%$; the extracted TLS frequency lies between $\\omega_{01}$ and $\\omega_{12}$, demonstrating that defects more than 100 MHz detuned from resonance measurably limit coherence.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.11140",
+      "title": "Reed-Muller Error-Correction Code Encoder for SFQ-to-CMOS Interface Circuits",
+      "authors": [
+        "Yerzhan Mustafa",
+        "Berker Peköz",
+        "Selçuk Köse"
+      ],
+      "abstract": "Data transmission from superconducting digital electronics such as single flux quantum (SFQ) logic to semiconductor (CMOS) circuits is subject to bit errors due to, e.g., flux trapping, process parameter variations (PPV), and fabrication defects. In this paper, a lightweight hardware-efficient error-correction code encoder is designed and analyzed. Particularly, a Reed-Muller code RM(1,3) encoder is implemented with SFQ digital logic. The proposed RM(1,3) encoder converts a 4-bit message into an 8-bit codeword and can detect and correct up to 3- and 1-bit errors, respectively. This encoder circuit is designed using MIT-LL SFQ5ee process and SuperTools/ColdFlux RSFQ cell library. A simulation framework integrating JoSIM simulator and MATLAB script for automated data collection and analysis, is proposed to study the performance of RM(1,3) encoder. The proposed encoder improves the probability of having no bit errors by 6.7% as compared to an encoder-less design under $\\pm20\\%$ PPV. With $\\pm15\\%$ and lower PPV, the proposed encoder could correct all errors with at least 99.1% probability. The impact of fabrication defects such as open circuit faults on the encoder circuit is also studied using the proposed framework.",
+      "categories": [
+        "eess.SP",
+        "cond-mat.supr-con",
+        "cs.AR"
+      ],
+      "published": "2026-02-11",
+      "score": 0.5770050687936027,
+      "similar_to": [
+        {
+          "title": "Developments in superconducting erasure qubits for hardware-efficient quantum error correction",
+          "id": "2601.02183",
+          "similarity": 0.8073221445083618
+        },
+        {
+          "title": "Bias-preserving and error-detectable entangling operations in a superconducting dual-rail system",
+          "id": "2503.10935",
+          "similarity": 0.8008917570114136
+        }
+      ],
+      "summary": {
+        "summary": "A Reed-Muller RM(1,3) error-correction encoder is implemented in SFQ logic using the MIT-LL SFQ5ee process to protect 4-bit messages converted to 8-bit codewords against bit errors in the SFQ-to-CMOS interface. The encoder dissipates 101.5 μW, occupies 0.193 mm², and is evaluated via a JoSIM–MATLAB framework that models process parameter variations and fabrication defects.",
+        "motivation": "SFQ-to-CMOS data transmission suffers bit errors from flux trapping, process parameter variations, and fabrication defects, yet cooling power and cabling constraints limit the parity bits that can be routed cryogenically.",
+        "method": "An [8,4,4] linear block code encoder based on XOR gates and delay flip-flops was designed in the SuperTools/ColdFlux RSFQ cell library and simulated with JoSIM; a custom MATLAB framework automated fault injection and performance analysis under $\\pm20\\%$ process parameter variations and open-circuit faults.",
+        "result": "At $\\pm20\\%$ process parameter variations, the RM(1,3) encoder achieved 86.7% probability of error-free transmission of 100 messages versus 80.0% for an encoder-less design; at $\\pm15\\%$ and lower variations, error correction succeeded with 99.1% probability or higher.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9082,
+    0.577,
+    0.3884,
+    0.3738,
+    0.3475,
+    0.3383,
+    0.2909,
+    0.248,
+    0.2258,
+    0.1731,
+    0.1517,
+    0.1435,
+    0.1403,
+    0.1395,
+    0.1247,
+    0.1192,
+    0.1113,
+    0.1053,
+    0.1034,
+    0.1015,
+    0.1002,
+    0.0981,
+    0.0917,
+    0.091,
+    0.0874,
+    0.0773,
+    0.0703,
+    0.0664,
+    0.059,
+    0.0589,
+    0.0581,
+    0.0568,
+    0.0529,
+    0.0449,
+    0.0405,
+    0.0389,
+    0.0389,
+    0.0388,
+    0.0334,
+    0.0291,
+    0.0291,
+    0.0253,
+    0.025,
+    0.0243,
+    0.0205,
+    0.02,
+    0.0196,
+    0.0189,
+    0.0188,
+    0.0185,
+    0.018,
+    0.0173,
+    0.0163,
+    0.0153,
+    0.0145,
+    0.0141,
+    0.0138,
+    0.0121,
+    0.0115,
+    0.0114,
+    0.0113,
+    0.0113,
+    0.01,
+    0.0084,
+    0.008,
+    0.008,
+    0.0061,
+    0.0059,
+    0.0058,
+    0.0057,
+    0.005,
+    0.0041,
+    0.0041,
+    0.0034,
+    0.0032,
+    0.0019,
+    0.0015,
+    0.0008
+  ]
+}

@@ -1,0 +1,1769 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Database · arXiv updates</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script>try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<style>
+:root {
+  --bg: #fafafa; --ink: #111111; --ink-2: #444444; --muted: #8a8a8a; --label: #5f6672;
+  --line: #e6e6e6; --grid: rgba(0, 0, 0, .055); --hover: #f3f3f3; --track: #e2e2e2;
+  --sans: "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --score-sign: -1; --score-l: 35%; --thumb: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #0a0a0a; --ink: #ededed; --ink-2: #b4b4b4; --muted: #737373; --label: #9aa1ad;
+          --line: #242424; --grid: rgba(255, 255, 255, .06); --hover: #141414; --track: #2a2a2a;
+          --score-sign: 1; --score-l: 60%; --thumb: #2c2c2c; }
+}
+:root[data-theme="dark"] { --bg: #0a0a0a; --ink: #ededed; --ink-2: #b4b4b4; --muted: #737373; --label: #9aa1ad;
+          --line: #242424; --grid: rgba(255, 255, 255, .06); --hover: #141414; --track: #2a2a2a;
+          --score-sign: 1; --score-l: 60%; --thumb: #2c2c2c; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; font-variant-numeric: tabular-nums; background: var(--bg); color: var(--ink); font: 16px/1.6 var(--sans);
+       -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+/* top bar */
+.bar { border-bottom: 1px solid var(--line); background: var(--bg); position: relative; z-index: 2; }
+.bar .wrap { display: flex; align-items: center; justify-content: space-between; height: 56px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 600; letter-spacing: -.01em; text-decoration: none; }
+.brand i { width: 14px; height: 14px; background: var(--ink); display: block; }
+.bar nav { display: flex; gap: 22px; font-size: 14px; color: var(--ink-2); }
+.bar nav a { text-decoration: none; }
+.bar nav a:hover { color: var(--ink); }
+.bar nav { align-items: center; }
+#theme { width: 30px; height: 30px; padding: 0; border: 1px solid var(--line); border-radius: 999px; background: none;
+  color: var(--ink-2); cursor: pointer; display: grid; place-items: center; }
+#theme:hover { border-color: var(--ink); color: var(--ink); }
+.katex { font-size: 1.05em; }
+
+/* hero with graph-paper ground that fades out */
+.hero { position: relative; border-bottom: 1px solid var(--line); overflow: hidden; }
+.hero::before { content: ""; position: absolute; inset: 0;
+  background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 24px 24px; background-position: -1px -1px;
+  -webkit-mask-image: linear-gradient(100deg, transparent 5%, #000 55%, #000 80%, transparent);
+          mask-image: linear-gradient(100deg, transparent 5%, #000 55%, #000 80%, transparent); }
+.hero .wrap { position: relative; padding-top: 72px; padding-bottom: 56px; }
+.eyebrow { font: 500 13px/1 var(--sans); color: var(--muted); margin: 0 0 20px; }
+.eyebrow a { text-decoration: none; } .eyebrow a:hover { color: var(--ink); }
+h1 { font-size: clamp(34px, 5.4vw, 60px); line-height: 1.04; letter-spacing: -.045em; font-weight: 500; margin: 0; max-width: 18em; text-wrap: balance; }
+h1.paper { font-size: clamp(28px, 3.8vw, 42px); line-height: 1.12; letter-spacing: -.035em; }
+.lede { color: var(--ink-2); font-size: 17px; max-width: 46em; margin: 22px 0 0; }
+
+/* day header */
+.day { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px;
+       padding: 44px 0 14px; border-bottom: 1px solid var(--ink); }
+.day h2 { font: 600 15px/1 var(--sans); margin: 0 0 10px; letter-spacing: -.01em; }
+.day h2 a { text-decoration: none; } .day h2 a:hover { text-decoration: underline; }
+.day .stats { font: 400 13px/1 var(--sans); color: var(--muted); }
+.day .stats a { text-decoration: none; color: var(--ink-2); } .day .stats a:hover { color: var(--ink); text-decoration: underline; }
+.hist { display: block; color: var(--track); } .hist .hi { color: var(--ink); }
+
+/* paper rows */
+.row { display: grid; grid-template-columns: 92px 1fr; gap: 0 28px; padding: 24px 0;
+       border-bottom: 1px solid var(--line); text-decoration: none; }
+a.row:hover { background: var(--hover); box-shadow: -24px 0 0 var(--hover), 24px 0 0 var(--hover); }
+.score { font: 500 23px/1 var(--sans); letter-spacing: -.035em; padding-top: 2px; }
+.score small { font-size: 12px; color: var(--muted); margin-left: 1px; }
+.score .track { display: block; height: 2px; background: var(--track); margin-top: 10px; }
+.score .track b { display: block; height: 2px; background: var(--ink); }
+.score[style] { color: hsl(var(--h) var(--s) var(--l)); } .score[style] .track b { background: hsl(var(--h) var(--s) var(--l)); }
+.row.low .score { opacity: .62; }
+.row h3 { font-size: 18px; line-height: 1.3; letter-spacing: -.015em; font-weight: 500; margin: 0; }
+.meta { font: 400 13px/1.5 var(--sans); color: var(--muted); margin: 7px 0 0; }
+.row p.sum { color: var(--ink-2); font-size: 15px; margin: 10px 0 0; max-width: 50em; }
+.empty { color: var(--muted); padding: 24px 0; border-bottom: 1px solid var(--line); margin: 0; }
+.row.db .score { font-size: 18px; color: var(--ink-2); }
+.row.db .meta a { text-underline-offset: 3px; text-decoration-color: var(--muted); } .row.db .meta a:hover { color: var(--ink); }
+
+/* month heading + jump sidebar (sits in the left gutter, so only on wide screens) */
+.month { font-size: 30px; line-height: 1.1; letter-spacing: -.035em; font-weight: 500; margin: 0; padding-top: 64px; }
+.month + .dayblock > .day { padding-top: 28px; }
+
+/* sort bar: day order, or Top with a sliding window picker */
+[hidden] { display: none !important; }
+.sortbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px;
+  min-height: 34px; margin-top: 28px; }
+.sortbar button { font: 500 14px/1 var(--sans); color: var(--muted); background: none; border: 0; padding: 0; cursor: pointer; }
+.sortbar button:hover, .sortbar button.on, .seg button[aria-pressed="true"] { color: var(--ink); }
+.sorts { display: flex; gap: 22px; }
+.sorts button { padding: 8px 0; border-bottom: 1px solid transparent; }
+.sorts button.on { border-bottom-color: var(--ink); }
+.seg { position: relative; display: grid; grid-template-columns: repeat(var(--n), minmax(76px, 1fr)); padding: 3px;
+  background: var(--hover); border: 1px solid var(--line); border-radius: 999px; animation: seg-in .25s ease-out; }
+.seg i { position: absolute; top: 3px; bottom: 3px; left: 3px; width: calc((100% - 6px) / var(--n)); border-radius: 999px;
+  background: var(--thumb); border: 1px solid var(--line); box-shadow: 0 1px 3px rgba(0, 0, 0, .08);
+  transform: translateX(calc(var(--i) * 100%)); transition: transform .28s cubic-bezier(.3, .9, .3, 1); }
+.seg button { position: relative; height: 26px; font-size: 13px; transition: color .2s; }
+@keyframes seg-in { from { opacity: 0; transform: translateX(8px); } }
+@media (prefers-reduced-motion: reduce) { .seg, .seg i { animation: none; transition: none; } }
+.sortbar + #feed > .dayblock:first-child > .day { padding-top: 28px; }
+.sortbar + #feed > .monthblock:first-child > .month { padding-top: 40px; }
+.more { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 0; padding: 40px 0 8px; font-size: 13px; color: var(--muted); }
+.more button { font: 500 14px/1 var(--sans); color: var(--ink); background: var(--hover); border: 1px solid var(--line);
+  border-radius: 999px; padding: 10px 22px; cursor: pointer; }
+.more button:hover { border-color: var(--ink); }
+.topnote { font-size: 13px; color: var(--muted); margin: 0; padding: 28px 0 14px; border-bottom: 1px solid var(--ink); }
+.day, .month { scroll-margin-top: 16px; }
+.side { position: sticky; top: 0; float: left; height: 0;
+  /* grows with the free gutter beside the 1040px column: 140px on small laptops up to 230px on wide screens */
+  --w: clamp(140px, calc((100vw - 1040px) / 2 - 36px), 230px); width: var(--w); margin-left: calc(-36px - var(--w)); display: none; }
+.side > div { padding: 44px 0 24px; max-height: 100vh; overflow-y: auto; scrollbar-width: none; font-size: 13px; }
+.side h4 { font: 600 13px/1.3 var(--sans); letter-spacing: -.01em; margin: 0 0 6px; }
+.side summary { font: 600 13px/1.3 var(--sans); letter-spacing: -.01em; padding: 4px 0; cursor: pointer; list-style: none; }
+.side summary::-webkit-details-marker { display: none; }
+.side summary::after { content: "+"; float: right; color: var(--muted); font-weight: 400; }
+.side details[open] summary::after { content: "–"; }
+.side summary:hover { color: var(--ink-2); }
+.side ul { list-style: none; margin: 4px 0 14px; padding: 0; border-left: 1px solid var(--line); }
+.side li a { display: block; padding: 3px 0 3px 12px; margin-left: -1px; border-left: 1px solid transparent;
+  color: var(--muted); text-decoration: none; }
+.side li a:hover { color: var(--ink); }
+.side li a.on { color: var(--ink); border-left-color: var(--ink); }
+@media (min-width: 1380px) { .side { display: block; } }
+
+/* search */
+.search { position: relative; flex: 1; max-width: 380px; margin: 0 24px; }
+.search input { width: 100%; height: 34px; padding: 0 12px; font: 400 14px var(--sans); color: var(--ink);
+  background: var(--hover); border: 1px solid var(--line); border-radius: 999px; outline: none; }
+.search input:focus { border-color: var(--ink); background: var(--bg); }
+.search input::placeholder { color: var(--muted); }
+.results { position: absolute; top: 42px; left: 0; right: 0; min-width: 320px; background: var(--bg); border: 1px solid var(--line);
+  border-radius: 10px; box-shadow: 0 12px 32px rgba(0, 0, 0, .12); overflow: hidden; }
+.results a, .results p { display: block; padding: 10px 14px; margin: 0; text-decoration: none; font-size: 14px; line-height: 1.35; }
+.results a + a { border-top: 1px solid var(--line); }
+.results a.on, .results a:hover { background: var(--hover); }
+.results small, .results p { color: var(--muted); font-size: 12.5px; }
+.results small { display: block; margin-top: 3px; }
+
+/* paper page: spec rows */
+.spec { padding: 22px 0; border-bottom: 1px solid var(--line); }
+.spec dt { font: 600 17px/1.3 var(--sans); letter-spacing: -.01em; color: var(--label); margin-bottom: 8px; }
+.spec dd { margin: 0; max-width: 46em; }
+.spec dd.big { font-size: 19px; line-height: 1.5; letter-spacing: -.01em; }
+.spec dd.small { font-size: 15px; color: var(--ink-2); }
+.spec dd a { text-underline-offset: 3px; text-decoration-color: var(--muted); }
+.spec .sim { font: 400 13px var(--sans); color: var(--muted); white-space: nowrap; }
+.spec .sub { font: 500 15px/1.3 var(--sans); color: var(--ink-2); margin: 18px 0 8px; }
+.spec .simlist { margin-left: 2px; padding-left: 14px; border-left: 1px solid var(--line); } .spec .sub:first-child { margin-top: 2px; }
+.spec dd, .row > div { min-width: 0; overflow-wrap: anywhere; }
+dl { margin: 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+.btn { font-size: 14px; font-weight: 500; text-decoration: none; padding: 8px 16px; border-radius: 999px;
+       border: 1px solid var(--line); background: var(--bg); }
+.btn:hover { border-color: var(--ink); }
+.btn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.bigscore { color: hsl(var(--h) var(--s) var(--l)); }
+
+footer { height: 72px; }
+
+@media (max-width: 640px) {
+  .wrap { padding: 0 16px; }
+  .bar nav .ext { display: none; } .search { margin: 0 14px; } .bar nav { gap: 14px; }
+  .hero .wrap { padding-top: 48px; padding-bottom: 40px; }
+  .row { grid-template-columns: 1fr; } .score { margin-bottom: 14px; } .score .track { width: 92px; }
+  .hist { display: none; }
+  a.row:hover { box-shadow: -16px 0 0 var(--hover), 16px 0 0 var(--hover); }
+}
+</style>
+</head>
+<body>
+<div class="bar"><div class="wrap">
+  <a class="brand" href="index.html"><i></i>arXiv updates</a>
+  <div class="search" role="search">
+    <input id="q" type="search" placeholder="Search papers or authors  ( / )" autocomplete="off" aria-label="Search papers or authors">
+    <div class="results" id="results" hidden></div>
+  </div>
+  <nav><a href="index.html">Index</a><a href="database.html">Database</a><a class="ext" href="https://arxiv.org/list/quant-ph/new">quant-ph/new</a>
+    <button id="theme" type="button" aria-label="Switch between light and dark theme" title="Light / dark"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1a7 7 0 0 0 0 14z" fill="currentColor"/></svg></button></nav>
+</div></div>
+<header class="hero"><div class="wrap">
+  <h1>Database</h1>
+  <p class="lede">The 203 reference papers that new arXiv listings are scored against, ranked by their own match score.</p>
+</div></header>
+<main class="wrap">
+<div class="row db">
+  <div class="score">1.00</div>
+  <div>
+    <h3>Observation of high coherence in Josephson junction qubits measured in a three-dimensional circuit QED architecture</h3>
+    <p class="sum">Superconducting quantum circuits based on Josephson junctions have made rapid progress in demonstrating quantum behavior and scalability.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1105.4652">arxiv.org/abs/1105.4652</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.99</div>
+  <div>
+    <h3>Transmon qubit readout fidelity at the threshold for quantum error correction without a quantum-limited amplifier</h3>
+    <p class="sum">High-fidelity and rapid readout of a qubit state is key to quantum computing and communication, and it is a prerequisite for quantum error correction.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2208.05879">arxiv.org/abs/2208.05879</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.99</div>
+  <div>
+    <h3>Controlling the spontaneous emission of a superconducting transmon qubit</h3>
+    <p class="sum">We present a detailed characterization of coherence in seven transmon qubits in a circuit QED architecture.</p>
+<p class="meta"><a href="https://arxiv.org/abs/0803.4490">arxiv.org/abs/0803.4490</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.99</div>
+  <div>
+    <h3>Removing leakage-induced correlated errors in superconducting quantum error correction</h3>
+    <p class="sum">Quantum computing can become scalable through error correction, but logical error rates only decrease with system size when physical errors are sufficiently uncorrelated.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2102.06131">arxiv.org/abs/2102.06131</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.99</div>
+  <div>
+    <h3>Logic gates at the surface code threshold: Superconducting qubits poised for fault-tolerant quantum computing</h3>
+    <p class="sum">A quantum computer can solve hard problems - such as prime factoring, database searching, and quantum simulation - at the cost of needing to protect fragile quantum states from error.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1402.4848">arxiv.org/abs/1402.4848</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.99</div>
+  <div>
+    <h3>Charge insensitive qubit design derived from the Cooper pair box</h3>
+    <p class="sum">Short dephasing times pose one of the main challenges in realizing a quantum computer.</p>
+  </div>
+</div>
+<div class="row db">
+  <div class="score">0.99</div>
+  <div>
+    <h3>Superconducting Qubits: Current State of Play</h3>
+    <p class="sum">Superconducting qubits are leading candidates in the race to build a quantum computer capable of realizing computations beyond the reach of modern supercomputers.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1905.13641">arxiv.org/abs/1905.13641</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.99</div>
+  <div>
+    <h3>Fast readout and reset of a superconducting qubit coupled to a resonator with an intrinsic Purcell filter</h3>
+    <p class="sum">Coupling a resonator to a superconducting qubit enables various operations on the qubit, including dispersive readout and unconditional reset.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2202.06202">arxiv.org/abs/2202.06202</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.99</div>
+  <div>
+    <h3>Fast Reset and Suppressing Spontaneous Emission of a Superconducting Qubit</h3>
+    <p class="sum">Spontaneous emission through a coupled cavity can be a significant decay channel for qubits in circuit quantum electrodynamics.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1003.0142">arxiv.org/abs/1003.0142</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.99</div>
+  <div>
+    <h3>Enhancing Dispersive Readout of Superconducting Qubits Through Dynamic Control of the Dispersive Shift: Experiment and Theory</h3>
+    <p class="sum">The performance of a wide range of quantum computing algorithms and protocols depends critically on the fidelity and speed of the employed qubit readout.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2307.07765">arxiv.org/abs/2307.07765</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.99</div>
+  <div>
+    <h3>Fast Scalable State Measurement with Superconducting Qubits</h3>
+    <p class="sum">Progress in superconducting qubit experiments with greater numbers of qubits or advanced techniques such as feedback requires faster and more accurate state measurement.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1401.0257">arxiv.org/abs/1401.0257</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.99</div>
+  <div>
+    <h3>Coherent Josephson qubit suitable for scalable quantum integrated circuits</h3>
+    <p class="sum">We demonstrate a planar, tunable superconducting qubit with energy relaxation times up to 44 microseconds.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1304.2322">arxiv.org/abs/1304.2322</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.99</div>
+  <div>
+    <h3>Suppression of crosstalk in superconducting qubits using dynamical decoupling</h3>
+    <p class="sum">Currently available superconducting quantum processors with interconnected transmon qubits are noisy and prone to various errors.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2108.04530">arxiv.org/abs/2108.04530</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.99</div>
+  <div>
+    <h3>The Flux Qubit Revisited to Enhance Coherence and Reproducibility</h3>
+    <p class="sum">The scalable application of quantum information science will stand on reproducible and controllable high-coherence quantum bits (qubits).</p>
+<p class="meta"><a href="https://arxiv.org/abs/1508.06299">arxiv.org/abs/1508.06299</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.99</div>
+  <div>
+    <h3>Suppressing quantum errors by scaling a surface code logical qubit</h3>
+    <p class="sum">Practical quantum computing will require error rates that are well below what is achievable with physical qubits.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2207.06431">arxiv.org/abs/2207.06431</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.99</div>
+  <div>
+    <h3>Exponential suppression of bit or phase flip errors with repetitive error correction</h3>
+    <p class="sum">Realizing the potential of quantum computing will require achieving sufficiently low logical error rates.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2102.06132">arxiv.org/abs/2102.06132</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>Optimal design of a superconducting transmon qubit with tapered wiring</h3>
+    <p class="sum">Analytical formulas are presented for simplified but useful qubit geometries that predict surface dielectric loss when its thickness is much less than the metal thickness, the limiting case needed for real devices.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2104.01544">arxiv.org/abs/2104.01544</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>Repeated Quantum Error Detection in a Surface Code</h3>
+    <p class="sum">The realization of quantum error correction is an essential ingredient for reaching the full potential of fault-tolerant universal quantum computation.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1912.09410">arxiv.org/abs/1912.09410</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>Realizing Rapid, High-Fidelity, Single-Shot Dispersive Readout of Superconducting Qubits</h3>
+    <p class="sum">The speed of quantum gates and measurements is a decisive factor for the overall fidelity of quantum protocols when performed on physical qubits with finite coherence time.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1701.06933">arxiv.org/abs/1701.06933</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>System Characterization of Dispersive Readout in Superconducting Qubits</h3>
+    <p class="sum">Designing quantum systems with the measurement speed and accuracy needed for quantum error correction using superconducting qubits requires iterative design and test informed by accurate models and characterization tools.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2402.00413">arxiv.org/abs/2402.00413</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>2D transmons with lifetimes and coherence times exceeding 1 millisecond</h3>
+    <p class="sum">Materials improvements are a powerful approach to reducing loss and decoherence in superconducting qubits because such improvements can be readily translated to large scale processors.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2503.14798">arxiv.org/abs/2503.14798</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>Rapid high-fidelity multiplexed readout of superconducting qubits</h3>
+    <p class="sum">The duration and fidelity of qubit readout is a critical factor for applications in quantum information processing as it limits the fidelity of algorithms which reuse qubits after measurement or apply feedback based on the measurement result.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1801.07904">arxiv.org/abs/1801.07904</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>Superconducting coupler with exponentially large on-off ratio</h3>
+    <p class="sum">Tunable two-qubit couplers offer an avenue to mitigate errors in multiqubit superconducting quantum processors.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2107.09861">arxiv.org/abs/2107.09861</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>Fast Flux-Activated Leakage Reduction for Superconducting Quantum Circuits</h3>
+    <p class="sum">Quantum computers will require quantum error correction to reach the low error rates necessary for solving problems that surpass the capabilities of conventional computers.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2309.07060">arxiv.org/abs/2309.07060</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>Benchmarking the readout of a superconducting qubit for repeated measurements</h3>
+    <p class="sum">Readout of superconducting qubits faces a trade-off between measurement speed and unwanted back-action on the qubit caused by the readout drive, such as T_1 degradation and leakage out of the computational subspace.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2407.10934">arxiv.org/abs/2407.10934</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>Direct Dispersive Monitoring of Charge Parity in Offset-Charge-Sensitive Transmons</h3>
+    <p class="sum">A striking characteristic of superconducting circuits is that their eigenspectra and intermode coupling strengths are well predicted by simple Hamiltonians representing combinations of quantum circuit elements.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1903.00113">arxiv.org/abs/1903.00113</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>Electric field spectroscopy of material defects in transmon qubits</h3>
+    <p class="sum">Superconducting integrated circuits have demonstrated a tremendous potential to realize integrated quantum computing processors.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1909.09749">arxiv.org/abs/1909.09749</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>On-demand driven dissipation for cavity reset and cooling</h3>
+    <p class="sum">We present a superconducting circuit device that provides active, on-demand, tunable dissipation on a target mode of the electromagnetic field.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2310.16785">arxiv.org/abs/2310.16785</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>Resolving photon number states in a superconducting circuit</h3>
+    <p class="sum">Electromagnetic signals are always composed of photons, though in the circuit domain those signals are carried as voltages and currents on wires, and the discreteness of the photon&#39;s energy is usually not evident.</p>
+  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>Balanced cross-Kerr coupling for superconducting qubit readout</h3>
+    <p class="sum">Dispersive readout, the standard method for measuring superconducting qubits, is limited by multiphoton qubit-resonator processes arising even at moderate drive powers.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2501.09010">arxiv.org/abs/2501.09010</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>Dual-rail encoding with superconducting cavities</h3>
+    <p class="sum">The design of quantum hardware that reduces and mitigates errors is essential for practical quantum error correction (QEC) and useful quantum computation.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2212.12077">arxiv.org/abs/2212.12077</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>Resisting high-energy impact events through gap engineering in superconducting qubit arrays</h3>
+    <p class="sum">Quantum error correction (QEC) provides a practical path to fault-tolerant quantum computing through scaling to large qubit numbers, assuming that physical errors are sufficiently uncorrelated in time and space.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2402.15644">arxiv.org/abs/2402.15644</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>Fast Microwave-free State Preparation and Measurement of Superconducting Qubits</h3>
+    <p class="sum">Fast, high-fidelity, scalable state preparation and measurement is critical to the realization of a quantum computing system.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2609.01334">arxiv.org/abs/2609.01334</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>Fast, high-fidelity transmon readout with intrinsic Purcell protection via nonperturbative cross-Kerr coupling</h3>
+    <p class="sum">Dispersive readout of superconducting qubits relies on a transverse capacitive coupling that hybridizes the qubit with the readout resonator, subjecting the qubit to Purcell decay and measurement-induced state transitions (MIST).</p>
+<p class="meta"><a href="https://arxiv.org/abs/2601.04975">arxiv.org/abs/2601.04975</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>New material platform for superconducting transmon qubits with coherence times exceeding 0.3 milliseconds</h3>
+    <p class="sum">The superconducting transmon qubit is a leading platform for quantum computing and quantum science.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2003.00024">arxiv.org/abs/2003.00024</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>Circuit Quantum Electrodynamics: Coherent Coupling of a Single Photon to a Cooper Pair Box</h3>
+    <p class="sum">Under appropriate conditions, superconducting electronic circuits behave quantum mechanically, with properties that can be designed and controlled at will.</p>
+  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>Scaling and logic in the color code on a superconducting quantum processor</h3>
+    <p class="sum">Quantum error correction is essential for bridging the gap between the error rates of physical devices and the extremely low logical error rates required for quantum algorithms.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2412.14256">arxiv.org/abs/2412.14256</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>Investigation of Parasitic Two-Level Systems in Merged-Element Transmon Qubits</h3>
+    <p class="sum">In conventional transmon qubits, decoherence is dominated by a large number of parasitic two-level systems (TLS) residing at the edges of its large area coplanar shunt capacitor and junction leads.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2509.22593">arxiv.org/abs/2509.22593</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>Assessing the Sensitivity of Niobium- and Tantalum-Based Superconducting Qubits to Infrared Radiation</h3>
+    <p class="sum">The use of tantalum films for superconducting qubits has recently extended qubit coherence times significantly, primarily due to reduced dielectric losses at the metal-air interface.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2602.05806">arxiv.org/abs/2602.05806</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code</h3>
+    <p class="sum">Quantum computers hold the promise of solving computational problems which are intractable using conventional methods.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2112.03708">arxiv.org/abs/2112.03708</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>The high-coherence fluxonium qubit</h3>
+    <p class="sum">We report superconducting fluxonium qubits with coherence times largely limited by energy relaxation and reproducibly satisfying T2 &gt; 100 microseconds (T2 &gt; 300 microseconds in one device).</p>
+<p class="meta"><a href="https://arxiv.org/abs/1810.11006">arxiv.org/abs/1810.11006</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>Model-based Optimization of Superconducting Qubit Readout</h3>
+    <p class="sum">Measurement is an essential component of quantum algorithms, and for superconducting qubits it is often the most error prone.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2308.02079">arxiv.org/abs/2308.02079</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>High fidelity control of superconducting qubits with optical transmitted signal</h3>
+    <p class="sum">Superconducting circuits exhibit remarkable potential for constructing large-scale quantum simulation and computation systems, featuring numerous qubits, extended coherence time, and precise control.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2608.19602">arxiv.org/abs/2608.19602</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.98</div>
+  <div>
+    <h3>Quantum theory of a bandpass Purcell filter for qubit readout</h3>
+    <p class="sum">The readout fidelity of superconducting transmon and Xmon qubits is partially limited by the qubit energy relaxation through the resonator into the transmission line, which is also known as the Purcell effect.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1504.06030">arxiv.org/abs/1504.06030</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.97</div>
+  <div>
+    <h3>High-performance multiplexed readout of superconducting qubits with a tunable broadband Purcell filter</h3>
+    <p class="sum">Fast, high-fidelity, and low back-action readout plays a crucial role in the advancement of quantum error correction (QEC).</p>
+<p class="meta"><a href="https://arxiv.org/abs/2509.11822">arxiv.org/abs/2509.11822</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.97</div>
+  <div>
+    <h3>Modeling low- and high-frequency noise in transmon qubits with resource-efficient measurement</h3>
+    <p class="sum">Transmon qubits experience open system effects that manifest as noise at a broad range of frequencies.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2303.00095">arxiv.org/abs/2303.00095</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.97</div>
+  <div>
+    <h3>State preservation by repetitive error detection in a superconducting quantum circuit</h3>
+    <p class="sum">Quantum computing becomes viable when a quantum state can be preserved from environmentally-induced error.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1411.7403">arxiv.org/abs/1411.7403</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.97</div>
+  <div>
+    <h3>Correlated Phase Error Bursts in a Gap-Engineered Superconducting Qubit Array</h3>
+    <p class="sum">One of the roadblocks toward the implementation of a fault-tolerant superconducting quantum processor is impacts of ionizing radiation with the qubit substrate.</p>
+  </div>
+</div>
+<div class="row db">
+  <div class="score">0.97</div>
+  <div>
+    <h3>Experimental realization of an intrinsically error-protected superconducting qubit</h3>
+    <p class="sum">Encoding a qubit in logical quantum states with wavefunctions characterized by disjoint support and robust energies can offer simultaneous protection against relaxation and pure dephasing.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1910.07542">arxiv.org/abs/1910.07542</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.97</div>
+  <div>
+    <h3>Quantum crosstalk cancellation for fast entangling gates and improved multi-qubit performance</h3>
+    <p class="sum">Quantum computers built with superconducting artificial atoms already stretch the limits of their classical counterparts.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2106.00675">arxiv.org/abs/2106.00675</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.97</div>
+  <div>
+    <h3>A near-quantum-limited Josephson traveling-wave parametric amplifier</h3>
+    <p class="sum">Detecting single photon level signals-carriers of both classical and quantum information-is particularly challenging for low-energy microwave frequency excitations.</p>
+  </div>
+</div>
+<div class="row db">
+  <div class="score">0.97</div>
+  <div>
+    <h3>Millisecond coherence in a superconducting qubit</h3>
+    <p class="sum">Increasing the degree of control over physical qubits is a crucial component of quantum computing research.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2103.08578">arxiv.org/abs/2103.08578</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.97</div>
+  <div>
+    <h3>Fluctuations of Energy-Relaxation Times in Superconducting Qubits</h3>
+    <p class="sum">Superconducting qubits are an attractive platform for quantum computing since they have demonstrated high-fidelity quantum gates and extensibility to modest system sizes.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1809.01043">arxiv.org/abs/1809.01043</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.97</div>
+  <div>
+    <h3>Demonstrating a long-coherence dual-rail erasure qubit using tunable transmons</h3>
+    <p class="sum">Quantum error correction with erasure qubits promises significant advantages over standard error correction due to favorable thresholds for erasure errors.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2307.08737">arxiv.org/abs/2307.08737</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.97</div>
+  <div>
+    <h3>Scalable and Site-Specific Frequency Tuning of Two-Level System Defects in Superconducting Qubit Arrays</h3>
+    <p class="sum">State-of-the-art superconducting quantum processors containing tens to hundreds of qubits have demonstrated the building blocks for realizing fault-tolerant quantum computation.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2503.04702">arxiv.org/abs/2503.04702</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.97</div>
+  <div>
+    <h3>Procedure for systematically tuning up crosstalk in the cross resonance gate</h3>
+    <p class="sum">We present improvements in both theoretical understanding and experimental implementation of the cross resonance (CR) gate that have led to shorter two-qubit gate times and interleaved randomized benchmarking fidelities exceeding 99%.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1603.04821">arxiv.org/abs/1603.04821</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.97</div>
+  <div>
+    <h3>Above 99.9% Fidelity Single-Qubit Gates, Two-Qubit Gates, and Readout in a Single Superconducting Quantum Device</h3>
+    <p class="sum">Achieving high-fidelity single-qubit gates, two-qubit gates, and qubit readout is critical for building scalable, error-corrected quantum computers.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2508.16437">arxiv.org/abs/2508.16437</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.97</div>
+  <div>
+    <h3>Demonstrating Quantum Error Correction that Extends the Lifetime of Quantum Information</h3>
+    <p class="sum">The remarkable discovery of Quantum Error Correction (QEC), which can overcome the errors experienced by a bit of quantum information (qubit), was a critical advance that gives hope for eventually realizing practical quantum computers.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1602.04768">arxiv.org/abs/1602.04768</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.97</div>
+  <div>
+    <h3>Photon-noise-tolerant dispersive readout of a superconducting qubit using a nonlinear Purcell filter</h3>
+    <p class="sum">Residual noise photons in a readout resonator become a major source of dephasing for a superconducting qubit when the resonator is optimized for a fast, high-fidelity dispersive readout.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2309.04315">arxiv.org/abs/2309.04315</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.97</div>
+  <div>
+    <h3>Long-distance transmon coupler with CZ gate fidelity above 99.8%</h3>
+    <p class="sum">Tunable coupling of superconducting qubits has been widely studied due to its importance for isolated gate operations in scalable quantum processor architectures.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2208.09460">arxiv.org/abs/2208.09460</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.97</div>
+  <div>
+    <h3>Readout-Induced Leakage in Superconducting Circuits with Nonlinear Couplings</h3>
+    <p class="sum">In superconducting circuits, drive-induced unwanted transitions limit the readout power, thereby constraining readout speed and fidelity.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2606.16055">arxiv.org/abs/2606.16055</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.97</div>
+  <div>
+    <h3>High-Fidelity, Frequency-Flexible Two-Qubit Fluxonium Gates with a Transmon Coupler</h3>
+    <p class="sum">We propose and demonstrate an architecture for fluxonium-fluxonium two-qubit gates mediated by transmon couplers (FTF, for fluxonium-transmon-fluxonium).</p>
+<p class="meta"><a href="https://arxiv.org/abs/2304.06087">arxiv.org/abs/2304.06087</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.97</div>
+  <div>
+    <h3>Circuit Quantum Electrodynamics</h3>
+    <p class="sum">Quantum mechanical effects at the macroscopic level were first explored in Josephson junction-based superconducting circuits in the 1980&#39;s.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2005.12667">arxiv.org/abs/2005.12667</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.97</div>
+  <div>
+    <h3>Readout-induced suppression and enhancement of superconducting qubit lifetimes</h3>
+    <p class="sum">It has long been known that the lifetimes of superconducting qubits suffer during readout, increasing readout errors.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2305.10508">arxiv.org/abs/2305.10508</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.97</div>
+  <div>
+    <h3>Surface participation and dielectric loss in superconducting qubits</h3>
+    <p class="sum">We study the energy relaxation times ($T_1$) of superconducting transmon qubits in 3D cavities as a function of dielectric participation ratios of material surfaces.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1509.01854">arxiv.org/abs/1509.01854</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.96</div>
+  <div>
+    <h3>Characterization of drive-induced unwanted state transitions in superconducting circuits</h3>
+    <p class="sum">Microwave drives are essential for implementing control and readout operations in superconducting quantum circuits.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2506.24070">arxiv.org/abs/2506.24070</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.96</div>
+  <div>
+    <h3>Quantum error correction of a qubit encoded in grid states of an oscillator</h3>
+    <p class="sum">Quantum bits are more robust to noise when they are encoded non-locally.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1907.12487">arxiv.org/abs/1907.12487</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.96</div>
+  <div>
+    <h3>Microwave Crosstalk in Planar Superconducting Quantum Devices</h3>
+    <p class="sum">Microwave crosstalk poses a major challenge to scaling superconducting quantum devices as it introduces excess control errors.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2606.02440">arxiv.org/abs/2606.02440</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.96</div>
+  <div>
+    <h3>A tunable coupling scheme for implementing high-fidelity two-qubit gates</h3>
+    <p class="sum">The prospect of computational hardware with quantum advantage relies critically on the quality of quantum gate operations.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1803.09813">arxiv.org/abs/1803.09813</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.96</div>
+  <div>
+    <h3>Real-time quantum error correction beyond break-even</h3>
+    <p class="sum">The ambition of harnessing the quantum for computation is at odds with the fundamental phenomenon of decoherence.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2211.09116">arxiv.org/abs/2211.09116</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.96</div>
+  <div>
+    <h3>Surpassing millisecond coherence times in on-chip superconducting quantum memories by optimizing materials, processes, and circuit design</h3>
+    <p class="sum">The performance of superconducting quantum circuits for quantum computing has advanced tremendously in recent decades; however, a comprehensive understanding of relaxation mechanisms does not yet exist.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2308.15539">arxiv.org/abs/2308.15539</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.96</div>
+  <div>
+    <h3>A Modular Cryogenic Link for Microwave Quantum Communication Over Distances of Tens of Meters</h3>
+    <p class="sum">Quantum technologies promise a radically new way to solve classically intractable computing problems.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2604.15971">arxiv.org/abs/2604.15971</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.96</div>
+  <div>
+    <h3>A First Demonstration of the SQUAT Detector Architecture: Direct Measurement of Resonator-Free Charge-Sensitive Transmons</h3>
+    <p class="sum">The Superconducting Quasiparticle-Amplifying Transmon (SQUAT) is a new sensor architecture for THz (meV) detection based on a weakly charge-sensitive transmon directly coupled to a transmission line.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2601.16261">arxiv.org/abs/2601.16261</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.96</div>
+  <div>
+    <h3>Wiring surface loss of a superconducting transmon qubit</h3>
+    <p class="sum">Quantum processors using superconducting qubits suffer from dielectric loss leading to noise and dissipation.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2311.16794">arxiv.org/abs/2311.16794</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.96</div>
+  <div>
+    <h3>Distinguishing parity-switching mechanisms in a superconducting qubit</h3>
+    <p class="sum">Single-charge tunneling is a decoherence mechanism affecting superconducting qubits, yet the origin of excess quasiparticle excitations (QPs) responsible for this tunneling in superconducting devices is not fully understood.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2204.07458">arxiv.org/abs/2204.07458</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.96</div>
+  <div>
+    <h3>Beta Tantalum Transmon Qubits with Quality Factors Approaching 10 Million</h3>
+    <p class="sum">Tantalum-based transmon qubits are a promising platform for building large-scale quantum processors.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2603.13174">arxiv.org/abs/2603.13174</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.96</div>
+  <div>
+    <h3>Cavity quantum electrodynamics for superconducting electrical circuits: an architecture for quantum computation</h3>
+    <p class="sum">We propose a realizable architecture using one-dimensional transmission line resonators to reach the strong coupling limit of cavity quantum electrodynamics in superconducting electrical circuits.</p>
+  </div>
+</div>
+<div class="row db">
+  <div class="score">0.96</div>
+  <div>
+    <h3>Heralded Leakage Detection with Preserved Computational-State Coherence in a Fixed-Frequency Transmon</h3>
+    <p class="sum">Leakage out of the computational subspace is a major error mechanism in superconducting quantum processors.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2607.17204">arxiv.org/abs/2607.17204</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.96</div>
+  <div>
+    <h3>Laser-annealing Josephson junctions for yielding scaled-up superconducting quantum processors</h3>
+    <p class="sum">As superconducting quantum circuits scale to larger sizes, the problem of frequency crowding proves a formidable task.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2009.00781">arxiv.org/abs/2009.00781</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.96</div>
+  <div>
+    <h3>Electrical post-fabrication tuning of aluminum Josephson junctions at room temperature</h3>
+    <p class="sum">Josephson junctions are key elements of superconducting quantum technology, serving as the core building blocks of superconducting qubits.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2602.20002">arxiv.org/abs/2602.20002</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.96</div>
+  <div>
+    <h3>Quasiparticle relaxation of superconducting qubits in the presence of flux</h3>
+    <p class="sum">Quasiparticle tunneling across a Josephson junction sets a limit for the lifetime of a superconducting qubit state.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1101.1341">arxiv.org/abs/1101.1341</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.95</div>
+  <div>
+    <h3>Observation of directly interacting coherent two-level systems in a solid</h3>
+    <p class="sum">Parasitic two-level tunneling systems originating from structural material defects affect the functionality of various microfabricated devices by acting as a source of noise.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1503.03681">arxiv.org/abs/1503.03681</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.95</div>
+  <div>
+    <h3>Optimizing the frequency positioning of tunable couplers in a circuit QED processor to mitigate spectator effects on quantum operations</h3>
+    <p class="sum">We experimentally optimize the frequency of flux-tunable couplers in a superconducting quantum processor to minimize the impact of spectator transmons during quantum operations (single-qubit gates, two-qubit gates and readout) on other transmons.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2503.13225">arxiv.org/abs/2503.13225</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.95</div>
+  <div>
+    <h3>Measurement-induced state transitions in multi-qubit transmon processors</h3>
+    <p class="sum">Dispersive readout of the transmon qubit in circuit QED is known to lose its quantum non-demolition character at small to moderate measurement drive amplitudes.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2606.05010">arxiv.org/abs/2606.05010</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.95</div>
+  <div>
+    <h3>Phonon downconversion to suppress correlated errors in superconducting qubits</h3>
+    <p class="sum">Quantum error correction can preserve quantum information in the presence of local errors, but correlated errors are fatal.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2203.06586">arxiv.org/abs/2203.06586</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.95</div>
+  <div>
+    <h3>Fluxonium: single Cooper pair circuit free of charge offsets</h3>
+    <p class="sum">The promise of single Cooper pair quantum circuits based on tunnel junctions for metrology and quantum information applications is severely limited by the influence of &#34;offset&#34; charges - random, slowly drifting microscopic charges inherent to many solid-state systems.</p>
+<p class="meta"><a href="https://arxiv.org/abs/0906.0831">arxiv.org/abs/0906.0831</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.95</div>
+  <div>
+    <h3>A Quantum Engineer&#39;s Guide to Superconducting Qubits</h3>
+    <p class="sum">The aim of this review is to provide quantum engineers with an introductory guide to the central concepts and challenges in the rapidly accelerating field of superconducting quantum circuits.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1904.06560">arxiv.org/abs/1904.06560</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.95</div>
+  <div>
+    <h3>Impact of ionizing radiation on superconducting qubit coherence</h3>
+    <p class="sum">The practical viability of any qubit technology stands on long coherence times and high-fidelity operations, with the superconducting qubit modality being a leading example.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2001.09190">arxiv.org/abs/2001.09190</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.95</div>
+  <div>
+    <h3>Realizing Lattice Surgery on Two Distance-Three Repetition Codes with Superconducting Qubits</h3>
+    <p class="sum">Quantum error correction is needed for quantum computers to be capable of fault-tolerantly executing algorithms using hundreds of logical qubits.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2501.04612">arxiv.org/abs/2501.04612</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.95</div>
+  <div>
+    <h3>Quasiparticle dynamics in epitaxial Al-InAs planar Josephson junctions</h3>
+    <p class="sum">Quasiparticle (QP) effects play a significant role in the coherence and fidelity of superconducting quantum circuits.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2303.04784">arxiv.org/abs/2303.04784</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.95</div>
+  <div>
+    <h3>Decoherence in Josephson Qubits from Dielectric Loss</h3>
+    <p class="sum">Dielectric loss from two-level states is shown to be a dominant decoherence source in superconducting quantum bits.</p>
+  </div>
+</div>
+<div class="row db">
+  <div class="score">0.95</div>
+  <div>
+    <h3>A Review of Design Concerns in Superconducting Quantum Circuits</h3>
+    <p class="sum">In this short review we describe the process of designing a superconducting circuit device for quantum information applications.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2411.16967">arxiv.org/abs/2411.16967</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.95</div>
+  <div>
+    <h3>Bias-preserving and error-detectable entangling operations in a superconducting dual-rail system</h3>
+    <p class="sum">For useful quantum computation, error-corrected machines are required that can dramatically reduce the inevitable errors experienced by physical qubits.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2503.10935">arxiv.org/abs/2503.10935</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.95</div>
+  <div>
+    <h3>Demonstrating dynamic surface codes</h3>
+    <p class="sum">A remarkable characteristic of quantum computing is the potential for reliable computation despite faulty qubits.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2412.14360">arxiv.org/abs/2412.14360</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.95</div>
+  <div>
+    <h3>Qudit Dynamical Decoupling on a Superconducting Quantum Processor</h3>
+    <p class="sum">Multi-level qudit systems are increasingly being explored as alternatives to traditional qubit systems due to their denser information storage and processing potential.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2407.04893">arxiv.org/abs/2407.04893</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.95</div>
+  <div>
+    <h3>Demonstration of High-Fidelity Entangled Logical Qubits using Transmons</h3>
+    <p class="sum">Quantum error correction (QEC) codes are necessary to fault-tolerantly operate quantum computers.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2503.14472">arxiv.org/abs/2503.14472</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.94</div>
+  <div>
+    <h3>Dynamical decoupling and noise spectroscopy with a superconducting flux qubit</h3>
+    <p class="sum">The characterization and mitigation of decoherence in natural and artificial two-level systems (qubits) is fundamental to quantum information science and its applications.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1101.4707">arxiv.org/abs/1101.4707</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.94</div>
+  <div>
+    <h3>Manufacturing low dissipation superconducting quantum processors</h3>
+    <p class="sum">Enabling applications for solid state quantum technology will require systematically reducing noise, particularly dissipation, in these systems.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1901.08042">arxiv.org/abs/1901.08042</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.94</div>
+  <div>
+    <h3>An All-van-der-Waals Qubit</h3>
+    <p class="sum">Advances in solid-state physics, materials science, and device engineering have accelerated the development of superconducting qubits.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2609.14230">arxiv.org/abs/2609.14230</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.94</div>
+  <div>
+    <h3>Fast, High-Fidelity Erasure Detection of Dual-Rail Qubits with Symmetrically Coupled Readout</h3>
+    <p class="sum">Erasure qubits are a promising platform for implementing hardware-efficient quantum error correction.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2604.16292">arxiv.org/abs/2604.16292</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.94</div>
+  <div>
+    <h3>Decoherence of a tunable capacitively shunted flux qubit</h3>
+    <p class="sum">Quantum annealing is a method to solve optimization problems that leverages quantum tunneling in a coupled qubit system.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2307.13961">arxiv.org/abs/2307.13961</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.94</div>
+  <div>
+    <h3>Quantum supremacy using a programmable superconducting processor</h3>
+    <p class="sum">A programmable processor of 53 superconducting transmon qubits with tunable couplers (Sycamore) samples the output of pseudo-random quantum circuits, exploring a state space of dimension 2^53.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1910.11333">arxiv.org/abs/1910.11333</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.94</div>
+  <div>
+    <h3>Quasiparticle-induced transitions in a fluxonium qubit</h3>
+    <p class="sum">Quasiparticles are a prominent decoherence source in superconducting qubits, but their effects are notoriously difficult to isolate in fluxonium.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2607.21329">arxiv.org/abs/2607.21329</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.94</div>
+  <div>
+    <h3>Simple pulses for elimination of leakage in weakly nonlinear qubits</h3>
+    <p class="sum">In realizations of quantum computing, a two-level system (qubit) is often singled out of the many levels of an anharmonic oscillator.</p>
+<p class="meta"><a href="https://arxiv.org/abs/0901.0534">arxiv.org/abs/0901.0534</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.94</div>
+  <div>
+    <h3>High-threshold and low-overhead fault-tolerant quantum memory</h3>
+    <p class="sum">Quantum error correction becomes a practical possibility only if the physical error rate is below a threshold value that depends on a particular quantum code, syndrome measurement circuit, and decoding algorithm.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2308.07915">arxiv.org/abs/2308.07915</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.94</div>
+  <div>
+    <h3>Quantum non-demolition dispersive readout of a superconducting artificial atom using large photon numbers</h3>
+    <p class="sum">Reading out the state of superconducting artificial atoms typically relies on dispersive coupling to a readout resonator.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2009.14785">arxiv.org/abs/2009.14785</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.94</div>
+  <div>
+    <h3>Materials loss measurements using superconducting microwave resonators</h3>
+    <p class="sum">The performance of superconducting circuits for quantum computing is limited by materials losses.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2006.04718">arxiv.org/abs/2006.04718</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.94</div>
+  <div>
+    <h3>High-gain and large-bandwidth Josephson parametric amplifier influenced by Fabry-Perot interference</h3>
+    <p class="sum">Quantum-limited parametric amplifiers are essential components for many quantum technologies operating in the microwave domain.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2604.13881">arxiv.org/abs/2604.13881</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.94</div>
+  <div>
+    <h3>Correlated Charge Noise and Relaxation Errors in Superconducting Qubits</h3>
+    <p class="sum">The central challenge in building a quantum computer is error correction.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2012.06029">arxiv.org/abs/2012.06029</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.94</div>
+  <div>
+    <h3>Quantum error correction of a grid-state qubit with state preparation and measurement errors below 10^-3</h3>
+    <p class="sum">Grid state qubits offer a hardware-efficient approach to large-scale fault-tolerant quantum computing.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2607.06718">arxiv.org/abs/2607.06718</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.94</div>
+  <div>
+    <h3>Demonstrating real-time and low-latency quantum error correction with superconducting qubits</h3>
+    <p class="sum">Quantum error correction (QEC) will be essential to achieve the accuracy needed for quantum computers to realise their full potential.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2410.05202">arxiv.org/abs/2410.05202</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.93</div>
+  <div>
+    <h3>The superconducting grid-states qubit</h3>
+    <p class="sum">Decoherence errors arising from noisy environments remain a central obstacle to progress in quantum computation and information processing.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2509.14656">arxiv.org/abs/2509.14656</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.93</div>
+  <div>
+    <h3>Developments in superconducting erasure qubits for hardware-efficient quantum error correction</h3>
+    <p class="sum">Quantum computers are inherently noisy, and a crucial challenge for achieving large-scale, fault-tolerant quantum computing is to implement quantum error correction.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2601.02183">arxiv.org/abs/2601.02183</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.93</div>
+  <div>
+    <h3>Broadband Purcell Filter for Fast Superconducting Qubit Reset and Readout</h3>
+    <p class="sum">Rapid reset and readout of qubit states are essential for quantum error correction, yet accelerating these operations through stronger coupling to a dissipative environment inevitably increases qubit decay via the Purcell effect.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2609.14081">arxiv.org/abs/2609.14081</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.93</div>
+  <div>
+    <h3>Collapse and Inversion of the Josephson Potential in a Strongly Driven Superconducting Circuit</h3>
+    <p class="sum">Superconducting circuits embedding Josephson junctions leverage microwave drives for control and measurement of quantum states.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2607.14344">arxiv.org/abs/2607.14344</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.93</div>
+  <div>
+    <h3>A superconducting surface-code processor with lattice-surgery logical operations</h3>
+    <p class="sum">Fault-tolerant logical operations are fundamental for scalable quantum computation.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2606.06598">arxiv.org/abs/2606.06598</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.93</div>
+  <div>
+    <h3>Surface loss simulations of superconducting coplanar waveguide resonators</h3>
+    <p class="sum">Losses in superconducting planar resonators are presently assumed to predominantly arise from surface-oxide dissipation, due to experimental losses varying with choice of materials.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1107.4698">arxiv.org/abs/1107.4698</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.93</div>
+  <div>
+    <h3>Quantum control of a cat-qubit with bit-flip times exceeding ten seconds</h3>
+    <p class="sum">Quantum bits (qubits) are prone to several types of errors due to uncontrolled interactions with their environment.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2307.06617">arxiv.org/abs/2307.06617</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.93</div>
+  <div>
+    <h3>Observation of Josephson Harmonics in Tunnel Junctions</h3>
+    <p class="sum">Approaches to developing large-scale superconducting quantum processors must cope with the numerous microscopic degrees of freedom that are ubiquitous in solid-state devices.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2302.09192">arxiv.org/abs/2302.09192</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.93</div>
+  <div>
+    <h3>High-Q superconducting microwave resonators using MBE titanium nitride</h3>
+    <p class="sum">Using molecular beam epitaxy, we have realized thin films of titanium nitride (TiN) on c-plane sapphire that exhibit the lowest observed full-width at half maximum X-ray rocking curve width of 18 arcsec.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2607.15230">arxiv.org/abs/2607.15230</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.93</div>
+  <div>
+    <h3>The Kerr-Cat Qubit: Stabilization, Readout, and Gates</h3>
+    <p class="sum">Quantum superpositions of macroscopically distinct classical states, so-called Schrodinger cat states, are a resource for quantum metrology, quantum communication, and quantum computation.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1907.12131">arxiv.org/abs/1907.12131</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.93</div>
+  <div>
+    <h3>Overcoming leakage in scalable quantum error correction</h3>
+    <p class="sum">Leakage of quantum information out of computational states into higher energy states represents a major challenge in the pursuit of quantum error correction (QEC).</p>
+<p class="meta"><a href="https://arxiv.org/abs/2211.04728">arxiv.org/abs/2211.04728</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.93</div>
+  <div>
+    <h3>Coherent control of macroscopic quantum states in a single-Cooper-pair box</h3>
+    <p class="sum">A small superconducting electrode (a single-Cooper-pair box) connected to a reservoir via a Josephson junction constitutes an artificial two-level system, in which two charge states that differ by 2e are coupled by tunneling of Cooper pairs.</p>
+  </div>
+</div>
+<div class="row db">
+  <div class="score">0.93</div>
+  <div>
+    <h3>Realization of high-fidelity CZ and ZZ-free iSWAP gates with a tunable coupler</h3>
+    <p class="sum">High-fidelity two-qubit gates at scale are a key requirement to realize the full promise of quantum computation and simulation.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2011.01261">arxiv.org/abs/2011.01261</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.92</div>
+  <div>
+    <h3>Quantum Computer Controlled by Superconducting Digital Electronics at Millikelvin Temperature</h3>
+    <p class="sum">Current superconducting quantum computing platforms face significant scaling challenges, as individual signal lines are required for control of each qubit.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2503.09879">arxiv.org/abs/2503.09879</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.92</div>
+  <div>
+    <h3>Dynamics of Transmon Ionization</h3>
+    <p class="sum">Qubit measurement and control in circuit QED rely on microwave drives, with higher drive amplitudes ideally leading to faster processes.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2203.11235">arxiv.org/abs/2203.11235</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.92</div>
+  <div>
+    <h3>Measurement-induced state transitions in a superconducting qubit: Beyond the rotating wave approximation</h3>
+    <p class="sum">Many superconducting qubit systems use the dispersive interaction between the qubit and a coupled harmonic resonator to perform quantum state measurement.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1606.05721">arxiv.org/abs/1606.05721</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.92</div>
+  <div>
+    <h3>Hardware-efficient quantum error correction via concatenated bosonic qubits</h3>
+    <p class="sum">In order to solve problems of practical importance, quantum computers will likely need to incorporate quantum error correction, where a logical qubit is redundantly encoded in many noisy physical qubits.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2409.13025">arxiv.org/abs/2409.13025</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.92</div>
+  <div>
+    <h3>Universal Hamiltonian control in a planar trimon circuit</h3>
+    <p class="sum">Multimode circuits provide an avenue for flexible control of single and multi-qubit gates.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2603.04566">arxiv.org/abs/2603.04566</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.92</div>
+  <div>
+    <h3>Transmon qubit with relaxation time exceeding 0.5 milliseconds</h3>
+    <p class="sum">By using the dry etching process of tantalum (Ta) film, we had obtained transmon qubit with the best lifetime (T1) 503 us, suggesting that the dry etching process can be adopted in the following multi-qubit fabrication with Ta film.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2105.09890">arxiv.org/abs/2105.09890</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.92</div>
+  <div>
+    <h3>Quantum error correction below the surface code threshold</h3>
+    <p class="sum">Quantum error correction provides a path to reach practical quantum computing by combining multiple physical qubits into a logical qubit, where the logical error rate is suppressed exponentially as more qubits are added.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2408.13687">arxiv.org/abs/2408.13687</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.92</div>
+  <div>
+    <h3>Exponential suppression of bit-flips in a qubit encoded in an oscillator</h3>
+    <p class="sum">A quantum system interacts with its environment, if ever so slightly, no matter how much care is put into isolating it.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1907.11729">arxiv.org/abs/1907.11729</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.92</div>
+  <div>
+    <h3>A double-resonator coupler for high-fidelity two-qubit gates between superconducting qubits</h3>
+    <p class="sum">Tunable couplers have enabled two-qubit gate fidelities in superconducting quantum processors to approach $99.9\%$, yet simultaneously suppressing residual interactions and maintaining flexible qubit-frequency allocation remain central challenges for scaling.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2609.05222">arxiv.org/abs/2609.05222</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.92</div>
+  <div>
+    <h3>Enhancing the sensitivity of single microwave photon detection with bandwidth tunability</h3>
+    <p class="sum">We report on the characteristics of a microwave photon counter device based on a superconducting transmon qubit.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2501.07354">arxiv.org/abs/2501.07354</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.92</div>
+  <div>
+    <h3>Surface code logical operations on a superconducting quantum processor</h3>
+    <p class="sum">Fault-tolerant quantum computation requires logical operations that manipulate encoded information while preserving quantum error-correction protection.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2607.01473">arxiv.org/abs/2607.01473</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.91</div>
+  <div>
+    <h3>Lattice surgery for near-term experimental logical qubit entanglement creation in planar architectures</h3>
+    <p class="sum">In the era of early fault-tolerant quantum computing, basic demonstrations of entanglement operations between a few logical qubits are at the frontier of recent developments in quantum computing.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2606.15190">arxiv.org/abs/2606.15190</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.91</div>
+  <div>
+    <h3>A mid-circuit erasure check on a dual-rail cavity qubit using the joint-photon number-splitting regime of circuit QED</h3>
+    <p class="sum">Quantum control of a linear oscillator using a static dispersive coupling to a nonlinear ancilla underpins a wide variety of experiments in circuit QED.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2406.14621">arxiv.org/abs/2406.14621</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.91</div>
+  <div>
+    <h3>Erasure qubits: Overcoming the $T_1$ limit in superconducting circuits</h3>
+    <p class="sum">The amplitude damping time, $T_1$, has long stood as the major factor limiting quantum fidelity in superconducting circuits, prompting concerted efforts in the material science and design of qubits aimed at increasing $T_1$.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2208.05461">arxiv.org/abs/2208.05461</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.91</div>
+  <div>
+    <h3>Scalable Fluxonium Quantum Processors via Tunable-Coupler Architecture</h3>
+    <p class="sum">Superconducting quantum processors have largely converged on transmon-based architectures, while alternative qubit modalities with intrinsic error protection have lacked a demonstrated path to scalable system integration.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2604.13363">arxiv.org/abs/2604.13363</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.91</div>
+  <div>
+    <h3>Suppressing Counter-Rotating Errors for Fast Single-Qubit Gates with Fluxonium</h3>
+    <p class="sum">Qubit decoherence unavoidably degrades the fidelity of quantum logic gates.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2406.08295">arxiv.org/abs/2406.08295</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.91</div>
+  <div>
+    <h3>Granular aluminum: A superconducting material for high impedance quantum circuits</h3>
+    <p class="sum">Superconducting quantum information processing machines are predominantly based on microwave circuits with relatively low characteristic impedance, of about 100 Ohm, and small anharmonicity, which can limit their coherence and logic gate fidelity.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1809.10646">arxiv.org/abs/1809.10646</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.90</div>
+  <div>
+    <h3>Dynamical decoupling for superconducting qubits: a performance survey</h3>
+    <p class="sum">Dynamical Decoupling (DD) is perhaps the simplest and least resource-intensive error suppression strategy for improving quantum computer performance.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2207.03670">arxiv.org/abs/2207.03670</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.90</div>
+  <div>
+    <h3>Resolving catastrophic error bursts from cosmic rays in large arrays of superconducting qubits</h3>
+    <p class="sum">Scalable quantum computing can become a reality with error correction, provided coherent qubits can be constructed in large arrays.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2104.05219">arxiv.org/abs/2104.05219</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.90</div>
+  <div>
+    <h3>Waveguide Quantum Electrodynamics with Giant Superconducting Artificial Atoms</h3>
+    <p class="sum">Models of light-matter interactions typically invoke the dipole approximation, within which atoms are treated as point-like objects when compared to the wavelength of the electromagnetic modes that they interact with.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1912.12233">arxiv.org/abs/1912.12233</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.90</div>
+  <div>
+    <h3>Phase-sensitive cascade quantum amplifier with nearly noiseless operation</h3>
+    <p class="sum">Phase-sensitive parametric devices enable quadrature-selective amplification with the potential for sub-quantum-limited noise performance.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2608.25645">arxiv.org/abs/2608.25645</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.90</div>
+  <div>
+    <h3>Beating the Ramsey limit on sensing with deterministic qubit control</h3>
+    <p class="sum">Quantum sensors promise revolutionary advances in medical imaging, energy production, mass detection, geodesy, foundational physics research, and a host of other fields.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2408.15926">arxiv.org/abs/2408.15926</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.90</div>
+  <div>
+    <h3>Suppression of static ZZ interaction in an all-transmon quantum processor</h3>
+    <p class="sum">The superconducting transmon qubit is currently a leading qubit modality for quantum computing, but gate performance in quantum processor with transmons is often insufficient to support running complex algorithms for practical applications.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2011.03976">arxiv.org/abs/2011.03976</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.89</div>
+  <div>
+    <h3>Superconducting Flux Memory for Cryogenic Applications</h3>
+    <p class="sum">We report the development of flux memory for use with superconducting circuits.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2609.00772">arxiv.org/abs/2609.00772</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.89</div>
+  <div>
+    <h3>A digitally controlled silicon quantum processing unit</h3>
+    <p class="sum">Commercially-relevant quantum computers will require large numbers of high-performing qubits that can be manufactured, integrated, and controlled at scale.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2604.16216">arxiv.org/abs/2604.16216</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.89</div>
+  <div>
+    <h3>Benchmarking quantum gates and circuits</h3>
+    <p class="sum">Accurate noise characterization in quantum gates and circuits is vital for the development of reliable quantum simulations for chemically relevant systems and fault-tolerant quantum computing.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2407.09942">arxiv.org/abs/2407.09942</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.89</div>
+  <div>
+    <h3>Surface code scaling on heavy-hex superconducting quantum processors</h3>
+    <p class="sum">Demonstrating subthreshold scaling of a surface-code quantum memory on hardware whose native connectivity does not match the code remains a central challenge.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2510.18847">arxiv.org/abs/2510.18847</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.89</div>
+  <div>
+    <h3>Component-Level Inverse Design of Transmon Qubits Using Neural Networks</h3>
+    <p class="sum">Designing a superconducting qubit to realize specific Hamiltonian parameters typically requires iterating through a time and compute-intensive forward loop in which the designer chooses a layout geometry, simulates it, extracts circuit parameters such as capacitances, and refines the geometry.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2607.20795">arxiv.org/abs/2607.20795</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.89</div>
+  <div>
+    <h3>Coexistence of nonequilibrium density and equilibrium energy distribution of quasiparticles in a superconducting qubit</h3>
+    <p class="sum">The density of quasiparticles typically observed in superconducting qubits exceeds the value expected in equilibrium by many orders of magnitude.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2302.12330">arxiv.org/abs/2302.12330</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.88</div>
+  <div>
+    <h3>Comparison of Dielectric Loss in Titanium Nitride and Aluminum Superconducting Resonators</h3>
+    <p class="sum">Lossy dielectrics are a significant source of decoherence in superconducting quantum circuits.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2007.07338">arxiv.org/abs/2007.07338</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.87</div>
+  <div>
+    <h3>Wireless millikelvin interconnects for superconducting quantum hardware</h3>
+    <p class="sum">Scalable quantum computing is limited by the dense network of electrical interconnects linking cryogenic quantum processors to room-temperature control electronics.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2607.13834">arxiv.org/abs/2607.13834</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.87</div>
+  <div>
+    <h3>Seamless high-Q microwave cavities for multimode circuit QED</h3>
+    <p class="sum">Multimode cavity quantum electrodynamics - where a two-level system interacts simultaneously with many cavity modes - provides a versatile framework for quantum information processing and quantum optics.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2010.16382">arxiv.org/abs/2010.16382</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.87</div>
+  <div>
+    <h3>Efficient Z-Gates for Quantum Computing</h3>
+    <p class="sum">For superconducting qubits, microwave pulses drive rotations around the Bloch sphere.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1612.00858">arxiv.org/abs/1612.00858</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.87</div>
+  <div>
+    <h3>Introduction to Quantum Electromagnetic Circuits</h3>
+    <p class="sum">The article is a short opinionated review of the quantum treatment of electromagnetic circuits, with no pretension to exhaustiveness.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1610.03438">arxiv.org/abs/1610.03438</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.87</div>
+  <div>
+    <h3>High coherence fluxonium manufactured with a wafer-scale uniformity process</h3>
+    <p class="sum">Fluxonium qubits are recognized for their high coherence times and high operation fidelities, attributed to their unique design incorporating a superinductor, which is typically implemented using an array of over 100 Josephson junctions.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2405.05481">arxiv.org/abs/2405.05481</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.86</div>
+  <div>
+    <h3>Entanglement assisted probe of the non-Markovian to Markovian transition in open quantum system dynamics</h3>
+    <p class="sum">We utilize a superconducting qubit processor to experimentally probe non-Markovian dynamics of an entangled qubit pair.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2401.13735">arxiv.org/abs/2401.13735</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.86</div>
+  <div>
+    <h3>Suppression of Quasiparticle Poisoning to 10^-11 Levels in Superconducting Qubits via Infrared Shielding</h3>
+    <p class="sum">Quasiparticle poisoning bottlenecks superconducting qubits, limiting coherence and the scalability of quantum processors.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2606.07339">arxiv.org/abs/2606.07339</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.86</div>
+  <div>
+    <h3>Introduction to Quantum Noise, Measurement and Amplification</h3>
+    <p class="sum">The topic of quantum noise has become extremely timely due to the rise of quantum information physics and the resulting interchange of ideas between the condensed matter and AMO/quantum optics communities.</p>
+<p class="meta"><a href="https://arxiv.org/abs/0810.4729">arxiv.org/abs/0810.4729</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.86</div>
+  <div>
+    <h3>Surface codes: Towards practical large-scale quantum computation</h3>
+    <p class="sum">This article provides an introduction to surface code quantum computing.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1208.0928">arxiv.org/abs/1208.0928</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.85</div>
+  <div>
+    <h3>Fidelity-Aware Frequency Allocation and Transpilation Co-Design for Tunable Coupler Quantum Systems</h3>
+    <p class="sum">Frequency crowding is a fundamental limitation in superconducting quantum architectures, particularly in tunable-coupler systems.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2605.21662">arxiv.org/abs/2605.21662</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.85</div>
+  <div>
+    <h3>A Traveling-Wave Parametric Amplifier With Integrated Diplexers</h3>
+    <p class="sum">Traveling-Wave Parametric Amplifiers (TWPAs) are ubiquitous in superconducting circuit readout, providing high gain with near-quantum-limited noise performance across a wide bandwidth.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2603.12327">arxiv.org/abs/2603.12327</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.84</div>
+  <div>
+    <h3>Measurement-Induced Transmon Ionization</h3>
+    <p class="sum">Despite the high measurement fidelity that can now be reached, the dispersive qubit readout of circuit quantum electrodynamics is plagued by a loss of its quantum nondemolition character and a decrease in fidelity with increased measurement strength.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2402.06615">arxiv.org/abs/2402.06615</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.84</div>
+  <div>
+    <h3>Experimental Characterization and Modeling of Measurement-Induced State-Transitions in a Fluxonium Superconducting Qubit</h3>
+    <p class="sum">Superconducting qubits are most often measured using dispersive readout, which, ideally, implements a projective quantum non-demolition (QND) measurement.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2606.17866">arxiv.org/abs/2606.17866</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.84</div>
+  <div>
+    <h3>Reducing TLS loss in tantalum CPW resonators using titanium sacrificial layers</h3>
+    <p class="sum">We demonstrate a substantial reduction in two-level system loss in tantalum coplanar waveguide resonators fabricated on high-resistivity silicon substrates through the use of an ultrathin titanium sacrificial layer.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2601.16369">arxiv.org/abs/2601.16369</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.83</div>
+  <div>
+    <h3>Measurement-induced state transitions in dispersive qubit readout schemes</h3>
+    <p class="sum">The dispersive-readout scheme enables quantum nondemolition measurement of superconducting qubits.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2402.07360">arxiv.org/abs/2402.07360</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.83</div>
+  <div>
+    <h3>IQ Mixer Calibration for Superconducting Circuits</h3>
+    <p class="sum">An important device for modulation and frequency translation in the field of circuit quantum electrodynamics is the IQ mixer, an analog component for which calibration is necessary to achieve optimal performance.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2008.07265">arxiv.org/abs/2008.07265</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.83</div>
+  <div>
+    <h3>Real-time detection of correlated quasiparticle tunneling events in a multi-qubit superconducting device</h3>
+    <p class="sum">Quasiparticle tunneling events are a source of decoherence and correlated errors in superconducting circuits.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2602.01945">arxiv.org/abs/2602.01945</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.83</div>
+  <div>
+    <h3>Multi-purpose quantum laboratories from superconducting circuits</h3>
+    <p class="sum">Superconducting circuits (SCs) are the cornerstone of modern quantum technology, enabling scalable computing through coherent control of macroscopic quantum states.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2608.17020">arxiv.org/abs/2608.17020</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.81</div>
+  <div>
+    <h3>Quantum error correction of qudits beyond break-even</h3>
+    <p class="sum">Hilbert space dimension is a key resource for quantum information processing.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2409.15065">arxiv.org/abs/2409.15065</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.80</div>
+  <div>
+    <h3>Radiopurity material assays and radiation exposure projections for superconducting qubit measurements at SNOLAB</h3>
+    <p class="sum">Interactions of cosmic rays and other forms of ionizing radiation pose a significant challenge to the reliable operation of state-of-the-art quantum devices and error correction in quantum computing based on superconducting circuits which are typically fabricated on semiconductor substrates.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2607.16151">arxiv.org/abs/2607.16151</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.80</div>
+  <div>
+    <h3>Always-on, highly efficient microwave photon detector based on a superconducting artificial molecule</h3>
+    <p class="sum">Efficient detection of single microwave photons is a key capability for emerging quantum technologies.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2608.12972">arxiv.org/abs/2608.12972</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.79</div>
+  <div>
+    <h3>Tantalum as a base material for superconducting integrated circuits</h3>
+    <p class="sum">The performance of superconducting integrated circuits for quantum applications is fundamentally limited by material-related losses.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2606.13750">arxiv.org/abs/2606.13750</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.79</div>
+  <div>
+    <h3>Breakeven demonstration of quantum low-density parity-check codes</h3>
+    <p class="sum">High-rate quantum low-density parity-check (qLDPC) codes are a leading candidate for fault-tolerant quantum computing.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2606.06455">arxiv.org/abs/2606.06455</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.79</div>
+  <div>
+    <h3>Driven-dissipative entanglement of distant giant atoms</h3>
+    <p class="sum">Quantum interconnects distribute entanglement via controlled light-matter interactions for quantum computing and sensing applications.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2606.13375">arxiv.org/abs/2606.13375</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.77</div>
+  <div>
+    <h3>Towards understanding two-level-systems in amorphous solids -- Insights from quantum circuits</h3>
+    <p class="sum">Amorphous solids show surprisingly universal behaviour at low temperatures.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1705.01108">arxiv.org/abs/1705.01108</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.77</div>
+  <div>
+    <h3>Oval-shaped resonance distortion as a signature of quasiparticle heating effect in a niobium superconducting resonator</h3>
+    <p class="sum">We investigate the nonlinear behavior of a superconducting microwave resonator subjected to a dissipative mechanism where the associated quality factor (Q factor) decreases with increasing dissipated power, leading to a dissipative feedback effect.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2607.17791">arxiv.org/abs/2607.17791</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.76</div>
+  <div>
+    <h3>Quantum-limited millimeter wave to optical transduction</h3>
+    <p class="sum">Long distance transmission of quantum information is a central ingredient of distributed quantum information processors for both computing and secure communication.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2207.10121">arxiv.org/abs/2207.10121</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.74</div>
+  <div>
+    <h3>Effective Hamiltonian models of the cross-resonance gate</h3>
+    <p class="sum">Effective Hamiltonian methods are utilized to model the two-qubit cross-resonance gate for both the ideal two-qubit case and when higher levels are included.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1804.04073">arxiv.org/abs/1804.04073</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.73</div>
+  <div>
+    <h3>Entangling logical qubits without physical operations</h3>
+    <p class="sum">Fault-tolerant logical entangling gates are essential for scalable quantum computing, but are limited by the error rates and overheads of physical two-qubit gates and measurements.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2601.20927">arxiv.org/abs/2601.20927</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.72</div>
+  <div>
+    <h3>Resonance Fluorescence of a Single Artificial Atom</h3>
+    <p class="sum">An atom in open space can be detected by means of resonant absorption and reemission of electromagnetic waves, known as resonance fluorescence, which is a fundamental phenomenon of quantum optics.</p>
+<p class="meta"><a href="https://arxiv.org/abs/1002.4944">arxiv.org/abs/1002.4944</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.71</div>
+  <div>
+    <h3>Fault-tolerant interfaces for modular quantum computing on diverse qubit platforms</h3>
+    <p class="sum">Modular architectures offer a scalable path toward fault-tolerant quantum computing by interconnecting smaller quantum processing units (QPUs) provided that high-rate, fault-tolerant interfaces can be realized across modules.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2510.05221">arxiv.org/abs/2510.05221</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.70</div>
+  <div>
+    <h3>Evidence for the utility of quantum computing before fault tolerance</h3>
+    <p class="sum">Quantum computing promises to offer substantial speed-ups over its classical counterpart for certain problems.</p>
+  </div>
+</div>
+<div class="row db">
+  <div class="score">0.70</div>
+  <div>
+    <h3>Probing excited-state dynamics of transmon ionization</h3>
+    <p class="sum">The fidelity and quantum nondemolition character of the dispersive readout in circuit QED are limited by unwanted transitions to highly excited states at specific photon numbers in the readout resonator.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2505.00639">arxiv.org/abs/2505.00639</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.69</div>
+  <div>
+    <h3>Separate Control of Transient Leakage Exposure and Endpoint Leakage in Fast Transmon Gates</h3>
+    <p class="sum">Leakage to noncomputational states limits the speed of single-qubit gates in weakly anharmonic transmons.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2607.05779">arxiv.org/abs/2607.05779</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.69</div>
+  <div>
+    <h3>Quantum error correction at ultra-low overhead</h3>
+    <p class="sum">Suppressing errors is the central challenge for useful large-scale quantum computing.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2608.02773">arxiv.org/abs/2608.02773</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.67</div>
+  <div>
+    <h3>High-rate qLDPC processors</h3>
+    <p class="sum">Despite significant progress on quantum low-density parity-check (qLDPC) codes, building qLDPC processors that are high-rate, high-throughput, hardware-friendly, and fast-to-decode remains a challenge.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2607.28795">arxiv.org/abs/2607.28795</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.63</div>
+  <div>
+    <h3>Crosstalk In Contemporary Quantum Devices</h3>
+    <p class="sum">Crosstalk noise derives from phenomena in quantum devices which inhibit individual addressability or cause unintended interactions among qubits.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2605.26528">arxiv.org/abs/2605.26528</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.63</div>
+  <div>
+    <h3>Lattice surgery with Bell measurements: Modular fault-tolerant quantum computation at low entanglement cost</h3>
+    <p class="sum">Modular architectures are a promising approach to scaling quantum computers to fault tolerance.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2510.13541">arxiv.org/abs/2510.13541</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.58</div>
+  <div>
+    <h3>Noise cross-correlations from single-shot measurements</h3>
+    <p class="sum">We introduce a novel method that we call Single-Shot Cross-Spectroscopy (SSCS), for extracting the auto- and cross-power spectral densities of dephasing noise of a qubit pair.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2509.22073">arxiv.org/abs/2509.22073</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.56</div>
+  <div>
+    <h3>Branch-resolved Pauli-block spectroscopy of residual conditional phase in two-qubit gates</h3>
+    <p class="sum">Recent progress in quantum physics and quantum technologies is driving quantum computing from the noisy intermediate-scale (NISQ) era toward fault-tolerant operation.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2607.10249">arxiv.org/abs/2607.10249</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.55</div>
+  <div>
+    <h3>Engineering quantum criticality and dynamics on an analog-digital simulator</h3>
+    <p class="sum">Understanding emergent phenomena in out-of-equilibrium interacting many-body systems is an exciting frontier in physical science.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2602.18555">arxiv.org/abs/2602.18555</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.52</div>
+  <div>
+    <h3>Multivariate Bicycle Codes</h3>
+    <p class="sum">Quantum error correction suppresses noise in quantum systems to allow for high-precision computations.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2406.19151">arxiv.org/abs/2406.19151</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.52</div>
+  <div>
+    <h3>Nearest-neighbour gates are all you need: High-rate quantum low-density parity-check codes on a planar grid</h3>
+    <p class="sum">High-performance quantum low-density parity-check codes promise substantial reductions in the overhead of fault-tolerant quantum computation, but most constructions require long-range connectivity or qubit shuttling, both of which are difficult to realise in superconducting architectures.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2606.19482">arxiv.org/abs/2606.19482</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.50</div>
+  <div>
+    <h3>Boundary-Aware Stabilizer Scheduling for Distributed Quantum Error Correction</h3>
+    <p class="sum">Future quantum architectures are expected to be modular, with quantum processors connecting multiple quantum processing units (QPUs) via photonic interconnects.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2604.22471">arxiv.org/abs/2604.22471</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.49</div>
+  <div>
+    <h3>Adaptive AI for Pulse-Level Quantum Control</h3>
+    <p class="sum">The Control Variational Quantum Eigensolver (ctrl-VQE) directly optimizes microwave pulses to enable faster and lower-error quantum-state preparation, but its continuous control landscape re- quires efficient search strategies.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2609.08727">arxiv.org/abs/2609.08727</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.46</div>
+  <div>
+    <h3>Sub-kelvin thermal conductivity of substrates and on-chip routing in quantum integrated systems</h3>
+    <p class="sum">The development of large-scale quantum systems increasingly relies on the close integration of heterogeneous components such as qubits, control electronics, and readout circuits, making thermal management at cryogenic temperatures a central challenge in such architectures.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2605.06146">arxiv.org/abs/2605.06146</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.30</div>
+  <div>
+    <h3>Evidence of scaling advantage on an NP-Complete problem with enhanced quantum solvers</h3>
+    <p class="sum">Achieving quantum advantage remains a key milestone in the noisy intermediate-scale quantum era.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2508.08869">arxiv.org/abs/2508.08869</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.16</div>
+  <div>
+    <h3>Quantum XYZ Stabilizer Codes</h3>
+    <p class="sum">Stabilizer codes are often constructed within the Calderbank--Shor--Steane (CSS) framework, where two mutually orthogonal binary classical codes define $X$ and $Z$-type stabilizer generators.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2607.14988">arxiv.org/abs/2607.14988</a></p>  </div>
+</div>
+<div class="row db">
+  <div class="score">0.15</div>
+  <div>
+    <h3>Learning ground state observables from quantum computing experiments</h3>
+    <p class="sum">Recent theoretical progress has established conditions under which machine learning models can efficiently predict ground-state properties of gapped local Hamiltonians when trained on quantum-generated data.</p>
+<p class="meta"><a href="https://arxiv.org/abs/2606.15983">arxiv.org/abs/2606.15983</a></p>  </div>
+</div>
+</main>
+<footer></footer>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: false}, {left: '$', right: '$', display: false}, {left: '\\(', right: '\\)', display: false}], ignoredClasses: ['search'], throwOnError: false})"></script>
+<script>
+document.getElementById("theme").addEventListener("click", function () {
+  var el = document.documentElement, dark = el.dataset.theme ? el.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  el.dataset.theme = dark ? "light" : "dark";
+  try { localStorage.setItem("theme", el.dataset.theme); } catch (e) {}
+});
+(function () {  // sidebar: mark the day currently being read
+  var links = document.querySelectorAll('.side a[href^="#d-"]');
+  if (!links.length || !window.IntersectionObserver) return;
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      links.forEach(function (l) { l.classList.toggle("on", l.getAttribute("href") === "#" + e.target.id); });
+    });
+  }, {rootMargin: "0px 0px -75% 0px"});
+  links.forEach(function (l) { var d = document.getElementById(l.getAttribute("href").slice(1)); if (d) io.observe(d); });
+})();
+(function () {  // sort bar: flip the day order, or swap the feed for a pre-rendered top list
+  var bar = document.querySelector(".sortbar"), feed = document.getElementById("feed"), top = document.getElementById("top");
+  if (!bar || !feed || !top) return;
+  var range = document.getElementById("range"), order = "new", key = "sort:" + location.pathname;
+  var more = document.getElementById("more"), page = +feed.dataset.page || 100, limit = page;
+  function paginate() {  // show days, in their current order, until `limit` papers are on screen
+    var n = 0, left = 0;
+    [].forEach.call(feed.querySelectorAll(".dayblock"), function (d) {
+      var c = d.querySelectorAll(".row").length;
+      d.hidden = n >= limit; if (d.hidden) left += c; n += c;
+    });
+    [].forEach.call(feed.querySelectorAll(".monthblock"), function (m) { m.hidden = !m.querySelector(".dayblock:not([hidden])"); });
+    if (more) { more.hidden = feed.hidden || !left; more.querySelector("span").textContent = left + " more"; }
+  }
+  function reveal(hash) {  // a jump link to a day that is not loaded yet
+    var t = document.getElementById(hash.slice(1)), blk = t && t.closest(".dayblock");
+    if (!blk || !blk.hidden) return false;
+    while (blk.hidden) { limit += page; paginate(); }
+    return true;
+  }
+  if (more) more.addEventListener("click", function () { limit += page; paginate(); });
+  var topMore = document.getElementById("topmore");
+  function topPage(add) {  // the open top list shows 10 papers, then 10 more per click
+    var s = top.querySelector("section:not([hidden])");
+    if (!s || !topMore) return;
+    var rows = s.querySelectorAll(".row"), lim = (+s.dataset.limit || 10) + (add || 0);
+    s.dataset.limit = lim;
+    [].forEach.call(rows, function (r, i) { r.hidden = i >= lim; });
+    s.querySelector(".n").textContent = Math.min(lim, rows.length);
+    topMore.hidden = rows.length <= lim;
+    topMore.querySelector("span").textContent = Math.max(rows.length - lim, 0) + " more";
+  }
+  if (topMore) topMore.addEventListener("click", function () { topPage(10); });
+  function flip(el) {  // headings are not sections, so a month's title stays on top
+    [].slice.call(el.children).filter(function (k) { return k.tagName === "SECTION"; }).reverse()
+      .forEach(function (k) { el.appendChild(k); });
+  }
+  function press(group, on) {
+    [].forEach.call(group.querySelectorAll("button"), function (b) {
+      b.classList.toggle("on", b === on); b.setAttribute("aria-pressed", b === on);
+    });
+  }
+  function show(sort, win) {
+    var isTop = sort === "top";
+    if (!isTop && sort !== order) { order = sort; limit = page; flip(feed); [].forEach.call(feed.querySelectorAll(".monthblock"), flip); }
+    feed.hidden = isTop; top.hidden = range.hidden = !isTop;
+    paginate();
+    press(bar.querySelector(".sorts"), bar.querySelector('[data-sort="' + sort + '"]'));
+    var btn = win && range.querySelector('[data-range="' + win + '"]');
+    if (btn) {
+      press(range, btn);
+      range.style.setProperty("--i", [].indexOf.call(range.querySelectorAll("button"), btn));
+      [].forEach.call(top.children, function (s) { s.hidden = s.dataset.range !== win; });
+    }
+    topPage();
+    try { sessionStorage.setItem(key, sort + " " + range.querySelector(".on").dataset.range); } catch (e) {}
+  }
+  bar.addEventListener("click", function (e) {
+    var b = e.target.closest("button");
+    if (b) show(b.dataset.sort || "top", b.dataset.range);
+  });
+  // a jump link needs the days back on screen
+  window.addEventListener("hashchange", function () {
+    if (!/^#[dm]-/.test(location.hash)) return;
+    var was = feed.hidden; if (was) show(order);
+    if (reveal(location.hash) || was) location.replace(location.hash);
+  });
+  var saved = [];
+  try { saved = (sessionStorage.getItem(key) || "").split(" "); } catch (e) {}
+  if (saved[0] === "top" && /^#[dm]-/.test(location.hash)) saved[0] = "new";
+  if (bar.querySelector('[data-sort="' + saved[0] + '"]')) show(saved[0], saved[1]);
+  paginate();
+  if (/^#d-/.test(location.hash) && reveal(location.hash)) document.getElementById(location.hash.slice(1)).scrollIntoView();
+})();
+</script>
+<script>
+(function () {
+  var root ="", q = document.getElementById("q"), box = document.getElementById("results"), on = -1;
+  function load() {  // the index is only fetched once someone actually searches
+    if (window.PAPERS || load.started) return;
+    load.started = true;
+    var s = document.createElement("script");
+    s.src = root + "search.js"; s.onload = run; document.head.appendChild(s);
+  }
+  function fold(s) {  // lowercase, accents stripped, so "reouven" finds "Réouven"
+    return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+  }
+  function run() {
+    var words = fold(q.value).split(/\s+/).filter(Boolean);
+    box.textContent = ""; on = -1;
+    if (!words.length || !window.PAPERS) { box.hidden = true; return; }
+    function has(hay) { return words.every(function (w) { return hay.indexOf(w) >= 0; }); }
+    var hits = window.PAPERS.filter(function (p) {
+      if (!p.h) { p.fa = fold(p.a); p.h = fold(p.t + " " + p.id + " " + p.x) + " " + p.fa; }
+      return has(p.h);
+    }).sort(function (a, b) { return has(b.fa) - has(a.fa) || b.s - a.s; }).slice(0, 8);  // author matches first
+    hits.forEach(function (p) {
+      var a = document.createElement("a"), by = document.createElement("small"), m = document.createElement("small");
+      a.href = root + p.id + "/index.html"; a.textContent = p.t;
+      // name the authors the query matched, else the first few
+      var names = p.a.split(", "), match = names.filter(function (n) {
+        var f = fold(n); return words.some(function (w) { return f.indexOf(w) >= 0; });
+      });
+      var shown = (match.length ? match : names).slice(0, 3);
+      by.textContent = shown.join(", ") + (shown.length < names.length ? (match.length ? ", and others" : ", et al.") : "");
+      m.textContent = p.s.toFixed(1) + "%  ·  " + p.d + "  ·  " + p.id;
+      a.appendChild(by); a.appendChild(m); box.appendChild(a);
+    });
+    if (!hits.length) { var e = document.createElement("p"); e.textContent = "No matches."; box.appendChild(e); }
+    box.hidden = false;
+  }
+  q.addEventListener("focus", function () { load(); run(); });
+  q.addEventListener("input", run);
+  q.addEventListener("keydown", function (e) {
+    var links = box.querySelectorAll("a");
+    if (e.key === "Escape") { q.blur(); box.hidden = true; }
+    else if (e.key === "Enter" && links.length) { location.href = links[Math.max(on, 0)].href; }
+    else if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+      e.preventDefault();
+      if (!links.length) return;
+      on = (on + (e.key === "ArrowDown" ? 1 : -1) + links.length) % links.length;
+      links.forEach(function (l, i) { l.classList.toggle("on", i === on); });
+    }
+  });
+  document.addEventListener("click", function (e) { if (!e.target.closest(".search")) box.hidden = true; });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "/" && document.activeElement !== q) { e.preventDefault(); q.focus(); }
+  });
+})();
+</script>
+</body>
+</html>

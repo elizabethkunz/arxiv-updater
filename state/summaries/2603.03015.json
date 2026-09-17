@@ -1,0 +1,8 @@
+{
+  "summary": "This work develops analytical quantum full-wave solutions for single- and two-photon transport through a rectangular waveguide cavity containing a transmon qubit coupled to two coaxial ports using quantum input-output theory. The analysis reveals dramatically different photon scattering signatures between single- and two-photon regimes across the good and bad cavity limits of cavity QED.",
+  "motivation": "Validating numerical full-wave quantum solvers for superconducting quantum interconnects requires analytical solutions for standard component geometries, which are currently lacking for realistic 3D cavity-qubit systems interfaced through external ports.",
+  "method": "The authors apply quantum input-output theory formalism to derive analytical expressions for scattering matrix elements and second-order correlation functions $g^{(2)}(\\tau)$, combining full-wave classical EM calculations (cavity resonance $\\omega_c/2\\pi = 7.55$ GHz, coaxial decay rates $\\kappa/2\\pi = 421.5$ kHz) with quantum qubit dynamics for the transmon ($\\omega_q/2\\pi = 7.55$ GHz).",
+  "result": "In the good-cavity regime ($g = 15.9$ MHz $> \\kappa$), two-photon transmission is suppressed at single-photon dressed frequencies $\\lambda_{1,\\pm}$ but enhanced at two-photon dressed frequencies $\\lambda_{2,\\pm} = \\omega_c \\pm 2g$; in the bad-cavity regime ($g = 269.3$ kHz $< \\kappa$), two-photon transmission becomes possible near the cavity resonance where single-photon reflection dominates, manifesting an analog of dipole-induced transparency.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "This work implements and benchmarks Violaris' unitary inter-branch message-transfer protocol across IBM Eagle, Nighthawk, and Heron (r2/r3) superconducting processors for messages up to $n=32$ qubits without error mitigation. The sparse message family—which compiles to constant two-qubit depth—reveals device-level noise differences ($p_{\rm all}$ ranging from $\rm 0.07$ to $\rm 0.68$ at $n=32$), while half-weight and dense families expose routing overhead and transpiler-seed variability near the coherence frontier.",
+  "motivation": "Understanding how inter-branch message transfer and memory erasure scale with message size, message structure, and device compilation is essential for characterizing current superconducting processors and identifying practical limitations.",
+  "method": "The authors implemented the protocol in Qiskit on four IBM backends (ibm_rensselaer, ibm_miami, ibm_fez, ibm_boston) using three message families (sparse one-hot, half-weight, dense), measuring conditional string success $p_{\rm all}=\\Pr(P=\\mu \\mid R=0)$, memory erasure $p_{\\rm erase}$, branch contrast $\\Delta$, and bitwise mutual information between branch label and paper bits.",
+  "result": "The sparse family (constant compiled depth) reveals device differences at $n=32$; ibm_boston reaches $n=24$ for dense messages and $n=32$ for sparse, while ibm_rensselaer reaches only $n=4$ (dense) and $n=24$ (sparse). Transpiler-seed sweeps on ibm_miami show variability can shift achievable message size, and bitwise mutual information remains nonzero even when string transfer probability $p_{{\\rm all}}$ approaches zero.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

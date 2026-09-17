@@ -1,0 +1,8 @@
+{
+  "summary": "A strongly coupled two-level system (TLS) in a transmon qubit's tunnel junction creates a qubit-mediated effective resonant coupling to the readout resonator via virtual qubit excitations, producing an avoided-level crossing that shifts the resonator frequency and spoils readout fidelity. Multi-photon spectroscopy combined with mechanical strain tuning reveals this mechanism and maps the rich spectrum of the qubit-resonator-TLS system, with effective coupling $g_\text{eff} = g_r g_x / \text{δ}$ reaching 1.5 MHz at 500 MHz detuning.",
+  "motivation": "TLS defects in Josephson junctions are known to cause qubit decoherence and dropout, but their role in readout errors has been underexplored. Understanding this new failure mechanism is critical for scaling superconducting quantum processors where TLS in tunnel barriers occur at densities of 100–8000 TLS/(GHz·μm³).",
+  "method": "Spectroscopy of an Al/Si transmon with $f_q^{\text{max}} = 7.32$ GHz was performed while tuning a strongly coupled TLS ($g_x = 21.7$ MHz, $\\bar{p}_0 = 0.36$ e Å) through resonance via mechanical strain ($\\gamma = 212$ MHz/V) applied to the qubit chip, combined with QuTiP simulations of the full three-level system including multi-photon transitions.",
+  "result": "The parasitic TLS-resonator coupling creates a resonance frequency shift comparable to the dispersive readout signal ($\\chi \\approx g_r^2/\\text{δ}$), directly causing readout failure when the TLS is tuned into resonance with the 6.625 GHz resonator; this occurs with probability ~0.1–2 TLS/GHz for typical small-area junctions.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "This paper presents a systematic benchmarking of five quantum algorithms (Bell states, GHZ states, QFT, Grover's search, QAOA) across trapped-ion (IonQ Aria-1, Forte-1) and superconducting (IQM Garnet, Rigetti Ankaa-3) platforms using Amazon Braket. Performance depends critically on hardware topology and noise: 10-qubit GHZ states achieved fidelities of 0.84 on IonQ but dropped to 0.09–0.12 on superconducting devices due to routing overhead and two-qubit gate errors.",
+  "motivation": "Cloud quantum processors exhibit vastly different behavior for identical circuits across heterogeneous architectures, yet systematic cross-platform comparisons of state-of-the-art hardware remain limited. Understanding how qubit connectivity, coherence times, and gate fidelity translate into algorithm-level performance is essential for NISQ-era quantum computing.",
+  "method": "Five representative quantum algorithms were implemented via Amazon Braket and PennyLane on IonQ Aria-1/Forte-1 (all-to-all trapped-ion), IQM Garnet (20-qubit nearest-neighbor superconducting), Rigetti Ankaa-3 (84-qubit tunable-coupler superconducting), and SV1 simulator, evaluating fidelity, CHSH violations, success probability, and approximation ratios with 100 shots per configuration.",
+  "result": "Trapped-ion systems dominated: IonQ Aria-1 achieved $S_\text{CHSH} \thickapprox 2.9 ± 0.14$ (vs. 2.2–2.5 on superconducting), 10-qubit GHZ fidelity of 0.84 (vs. 0.09–0.12), QFT round-trip fidelity of 1.00 at 10 qubits (vs. 0.01–0.07). Superconducting platforms showed steeper circuit-depth penalties and fidelity degradation in algorithms requiring global connectivity or deep circuits.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

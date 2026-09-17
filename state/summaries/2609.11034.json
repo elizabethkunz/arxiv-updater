@@ -1,0 +1,8 @@
+{
+  "summary": "A quantum circuit refrigerator (QCR) made from a superconductor-insulator-superconductor-insulator-superconductor (SISIS) junction coupled to a Kerr parametric oscillator is analysed theoretically as a way to keep a Kerr-cat qubit inside its qubit subspace. It has an operating regime where single-photon absorption is suppressed and two-photon absorption dominates, so it removes leakage with a much smaller phase-flip penalty than the usual SINIS refrigerator while the bit-flip rates stay comparable.",
+  "motivation": "Pure dephasing pushes Kerr-cat qubits into higher excited states, and this leakage cannot be corrected by standard error-correction codes. A SINIS refrigerator removes it by single-photon absorption, but that also raises the phase-flip rate at high cooling power.",
+  "method": "Photon-assisted quasiparticle tunnelling rates are computed for both junction types and the oscillator dynamics are simulated, with the SINIS bias set where single-photon absorption dominates ($eV/h = 45$ GHz). The sharp superconducting density of states in SISIS acts as an energy filter that blocks single-photon processes and passes two-photon ones, which connect states of the same parity.",
+  "result": "SISIS lowers the leakage population more than SINIS, and its phase-flip rate stays below the dominant cooling rates ($2\\to0$ and $3\\to1$) over the range of cat sizes studied, whereas for SINIS it grows substantially with cat size. Too much cooling power still raises phase flips even for SISIS, so an intermediate setting is best; no experimental data are given.",
+  "source": "full text",
+  "generated_by": "Claude, written in-session from the full text (not via the script's API path)"
+}

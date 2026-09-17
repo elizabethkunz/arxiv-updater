@@ -1,0 +1,8 @@
+{
+  "summary": "This paper proposes a microarchitecture for sandwich decoding using the Union-Find algorithm with temporal parallelism to accelerate surface code QEC, achieving 35% average latency reduction at code distance $d=21$ compared to batch decoding while maintaining a logical error threshold of 1.5% under phenomenological noise. The design is implemented as an ASIC in TSMC 22 nm and 7 nm processes, with detailed RTL and synthesis results demonstrating sub-microsecond decoding latencies suitable for superconducting qubit cycles.",
+  "motivation": "Fault-tolerant quantum computing requires QEC decoding latency below 1 µs to prevent error accumulation within the syndrome measurement cycle; conventional batch decoding processes all accumulated syndrome data at once, leading to latency that grows with code distance $d$.",
+  "method": "A five-unit microarchitecture (Window Dispatcher, two parallel Type-1 Union-Find decoders, Seam Pairer, Type-2 decoder, Result Merger) implements sandwich decoding by decomposing the spatiotemporal graph into fixed-size windows with step size $s=\\lfloor(d+1)/4\\rfloor$ and buffer size $b=\\lfloor(d-1)/4\\rfloor$, enabling incremental decoding in parallel with syndrome measurement; seam data management via FIFOs handles asynchronous completion of parallel decoders.",
+  "result": "At $d=21$ and physical error rate $p=1.0\\%$: average latency reduction of 34.9% (from 186.7 ns to 122.1 ns on 22 nm), worst-case latency reduction of 11.5%, threshold 1.5% vs 1.6% for batch decoder, circuit area increase of 1.38× scaling as $\\mathcal{O}(d^3)$; outperforms Online UF decoder (136.4 ns) and QECOOL (15.3 ns) at comparable code distances.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

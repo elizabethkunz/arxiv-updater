@@ -1,0 +1,199 @@
+{
+  "date": "2026-01-15",
+  "n_fetched": 78,
+  "papers": [
+    {
+      "id": "2601.09591",
+      "title": "Submicrometer tunnel ferromagnetic Josephson junctions with transmon energy scale",
+      "authors": [
+        "R. Satariano",
+        "R. Ferraiuolo",
+        "F. Calloni",
+        "H. G. Ahmad",
+        "D. Gatta",
+        "F. Tafuri",
+        "A. Bruno",
+        "D. Massarotti"
+      ],
+      "abstract": "We have realized submicron tunnel ferromagnetic Al/AlO$_x$/Al/Ni$_{80}$Fe$_{20}$/Al Josephson junctions (JJs) in Manhattan-style configuration for qubit applications. These junctions have been designed to lie within the energy range of transmons. The current-voltage characteristics of these junctions are comparable with those of standard JJs implemented in state-of-the-art transmons, thus confirming the high quality of the devices and marking a significant step toward the realization of the ferrotransmon. Low-frequency characterization confirms that our junctions operate in the quantum phase diffusion limit, as tunnel JJs in conventional transmons with similar characteristic energies. Ultimately, mitigation of quantum phase fluctuations will represent a key for advancing the entire field of superconducting quantum circuit architectures.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-01-14",
+      "score": 0.6666404478814856,
+      "similar_to": [
+        {
+          "title": "Observation of Josephson Harmonics in Tunnel Junctions",
+          "id": "2302.09192",
+          "similarity": 0.8847899436950684
+        },
+        {
+          "title": "Electrical post-fabrication tuning of aluminum Josephson junctions at room temperature",
+          "id": "2602.20002",
+          "similarity": 0.844550609588623
+        }
+      ],
+      "summary": {
+        "summary": "Submicron Al/AlO$_x$/Al/Ni$_{80}$Fe$_{20}$/Al tunnel ferromagnetic Josephson junctions have been fabricated using Manhattan-process lithography, achieving energy scales ($E_C \\sim 40$ µeV, $E_J \\sim 100$–130 µeV) compatible with transmon qubits. The junctions exhibit I-V characteristics and quantum phase diffusion signatures comparable to standard SIS junctions, with $C_J \\sim 2$ fF and switching-current reduction of 70% consistent with WKB theory, establishing feasibility of ferrotransmon integration in standard superconducting circuits.",
+        "motivation": "Ferrotransmons promise qubit frequency control via magnetic pulses rather than static fields, enabling scalable and energy-efficient cryogenic operation; however, submicrometer magnetic Josephson junctions have previously only been realized in Nb with focused ion beam processing, incompatible with standard circuit integration.",
+        "method": "Three-step electron-beam lithography combined with angled Al evaporation, permalloy deposition, and in-situ oxidation produced SIsFS structures with layer thicknesses (Al 20/AlO$_x$ 2/Al 25/Ni$_{80}$Fe$_{20}$ 3/Al 70 nm); d.c. characterization was performed in a dilution refrigerator down to 10 mK with low-frequency current-bias measurements, and transport was analyzed using the tunnel junction microscopic (TJM) model and WKB simulations.",
+        "result": "Stewart-McCumber parameter $\\beta_C \\approx 1$ and binding energy $E_B \\sim 25$–40 µeV yield $E_C/E_J \\sim 0.3$–0.4 and $E_B/E_J \\sim 1$, placing devices in the quantum phase diffusion limit; measured subgap resistance $R_0 = 1.3$–3.9 kΩ agrees with WKB theory, and temperature dependence ($R_0$ saturation below 0.5 K where $E_B > k_B T$) confirms quantum origin of phase fluctuations.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.09014",
+      "title": "Impact of control signal phase noise on qubit fidelity",
+      "authors": [
+        "Agata Barsotti",
+        "Paolo Marconcini",
+        "Gregorio Procissi",
+        "Massimo Macucci"
+      ],
+      "abstract": "As qubit decoherence times are increased and readout technologies are improved, nonidealities in the drive signals, such as phase noise, are going to represent a crucial limitation to the fidelity achievable at the end of complex control pulse sequences. Although the effect of phase noise of reference oscillators on qubit performance has been studied previously, its interaction with realistic time-dependent control pulses and its contribution to fidelity degradation have not yet been investigated in sufficient detail, and remains a critical challenge. Here we study the impact on fidelity of phase noise affecting reference oscillators with the help of numerical simulations, which allow us to directly take into account the interaction between the phase fluctuations in the control signals and the evolution of the qubit state, thereby achieving a comprehensive understanding of the actual role played by the different spectral components of phase noise. In particular, we perform an analysis of the effect of the individual noise frequency contributions, providing a clear identification of the spectral regions that most critically impact fidelity and establishing their relative weight in the overall fidelity degradation. Our method is based on the generation of phase noise realizations consistent with a given power spectral density, that are then applied to the pulse carrier in simulations, with Qiskit-Dynamics, of the qubit temporal evolution. By comparing the final state obtained at the end of a noisy pulse sequence with that in the ideal case and averaging over multiple noise realizations, we estimate the resulting degradation in fidelity, and, exploiting an approximate analytical representation of a carrier affected by phase fluctuations, we shed new light on the nature of the different contributions, and provide an intuitive physical picture.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-13",
+      "score": 0.622080827319643,
+      "similar_to": [
+        {
+          "title": "Dynamical decoupling and noise spectroscopy with a superconducting flux qubit",
+          "id": "1101.4707",
+          "similarity": 0.848630428314209
+        },
+        {
+          "title": "Modeling low- and high-frequency noise in transmon qubits with resource-efficient measurement",
+          "id": "2303.00095",
+          "similarity": 0.8479167222976685
+        }
+      ],
+      "summary": {
+        "summary": "This work investigates phase noise effects on superconducting qubit fidelity through time-domain numerical simulations with Qiskit-Dynamics, resolving a previous misinterpretation that claimed high-frequency noise components dominate fidelity loss. The authors demonstrate that noise components near the Rabi frequency and low-frequency components with large amplitude are the primary fidelity degradation sources, with high-frequency noise contributing only marginally through residual amplitude modulation.",
+        "motivation": "As qubit coherence times and readout fidelities improve, phase noise in control signals becomes a critical limiting factor for achieving high-fidelity gates in complex pulse sequences. Prior work using filter-function formalism incorrectly concluded that high-frequency spectral components dominate fidelity loss, which the authors show stems from a misinterpretation of the phase-to-frequency noise PSD conversion.",
+        "method": "The authors generated colored phase noise realizations with specified power spectral densities using finite-impulse-response filtering of white Gaussian noise (filter order $M = 1\\times10^6$), then applied these to control pulse carriers in Qiskit-Dynamics simulations (tolerances $10^{-8}$, time step 83.3 ps) to compute qubit evolution and fidelity averaged over 20 noise realizations. Analytical decomposition of the noise-modulated carrier into double-sideband and residual amplitude modulation terms clarified the physical contributions.",
+        "result": "Noise components at frequencies near the Rabi frequency (e.g., 10–20 MHz for 50–25 ns pulses) cause maximal fidelity loss, with components far from the carrier having negligible effect; for realistic oscillator spectra with $-60$ dBc/Hz at low offset and $-140$ dBc/Hz above 30 MHz, fidelities of 0.99998 (ten 150 ns pulses) and 0.997 (ten 150 ns pulses) were achieved, confirming that low-frequency and Rabi-resonant components dominate degradation.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2601.09516",
+      "title": "Reservoir-Engineered Refrigeration of a Superconducting Cavity with Double-Quantum-Dot Spin Qubits",
+      "authors": [
+        "Daryoosh Vashaee",
+        "Jahanfar Abouie"
+      ],
+      "abstract": "We present an analytically tractable theory of reservoir-engineered refrigeration of a superconducting microwave cavity and map it onto a realistic solid-state implementation based on gate-defined double-quantum-dot (DQD) spin qubits. Treating the DQD not as a spectroscopic element but as a tunable engineered reservoir, we show how gate control of populations, coherences, linewidths, and detuning defines an effective photon birth-death process with predictable detailed balance. This framework yields closed-form expressions for the cavity steady state, identifies cooling bounds and detuning-dependent refrigeration valleys, and clarifies when refrigeration can drive the cavity below both the bath temperature and the DQD setpoint. By distinguishing refreshed (collision-like) and persistent reservoir regimes, we show how memory effects, saturation, and dark-state formation constrain cooling in realistic devices, while collective bright-mode coupling in a two-dot configuration can enhance refrigeration subject to mismatch and dephasing, as confirmed by numerical Lindblad simulations demonstrating targeted millikelvin cavity cooling relevant for cryogenic circuit-QED architectures.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-01-14",
+      "score": 0.5142295933585184,
+      "similar_to": [
+        {
+          "title": "Characterization of drive-induced unwanted state transitions in superconducting circuits",
+          "id": "2506.24070",
+          "similarity": 0.8556318283081055
+        },
+        {
+          "title": "On-demand driven dissipation for cavity reset and cooling",
+          "id": "2310.16785",
+          "similarity": 0.8472727537155151
+        }
+      ],
+      "summary": {
+        "summary": "This work develops an analytic theory of reservoir engineering for superconducting cavity cooling using gate-defined double-quantum-dot spin qubits as a tunable photon birth-death process. Lindblad simulations confirm millikelvin steady-state cavity temperatures achievable through collective bright-mode coupling in two-dot configurations, subject to constraints from memory effects, saturation, and dark-state formation.",
+        "motivation": "Reaching millikelvin photon occupations in circuit-QED cavities improves qubit coherence and measurement fidelity, motivating active cooling schemes beyond passive dilution refrigeration.",
+        "method": "The authors treat a gate-tunable DQD as an engineered reservoir rather than a spectroscopic probe, deriving closed-form expressions for cavity steady state by mapping gate control of populations, coherences, linewidths, and detuning onto an effective photon birth-death process with detailed balance. Lindblad simulations validate the framework in realistic parameter regimes.",
+        "result": "Cavity refrigeration below both the bath temperature and DQD setpoint is possible, with two-dot bright-mode coupling enhancing cooling beyond single-dot limits, though dephasing and gate-voltage mismatch limit performance in experimental implementations.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.6666,
+    0.6221,
+    0.5142,
+    0.3842,
+    0.3305,
+    0.3012,
+    0.279,
+    0.2527,
+    0.2378,
+    0.2269,
+    0.1626,
+    0.1447,
+    0.1302,
+    0.106,
+    0.0998,
+    0.0998,
+    0.0963,
+    0.0916,
+    0.0895,
+    0.0863,
+    0.0756,
+    0.0694,
+    0.0676,
+    0.0613,
+    0.0612,
+    0.0608,
+    0.0606,
+    0.0588,
+    0.049,
+    0.0467,
+    0.0389,
+    0.0362,
+    0.0349,
+    0.0345,
+    0.0313,
+    0.0307,
+    0.0263,
+    0.0256,
+    0.0255,
+    0.0244,
+    0.0243,
+    0.0237,
+    0.022,
+    0.0217,
+    0.0215,
+    0.0206,
+    0.0199,
+    0.0192,
+    0.0186,
+    0.0174,
+    0.0164,
+    0.0127,
+    0.0124,
+    0.012,
+    0.0113,
+    0.0109,
+    0.0107,
+    0.0106,
+    0.0097,
+    0.0096,
+    0.0094,
+    0.0085,
+    0.0081,
+    0.0077,
+    0.0072,
+    0.0072,
+    0.0063,
+    0.0059,
+    0.0057,
+    0.0053,
+    0.0051,
+    0.0048,
+    0.0047,
+    0.0047,
+    0.0042,
+    0.0041,
+    0.0033,
+    0.0033
+  ]
+}

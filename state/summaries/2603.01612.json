@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates sustainable high-fidelity quantum logic in neutral-atom arrays by integrating mid-circuit cooling and re-initialization to counteract motional heating and atom loss across deep circuits. A controlled logic gate achieving 99.60(1)% raw fidelity is improved to 99.81(1)% via non-destructive erasure detection, with fidelities maintained at ~99.8% across multiple operational rounds without degradation.",
+  "motivation": "Neutral-atom arrays show promise for fault-tolerant quantum computation, but cumulative heating and atom loss degrade gate fidelities below error-correction thresholds during execution of deep, repetitive circuits needed for syndrome extraction in quantum error correction.",
+  "method": "The authors implemented in-circuit Raman sideband cooling and qubit re-initialization within a neutral-atom framework to actively manage internal and motional entropy, thereby refreshing qubit and motional states mid-stream while performing controlled logic gates.",
+  "result": "Two-qubit gate fidelity maintained at ~99.8% across multiple operational rounds without observable degradation, with raw fidelity of 99.60(1)% further improved to 99.81(1)% via non-destructive erasure detection.",
+  "source": "abstract",
+  "generated_by": "claude-haiku-4-5"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "Three InP surface preparations before Nb sputtering are compared: untreated, in-situ Ar+ milling, and sulfur passivation. S-passivation gives the cleanest, sharpest buried interface and higher $T_c$, yet single-photon $Q_i$ is similar for all three (about 84k-130k), indicating the resonators are not limited by loss at the Nb-InP interface.",
+  "motivation": "How substrate oxide removal affects microwave loss in hybrid superconductor-semiconductor quantum devices is poorly understood.",
+  "method": "Materials characterization of the metal-substrate interface (oxygen content, roughness, film damage, $T_c$) is combined with low-power microwave measurements of Nb resonators.",
+  "result": "Single-photon $Q_i$ is roughly 130k (control), 97k (S-passivated) and 84k (Ar+ milled), so the cleaner interface does not translate into lower loss.",
+  "source": "abstract",
+  "generated_by": "Claude, written in-session for the sample day (not via the script's API path)"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates a superconducting-qubit quantum simulator of the Bose-Hubbard model on a triangular-ladder lattice with tunable synthetic magnetic flux, preparing and characterizing half-filling ground states through measurements of current-current correlators and bond kinetic energies. The experiments reveal chiral superfluids at $\\pi$ flux with staggered loop currents, Meissner superfluids at zero flux with suppressed rung currents, and signatures of bond-ordered insulating phases.",
+  "motivation": "Frustrated bosonic lattice models with synthetic gauge fields host exotic many-body phases difficult to access classically, and superconducting transmons offer a natural platform for realizing attractive Bose-Hubbard Hamiltonians with site-resolved control and rapid repetition rates.",
+  "method": "An 8-qubit triangular-ladder device with tunable transmon couplers implements rung hopping $J/2\\pi = 6.1$ MHz and leg hopping $J_\\parallel/2\\pi = 2.5$–$20.4$ MHz (or negative). Ground states are prepared via adiabatic ramp at half-filling (4 excitations), and observables are extracted by applying calibrated beamsplitter rotations to map currents and bond kinetic energies onto population imbalances.",
+  "result": "Chiral current-current correlations $\\mathcal{C}$ are orders of magnitude larger at $\\pi$ flux ($J_\\parallel/J < 0$) than at zero flux, while bond energies alternate in sign at $\\pi$ flux but remain uniform at zero flux, yielding a bond-order parameter $O_{\\mathrm{BO}}$ peaking near $J_\\parallel/J \\approx -1$ consistent with theoretical predictions for the chiral superfluid–bond-insulator phase boundary.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

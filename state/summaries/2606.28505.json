@@ -1,0 +1,8 @@
+{
+  "summary": "This paper analyzes dissipative effects in two superconducting-circuit analogues of Schwarzschild black holes that generate Hawking radiation: a tunable dc-SQUID transmission line and a SNAIL-based transmission line supporting solitonic KdV solutions. Using open quantum systems theory, the authors establish detectability thresholds and show that Hawking temperatures above approximately 73 mK remain distinguishable from thermal backgrounds under realistic experimental conditions.",
+  "motivation": "Direct observation of Hawking radiation from astrophysical black holes is impossible due to vanishingly small temperatures. Circuit QED provides a practical platform to study analogue Hawking radiation, but environmental coupling, dissipation, and thermal noise may obscure the quantum signal, requiring quantitative analysis of experimental feasibility.",
+  "method": "The authors modeled dissipation using the Lindblad equation with relaxation rates and dephasing typical of superconducting qubits ($\\tau_\\kappa = 100$ µs, $\\tau_\\gamma = 20$ µs). They computed the Hilbert-Schmidt distance between the evolved Hawking state and the thermal bath to establish a distinguishability threshold ($D = 0.05$) over measurement timescales of $2$ µs.",
+  "result": "The tunable transmission line architecture achieves a Hawking temperature of 113 mK, which exceeds the experimental threshold of 73 mK and remains observable. The solitonic KdV analogue reaches only 1.9 mK, falling far below detectability thresholds even under optimistic conditions with $\\tau_\\kappa = 200$ µs and bath temperature of 10 mK.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

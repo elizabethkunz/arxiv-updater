@@ -1,0 +1,275 @@
+{
+  "date": "2026-05-01",
+  "n_fetched": 115,
+  "papers": [
+    {
+      "id": "2604.27679",
+      "title": "Parametrically Driven iSWAP Gate Using a Capacitively Shunted Double-Transmon Coupler at the Zero-Flux Sweet Spot",
+      "authors": [
+        "Shinichi Inoue",
+        "Rui Li",
+        "Kentaro Kubo",
+        "Yinghao Ho",
+        "Yasunobu Nakamura",
+        "Hayato Goto"
+      ],
+      "abstract": "A double-transmon coupler (DTC) enables a fast, high-fidelity CZ gate between two highly detuned, fixed-frequency transmon qubits. Moreover, a recently proposed capacitively shunted DTC (CSDTC) realizes a small residual ZZ interaction over a wide flux-bias range around zero flux, eliminating the necessity of static flux biasing while maintaining high CZ-gate fidelity. However, CZ gates with the DTC and CSDTC require baseband flux pulses with large amplitudes, which are vulnerable to pulse distortion and decoherence due to large qubit-coupler hybridization. To address these issues, we experimentally demonstrate a parametrically driven iSWAP gate operated at zero flux bias between highly detuned, fixed-frequency transmon qubits coupled through a CSDTC. Using a simple flux-drive waveform without predistortion, we realize an average gate fidelity of 99.92(2)% at a total gate time of 112 ns. The observed high-fidelity performance is consistent with small qubit-coupler hybridization and small effective ZZ interaction during the gate. Our numerical simulations reproduce the experimentally observed iSWAP interaction rate and effective ZZ interaction, demonstrating the applicability of the theoretical model not only to spectral information but also to time-domain dynamics such as gate operations. These results boost further progress in the research of superconducting quantum computers.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-30",
+      "score": 0.9240009754564537,
+      "similar_to": [
+        {
+          "title": "Realization of high-fidelity CZ and ZZ-free iSWAP gates with a tunable coupler",
+          "id": "2011.01261",
+          "similarity": 0.8995499610900879
+        },
+        {
+          "title": "High-Fidelity, Frequency-Flexible Two-Qubit Fluxonium Gates with a Transmon Coupler",
+          "id": "2304.06087",
+          "similarity": 0.8948990106582642
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates a parametrically driven iSWAP gate between fixed-frequency transmons coupled via a capacitively shunted double-transmon coupler (CSDTC), achieving 99.92(2)% fidelity with 112 ns total duration at zero flux bias. The gate uses second-harmonic activation of the exchange interaction through a sinusoidal flux drive, avoiding large flux excursions and predistortion calibration required by baseband-flux CZ gates on the same device.",
+        "motivation": "Baseband flux-controlled two-qubit gates require large flux amplitudes vulnerable to pulse distortion and qubit-coupler hybridization, while parametric gates typically need flux bias away from the zero-flux sweet spot. A scheme combining zero-flux-bias operation with parametric activation could reduce both flux noise sensitivity and control complexity.",
+        "method": "A sinusoidal flux drive at frequency $\\omega_d \\approx \\Delta_{21}/2$ modulates the CSDTC M-mode frequency at $2\\omega_d$, parametrically activating iSWAP interaction via second-order energy-level modulation. The implementation uses a simple tanh-shaped envelope [Eq. (25)] with fixed $\\beta/2\\pi = 290$ MHz, requiring only frame-update calibration without waveform predistortion.",
+        "result": "At optimal duration $t_\\mathrm{tot} = 112$ ns including 12 ns idling, the gate achieves $r_\\mathrm{iSWAP}^D = 0.078(15)\\%$ depolarization error and $L_1 = 0.011(7)\\%$ leakage, yielding total infidelity $\\epsilon = 0.08(2)\\%$. The effective coherence time $T_D^{\\mathrm{iSWAP}} = 57(11)$ μs exceeds prior DTC/CSDTC CZ implementations due to reduced coupler hybridization ($\\bar{p}_c \\approx 0.05$ vs. 0.40) and dynamical ZZ suppression ($\\zeta_\\mathrm{eff}/2\\pi = -4.7$ kHz at optimal amplitude).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.27080",
+      "title": "High-fidelity iSWAP gate with Double Transmon Coupler",
+      "authors": [
+        "Tarush Tiwari",
+        "Sudhir K. Sahu",
+        "Guilhem Ribeill",
+        "Michael Senatore",
+        "Matthew D. LaHaye",
+        "Raymond W. Simmonds",
+        "Daniel L. Campbell",
+        "Archana Kamal",
+        "Leonardo Ranzani"
+      ],
+      "abstract": "Entangling operations are at the heart of all approaches to quantum information processing. Parametric gates, in particular, offer a versatile solution to strongly couple off-resonant superconducting qubits with suppressed parasitic crosstalk to spectator qubits due to frequency-selective activation. In this work, we demonstrate a parametric iSWAP gate between two transmon qubits using the recently developed double transmon coupler (DTC). The DTC supports robust internally-defined cancellation point (``off'' state) for static interactions, while simultaneously mediating a fast parametric coupling between data qubits that can be deployed for high-fidelity two-qubit operations. We use robust phase estimation to calibrate non-commuting error terms in the parametric iSWAP gate, and achieve a 99.827% gate fidelity in 40ns without any numerical optimization. The circuit architecture and calibration techniques developed here are extensible to other gate implementations and qubit modalities, paving the way towards resource-efficient quantum information processing.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-29",
+      "score": 0.9104196728784582,
+      "similar_to": [
+        {
+          "title": "Realization of high-fidelity CZ and ZZ-free iSWAP gates with a tunable coupler",
+          "id": "2011.01261",
+          "similarity": 0.8689320087432861
+        },
+        {
+          "title": "Suppression of static ZZ interaction in an all-transmon quantum processor",
+          "id": "2011.03976",
+          "similarity": 0.854996383190155
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates a parametric iSWAP gate between transmon qubits coupled via a double transmon coupler (DTC), achieving 99.827% fidelity in 40 ns operation. The DTC provides an internally-defined cancellation point that robustly suppresses static coupling and cross-Kerr interactions without requiring fine-tuning of capacitive coupling.",
+        "motivation": "High-fidelity parametric gates are challenging because exchange interactions do not commute with single-qubit errors, demanding stringent phase stability and cross-Kerr compensation; iSWAP gates are particularly desirable for reducing circuit depth and enabling fault-tolerant surface codes with fewer couplers.",
+        "method": "The DTC suppresses the effective coupling $g_\\mathrm{eff}(\\Phi_c)$ via competing capacitive $g_C$ and flux-tunable inductive $g_L(\\Phi_c)$ interactions between two coupler transmons, operating the data qubits at the flux bias where $g_\\mathrm{eff}=0$ minimizes residual cross-Kerr to $g_\\mathrm{zz}=-2\\pi\\times220$ kHz. A novel robust phase estimation (RPE) routine calibrates non-commuting error terms (pump amplitude $\\theta_p$, Stark shifts $\\theta_1,\\theta_2$, and cross-Kerr $\\phi_\\mathrm{zz}$) by designing compound gates that selectively amplify specific errors while suppressing unwanted state rotations, avoiding numerical optimization.",
+        "result": "Process tomography yields gate fidelity of 99.827(±0.004)% at 40 ns; interleaved two-qubit randomized benchmarking confirms 99.70% fidelity. The measured fidelity is limited by data qubit decoherence ($T_1^{(1)}=26.35$ µs, $T_1^{(2)}=17.0$ µs, $T_2^{(1)}=15.02$ µs, $T_2^{(2)}=17.11$ µs) with a decoherence-limited upper bound of 99.72%, while residual $g_\\mathrm{zz}$ contributes only 0.002% error.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.27457",
+      "title": "Demonstration of Exponential Quantum Speedup with Constant-Depth Compiled Circuits for Simon's Problem",
+      "authors": [
+        "Phattharaporn Singkanipa",
+        "Victor Kasatkin",
+        "Daniel A. Lidar"
+      ],
+      "abstract": "We demonstrate exponential algorithmic quantum speedup for a restricted-Hamming-weight version of Simon's problem, in which the hidden string $b$ is promised to satisfy $\\text{HW}(b)\\le w$ for a Hamming-weight cutoff $w$, on present-day superconducting quantum processors. We introduce a hardware-aware compilation strategy that reduces the quantum part of each Simon query circuit to constant depth. The resulting compiled circuits have $O(1)$ depth, require only linear nearest-neighbor connectivity, map directly onto common device layouts, and avoid additional routing and SWAP overhead. Implemented on IBM's $156$-qubit Boston and $120$-qubit Miami processors, these circuits achieve sufficient fidelity to exhibit algorithmic quantum speedup without error suppression. Using the number-of-queries-to-solution (NTS) metric, we observe exponential speedup over the classical lower-bound benchmark for all restricted-Hamming-weight cutoffs $w\\ge 4$ on Boston and across low-to-intermediate Hamming-weight cutoffs on Miami; at higher Hamming-weight cutoffs on Miami, we still observe polynomial speedup. The same construction also enables unrestricted instances of Simon's problem, corresponding to $w=n$ for problem size $n$, over the finite problem-size ranges for which our NTS computation is feasible; in this regime, the observed scaling advantage is not limited to the restricted-Hamming-weight setting. These results show that careful hardware-aware compilation can make quantum speedup experimentally accessible for a canonical hidden-subgroup problem in the NISQ regime.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-30",
+      "score": 0.5861763924382011,
+      "similar_to": [
+        {
+          "title": "Evidence of scaling advantage on an NP-Complete problem with enhanced quantum solvers",
+          "id": "2508.08869",
+          "similarity": 0.8516780138015747
+        },
+        {
+          "title": "Nearest-neighbour gates are all you need: High-rate quantum low-density parity-check codes on a planar grid",
+          "id": "2606.19482",
+          "similarity": 0.8324286937713623
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates exponential algorithmic quantum speedup for Simon's problem on superconducting qubits by compiling the oracle to constant depth using hardware-aware optimization. Experiments on IBM's 156-qubit Boston and 120-qubit Miami processors show polylogarithmic NTS scaling in $N_w$ (exponential speedup) for restricted-Hamming-weight cutoffs $w \\geq 4$ on Boston and across low-to-intermediate weights on Miami, without error suppression.",
+        "motivation": "Prior work required deep circuits with $O(w)$ depth due to star-structured CNOT gates, necessitating error suppression to observe quantum advantage. This work exploits hardware-aware compilation to eliminate this depth scaling, making quantum speedup accessible on current NISQ devices without error mitigation.",
+        "method": "The oracle is compiled to constant quantum depth ($O(1)$) using two entangling layers and linear nearest-neighbor connectivity that maps directly onto superconducting qubit layouts. Restricted-HW Simon's problem ($\\text{HW}(b) \\leq w$) is implemented on native architectures; circuits are tested up to $n=65$ (130 qubits) on Boston and $n=60$ (120 qubits) on Miami, with NTS performance compared against classical lower bounds.",
+        "result": "On Boston, exponential speedup (polylog scaling) is observed for all $w \\geq 4$ up to $n=65$; on Miami, exponential speedup occurs for $w \\in [3,11]$ with polynomial speedup ($\\beta_Q \\approx 0.3 < \\beta_C = 0.5$) at higher weights. For unrestricted Simon ($w=n$), scaling advantages persist up to $n=20$ on Boston and $n=16$ on Miami, with no error suppression required.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.28037",
+      "title": "Branch-Resolved Characterization of Feed-Forward Error in Dynamic Teleportation via Classical Choi Shadows",
+      "authors": [
+        "Mason Edwards",
+        "Prabhat Mishra"
+      ],
+      "abstract": "Mid-circuit measurement and classical feed-forward are essential primitives for dynamic-circuit teleportation on superconducting quantum processors. However, the error associated with measurement-conditioned corrective operations remains poorly understood when evaluated with respect to individual measurement branches. In this paper, we present a framework for characterizing feed-forward error in dynamic circuit teleportation without losing valuable information related to its behavior across separate branches. We analyze three approaches to applying measurement-conditioned corrections: (i) physical application, (ii) post-processing adjustments, and (iii) a mitigated physical application which utilizes Bit-Flip Averaging (BFA)-based Probabilistic Readout Error Mitigation (PROM). We experimentally reconstruct branch Choi operators via an entangled reference qubit, and validate our physical-application and post-processing Choi-shadow estimators against full tomography of the branch Choi operators. We perform experiments on two physical qubit layouts which differ greatly in mid-circuit measurement readout error, and observe a reversal in the relative order in branch qualities obtained from the post-processing and PROM mitigation strategies. In one physical layout with higher measurement readout error, the operational feed-forward penalty is relatively modest (approximately 0.02-0.03) and PROM produces higher branch qualities than post-processing for every branch. In a separate layout with lower readout error, the operational feed-forward penalty increases to roughly 0.07, and post-processing exceeds PROM for all branch qualities. Our characterization framework can reveal branch-specific error structure and mitigation behavior that state-of-the-art outcome-averaged analyses fail to expose.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-30",
+      "score": 0.5828896511903339,
+      "similar_to": [
+        {
+          "title": "Erasure qubits: Overcoming the $T_1$ limit in superconducting circuits",
+          "id": "2208.05461",
+          "similarity": 0.8518115282058716
+        },
+        {
+          "title": "Benchmarking the readout of a superconducting qubit for repeated measurements",
+          "id": "2407.10934",
+          "similarity": 0.8489475250244141
+        }
+      ],
+      "summary": {
+        "summary": "This paper presents a branch-resolved characterization framework for feed-forward error in dynamic quantum teleportation on superconducting processors, reconstructing branch Choi operators via classical shadows and comparing three correction strategies across two physical qubit layouts. Experiments on IBM Fez with perfect and symmetric W$_4$ resource states reveal a reversal in the relative effectiveness of post-processing versus PROM mitigation depending on mid-circuit measurement readout error, with feed-forward penalties ranging from 0.02–0.03 (low readout error layout) to ~0.07 (high readout error layout).",
+        "motivation": "Mid-circuit measurement and classical feed-forward are essential for dynamic circuits, but their errors remain poorly characterized at the branch level; existing outcome-aggregated analyses fail to expose branch-specific error structure and discrepancies between mitigation strategies.",
+        "method": "The authors designed controlled W$_4$ state preparations (maximally entangled perfect W$_4$ and non-maximally entangled symmetric W$_4$) with matched depths and gate counts, reconstructed branch Choi operators on a reference-output qubit pair using classical Choi shadows, and compared physical correction, post-processing, and BFA-based PROM mitigation across two layouts chosen to have high (qubits 6, 5) and low (qubits 23, 16) readout assignment error.",
+        "result": "Layout 1 (higher RAE ~0.05) showed aggregate feed-forward penalty $\\Delta_{\\mathrm{FF}} \\approx 0.02$–0.03 with PROM mean gain $\\bar{G}_q \\approx 0.03$–0.05; layout 2 (lower RAE ~0.006) showed $\\Delta_{\\mathrm{FF}} \\approx 0.07$ with $\\bar{G}_q \\approx 0.01$–0.02, demonstrating that readout noise level inverts the relative ranking of post-processing and PROM effectiveness across all measurement branches.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.924,
+    0.9104,
+    0.5862,
+    0.5829,
+    0.3582,
+    0.3574,
+    0.3572,
+    0.3521,
+    0.3411,
+    0.3187,
+    0.2655,
+    0.2607,
+    0.2366,
+    0.2126,
+    0.2021,
+    0.1962,
+    0.1823,
+    0.1726,
+    0.1662,
+    0.1609,
+    0.1338,
+    0.1258,
+    0.1257,
+    0.1233,
+    0.1202,
+    0.1088,
+    0.1078,
+    0.1009,
+    0.0969,
+    0.0935,
+    0.0907,
+    0.0823,
+    0.0788,
+    0.0777,
+    0.0728,
+    0.0713,
+    0.0682,
+    0.0664,
+    0.0663,
+    0.0638,
+    0.0627,
+    0.0597,
+    0.0547,
+    0.0544,
+    0.0536,
+    0.0526,
+    0.0491,
+    0.0483,
+    0.0478,
+    0.0456,
+    0.0448,
+    0.0443,
+    0.0441,
+    0.0432,
+    0.0421,
+    0.0414,
+    0.0392,
+    0.0374,
+    0.0372,
+    0.0359,
+    0.0358,
+    0.0358,
+    0.0351,
+    0.0336,
+    0.0313,
+    0.0277,
+    0.0277,
+    0.0273,
+    0.0259,
+    0.0248,
+    0.0204,
+    0.0203,
+    0.0197,
+    0.0178,
+    0.0176,
+    0.0166,
+    0.0163,
+    0.0161,
+    0.0159,
+    0.0159,
+    0.0156,
+    0.0149,
+    0.0146,
+    0.0145,
+    0.0137,
+    0.0131,
+    0.0123,
+    0.0122,
+    0.0117,
+    0.0108,
+    0.0104,
+    0.0098,
+    0.0098,
+    0.0098,
+    0.0092,
+    0.0089,
+    0.0076,
+    0.0074,
+    0.0072,
+    0.0067,
+    0.0059,
+    0.0058,
+    0.0057,
+    0.005,
+    0.0042,
+    0.0038,
+    0.0034,
+    0.0031,
+    0.0031,
+    0.0023,
+    0.0023,
+    0.0022,
+    0.0022,
+    0.0019,
+    0.0013
+  ]
+}

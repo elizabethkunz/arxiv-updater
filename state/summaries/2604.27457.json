@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates exponential algorithmic quantum speedup for Simon's problem on superconducting qubits by compiling the oracle to constant depth using hardware-aware optimization. Experiments on IBM's 156-qubit Boston and 120-qubit Miami processors show polylogarithmic NTS scaling in $N_w$ (exponential speedup) for restricted-Hamming-weight cutoffs $w \\geq 4$ on Boston and across low-to-intermediate weights on Miami, without error suppression.",
+  "motivation": "Prior work required deep circuits with $O(w)$ depth due to star-structured CNOT gates, necessitating error suppression to observe quantum advantage. This work exploits hardware-aware compilation to eliminate this depth scaling, making quantum speedup accessible on current NISQ devices without error mitigation.",
+  "method": "The oracle is compiled to constant quantum depth ($O(1)$) using two entangling layers and linear nearest-neighbor connectivity that maps directly onto superconducting qubit layouts. Restricted-HW Simon's problem ($\\text{HW}(b) \\leq w$) is implemented on native architectures; circuits are tested up to $n=65$ (130 qubits) on Boston and $n=60$ (120 qubits) on Miami, with NTS performance compared against classical lower bounds.",
+  "result": "On Boston, exponential speedup (polylog scaling) is observed for all $w \\geq 4$ up to $n=65$; on Miami, exponential speedup occurs for $w \\in [3,11]$ with polynomial speedup ($\\beta_Q \\approx 0.3 < \\beta_C = 0.5$) at higher weights. For unrestricted Simon ($w=n$), scaling advantages persist up to $n=20$ on Boston and $n=16$ on Miami, with no error suppression required.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

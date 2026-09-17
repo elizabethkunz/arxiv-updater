@@ -1,0 +1,8 @@
+{
+  "summary": "A fully fault-tolerant implementation of the Iceberg $[[2m, 2m-2, 2]]$ quantum error-detection code applied to Toffoli and Bell state preparation circuits achieved beyond-break-even fidelity on a 36-qubit trapped-ion computer, demonstrating fidelity gains by filtering error-flagged runs. The work highlights that strategic circuit compilation for error-detection codes—particularly leveraging transversal Hadamard operations—is critical for achieving overhead-tolerant encoded circuits.",
+  "motivation": "Multi-qubit gates like the Toffoli are essential for universal computation but suffer from noise accumulation on NISQ hardware. Demonstrating beyond-break-even error detection is necessary to validate the practical utility of quantum error-detection codes before advancing to full error correction.",
+  "method": "Three circuit configurations were executed on trapped-ion hardware: unencoded baseline, Iceberg-encoded non-fault-tolerant, and Iceberg-encoded fault-tolerant versions of five circuits (Bell state, transversal-H Bell state, $XX$ Toffoli, $HH$ Toffoli, transversal-H Toffoli). Each configuration ran 2056 shots across three timepoints in a calibration cycle; error-flagged shots in encoded circuits were rejected before fidelity calculation.",
+  "result": "Fault-tolerant Transversal-H Toffoli achieved above-break-even fidelity in all three runs ($99.17\\%$, $99.75\\%$, $99.61\\%$ vs. $98.54\\%$, $98.49\\%$, $98.49\\%$ unencoded baseline), with rejection rates of $80\\%$–$87\\%$. Transversal-H Bell state surpassed break-even in all runs; non-transversal implementations showed mixed results depending on calibration phase and circuit complexity.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

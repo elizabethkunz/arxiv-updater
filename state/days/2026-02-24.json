@@ -1,0 +1,338 @@
+{
+  "date": "2026-02-24",
+  "n_fetched": 112,
+  "papers": [
+    {
+      "id": "2602.20002",
+      "title": "Electrical post-fabrication tuning of aluminum Josephson junctions at room temperature",
+      "authors": [
+        "Christian Križan",
+        "Maurizio Toselli",
+        "Irshad Ahmad",
+        "Hadi Khaksaran",
+        "Marcus Rommel",
+        "Nermin Trnjanin",
+        "Janka Biznárová",
+        "Mamta Dahiya",
+        "Emil Hogedal",
+        "Halldór Jakobsson",
+        "Andreas Nylander",
+        "Jonas Bylander",
+        "Per Delsing",
+        "Giovanna Tancredi"
+      ],
+      "abstract": "Josephson junctions are key elements of superconducting quantum technology, serving as the core building blocks of superconducting qubits. We present an experimental study on room-temperature electrical tuning of aluminum junctions, showing that voltage pulses can controllably increase their resistance and adjust the Josephson energy while maintaining qubit quality factors above 1 million. We find that the rate of resistance increase scales exponentially with pulse amplitude during manipulation. Following the manipulation, the resistance increases spontaneously through contributions proportional to both the initial resistance and the preceding manipulation. We show that this spontaneous increase halts at cryogenic temperatures, and resumes again at room temperature. Using our stepwise protocol, we achieve up to a 270% increase in junction resistance, corresponding to a reduction of nearly 2 GHz of the qubit transition frequency. These results establish the achievable range, relaxation behavior, and practical limits of electrical tuning, enabling post-fabrication mitigation of frequency crowding in quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-23",
+      "score": 0.9573778625728006,
+      "similar_to": [
+        {
+          "title": "Electrical post-fabrication tuning of aluminum Josephson junctions at room temperature",
+          "id": "2602.20002",
+          "similarity": 0.9999997615814209
+        },
+        {
+          "title": "Laser-annealing Josephson junctions for yielding scaled-up superconducting quantum processors",
+          "id": "2009.00781",
+          "similarity": 0.8526140451431274
+        }
+      ],
+      "summary": {
+        "summary": "Electrical post-fabrication tuning of Al-AlO$_x$-Al Josephson junctions using room-temperature voltage pulses can increase junction resistance up to 270% with a stepped manipulation protocol, enabling transmon qubit frequency shifts of nearly 2 GHz while maintaining quality factors above 1 million. The rate of resistance increase scales exponentially with pulse amplitude ($V_0 = 55$–91 mV depending on oxide dose), and post-manipulation relaxation exhibits both fixed and manipulation-dependent contributions that follow logarithmic time dependence, halting at cryogenic temperatures and resuming at room temperature.",
+        "motivation": "Superconducting quantum processors suffer from fabrication-induced junction resistance variations (~2% across a 50 mm wafer, corresponding to ±50 MHz frequency spread), causing frequency crowding that severely limits collision-free operations even for ~30 qubits, motivating selective post-fabrication tuning to reach required frequency placement tolerances of a few MHz for 1000-qubit systems.",
+        "method": "Room-temperature electrical tuning was performed on Al-AlO$_x$-Al junctions from three wafers with different oxidation doses using bipolar voltage pulse trains ($V_a = 0.85$ V, $M = 6$ pulses per iteration, 200 ms duration), with stepped manipulation repeating the process after 3 h relaxation intervals until target resistance or junction failure; qubit decoherence metrics ($T_1$, $T_2^*$, $T_2^e$) were measured on transmon qubits before and after manipulation.",
+        "result": "Single manipulation cycles achieve 96% resistance increase in 5 min with step-wise relaxation reaching 270% total ($\\Delta f \\approx -1964$ MHz); relaxation follows $\\rho_\\mathrm{Total}(t=30\\,\\mathrm{min}) = k\\rho_\\mathrm{Active} + m$ with $k = 1.00$–1.13 and manipulation-dependent contributions of ~25% of active resistance change; achieved frequency precision bounded by relaxation offset uncertainty of ±0.19% (~11.3 MHz); transmon quality factors remain $Q = 1$–1.5 million after single-round tuning across high-dose variants.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.19042",
+      "title": "Quantum Error Correction and Dynamical Decoupling: Better Together or Apart?",
+      "authors": [
+        "Victor Kasatkin",
+        "Mario Morford-Oberst",
+        "Arian Vezvaee",
+        "Daniel A. Lidar"
+      ],
+      "abstract": "Quantum error correction/detection (QEC/QED) and dynamical decoupling (DD) are tools for protecting quantum information. A natural goal is to combine them to outperform either approach alone. Such a benefit is not automatic: physical DD can conflict with encoded subspace, and QEC performance is governed by the errors that survive decoding, not just those DD suppresses. We analyze a hybrid memory cycle where DD is implemented logically (LDD) using normalizer elements of an $[[n,k,d]]$ stabilizer code, followed by a round of syndrome measurement and recovery (or, in the detection setting, postselection on a trivial syndrome). In an effective Pauli model with physical error probability $p$, LDD suppression factor $p_{DD}$, and recovery imperfection rate $p_{QEC}$ (or $p_{QED}$), we derive closed-form entanglement-fidelity expressions for QEC-only, QED-only, LDD-only, physical DD, and the hybrid LDD+QEC protocol. The formulas are expressed via a small set of code-dependent weight enumerator polynomials, making the role of the decoder and the LDD group explicit. For ideal recovery LDD+QEC outperforms QEC-only iff the conditional fraction of uncorrectable Pauli errors is larger in the LDD-suppressed sector than in the unsuppressed sector. In the low-noise regime, a sufficient design rule guaranteeing hybrid advantage is that LDD suppresses at least one minimum-weight uncorrectable Pauli error for the chosen recovery map. We show how stabilizer-equivalent choices of LDD generators can enforce this condition. We supplement our analysis with numerical results for the $[[7,1,3]]$ Steane code and a $[[13,1,3]]$ code, mapping regions of hybrid-protocol advantage in parameter space beyond the small-$p$ regime. Our work illustrates the need for co-design of the code, decoder, and logical decoupling group, and clarifies the conditions under which the hybrid LDD+QEC protocol is advantageous.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-22",
+      "score": 0.6092053455159578,
+      "similar_to": [
+        {
+          "title": "Demonstration of High-Fidelity Entangled Logical Qubits using Transmons",
+          "id": "2503.14472",
+          "similarity": 0.9167475700378418
+        },
+        {
+          "title": "Dynamical decoupling for superconducting qubits: a performance survey",
+          "id": "2207.03670",
+          "similarity": 0.8846020102500916
+        }
+      ],
+      "summary": {
+        "summary": "This work develops a unified framework using weight enumerator polynomials to analyze when logical dynamical decoupling (LDD) combined with quantum error correction or detection outperforms either approach alone. The authors derive closed-form entanglement-fidelity expressions and establish conditions under which hybrid protocols achieve advantage, illustrated through analysis of the $[[7,1,3]]$, $[[5,1,3]]$, $[[13,1,3]]$, and $[[4,2,2]]$ codes.",
+        "motivation": "Combining QEC/QED with DD is natural since they suppress complementary error mechanisms, but this benefit is not automatic because DD pulses can conflict with the encoded subspace and recovery quality depends on post-decoding errors, not just those suppressed by DD.",
+        "method": "For a single encode-wait-syndrome-processing cycle with effective Pauli errors parameterized by $p$, DD suppression factor $p_{DD}$, and recovery imperfection $p_{QEC}$ (or detection imperfection $p_{QED}$), closed-form formulas are derived in terms of code-dependent weight enumerators, and comparison criteria are established for when hybrid protocols surpass QEC/QED-only.",
+        "result": "For ideal recovery ($p_{QEC}=0$), LDD+QEC beats QEC-only iff the suppressed sector has higher uncorrectable-error density (Theorem 2); in the low-noise limit, it suffices that LDD suppresses at least one minimum-weight uncorrectable error (Theorem 3). Numerical evaluations on the $[[7,1,3]]$ and $[[5,1,3]]$ codes confirm hybrid advantage in small-$p$ regimes, while the $[[13,1,3]]$ example demonstrates that advantage is code- and generator-dependent and can saturate when minimum-weight uncorrectable errors remain unsuppressed.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.20123",
+      "title": "CQM: Cyclic Qubit Mappings",
+      "authors": [
+        "Maxwell Poster",
+        "Sayam Sethi",
+        "Jonathan Baker"
+      ],
+      "abstract": "Quantum computers show promise to solve select problems otherwise intractable on classical computers. However, noisy intermediate-scale quantum (NISQ) era devices are currently prone to various sources of error. Quantum error correction (QEC) shows promise as a path towards fault tolerant quantum computing. Surface codes, in particular, have become ubiquitous throughout literature for their efficacy as a quantum error correcting code, and can execute quantum circuits via lattice surgery operations. Lattice surgery also allows for logical qubits to maneuver around the architecture, if there is space for it. Hardware used for near-term demonstrations have both spatially and temporally varying error results in logical qubits. By maneuvering logical qubits around the topology, an average logical error rate (LER) can be enforced. We propose cyclic qubit mappings (CQM), a dynamic remapping technique implemented during compilation to mitigate hardware heterogeneity by expanding and contracting logical qubits. In addition to LER averaging, CQM shows initial promise given it's minimal execution time overhead and effective resource utilization.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-23",
+      "score": 0.5887002818378858,
+      "similar_to": [
+        {
+          "title": "A superconducting surface-code processor with lattice-surgery logical operations",
+          "id": "2606.06598",
+          "similarity": 0.8820712566375732
+        },
+        {
+          "title": "Lattice surgery for near-term experimental logical qubit entanglement creation in planar architectures",
+          "id": "2606.15190",
+          "similarity": 0.8759925365447998
+        }
+      ],
+      "summary": {
+        "summary": "Cyclic Qubit Mappings (CQM) is a dynamic remapping technique that periodically relocates logical qubits within a surface code architecture to mitigate spatiotemporal hardware heterogeneity and guarantee each qubit experiences the average logical error rate across positions. The approach requires minimal compilation overhead and addresses uncertainty in physical error rates by spreading qubit exposure across the device topology during idle periods via lattice surgery operations.",
+        "motivation": "Physical error rates on current quantum hardware exhibit significant spatial and temporal variation, causing logical error rates of surface code qubits to fluctuate unpredictably (IBM Kyoto shows 30 day drift in error per Clifford rates), yet static compilation strategies cannot reliably select optimal qubit placements without real-time knowledge of these unknown error rates.",
+        "method": "CQM dynamically remaps logical qubits during compilation by having them rotate cyclically through available positions on the device during idle periods, with movement implemented in single code cycles via tile expansion and contraction in lattice surgery; qubit movement is constrained by ancilla availability and multi-qubit gate operations that may cause rotation stalls.",
+        "result": "For $N$ qubits mapped across $M > N$ positions with occupancy $o = N/M$, CQM ensures each qubit spends equal time in every position, yielding success probability $\\prod_{i=1}^{M}(1-p_L(q_i))^{T/M}$ that averages the logical error rates; the approach requires additional ancilla $m = M - N$ satisfying $m \\leq N$ for $d=3$ (occupancy $\\approx 50\\%$) or $m < N/3$ for $d=9$ (occupancy $\\approx 66\\%$), becoming less effective at larger distances.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.18555",
+      "title": "Engineering quantum criticality and dynamics on an analog-digital simulator",
+      "authors": [
+        "Alexandra A. Geim",
+        "Nazli Ugur Koyluoglu",
+        "Simon J. Evered",
+        "Rahul Sahay",
+        "Sophie H. Li",
+        "Muqing Xu",
+        "Dolev Bluvstein",
+        "Nik O. Gjonbalaj",
+        "Nishad Maskara",
+        "Marcin Kalinowski",
+        "Tom Manovitz",
+        "Ruben Verresen",
+        "Susanne F. Yelin",
+        "Johannes Feldmeier",
+        "Markus Greiner",
+        "Vladan Vuletic",
+        "Mikhail D. Lukin"
+      ],
+      "abstract": "Understanding emergent phenomena in out-of-equilibrium interacting many-body systems is an exciting frontier in physical science. While quantum simulators represent a promising approach to this long-standing problem, in practice it can be challenging to directly realize the required interactions, measure arbitrary observables, and mitigate errors. Here we use coherent mapping between the Rydberg and hyperfine qubits in a neutral atom array simulator to engineer and probe complex quantum dynamics. We combine efficient analog dynamics with fully programmable state preparation and measurement, leverage non-destructive readout for loss information and atomic qubit reuse, and use an atom reservoir for replacing lost atoms. With this analog-digital approach, we first demonstrate dynamical engineering of ring-exchange and particle hopping dynamics via Floquet driving and measure the spectral function of single excitations by evolving initial superposition states. Extending these techniques to a 271-site kagome lattice, we employ closed-loop optimization to target an out-of-equilibrium critical quantum spin liquid of the Rokhsar-Kivelson type. We observe the key features of such a state, including the absence of local order, many-body coherences between nearly equal-amplitude dimer configurations over up to 18 sites, and universal correlations consistent with predictions from field theory. Together, these results pave the way for using dynamical control in analog-digital quantum simulators to study complex quantum many-body systems.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-02-20",
+      "score": 0.5662574289128506,
+      "similar_to": [
+        {
+          "title": "Engineering quantum criticality and dynamics on an analog-digital simulator",
+          "id": "2602.18555",
+          "similarity": 0.9999998807907104
+        },
+        {
+          "title": "Dynamical decoupling for superconducting qubits: a performance survey",
+          "id": "2207.03670",
+          "similarity": 0.8227807283401489
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates an analog-digital hybrid quantum simulator using $^{87}$Rb Rydberg atom arrays, coherently mapping between interacting Rydberg and digital hyperfine qubits to engineer and probe complex many-body dynamics. On a 271-site kagome lattice, the team prepares a non-equilibrium $\\mathrm{U}(1)$ quantum spin liquid via Floquet driving and closed-loop optimization, observing key signatures including equal-amplitude dimer superpositions, many-body coherences extending over 18 sites, and universal correlations matching field theory predictions.",
+        "motivation": "Understanding out-of-equilibrium quantum criticality and exotic phases like quantum spin liquids is challenging because they are difficult to prepare in equilibrium and conventionally require large-depth digital circuits. The authors sought to overcome these limitations by combining efficient analog evolution with programmable digital control and error detection.",
+        "method": "Coherent mapping between hyperfine and Rydberg qubits enables arbitrary state preparation and measurement while using non-destructive readout for loss detection and qubit reuse. The team engineered effective Hamiltonians via Floquet driving—demonstrating six-body ring exchange and two-body hopping on 1D chains—and optimized a detuning sweep protocol using Bayesian optimization to target the Rokhsar-Kivelson point on the honeycomb quantum dimer model.",
+        "result": "On the kagome lattice, the optimized 0.8 μs sweep prepared a state with mean Rydberg density approaching $1/3$ filling, projected kinetic and potential energies both $\\approx 0.29$ (close to RK prediction), uniform distribution over dimer configurations, X-loop coherences persisting over 33 sites (decaying as perimeter law), and rectified dimer-dimer and dimer-string correlators with a ratio of $4$ as predicted by the emergent $\\mathrm{U}(1)$ gauge theory.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2602.19399",
+      "title": "Imaging the Superconducting Proximity Effect in S-S'-S Transition Edge Sensors",
+      "authors": [
+        "Austin R. Kaczmarek",
+        "Samantha Walker",
+        "Jason Austermann",
+        "Douglas Bennett",
+        "W. Bertrand Doriese",
+        "Shannon M. Duff",
+        "Johannes Hubmayr",
+        "Kelsey Morgan",
+        "Michael D. Niemack",
+        "Dan Schmidt",
+        "Daniel Swetz",
+        "Joel Ullom",
+        "Joel Weber",
+        "Katja C. Nowack"
+      ],
+      "abstract": "Proximity effects at superconducting interfaces, between different superconductors (S-S') or between superconductors and normal metals (S-N), are fundamental to the performance of superconducting electronics, yet only few experiments have directly probed the spatial structure of proximity effects within a device. This is particularly relevant for transition edge sensors (TESs), where the interplay of direct and inverse proximity effects governs detector sensitivity. Here, we use scanning superconducting interference device (SQUID) susceptometry to directly image the local diamagnetic response in functional S-S'-S TES structures. We resolve long range proximity coupling extending over tens of micrometers, revealing that the local transition temperature is dramatically tuned by neighboring regions, being either enhanced by superconducting (S) leads or suppressed by normal metal (N) contacts. Our observations are quantitatively supported by Ginzburg Landau modeling of the device geometry and calculations of the temperature dependent diamagnetism based on self-consistent Usadel equations. By providing spatially resolved measurements of the interplay of proximity effects in TES devices, this work establishes a framework for understanding and controlling superconducting states in heterogeneous superconducting structures.",
+      "categories": [
+        "cond-mat.supr-con",
+        "physics.ins-det"
+      ],
+      "published": "2026-02-23",
+      "score": 0.5202440646916269,
+      "similar_to": [
+        {
+          "title": "Real-time detection of correlated quasiparticle tunneling events in a multi-qubit superconducting device",
+          "id": "2602.01945",
+          "similarity": 0.8053005337715149
+        },
+        {
+          "title": "Microwave Crosstalk in Planar Superconducting Quantum Devices",
+          "id": "2606.02440",
+          "similarity": 0.7996934056282043
+        }
+      ],
+      "summary": {
+        "summary": "This work uses scanning SQUID susceptometry to spatially image the diamagnetic response in S-S'-S transition edge sensors, directly resolving proximity effects that extend over tens of micrometers and reveal how neighboring superconducting leads enhance while normal metal contacts suppress the local transition temperature. Ginzburg-Landau and self-consistent Usadel modeling quantitatively capture the observed spatial structure of the superconducting state, establishing a framework for understanding proximity-induced tuning of superconducting properties in heterogeneous device geometries.",
+        "motivation": "Proximity effects at superconductor interfaces govern TES performance, but spatially resolved measurements within functional devices have been lacking; direct imaging of how geometry controls the local superconducting state is essential for detector engineering and understanding weak-link behavior in S-S'-S structures.",
+        "method": "Scanning SQUID with concentric field and pickup coils measured local diamagnetic response $\\delta M(T)$ across functional AlMn/Nb and MoAu/Mo TES devices; extracted spatially varying local critical temperatures $T_c^\\chi$ from threshold detection in image series; modeled using 1D/2D Usadel equations to calculate temperature-dependent gaps and 2D Ginzburg-Landau equations to map order parameter spatial structure.",
+        "result": "Proximity coupling from Nb leads shifted transition temperatures by $\\sim10$ mK in AlMn and enhanced $T_c^\\chi$ above $T_c^0=92.8$ mK in MoAu devices over $\\sim5$–$10$ µm; inverse proximity from Au banks suppressed $T_c^\\chi$ along edges; in the 100 µm meander geometry, weakly superconducting MoAu bilayer proximitized 10 µm wide normal Au fingers at low temperature, demonstrating long-range Cooper-pair penetration depth effects.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9574,
+    0.6092,
+    0.5887,
+    0.5663,
+    0.5202,
+    0.4068,
+    0.4027,
+    0.319,
+    0.3186,
+    0.3177,
+    0.2955,
+    0.2905,
+    0.2358,
+    0.2336,
+    0.2298,
+    0.2136,
+    0.2041,
+    0.1971,
+    0.185,
+    0.1761,
+    0.1707,
+    0.1697,
+    0.1641,
+    0.1592,
+    0.1558,
+    0.1454,
+    0.1183,
+    0.1175,
+    0.111,
+    0.107,
+    0.1063,
+    0.1053,
+    0.102,
+    0.097,
+    0.0914,
+    0.0908,
+    0.0899,
+    0.0867,
+    0.0841,
+    0.0836,
+    0.0814,
+    0.0812,
+    0.0773,
+    0.0751,
+    0.0734,
+    0.0709,
+    0.0702,
+    0.0688,
+    0.0677,
+    0.0672,
+    0.0664,
+    0.0643,
+    0.0603,
+    0.0488,
+    0.0456,
+    0.0448,
+    0.042,
+    0.0416,
+    0.0377,
+    0.0374,
+    0.0374,
+    0.0358,
+    0.0318,
+    0.0315,
+    0.0301,
+    0.0288,
+    0.0278,
+    0.0268,
+    0.0257,
+    0.0254,
+    0.0246,
+    0.0238,
+    0.0232,
+    0.0231,
+    0.0209,
+    0.0207,
+    0.02,
+    0.0188,
+    0.0186,
+    0.0177,
+    0.0166,
+    0.0166,
+    0.0166,
+    0.014,
+    0.0135,
+    0.0131,
+    0.0113,
+    0.0108,
+    0.0107,
+    0.0101,
+    0.0095,
+    0.009,
+    0.0088,
+    0.0086,
+    0.0086,
+    0.0076,
+    0.0074,
+    0.0066,
+    0.0059,
+    0.0057,
+    0.0057,
+    0.0052,
+    0.0041,
+    0.004,
+    0.0036,
+    0.0032,
+    0.0027,
+    0.0027,
+    0.0021,
+    0.002,
+    0.0016,
+    0.0012
+  ]
+}

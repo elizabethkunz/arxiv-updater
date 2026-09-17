@@ -1,0 +1,8 @@
+{
+  "summary": "A constraint-driven workflow for designing liquid-nitrogen Dewars for compact HTS-SQUID magnetometers scans body radius and neck length under fixed envelope and mass limits. The chosen design predicts a 224 h hold time, and measurements show a 137 h monitored run matching the thermal model plus 41.5 fT/$\\sqrt{\\mathrm{Hz}}$ median noise from 100-1000 Hz.",
+  "motivation": "Portable HTS-SQUID magnetometers must balance cryogen hold time against size and mass constraints.",
+  "method": "Dewar geometry is scanned under a 3.85 kg mass and 550 mm envelope limit, with a thermal model calibrated on the first 40 h of a monitored reference Dewar.",
+  "result": "The model reproduces the remaining 97.3 h of boil-off, and the SQUID shows 36.2 µV modulation depth and 41.5 fT/$\\sqrt{\\mathrm{Hz}}$ median noise.",
+  "source": "abstract",
+  "generated_by": "Claude, written in-session for the sample day (not via the script's API path)"
+}

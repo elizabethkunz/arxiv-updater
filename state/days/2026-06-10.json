@@ -1,0 +1,257 @@
+{
+  "date": "2026-06-10",
+  "n_fetched": 87,
+  "papers": [
+    {
+      "id": "2606.10719",
+      "title": "Ultra-high Q-factor superconducting tantalum resonators on 300 mm Si wafers",
+      "authors": [
+        "R. Acharya",
+        "D. Perez Lozano",
+        "Ts. Ivanov",
+        "S. Massar",
+        "C. Vrancken",
+        "Y. Canvel",
+        "Y. Li",
+        "A. M. Vadiraj",
+        "J. Van Damme",
+        "S. Aghaeimeibodi",
+        "A. Khalajhedayati",
+        "M. Mongillo",
+        "O. Painter",
+        "D. Wan",
+        "A. Potočnik",
+        "K. De Greve"
+      ],
+      "abstract": "Superconducting resonators are central to superconducting quantum information technologies and essential for bosonic qubit architectures, where long-lived storage modes enable hardware-efficient error correction. Achieving ultra-high quality factors in scalable planar circuits is challenging because multiple dissipation channels contribute to the total loss. Here we report planar $α$-Ta resonators fabricated on 300 mm ultra-high-resistivity ($>10$ k$Ω$ cm) intrinsic silicon using industrial processes, achieving median internal Q factors exceeding 40 million and maxima above 60 million. Energy-participation-ratio analysis identifies a dominant participation-controlled interface loss mechanism and places conservative upper bounds on substrate-associated dissipation. For the best-performing substrate, the inferred substrate loss tangent is below $1.0 \\times 10^{-8}$, establishing industrial MCZ silicon among the lowest-loss substrate platforms reported for superconducting resonators. At the same time, the exceptionally low losses show no clear correlation with commonly cited silicon substrate metrics such as room-temperature resistivity or impurity concentrations. More broadly, these studies establish industrial 300 mm processing, careful interface engineering, and 300 mm MCZ silicon substrates as a promising platform for resonator-heavy superconducting quantum architectures with ultra-high quality factors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-09",
+      "score": 0.9445142911794798,
+      "similar_to": [
+        {
+          "title": "Beta Tantalum Transmon Qubits with Quality Factors Approaching 10 Million",
+          "id": "2603.13174",
+          "similarity": 0.8871439695358276
+        },
+        {
+          "title": "Reducing TLS loss in tantalum CPW resonators using titanium sacrificial layers",
+          "id": "2601.16369",
+          "similarity": 0.8805112838745117
+        }
+      ],
+      "summary": {
+        "summary": "Planar $\\alpha$-Ta superconducting resonators fabricated on 300 mm ultra-high-resistivity MCZ silicon using industrial processes achieve median internal $Q$ factors exceeding 40 million and maxima above 60 million. Energy-participation-ratio analysis reveals interface loss as the dominant dissipation channel, with inferred substrate loss tangent below $1.0 \\times 10^{-8}$.",
+        "motivation": "Bosonic qubit architectures require ultra-high-$Q$ storage modes for hardware-efficient error correction, but achieving such factors in scalable planar circuits is challenging due to multiple competing loss mechanisms.",
+        "method": "Resonators were fabricated using industrial 300 mm processing on ultra-high-resistivity ($>10$ k$\\Omega$ cm) intrinsic silicon, and dissipation sources were identified through energy-participation-ratio analysis.",
+        "result": "The best-performing substrate yielded $Q$ factors exceeding 60 million with inferred substrate loss tangent below $1.0 \\times 10^{-8}$, establishing MCZ silicon as a competitive ultra-low-loss platform, though the exceptional performance showed no correlation with standard room-temperature resistivity or impurity concentration metrics.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.10114",
+      "title": "A Cryogenic Hybrid Photonic/CMOS Controller Architecture for Scalable Superconducting Qubit Control",
+      "authors": [
+        "Bowen Liu",
+        "Zhaoran Rena Huang"
+      ],
+      "abstract": "Scaling superconducting quantum computers toward thousands of control channels remains a difficult hardware problem. This requires reducing room-temperature-to-cryogenic interconnects and 4 K power while retaining channel-specific programmability. We develop a hybrid photonic/CMOS control architecture in which optical fibers distribute shared Gaussian and derivative pulse templates, while local cryogenic CMOS circuits provide event-rate amplitude programming, pulse blocking, hold-duration control, photodetection, and microwave upconversion. The architecture supports template-based XY/DRAG control and smooth-edged flat-top envelopes for two-qubit control through separate local signal paths. Compared with full-waveform Cryo-CMOS, it moves high-speed sampled-waveform generation out of each cryogenic channel. Compared with per-channel photonic waveform delivery, it retains a programmable endpoint after optical distribution for applying updated channel coefficients and control states. We evaluate the architecture using post-layout circuit simulations, optical and interconnect models, and system-level power scaling under a common 4 K output boundary. The modeled downlink power is below 1 mW per qubit-control channel at the thousand-channel scale, substantially below the normalized full-waveform Cryo-CMOS result and in the same range as the strict 50-ohm direct-detection WDM reference. Simulated I- and Q-path outputs are propagated through a five-level transmon model, while the simulated sample-and-hold output is evaluated in a coupled-transmon model. The tested single-qubit cases remain below the 10^-3 worst-state error reference, and the representative two-qubit result remains near the same scale after model-level calibration. These results support low-power photonic delivery with limited in-fridge programmability for template-compatible superconducting-qubit control.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-08",
+      "score": 0.9152254129547763,
+      "similar_to": [
+        {
+          "title": "High fidelity control of superconducting qubits with optical transmitted signal",
+          "id": "2608.19602",
+          "similarity": 0.8630663752555847
+        },
+        {
+          "title": "Quantum Computer Controlled by Superconducting Digital Electronics at Millikelvin Temperature",
+          "id": "2503.09879",
+          "similarity": 0.8600562810897827
+        }
+      ],
+      "summary": {
+        "summary": "This work proposes a hybrid photonic/CMOS cryogenic controller for superconducting qubits that distributes shared Gaussian and derivative optical pulse templates to 4 K, where local CMOS circuits apply channel-specific amplitude modulation, pulse gating, and hold timing before microwave upconversion. The architecture achieves 0.905 mW per qubit-control channel at N=1000 qubits with $G=16$ local fan-out groups, substantially below full-waveform Cryo-CMOS (3.448 mW) while retaining programmable amplitude calibration after optical distribution.",
+        "motivation": "Scaling superconducting quantum processors to thousands of control channels requires reducing both room-temperature-to-cryogenic interconnect burden and 4 K power dissipation while preserving channel-specific amplitude calibration for accurate gate fidelity.",
+        "method": "The hybrid architecture uses room-temperature optical-template generation (Gaussian and derivative envelopes for DRAG control), optical distribution through passive fan-out with active microring modulators per channel, photodetection, and local CMOS for I/Q upconversion and optional sample-and-hold envelope formation for two-qubit gates. Performance is evaluated via post-layout circuit simulations, optical/thermal models, and five-level transmon and coupled-transmon gate-fidelity calculations.",
+        "result": "Single-qubit XY/DRAG pulses remain below $10^{-3}$ worst-state error; a representative baseband two-qubit envelope achieves $3.19 \\times 10^{-4}$ average overlap error after amplitude recalibration, with worst-state error near $10^{-3}$. The 0.905 mW/channel dissipation uses 126 template fibers and four shared LO coaxes for the N=1000 downlink, leaving ~60% margin within a representative 1.5 W 4 K cooling capacity.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.10970",
+      "title": "Inherent flux crosstalk and coupler-driven single-qubit gates in superconducting circuits",
+      "authors": [
+        "Balázs Gulácsi",
+        "Guido Burkard"
+      ],
+      "abstract": "Crosstalk refers to unwanted qubit addressing. This is particularly detrimental when scaling up quantum information systems because unintended interactions limit their overall performance. For superconducting qubits, tunable couplings and frequency tunability achieved through externally applied magnetic fluxes enable high-fidelity entangling gates; however, they also introduce crosstalk through unintended flux coupling. In this work, we investigate the impact of time-dependent external magnetic fluxes in quantized circuits on superconducting qubit couplings. We find that non-trivial cross-voltage driving emerges between capacitively linked qubits when the magnetic flux threading the SQUID loop of a qubit varies in time, in a manner analogous to Faraday's law of induction. Crucially, we show that this effect enables fast single qubit control through the coupler element in standard tunable-coupler architectures, potentially eliminating the need for individual microwave $XY$ control lines.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-06-09",
+      "score": 0.8472478401502125,
+      "similar_to": [
+        {
+          "title": "Optimizing the frequency positioning of tunable couplers in a circuit QED processor to mitigate spectator effects on quantum operations",
+          "id": "2503.13225",
+          "similarity": 0.883636474609375
+        },
+        {
+          "title": "Microwave Crosstalk in Planar Superconducting Quantum Devices",
+          "id": "2606.02440",
+          "similarity": 0.8734045028686523
+        }
+      ],
+      "summary": {
+        "summary": "This work reveals that time-varying external flux threading a SQUID loop induces cross-voltage coupling to capacitively linked qubits through an inherent flux crosstalk mechanism, analogous to Faraday induction. This effect enables fast single-qubit gates via the coupler element in tunable-coupler architectures, potentially eliminating dedicated microwave control lines per qubit.",
+        "motivation": "Scaling superconducting qubit systems requires reducing wiring complexity and crosstalk, as each qubit currently needs separate microwave XY control and flux bias lines. While flux tunability enables high-fidelity entangling gates, it also introduces unwanted flux coupling between nominally independent bias lines.",
+        "method": "Circuit theory with time-dependent external fluxes is rigorously applied to capacitively coupled tunable transmons using node-flux formulation and irrotational gauge. For a three-transmon tunable coupler with sinusoidally modulated coupler flux $g(t) = A \\cos(\\omega_d t - \\gamma)$, the Hamiltonian is derived showing drive terms $V_j(t)$ on qubits $j = 1, 2$ with strengths proportional to $D_j = E_{\\mathrm{eff},j} J_1(\\beta_j A)$, where $\\beta_j = [\\mathbf{C}^{-1}\\mathbf{B}\\mathbf{e}_c]_j$.",
+        "result": "Simulations of coupler-driven X gates with $E_J/2\\pi = 10$–12 GHz achieve gate times of order 20 ns with fidelities exceeding 99.9% at the coherent error level; leakage is characterized by $\\beta_j A \\approx 10^{-3}$ yielding drive strengths $\\Omega_p$ of tens of MHz, compared to negligible strengths without inherent crosstalk. Main errors are qubit-2 phase errors and $ZZ$ cross-Kerr coupling, both addressable via pulse shaping and alternative coupler geometries.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.10144",
+      "title": "Synthesis and Characterization of Atomically-Sharp Superconductor-Dielectric Interface",
+      "authors": [
+        "Nathan Sitaraman",
+        "Zhaslan Baraissov",
+        "Alexis Grassl",
+        "Hongbin Yang",
+        "Daniel Tong",
+        "David Muller",
+        "Matthias Liepe"
+      ],
+      "abstract": "Modification of superconductor-dielectric interfaces is known to strongly impact coherence times of superconducting quantum devices. This relationship is thought to arise from differences in the concentration of \"two-level system\" defects in the disordered dielectrics and superconductor-dielectric interfaces; these defects couple to electromagnetic modes in the device and cause dissipation. Zirconium oxide barrier layers on niobium have emerged as a promising pathway to low-loss interfaces in recent years, evidently due to the crystalline nature of these layers in comparison to the amorphous niobium native oxide. We explain the unique ability of zirconium oxide to form a crystalline layer, to maintain a sharp interface with metallic niobium, and to prevent niobium oxide re-growth in terms of the chemical properties of ZrO$_2$ and the Nb-Zr-O ternary system. We demonstrate a new method to grow air-stable zirconium oxide layers on niobium with a higher level of crystallinity and a sharper oxide-metal interface than previously shown, and provide the first comprehensive microscopic analysis of ZrO$_2$ capping layer properties. These developments pave the way toward vital performance advances in superconducting quantum devices.",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.supr-con",
+        "physics.acc-ph"
+      ],
+      "published": "2026-06-08",
+      "score": 0.5911780085319407,
+      "similar_to": [
+        {
+          "title": "Electric field spectroscopy of material defects in transmon qubits",
+          "id": "1909.09749",
+          "similarity": 0.833120584487915
+        },
+        {
+          "title": "Comparison of Dielectric Loss in Titanium Nitride and Aluminum Superconducting Resonators",
+          "id": "2007.07338",
+          "similarity": 0.8244402408599854
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates synthesis of highly crystalline ZrO$_2$ capping layers on niobium with atomically-sharp superconductor-dielectric interfaces, addressing two-level-system defect density at Nb/oxide interfaces critical for superconducting quantum device coherence. Multislice electron ptychography reveals monoclinic ZrO$_2$ grains (10–15 nm lateral size, 7–8 nm thickness) with 2–3 disordered atomic layers (≈2–5 Å) at the Nb interface and no detectable suboxide layer, in contrast to the amorphous Nb$_2$O$_5$ native oxide.",
+        "motivation": "Two-level systems in amorphous native oxides cause dissipation in superconducting resonators at milliKelvin, low-field conditions; crystalline ZrO$_2$ should suppress defects via lower defect density and better passivation of the Nb substrate.",
+        "method": "Samples with 4 nm metallic Zr deposited on electropolished Nb were vacuum-annealed at 120°C, 800°C, or 1100°C, then characterized by XPS, SEM, STEM-EELS, and multislice electron ptychography (4D-STEM).",
+        "result": "The 800°C-baked sample exhibits monoclinic ZrO$_2$ with minimal suboxide at the interface (suboxide-to-Nb-metal XPS signal ratio of 0.39 after 7 months air exposure), negligible evaporation at 800°C, no carbide formation, and a ZrO$_2$ conduction band significantly above the Fermi level, indicating lower defect density than native Nb$_2$O$_5$ (which shows conduction-band edge near or below Fermi level).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9445,
+    0.9152,
+    0.8472,
+    0.5912,
+    0.4847,
+    0.4138,
+    0.3963,
+    0.2874,
+    0.2701,
+    0.2233,
+    0.2119,
+    0.1878,
+    0.1874,
+    0.1847,
+    0.1657,
+    0.1607,
+    0.146,
+    0.14,
+    0.1389,
+    0.1351,
+    0.129,
+    0.1275,
+    0.1269,
+    0.1202,
+    0.1163,
+    0.1119,
+    0.109,
+    0.1001,
+    0.0969,
+    0.0943,
+    0.0818,
+    0.0779,
+    0.0767,
+    0.0723,
+    0.0682,
+    0.0675,
+    0.0622,
+    0.0616,
+    0.0591,
+    0.0588,
+    0.0543,
+    0.0536,
+    0.052,
+    0.0516,
+    0.0489,
+    0.0485,
+    0.0437,
+    0.0416,
+    0.0399,
+    0.0384,
+    0.0304,
+    0.0253,
+    0.0252,
+    0.0248,
+    0.0245,
+    0.0231,
+    0.02,
+    0.0186,
+    0.0178,
+    0.0168,
+    0.0167,
+    0.0165,
+    0.015,
+    0.0145,
+    0.0119,
+    0.0114,
+    0.0113,
+    0.0106,
+    0.0104,
+    0.01,
+    0.0099,
+    0.009,
+    0.0074,
+    0.0068,
+    0.0064,
+    0.0062,
+    0.0058,
+    0.0058,
+    0.0057,
+    0.0054,
+    0.0047,
+    0.0041,
+    0.0041,
+    0.0035,
+    0.0023,
+    0.0011,
+    0.001
+  ]
+}

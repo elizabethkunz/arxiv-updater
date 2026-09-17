@@ -1,0 +1,8 @@
+{
+  "summary": "We develop a flux-driven Josephson parametric amplifier (JPA) with a SQUID array achieving 20 dB net gain and 50 MHz bandwidth, and demonstrate that its performance is significantly shaped by Fabry–Pérot interference from impedance mismatches in the measurement chain. We model this interference using quantum input–output formalism and show the device achieves near-quantum-limited noise ($\bar{N}_\text{added} \bnApprox 0.8$ photons) with maximum gain reaching 44 dB and 220 kHz bandwidth.",
+  "motivation": "High-gain broadband parametric amplifiers are increasingly sensitive to environmental reflections from circulators and cabling, which distort their gain spectra and limit reproducibility in superconducting qubit readout systems.",
+  "method": "We systematically designed a lumped-element JPA using dimensionless circuit parameters ($\\alpha_a = 0.03$, $p_J = 0.8$, $N = 5$ SQUIDs, $C_i = 470$ fF, $L_g = 80$ pH) and extended the quantum input–output formalism to incorporate Fabry–Pérot-cavity interference via a round-trip reflection coefficient $\\mathcal{R}(\\omega)$, enabling extraction of both intrinsic JPA and environmental parameters from reflection and gain spectra.",
+  "result": "Gain spectra exhibit pronounced frequency-dependent modulation with 3 dB bandwidths ranging from 10–50 MHz at 20 dB gain and 0.1–1.5 MHz at 42 dB gain, depending on round-trip phase $\\varphi_0$; we extract circulator reflectivity $1-\\eta \\approx 0.005$ (−26 dB), propagation loss $1-\\eta_0^2 \\approx 0.24$, and free spectral range $\\Delta/2\\pi = 140$ MHz, confirming the cavity is formed by ∼70 cm coaxial cables.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}

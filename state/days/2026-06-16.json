@@ -1,0 +1,357 @@
+{
+  "date": "2026-06-16",
+  "n_fetched": 153,
+  "papers": [
+    {
+      "id": "2606.16055",
+      "title": "Readout-Induced Leakage in Superconducting Circuits with Nonlinear Couplings",
+      "authors": [
+        "Sumeru Hazra",
+        "Wei Dai",
+        "Daniel K. Weiss",
+        "Pranav D. Parakh",
+        "Luigi Frunzio",
+        "Michel H. Devoret"
+      ],
+      "abstract": "In superconducting circuits, drive-induced unwanted transitions limit the readout power, thereby constraining readout speed and fidelity. When such transitions excite the qubit into leakage states, they produce correlated errors that are particularly harmful for quantum error correction. Native nonlinear qubit-readout resonator coupling is a promising alternative to conventional linear hybridization because it provides intrinsic Purcell protection and stricter selection rules for multiphoton processes. In realistic devices, however, we show that such a coupling alone neither eliminates nor necessarily suppresses drive-induced transitions. Instead, if not appropriately engineered, these couplings often worsen the situation by introducing additional parasitic processes. Moreover, the rates of these unwanted transitions remain sensitive to the choice of readout frequency, regardless of the coupling mechanism. We demonstrate that readout-induced leakage can thus vary by orders of magnitude even when readout frequencies differ by less than ~7%. Our results establish that the benefits of native nonlinear couplings are realized only through informed device design, including the spectral placement of relevant auxiliary modes and elimination of parasitic ones.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-14",
+      "score": 0.9691640148435234,
+      "similar_to": [
+        {
+          "title": "Readout-Induced Leakage in Superconducting Circuits with Nonlinear Couplings",
+          "id": "2606.16055",
+          "similarity": 1.0
+        },
+        {
+          "title": "Fast, high-fidelity transmon readout with intrinsic Purcell protection via nonperturbative cross-Kerr coupling",
+          "id": "2601.04975",
+          "similarity": 0.8867407441139221
+        }
+      ],
+      "summary": {
+        "summary": "Native nonlinear qubit-readout couplings like cosine-cosine interactions promise intrinsic Purcell protection and suppression of drive-induced leakage through selection rules, but when realized via auxiliary mediator modes, these couplings reintroduce dense multiphoton resonance landscapes and remain highly sensitive to readout frequency. Experiments on a dimon device demonstrate that readout-induced leakage varies by more than an order of magnitude across a ~7% readout frequency window, showing that engineering such couplings requires careful spectral placement of auxiliary modes and elimination of parasitic electromagnetic modes.",
+        "motivation": "Drive-induced transitions into leakage states limit readout power and speed in superconducting qubits while generating correlated errors harmful to quantum error correction. Understanding whether nonlinear couplings actually suppress these unwanted processes in realistic multimode circuits is critical for designing fast, high-fidelity readout.",
+        "method": "Floquet steady-state simulations compared ideal and mediated cosine-cosine couplings against linear and balanced cross-Kerr schemes. Pump-probe spectroscopy on a dimon device characterized drive-induced unwanted state transitions across 4–9 GHz; leakage benchmarking measured correlation decay in repeated readout sequences to extract leakage and seepage rates per readout ($L_↑$ and $L_↓$) at two readout frequencies differing by <7% (7.513 GHz and 7.025 GHz).",
+        "result": "The ideal cosine-cosine interaction shows the sparsest multiphoton resonance landscape, but mediated implementations suffer from resonances reintroduced by the auxiliary mode with frequencies $ω_m/2π ≈ 4.605$ GHz and anharmonicity $α_m/2π ≈ -110.4$ MHz. Between Exp 1 and Exp 2, leakage rates dropped from 2.1% to 0.1% at $\\bar{n}_r = 4.9$ photons and 6.3% to 0.1% at $\\bar{n}_r = 7.6$ photons, while readout fidelities remained ~99.5–99.7%, demonstrating orders-of-magnitude frequency sensitivity.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.15190",
+      "title": "Lattice surgery for near-term experimental logical qubit entanglement creation in planar architectures",
+      "authors": [
+        "Lukas Bödeker",
+        "Áron Márton",
+        "Luis Colmenarez",
+        "Ilya Besedin",
+        "Andreas Wallraff",
+        "Markus Müller"
+      ],
+      "abstract": "In the era of early fault-tolerant quantum computing, basic demonstrations of entanglement operations between a few logical qubits are at the frontier of recent developments in quantum computing. In this work, we describe in detail, at both the logical and physical qubit levels, a logical teleportation protocol between two surface code logical qubits based on lattice surgery. We address several aspects of the teleportation protocol pertinent to superconducting qubit architectures. We explore the modularity constraints in the number and location of stabilizer readouts and compare variants of the teleportation protocol in this regard. Additionally, we investigate potential performance improvements related to in-sequence decision logic and the optimal size of the interface region between two surface code patches on a superconducting chip. Based on our simulations, we show possible near-term improvements in lattice surgery protocols that facilitate fault-tolerant quantum computing in superconducting circuit architectures.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-13",
+      "score": 0.9142991505988552,
+      "similar_to": [
+        {
+          "title": "Lattice surgery for near-term experimental logical qubit entanglement creation in planar architectures",
+          "id": "2606.15190",
+          "similarity": 1.000000238418579
+        },
+        {
+          "title": "A superconducting surface-code processor with lattice-surgery logical operations",
+          "id": "2606.06598",
+          "similarity": 0.9348940849304199
+        }
+      ],
+      "summary": {
+        "summary": "This work describes a logical teleportation protocol between two surface-code logical qubits using lattice surgery on a superconducting qubit architecture, comparing fully modular and depleted variants and exploring adaptive syndrome extraction and optimal merge region widths. Stabilizer simulations with experimentally informed noise parameters from ETH Zurich surface-17 experiments show a $\\sim 2\\times$ fidelity improvement in the depleted scheme and identify parameter regimes where in-sequence decision logic and minimal interface widths optimize performance.",
+        "motivation": "Implementing entangling operations between multiple logical qubits remains a key frontier for early fault-tolerant quantum computing in superconducting circuits, where lattice surgery offers the most resource-efficient approach despite transversal operations being unavailable due to planar connectivity constraints.",
+        "method": "The authors simulate logical teleportation on a surface-41 chip (two surface-17 patches with three intermediate data qubits) using a circuit-level Pauli noise model calibrated to recent experiments with gate times of 40 ns (single-qubit), $\\sim 100$ ns (two-qubit CZ), 400 ns (readout), and base error rates of $0.09\\%$ (1Q gate), $1.5\\%$ (2Q gate), $2.2\\%$ (measurement), $T_1 = 32.5$ µs, $T_2 = 47$ µs. They compare modular versus depleted stabilizer measurement schedules and study adaptive syndrome extraction conditioned on prior outcomes.",
+        "result": "The depleted scheme achieves $\\sim 2\\times$ improvement over fully modular for $d=3$; adaptive decision logic provides $\\sim 10\\%$ additional gain at low error rates but requires decision latency below $\\sim 200$ ns for $\\lambda \\in [0.1,1]$. Higher code distances require error rate reduction by factor $\\lambda_{\\mathrm{th}} \\approx 0.55$ to reach threshold; exponential error suppression at $\\lambda = 0.4$ gives $\\sim 30\\%$ and $\\sim 50\\%$ per $d \\to d+2$ step. Minimal merge region width $w=1$ is optimal; wider regions always degrade fidelity linearly as $p_L \\propto w\\lambda^{(d+1)/2}$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.16060",
+      "title": "Enhanced Sensitivity near a Quantum Exceptional Point in the Absence of Engineered Dissipation",
+      "authors": [
+        "Réouven Assouly",
+        "Harry Hanlim Kang",
+        "Aziza Almanakly",
+        "Michael A. Gingras",
+        "Bethany M. Niedzielski",
+        "Hannah Stickler",
+        "Mollie E. Schwartz",
+        "Kyle Serniak",
+        "Max Hays",
+        "Jeffrey A. Grover",
+        "William D. Oliver"
+      ],
+      "abstract": "Non-Hermitian systems exhibit phenomena absent from Hermitian systems, including exceptional points (EPs), at which two or more eigenvectors coalesce. Conventional implementations rely on gain and loss, which strongly limit quantum coherence. Here, following a proposal by Wang and Clerk (PRA 2019), we realize a closed four-mode quantum system that emulates the dynamics of a PT dimer - two coupled resonators with balanced gain and loss - without engineered dissipation. The four modes are implemented as harmonics of a superconducting coplanar-waveguide resonator, with parametric couplings engineered using a current-pumped SNAIL. We use this device as a sensor for small variations in the PT dimer coupling strength. From signal-to-noise-ratio measurements, we observe enhanced sensitivity near the EP in a non-quantum-limited regime.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-14",
+      "score": 0.7856907614348055,
+      "similar_to": [
+        {
+          "title": "High-gain and large-bandwidth Josephson parametric amplifier influenced by Fabry-Perot interference",
+          "id": "2604.13881",
+          "similarity": 0.8191068768501282
+        },
+        {
+          "title": "Cavity quantum electrodynamics for superconducting electrical circuits: an architecture for quantum computation",
+          "id": null,
+          "similarity": 0.8173805475234985
+        }
+      ],
+      "summary": {
+        "summary": "A four-mode superconducting coplanar-waveguide resonator coupled to a SNAIL is used to emulate a $\\mathcal{PT}$-symmetric dimer via parametric drives, avoiding explicit gain and loss. Enhanced sensitivity to perturbations in the coupling strength is observed near the exceptional point in a classical-noise-limited regime, with eigenvalue splitting exhibiting the predicted $\\sqrt{\\epsilon}$ dependence.",
+        "motivation": "Conventional non-Hermitian implementations using incoherent gain and loss severely degrade quantum coherence; this work demonstrates how coherent parametric drives can emulate $\\mathcal{PT}$-symmetric dynamics while preserving quantum properties.",
+        "method": "Four modes at 4.1, 5.3, 6.6, and 7.8 GHz in a 45 mm coplanar waveguide are parametrically coupled via a flux-biased current-pumped SNAIL operating at the Kerr-free point ($0.432\\,\\Phi_0$), with mode-swapping (beam-splitting) and two-mode-squeezing drives engineered to produce the effective Hamiltonian $\\hat{H} = g(\\hat{a}_1^\\dagger\\hat{a}_2 - \\hat{a}_3^\\dagger\\hat{a}_4) + \\frac{i\\gamma}{2}(\\hat{a}_1^\\dagger\\hat{a}_4^\\dagger - \\hat{a}_2^\\dagger\\hat{a}_3^\\dagger) + \\mathrm{h.c.}$",
+        "result": "Sensitivity $\\eta_1(\\tilde{g})$ to normalized coupling strength perturbations peaks near the exceptional point at $\\tilde{g} = 2g/\\gamma = 1$, with measured dynamics showing the characteristic transition from exponential growth ($g < \\gamma/2$) to coherent Rabi oscillations ($g > \\gamma/2$); the asymmetry $\\gamma_{14}/\\gamma_{23} \\approx 0.67$ extracted from fits indicates residual initialization imperfections, and noise is dominated by classical rather than quantum sources (shot noise, vacuum fluctuations).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.15398",
+      "title": "Watching a Superconducting Coplanar Waveguide Heat Up with a Single Color Center",
+      "authors": [
+        "Ioannis Karapatzakis",
+        "Jeremias Resch",
+        "David Hunger",
+        "Wolfgang Wernsdorfer"
+      ],
+      "abstract": "Single color centers in diamond offer a local probe of their cryogenic environment, providing a direct way to quantify heating in spin-control hardware. Here, we establish a single spectrally stable tin-vacancy (SnV) center as an on-chip thermometer for a diamond membrane and use it to characterize microwave- and radio-frequency-induced heating in a superconducting coplanar waveguide patterned on the same chip. We first calibrate the temperature dependence of the optical C-transition frequency and linewidth from $20\\,\\mathrm{K}$ down to the few-kelvin regime. At lower temperatures, where the optical response becomes weakly temperature dependent, we use the spin-lattice relaxation time $T_1$ as a complementary thermometer and tune its sensitivity with the transverse magnetic-field component. Applying this local thermometer to a niobium coplanar waveguide, we observe magnetic-field-dependent superconducting breakdown under GHz drive, accompanied by abrupt heating of the diamond. In contrast, at $20\\,\\mathrm{MHz}$ and $400\\,\\mathrm{mT}$, relevant for nuclear-spin control, we detect no measurable heating up to the breakdown threshold of $9.4\\,\\mathrm{dBm}$, corresponding to $B_\\mathrm{ac}\\sim1.2\\,\\mathrm{mT}$. These results define a safe operating window for superconducting microwave and RF control structures in diamond-based quantum nodes.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-13",
+      "score": 0.6574931908685647,
+      "similar_to": [
+        {
+          "title": "Characterization of drive-induced unwanted state transitions in superconducting circuits",
+          "id": "2506.24070",
+          "similarity": 0.8269286155700684
+        },
+        {
+          "title": "Oval-shaped resonance distortion as a signature of quasiparticle heating effect in a niobium superconducting resonator",
+          "id": "2607.17791",
+          "similarity": 0.8195802569389343
+        }
+      ],
+      "summary": {
+        "summary": "A single tin-vacancy (SnV) center in diamond is calibrated as a local on-chip thermometer using temperature-dependent optical transitions ($20$ K to few kelvin) and spin-lattice relaxation time $T_1$ (few kelvin to millikelvin), then applied to characterize microwave- and RF-induced heating in a niobium superconducting coplanar waveguide (CPW) on the same chip. At $2$ GHz and zero field, superconducting breakdown occurs at $P_{\text{crit}} \\approx 17.2$ dBm with abrupt heating to $\\sim 7.5$ K (inferred from linewidth), while at $20$ MHz and $400$ mT the CPW shows no measurable heating up to $P_{\text{RF}} = 9.4$ dBm ($B_{\text{ac}} \\sim 1.2$ mT), establishing a safe operating window for diamond-based quantum nodes.",
+        "motivation": "Optically addressable spin qubits in diamond are sensitive to local thermal excitations that degrade gate fidelities and coherence times, and superconducting control structures are needed to minimize MW/RF dissipation, but quantifying heating in the same device geometry used for spin control has been lacking.",
+        "method": "Photoluminescence excitation (PLE) spectroscopy calibrates the C-transition lineshift and linewidth of SnV-F from $20$ K down to $\\sim 1$ K, while off-axis magnetic-field tuning of $T_1$ extends thermometry into the millikelvin regime; this combined thermometer probes local temperature while a niobium CPW on the same membrane is driven at various microwave and RF frequencies under controlled duty cycles.",
+        "result": "At $2$ GHz the CPW undergoes field-dependent superconducting breakdown ($P_{\text{crit}} \\sim 10$–$17.2$ dBm depending on field orientation) with temperature rise to $\\sim 3$–$14$ K; at $20$ MHz and $400$ mT, $T_1$ remains constant within uncertainty up to sharp breakdown at $9.4$ dBm, indicating negligible heating and suitability for long RF pulses in nuclear-spin control.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.14847",
+      "title": "High-fidelity two-qubit gates in a 7-qubit register for quantum networks",
+      "authors": [
+        "Margriet van Riggelen",
+        "Jiwon Yun",
+        "H. Benjamin van Ommen",
+        "Tim H. Taminiau"
+      ],
+      "abstract": "Quantum networks based on optically active solid-state spins may enable quantum technologies including long-range quantum communication and distributed quantum computing. Network nodes containing multiple high-fidelity qubits can facilitate large-scale fault-tolerant operation. However, the stringent error thresholds remain out of reach for multi-qubit registers. In this work, we demonstrate high-fidelity two-qubit gates in a 7-qubit register, based on nuclear spins coupled to a nitrogen-vacancy (NV) center in diamond. We analyze crosstalk in highly connected spin systems, develop an efficient optimization procedure, and characterize the gates using gate set tomography. The two-qubit gate fidelities (best: 99.61(5)%, average: 99.18(2)%) demonstrate a multi-qubit register at the threshold for distributed quantum computation. Finally, as an example application, we perform a variational quantum eigensolver (VQE) simulation of the ground-state energy of H2 and LiH molecules. These results demonstrate one of the key prerequisites for scalable quantum networks based on solid-state spins.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-12",
+      "score": 0.6144746062568888,
+      "similar_to": [
+        {
+          "title": "Logic gates at the surface code threshold: Superconducting qubits poised for fault-tolerant quantum computing",
+          "id": "1402.4848",
+          "similarity": 0.8508358001708984
+        },
+        {
+          "title": "Quantum crosstalk cancellation for fast entangling gates and improved multi-qubit performance",
+          "id": "2106.00675",
+          "similarity": 0.846319317817688
+        }
+      ],
+      "summary": {
+        "summary": "High-fidelity two-qubit gates are demonstrated in a 7-qubit NV-center register in diamond, achieving average fidelity of 99.18(2)% and best-case 99.61(5)% using dynamically decoupled radiofrequency (DDRF) gates on nuclear spins coupled to the NV electron spin. The work characterizes crosstalk mechanisms, develops an efficient gate optimization procedure, and validates the gates with variational quantum eigensolver simulations of H$_2$ and LiH molecules, demonstrating performance at the threshold for distributed quantum computation.",
+        "motivation": "Quantum networks based on optically active solid-state spins require multiple high-fidelity qubits per node to approach fault-tolerance thresholds (~99.4% for distributed surface codes with 3–6 qubits), but multi-qubit crosstalk and parameter optimization in highly connected systems have hindered progress.",
+        "method": "The authors systematically analyze three crosstalk mechanisms (conditional RF driving of idling spins, unconditional RF driving, and dynamical-decoupling interactions through perpendicular hyperfine coupling), develop a four-step experimental optimization procedure sweeping interpulse delay $\\tau$ while checking for DD resonances and measuring 7-qubit state fidelity, and characterize gates using two-qubit gate set tomography on six separate electron–nuclear-spin pairs.",
+        "result": "Average two-qubit DDRF gate fidelity of 99.18(2)% over six nuclear spins (best: $e$–$^{14}$N gate at 99.61(5)%), with stochastic phase errors on the electron dominating infidelity; VQE demonstrates ground-state energy estimation for H$_2$ (chemical accuracy at one spacing) and LiH using 4–5 qubits with Clifford fitting error mitigation.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9692,
+    0.9143,
+    0.7857,
+    0.6575,
+    0.6145,
+    0.4582,
+    0.3601,
+    0.3543,
+    0.3326,
+    0.2986,
+    0.2835,
+    0.2596,
+    0.2497,
+    0.2455,
+    0.2352,
+    0.2231,
+    0.2003,
+    0.1982,
+    0.1965,
+    0.182,
+    0.1713,
+    0.1667,
+    0.1614,
+    0.1597,
+    0.1567,
+    0.1551,
+    0.1392,
+    0.1384,
+    0.1361,
+    0.1355,
+    0.1337,
+    0.1262,
+    0.1258,
+    0.1247,
+    0.1161,
+    0.1142,
+    0.1135,
+    0.1132,
+    0.1125,
+    0.1073,
+    0.1034,
+    0.0989,
+    0.0946,
+    0.0896,
+    0.0851,
+    0.0846,
+    0.083,
+    0.0799,
+    0.079,
+    0.0771,
+    0.0681,
+    0.0665,
+    0.0661,
+    0.0642,
+    0.0627,
+    0.062,
+    0.0611,
+    0.061,
+    0.0605,
+    0.0602,
+    0.0601,
+    0.0583,
+    0.0576,
+    0.0576,
+    0.0571,
+    0.0567,
+    0.0561,
+    0.0528,
+    0.0525,
+    0.0522,
+    0.0517,
+    0.0493,
+    0.047,
+    0.0467,
+    0.0458,
+    0.0456,
+    0.0449,
+    0.0432,
+    0.0414,
+    0.0414,
+    0.0405,
+    0.0361,
+    0.0341,
+    0.0333,
+    0.0323,
+    0.0317,
+    0.0311,
+    0.0306,
+    0.0295,
+    0.0292,
+    0.0285,
+    0.0273,
+    0.0268,
+    0.0262,
+    0.0261,
+    0.0259,
+    0.0254,
+    0.025,
+    0.0238,
+    0.0233,
+    0.0226,
+    0.0223,
+    0.022,
+    0.0216,
+    0.0212,
+    0.02,
+    0.0198,
+    0.0195,
+    0.0192,
+    0.0186,
+    0.0171,
+    0.0171,
+    0.0166,
+    0.0157,
+    0.0152,
+    0.015,
+    0.0149,
+    0.0149,
+    0.0146,
+    0.0143,
+    0.0133,
+    0.0132,
+    0.013,
+    0.0129,
+    0.0129,
+    0.0129,
+    0.0126,
+    0.0125,
+    0.0116,
+    0.0115,
+    0.0111,
+    0.0109,
+    0.0108,
+    0.0106,
+    0.0103,
+    0.0102,
+    0.0096,
+    0.0093,
+    0.0092,
+    0.009,
+    0.0079,
+    0.0079,
+    0.0077,
+    0.0062,
+    0.006,
+    0.0057,
+    0.0048,
+    0.0046,
+    0.0038,
+    0.0035,
+    0.0033,
+    0.0024,
+    0.0024
+  ]
+}

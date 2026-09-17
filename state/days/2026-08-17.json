@@ -1,0 +1,204 @@
+{
+  "date": "2026-08-17",
+  "n_fetched": 69,
+  "papers": [
+    {
+      "id": "2608.14357",
+      "title": "Native multi-qubit gates on a single-junction unimon circuit",
+      "authors": [
+        "Sasu Tuohino",
+        "Mikko Möttönen",
+        "Matti Silveri"
+      ],
+      "abstract": "Quantum processors with native multi-qubit gates may offer very efficient implementations of near-term quantum algorithms on noisy hardware. Here, we introduce the multiunimon, a superconducting multimode circuit that encodes multiple qubits and enables native multi-qubit gates in a device consisting of a single Josephson junction embedded in a coplanar waveguide structure. Closely related to the unimon qubit, it inherits properties such as high anharmonicity, full protection against low-frequency charge noise, and partial protection against flux noise. By designing such a three-qubit device with Josephson-to-inductive energy ratio above unity and using a leakage-aware encoding scheme for the computational states, we simulate all twelve different controlled-controlled-NOT gates with a mean fidelity of 99.5% with simple sine-squared pulses of comparable length to single-qubit gates. The performance is limited by incoherent errors dominated by dielectric loss. With improvements in noise protection, design, and pulse shaping, the simulations suggest that fidelities approaching 99.99% are within reach. Our results demonstrate the potential of the multiunimon as a highly connected multi-qubit unit for larger superconducting quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-08-14",
+      "score": 0.9733414241258479,
+      "similar_to": [
+        {
+          "title": "Universal Hamiltonian control in a planar trimon circuit",
+          "id": "2603.04566",
+          "similarity": 0.8630422353744507
+        },
+        {
+          "title": "Above 99.9% Fidelity Single-Qubit Gates, Two-Qubit Gates, and Readout in a Single Superconducting Quantum Device",
+          "id": "2508.16437",
+          "similarity": 0.8577606678009033
+        }
+      ],
+      "summary": {
+        "summary": "The multiunimon is a single-junction superconducting circuit encoding three qubits with native controlled-controlled-NOT gates achieved via microwave drives on a branched coplanar waveguide structure. Simulations demonstrate twelve three-qubit gates with mean fidelity $99.56\\%$ at $20$ ns gate times, limited primarily by dielectric loss, with coherent-error-only simulations suggesting fidelities approaching $99.99\\%$ at $60$ ns.",
+        "motivation": "Scaling superconducting quantum processors typically requires multiple tunable couplers and flux lines per qubit pair, adding complexity. Native multi-qubit gates within single devices offer more efficient circuit compilations and reduce hardware overhead, particularly valuable for near-term noisy systems and quantum error correction.",
+        "method": "Operating in the shallow double-well regime ($E_J/E_L = 1.67$), the authors use leakage-aware encoding to select eight computational eigenstates that minimize gate errors via off-resonance transitions and decoherence. An iterative diagonalization scheme efficiently handles $\\sim 150$ CPW modes, while nested optimization loops search over circuit geometry and state mappings using differential evolution.",
+        "result": "At individually optimized gate times (10–32.5 ns), the twelve CCNOT gates achieve infidelities ranging from $2.0 \\times 10^{-3}$ to $7.7 \\times 10^{-3}$ ($99.70\\%$–$99.23\\%$ fidelities). Dielectric quality factor $Q_{\\mathrm{diel}} = 3.5 \\times 10^5$ dominates losses; raising $Q_{\\mathrm{diel}}$ above $10^6$ and applying advanced pulse shaping could yield sub-$10^{-4}$ infidelities.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2608.13627",
+      "title": "A scalable edge-pass Purcell filter for high-fidelity readout of superconducting qubits",
+      "authors": [
+        "Xudong Liao",
+        "Yuan Li",
+        "Sainan Huai",
+        "Shuyi Pan",
+        "Zhenxing Zhang",
+        "Zhiwen Zong",
+        "Kunliang Bu",
+        "Yulei Ye",
+        "Wen Zheng",
+        "Xinsheng Tan",
+        "Yang Yu",
+        "Xiaopei Yang",
+        "Tianqi Cai",
+        "Shengyu Zhang"
+      ],
+      "abstract": "High-fidelity readout with strong Purcell protection of qubit coherence is essential for scalable superconducting quantum processors, yet the finite passband and sizable footprint of conventional band-pass Purcell filters make them hard to scale. Here we introduce a scalable edge-pass Purcell filter that separates the readout band from the protected qubit band by a single transmission edge, freeing the readout resonators from bandwidth constraint. Depending on whether the transmitting band lies above or below the cutoff, the compact network is realized as a high-pass filter (HPF) or a low-pass filter (LPF). The HPF reaches an average readout fidelity of 99.46(4)% (up to 99.56%) with a 150-ns pulse, and the LPF reaches 99.49(3)% (up to 99.57%) with a 130-ns pulse. The average single-qubit gate fidelities are 99.94% (HPF) and 99.93% (LPF). Relative to the filter-free Purcell limit, the filters substantially extend the qubit lifetime, and the Purcell protection deepens at higher filter order. In addition, an intrinsic dissipation mode of the filter offers a qubit-reset channel. This leads to a compact architecture that unifies fast, high-fidelity readout, Purcell protection, and effective reset within a single filter for large-scale fault-tolerant quantum computation.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-08-13",
+      "score": 0.8607484427062971,
+      "similar_to": [
+        {
+          "title": "Broadband Purcell Filter for Fast Superconducting Qubit Reset and Readout",
+          "id": "2609.14081",
+          "similarity": 0.9330394864082336
+        },
+        {
+          "title": "Photon-noise-tolerant dispersive readout of a superconducting qubit using a nonlinear Purcell filter",
+          "id": "2309.04315",
+          "similarity": 0.9051064252853394
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates scalable edge-pass Purcell filters for superconducting qubits that use a single transmission edge to separate readout and qubit bands, realized as compact lumped-element high-pass (HPF) or low-pass (LPF) filters. The HPF achieves 99.46(4)% average readout fidelity in 150 ns and the LPF achieves 99.49(3)% in 130 ns, with single-qubit gate fidelities of 99.94% and 99.93% respectively, while providing effective Purcell protection that strengthens with filter order and includes an intrinsic dissipation mode for qubit reset.",
+        "motivation": "Conventional band-pass Purcell filters limit readout resonator bandwidth and have large footprints that complicate scaling superconducting quantum processors, creating a conflict between fast high-fidelity readout, qubit coherence preservation, and device scalability.",
+        "method": "High-pass and low-pass edge-pass filters were designed using Chebyshev type-I lumped-element networks (interdigital capacitors and spiral inductors) with cutoff frequencies at 6.5 GHz (HPF) and 5.0 GHz (LPF), characterized via finite-element simulation and transmission measurements, and integrated with transmon qubits on planar and flip-chip platforms with dispersive readout via Josephson parametric amplifiers.",
+        "result": "Measured $T_1$ lifetimes exceed the filter-free Purcell limit by substantial margins and increase systematically with filter order (5th to 13th order measured), confirming strong Purcell protection; the intrinsic dissipation mode enables qubit reset via resonant exchange on timescales of ~150 ns (readout mode) or ~8.5 µs (dissipation mode).",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2608.08500",
+      "title": "Crystalline Germanium Josephson Junctions",
+      "authors": [
+        "Frederik H. Knudsen",
+        "Axel Leblanc",
+        "Yiliu Li",
+        "Patrick J. Strohbeen",
+        "Jechiel van Dijk",
+        "Logan Kusher",
+        "Arunav Bordoloi",
+        "Alisa Danilenko",
+        "Xiangchao Ma",
+        "Salva Salmani-Rezaie",
+        "Javad Shabani"
+      ],
+      "abstract": "Conventional superconducting quantum electronics rely on well-established Josephson junctions made of Al/AlO$_{x}$ where the weak link AlO$_{x}$ is amorphous and is believed to host two-level systems that limit coherence. Crystalline Josephson junctions exhibit atomically ordered interface quality but remain constrained by complex fabrication and intrinsic asymmetry of epitaxial growth. Here, we demonstrate a fully epitaxial approach based on superconductivity in gallium-doped germanium, enabling the realization of Josephson junctions entirely grown in situ by molecular beam epitaxy. These devices feature atomically sharp interfaces and crystalline weak links, resulting in strong Josephson coupling in the ultra-short regime. We observe an unconventional enhancement of the switching current under applied magnetic field, which we attribute to quasiparticle-assisted thermalization processes from the Al contacts. This platform combines structural coherence, fabrication simplicity, and scalability, offering a promising route toward low-disorder, CMOS-compatible superconducting qubits in a merged element transmon architecture.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-08-13",
+      "score": 0.6383286263459556,
+      "similar_to": [
+        {
+          "title": "2D transmons with lifetimes and coherence times exceeding 1 millisecond",
+          "id": "2503.14798",
+          "similarity": 0.8125373125076294
+        },
+        {
+          "title": "An All-van-der-Waals Qubit",
+          "id": "2609.14230",
+          "similarity": 0.8111672401428223
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates crystalline Josephson junctions fabricated from Ga-doped Ge superconductors grown entirely by molecular beam epitaxy, featuring atomically sharp interfaces and a 0.5 nm Si weak link with no amorphous barrier. The devices exhibit strong Josephson coupling in the ultra-short regime and an unconventional magnetic-field enhancement of switching current attributed to quasiparticle-assisted thermalization through Al contacts.",
+        "motivation": "Standard Al/AlO$_x$ Josephson junctions suffer from amorphous barriers hosting defects and two-level systems that limit coherence, particularly in merged-element transmon architectures where the electromagnetic field concentrates in the junction.",
+        "method": "Vertical Ga:Ge/Si/Ga:Ge heterostructures with 10 nm superconducting layers separated by a coherent 0.5 nm Si barrier were grown by MBE on Ge substrates and contacted with Al leads; six devices with areas ranging from 300 to 1200 µm$^2$ were fabricated and characterized via four-terminal transport measurements at 18 mK in applied magnetic fields.",
+        "result": "All six junctions show clear supercurrent with $eR_N I_{\rm SW}/\\Delta$ ranging from 1.05 to 1.97, scaling as expected with junction area and positioning between the Ambegaokar–Baratoff limit ($\\pi/2$) and the short ballistic SNS limit ($\\pi$); in-plane magnetic field enhancement of $I_{\rm SW}$ peaks near 80 mT and persists up to 160 mK, consistent with quasiparticle cooling channels opening in the Al leads with transparency $\\tau = 0.8$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9733,
+    0.8607,
+    0.6383,
+    0.3677,
+    0.3544,
+    0.2934,
+    0.2531,
+    0.2386,
+    0.2355,
+    0.2298,
+    0.2177,
+    0.1875,
+    0.1638,
+    0.1373,
+    0.1363,
+    0.133,
+    0.1176,
+    0.1167,
+    0.1154,
+    0.1092,
+    0.1031,
+    0.1006,
+    0.0933,
+    0.0829,
+    0.0719,
+    0.0657,
+    0.0596,
+    0.0552,
+    0.0448,
+    0.0445,
+    0.0443,
+    0.041,
+    0.0374,
+    0.0374,
+    0.0358,
+    0.0329,
+    0.0314,
+    0.031,
+    0.0299,
+    0.0286,
+    0.026,
+    0.0252,
+    0.0235,
+    0.0224,
+    0.0209,
+    0.0206,
+    0.0198,
+    0.0192,
+    0.019,
+    0.0188,
+    0.0172,
+    0.0172,
+    0.0112,
+    0.0102,
+    0.0097,
+    0.0092,
+    0.0085,
+    0.0083,
+    0.0061,
+    0.0061,
+    0.0056,
+    0.0056,
+    0.0048,
+    0.0046,
+    0.0041,
+    0.0038,
+    0.0037,
+    0.0034,
+    0.0012
+  ]
+}

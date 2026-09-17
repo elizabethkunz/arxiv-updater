@@ -1,0 +1,350 @@
+{
+  "date": "2026-06-08",
+  "n_fetched": 69,
+  "papers": [
+    {
+      "id": "2606.06951",
+      "title": "Contacting Josephson Junctions via Airbridges in Superconducting Circuits",
+      "authors": [
+        "Prakiran Baidya",
+        "Momčilo Milosavljević",
+        "Murali Krishna Kurmapu",
+        "Thomas Fösel",
+        "Harshanth Ram Murugesan",
+        "Victor Kemme",
+        "Mojahed Jaber",
+        "Markus Sondermann",
+        "Christopher Eichler"
+      ],
+      "abstract": "Superconducting circuit devices require electrical interconnects between different circuit elements on the chip, for which conventional device architectures use a combination of two structural elements: \\textit{airbridges} to connect non-adjacent elements in the base layer, and \\textit{bandages} to connect the electrodes forming the Josephson junctions to the base layer. Bandages introduce unwanted parasitic material interfaces and increase the manufacturing complexity. Here, we overcome the limitations imposed by \\emph{bandages} by establishing \\textit{all} electrical interconnects with airbridges of varying size fabricated in a single step. The airbridges show a high yield and mechanical stability over a wide range of sizes from $0.5\\,μ\\mathrm{m}$ to $4\\,μ\\mathrm{m}$ in width and from $5\\,μ\\mathrm{m}$ to $40\\,μ\\mathrm{m}$ in length, and show low loss when integrated in coplanar waveguide resonators and transmon qubits. Measured relaxation times up to more than $250\\,μ\\mathrm{s}$ in standard transmon geometries show that the process achieves high coherence while substantially easing and accelerating device fabrication.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-05",
+      "score": 0.9514487681365842,
+      "similar_to": [
+        {
+          "title": "Wiring surface loss of a superconducting transmon qubit",
+          "id": "2311.16794",
+          "similarity": 0.8313422799110413
+        },
+        {
+          "title": "Electrical post-fabrication tuning of aluminum Josephson junctions at room temperature",
+          "id": "2602.20002",
+          "similarity": 0.8242175579071045
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates a single-step grayscale electron-beam lithography process for fabricating airbridges of varying sizes ($0.5$–$4$ µm width, $5$–$40$ µm length) that unify all electrical interconnects in superconducting circuits, eliminating the need for separate bandage contacts to Josephson junctions. Measured relaxation times exceeding $250$ µs in transmons and quality factors around $4 \times 10^5$ in CPW resonators show that airbridges provide high-quality contacts while substantially simplifying fabrication.",
+        "motivation": "Conventional superconducting circuit fabrication uses two separate types of interconnects: airbridges for non-adjacent elements and bandages for junction contacts. Bandages introduce parasitic material interfaces, increase process complexity, and expose the Si substrate to damaging Ar$^+$ ion milling during oxide removal.",
+        "method": "The authors developed a unified single-step grayscale e-beam lithography process to fabricate all airbridges simultaneously, with a reduced resist height of $1$ µm (versus $3$ µm in prior work) and modified post-exposure baking and development protocols. The resist scaffold protects the junction region from ion milling damage. Room-temperature conductance measurements verified galvanic contact; CPW resonators and transmon devices characterized the performance at millikelvin temperatures.",
+        "result": "Junction-contacting airbridges ($5$ µm length, $3$ µm width) achieved $>99\\%$ yield; grounding airbridges ($36$ µm length, $4$ µm width) showed $\\sim97.5\\%$ yield across $2000$ structures. CPW resonators exhibited median $Q_i^{\\mathrm{LP}} \\approx 4.3 \\times 10^5$ with loss per grounding airbridge $\\sim 2.3 \\times 10^{-8}$ (two orders of magnitude below intrinsic loss). Transmons showed median $T_1 \\sim 100$ µs across chips, with peak values $\\sim 290$ µs, comparable to state-of-the-art all-Al devices.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.07377",
+      "title": "Coherent versus stochastic error injection on a repetition-code logical qubit in superconducting hardware",
+      "authors": [
+        "S. L. M. van der Meer",
+        "M. Serra-Peralta",
+        "Y. Xin",
+        "M. Finkel",
+        "H. M. Veen",
+        "M. W. Beekman",
+        "L. DiCarlo",
+        "B. M. Terhal"
+      ],
+      "abstract": "The performance of quantum error correction (QEC) codes is limited by the underlying physical noise. Theoretical studies show that coherent and stochastic noise have different effects when performing QEC with either surface or repetition codes. We use the bitflip repetition code, realized in a transmon quantum processor, as a testbed to experimentally study the impact of injecting coherent versus stochastic errors on the logical performance. We adapt a scalable free-fermion simulator to simulate the experiments and we modify a subset sampling technique to efficiently sample stochastic noise in the quantum circuit. In the experiment, we do not observe the difference in logical fidelity predicted by simulation for either the distance-3 or distance-5 repetition codes. We hypothesize that this discrepancy could be explained by small drifts in qubit frequencies, which introduce phase-coherent noise that `stochastifies' the injected coherent errors. Our work contributes to advancing an understanding of how coherent errors affect experimental QEC.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-05",
+      "score": 0.9364761790722314,
+      "similar_to": [
+        {
+          "title": "Exponential suppression of bit or phase flip errors with repetitive error correction",
+          "id": "2102.06132",
+          "similarity": 0.8853030204772949
+        },
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8737150430679321
+        }
+      ],
+      "summary": {
+        "summary": "This work experimentally investigates whether coherent and stochastic noise have different effects on quantum error correction using bitflip repetition codes on a transmon processor. Theory predicts a 1–2% coherent-stochastic gap in logical fidelity, but experiments on distance-3 and distance-5 codes find no observable difference, attributed to unmitigated qubit frequency drift that stochastifies injected coherent errors.",
+        "motivation": "Theoretical studies suggest coherent errors should degrade repetition and surface codes more severely than stochastic errors (lower threshold), but this prediction has not been experimentally validated, and understanding the impact of real noise on QEC performance is crucial for improving quantum processor fidelity.",
+        "method": "Coherent and stochastic $X$ rotations were injected at the start of each QEC round on a Surface-17 processor; stochastic noise was efficiently sampled using subset sampling to reconstruct logical error probability $P_L(p_{\\mathrm{inj}})$ from deterministic error injection circuits; both free-fermion and density-matrix simulations were used to model experiments.",
+        "result": "Experiments with uniform-weight MWPM decoding found no coherent-stochastic gap for $d=3$ or $d=5$ (measurement uncertainty $\\sim 2\\%$ comparable to predicted 1–2% gap), whereas simulations predict one; density-matrix simulations including circuit-level noise and qubit frequency drift show the gap diminishes and can partially explain the discrepancy.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.06598",
+      "title": "A superconducting surface-code processor with lattice-surgery logical operations",
+      "authors": [
+        "Yanzhe Wang",
+        "Fanhao Shen",
+        "Haipeng Xie",
+        "Aosai Zhang",
+        "Yu Gao",
+        "Chuanyu Zhang",
+        "Xuhao Zhu",
+        "Feitong Jin",
+        "Yiren Zou",
+        "Ning Wang",
+        "Zhengyi Cui",
+        "Zehang Bao",
+        "Zitian Zhu",
+        "Jiarun Zhong",
+        "Gongyu Liu",
+        "Jia-Nan Yang",
+        "Yihang Han",
+        "Yiyang He",
+        "Jiayuan Shen",
+        "Han Wang",
+        "Jiahua Huang",
+        "Xinrong Zhang",
+        "Sailang Zhou",
+        "Hang Dong",
+        "Jinfeng Deng",
+        "Yaozu Wu",
+        "Zixuan Song",
+        "Hekang Li",
+        "Zhen Wang",
+        "Chao Song",
+        "Qiujiang Guo",
+        "Pengfei Zhang",
+        "H. Wang",
+        "Ying Li"
+      ],
+      "abstract": "Fault-tolerant logical operations are fundamental for scalable quantum computation. Here, we report the experimental realization of lattice-surgery operations between a pair of distance-three surface-code logical qubits on a planar superconducting processor. During repeated syndrome extraction cycles, the logical qubits exhibit per-cycle error rates of $0.0365(2)$ and $0.0282(1)$, respectively, after leakage events are rejected. By leveraging joint initialization and lattice splitting, we deterministically prepare a logical Bell state, confirming genuine bipartite entanglement via the error-corrected logical state fidelity. We further execute a two-qubit Deutsch-Jozsa algorithm at the logical level to demonstrate algorithmic utility in a fault-tolerant framework. Finally, to achieve universal control, we implement magic-state injection and gate teleportation to realize continuous non-Clifford rotations about the logical $X$ axis. For the logical $R_{X}(π/4)$ gate, we achieve a logical gate fidelity of $0.943_{-9}^{+10}$ conditioned on the absence of detected errors. These results establish lattice surgery as a practical and versatile paradigm for logical computation in near-term surface-code architectures, representing a critical milestone toward scalable fault-tolerant quantum advantage in superconducting circuits.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-04",
+      "score": 0.9284789779460929,
+      "similar_to": [
+        {
+          "title": "A superconducting surface-code processor with lattice-surgery logical operations",
+          "id": "2606.06598",
+          "similarity": 0.9973781108856201
+        },
+        {
+          "title": "Realizing Lattice Surgery on Two Distance-Three Repetition Codes with Superconducting Qubits",
+          "id": "2501.04612",
+          "similarity": 0.9426664710044861
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates lattice-surgery operations between distance-three surface-code logical qubits on a 125-qubit superconducting processor, achieving per-cycle logical error rates of $0.0365(2)$ and $0.0282(1)$ for the two qubits. The authors realize deterministic Bell-state preparation, execute a two-qubit Deutsch-Jozsa algorithm at the logical level, and implement magic-state injection to achieve non-Clifford rotations with a logical $R_X(\\\\/4)$ gate fidelity of $0.943_{-9}^{+10}$.",
+        "motivation": "Lattice surgery is the natural paradigm for fault-tolerant logical operations in planar superconducting qubit arrays, yet its experimental realization between fully error-correctable surface-code patches with non-Clifford gates remained outstanding.",
+        "method": "Two distance-three surface codes with median single-qubit and CZ gate fidelities of $0.9995$ and $0.996$ respectively were used to implement lattice-merge and lattice-split operations via dynamic reconfiguration of stabilizer measurements; logical operations were characterized using belief-matching and MWPM decoding with soft post-selection strategies.",
+        "result": "Decoded logical Bell-state fidelity reached $0.532_{-1}^{+1}$, Deutsch-Jozsa classification accuracy improved from $0.623_{-1}^{+1}$ to $0.716_{-1}^{+1}$ after error correction for balanced functions, and detected-error-free post-selection achieved logical $R_X(\\\\pi/4)$ gate fidelity of $0.943_{-9}^{+10}$.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.07339",
+      "title": "Suppression of Quasiparticle Poisoning to $10^{-11}$ Levels in Superconducting Qubits via Infrared Shielding",
+      "authors": [
+        "Wei-En Lin",
+        "Chen-Hsun Ma",
+        "Erh-Hsiang Yeh",
+        "Wei-Lun Peng",
+        "Yu-Sen Wei",
+        "Hsi-Sheng Goan",
+        "Cen-Shawn Wu",
+        "Chung-Ting Ke",
+        "Yung-Fu Chen",
+        "Chii-Dong Chen"
+      ],
+      "abstract": "Quasiparticle poisoning bottlenecks superconducting qubits, limiting coherence and the scalability of quantum processors. In this work, we systematically investigate quasiparticle poisoning in superconducting qubits under three infrared (IR) shielding configurations, ranging from a dedicated multi-layer design to a simplified implementation. By measuring quasiparticle-induced parity switching, we demonstrate a suppression of the switching rate by over four orders of magnitude via the implementation of improved shielding. In the best configuration, the rate decreases over time following cooldown and reaches 0.069$\\,$Hz on day 34, corresponding to an anticipated quasiparticle density per Cooper pair of $1.88\\times10^{-11}$. To our knowledge, this represents the lowest quasiparticle density reported in the literature to date. The remaining quasiparticle population is likely dominated by sporadic phonon bursts stemming from mechanical stress release in the on-chip films, as well as from the surrounding environment. The effective qubit temperature follows the phonon bath down to 17$\\,$mK, enabling initialization errors of $\\sim 0.01\\%$ for 3$\\,$GHz qubits. These results demonstrate that proper IR shielding and thermalization are essential for suppressing quasiparticle poisoning and enabling high-coherence, scalable superconducting qubit systems.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-05",
+      "score": 0.8646730630184842,
+      "similar_to": [
+        {
+          "title": "Suppression of Quasiparticle Poisoning to 10^-11 Levels in Superconducting Qubits via Infrared Shielding",
+          "id": "2606.07339",
+          "similarity": 0.9965370893478394
+        },
+        {
+          "title": "Phonon downconversion to suppress correlated errors in superconducting qubits",
+          "id": "2203.06586",
+          "similarity": 0.8956076502799988
+        }
+      ],
+      "summary": {
+        "summary": "This work demonstrates suppression of quasiparticle poisoning in superconducting transmon qubits to $x_{qp} = 1.88 \times 10^{-11}$ per Cooper pair using comprehensive infrared shielding with multi-layer copper/aluminum/mu-metal enclosures and proper thermalization to the mixing plate. The quasiparticle density is inferred from parity-switching rate measurements that decrease monotonically following cooldown and reach $0.069$ Hz by day 34, while initialization errors of $\thicksim 0.01\\%$ are achieved with qubits thermalized to $17$ mK.",
+        "motivation": "Quasiparticle poisoning limits coherence times and error correction in superconducting qubit arrays; stray infrared radiation is a dominant controllable source, motivating systematic investigation of shielding effectiveness via parity-switching measurements.",
+        "method": "Three floating transmons with $3$ GHz transition frequencies and large capacitor pads (effectively radiative antennas) were studied under three shielding configurations ranging from a dedicated light-tight multi-layer assembly to simplified designs, with parity states mapped using Ramsey sequences and analyzed via Hidden Markov Model reconstruction of noisy measurement trajectories.",
+        "result": "Parity-switching rate $\\Gamma_p$ suppressed from $\\sim 1$–$5$ kHz (Configuration C, minimal shielding) to sub-0.1 Hz with full shielding (Configuration A), corresponding to $x_{qp} \\approx 4.1 \\times 10^{-11}$ on day 15 and $1.88 \\times 10^{-11}$ by day 36; effective qubit temperature tracks phonon bath at $16$–$17$ mK with no saturation, confirming excellent thermalization and ruling out excess nonequilibrium quasiparticles as the dominant source of excited-state population.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.07140",
+      "title": "Improved Cryogenic Photodiode Optical Biasing for Low-Noise and Low-Jitter Superconducting Nanowire Single-Photon Detectors",
+      "authors": [
+        "Jia-Hao Hu",
+        "Wei-Jun Zhang",
+        "Wen-Shuo Yu",
+        "Yu-Ze Wang",
+        "Dong-Wei Chu",
+        "Ya-Tao Peng",
+        "Hui-Qin Yu",
+        "Pu-Sheng Yuan",
+        "Ling Wu",
+        "Li-Xing You"
+      ],
+      "abstract": "We experimentally demonstrate an improved optical biasing scheme for superconducting nanowire single-photon detectors (SNSPDs), which employs a cryogenic InGaAs-InP photodiode (PD) as a local bias source. It is found that, under illumination from a stable external light source, this PD generates a stable photocurrent in a cryogenic environment (~2.3 K), with fluctuations in the photocurrent primarily attributed to fluctuations in the incident optical power. Furthermore, by screening and effectively blocking stray photons leaking from the PD, which give rise to background dark counts, we have achieved an SNSPD exhibiting an ultra-low intrinsic dark count rate of 1e-4 cps. Utilizing this improved optical biasing technique, our SNSPD achieved performance comparable to that obtained under conventional electrical biasing: a system detection efficiency of 80.7%, a background dark count rate of 32.6 cps, and a minimum timing jitter of 57.5 ps. These results indicate that cryogenic-PD-based optical biasing serves as a viable, low-noise, and low-jitter alternative to traditional electrical biasing. Moreover, this work offers useful design guidance for the future development of PD-based low-noise bias sources and for the construction of all-photonic SNSPD systems tailored for high-precision quantum photonics applications.",
+      "categories": [
+        "quant-ph",
+        "physics.app-ph",
+        "physics.ins-det"
+      ],
+      "published": "2026-06-05",
+      "score": 0.6307151461692125,
+      "similar_to": [
+        {
+          "title": "Bias-preserving and error-detectable entangling operations in a superconducting dual-rail system",
+          "id": "2503.10935",
+          "similarity": 0.818021833896637
+        },
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.8106526732444763
+        }
+      ],
+      "summary": {
+        "summary": "An improved optical biasing scheme for SNSPDs using a cryogenic InGaAs-InP photodiode as a local bias source is demonstrated, achieving performance comparable to electrical biasing with 80.7% system detection efficiency and 57.5 ps timing jitter. By screening stray photons from the photodiode, an ultra-low intrinsic dark count rate of $10^{-4}$ cps is obtained, establishing cryogenic-PD-based optical biasing as a viable low-noise alternative for all-photonic SNSPD systems.",
+        "motivation": "Electrical biasing of SNSPDs introduces noise and timing jitter through wiring and control electronics; optical biasing with a cryogenic photodiode offers a path toward low-noise, all-photonic architectures for quantum photonics applications.",
+        "method": "An InGaAs-InP photodiode operating at ~2.3 K is used to generate stable photocurrent under illumination from an external light source, with stray photon leakage blocked through careful screening to suppress background dark counts in the SNSPD.",
+        "result": "System detection efficiency of 80.7%, background dark count rate of 32.6 cps, minimum timing jitter of 57.5 ps, and intrinsic dark count rate of $10^{-4}$ cps—matching electrical biasing performance with significantly reduced electronic noise coupling.",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2606.07699",
+      "title": "Correlation-Assisted Odd-Parity Encoded Gates in Coupled Fluxonium Qubits under Non-Markovian TLS Noise",
+      "authors": [
+        "Chenghong Ji",
+        "Chaoying Zhao"
+      ],
+      "abstract": "Correlated longitudinal noise can be partially converted into common-mode fluctuations in an oddparity two-qubit subspace. We analyze an encoded logical qubit formed by the states in two coupled fluxonium qubits. Projecting the exchange-coupled two-qubit Hamiltonian onto this subspace yields an effective logical Hamiltonian in which the exchange interaction drives XL rotations and the qubit detuning drives ZL rotations. We model correlated two-levelsystem (TLS) noise by using longitudinal stochastic processes with finite memory time and evaluate encoded-gate performance through the average gate fidelity. Within the projected model, positive spatial noise correlation suppresses the differential fluctuation and thereby improves the fidelity of encoded logical gates. We further compare Gaussian Ornstein-Uhlenbeck, Markovian, and randomtelegraph noise models and examine the role of logical dynamical decoupling. These results identify a noise-adapted control mechanism for odd-parity encoded operations in coupled fluxonium devices and motivate future multilevel simulations including leakage and pulse-level constraints.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-06-05",
+      "score": 0.630462199906054,
+      "similar_to": [
+        {
+          "title": "Suppressing Counter-Rotating Errors for Fast Single-Qubit Gates with Fluxonium",
+          "id": "2406.08295",
+          "similarity": 0.8565880060195923
+        },
+        {
+          "title": "The superconducting grid-states qubit",
+          "id": "2509.14656",
+          "similarity": 0.8423174023628235
+        }
+      ],
+      "summary": {
+        "summary": "Odd-parity encoded logical gates in coupled fluxonium qubits benefit from spatially correlated longitudinal TLS noise, which converts harmful differential fluctuations into common-mode components. Projecting the two-qubit Hamiltonian onto the subspace $\\{|01\\rangle, |10\\rangle\\}$ yields logical $X_L$ and $Z_L$ rotations driven by exchange coupling and detuning, with encoded gate fidelity monotonically improving as noise correlation coefficient $\\rho$ increases.",
+        "motivation": "Fluxonium platforms exhibit millisecond coherence and large anharmonicity ($|\\alpha|/2\\pi \\sim 5$ GHz) but host non-Markovian TLS defects in Josephson junctions. The question is whether correlated TLS environments can be exploited rather than passively endured for encoded logical control.",
+        "method": "The authors project the exchange-coupled two-fluxonium Hamiltonian with capacitive coupling onto the odd-parity subspace, decomposing correlated Gaussian Ornstein-Uhlenbeck TLS noise with memory time $\\tau_c$ into common-mode and differential components. They benchmark encoded $X_L(\\pi)$ and $Z_L(\\pi)$ gates via average gate fidelity $F_\\mathrm{avg}$ under Ornstein-Uhlenbeck, Markovian, and random-telegraph noise models, and supplement with logical dynamical decoupling.",
+        "result": "For symmetric noise ($\\sigma_1 = \\sigma_2 = 0.30$ MHz$/(2\\pi)$) and $\\tau_c = 1$ µs, encoded gate fidelity increases monotonically with $\\rho$; the gate infidelity 1−$F_\\mathrm{avg}$ decreases approximately exponentially in the strongly correlated regime. This improvement persists across all three noise models and remains visible under exchange/detuning control errors ($\\epsilon_J, \\epsilon_\\Delta$), with additional gains from logical CPMG-4 and XY4 refocusing at intermediate correlations.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9514,
+    0.9365,
+    0.9285,
+    0.8647,
+    0.6307,
+    0.6305,
+    0.4645,
+    0.3744,
+    0.1431,
+    0.1411,
+    0.1327,
+    0.1321,
+    0.1277,
+    0.1172,
+    0.1121,
+    0.1079,
+    0.0827,
+    0.0796,
+    0.0749,
+    0.074,
+    0.0728,
+    0.0656,
+    0.065,
+    0.0637,
+    0.0635,
+    0.0604,
+    0.0603,
+    0.057,
+    0.0566,
+    0.0565,
+    0.053,
+    0.0505,
+    0.0485,
+    0.0444,
+    0.0438,
+    0.038,
+    0.0372,
+    0.0368,
+    0.0326,
+    0.0297,
+    0.0289,
+    0.0278,
+    0.0262,
+    0.0251,
+    0.0216,
+    0.0213,
+    0.0212,
+    0.0206,
+    0.0194,
+    0.0188,
+    0.0187,
+    0.0179,
+    0.0171,
+    0.0159,
+    0.0159,
+    0.0139,
+    0.0128,
+    0.0111,
+    0.0105,
+    0.0104,
+    0.0085,
+    0.0083,
+    0.0075,
+    0.0074,
+    0.007,
+    0.0057,
+    0.0048,
+    0.0033,
+    0.001
+  ]
+}

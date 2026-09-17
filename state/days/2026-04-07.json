@@ -1,0 +1,231 @@
+{
+  "date": "2026-04-07",
+  "n_fetched": 114,
+  "papers": [
+    {
+      "id": "2604.03726",
+      "title": "Leakage Suppression in Quantum Control via Static Parameter Offsets",
+      "authors": [
+        "Ting Lin",
+        "Zi-Hao Qin",
+        "Zheng-Yuan Xue",
+        "Tao Chen"
+      ],
+      "abstract": "High-fidelity quantum operations require the system dynamics to be strictly confined to the computational subspace. In practice, however, control fields inevitably couple to leakage levels, giving rise to quantum state leakage that significantly reduces the fidelity of the operation. To address this challenge, we propose a general strategy for actively suppressing leakage errors by applying small, static offsets to tunable system parameters. This approach systematically mitigates leakage's detrimental impact on quantum control, without modifying the original control framework or incurring additional time overhead. By avoiding the need for extra suppression pulses or complex optimization procedures altogether, it offers a streamlined solution for leakage compensation while remaining fully compatible with subsequent optimal control techniques. Numerical validation conducted on superconducting quantum circuits demonstrates effective leakage suppression, enabling high-fidelity single-qubit gates, precise control of two-qubit interactions, and perfect state transfer in multi-level systems. Moreover, when integrated with optimal control techniques, our approach also allows for the cooperative suppression of both leakage errors and residual crosstalk. Therefore, this work provides a feasible technical pathway toward the low error thresholds required for fault-tolerant quantum computation.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-04-04",
+      "score": 0.6792487516384248,
+      "similar_to": [
+        {
+          "title": "Simple pulses for elimination of leakage in weakly nonlinear qubits",
+          "id": "0901.0534",
+          "similarity": 0.8612908124923706
+        },
+        {
+          "title": "Quantum control of a cat-qubit with bit-flip times exceeding ten seconds",
+          "id": "2307.06617",
+          "similarity": 0.8486417531967163
+        }
+      ],
+      "summary": {
+        "summary": "This work proposes suppressing leakage errors in quantum gates by applying small static offsets to tunable system parameters, without modifying control pulse shapes or adding time overhead. Numerical validation on superconducting transmon qubits demonstrates high-fidelity single-qubit gates (NOT and Hadamard reaching 99.98% and 99.92%), two-qubit iSWAP gates (99.87%), multi-level state transfer (99.91%), and cooperative suppression of leakage and ZZ crosstalk via integration with geometric trajectory correction.",
+        "motivation": "Leakage into higher energy levels fundamentally limits gate fidelity in superconducting qubits and other platforms; existing suppression methods require modified pulse shapes (DRAG, GRAPE) or hardware overhead, motivating a simpler approach compatible with standard control frameworks.",
+        "method": "The approach identifies a unitary transformation $A(\\delta p_i)$ whose boundary conditions enforce leakage suppression via static parameter offsets to coupling strength ($\\delta\\Omega$ or $\\delta g_{12}$), detuning ($\\delta\\Delta$), and phase ($\\delta\\phi$). For transmon qubits, optimal offsets are determined by minimizing gate infidelity through numerical optimization while satisfying the Magnus expansion constraint that leakage Hamiltonian contributions vanish in the transformed frame.",
+        "result": "For single-qubit gates with $\\kappa_1 = \\kappa_\\phi = 2\\pi \\times 2$ kHz decoherence: NOT fidelity increases from 99.61% to 99.98% ($\\delta\\Omega = 0.003$, $\\delta\\Delta = -2\\pi \\times 1.55$ MHz, $\\delta\\phi = -0.040\\pi$); Hadamard from 99.46% to 99.92% ($\\delta\\Omega = -0.052$, $\\delta\\Delta = -2\\pi \\times 2.95$ MHz, $\\delta\\phi = -0.114\\pi$). For iSWAP with $g_{12} = 2\\pi \\times 10$ MHz: fidelity improves from 99.74% to 99.87%. Scheme remains robust under calibration errors up to $\\pm 2\\pi \\times 0.2$ MHz detuning deviation and $\\pm 0.02\\pi$ phase deviation.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.03702",
+      "title": "Analytical evaluation of surface barrier and resistance in iron-based superconducting multilayers for Superconducting Radio-Frequency applications",
+      "authors": [
+        "Carlos Redondo Herrero",
+        "Akira Miyazaki"
+      ],
+      "abstract": "New superconducting materials, particularly iron-based superconductors (IBS), have recently attracted attention for their potential applications in particle detectors and accelerators. This paper discusses the application of these materials in multilayer structures for radio-frequency resonators used to accelerate charged particles, with the aim of improving performance compared to bulk niobium. These materials are compared with previously studied multilayers composed of conventional superconductors in terms of the maximum magnetic field they can withstand, their surface resistance, and their power loss per unit surface area. Finally, perspectives and future applications aimed at increasing operating temperatures are discussed.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mtrl-sci",
+        "physics.acc-ph"
+      ],
+      "published": "2026-04-04",
+      "score": 0.5152362850589971,
+      "similar_to": [
+        {
+          "title": "Surface loss simulations of superconducting coplanar waveguide resonators",
+          "id": "1107.4698",
+          "similarity": 0.8125102519989014
+        },
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.7911170721054077
+        }
+      ],
+      "summary": {
+        "summary": "This work presents analytical calculations of surface barriers and RF surface resistance in superconducting multilayer structures for SRF cavity applications, comparing conventional materials (NbN, Nb$_3$Sn) with iron-based superconductors (FeSe). Simultaneous optimization of vortex penetration field $B_v$ and surface resistance $R_s$ is proposed as a design strategy, with FeSe/I/Nb$_3$Sn achieving $B_v = 508.3$ mT and ultra-low $R_s = 9.31 \\times 10^{-3}$ nΩ compared to bulk Nb's $B_v = 180$ mT and $R_s = 22.26$ nΩ.",
+        "motivation": "Bulk niobium SRF cavities approach their performance limits, and operation above 4 K requires materials with larger superconducting gaps; multilayer structures can enhance critical fields via the Bean-Livingston barrier while iron-based superconductors offer both larger gaps and lower normal-state conductivity $\\sigma_0$ to reduce RF losses.",
+        "method": "Analytical multilayer theory solving London and Maxwell equations determines magnetic and electric field distributions in S/I/S structures; vortex penetration fields and surface resistance (via Mattis-Bardeen theory for $s$-wave and phenomenological $s^{\\pm}$-wave models for iron-pnictides) are calculated as functions of layer thicknesses $d_S$ and $d_I$ at $T = 2$ K and $\\nu = 1.3$ GHz.",
+        "result": "Nb$_3$Sn/I/Nb achieves optimal performance on Nb substrates ($B_v = 480.8$ mT, $R_s = 3.09$ nΩ), while FeSe/I/Nb matches this ($B_v = 370$ mT, $R_s = 5.35$ nΩ) with superior mechanical properties; remarkably, substrate contribution dominates surface resistance, inverting conventional optimization priorities.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2604.04438",
+      "title": "Digital-Analog Quantum Simulation and Computing: A Perspective on Past and Future Developments",
+      "authors": [
+        "Lucas Lamata"
+      ],
+      "abstract": "Quantum simulation and computing traditionally has been based on two main paradigms, namely, digital and analog. In the digital paradigm, usually single and two-qubit gates (where qubit is an acronym for quantum bit) are employed as building blocks for scalable, universal quantum computing, although errors add up fast and error correction will be ultimately needed for scaling up. In the analog paradigm, large analog blocks are normally employed for a unitary dynamics that carries out the computation, enabling quantum operations on many qubits with reduced errors, but with the drawback of a limited choice of evolutions and lack of universality. In the past decade, a new paradigm has emerged, showing interesting possibilities for quantum simulation and computing in the near and mid term. This is the paradigm of digital-analog quantum technologies, which proposes to combine the best of both paradigms: large analog blocks, provided by native interactions of the employed quantum platform, enabling scalability, combined with digital gates, allowing for more versatility and, ultimately, universality. In this Perspective, I give an overview of the evolution of the field along the past decade, and an outlook for its future possibilities.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-04-06",
+      "score": 0.5016108866772473,
+      "similar_to": [
+        {
+          "title": "Superconducting Qubits: Current State of Play",
+          "id": "1905.13641",
+          "similarity": 0.8501070737838745
+        },
+        {
+          "title": "Engineering quantum criticality and dynamics on an analog-digital simulator",
+          "id": "2602.18555",
+          "similarity": 0.8357069492340088
+        }
+      ],
+      "summary": {
+        "summary": "This Perspective reviews the emergence and evolution of the digital-analog quantum paradigm over the past decade, which combines native analog interactions from quantum platforms (acting on tens to hundreds of qubits) with digital single- and two-qubit gates to enable scalable, versatile quantum simulation and computing without requiring quantum error correction in the near term. Implementations across trapped ions, superconducting circuits, and Rydberg atoms have demonstrated record numbers of qubits for useful computations, establishing digital-analog techniques as the de facto standard for current large-scale quantum experiments.",
+        "motivation": "Purely digital approaches suffer from error accumulation scaling poorly beyond ~10 qubits, while purely analog approaches lack universality and versatility; the digital-analog paradigm was developed to pragmatically combine the scalable many-qubit entangling blocks of native platform interactions with the versatility of discrete gates, enabling near-term quantum advantage without full error correction overhead.",
+        "method": "The approach interleaves large analog blocks (time evolution under native Hamiltonians like Ising or XY models) with digital single-qubit rotations and occasional two-qubit gates, generalizing Lie-Trotter-Suzuki decomposition by replacing short digital timesteps with long analog evolution times; this framework is applied across trapped ion chains, superconducting qubit arrays, and Rydberg atom arrays.",
+        "result": "Recent experiments achieve $>50$ qubits for useful quantum simulations in superconducting circuits and trapped ions, and up to hundreds of Rydberg atoms in cold atoms platforms; digital-analog quantum supremacy has been proven theoretically, and the paradigm enables quantum advantage on current quantum annealers and digital-analog hybrid devices without requiring fault-tolerant error correction.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.6792,
+    0.5152,
+    0.5016,
+    0.4871,
+    0.4235,
+    0.3974,
+    0.3734,
+    0.2493,
+    0.1996,
+    0.1971,
+    0.1916,
+    0.1915,
+    0.1878,
+    0.1705,
+    0.1679,
+    0.1596,
+    0.1589,
+    0.1507,
+    0.1503,
+    0.1477,
+    0.1178,
+    0.1159,
+    0.1025,
+    0.0942,
+    0.094,
+    0.0925,
+    0.0912,
+    0.0897,
+    0.0863,
+    0.0828,
+    0.0826,
+    0.0789,
+    0.0784,
+    0.0782,
+    0.0781,
+    0.0766,
+    0.0742,
+    0.0722,
+    0.0688,
+    0.0668,
+    0.0665,
+    0.0657,
+    0.065,
+    0.0636,
+    0.0623,
+    0.0616,
+    0.0614,
+    0.0608,
+    0.059,
+    0.0581,
+    0.0525,
+    0.05,
+    0.0487,
+    0.0483,
+    0.0482,
+    0.0477,
+    0.047,
+    0.0469,
+    0.0427,
+    0.0422,
+    0.0421,
+    0.0414,
+    0.0399,
+    0.0399,
+    0.0397,
+    0.035,
+    0.0345,
+    0.0335,
+    0.0315,
+    0.0294,
+    0.0284,
+    0.0262,
+    0.0247,
+    0.0224,
+    0.022,
+    0.0199,
+    0.0198,
+    0.0195,
+    0.0174,
+    0.0172,
+    0.0166,
+    0.0164,
+    0.0151,
+    0.0149,
+    0.0147,
+    0.0144,
+    0.0124,
+    0.011,
+    0.0104,
+    0.0102,
+    0.01,
+    0.0093,
+    0.0092,
+    0.0091,
+    0.0087,
+    0.0084,
+    0.0083,
+    0.008,
+    0.008,
+    0.0075,
+    0.0074,
+    0.0074,
+    0.0074,
+    0.0071,
+    0.0069,
+    0.0063,
+    0.0055,
+    0.0041,
+    0.0039,
+    0.0036,
+    0.0034,
+    0.0033,
+    0.0026,
+    0.0017
+  ]
+}

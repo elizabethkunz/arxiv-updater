@@ -1,0 +1,303 @@
+{
+  "date": "2026-03-04",
+  "n_fetched": 82,
+  "papers": [
+    {
+      "id": "2603.02415",
+      "title": "Modulating Surface Acoustic Wave Generation through Superconductivity",
+      "authors": [
+        "Andrew Christy",
+        "Yuzan Xiong",
+        "Rui Sun",
+        "Yi Li",
+        "Kenneth O. Chua",
+        "Andrew H. Comstock",
+        "Junming Wu",
+        "Sidong Lei",
+        "Frank Tsui",
+        "Megan N. Jackson",
+        "Dali Sun",
+        "Valentine Novosad",
+        "James F. Cahoon",
+        "Wei Zhang"
+      ],
+      "abstract": "Surface acoustic waves (SAWs), with their five orders-of-magnitude slower propagation velocity, allow for considerably shorter wavelengths at the same frequency compared to electromagnetic waves. The short wavelengths allow for device miniaturization and on-chip integration. The generic design of these devices involve piezoelectric substrates with comblike arrays of Al or Au electrodes known as interdigitated transducers deposited on the surface. However, Al and Au both have shortcomings at the cryogenic temperatures required for quantum applications, namely the formation of two-level systems and the lack of superconductivity perpetuating Ohmic losses, respectively. In this work, SAWs are generated in the high-MHz to low-GHz range using niobium nitride (NbN) interdigitated transducers (IDTs) and Bragg reflectors. We demonstrate the fabrication of acoustic devices through photolithography and reactive ion etching (RIE). The sharp transition between superconducting and normal states and the corresponding change in SAW transmission allows for fine control of the 'on' (superconducting) and 'off' (normal) states of NbN, with a Δ_T = K separating the transmission minimum and maximum. We demonstrate a 16x difference in transmission between the 'on' and 'off' states of the device. The SAW transmission behavior mirrors the change in resistance of NbN at its Tc. These findings open up new possibilities for the integration of NbN SAW resonators into existing quantum architectures based on NbN and a method for adjusting transmission properties independent of applied voltage.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-03-02",
+      "score": 0.7373232664912622,
+      "similar_to": [
+        {
+          "title": "High-Q superconducting microwave resonators using MBE titanium nitride",
+          "id": "2607.15230",
+          "similarity": 0.829891562461853
+        },
+        {
+          "title": "Surface loss simulations of superconducting coplanar waveguide resonators",
+          "id": "1107.4698",
+          "similarity": 0.8120219707489014
+        }
+      ],
+      "summary": {
+        "summary": "Surface acoustic waves generated using superconducting niobium nitride (NbN) interdigitated transducers on lithium niobate show a sharp transition in transmission across the superconducting critical temperature ($T_c \\approx 11.4$ K), achieving a $16\\times$ modulation of $S_{21}$ between normal and superconducting states. The device exhibits a $Q$-factor of 2220 with a free spectral range of 0.733 MHz and a single-strip reflection coefficient $|r_s| \\approx 0.0043$, an order of magnitude lower than aluminum, enabling integration into all-nitride quantum architectures.",
+        "motivation": "Aluminum and gold IDTs suffer from cryogenic limitations: aluminum forms two-level systems that degrade qubit coherence, while gold remains resistive at millikelvin temperatures, leading to parasitic losses in SAW devices.",
+        "method": "NbN IDTs and Bragg reflectors ($38$ nm thick, $19$ finger pairs with pitch $p = 6$ μm, wavelength $\\lambda = 12$ μm, designed for $\\sim 300$ MHz fundamental frequency) were fabricated on $128°$ Y-X cut lithium niobate using photolithography and reactive ion etching, with characterization via time and frequency domain network analysis.",
+        "result": "At $11.4$ K below $T_c$, the device achieves resonance frequency $f_0 = 309$ MHz with surface velocity $v_p = 3716$ m/s; transmission increases 16-fold crossing $T_c$ within $\\Delta T = 1$ K, directly tracking the resistance collapse of the NbN film with no observable triple transit signal characteristic of metallic IDTs.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.03166",
+      "title": "Enhancing the Energy Resolution in Scanning Tunneling Microscopy: from dynamical Coulomb blockade to cavity quantum electrodynamics",
+      "authors": [
+        "Xianzhe Zeng",
+        "Janis Siebrecht",
+        "Haonan Huang",
+        "Sujoy Karan",
+        "Joachim Ankerhold",
+        "Klaus Kern",
+        "Christian R. Ast"
+      ],
+      "abstract": "Scanning tunneling microscopy and spectroscopy have become indispensable tools for probing condensed matter at atomic length scales, yet achieving ultimate energy resolution remains a persistent challenge. At mK temperatures, the dynamical Coulomb blockade regime fundamentally limits spectroscopic precision through energy exchange between tunneling electrons and the electromagnetic environment. Here, we demonstrate that combining local electromagnetic shielding with low-pass filtering directly at the cryogenic scan head improves the energy resolution by nearly an order of magnitude, reaching benchmark values as low as 3.7$μ$eV at 10mK. We attribute this enhancement to efficient suppression of high-frequency radiation and capacitive shunting of the tunnel junction. Remarkably, this improved sensitivity reveals that the Josephson current couples to electromagnetic cavity modes of the centimeter-scale scan head, establishing a direct connection between atomic-scale tunneling processes and macroscopic cavity quantum electrodynamics. These advances open pathways for exploring ultra-low-energy phenomena with unprecedented precision.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-03-03",
+      "score": 0.7057678745999031,
+      "similar_to": [
+        {
+          "title": "Real-time detection of correlated quasiparticle tunneling events in a multi-qubit superconducting device",
+          "id": "2602.01945",
+          "similarity": 0.8454707860946655
+        },
+        {
+          "title": "Electric field spectroscopy of material defects in transmon qubits",
+          "id": "1909.09749",
+          "similarity": 0.8350359797477722
+        }
+      ],
+      "summary": {
+        "summary": "The authors achieve energy resolution of 3.7 µeV at 10 mK in scanning tunneling microscopy by combining local electromagnetic shielding and low-pass filtering directly at the cryogenic scan head, improving spectroscopic precision by nearly an order of magnitude. The enhanced sensitivity reveals that the Josephson current couples to centimeter-scale cavity modes of the scan head, establishing a direct connection between atomic-scale tunneling and macroscopic cavity quantum electrodynamics.",
+        "motivation": "At mK temperatures, dynamical Coulomb blockade fundamentally limits STM spectroscopic resolution through energy exchange between tunneling electrons and the electromagnetic environment, motivating engineering approaches to suppress this noise and access ultra-low-energy phenomena.",
+        "method": "The authors installed $\\pi$-filters on twisted-pair cables and coaxial low-pass filters (Basel Precision Instruments) directly at the cryogenic scan head and at room-temperature feedthroughs. The metallic scan head acts as a complete electromagnetic enclosure; they model the cavity using cylindrical waveguide theory and fit Josephson spectra using dynamical Coulomb blockade $P(E)$-theory with an environmental impedance parameterized as Lorentzian resonances.",
+        "result": "Benchmark measurements using Josephson current switching voltage asymmetry yield 3.7 µeV energy resolution at 10 mK (improved from prior 10.6 µeV) and 14 µeV at 560 mK; fitting the spectrum identifies cavity modes with energies ranging from 14.91 µeV to 180 µeV, matching calculated $E_{nl} = \\hbar c\\sqrt{(x_l/R)^2 + (n\\pi/L)^2}$ for cylindrical eigenmodes with deviations $\\leq 7\\%$ and quality factors $Q \\approx 600$–4500.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.03051",
+      "title": "Scaling of silicon spin qubits under correlated noise",
+      "authors": [
+        "Juan S. Rojas-Arias",
+        "Leon C. Camenzind",
+        "Yi-Hsien Wu",
+        "Peter Stano",
+        "Akito Noiri",
+        "Kenta Takeda",
+        "Takashi Nakajima",
+        "Takashi Kobayashi",
+        "Giordano Scappucci",
+        "Daniel Loss",
+        "Seigo Tarucha"
+      ],
+      "abstract": "The path to fault-tolerant quantum computing hinges on hardware that scales while remaining compatible with quantum error correction (QEC). Silicon spin qubits are a leading hardware candidate because they combine industrial fabrication compatibility with a nanoscale footprint that could accommodate millions of qubits on a chip. However, their suitability for QEC remains uncertain since spatially correlated noise naturally emerges from the resulting close proximity of qubits. These correlations increase the likelihood of simultaneous errors and erode the redundancy that QEC depends on. Here we quantify the spatial extent of noise correlations in a five-qubit silicon array and assess their impact on QEC. We identify two distinct sources of correlated noise: global magnetic field drifts that generate perfectly correlated fluctuations, and charge noise from two-level fluctuators that produces short-range correlations decaying within neighboring qubits. While magnetic drifts represent a critical correlated noise source that can compromise QEC, they can be mitigated. In contrast, the measured charge noise correlations are moderate, electrically tunable, and compatible with fault-tolerant operation with minimal qubit overhead. Our results establish quantitative benchmarks for correlated noise and clarify how such correlations impact the viability of quantum error correction in scalable qubit arrays.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "published": "2026-03-03",
+      "score": 0.5702486732277124,
+      "similar_to": [
+        {
+          "title": "Correlated Charge Noise and Relaxation Errors in Superconducting Qubits",
+          "id": "2012.06029",
+          "similarity": 0.88095623254776
+        },
+        {
+          "title": "Evidence for the utility of quantum computing before fault tolerance",
+          "id": null,
+          "similarity": 0.874672532081604
+        }
+      ],
+      "summary": {
+        "summary": "This work characterizes spatial noise correlations in a five-qubit Si/SiGe spin array and assesses their impact on quantum error correction, finding two distinct noise sources: global magnetic field drift producing perfect correlations independent of distance, and charge noise from two-level fluctuators generating short-range correlations decaying with separation. While the magnetic drift poses a fundamental challenge for QEC that requires mitigation strategies, the measured charge noise correlations are moderate, tunable via gate voltages, and compatible with fault-tolerant operation requiring only modest qubit overhead.",
+        "motivation": "Silicon spin qubits promise scalability to millions of qubits using standard semiconductor fabrication, but their close spatial proximity inherently generates correlated noise that can undermine quantum error correction by eroding the redundancy essential for fault tolerance.",
+        "method": "Continuous interleaved Ramsey sequences over 24 hours monitored qubit energy fluctuations in a linear five-qubit array; cross-power spectral densities quantified spatial correlations, which were modeled using Monte Carlo simulations of dipolar two-level fluctuators; repetition and surface codes evaluated logical error rates under measured correlation profiles.",
+        "result": "Magnetic drift at $\\sim 8$ Hz/s produces correlations with perfect correlation ($|c|=1$) at frequencies below $10^{-2}$ Hz; charge noise yields exponential correlation decay with length $l_c = 81$ nm and maximum amplitude $\\sim 0.4$ for nearest neighbors; TLF density extracted as $\\rho_{\\mathrm{TLF}} = 3 \\times 10^{10}$ cm$^{-2}$; with correlation length $N_c \\approx 1$, logical error rates below $10^{-10}$ achievable at code distance $d = 13$ with negligible overhead compared to uncorrelated noise.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.03157",
+      "title": "Achieving speedup in Dark Matter search experiments with a transmon-based NISQ algorithm",
+      "authors": [
+        "Roberto Moretti",
+        "Pietro Campana",
+        "Rodolfo Carobene",
+        "Alessandro Cattaneo",
+        "Marco Gobbo",
+        "Danilo Labranca",
+        "Matteo Borghesi",
+        "Marco Faverzani",
+        "Elena Ferri",
+        "Sara Gamba",
+        "Angelo Nucciotti",
+        "Andrea Giachero"
+      ],
+      "abstract": "Coherent detection of ultralight bosonic dark matter can be achieved by monitoring slow Rabi oscillations in superconducting qubits. We introduce an ancilla-assisted, gate-based protocol that enhances sensitivity to the hidden photon kinetic mixing parameter $ε$ using a single two-qubit gate, bypassing the need to maintain long-lived multi-qubit entangled states and remaining compatible with the limitations of modern quantum hardware. We characterized the increase in sensitivity accounting for decoherence, thermal occupation, errors in readout and reset, indicating up to a ten-fold reduction in the required integration time to reach the same exclusion limit on $ε$ achievable via Rabi-sampling experiments. Under plausible hardware assumptions and three years of data taking, the projected $95\\%$ C.L. exclusion limit on the hidden photon mixing parameter reaches $ε\\approx 1\\times 10^{-14}$ across $2.5$-$6.0$ GHz ($10$-$25$ \\textmu eV).",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-03",
+      "score": 0.5587894305914517,
+      "similar_to": [
+        {
+          "title": "Suppression of static ZZ interaction in an all-transmon quantum processor",
+          "id": "2011.03976",
+          "similarity": 0.8330649137496948
+        },
+        {
+          "title": "The Flux Qubit Revisited to Enhance Coherence and Reproducibility",
+          "id": "1508.06299",
+          "similarity": 0.8325670957565308
+        }
+      ],
+      "summary": {
+        "summary": "An ancilla-assisted gate-based protocol enhances sensitivity to hidden photon kinetic mixing using a single two-qubit entangling gate on NISQ devices, achieving up to 10-fold reduction in integration time compared to Rabi-sampling experiments. Under realistic noise with three years of data taking, the projected exclusion limit on the mixing parameter reaches $\\varepsilon \\approx 1 \\times 10^{-14}$ across $2.5$–$6.0$ GHz ($10$–$25$ µeV).",
+        "motivation": "Direct dark matter detection via transmon qubits requires either maintaining long-lived multi-qubit entangled states or accepting reduced sensitivity; this work exploits the fact that weak Rabi oscillations from hidden photons on the qubit can be enhanced with modest gate fidelity ($>99\\%$) without such constraints.",
+        "method": "After a sensing qubit interacts with dark matter for time $\\tau \\sim 100$ µs, a CNOT, X-gate, and controlled-$R_Y(\\beta)$ gate transform the state; post-selection on ancilla collapse to $|1_A\\rangle$ creates signal amplification via $P_\\sim \\propto \\sin^{-2}(\\beta/2) \\, P_e$ for small excitation probability $P_e$, with noise model including $T_1$, $T_\\phi$, thermal occupation, and readout/preparation errors.",
+        "result": "Speedup factor $\\mathcal{G} = 4$–$6$ achieved when readout error $r \\gtrsim 2\\%$ and preparation error $p \\lesssim 0.3\\%$; scaling to $n$ sensing qubits coupled sequentially to one ancilla gives $\\mathcal{G} \\to 2\\mathcal{G}$ asymptotically, reaching $\\sim 10$-fold enhancement with 120 physical qubits in realistic hardware regimes.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2603.03015",
+      "title": "Analytical Quantum Full-Wave Analysis of Few-Photon Transport Through a Superconducting Cavity Qubit",
+      "authors": [
+        "Soomin Moon",
+        "Thomas E. Roth"
+      ],
+      "abstract": "A promising way to scale up superconducting quantum computers is to link different devices together using propagating photons. Correspondingly, accurately modeling the quantum information transfer in such quantum interconnects is critical to advancing this emerging technology. To accomplish this, a full-wave quantum numerical model is essential for describing the few-photon transport characteristics of various components. Unfortunately, validating the accuracy of such numerical models remains a difficult challenge due to the lack of appropriate analytical solutions for standard component types. Recently, progress has been made on creating the first-ever analytical quantum full-wave solutions for a superconducting circuit quantum device. These efforts considered the case of two-photon transport through an empty rectangular waveguide cavity and the interactions of photons inside a closed rectangular waveguide cavity with a transmon qubit formed by a Josephson junction connected across the terminals of a small wire dipole antenna. Here, we advance these efforts by considering the one- and two-photon transport properties through a rectangular waveguide cavity containing a qubit in this form when the cavity is interfaced with via two coaxial ports. Such devices can be used in various ways for quantum interconnects, such as to form parts of a quantum memory or a photon source. We perform this analysis leveraging a quantum input-output theory formalism to derive the relevant single- and two-photon transport characteristics of interest. We then examine the signatures of the nonlinear quantum scattering effects in the good and bad cavity regimes of cavity quantum electrodynamics. In the future, these analytical results can be used to validate numerical full-wave quantum solvers for modeling quantum interconnects.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-03-03",
+      "score": 0.5312236246118448,
+      "similar_to": [
+        {
+          "title": "Cavity quantum electrodynamics for superconducting electrical circuits: an architecture for quantum computation",
+          "id": null,
+          "similarity": 0.8468430042266846
+        },
+        {
+          "title": "Resolving photon number states in a superconducting circuit",
+          "id": null,
+          "similarity": 0.8389203548431396
+        }
+      ],
+      "summary": {
+        "summary": "This work develops analytical quantum full-wave solutions for single- and two-photon transport through a rectangular waveguide cavity containing a transmon qubit coupled to two coaxial ports using quantum input-output theory. The analysis reveals dramatically different photon scattering signatures between single- and two-photon regimes across the good and bad cavity limits of cavity QED.",
+        "motivation": "Validating numerical full-wave quantum solvers for superconducting quantum interconnects requires analytical solutions for standard component geometries, which are currently lacking for realistic 3D cavity-qubit systems interfaced through external ports.",
+        "method": "The authors apply quantum input-output theory formalism to derive analytical expressions for scattering matrix elements and second-order correlation functions $g^{(2)}(\\tau)$, combining full-wave classical EM calculations (cavity resonance $\\omega_c/2\\pi = 7.55$ GHz, coaxial decay rates $\\kappa/2\\pi = 421.5$ kHz) with quantum qubit dynamics for the transmon ($\\omega_q/2\\pi = 7.55$ GHz).",
+        "result": "In the good-cavity regime ($g = 15.9$ MHz $> \\kappa$), two-photon transmission is suppressed at single-photon dressed frequencies $\\lambda_{1,\\pm}$ but enhanced at two-photon dressed frequencies $\\lambda_{2,\\pm} = \\omega_c \\pm 2g$; in the bad-cavity regime ($g = 269.3$ kHz $< \\kappa$), two-photon transmission becomes possible near the cavity resonance where single-photon reflection dominates, manifesting an analog of dipole-induced transparency.",
+        "source": "full text",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.7373,
+    0.7058,
+    0.5702,
+    0.5588,
+    0.5312,
+    0.3659,
+    0.3591,
+    0.3401,
+    0.2928,
+    0.2371,
+    0.2192,
+    0.2173,
+    0.2161,
+    0.2039,
+    0.1893,
+    0.1783,
+    0.1735,
+    0.1648,
+    0.1572,
+    0.1562,
+    0.1548,
+    0.1517,
+    0.1511,
+    0.1486,
+    0.1475,
+    0.1223,
+    0.1104,
+    0.1101,
+    0.1045,
+    0.0957,
+    0.0926,
+    0.0872,
+    0.0833,
+    0.083,
+    0.074,
+    0.0739,
+    0.0732,
+    0.0639,
+    0.063,
+    0.0629,
+    0.0625,
+    0.0594,
+    0.0542,
+    0.0412,
+    0.0407,
+    0.0345,
+    0.0345,
+    0.0275,
+    0.0272,
+    0.0269,
+    0.0239,
+    0.0217,
+    0.0217,
+    0.0216,
+    0.0197,
+    0.0197,
+    0.0195,
+    0.0187,
+    0.0184,
+    0.0181,
+    0.0175,
+    0.0167,
+    0.0163,
+    0.0158,
+    0.0143,
+    0.0143,
+    0.0128,
+    0.0114,
+    0.0106,
+    0.0102,
+    0.0097,
+    0.0095,
+    0.0083,
+    0.0074,
+    0.0072,
+    0.0065,
+    0.006,
+    0.0055,
+    0.0051,
+    0.0036,
+    0.0032,
+    0.0009
+  ]
+}

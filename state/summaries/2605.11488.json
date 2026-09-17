@@ -1,0 +1,8 @@
+{
+  "summary": "This work demonstrates a three-dimensional integrated superconducting quantum processor with two qubit chips vertically stacked on opposing sides of a carrier chip, coupled through vertical tunable couplers embedded in the carrier. Single-qubit gates achieve 99.87% simultaneous fidelity with negligible crosstalk, two-qubit $\\mathrm{CZ}$ gates reach 97.5% fidelity for both intrachip and interchip operations, and four-qubit $W$-state generation confirms coherent multipartite entanglement across chips.",
+  "motivation": "Monolithic planar scaling faces fundamental limits from declining fabrication yields, routing congestion, and increasing crosstalk, motivating distributed modular architectures that exploit vertical integration perpendicular to the chip surface alongside existing lateral interconnects.",
+  "method": "Two transmon qubit chips with planar tunable couplers were bonded to opposing sides of a 330 μm-thick sapphire carrier chip via indium bumps using double-sided processing and multilayer flip-chip bonding, with vertical tunable couplers and etched regions on the carrier enabling independent $\\mathrm{CZ}$ gate control between chips.",
+  "result": "Interchip $\\mathrm{CZ}$ gates (Q$_3$–Q$_7$) match intrachip performance (Q$_2$–Q$_3$) at 97.5% average fidelity; Bell states achieve 97.0% state fidelity via quantum state tomography; four-qubit $W$-state reaches maximal coherence at $\\sim 68$ ns with equal coupling calibration among vertical and lateral interactions.",
+  "source": "full text",
+  "generated_by": "claude-haiku-4-5"
+}
