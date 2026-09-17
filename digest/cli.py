@@ -63,7 +63,18 @@ def cmd_run(args, cfg):
     day_record = {"date": day.isoformat(), "n_fetched": len(papers), "papers": records,
                   "all_scores": [round(s["score"], 4) for _, s in scored]}
     render.DAYS.mkdir(parents=True, exist_ok=True)
-    (render.DAYS / f"{day}.json").write_text(json.dumps(day_record, indent=2, ensure_ascii=False), encoding="utf-8")
+    path = render.DAYS / f"{day}.json"
+    stored = day_record
+    if not args.date and path.exists():
+        # A second run on the same day only sees what seen.json let through (usually nothing);
+        # add that to the stored day instead of replacing it. The email still covers only the new papers.
+        old = json.loads(path.read_text(encoding="utf-8"))
+        new_ids = {r["id"] for r in records}
+        stored = {"date": day.isoformat(), "n_fetched": old["n_fetched"] + len(papers),
+                  "papers": sorted([r for r in old["papers"] if r["id"] not in new_ids] + records,
+                                   key=lambda r: -r["score"]),
+                  "all_scores": sorted(old.get("all_scores", []) + day_record["all_scores"], reverse=True)}
+    path.write_text(json.dumps(stored, indent=2, ensure_ascii=False), encoding="utf-8")
     render.build_site(cfg)
 
     subject, text, html = render.render_email(day_record, cfg)
