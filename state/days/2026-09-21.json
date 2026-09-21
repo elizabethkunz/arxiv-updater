@@ -1,0 +1,220 @@
+{
+  "date": "2026-09-21",
+  "n_fetched": 93,
+  "papers": [
+    {
+      "id": "2609.21249",
+      "title": "The Pinnacle Architecture with fixed connectivity of degree eight",
+      "authors": [
+        "Paul Webster",
+        "Tom Peham",
+        "Lawrence Z. Cohen"
+      ],
+      "abstract": "We show how the Pinnacle architecture can be adapted to be compatible with superconducting qubits, where the connectivity between qubits must be fixed at fabrication. Specifically, we present a modified instantiation of the architecture that has fixed connectivity degree of eight. With this instantiation, we show that a 2048-bit RSA integer can be factored in one month with approximately 120 000 physical qubits, given a physical error rate of $10^{-3}$, code cycle time of 1 microsecond and reaction time of 10 microseconds.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-18",
+      "score": 0.7698167357893972,
+      "similar_to": [
+        {
+          "title": "Fault-tolerant interfaces for modular quantum computing on diverse qubit platforms",
+          "id": "2510.05221",
+          "similarity": 0.8385505676269531
+        },
+        {
+          "title": "Scaling and logic in the color code on a superconducting quantum processor",
+          "id": "2412.14256",
+          "similarity": 0.8329842686653137
+        }
+      ],
+      "summary": {
+        "summary": "We show how the Pinnacle architecture can be adapted to be compatible with superconducting qubits, where the connectivity between qubits must be fixed at fabrication. Specifically, we present a modified instantiation of the architecture that has fixed connectivity degree of eight.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.21865",
+      "title": "Tunneling Spectroscopy Study of Low Baked Bulk Niobium for Superconducting RF Cavity Applications",
+      "authors": [
+        "Ivana Curci",
+        "Gregoire Jullien",
+        "Luc Maurice",
+        "Fabien Eozenou",
+        "Patrick Sahuquet",
+        "Thomas Proslier"
+      ],
+      "abstract": "Point-contact tunneling (PCT) spectroscopy was used to probe the local superconducting properties of cavity-grade niobium following surface treatments representative of superconducting radio-frequency (SRF) cavities. Electropolished (EP) samples were compared with samples baked at 120~$^\\circ$C for 48 h and subjected to a two-step bake at 75~$^\\circ$C for 2 h followed by 120~$^\\circ$C for 48 h. Although the superconducting gap $Δ$ is predominantly distributed around the bulk Nb value (~1.5 meV), regions exhibiting strongly suppressed gaps (minigaps) are observed in 15--29% of junctions on EP samples. Their occurrence decreases to 6% after the 120~$^\\circ$C bake and to only 1% after the two-step treatment. Spectra exhibiting minigaps are well described by the Usadel proximity-effect model, consistent with superconducting Nb coupled to normal regions that we attribute to hydride formation. These results provide direct microscopic evidence that low-temperature baking suppresses regions of degraded surface superconductivity in cavity-grade Nb. The pronounced reduction achieved by the two-step bake further supports a link between hydride-related proximity effects and the surface superconducting properties governing SRF cavity performance.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-09-18",
+      "score": 0.7507772791315256,
+      "similar_to": [
+        {
+          "title": "Assessing the Sensitivity of Niobium- and Tantalum-Based Superconducting Qubits to Infrared Radiation",
+          "id": "2602.05806",
+          "similarity": 0.8380869626998901
+        },
+        {
+          "title": "High-Q superconducting microwave resonators using MBE titanium nitride",
+          "id": "2607.15230",
+          "similarity": 0.8119221925735474
+        }
+      ],
+      "summary": {
+        "summary": "Point-contact tunneling (PCT) spectroscopy was used to probe the local superconducting properties of cavity-grade niobium following surface treatments representative of superconducting radio-frequency (SRF) cavities. Electropolished (EP) samples were compared with samples baked at 120~$^\\circ$C for 48 h and subjected to a two-step bake at 75~$^\\circ$C for 2 h followed by 120~$^\\circ$C for 48 h.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.22002",
+      "title": "Microwave dielectric properties of LiNbO$_{\\mathbf{3}}$ and AlN at millikelvin temperatures and single-photon power",
+      "authors": [
+        "Alessandro Reineri",
+        "Francesco Crisa",
+        "Akshay Murthy",
+        "Maithlee Shinde",
+        "Daniel Bafia",
+        "Changqing Wang",
+        "Tanay Roy",
+        "Alexander Romanenko",
+        "John Zasadzinski",
+        "Anna Grassellino",
+        "Silvia Zorzetti"
+      ],
+      "abstract": "Efficient bidirectional microwave optical photon conversion is a key capability for scaling superconducting quantum processors into distributed networks. However, achieving the necessary conversion efficiency requires filling a critical knowledge gap in understanding the loss mechanisms of electro optic materials. Here, we characterize the microwave properties of single crystal bulk LiNbO3 and AlN over a broad range of powers, down to single photon levels, and spanning from millikelvin temperatures to above 1K. We demonstrate that both materials exhibit two level systems (TLS) behavior, while piezoelectric related losses are excluded. We show that TLS induced dissipation is predominantly localized on the surface rather than being an intrinsic bulk property, a result further corroborated by room temperature 3D XPS and time of flight SIMS analyses. These findings provide useful insights to engineer hybrid architectures that integrate bulk electro optic crystals within superconducting cavities, proving that microwave quality factors compatible with high efficiency microwave optical transduction are within reach.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-18",
+      "score": 0.5212677756518503,
+      "similar_to": [
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.8401663303375244
+        },
+        {
+          "title": "High-Q superconducting microwave resonators using MBE titanium nitride",
+          "id": "2607.15230",
+          "similarity": 0.8237301111221313
+        }
+      ],
+      "summary": {
+        "summary": "Efficient bidirectional microwave optical photon conversion is a key capability for scaling superconducting quantum processors into distributed networks. However, achieving the necessary conversion efficiency requires filling a critical knowledge gap in understanding the loss mechanisms of electro optic materials.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.7698,
+    0.7508,
+    0.5213,
+    0.424,
+    0.3463,
+    0.3028,
+    0.2982,
+    0.2725,
+    0.2463,
+    0.2417,
+    0.2227,
+    0.2013,
+    0.1965,
+    0.1923,
+    0.1797,
+    0.1616,
+    0.1502,
+    0.1453,
+    0.1264,
+    0.11,
+    0.1094,
+    0.1017,
+    0.097,
+    0.0962,
+    0.0961,
+    0.0944,
+    0.0848,
+    0.0745,
+    0.0741,
+    0.0726,
+    0.0625,
+    0.0571,
+    0.056,
+    0.056,
+    0.0555,
+    0.0516,
+    0.0475,
+    0.0453,
+    0.0451,
+    0.0378,
+    0.0378,
+    0.0339,
+    0.0331,
+    0.033,
+    0.0327,
+    0.0297,
+    0.0296,
+    0.0293,
+    0.0287,
+    0.0284,
+    0.0263,
+    0.0244,
+    0.0239,
+    0.0209,
+    0.0203,
+    0.0193,
+    0.0171,
+    0.0171,
+    0.0157,
+    0.0156,
+    0.0153,
+    0.0144,
+    0.0138,
+    0.012,
+    0.0116,
+    0.0114,
+    0.0112,
+    0.0103,
+    0.0101,
+    0.01,
+    0.0099,
+    0.0089,
+    0.0087,
+    0.0083,
+    0.0079,
+    0.0079,
+    0.0077,
+    0.0066,
+    0.0065,
+    0.0064,
+    0.0063,
+    0.0055,
+    0.0053,
+    0.0042,
+    0.0039,
+    0.0036,
+    0.0035,
+    0.0034,
+    0.0028,
+    0.0027,
+    0.0025,
+    0.0017,
+    0.001
+  ]
+}
