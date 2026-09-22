@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>quchip: A Differentiable Toolkit for Modeling Quantum Devices</title>
+<title>Modular fault-tolerant quantum computing on a non-CSS code</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
@@ -188,37 +188,34 @@ footer { height: 72px; }
     <button id="theme" type="button" aria-label="Switch between light and dark theme" title="Light / dark"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1a7 7 0 0 0 0 14z" fill="currentColor"/></svg></button></nav>
 </div></div>
 <header class="hero"><div class="wrap">
-  <p class="eyebrow"><a href="../days/2026-07-21.html">2026-07-21</a> &nbsp;/&nbsp; <span class="bigscore" style="--h:20;--s:77%;--l:calc(var(--score-l) + 5.9% + 0.0% * var(--score-sign))">50.6% match</span></p>
-  <h1 class="paper">quchip: A Differentiable Toolkit for Modeling Quantum Devices</h1>
+  <p class="eyebrow"><a href="../days/2026-09-22.html">2026-09-22</a> &nbsp;/&nbsp; <span class="bigscore" style="--h:65;--s:80%;--l:calc(var(--score-l) + 2.2% + 0.8% * var(--score-sign))">73.9% match</span></p>
+  <h1 class="paper">Modular fault-tolerant quantum computing on a non-CSS code</h1>
   <div class="actions">
-    <a class="btn primary" href="https://arxiv.org/abs/2607.17081">arXiv:2607.17081</a>
-    <a class="btn" href="https://arxiv.org/pdf/2607.17081">PDF</a>
-    <a class="btn" href="https://arxiv.org/html/2607.17081">HTML</a>
+    <a class="btn primary" href="https://arxiv.org/abs/2609.22572">arXiv:2609.22572</a>
+    <a class="btn" href="https://arxiv.org/pdf/2609.22572">PDF</a>
+    <a class="btn" href="https://arxiv.org/html/2609.22572">HTML</a>
   </div>
 </div></header>
 <main class="wrap">
 <dl>
-  <div class="spec"><dt>Summary</dt><dd class="big">quchip is an open-source Python toolkit that assembles device-independent simulations for superconducting quantum chips by explicitly representing device physics, control-line transformations, frames, approximations, dissipation, and observables. Using JAX-native dynamiqs, device and control parameters remain differentiable through time evolution, enabling forward prediction, correction via response-matrix inversion, and inverse parameter recovery from tomography.</dd></div>
-  <div class="spec"><dt>Motivation</dt><dd>Superconducting quantum chips require coordinating multiple layers—local Hamiltonians, control electronics, rotating frames, the rotating-wave approximation, noise channels, and measurement—making hand-assembled models brittle and hard to extend.</dd></div>
-  <div class="spec"><dt>Method</dt><dd>quchip organizes a chip as devices (Duffing transmons, resonators), couplings (capacitive interactions), and drives (charge lines with crosstalk). An engine resolves each device&#39;s reference frame to its dressed $0 \to 1$ frequency, decomposes operators into excitation-change bands to apply the RWA automatically, assembles collapse operators, and packs a differentiable problem for QuTiP or dynamiqs backends.</dd></div>
-  <div class="spec"><dt>Result</dt><dd>On a five-device model (two qubits, bus, two readout resonators), phase sweeps identified crosstalk phasors $0.16 e^{i 3.31}$ and $0.14 e^{i 1.885}$ between two charge lines; inverting the response matrix suppressed effective leakage by $&gt;100\times$ and held corrected populations within 0.3 percentage points over sixteen simultaneous $\pi$ pulses. Adiabatic elimination reduced the Hilbert space from 576 to 16 dimensions; gradients through tomography recovered all four directed crosstalk parameters ($\beta_{12}, \theta_{12}, \beta_{21}, \theta_{21}$) with maximum complex error $1.5 \times 10^{-5}$.</dd></div>
-  <div class="spec"><dt>Authors</dt><dd class="small">Ibraheem AlYousef</dd></div>
+  <div class="spec"><dt>Summary</dt><dd class="big">Modularization promises to break down the design and implementation complexity of large scale quantum processors into smaller manageable subtasks. In this approach, quantum channels, realized for instance through physical rerouting of qubits or quantum teleportation, connect multiple modules.</dd></div>
+  <div class="spec"><dt>Authors</dt><dd class="small">Robert Freund, Friederike Butt, César Benito, Ivan Pogorelov, Marcel Meyer, Alex Steiner, Alejandro Bermudez, Markus Müller, Thomas Monz</dd></div>
   <div class="spec"><dt>Similar papers</dt><dd class="small">
     <div class="sub">In the database</div>
     <div class="simlist">
-    <div><a href="https://arxiv.org/abs/2607.20795">Component-Level Inverse Design of Transmon Qubits Using Neural Networks</a> <span class="sim">&nbsp;0.86</span></div>
-    <div><a href="https://arxiv.org/abs/2402.00413">System Characterization of Dispersive Readout in Superconducting Qubits</a> <span class="sim">&nbsp;0.85</span></div>
+    <div><a href="https://arxiv.org/abs/2510.13541">Lattice surgery with Bell measurements: Modular fault-tolerant quantum computation at low entanglement cost</a> <span class="sim">&nbsp;0.88</span></div>
+    <div><a href="https://arxiv.org/abs/2606.06598">A superconducting surface-code processor with lattice-surgery logical operations</a> <span class="sim">&nbsp;0.88</span></div>
     </div>
     <div class="sub">Among all indexed papers</div>
     <div class="simlist">
-    <div><a href="../2606.13010/index.html">QuBE/Qubex: an integrated hardware-software system for superconducting qubit experiments with broadband control</a> <span class="sim">&nbsp;2026-06-12 · 97% match</span></div>
-    <div><a href="../2602.12773/index.html">Design and Operation of Wafer-Scale Packages Containing &gt;500 Superconducting Qubits</a> <span class="sim">&nbsp;2026-02-16 · 89% match</span></div>
-    <div><a href="../2607.20795/index.html">Component-Level Inverse Design of Transmon Qubits Using Neural Networks</a> <span class="sim">&nbsp;2026-07-24 · 89% match</span></div>
-    <div><a href="../2609.22442/index.html">Extracting Electromagnetic Bare Mode Couplings in Large Superconducting Quantum Processors</a> <span class="sim">&nbsp;2026-09-22 · 89% match</span></div>
-    <div><a href="../2606.17907/index.html">SPICE-Q and Large-Scale Quantum Chip Production</a> <span class="sim">&nbsp;2026-06-17 · 65% match</span></div>
+    <div><a href="../2606.06598/index.html">A superconducting surface-code processor with lattice-surgery logical operations</a> <span class="sim">&nbsp;2026-06-08 · 93% match</span></div>
+    <div><a href="../2605.12385/index.html">Lower overhead fault-tolerant building blocks for noisy quantum computers</a> <span class="sim">&nbsp;2026-05-13 · 75% match</span></div>
+    <div><a href="../2602.17438/index.html">Fault-tolerant preparation of arbitrary logical states in the cat code</a> <span class="sim">&nbsp;2026-02-20 · 68% match</span></div>
+    <div><a href="../2609.03194/index.html">Experimental validation of a compact fault-tolerant architecture for trapped ions</a> <span class="sim">&nbsp;2026-09-04 · 66% match</span></div>
+    <div><a href="../2607.27204/index.html">Fault-Tolerant Logical Operations and Efficient State Preparation in Modular Quantum Architectures with Noisy Interfaces</a> <span class="sim">&nbsp;2026-07-30 · 59% match</span></div>
     </div>
   </dd></div>
-  <div class="spec"><dt>Abstract</dt><dd class="small">Predictive modeling of a superconducting quantum chip requires more than a Hamiltonian: the model must connect device physics, control-line transformations, chosen frames and approximations, dissipation, and measured observables. We present quchip, an open-source Python toolkit that represents these parts explicitly and assembles backend-independent simulations for QuTiP or dynamiqs; with dynamiqs, device and control parameters remain differentiable through the solve. We demonstrate the resulting experimental loop on a five-device model fitted to dressed observables. Simulated phase sweeps identify the complex crosstalk between two control lines, and inversion of the inferred response suppresses the effective leakage by more than two orders of magnitude. Over sixteen simultaneous $π$ pulses, the corrected pulse-end populations remain within $0.3$ percentage points of the crosstalk-free response. Adiabatically eliminating the bus and readout resonators reduces the Hilbert-space dimension from 576 to 16, after which gradients through simulated tomography recover the four injected crosstalk parameters with a maximum complex error of $1.5\times10^{-5}$. A single explicit model can therefore support prediction, correction, and inverse parameter recovery.</dd></div>
+  <div class="spec"><dt>Abstract</dt><dd class="small">Modularization promises to break down the design and implementation complexity of large scale quantum processors into smaller manageable subtasks. In this approach, quantum channels, realized for instance through physical rerouting of qubits or quantum teleportation, connect multiple modules. Each of those modules hosts a subset of qubits, e.g. multiple logical qubits, and provides quantum operations on them. In this work, we implement for the first time all logical operations required for modular fault-tolerant universal quantum computing with a non-Calderbank-Shor-Steane (CSS) code, the perfect $[[5, 1, 3]]$ code, on a trapped-ion quantum computer. This code is the smallest quantum error-correcting (QEC) code capable of correcting any single-qubit error, making it a compact alternative to larger CSS codes. We demonstrate logical state teleportation and a full suite of fault-tolerant operations required for universal logical control, including logical state preparation, QEC with real-time feedback, logical measurements, magic-state preparation, logical entangling operations, and magic-state injection. Moreover, we characterize the logical spectator error picked up by idling logical qubits during quantum operations on distinct qubit registers and demonstrate a logical Pauli quantum process tomography that minimizes required sampling resources for logical tomography.</dd></div>
 </dl>
 </main>
 <footer></footer>

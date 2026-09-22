@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>quchip: A Differentiable Toolkit for Modeling Quantum Devices</title>
+<title>2026-09-22 · arXiv updates</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
@@ -188,39 +188,80 @@ footer { height: 72px; }
     <button id="theme" type="button" aria-label="Switch between light and dark theme" title="Light / dark"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1a7 7 0 0 0 0 14z" fill="currentColor"/></svg></button></nav>
 </div></div>
 <header class="hero"><div class="wrap">
-  <p class="eyebrow"><a href="../days/2026-07-21.html">2026-07-21</a> &nbsp;/&nbsp; <span class="bigscore" style="--h:20;--s:77%;--l:calc(var(--score-l) + 5.9% + 0.0% * var(--score-sign))">50.6% match</span></p>
-  <h1 class="paper">quchip: A Differentiable Toolkit for Modeling Quantum Devices</h1>
-  <div class="actions">
-    <a class="btn primary" href="https://arxiv.org/abs/2607.17081">arXiv:2607.17081</a>
-    <a class="btn" href="https://arxiv.org/pdf/2607.17081">PDF</a>
-    <a class="btn" href="https://arxiv.org/html/2607.17081">HTML</a>
-  </div>
+  <h1>2026-09-22</h1>
 </div></header>
 <main class="wrap">
-<dl>
-  <div class="spec"><dt>Summary</dt><dd class="big">quchip is an open-source Python toolkit that assembles device-independent simulations for superconducting quantum chips by explicitly representing device physics, control-line transformations, frames, approximations, dissipation, and observables. Using JAX-native dynamiqs, device and control parameters remain differentiable through time evolution, enabling forward prediction, correction via response-matrix inversion, and inverse parameter recovery from tomography.</dd></div>
-  <div class="spec"><dt>Motivation</dt><dd>Superconducting quantum chips require coordinating multiple layers—local Hamiltonians, control electronics, rotating frames, the rotating-wave approximation, noise channels, and measurement—making hand-assembled models brittle and hard to extend.</dd></div>
-  <div class="spec"><dt>Method</dt><dd>quchip organizes a chip as devices (Duffing transmons, resonators), couplings (capacitive interactions), and drives (charge lines with crosstalk). An engine resolves each device&#39;s reference frame to its dressed $0 \to 1$ frequency, decomposes operators into excitation-change bands to apply the RWA automatically, assembles collapse operators, and packs a differentiable problem for QuTiP or dynamiqs backends.</dd></div>
-  <div class="spec"><dt>Result</dt><dd>On a five-device model (two qubits, bus, two readout resonators), phase sweeps identified crosstalk phasors $0.16 e^{i 3.31}$ and $0.14 e^{i 1.885}$ between two charge lines; inverting the response matrix suppressed effective leakage by $&gt;100\times$ and held corrected populations within 0.3 percentage points over sixteen simultaneous $\pi$ pulses. Adiabatic elimination reduced the Hilbert space from 576 to 16 dimensions; gradients through tomography recovered all four directed crosstalk parameters ($\beta_{12}, \theta_{12}, \beta_{21}, \theta_{21}$) with maximum complex error $1.5 \times 10^{-5}$.</dd></div>
-  <div class="spec"><dt>Authors</dt><dd class="small">Ibraheem AlYousef</dd></div>
-  <div class="spec"><dt>Similar papers</dt><dd class="small">
-    <div class="sub">In the database</div>
-    <div class="simlist">
-    <div><a href="https://arxiv.org/abs/2607.20795">Component-Level Inverse Design of Transmon Qubits Using Neural Networks</a> <span class="sim">&nbsp;0.86</span></div>
-    <div><a href="https://arxiv.org/abs/2402.00413">System Characterization of Dispersive Readout in Superconducting Qubits</a> <span class="sim">&nbsp;0.85</span></div>
-    </div>
-    <div class="sub">Among all indexed papers</div>
-    <div class="simlist">
-    <div><a href="../2606.13010/index.html">QuBE/Qubex: an integrated hardware-software system for superconducting qubit experiments with broadband control</a> <span class="sim">&nbsp;2026-06-12 · 97% match</span></div>
-    <div><a href="../2602.12773/index.html">Design and Operation of Wafer-Scale Packages Containing &gt;500 Superconducting Qubits</a> <span class="sim">&nbsp;2026-02-16 · 89% match</span></div>
-    <div><a href="../2607.20795/index.html">Component-Level Inverse Design of Transmon Qubits Using Neural Networks</a> <span class="sim">&nbsp;2026-07-24 · 89% match</span></div>
-    <div><a href="../2609.22442/index.html">Extracting Electromagnetic Bare Mode Couplings in Large Superconducting Quantum Processors</a> <span class="sim">&nbsp;2026-09-22 · 89% match</span></div>
-    <div><a href="../2606.17907/index.html">SPICE-Q and Large-Scale Quantum Chip Production</a> <span class="sim">&nbsp;2026-06-17 · 65% match</span></div>
-    </div>
-  </dd></div>
-  <div class="spec"><dt>Abstract</dt><dd class="small">Predictive modeling of a superconducting quantum chip requires more than a Hamiltonian: the model must connect device physics, control-line transformations, chosen frames and approximations, dissipation, and measured observables. We present quchip, an open-source Python toolkit that represents these parts explicitly and assembles backend-independent simulations for QuTiP or dynamiqs; with dynamiqs, device and control parameters remain differentiable through the solve. We demonstrate the resulting experimental loop on a five-device model fitted to dressed observables. Simulated phase sweeps identify the complex crosstalk between two control lines, and inversion of the inferred response suppresses the effective leakage by more than two orders of magnitude. Over sixteen simultaneous $π$ pulses, the corrected pulse-end populations remain within $0.3$ percentage points of the crosstalk-free response. Adiabatically eliminating the bus and readout resonators reduces the Hilbert-space dimension from 576 to 16, after which gradients through simulated tomography recover the four injected crosstalk parameters with a maximum complex error of $1.5\times10^{-5}$. A single explicit model can therefore support prediction, correction, and inverse parameter recovery.</dd></div>
-</dl>
-</main>
+<section class="dayblock">
+<div class="day" id="d-2026-09-22">
+  <div>
+    <div class="stats">6 listed &nbsp;/&nbsp; 193 scanned</div>
+  </div>
+  <svg class="hist" width="160" height="30" viewBox="0 0 160 30" role="img" aria-label="Score distribution of all 193 papers, 0 to 100%">
+    <rect class="" x="0" y="2" width="6" height="28" fill="currentColor"/>
+    <rect class="" x="8" y="15" width="6" height="15" fill="currentColor"/>
+    <rect class="" x="16" y="19" width="6" height="11" fill="currentColor"/>
+    <rect class="" x="24" y="22" width="6" height="8" fill="currentColor"/>
+    <rect class="" x="32" y="26" width="6" height="4" fill="currentColor"/>
+    <rect class="" x="40" y="24" width="6" height="6" fill="currentColor"/>
+    <rect class="" x="48" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="" x="56" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="" x="64" y="26" width="6" height="4" fill="currentColor"/>
+    <rect class="" x="72" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="" x="80" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="" x="88" y="27" width="6" height="3" fill="currentColor"/>
+    <rect class="" x="96" y="27" width="6" height="3" fill="currentColor"/>
+    <rect class="" x="104" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="" x="112" y="27" width="6" height="3" fill="currentColor"/>
+    <rect class="" x="120" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="hi" x="128" y="27" width="6" height="3" fill="currentColor"/>
+    <rect class="hi" x="136" y="26" width="6" height="4" fill="currentColor"/>
+    <rect class="hi" x="144" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="hi" x="152" y="30" width="6" height="0" fill="currentColor"/>
+  </svg>
+</div>
+<a class="row" href="../2609.24759/index.html">
+  <div class="score" style="--h:125;--s:79%;--l:calc(var(--score-l) + 0.1% + 4.8% * var(--score-sign))">89.2<small>%</small><span class="track"><b style="width:89%"></b></span></div>
+  <div>
+    <h3>Superconducting qubit based on altermagnets</h3>
+    <p class="meta">Xue-Feng Pan, Xin-Lei Hei, ..., Peng-Bo Li. &nbsp;/&nbsp; 2609.24759 &nbsp;/&nbsp; quant-ph</p>
+    <p class="sum">Altermagnets, characterized by vanishing net magnetization and momentum-dependent spin splitting, provide a promising platform for next-generation Josephson devices. Here, we exploit the Josephson effect in superconductor-altermagnet-superconductor junctions and show how to engineer prescribed current-phase relations by device design.</p>
+  </div>
+</a><a class="row" href="../2609.22442/index.html">
+  <div class="score" style="--h:124;--s:79%;--l:calc(var(--score-l) + 0.1% + 4.7% * var(--score-sign))">88.9<small>%</small><span class="track"><b style="width:89%"></b></span></div>
+  <div>
+    <h3>Extracting Electromagnetic Bare Mode Couplings in Large Superconducting Quantum Processors</h3>
+    <p class="meta">Reza Molavi, Ebrahim Forati, ..., Michel H. Devoret. &nbsp;/&nbsp; 2609.22442 &nbsp;/&nbsp; quant-ph</p>
+    <p class="sum">High-fidelity control of superconducting quantum processors requires accurate characterization of electromagnetic coupling strengths among the device&#39;s constituent elements. Accurately extracting these couplings across large-scale architectures, presently featuring hundreds of qubits, poses a challenging multi-scale modeling problem.</p>
+  </div>
+</a><a class="row" href="../2609.23126/index.html">
+  <div class="score" style="--h:111;--s:76%;--l:calc(var(--score-l) + 0.5% + 3.4% * var(--score-sign))">84.8<small>%</small><span class="track"><b style="width:85%"></b></span></div>
+  <div>
+    <h3>Performance optimization of cascaded traveling wave Josephson parametric amplifiers</h3>
+    <p class="meta">Ilari Lilja, Ekaterina Mukhanova, ..., Pertti Hakonen. &nbsp;/&nbsp; 2609.23126 &nbsp;/&nbsp; quant-ph</p>
+    <p class="sum">Traveling-wave parametric amplifiers (TWPAs) based on Josephson metamaterials provide broadband gain with near-quantum-limited added noise. Whereas long nonlinear metamaterial devices can deliver high gain, short arrays suffer less from dissipation, pump depletion, and internal standing waves which can degrade noise performance.</p>
+  </div>
+</a><a class="row low" href="../2609.22572/index.html">
+  <div class="score" style="--h:65;--s:80%;--l:calc(var(--score-l) + 2.2% + 0.8% * var(--score-sign))">73.9<small>%</small><span class="track"><b style="width:74%"></b></span></div>
+  <div>
+    <h3>Modular fault-tolerant quantum computing on a non-CSS code</h3>
+    <p class="meta">Robert Freund, Friederike Butt, ..., Thomas Monz. &nbsp;/&nbsp; 2609.22572 &nbsp;/&nbsp; quant-ph</p>
+    <p class="sum">Modularization promises to break down the design and implementation complexity of large scale quantum processors into smaller manageable subtasks. In this approach, quantum channels, realized for instance through physical rerouting of qubits or quantum teleportation, connect multiple modules.</p>
+  </div>
+</a><a class="row low" href="../2609.04704/index.html">
+  <div class="score" style="--h:29;--s:80%;--l:calc(var(--score-l) + 4.9% + 0.0% * var(--score-sign))">60.7<small>%</small><span class="track"><b style="width:61%"></b></span></div>
+  <div>
+    <h3>Strong-Drive Limits in Josephson Circuits: From Chaos to an Unbound-Resonance Threshold</h3>
+    <p class="meta">Xinyuan You, Aniket Maiti, Yao Lu. &nbsp;/&nbsp; 2609.04704 &nbsp;/&nbsp; quant-ph</p>
+    <p class="sum">This paper develops a unified description of strong-drive limits in flux- and charge-driven Josephson circuits across drive frequency and dc flux bias using classical phase-space analysis and Floquet–Markov simulations. At low frequency, bound-state resonances and separatrix chaos govern the response with a dc-bias-dependent chaos threshold, while at high frequency a distinct unbound-resonance transition occurs where the dissipative steady state transfers from the central bound-state region to outer resonances formed by above-barrier running trajectories.</p>
+  </div>
+</a><a class="row low" href="../2609.24933/index.html">
+  <div class="score" style="--h:27;--s:80%;--l:calc(var(--score-l) + 5.1% + 0.0% * var(--score-sign))">58.6<small>%</small><span class="track"><b style="width:59%"></b></span></div>
+  <div>
+    <h3>A thermal microwave bus for neutral atom quantum computing</h3>
+    <p class="meta">Matthew J. H. Kendall, Christopher J. Watson, ..., Jonathan D. Breeze. &nbsp;/&nbsp; 2609.24933 &nbsp;/&nbsp; quant-ph</p>
+    <p class="sum">High-fidelity two-qubit gates in neutral-atom arrays rely on the Rydberg blockade, which is intrinsically short ranged and requires long range connectivity to be achieved through atom shuttling. We propose a four level architecture, where the typical ground state qubit can be leveraged for its long lifetime and the Rydberg states couple to a microwave cavity, allowing for long range cavity mediated gates.</p>
+  </div>
+</a></section></main>
 <footer></footer>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"

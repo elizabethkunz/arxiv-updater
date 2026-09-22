@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>quchip: A Differentiable Toolkit for Modeling Quantum Devices</title>
+<title>Extracting Electromagnetic Bare Mode Couplings in Large Superconducting Quantum Processors</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
@@ -188,37 +188,34 @@ footer { height: 72px; }
     <button id="theme" type="button" aria-label="Switch between light and dark theme" title="Light / dark"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1a7 7 0 0 0 0 14z" fill="currentColor"/></svg></button></nav>
 </div></div>
 <header class="hero"><div class="wrap">
-  <p class="eyebrow"><a href="../days/2026-07-21.html">2026-07-21</a> &nbsp;/&nbsp; <span class="bigscore" style="--h:20;--s:77%;--l:calc(var(--score-l) + 5.9% + 0.0% * var(--score-sign))">50.6% match</span></p>
-  <h1 class="paper">quchip: A Differentiable Toolkit for Modeling Quantum Devices</h1>
+  <p class="eyebrow"><a href="../days/2026-09-22.html">2026-09-22</a> &nbsp;/&nbsp; <span class="bigscore" style="--h:124;--s:79%;--l:calc(var(--score-l) + 0.1% + 4.7% * var(--score-sign))">88.9% match</span></p>
+  <h1 class="paper">Extracting Electromagnetic Bare Mode Couplings in Large Superconducting Quantum Processors</h1>
   <div class="actions">
-    <a class="btn primary" href="https://arxiv.org/abs/2607.17081">arXiv:2607.17081</a>
-    <a class="btn" href="https://arxiv.org/pdf/2607.17081">PDF</a>
-    <a class="btn" href="https://arxiv.org/html/2607.17081">HTML</a>
+    <a class="btn primary" href="https://arxiv.org/abs/2609.22442">arXiv:2609.22442</a>
+    <a class="btn" href="https://arxiv.org/pdf/2609.22442">PDF</a>
+    <a class="btn" href="https://arxiv.org/html/2609.22442">HTML</a>
   </div>
 </div></header>
 <main class="wrap">
 <dl>
-  <div class="spec"><dt>Summary</dt><dd class="big">quchip is an open-source Python toolkit that assembles device-independent simulations for superconducting quantum chips by explicitly representing device physics, control-line transformations, frames, approximations, dissipation, and observables. Using JAX-native dynamiqs, device and control parameters remain differentiable through time evolution, enabling forward prediction, correction via response-matrix inversion, and inverse parameter recovery from tomography.</dd></div>
-  <div class="spec"><dt>Motivation</dt><dd>Superconducting quantum chips require coordinating multiple layers—local Hamiltonians, control electronics, rotating frames, the rotating-wave approximation, noise channels, and measurement—making hand-assembled models brittle and hard to extend.</dd></div>
-  <div class="spec"><dt>Method</dt><dd>quchip organizes a chip as devices (Duffing transmons, resonators), couplings (capacitive interactions), and drives (charge lines with crosstalk). An engine resolves each device&#39;s reference frame to its dressed $0 \to 1$ frequency, decomposes operators into excitation-change bands to apply the RWA automatically, assembles collapse operators, and packs a differentiable problem for QuTiP or dynamiqs backends.</dd></div>
-  <div class="spec"><dt>Result</dt><dd>On a five-device model (two qubits, bus, two readout resonators), phase sweeps identified crosstalk phasors $0.16 e^{i 3.31}$ and $0.14 e^{i 1.885}$ between two charge lines; inverting the response matrix suppressed effective leakage by $&gt;100\times$ and held corrected populations within 0.3 percentage points over sixteen simultaneous $\pi$ pulses. Adiabatic elimination reduced the Hilbert space from 576 to 16 dimensions; gradients through tomography recovered all four directed crosstalk parameters ($\beta_{12}, \theta_{12}, \beta_{21}, \theta_{21}$) with maximum complex error $1.5 \times 10^{-5}$.</dd></div>
-  <div class="spec"><dt>Authors</dt><dd class="small">Ibraheem AlYousef</dd></div>
+  <div class="spec"><dt>Summary</dt><dd class="big">High-fidelity control of superconducting quantum processors requires accurate characterization of electromagnetic coupling strengths among the device&#39;s constituent elements. Accurately extracting these couplings across large-scale architectures, presently featuring hundreds of qubits, poses a challenging multi-scale modeling problem.</dd></div>
+  <div class="spec"><dt>Authors</dt><dd class="small">Reza Molavi, Ebrahim Forati, Yaxing Zhang, Andrey R. Klots, Juan Atalaya, Brandon W. Langley, Dogan A. Timucin, Moein Nazari, Ghazi Khan, Zlatko K. Minev, Alexander N. Korotkov, Michel H. Devoret</dd></div>
   <div class="spec"><dt>Similar papers</dt><dd class="small">
     <div class="sub">In the database</div>
     <div class="simlist">
+    <div><a href="https://arxiv.org/abs/2606.02440">Microwave Crosstalk in Planar Superconducting Quantum Devices</a> <span class="sim">&nbsp;0.86</span></div>
     <div><a href="https://arxiv.org/abs/2607.20795">Component-Level Inverse Design of Transmon Qubits Using Neural Networks</a> <span class="sim">&nbsp;0.86</span></div>
-    <div><a href="https://arxiv.org/abs/2402.00413">System Characterization of Dispersive Readout in Superconducting Qubits</a> <span class="sim">&nbsp;0.85</span></div>
     </div>
     <div class="sub">Among all indexed papers</div>
     <div class="simlist">
-    <div><a href="../2606.13010/index.html">QuBE/Qubex: an integrated hardware-software system for superconducting qubit experiments with broadband control</a> <span class="sim">&nbsp;2026-06-12 · 97% match</span></div>
-    <div><a href="../2602.12773/index.html">Design and Operation of Wafer-Scale Packages Containing &gt;500 Superconducting Qubits</a> <span class="sim">&nbsp;2026-02-16 · 89% match</span></div>
+    <div><a href="../2606.02440/index.html">Microwave Crosstalk in Planar Superconducting Quantum Devices</a> <span class="sim">&nbsp;2026-06-02 · 96% match</span></div>
+    <div><a href="../2602.03186/index.html">A Tunable, Modeless, and Hybridization-free Cross-Kerr Coupler for Miniaturized Superconducting Qubits</a> <span class="sim">&nbsp;2026-02-04 · 95% match</span></div>
     <div><a href="../2607.20795/index.html">Component-Level Inverse Design of Transmon Qubits Using Neural Networks</a> <span class="sim">&nbsp;2026-07-24 · 89% match</span></div>
-    <div><a href="../2609.22442/index.html">Extracting Electromagnetic Bare Mode Couplings in Large Superconducting Quantum Processors</a> <span class="sim">&nbsp;2026-09-22 · 89% match</span></div>
-    <div><a href="../2606.17907/index.html">SPICE-Q and Large-Scale Quantum Chip Production</a> <span class="sim">&nbsp;2026-06-17 · 65% match</span></div>
+    <div><a href="../2602.06812/index.html">Hybrid Coupling Topology with Dynamic ZZ Suppression for Optimizing Circuit Depth during Runtime in Superconducting Quantum Processor</a> <span class="sim">&nbsp;2026-02-09 · 88% match</span></div>
+    <div><a href="../2607.19543/index.html">Simple, accurate lumped-element models of distributed resonators for superconducting quantum circuits</a> <span class="sim">&nbsp;2026-07-23 · 84% match</span></div>
     </div>
   </dd></div>
-  <div class="spec"><dt>Abstract</dt><dd class="small">Predictive modeling of a superconducting quantum chip requires more than a Hamiltonian: the model must connect device physics, control-line transformations, chosen frames and approximations, dissipation, and measured observables. We present quchip, an open-source Python toolkit that represents these parts explicitly and assembles backend-independent simulations for QuTiP or dynamiqs; with dynamiqs, device and control parameters remain differentiable through the solve. We demonstrate the resulting experimental loop on a five-device model fitted to dressed observables. Simulated phase sweeps identify the complex crosstalk between two control lines, and inversion of the inferred response suppresses the effective leakage by more than two orders of magnitude. Over sixteen simultaneous $π$ pulses, the corrected pulse-end populations remain within $0.3$ percentage points of the crosstalk-free response. Adiabatically eliminating the bus and readout resonators reduces the Hilbert-space dimension from 576 to 16, after which gradients through simulated tomography recover the four injected crosstalk parameters with a maximum complex error of $1.5\times10^{-5}$. A single explicit model can therefore support prediction, correction, and inverse parameter recovery.</dd></div>
+  <div class="spec"><dt>Abstract</dt><dd class="small">High-fidelity control of superconducting quantum processors requires accurate characterization of electromagnetic coupling strengths among the device&#39;s constituent elements. Accurately extracting these couplings across large-scale architectures, presently featuring hundreds of qubits, poses a challenging multi-scale modeling problem. This requires resolving scales from the nanometer-scale geometry of Josephson junctions and their leads to the centimeter-scale size of the enclosing metallic packages. We present four numerical coupling extraction methods based on the avoided level crossing, the energy participation ratio, the induced electromotive force, and the impedance matrix. These methods are tailored to work with commercially available 3D electromagnetic solvers. We benchmark these techniques on a $10\times10$ array of transmon qubits, extracting their couplings to standing package modes. Our results show that these methods yield consistent coupling strengths with a maximum relative difference of less than 5%.</dd></div>
 </dl>
 </main>
 <footer></footer>
