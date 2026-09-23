@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Learning Mid-circuit Measurement Backaction from Three Repeated Measurements</title>
+<title>Error Suppression in Distributed Quantum Computing with Heterogeneous-Distance Lattice Surgery</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
@@ -188,37 +188,34 @@ footer { height: 72px; }
     <button id="theme" type="button" aria-label="Switch between light and dark theme" title="Light / dark"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1a7 7 0 0 0 0 14z" fill="currentColor"/></svg></button></nav>
 </div></div>
 <header class="hero"><div class="wrap">
-  <p class="eyebrow"><a href="../days/2026-06-02.html">2026-06-02</a> &nbsp;/&nbsp; <span class="bigscore" style="--h:29;--s:80%;--l:calc(var(--score-l) + 4.9% + 0.0% * var(--score-sign))">60.5% match</span></p>
-  <h1 class="paper">Learning Mid-circuit Measurement Backaction from Three Repeated Measurements</h1>
+  <p class="eyebrow"><a href="../days/2026-09-23.html">2026-09-23</a> &nbsp;/&nbsp; <span class="bigscore" style="--h:26;--s:79%;--l:calc(var(--score-l) + 5.3% + 0.0% * var(--score-sign))">57.1% match</span></p>
+  <h1 class="paper">Error Suppression in Distributed Quantum Computing with Heterogeneous-Distance Lattice Surgery</h1>
   <div class="actions">
-    <a class="btn primary" href="https://arxiv.org/abs/2606.00433">arXiv:2606.00433</a>
-    <a class="btn" href="https://arxiv.org/pdf/2606.00433">PDF</a>
-    <a class="btn" href="https://arxiv.org/html/2606.00433">HTML</a>
+    <a class="btn primary" href="https://arxiv.org/abs/2609.26784">arXiv:2609.26784</a>
+    <a class="btn" href="https://arxiv.org/pdf/2609.26784">PDF</a>
+    <a class="btn" href="https://arxiv.org/html/2609.26784">HTML</a>
   </div>
 </div></header>
 <main class="wrap">
 <dl>
-  <div class="spec"><dt>Summary</dt><dd class="big">This paper introduces an efficient protocol for learning single-qubit mid-circuit measurement (MCM) instruments on superconducting qubits by measuring readout-backaction correlations from three repeated MCMs on a maximally mixed input. The learned instrument, which is $Z$-twirled to eliminate coherences while preserving joint classical-outcome and post-measurement-state statistics, improves Pauli-observable prediction by $\sim 100\times$ over confusion-matrix models on IBM Heron transmons and reveals $T_1$-decay-dominated backaction with $\eta_{\downarrow} \gg \eta_{\uparrow}$ ($10^1$--$10^2$ asymmetry).</dd></div>
-  <div class="spec"><dt>Motivation</dt><dd>Conventional confusion-matrix characterization of terminal measurements is insufficient for dynamic circuits because mid-circuit measurements both produce classical readout and alter the quantum state; accurately modeling these readout-backaction correlations and excitation-decay asymmetry is essential for syndrome extraction, reset, and SPAM error separation.</dd></div>
-  <div class="spec"><dt>Method</dt><dd>The protocol applies $Z$-twirling to reduce the MCM to a pair of 2×2 conditional-probability matrices $M^{(0)}, M^{(1)}$ mapping pre-measurement basis states and classical outcomes to post-measurement basis states; repeated MCM chains of length $L=3$ on maximally mixed input via Pauli randomization yield all five gauge-invariant scalars (one single-shot probability plus traces and determinants) via closed-form Cayley-Hamilton recurrence relations, leaving only one unidentifiable gauge parameter $t$ that is tightly constrained by physicality ($0 \le M_{s&#39;,s}^{(o)}(t) \le 1$).</dd></div>
-  <div class="spec"><dt>Result</dt><dd>On 60 qubits across three IBM Heron devices (ibm_kingston, ibm_pittsburgh, ibm_boston), the learned instrument predicts depth-10 $X$-interleaved validation circuits with absolute $\langle Z \rangle$ deviations $\lesssim 10^{-3}$ versus $10^{-2}$ for confusion-matrix models; gauge bands are typically $&lt;10\%$ relative width due to tight physicality constraints; self-consistency checks via Cayley-Hamilton recurrences show no statistically resolved violations of stationarity or Markovianity.</dd></div>
-  <div class="spec"><dt>Authors</dt><dd class="small">Chia-Tung Chu, Su-un Lee, Han Zheng, Senrui Chen, Bibek Pokharel, Alireza Seif, Liang Jiang</dd></div>
+  <div class="spec"><dt>Summary</dt><dd class="big">Distributed quantum computing requires fault-tolerant operations across inter-QPU links that can be substantially noisier than local gates. Uniformly increasing code distance provides additional protection but also enlarges data patches used for local storage and computation.</dd></div>
+  <div class="spec"><dt>Authors</dt><dd class="small">Daniel Dilley, Anastashia Jebraeilli, Rayat Roy, Shobhit Gupta, Alvin Gonzales, Zain Saleem</dd></div>
   <div class="spec"><dt>Similar papers</dt><dd class="small">
     <div class="sub">In the database</div>
     <div class="simlist">
-    <div><a href="https://arxiv.org/abs/2308.02079">Model-based Optimization of Superconducting Qubit Readout</a> <span class="sim">&nbsp;0.85</span></div>
-    <div><a href="https://arxiv.org/abs/2402.00413">System Characterization of Dispersive Readout in Superconducting Qubits</a> <span class="sim">&nbsp;0.83</span></div>
+    <div><a href="https://arxiv.org/abs/2510.13541">Lattice surgery with Bell measurements: Modular fault-tolerant quantum computation at low entanglement cost</a> <span class="sim">&nbsp;0.89</span></div>
+    <div><a href="https://arxiv.org/abs/2501.04612">Realizing Lattice Surgery on Two Distance-Three Repetition Codes with Superconducting Qubits</a> <span class="sim">&nbsp;0.88</span></div>
     </div>
     <div class="sub">Among all indexed papers</div>
     <div class="simlist">
-    <div><a href="../2609.25208/index.html">Adaptive thresholding for scalable measurement-based qubit reset</a> <span class="sim">&nbsp;2026-09-23 · 91% match</span></div>
-    <div><a href="../2607.11668/index.html">Multi-Stage Mamba-Based Architecture for Fast and Scalable Superconducting Qubit Readout</a> <span class="sim">&nbsp;2026-07-14 · 77% match</span></div>
-    <div><a href="../2602.03938/index.html">Detailed, interpretable characterization of mid-circuit measurement on a transmon qubit</a> <span class="sim">&nbsp;2026-02-05 · 75% match</span></div>
-    <div><a href="../2601.22286/index.html">Efficient learning of logical noise from syndrome data</a> <span class="sim">&nbsp;2026-02-02 · 68% match</span></div>
-    <div><a href="../2604.25863/index.html">MCMit: Hardware-Software Co-Design for Mid-Circuit Measurement Error Mitigation</a> <span class="sim">&nbsp;2026-04-29 · 64% match</span></div>
+    <div><a href="../2606.06598/index.html">A superconducting surface-code processor with lattice-surgery logical operations</a> <span class="sim">&nbsp;2026-06-08 · 93% match</span></div>
+    <div><a href="../2609.13065/index.html">Error Correction in a Distributed Quantum Computer</a> <span class="sim">&nbsp;2026-09-14 · 81% match</span></div>
+    <div><a href="../2607.24907/index.html">Fault-tolerant distributed quantum computing with a single nucleus per node</a> <span class="sim">&nbsp;2026-07-29 · 65% match</span></div>
+    <div><a href="../2605.11088/index.html">Tolerating Device Failure in Distributed Quantum Computing</a> <span class="sim">&nbsp;2026-05-13 · 60% match</span></div>
+    <div><a href="../2607.27204/index.html">Fault-Tolerant Logical Operations and Efficient State Preparation in Modular Quantum Architectures with Noisy Interfaces</a> <span class="sim">&nbsp;2026-07-30 · 59% match</span></div>
     </div>
   </dd></div>
-  <div class="spec"><dt>Abstract</dt><dd class="small">Accurate modeling of mid-circuit measurements (MCMs) is essential for dynamic-circuit operations such as syndrome extraction, measurement-based reset, and the separation of state-preparation and measurement (SPAM) error. Unlike terminal measurement, a noisy MCM both produces a classical outcome and alters the incoming quantum state, thereby influencing subsequent circuit operations. This makes conventional confusion-matrix or fidelity-level characterization insufficient. Here we introduce an efficient, self-consistent protocol for learning a single-qubit Z-twirled MCM instrument, retaining the readout-backaction correlations and excitation-decay asymmetry that are erased in Pauli-error descriptions. Remarkably, readout bit strings from only three repeated MCMs on a maximally mixed input determine all learnable parameters of the reduced instrument, up to a single unidentifiable gauge degree of freedom. Physicality constraints convert this non-identifiability into narrow, gauge-aware error intervals. Implemented on IBM superconducting processors, the learned instrument improves Pauli-observable prediction by ${\sim}100\times$ over a conventional confusion-matrix model and reveals a $T_1$-decay dominated backaction. Our protocol provides a compact characterization layer for SPAM error separation, reset optimization, and noise-aware quantum error correction.</dd></div>
+  <div class="spec"><dt>Abstract</dt><dd class="small">Distributed quantum computing requires fault-tolerant operations across inter-QPU links that can be substantially noisier than local gates. Uniformly increasing code distance provides additional protection but also enlarges data patches used for local storage and computation. Here, we introduce distributed heterogeneous-distance lattice surgery using an eight-data-patch ancilla-mediated (8-DAM) architecture, which will be useful for near-term quantum devices with less qubit overhead. In this architecture, the central ancilla spanning the inter-QPU boundary is enlarged while the data patches retain distance $d$. The protocol uses traveling stabilizers to suppress hook errors during merge and split operations between these unequal-distance patches. Circuit-level simulations of rotated surface codes at fixed local depolarizing noise show that logical-readout error rates depend only weakly on link noise. The resulting advantage over conventional lattice surgery grows as link errors increase. Comparisons with uniform distance implementations demonstrate comparable logical error suppression with reduced physical-qubit overhead. We also demonstrate how 8-DAM layouts support two simultaneous distributed logical CNOT operations between four logical data qubits using a single enlarged ancilla. At higher link noise, this construction yields lower logical error rates and more stability than two independent distributed logical CNOTs. These results support selective ancilla enlargement as a resource-efficient approach to fault-tolerant distributed quantum computing.</dd></div>
 </dl>
 </main>
 <footer></footer>

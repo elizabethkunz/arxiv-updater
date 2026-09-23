@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Learning Mid-circuit Measurement Backaction from Three Repeated Measurements</title>
+<title>2026-09-23 · arXiv updates</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
@@ -188,39 +188,66 @@ footer { height: 72px; }
     <button id="theme" type="button" aria-label="Switch between light and dark theme" title="Light / dark"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1a7 7 0 0 0 0 14z" fill="currentColor"/></svg></button></nav>
 </div></div>
 <header class="hero"><div class="wrap">
-  <p class="eyebrow"><a href="../days/2026-06-02.html">2026-06-02</a> &nbsp;/&nbsp; <span class="bigscore" style="--h:29;--s:80%;--l:calc(var(--score-l) + 4.9% + 0.0% * var(--score-sign))">60.5% match</span></p>
-  <h1 class="paper">Learning Mid-circuit Measurement Backaction from Three Repeated Measurements</h1>
-  <div class="actions">
-    <a class="btn primary" href="https://arxiv.org/abs/2606.00433">arXiv:2606.00433</a>
-    <a class="btn" href="https://arxiv.org/pdf/2606.00433">PDF</a>
-    <a class="btn" href="https://arxiv.org/html/2606.00433">HTML</a>
-  </div>
+  <h1>2026-09-23</h1>
 </div></header>
 <main class="wrap">
-<dl>
-  <div class="spec"><dt>Summary</dt><dd class="big">This paper introduces an efficient protocol for learning single-qubit mid-circuit measurement (MCM) instruments on superconducting qubits by measuring readout-backaction correlations from three repeated MCMs on a maximally mixed input. The learned instrument, which is $Z$-twirled to eliminate coherences while preserving joint classical-outcome and post-measurement-state statistics, improves Pauli-observable prediction by $\sim 100\times$ over confusion-matrix models on IBM Heron transmons and reveals $T_1$-decay-dominated backaction with $\eta_{\downarrow} \gg \eta_{\uparrow}$ ($10^1$--$10^2$ asymmetry).</dd></div>
-  <div class="spec"><dt>Motivation</dt><dd>Conventional confusion-matrix characterization of terminal measurements is insufficient for dynamic circuits because mid-circuit measurements both produce classical readout and alter the quantum state; accurately modeling these readout-backaction correlations and excitation-decay asymmetry is essential for syndrome extraction, reset, and SPAM error separation.</dd></div>
-  <div class="spec"><dt>Method</dt><dd>The protocol applies $Z$-twirling to reduce the MCM to a pair of 2×2 conditional-probability matrices $M^{(0)}, M^{(1)}$ mapping pre-measurement basis states and classical outcomes to post-measurement basis states; repeated MCM chains of length $L=3$ on maximally mixed input via Pauli randomization yield all five gauge-invariant scalars (one single-shot probability plus traces and determinants) via closed-form Cayley-Hamilton recurrence relations, leaving only one unidentifiable gauge parameter $t$ that is tightly constrained by physicality ($0 \le M_{s&#39;,s}^{(o)}(t) \le 1$).</dd></div>
-  <div class="spec"><dt>Result</dt><dd>On 60 qubits across three IBM Heron devices (ibm_kingston, ibm_pittsburgh, ibm_boston), the learned instrument predicts depth-10 $X$-interleaved validation circuits with absolute $\langle Z \rangle$ deviations $\lesssim 10^{-3}$ versus $10^{-2}$ for confusion-matrix models; gauge bands are typically $&lt;10\%$ relative width due to tight physicality constraints; self-consistency checks via Cayley-Hamilton recurrences show no statistically resolved violations of stationarity or Markovianity.</dd></div>
-  <div class="spec"><dt>Authors</dt><dd class="small">Chia-Tung Chu, Su-un Lee, Han Zheng, Senrui Chen, Bibek Pokharel, Alireza Seif, Liang Jiang</dd></div>
-  <div class="spec"><dt>Similar papers</dt><dd class="small">
-    <div class="sub">In the database</div>
-    <div class="simlist">
-    <div><a href="https://arxiv.org/abs/2308.02079">Model-based Optimization of Superconducting Qubit Readout</a> <span class="sim">&nbsp;0.85</span></div>
-    <div><a href="https://arxiv.org/abs/2402.00413">System Characterization of Dispersive Readout in Superconducting Qubits</a> <span class="sim">&nbsp;0.83</span></div>
-    </div>
-    <div class="sub">Among all indexed papers</div>
-    <div class="simlist">
-    <div><a href="../2609.25208/index.html">Adaptive thresholding for scalable measurement-based qubit reset</a> <span class="sim">&nbsp;2026-09-23 · 91% match</span></div>
-    <div><a href="../2607.11668/index.html">Multi-Stage Mamba-Based Architecture for Fast and Scalable Superconducting Qubit Readout</a> <span class="sim">&nbsp;2026-07-14 · 77% match</span></div>
-    <div><a href="../2602.03938/index.html">Detailed, interpretable characterization of mid-circuit measurement on a transmon qubit</a> <span class="sim">&nbsp;2026-02-05 · 75% match</span></div>
-    <div><a href="../2601.22286/index.html">Efficient learning of logical noise from syndrome data</a> <span class="sim">&nbsp;2026-02-02 · 68% match</span></div>
-    <div><a href="../2604.25863/index.html">MCMit: Hardware-Software Co-Design for Mid-Circuit Measurement Error Mitigation</a> <span class="sim">&nbsp;2026-04-29 · 64% match</span></div>
-    </div>
-  </dd></div>
-  <div class="spec"><dt>Abstract</dt><dd class="small">Accurate modeling of mid-circuit measurements (MCMs) is essential for dynamic-circuit operations such as syndrome extraction, measurement-based reset, and the separation of state-preparation and measurement (SPAM) error. Unlike terminal measurement, a noisy MCM both produces a classical outcome and alters the incoming quantum state, thereby influencing subsequent circuit operations. This makes conventional confusion-matrix or fidelity-level characterization insufficient. Here we introduce an efficient, self-consistent protocol for learning a single-qubit Z-twirled MCM instrument, retaining the readout-backaction correlations and excitation-decay asymmetry that are erased in Pauli-error descriptions. Remarkably, readout bit strings from only three repeated MCMs on a maximally mixed input determine all learnable parameters of the reduced instrument, up to a single unidentifiable gauge degree of freedom. Physicality constraints convert this non-identifiability into narrow, gauge-aware error intervals. Implemented on IBM superconducting processors, the learned instrument improves Pauli-observable prediction by ${\sim}100\times$ over a conventional confusion-matrix model and reveals a $T_1$-decay dominated backaction. Our protocol provides a compact characterization layer for SPAM error separation, reset optimization, and noise-aware quantum error correction.</dd></div>
-</dl>
-</main>
+<section class="dayblock">
+<div class="day" id="d-2026-09-23">
+  <div>
+    <div class="stats">4 listed &nbsp;/&nbsp; 123 scanned</div>
+  </div>
+  <svg class="hist" width="160" height="30" viewBox="0 0 160 30" role="img" aria-label="Score distribution of all 123 papers, 0 to 100%">
+    <rect class="" x="0" y="2" width="6" height="28" fill="currentColor"/>
+    <rect class="" x="8" y="13" width="6" height="17" fill="currentColor"/>
+    <rect class="" x="16" y="19" width="6" height="11" fill="currentColor"/>
+    <rect class="" x="24" y="23" width="6" height="7" fill="currentColor"/>
+    <rect class="" x="32" y="23" width="6" height="7" fill="currentColor"/>
+    <rect class="" x="40" y="24" width="6" height="6" fill="currentColor"/>
+    <rect class="" x="48" y="25" width="6" height="5" fill="currentColor"/>
+    <rect class="" x="56" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="" x="64" y="25" width="6" height="5" fill="currentColor"/>
+    <rect class="" x="72" y="27" width="6" height="3" fill="currentColor"/>
+    <rect class="" x="80" y="27" width="6" height="3" fill="currentColor"/>
+    <rect class="" x="88" y="27" width="6" height="3" fill="currentColor"/>
+    <rect class="" x="96" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="" x="104" y="27" width="6" height="3" fill="currentColor"/>
+    <rect class="" x="112" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="" x="120" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="hi" x="128" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="hi" x="136" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="hi" x="144" y="27" width="6" height="3" fill="currentColor"/>
+    <rect class="hi" x="152" y="30" width="6" height="0" fill="currentColor"/>
+  </svg>
+</div>
+<a class="row" href="../2609.25208/index.html">
+  <div class="score" style="--h:131;--s:82%;--l:calc(var(--score-l) + 0.0% + 5.4% * var(--score-sign))">91.5<small>%</small><span class="track"><b style="width:91%"></b></span></div>
+  <div>
+    <h3>Adaptive thresholding for scalable measurement-based qubit reset</h3>
+    <p class="meta">Qian Cao, Unnati Akhouri, ..., Kater W. Murch. &nbsp;/&nbsp; 2609.25208 &nbsp;/&nbsp; quant-ph</p>
+    <p class="sum">Fast, high-fidelity qubit initialization is a key primitive for scalable quantum information processing, but conventional reset protocols either require long relaxation times or discard information contained in continuous measurement records. We demonstrate an adaptive measurement-based reset protocol for superconducting qubits that uses Bayesian inference to update the qubit-state estimate after each readout and dynamically adjust the feedback threshold.</p>
+  </div>
+</a><a class="row low" href="../2609.26714/index.html">
+  <div class="score" style="--h:41;--s:84%;--l:calc(var(--score-l) + 3.6% + 0.0% * var(--score-sign))">67.1<small>%</small><span class="track"><b style="width:67%"></b></span></div>
+  <div>
+    <h3>Evidence for a low-gap component in compressively stressed niobium thin films</h3>
+    <p class="meta">J. T. Paustian, Maciej Olszewski, ..., Ivan V. Pechenezhskiy. &nbsp;/&nbsp; 2609.26714 &nbsp;/&nbsp; quant-ph</p>
+    <p class="sum">We investigate the microwave response of sputtered Nb films as a function of biaxial film stress. Although transport measurements show nearly identical superconducting transition temperatures ($9.0\pm 0.2$K) and residual resistance ratios across the stress series, microwave resonators fabricated from highly compressive films exhibit enhanced temperature-dependent loss and larger frequency shifts.</p>
+  </div>
+</a><a class="row low" href="../2609.26784/index.html">
+  <div class="score" style="--h:26;--s:79%;--l:calc(var(--score-l) + 5.3% + 0.0% * var(--score-sign))">57.1<small>%</small><span class="track"><b style="width:57%"></b></span></div>
+  <div>
+    <h3>Error Suppression in Distributed Quantum Computing with Heterogeneous-Distance Lattice Surgery</h3>
+    <p class="meta">Daniel Dilley, Anastashia Jebraeilli, ..., Zain Saleem. &nbsp;/&nbsp; 2609.26784 &nbsp;/&nbsp; quant-ph</p>
+    <p class="sum">Distributed quantum computing requires fault-tolerant operations across inter-QPU links that can be substantially noisier than local gates. Uniformly increasing code distance provides additional protection but also enlarges data patches used for local storage and computation.</p>
+  </div>
+</a><a class="row low" href="../2609.25751/index.html">
+  <div class="score" style="--h:20;--s:77%;--l:calc(var(--score-l) + 6.0% + 0.0% * var(--score-sign))">50.3<small>%</small><span class="track"><b style="width:50%"></b></span></div>
+  <div>
+    <h3>Analysis of Josephson junctions switching time distributions for the detection of single microwave photons</h3>
+    <p class="meta">A. S. Piedjou Komnang, C. Guarcello, ..., G. Filatrella. &nbsp;/&nbsp; 2609.25751 &nbsp;/&nbsp; cond-mat.supr-con</p>
+    <p class="sum">We investigate an optimal scheme for the detection of single microwave photons by a Josephson junction through the analysis of its switching times distribution. The proposed analysis is of support for the decision about the existence of the photon field, which is important in the case of rare events.</p>
+  </div>
+</a></section></main>
 <footer></footer>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
