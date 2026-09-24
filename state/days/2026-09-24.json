@@ -1,0 +1,342 @@
+{
+  "date": "2026-09-24",
+  "n_fetched": 120,
+  "papers": [
+    {
+      "id": "2609.26880",
+      "title": "Bosonic Error Correction with Fluxonium",
+      "authors": [
+        "Shantanu R. Jha",
+        "Shoumik D. Chowdhury",
+        "Gabriele Rolleri",
+        "Anaida Ali",
+        "Lev-Arcady Sellem",
+        "Réouven Assouly",
+        "David Pahl",
+        "Lukas Pahl",
+        "Junyoung An",
+        "Farid Hassani",
+        "Hung-Yu Tsao",
+        "Chia-Chin Tsai",
+        "Aranya Goswami",
+        "Jeremie Boudreault",
+        "Jeffrey M. Gertler",
+        "Michael A. Gingras",
+        "Bethany M. Niedzielski",
+        "Jeffrey M. Knecht",
+        "Mollie E. Schwartz",
+        "Kyle Serniak",
+        "Jeffrey A. Grover",
+        "Baptiste Royer",
+        "Max Hays",
+        "William D. Oliver"
+      ],
+      "abstract": "Bosonic quantum error correction (QEC) offers a hardware-efficient route to fault-tolerant quantum computing. To date, however, superconducting circuit implementations of bosonic codes have utilized centimeter-scale 3D microwave cavities controlled by fixed-frequency transmon qubits, with logical lifetimes limited by transmon bit-flip errors. Here, we realize bosonic QEC in a fully planar architecture by pairing a heavy fluxonium, whose $451 \\pm 70~μ\\mathrm{s}$ bit-flip lifetime exceeds that of any control qubit in previous demonstrations, with an on-chip Archimedean spiral resonator several orders of magnitude smaller in mode volume than prior 3D cavities. We prepare finite-energy Gottesman-Kitaev-Preskill (GKP) states and stabilize them using measurement-free error correction with rapid fluxonium reset, extending the logical lifetime by a factor of $1.59 \\pm 0.05$. These results provide the first demonstration of resonator control using a weakly coupled fluxonium and, with it, the first realization of standalone bosonic QEC in a fully planar superconducting circuit architecture.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-22",
+      "score": 0.9759369757140024,
+      "similar_to": [
+        {
+          "title": "Hardware-efficient quantum error correction via concatenated bosonic qubits",
+          "id": "2409.13025",
+          "similarity": 0.8761435747146606
+        },
+        {
+          "title": "Demonstrating Quantum Error Correction that Extends the Lifetime of Quantum Information",
+          "id": "1602.04768",
+          "similarity": 0.873027503490448
+        }
+      ],
+      "summary": {
+        "summary": "Bosonic quantum error correction (QEC) offers a hardware-efficient route to fault-tolerant quantum computing. To date, however, superconducting circuit implementations of bosonic codes have utilized centimeter-scale 3D microwave cavities controlled by fixed-frequency transmon qubits, with logical lifetimes limited by transmon bit-flip errors.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.27456",
+      "title": "Precision and resource scaling of real-time flux distortion compensation for superconducting quantum control",
+      "authors": [
+        "Qi Zhou",
+        "Zi-Hao Mei",
+        "Peng Duan",
+        "Peng Wang",
+        "Liang-Liang Guo",
+        "Hao-Ran Tao",
+        "Wei-Cheng Kong",
+        "Hui Yang",
+        "Guo-Ping Guo",
+        "Zhao-Yun Chen"
+      ],
+      "abstract": "Real-time waveform generation supports dynamic quantum circuits without pre-storing complete waveforms for every execution path. However, long-lived distortions in flux-control lines degrade gate fidelity, requiring compensation to account for the actual pulse history. A frequency-domain inversion and time-domain fitting method is proposed for resource-efficient real-time flux distortion compensation. The method fits the reconstructed compensation impulse response with a compact hybrid infinite impulse response (IIR) and finite impulse response (FIR) filter. Look-ahead parallelization enables this filter to process synthesized waveforms at 1.2GSa/s on a field-programmable gate array (FPGA). Two-qubit cross-entropy benchmarking shows that real-time IIR filtering achieves a median controlled-Z Pauli fidelity close to the software-reference value of 99.57%. Numerical analysis and FPGA synthesis indicate approximately logarithmic growth in hardware resource use with compensation timescale. Extending compensation from microsecond to hundred-microsecond timescales increases look-up table (LUT) and digital signal processing (DSP) resource use by only about 14% and 4%, respectively, while maintaining a relative arithmetic error below $10^{-4}$. This work provides a scalable hardware foundation for high-fidelity flux control in dynamic superconducting quantum circuits.",
+      "categories": [
+        "quant-ph",
+        "cs.AR"
+      ],
+      "published": "2026-09-23",
+      "score": 0.7836462261667093,
+      "similar_to": [
+        {
+          "title": "Demonstrating real-time and low-latency quantum error correction with superconducting qubits",
+          "id": "2410.05202",
+          "similarity": 0.8640346527099609
+        },
+        {
+          "title": "Fast Flux-Activated Leakage Reduction for Superconducting Quantum Circuits",
+          "id": "2309.07060",
+          "similarity": 0.8588886260986328
+        }
+      ],
+      "summary": {
+        "summary": "Real-time waveform generation supports dynamic quantum circuits without pre-storing complete waveforms for every execution path. However, long-lived distortions in flux-control lines degrade gate fidelity, requiring compensation to account for the actual pulse history.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.26958",
+      "title": "Soft decoding for quantum LDPC codes with experimental validation",
+      "authors": [
+        "Arda Aydin",
+        "Edwin Tham",
+        "Nicolas Delfosse",
+        "Min Ye"
+      ],
+      "abstract": "The decoder is a critical component of a fault-tolerant quantum computer, computing corrections based on parity-check measurements performed throughout the computation. A soft decoder supplements its output with a confidence score which, when used alongside post-selection, can substantially improve logical performance. We introduce a soft beam search decoder for quantum low-density parity-check codes that uses internal decoder data as a confidence metric, removing the need for extra computation. We perform circuit-level simulations of five quantum LDPC codes relevant for superconducting and trapped ion architectures equipped with our global soft decoder and we obtain up to $580\\times$ logical-error suppression at a physical error rate of $10^{-3}$ while rejecting only $0.1\\%$ of shots. Then, we simulate an error detected measurement, which is a core logical operation of the walking cat architecture, using a streaming version of soft beam decoder and we achieve up to $210\\times$ error suppression while increasing the rejection probability by only $0.5$ percentage points. Finally, we revisit recent quantum LDPC code memory experiments on trapped ions, demonstrating that our soft decoder doubles the logical qubit lifetimes at the price of a mean rejection rate of $2.6\\%$--$5.6\\%$ per syndrome round, bringing all five codes into the beyond-breakeven regime.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-22",
+      "score": 0.6420387166407672,
+      "similar_to": [
+        {
+          "title": "Breakeven demonstration of quantum low-density parity-check codes",
+          "id": "2606.06455",
+          "similarity": 0.8745212554931641
+        },
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.8673954010009766
+        }
+      ],
+      "summary": {
+        "summary": "The decoder is a critical component of a fault-tolerant quantum computer, computing corrections based on parity-check measurements performed throughout the computation. A soft decoder supplements its output with a confidence score which, when used alongside post-selection, can substantially improve logical performance.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.27239",
+      "title": "Optimising Cryogenic Wiring for Microwave-frequency Millikelvin Quantum Processors",
+      "authors": [
+        "Adrien Di Lonardo",
+        "Giorge Gemisis",
+        "Juan Pablo Dehollain",
+        "Nathan K. Langford"
+      ],
+      "abstract": "Cryogenic capacity is a key bottleneck in the scaling of superconducting quantum processors, critically impacted by control wiring. Currently, wiring architectures are often designed following a small set of \"best-practice\" heuristics, little changed since they emerged for early, small-scale systems, and not rigorously evaluated for wider contexts. Here, we adopt a whole-system numerical modelling approach and present a systematic optimisation for the coaxial wiring design of a superconducting quantum processor. We identify optimised configurations that substantively outperform conventional designs in device temperature, noise burden, qubit capacity and other practical metrics. Importantly, our analysis delivers varied outcomes for different system contexts and operating regimes, illustrating the benefits of a systematic approach when there is no universal solution. Our results evaluate and sometimes challenge conventional wisdom in relation to design factors such as the utility of 0dB attenuators. We also use a wide exploration of cable configurations---directly enabled by our holistic and flexible numerical modelling approach---to develop more rigorously supported general principles for future cryogenic system design, based on a new conceptual framework to describe attenuator cascades that draws on analogies to low-noise amplifier chains. Our approach, design outcomes, and generalised analyses should also be readily applicable to other cryogenic quantum computing platforms. Finally, we support ready adoption of this approach through a web-based graphical tool which streamlines the analysis of the proposed framework under different contexts. Our results illustrate how our approach can help maximise the available computational resources of quantum processors at all system scales.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-23",
+      "score": 0.5892996858354589,
+      "similar_to": [
+        {
+          "title": "A Modular Cryogenic Link for Microwave Quantum Communication Over Distances of Tens of Meters",
+          "id": "2604.15971",
+          "similarity": 0.8806246519088745
+        },
+        {
+          "title": "Wireless millikelvin interconnects for superconducting quantum hardware",
+          "id": "2607.13834",
+          "similarity": 0.8732959032058716
+        }
+      ],
+      "summary": {
+        "summary": "Cryogenic capacity is a key bottleneck in the scaling of superconducting quantum processors, critically impacted by control wiring. Currently, wiring architectures are often designed following a small set of \"best-practice\" heuristics, little changed since they emerged for early, small-scale systems, and not rigorously evaluated for wider contexts.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.26946",
+      "title": "Monolithic Quantum Error Correction in the Presence of Distinguishability",
+      "authors": [
+        "Shubham P. Jain",
+        "Eric R. Hudson",
+        "Wesley C. Campbell",
+        "Alexey V. Gorshkov",
+        "Victor V. Albert"
+      ],
+      "abstract": "Quantum error-correcting codes require that the environment cannot distinguish relevant error processes acting on different codewords. In practice, residual Zeeman, Stark, or anharmonic interactions shift the underlying states, making errors distinguishable and weakening the conditions for perfect recovery. We study this effect with an analytically solvable four-level model and a canonical spontaneous-emission noise model for atoms and molecules. Distinguishability raises the effective Kraus rank of the noise channel, lowers the recovered fidelity, and sets an operational checking time that shortens as the frequency separation between the emitted photons increases. We find that rapid syndrome checking suppresses the buildup of distinguishability and quantify how fast one needs to check to restore near-perfect recovery. Error distinguishability is thus a practical limitation of monolithic error correction, and our analysis identifies fast syndrome extraction as a route to mitigating it.",
+      "categories": [
+        "quant-ph",
+        "physics.atom-ph"
+      ],
+      "published": "2026-09-22",
+      "score": 0.5271285776162394,
+      "similar_to": [
+        {
+          "title": "Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code",
+          "id": "2112.03708",
+          "similarity": 0.8400315046310425
+        },
+        {
+          "title": "Exponential suppression of bit or phase flip errors with repetitive error correction",
+          "id": "2102.06132",
+          "similarity": 0.829635500907898
+        }
+      ],
+      "summary": {
+        "summary": "Quantum error-correcting codes require that the environment cannot distinguish relevant error processes acting on different codewords. In practice, residual Zeeman, Stark, or anharmonic interactions shift the underlying states, making errors distinguishable and weakening the conditions for perfect recovery.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9759,
+    0.7836,
+    0.642,
+    0.5893,
+    0.5271,
+    0.3454,
+    0.332,
+    0.3299,
+    0.2696,
+    0.265,
+    0.2574,
+    0.2068,
+    0.1864,
+    0.1835,
+    0.1813,
+    0.1665,
+    0.1567,
+    0.1482,
+    0.1423,
+    0.1419,
+    0.1381,
+    0.1363,
+    0.1347,
+    0.132,
+    0.1302,
+    0.1246,
+    0.1236,
+    0.1095,
+    0.1077,
+    0.1052,
+    0.1049,
+    0.0976,
+    0.0863,
+    0.0855,
+    0.0827,
+    0.0769,
+    0.0718,
+    0.0651,
+    0.0645,
+    0.062,
+    0.0618,
+    0.0601,
+    0.0595,
+    0.0573,
+    0.0561,
+    0.0532,
+    0.052,
+    0.0517,
+    0.0512,
+    0.0499,
+    0.0498,
+    0.0483,
+    0.048,
+    0.0472,
+    0.0416,
+    0.04,
+    0.0391,
+    0.036,
+    0.0349,
+    0.0336,
+    0.0321,
+    0.0312,
+    0.0302,
+    0.0295,
+    0.029,
+    0.028,
+    0.0276,
+    0.0259,
+    0.0248,
+    0.0247,
+    0.0236,
+    0.023,
+    0.0225,
+    0.0213,
+    0.0204,
+    0.0189,
+    0.0182,
+    0.0172,
+    0.017,
+    0.0159,
+    0.0158,
+    0.0157,
+    0.0157,
+    0.0154,
+    0.0134,
+    0.0133,
+    0.0131,
+    0.0131,
+    0.0127,
+    0.0122,
+    0.0122,
+    0.0122,
+    0.0119,
+    0.0116,
+    0.0115,
+    0.0113,
+    0.0113,
+    0.0107,
+    0.0107,
+    0.0102,
+    0.0101,
+    0.0093,
+    0.0089,
+    0.0088,
+    0.008,
+    0.0077,
+    0.0077,
+    0.0076,
+    0.0075,
+    0.0072,
+    0.0067,
+    0.0051,
+    0.0043,
+    0.0042,
+    0.0039,
+    0.0028,
+    0.0021,
+    0.002,
+    0.0018,
+    0.0011
+  ]
+}
