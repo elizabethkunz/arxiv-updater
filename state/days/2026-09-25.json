@@ -1,0 +1,283 @@
+{
+  "date": "2026-09-25",
+  "n_fetched": 113,
+  "papers": [
+    {
+      "id": "2609.28881",
+      "title": "Reconfigurable bus-based quantum router for modular superconducting processors",
+      "authors": [
+        "Benzheng Yuan",
+        "chaojie Zhang",
+        "Yangyang Fei",
+        "Chuanbing Han",
+        "Haoran He",
+        "Huihui Sun",
+        "Bo Zhao",
+        "Fudong Liu",
+        "Weilong Wang",
+        "Zheng Shan"
+      ],
+      "abstract": "Scaling superconducting quantum processors requires interconnects that provide both non-local connectivity and parallel entangling operations. Nearest-neighbour couplings require distant interactions to be routed through SWAP networks, increasing the native two-qubit-gate count and potentially extending the circuit critical path. Here we introduce a bus-based reconfigurable quantum router for modular superconducting processors. Flux-tunable SQUID couplers selectively connect interface qubits to two shared buses, allowing destructive interference to suppress idle interactions while supporting two disjoint controlled-$Z$ (CZ) gates in parallel. Full-system Hamiltonian simulations yield parallel-gate errors at the level of $10^{-3}$, and open-system analysis identifies the coherence requirements for high-fidelity operation. We further assess the circuit-level consequences using hardware-aware compilation and resource-constrained scheduling. For 36-qubit quantum Fourier transform (QFT), QAOA-MaxCut and random-pairing circuits, the router reduces the median SWAP count by up to $34\\%$ and the native CZ count by up to $20\\%$ relative to a matched two-dimensional grid. End-to-end depth reduction is circuit dependent, reaching $20\\%$ for QAOA-MaxCut but remaining negligible for the QFT despite its lower gate count. These results show that enhanced connectivity and schedulable parallelism provide distinct benefits, establishing the router as a compiler-visible hardware resource for modular superconducting quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-24",
+      "score": 0.758718550061681,
+      "similar_to": [
+        {
+          "title": "Scalable Fluxonium Quantum Processors via Tunable-Coupler Architecture",
+          "id": "2604.13363",
+          "similarity": 0.8759279251098633
+        },
+        {
+          "title": "Fault-tolerant interfaces for modular quantum computing on diverse qubit platforms",
+          "id": "2510.05221",
+          "similarity": 0.8478614091873169
+        }
+      ],
+      "summary": {
+        "summary": "Scaling superconducting quantum processors requires interconnects that provide both non-local connectivity and parallel entangling operations. Nearest-neighbour couplings require distant interactions to be routed through SWAP networks, increasing the native two-qubit-gate count and potentially extending the circuit critical path.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.28897",
+      "title": "Characterization and Active Control of Position-Dependent Timing Dynamics in Superconducting Strip Detectors",
+      "authors": [
+        "Sahil R. Patel",
+        "Kristen M. Parzuchowski",
+        "Eli Mueller",
+        "Boris Korzh",
+        "Emanuel Knehr",
+        "Adam N. McCaughan",
+        "Martin J. Stevens",
+        "Matthew D. Shaw",
+        "Jason P. Allmaras"
+      ],
+      "abstract": "Superconducting strip single-photon detectors (SSPDs) have emerged as scalable, wide-strip variants of traditional nanowire counterparts. Despite practical advantages including improved optical fill factors and enhanced signal-to-noise ratios the fundamental detection physics governing these micro-scale geometries remains largely unexplored. Here, we investigate the underlying photoresponse of a 20 um-wide tungsten silicide SSPD, demonstrating a slew-rate-corrected timing jitter of 13.2 ps at 532 nm and 20.5 ps at 1550 nm, alongside saturated internal detection efficiency up to 1550 nm. Using focused free-space optical scanning, we reveal that detector timing jitter is strongly influenced by a spatially dependent slew rate between edge and center absorption events. To mitigate this impact, we utilize a parallel superconducting rail architecture to actively redistribute supercurrent. This in-situ tuning minimizes the latency mismatch and mitigates thermally activated intrinsic dark counts, extending the device's ability to operate at higher temperatures. Finally, comparing these dynamics with time-dependent Ginzburg-Landau (TDGL) modeling elucidates the physical origins of the position-dependent photoresponse, highlighting how superconducting rails or specialized readout electronics can mitigate negative impacts on timing jitter.",
+      "categories": [
+        "physics.ins-det",
+        "physics.app-ph",
+        "physics.optics",
+        "quant-ph"
+      ],
+      "published": "2026-09-24",
+      "score": 0.6162255705352655,
+      "similar_to": [
+        {
+          "title": "Real-time detection of correlated quasiparticle tunneling events in a multi-qubit superconducting device",
+          "id": "2602.01945",
+          "similarity": 0.8356292247772217
+        },
+        {
+          "title": "Enhancing Dispersive Readout of Superconducting Qubits Through Dynamic Control of the Dispersive Shift: Experiment and Theory",
+          "id": "2307.07765",
+          "similarity": 0.8126287460327148
+        }
+      ],
+      "summary": {
+        "summary": "Superconducting strip single-photon detectors (SSPDs) have emerged as scalable, wide-strip variants of traditional nanowire counterparts. Despite practical advantages including improved optical fill factors and enhanced signal-to-noise ratios the fundamental detection physics governing these micro-scale geometries remains largely unexplored.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.30175",
+      "title": "Trading Circuit Depth for Pulse Sparsity in Chromatic Dynamical Decoupling",
+      "authors": [
+        "Amy F. Brown",
+        "Daniel A. Lidar"
+      ],
+      "abstract": "Suppressing decoherence and crosstalk systematically across large networks of qubits is a pressing concern as qubit counts increase rapidly. General multi-qubit dynamical decoupling (DD) has historically been based on Hadamard matrices and orthogonal arrays, with instantaneous-pulse sequences whose circuit depth scales linearly with the number of qubits. Chromatic-Hadamard DD (CHaDD) improves upon these methods by properly coloring the hardware graph and assigning to each color a row of a Hadamard matrix, resulting in a circuit depth that scales linearly with the number of colors $C$, which can be as low as the chromatic number of the graph. Here, we explore the tradeoff between circuit depth and the pulse repetition rate (PRR), the average fraction of time steps in which a qubit is pulsed, i.e., a measure of pulse density. We introduce two single-axis sequences based on binary and Gray matrices, Chromatic-Binary DD (CBDD) and Chromatic-Gray DD (CGDD), which, for $C>2$, are special cases of non-minimum-depth CHaDD and achieve PRR $<2/C$ and PRR $=1/C$, respectively, compared with a PRR above $1/4$ for CHaDD, at the price of a circuit depth of $2^C$. In state preservation experiments on a $127$-qubit IBM processor with $C=3$, the less dense sequences outperform CHaDD at short times when the pulses are not robust; this advantage is largely eliminated by robust versions designed to compensate for coherent pulse errors, and among the robust sequences, CGDD uses the fewest pulses over a fixed protection time. Across non-robust $C=3$ and $C=5$ schedules, equal PRR on a fixed qubit subset is empirically associated with similar state preservation. Thus, the PRR serves as a practical figure of merit for chromatic DD whenever coherent pulse errors dominate.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-24",
+      "score": 0.5387775260482413,
+      "similar_to": [
+        {
+          "title": "Dynamical decoupling for superconducting qubits: a performance survey",
+          "id": "2207.03670",
+          "similarity": 0.8817638158798218
+        },
+        {
+          "title": "Qudit Dynamical Decoupling on a Superconducting Quantum Processor",
+          "id": "2407.04893",
+          "similarity": 0.8460087776184082
+        }
+      ],
+      "summary": {
+        "summary": "Suppressing decoherence and crosstalk systematically across large networks of qubits is a pressing concern as qubit counts increase rapidly. General multi-qubit dynamical decoupling (DD) has historically been based on Hadamard matrices and orthogonal arrays, with instantaneous-pulse sequences whose circuit depth scales linearly with the number of qubits.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.28657",
+      "title": "Quantum computational advantage in random-circuit sampling on IBM superconducting quantum computers",
+      "authors": [
+        "Tigran Sedrakyan",
+        "Yuxuan Zhang",
+        "Hovnatan Karapetyan",
+        "Joshua D. Baktay",
+        "Hrant Gharibyan",
+        "Hayk Tepanyan"
+      ],
+      "abstract": "We report forward random-circuit sampling (RCS) on the 120-qubit Nighthawk r2 superconducting processor (\\textit{ibm\\_phoenix}) with square-lattice connectivity, using 61 qubits, native CZ gates, and the standard cloud execution stack with no benchmark-specific calibration. Two independent fidelity estimators---mirror benchmarking and three- and four-patch cross-entropy benchmarking (XEB)---agree with each other at every measured depth, the mirror from 4 to 40 cycles and the patched estimators from 20 to 40 cycles, across more than two orders of magnitude of fidelity decay, and exceed the first-generation Nighthawk r1 device by more than an order of magnitude at fixed depth. The 36-cycle circuits sit at the depth where tensor-network contraction cost saturates at system size: a contraction-cost estimator validated against the published Sycamore and Zuchongzhi networks places the single-amplitude cost at $\\sim$$10^{22}$ complex operations. At $F_{\\mathrm{XEB}}(36)=2.3\\times10^{-3}$ under favorable memory assumptions this implies $1.2\\times10^{27}$ machine operations within the bounded-fidelity rejection-sampling model --- more than a century of runtime on the Frontier supercomputer --- to collect a $10^{6}$-sample ensemble, which takes only 19\\,s on Nighthawk r2. To our knowledge, this is the first demonstration of quantum advantage for a vanilla random-circuit sampling on a commercially and broadly accessible quantum processor that most non-expert quantum computer users can easily replicate.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-23",
+      "score": 0.5331926289293085,
+      "similar_to": [
+        {
+          "title": "Quantum supremacy using a programmable superconducting processor",
+          "id": "1910.11333",
+          "similarity": 0.8574271202087402
+        },
+        {
+          "title": "Benchmarking quantum gates and circuits",
+          "id": "2407.09942",
+          "similarity": 0.8537721633911133
+        }
+      ],
+      "summary": {
+        "summary": "We report forward random-circuit sampling (RCS) on the 120-qubit Nighthawk r2 superconducting processor (\\textit{ibm\\_phoenix}) with square-lattice connectivity, using 61 qubits, native CZ gates, and the standard cloud execution stack with no benchmark-specific calibration. Two independent fidelity estimators---mirror benchmarking and three- and four-patch cross-entropy benchmarking (XEB)---agree with each other at every measured depth, the mirror from 4 to 40 cycles and the patched estimators from 20 to 40 cycles, across more than two orders of magnitude of fidelity decay, and exceed the first-generation Nighthawk r1 device by more than an order of magnitude at fixed depth.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.7587,
+    0.6162,
+    0.5388,
+    0.5332,
+    0.3588,
+    0.349,
+    0.3405,
+    0.3211,
+    0.3149,
+    0.2822,
+    0.2664,
+    0.2264,
+    0.2244,
+    0.2131,
+    0.2098,
+    0.2019,
+    0.1988,
+    0.1829,
+    0.1794,
+    0.171,
+    0.1706,
+    0.1667,
+    0.1659,
+    0.1643,
+    0.149,
+    0.1488,
+    0.1366,
+    0.12,
+    0.1181,
+    0.1149,
+    0.1128,
+    0.1094,
+    0.1013,
+    0.0937,
+    0.0889,
+    0.0884,
+    0.0883,
+    0.086,
+    0.0788,
+    0.0776,
+    0.0632,
+    0.0572,
+    0.0567,
+    0.0528,
+    0.0502,
+    0.0494,
+    0.0492,
+    0.0491,
+    0.0459,
+    0.0457,
+    0.0449,
+    0.044,
+    0.0434,
+    0.0426,
+    0.0419,
+    0.0412,
+    0.0365,
+    0.0352,
+    0.0349,
+    0.0326,
+    0.0296,
+    0.0294,
+    0.0279,
+    0.0274,
+    0.0263,
+    0.0243,
+    0.0237,
+    0.0237,
+    0.0235,
+    0.0221,
+    0.0221,
+    0.0187,
+    0.0185,
+    0.0181,
+    0.0176,
+    0.0174,
+    0.0173,
+    0.0169,
+    0.0162,
+    0.0153,
+    0.0152,
+    0.0149,
+    0.0143,
+    0.0138,
+    0.0137,
+    0.0133,
+    0.0121,
+    0.0117,
+    0.0114,
+    0.0114,
+    0.0112,
+    0.0111,
+    0.0107,
+    0.0104,
+    0.0099,
+    0.009,
+    0.0083,
+    0.0081,
+    0.008,
+    0.0071,
+    0.0068,
+    0.0065,
+    0.0064,
+    0.0064,
+    0.0058,
+    0.0056,
+    0.0054,
+    0.0042,
+    0.0036,
+    0.0033,
+    0.0026,
+    0.0024,
+    0.0022
+  ]
+}

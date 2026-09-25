@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Quantum computational displacement sensing</title>
+<title>2026-09-25 · arXiv updates</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
@@ -188,39 +188,66 @@ footer { height: 72px; }
     <button id="theme" type="button" aria-label="Switch between light and dark theme" title="Light / dark"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1a7 7 0 0 0 0 14z" fill="currentColor"/></svg></button></nav>
 </div></div>
 <header class="hero"><div class="wrap">
-  <p class="eyebrow"><a href="../days/2026-04-16.html">2026-04-16</a> &nbsp;/&nbsp; <span class="bigscore" style="--h:80;--s:76%;--l:calc(var(--score-l) + 1.7% + 1.3% * var(--score-sign))">76.7% match</span></p>
-  <h1 class="paper">Quantum computational displacement sensing</h1>
-  <div class="actions">
-    <a class="btn primary" href="https://arxiv.org/abs/2604.13177">arXiv:2604.13177</a>
-    <a class="btn" href="https://arxiv.org/pdf/2604.13177">PDF</a>
-    <a class="btn" href="https://arxiv.org/html/2604.13177">HTML</a>
-  </div>
+  <h1>2026-09-25</h1>
 </div></header>
 <main class="wrap">
-<dl>
-  <div class="spec"><dt>Summary</dt><dd class="big">This work demonstrates quantum computational displacement sensing (QCDS) using a superconducting qubit coupled to a microwave cavity oscillator, where parameterized quantum circuits directly map displacement classification tasks onto qubit measurement outcomes without estimating the displacement itself. The protocol achieves up to 15 percentage-points higher classification accuracy than conventional quantum sensing baselines for certain binary classification tasks by computing task-specific functions of the sensed displacement in the quantum domain.</dd></div>
-  <div class="spec"><dt>Motivation</dt><dd>Conventional quantum sensing estimates the full signal before classical postprocessing for downstream tasks, but this approach is fundamentally limited by quantum noise when the goal is to compute a specific function of the signal rather than reconstruct it.</dd></div>
-  <div class="spec"><dt>Method</dt><dd>A transmon qubit coupled to a high-purity aluminum cavity implements parameterized unitaries before and after sensing a displacement $D(\boldsymbol{\alpha})$, using layers of single-qubit rotations $R(\theta_i, \phi_i)$ and echoed conditional displacement gates $\text{ECD}(\boldsymbol{\beta}_i)$ with $|\boldsymbol{\beta}_i| = 0.24$ fixed. Circuits with up to $N=10$ depths (38 trainable parameters) were trained in simulation and experimentally validated for spiral, geometric, and threshold-based binary classification tasks.</dd></div>
-  <div class="spec"><dt>Result</dt><dd>Experimental classification accuracy with $N=10$ reaches 15 percentage-points above cat-state and compass-state baselines; outperforms phase-preserving amplifier with HAYSTAC-level noise ($2.3$ photons) across winding numbers $W=1$ to $5$ in spiral tasks, matching two-mode squeezed-vacuum performance at $\sim1$ dB squeezing while requiring fewer probe photons; qubit readout fidelity (95–96%) and decoherence limit maximum achievable accuracy.</dd></div>
-  <div class="spec"><dt>Authors</dt><dd class="small">Sridhar Prabhu, Saeed A. Khan, Xingrui Song, Mathieu Ouellet, Ryotatsu Yanagimoto, Saswata Roy, Alen Senanian, Logan G. Wright, Valla Fatemi, Peter L. McMahon</dd></div>
-  <div class="spec"><dt>Similar papers</dt><dd class="small">
-    <div class="sub">In the database</div>
-    <div class="simlist">
-    <div><a href="https://arxiv.org/abs/2402.00413">System Characterization of Dispersive Readout in Superconducting Qubits</a> <span class="sim">&nbsp;0.85</span></div>
-    <div><a href="https://arxiv.org/abs/2607.17204">Heralded Leakage Detection with Preserved Computational-State Coherence in a Fixed-Frequency Transmon</a> <span class="sim">&nbsp;0.85</span></div>
-    </div>
-    <div class="sub">Among all indexed papers</div>
-    <div class="simlist">
-    <div><a href="../2607.17204/index.html">Heralded Leakage Detection with Preserved Computational-State Coherence in a Fixed-Frequency Transmon</a> <span class="sim">&nbsp;2026-07-21 · 96% match</span></div>
-    <div><a href="../2608.17400/index.html">Quantum sensors that compute: quantum computational magnetic-field sensing using a superconducting qubit</a> <span class="sim">&nbsp;2026-08-19 · 76% match</span></div>
-    <div><a href="../2609.07613/index.html">Experimental realization of quantum-computing-enhanced sensing</a> <span class="sim">&nbsp;2026-09-09 · 64% match</span></div>
-    <div><a href="../2606.22376/index.html">Vibe Calibration: Autonomous Bring-up of a 112-Qubit Superconducting Quantum Processor by a Skill-Orchestrating Language Agent</a> <span class="sim">&nbsp;2026-06-23 · 59% match</span></div>
-    <div><a href="../2609.28657/index.html">Quantum computational advantage in random-circuit sampling on IBM superconducting quantum computers</a> <span class="sim">&nbsp;2026-09-25 · 53% match</span></div>
-    </div>
-  </dd></div>
-  <div class="spec"><dt>Abstract</dt><dd class="small">Quantum computational sensing (QCS) combines quantum sensing with quantum computing to extract task-relevant information from the physical world. QCS can in principle achieve an accuracy advantage for specific tasks versus the alternative of raw-signal estimation using conventional quantum sensing followed by task-specific classical postprocessing. Here we report the experimental demonstration of quantum computational displacement sensing (QCDS) with a superconducting circuit comprising a qubit coupled to an oscillator. We consider binary classification sensing tasks, where the goal is to predict the class label of a single complex-valued displacement sensed once by the oscillator. Rather than estimating the displacement, our computational-sensing protocol -- using parameterized quantum circuits before and after sensing -- attempts to determine the binary class label using quantum processing and map it onto the ground or excited state of the qubit. A single measurement of the qubit directly outputs the prediction. We implemented circuits with up to 24 entangling gates and 38 free parameters, which were trained in silico. We show that increasing the circuit depth systematically improves expressivity and classification accuracy. We experimentally obtained an accuracy advantage over a suite of protocols that first use conventional quantum sensing to estimate the displacement before using classical postprocessing to perform prediction. For certain tasks, our protocol achieves a 15-percentage-points higher classification accuracy than most conventional approaches considered. Our results establish the feasibility of quantum computational sensing with noisy superconducting hardware and illustrate how integrating quantum computation with quantum sensing can enhance performance when the goal is to estimate a property or function of a signal rather than to estimate the signal.</dd></div>
-</dl>
-</main>
+<section class="dayblock">
+<div class="day" id="d-2026-09-25">
+  <div>
+    <div class="stats">4 listed &nbsp;/&nbsp; 113 scanned</div>
+  </div>
+  <svg class="hist" width="160" height="30" viewBox="0 0 160 30" role="img" aria-label="Score distribution of all 113 papers, 0 to 100%">
+    <rect class="" x="0" y="2" width="6" height="28" fill="currentColor"/>
+    <rect class="" x="8" y="18" width="6" height="12" fill="currentColor"/>
+    <rect class="" x="16" y="20" width="6" height="10" fill="currentColor"/>
+    <rect class="" x="24" y="20" width="6" height="10" fill="currentColor"/>
+    <rect class="" x="32" y="22" width="6" height="8" fill="currentColor"/>
+    <rect class="" x="40" y="25" width="6" height="5" fill="currentColor"/>
+    <rect class="" x="48" y="23" width="6" height="7" fill="currentColor"/>
+    <rect class="" x="56" y="27" width="6" height="3" fill="currentColor"/>
+    <rect class="" x="64" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="" x="72" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="" x="80" y="25" width="6" height="5" fill="currentColor"/>
+    <rect class="" x="88" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="" x="96" y="27" width="6" height="3" fill="currentColor"/>
+    <rect class="" x="104" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="" x="112" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="" x="120" y="27" width="6" height="3" fill="currentColor"/>
+    <rect class="hi" x="128" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="hi" x="136" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="hi" x="144" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="hi" x="152" y="30" width="6" height="0" fill="currentColor"/>
+  </svg>
+</div>
+<a class="row low" href="../2609.28881/index.html">
+  <div class="score" style="--h:75;--s:77%;--l:calc(var(--score-l) + 1.8% + 1.2% * var(--score-sign))">75.9<small>%</small><span class="track"><b style="width:76%"></b></span></div>
+  <div>
+    <h3>Reconfigurable bus-based quantum router for modular superconducting processors</h3>
+    <p class="meta">Benzheng Yuan, chaojie Zhang, ..., Zheng Shan. &nbsp;/&nbsp; 2609.28881 &nbsp;/&nbsp; quant-ph</p>
+    <p class="sum">Scaling superconducting quantum processors requires interconnects that provide both non-local connectivity and parallel entangling operations. Nearest-neighbour couplings require distant interactions to be routed through SWAP networks, increasing the native two-qubit-gate count and potentially extending the circuit critical path.</p>
+  </div>
+</a><a class="row low" href="../2609.28897/index.html">
+  <div class="score" style="--h:31;--s:81%;--l:calc(var(--score-l) + 4.7% + 0.0% * var(--score-sign))">61.6<small>%</small><span class="track"><b style="width:62%"></b></span></div>
+  <div>
+    <h3>Characterization and Active Control of Position-Dependent Timing Dynamics in Superconducting Strip Detectors</h3>
+    <p class="meta">Sahil R. Patel, Kristen M. Parzuchowski, ..., Jason P. Allmaras. &nbsp;/&nbsp; 2609.28897 &nbsp;/&nbsp; physics.ins-det</p>
+    <p class="sum">Superconducting strip single-photon detectors (SSPDs) have emerged as scalable, wide-strip variants of traditional nanowire counterparts. Despite practical advantages including improved optical fill factors and enhanced signal-to-noise ratios the fundamental detection physics governing these micro-scale geometries remains largely unexplored.</p>
+  </div>
+</a><a class="row low" href="../2609.30175/index.html">
+  <div class="score" style="--h:23;--s:78%;--l:calc(var(--score-l) + 5.6% + 0.0% * var(--score-sign))">53.9<small>%</small><span class="track"><b style="width:54%"></b></span></div>
+  <div>
+    <h3>Trading Circuit Depth for Pulse Sparsity in Chromatic Dynamical Decoupling</h3>
+    <p class="meta">Amy F. Brown, Daniel A. Lidar. &nbsp;/&nbsp; 2609.30175 &nbsp;/&nbsp; quant-ph</p>
+    <p class="sum">Suppressing decoherence and crosstalk systematically across large networks of qubits is a pressing concern as qubit counts increase rapidly. General multi-qubit dynamical decoupling (DD) has historically been based on Hadamard matrices and orthogonal arrays, with instantaneous-pulse sequences whose circuit depth scales linearly with the number of qubits.</p>
+  </div>
+</a><a class="row low" href="../2609.28657/index.html">
+  <div class="score" style="--h:23;--s:78%;--l:calc(var(--score-l) + 5.7% + 0.0% * var(--score-sign))">53.3<small>%</small><span class="track"><b style="width:53%"></b></span></div>
+  <div>
+    <h3>Quantum computational advantage in random-circuit sampling on IBM superconducting quantum computers</h3>
+    <p class="meta">Tigran Sedrakyan, Yuxuan Zhang, ..., Hayk Tepanyan. &nbsp;/&nbsp; 2609.28657 &nbsp;/&nbsp; quant-ph</p>
+    <p class="sum">We report forward random-circuit sampling (RCS) on the 120-qubit Nighthawk r2 superconducting processor (\textit{ibm\_phoenix}) with square-lattice connectivity, using 61 qubits, native CZ gates, and the standard cloud execution stack with no benchmark-specific calibration. Two independent fidelity estimators---mirror benchmarking and three- and four-patch cross-entropy benchmarking (XEB)---agree with each other at every measured depth, the mirror from 4 to 40 cycles and the patched estimators from 20 to 40 cycles, across more than two orders of magnitude of fidelity decay, and exceed the first-generation Nighthawk r1 device by more than an order of magnitude at fixed depth.</p>
+  </div>
+</a></section></main>
 <footer></footer>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
