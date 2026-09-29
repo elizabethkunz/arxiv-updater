@@ -1,0 +1,544 @@
+{
+  "date": "2026-09-29",
+  "n_fetched": 217,
+  "papers": [
+    {
+      "id": "2609.35016",
+      "title": "Experimental quantum-computing-enhanced sensing using Grover's algorithm",
+      "authors": [
+        "Mathieu Ouellet",
+        "Purnendu Sen",
+        "Xiangqin Wang",
+        "Saswata Roy",
+        "Xingrui Song",
+        "Vladimir Kremenetski",
+        "Sridhar Prabhu",
+        "Valla Fatemi",
+        "Peter L. McMahon"
+      ],
+      "abstract": "The combination of quantum sensing with quantum computing to provide an enhancement over conventional quantum sensing has recently emerged as a promising potential application of quantum computing that could give advantages without needing large-scale or fault-tolerant hardware. In this work, we report an experimental demonstration of a recent theoretical proposal to repurpose Grover's search algorithm to improve the ability to detect signals with unknown frequency within a large detection bandwidth. Our experiments were based on a system comprising a single superconducting qubit coupled to a single superconducting cavity, highlighting the modest hardware requirements for realizing the protocol. We found that Grover-based sensing was able to outperform the natural non-Grover baseline for our experimental platform for detection bandwidths $>$10~MHz, with an advantage that empirically grew superlinearly with the bandwidth beyond that break-even point. The use of the Grover-based protocol reduced the amount of signal that needed to be sensed to make an accurate detection decision by more than 10$\\times$ for choices of larger detection bandwidth and higher desired detection accuracy. Our results provide a proof-of-principle validation that Grover-based quantum computational sensing can be realized in near-term hardware and provide a metrological advantage well beyond break-even in spite of the additional protocol complexity.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-28",
+      "score": 0.8089583212193092,
+      "similar_to": [
+        {
+          "title": "Beating the Ramsey limit on sensing with deterministic qubit control",
+          "id": "2408.15926",
+          "similarity": 0.8638430833816528
+        },
+        {
+          "title": "Evidence for the utility of quantum computing before fault tolerance",
+          "id": null,
+          "similarity": 0.8387547135353088
+        }
+      ],
+      "summary": {
+        "summary": "The combination of quantum sensing with quantum computing to provide an enhancement over conventional quantum sensing has recently emerged as a promising potential application of quantum computing that could give advantages without needing large-scale or fault-tolerant hardware. In this work, we report an experimental demonstration of a recent theoretical proposal to repurpose Grover's search algorithm to improve the ability to detect signals with unknown frequency within a large detection bandwidth.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.09495",
+      "title": "Certifying bipartite entanglement on a superconducting processor from a corrected QAOA cost layer",
+      "authors": [
+        "Carlos-Miguel Lorenzo"
+      ],
+      "abstract": "The Quantum Approximate Optimisation Algorithm is the canonical near-term heuristic, yet on real superconducting hardware its behaviour is set by device physics, not by the algorithm. Hardware demonstrations rarely prove the intended coupling is realised, that genuine entanglement is prepared, or what controls it. We report a pre-registered single-device study on the nine-qubit superconducting processor Red at the Barcelona Supercomputing Center, using its five-qubit component. Across six calibrations we certify bipartite entanglement of a corrected QAOA cost layer on the good coupler at depth one by two-qubit tomographic negativity: 0.077, BCa 95% CI [0.065, 0.091], excluding zero every day, while the coupling-off twin stays separable and the degraded coupler equals zero. We then measure the device physics directly: in a pre-registered manipulation on a fixed Bell preparation (not the QAOA layer), reducing the CZ pulse amplitude causally reduces the certified negativity along a positive, well-fit slope (R^2 = 0.83-0.96), every rung-level interval excluding zero and surviving Holm and Benjamini-Hochberg correction. This is a local linearisation of a peaked response, not a global monotone law: the negativity peaks at conditional phase |zeta| = pi, which the nominal amplitude overshoots. The J=0 twin is a separate off-state control and the fringe visibility is constant, so the effect is coherent. The average gate fidelity is non-monotone in the drive and is reported only as a diagnostic. A per-circuit statevector guardrail excludes a diagonal compilation fault we disclose and repair. A randomized-measurement witness is consistent with entanglement but underpowered. The certificate collapses by depth three, and a pre-registered sixteen-instance depth-three ensemble shows no optimisation signal (one-sided Wilcoxon p = 0.15). We claim no advantage; the instances are classically trivial.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-26",
+      "score": 0.6196533064566794,
+      "similar_to": [
+        {
+          "title": "Above 99.9% Fidelity Single-Qubit Gates, Two-Qubit Gates, and Readout in a Single Superconducting Quantum Device",
+          "id": "2508.16437",
+          "similarity": 0.833737313747406
+        },
+        {
+          "title": "Bias-preserving and error-detectable entangling operations in a superconducting dual-rail system",
+          "id": "2503.10935",
+          "similarity": 0.8330909013748169
+        }
+      ],
+      "summary": {
+        "summary": "This pre-registered study on a five-qubit superconducting processor certifies bipartite entanglement in a depth-one QAOA cost layer via two-qubit tomographic negativity of 0.077 (95% CI [0.065, 0.091]), with the entanglement signal controlled by CZ pulse amplitude and peaking at conditional phase $|\\zeta| = \\pi$. The entanglement certificate collapses by depth three and no optimization advantage emerges at depth three, highlighting how device physics—not algorithm design—governs QAOA behavior on current hardware.",
+        "motivation": "QAOA demonstrations on superconducting processors rarely prove that intended two-qubit coupling is realized, genuine entanglement is prepared, or what physical mechanisms control it, motivating careful characterization of the coupling strength and its relationship to entanglement certification.",
+        "method": "On the nine-qubit Red processor at BSC (five-qubit subset), six calibrations certified bipartite entanglement of a corrected QAOA cost layer at depth one using two-qubit tomographic negativity, then directly measured device physics by varying CZ pulse amplitude on a fixed Bell preparation and fit the causal dependence of negativity.",
+        "result": "Certified negativity reached 0.077 with high statistical confidence (BCa 95% CI [0.065, 0.091]), scaled linearly with CZ amplitude ($R^2 = 0.83$–0.96), peaked at $|\\zeta| = \\pi$, and disappeared by depth three with no optimization signal (Wilcoxon $p = 0.15$).",
+        "source": "abstract",
+        "generated_by": "claude-haiku-4-5"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.33228",
+      "title": "Occupation-selective photon-pair interactions in a flux-pumped SQUID resonator",
+      "authors": [
+        "L. N. Ferreira",
+        "D. Z. Rossatto",
+        "A. S. M. de Castro",
+        "G. D. de Moraes Neto"
+      ],
+      "abstract": "Flux-pumped Josephson circuits provide a versatile platform for parametric photon generation and multimode bosonic control. We identify an occupation-conditioned pair interaction that arises when two harmonic normal modes participate in the same driven SQUID coordinate. We consider a degenerate pair process in which two photons are created or annihilated in a signal mode while the occupation of a second harmonic mode remains unchanged. Although it does not exchange excitations, this controller mode modifies both the resonance frequency and the strength of the pair transition. The two effects have different physical origins: diagonal Josephson nonlinearities shift the pair resonance, whereas the nonlinear Josephson matrix element makes the avoided-crossing gap itself depend on the controller occupation. Starting from the full Josephson cosine, we develop complementary time-dependent Schrieffer--Wolff and Magnus descriptions that expose the direct and virtual processes responsible for this interaction, and benchmark the resulting effective theory against a numerically converged Floquet treatment of the unexpanded two-mode circuit Hamiltonian. The occupation dependence produces a two-dimensional pair spectrum that enables selective transitions within the bosonic Fock lattice. When the controller is prepared in a coherent superposition, the same interaction converts this conditional dynamics into signal--controller entanglement and controller-dependent non-Gaussian state generation. Observable-level comparisons further show that the variation of the pair-transition strength cannot be reproduced by occupation-dependent resonance shifts alone. These results establish a boson-controlled parametric interaction in which the state of one harmonic mode controls both the spectral position and the coupling strength of a nonlinear process in another.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-27",
+      "score": 0.5830650275801024,
+      "similar_to": [
+        {
+          "title": "High-gain and large-bandwidth Josephson parametric amplifier influenced by Fabry-Perot interference",
+          "id": "2604.13881",
+          "similarity": 0.8450146913528442
+        },
+        {
+          "title": "Collapse and Inversion of the Josephson Potential in a Strongly Driven Superconducting Circuit",
+          "id": "2607.14344",
+          "similarity": 0.8444383144378662
+        }
+      ],
+      "summary": {
+        "summary": "Flux-pumped Josephson circuits provide a versatile platform for parametric photon generation and multimode bosonic control. We identify an occupation-conditioned pair interaction that arises when two harmonic normal modes participate in the same driven SQUID coordinate.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.31934",
+      "title": "Quantum error mitigation from information dynamics",
+      "authors": [
+        "Philippe Suchsland",
+        "Thomas Schuster",
+        "Manuel S. Rudolph",
+        "Nicholas Noll",
+        "Thomas E. O'Brien",
+        "Zlatko K. Minev"
+      ],
+      "abstract": "Overcoming experimental errors is a central challenge in quantum science. This challenge is particularly acute in large and complex quantum circuits, where quantum information spreads into exponentially many paths, foiling any direct attempt to understand errors' impact. In this work, we present a novel approach to understanding and mitigating experimental errors, based on a surprisingly compact representation of a quantum circuit's information dynamics, the reactivity function. The shape of a circuit's reactivity function governs its noise response, and its amenability to different error mitigation methods. From this viewpoint, we introduce two complementary such methods. The first, Pauli-path zero-noise extrapolation, fits a parameterized model to a circuit's reactivity function and uses it to accurately extrapolate to zero noise. The second, tunable error cancellation, filters a circuit's reactivity function to cancel noise on all information up to a threshold locality. Crucially, both methods feature a tuning parameter that allows one to systematically improve their accuracy until convergence. Across three circuit families from published experiments, our methods overcome conventional zero-noise extrapolation biases as large as 30%; at $\\sim$$10^{-2}$ root-mean-square error, they reduce sampling cost relative to probabilistic error cancellation by up to a factor of $10^3$.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.other"
+      ],
+      "published": "2026-09-25",
+      "score": 0.5751095463175309,
+      "similar_to": [
+        {
+          "title": "Erasure qubits: Overcoming the $T_1$ limit in superconducting circuits",
+          "id": "2208.05461",
+          "similarity": 0.8696032166481018
+        },
+        {
+          "title": "Exponential suppression of bit or phase flip errors with repetitive error correction",
+          "id": "2102.06132",
+          "similarity": 0.8578967452049255
+        }
+      ],
+      "summary": {
+        "summary": "Overcoming experimental errors is a central challenge in quantum science. This challenge is particularly acute in large and complex quantum circuits, where quantum information spreads into exponentially many paths, foiling any direct attempt to understand errors' impact.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.33163",
+      "title": "JFS-CryoMem: A Cryogenic Memory with Voltage-Controlled Superconducting Devices and Femtojoule-Scale Write/Read Energies",
+      "authors": [
+        "Md Rahatul Islam Udoy",
+        "Md Mazharul Islam",
+        "Juan P. Mendez",
+        "Denis Mamaluy",
+        "Aaron J. Muhowski",
+        "Samuel Hawkins",
+        "William M. Martinez",
+        "Courtney Sovinec",
+        "Wei Pan",
+        "Ahmedullah Aziz"
+      ],
+      "abstract": "Scalable cryogenic systems require memory that combines nonvolatile storage, selective access, low thermal disturbance, and compatibility with superconducting electronics. We present a cryogenic memory architecture that integrates a voltage-controlled Josephson junction field-effect transistor (JJFET) selector with a ferroelectric superconducting quantum interference device (FeSQUID) storage element, hereafter termed JFS-CryoMem. The JJFET provides gate-controlled cell selection, whereas the FeSQUID stores information in stable remanent-polarization states. JFS-CryoMem features separate read and write path mechanisms that support nondestructive readout and independent optimization of programming and sensing conditions. The architecture is evaluated using experimentally calibrated compact models that reproduce the measured electrical characteristics of both constituent devices. We demonstrate selective programming using a half-bias scheme, nonvolatile state retention, and distinguishable readout in a $4 \\times 4$ array while accounting for the selected cell and all unselected parallel branches. We then extend the analysis to arrays up to $16 \\times 16$ and examine how array scaling alters current distribution, column-equivalent resistance, readout separation, required bitline current, and read energy. The results reveal the principal sensing and energy tradeoffs associated with larger arrays and identify the operating conditions required to preserve read distinguishability as the array grows. JFS-CryoMem provides a device-to-array framework for cryogenic memory in quantum, high-performance, and space-oriented computing systems.",
+      "categories": [
+        "cs.ET",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-09-27",
+      "score": 0.5672198931643291,
+      "similar_to": [
+        {
+          "title": "Superconducting Flux Memory for Cryogenic Applications",
+          "id": "2609.00772",
+          "similarity": 0.8768513202667236
+        },
+        {
+          "title": "Electrical post-fabrication tuning of aluminum Josephson junctions at room temperature",
+          "id": "2602.20002",
+          "similarity": 0.8240135908126831
+        }
+      ],
+      "summary": {
+        "summary": "Scalable cryogenic systems require memory that combines nonvolatile storage, selective access, low thermal disturbance, and compatibility with superconducting electronics. We present a cryogenic memory architecture that integrates a voltage-controlled Josephson junction field-effect transistor (JJFET) selector with a ferroelectric superconducting quantum interference device (FeSQUID) storage element, hereafter termed JFS-CryoMem.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.32943",
+      "title": "The wiring sets a phase-blind quantum memory's gap, the weight caps its coherence",
+      "authors": [
+        "Ruini Qian",
+        "Zhaobin Lyu",
+        "Zelong Yin",
+        "Jingjing Hu",
+        "Dengfeng Li",
+        "Shuoming An"
+      ],
+      "abstract": "Engineered dissipation corrects errors, yet a memory's phase decays. What the memory's gap measures is not settled. Here we show that when each jump resets one basis state, the wiring can set the gap time while the phase keeps its rate. Under dephasing the gap time spans two orders across wirings; the phase does not. In this class, a contrast on two or more qubits fades faster than a bare qubit at any distance; no such pump power substitutes. The ceiling is two over the qubits the contrast spans. A two-branch pump can escape it at distance three; a two-clock test runs on published data.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-09-26",
+      "score": 0.5494139383687417,
+      "similar_to": [
+        {
+          "title": "Erasure qubits: Overcoming the $T_1$ limit in superconducting circuits",
+          "id": "2208.05461",
+          "similarity": 0.8439191579818726
+        },
+        {
+          "title": "Correlated Phase Error Bursts in a Gap-Engineered Superconducting Qubit Array",
+          "id": null,
+          "similarity": 0.8233247995376587
+        }
+      ],
+      "summary": {
+        "summary": "Engineered dissipation corrects errors, yet a memory's phase decays. What the memory's gap measures is not settled.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.35091",
+      "title": "Low-Temperature Stabilization of $δ$-NbN Superconducting Thin Films through Energy-Selective Ion Beam Sputtering",
+      "authors": [
+        "Yifan Liu",
+        "Junwoo Lee",
+        "Mingyu Xu",
+        "Weiwei Xie",
+        "Robert J. Cava",
+        "Qi Hua Fan"
+      ],
+      "abstract": "Achieving high-quality superconducting thin films at low temperatures is a central challenge for scalable quantum device integration and Complementary Metal-Oxide-Semiconductor (CMOS)-compatible fabrication. Here, we demonstrate a room-temperature magnetron sputtering approach for synthesizing niobium nitride (NbN) thin films using a novel energy-selective ion source that enables independent control of ion energy and ion flux. This capability provides a powerful route to precisely tailor surface kinetics and crystallization pathways, overcoming longstanding limitations in stabilizing high-quality NbN at reduced temperatures. The resulting films were characterized by superconducting transport measurements, X-ray diffraction, X-ray photoelectron spectroscopy, and transmission electron microscopy. Compared with conventional reactive sputtering, ion beam-assisted growth yields a substantial narrowing of the transition width at the superconducting temperature, indicating improved phase purity and electronic homogeneity. Furthermore, this work introduces energy-selective ion control as a general, non-equilibrium route to stabilize metastable superconducting phases at low temperatures, offering a new design paradigm for thin-film quantum materials.",
+      "categories": [
+        "cond-mat.supr-con",
+        "physics.app-ph"
+      ],
+      "published": "2026-09-28",
+      "score": 0.5228301466095117,
+      "similar_to": [
+        {
+          "title": "Assessing the Sensitivity of Niobium- and Tantalum-Based Superconducting Qubits to Infrared Radiation",
+          "id": "2602.05806",
+          "similarity": 0.8001807928085327
+        },
+        {
+          "title": "High-Q superconducting microwave resonators using MBE titanium nitride",
+          "id": "2607.15230",
+          "similarity": 0.796418309211731
+        }
+      ],
+      "summary": {
+        "summary": "Achieving high-quality superconducting thin films at low temperatures is a central challenge for scalable quantum device integration and Complementary Metal-Oxide-Semiconductor (CMOS)-compatible fabrication. Here, we demonstrate a room-temperature magnetron sputtering approach for synthesizing niobium nitride (NbN) thin films using a novel energy-selective ion source that enables independent control of ion energy and ion flux.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2609.31721",
+      "title": "Growth and Interface Engineering of Superconducting TiN on Sapphire by Thermal-Laser Epitaxy",
+      "authors": [
+        "Anthony Hyatt",
+        "Anand Ithepalli",
+        "Eegene Clara Chung",
+        "Yorick A. Birkholzer",
+        "Brendan Faeth",
+        "Huili Grace Xing",
+        "David A. Muller",
+        "Darrell G. Schlom",
+        "Debdeep Jena"
+      ],
+      "abstract": "Thermal-laser epitaxy (TLE) extends the accessible pressure, temperature, and growth-rate regimes of conventional molecular-beam epitaxy, enabling in situ laser annealing, high-purity buffer-layer growth, and efficient evaporation of refractory elements. These capabilities make TLE a promising platform for engineering low-loss superconducting resonators and Josephson-junction heterostructures. Here, we study the TLE growth of TiN on sapphire and observe improved transport properties with increasing growth temperature up to 1150 C. Unfortunately, we observe that the high ammonia pressure and elevated substrate temperatures required for optimal TiN properties promote reactions at the sapphire surface, resulting in voids at the TiN-substrate interface. These defects increase interfacial surface area, introduce dangling bonds, and could compromise tunnel-barrier heterostructures. We mitigate this degradation using an initial TiN seed layer grown at 850 C. With the seed layer, we achieve a superconducting transition temperature of 5.8 K, a residual resistivity ratio of 12.2, and a resistivity of 1.19 micro-ohm cm at 10 K, which, to our knowledge, is the lowest reported for TiN grown on sapphire.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-09-21",
+      "score": 0.5074434148410204,
+      "similar_to": [
+        {
+          "title": "High-Q superconducting microwave resonators using MBE titanium nitride",
+          "id": "2607.15230",
+          "similarity": 0.8836308121681213
+        },
+        {
+          "title": "Reducing TLS loss in tantalum CPW resonators using titanium sacrificial layers",
+          "id": "2601.16369",
+          "similarity": 0.8239620327949524
+        }
+      ],
+      "summary": {
+        "summary": "Thermal-laser epitaxy (TLE) extends the accessible pressure, temperature, and growth-rate regimes of conventional molecular-beam epitaxy, enabling in situ laser annealing, high-purity buffer-layer growth, and efficient evaporation of refractory elements. These capabilities make TLE a promising platform for engineering low-loss superconducting resonators and Josephson-junction heterostructures.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.809,
+    0.6197,
+    0.5831,
+    0.5751,
+    0.5672,
+    0.5494,
+    0.5228,
+    0.5074,
+    0.4637,
+    0.4423,
+    0.4402,
+    0.4006,
+    0.3647,
+    0.3437,
+    0.3367,
+    0.3366,
+    0.3268,
+    0.3164,
+    0.2839,
+    0.2795,
+    0.2126,
+    0.2089,
+    0.2074,
+    0.205,
+    0.2048,
+    0.2042,
+    0.2018,
+    0.2015,
+    0.1987,
+    0.1952,
+    0.1853,
+    0.178,
+    0.177,
+    0.1623,
+    0.1615,
+    0.1604,
+    0.1603,
+    0.1581,
+    0.1528,
+    0.1503,
+    0.1502,
+    0.1492,
+    0.1489,
+    0.1452,
+    0.1437,
+    0.14,
+    0.1352,
+    0.1326,
+    0.1291,
+    0.1245,
+    0.1234,
+    0.123,
+    0.1191,
+    0.1159,
+    0.1138,
+    0.106,
+    0.097,
+    0.0968,
+    0.0959,
+    0.0885,
+    0.0873,
+    0.0799,
+    0.079,
+    0.0776,
+    0.0752,
+    0.0745,
+    0.0722,
+    0.0714,
+    0.0701,
+    0.0681,
+    0.0681,
+    0.0677,
+    0.0669,
+    0.0661,
+    0.0657,
+    0.0623,
+    0.0621,
+    0.062,
+    0.0614,
+    0.0594,
+    0.0584,
+    0.0573,
+    0.0571,
+    0.0558,
+    0.0555,
+    0.0534,
+    0.0533,
+    0.0528,
+    0.0511,
+    0.0506,
+    0.0496,
+    0.0493,
+    0.049,
+    0.0486,
+    0.0472,
+    0.0468,
+    0.0435,
+    0.043,
+    0.0429,
+    0.0425,
+    0.0413,
+    0.0412,
+    0.04,
+    0.0375,
+    0.0363,
+    0.0354,
+    0.0354,
+    0.0352,
+    0.035,
+    0.035,
+    0.0348,
+    0.0341,
+    0.0336,
+    0.0335,
+    0.0335,
+    0.0332,
+    0.0325,
+    0.0319,
+    0.0315,
+    0.0313,
+    0.0309,
+    0.0303,
+    0.0289,
+    0.0289,
+    0.0282,
+    0.0275,
+    0.0273,
+    0.027,
+    0.027,
+    0.0268,
+    0.0255,
+    0.0254,
+    0.025,
+    0.0249,
+    0.0244,
+    0.0242,
+    0.0241,
+    0.0241,
+    0.0241,
+    0.0239,
+    0.0235,
+    0.0223,
+    0.022,
+    0.022,
+    0.0217,
+    0.0215,
+    0.0215,
+    0.0213,
+    0.0209,
+    0.0205,
+    0.0196,
+    0.0195,
+    0.0192,
+    0.0192,
+    0.0184,
+    0.0178,
+    0.0178,
+    0.0175,
+    0.0167,
+    0.0167,
+    0.0166,
+    0.0161,
+    0.0158,
+    0.015,
+    0.0149,
+    0.0141,
+    0.0138,
+    0.0136,
+    0.013,
+    0.0128,
+    0.0125,
+    0.0125,
+    0.0124,
+    0.012,
+    0.0111,
+    0.0109,
+    0.0109,
+    0.0106,
+    0.0102,
+    0.0096,
+    0.0096,
+    0.0094,
+    0.0091,
+    0.0084,
+    0.0081,
+    0.0077,
+    0.0076,
+    0.0075,
+    0.0074,
+    0.0071,
+    0.0071,
+    0.0071,
+    0.007,
+    0.0065,
+    0.0061,
+    0.0057,
+    0.0056,
+    0.0051,
+    0.0051,
+    0.005,
+    0.0048,
+    0.0047,
+    0.0046,
+    0.0041,
+    0.0041,
+    0.004,
+    0.004,
+    0.0038,
+    0.0037,
+    0.0035,
+    0.0031,
+    0.0029,
+    0.0027,
+    0.0026,
+    0.0022,
+    0.0021,
+    0.0016
+  ]
+}
