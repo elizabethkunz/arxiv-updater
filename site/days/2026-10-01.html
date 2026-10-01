@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Efficient $n$-qubit entangling operations via a superconducting quantum router</title>
+<title>2026-10-01 · arXiv updates</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
@@ -188,39 +188,73 @@ footer { height: 72px; }
     <button id="theme" type="button" aria-label="Switch between light and dark theme" title="Light / dark"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1a7 7 0 0 0 0 14z" fill="currentColor"/></svg></button></nav>
 </div></div>
 <header class="hero"><div class="wrap">
-  <p class="eyebrow"><a href="../days/2026-04-20.html">2026-04-20</a> &nbsp;/&nbsp; <span class="bigscore" style="--h:111;--s:76%;--l:calc(var(--score-l) + 0.5% + 3.4% * var(--score-sign))">84.7% match</span></p>
-  <h1 class="paper">Efficient $n$-qubit entangling operations via a superconducting quantum router</h1>
-  <div class="actions">
-    <a class="btn primary" href="https://arxiv.org/abs/2604.15432">arXiv:2604.15432</a>
-    <a class="btn" href="https://arxiv.org/pdf/2604.15432">PDF</a>
-    <a class="btn" href="https://arxiv.org/html/2604.15432">HTML</a>
-  </div>
+  <h1>2026-10-01</h1>
 </div></header>
 <main class="wrap">
-<dl>
-  <div class="spec"><dt>Summary</dt><dd class="big">This work demonstrates efficient multi-qubit entangling operations on a superconducting quantum processor with a central reconfigurable router, achieving three- and four-qubit W states with fidelities $ac{97.72(3)\\\\ \text{%}$ and $94.70(4)\\\\ \text{%}$ in single-step interactions, and using model-free reinforcement learning (PPO) to synthesize native three-qubit gates. The RL-trained controlled-Z gate reaches $96.56 \text{ %} \pm 0.12 \text{ %}$ fidelity (25 % infidelity reduction versus hand-tuned), while the controlled-SWAP and controlled-controlled-phase gates achieve $85.74(78) \text{ %}$ and $84.59(75) \text{ %}$ respectively, outperforming decomposition into two-qubit gates.</dd></div>
-  <div class="spec"><dt>Motivation</dt><dd>Multi-qubit native gates offer higher parallelism and reduced gate counts compared to decompositions into Clifford gates, enabling faster quantum error correction cycles and more complex algorithms on near-term processors where gate depth and decoherence dominate performance.</dd></div>
-  <div class="spec"><dt>Method</dt><dd>Using simultaneous dynamic tuning of four reconfigurable switches in a central router to mediate many-to-many couplings, the authors prepare multi-qubit states via single-excitation evolution, synthesize entangling gates through flux-pulse optimization with the PPO reinforcement learning algorithm integrated with cross-entropy benchmarking (OXEBIT method), and encode control in piecewise-constant pulse segments with 8 samples per pulse.</dd></div>
-  <div class="spec"><dt>Result</dt><dd>Three-qubit W and GHZ states prepared in $9.3$ and $19.6$ ns achieve higher fidelity than prior sequential methods (97.72 % vs. 93.87 % for three qubits); RL-optimized CZ gate surpasses hand-tuned performance with 96.56 % fidelity; three-qubit CSWAP (85.74 %) outperforms estimated decomposition fidelity below 75 %; decoherence limits gate errors at 8–10 % out of total 14–15 % infidelity, with training requiring $\sim 2000$ epochs ($\sim 19$ hours wall time for CZ).</dd></div>
-  <div class="spec"><dt>Authors</dt><dd class="small">Xuntao Wu, Haoxiong Yan, Gustav Andersson, Alexander Anferov, Christopher R. Conner, Yash J. Joshi, Bayan Karimi, Amber M. King, Shiheng Li, Howard L. Malc, Jacob M. Miller, Harsh Mishra, Hong Qiao, Minseok Ryu, Jian Shi, Andrew N. Cleland</dd></div>
-  <div class="spec"><dt>Similar papers</dt><dd class="small">
-    <div class="sub">In the database</div>
-    <div class="simlist">
-    <div><a href="https://arxiv.org/abs/2603.04566">Universal Hamiltonian control in a planar trimon circuit</a> <span class="sim">&nbsp;0.86</span></div>
-    <div><a href="https://arxiv.org/abs/2606.15190">Lattice surgery for near-term experimental logical qubit entanglement creation in planar architectures</a> <span class="sim">&nbsp;0.85</span></div>
-    </div>
-    <div class="sub">Among all indexed papers</div>
-    <div class="simlist">
-    <div><a href="../2603.04566/index.html">Universal Hamiltonian control in a planar trimon circuit</a> <span class="sim">&nbsp;2026-03-06 · 92% match</span></div>
-    <div><a href="../2609.39834/index.html">All-Microwave Multiqubit Gates</a> <span class="sim">&nbsp;2026-10-01 · 88% match</span></div>
-    <div><a href="../2603.10699/index.html">Efficient and accurate two-qubit-gate operation in a high-connectivity transmon lattice utilizing a tunable coupling to a shared mode</a> <span class="sim">&nbsp;2026-03-12 · 85% match</span></div>
-    <div><a href="../2609.28881/index.html">Reconfigurable bus-based quantum router for modular superconducting processors</a> <span class="sim">&nbsp;2026-09-25 · 76% match</span></div>
-    <div><a href="../2608.24084/index.html">Lifting connectivity bottlenecks in superconducting quantum processors via enriched native two-qubit gates</a> <span class="sim">&nbsp;2026-08-26 · 73% match</span></div>
-    </div>
-  </dd></div>
-  <div class="spec"><dt>Abstract</dt><dd class="small">Quantum algorithms on near-term quantum processors are typically executed using shallow quantum circuits composed of one- and two-qubit gates. However, as circuit depth and gate number increase, gate imperfections and qubit decoherence begin to dominate, limiting algorithmic complexity. An alternative approach is to explore gates involving more than two qubits. In previous work (X. Wu et al., Physical Review X 14, 041030 (2024)), we demonstrated a new superconducting qubit architecture with user-selectable two-qubit interactions via a reconfigurable router, used to connect pairs of qubits. Here, we leverage this novel architecture to realize programmable and efficient multi-qubit operations involving more than two qubits, resulting in faster preparation of multi-qubit entangled states with good fidelities. We also successfully apply model-free reinforcement learning to perform multi-qubit gates, including training a two-qubit controlled-Z gate as well as three-qubit controlled-SWAP and controlled-controlled-phase (Fredkin and Toffoli) gates. Higher $n$th-order gates may also be feasible, using our high-connectivity router design. This could provide a more efficient and higher-fidelity implementation of complex quantum algorithms and a more practical approach to quantum computation.</dd></div>
-</dl>
-</main>
+<section class="dayblock">
+<div class="day" id="d-2026-10-01">
+  <div>
+    <div class="stats">5 listed &nbsp;/&nbsp; 293 scanned</div>
+  </div>
+  <svg class="hist" width="160" height="30" viewBox="0 0 160 30" role="img" aria-label="Score distribution of all 293 papers, 0 to 100%">
+    <rect class="" x="0" y="2" width="6" height="28" fill="currentColor"/>
+    <rect class="" x="8" y="13" width="6" height="17" fill="currentColor"/>
+    <rect class="" x="16" y="20" width="6" height="10" fill="currentColor"/>
+    <rect class="" x="24" y="23" width="6" height="7" fill="currentColor"/>
+    <rect class="" x="32" y="26" width="6" height="4" fill="currentColor"/>
+    <rect class="" x="40" y="25" width="6" height="5" fill="currentColor"/>
+    <rect class="" x="48" y="25" width="6" height="5" fill="currentColor"/>
+    <rect class="" x="56" y="27" width="6" height="3" fill="currentColor"/>
+    <rect class="" x="64" y="28" width="6" height="2" fill="currentColor"/>
+    <rect class="" x="72" y="27" width="6" height="3" fill="currentColor"/>
+    <rect class="" x="80" y="28" width="6" height="2" fill="currentColor"/>
+    <rect class="" x="88" y="27" width="6" height="3" fill="currentColor"/>
+    <rect class="" x="96" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="" x="104" y="28" width="6" height="2" fill="currentColor"/>
+    <rect class="" x="112" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="" x="120" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="hi" x="128" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="hi" x="136" y="28" width="6" height="2" fill="currentColor"/>
+    <rect class="hi" x="144" y="30" width="6" height="0" fill="currentColor"/>
+    <rect class="hi" x="152" y="30" width="6" height="0" fill="currentColor"/>
+  </svg>
+</div>
+<a class="row" href="../2609.39834/index.html">
+  <div class="score" style="--h:122;--s:78%;--l:calc(var(--score-l) + 0.2% + 4.4% * var(--score-sign))">88.1<small>%</small><span class="track"><b style="width:88%"></b></span></div>
+  <div>
+    <h3>All-Microwave Multiqubit Gates</h3>
+    <p class="meta">Guanqi Wang, Yao Song, ..., Xiu-Hao Deng. &nbsp;/&nbsp; 2609.39834 &nbsp;/&nbsp; quant-ph</p>
+    <p class="sum">Implementing high-fidelity multiqubit gates is critical for reducing circuit depth in near-term quantum processors and fault-tolerant architectures. However, realizing multiqubit interactions and entanglement remains a critical challenge that limits the implementation of multiqubit gates.</p>
+  </div>
+</a><a class="row low" href="../2609.38354/index.html">
+  <div class="score" style="--h:39;--s:83%;--l:calc(var(--score-l) + 3.7% + 0.0% * var(--score-sign))">66.3<small>%</small><span class="track"><b style="width:66%"></b></span></div>
+  <div>
+    <h3>Time-Integrated Leakage as a Dynamical Benchmark for Multi-Mode Superconducting-Qubit Reset</h3>
+    <p class="meta">Sushant Sharma, Aswath Babu H. &nbsp;/&nbsp; 2609.38354 &nbsp;/&nbsp; quant-ph</p>
+    <p class="sum">Reset performance in superconducting qubits is often summarized by the population that remains at the end of the pulse. This is an important number, but it does not describe what happens during the reset itself.</p>
+  </div>
+</a><a class="row low" href="../2609.39522/index.html">
+  <div class="score" style="--h:24;--s:79%;--l:calc(var(--score-l) + 5.4% + 0.0% * var(--score-sign))">55.6<small>%</small><span class="track"><b style="width:56%"></b></span></div>
+  <div>
+    <h3>Layer codes as quantum memories: syndrome extraction, thresholds and idle robustness</h3>
+    <p class="meta">Zhu Sun, Zhenyu Cai. &nbsp;/&nbsp; 2609.39522 &nbsp;/&nbsp; quant-ph</p>
+    <p class="sum">Layer codes are three-dimensional local CSS codes of check weight at most six, obtained by quasi-concatenating a CSS input code with unrotated surface code patches. What is established about them describes the code, not the circuit that measures it.</p>
+  </div>
+</a><a class="row low" href="../2609.39345/index.html">
+  <div class="score" style="--h:24;--s:78%;--l:calc(var(--score-l) + 5.5% + 0.0% * var(--score-sign))">55.2<small>%</small><span class="track"><b style="width:55%"></b></span></div>
+  <div>
+    <h3>Constant-Overhead Injection into Quantum Codes</h3>
+    <p class="meta">Louis Golowich, Venkatesan Guruswami. &nbsp;/&nbsp; 2609.39345 &nbsp;/&nbsp; quant-ph</p>
+    <p class="sum">We construct the first known fault-tolerant scheme for injecting states into quantum error-correcting codes with constant space and time overhead. That is, we construct a family of constant-rate quantum error-correcting codes for which a set of bare physical qubits can be injected, i.e.</p>
+  </div>
+</a><a class="row low" href="../2609.40346/index.html">
+  <div class="score" style="--h:21;--s:77%;--l:calc(var(--score-l) + 5.9% + 0.0% * var(--score-sign))">50.7<small>%</small><span class="track"><b style="width:51%"></b></span></div>
+  <div>
+    <h3>Resonances control when multiterminal Josephson currents reduce to two-terminal couplings</h3>
+    <p class="meta">A. Barış Özgüler. &nbsp;/&nbsp; 2609.40346 &nbsp;/&nbsp; cond-mat.mes-hall</p>
+    <p class="sum">Multiterminal Josephson junctions, in which one weak link couples three or more superconductors, are studied as hosts of topological Andreev bands, multi-pair supercurrents and tunable circuit elements. Their currents are modeled both as pairwise networks of two-terminal couplings and through genuinely multiterminal processes such as quartets.</p>
+  </div>
+</a></section></main>
 <footer></footer>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
