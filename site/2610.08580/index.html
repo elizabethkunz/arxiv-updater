@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>SPICE-Q and Large-Scale Quantum Chip Production</title>
+<title>Physical Design Automation for Planar Superconducting Quantum Chips</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
@@ -188,37 +188,34 @@ footer { height: 72px; }
     <button id="theme" type="button" aria-label="Switch between light and dark theme" title="Light / dark"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1a7 7 0 0 0 0 14z" fill="currentColor"/></svg></button></nav>
 </div></div>
 <header class="hero"><div class="wrap">
-  <p class="eyebrow"><a href="../days/2026-06-17.html">2026-06-17</a> &nbsp;/&nbsp; <span class="bigscore" style="--h:37;--s:83%;--l:calc(var(--score-l) + 3.9% + 0.0% * var(--score-sign))">65.3% match</span></p>
-  <h1 class="paper">SPICE-Q and Large-Scale Quantum Chip Production</h1>
+  <p class="eyebrow"><a href="../days/2026-10-07.html">2026-10-07</a> &nbsp;/&nbsp; <span class="bigscore" style="--h:93;--s:73%;--l:calc(var(--score-l) + 1.1% + 1.9% * var(--score-sign))">79.5% match</span></p>
+  <h1 class="paper">Physical Design Automation for Planar Superconducting Quantum Chips</h1>
   <div class="actions">
-    <a class="btn primary" href="https://arxiv.org/abs/2606.17907">arXiv:2606.17907</a>
-    <a class="btn" href="https://arxiv.org/pdf/2606.17907">PDF</a>
-    <a class="btn" href="https://arxiv.org/html/2606.17907">HTML</a>
+    <a class="btn primary" href="https://arxiv.org/abs/2610.08580">arXiv:2610.08580</a>
+    <a class="btn" href="https://arxiv.org/pdf/2610.08580">PDF</a>
+    <a class="btn" href="https://arxiv.org/html/2610.08580">HTML</a>
   </div>
 </div></header>
 <main class="wrap">
 <dl>
-  <div class="spec"><dt>Summary</dt><dd class="big">This paper proposes SPICE-Q, a design-technology co-optimization framework for superconducting quantum processors that unifies process rules, layout, electromagnetic simulation, circuit quantization, Hamiltonian extraction, noise analysis, and manufacturing feedback into a single traceable data chain. The framework draws an analogy with classical SPICE, which transformed integrated-circuit design from trial-and-error into model-driven engineering, arguing that quantum computing requires an analogous unified infrastructure to scale from NISQ toward fault-tolerant processors.</dd></div>
-  <div class="spec"><dt>Motivation</dt><dd>Superconducting quantum-chip design currently relies on fragmented, isolated tools (HFSS, Qiskit Metal, pyEPR, SQcircuit, QuTiP) without unified interfaces or manufacturing feedback. Large-scale quantum processors require continuous model updating across device physics, electromagnetics, quantum dynamics, and process statistics—a capability that classical SPICE enabled for semiconductors but remains absent in quantum computing.</dd></div>
-  <div class="spec"><dt>Method</dt><dd>SPICE-Q organizes simulation into physical-space (EM fields, $S$-parameters, energy participation ratios) and information-space (Hamiltonians, Lindblad dynamics, decoherence) layers connected through cross-domain netlists. It implements a closed-loop design-technology co-optimization cycle: design and Monte Carlo yield prediction with process-statistical models → fabrication with standardized test structures → cryogenic measurement → Bayesian model calibration → redesign, using version-controlled model cards and parametrized cells.</dd></div>
-  <div class="spec"><dt>Result</dt><dd>The framework maps process deviations ($J_c$ fluctuations, capacitance variations, material loss) through device parameters ($E_J$, $E_C$) to system-level metrics (frequency distributions, coupling strength, $T_1/T_2$, yield). By explicitly incorporating manufacturing uncertainty into design optimization ($\max_x \mathbb{E}_{\theta \sim p(\theta)}[\mathcal{L}(x,\theta)]$), SPICE-Q enables predictive design of manufacturable multi-qubit arrays and informs process control priorities through sensitivity analysis without requiring multiple fabrication iterations.</dd></div>
-  <div class="spec"><dt>Authors</dt><dd class="small">Cai, Ling Qiao, Bin Yang, Fumin Luo, Chang Liu, WeiGui Guo, GuoRong Zhang, XueFei Liu, Qinglang Guo, Bin Wu</dd></div>
+  <div class="spec"><dt>Summary</dt><dd class="big">Superconducting circuits have emerged as one of the most promising and scalable platforms for quantum com- puting, with substantial industrial adoption driving qubit counts steadily upward. Yet the layout of the corresponding chips is still primarily performed manually, consuming multiple days or weeks of expert effort, even for moderately sized designs.</dd></div>
+  <div class="spec"><dt>Authors</dt><dd class="small">Michael Feldmeier, Marcel Walter, Gerhard B. P. Huber, Anirban Bhattacharjee, Stefan Filipp, Robert Wille</dd></div>
   <div class="spec"><dt>Similar papers</dt><dd class="small">
     <div class="sub">In the database</div>
     <div class="simlist">
+    <div><a href="https://arxiv.org/abs/2607.20795">Component-Level Inverse Design of Transmon Qubits Using Neural Networks</a> <span class="sim">&nbsp;0.86</span></div>
     <div><a href="https://arxiv.org/abs/2411.16967">A Review of Design Concerns in Superconducting Quantum Circuits</a> <span class="sim">&nbsp;0.85</span></div>
-    <div><a href="https://arxiv.org/abs/2607.20795">Component-Level Inverse Design of Transmon Qubits Using Neural Networks</a> <span class="sim">&nbsp;0.84</span></div>
     </div>
     <div class="sub">Among all indexed papers</div>
     <div class="simlist">
-    <div><a href="../2602.12773/index.html">Design and Operation of Wafer-Scale Packages Containing &gt;500 Superconducting Qubits</a> <span class="sim">&nbsp;2026-02-16 · 89% match</span></div>
-    <div><a href="../2610.08580/index.html">Physical Design Automation for Planar Superconducting Quantum Chips</a> <span class="sim">&nbsp;2026-10-07 · 79% match</span></div>
-    <div><a href="../2601.03922/index.html">Integration and Resource Estimation of Cryoelectronics for Superconducting Fault-Tolerant Quantum Computers</a> <span class="sim">&nbsp;2026-01-08 · 79% match</span></div>
+    <div><a href="../2607.20795/index.html">Component-Level Inverse Design of Transmon Qubits Using Neural Networks</a> <span class="sim">&nbsp;2026-07-24 · 89% match</span></div>
+    <div><a href="../2601.10144/index.html">Bridging Superconducting and Neutral-Atom Platforms for Efficient Fault-Tolerant Quantum Architectures</a> <span class="sim">&nbsp;2026-01-16 · 68% match</span></div>
+    <div><a href="../2606.17907/index.html">SPICE-Q and Large-Scale Quantum Chip Production</a> <span class="sim">&nbsp;2026-06-17 · 65% match</span></div>
+    <div><a href="../2608.23159/index.html">Taming Spacetime Overhead and Design Complexity in Distributed Fault-Tolerant Superconducting Quantum Computation</a> <span class="sim">&nbsp;2026-08-25 · 60% match</span></div>
     <div><a href="../2609.27239/index.html">Optimising Cryogenic Wiring for Microwave-frequency Millikelvin Quantum Processors</a> <span class="sim">&nbsp;2026-09-24 · 59% match</span></div>
-    <div><a href="../2607.17081/index.html">quchip: A Differentiable Toolkit for Modeling Quantum Devices</a> <span class="sim">&nbsp;2026-07-21 · 51% match</span></div>
     </div>
   </dd></div>
-  <div class="spec"><dt>Abstract</dt><dd class="small">We propose SPICE-Q, a SPICE-inspired design-technology co-optimization framework for superconducting quantum processors. Rather than replacing tools such as HFSS, Qiskit Metal, pyEPR, SQcircuit, SQuADDS, scqubits, or QuTiP, SPICE-Q aims to connect them through a unified, traceable data chain spanning process rules, layout, electromagnetic simulation, energy-participation-ratio and circuit quantization, Hamiltonian extraction, noise analysis, cryogenic test, and manufacturing feedback. The central mapping is from process and PDK constraints to layout geometry, electromagnetic modes, equivalent circuit parameters, effective Hamiltonians, and finally metrics such as frequency, coupling, anharmonicity, decoherence, readout performance, and yield. This flow must capture Josephson-junction variability, transmon frequency allocation, resonator and Purcell constraints, coupler crosstalk, microwave routing, 3D interconnects, material/interface loss, package modes, and wafer-scale process statistics. By introducing standardized model interfaces, statistical parameter models, model cards, version governance, and closed-loop calibration from cryogenic and fabrication data, SPICE-Q frames superconducting quantum-chip design as an engineering workflow rather than a collection of isolated simulations. We argue that scalable and fault-tolerant quantum processors will require such a continuous model chain from device physics and electromagnetic fields to quantum dynamics, noise, manufacturability, and system-level yield.</dd></div>
+  <div class="spec"><dt>Abstract</dt><dd class="small">Superconducting circuits have emerged as one of the most promising and scalable platforms for quantum com- puting, with substantial industrial adoption driving qubit counts steadily upward. Yet the layout of the corresponding chips is still primarily performed manually, consuming multiple days or weeks of expert effort, even for moderately sized designs. Existing automation approaches sidestep this bottleneck by simplifying the underlying problem and relaxing physical constraints. Therefore, they fall short of fabrication-ready results. To overcome this scalability wall without such compromises, we first introduce a formal abstraction that translates physical device characteristics into a rigorous geometric problem formulation. This abstraction bridges physical realization and design automation. Building upon this abstraction, we then propose a three-stage design automation flow comprising geometry-aware global partitioning, ILP-based port assignment, and a hierarchical routing pipeline. Evaluations conducted by our interdisciplinary team of design au- tomation researchers and superconducting hardware experts con- firm that the resulting flow produces complete, manufacturing- ready layouts that comply with the physical design rules at the push of a button. That is, it operates fully automatically within seconds to a few minutes, and solves complex instances up to 25x faster than the state of the art. All methods are released as the fully open-source tool mqt-scpd as part of the Munich Quantum Toolkit, providing the first readily usable, end- to-end design flow for planar superconducting quantum chips that explicitly addresses the underlying physical characteristics and requirements.</dd></div>
 </dl>
 </main>
 <footer></footer>

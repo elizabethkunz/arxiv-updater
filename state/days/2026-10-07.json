@@ -1,0 +1,239 @@
+{
+  "date": "2026-10-07",
+  "n_fetched": 114,
+  "papers": [
+    {
+      "id": "2610.08580",
+      "title": "Physical Design Automation for Planar Superconducting Quantum Chips",
+      "authors": [
+        "Michael Feldmeier",
+        "Marcel Walter",
+        "Gerhard B. P. Huber",
+        "Anirban Bhattacharjee",
+        "Stefan Filipp",
+        "Robert Wille"
+      ],
+      "abstract": "Superconducting circuits have emerged as one of the most promising and scalable platforms for quantum com- puting, with substantial industrial adoption driving qubit counts steadily upward. Yet the layout of the corresponding chips is still primarily performed manually, consuming multiple days or weeks of expert effort, even for moderately sized designs. Existing automation approaches sidestep this bottleneck by simplifying the underlying problem and relaxing physical constraints. Therefore, they fall short of fabrication-ready results. To overcome this scalability wall without such compromises, we first introduce a formal abstraction that translates physical device characteristics into a rigorous geometric problem formulation. This abstraction bridges physical realization and design automation. Building upon this abstraction, we then propose a three-stage design automation flow comprising geometry-aware global partitioning, ILP-based port assignment, and a hierarchical routing pipeline. Evaluations conducted by our interdisciplinary team of design au- tomation researchers and superconducting hardware experts con- firm that the resulting flow produces complete, manufacturing- ready layouts that comply with the physical design rules at the push of a button. That is, it operates fully automatically within seconds to a few minutes, and solves complex instances up to 25x faster than the state of the art. All methods are released as the fully open-source tool mqt-scpd as part of the Munich Quantum Toolkit, providing the first readily usable, end- to-end design flow for planar superconducting quantum chips that explicitly addresses the underlying physical characteristics and requirements.",
+      "categories": [
+        "quant-ph",
+        "cs.ET"
+      ],
+      "published": "2026-10-06",
+      "score": 0.7948465904754121,
+      "similar_to": [
+        {
+          "title": "Component-Level Inverse Design of Transmon Qubits Using Neural Networks",
+          "id": "2607.20795",
+          "similarity": 0.8636290431022644
+        },
+        {
+          "title": "A Review of Design Concerns in Superconducting Quantum Circuits",
+          "id": "2411.16967",
+          "similarity": 0.8495622277259827
+        }
+      ],
+      "summary": {
+        "summary": "Superconducting circuits have emerged as one of the most promising and scalable platforms for quantum com- puting, with substantial industrial adoption driving qubit counts steadily upward. Yet the layout of the corresponding chips is still primarily performed manually, consuming multiple days or weeks of expert effort, even for moderately sized designs.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.07139",
+      "title": "Protecting bosonic codes from ancilla-induced errors with continuous-variable flags",
+      "authors": [
+        "Thomas Décultot",
+        "Ronan Gautier",
+        "Mazyar Mirrahimi"
+      ],
+      "abstract": "Bosonic quantum error correction represents a route towards significant hardware overhead reduction for fault-tolerant quantum computation. However, controlling quantum harmonic oscillators that encode the quantum information comes with its own challenges. In many platforms such as superconducting circuits and trapped ions, the bosonic degree of freedom is controlled by an ancillary qubit whose decay during a qubit-oscillator gate propagates to the oscillator as a continuous error. Such errors generally lie beyond the scope of errors that the bosonic code is capable of correcting. We introduce the continuous-variable flag: an auxiliary oscillator coupled to the ancilla whose phase-space position encodes the continuous error corrupting the storage mode. After the gate, a heterodyne measurement of the flag estimates this continuous-variable error and a subsequent feedback control undoes it up to a bosonic code stabilizer. The scheme requires no new ingredients, as the flag is driven by the same dispersive coupling, displacements and rotations that implement the gates it is supposed to protect. We construct sequences protecting conditional rotations to all orders in ancilla decay with one flag, and conditional displacements to first order with one flag and to all orders with two. Simulations with realistic circuit-QED parameters predict more than three orders of magnitude fewer logical errors for the parity measurement of a four-component cat code, and a finite-energy GKP logical lifetime near its noiseless-ancilla bound. By discretizing continuous-variable errors, the flags introduced in this work are a useful tool for any hybrid oscillator-qubit processor, and open the route towards fault-tolerant simulation and computation with bosonic modes.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-05",
+      "score": 0.726876928152526,
+      "similar_to": [
+        {
+          "title": "Hardware-efficient quantum error correction via concatenated bosonic qubits",
+          "id": "2409.13025",
+          "similarity": 0.8775246143341064
+        },
+        {
+          "title": "Quantum error correction of a qubit encoded in grid states of an oscillator",
+          "id": "1907.12487",
+          "similarity": 0.852609395980835
+        }
+      ],
+      "summary": {
+        "summary": "Bosonic quantum error correction represents a route towards significant hardware overhead reduction for fault-tolerant quantum computation. However, controlling quantum harmonic oscillators that encode the quantum information comes with its own challenges.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.07683",
+      "title": "Sparse qubit operation in a 6$\\times$6 quantum dot array",
+      "authors": [
+        "Alexader S. Ivlev",
+        "Harold L. Co",
+        "Damien R. Crielaard",
+        "Alice Petrillo",
+        "Setareh Kazemzadeh",
+        "Giordano Scappucci",
+        "Menno Veldhorst"
+      ],
+      "abstract": "Fault-tolerant quantum computation requires increasing the qubit count while maintaining high performance and connectivity. Semiconductor qubits have demonstrated high-fidelity operation, but growing the system size at sufficient connectivity remains challenging, such that scaling mainly occurred in one spatial direction to preserve access for control lines in the other. Here, we realise an approach that relaxes the requirements on fabrication and demonstrate a 6$\\times$6 quantum dot array, defined by a shared barrier gate and individual plunger gates. The quantum dots are tuned through coherent spin shuttling over distances up to 5.2um into a sparse configuration of 10 simultaneously operated qubits, leaving space for shuttling connections. We reduce crosstalk by 42$\\times$ in this separated regime, enabling high-fidelity simultaneous single-qubit control, while control-Z operations can be implemented through shuttling and plunger-only control. These results promise high-connectivity quantum circuits, enabled by scaling to two-dimensional geometries and exploiting shuttling.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "published": "2026-10-06",
+      "score": 0.5253796927806588,
+      "similar_to": [
+        {
+          "title": "Fast Flux-Activated Leakage Reduction for Superconducting Quantum Circuits",
+          "id": "2309.07060",
+          "similarity": 0.8427067995071411
+        },
+        {
+          "title": "Scalable and Site-Specific Frequency Tuning of Two-Level System Defects in Superconducting Qubit Arrays",
+          "id": "2503.04702",
+          "similarity": 0.8398706912994385
+        }
+      ],
+      "summary": {
+        "summary": "Fault-tolerant quantum computation requires increasing the qubit count while maintaining high performance and connectivity. Semiconductor qubits have demonstrated high-fidelity operation, but growing the system size at sufficient connectivity remains challenging, such that scaling mainly occurred in one spatial direction to preserve access for control lines in the other.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.7948,
+    0.7269,
+    0.5254,
+    0.454,
+    0.395,
+    0.3636,
+    0.3595,
+    0.2743,
+    0.2114,
+    0.1932,
+    0.1822,
+    0.1805,
+    0.177,
+    0.1635,
+    0.1552,
+    0.1409,
+    0.1385,
+    0.1295,
+    0.1255,
+    0.1227,
+    0.1224,
+    0.1063,
+    0.0994,
+    0.0948,
+    0.0897,
+    0.0894,
+    0.0841,
+    0.0821,
+    0.0797,
+    0.077,
+    0.0714,
+    0.0706,
+    0.0691,
+    0.0679,
+    0.0663,
+    0.0632,
+    0.0617,
+    0.0564,
+    0.0562,
+    0.0551,
+    0.0545,
+    0.0518,
+    0.0492,
+    0.0464,
+    0.0457,
+    0.0432,
+    0.0429,
+    0.0417,
+    0.041,
+    0.0407,
+    0.0405,
+    0.04,
+    0.0389,
+    0.0387,
+    0.0378,
+    0.037,
+    0.0365,
+    0.0363,
+    0.0354,
+    0.0348,
+    0.0341,
+    0.0339,
+    0.03,
+    0.0294,
+    0.0285,
+    0.0257,
+    0.0241,
+    0.0239,
+    0.0234,
+    0.0232,
+    0.0228,
+    0.0215,
+    0.0208,
+    0.0187,
+    0.0175,
+    0.0173,
+    0.0169,
+    0.0166,
+    0.0162,
+    0.0158,
+    0.0147,
+    0.0139,
+    0.0133,
+    0.0128,
+    0.0125,
+    0.0125,
+    0.012,
+    0.0116,
+    0.0107,
+    0.0105,
+    0.0101,
+    0.0098,
+    0.0096,
+    0.0094,
+    0.0092,
+    0.0091,
+    0.0085,
+    0.008,
+    0.0074,
+    0.0073,
+    0.0061,
+    0.006,
+    0.0058,
+    0.0056,
+    0.0053,
+    0.0052,
+    0.0049,
+    0.0042,
+    0.0042,
+    0.004,
+    0.0037,
+    0.0026,
+    0.0021,
+    0.0016
+  ]
+}
