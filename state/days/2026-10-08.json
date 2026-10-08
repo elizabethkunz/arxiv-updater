@@ -1,0 +1,285 @@
+{
+  "date": "2026-10-08",
+  "n_fetched": 124,
+  "papers": [
+    {
+      "id": "2610.10432",
+      "title": "Dynamically protected erasure qubit via low-frequency charge driving",
+      "authors": [
+        "Ahmed Hajr",
+        "Ke Wang",
+        "Bingcheng Qing",
+        "Akel Hashim",
+        "Bibek Bhandari",
+        "Dominic Briseño-Colunga",
+        "Justin Dressel",
+        "Andrew N. Jordan",
+        "Irfan Siddiqi"
+      ],
+      "abstract": "Dynamical protection via strong driving can enable resilient quantum processing on imperfect physical hardware. However, the practical utility of such schemes is frequently limited by parasitic processes such as drive-induced dephasing and leakage. Here, we demonstrate that sub-GHz charge driving of superconducting Kerr oscillators (KOs) in the transmon regime circumvents this trade-off, simultaneously activating fast parametric interactions and protecting the encoded qubit from low-frequency noise. The key is the frequency dependence of the charge sensitivity: using the AC Stark shift as a probe, we find that the KO frequency sensitivity to a charge drive grows quadratically with both drive frequency and amplitude, making the oscillator weakly sensitive to $1/f$ charge noise yet strongly coupled to drives near 1~GHz. Exploiting this, we first demonstrate cooling and reset of the KO in 82~ns, to a residual population below $0.7\\%$---lower than its $2.5\\%$ steady-state thermal population. Next, using two KOs, we demonstrate logical control and dynamical protection of a dual-rail qubit with nearly fourfold erasure bias. Finally, using a single end-of-circuit erasure check, we achieve an error per Clifford of $5.6\\times10^{-4}$, which falls to $1.5\\times10^{-4}$ after post-selection, with 25~ns gates.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-07",
+      "score": 0.9467187999264738,
+      "similar_to": [
+        {
+          "title": "Erasure qubits: Overcoming the $T_1$ limit in superconducting circuits",
+          "id": "2208.05461",
+          "similarity": 0.8570361137390137
+        },
+        {
+          "title": "Characterization of drive-induced unwanted state transitions in superconducting circuits",
+          "id": "2506.24070",
+          "similarity": 0.8547487854957581
+        }
+      ],
+      "summary": {
+        "summary": "Dynamical protection via strong driving can enable resilient quantum processing on imperfect physical hardware. However, the practical utility of such schemes is frequently limited by parasitic processes such as drive-induced dephasing and leakage.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.09666",
+      "title": "Geodesic-based optimal control for leakage suppression in superconducting qubits",
+      "authors": [
+        "Adonai Hilário da Silva",
+        "Tanmoy Pandit",
+        "Francesco Cosco"
+      ],
+      "abstract": "Superconducting qubits are often based on the first two energy levels of a physical anharmonic LC oscillator. Since the anharmonicity of such systems is usually much lower than the involved energy gaps, population can easily leak to higher energy states. This is what characterizes leakage errors, and it can have multiple sources: from coherent error induced by the control platform to incoherent thermal dissipation. In this work, we adapt an optimal control method based on sub-Riemannian geodesic search in the unitary group for a system consisting of two superconducting qubits with leakage levels. We use the $R_x(π/2)$ rotation for single-qubit operation analysis, and the $i$SWAP operation for two-qubit analysis. For the former, we find considerable performance improvement in average gate fidelity as well as in the reduction of leakage errors when comparing the obtained optimal pulses with Gaussian and DRAG pulses, especially for short duration pulses. For the $i$SWAP gate, although leakage error remains roughly the same, we manage to obtain considerably higher fidelities with the cost of requiring a slightly longer time evolution.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-07",
+      "score": 0.7029320461325684,
+      "similar_to": [
+        {
+          "title": "Simple pulses for elimination of leakage in weakly nonlinear qubits",
+          "id": "0901.0534",
+          "similarity": 0.880795955657959
+        },
+        {
+          "title": "Efficient Z-Gates for Quantum Computing",
+          "id": "1612.00858",
+          "similarity": 0.8509374856948853
+        }
+      ],
+      "summary": {
+        "summary": "Superconducting qubits are often based on the first two energy levels of a physical anharmonic LC oscillator. Since the anharmonicity of such systems is usually much lower than the involved energy gaps, population can easily leak to higher energy states.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.10531",
+      "title": "Efficient Estimation of Logical Sensitivities Through Fault-Counting",
+      "authors": [
+        "Winston Fu",
+        "J. Wilson Staples",
+        "Jeff D. Thompson"
+      ],
+      "abstract": "Quantum error-correcting circuits are affected by multiple physical noise mechanisms, whose contributions to logical failure must be understood to evaluate code performance and guide improvements in hardware. The individual error budget contributions for an error type $i$ can be characterized by its logical sensitivity $ν_i = \\frac{\\partial p_L}{\\partial p_i}$, which measures the response of the logical error rate $p_L$ to each physical noise parameter $p_i$. Normally, $ν_i$ is measured using linear fits such as finite differences, where $p_L$ is measured at two or more values of $p_i$ to calculate partial derivatives. In this paper, we develop a differentiable estimator to obtain all components of $\\nabla_{\\mathbf p}p_L$ simultaneously from a single Monte Carlo data set at one noise configuration, using information about the underlying fault configurations. In surface code simulations with circuit-level noise, the estimator agrees with conventional finite differences while requiring one to two orders of magnitude fewer shots to achieve the same variance. We apply this technique to quantify error budgets, resolve sensitivities at the individual qubit level, and infer effective code distance. Finally, we incorporate the sensitivities into Newton root finding to locate and trace threshold contours in multidimensional noise models. These results provide an efficient method for extracting and applying logical sensitivity information from standard quantum error correction simulations.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-07",
+      "score": 0.6661339747241967,
+      "similar_to": [
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8757649660110474
+        },
+        {
+          "title": "Exponential suppression of bit or phase flip errors with repetitive error correction",
+          "id": "2102.06132",
+          "similarity": 0.8628828525543213
+        }
+      ],
+      "summary": {
+        "summary": "Quantum error-correcting circuits are affected by multiple physical noise mechanisms, whose contributions to logical failure must be understood to evaluate code performance and guide improvements in hardware. The individual error budget contributions for an error type $i$ can be characterized by its logical sensitivity $ν_i = \\frac{\\partial p_L}{\\partial p_i}$, which measures the response of the logical error rate $p_L$ to each physical noise parameter $p_i$.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.10442",
+      "title": "Correlating DC SQUID Performance with the Location of Trapped Magnetic Flux Using Scanning SQUID Microscopy",
+      "authors": [
+        "Bochao Xu",
+        "Ian W. Haygood",
+        "Kyle Jackman",
+        "Coenrad J. Fourie",
+        "Pete F. Hopkins",
+        "Michael L. Schneider"
+      ],
+      "abstract": "Holes in the ground planes of superconducting circuits, commonly referred to as moats, are known to be an effective means of mitigating the deleterious effects of residual magnetic flux in superconducting circuits. Previous studies have utilized scanning SQUID microscopy (SSM) to image the effectiveness of various moat geometries and the maximum magnetic fields where they no longer prevent vortices in the ground plane but have not directly correlated the location of flux with circuit performance measurements. In this study we employ SSM to image the effectiveness of various moat configurations in trapping unwanted flux near a DC SQUID, and when the moats are not effective, the location of vortices in the ground plane. During the same cooldown, and without disturbing the circuit, we measure the circuit performance to directly correlate this with the vortex location. We show that there are preferential pinning sites for fluxons regardless of moat configuration, demonstrating the utility of the SSM in provide feedback for circuit layout, modeling, and failure analysis.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-10-07",
+      "score": 0.5507374440407685,
+      "similar_to": [
+        {
+          "title": "Superconducting Flux Memory for Cryogenic Applications",
+          "id": "2609.00772",
+          "similarity": 0.8379790782928467
+        },
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.782311201095581
+        }
+      ],
+      "summary": {
+        "summary": "Holes in the ground planes of superconducting circuits, commonly referred to as moats, are known to be an effective means of mitigating the deleterious effects of residual magnetic flux in superconducting circuits. Previous studies have utilized scanning SQUID microscopy (SSM) to image the effectiveness of various moat geometries and the maximum magnetic fields where they no longer prevent vortices in the ground plane but have not directly correlated the location of flux with circuit performance measurements.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9467,
+    0.7029,
+    0.6661,
+    0.5507,
+    0.4854,
+    0.3992,
+    0.3586,
+    0.3443,
+    0.334,
+    0.3243,
+    0.3186,
+    0.278,
+    0.2426,
+    0.2235,
+    0.2185,
+    0.2167,
+    0.1798,
+    0.1759,
+    0.1757,
+    0.1719,
+    0.1697,
+    0.158,
+    0.1575,
+    0.15,
+    0.1476,
+    0.1403,
+    0.1372,
+    0.1341,
+    0.1264,
+    0.117,
+    0.1153,
+    0.1108,
+    0.1102,
+    0.1032,
+    0.0971,
+    0.0927,
+    0.0922,
+    0.0907,
+    0.0863,
+    0.0862,
+    0.0828,
+    0.078,
+    0.0747,
+    0.0743,
+    0.0683,
+    0.0667,
+    0.0663,
+    0.0661,
+    0.0657,
+    0.0613,
+    0.0607,
+    0.0606,
+    0.0556,
+    0.0531,
+    0.0498,
+    0.0492,
+    0.0491,
+    0.0478,
+    0.0442,
+    0.0435,
+    0.0432,
+    0.0426,
+    0.0397,
+    0.0391,
+    0.0375,
+    0.0363,
+    0.0363,
+    0.0337,
+    0.0326,
+    0.0316,
+    0.0299,
+    0.0297,
+    0.0276,
+    0.0268,
+    0.0262,
+    0.0258,
+    0.0255,
+    0.0255,
+    0.0239,
+    0.0238,
+    0.0233,
+    0.0231,
+    0.0229,
+    0.0211,
+    0.0206,
+    0.0193,
+    0.0192,
+    0.0189,
+    0.0168,
+    0.0168,
+    0.0155,
+    0.0152,
+    0.0152,
+    0.0144,
+    0.0142,
+    0.0139,
+    0.0138,
+    0.0137,
+    0.0131,
+    0.0127,
+    0.0123,
+    0.0121,
+    0.0114,
+    0.0109,
+    0.0099,
+    0.0098,
+    0.0096,
+    0.0092,
+    0.0087,
+    0.0084,
+    0.0074,
+    0.0072,
+    0.0071,
+    0.0068,
+    0.0062,
+    0.0056,
+    0.0054,
+    0.0049,
+    0.0038,
+    0.0034,
+    0.003,
+    0.0021,
+    0.0021,
+    0.0019
+  ]
+}
