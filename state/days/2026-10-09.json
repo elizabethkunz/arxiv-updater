@@ -1,0 +1,426 @@
+{
+  "date": "2026-10-09",
+  "n_fetched": 131,
+  "papers": [
+    {
+      "id": "2610.12227",
+      "title": "A quasiparticle-protected superconducting qubit",
+      "authors": [
+        "Trond Hjerpekjøn Haug",
+        "Johan Kolvik",
+        "Joey Frey",
+        "Paul Burger",
+        "Fabian Resare",
+        "Witlef Wieczorek",
+        "Simone Gasparinetti",
+        "Per Delsing",
+        "Raphaël Van Laer"
+      ],
+      "abstract": "Superconducting quantum circuits underpin large-scale quantum processors and are increasingly interfaced with optical systems, yet they are vulnerable to quasiparticle poisoning from high-energy radiation and optical fields. Gap engineering of Josephson junctions suppresses quasiparticle-induced relaxation, but quasiparticles near the junction can still shift the qubit frequency and cause phase errors. Here, we extend gap engineering beyond the junction using a flux-tunable transmon with a gold-on-niobium ground plane and island and strongly gap-engineered aluminum junctions designed to keep quasiparticles away from the junction leads. Compared with an all-aluminum transmon with nominally identical junctions, we demonstrate that the niobium device withstands more than an order of magnitude higher near-infrared optical power before excess relaxation appears. The Nb transmon shows no resolvable quasiparticle-induced frequency shift over the same power range. At the same time, we observe that dephasing and state-preparation-and-measurement infidelity increase with optical power even while relaxation remains protected. These results suggest that engineering the quasiparticle energy landscape beyond the junction can substantially increase qubit resilience, not only to radiation-induced error bursts, but also to nearby optical fields.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-08",
+      "score": 0.9707047171414904,
+      "similar_to": [
+        {
+          "title": "Resisting high-energy impact events through gap engineering in superconducting qubit arrays",
+          "id": "2402.15644",
+          "similarity": 0.8907999992370605
+        },
+        {
+          "title": "Correlated Phase Error Bursts in a Gap-Engineered Superconducting Qubit Array",
+          "id": null,
+          "similarity": 0.8816431164741516
+        }
+      ],
+      "summary": {
+        "summary": "Superconducting quantum circuits underpin large-scale quantum processors and are increasingly interfaced with optical systems, yet they are vulnerable to quasiparticle poisoning from high-energy radiation and optical fields. Gap engineering of Josephson junctions suppresses quasiparticle-induced relaxation, but quasiparticles near the junction can still shift the qubit frequency and cause phase errors.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.11477",
+      "title": "Quantitative Rules for Parallel Calibration and Drift-Resilient Maintenance of Large-Scale Superconducting Quantum Processors",
+      "authors": [
+        "Zhihao Wu",
+        "Kechengqi Zhu",
+        "Shichuan Xue",
+        "Xinfang Zhang",
+        "Zhaohua Yang",
+        "Zhida Zhang",
+        "Shun Hu",
+        "Cong Li",
+        "Dingdong Liu",
+        "Kangding Zhao",
+        "Peng Luo",
+        "Lingling Lao",
+        "Xiang Fu",
+        "Mingtang Deng",
+        "Junjie Wu",
+        "Kai Lu"
+      ],
+      "abstract": "As superconducting quantum processors scale toward hundreds of qubits, manual calibration becomes increasingly costly and difficult to sustain. Here we address two system-level factors governing automated calibration, namely, crosstalk induced by parallel operations and temporal drift of control parameters. On a 66-qubit superconducting processor, cross-entropy benchmarking shows that single-qubit calibration tolerates full-chip concurrency with minimal fidelity loss, whereas CZ calibration requires a minimum coupler-graph distance of four to avoid elevated control errors. Continuous monitoring of representative qubit and coupler parameters further yields quantitative refresh rules that assign refresh priority by error-budget consumption. These results turn two conventionally heuristic choices, the concurrency density of calibration tasks and the refresh priority of each control parameter, into measurable operating rules. Implemented within an automated calibration framework, the rules support a six-qubit Greenberger-Horne-Zeilinger state with a zero-noise-extrapolated fidelity of 89.64%, distance-dependent logical-error suppression in a single-cycle repetition-code benchmark, and a reduction of the mean single-qubit error from 0.023 to 0.011 on a 337-qubit processor, providing an experimentally grounded reference for the automated calibration and maintenance of current and future large-scale superconducting quantum systems.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-08",
+      "score": 0.8943361040542377,
+      "similar_to": [
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.8895306587219238
+        },
+        {
+          "title": "Scaling and logic in the color code on a superconducting quantum processor",
+          "id": "2412.14256",
+          "similarity": 0.8765270709991455
+        }
+      ],
+      "summary": {
+        "summary": "As superconducting quantum processors scale toward hundreds of qubits, manual calibration becomes increasingly costly and difficult to sustain. Here we address two system-level factors governing automated calibration, namely, crosstalk induced by parallel operations and temporal drift of control parameters.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.11125",
+      "title": "Sub-MHz SWAP spectroscopy of two-level systems in superconducting qubits",
+      "authors": [
+        "Joaquin Minguzzi",
+        "John Clai Owens",
+        "Oskar Painter",
+        "Matthew H. Matheny",
+        "Loren J. Swenson"
+      ],
+      "abstract": "An outstanding challenge in superconducting quantum circuits is mitigating loss from two-level system (TLS) defects. SWAP spectroscopy with flux-tunable qubits can detect individual TLSs, but the Rabi chevrons that signal coherent exchange have been observed only for the most strongly coupled defects. Here, we introduce a sequence with fast flux pulses only at state preparation and readout, switched off during the energy-relaxation delay for finer frequency resolution and longer interaction times. We detect Rabi chevrons at swap rates as low as 0.1 MHz, an order of magnitude lower than previously reported. In the dressed-state picture, we fit the coherent swap oscillations to extract the TLS energy-relaxation time. These Rabi chevrons reveal coherent TLSs with a median energy-relaxation time of 10 microseconds, at coupling strengths previously associated with incoherent TLSs. The swap coherence times exceed the qubit T2* limited by flux noise, indicating that the dressed gap protects them from low-frequency 1/f noise.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-08",
+      "score": 0.8891387813307187,
+      "similar_to": [
+        {
+          "title": "Dynamical decoupling and noise spectroscopy with a superconducting flux qubit",
+          "id": "1101.4707",
+          "similarity": 0.8509045839309692
+        },
+        {
+          "title": "Scalable and Site-Specific Frequency Tuning of Two-Level System Defects in Superconducting Qubit Arrays",
+          "id": "2503.04702",
+          "similarity": 0.8505246043205261
+        }
+      ],
+      "summary": {
+        "summary": "An outstanding challenge in superconducting quantum circuits is mitigating loss from two-level system (TLS) defects. SWAP spectroscopy with flux-tunable qubits can detect individual TLSs, but the Rabi chevrons that signal coherent exchange have been observed only for the most strongly coupled defects.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.11658",
+      "title": "Error-Corrected Memory and Logic on a Heavy-Hex Superconducting-Qubit Processor",
+      "authors": [
+        "Campbell K. McLauchlan",
+        "Georgia M. Nixon",
+        "Julien M. Drouet",
+        "Xanda C. Kolesnikow",
+        "Seok-Hyung Lee",
+        "James Raftery",
+        "Karthik Siva",
+        "Stephen D. Bartlett",
+        "Benjamin J. Brown",
+        "Robin Harper"
+      ],
+      "abstract": "Large quantum computations require high-fidelity error-corrected memory and fault-tolerant logical operations. To achieve these with superconducting circuits, quantum processors will need many components operating with low error rates. In practice, fabrication of monolithic superconducting devices produces unavoidable heterogeneity in component performance, which the quantum computer must accommodate. We implement strategies to operate a large dynamic compass code on an array of 156 superconducting qubits arranged on a heavy-hexagonal lattice, making use of the entire monolithic quantum processor and redesigning our measurement schedule to exclude underperforming components. We demonstrate improvements of up to $35\\%$ in logical error probabilities for a memory experiment by using a noise-informed decoder combined with strategies to exclude the worst-performing qubits and couplers, along with post-selecting on shots with a low probability of leakage errors. In addition to these memory results, we also observe performance gains of up to $56\\%$ when these strategies are applied to measurement-based logic, demonstrated by stability experiments. We furthermore demonstrate high-fidelity fault-tolerant logic through lattice surgery. Through pre-selection filtering techniques, we can obtain Bell fidelities above $77\\%$, and further logical gap post-selection using exclusive decoding increases these fidelities to above $97\\%$. Our experiments demonstrate that high performance can be maintained in key elements of fault-tolerant quantum memory and logic when working on monolithic superconducting quantum processors with underperforming components, by using a suite of noise-informed quantum error correction strategies.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-08",
+      "score": 0.889039479727157,
+      "similar_to": [
+        {
+          "title": "Scaling and logic in the color code on a superconducting quantum processor",
+          "id": "2412.14256",
+          "similarity": 0.907854437828064
+        },
+        {
+          "title": "Demonstrating real-time and low-latency quantum error correction with superconducting qubits",
+          "id": "2410.05202",
+          "similarity": 0.905443549156189
+        }
+      ],
+      "summary": {
+        "summary": "Large quantum computations require high-fidelity error-corrected memory and fault-tolerant logical operations. To achieve these with superconducting circuits, quantum processors will need many components operating with low error rates.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.10714",
+      "title": "Quantum jumps of sound",
+      "authors": [
+        "Takuma Makihara",
+        "Erik Szakiel",
+        "Matthew P. Maksymowych",
+        "Oliver A. Hitchcock",
+        "Kaveh Pezeshki",
+        "Rachel G. Gruenke-Freudenstein",
+        "Mihir Pendharkar",
+        "Shannon P. Harvey",
+        "David I. Schuster",
+        "Amir H. Safavi-Naeini"
+      ],
+      "abstract": "Quantum mechanics predicts that a vibrating object's energy comes in discrete packets, yet no measurement of its position reveals this discreteness. Resolving individual energy levels requires a qualitatively different measurement, one coupling to the resonator's energy rather than its displacement. We use a superconducting qubit dispersively coupled to a nanomechanical resonator to perform repeated quantum nondemolition measurements of the phonon number. An aligned transfer-print technique integrating the qubit and resonator yields a mechanical lifetime of $T_1 = 2.1$ milliseconds and a dispersive shift of $2χ/2π= 328$ kilohertz per phonon. We heralded single-phonon states with 85% fidelity and observed quantum jumps between the resonator's first excited state and ground state. These discontinuous transitions are a striking manifestation of quantum mechanics in a massive, vibrating object.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-07",
+      "score": 0.8331522254269075,
+      "similar_to": [
+        {
+          "title": "Measurement-induced state transitions in a superconducting qubit: Beyond the rotating wave approximation",
+          "id": "1606.05721",
+          "similarity": 0.8310723304748535
+        },
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.8216309547424316
+        }
+      ],
+      "summary": {
+        "summary": "Quantum mechanics predicts that a vibrating object's energy comes in discrete packets, yet no measurement of its position reveals this discreteness. Resolving individual energy levels requires a qualitatively different measurement, one coupling to the resonator's energy rather than its displacement.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.12400",
+      "title": "Measure Now, Mitigate Later: Virtual Error Cancellation for Logical Quantum Circuits",
+      "authors": [
+        "Oles Shtanko",
+        "Saswata Roy",
+        "Shashwat Kumar",
+        "Zlatko Minev"
+      ],
+      "abstract": "Early fault-tolerant quantum algorithms are a key step in scalable quantum computing, but are ultimately constrained by residual, uncorrectable logical errors. Logical quantum error mitigation can eliminate this bias, however its standard requirements include prior noise characterization, more complex experiments, and substantial sampling overhead. Although no mitigation technique can simultaneously overcome all three constraints, we demonstrate that the first two---noise learning and need for modified circuits---can be completely bypassed for logical circuits by leveraging only syndrome records. Specifically, we introduce virtual error cancellation: a method that, unlike previous bias-free approaches, operates entirely in classical post-processing on universal quantum circuits. We develop and numerically test end-to-end protocols that reduce the sampling overhead beyond fundamental limitations of existing syndrome-aware mitigation techniques, including syndrome-based postselection. In particular, we propose a scheme that pairs the low-latency decoder used in the experiment with a high-complexity decoder run in post-processing. In numerical simulations of a distance-7 rotated surface code, we show that our full-stack dual-decoder algorithm exhibits an error that diminishes as the number of samples increases, capable of reaching more than three orders of magnitude of suppression compared to the decoded logical error rate in an experimentally achievable setting. These results establish syndrome records as a resource for correcting universal computational estimates after quantum execution.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-08",
+      "score": 0.6480500372736246,
+      "similar_to": [
+        {
+          "title": "Demonstrating real-time and low-latency quantum error correction with superconducting qubits",
+          "id": "2410.05202",
+          "similarity": 0.8929611444473267
+        },
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.891825795173645
+        }
+      ],
+      "summary": {
+        "summary": "Early fault-tolerant quantum algorithms are a key step in scalable quantum computing, but are ultimately constrained by residual, uncorrectable logical errors. Logical quantum error mitigation can eliminate this bias, however its standard requirements include prior noise characterization, more complex experiments, and substantial sampling overhead.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.11225",
+      "title": "High-Rate Concatenated Quantum Error-Correcting Codes for Qudits",
+      "authors": [
+        "Takanori Nishi",
+        "Hayato Goto"
+      ],
+      "abstract": "Qudits provide a larger local Hilbert space than qubits and have recently attracted interest as building blocks for efficient fault-tolerant quantum computation (FTQC). In this work, we extend many-hypercube (MHC) codes, high-rate concatenated quantum codes, from qubits to qudits of prime dimension $q$. We construct the level-2 and level-3 MHC codes with parameters $\\left[\\!\\left[6^2,4^2,2^2\\right]\\!\\right]_q$ and $\\left[\\!\\left[6^3,4^3,2^3\\right]\\!\\right]_q$, respectively, and generalize the level-by-level minimum-distance (LLMD) decoder originally proposed for the qubit MHC codes. In a qudit $X$-error model, we evaluate the code-capacity performance of the qudit MHC codes for dimensions up to $q=13$. We find that the error threshold increases monotonically with the local dimension $q$, reaching $10.0\\%$ for $q=13$, nearly double the value of $5.1\\%$ for qubits. Furthermore, for sufficiently large local dimensions, we observe a pronounced waterfall regime in which the logical error rate decreases substantially faster than expected from conventional distance-based estimates. To understand the origin of the observed qudit advantage, we analyze the decoding performance in terms of the entropy of the underlying $q$-ary noise channel. This analysis reveals a competition between the increased syndrome information available at larger $q$ and the simultaneous growth of the typical physical error weight at fixed entropy. These results demonstrate that higher-dimensional quantum systems can substantially improve the performance of high-rate concatenated quantum codes and motivate further development of qudit-based FTQC architectures.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-08",
+      "score": 0.5819489087473398,
+      "similar_to": [
+        {
+          "title": "Multivariate Bicycle Codes",
+          "id": "2406.19151",
+          "similarity": 0.8693269491195679
+        },
+        {
+          "title": "Quantum error correction at ultra-low overhead",
+          "id": "2608.02773",
+          "similarity": 0.8551974296569824
+        }
+      ],
+      "summary": {
+        "summary": "Qudits provide a larger local Hilbert space than qubits and have recently attracted interest as building blocks for efficient fault-tolerant quantum computation (FTQC). In this work, we extend many-hypercube (MHC) codes, high-rate concatenated quantum codes, from qubits to qudits of prime dimension $q$.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9707,
+    0.8943,
+    0.8891,
+    0.889,
+    0.8332,
+    0.6481,
+    0.5819,
+    0.4668,
+    0.4417,
+    0.3907,
+    0.3629,
+    0.3407,
+    0.3352,
+    0.3144,
+    0.2721,
+    0.262,
+    0.2614,
+    0.2604,
+    0.2497,
+    0.2286,
+    0.2276,
+    0.2275,
+    0.2262,
+    0.2185,
+    0.2084,
+    0.2044,
+    0.204,
+    0.1975,
+    0.1919,
+    0.1888,
+    0.1849,
+    0.1782,
+    0.1763,
+    0.1345,
+    0.1303,
+    0.1275,
+    0.1271,
+    0.1244,
+    0.1238,
+    0.1227,
+    0.1146,
+    0.1144,
+    0.1078,
+    0.101,
+    0.0997,
+    0.095,
+    0.0931,
+    0.0903,
+    0.0902,
+    0.0902,
+    0.0883,
+    0.0879,
+    0.0849,
+    0.0827,
+    0.0761,
+    0.0757,
+    0.0708,
+    0.0707,
+    0.0706,
+    0.0659,
+    0.0651,
+    0.0638,
+    0.0616,
+    0.0599,
+    0.0597,
+    0.055,
+    0.0542,
+    0.0532,
+    0.0531,
+    0.0479,
+    0.047,
+    0.0468,
+    0.0457,
+    0.0448,
+    0.0445,
+    0.0431,
+    0.0411,
+    0.0401,
+    0.0382,
+    0.0361,
+    0.0344,
+    0.0341,
+    0.034,
+    0.0302,
+    0.0282,
+    0.027,
+    0.0266,
+    0.0256,
+    0.0255,
+    0.0252,
+    0.0243,
+    0.0202,
+    0.0188,
+    0.0187,
+    0.0186,
+    0.0165,
+    0.016,
+    0.0144,
+    0.0143,
+    0.0141,
+    0.0135,
+    0.0134,
+    0.0131,
+    0.0124,
+    0.0111,
+    0.0109,
+    0.0109,
+    0.01,
+    0.0096,
+    0.0086,
+    0.0081,
+    0.0079,
+    0.0075,
+    0.007,
+    0.0068,
+    0.0067,
+    0.0065,
+    0.0063,
+    0.0057,
+    0.0055,
+    0.0053,
+    0.0052,
+    0.0046,
+    0.0041,
+    0.0041,
+    0.0036,
+    0.0032,
+    0.0031,
+    0.0031,
+    0.0022,
+    0.0021
+  ]
+}
