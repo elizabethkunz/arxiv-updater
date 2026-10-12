@@ -1,0 +1,243 @@
+{
+  "date": "2026-10-12",
+  "n_fetched": 103,
+  "papers": [
+    {
+      "id": "2610.12556",
+      "title": "TLS loss in superconducting resonators on epitaxial hBN thin films",
+      "authors": [
+        "J. Christiansen-Salameh",
+        "D. J. Temples",
+        "R. Linehan",
+        "S. Sussman",
+        "Aloyse Maille",
+        "F. Abouzahr",
+        "L. Alexis",
+        "K. Anyang",
+        "D. Bowring",
+        "G. Bratrud",
+        "E. Celi",
+        "A. H. Colón Cesaní",
+        "R. Khatiwada",
+        "D. Molenaar",
+        "O. Peek",
+        "A. Rodriguez",
+        "O. Seidel",
+        "D. Schlom",
+        "D. Sotir",
+        "S. Uemura",
+        "Y. Wu",
+        "E. Figueroa-Feliciano",
+        "D. Baxter",
+        "Z. Tian"
+      ],
+      "abstract": "The integration of low-loss dielectrics into superconducting circuits is of importance to the functionality of quantum computers and sensors. In this work, we fabricate and measure niobium resonators atop few-layer, epitaxial hexagonal boron nitride (hBN) grown by Molecular Beam Epitaxy on a sapphire substrate and compare against a control counterpart without hBN. We conduct radiofrequency measurements which probe the responses to power, temperature, and temporal fluctuations of two-level systems. The resonators integrating hBN maintain low dielectric loss with a low-power internal loss tangent on the order of $10^{-6}$, and demonstrate hBN can be added to the conventional superconducting qubit stack with minimal degradation of the quality factor. This research represents a first step towards a materials-driven strategy to eliminate phonon-mediated correlated errors in solid-state quantum systems, which leverages the thermal properties of 2D materials to prevent athermal phonons excited in the device substrate from transmitting across the superconductor-substrate interface. The same technique applied to quantum sensors would maximize phonon collection by blocking phonons from entering passive metal films.",
+      "categories": [
+        "quant-ph",
+        "hep-ex"
+      ],
+      "published": "2026-10-08",
+      "score": 0.813615330766115,
+      "similar_to": [
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.8893735408782959
+        },
+        {
+          "title": "Comparison of Dielectric Loss in Titanium Nitride and Aluminum Superconducting Resonators",
+          "id": "2007.07338",
+          "similarity": 0.8612707257270813
+        }
+      ],
+      "summary": {
+        "summary": "The integration of low-loss dielectrics into superconducting circuits is of importance to the functionality of quantum computers and sensors. In this work, we fabricate and measure niobium resonators atop few-layer, epitaxial hexagonal boron nitride (hBN) grown by Molecular Beam Epitaxy on a sapphire substrate and compare against a control counterpart without hBN.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.13417",
+      "title": "Modelling Josephson Junctions with Boundary Conditions: Towards High-Fidelity Models for Superconducting Qubits",
+      "authors": [
+        "Luis Bueno Blanco",
+        "Juan Manuel Pérez-Pardo"
+      ],
+      "abstract": "Josephson junctions are the central nonlinear element of superconducting qubits, yet their standard description is reached through a chain of approximations. We propose a purely quantum-mechanical model of the junction, formulated directly in Hilbert space: a charged particle moves on a one-dimensional loop, and the junction is a point at which the wave function obeys self-adjoint boundary conditions, labelled by a coupling strength $λ$, which controls the transparency of the junction, and a phase jump $δ$, which plays the role of the superconducting phase difference. For a loop with a single junction we solve the spectral problem and show that the ground-state momentum expectation, identified with the supercurrent, factorises exactly as $\\langle\\hat{p}_0\\rangle = I_c(δ,λ)\\sinδ$. For opaque junctions $I_c$ becomes independent of $δ$ and the first Josephson relation $I=I_c\\sinδ$ is recovered; for strongly attractive coupling, where the ground state is bound to the junction, the $\\sinδ$ law is also recovered, but with an exponentially suppressed amplitude. For more transparent junctions, however, the model \\emph{predicts} deviations from the pure $\\sinδ$ law: $I_c$ acquires a dependence on $δ$ already at order $λ^{-2}$, compatible with the higher Josephson harmonics recently found necessary to describe superconducting qubit spectra, and a fully transparent contact yields a current linear in $δ$. When the phase varies in time, a gauge transformation shows that the voltage drop across the junction is proportional to $\\dotδ$, so that the second Josephson relation emerges without being imposed. The boundary-condition approach thus reproduces both Josephson relations from first principles and predicts corrections to them, offering a route towards higher-fidelity models of superconducting qubits.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-10-09",
+      "score": 0.6066442661609384,
+      "similar_to": [
+        {
+          "title": "Observation of Josephson Harmonics in Tunnel Junctions",
+          "id": "2302.09192",
+          "similarity": 0.8599475622177124
+        },
+        {
+          "title": "Observation of high coherence in Josephson junction qubits measured in a three-dimensional circuit QED architecture",
+          "id": "1105.4652",
+          "similarity": 0.8222604990005493
+        }
+      ],
+      "summary": {
+        "summary": "Josephson junctions are the central nonlinear element of superconducting qubits, yet their standard description is reached through a chain of approximations. We propose a purely quantum-mechanical model of the junction, formulated directly in Hilbert space: a charged particle moves on a one-dimensional loop, and the junction is a point at which the wave function obeys self-adjoint boundary conditions, labelled by a coupling strength $λ$, which controls the transparency of the junction, and a phase jump $δ$, which plays the role of the superconducting phase difference.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.13843",
+      "title": "A Hardware-Native Trapped-Ion Hybrid Qudit-Oscillator Instruction Set",
+      "authors": [
+        "Masoud Hakimi Heris",
+        "Yuan Liu",
+        "Frank Mueller"
+      ],
+      "abstract": "Scaling trapped-ion processors by adding ions remains challenging. A complementary route exploits the multilevel internal structure of each ion to increase the computational Hilbert space per ion. We introduce a hardware-native hybrid qudit-oscillator instruction set for a general d-level internal register coupled to bosonic modes and prove that three of its native operation families suffice for universality of one qudit coupled to several modes. Adding an entangling operation between ions extends universality to a connected register of several qudits. The architecture natively supports both phase-space and sideband instruction sets and is implemented in the open-source framework HybridLane. As a representative application, we reproduce the dissipative vibronic dynamics of a three-chromophore complex previously simulated on a hybrid qubit-oscillator superconducting platform. Moving from a one-qubit-per-state register to a single qudit stores the entire electronic manifold in one ion, so every electronic coupling becomes a local intra-ion transition and the lab-frame Hamiltonian compiles directly into the ISA. Under the stated sequential timing model from a 40Ca+ qudit processor, one Trotter step is projected to run about ten times faster on the qudit, with an average RMSE of approximately 1.1 percent against the published reference.",
+      "categories": [
+        "quant-ph",
+        "cs.AR",
+        "cs.ET"
+      ],
+      "published": "2026-10-09",
+      "score": 0.5584784645388974,
+      "similar_to": [
+        {
+          "title": "Qudit Dynamical Decoupling on a Superconducting Quantum Processor",
+          "id": "2407.04893",
+          "similarity": 0.8364143967628479
+        },
+        {
+          "title": "Breakeven demonstration of quantum low-density parity-check codes",
+          "id": "2606.06455",
+          "similarity": 0.834325909614563
+        }
+      ],
+      "summary": {
+        "summary": "Scaling trapped-ion processors by adding ions remains challenging. A complementary route exploits the multilevel internal structure of each ion to increase the computational Hilbert space per ion.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8136,
+    0.6066,
+    0.5585,
+    0.4463,
+    0.3895,
+    0.3603,
+    0.3178,
+    0.2688,
+    0.2594,
+    0.2576,
+    0.2562,
+    0.2483,
+    0.2022,
+    0.1967,
+    0.1801,
+    0.1546,
+    0.1433,
+    0.1379,
+    0.1339,
+    0.1244,
+    0.1235,
+    0.1233,
+    0.1226,
+    0.1131,
+    0.1114,
+    0.1057,
+    0.0973,
+    0.0954,
+    0.0949,
+    0.0947,
+    0.0922,
+    0.0893,
+    0.0872,
+    0.0867,
+    0.0811,
+    0.0799,
+    0.0793,
+    0.0709,
+    0.0663,
+    0.0612,
+    0.0593,
+    0.0553,
+    0.0552,
+    0.0499,
+    0.049,
+    0.0473,
+    0.046,
+    0.0444,
+    0.0422,
+    0.0395,
+    0.0392,
+    0.0389,
+    0.0382,
+    0.0381,
+    0.0375,
+    0.0374,
+    0.0368,
+    0.0359,
+    0.0343,
+    0.0337,
+    0.0322,
+    0.0318,
+    0.0307,
+    0.0302,
+    0.0288,
+    0.0287,
+    0.0274,
+    0.0264,
+    0.0263,
+    0.0258,
+    0.0251,
+    0.025,
+    0.0238,
+    0.0219,
+    0.0214,
+    0.0214,
+    0.0195,
+    0.0169,
+    0.0169,
+    0.0155,
+    0.0146,
+    0.0134,
+    0.0127,
+    0.0125,
+    0.0121,
+    0.012,
+    0.0103,
+    0.0103,
+    0.0093,
+    0.0088,
+    0.0066,
+    0.0065,
+    0.0063,
+    0.006,
+    0.0054,
+    0.005,
+    0.0049,
+    0.0049,
+    0.0041,
+    0.004,
+    0.0034,
+    0.0032,
+    0.0023
+  ]
+}
