@@ -1,0 +1,243 @@
+{
+  "date": "2026-10-15",
+  "n_fetched": 111,
+  "papers": [
+    {
+      "id": "2610.20132",
+      "title": "A low-cost compact muon detector for millikelvin operation",
+      "authors": [
+        "Tengiz Ibrayev",
+        "Danish Khan",
+        "Alex Herscovics",
+        "Komal Kataruka",
+        "Matilda Lawton",
+        "Sandhya Sharma",
+        "Steven Waddy",
+        "Laura Manenti"
+      ],
+      "abstract": "Ionizing radiation produces correlated errors in superconducting qubits, posing some challenges to quantum error correction. In addition, it causes background events in other superconducting cryogenic devices, such as kinetic inductance detectors and superconducting nanowire single-photon detectors. Cosmic muons are a component of this background that can only be partly shielded against at ground level, but can be tagged by an independent detector inside the cryostat, so that the affected data can be vetoed, or the muon tags incorporated into error correction. We present a low-cost, compact muon detector consisting of two plastic scintillator modules, each read out by a silicon photomultiplier (SiPM), operated in coincidence. We characterize the SiPMs from room temperature down to 10 mK, including the breakdown and upper-limit voltages that define the operating bias range. Operated as a muon counter, the detector measures a coincidence rate that, as expected, is independent of temperature within uncertainties and agrees with analytical and Monte Carlo predictions. Below approximately 8 K, each muon event produces two pulses, one narrow and one broad, an effect that, to our knowledge, has not been reported before. Coincidences with an independent muon detector outside the cryostat confirm that muons are still counted reliably in this regime. By studying the appearance of double pulses as a function of temperature and magnetic field up to 4.5 T, we find a behavior consistent with the phase diagram of a type-II superconductor. This links the double pulses to a superconducting material in the SiPM, likely an adhesion layer or diffusion barrier introduced during manufacturing. The mechanism by which the superconducting state produces the second pulse is not yet understood.",
+      "categories": [
+        "physics.ins-det",
+        "hep-ex",
+        "quant-ph"
+      ],
+      "published": "2026-10-14",
+      "score": 0.8313145974770233,
+      "similar_to": [
+        {
+          "title": "Correlated Charge Noise and Relaxation Errors in Superconducting Qubits",
+          "id": "2012.06029",
+          "similarity": 0.8051059246063232
+        },
+        {
+          "title": "Resolving catastrophic error bursts from cosmic rays in large arrays of superconducting qubits",
+          "id": "2104.05219",
+          "similarity": 0.7988197803497314
+        }
+      ],
+      "summary": {
+        "summary": "Ionizing radiation produces correlated errors in superconducting qubits, posing some challenges to quantum error correction. In addition, it causes background events in other superconducting cryogenic devices, such as kinetic inductance detectors and superconducting nanowire single-photon detectors.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.19599",
+      "title": "Cryogenic Multiplexing Control Chip for Superconducting Quantum Processor",
+      "authors": [
+        "Rutian Huang",
+        "Xiao Geng",
+        "Xinyu Wu",
+        "Genting Dai",
+        "Liangliang Yang",
+        "Jianshe Liu",
+        "Wei Chen"
+      ],
+      "abstract": "This paper proposes a scheme and design of cryogenic multiplexing control chip (MCC) which enables one microwave cable to control many superconducting qubits. Designed based on adjustable inductor, MCC is a non-reciprocal device which generates microwave signals between 4 and 8 GHz and constructs XY control circuit to operate qubits. The effects of filters, isolators, power splitters, qubits and load impedance on MCC are analyzed in the frequency-domain simulation. And in time-domain simulation, the response time, Gaussian pulses, single-sideband, amplitude and frequency compensation of MCC are examined. The MCC can be integrated with the superconducting qubits on the same package at 20 mK temperature stage, and output specific microwave pulses used to drive the superconducting qubits without crosstalks. The MCC can greatly reduce the number of microwave control lines and is beneficial to the development of large-scale superconducting quantum processor.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-14",
+      "score": 0.7903773906838594,
+      "similar_to": [
+        {
+          "title": "Quantum Computer Controlled by Superconducting Digital Electronics at Millikelvin Temperature",
+          "id": "2503.09879",
+          "similarity": 0.8185352087020874
+        },
+        {
+          "title": "A Modular Cryogenic Link for Microwave Quantum Communication Over Distances of Tens of Meters",
+          "id": "2604.15971",
+          "similarity": 0.8100631237030029
+        }
+      ],
+      "summary": {
+        "summary": "This paper proposes a scheme and design of cryogenic multiplexing control chip (MCC) which enables one microwave cable to control many superconducting qubits. Designed based on adjustable inductor, MCC is a non-reciprocal device which generates microwave signals between 4 and 8 GHz and constructs XY control circuit to operate qubits.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.19073",
+      "title": "A modular quantum computer based on Cornucopia codes",
+      "authors": [
+        "Zhide Lu",
+        "Weikang Li",
+        "Yinghao Ma",
+        "Hanyu Yan",
+        "Bingrun Wang",
+        "Yixuan Ma",
+        "Zheng-Zhi Sun",
+        "Dong-Ling Deng"
+      ],
+      "abstract": "Ultra-high-rate quantum error correction codes can store many logical qubits in a single code block with few physical qubits. A fault-tolerant quantum computer, however, also requires a universal set of logical operations on individually addressable logical qubits, and the ancilla overhead of these operations may erode the advantage of the high encoding rate. Here, we propose the Cornucopia architecture, in which a universal set of logical operations is implemented at low overhead for the Cornucopia codes. In particular, we focus on the [[2844,1426,18]] Cornucopia code as an example and introduce a modular quantum computer built from such code blocks connected by bridges. Each block stores 1,426 logical qubits and serves as a universal logical processor. Exploiting the code's translation symmetry, we construct a family of reusable gadgets that individually address 1,422 logical qubits within each block. These gadgets support three universal logical instruction sets: basic, high-throughput and fixed-extractor. Excluding magic-state factories, a module with sufficient workspace to execute any instruction in the basic set requires an average of 4.1 physical qubits per logical qubit, compared with 3.0 for memory alone. The architecture thus preserves the resource advantage of ultra-high-rate quantum memory while enabling universal logical computation, providing a route towards low-overhead fault-tolerant quantum computers.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-13",
+      "score": 0.5409042639983821,
+      "similar_to": [
+        {
+          "title": "Quantum error correction at ultra-low overhead",
+          "id": "2608.02773",
+          "similarity": 0.9125759601593018
+        },
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.8586416244506836
+        }
+      ],
+      "summary": {
+        "summary": "Ultra-high-rate quantum error correction codes can store many logical qubits in a single code block with few physical qubits. A fault-tolerant quantum computer, however, also requires a universal set of logical operations on individually addressable logical qubits, and the ancilla overhead of these operations may erode the advantage of the high encoding rate.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8313,
+    0.7904,
+    0.5409,
+    0.4413,
+    0.4195,
+    0.4012,
+    0.3436,
+    0.3154,
+    0.3129,
+    0.2645,
+    0.2527,
+    0.22,
+    0.2024,
+    0.1891,
+    0.1591,
+    0.1494,
+    0.148,
+    0.1479,
+    0.1424,
+    0.1243,
+    0.1242,
+    0.1234,
+    0.1213,
+    0.1133,
+    0.1119,
+    0.1093,
+    0.1068,
+    0.1019,
+    0.0981,
+    0.0976,
+    0.0934,
+    0.0932,
+    0.0896,
+    0.0888,
+    0.0824,
+    0.0727,
+    0.0719,
+    0.0699,
+    0.0669,
+    0.0666,
+    0.065,
+    0.0597,
+    0.0557,
+    0.0549,
+    0.0541,
+    0.0508,
+    0.05,
+    0.0494,
+    0.0485,
+    0.0465,
+    0.0446,
+    0.0436,
+    0.0426,
+    0.0395,
+    0.0391,
+    0.0391,
+    0.0377,
+    0.0361,
+    0.0355,
+    0.0334,
+    0.0289,
+    0.0287,
+    0.0284,
+    0.0275,
+    0.0262,
+    0.0242,
+    0.0235,
+    0.0232,
+    0.0224,
+    0.022,
+    0.0216,
+    0.0201,
+    0.0178,
+    0.0166,
+    0.0165,
+    0.016,
+    0.0157,
+    0.0139,
+    0.0135,
+    0.0123,
+    0.0123,
+    0.0115,
+    0.0107,
+    0.0107,
+    0.0103,
+    0.0101,
+    0.0096,
+    0.0094,
+    0.0089,
+    0.0087,
+    0.0086,
+    0.008,
+    0.0076,
+    0.0076,
+    0.0075,
+    0.0074,
+    0.0062,
+    0.0061,
+    0.006,
+    0.0053,
+    0.0051,
+    0.0049,
+    0.0048,
+    0.0048,
+    0.0048,
+    0.0042,
+    0.0042,
+    0.0021,
+    0.0013,
+    0.0008,
+    0.0007
+  ]
+}
