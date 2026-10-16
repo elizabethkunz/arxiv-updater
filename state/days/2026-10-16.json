@@ -1,0 +1,384 @@
+{
+  "date": "2026-10-16",
+  "n_fetched": 120,
+  "papers": [
+    {
+      "id": "2610.20810",
+      "title": "Syndrome-Resolved Decoding of Qubit Readout Errors",
+      "authors": [
+        "Han Zheng",
+        "Vladimir Pešić",
+        "Nikolay Gusarov",
+        "Andrea Lizzit",
+        "Taketo Imaizumi",
+        "Chulwoo Ahn",
+        "Marco Nicolas Mueller",
+        "Raymond Mencia",
+        "Edoardo Charbon",
+        "Vladimir E. Manucharyan"
+      ],
+      "abstract": "Readout errors in superconducting qubits include incorrect state assignment, bit flips within the computational subspace, and leakage to non-computational states. These errors require different mitigation strategies, yet conventional measurement fidelity and repeatability metrics do not resolve their individual contributions. Previous repeated-readout studies have shown that temporal correlations reveal additional information about readout errors. Here we introduce the Readout Error Decoder (RED), which converts repeated thresholded binary records into a channel-resolved error budget. Controlled error injections validate the channel-specific response of the decoder. We demonstrate RED on both fluxonium and transmon qubits and across distinct leakage-lifetime regimes. RED identifies the error channels limiting readout performance without requiring dedicated discrimination of non-computational states, providing a basis for targeted readout optimization across different qubit modalities.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-14",
+      "score": 0.9760469581036728,
+      "similar_to": [
+        {
+          "title": "Benchmarking the readout of a superconducting qubit for repeated measurements",
+          "id": "2407.10934",
+          "similarity": 0.8975439071655273
+        },
+        {
+          "title": "Model-based Optimization of Superconducting Qubit Readout",
+          "id": "2308.02079",
+          "similarity": 0.888913631439209
+        }
+      ],
+      "summary": {
+        "summary": "Readout errors in superconducting qubits include incorrect state assignment, bit flips within the computational subspace, and leakage to non-computational states. These errors require different mitigation strategies, yet conventional measurement fidelity and repeatability metrics do not resolve their individual contributions.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.21853",
+      "title": "Superconducting circuits host two-level systems with lifetimes exceeding one second",
+      "authors": [
+        "Mathieu Féchant",
+        "Phillip Lenhard",
+        "Nicolas Gosling",
+        "Ritika Dhundhwal",
+        "Denis Bénâtre",
+        "Wolfgang Wernsdorfer",
+        "Thomas Reisinger",
+        "Ioan M. Pop"
+      ],
+      "abstract": "Understanding the microscopic environment of superconducting qubits is a central challenge for quantum technologies. Parasitic two-level systems (TLSs) of various microscopic origins are ubiquitous and limit qubit performance through decoherence, frequency drifts, and leakage. Recently, long-lived TLSs with lifetimes exceeding those of state-of-the-art qubits have been shown to induce correlated qubit dynamics, with direct implications for quantum error correction. Here, we perform wide-band quantum-jump correlation spectroscopy on flux-tunable transmon qubits and identify microscopic degrees of freedom that outlive the qubit by orders of magnitude. Pump-probe measurements at varying detunings from these objects reveal intrinsic lifetimes exceeding one second. Their weak coupling to the qubit, in the kilohertz range, is consistent with positional defects described by the standard tunneling model, without excluding other microscopic origins such as magnetic spin impurities or trapped quasiparticles. More broadly, these results establish superconducting qubits as a sensitive probe of exceptionally long-lived microscopic degrees of freedom and open a route toward their controlled access and functionalization.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-15",
+      "score": 0.9683809541008606,
+      "similar_to": [
+        {
+          "title": "Controlling the spontaneous emission of a superconducting transmon qubit",
+          "id": "0803.4490",
+          "similarity": 0.8734027147293091
+        },
+        {
+          "title": "Observation of directly interacting coherent two-level systems in a solid",
+          "id": "1503.03681",
+          "similarity": 0.8635286092758179
+        }
+      ],
+      "summary": {
+        "summary": "Understanding the microscopic environment of superconducting qubits is a central challenge for quantum technologies. Parasitic two-level systems (TLSs) of various microscopic origins are ubiquitous and limit qubit performance through decoherence, frequency drifts, and leakage.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.21435",
+      "title": "Accurate gap control of 3D-integrated superconducting quantum circuits using asymmetric indium architecture and multi-angle flip-chip bonding",
+      "authors": [
+        "L. Richard",
+        "N. Bruckmoser",
+        "J. Feigl",
+        "D. Bunch",
+        "A. Bhattacharjee",
+        "L. Koch",
+        "I. Tsitsilin",
+        "V. P. Bader",
+        "H. Hu",
+        "L. Södergren",
+        "S. Filipp"
+      ],
+      "abstract": "Flip-chip 3D integration is a key enabling technology for overcoming the routing and layout constraints of planar superconducting quantum processors, but it requires accurate and uniform control of the inter-chip spacing while preserving qubit coherence. In conventional processes, thick indium bumps are deposited symmetrically on both chips, while dedicated spacers are introduced to limit the residual tilt. Here, we present a flip-chip bonding process based on an asymmetric indium architecture, combining $20\\,μ\\mathrm{m}$ thick indium bumps on the control chip with $200\\,\\mathrm{nm}$ thin indium pads on the qubit chip. Using electrical and microwave measurements, we demonstrate low resistance and low loss indium interconnects, and show that transmon qubits integrated with this process reach relaxation and coherence times of $T_1=(159\\pm14)\\,μ\\mathrm{s}$ and $T_{\\mathrm{2,echo}}=(294\\pm42)\\,μ\\mathrm{s}$, respectively, comparable to planar devices. Combined with a multi angle compression procedure that suppresses systematic tilt, this approach reduces the average post bonding tilt to $(20\\pm12)\\,μ\\mathrm{rad}$. These results establish an asymmetric indium architecture combined with multi angle compression as a robust, coherence preserving route toward 3D integrated superconducting quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-15",
+      "score": 0.8316139139900586,
+      "similar_to": [
+        {
+          "title": "Surpassing millisecond coherence times in on-chip superconducting quantum memories by optimizing materials, processes, and circuit design",
+          "id": "2308.15539",
+          "similarity": 0.827777087688446
+        },
+        {
+          "title": "Resisting high-energy impact events through gap engineering in superconducting qubit arrays",
+          "id": "2402.15644",
+          "similarity": 0.8274800777435303
+        }
+      ],
+      "summary": {
+        "summary": "Flip-chip 3D integration is a key enabling technology for overcoming the routing and layout constraints of planar superconducting quantum processors, but it requires accurate and uniform control of the inter-chip spacing while preserving qubit coherence. In conventional processes, thick indium bumps are deposited symmetrically on both chips, while dedicated spacers are introduced to limit the residual tilt.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.21357",
+      "title": "Stitched surface codes: planar concatenation through GHZ corridors",
+      "authors": [
+        "Mohamed A. Shalby",
+        "Alexandre Bourassa",
+        "Amir Karamlou",
+        "Leigh Martin",
+        "Alexis Morvan",
+        "Nicholas Noll",
+        "Craig Gidney",
+        "Leonid P. Pryadko"
+      ],
+      "abstract": "We present a fault-tolerant quantum-memory architecture that concatenates four distance-t rotated surface-code patches with the [[4,2,2]] outer code, encoding two logical qubits at code distance d = 2t in a physical footprint of N < 2(2t+1)^2 qubits on a square lattice with nearest-neighbor connectivity. The outer-code stabilizer generators XXXX and ZZZZ, each of physical weight 4t, are measured in situ via verified Greenberger-Horne-Zeilinger (GHZ) ancillae distributed through narrow corridors between adjacent patches, without lattice surgery or long-range gates. The outer-code gadgets introduce hyperedge fault mechanisms, but by design each decomposes into graphlike components, so the complete syndrome is decoded by a single minimum-weight-perfect-matching pass. Circuit-level simulations show logical error rates that scale as p^t, consistent with distance-2t protection. Finally, we implement the construction experimentally on a 105-qubit Willow superconducting processor in both the ZZ and XX memory bases. With the correlated-matching decoder, increasing the code distance from d = 4 to d = 6 reduces the block logical error rate by a factor of 1.52. The construction thus provides a near-term testbed for concatenated architectures beyond the standard surface code.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-15",
+      "score": 0.7560746630449167,
+      "similar_to": [
+        {
+          "title": "Surface code logical operations on a superconducting quantum processor",
+          "id": "2607.01473",
+          "similarity": 0.8939070701599121
+        },
+        {
+          "title": "Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code",
+          "id": "2112.03708",
+          "similarity": 0.8905006647109985
+        }
+      ],
+      "summary": {
+        "summary": "We present a fault-tolerant quantum-memory architecture that concatenates four distance-t rotated surface-code patches with the [[4,2,2]] outer code, encoding two logical qubits at code distance d = 2t in a physical footprint of N < 2(2t+1)^2 qubits on a square lattice with nearest-neighbor connectivity. The outer-code stabilizer generators XXXX and ZZZZ, each of physical weight 4t, are measured in situ via verified Greenberger-Horne-Zeilinger (GHZ) ancillae distributed through narrow corridors between adjacent patches, without lattice surgery or long-range gates.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.21936",
+      "title": "ZZ-Free bSWAP Gates under Strong Driving in Far-Detuned Fixed-Frequency Transmons",
+      "authors": [
+        "Akinori Machino",
+        "Kazuhisa Ogawa",
+        "Yuto Ikegai",
+        "Takafumi Miyanaga",
+        "Koichiro Ban",
+        "Nilton F. G. Filho",
+        "Hidehisa Shiomi",
+        "Toshi Sumida",
+        "Shuhei Tamate",
+        "Yutaka Tabuchi",
+        "Yasunobu Nakamura",
+        "Makoto Negoro"
+      ],
+      "abstract": "Far-detuned frequency allocations in fixed-frequency superconducting processors mitigate spectral crowding but constrain cross-resonance interactions at practical drive amplitudes. Here, we demonstrate that a single strong drive induces a large $XX-YY$ interaction in the far-detuned regime, while a weak second tone tunes the accompanying $ZZ$ phase. The interaction realizes a 150-ns $\\sqrt{\\mathrm{bSWAP}}$ gate, which can directly prepare a maximally entangled state from the ground state. For the implementations on the same qubit pair at matched drive strengths, cross resonance gives a shorter CNOT operation, while $\\sqrt{\\mathrm{bSWAP}}$ gives a 33% shorter SWAP operation with a higher IRB fidelity. The multilevel theory further predicts a regime where stronger driving can yield a speed advantage for CNOT as well, a possibility absent in the two-level model. As an application of the $XX-YY$ interaction, we also demonstrate two-spin squeezing beyond the standard quantum limit through two-axis countertwisting. The interaction realized here complements cross resonance and offers a route to efficient gate synthesis and quantum simulation of interacting spin systems.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-15",
+      "score": 0.7476707865965067,
+      "similar_to": [
+        {
+          "title": "Suppression of static ZZ interaction in an all-transmon quantum processor",
+          "id": "2011.03976",
+          "similarity": 0.8766031265258789
+        },
+        {
+          "title": "Quantum crosstalk cancellation for fast entangling gates and improved multi-qubit performance",
+          "id": "2106.00675",
+          "similarity": 0.8637720346450806
+        }
+      ],
+      "summary": {
+        "summary": "Far-detuned frequency allocations in fixed-frequency superconducting processors mitigate spectral crowding but constrain cross-resonance interactions at practical drive amplitudes. Here, we demonstrate that a single strong drive induces a large $XX-YY$ interaction in the far-detuned regime, while a weak second tone tunes the accompanying $ZZ$ phase.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.20654",
+      "title": "The noise cost of reservoir locality in broadband quantum amplifier chains",
+      "authors": [
+        "Chengxi Li",
+        "Hao Zhu",
+        "Tie-Fu Zhang",
+        "Lin Zhuang",
+        "Wanzi Sun",
+        "Wuming Liu"
+      ],
+      "abstract": "Directional quantum amplifiers enable weak-signal readout while protecting the source, but reservoir noise limits sensitivity. Finite-band suppression must reconcile frequency-dependent responses with fixed local couplings and finite rates. We construct adjacent-site loss channels attaining the known single-frequency minimum under local compatibility conditions, as an uncapped benchmark. For specified uniform and dimerized chains, we compare fixed reservoirs at matched drift, ports, high-gain band and complete gain/loss rate caps. At the representative cap $R=8$ and halfwidth $Ω=0.05$, nearest-neighbor arithmetic band average noise exceeds the unrestricted optimum by more than $1.01265$ quanta in the uniform chain for every finite $N\\ge64$. Boundary-response bounds give necessary rates and targets requiring range two. At $N=64$, finite-auxiliary calculations retain a noise advantage under matched total coupling budgets; response bounds quantify noise-resolution tolerances. These theoretical results guide reservoir design and noise calibration for a proposed cryogenic microwave array with a $100$ kHz design band.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall",
+        "cond-mat.other",
+        "cond-mat.quant-gas"
+      ],
+      "published": "2026-10-13",
+      "score": 0.5385861777088623,
+      "similar_to": [
+        {
+          "title": "Introduction to Quantum Noise, Measurement and Amplification",
+          "id": "0810.4729",
+          "similarity": 0.843554675579071
+        },
+        {
+          "title": "Readout-Induced Leakage in Superconducting Circuits with Nonlinear Couplings",
+          "id": "2606.16055",
+          "similarity": 0.829463541507721
+        }
+      ],
+      "summary": {
+        "summary": "Directional quantum amplifiers enable weak-signal readout while protecting the source, but reservoir noise limits sensitivity. Finite-band suppression must reconcile frequency-dependent responses with fixed local couplings and finite rates.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.976,
+    0.9684,
+    0.8316,
+    0.7561,
+    0.7477,
+    0.5386,
+    0.4565,
+    0.4139,
+    0.3923,
+    0.3804,
+    0.3557,
+    0.307,
+    0.3066,
+    0.305,
+    0.2949,
+    0.2695,
+    0.2479,
+    0.2367,
+    0.2158,
+    0.2076,
+    0.2004,
+    0.1969,
+    0.1936,
+    0.17,
+    0.1577,
+    0.1506,
+    0.1486,
+    0.1415,
+    0.1283,
+    0.1202,
+    0.1173,
+    0.108,
+    0.1044,
+    0.0898,
+    0.0882,
+    0.0843,
+    0.084,
+    0.0783,
+    0.0779,
+    0.0761,
+    0.0761,
+    0.0743,
+    0.072,
+    0.0719,
+    0.0711,
+    0.0698,
+    0.0685,
+    0.0615,
+    0.0603,
+    0.0587,
+    0.0569,
+    0.0525,
+    0.0507,
+    0.0469,
+    0.0466,
+    0.0459,
+    0.0442,
+    0.0423,
+    0.0407,
+    0.0403,
+    0.0402,
+    0.0394,
+    0.0394,
+    0.0387,
+    0.0386,
+    0.0361,
+    0.0346,
+    0.0326,
+    0.0285,
+    0.0275,
+    0.0267,
+    0.0265,
+    0.0265,
+    0.026,
+    0.0249,
+    0.0246,
+    0.024,
+    0.0226,
+    0.0211,
+    0.0201,
+    0.0199,
+    0.0188,
+    0.0187,
+    0.0183,
+    0.0177,
+    0.0175,
+    0.0172,
+    0.0159,
+    0.0157,
+    0.0151,
+    0.0149,
+    0.0148,
+    0.0144,
+    0.014,
+    0.0139,
+    0.0135,
+    0.0128,
+    0.0121,
+    0.0118,
+    0.0115,
+    0.0113,
+    0.0098,
+    0.0096,
+    0.0077,
+    0.0071,
+    0.0071,
+    0.007,
+    0.007,
+    0.0069,
+    0.0069,
+    0.0067,
+    0.0063,
+    0.0059,
+    0.0055,
+    0.0054,
+    0.0051,
+    0.0048,
+    0.004,
+    0.002,
+    0.0008
+  ]
+}
