@@ -1,0 +1,488 @@
+{
+  "date": "2026-10-20",
+  "n_fetched": 165,
+  "papers": [
+    {
+      "id": "2610.26413",
+      "title": "Two-qubit cryo-CMOS control of a spin register in diamond",
+      "authors": [
+        "H. B. van Ommen",
+        "N. E. Fakkel",
+        "M. van Riggelen",
+        "J. Yun",
+        "L. A. Enthoven",
+        "M. A. B. ElBadry",
+        "F. Sebastiano",
+        "M. Babaie",
+        "T. H. Taminiau"
+      ],
+      "abstract": "Utility-scale quantum technologies will not only require a well-performing quantum platform, but also classical control hardware that is scalable, efficient, and meets the design requirements set by the quantum system of interest. One approach is the application of silicon CMOS technology, a highly scalable and mature technology, to design application-specific integrated circuits (ASIC) that are optimized for the quantum system. In this work, we present two-qubit control of electron and nuclear spins in NV centres in diamond, using a cryogenic CMOS qubit controller integrated with a diamond quantum device in a cryostat. Using Gate Set Tomography (GST) we characterize the performance of the single-qubit gates on both electron- and carbon nuclear spins, and analyze the limiting noise processes. We use dynamical decoupling to engineer a two-qubit gate, and estimate $F_\\text{2q,avg} = 95(2)\\%$ for the electron-nuclear two-qubit gate fidelity. Our demonstration of cryo-CMOS-driven two-qubit gates is a key step towards highly-integrated quantum devices based on colour centres.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-19",
+      "score": 0.8323992727775322,
+      "similar_to": [
+        {
+          "title": "A digitally controlled silicon quantum processing unit",
+          "id": "2604.16216",
+          "similarity": 0.8658939003944397
+        },
+        {
+          "title": "Above 99.9% Fidelity Single-Qubit Gates, Two-Qubit Gates, and Readout in a Single Superconducting Quantum Device",
+          "id": "2508.16437",
+          "similarity": 0.8406327366828918
+        }
+      ],
+      "summary": {
+        "summary": "Utility-scale quantum technologies will not only require a well-performing quantum platform, but also classical control hardware that is scalable, efficient, and meets the design requirements set by the quantum system of interest. One approach is the application of silicon CMOS technology, a highly scalable and mature technology, to design application-specific integrated circuits (ASIC) that are optimized for the quantum system.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.24212",
+      "title": "Optimal robust single-qubit gates in superconducting quantum processors",
+      "authors": [
+        "Tangyou Huang",
+        "Anuj Aggarwal",
+        "Jingjun Zhu",
+        "Akshay Gaikwad",
+        "David Niepce",
+        "Marcus Rommel",
+        "Andreas Nylander",
+        "Amr Osman",
+        "Anita Fadavi Rousari",
+        "Janka Biznárová",
+        "Stéphane Guérin",
+        "Gheorghe Sorin Paraoanu",
+        "Anton Frisk Kockum",
+        "Giovanna Tancredi"
+      ],
+      "abstract": "Fault-tolerant quantum computing requires high-fidelity quantum gates that are resilient to control errors and device imperfections. Here, we develop energy-optimal control pulses for single-qubit gates that are simultaneously robust against frequency detuning and waveform inhomogeneities while also suppressing leakage outside the computational subspace. Combining the optimized pulse envelopes with an adaptive control scheme, we experimentally demonstrate optimal robust gates on a superconducting quantum processor. For a gate duration of 90ns, we achieve fidelities above 99.9% for the X gate and 99.6% for Hadamard-type gates. For the X gate, we maintain fidelities above 99.5% for simultaneous drive-amplitude variations up to 20% and qubit detuning up to 4 MHz. This robustness outperforms that of conventional Gaussian pulses by an order of magnitude, without much difference in peak gate fidelity. These results establish a route towards robust single-qubit control in large-scale quantum processors, advancing the development of fault-tolerant quantum computing.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-16",
+      "score": 0.7937107250886365,
+      "similar_to": [
+        {
+          "title": "Scalable and Site-Specific Frequency Tuning of Two-Level System Defects in Superconducting Qubit Arrays",
+          "id": "2503.04702",
+          "similarity": 0.8793700933456421
+        },
+        {
+          "title": "Logic gates at the surface code threshold: Superconducting qubits poised for fault-tolerant quantum computing",
+          "id": "1402.4848",
+          "similarity": 0.8785582780838013
+        }
+      ],
+      "summary": {
+        "summary": "Fault-tolerant quantum computing requires high-fidelity quantum gates that are resilient to control errors and device imperfections. Here, we develop energy-optimal control pulses for single-qubit gates that are simultaneously robust against frequency detuning and waveform inhomogeneities while also suppressing leakage outside the computational subspace.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.24167",
+      "title": "Probing wetting and solidification dynamics of neon thin films with a high-$T_c$ superconducting circuit",
+      "authors": [
+        "Brennan Dizdar",
+        "Yueheng Shi",
+        "David I. Schuster",
+        "Christopher S. Lang"
+      ],
+      "abstract": "Integrating condensed noble gases with superconducting circuits offers new opportunities for operating hybrid quantum devices. In particular, electrons on solid neon have recently emerged as exceptionally coherent charge qubits, however the growth of the underlying neon films on patterned devices remains poorly controlled. We monitor neon films near the triple point using a multimode resonator fabricated from high-$T_c$ YBCO, which remains superconducting at temperatures where the liquid phase exists and whose geometry sets a thickness-sensing window near 1 $μ$m. In the liquid state we observe rich film dynamics: uniform wetting that saturates near 20 nm, drainage of thicker films, and spontaneous thickness oscillations, reflecting the extreme sensitivity of thick films in this regime. A galvanic connection to our sensing volume enables in-situ electrostatic tuning of the liquid film thickness. Statistics of freezing the neon across various liquid levels reveal variations of the solid film thickness by approximately an order of magnitude. We also observe a two-fold increase in the quality factor of the resonators at the level of $10^3$ with added neon and rule out dielectric loss as the limiting factor. Our results demonstrate that hermetic packaging facilitates the investigation of both rich non-equilibrium fluid dynamics and the impact of condensed noble gas films on microwave loss in superconducting circuits, but may not be the best modality for growing solid neon films with precisely controlled thickness.",
+      "categories": [
+        "quant-ph",
+        "physics.flu-dyn"
+      ],
+      "published": "2026-10-16",
+      "score": 0.7248062770898311,
+      "similar_to": [
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.8204508423805237
+        },
+        {
+          "title": "High-Q superconducting microwave resonators using MBE titanium nitride",
+          "id": "2607.15230",
+          "similarity": 0.8158819675445557
+        }
+      ],
+      "summary": {
+        "summary": "Integrating condensed noble gases with superconducting circuits offers new opportunities for operating hybrid quantum devices. In particular, electrons on solid neon have recently emerged as exceptionally coherent charge qubits, however the growth of the underlying neon films on patterned devices remains poorly controlled.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.24077",
+      "title": "Quantum error correction well below the color code threshold",
+      "authors": [
+        "Ali Lavasani",
+        "Adam P. Reed",
+        "Joan M. Dreiling",
+        "Annie J. Park",
+        "Michael Mills",
+        "Matteo Puviani",
+        "Gabriel Matos",
+        "M. S. Allman",
+        "Noah Berthusen",
+        "Natalie C. Brown",
+        "Victor E. Colussi",
+        "Brian Estey",
+        "Cameron Foltz",
+        "Daniel Gresh",
+        "Reza Haghshenas",
+        "Akhil Isanaka",
+        "Nikhil Kotibhaskar",
+        "Anthony Ransford",
+        "Ciarán Ryan-Anderson",
+        "Brian Neyenhuis",
+        "David Hayes",
+        "Tzvetan S. Metodi",
+        "Andrew C. Potter"
+      ],
+      "abstract": "Quantum error correction enables scalable fault-tolerant quantum computation by suppressing logical errors exponentially with code distance once physical error rates fall below a critical threshold. Here we demonstrate below-threshold operation of triangular color codes with distances $d=3,5,$ and $7$ on Quantinuum's Helios trapped-ion quantum processor. Leveraging both circuit- and hardware- level leakage reduction schemes, we achieve logical error rates as low as $5_{-2}^{+4}\\times 10^{-6}$, and demonstrate error suppression by over an order of magnitude, $Λ=12_{-2}^{+3}$, with each successive increase in code distance. Moreover, we demonstrate below threshold scaling of error rates for Clifford two-qubit randomized benchmarking circuits when encoded in $d=3,5$ color codes, achieving logical error rate of $7^{+3}_{-3}\\times 10^{-5}$ per logical two-qubit Clifford at distance $5$ with a suppression factor of $Λ=9_{-3}^{+8}$. We compare logical performance for existing near-optimal algorithmic decoders, and both convolutional neural network and transformer-based neural network decoders capable of real-time decoding an order of magnitude faster than the syndrome extraction rate. These results approach the logical error rates required for megaquop-scale quantum computation and indicate that scaled trapped-ion processors could reach application-relevant performance with substantially smaller code blocks than indicated by previous results in other qubit modalities.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-16",
+      "score": 0.7047792335933505,
+      "similar_to": [
+        {
+          "title": "Scaling and logic in the color code on a superconducting quantum processor",
+          "id": "2412.14256",
+          "similarity": 0.9235209226608276
+        },
+        {
+          "title": "Quantum error correction below the surface code threshold",
+          "id": "2408.13687",
+          "similarity": 0.9125523567199707
+        }
+      ],
+      "summary": {
+        "summary": "Quantum error correction enables scalable fault-tolerant quantum computation by suppressing logical errors exponentially with code distance once physical error rates fall below a critical threshold. Here we demonstrate below-threshold operation of triangular color codes with distances $d=3,5,$ and $7$ on Quantinuum's Helios trapped-ion quantum processor.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.26223",
+      "title": "Sidewall Metrology Protocol for Superconducting Qubit Devices",
+      "authors": [
+        "Jørgen Garnæs",
+        "Henrik S. Guttesen",
+        "Astrid T. Rømer",
+        "Oscar Danielsson",
+        "Emily P. Duggan",
+        "Zhenhai Sun",
+        "Asen Lyubenov Georgiev",
+        "Li Wei Chang",
+        "Morten Kjaergaard",
+        "Mark Bieler",
+        "Lukas Grünhaupt",
+        "Sabbir A. Khan"
+      ],
+      "abstract": "Sidewall morphology is a potentially important factor influencing superconducting qubit performance, yet its quantitative characterization remains challenging due to the absence of standardized measurement protocols. In this work, we develop a scanning probe microscopy-based measurement framework for the quantitative characterization of superconducting qubit sidewalls. The framework introduces a refined root mean square lateral sidewall roughness descriptor and a new curvature-equivalent radius for quantifying vertical sidewall morphology. The descriptors and measurement procedures are applied to different components of qubit devices, forming the basis of a proposed sidewall characterization protocol. This provides a foundation for quantitative comparisons of fabrication processes across laboratories, enabling future investigations of correlations between sidewall geometry and qubit performance.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mtrl-sci",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-10-19",
+      "score": 0.6112685356710875,
+      "similar_to": [
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.8259915709495544
+        },
+        {
+          "title": "Manufacturing low dissipation superconducting quantum processors",
+          "id": "1901.08042",
+          "similarity": 0.8215048313140869
+        }
+      ],
+      "summary": {
+        "summary": "Sidewall morphology is a potentially important factor influencing superconducting qubit performance, yet its quantitative characterization remains challenging due to the absence of standardized measurement protocols. In this work, we develop a scanning probe microscopy-based measurement framework for the quantitative characterization of superconducting qubit sidewalls.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.26015",
+      "title": "Phase engineering of odd parity state in a quantum dot Josephson junction",
+      "authors": [
+        "Shohei Kobayashi",
+        "Tyler Lindemann",
+        "Sergei Gronin",
+        "Geoffrey Gardner",
+        "Peter Stano",
+        "Daniel Loss",
+        "Michael Manfra",
+        "Seigo Tarucha",
+        "Sadashige Matsuo"
+      ],
+      "abstract": "Controlling fermion parity in quantum-dot Josephson junctions (QDJJs) enables access to novel superconducting physics. While parity transitions are usually tuned electrically, we study phase-induced transitions in a strongly coupled QDJJ using the superconducting phase difference across the dot terminals, denoted by $ϕ$. We find that this phase allows control over the ground state parity, with parity transitions observed as the Andreev bound states (ABSs) energies crossing zero. These crossings occur near $ϕ= π$, and their behavior is in good correspondence to a simple model considering a single-level quantum dot proximitized by a superconductor. These results place phase-controlled QDJJ arrays as a promising platform for exploring exotic phenomena such as Majorana zero modes.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-10-19",
+      "score": 0.52127717835648,
+      "similar_to": [
+        {
+          "title": "Distinguishing parity-switching mechanisms in a superconducting qubit",
+          "id": "2204.07458",
+          "similarity": 0.8226470947265625
+        },
+        {
+          "title": "Quasiparticle-induced transitions in a fluxonium qubit",
+          "id": "2607.21329",
+          "similarity": 0.8132820129394531
+        }
+      ],
+      "summary": {
+        "summary": "Controlling fermion parity in quantum-dot Josephson junctions (QDJJs) enables access to novel superconducting physics. While parity transitions are usually tuned electrically, we study phase-induced transitions in a strongly coupled QDJJ using the superconducting phase difference across the dot terminals, denoted by $ϕ$.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.25498",
+      "title": "Cryogenic Recharacterization of a Commercial 22 nm FD-SOI Foundry Standard-Cell Library",
+      "authors": [
+        "Mohamed Gharib",
+        "Rami Rasheedi",
+        "Salma Abdelzaher",
+        "Henry Shi",
+        "Mike Hammer",
+        "Llorenç Fanals-i-Batllori",
+        "Aldo Pena Perez",
+        "Antonino Miceli",
+        "Inna Partin-Vaisband"
+      ],
+      "abstract": "Wiring and bandwidth bottlenecks between a quantum processor and room-temperature electronics can be reduced by placing digital control at the cryogenic stage, but commercial foundry standard-cell libraries are not specified for operation at 4 K. A cryogenic recharacterization flow is therefore developed for a commercial 22 nm FD-SOI foundry standard-cell library using commercially available cryogenic compact-device models, while retaining the original cell circuits, layouts, logic functions, and implementation semantics and remaining compatible with the commercial synthesis, place-and-route, and signoff methodology used at room temperature. Body-bias dependence is quantified over 38,640 matched slew/load points at zero, +/-0.9 V, and +/-1.8 V body bias. Relative to full bias, zero-bias operation increases the median rising and falling delays by 38.6x and 33.0x, while approximately 90% of transitions exceed the foundry-defined maximum-transition envelope. The 0.8 V-to-0.4 V level shifter is even more sensitive to body bias: its worst-case falling delay decreases from 30.6 ns at zero bias to 0.56 ns at +/-1.8 V. For the outbound 0.4 V-to-0.8 V crossing, driving the 0.8 V receiver without a level shifter dissipates 57.7 uW of static power per bit at full bias, against 0.196 nW when level-shifted. In post-route analysis of the unchanged extracted physical database of a fabricated 32-bit ALU, the register-to-register setup boundary increases from 1.3 MHz at zero bias to 37.9 MHz at +/-0.9 V and 132.9 MHz at +/-1.8 V.",
+      "categories": [
+        "cs.AR",
+        "quant-ph"
+      ],
+      "published": "2026-10-18",
+      "score": 0.5028003484481346,
+      "similar_to": [
+        {
+          "title": "Superconducting Flux Memory for Cryogenic Applications",
+          "id": "2609.00772",
+          "similarity": 0.8038229942321777
+        },
+        {
+          "title": "A digitally controlled silicon quantum processing unit",
+          "id": "2604.16216",
+          "similarity": 0.7850624918937683
+        }
+      ],
+      "summary": {
+        "summary": "Wiring and bandwidth bottlenecks between a quantum processor and room-temperature electronics can be reduced by placing digital control at the cryogenic stage, but commercial foundry standard-cell libraries are not specified for operation at 4 K. A cryogenic recharacterization flow is therefore developed for a commercial 22 nm FD-SOI foundry standard-cell library using commercially available cryogenic compact-device models, while retaining the original cell circuits, layouts, logic functions, and implementation semantics and remaining compatible with the commercial synthesis, place-and-route, and signoff methodology used at room temperature.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8324,
+    0.7937,
+    0.7248,
+    0.7048,
+    0.6113,
+    0.5213,
+    0.5028,
+    0.4675,
+    0.4206,
+    0.4081,
+    0.3918,
+    0.3918,
+    0.3846,
+    0.3701,
+    0.3166,
+    0.3135,
+    0.2894,
+    0.2828,
+    0.2574,
+    0.2293,
+    0.2292,
+    0.2196,
+    0.2175,
+    0.2054,
+    0.1965,
+    0.1914,
+    0.1845,
+    0.1811,
+    0.1733,
+    0.1473,
+    0.1419,
+    0.1181,
+    0.1167,
+    0.1143,
+    0.1133,
+    0.1095,
+    0.1086,
+    0.1071,
+    0.106,
+    0.102,
+    0.091,
+    0.0901,
+    0.0892,
+    0.0834,
+    0.0805,
+    0.0793,
+    0.0763,
+    0.0725,
+    0.0703,
+    0.0702,
+    0.0674,
+    0.0654,
+    0.0654,
+    0.0653,
+    0.064,
+    0.0622,
+    0.0614,
+    0.0605,
+    0.0594,
+    0.059,
+    0.0578,
+    0.0576,
+    0.0542,
+    0.0529,
+    0.0527,
+    0.0518,
+    0.0491,
+    0.0487,
+    0.0478,
+    0.0468,
+    0.0449,
+    0.0436,
+    0.0419,
+    0.0417,
+    0.0416,
+    0.0402,
+    0.0402,
+    0.0398,
+    0.0393,
+    0.0389,
+    0.0385,
+    0.0376,
+    0.0365,
+    0.0362,
+    0.0362,
+    0.0353,
+    0.035,
+    0.0338,
+    0.0335,
+    0.0311,
+    0.0301,
+    0.0298,
+    0.0295,
+    0.0291,
+    0.0289,
+    0.0271,
+    0.0268,
+    0.0266,
+    0.0261,
+    0.026,
+    0.0259,
+    0.0249,
+    0.0237,
+    0.0236,
+    0.0228,
+    0.0224,
+    0.0222,
+    0.0218,
+    0.0216,
+    0.0216,
+    0.0215,
+    0.0213,
+    0.021,
+    0.0208,
+    0.0204,
+    0.019,
+    0.0179,
+    0.0172,
+    0.0167,
+    0.0164,
+    0.0161,
+    0.016,
+    0.0155,
+    0.0154,
+    0.0151,
+    0.0147,
+    0.0142,
+    0.0141,
+    0.0141,
+    0.0139,
+    0.0137,
+    0.0131,
+    0.013,
+    0.0123,
+    0.0123,
+    0.0122,
+    0.012,
+    0.0117,
+    0.0111,
+    0.0103,
+    0.0098,
+    0.0098,
+    0.0098,
+    0.0092,
+    0.0086,
+    0.0078,
+    0.0078,
+    0.0075,
+    0.0074,
+    0.0068,
+    0.0067,
+    0.0066,
+    0.0066,
+    0.0062,
+    0.0061,
+    0.006,
+    0.0057,
+    0.0046,
+    0.0045,
+    0.0044,
+    0.004,
+    0.0036,
+    0.0023,
+    0.002,
+    0.0019
+  ]
+}
