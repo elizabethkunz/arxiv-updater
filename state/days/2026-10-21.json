@@ -1,0 +1,295 @@
+{
+  "date": "2026-10-21",
+  "n_fetched": 133,
+  "papers": [
+    {
+      "id": "2610.27137",
+      "title": "Active isolation of transmon readout with a tunable inductive bridge",
+      "authors": [
+        "Chunyang Ding",
+        "Chuyao Tong",
+        "Paul Varosy",
+        "Nikitha Jain",
+        "Ziyi Zhao",
+        "Eric I. Rosenthal",
+        "Konrad W. Lehnert",
+        "David I. Schuster"
+      ],
+      "abstract": "Scalable superconducting quantum computation requires fast, high-fidelity readout. Currently, this is assisted through cryogenic amplification of the readout signal. In traditional dispersive readout schemes, the amplifiers that are used to provide high signal-to-noise ratio also generate thermal noise that can decohere the qubits, demanding additional ferrite-based isolators to suppress this noise. Here, we integrate a chip-scale microwave switch, the tunable inductive bridge, into the readout chain of a fixed-frequency transmon. Flux-pulsing the switch, such that it transmits only during the readout, did not make a discernable difference to qubit coherence, residual excited-state population, or readout fidelity metrics. By injecting broadband noise that mimics amplifier thermal photons, we show that the switch suppresses the resulting qubit dephasing by more than $30$~dB, consistent with its independently measured on-off ratio, establishing it as a potential chip-based integrated replacement for readout-chain isolators.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-19",
+      "score": 0.9810604736316997,
+      "similar_to": [
+        {
+          "title": "Enhancing Dispersive Readout of Superconducting Qubits Through Dynamic Control of the Dispersive Shift: Experiment and Theory",
+          "id": "2307.07765",
+          "similarity": 0.8783351182937622
+        },
+        {
+          "title": "Fast, high-fidelity transmon readout with intrinsic Purcell protection via nonperturbative cross-Kerr coupling",
+          "id": "2601.04975",
+          "similarity": 0.8768322467803955
+        }
+      ],
+      "summary": {
+        "summary": "Scalable superconducting quantum computation requires fast, high-fidelity readout. Currently, this is assisted through cryogenic amplification of the readout signal.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.27743",
+      "title": "Multimode Parametric Amplifier for K-Band Quantum Measurements",
+      "authors": [
+        "Chulwoo Ahn",
+        "Vladimir Manucharyan"
+      ],
+      "abstract": "We demonstrate K-band nondegenerate three-wave-mixing amplification in a multimode resonator comprising an array of 500 SNAILs. Pairing K-band signal modes with lower-frequency internal idler modes enables 20 dB of gain continuously from 19.6 to 25.6 GHz with pump frequencies below 32.2 GHz. At 20 dB gain, the 3-dB bandwidth ranges from 2.6 to 11.7 MHz, and the input-referred 1-dB compression power reaches -100.9 dBm. In the 20-22 GHz band, the average added noise is 0.73 quanta. A two-mode nondegenerate parametric amplification model describes the measured gain response and gain-bandwidth behavior, while a multimode Kerr model captures the overall compression scale. Our amplifier provides a practical solution for implementing a state-of-the-art readout of superconducting qubits in the K-band.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-20",
+      "score": 0.7777441281814715,
+      "similar_to": [
+        {
+          "title": "High-gain and large-bandwidth Josephson parametric amplifier influenced by Fabry-Perot interference",
+          "id": "2604.13881",
+          "similarity": 0.8596113920211792
+        },
+        {
+          "title": "A near-quantum-limited Josephson traveling-wave parametric amplifier",
+          "id": null,
+          "similarity": 0.859424352645874
+        }
+      ],
+      "summary": {
+        "summary": "We demonstrate K-band nondegenerate three-wave-mixing amplification in a multimode resonator comprising an array of 500 SNAILs. Pairing K-band signal modes with lower-frequency internal idler modes enables 20 dB of gain continuously from 19.6 to 25.6 GHz with pump frequencies below 32.2 GHz.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.27471",
+      "title": "Engineering \\(XY\\) and \\(ZZ\\) interactions between two remote superconducting qubits via a multimode waveguide",
+      "authors": [
+        "Da-Wei Wang",
+        "Yu-xi Liu"
+      ],
+      "abstract": "Waveguides provide a flexible platform for long-range interactions between superconducting qubits. Here, we study how to engineer the effective \\(XY\\) and \\(ZZ\\) interactions between two qubits via qubit frequency assignments and multimode interference determined by the mode configuration and standing-wave parities of a finite multimode waveguide. For a single-mode waveguide, we find that \\(XY\\) and \\(ZZ\\) interactions cannot be simultaneously suppressed to zero and the residual qubit-qubit coupling always exists. For example, the \\(XY\\) interaction may be suppressed to a negligible level when two qubits and the waveguide mode satisfy the two-photon resonant condition, but the \\(ZZ\\) interaction cannot be switched off. For multimode configurations within the central dispersive window, the engineered interaction types are very different for odd and even numbers of modes. Even-mode configurations can readily produce strong \\(XY\\) interactions, whereas odd-mode configurations can strongly suppress the \\(XY\\) interaction while retaining a finite \\(ZZ\\) interaction. Full-Hamiltonian simulations of minimal two- and three-mode configurations confirm \\(XY\\)-dominated SWAP dynamics and \\(ZZ\\)-dominated CZ-type dynamics, respectively. These results establish a frequency assignment criterion of qubits and waveguide modes for selectively engineering long-range qubit-qubit interaction types induced by the waveguide with finite multimode.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-20",
+      "score": 0.6578343852647975,
+      "similar_to": [
+        {
+          "title": "Superconducting coupler with exponentially large on-off ratio",
+          "id": "2107.09861",
+          "similarity": 0.850192666053772
+        },
+        {
+          "title": "Realization of high-fidelity CZ and ZZ-free iSWAP gates with a tunable coupler",
+          "id": "2011.01261",
+          "similarity": 0.845396101474762
+        }
+      ],
+      "summary": {
+        "summary": "Waveguides provide a flexible platform for long-range interactions between superconducting qubits. Here, we study how to engineer the effective \\(XY\\) and \\(ZZ\\) interactions between two qubits via qubit frequency assignments and multimode interference determined by the mode configuration and standing-wave parities of a finite multimode waveguide.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.28057",
+      "title": "Optimal Quantum-Circuit Synthesis and Implementation of General Unitaries with Parallelized Bitstring-Conditioned Rotations",
+      "authors": [
+        "Heikki Suominen",
+        "Suman Kundu",
+        "Heidi Kivijärvi",
+        "Sasu Tuohino",
+        "Mikko Tuokkola",
+        "Eemeli Forsbom",
+        "Madhavi Chand",
+        "Vasilii Vadimov",
+        "R. Vijay",
+        "Mikko Möttönen"
+      ],
+      "abstract": "We theoretically introduce a quantum-circuit synthesis protocol to realize any $n$-qubit transformation $U\\in U(2^n)$, up to a diagonal. The resulting circuit is directly native to and optimal in gate count and depth for systems where bitstring-conditioned rotations with tunable angle and axis, $C^{(n-1)}R(θ,ϕ)$, form the set of native operations. Subsequently, we suggest how this protocol can be implemented in a few-mode superconducting circuit, and experimentally demonstrate the method for the smallest nontrivial case, i.e., for two qubits. We report an average gate fidelity of 97.6 % for Haar-random two-qubit unitaries up to phase shifts in the computational basis. Importantly, these results suggest that multimode devices, such as those in the multimon or multiunimon families may become competitive with qubit-array networks for general-unitary implementations for qubit counts as low as three.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-20",
+      "score": 0.645208679424099,
+      "similar_to": [
+        {
+          "title": "Universal Hamiltonian control in a planar trimon circuit",
+          "id": "2603.04566",
+          "similarity": 0.8657587766647339
+        },
+        {
+          "title": "Erasure qubits: Overcoming the $T_1$ limit in superconducting circuits",
+          "id": "2208.05461",
+          "similarity": 0.8610489368438721
+        }
+      ],
+      "summary": {
+        "summary": "We theoretically introduce a quantum-circuit synthesis protocol to realize any $n$-qubit transformation $U\\in U(2^n)$, up to a diagonal. The resulting circuit is directly native to and optimal in gate count and depth for systems where bitstring-conditioned rotations with tunable angle and axis, $C^{(n-1)}R(θ,ϕ)$, form the set of native operations.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9811,
+    0.7777,
+    0.6578,
+    0.6452,
+    0.4823,
+    0.4751,
+    0.3283,
+    0.3201,
+    0.2583,
+    0.2398,
+    0.2237,
+    0.2045,
+    0.2035,
+    0.1882,
+    0.1869,
+    0.173,
+    0.1668,
+    0.1652,
+    0.1482,
+    0.1451,
+    0.1426,
+    0.1388,
+    0.1132,
+    0.1089,
+    0.1069,
+    0.1037,
+    0.1034,
+    0.0972,
+    0.0906,
+    0.0902,
+    0.087,
+    0.0854,
+    0.0827,
+    0.0794,
+    0.0782,
+    0.0777,
+    0.0747,
+    0.0716,
+    0.071,
+    0.071,
+    0.0673,
+    0.0649,
+    0.0626,
+    0.0617,
+    0.058,
+    0.0578,
+    0.0571,
+    0.0567,
+    0.0549,
+    0.0541,
+    0.0518,
+    0.0508,
+    0.0487,
+    0.0484,
+    0.047,
+    0.043,
+    0.0416,
+    0.0386,
+    0.0351,
+    0.0334,
+    0.0334,
+    0.0332,
+    0.033,
+    0.0313,
+    0.0297,
+    0.0294,
+    0.0293,
+    0.0292,
+    0.0289,
+    0.0286,
+    0.0269,
+    0.0264,
+    0.0239,
+    0.0237,
+    0.0228,
+    0.0218,
+    0.0218,
+    0.0217,
+    0.0216,
+    0.0212,
+    0.021,
+    0.0206,
+    0.0194,
+    0.0191,
+    0.0187,
+    0.0186,
+    0.0183,
+    0.0179,
+    0.0164,
+    0.0162,
+    0.0146,
+    0.0146,
+    0.0145,
+    0.0138,
+    0.0137,
+    0.0135,
+    0.0132,
+    0.013,
+    0.0128,
+    0.0126,
+    0.0118,
+    0.0109,
+    0.0098,
+    0.0097,
+    0.0095,
+    0.0091,
+    0.0086,
+    0.0084,
+    0.0084,
+    0.0073,
+    0.0071,
+    0.0071,
+    0.0071,
+    0.0067,
+    0.0066,
+    0.0066,
+    0.0062,
+    0.006,
+    0.006,
+    0.0059,
+    0.0059,
+    0.0059,
+    0.0057,
+    0.0051,
+    0.005,
+    0.0049,
+    0.0045,
+    0.0036,
+    0.0035,
+    0.0026,
+    0.0024,
+    0.002,
+    0.0019
+  ]
+}
