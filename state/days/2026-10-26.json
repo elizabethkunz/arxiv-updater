@@ -1,0 +1,260 @@
+{
+  "date": "2026-10-26",
+  "n_fetched": 106,
+  "papers": [
+    {
+      "id": "2610.32347",
+      "title": "Entangled logical qubits on a superconducting quantum processor",
+      "authors": [
+        "Robin Harper",
+        "Xanda C. Kolesnikow",
+        "Campbell K. McLauchlan",
+        "Georgia M. Nixon",
+        "Stephen D. Bartlett",
+        "Benjamin J. Brown"
+      ],
+      "abstract": "We demonstrate high-fidelity logical qubit operations using \\texttt{ibm\\_phoenix}, a square-lattice array of 120 coupled superconducting qubits that are capable of fast reset. Using strategies to exclude underperforming components together with noise informed decoding, we routinely produce surface codes at distance-3 and distance-5 with logical error per round below 1\\%. We demonstrate entanglement between two logical qubits, where logical Bell-state fidelities above 93\\% are observed for entanglement created via lattice surgery. With three logical qubits and lattice surgery, we perform logical teleportation of a range of states and gates, observing fidelities in the range 78\\% - 93\\%. Using reset to reduce qubit leakage, we show that repeated rounds of stabilizer measurements continue to exhibit improvements in a stability experiment up to $\\sim 2\\cdot 10^{-7}$ over 170 measurement rounds.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-23",
+      "score": 0.9219207928009554,
+      "similar_to": [
+        {
+          "title": "A superconducting surface-code processor with lattice-surgery logical operations",
+          "id": "2606.06598",
+          "similarity": 0.9169915914535522
+        },
+        {
+          "title": "Lattice surgery for near-term experimental logical qubit entanglement creation in planar architectures",
+          "id": "2606.15190",
+          "similarity": 0.9089854955673218
+        }
+      ],
+      "summary": {
+        "summary": "We demonstrate high-fidelity logical qubit operations using \\texttt{ibm\\_phoenix}, a square-lattice array of 120 coupled superconducting qubits that are capable of fast reset. Using strategies to exclude underperforming components together with noise informed decoding, we routinely produce surface codes at distance-3 and distance-5 with logical error per round below 1\\%.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.32622",
+      "title": "Trace-distance characterization of recurrent pairwise synchronization in cavity-coupled superconducting qubits",
+      "authors": [
+        "Tiantian Huan"
+      ],
+      "abstract": "We theoretically investigate recurrent pairwise synchronization in three super?conducting qubits coupled to a common single-mode microwave cavity. The qubits interact indirectly through the cavity field and are driven by a coher?ent microwave field. We obtain the coherent dynamics in the dressed-state basis and quantify pairwise synchronization by the trace distance between reduced single-qubit density matrices. The trace-distance dynamics exhibit oscillatory wave-packet structures, with low-trace-distance regions identifying finite syn?chronization windows. An envelope-threshold procedure is introduced to extract the representative duration of these windows. By varying the middle-qubit coupling strength and the relative coupling ratio of the outer qubits, we con?struct a parameter-dependent map of the synchronization-window duration. The duration decreases rapidly with increasing relative outer-qubit coupling and becomes weakly dependent on the middle-qubit coupling in the stronger-coupling regime. These results provide a reduced-state-based characterization of coherent collective dynamics in multiqubit circuit-QED systems.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-23",
+      "score": 0.6041590290078833,
+      "similar_to": [
+        {
+          "title": "Controlling the spontaneous emission of a superconducting transmon qubit",
+          "id": "0803.4490",
+          "similarity": 0.858568012714386
+        },
+        {
+          "title": "Cavity quantum electrodynamics for superconducting electrical circuits: an architecture for quantum computation",
+          "id": null,
+          "similarity": 0.8534976243972778
+        }
+      ],
+      "summary": {
+        "summary": "We theoretically investigate recurrent pairwise synchronization in three super?conducting qubits coupled to a common single-mode microwave cavity. The qubits interact indirectly through the cavity field and are driven by a coher?ent microwave field.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.32267",
+      "title": "Two-Layer Verification for Fault-Tolerant Magic-State Preparation in High-Rate Quantum Codes",
+      "authors": [
+        "Naoyuki Kanomata",
+        "Hayato Goto"
+      ],
+      "abstract": "Encoded magic states are essential for universal fault-tolerant quantum computation, but their resource-efficient preparation in high-rate quantum codes remains challenging. To address this limitation, we propose two-layer verification, which combines local verification of independently prepared subblocks with logical verification after their embedding into a target code. This hierarchy detects harmful error patterns, including even-parity logical-eigenvalue flips that are invisible to a collective product check alone. We demonstrate this scheme for a $[[21,3,5]]$ code by constructing a circuit that embeds three verified seven-qubit Steane-code magic states into the target code. Circuit-level simulations of $T$- and $S$-state preparation show logical-error suppression consistent with the code distance. These results demonstrate the potential of two-layer verification as a design principle for reliable magic-state preparation in quantum codes encoding multiple logical qubits.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-23",
+      "score": 0.5777314638902461,
+      "similar_to": [
+        {
+          "title": "Entangling logical qubits without physical operations",
+          "id": "2601.20927",
+          "similarity": 0.8720467686653137
+        },
+        {
+          "title": "Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code",
+          "id": "2112.03708",
+          "similarity": 0.8649423718452454
+        }
+      ],
+      "summary": {
+        "summary": "Encoded magic states are essential for universal fault-tolerant quantum computation, but their resource-efficient preparation in high-rate quantum codes remains challenging. To address this limitation, we propose two-layer verification, which combines local verification of independently prepared subblocks with logical verification after their embedding into a target code.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.32152",
+      "title": "Trident: Efficient Load Verification for Yoked Surface Codes using a Three-Level Memory Hierarchy",
+      "authors": [
+        "Gunagya Singh Mamak",
+        "Suhas Vittal",
+        "Kabir Dubey",
+        "Kaitlin N. Smith",
+        "Moinuddin K. Qureshi"
+      ],
+      "abstract": "Fault-Tolerant Quantum Computers (FTQCs) commonly use the surface code to encode program qubits as error-corrected logical qubits. Unfortunately, the surface code has a poor encoding rate, so recent work has proposed Yoked Surface Codes (YSCs), which concatenate the surface code with a high-rate quantum code. The surface code qubits in YSCs are protected by the checks, or yokes, of the high-rate code. YSCs have 1D and 2D variants, which are $1.8\\times$ and $4.5\\times$ more efficient than the surface code, respectively. Modern FTQC architectures use a two-level hierarchy: surface codes perform logical operations (compute) while 2D YSCs store idle program qubits (memory). To load a qubit from memory, the FTQC first performs retrieval, which logically moves a program qubit from a 2D YSC into a surface code (8 cycles). However, retrieval is not fault-tolerant, so the FTQC must verify the load by measuring all the yokes of the 2D YSC (178 cycles). As verification dominates memory access latency, eliminating it can provide a speedup of $5.7\\times$. Our goal is to reduce the verification overhead of 2D YSCs while retaining their storage efficiency. We exploit the fact that 1D YSCs, though less storage-efficient, incur negligible verification latency. We propose Trident, which expands the two-level hierarchy into a three-level hierarchy by adding a small intermediate level containing a 1D YSC (L1). If most loads hit L1 rather than L2 (2D YSC tier), it can significantly reduce verification overhead. We present two variants: Trident-D (demand-driven) and Trident-P (prefetch-driven), which achieve speedups of $2.8\\times$ and $4.2\\times$, respectively, while increasing the physical qubit cost of memory by only 4.9%.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-23",
+      "score": 0.5053101701682663,
+      "similar_to": [
+        {
+          "title": "Demonstrating dynamic surface codes",
+          "id": "2412.14360",
+          "similarity": 0.8546812534332275
+        },
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8532688021659851
+        }
+      ],
+      "summary": {
+        "summary": "Fault-Tolerant Quantum Computers (FTQCs) commonly use the surface code to encode program qubits as error-corrected logical qubits. Unfortunately, the surface code has a poor encoding rate, so recent work has proposed Yoked Surface Codes (YSCs), which concatenate the surface code with a high-rate quantum code.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9219,
+    0.6042,
+    0.5777,
+    0.5053,
+    0.4746,
+    0.3943,
+    0.36,
+    0.3418,
+    0.3238,
+    0.315,
+    0.3073,
+    0.2999,
+    0.2848,
+    0.2844,
+    0.1955,
+    0.1927,
+    0.1884,
+    0.1736,
+    0.1687,
+    0.1634,
+    0.1606,
+    0.1567,
+    0.1537,
+    0.1472,
+    0.1458,
+    0.1326,
+    0.1257,
+    0.1249,
+    0.1199,
+    0.1148,
+    0.0996,
+    0.0868,
+    0.0853,
+    0.0841,
+    0.0791,
+    0.0786,
+    0.0761,
+    0.0697,
+    0.0693,
+    0.068,
+    0.0648,
+    0.0647,
+    0.0625,
+    0.0577,
+    0.0571,
+    0.0565,
+    0.0549,
+    0.0522,
+    0.0511,
+    0.0502,
+    0.046,
+    0.0423,
+    0.0396,
+    0.0376,
+    0.0375,
+    0.0348,
+    0.0322,
+    0.0289,
+    0.0276,
+    0.0272,
+    0.0271,
+    0.0249,
+    0.0205,
+    0.0202,
+    0.0177,
+    0.0176,
+    0.0175,
+    0.0175,
+    0.0169,
+    0.0165,
+    0.0164,
+    0.0161,
+    0.0148,
+    0.0143,
+    0.0133,
+    0.0131,
+    0.013,
+    0.013,
+    0.0124,
+    0.0122,
+    0.0117,
+    0.0113,
+    0.0112,
+    0.0103,
+    0.0096,
+    0.0092,
+    0.0091,
+    0.009,
+    0.009,
+    0.0089,
+    0.0073,
+    0.007,
+    0.0069,
+    0.0067,
+    0.0067,
+    0.0064,
+    0.0062,
+    0.0059,
+    0.0056,
+    0.0055,
+    0.0054,
+    0.0049,
+    0.0043,
+    0.0038,
+    0.0036,
+    0.0027
+  ]
+}
