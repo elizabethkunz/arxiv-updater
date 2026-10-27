@@ -1,0 +1,494 @@
+{
+  "date": "2026-10-27",
+  "n_fetched": 168,
+  "papers": [
+    {
+      "id": "2610.34485",
+      "title": "Real-Time Correlation of Relaxation, Dephasing, and Two-level System Dynamics in Transmon Qubits",
+      "authors": [
+        "Ambrose Yang",
+        "Alexander M. Young",
+        "Paal H. Prestegaard",
+        "Atharv Joshi",
+        "Matthew S. Ai",
+        "Q. Rumman Rahman",
+        "Faranak Bahrami",
+        "Matthew P. Bland",
+        "Jui-Lin Niu",
+        "Ourania-Maria Glezakou-Elbert",
+        "Ray D. Chang",
+        "Jocelyn Liu",
+        "Zhengyi Lu",
+        "Robert J. Cava",
+        "Nathalie P. de Leon",
+        "Andrew A. Houck"
+      ],
+      "abstract": "Materials improvements in transmon qubits have yielded remarkable advances in qubit lifetimes (T1)and coherence times (T2). However, state-of-the-art superconducting qubits experience temporal fluctuations in their performance, which limit gate fidelities and quantum processor performance. We observe correlated increases in qubit relaxation and dephasing rates that last for minutes to hours, which we call T1 and T2 excursions. Using interleaved lifetime and coherence time measurements, noise spectroscopy, and two-level-system (TLS) spectroscopy, we find that these excursions are caused by single or few strongly-coupled TLS defects that spectrally diffuse into resonance with the qubit frequency. Our measurement protocol provides a powerful tool for understanding the noise sources that cause temporal fluctuations in superconducting qubit performance.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-10-25",
+      "score": 0.9698470014827938,
+      "similar_to": [
+        {
+          "title": "New material platform for superconducting transmon qubits with coherence times exceeding 0.3 milliseconds",
+          "id": "2003.00024",
+          "similarity": 0.9031995534896851
+        },
+        {
+          "title": "Fluctuations of Energy-Relaxation Times in Superconducting Qubits",
+          "id": "1809.01043",
+          "similarity": 0.8915794491767883
+        }
+      ],
+      "summary": {
+        "summary": "Materials improvements in transmon qubits have yielded remarkable advances in qubit lifetimes (T1)and coherence times (T2). However, state-of-the-art superconducting qubits experience temporal fluctuations in their performance, which limit gate fidelities and quantum processor performance.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.35227",
+      "title": "A Control Line Multiplexing Framework for Scalable Quantum Computing",
+      "authors": [
+        "Dayu Li",
+        "Naibin Zhou",
+        "Zhiyuan Chen",
+        "Zihua Chen",
+        "Yu Xu",
+        "Yuan Li",
+        "Daojin Fan",
+        "Wenhao Chu",
+        "Xiawei Chen",
+        "Hui Deng",
+        "Jiacheng Gui",
+        "Linyin Hong",
+        "Bo Fan",
+        "Weiping Lin",
+        "Haonan Zou",
+        "Haoxin Lou",
+        "Xintao Zhao",
+        "Sirui Cao",
+        "Ying Chong",
+        "Qingling Zhu",
+        "Chen Wang",
+        "Yisen Hu",
+        "Kaili Zhang",
+        "Feifan Su",
+        "Haibin Zhang",
+        "Jianghan Yin",
+        "Yajie Du",
+        "Yinan Jiang",
+        "Haoping Luo",
+        "Weifeng Yang",
+        "Jiafei Wang",
+        "Jin Lin",
+        "Futian Liang",
+        "Hao Rong",
+        "Kai Yan",
+        "Ming Gong",
+        "Jinjin Li",
+        "Maliang Liu",
+        "Cheng-Zhi Peng",
+        "Shaowei Li",
+        "Xiaobo Zhu",
+        "Jian-Wei Pan"
+      ],
+      "abstract": "Universal fault-tolerant superconducting quantum computers are expected to require millions of physical qubits; yet extending the prevailing dedicated-control-line paradigm to this scale would exceed the wiring density and cooling-power budget of dilution refrigerators. Microwave frequency-division multiplexing (FDM) revolutionized classical communications by enabling many independent channels to share common transmission infrastructure. Translating this principle to superconducting quantum control, however, requires an all-microwave architecture and experimental validation of frequency-multiplexed gate control. Recent work in quantum error correction has demonstrated microwave-based readout, single-qubit gates and leakage suppression, whereas two-qubit gates remain predominantly driven by unipolar pulses and thus constitute the missing element of an all-microwave architecture. Here, we propose a periodically extensible hybrid multiplexing framework in which all gate operations are frequency-division multiplexed using polychromatic microwave pulses and band-pass filters, thereby reducing the required control-line count by one to two orders of magnitude. In a 1:4 demonstration, we achieve average errors of $(6.4\\pm0.2)\\times10^{-3}$ for parallel FDM CZ gates and $(10.6\\pm0.2)\\times10^{-4}$ for parallel FDM $XY(π/2)$ gates, without statistically significant multiplexing-induced degradation. Together with on-chip DC sources, this FDM-based gate-control scheme completes the last missing module in a scalable multiplexed-control architecture toward universal fault-tolerant quantum computing.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-26",
+      "score": 0.8952905956326707,
+      "similar_to": [
+        {
+          "title": "Quantum Computer Controlled by Superconducting Digital Electronics at Millikelvin Temperature",
+          "id": "2503.09879",
+          "similarity": 0.8571357727050781
+        },
+        {
+          "title": "Scalable and Site-Specific Frequency Tuning of Two-Level System Defects in Superconducting Qubit Arrays",
+          "id": "2503.04702",
+          "similarity": 0.8503708839416504
+        }
+      ],
+      "summary": {
+        "summary": "Universal fault-tolerant superconducting quantum computers are expected to require millions of physical qubits; yet extending the prevailing dedicated-control-line paradigm to this scale would exceed the wiring density and cooling-power budget of dilution refrigerators. Microwave frequency-division multiplexing (FDM) revolutionized classical communications by enabling many independent channels to share common transmission infrastructure.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.35737",
+      "title": "Local Broadband Gigahertz Spectroscopy via SQUID-on-Tip DC Readout",
+      "authors": [
+        "Senne Vervoort",
+        "Lukas Nulens",
+        "Julia Baumgarten",
+        "Daan B. Boltje",
+        "Jessalyn DeVine",
+        "Alejandro V. Silhanek",
+        "Joris Van de Vondel",
+        "Kaveh Lahabi"
+      ],
+      "abstract": "Superconducting microwave circuits are shaped by their local electromagnetic environment, yet standard microwave measurements do not resolve the local fields and device features that govern their behavior. Here, we combine microwave spectroscopy, nanoscale magnetic sensing, and topographic imaging in a single tapping-mode SQUID-on-tip microscope. The nonlinear Josephson response converts local GHz excitations into Shapiro steps, enabling quantitative measurements of microwave frequency signals and their excitation strength using only DC readout. Applied to a superconducting coplanar waveguide resonator, local spectroscopy reproduces the power-dependent resonance and nonlinear bifurcation observed in microwave transmission measurements. Spatially resolved measurements map the microwave response while simultaneously recording topography and static magnetic features, including vortices and Meissner screening currents. Electromagnetic simulations reveal how coupling through the superconducting probe leads limits spatial resolution and guides localized detector designs. Together, these capabilities establish a platform for correlating microwave circuit dynamics with the local structural and magnetic environment of superconducting devices.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-10-26",
+      "score": 0.7454195244782321,
+      "similar_to": [
+        {
+          "title": "High-gain and large-bandwidth Josephson parametric amplifier influenced by Fabry-Perot interference",
+          "id": "2604.13881",
+          "similarity": 0.8309521079063416
+        },
+        {
+          "title": "Oval-shaped resonance distortion as a signature of quasiparticle heating effect in a niobium superconducting resonator",
+          "id": "2607.17791",
+          "similarity": 0.8186604380607605
+        }
+      ],
+      "summary": {
+        "summary": "Superconducting microwave circuits are shaped by their local electromagnetic environment, yet standard microwave measurements do not resolve the local fields and device features that govern their behavior. Here, we combine microwave spectroscopy, nanoscale magnetic sensing, and topographic imaging in a single tapping-mode SQUID-on-tip microscope.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.34988",
+      "title": "Charge-Coupled Device-Based Arbitrary Waveform Generation for Qubit Control",
+      "authors": [
+        "Shinichi Morisaka",
+        "Ryutaro Ohira"
+      ],
+      "abstract": "We propose an arbitrary waveform generation architecture based on charge-coupled devices (CCDs) for qubit control. Waveform samples are stored as charge packets in CCD channels and sequentially clocked out as voltage samples. Multiple channels are operated in parallel and time-interleaved to achieve high effective sampling rates. The generated baseband waveforms are then upconverted to microwave frequencies to drive qubit operations. By representing waveform information as stored charge rather than as continuously generated or transmitted microwave signals, the proposed architecture provides a path to reducing cryogenic interconnect density and lowering heat load in scalable quantum control systems.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-26",
+      "score": 0.6566595707744,
+      "similar_to": [
+        {
+          "title": "Quantum control of a cat-qubit with bit-flip times exceeding ten seconds",
+          "id": "2307.06617",
+          "similarity": 0.8278547525405884
+        },
+        {
+          "title": "A digitally controlled silicon quantum processing unit",
+          "id": "2604.16216",
+          "similarity": 0.8147541284561157
+        }
+      ],
+      "summary": {
+        "summary": "We propose an arbitrary waveform generation architecture based on charge-coupled devices (CCDs) for qubit control. Waveform samples are stored as charge packets in CCD channels and sequentially clocked out as voltage samples.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.34143",
+      "title": "Feasibility of Distributed Fault-Tolerant Quantum Computing: From Quantum Links to Algorithms",
+      "authors": [
+        "Takumi Kobayashi",
+        "Hodaka Kurokawa",
+        "Yasunari Suzuki",
+        "Hideo Kosaka"
+      ],
+      "abstract": "Practical fault-tolerant quantum computation requires a large number of physical qubits, posing a major challenge for scaling up individual quantum processors. Distributed architectures offer a promising solution by interconnecting multiple processors through quantum networks. However, remote Bell-pair generation remains technically demanding, making it essential to assess computational performance under limited communication resources. In this work, we present a comprehensive resource analysis of distributed fault-tolerant quantum computation using superconducting processors connected by microwave or optical links. We show that even a single physical communication channel per node can substantially reduce the physical-qubit requirements per node under experimentally motivated, forward-looking microwave-link assumptions of a 1 MHz physical Bell-pair generation rate and 90% fidelity, although at the cost of a roughly tenfold increase in execution time. Conversely, reducing the execution-time overhead requires substantially greater communication resources, including higher Bell-pair fidelities and extensive multiplexing. These results demonstrate the potential feasibility of distributed fault-tolerant quantum computation with limited communication resources and provide a quantitative basis for balancing quantum-link performance, processor size, and execution time.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-10-25",
+      "score": 0.5859459775463921,
+      "similar_to": [
+        {
+          "title": "Evidence for the utility of quantum computing before fault tolerance",
+          "id": null,
+          "similarity": 0.8797686100006104
+        },
+        {
+          "title": "Fault-tolerant interfaces for modular quantum computing on diverse qubit platforms",
+          "id": "2510.05221",
+          "similarity": 0.8791438341140747
+        }
+      ],
+      "summary": {
+        "summary": "Practical fault-tolerant quantum computation requires a large number of physical qubits, posing a major challenge for scaling up individual quantum processors. Distributed architectures offer a promising solution by interconnecting multiple processors through quantum networks.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.33814",
+      "title": "Scattering and Schmid-Bulgadaev Transition in Qubits Based on Josephson Junction Chains",
+      "authors": [
+        "Sviatoslav D. Krasin",
+        "Alexey Radkevich",
+        "Emil Rizvanov",
+        "Andrew G. Semenov"
+      ],
+      "abstract": "A Josephson junction subject to an ohmic dissipative environment undergoes a zero-temperature quantum phase transition called Schmid-Bulgadaev transition form an insulating state to a superconducting state upon increasing the impedance of the environment above the resistance quantum. Superconducting qubits based on Josephson junction chains represent a system where it is possible to dynamically explore both sides of this transition by probing the scattering of individual plasma modes of the junction chain on a SQUID at the boundary which was achieved in recent experiments. Here, we provide a theoretical analysis of the scattering in the system paying special attention to the non-perturbative superconducting regime. We find that in this regime, a specific diagrammatic resummation must be performed in order to correctly account for fluctuation renormalization of the SQUID's potential. We find analytic expressions for the modes' frequency shifts and quality factors which together provide a full description of scattering. We argue that the non-perturbative nature of the superconducting phase manifests itself through a power-law dependence of the frequency shifts on the SQUID flux and through non-monotonous dependence of the quality factors on the mode frequency. Our predictions may be readily verified in modern low-temperature experiments.",
+      "categories": [
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-10-24",
+      "score": 0.5418817229614121,
+      "similar_to": [
+        {
+          "title": "Characterization of drive-induced unwanted state transitions in superconducting circuits",
+          "id": "2506.24070",
+          "similarity": 0.8298518657684326
+        },
+        {
+          "title": "Collapse and Inversion of the Josephson Potential in a Strongly Driven Superconducting Circuit",
+          "id": "2607.14344",
+          "similarity": 0.822511613368988
+        }
+      ],
+      "summary": {
+        "summary": "A Josephson junction subject to an ohmic dissipative environment undergoes a zero-temperature quantum phase transition called Schmid-Bulgadaev transition form an insulating state to a superconducting state upon increasing the impedance of the environment above the resistance quantum. Superconducting qubits based on Josephson junction chains represent a system where it is possible to dynamically explore both sides of this transition by probing the scattering of individual plasma modes of the junction chain on a SQUID at the boundary which was achieved in recent experiments.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2610.35588",
+      "title": "A low-volume cold-atom microwave clock with an additively manufactured cavity",
+      "authors": [
+        "Samuel A. Smith",
+        "Sean Dyer",
+        "Alan Bregazzi",
+        "Rajnandan Choudhury Das",
+        "Oliver S. Burrow",
+        "Christoph Affolderbach",
+        "Gaetano Mileti",
+        "Erling Riis",
+        "Paul F. Griffin"
+      ],
+      "abstract": "We present the performance of a compact microwave interrogated atomic clock based on laser cooled $^{87}$$\\rm{Rb}$ atoms. The clock utilizes a micro-fabricated grating magneto-optical trap (gMOT) to cool and trap atoms, and an additively manufactured microwave cavity for microwave interrogation. We demonstrate a signal-to-noise ratio (SNR) of $370$ at a 1 Hz bandwidth and mid-term instability of $6.7\\times10^{-14}$ at an averaging time of $τ=3 \\times 10^{4}$ s. In addition, a low cost mu-metal foil has been implemented on the vacuum chamber to reduce the quadratic Zeeman shift which was previously limiting stability beyond $τ= 10$ s.",
+      "categories": [
+        "physics.atom-ph",
+        "physics.app-ph"
+      ],
+      "published": "2026-10-26",
+      "score": 0.5212934385009854,
+      "similar_to": [
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.7952464818954468
+        },
+        {
+          "title": "Fast readout and reset of a superconducting qubit coupled to a resonator with an intrinsic Purcell filter",
+          "id": "2202.06202",
+          "similarity": 0.7927483320236206
+        }
+      ],
+      "summary": {
+        "summary": "We present the performance of a compact microwave interrogated atomic clock based on laser cooled $^{87}$$\\rm{Rb}$ atoms. The clock utilizes a micro-fabricated grating magneto-optical trap (gMOT) to cool and trap atoms, and an additively manufactured microwave cavity for microwave interrogation.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9698,
+    0.8953,
+    0.7454,
+    0.6567,
+    0.5859,
+    0.5419,
+    0.5213,
+    0.3282,
+    0.3111,
+    0.2899,
+    0.2808,
+    0.2744,
+    0.2734,
+    0.261,
+    0.2604,
+    0.2498,
+    0.2416,
+    0.2349,
+    0.2318,
+    0.2221,
+    0.2167,
+    0.1966,
+    0.1747,
+    0.1653,
+    0.165,
+    0.164,
+    0.1597,
+    0.1596,
+    0.1437,
+    0.1353,
+    0.1345,
+    0.1318,
+    0.1201,
+    0.1176,
+    0.1142,
+    0.1141,
+    0.1065,
+    0.1056,
+    0.1025,
+    0.0983,
+    0.0965,
+    0.0961,
+    0.0937,
+    0.0885,
+    0.0879,
+    0.0875,
+    0.0874,
+    0.0864,
+    0.0864,
+    0.0851,
+    0.0809,
+    0.0805,
+    0.0788,
+    0.0782,
+    0.0774,
+    0.077,
+    0.0695,
+    0.0679,
+    0.0657,
+    0.0639,
+    0.0632,
+    0.0629,
+    0.0618,
+    0.0603,
+    0.0592,
+    0.0584,
+    0.0575,
+    0.0572,
+    0.0547,
+    0.0535,
+    0.0499,
+    0.045,
+    0.0427,
+    0.0426,
+    0.0425,
+    0.0409,
+    0.0408,
+    0.0406,
+    0.0406,
+    0.0402,
+    0.0401,
+    0.0398,
+    0.0397,
+    0.0388,
+    0.0366,
+    0.0356,
+    0.0355,
+    0.0351,
+    0.0319,
+    0.0305,
+    0.0297,
+    0.0297,
+    0.0284,
+    0.0282,
+    0.0271,
+    0.027,
+    0.0259,
+    0.025,
+    0.0248,
+    0.0238,
+    0.0237,
+    0.023,
+    0.0216,
+    0.021,
+    0.021,
+    0.0209,
+    0.0208,
+    0.0205,
+    0.0202,
+    0.0201,
+    0.0189,
+    0.0179,
+    0.0178,
+    0.0173,
+    0.0173,
+    0.016,
+    0.016,
+    0.0155,
+    0.0155,
+    0.0154,
+    0.0154,
+    0.0153,
+    0.0145,
+    0.0137,
+    0.0134,
+    0.0132,
+    0.0129,
+    0.0129,
+    0.0122,
+    0.0118,
+    0.0116,
+    0.011,
+    0.0105,
+    0.0105,
+    0.0104,
+    0.0096,
+    0.0096,
+    0.0089,
+    0.0087,
+    0.0083,
+    0.0079,
+    0.0077,
+    0.007,
+    0.0067,
+    0.0066,
+    0.0065,
+    0.0065,
+    0.0059,
+    0.0055,
+    0.0051,
+    0.005,
+    0.0048,
+    0.0046,
+    0.0045,
+    0.0043,
+    0.0041,
+    0.0038,
+    0.0035,
+    0.0034,
+    0.0031,
+    0.0024,
+    0.0023,
+    0.002,
+    0.0018,
+    0.0017,
+    0.0017,
+    0.0015,
+    0.0009
+  ]
+}
