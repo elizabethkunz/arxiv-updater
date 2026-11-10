@@ -1,0 +1,425 @@
+{
+  "date": "2026-11-10",
+  "n_fetched": 185,
+  "papers": [
+    {
+      "id": "2611.12576",
+      "title": "All-to-all connectivity via adiabatic ZZ interactions in a superconducting flux qubit processor",
+      "authors": [
+        "Elena Lupo",
+        "Nguyen H. Le",
+        "Eran Ginossar",
+        "Michael Stern"
+      ],
+      "abstract": "Scalable superconducting quantum processors would benefit from high qubit connectivity, yet existing architectures connect neighbouring qubits via tunable couplers, which introduce substantial wiring and control overhead. Here, we propose a baseband-driven adiabatic ZZ gate that entangles any selected pair in a register of flux qubits coupled via a common cavity. The qubits stay dc-biased at their flux sweet spot. Strong drives applied selectively through local flux lines, at frequencies far below the qubit transitions, adiabatically tilt the quantization axes and generate an effective longitudinal ZZ interaction. The strength of the coupling is tunable and controlled by the amplitudes and relative phase of the drives rather than by any resonance condition. Numerical simulations give coherent gate errors below $10^{-4}$ over broad ranges of drive frequency, with comparable fidelities for two simultaneous gates in a four-qubit register. The protocol is robust against frequency fluctuations and remains effective even when many qubits are coupled to the cavity.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-11-09",
+      "score": 0.9022758106866745,
+      "similar_to": [
+        {
+          "title": "Optimizing the frequency positioning of tunable couplers in a circuit QED processor to mitigate spectator effects on quantum operations",
+          "id": "2503.13225",
+          "similarity": 0.8744527101516724
+        },
+        {
+          "title": "A double-resonator coupler for high-fidelity two-qubit gates between superconducting qubits",
+          "id": "2609.05222",
+          "similarity": 0.8677511811256409
+        }
+      ],
+      "summary": {
+        "summary": "Scalable superconducting quantum processors would benefit from high qubit connectivity, yet existing architectures connect neighbouring qubits via tunable couplers, which introduce substantial wiring and control overhead. Here, we propose a baseband-driven adiabatic ZZ gate that entangles any selected pair in a register of flux qubits coupled via a common cavity.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.10295",
+      "title": "Dynamical Light-Matter Coupling with Protected Superconducting Oscillators",
+      "authors": [
+        "Fernando Valadares"
+      ],
+      "abstract": "Superconducting circuits hosting long-lived bosonic modes are an excellent platform for emulating the dynamics of light and matter and exploiting them for quantum information processing. The space of accessible dynamics is greatly extended by introducing the frequency tunability of artificial atoms, whereby the interactions with the light field of a microwave cavity can be modified on demand. However, using external flux bias to control the frequency of transmons introduces significant losses to coupled cavities, reducing their single-photon lifetimes to a few tens of $μ$s. These imperfections compromise the usefulness of the bosonic mode, which loses its ability to store and manipulate the quantum information of many-photon states. This thesis investigates the issue and demonstrates how to enhance the flux control of microwave cavities without compromising protection. Several hardware solutions were explored, including off-plane remote flux sources routed by a magnetic hose, and lithographically printed on-chip lines equipped with multiple stages of filtering. These developments equip the systems with broadband flux control and photon lifetimes of several hundred $μ$s. They enable the real-time manipulation of the two central parameters of the Rabi model: detuning and coupling strength. This flexibility translates into operational primitives of interest, such as the calibration of nonlinearities to different interaction regimes, the activation of parametric resonances with adjustable coupling strengths, and the use of number-selective transmon-cavity transitions for qudit state preparation and control. These results lay the groundwork for exploring richer synthetic light-matter systems, controlling cavities with more complex nonlinear circuits, and engineering driven-dissipative systems with applications in quantum computation and sensing.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-06",
+      "score": 0.8332512427047498,
+      "similar_to": [
+        {
+          "title": "Cavity quantum electrodynamics for superconducting electrical circuits: an architecture for quantum computation",
+          "id": null,
+          "similarity": 0.8751428127288818
+        },
+        {
+          "title": "Circuit Quantum Electrodynamics",
+          "id": "2005.12667",
+          "similarity": 0.8745343685150146
+        }
+      ],
+      "summary": {
+        "summary": "Superconducting circuits hosting long-lived bosonic modes are an excellent platform for emulating the dynamics of light and matter and exploiting them for quantum information processing. The space of accessible dynamics is greatly extended by introducing the frequency tunability of artificial atoms, whereby the interactions with the light field of a microwave cavity can be modified on demand.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.12481",
+      "title": "Universal two-qubit control across dilution refrigerators via a 10-km coherent optical link",
+      "authors": [
+        "Chuanlong Ma",
+        "Jiajun Chen",
+        "Jia-Qi Wang",
+        "Zheng-Xu Zhu",
+        "Jia-Hua Zou",
+        "Linze Li",
+        "Dingran Gu",
+        "Yuan-Hao Yang",
+        "Lintao Xiao",
+        "Xiaoxuan Pan",
+        "Xin-Biao Xu",
+        "Baile Chen",
+        "Haifeng Yu",
+        "Weiting Wang",
+        "Chang-Ling Zou",
+        "Luyan Sun"
+      ],
+      "abstract": "Distributed quantum networks are important for scalable quantum processors and for potential applications in communication, distributed computation, and sensing, in which direct classical links for adaptive control are essential to harness the shared entanglement. However, controlling superconducting quantum processors from a separate refrigerator over long distances remains elusive. Here, we introduce a coherent optical link (COL) that delivers microwave waveforms and their phase references between dilution refrigerators. Combining a laser, a microwave-to-optical transducer and an optical-to-microwave photodiode, the COL transmits microwave control signals over 10~km of fiber, while optical references derived from the same laser compensate for the frequency mismatch between devices. Through the COL, we deliver a universal gate set to a transmon qubit and a cavity qubit in another refrigerator and entangle them, and achieve a Bell-state fidelity of 80.6\\%. Quantum control delivered through the COL thus provides a classical backbone for modular quantum processors.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-09",
+      "score": 0.7659676129106672,
+      "similar_to": [
+        {
+          "title": "High fidelity control of superconducting qubits with optical transmitted signal",
+          "id": "2608.19602",
+          "similarity": 0.888922929763794
+        },
+        {
+          "title": "A Modular Cryogenic Link for Microwave Quantum Communication Over Distances of Tens of Meters",
+          "id": "2604.15971",
+          "similarity": 0.8325204849243164
+        }
+      ],
+      "summary": {
+        "summary": "Distributed quantum networks are important for scalable quantum processors and for potential applications in communication, distributed computation, and sensing, in which direct classical links for adaptive control are essential to harness the shared entanglement. However, controlling superconducting quantum processors from a separate refrigerator over long distances remains elusive.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.12280",
+      "title": "Calibration-free quantum thermometry with strain-swept two-level defects",
+      "authors": [
+        "Asghar ullah",
+        "Özgür E. Müstecaplıoğlu",
+        "Mehmet Cengiz Onbaşlı"
+      ],
+      "abstract": "Superconducting qubits operate within a well-defined temperature range, making local temperature monitoring important. Here we show that intrinsic two-level defects in Josephson-junction barriers can act as local thermometers by exploiting the shape of their population response, without requiring calibration of the readout offset or contrast. Marginalizing over these unknown parameters imposes an identifiability requirement absent from single-parameter thermometric bounds: for narrow sweeps, usable information scales as the fourth power of the sweep width. Hence, a narrow sweep becomes locally indistinguishable from a change in offset or contrast. We illustrate this principle with a strain-swept two-level defect in a Josephson junction. For a reported defect with tunneling energy $Δ_{0}/h=\\SI{1.3}{\\giga\\hertz}$, swept along one branch of its hyperbola to \\SI{2.69}{\\giga\\hertz} (an asymmetry excursion of \\SI{2.36}{\\giga\\hertz}, or \\SI{8}{\\volt} of piezo voltage), the analysis projects a single-defect fit precision of \\SI{0.58}{\\percent} at \\SI{20}{\\milli\\kelvin}. The resulting response enables temperature estimation without prior calibration of the readout offset and contrast, while the same sweep overdetermines the Boltzmann form and identifies significant deviations from thermality. These results establish intrinsic junction defects as a resource for calibration-free local thermometry and highlight identifiability as a key design criterion for primary temperature sensing.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-09",
+      "score": 0.5607956424906826,
+      "similar_to": [
+        {
+          "title": "Electric field spectroscopy of material defects in transmon qubits",
+          "id": "1909.09749",
+          "similarity": 0.8172513246536255
+        },
+        {
+          "title": "Observation of directly interacting coherent two-level systems in a solid",
+          "id": "1503.03681",
+          "similarity": 0.8141275644302368
+        }
+      ],
+      "summary": {
+        "summary": "Superconducting qubits operate within a well-defined temperature range, making local temperature monitoring important. Here we show that intrinsic two-level defects in Josephson-junction barriers can act as local thermometers by exploiting the shape of their population response, without requiring calibration of the readout offset or contrast.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.12415",
+      "title": "Gate-tunable supercurrent switching in a three-terminal quantum dot transistor",
+      "authors": [
+        "David Novák",
+        "Kacper Wrześniewski",
+        "Filip Krizek",
+        "Wolfgang Belzig",
+        "Peter Zalom"
+      ],
+      "abstract": "We propose and analyze a three-terminal superconducting transistor switch in which a gate-defined quantum dot region interrupts a flux-controlled loop. The output supercurrent is switched off completely when the two loop arms couple to the dot with equal tunneling strengths and half a flux quantum threads the loop. The device then operates as a symmetric SQUID at half flux. The condition follows from a single geometric factor $χ$, which reduces the three-terminal problem to an equivalent two-terminal Anderson impurity model and makes the switching mechanism independent of the Coulomb interaction, the dot level position, the total hybridization and temperature. These enter only through a prefactor and thus decide how tolerant the device is to imperfect barrier tuning. Numerical renormalization group calculations across the full coupling parameter space show that the resonance is embedded in a broad region of elevated switching ratio at intermediate hybridization $Γ\\approx Δ$, while both weaker and stronger coupling reduce it to a thin isolated line. Finite temperature smooths the underlying singlet-doublet transition and lowers the supercurrent amplitude, but affects the open and closed states comparably and leaves the switching ratio largely intact. Within a zero-bandwidth two-level model, a second dot level is shown to open a leakage channel that grows as the two levels approach in energy. Raising the output barrier and the realistic presence of inter-level Coulomb repulsion, however, suppress the leakage.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-11-09",
+      "score": 0.5515701429958952,
+      "similar_to": [
+        {
+          "title": "Optimizing the frequency positioning of tunable couplers in a circuit QED processor to mitigate spectator effects on quantum operations",
+          "id": "2503.13225",
+          "similarity": 0.8135478496551514
+        },
+        {
+          "title": "Distinguishing parity-switching mechanisms in a superconducting qubit",
+          "id": "2204.07458",
+          "similarity": 0.8129587173461914
+        }
+      ],
+      "summary": {
+        "summary": "We propose and analyze a three-terminal superconducting transistor switch in which a gate-defined quantum dot region interrupts a flux-controlled loop. The output supercurrent is switched off completely when the two loop arms couple to the dot with equal tunneling strengths and half a flux quantum threads the loop.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.10915",
+      "title": "Bias-free superconducting microwave nonreciprocity from a passive nonlinear resonator",
+      "authors": [
+        "Brendan MacKay",
+        "Abdul Mohamed",
+        "Andrea Alù",
+        "Shabir Barzanjeh"
+      ],
+      "abstract": "Routing microwave tones in a nonreciprocal fashion in a superconducting chip usually requires an external bias, commonly in the form of static magnetic fields, pump tones or temporal modulation. Here we demonstrate microwave nonreciprocity in a bias-free, passive platform, a single nonlinear superconducting resonator patterned in one film without Josephson junctions. Unequal coupling with the two feeding ports makes its nonlinear resonance shift direction-dependent, and its sharp Fano lineshape converts this asymmetric response into a large transmission contrast when excited from opposite directions. Our niobium nitride (NbN) device reaches a directional contrast of 53.0 dB at an insertion loss of 4.6 dB, and it exceeds 20 dB over 9.7 MHz. Time-resolved measurements show that the device routes pulses from 2 us to 1 ms with more than 30 dB of contrast and switches within a few microseconds. Made with the same technology as superconducting amplifiers, such bias-free nonreciprocal components could simplify the on-chip routing of strong pump and control tones in quantum processors",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-07",
+      "score": 0.5296399686472308,
+      "similar_to": [
+        {
+          "title": "Oval-shaped resonance distortion as a signature of quasiparticle heating effect in a niobium superconducting resonator",
+          "id": "2607.17791",
+          "similarity": 0.8394374847412109
+        },
+        {
+          "title": "High-gain and large-bandwidth Josephson parametric amplifier influenced by Fabry-Perot interference",
+          "id": "2604.13881",
+          "similarity": 0.837221086025238
+        }
+      ],
+      "summary": {
+        "summary": "Routing microwave tones in a nonreciprocal fashion in a superconducting chip usually requires an external bias, commonly in the form of static magnetic fields, pump tones or temporal modulation. Here we demonstrate microwave nonreciprocity in a bias-free, passive platform, a single nonlinear superconducting resonator patterned in one film without Josephson junctions.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9023,
+    0.8333,
+    0.766,
+    0.5608,
+    0.5516,
+    0.5296,
+    0.4842,
+    0.4753,
+    0.4452,
+    0.407,
+    0.4053,
+    0.378,
+    0.3684,
+    0.3651,
+    0.3267,
+    0.2903,
+    0.2499,
+    0.2398,
+    0.2386,
+    0.2368,
+    0.2136,
+    0.2134,
+    0.1971,
+    0.1957,
+    0.1915,
+    0.1823,
+    0.1812,
+    0.1781,
+    0.1703,
+    0.1654,
+    0.1631,
+    0.1609,
+    0.1569,
+    0.1503,
+    0.15,
+    0.1301,
+    0.13,
+    0.1214,
+    0.1185,
+    0.1116,
+    0.1112,
+    0.1096,
+    0.1087,
+    0.1035,
+    0.1005,
+    0.0978,
+    0.0942,
+    0.0937,
+    0.0935,
+    0.0934,
+    0.0931,
+    0.093,
+    0.0906,
+    0.0874,
+    0.085,
+    0.0819,
+    0.0784,
+    0.0759,
+    0.0727,
+    0.0676,
+    0.067,
+    0.0659,
+    0.0658,
+    0.0641,
+    0.0605,
+    0.0603,
+    0.0596,
+    0.0595,
+    0.0594,
+    0.059,
+    0.0583,
+    0.058,
+    0.0571,
+    0.0561,
+    0.0547,
+    0.0525,
+    0.0509,
+    0.0504,
+    0.0486,
+    0.0484,
+    0.044,
+    0.0439,
+    0.0436,
+    0.0422,
+    0.041,
+    0.0408,
+    0.0404,
+    0.0403,
+    0.0398,
+    0.0396,
+    0.039,
+    0.0386,
+    0.0383,
+    0.0382,
+    0.0377,
+    0.037,
+    0.0354,
+    0.0353,
+    0.0335,
+    0.0332,
+    0.0326,
+    0.0325,
+    0.0322,
+    0.0313,
+    0.0309,
+    0.0307,
+    0.0307,
+    0.0295,
+    0.0277,
+    0.0273,
+    0.0267,
+    0.0265,
+    0.0261,
+    0.0256,
+    0.0252,
+    0.0235,
+    0.0235,
+    0.0224,
+    0.0222,
+    0.0221,
+    0.0216,
+    0.0216,
+    0.0208,
+    0.0206,
+    0.0201,
+    0.02,
+    0.0197,
+    0.0195,
+    0.0195,
+    0.0183,
+    0.0182,
+    0.0175,
+    0.0171,
+    0.0168,
+    0.0167,
+    0.0162,
+    0.0151,
+    0.0151,
+    0.015,
+    0.0147,
+    0.0146,
+    0.0139,
+    0.0134,
+    0.013,
+    0.0123,
+    0.0118,
+    0.0116,
+    0.0113,
+    0.011,
+    0.0103,
+    0.0101,
+    0.0098,
+    0.0097,
+    0.0095,
+    0.0092,
+    0.0091,
+    0.009,
+    0.0088,
+    0.0085,
+    0.0076,
+    0.0075,
+    0.0075,
+    0.0074,
+    0.0072,
+    0.0069,
+    0.0069,
+    0.0068,
+    0.0067,
+    0.0061,
+    0.006,
+    0.006,
+    0.0056,
+    0.0055,
+    0.0051,
+    0.0046,
+    0.0045,
+    0.0042,
+    0.0039,
+    0.0032,
+    0.0028,
+    0.0027,
+    0.0025,
+    0.0018,
+    0.0011,
+    0.0007
+  ]
+}
