@@ -1,0 +1,594 @@
+{
+  "date": "2026-11-13",
+  "n_fetched": 214,
+  "papers": [
+    {
+      "id": "2611.15021",
+      "title": "Reducing TLS Losses in Superconducting Circuits Using Solid Neon",
+      "authors": [
+        "A. Palmer",
+        "K. Matkovic",
+        "P. Russell",
+        "E. Helgemo",
+        "L. Delventhal",
+        "Y. Ashlea Alava",
+        "K. Zuo",
+        "S. N. Coppersmith",
+        "M. C. Cassidy"
+      ],
+      "abstract": "Two level systems (TLSs) are a major source of loss in superconducting devices, limiting the performance of qubits, detectors, and resonators. These defects arise from a range of sources, including surface oxides, crystal defects, as well as fabrication residues which are often difficult to remove. Using NbTiN coplanar waveguide resonators, we show that depositing and subsequently removing a solid neon film can significantly improve device performance. Analysis of the temperature and power dependence indicates that this enhancement arises from reduced TLS dissipation, which we attribute to the redistribution and removal of surface contaminants during neon deposition and evaporation. Atomic force microscopy images of contaminated hexagonal boron nitride flakes before and after neon exposure show that neon treatment can redistribute and remove surface residues. These results demonstrate a simple, non-destructive approach for mitigating TLS losses in superconducting devices and other sensitive materials that cannot withstand aggressive cleaning processes.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mtrl-sci",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-11-11",
+      "score": 0.8714943011427941,
+      "similar_to": [
+        {
+          "title": "Reducing TLS loss in tantalum CPW resonators using titanium sacrificial layers",
+          "id": "2601.16369",
+          "similarity": 0.8777303695678711
+        },
+        {
+          "title": "Materials loss measurements using superconducting microwave resonators",
+          "id": "2006.04718",
+          "similarity": 0.8541499972343445
+        }
+      ],
+      "summary": {
+        "summary": "Two level systems (TLSs) are a major source of loss in superconducting devices, limiting the performance of qubits, detectors, and resonators. These defects arise from a range of sources, including surface oxides, crystal defects, as well as fabrication residues which are often difficult to remove.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.16563",
+      "title": "Noise-Protected Superconducting Qudits from Higher-Harmonic Josephson Junctions",
+      "authors": [
+        "Hamed Vakili"
+      ],
+      "abstract": "Qudits, which generalize qubits to $d$ levels, store more information per circuit element than qubits. As with qubits, however, their sensitivity to noise must be overcome before they can be used for fault-tolerant quantum computing. Here we show that, by exploiting the second harmonic of the current--phase relation, a superconducting loop of three Josephson junctions can host qutrits strongly protected against relaxation, while dephasing limits their coherence. When the second harmonic is positive, a simple loop with a small asymmetry between the junctions provides a tunable, symmetry-protected qutrit. When it is negative, a protected qutrit can be realized by adding a small symmetry-breaking term, such as a weak Josephson diode effect. The two designs involve different trade-offs: the first has an exact charge selection rule, whereas the second is nearly insensitive to charge noise and its quasiparticle errors can be corrected. The preferable choice therefore depends on the materials used. Both require a sizable second harmonic to begin with, and we identify altermagnetic Josephson junctions as a candidate platform. Finally, microscopic calculations show that a gate voltage selects the sign of the second harmonic in these junctions, although gate-voltage noise then becomes the leading source of dephasing. These findings establish the sign of the second harmonic as a design principle for protected superconducting qudits.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "published": "2026-11-12",
+      "score": 0.8406730209909291,
+      "similar_to": [
+        {
+          "title": "Experimental realization of an intrinsically error-protected superconducting qubit",
+          "id": "1910.07542",
+          "similarity": 0.8810404539108276
+        },
+        {
+          "title": "Observation of high coherence in Josephson junction qubits measured in a three-dimensional circuit QED architecture",
+          "id": "1105.4652",
+          "similarity": 0.8695213198661804
+        }
+      ],
+      "summary": {
+        "summary": "Qudits, which generalize qubits to $d$ levels, store more information per circuit element than qubits. As with qubits, however, their sensitivity to noise must be overcome before they can be used for fault-tolerant quantum computing.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.16595",
+      "title": "Gatemon qubits based on in-situ ternary InAsSb/Al nanowire Josephson junctions",
+      "authors": [
+        "Zhenhai Sun",
+        "David Feldstein-Bofill",
+        "Sangeeth Kallatt",
+        "Sabbir A. Khan",
+        "Morten Kjaergaard"
+      ],
+      "abstract": "Ternary InAsSb/Al nanowires combine compositionally engineerable semiconductor properties with epitaxial proximity superconductivity, making them attractive for hybrid quantum circuits and mesoscopic superconductivity. Here, we realize gatemon qubits based on shadow-defined in-situ InAsSb/Al Josephson junctions in a single growth process. Gate-dependent microwave spectroscopy demonstrates electrostatic tuning of the qubit transition over several gigahertz. Rabi oscillations and Ramsey interference show coherent qubit control, with representative values T1 = 0.79 us and T2* = 0.91 us. Across five gatemons distributed over three chips, the measured relaxation times range from approximately 0.2 us to 1 us and decrease with increasing qubit frequency. Their magnitude is comparable to a circuit estimate of spontaneous emission into the electromagnetic environment. These results establish in-situ InAsSb/Al junctions as coherent, gate-tunable circuit elements and introduce cQED architecture as a microwave probe of the dynamics of the ternary weak link.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "published": "2026-11-12",
+      "score": 0.8389931533899431,
+      "similar_to": [
+        {
+          "title": "An All-van-der-Waals Qubit",
+          "id": "2609.14230",
+          "similarity": 0.8442742824554443
+        },
+        {
+          "title": "Coherent Josephson qubit suitable for scalable quantum integrated circuits",
+          "id": "1304.2322",
+          "similarity": 0.8429533839225769
+        }
+      ],
+      "summary": {
+        "summary": "Ternary InAsSb/Al nanowires combine compositionally engineerable semiconductor properties with epitaxial proximity superconductivity, making them attractive for hybrid quantum circuits and mesoscopic superconductivity. Here, we realize gatemon qubits based on shadow-defined in-situ InAsSb/Al Josephson junctions in a single growth process.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.16435",
+      "title": "Circuit-Level Analysis of Quantum Error Correction in Second-Generation Quantum Repeaters",
+      "authors": [
+        "Suraj Vishwanath",
+        "Jonas Hawellek",
+        "Roberto Ferrara",
+        "Christian Deppe"
+      ],
+      "abstract": "We present a circuit-level simulation of second-generation quantum repeaters with stabilizer-based quantum error correction. We model a two-segment repeater link including encoding, syndrome extraction, decoding, and entanglement swapping, and compare the performance of the single-error-correcting Steane and five-qubit stabilizer codes under different noise scenarios. To that extent, we consider noise sources with incoherent (depolarizing and dephasing) and coherent (systematic over-rotation) errors and incorporate them directly at the circuit level. While the Steane code outperforms the five-qubit code at coherent errors, the five-qubit code achieves higher end-to-end fidelities under incoherent noise in the low-noise regime when a large number of physical qubits is affected by it. At higher noise regimes, employing no code turns out to be the best option. In mixed noise scenarios, we observe moderate cross-effects between the noise classes regarding the error correction performance. We conclude that code selection in second-generation quantum repeaters must be adapted to the dominant physical noise mechanism and that circuit complexity and hardware-aware implementation options influence performance in coherent-error-dominated regimes, providing design insights for error correction in quantum repeaters.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-12",
+      "score": 0.7082673887300125,
+      "similar_to": [
+        {
+          "title": "Exponential suppression of bit or phase flip errors with repetitive error correction",
+          "id": "2102.06132",
+          "similarity": 0.8726869821548462
+        },
+        {
+          "title": "Developments in superconducting erasure qubits for hardware-efficient quantum error correction",
+          "id": "2601.02183",
+          "similarity": 0.8706037998199463
+        }
+      ],
+      "summary": {
+        "summary": "We present a circuit-level simulation of second-generation quantum repeaters with stabilizer-based quantum error correction. We model a two-segment repeater link including encoding, syndrome extraction, decoding, and entanglement swapping, and compare the performance of the single-error-correcting Steane and five-qubit stabilizer codes under different noise scenarios.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.16705",
+      "title": "A superconducting quantum point contact in Ge",
+      "authors": [
+        "Anna Tacchini",
+        "Inga Seidler",
+        "Isabell Grandt-Ionita",
+        "Thibault Thuegaz",
+        "Stephen W. Bedell",
+        "Fabrizio Nichele"
+      ],
+      "abstract": "Hybrid superconducting-semiconducting circuits provide a versatile platform for investigating coherent transport in mesoscopic weak links. Superconducting quantum point contacts (SQPCs) are particularly interesting in this context, as their supercurrent is carried by a discrete number of ballistic transport modes. Here, we investigate a gate-tunable superconducting quantum point contact realized in Ge/SiGe. By incorporating the QPC into a highly asymmetric superconducting quantum interference device (SQUID), we gain access to its current-phase relation (CPR) and switching current, enabling phase-sensitive studies of few-mode superconducting transport. We observe a direct correspondence between conductance quantization and switching-current quantization, linking the normal-state transport modes to the superconducting response. In addition, we demonstrate strong gate tunability of the effective transmission near the onset of the first conductance plateau. Under microwave irradiation, the QPC exhibits photon-assisted multiple Andreev reflections at lower transparencies and Shapiro replicas in the high-transparency, few-mode regime.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-11-12",
+      "score": 0.6958363450515133,
+      "similar_to": [
+        {
+          "title": "Distinguishing parity-switching mechanisms in a superconducting qubit",
+          "id": "2204.07458",
+          "similarity": 0.833527684211731
+        },
+        {
+          "title": "Coherent Josephson qubit suitable for scalable quantum integrated circuits",
+          "id": "1304.2322",
+          "similarity": 0.8243805766105652
+        }
+      ],
+      "summary": {
+        "summary": "Hybrid superconducting-semiconducting circuits provide a versatile platform for investigating coherent transport in mesoscopic weak links. Superconducting quantum point contacts (SQPCs) are particularly interesting in this context, as their supercurrent is carried by a discrete number of ballistic transport modes.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.14968",
+      "title": "Nitride crystalline barrier epitaxial SIS Josephson junctions by MBE",
+      "authors": [
+        "Manas Verma",
+        "Anand Ithepalli",
+        "Amit Rohan Rajapurohita",
+        "Eegene Clara Chung",
+        "David A. Garcia-Wetten",
+        "Naomi Pieczulewski",
+        "Danqing Wang",
+        "John G. Wright",
+        "Archit Shah",
+        "Jimy Encomendero",
+        "Rishabh Singh",
+        "Chandrashekar Savant",
+        "Hangwang Yang",
+        "Anthony Hyatt",
+        "Jaehong Choi",
+        "Thomas Varghese",
+        "Kushagra Aggarwal",
+        "Paul B. Welander",
+        "Apurva Mehta",
+        "David Schuster",
+        "Valla Fatemi",
+        "Gregory D. Fuchs",
+        "Michael C. Hamilton",
+        "Hong X. Tang",
+        "David A. Muller",
+        "Huili Grace Xing",
+        "Debdeep Jena"
+      ],
+      "abstract": "Superconductor-insulator-superconductor Josephson junctions with crystalline tunnel barriers have remained elusive by epitaxial techniques such as MOCVD or MBE that produce the junction materials and devices powering today's electronic and photonic systems like transistors and lasers. Here, we overcome the key materials hurdle to realize the first functional nitride crystalline barrier Josephson junctions by MBE. Despite an AlN barrier thickness of approximately 4.5 nm, the NbN/AlN/NbN trilayers exhibit coherent Josephson tunneling with critical current densities of approximately 17 A/cm2, an IcRn product of approximately 2.5 mV, and a superconducting gap voltage of approximately 3.7 mV with a BCS-like gap evolution with temperature. Hysteretic current-voltage characteristics and Fraunhofer current modulation with magnetic field establish underdamped SIS Josephson behavior. The realization of crystalline barrier Josephson junctions by MBE opens the doors to a richer materials palette with alloys and superlattice electrodes and tunnel barriers, as well as potential monolithic integration of superconducting quantum circuits with active electronic and photonic devices such as HEMTs and lasers.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mtrl-sci",
+        "quant-ph"
+      ],
+      "published": "2026-11-11",
+      "score": 0.6896472254598569,
+      "similar_to": [
+        {
+          "title": "High-Q superconducting microwave resonators using MBE titanium nitride",
+          "id": "2607.15230",
+          "similarity": 0.8405512571334839
+        },
+        {
+          "title": "An All-van-der-Waals Qubit",
+          "id": "2609.14230",
+          "similarity": 0.776826024055481
+        }
+      ],
+      "summary": {
+        "summary": "Superconductor-insulator-superconductor Josephson junctions with crystalline tunnel barriers have remained elusive by epitaxial techniques such as MOCVD or MBE that produce the junction materials and devices powering today's electronic and photonic systems like transistors and lasers. Here, we overcome the key materials hurdle to realize the first functional nitride crystalline barrier Josephson junctions by MBE.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.14583",
+      "title": "Circuit-aware protection against burst errors in lattice surgery",
+      "authors": [
+        "Jaebum Kim"
+      ],
+      "abstract": "Large-scale quantum computing will require logical operations protected against high-energy impacts that disturb many superconducting qubits at once. Gap engineering suppresses relaxation induced by these impacts, but protecting only a subset of qubits requires choosing where that protection is placed. During lattice surgery, measurements change as patches merge and split, exposing different ancillas and temporal boundaries to burst errors. Here we compare three static protection layouts for a simulated lattice-surgery CNOT, matching the numbers of protected ancillas and the X:Z check-type splits. At distance 9, protecting the check type measured during each merge reduces burst-induced excess risk by $38^{+6}_{-5}\\%$ relative to a deep geometric band under correlated background matching, without giving the decoder the impact parameters. We attribute this difference to report errors at temporal boundaries and ancilla faults propagating to data, which interact to increase the excess risk of a shallow band. We also find that the typed layout reaches the shallow-band reference risk with an estimated $49^{+2}_{-14}$ fewer protected ancillas. At distance 13, the advantage is not resolved under oracle decoding, and a five-round burst cap reverses the shallow-band ordering. These results indicate how the measurements of a logical circuit can guide protection placement within the simulated decoder and burst-duration regimes tested here.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-10",
+      "score": 0.625758759982044,
+      "similar_to": [
+        {
+          "title": "Resisting high-energy impact events through gap engineering in superconducting qubit arrays",
+          "id": "2402.15644",
+          "similarity": 0.8589828014373779
+        },
+        {
+          "title": "Correlated Phase Error Bursts in a Gap-Engineered Superconducting Qubit Array",
+          "id": null,
+          "similarity": 0.8541055917739868
+        }
+      ],
+      "summary": {
+        "summary": "Large-scale quantum computing will require logical operations protected against high-energy impacts that disturb many superconducting qubits at once. Gap engineering suppresses relaxation induced by these impacts, but protecting only a subset of qubits requires choosing where that protection is placed.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.16971",
+      "title": "Improved Low-Cost Quantum Error Mitigation with Benchmarked-Noise Zero-Noise Extrapolation (bnZNE)",
+      "authors": [
+        "Joseph Harris",
+        "Kevin Lively",
+        "Peter Ken Schuhmacher"
+      ],
+      "abstract": "We theoretically extend and experimentally demonstrate benchmarked-noise zero-noise extrapolation (bnZNE), a simple and low-cost method for quantum error mitigation which aims to outperform the highly popular ZNE method for an equal total shot cost by improving the classical extrapolation step. We recently proposed bnZNE as a new error mitigation method (Harris et al., arXiv:2603.10224 (2026)) and showed that it can mitigate noise to the same order as standard ZNE under gate-wise depolarizing noise. Here, we introduce randomized bnZNE which addresses the case of running multiple random circuits per noise level, allowing for the incorporation of noise-tailoring techniques like Pauli twirling and readout error mitigation, and test the method on the IBM and IQM hardware for a plethora of large-scale applications, observing bnZNE to consistently produce more accurate results than standard ZNE. Our approach enhances the extrapolation process to the zero-noise limit by using classically-simulable and structure-mirroring benchmark circuits, generated from the standard application circuit, to sensitively measure the effective error rate at each scaled noise level beyond simple integer values. We give a new method for generating tailored benchmark circuits for the IQM superconducting devices and test them experimentally. Our results demonstrate that bnZNE presents a versatile alternative to ZNE which can enable more accurate results at utility scales with an equivalent cost.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-12",
+      "score": 0.5328069809582645,
+      "similar_to": [
+        {
+          "title": "Benchmarking quantum gates and circuits",
+          "id": "2407.09942",
+          "similarity": 0.8485752940177917
+        },
+        {
+          "title": "Exponential suppression of bit or phase flip errors with repetitive error correction",
+          "id": "2102.06132",
+          "similarity": 0.8438969254493713
+        }
+      ],
+      "summary": {
+        "summary": "We theoretically extend and experimentally demonstrate benchmarked-noise zero-noise extrapolation (bnZNE), a simple and low-cost method for quantum error mitigation which aims to outperform the highly popular ZNE method for an equal total shot cost by improving the classical extrapolation step. We recently proposed bnZNE as a new error mitigation method (Harris et al., arXiv:2603.10224 (2026)) and showed that it can mitigate noise to the same order as standard ZNE under gate-wise depolarizing noise.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.15104",
+      "title": "An Architecture for Real-Time Quantum Error Correction with Neutral Atoms",
+      "authors": [
+        "X. Wang",
+        "Y. Jing",
+        "Z. Yu",
+        "S. Wang",
+        "D. Niu",
+        "Y. Liu",
+        "T. Xiao",
+        "A. Yang",
+        "J. Han",
+        "Y. Wu",
+        "X. Lv"
+      ],
+      "abstract": "The latency of quantum measurement and classical decoding constrains the execution of adaptive fault-tolerant circuits. In neutral-atom processors, this requirement couples spatially resolved fluorescence detection to classical inference. Here we implement cascaded readout and decoding in a heterogeneous architecture that overlaps acquisition and processing at two spatial scales. Field-programmable gate arrays process camera rows as they arrive, while graphics processors decode an acquired logical block during acquisition of the next. This heterogeneous architecture offers flexibility in the choice of error-correcting codes and decoding algorithms. Direct communication preserves microsecond-scale transfer times for kilobyte payloads and supports interchangeable decoding algorithms. Hardware characterization and decoding benchmarks using circuit-level simulated syndromes yield a submillisecond post-exposure processing latency for selected small-code workloads ($d = 3, 5, 7$). By enabling logical blocks to be decoded before full-frame readout is complete, the architecture implements low-latency syndrome decoding, realizing real-time quantum information processing as required for fault-tolerant computation in atom arrays.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-11",
+      "score": 0.5150583727386836,
+      "similar_to": [
+        {
+          "title": "Demonstrating real-time and low-latency quantum error correction with superconducting qubits",
+          "id": "2410.05202",
+          "similarity": 0.882172703742981
+        },
+        {
+          "title": "Quantum error correction at ultra-low overhead",
+          "id": "2608.02773",
+          "similarity": 0.8541281223297119
+        }
+      ],
+      "summary": {
+        "summary": "The latency of quantum measurement and classical decoding constrains the execution of adaptive fault-tolerant circuits. In neutral-atom processors, this requirement couples spatially resolved fluorescence detection to classical inference.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8715,
+    0.8407,
+    0.839,
+    0.7083,
+    0.6958,
+    0.6896,
+    0.6258,
+    0.5328,
+    0.5151,
+    0.4526,
+    0.4248,
+    0.4234,
+    0.4231,
+    0.3992,
+    0.3707,
+    0.3651,
+    0.3643,
+    0.3516,
+    0.3099,
+    0.2872,
+    0.2836,
+    0.27,
+    0.2683,
+    0.2576,
+    0.2426,
+    0.2414,
+    0.2392,
+    0.2364,
+    0.2283,
+    0.2246,
+    0.2219,
+    0.2212,
+    0.2027,
+    0.2007,
+    0.1866,
+    0.1865,
+    0.1831,
+    0.1813,
+    0.1806,
+    0.1751,
+    0.1699,
+    0.1691,
+    0.1675,
+    0.1659,
+    0.1528,
+    0.1522,
+    0.1469,
+    0.1416,
+    0.1369,
+    0.1358,
+    0.1356,
+    0.1184,
+    0.1165,
+    0.1157,
+    0.1147,
+    0.1145,
+    0.108,
+    0.106,
+    0.0995,
+    0.0969,
+    0.0961,
+    0.0949,
+    0.0941,
+    0.0909,
+    0.0863,
+    0.0838,
+    0.0837,
+    0.0818,
+    0.0818,
+    0.0812,
+    0.0808,
+    0.0802,
+    0.08,
+    0.0798,
+    0.0782,
+    0.0781,
+    0.0754,
+    0.0744,
+    0.074,
+    0.0736,
+    0.0719,
+    0.07,
+    0.0696,
+    0.0696,
+    0.0695,
+    0.069,
+    0.0688,
+    0.0666,
+    0.066,
+    0.0647,
+    0.0613,
+    0.0612,
+    0.0601,
+    0.0583,
+    0.0566,
+    0.0555,
+    0.0552,
+    0.0544,
+    0.0544,
+    0.0518,
+    0.0511,
+    0.0505,
+    0.0489,
+    0.0471,
+    0.047,
+    0.0466,
+    0.0463,
+    0.0455,
+    0.0433,
+    0.0424,
+    0.041,
+    0.0398,
+    0.0396,
+    0.0391,
+    0.0381,
+    0.0378,
+    0.0371,
+    0.0366,
+    0.036,
+    0.0345,
+    0.0342,
+    0.0338,
+    0.0328,
+    0.0318,
+    0.0317,
+    0.0311,
+    0.0309,
+    0.0306,
+    0.0297,
+    0.0296,
+    0.0295,
+    0.0295,
+    0.0293,
+    0.0292,
+    0.0285,
+    0.0281,
+    0.0276,
+    0.0255,
+    0.0254,
+    0.025,
+    0.0244,
+    0.0238,
+    0.0236,
+    0.0233,
+    0.023,
+    0.0226,
+    0.0223,
+    0.0217,
+    0.0216,
+    0.0212,
+    0.0208,
+    0.0207,
+    0.0204,
+    0.0203,
+    0.0202,
+    0.02,
+    0.0197,
+    0.0188,
+    0.0187,
+    0.0186,
+    0.0184,
+    0.0181,
+    0.018,
+    0.0178,
+    0.0178,
+    0.0169,
+    0.0167,
+    0.0164,
+    0.0163,
+    0.015,
+    0.0149,
+    0.0147,
+    0.0146,
+    0.0144,
+    0.0142,
+    0.0137,
+    0.0132,
+    0.0127,
+    0.0121,
+    0.0117,
+    0.0108,
+    0.0107,
+    0.01,
+    0.0098,
+    0.0095,
+    0.0092,
+    0.0088,
+    0.0086,
+    0.0082,
+    0.007,
+    0.0068,
+    0.0065,
+    0.0064,
+    0.006,
+    0.0057,
+    0.0056,
+    0.0056,
+    0.0054,
+    0.0054,
+    0.0051,
+    0.0051,
+    0.0049,
+    0.0048,
+    0.0044,
+    0.0042,
+    0.0042,
+    0.0035,
+    0.0035,
+    0.003,
+    0.0025,
+    0.0024,
+    0.0023,
+    0.0019,
+    0.0018
+  ]
+}
