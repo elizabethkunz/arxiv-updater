@@ -1,0 +1,252 @@
+{
+  "date": "2026-11-16",
+  "n_fetched": 106,
+  "papers": [
+    {
+      "id": "2611.17562",
+      "title": "DRAG-Inspired Single Flux Quantum Control of Superconducting Qubits",
+      "authors": [
+        "V. Vozhakov",
+        "M. Bastrakova",
+        "A. Liniov",
+        "D. Kulandin",
+        "N. Klenov",
+        "I. Soloviev"
+      ],
+      "abstract": "Scalable control remains a major challenge for superconducting quantum processors due to the wiring, thermal load, and hardware complexity associated with conventional microwave-based architectures. A framework for qubit control based on Single Flux Quantum (SFQ) digital electronics is presented. For transmon qubits, optimized control sequences are constructed from regular pulse trains framed by arbitrary subsequences (ramps), enabling DRAG-inspired leakage suppression in the discrete SFQ regime through genetic-algorithm optimization. For representative $Y_{π/2}$ gates, the resulting sequences achieve simulated coherent-control infidelities below $10^{-4}$, including leakage from the computational subspace. The objective of the proposed approach is to demonstrate that coherent errors intrinsic to SFQ control can be reduced to a comparable level for a more scalable cryogenic control architecture. Memory requirements are reduced by storing only the optimized ramps, while a modular controller architecture supporting both regular and arbitrary pulse generation is proposed. The logical complexity of this architecture is estimated from the Josephson-junction counts of its constituent SFQ cells. The proposed approach therefore combines low coherent-control error with reduced memory overhead and provides a basis for scalable cryogenic SFQ control architectures.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-12",
+      "score": 0.8075295629223581,
+      "similar_to": [
+        {
+          "title": "Fast Flux-Activated Leakage Reduction for Superconducting Quantum Circuits",
+          "id": "2309.07060",
+          "similarity": 0.8595511317253113
+        },
+        {
+          "title": "Superconducting Flux Memory for Cryogenic Applications",
+          "id": "2609.00772",
+          "similarity": 0.8481506109237671
+        }
+      ],
+      "summary": {
+        "summary": "Scalable control remains a major challenge for superconducting quantum processors due to the wiring, thermal load, and hardware complexity associated with conventional microwave-based architectures. A framework for qubit control based on Single Flux Quantum (SFQ) digital electronics is presented.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.17511",
+      "title": "Non-ergodic Area Scaling of Andreev Transport in Al/AlO$_x$/Al Tunnel Junctions",
+      "authors": [
+        "David J. Perello",
+        "Marco Coraiola",
+        "Minje Park",
+        "Cliff Chen",
+        "Hanho Lee",
+        "Abhishek Banerjee",
+        "Gil Refael",
+        "Yuki Sato"
+      ],
+      "abstract": "State-of-the-art superconducting qubits rely on Al/AlO$_x$/Al Josephson junctions (JJs) as a nonlinear element with an ideal sinusoidal current-phase dependence, with its inductance set by the junction area and oxidation conditions. This idealization holds only if the many conduction channels through the amorphous AlO$_x$ barrier transmit weakly and almost identically. Here, we measure the second-order subgap Andreev current, which sets the second Josephson harmonic, in Al/AlO$_x$/Al JJs. For junction sizes relevant to qubits, we find that this current is dominated by $\\lesssim 300$ effective channels whose transparencies exceed the ideal tunneling limit ($\\lesssim 10^{-6}$) by orders of magnitude. For small and high-aspect-ratio junctions, increasing the junction size does not average out the effect of these high transparency channels but instead adds additional channels of even greater transparency. The trend inverts once both the width and length of the junction exceed a critical length scale, above which the effective transparency decreases with area. This non-ergodic scaling of the Andreev current is reproduced by simulations and attributed to non-self-averaging statistics of the transparency distribution, which arise from variations in oxide thickness. The effect is largely invisible to the normal-state conductance used to target the inductance and reveals unexpected geometric and size-related trade-offs for scaling superconducting qubit systems to large numbers of junctions.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.supr-con"
+      ],
+      "published": "2026-11-12",
+      "score": 0.7074364426904243,
+      "similar_to": [
+        {
+          "title": "Observation of Josephson Harmonics in Tunnel Junctions",
+          "id": "2302.09192",
+          "similarity": 0.8793269395828247
+        },
+        {
+          "title": "Electrical post-fabrication tuning of aluminum Josephson junctions at room temperature",
+          "id": "2602.20002",
+          "similarity": 0.8496376276016235
+        }
+      ],
+      "summary": {
+        "summary": "State-of-the-art superconducting qubits rely on Al/AlO$_x$/Al Josephson junctions (JJs) as a nonlinear element with an ideal sinusoidal current-phase dependence, with its inductance set by the junction area and oxidation conditions. This idealization holds only if the many conduction channels through the amorphous AlO$_x$ barrier transmit weakly and almost identically.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.17941",
+      "title": "Benchmarking superconducting quantum processors with percolating entanglement quality",
+      "authors": [
+        "Akinori Machino",
+        "Kazuhisa Ogawa",
+        "Takefumi Miyoshi",
+        "Hidehisa Shiomi",
+        "Shinichi Morisaka",
+        "Ryo Matsuda",
+        "Nilton F. G. Filho",
+        "Koichiro Ban",
+        "Takafumi Miyanaga",
+        "Keisuke Koike",
+        "Ryutaro Ohira",
+        "Toshi Sumida",
+        "Yoshinori Kurimoto",
+        "Yuuya Sugita",
+        "Yosuke Ito",
+        "Yasunari Suzuki",
+        "Peter A. Spring",
+        "Shiyu Wang",
+        "Hiroto Mukai",
+        "Arvind Mamgain",
+        "Shuhei Tamate",
+        "Yutaka Tabuchi",
+        "Yasunobu Nakamura",
+        "Makoto Negoro"
+      ],
+      "abstract": "The capability to create large entanglement resources is a key performance attribute of quantum processors, and the size of the resource is often used as a benchmark of processor scale. Recent graph-state experiments have reported entanglement clusters spanning entire chips with hundreds of qubits. However, cluster size alone does not capture the entanglement quality of individual couplings or differences in coupling topology. Here, we introduce percolating entanglement quality (PEQ), a topology-normalized benchmark based on conditional two-qubit negativity and a topology-specific bond-percolation threshold. As an experimental demonstration, we prepare a native graph state on a 64-qubit square-lattice superconducting processor with defects, identify a 52-qubit entanglement cluster, and evaluate the PEQ of the processor. Applying PEQ to previously reported chip-wide graph-state measurements on heavy-hex-lattice processors, we show that PEQ differs substantially among processors whose entanglement clusters span the entire chip. PEQ provides a single chip-wide score without selecting a best-performing qubit subset or path. This score allows processors with different coupling topologies to be compared on a common scale and can inform the design of coupling topologies for scalable chips.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-13",
+      "score": 0.660666107394916,
+      "similar_to": [
+        {
+          "title": "Evidence for the utility of quantum computing before fault tolerance",
+          "id": null,
+          "similarity": 0.847824215888977
+        },
+        {
+          "title": "Scaling and logic in the color code on a superconducting quantum processor",
+          "id": "2412.14256",
+          "similarity": 0.8414343595504761
+        }
+      ],
+      "summary": {
+        "summary": "The capability to create large entanglement resources is a key performance attribute of quantum processors, and the size of the resource is often used as a benchmark of processor scale. Recent graph-state experiments have reported entanglement clusters spanning entire chips with hundreds of qubits.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.8075,
+    0.7074,
+    0.6607,
+    0.368,
+    0.2957,
+    0.25,
+    0.2037,
+    0.1758,
+    0.1669,
+    0.1599,
+    0.1585,
+    0.1534,
+    0.1487,
+    0.1289,
+    0.1267,
+    0.1201,
+    0.1188,
+    0.1168,
+    0.1166,
+    0.1157,
+    0.1123,
+    0.099,
+    0.0941,
+    0.0937,
+    0.0827,
+    0.0807,
+    0.0758,
+    0.0702,
+    0.0672,
+    0.0651,
+    0.0648,
+    0.0646,
+    0.0588,
+    0.0552,
+    0.0546,
+    0.0529,
+    0.0522,
+    0.0515,
+    0.0513,
+    0.0482,
+    0.0482,
+    0.0461,
+    0.0448,
+    0.0447,
+    0.0443,
+    0.0423,
+    0.0414,
+    0.0398,
+    0.0393,
+    0.0379,
+    0.037,
+    0.0362,
+    0.0348,
+    0.0337,
+    0.0334,
+    0.0309,
+    0.0307,
+    0.0307,
+    0.0279,
+    0.0256,
+    0.0233,
+    0.021,
+    0.0198,
+    0.0193,
+    0.0173,
+    0.0171,
+    0.0167,
+    0.0159,
+    0.0156,
+    0.0155,
+    0.0152,
+    0.015,
+    0.0149,
+    0.0141,
+    0.014,
+    0.0125,
+    0.0123,
+    0.0121,
+    0.0121,
+    0.0116,
+    0.0116,
+    0.0111,
+    0.0107,
+    0.0105,
+    0.0102,
+    0.0101,
+    0.0092,
+    0.0087,
+    0.0084,
+    0.0082,
+    0.008,
+    0.0079,
+    0.0076,
+    0.0069,
+    0.0067,
+    0.0064,
+    0.0055,
+    0.0054,
+    0.0045,
+    0.0044,
+    0.0036,
+    0.0034,
+    0.0025,
+    0.0023,
+    0.0023,
+    0.0016
+  ]
+}
