@@ -1,0 +1,590 @@
+{
+  "date": "2026-11-18",
+  "n_fetched": 154,
+  "papers": [
+    {
+      "id": "2611.22166",
+      "title": "Demonstration of a Qubit Control Scheme Compatible with Superconducting Digital Signals",
+      "authors": [
+        "Chenyin Sun",
+        "Yu Xu",
+        "Zihua Chen",
+        "Dayu Li",
+        "Tianzuo Sun",
+        "Chen Zha",
+        "Yuan Li",
+        "Jin Lin",
+        "Lei Jiang",
+        "Tao Rong",
+        "Tao Jiang",
+        "Shaoyu Zhan",
+        "Xueshen Wang",
+        "Shijian Wang",
+        "Wenhui Cao",
+        "Yeru Wang",
+        "Xiaomin Wang",
+        "Ming Gong",
+        "Yulin Wu",
+        "Yuhuai Li",
+        "Gang Wu",
+        "Hui Deng",
+        "Kai Yan",
+        "Sirui Cao",
+        "Futian Liang",
+        "Fusheng Chen",
+        "Qingling Zhu",
+        "Yangsen Ye",
+        "Hao Rong",
+        "Shaojun Guo",
+        "Haoran Qian",
+        "Haibin Zhang",
+        "Yisen Hu",
+        "Shaowei Li",
+        "Jinjin Li",
+        "Cheng-Zhi Peng",
+        "Xiaobo Zhu",
+        "Jian-Wei Pan"
+      ],
+      "abstract": "Superconducting quantum computing faces a critical scalability bottleneck arising from the escalating complexity of traditional analog control infrastructure. Single-Flux-Quantum(SFQ) systems operate at cryogenic temperatures and offer a potential route to addressing these challenges. Using microwave signals at qubit-dependent frequencies to trigger SFQ pulses requires many independent analog microwave sources, limiting the potential to reduce control wiring and increase integration density. A scalable SFQ control system therefore needs a scheme that can address qubits with different transition frequencies using a common clock. Here, we propose and experimentally demonstrate a control scheme for implementing both single- and two-qubit gates. The scheme uses guiding waveforms to rapidly generate bipolar high-speed pulse sequences on a common clock, providing a basis for future implementation in SFQ control systems. Numerically, this scheme achieves a simulated fidelity of 99.99% for 40ns $R(φ, \\fracπ{2})$ gates with arbitrary initial phases and 99.9% for 100ns controlled-Z(CZ) gates. Experimentally, by utilizing an arbitrary waveform generator(AWG) operated at a fixed sampling rate of 25GSa/s to deliver the bipolar high-speed pulse sequences, we successfully demonstrate 40ns single-qubit gates with an average gate fidelity of 99.94% estimated using cross-entropy benchmarking(XEB) and 120ns CZ gates with 99.63% fidelity. These results demonstrate the feasibility of common-clock encoded pulse control for both single- and two-qubit gates.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-17",
+      "score": 0.9732479389750245,
+      "similar_to": [
+        {
+          "title": "High-Fidelity, Frequency-Flexible Two-Qubit Fluxonium Gates with a Transmon Coupler",
+          "id": "2304.06087",
+          "similarity": 0.8659691214561462
+        },
+        {
+          "title": "Millisecond coherence in a superconducting qubit",
+          "id": "2103.08578",
+          "similarity": 0.8581601977348328
+        }
+      ],
+      "summary": {
+        "summary": "Superconducting quantum computing faces a critical scalability bottleneck arising from the escalating complexity of traditional analog control infrastructure. Single-Flux-Quantum(SFQ) systems operate at cryogenic temperatures and offer a potential route to addressing these challenges.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.23165",
+      "title": "Teleportation of Logical Qubits using Lattice Surgery with Superconducting Circuits",
+      "authors": [
+        "Luca Hofele",
+        "Yongxin Song",
+        "Áron Márton",
+        "Ian Hesner",
+        "Ilya Besedin",
+        "Jakob Ekert",
+        "Jonathan Trebst",
+        "François Swiadek",
+        "Felix Henrich",
+        "Dante Colao Zanúz",
+        "Mohsen Bahrami Panah",
+        "Lukas Bödeker",
+        "Nicholas Gialouris",
+        "Chrysander D. Hagen",
+        "Marek Pechal",
+        "Jean Claude Besse",
+        "Markus Müller",
+        "Christoph Hellings",
+        "Andreas Wallraff"
+      ],
+      "abstract": "Demonstrating a quantum advantage when solving large-scale computational problems on a quantum computer requires the correction of errors that occur due to limitations in control accuracy and coherence. Using the concept of quantum error correction, fault-tolerant logical qubits can be realized and manipulated with logical single- and two-qubit gates. In this paper, we experimentally analyze fault-tolerant lattice-surgery, which is a key primitive that enables operations between logical qubits realized in the surface-code. Using this primitive, we demonstrate the teleportation of logical states between two distance-three logical qubits realized in a superconducting circuit composed of 41 physical qubits. Throughout this process, we study the step-by-step transfer of logical information from a source to a target logical qubit by characterizing the time evolution of logical observables. We find that repeated execution of stabilizer measurements, after merging two surface-code patches, restores fault tolerance and yields increased fidelity of the teleported state. When optimizing the protocol in terms of gate count and sequence duration, we observe further improvements in fidelity. Our work offers new insights into the optimization of fault-tolerant lattice-surgery operations, while also providing a comprehensive description of the physical device and gate sequences used. We expect the efficient implementation of increasingly complex logical circuits to enhance the performance of future fault-tolerant quantum computers.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-17",
+      "score": 0.9440291046786891,
+      "similar_to": [
+        {
+          "title": "Lattice surgery for near-term experimental logical qubit entanglement creation in planar architectures",
+          "id": "2606.15190",
+          "similarity": 0.957768440246582
+        },
+        {
+          "title": "A superconducting surface-code processor with lattice-surgery logical operations",
+          "id": "2606.06598",
+          "similarity": 0.9431190490722656
+        }
+      ],
+      "summary": {
+        "summary": "Demonstrating a quantum advantage when solving large-scale computational problems on a quantum computer requires the correction of errors that occur due to limitations in control accuracy and coherence. Using the concept of quantum error correction, fault-tolerant logical qubits can be realized and manipulated with logical single- and two-qubit gates.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.22068",
+      "title": "Analog-Memory-Based Waveform Generation for Qubit Control",
+      "authors": [
+        "Shinichi Morisaka",
+        "Toshiaki Inada",
+        "Yoshinori Kurimoto",
+        "Atsushi Noguchi",
+        "Ryutaro Ohira"
+      ],
+      "abstract": "We propose an analog-memory-based arbitrary waveform generator for cryogenic qubit control that separates low-speed waveform programming from high-speed waveform generation. Waveform samples are stored as capacitor voltages and sequentially accessed through buffered switching networks, enabling repeated, non-destructive readout without high-speed digital-to-analog conversion. A cryogenic prototype demonstrated Gaussian-shaped waveform generation at 14 K with a sampling rate of 40 Msps using a programming rate of 50 ksps. No measurable voltage decay was observed over 2 s at cryogenic temperatures. A complementary room-temperature prototype achieved 160 Msps. The architecture offers a potential route toward lower-power cryogenic waveform generation.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-17",
+      "score": 0.8071641952006613,
+      "similar_to": [
+        {
+          "title": "Superconducting Flux Memory for Cryogenic Applications",
+          "id": "2609.00772",
+          "similarity": 0.8809161186218262
+        },
+        {
+          "title": "Erasure qubits: Overcoming the $T_1$ limit in superconducting circuits",
+          "id": "2208.05461",
+          "similarity": 0.8461339473724365
+        }
+      ],
+      "summary": {
+        "summary": "We propose an analog-memory-based arbitrary waveform generator for cryogenic qubit control that separates low-speed waveform programming from high-speed waveform generation. Waveform samples are stored as capacitor voltages and sequentially accessed through buffered switching networks, enabling repeated, non-destructive readout without high-speed digital-to-analog conversion.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.22057",
+      "title": "QCap: a physics-corrected graph neural network for the capacitance matrix of any planar superconducting device layout",
+      "authors": [
+        "Sadman Ahmed Shanto",
+        "Saikat Das",
+        "Eli M. Levenson-Falk"
+      ],
+      "abstract": "Electromagnetic simulations of device layouts to extract capacitance are computationally intensive, a major obstacle to accurate design of circuit devices. Machine learning models can bypass these simulations, but previous approaches have been restricted to layouts using only particular components, and require thousands of simulations of those same components as training data. We present QCap, a model that accurately predicts the Maxwell capacitance matrix of an arbitrary superconducting device layout in seconds, compared to minutes to hours of Ansys Q3D simulations. We develop a novel design-embedding algorithm that converts the layout into a universal graph format, allowing the model to work with any layout created with any tool. To achieve high accuracy, we obtain a coarse physics prior from a fast method of moments simulation of capacitance, then train the model to correct this prior. On 4,009 test designs withheld from training data the model outputs agree with Q3D simulations to a median error of 0.177%, and on never-seen component families it stays below 1% error. We demonstrate the model's scaling by obtaining the capacitance matrix of a 9-superconducting-qubit device in 12 seconds on a laptop (compared to 19.9 h and 228 GB of memory in Ansys) with sub-percent error, and capacitance of a (too large to simulate) 100-qubit, 781-conductor device in 3.4 min on a laptop. We provide the open-source models and data on SQuADDS and Hugging Face. Our results provide a powerful tool for large-scale accurate circuit design and guide the development of models to bypass other physical simulations.",
+      "categories": [
+        "quant-ph",
+        "physics.app-ph"
+      ],
+      "published": "2026-11-17",
+      "score": 0.734966624122087,
+      "similar_to": [
+        {
+          "title": "Component-Level Inverse Design of Transmon Qubits Using Neural Networks",
+          "id": "2607.20795",
+          "similarity": 0.8636956214904785
+        },
+        {
+          "title": "A Review of Design Concerns in Superconducting Quantum Circuits",
+          "id": "2411.16967",
+          "similarity": 0.8106353282928467
+        }
+      ],
+      "summary": {
+        "summary": "Electromagnetic simulations of device layouts to extract capacitance are computationally intensive, a major obstacle to accurate design of circuit devices. Machine learning models can bypass these simulations, but previous approaches have been restricted to layouts using only particular components, and require thousands of simulations of those same components as training data.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.21999",
+      "title": "Transient Synchronization and Entanglement through Shared Dissipation in Circuit QED",
+      "authors": [
+        "Areeda Ayoub",
+        "Eric R. Bittner"
+      ],
+      "abstract": "We propose a superconducting circuit in which two resonators couple through DC-biased SQUIDs to a common lossy auxiliary mode. Adiabatic elimination yields collective damping and correlated noise with an overlap $ξ$ whose magnitude is tuned by the flux biases and whose sign follows the relative sign of the couplings. The full three-mode dynamics confirm this reduced description. For detuned resonators, we derive the exceptional-point condition, above which the mean amplitudes lock to a common frequency. For resonant modes, unequal collective decay produces transient synchronization, antiphase or in phase depending on the relative sign of the couplings, with an analytical synchronization time set by the collective decay splitting and the initial mean amplitudes. For initially separable squeezed states, the same relaxation converts local squeezing into transient entanglement, quantified by logarithmic negativity. We obtain closed-form expressions for the squeezing threshold above which entanglement appears and for the time at which it disappears. Thermal noise suppresses entanglement without changing the mean-amplitude synchronization time at fixed parameters. For realistic circuit parameters, these effects occur within a few hundred nanoseconds and are accessible through output-field measurements. A single tunable shared channel thus produces an exceptional point, transient synchronization, and transient entanglement, and provides a controllable source of correlated noise for superconducting circuits.",
+      "categories": [
+        "quant-ph",
+        "nlin.SI"
+      ],
+      "published": "2026-11-16",
+      "score": 0.5848172410949283,
+      "similar_to": [
+        {
+          "title": "Cavity quantum electrodynamics for superconducting electrical circuits: an architecture for quantum computation",
+          "id": null,
+          "similarity": 0.8543344140052795
+        },
+        {
+          "title": "Driven-dissipative entanglement of distant giant atoms",
+          "id": "2606.13375",
+          "similarity": 0.8498257398605347
+        }
+      ],
+      "summary": {
+        "summary": "We propose a superconducting circuit in which two resonators couple through DC-biased SQUIDs to a common lossy auxiliary mode. Adiabatic elimination yields collective damping and correlated noise with an overlap $ξ$ whose magnitude is tuned by the flux biases and whose sign follows the relative sign of the couplings.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.21785",
+      "title": "Microwave-optical quantum transduction with quantum-well exciton polaritons",
+      "authors": [
+        "Nicholas S. Yama",
+        "Mohammad Khalifa",
+        "Yuxuan Wei",
+        "Adbhut Gupta",
+        "Loren N. Pfeiffer",
+        "Feng Wang",
+        "Alp Sipahigil"
+      ],
+      "abstract": "Linking superconducting quantum processors over optical fiber requires microwave-optical quantum transducers that are efficient, high-bandwidth, and low-noise. This combination has been out of reach because of the weak nonlinearities of conventional electro-optic (EO) materials. We propose a transducer with an engineered, strong EO nonlinearity using the quantum-confined Stark effect (QCSE) of quantum-well excitons. The QCSE transducer leverages the strong light-matter interactions and extreme polarizability of quantum well excitons. Strong coupling to an optical cavity forms exciton-polaritons whose vacuum EO coupling is up to five orders of magnitude larger than in a typical thin-film lithium niobate device. We describe a GaAs/AlGaAs stepped-quantum-well transducer design with predicted transduction efficiencies above 60% and fewer than 0.01 added noise quanta over a $\\sim$60 MHz bandwidth, using pump powers below 10 $μ$W and loaded optical and microwave quality factors of only $3\\times10^4$ and $10^3$. We further show that the cavity protection of the polariton provides robustness against inhomogeneous broadening of the quantum well excitons.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-16",
+      "score": 0.5741261481539552,
+      "similar_to": [
+        {
+          "title": "Quantum-limited millimeter wave to optical transduction",
+          "id": "2207.10121",
+          "similarity": 0.8489011526107788
+        },
+        {
+          "title": "Cavity quantum electrodynamics for superconducting electrical circuits: an architecture for quantum computation",
+          "id": null,
+          "similarity": 0.8115291595458984
+        }
+      ],
+      "summary": {
+        "summary": "Linking superconducting quantum processors over optical fiber requires microwave-optical quantum transducers that are efficient, high-bandwidth, and low-noise. This combination has been out of reach because of the weak nonlinearities of conventional electro-optic (EO) materials.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.22260",
+      "title": "Logical error prediction and geometry selection for rectangular surface codes under biased circuit-level noise",
+      "authors": [
+        "Youshin Chung",
+        "Yujin Kang",
+        "Jun Heo"
+      ],
+      "abstract": "Realistic quantum hardware often exhibits biased noise, but at the circuit level this bias may affect only a subset of operations and need not be transferred uniformly to logical errors. The logical response to a given physical bias is therefore central to selecting resource-efficient surface code geometries. Here, we study unrotated rectangular surface codes under standard depolarizing and superconducting-inspired circuit-level noise models. We first construct geometry-dependent logical error rate models from unbiased circuit-level simulations. We then use logical sensitivities to compare the responses to localized idle-bias and global physical error perturbations, defining logical-error-type-dependent response coefficients from an unbiased reference circuit without fitting to finite-bias data. These coefficients are incorporated through effective error parameters, yielding a median fold error of 1.09 over the evaluated finite-bias conditions. Geometries selected by the model are validated through direct biased circuit-level simulations. At a physical error rate of 0.004 and a target logical error rate of 10^{-3}, the validated rectangular codes reduce physical qubit overhead by up to 42.4% and 26.2% under the two noise models, respectively, relative to unrotated square codes. These results provide a practical link between circuit-level bias response and resource-efficient surface code design.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-17",
+      "score": 0.5626976543652852,
+      "similar_to": [
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8784372210502625
+        },
+        {
+          "title": "Demonstrating dynamic surface codes",
+          "id": "2412.14360",
+          "similarity": 0.8740119934082031
+        }
+      ],
+      "summary": {
+        "summary": "Realistic quantum hardware often exhibits biased noise, but at the circuit level this bias may affect only a subset of operations and need not be transferred uniformly to logical errors. The logical response to a given physical bias is therefore central to selecting resource-efficient surface code geometries.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.23009",
+      "title": "PRISM: A Logical-Physical Boundary Compiler for Dual-Rail Qubits",
+      "authors": [
+        "Evan McKinney",
+        "Kun Liu",
+        "Harshvardhan K. Babla",
+        "Robert J. Schoelkopf",
+        "Yongshan Ding"
+      ],
+      "abstract": "Quantum computers can encode each logical qubit across multiple physical degrees of freedom so that errors on the physical qubits can be detected or corrected. A compiler must then translate each logical gate into native instructions, and one gate can have several equivalent realizations that interact through different wires. Routing moves those wires, so a realization chosen before routing can force SWAPs that another would avoid, making code expansion and physical routing a phase-ordering problem. PRISM therefore keeps each gate's realizations open across the logical--physical boundary and commits to one only when routing reaches a layout that can execute it. We formalize which physical circuits implement a gate, which respect the fault model, and which the compiler keeps, and define when a gate can execute under a layout. For dual-rail cavity qubits, logical $\\mathrm{CR}_z$ has four loss-admissible realizations, one per rail pairing, and its logical availability graph is exactly the simple quotient of the occupied device graph by the rail pairs. Across 25 workloads with 7 to 25 logical qubits on three device graphs, PRISM reduces routing SWAPs by 20.4--30.8\\% and physical depth by 8.8--10.1\\% relative to a greedy search that fixes each realization before routing. On the grid and hexagonal lattice, the SWAP reductions hold through 32 logical qubits. By shortening routes, PRISM also reduces photon loss on device models and therefore needs 44.3\\% fewer attempts per retained shot at 16 logical qubits, as a geometric mean over workloads and device graphs, and it lowers decoded logical error in a three-round Steane memory under skip-gate leakage.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-17",
+      "score": 0.559925243246015,
+      "similar_to": [
+        {
+          "title": "A superconducting surface-code processor with lattice-surgery logical operations",
+          "id": "2606.06598",
+          "similarity": 0.8348570466041565
+        },
+        {
+          "title": "Suppressing quantum errors by scaling a surface code logical qubit",
+          "id": "2207.06431",
+          "similarity": 0.8262624144554138
+        }
+      ],
+      "summary": {
+        "summary": "Quantum computers can encode each logical qubit across multiple physical degrees of freedom so that errors on the physical qubits can be detected or corrected. A compiler must then translate each logical gate into native instructions, and one gate can have several equivalent realizations that interact through different wires.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.22872",
+      "title": "Cancellation of cryocooler-induced vibration in trapped-ion systems",
+      "authors": [
+        "Alexandra Plocki",
+        "Kyle Debry",
+        "Agustin Valdes Martinez",
+        "Isaac L. Chuang",
+        "Robert McConnell",
+        "Colin D. Bruzewicz"
+      ],
+      "abstract": "Mechanical cryocoolers offer numerous benefits for the operation of vacuum systems containing trapped atomic ions. However, the fidelity of laser-based gates can be degraded by phase noise induced by the cryocooler vibrations. We present a feed-forward vibration-cancellation system that directly measures inner shield displacement with an auxiliary interferometer and applies a compensating phase correction to the laser drive. The interferometer signal is demodulated, and a field-programmable gate array (FPGA) system unwraps the displacement measurement signal, computes the required correction phase, and updates the RF drive of an in-line acousto-optic modulator (AOM) to correct for the vibration-induced dephasing. With cancellation active, the qubit coherence time improves from $3.0\\pm0.4$ ms to $35\\pm5$ ms, consistent with a simulation based on the measured vibration spectrum. We further validate the cancellation by artificially increasing the mechanical coupling of the cryocooler to the vacuum chamber. The vibration-induced decoherence rate is suppressed by a factor of approximately 70 at an RMS (root mean square) displacement of 0.65 $\\mathrmμ$m.",
+      "categories": [
+        "physics.atom-ph",
+        "physics.ins-det"
+      ],
+      "published": "2026-11-17",
+      "score": 0.552007056069773,
+      "similar_to": [
+        {
+          "title": "Fast readout and reset of a superconducting qubit coupled to a resonator with an intrinsic Purcell filter",
+          "id": "2202.06202",
+          "similarity": 0.7895854711532593
+        },
+        {
+          "title": "On-demand driven dissipation for cavity reset and cooling",
+          "id": "2310.16785",
+          "similarity": 0.7888128757476807
+        }
+      ],
+      "summary": {
+        "summary": "Mechanical cryocoolers offer numerous benefits for the operation of vacuum systems containing trapped atomic ions. However, the fidelity of laser-based gates can be degraded by phase noise induced by the cryocooler vibrations.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.21753",
+      "title": "Loss-Tolerant Quantum Correlations Between Atomic and Photonic Qubits",
+      "authors": [
+        "Leonardo Ruscio",
+        "Love A. Pettersson",
+        "Philip Thomas",
+        "Stefano Paesani",
+        "Olivier Morin",
+        "Anders S. Sørensen",
+        "Gerhard Rempe"
+      ],
+      "abstract": "Quantum physics forbids cloning of a qubit. Therefore, a qubit is irreversibly lost upon loss of the information carrier. To mitigate this physical loss, it has been proposed to distribute the logical information across an entangled set of physical qubits, some of which can be lost. Previous experiments illustrated this concept, but failed to demonstrate a gain in the information-retrieval efficiency. Here we address this challenge with photons for which the total loss, from generation to detection, is below the loss-tolerance threshold of $50\\%$. Using two single-atom emitters in an optical cavity, we encode information into the photons of a graph state and observe an efficiency gain for retrieving quantum correlations between the atoms and the photons for single-qubit measurements in the Pauli $X$ and $Z$ bases. Although technical errors reduce the probability to obtain the \\textit{correct} result, we achieve average fidelities as high as $\\gtrsim\\!70\\%$ without and $\\gtrsim\\!75\\%$ with error detection, demonstrating entanglement between the atomic and encoded photonic qubits. Lowering the encoding errors is a next natural step toward loss-tolerant photonic quantum-information processing.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-16",
+      "score": 0.5487753536529694,
+      "similar_to": [
+        {
+          "title": "Demonstrating Quantum Error Correction that Extends the Lifetime of Quantum Information",
+          "id": "1602.04768",
+          "similarity": 0.8360577821731567
+        },
+        {
+          "title": "Exponential suppression of bit-flips in a qubit encoded in an oscillator",
+          "id": "1907.11729",
+          "similarity": 0.8352890014648438
+        }
+      ],
+      "summary": {
+        "summary": "Quantum physics forbids cloning of a qubit. Therefore, a qubit is irreversibly lost upon loss of the information carrier.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9732,
+    0.944,
+    0.8072,
+    0.735,
+    0.5848,
+    0.5741,
+    0.5627,
+    0.5599,
+    0.552,
+    0.5488,
+    0.5316,
+    0.4757,
+    0.452,
+    0.4351,
+    0.4336,
+    0.4319,
+    0.4083,
+    0.3899,
+    0.3734,
+    0.3654,
+    0.3487,
+    0.3303,
+    0.3298,
+    0.3195,
+    0.2979,
+    0.2677,
+    0.2576,
+    0.2572,
+    0.2373,
+    0.2335,
+    0.2307,
+    0.2165,
+    0.1884,
+    0.1734,
+    0.1552,
+    0.1495,
+    0.1439,
+    0.1287,
+    0.1233,
+    0.1229,
+    0.1184,
+    0.1178,
+    0.1068,
+    0.0977,
+    0.093,
+    0.0907,
+    0.088,
+    0.0815,
+    0.0811,
+    0.0762,
+    0.0754,
+    0.0747,
+    0.0714,
+    0.0682,
+    0.0652,
+    0.0635,
+    0.0617,
+    0.06,
+    0.0592,
+    0.0585,
+    0.0522,
+    0.0521,
+    0.0495,
+    0.0491,
+    0.0486,
+    0.048,
+    0.0479,
+    0.0473,
+    0.0471,
+    0.0464,
+    0.0463,
+    0.0462,
+    0.0443,
+    0.0427,
+    0.0421,
+    0.0401,
+    0.0392,
+    0.0391,
+    0.0386,
+    0.0383,
+    0.0379,
+    0.036,
+    0.0356,
+    0.0331,
+    0.0326,
+    0.0317,
+    0.0316,
+    0.0312,
+    0.0308,
+    0.0308,
+    0.0307,
+    0.0298,
+    0.0296,
+    0.028,
+    0.0271,
+    0.0248,
+    0.0238,
+    0.0233,
+    0.0228,
+    0.0226,
+    0.022,
+    0.0217,
+    0.0217,
+    0.0214,
+    0.0211,
+    0.0208,
+    0.0204,
+    0.0202,
+    0.0191,
+    0.0175,
+    0.0175,
+    0.0174,
+    0.0173,
+    0.0172,
+    0.0171,
+    0.0167,
+    0.0156,
+    0.0147,
+    0.0135,
+    0.0133,
+    0.0129,
+    0.0126,
+    0.0118,
+    0.0107,
+    0.0105,
+    0.0093,
+    0.0092,
+    0.009,
+    0.0088,
+    0.008,
+    0.008,
+    0.0074,
+    0.0065,
+    0.0062,
+    0.0059,
+    0.0054,
+    0.0054,
+    0.0048,
+    0.0045,
+    0.0043,
+    0.0043,
+    0.0038,
+    0.0037,
+    0.0035,
+    0.0035,
+    0.0031,
+    0.0029,
+    0.0029,
+    0.0028,
+    0.0028,
+    0.0026,
+    0.0023,
+    0.0015,
+    0.0015
+  ]
+}
