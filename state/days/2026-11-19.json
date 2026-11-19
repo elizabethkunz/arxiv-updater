@@ -1,0 +1,326 @@
+{
+  "date": "2026-11-19",
+  "n_fetched": 121,
+  "papers": [
+    {
+      "id": "2611.23383",
+      "title": "Collective Superconducting-Qubit Interfaces for Microwave-to-Optical Quantum Transduction",
+      "authors": [
+        "Nicolas Dirnegger",
+        "Matthew Guibord",
+        "William Munizzi",
+        "Chee Wei Wong",
+        "Prineha Narang"
+      ],
+      "abstract": "Microwave-to-optical quantum transduction is essential for connecting superconducting quantum processors through optical networks. Mechanically mediated transducers, however, remain limited by weak electromechanical coupling, dissipation, and added noise. In this work, we study a transducer in which an ensemble of superconducting qubits couples collectively to a shared optomechanical resonator. For weak signals, we show that ensemble size and optical pump strength together set the conversion efficiency, added noise, and bandwidth, with pump heating limiting efficiency to a finite optimal pump strength. Near half excitation, the collective coupling grows nearly linearly with ensemble size, accelerating transfer of an excitation into the mechanics. We show that this speedup is offset by relaxation of the additional excited qubits, so the single-qubit coupling and lifetime still set the coherence requirement. Transferring exactly one excitation also requires an anharmonic mechanical mode, which an auxiliary qubit coupled to the mechanics can provide. In a lossless prescribed-Kerr benchmark with four qubits and $g_{\\rm sm}/(2π)=3.81\\,\\mathrm{kHz}$, a mechanical anharmonicity of $100\\,\\mathrm{kHz}$ raises the final joint single-photon intracavity target probability from $19.6\\%$ to $99.7\\%$. Finally, we quantify the effects of decoherence, disorder, residual qubit--qubit interactions, and pump-induced qubit noise, finding that pair-dependent interactions reduce the optical retrieval efficiency from 58\\% to 35\\%. These results establish the coherence and selectivity requirements for collective quantum transduction.",
+      "categories": [
+        "quant-ph",
+        "physics.optics"
+      ],
+      "published": "2026-11-17",
+      "score": 0.7433865434809198,
+      "similar_to": [
+        {
+          "title": "Quantum-limited millimeter wave to optical transduction",
+          "id": "2207.10121",
+          "similarity": 0.8559088110923767
+        },
+        {
+          "title": "Manufacturing low dissipation superconducting quantum processors",
+          "id": "1901.08042",
+          "similarity": 0.8351770639419556
+        }
+      ],
+      "summary": {
+        "summary": "Microwave-to-optical quantum transduction is essential for connecting superconducting quantum processors through optical networks. Mechanically mediated transducers, however, remain limited by weak electromechanical coupling, dissipation, and added noise.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.23448",
+      "title": "Compute Before You Digitize: ADC-less Mixed-Signal Processing for Scalable Cryogenic Qubit Readout",
+      "authors": [
+        "Qirui Zhang",
+        "Ben Toby",
+        "He Wang",
+        "Benjamin Lienhard",
+        "David Blaauw",
+        "Dennis Sylvester"
+      ],
+      "abstract": "We introduce DIRAC, an ADC-less in-cryostat qubit readout architecture that uses analog computing to redraw the analog-digital boundary. Directly operating on the front-end's analog output, passive complex mixers perform the equivalent of digital demodulation, ping-pong active-RC integrators average their outputs into down-sampled per-qubit traces, and a time-domain stage digitizes them, eliminating Nyquist-rate ADCs. A TX-RX co-design derives the mixers' local oscillators from the readout transmitter's baseband rather than per-tone PLLs. A per-line calibration flow trains the matched filter jointly with the neural network, improving fidelity and enabling low-bit-width, low-voltage digital processing. Designed in 22 nm FD-SOI and evaluated at 4 K on 1.12M experimental shots, DIRAC matches the fidelity of a floating-point (FP32) digital pipeline for readout windows down to 750 ns, at 31.6$\\times$ and 238$\\times$ lower energy than the fixed-point (FxP) and FP32 pipelines. It cuts the total 4 K power per physical qubit by 50.4% and 68.6% relative to FxP and room-temperature flex cables, respectively. At a fixed logical-qubit count and 4 K budget, this yields, against FxP, a code distance larger by 2 to 6 and a 1.6-7.3$\\times$ (Willow) and 4.9-204$\\times$ (SI1000, $p = 10^{-3}$) lower logical error rate.",
+      "categories": [
+        "quant-ph",
+        "cs.AR",
+        "cs.ET",
+        "eess.SP"
+      ],
+      "published": "2026-11-17",
+      "score": 0.7273246921641395,
+      "similar_to": [
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.8388506174087524
+        },
+        {
+          "title": "Transmon qubit readout fidelity at the threshold for quantum error correction without a quantum-limited amplifier",
+          "id": "2208.05879",
+          "similarity": 0.8339247703552246
+        }
+      ],
+      "summary": {
+        "summary": "We introduce DIRAC, an ADC-less in-cryostat qubit readout architecture that uses analog computing to redraw the analog-digital boundary. Directly operating on the front-end's analog output, passive complex mixers perform the equivalent of digital demodulation, ping-pong active-RC integrators average their outputs into down-sampled per-qubit traces, and a time-domain stage digitizes them, eliminating Nyquist-rate ADCs.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.23919",
+      "title": "Fault-tolerant quantum processor with minimal external control",
+      "authors": [
+        "Christopher A. Pattison",
+        "Jeongwan Haah",
+        "John Preskill"
+      ],
+      "abstract": "Contemporary classical information processors integrate tens of billions of transistors printed on a chip, yet are fully controlled through comparatively few external wires. This is possible because data flows through hard-coded operations in step with a global clock and is steered by external instructions. Today's solid-state quantum processors are different -- every qubit receives instructions from outside the chip via its own dedicated control line, and error correction adds a further torrent of syndrome data that is transported off-chip. Here we show that the external control of a quantum chip can be greatly simplified. We propose a fault-tolerant architecture for universal quantum computation, inspired by modern classical processors, in which quantum information flows through a fixed, clocked device, propelled by local gates in a planar array. Our quantum processor receives an input stream of classical instructions via a small, constant number of external wires, each attached to a single qubit. Except for those few qubits coupled to external wires, all qubits evolve under a periodically-applied geometrically-local depth-3 circuit, which is fixed at the time the device is fabricated. Assuming a noiseless global clock (so that every operation is applied on schedule, though imperfectly), we establish an accuracy threshold theorem: For physical noise below a universal threshold -- afflicting every gate, measurement, and wire -- a chip with $n$ physical qubits can run any quantum algorithm that uses~$n/{\\sf polylog}(n/ε)$ logical qubits, where $ε$ is the error rate per logical gate. Each logical gate takes time~$n/{\\sf polylog}(n/ε)$; an alternative design, in which quantum operations remain strictly local and noisy, but on-chip wires broadcast noiseless classical signals instantaneously, reduces the time per logical gate to ${\\sf polylog}(n/ε)$.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-18",
+      "score": 0.6361944057735309,
+      "similar_to": [
+        {
+          "title": "Evidence for the utility of quantum computing before fault tolerance",
+          "id": null,
+          "similarity": 0.8642984628677368
+        },
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory",
+          "id": "2308.07915",
+          "similarity": 0.8578490018844604
+        }
+      ],
+      "summary": {
+        "summary": "Contemporary classical information processors integrate tens of billions of transistors printed on a chip, yet are fully controlled through comparatively few external wires. This is possible because data flows through hard-coded operations in step with a global clock and is steered by external instructions.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.24910",
+      "title": "Dressed-State Quantum Information Processing Using a Multilayer Ion Trap Chip with an Integrated Radio Frequency Resonator",
+      "authors": [
+        "Ivan A. Boldin",
+        "Elham Esteki",
+        "Bogdan Okhrimenko",
+        "Friederike Giebel",
+        "Konstantin Thronberens",
+        "Amado Bautista-Salvador",
+        "Christian Ospelkaus",
+        "Christof Wunderlich"
+      ],
+      "abstract": "We present the experimental preparation of a radio frequency (RF)-dressed-state qubit, the coherent operation of a single RF-dressed qubit, and the selective readout of RF-dressed hyperfine states of $^{171}$Yb${^+}$ ions trapped using a novel microstructured ion trap chip. We demonstrate the individual addressing of RF-dressed-state qubits in a two-ion Coulomb crystal. To this end, we developed, manufactured, and characterized a trap chip specifcally designed for quantum information processing with RF-dressed-state qubits. The chip consists of multiple layers, one of which includes an integrated resonator that creates a gradient of the RF magnetic field amplitude along the axis of a linear ion crystal. This RF gradient enables the individual addressing of dressed qubit states as well as their coupling. We characterize the ion trap chip experimentally using the hyperfine states of the electronic ground state of laser cooled $^{171}$Yb${^+}$ ions and by applying a single, global, modulated RF field oscillating near 12.6 GHz that drives dressed-state resonances. We present a microfabricated multilayer ion trap chip specifically designed for quantum information processing based on dressed-state qubits. This ion trap chip consists of multiple layers, one of which includes an integrated radio frequency (RF) resonator, creating a gradient of the RF magnetic field amplitude that allows for individual qubit addressing and qubit-qubit coupling. We experimentally characterize this ion trap chip demonstrating dressed-qubit state preparation, coherent single dressed-qubit operation, and dressed-state-selective read-out using hyperfine states of the electronic ground state of $^{171}$Yb${^+}$. For this purpose, a global modulated RF driving field oscillating near 12.6 GHz is applied to the ions. In addition, we demonstrate individual addressing of dressed-state qubits in a two-ion Coulomb crystal.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-18",
+      "score": 0.5727730867612381,
+      "similar_to": [
+        {
+          "title": "Rapid high-fidelity multiplexed readout of superconducting qubits",
+          "id": "1801.07904",
+          "similarity": 0.7931225895881653
+        },
+        {
+          "title": "Fast readout and reset of a superconducting qubit coupled to a resonator with an intrinsic Purcell filter",
+          "id": "2202.06202",
+          "similarity": 0.7926815748214722
+        }
+      ],
+      "summary": {
+        "summary": "We present the experimental preparation of a radio frequency (RF)-dressed-state qubit, the coherent operation of a single RF-dressed qubit, and the selective readout of RF-dressed hyperfine states of $^{171}$Yb${^+}$ ions trapped using a novel microstructured ion trap chip. We demonstrate the individual addressing of RF-dressed-state qubits in a two-ion Coulomb crystal.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.23420",
+      "title": "High-rate low-distance color codes",
+      "authors": [
+        "Peter-Jan H. S. Derks",
+        "Lucas Berent",
+        "Mark Webster",
+        "Robert Wille",
+        "Jens Eisert",
+        "Aleksander Kubica"
+      ],
+      "abstract": "Experimental implementations of two-dimensional color codes encoding a single logical qubit have surpassed the fidelity of physical qubits. A natural next step is to investigate higher-rate codes that encode multiple logical qubits. Here we propose small, high-rate 2D color codes for this purpose. We design distance-$3$ codes with encoding rates up to $1/3$ and distance-$4$ codes with encoding rates up to $1/4$. We prove that these rates are optimal for color codes with only color boundaries on surfaces with non-negative Euler characteristic. We benchmark the codes by simulating Steane-style error correction with real-time feedback and no post-selection in a linear trapped-ion chain model with all-to-all connectivity. The two best-performing codes have parameters $[[20,4,4]]$ and $[[16,4,4]]$ and achieve break-even at two-qubit gate infidelities of $0.22\\%$ and $0.26\\%$, respectively. These results match the performance of Shor-style error correction with bivariate bicycle codes that use weight-$5$ measurements.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-17",
+      "score": 0.5303964798347677,
+      "similar_to": [
+        {
+          "title": "Multivariate Bicycle Codes",
+          "id": "2406.19151",
+          "similarity": 0.8771190047264099
+        },
+        {
+          "title": "Scaling and logic in the color code on a superconducting quantum processor",
+          "id": "2412.14256",
+          "similarity": 0.8748591542243958
+        }
+      ],
+      "summary": {
+        "summary": "Experimental implementations of two-dimensional color codes encoding a single logical qubit have surpassed the fidelity of physical qubits. A natural next step is to investigate higher-rate codes that encode multiple logical qubits.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.7434,
+    0.7273,
+    0.6362,
+    0.5728,
+    0.5304,
+    0.4497,
+    0.4386,
+    0.4066,
+    0.3671,
+    0.3535,
+    0.3412,
+    0.3368,
+    0.3077,
+    0.3005,
+    0.293,
+    0.2832,
+    0.2813,
+    0.2448,
+    0.2362,
+    0.2301,
+    0.2295,
+    0.2165,
+    0.1948,
+    0.1873,
+    0.1825,
+    0.1366,
+    0.1317,
+    0.1164,
+    0.1137,
+    0.1125,
+    0.1057,
+    0.1022,
+    0.0974,
+    0.0946,
+    0.0924,
+    0.0902,
+    0.0874,
+    0.0866,
+    0.0831,
+    0.0824,
+    0.0824,
+    0.0803,
+    0.0762,
+    0.072,
+    0.0703,
+    0.0695,
+    0.0669,
+    0.0667,
+    0.0652,
+    0.0642,
+    0.0639,
+    0.0618,
+    0.0564,
+    0.0551,
+    0.0524,
+    0.05,
+    0.0492,
+    0.0479,
+    0.0459,
+    0.0452,
+    0.0441,
+    0.0438,
+    0.0428,
+    0.0424,
+    0.041,
+    0.0374,
+    0.0373,
+    0.0373,
+    0.0367,
+    0.0324,
+    0.0289,
+    0.0284,
+    0.0273,
+    0.0266,
+    0.025,
+    0.0246,
+    0.0236,
+    0.0234,
+    0.0234,
+    0.0233,
+    0.0228,
+    0.0219,
+    0.0217,
+    0.0209,
+    0.0201,
+    0.0173,
+    0.0171,
+    0.017,
+    0.0159,
+    0.0156,
+    0.0148,
+    0.0146,
+    0.0133,
+    0.0122,
+    0.0121,
+    0.0108,
+    0.0103,
+    0.0102,
+    0.0097,
+    0.0095,
+    0.0095,
+    0.0083,
+    0.0074,
+    0.0066,
+    0.0065,
+    0.0061,
+    0.0056,
+    0.0055,
+    0.0048,
+    0.0047,
+    0.004,
+    0.0038,
+    0.0037,
+    0.0037,
+    0.0033,
+    0.0032,
+    0.0028,
+    0.0028,
+    0.0027,
+    0.0011,
+    0.0005
+  ]
+}
