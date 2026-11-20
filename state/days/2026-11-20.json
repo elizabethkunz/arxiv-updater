@@ -1,0 +1,390 @@
+{
+  "date": "2026-11-20",
+  "n_fetched": 123,
+  "papers": [
+    {
+      "id": "2611.25095",
+      "title": "A measurement-free quantum error correction protocol for superconducting cavities",
+      "authors": [
+        "Q. Rumman Rahman",
+        "S. M. Girvin",
+        "D. K. Weiss"
+      ],
+      "abstract": "The realization of large-scale quantum computation will require quantum error correction (QEC). One way to reduce the demands placed on QEC is to correct dominant physical errors at a lower level before passing the remaining errors to an outer code. Recently, Krastanov et al. [Nat. Commun. 12, 191 (2021)] proposed a measurement-free error-correction protocol based on coherent control of photonic modes that corrects for photon loss. Here, we adapt this approach to a circuit quantum electrodynamics (cQED) architecture using three superconducting microwave cavities coupled by Josephson-junction-based nonlinear elements. We encode the logical qubit in the lowest-order binomial code of one cavity, while the two other cavities serve as ancillas. Using numerical simulations with experimentally realistic parameters, we demonstrate that our protocol can correct single-photon loss with 99% fidelity. Furthermore, we optimize the waiting time between successive rounds of error-correction, and show that the logical lifetime can be extended by a factor of 1.2-1.8 relative to the unprotected Fock $\\{|0\\rangle, |1\\rangle\\}$ encoding, surpassing break-even performance. Our work highlights the potential of gate-based, measurement-free QEC for fault-tolerant quantum computing.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-18",
+      "score": 0.9577217658930771,
+      "similar_to": [
+        {
+          "title": "Quantum error correction of a qubit encoded in grid states of an oscillator",
+          "id": "1907.12487",
+          "similarity": 0.8897356986999512
+        },
+        {
+          "title": "Demonstrating Quantum Error Correction that Extends the Lifetime of Quantum Information",
+          "id": "1602.04768",
+          "similarity": 0.8860785365104675
+        }
+      ],
+      "summary": {
+        "summary": "The realization of large-scale quantum computation will require quantum error correction (QEC). One way to reduce the demands placed on QEC is to correct dominant physical errors at a lower level before passing the remaining errors to an outer code.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.25013",
+      "title": "Theory of Particle Scattering on Superconducting Qubits: From Single Devices to Quantum Arrays",
+      "authors": [
+        "Doojin Kim",
+        "Kyoungchul Kong",
+        "Myeonghun Park"
+      ],
+      "abstract": "Superconducting qubits provide microwave-scale transitions and thus offer quantum targets for direct particle scattering with extremely small energy transfer. We develop a general framework for inelastic scattering in which an incident particle exchanges an off-shell photon with a superconducting quantum circuit, inducing a transition from a lower-energy internal state of the circuit to a higher-energy one. The target dependence is encoded in a finite-momentum electromagnetic transition current and, for charge-dominated response, in a qubit transition form factor. A key feature of particle scattering is that a microwave-scale excitation does not necessarily correspond to a long-wavelength interaction, since nonrelativistic particles can transfer spatial momenta much larger than the deposited energy. The full finite-momentum device response is therefore essential. We specialize the formalism to transmon qubits, construct a realistic electrostatic response for a planar Xmon-style transmon, and apply it to photon-mediated scattering of eV-scale bosonic dark matter, including final-state Bose stimulation. We find that the resulting enhancement substantially improves the projected sensitivity at the lowest masses. Owing to the exceptionally low transition threshold of superconducting qubits, this approach opens sensitivity to dark matter in the eV-to-keV mass range, which remains largely unexplored by existing direct-detection experiments. We further show that $N$ independently operated qubits give the expected rate proportional to $N$, while suitably prepared Dicke states can in principle achieve a collective enhancement approaching $N^2$ when spatial coherence is maintained across the array. These results establish superconducting qubits as quantum targets for direct particle scattering and provide a framework for optimizing low-threshold dark-matter searches.",
+      "categories": [
+        "hep-ph",
+        "quant-ph"
+      ],
+      "published": "2026-11-18",
+      "score": 0.7004346356760945,
+      "similar_to": [
+        {
+          "title": "Quasiparticle-induced transitions in a fluxonium qubit",
+          "id": "2607.21329",
+          "similarity": 0.8461174964904785
+        },
+        {
+          "title": "Surface participation and dielectric loss in superconducting qubits",
+          "id": "1509.01854",
+          "similarity": 0.844680666923523
+        }
+      ],
+      "summary": {
+        "summary": "Superconducting qubits provide microwave-scale transitions and thus offer quantum targets for direct particle scattering with extremely small energy transfer. We develop a general framework for inelastic scattering in which an incident particle exchanges an off-shell photon with a superconducting quantum circuit, inducing a transition from a lower-energy internal state of the circuit to a higher-energy one.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.25887",
+      "title": "High-fidelity control of long-lived data qubits via a noisy mediator",
+      "authors": [
+        "Nguyen H. Le",
+        "Tikai Chang",
+        "Eran Ginossar",
+        "Michael Stern"
+      ],
+      "abstract": "Long-lived qubits are attractive for storing quantum information, but they are often difficult to control or couple directly. A common strategy is to use mediator qubits to generate effective interactions for gate implementation. However, the mediator typically has a shorter coherence time than the data qubits, so mediator relaxation and dephasing are expected to limit the achievable gate fidelity. Here, we show that this limitation can be overcome. We present a reset-assisted control method that suppresses mediator-induced errors and enables high-fidelity single- and two-qubit gates on a quantum register of long-lived data qubits. Although mediator quantum jumps render the data-qubit evolution stochastic, repeated mediator reinitialization drives the resulting evolution paths toward the desired target operation. An analytical quantum-trajectory analysis reveals the physical mechanism of error suppression and provides compact fidelity formulas for adapting the method to different platforms. Our results relax the requirement for long mediator coherence, broadening the range of mediators that can support high-fidelity control.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-19",
+      "score": 0.6887445695626898,
+      "similar_to": [
+        {
+          "title": "Erasure qubits: Overcoming the $T_1$ limit in superconducting circuits",
+          "id": "2208.05461",
+          "similarity": 0.8475095629692078
+        },
+        {
+          "title": "Quantum control of a cat-qubit with bit-flip times exceeding ten seconds",
+          "id": "2307.06617",
+          "similarity": 0.840903639793396
+        }
+      ],
+      "summary": {
+        "summary": "Long-lived qubits are attractive for storing quantum information, but they are often difficult to control or couple directly. A common strategy is to use mediator qubits to generate effective interactions for gate implementation.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.25579",
+      "title": "Syndrome-based Calibration Using Gate-Error Amplification",
+      "authors": [
+        "Andrew T. Kamen",
+        "Arielle Sanford",
+        "Frederic T. Chong",
+        "Andy J. Goldschmidt",
+        "Siddharth Dangwal"
+      ],
+      "abstract": "We present Gate-Error Amplification for Recalibration with Syndromes (GEARS), a runtime calibration framework that uses gate-error amplification to efficiently tune control parameters during quantum error correction. Maintaining reliable control of large qubit arrays throughout hours-long computations requires repeated calibration to compensate for hardware drift. In conventional calibration, targeted qubits are temporarily removed from the code, introducing non-negligible space-time overhead. An elegant alternative uses syndrome information already collected during error correction as feedback for in situ recalibration, but acquiring signal requires sufficient (1) measurement budget or (2) probe strength, i.e., the size of deliberate control perturbations. More measurements improve statistical precision but result in slower control updates, while stronger perturbations produce larger calibration signals at the cost of additional errors. GEARS augments syndrome-based calibration with an established gate characterization technique called gate-error amplification. Our approach repeats selected CZ gates and probes their controls in spatially separated groups, strengthening local calibration signals while limiting the logical cost of probing. Surface code simulations show that GEARS with depth-three amplification reduces measurement requirements by approximately a factor of eight at matched gradient SNR and fixed probe strength. In closed-loop calibration, GEARS with depth-three amplification reduces excess expected logical failures by approximately 31-40% relative to calibration without amplification across the evaluated execution windows. Under time-dependent drift, GEARS increases the estimated critical drift frequency by approximately 1.9x. These results indicate that deliberately amplifying gate errors during operation can improve the long-time performance of quantum computations.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-19",
+      "score": 0.5941704722877423,
+      "similar_to": [
+        {
+          "title": "Demonstrating real-time and low-latency quantum error correction with superconducting qubits",
+          "id": "2410.05202",
+          "similarity": 0.8393367528915405
+        },
+        {
+          "title": "System Characterization of Dispersive Readout in Superconducting Qubits",
+          "id": "2402.00413",
+          "similarity": 0.8338300585746765
+        }
+      ],
+      "summary": {
+        "summary": "We present Gate-Error Amplification for Recalibration with Syndromes (GEARS), a runtime calibration framework that uses gate-error amplification to efficiently tune control parameters during quantum error correction. Maintaining reliable control of large qubit arrays throughout hours-long computations requires repeated calibration to compensate for hardware drift.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.26447",
+      "title": "Scaling classical hardware for accurate real-time quantum error correction",
+      "authors": [
+        "Chenyang Jin",
+        "Susanne F. Yelin",
+        "Andi Gu"
+      ],
+      "abstract": "Fault-tolerant quantum computation requires a classical decoder fast enough to process syndrome measurements at the rate at which they are generated, and to return its decisions with low latency. This is most demanding for superconducting processors, whose fast syndrome cycles force a trade-off between decoding speed and accuracy. Decoders fast enough to keep up sacrifice accuracy, which must be compensated for with larger codes and thus additional physical qubits. Here we introduce Rapids, a streaming neural decoder that is both fast and accurate. We achieve this by co-designing the decoder with a field-programmable gate array (FPGA): the network is built from operations that map cheaply onto the device and trained in its integer arithmetic. For the distance-19 surface code, Rapids decodes each round of syndromes in under a microsecond on a single FPGA, fast enough for superconducting processors, and returns its decisions with the low latency that fault-tolerant algorithms require. Its logical error rate is 240 times lower than that of existing real-time hardware decoders. The same design extends to the color code and the [[144,12,12]] bivariate-bicycle code, on which our decoder is 16 times more accurate than the real-time Relay decoder. We further show that the decoder scales: spread over several FPGAs or hardened into custom silicon, it becomes faster, more accurate, or able to decode larger codes. Classical hardware thus becomes a further resource, alongside qubits, that can be scaled to improve fault-tolerant quantum computers.",
+      "categories": [
+        "quant-ph",
+        "cs.AR",
+        "cs.LG"
+      ],
+      "published": "2026-11-19",
+      "score": 0.5578722229685681,
+      "similar_to": [
+        {
+          "title": "Demonstrating real-time and low-latency quantum error correction with superconducting qubits",
+          "id": "2410.05202",
+          "similarity": 0.8902537822723389
+        },
+        {
+          "title": "Scaling and logic in the color code on a superconducting quantum processor",
+          "id": "2412.14256",
+          "similarity": 0.8600233197212219
+        }
+      ],
+      "summary": {
+        "summary": "Fault-tolerant quantum computation requires a classical decoder fast enough to process syndrome measurements at the rate at which they are generated, and to return its decisions with low latency. This is most demanding for superconducting processors, whose fast syndrome cycles force a trade-off between decoding speed and accuracy.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.25323",
+      "title": "Generation of coherent-state Schrödinger cat states in a two-photon Jaynes-Cummings model implemented with Josephson junctions",
+      "authors": [
+        "Hiroo Azuma",
+        "William J. Munro",
+        "Kae Nemoto"
+      ],
+      "abstract": "We investigate the generation of coherent-state Schrödinger cat states using a two-photon Jaynes-Cummings model (JCM) implemented in a Josephson-junction quantum circuit. We consider a specific superconducting flux-qubit implementation and estimate the resulting two-photon coupling constant. We numerically examine three types of noise: magnetic flux noise with $1/f$ fluctuations, energy relaxation associated with the flux-qubit $T_{1}$ decay, and photon loss in the bosonic mode obtained by quantizing the phase variable of the dc SQUID used for qubit readout. We find that photon loss has a particularly significant effect on cat-state fidelity. We also investigate the time evolution of the probability-amplitude distribution in the Pegg-Barnett phase-state basis for the $l$-photon JCM ($l=1,2,3,4$), starting from a coherent bosonic state. Finally, we assume that the bosonic mode is initially prepared in a displaced thermal state and then decoupled from the heat bath. We study the subsequent unitary evolution to determine how the initial temperature affects the fidelity and Wigner function of the generated cat states.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-19",
+      "score": 0.5402532698029581,
+      "similar_to": [
+        {
+          "title": "Measurement-induced state transitions in a superconducting qubit: Beyond the rotating wave approximation",
+          "id": "1606.05721",
+          "similarity": 0.8301539421081543
+        },
+        {
+          "title": "Controlling the spontaneous emission of a superconducting transmon qubit",
+          "id": "0803.4490",
+          "similarity": 0.8269585371017456
+        }
+      ],
+      "summary": {
+        "summary": "We investigate the generation of coherent-state Schrödinger cat states using a two-photon Jaynes-Cummings model (JCM) implemented in a Josephson-junction quantum circuit. We consider a specific superconducting flux-qubit implementation and estimate the resulting two-photon coupling constant.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    },
+    {
+      "id": "2611.25053",
+      "title": "Modeling couplings and quench dynamics of hundred-qubit quantum processors",
+      "authors": [
+        "Simon Pettersson Fors",
+        "Eric Djäknegren",
+        "Jorge Fernández-Pendás",
+        "Anton Frisk Kockum"
+      ],
+      "abstract": "Quantum processors now operate beyond the reach of exact classical simulation, yet their design and verification rest on precise models of the device. Understanding which properties of quantum processors can still be predicted on classical computers is central both to building these machines and to delimiting claims of quantum advantage. Here we address this question at the device level, using continuous unitary transformations to derive effective Hamiltonians non-perturbatively for two-dimensional superconducting processors at a cost polynomial in qubit number. For a 96-transmon array with tunable couplers, we extract the effective qubit couplings, state-dependent interactions (e.g., ZZ couplings), and eigenstate locality that guide processor design. This computation parallelizes over tensor contractions and thus takes an hour at most per design point on a single GPU, enabling rapid design iterations of the full array. Combining these effective models with semiclassical sampling, we then predict the quench dynamics of 100 qubits and 180 couplers at half filling, a sector of dimension $10^{29}$, and validate the approach against exact dynamics of smaller arrays. We show that our approach captures relaxation, thermalization, and transport, but not the bitstring statistics underlying cross-entropy benchmarks. The predicted transport carries a fingerprint of the device: under a staggered detuning, excitations cross over from ballistic to diffusive spreading, slow down at a doublon resonance, and diffuse at different rates on each sublattice. Our results chart which observables lie within classical reach and offer a practical tool for designing future devices.",
+      "categories": [
+        "quant-ph"
+      ],
+      "published": "2026-11-18",
+      "score": 0.5119157237368839,
+      "similar_to": [
+        {
+          "title": "Laser-annealing Josephson junctions for yielding scaled-up superconducting quantum processors",
+          "id": "2009.00781",
+          "similarity": 0.853986382484436
+        },
+        {
+          "title": "Coherent Josephson qubit suitable for scalable quantum integrated circuits",
+          "id": "1304.2322",
+          "similarity": 0.8480647802352905
+        }
+      ],
+      "summary": {
+        "summary": "Quantum processors now operate beyond the reach of exact classical simulation, yet their design and verification rest on precise models of the device. Understanding which properties of quantum processors can still be predicted on classical computers is central both to building these machines and to delimiting claims of quantum advantage.",
+        "motivation": "",
+        "method": "",
+        "result": "",
+        "source": "abstract",
+        "generated_by": "none (abstract excerpt)"
+      },
+      "emailed": true
+    }
+  ],
+  "all_scores": [
+    0.9577,
+    0.7004,
+    0.6887,
+    0.5942,
+    0.5579,
+    0.5403,
+    0.5119,
+    0.4728,
+    0.4706,
+    0.4691,
+    0.4589,
+    0.3771,
+    0.3481,
+    0.3426,
+    0.3125,
+    0.3021,
+    0.2777,
+    0.2753,
+    0.256,
+    0.244,
+    0.2358,
+    0.2322,
+    0.2052,
+    0.2035,
+    0.1824,
+    0.1762,
+    0.1671,
+    0.1634,
+    0.1543,
+    0.1522,
+    0.1424,
+    0.1312,
+    0.1272,
+    0.1209,
+    0.1088,
+    0.1022,
+    0.099,
+    0.0894,
+    0.0877,
+    0.0826,
+    0.0811,
+    0.0808,
+    0.0797,
+    0.0784,
+    0.0737,
+    0.0732,
+    0.0725,
+    0.0684,
+    0.068,
+    0.0668,
+    0.0635,
+    0.0624,
+    0.0561,
+    0.0526,
+    0.0478,
+    0.0478,
+    0.0473,
+    0.0453,
+    0.0448,
+    0.0444,
+    0.0427,
+    0.0416,
+    0.0414,
+    0.0389,
+    0.0363,
+    0.036,
+    0.036,
+    0.0344,
+    0.033,
+    0.0317,
+    0.0313,
+    0.0295,
+    0.0293,
+    0.0289,
+    0.0279,
+    0.0277,
+    0.0275,
+    0.0269,
+    0.0262,
+    0.0248,
+    0.0243,
+    0.0241,
+    0.0238,
+    0.0231,
+    0.0224,
+    0.0205,
+    0.0204,
+    0.0199,
+    0.0198,
+    0.0198,
+    0.0188,
+    0.0162,
+    0.0149,
+    0.0134,
+    0.013,
+    0.0125,
+    0.0121,
+    0.0119,
+    0.0118,
+    0.0118,
+    0.0116,
+    0.0113,
+    0.0107,
+    0.0103,
+    0.0102,
+    0.0095,
+    0.0092,
+    0.0091,
+    0.0085,
+    0.0079,
+    0.0076,
+    0.0075,
+    0.0075,
+    0.007,
+    0.0065,
+    0.0064,
+    0.0062,
+    0.0059,
+    0.005,
+    0.0048,
+    0.0047,
+    0.0036,
+    0.0024
+  ]
+}
